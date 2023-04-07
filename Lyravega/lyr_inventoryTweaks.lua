@@ -151,7 +151,7 @@ local swapTechAndCargo = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.swapTechAndCargo = swapTechAndCargo
 
 local hideInventoryHeaders = function()
 	if not lyr:checkTweak("hideInventoryHeaders") then return false end
@@ -176,7 +176,7 @@ local hideInventoryHeaders = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.hideInventoryHeaders = hideInventoryHeaders
 
 local restoreItemBars = function()
 	if not lyr:checkTweak("restoreItemBars") then return false end
@@ -193,7 +193,7 @@ local restoreItemBars = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.restoreItemBars = restoreItemBars
 
 local smallerLabeledIcons = function()
 	if not lyr:checkTweak("smallerLabeledIcons") then return false end
@@ -209,7 +209,7 @@ local smallerLabeledIcons = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.smallerLabeledIcons = smallerLabeledIcons
 
 local smallerItemAmountFonts = function()
 	if not lyr:checkTweak("smallerItemAmountFonts") then return false end
@@ -239,7 +239,7 @@ local smallerItemAmountFonts = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.smallerItemAmountFonts = smallerItemAmountFonts
 
 local noInventoryDamage = function()
 	if not lyr:checkTweak("noInventoryDamage") then return false end
@@ -255,7 +255,7 @@ local noInventoryDamage = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noInventoryDamage = noInventoryDamage
 
 local sturdyVehicleTechs = function()
 	if not lyr:checkTweak("sturdyVehicleTechs") then return false end
@@ -272,7 +272,7 @@ local sturdyVehicleTechs = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.sturdyVehicleTechs = sturdyVehicleTechs
 
 local passiveProtectionTechs = function()
 	if not lyr:checkTweak("passiveProtectionTechs") then return false end
@@ -399,7 +399,7 @@ local passiveProtectionTechs = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.passiveProtectionTechs = passiveProtectionTechs
 
 local maximizedTechs = function()
 	if not lyr:checkTweak("maximizedTechs") then return false end
@@ -415,7 +415,7 @@ local maximizedTechs = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.maximizedTechs = maximizedTechs
 
 local sameGroupTechLimit = function()
 	if not lyr:checkTweak("sameGroupTechLimit") then return false end
@@ -431,7 +431,7 @@ local sameGroupTechLimit = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.sameGroupTechLimit = sameGroupTechLimit
 
 local installTechInCargo = function()
 	if not lyr:checkTweak("installTechInCargo") then return false end
@@ -447,7 +447,7 @@ local installTechInCargo = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.installTechInCargo = installTechInCargo
 
 local superchargedSlotBonus = function()
 	if not lyr:checkTweak("superchargedSlotBonus") then return false end
@@ -463,7 +463,7 @@ local superchargedSlotBonus = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.superchargedSlotBonus = superchargedSlotBonus
 
 local refineryOutputCapacityMult = function()
 	if not lyr:checkTweak("refineryOutputCapacityMult") then return false end
@@ -482,7 +482,7 @@ local refineryOutputCapacityMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.refineryOutputCapacityMult = refineryOutputCapacityMult
 
 local smallerCargoIcons = function()	-- deprecated
 	if not lyr:checkTweak("smallerCargoIcons") then return false end
@@ -511,31 +511,10 @@ local smallerCargoIcons = function()	-- deprecated
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.smallerCargoIcons = smallerCargoIcons
 
 --#endregion
 -- END OF TWEAKS
-
-lyr:checkTweakOverrides()
-
-lyr.tweakFiles = {}
-
-lyr.tweakTables = {
-	swapTechAndCargo,
-	hideInventoryHeaders,
-	restoreItemBars,
-	smallerLabeledIcons,
-	smallerItemAmountFonts,
-	noInventoryDamage,
-	sturdyVehicleTechs,
-	passiveProtectionTechs,
-	maximizedTechs,
-	sameGroupTechLimit,
-	installTechInCargo,
-	superchargedSlotBonus,
-	refineryOutputCapacityMult,
-	smallerCargoIcons,	-- deprecated
-}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_inventoryTweaks.pak",

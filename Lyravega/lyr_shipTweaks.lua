@@ -80,6 +80,7 @@ local glareNuker = function()
 				"MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPITCOMMON_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
 				"MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/COCKPIT/SAILSHIPCOCKPITA_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
 				"MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/GLASS_MAT.MATERIAL.MBIN",
 				"MODELS/COMMON/SPACECRAFT/SHUTTLE/INTERIORS/CANOPYA_INTERIOR/CANOPYA_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
 				"MODELS/COMMON/VEHICLES/MECH_SUIT/MECH_SUIT_COCKPIT/RAIL12_PASTED__PASTED__GLASS_MAT.MATERIAL.MBIN",
 				"MODELS/COMMON/VEHICLES/SHARED/INTERIOR/COCKPITCHAIR/GLASS_MAT1.MATERIAL.MBIN",
@@ -98,7 +99,7 @@ local glareNuker = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.glareNuker = glareNuker
 
 local clearScreens = {}
 clearScreens.tweak = function()
@@ -141,6 +142,11 @@ clearScreens.tweak = function()
 				"MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR/SIDESCREEN4_MAT.MATERIAL.MBIN",
 				"MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR/SIDESCREENMATTHREE2.MATERIAL.MBIN",	-- scientific/royal? extra
 				"MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR/SIDESCREENMATTHREE6.MATERIAL.MBIN",	-- scientific/royal? extra
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/MAINSCREENMAT1.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/SIDESCREEN1_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/SIDESCREEN2_MAT1.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/SIDESCREEN4_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/SIDESCREEN3_MAT.MATERIAL.MBIN",
 				"MODELS/COMMON/SPACECRAFT/SHUTTLE/INTERIORS/CANOPYA_INTERIOR/CANOPYA_INTERIOR/MAINSCREENMAT5.MATERIAL.MBIN",
 				"MODELS/COMMON/SPACECRAFT/SHUTTLE/INTERIORS/CANOPYA_INTERIOR/CANOPYA_INTERIOR/SIDESCREEN1_MAT.MATERIAL.MBIN",
 				"MODELS/COMMON/SPACECRAFT/SHUTTLE/INTERIORS/CANOPYA_INTERIOR/CANOPYA_INTERIOR/SIDESCREEN2_MAT.MATERIAL.MBIN",
@@ -158,11 +164,24 @@ clearScreens.tweak = function()
 					Shader = "SHADERS/UISCREEN.SHADER.BIN"
 				}
 			}
+		},
+		{
+			mbinPaths = {
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/MAINSCREENMAT1.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/SIDESCREEN1_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/SIDESCREEN2_MAT1.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/SIDESCREEN4_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/SIDESCREEN3_MAT.MATERIAL.MBIN",
+			},
+			{
+				skw = {lyr:parsePair([[<Property name="MaterialFlag" value="_F28_VBSKINNED" />]])},
+				removeSection = true
+			}
 		}
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.clearScreens = clearScreens.tweak
 
 clearScreens.files = function()
 	if not lyr:checkTweak("clearScreens") then return false end
@@ -173,7 +192,7 @@ clearScreens.files = function()
 	}
 
 	return files
-end
+end; lyr.tweakFiles.clearScreens = clearScreens.files
 
 local clearRadar = function()
 	if not lyr:checkTweak("clearRadar") then return false end
@@ -271,7 +290,7 @@ local clearRadar = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.clearRadar = clearRadar
 
 local bioshipCleanCanopy = function()
 	if not lyr:checkTweak("bioshipCleanCanopy") then return false end
@@ -289,7 +308,7 @@ local bioshipCleanCanopy = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.bioshipCleanCanopy = bioshipCleanCanopy
 
 local bioshipNoSmoke = function()
 	if not lyr:checkTweak("bioshipNoSmoke") then return false end
@@ -306,7 +325,7 @@ local bioshipNoSmoke = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.bioshipNoSmoke = bioshipNoSmoke
 
 local noShipMuzzleFlashes = function()
 	if not lyr:checkTweak("noShipMuzzleFlashes") then return false end
@@ -323,7 +342,7 @@ local noShipMuzzleFlashes = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noShipMuzzleFlashes = noShipMuzzleFlashes
 
 local spaceDustCleaner = function()
 	if not lyr:checkTweak("spaceDustCleaner") then return false end
@@ -352,7 +371,7 @@ local spaceDustCleaner = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.spaceDustCleaner = spaceDustCleaner
 
 local noSpeedTunnel = function()
 	if not lyr:checkTweak("noSpeedTunnel") then return false end
@@ -376,7 +395,7 @@ local noSpeedTunnel = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noSpeedTunnel = noSpeedTunnel
 
 local itemTeleporterRange = function()
 	if not lyr:checkTweak("itemTeleporterRange") then return false end
@@ -393,7 +412,7 @@ local itemTeleporterRange = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.itemTeleporterRange = itemTeleporterRange
 
 local bioshipItemTeleporter = function()
 	if not lyr:checkTweak("bioshipItemTeleporter") then return false end
@@ -421,7 +440,7 @@ local bioshipItemTeleporter = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.bioshipItemTeleporter = bioshipItemTeleporter
 
 local shipAndVehicleInventoryRange = function()
 	if not lyr:checkTweak("shipAndVehicleInventoryRange") then return false end
@@ -438,7 +457,7 @@ local shipAndVehicleInventoryRange = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.shipAndVehicleInventoryRange = shipAndVehicleInventoryRange
 
 local improvedShipScannerPulse = function()
 	if not lyr:checkTweak("improvedShipScannerPulse") then return false end
@@ -467,7 +486,7 @@ local improvedShipScannerPulse = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.improvedShipScannerPulse = improvedShipScannerPulse
 
 local noAsteroidsOnScanner = function()
 	if not lyr:checkTweak("noAsteroidsOnScanner") then return false end
@@ -485,7 +504,7 @@ local noAsteroidsOnScanner = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noAsteroidsOnScanner = noAsteroidsOnScanner
 
 local shipAtmosphereHover = function()
 	if not lyr:checkTweak("shipAtmosphereHover") then return false end
@@ -503,7 +522,7 @@ local shipAtmosphereHover = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.shipAtmosphereHover = shipAtmosphereHover
 
 local shipSpeedMult = function()
 	if not lyr:checkTweak("shipSpeedMult") then return false end
@@ -528,7 +547,7 @@ local shipSpeedMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.shipSpeedMult = shipSpeedMult
 
 local actualSpeedReadouts = function()
 	if not lyr:checkTweak("actualSpeedReadouts") then return false end
@@ -547,7 +566,7 @@ local actualSpeedReadouts = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.actualSpeedReadouts = actualSpeedReadouts
 
 local flightRestrictionMult = function()
 	if not lyr:checkTweak("flightRestrictionMult") then return false end
@@ -572,7 +591,7 @@ local flightRestrictionMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.flightRestrictionMult = flightRestrictionMult
 
 local stoppingMarginMult = function()
 	if not lyr:checkTweak("stoppingMarginMult") then return false end
@@ -591,7 +610,7 @@ local stoppingMarginMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.stoppingMarginMult = stoppingMarginMult
 
 local pulseDriveSpeedMult = function()
 	if not lyr:checkTweak("pulseDriveSpeedMult") then return false end
@@ -610,7 +629,7 @@ local pulseDriveSpeedMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.pulseDriveSpeedMult = pulseDriveSpeedMult
 
 local reducePulseDriveFlash = function()
 	if not lyr:checkTweak("reducePulseDriveFlash") then return false end
@@ -628,7 +647,7 @@ local reducePulseDriveFlash = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.reducePulseDriveFlash = reducePulseDriveFlash
 
 local preciseNavigation = function()
 	if not lyr:checkTweak("preciseNavigation") then return false end
@@ -649,7 +668,7 @@ local preciseNavigation = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.preciseNavigation = preciseNavigation
 
 local noPulseDriveExitDelay = function()
 	if not lyr:checkTweak("noPulseDriveExitDelay") then return false end
@@ -665,7 +684,7 @@ local noPulseDriveExitDelay = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noPulseDriveExitDelay = noPulseDriveExitDelay
 
 local fastPulseDriveExit = function()
 	if not lyr:checkTweak("fastPulseDriveExit") then return false end
@@ -682,7 +701,7 @@ local fastPulseDriveExit = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.fastPulseDriveExit = fastPulseDriveExit
 
 local autoStationOrient = function()	-- deprecated
 	if not lyr:checkTweak("autoStationOrient") then return false end
@@ -698,7 +717,7 @@ local autoStationOrient = function()	-- deprecated
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.autoStationOrient = autoStationOrient
 
 local noLandingPadRotation = function()
 	if not lyr:checkTweak("noLandingPadRotation") then return false end
@@ -742,7 +761,7 @@ local noLandingPadRotation = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noLandingPadRotation = noLandingPadRotation
 
 local landingPadRotateSpeedMult = function()
 	if not lyr:checkTweak("landingPadRotateSpeedMult") then return false end
@@ -765,7 +784,7 @@ local landingPadRotateSpeedMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.landingPadRotateSpeedMult = landingPadRotateSpeedMult
 
 local dockingSpeedMult = function()
 	if not lyr:checkTweak("dockingSpeedMult") then return false end
@@ -798,7 +817,7 @@ local dockingSpeedMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.dockingSpeedMult = dockingSpeedMult
 
 local dockingSpeedLimitOverride = function()
 	if not lyr:checkTweak("dockingSpeedLimitOverride") then return false end
@@ -815,7 +834,7 @@ local dockingSpeedLimitOverride = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.dockingSpeedLimitOverride = dockingSpeedLimitOverride
 
 local autoEjectOnLanding = function()
 	if not lyr:checkTweak("autoEjectOnLanding") then return false end
@@ -831,7 +850,7 @@ local autoEjectOnLanding = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.autoEjectOnLanding = autoEjectOnLanding
 
 local looterExplorer = function()
 	if not lyr:checkTweak("looterExplorer") then return false end
@@ -850,7 +869,7 @@ local looterExplorer = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.looterExplorer = looterExplorer
 
 local moreAnomalyDetectors = function()
 	if not lyr:checkTweak("moreAnomalyDetectors") then return false end
@@ -866,7 +885,7 @@ local moreAnomalyDetectors = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.moreAnomalyDetectors = moreAnomalyDetectors
 
 local noSolarSailSounds = function()
 	if not lyr:checkTweak("noSolarSailSounds") then return false end
@@ -877,51 +896,10 @@ local noSolarSailSounds = function()
 	}
 
 	return files
-end
+end; lyr.tweakFiles.noSolarSailSounds = noSolarSailSounds
 
 --#endregion
 -- END OF TWEAKS
-
-lyr:checkTweakOverrides()
-
-lyr.tweakFiles = {
-	clearScreens.files,
-	noSolarSailSounds,
-}
-
-lyr.tweakTables = {
-	glareNuker,
-	clearScreens.tweak,
-	clearRadar,
-	bioshipCleanCanopy,
-	bioshipNoSmoke,
-	noShipMuzzleFlashes,
-	spaceDustCleaner,
-	noSpeedTunnel,
-	itemTeleporterRange,
-	bioshipItemTeleporter,
-	shipAndVehicleInventoryRange,
-	improvedShipScannerPulse,
-	noAsteroidsOnScanner,
-	shipAtmosphereHover,
-	shipSpeedMult,
-	actualSpeedReadouts,
-	flightRestrictionMult,
-	stoppingMarginMult,
-	pulseDriveSpeedMult,
-	reducePulseDriveFlash,
-	preciseNavigation,
-	noPulseDriveExitDelay,
-	fastPulseDriveExit,
-	autoStationOrient,	-- deprecated
-	noLandingPadRotation,
-	landingPadRotateSpeedMult,
-	dockingSpeedMult,
-	dockingSpeedLimitOverride,
-	autoEjectOnLanding,
-	looterExplorer,
-	moreAnomalyDetectors,
-}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_shipTweaks.pak",

@@ -1,4 +1,4 @@
-local lyr = {
+lyr = {
 	tweakStates = tweakStates,
 	tweakTables = {},
 	tweakFiles = {},
@@ -12,6 +12,8 @@ local lyr = {
 }
 
 function lyr:checkTweakOverrides()
+	if not tweakStates then return end
+
 	local _, tweakOverrides = pcall(io.open, "../ModScript/ModHelperScripts/lyr_tweakOverrides.txt", "rb")
 
 	if tweakOverrides then
@@ -21,7 +23,7 @@ function lyr:checkTweakOverrides()
 		for line in tweakOverrides:lines("l") do
 			local tweakName, tweakState = line:match([[([%w]+)[%W]+([%w%.]+)]])
 
-			if tweakName ~= nil and tweakState ~= nil then 
+			if tweakName ~= nil and tweakState ~= nil then
 				if booleans[tweakState:lower()] ~= nil then tweakState = booleans[tweakState:lower()]
 				elseif tonumber(tweakState) ~= nil then tweakState = tonumber(tweakState) end
 
@@ -31,7 +33,7 @@ function lyr:checkTweakOverrides()
 
 		tweakOverrides:close()
 	end
-end
+end; lyr:checkTweakOverrides()
 
 ---@param tweakName string
 ---@return boolean 
@@ -75,6 +77,23 @@ function lyr:parsePair(longString)
 	for w in string.gmatch(longString, [["(%g+)"]]) do t[#t+1] = w end
 
 	return t[1], t[2]
+end
+
+---@param inputString string
+---@return string hash
+function lyr:generateJenkinsHash(inputString)
+	local hash, charTable = 0, {string.byte(inputString:upper(), 1, #inputString)}
+
+	for i = 1, #inputString do
+		hash = (hash + charTable[i]) & 0xffffffff
+		hash = (hash + (hash << 10)) & 0xffffffff
+		hash = (hash ~ (hash >> 6)) & 0xffffffff
+	end
+	hash = (hash + (hash << 3)) & 0xffffffff
+	hash = (hash ~ (hash >> 11)) & 0xffffffff
+	hash = (hash + (hash << 15)) & 0xffffffff
+
+	return tostring(hash)
 end
 
 -- Creates a directive that instructs AMUMSS to copy a section with a common node template
@@ -141,8 +160,18 @@ function lyr:createNodeTemplate()
 	return directive
 end
 
-function lyr:expandStump(stump)
-	return {[[(.*)<Property name="(]]..stump..[[)" \/>]], [[\1<Property name="\2">\\n\1<\/Property>]]}
+function lyr:expandStump(stump, ...)
+	if ... then
+		local stumpList = {stump, ...}
+
+		for i = #stumpList, 1, -1 do
+			stumpList[i] = {[[(.*)<Property name="(]]..stumpList[i]..[[)" \/>]], [[\1<Property name="\2">\\n\1<\/Property>]]}
+		end
+
+		return stumpList
+	end
+
+	return {{[[(.*)<Property name="(]]..stump..[[)" \/>]], [[\1<Property name="\2">\\n\1<\/Property>]]}}
 end
 
 -- Take a scene and dupe it along with its entity and any additionally pointed entities through sub-methods<br>
@@ -320,26 +349,286 @@ function lyr:processTweakFiles()
 	return addFileTables
 end
 
+--#region CUSTOM ECT
+
+lyr.vanamumss = {
+	ect = {
+		ADD = true,
+		ADD_OPTION = true,
+		COMMENT = true,
+		FOREACH_SKW_GROUP = true,
+		FSKWG = true,
+		INTEGER_TO_FLOAT = true,
+		ITF = true,
+		LINE_OFFSET = true,
+		NOTICE_OFF = true,
+		MATH_OPERATION = true,
+		MATH_OP = true,
+		PRECEDING_FIRST = true,
+		PRECEDING_KEY_WORDS = true,
+		PKW = true,
+		REMOVE = true,
+		REPLACE_TYPE = true,
+		SEC_ADD_NAMED = true,
+		SEC_EDIT = true,
+		SEC_KEEP = true,
+		SEC_SAVE_TO = true,
+		SECTION_ACTIVE = true,
+		SECTION_UP = true,
+		SECTION_UP_SPECIAL = true,
+		SPECIAL_KEY_WORDS = true,
+		SKW = true,
+		VALUE_CHANGE_TABLE = true,
+		VCT = true,
+		VALUE_MATCH = true,
+		VALUE_MATCH_OPTIONS = true,
+		VALUE_MATCH_TYPE = true,
+		WHERE_IN_SECTION = true,
+		WIS = true,
+		WISEC_LOP = true,
+		WHERE_IN_SUBSECTION = true,
+		WISS = true,
+		WISUBSEC_LOP = true,
+		WISUBSEC_OPTION = true,
+	}
+}
+
+lyr.lyramumss = {
+	ect = {}
+}
+
+local lyramumss_ect = lyr.lyramumss.ect
+local vanamumss_ect = lyr.vanamumss.ect
+
+function lyramumss_ect:comment(comment)
+	self.COMMENT = comment
+end
+
+function lyramumss_ect:precedingKeyWords(pkw)
+	self.PKW = pkw
+end; lyramumss_ect.pkw = lyramumss_ect.precedingKeyWords
+
+function lyramumss_ect:precedingKeyWordsFirst(pkw1st)
+	self:precedingKeyWords(pkw1st)
+	self.PRECEDING_FIRST = true
+end; lyramumss_ect.pkw1st = lyramumss_ect.precedingKeyWordsFirst
+
+function lyramumss_ect:specialKeyWords(skw)
+	if type(skw[1])~="table" then
+		self.SKW = skw
+	else
+		self.FSKWG = skw
+	end
+end; lyramumss_ect.skw = lyramumss_ect.specialKeyWords
+
+function lyramumss_ect:findSections(wis)
+	self.WIS = wis
+end
+
+function lyramumss_ect:findSectionsWhereAllMatch(wis)
+	self:findSections(wis)
+	self.WISEC_LOP = "AND"
+end
+
+function lyramumss_ect:findSectionsWhereNoneMatch(wis)
+	self:findSections(wis)
+	self.WISEC_LOP = "NOR"
+end
+
+function lyramumss_ect:findSubSections(wiss)
+	self.WISS = wiss
+end
+
+function lyramumss_ect:findSubSectionsWhereAllMatch(wiss)
+	self:findSubSections(wiss)
+	self.WISUBSEC_LOP = "AND"
+end
+
+function lyramumss_ect:findSubSectionsWhereNoneMatch(wiss)
+	self:findSubSections(wiss)
+	self.WISUBSEC_LOP = "NOR"
+end
+
+function lyramumss_ect:findAllSubSections(wiss)
+	self:findSubSections(wiss)
+	self.WISUBSEC_OPTION = "ALL"
+end
+
+function lyramumss_ect:findAllSubSectionsWhereAllMatch(wiss)
+	self:findSubSections(wiss)
+	self.WISUBSEC_LOP = "AND"
+	self.WISUBSEC_OPTION = "ALL"
+end
+
+function lyramumss_ect:findAllSubSectionsWhereNoneMatch(wiss)
+	self:findSubSections(wiss)
+	self.WISUBSEC_LOP = "NOR"
+	self.WISUBSEC_OPTION = "ALL"
+end
+
+function lyramumss_ect:selectLevel(level)
+	self.SECTION_UP = level
+end
+
+function lyramumss_ect:selectLevelAfterSpecial(level)
+	self.SECTION_UP_SPECIAL = level
+end
+
+function lyramumss_ect:sectionOffset(offset)
+	self.SECTION_ACTIVE = offset
+end
+
+function lyramumss_ect:lineOffset(offset)
+	self.LINE_OFFSET = offset
+end
+
+function lyramumss_ect:thisLine()
+	self:lineOffset(0)
+end
+
+function lyramumss_ect:copySection(alias)
+	self._addToTable = true
+	if alias == true then
+		self.SEC_SAVE_TO = lyr.tempSection
+	else
+		self.SEC_SAVE_TO = alias
+	end
+end
+
+function lyramumss_ect:editSection(alias)
+	self._addToTable = true
+	if alias == true then
+		self.SEC_EDIT = lyr.tempSection
+	else
+		self.SEC_EDIT = alias
+	end
+end
+
+function lyramumss_ect:pasteSection(alias)
+	self._addToTable = true
+	if alias == true then
+		self.SEC_ADD_NAMED = lyr.tempSection
+	else
+		self.SEC_ADD_NAMED = alias
+	end
+end
+
+function lyramumss_ect:pasteAfterSection(alias)
+	self:pasteSection(alias)
+	self.ADD_OPTION = "ADDafterSECTION"
+end
+
+function lyramumss_ect:saveSection(alias)
+	self:copySection(alias)
+	self.SEC_KEEP = true
+end
+
+function lyramumss_ect:insertSection(section)
+	self._addToTable = true
+	self.ADD = section
+end
+
+function lyramumss_ect:insertAfterSection(section)
+	self:insertSection(section)
+	self.ADD_OPTION = "ADDafterSECTION"
+end
+
+function lyramumss_ect:replaceLine(section)
+	self:insertSection(section)
+	self.ADD_OPTION = "REPLACEatLINE"
+end
+
+function lyramumss_ect:replace(option)
+	self.REPLACE_TYPE = option
+end
+
+function lyramumss_ect:replaceAll()
+	self:replace("ALL")
+end
+
+function lyramumss_ect:replaceRaw()
+	self:replace("RAW")
+end
+
+function lyramumss_ect:replaceFollowing()
+	self:replace("FOLLOWING")
+end
+
+function lyramumss_ect:removeSection()
+	self._addToTable = true
+	self.REMOVE = "SECTION"
+end
+
+function lyramumss_ect:removeLine()
+	self._addToTable = true
+	self.REMOVE = "LINE"
+end
+
+function lyramumss_ect:removeAllSections()
+	self:replaceAll()
+	self:removeSection()
+end
+
+function lyramumss_ect:removeAllLines()
+	self:replaceAll()
+	self:removeLine()
+end
+
+function lyramumss_ect:preserveIntegers()
+	self.ITF = "PRESERVE"
+end
+
+function lyramumss_ect:mathOp(op)
+	self.MATH_OP = op
+end
+
+function lyramumss_ect:multiply()
+	self:mathOp("*")
+end
+
+function lyramumss_ect:add()
+	self:mathOp("+")
+end
+
+function lyramumss_ect:match(options)
+	if type(options) == "table" then
+		self.VALUE_MATCH = options.value or nil
+		self.VALUE_MATCH_OPTIONS = options.option or nil
+		self.VALUE_MATCH_TYPE = options.type or nil
+	else
+		self.VALUE_MATCH = options
+	end
+end
+
+function lyramumss_ect:fields(fields, ect)
+	local valueChangeTable = {}
+
+	for fieldName, fieldValue in pairs(fields) do
+		if type(fieldValue) == "table" then
+			if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
+				table.insert(valueChangeTable, {fieldName, fieldValue.altered})
+			elseif fieldValue.multiplier and fieldValue.multiplier ~= 1 then
+				table.insert(valueChangeTable, {fieldName, ect.multiply and fieldValue.multiplier or fieldValue.default * fieldValue.multiplier})
+			elseif type(fieldName) == "number" then
+				table.insert(valueChangeTable, fieldValue)
+			end
+		else
+			table.insert(valueChangeTable, {fieldName, fieldValue})
+		end
+	end
+
+	if #valueChangeTable > 0 then
+		self._addToTable = true
+		self.VCT = valueChangeTable
+	end
+end
+
+--#endregion
+-- END OF CUSTOM ECT
+
 ---@return table|nil
 function lyr:processTweakTables()
 	if not next(self.tweakTables) then return nil end
-
-	local sectionOp = {
-		addSection = true,
-		addAfterSection = true,
-		copySection = true,
-		saveSection = true,
-		pasteSection = true,
-		pasteAfterSection = true,
-		removeSection = true,
-		removeLine = true,
-		replaceLine = true,
-	}
-
-	local isSectionOp = function(changeTable)
-		for k, v in next, changeTable do if sectionOp[k] then return true end end
-		return false
-	end
 
 	local tweakTables = self.tweakTables
 	local modificationTables = {}
@@ -357,58 +646,18 @@ function lyr:processTweakTables()
 				MBIN_FS_DISCARD = changeTables.discardMbin and "TRUE" or nil,
 				REGEXBEFORE = changeTables.regexBefore or nil,
 				REGEXAFTER  = changeTables.regexAfter or nil,
-			}; local exmlChangeTables = {}
+			}; 	local exmlChangeTables = {}
 
 			for _, changeTable in ipairs(changeTables) do if changeTable then
-				local exmlChangeTable = {
-					COMMENT = changeTable.comment or nil,
-					LINE_OFFSET = changeTable.thisLine and 0 or changeTable.lineOffset or nil,
-					SECTION_UP = changeTable.selectLevel or nil,
-					SECTION_UP_SPECIAL = changeTable.selectLevelAfterSpecial or nil,
-					SECTION_ACTIVE = changeTable.selectSection or nil,
-					PKW = changeTable.precedingKeyWords or changeTable.precedingKeyWordsFirst or nil,
-					PRECEDING_FIRST = changeTable.precedingKeyWordsFirst and true or nil,
-					SKW = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
-					FSKWG = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
-					WIS = changeTable.findSections or changeTable.findSectionsWhereAllMatch or changeTable.findSectionsWhereNoneMatch or nil,
-					WISS = changeTable.findSubSections or changeTable.findSubSectionsWhereAllMatch or changeTable.findSubSectionsWhereNoneMatch or nil,
-					WISEC_LOP = changeTable.findSectionsWhereAllMatch and "AND" or changeTable.findSectionsWhereNoneMatch and "NOR"  or nil,
-					WISUBSEC_LOP = changeTable.findSubSectionsWhereAllMatch and "AND" or changeTable.findSubSectionsWhereNoneMatch and "NOR" or nil,
-					WISUBSEC_OPTION = changeTable.findAllSubSections and "ALL" or nil,
-					REPLACE_TYPE = changeTable.replaceAll and "ALL" or changeTable.replaceRaw and "RAW" or changeTable.replaceFollowing and "FOLLOWING" or nil,
-					MATH_OP = changeTable.multiply and "*" or changeTable.mathOp or nil,
-					ITF = changeTable.preserveIntegers and "PRESERVE" or nil,
-					REMOVE = changeTable.removeSection and "SECTION" or changeTable.removeLine and "LINE" or nil,
-					ADD_OPTION = (changeTable.addAfterSection or changeTable.pasteAfterSection) and "ADDafterSECTION" or changeTable.replaceLine and "REPLACEatLINE" or nil,
-					ADD = (changeTable.addAfterSection or changeTable.addSection or changeTable.replaceLine) and changeTable.section or nil,
-					SEC_SAVE_TO = changeTable.copySection == true and self.tempSection or changeTable.copySection or changeTable.saveSection or nil,
-					SEC_KEEP = changeTable.saveSection and true or nil,
-					SEC_EDIT = changeTable.editSection == true and self.tempSection or changeTable.editSection or nil,
-					SEC_ADD_NAMED = (changeTable.pasteSection == true or changeTable.pasteAfterSection == true) and self.tempSection or changeTable.pasteSection or changeTable.pasteAfterSection or nil,
-					VALUE_MATCH = changeTable.match and changeTable.match.value or nil,
-					VALUE_MATCH_OPTIONS = changeTable.match and changeTable.match.option or nil,
-					VALUE_MATCH_TYPE = changeTable.match and changeTable.match.type or nil,
-					-- VCT = changeTable.fields and {} or nil
-				}; local valueChangeTable = {}
+				local exmlChangeTable = setmetatable({}, {__index = lyramumss_ect})
 
-				if changeTable.fields then
-					for fieldName, fieldValue in pairs(changeTable.fields) do
-						if type(fieldValue) == "table" then
-							if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
-								table.insert(valueChangeTable, {fieldName, fieldValue.altered})
-							elseif fieldValue.multiplier and fieldValue.multiplier ~= 1 then
-								table.insert(valueChangeTable, {fieldName, changeTable.multiply and fieldValue.multiplier or fieldValue.default * fieldValue.multiplier})
-							elseif type(fieldName) == "number" then
-								table.insert(valueChangeTable, fieldValue)
-							end
-						else
-							table.insert(valueChangeTable, {fieldName, fieldValue})
-						end
-					end
+				for directiveName, directiveValue in next, changeTable do
+					if lyramumss_ect[directiveName] then pcall(lyramumss_ect[directiveName], exmlChangeTable, directiveValue, changeTable)
+					elseif vanamumss_ect[directiveName] then exmlChangeTable[directiveName] = directiveValue; exmlChangeTable._addToTable = true end
 				end
 
-				if #valueChangeTable > 0 or isSectionOp(changeTable) then
-					exmlChangeTable.VCT = #valueChangeTable > 0 and valueChangeTable or nil
+				if exmlChangeTable._addToTable then
+					exmlChangeTable._addToTable = nil
 					table.insert(exmlChangeTables, exmlChangeTable)
 				end
 			end end
@@ -422,3 +671,6 @@ function lyr:processTweakTables()
 
 	return modificationTables
 end
+
+-- selene: allow(shadowing)
+local lyr = lyr

@@ -83,7 +83,7 @@ local noToolMuzzleFlashes = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noToolMuzzleFlashes = noToolMuzzleFlashes
 
 local noShipMuzzleFlashes = function()
 	if not lyr:checkTweak("noShipMuzzleFlashes") then return false end
@@ -100,7 +100,7 @@ local noShipMuzzleFlashes = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noShipMuzzleFlashes = noShipMuzzleFlashes
 
 local noToolRecoil = function()
 	if not lyr:checkTweak("noToolRecoil") then return false end
@@ -128,12 +128,12 @@ local noToolRecoil = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noToolRecoil = noToolRecoil
 
 local holsterLater = function()
 	if not lyr:checkTweak("holsterLater") then return false end
 
-	local tweaks = {
+	local tweak = {
 		{
 			mbinPaths = [[GCPLAYERGLOBALS.GLOBAL.MBIN]],
 			{
@@ -146,13 +146,13 @@ local holsterLater = function()
 		}
 	}
 
-	return tweaks
-end
+	return tweak
+end; lyr.tweakTables.holsterLater = holsterLater
 
 local noAutoClimb = function()
 	if not lyr:checkTweak("noAutoClimb") then return false end
 
-	local tweaks = {
+	local tweak = {
 		{
 			mbinPaths = [[GCCHARACTERGLOBALS.GLOBAL.MBIN]],
 			{
@@ -163,8 +163,8 @@ local noAutoClimb = function()
 		}
 	}
 
-	return tweaks
-end
+	return tweak
+end; lyr.tweakTables.noAutoClimb = noAutoClimb
 
 local noHazardOverlays = function()
 	if not lyr:checkTweak("noHazardOverlays") then return false end
@@ -187,7 +187,7 @@ local noHazardOverlays = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noHazardOverlays = noHazardOverlays
 
 local lessMaintenance = function()
 	if not lyr:checkTweak("lessMaintenance") then return false end
@@ -214,7 +214,7 @@ local lessMaintenance = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.lessMaintenance = lessMaintenance
 
 local noPortalCharging = function()
 	if not lyr:checkTweak("noPortalCharging") then return false end
@@ -229,7 +229,7 @@ local noPortalCharging = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noPortalCharging = noPortalCharging
 
 local shorterToastMessages = function()
 	if not lyr:checkTweak("shorterToastMessages") then return false end
@@ -254,7 +254,7 @@ local shorterToastMessages = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.shorterToastMessages = shorterToastMessages
 
 local fasterInteractions = function()
 	if not lyr:checkTweak("fasterInteractions") then return false end
@@ -273,7 +273,7 @@ local fasterInteractions = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.fasterInteractions = fasterInteractions
 
 local lessScreenFlashes = function()
 	if not lyr:checkTweak("lessScreenFlashes") then return false end
@@ -300,7 +300,7 @@ local lessScreenFlashes = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.lessScreenFlashes = lessScreenFlashes
 
 local blackScreenFlashes = function()
 	if not lyr:checkTweak("blackScreenFlashes") then return false end
@@ -329,7 +329,7 @@ local blackScreenFlashes = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.blackScreenFlashes = blackScreenFlashes
 
 local noHitEffectsOnZeroDamage = function()
 	if not lyr:checkTweak("noHitEffectsOnZeroDamage") then return false end
@@ -346,7 +346,7 @@ local noHitEffectsOnZeroDamage = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noHitEffectsOnZeroDamage = noHitEffectsOnZeroDamage
 
 local rapidToolScanner = function()
 	if not lyr:checkTweak("rapidToolScanner") then return false end
@@ -367,7 +367,7 @@ local rapidToolScanner = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.rapidToolScanner = rapidToolScanner
 
 local darkerScannerPulse = function()
 	if not lyr:checkTweak("darkerScannerPulse") then return false end
@@ -396,7 +396,7 @@ local darkerScannerPulse = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.darkerScannerPulse = darkerScannerPulse
 
 local noSentinelTerrainDamage = function()
 	if not lyr:checkTweak("noSentinelTerrainDamage") then return false end
@@ -417,7 +417,7 @@ local noSentinelTerrainDamage = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noSentinelTerrainDamage = noSentinelTerrainDamage
 
 local learnMoreWords = function()
 	if not lyr:checkTweak("learnMoreWords") then return false end
@@ -436,7 +436,7 @@ local learnMoreWords = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.learnMoreWords = learnMoreWords
 
 local noTextDelay = function()
 	if not lyr:checkTweak("noTextDelay") then return false end
@@ -452,7 +452,7 @@ local noTextDelay = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noTextDelay = noTextDelay
 
 local removeDoubleSlashes = function()
 	if not lyr:checkTweak("noTextDelay") or not lyr:checkTweak("removeDoubleSlashes") or lyr:checkTweak("replaceDoubleSlashes") then return false end
@@ -468,7 +468,7 @@ local removeDoubleSlashes = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.removeDoubleSlashes = removeDoubleSlashes
 
 local replaceDoubleSlashes = function()
 	if not lyr:checkTweak("noTextDelay") then return false end
@@ -501,6 +501,7 @@ local replaceDoubleSlashes = function()
 				[[LANGUAGE\NMS_LOC5_]]..language..[[.MBIN]],
 				[[LANGUAGE\NMS_LOC6_]]..language..[[.MBIN]],
 				[[LANGUAGE\NMS_LOC7_]]..language..[[.MBIN]],
+				[[LANGUAGE\NMS_LOC8_]]..language..[[.MBIN]],
 				[[LANGUAGE\NMS_UPDATE3_]]..language..[[.MBIN]],
 			},
 			regexBefore = {
@@ -511,7 +512,7 @@ local replaceDoubleSlashes = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.replaceDoubleSlashes = replaceDoubleSlashes
 
 local noTerrainFlatten = function()
 	if not lyr:checkTweak("noTerrainFlatten") then return false end
@@ -528,7 +529,7 @@ local noTerrainFlatten = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noTerrainFlatten = noTerrainFlatten
 
 local cyclingQuickMenu = function()
 	if not lyr:checkTweak("cyclingQuickMenu") then return false end
@@ -545,7 +546,7 @@ local cyclingQuickMenu = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.cyclingQuickMenu = cyclingQuickMenu
 
 local hideQuickMenuControls = function()
 	if not lyr:checkTweak("hideQuickMenuControls") then return false end
@@ -562,40 +563,10 @@ local hideQuickMenuControls = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.hideQuickMenuControls = hideQuickMenuControls
 
 --#endregion
 -- END OF TWEAKS
-
-lyr:checkTweakOverrides()
-
-lyr.tweakFiles = {}
-
-lyr.tweakTables = {
-	noToolMuzzleFlashes,
-	noShipMuzzleFlashes,
-	noToolRecoil,
-	holsterLater,
-	noAutoClimb,
-	noHazardOverlays,
-	lessMaintenance,
-	noPortalCharging,
-	shorterToastMessages,
-	fasterInteractions,
-	lessScreenFlashes,
-	blackScreenFlashes,
-	noHitEffectsOnZeroDamage,
-	rapidToolScanner,
-	darkerScannerPulse,
-	noSentinelTerrainDamage,
-	learnMoreWords,
-	noTextDelay,
-	removeDoubleSlashes,
-	replaceDoubleSlashes,
-	noTerrainFlatten,
-	cyclingQuickMenu,
-	hideQuickMenuControls,
-}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_otherTweaks.pak",

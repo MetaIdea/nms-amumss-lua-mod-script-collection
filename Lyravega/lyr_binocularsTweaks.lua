@@ -55,7 +55,7 @@ local noBinocsFlash = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noBinocsFlash = noBinocsFlash
 
 local normalBinocsFilters = function()
 	if not lyr:checkTweak("normalBinocsFilters") then return false end
@@ -76,7 +76,7 @@ local normalBinocsFilters = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.normalBinocsFilters = normalBinocsFilters
 
 local equalizedBinocsFoV = function()
 	if not lyr:checkTweak("equalizedBinocsFoV") then return false end
@@ -94,7 +94,7 @@ local equalizedBinocsFoV = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.equalizedBinocsFoV = equalizedBinocsFoV
 
 local betterScanlines = function()
 	if not lyr:checkTweak("betterScanlines") then return false end
@@ -132,7 +132,7 @@ local betterScanlines = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.betterScanlines = betterScanlines
 
 local fasterAnalysis = function()
 	if not lyr:checkTweak("fasterAnalysis") then return false end
@@ -151,22 +151,10 @@ local fasterAnalysis = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.fasterAnalysis = fasterAnalysis
 
 --#endregion
 -- END OF TWEAKS
-
-lyr:checkTweakOverrides()
-
-lyr.tweakFiles = {}
-
-lyr.tweakTables = {
-	noBinocsFlash,
-	normalBinocsFilters,
-	equalizedBinocsFoV,
-	betterScanlines,
-	fasterAnalysis,
-}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_binocularsTweaks.pak",
