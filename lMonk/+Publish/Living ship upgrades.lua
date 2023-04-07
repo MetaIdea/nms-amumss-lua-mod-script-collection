@@ -1,5 +1,5 @@
 -----------------------------------------------------------------------------
-local desc = [[
+mod_desc = [[
   Enable scanner tech and materials teleport for bioship
   Increase bioship pulse upgrades stats for higher speed and maneuverability
 ]]---------------------------------------------------------------------------
@@ -7,8 +7,8 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.living ship upgrades.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.04',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.21',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -28,19 +28,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'SHIPSCAN_COMBAT', 'TechnologyCategory', 'Ship'},
+				SPECIAL_KEY_WORDS	= {'ID', 'SHIPSCAN_COMBAT', 'TechnologyCategory', 'AllShipsExceptAlien'},
 				VALUE_CHANGE_TABLE 	= {
 					{'TechnologyCategory', 'AllShips'}
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'SHIPSCAN_ECON', 'TechnologyCategory', 'Ship'},
+				SPECIAL_KEY_WORDS	= {'ID', 'SHIPSCAN_ECON', 'TechnologyCategory', 'AllShipsExceptAlien'},
 				VALUE_CHANGE_TABLE 	= {
 					{'TechnologyCategory', 'AllShips'}
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'CARGOSHIELD', 'TechnologyCategory', 'Ship'},
+				SPECIAL_KEY_WORDS	= {'ID', 'CARGOSHIELD', 'TechnologyCategory', 'AllShipsExceptAlien'},
 				VALUE_CHANGE_TABLE 	= {
 					{'TechnologyCategory', 'AllShips'}
 				}

@@ -2,6 +2,7 @@ QUICK_ACTION_LIST =
 {
 	"MTSHOP",
 	"R_SHOW_HIVEONLY",
+	"R_SCANSENTCRASH",
 	"R_BIOSHIPL",
 	"CRASHEDSHIP",
 	"SEC_SCN_OUTPOST",
@@ -24,6 +25,13 @@ QUICK_ACTION_MENU =
 		["TITLE"] = "Locate Trading Post",
 		["ICON"]  = "TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\BUILDINGS.OUTPOST.DDS",
 		["ANIM"]  = "SEC_SCN_OUTPOST",
+		["TYPE"]  = "REWARD",
+	},
+	["R_SCANSENTCRASH"] = 
+	{
+		["TITLE"] = "Locate Sentinel Ship",
+		["ICON"]  = "TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.SENTINELCRASH.DDS",
+		["ANIM"]  = "R_SCANSENTCRASH",
 		["TYPE"]  = "REWARD",
 	},
 	["R_BIOSHIPL"] = 
@@ -306,6 +314,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "R_SCANSENTCRASH"}, 
+							["VALUE_CHANGE_TABLE"]	=
+								{
+									{"DoAerialScan", "False"}
+								}
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
 							["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= REWARDTABLE
@@ -340,6 +355,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	=
 								{
 									{"Cost", ""}
+								}
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\MISSIONS\STARTEDONUSEMISSIONTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]	= {"MissionID", "SENTSHIP_GALMAP", "Name", "SE_SENT_GALMAP"},
+							["VALUE_CHANGE_TABLE"]	=
+								{
+									{"SurveyDistance", "0"}
 								}
 						}
 					}
