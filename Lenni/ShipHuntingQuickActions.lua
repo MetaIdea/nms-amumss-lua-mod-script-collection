@@ -3,6 +3,7 @@ QUICK_ACTION_LIST =
 	"MTSHOP",
 	"R_SHOW_HIVEONLY",
 	"R_SCANSENTCRASH",
+	"R_CHART_ROBOT",
 	"R_BIOSHIPL",
 	"CRASHEDSHIP",
 	"SEC_SCN_OUTPOST",
@@ -32,6 +33,13 @@ QUICK_ACTION_MENU =
 		["TITLE"] = "Locate Sentinel Ship",
 		["ICON"]  = "TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.SENTINELCRASH.DDS",
 		["ANIM"]  = "R_SCANSENTCRASH",
+		["TYPE"]  = "REWARD",
+	},
+	["R_CHART_ROBOT"] = 
+	{
+		["TITLE"] = "Locate Sentinel Multi-Tool",
+		["ICON"]  = "TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.ROBOTHEAD.DDS",
+		["ANIM"]  = "R_CHART_ROBOT",
 		["TYPE"]  = "REWARD",
 	},
 	["R_BIOSHIPL"] = 
@@ -307,14 +315,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_SHOW_HIVEONLY"}, 
-							["VALUE_CHANGE_TABLE"]	=
-								{
-									{"DoAerialScan", "False"}
-								}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_SCANSENTCRASH"}, 
+							["FOREACH_SKW_GROUP"] = {
+								{"Id", "R_SHOW_HIVEONLY"},
+								{"Id", "R_SCANSENTCRASH"},
+								{"Id", "R_CHART_ROBOT"},
+							},
 							["VALUE_CHANGE_TABLE"]	=
 								{
 									{"DoAerialScan", "False"}
