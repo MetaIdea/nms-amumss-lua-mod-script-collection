@@ -105,7 +105,7 @@ AddBasicCollisions = --scale y&z flipped compared to blender (v2.6: 0.24 from 0.
 ]]
 
 --DONE
-AddSailPlantCollisions =
+AddStargateMainCollisions =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="CHILD1" />
@@ -113,14 +113,14 @@ AddSailPlantCollisions =
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
-        <Property name="TransY" value="9.01606" />
+        <Property name="TransY" value="33.7089" />
         <Property name="TransZ" value="0" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
         <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1.08925" />
-        <Property name="ScaleY" value="1.08925" />
-        <Property name="ScaleZ" value="1.08925" />
+        <Property name="ScaleX" value="14.7729" />
+        <Property name="ScaleY" value="94.0191" />
+        <Property name="ScaleZ" value="43.707" />
       </Property>
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
@@ -174,7 +174,7 @@ AddSailPlantCollisions =
 ]]
 
 --DONE
-AddStargateMainCollisions =
+AddSailPlantCollisions =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="CHILD1" />
@@ -182,14 +182,14 @@ AddStargateMainCollisions =
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
-        <Property name="TransY" value="33.7089" />
+        <Property name="TransY" value="9.01606" />
         <Property name="TransZ" value="0" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
         <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="14.7729" />
-        <Property name="ScaleY" value="94.0191" />
-        <Property name="ScaleZ" value="43.707" />
+        <Property name="ScaleX" value="1.08925" />
+        <Property name="ScaleY" value="1.08925" />
+        <Property name="ScaleZ" value="1.08925" />
       </Property>
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
@@ -1432,6 +1432,7 @@ AddSmallTree3Collisions =
       </Property>
     </Property>
 ]]
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------- v The below section is from Shaidak's Generation (*** = Ghostly comment) v -------------------------------------
@@ -3022,7 +3023,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v5.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_High_v5.41.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna - with [unused] Shaidak's Gen code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -3058,7 +3059,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- }	
 						-- },
 						-- {		--replaces the added line above --ADDafterSECTION --REPLACEatLINE --ADDafterLINE
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							-- ["ADD_OPTION"] 	= "ADDafterLINE",
 							
 
@@ -3263,10 +3264,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- ["ADD"] = BiomeExtension("CUSTOMMODELS\TREESPINE\PINETREE_GREENISH.SCENE.MBIN", 60, 1, 18, 10, 0.18, 0.095)..
 							-- BiomeExtension("CUSTOMMODELS\TREESPINE\PINETREE_RED.SCENE.MBIN", 60, 1, 12, 10, 0.18, 0.17),
 							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							--v4.0:
+							
+							-- ["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\SMALLLANTERN.SCENE.MBIN", 40, 3, 5, 0, 0.18, 0.01)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYTWIST.SCENE.MBIN", 10, 4, 6, 5, 0.18, 0.03)..
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE1.SCENE.MBIN", 60, 2, 5, 10, 0.18, 0.075),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN", 30, 8, 24, 10, 0.18, 0.06)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN", 30, 20, 30, 10, 0.18, 0.07)..
+							-- AddWeirdGrass("BUBBLELUSHGRASS"),
+
+
+							-- ["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ABANDONED\LIGHT_1.SCENE.MBIN", 40, 4, 5, 5, 0.18, 0.01)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ABANDONED\LIGHT_3.SCENE.MBIN", 40, 30, 40, 5, 0.18, 0.05)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYSHELLSAND.SCENE.MBIN", 10, 6, 10, 5, 0.18, 0.04)..
+							-- AddWeirdGrass("BUBBLELUSHGRASS"),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE1.SCENE.MBIN", 60, 20, 25, 10, 0.18, 0.03)..
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY.SCENE.MBIN", 30, 20, 25, 10, 0.18, 0.01)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\SMALLLANTERN.SCENE.MBIN", 40, 4, 6, 0, 0.18, 0.02),
+							
+
+
+							-- ["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\HYDROPONICS\HYDROPONICCENTER.SCENE.MBIN", 5, 23, 28, 0, 0.18, 0.005)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\EXPLODEPLANT.SCENE.MBIN", 60, 3, 5, 10, 0.18, 0.06).. --********************
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\MEDIUIMGLOWPLANT.SCENE.MBIN", 60, 6, 9, 10, 0.18, 0.02),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\COOKING\ALOEFLESH.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.08)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREBERRY.SCENE.MBIN", 30, 15, 30, 10, 0.18, 0.02),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\COOKING\HEPTAWHEAT.SCENE.MBIN", 30, 25, 40, 10, 0.18, 0.02)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.08),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\COOKING\IMPULSEBEANS.SCENE.MBIN", 30, 15, 30, 10, 0.18, 0.02)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\COOKING\SWEETROOT.SCENE.MBIN", 60, 8, 12, 10, 0.18, 0.08),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BERRYPLANT.SCENE.MBIN", 30, 25, 40, 10, 0.18, 0.02)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\COMMODITYPLANT2.SCENE.MBIN", 60, 3, 6, 10, 0.18, 0.08)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\EXPLODEPLANT.SCENE.MBIN", 60, 2, 3, 10, 0.18, 0.06),
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\COMMODITYPLANT1.SCENE.MBIN", 30, 25, 30, 10, 0.18, 0.02)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FUELPLANT.SCENE.MBIN", 60, 8, 12, 10, 0.18, 0.08)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\EXPLODEPLANT.SCENE.MBIN", 60, 2, 3, 10, 0.18, 0.03), 
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\HEALTHPLANT2.SCENE.MBIN", 30, 30, 40, 10, 0.18, 0.015)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\TENTACLEPLANT.SCENE.MBIN", 60, 3, 4, 10, 0.18, 0.04)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\EXPLODEPLANT.SCENE.MBIN", 60, 1, 1.2, 10, 0.18, 0.06),
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN", 30, 40, 50, 10, 0.18, 0.01).. --HUGE HD lush tree
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\BARREN\PLANTS\THINBUSHTREE.SCENE.MBIN", 60, 3, 5, 10, 0.18, 0.07),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN", 30, 8, 20, 10, 0.18, 0.02).. --Giant HD lush tree
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOSSCOVEREDWEIRDPROP.SCENE.MBIN", 60, 2, 3, 5, 0.18, 0.03),
+
+
+							-- ["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\MEDIUMOAK1.SCENE.MBIN", 60, 7, 9, 10, 0.18, 0.05)..
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEICEROCK_1.SCENE.MBIN", 60, 15, 20, 20, 0.18, 0.025),
+
+
+							-- ["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYTWIST.SCENE.MBIN", 10, 5, 7, 5, 0.18, 0.03)..
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYSHELLSAND.SCENE.MBIN", 10, 2, 3, 5, 0.18, 0.05),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\GLOWING\LARGEPLANT\MEDGLOWINGTREE1.SCENE.MBIN", 60, 3, 4, 10, 0.18, 0.04)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\GLOWING\LARGEPLANT\SMALLGLOWINGTREE1.SCENE.MBIN", 60, 2, 3, 10, 0.18, 0.09)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYTWIST.SCENE.MBIN", 10, 7, 9, 5, 0.18, 0.02),
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\GLOWING\LARGEPLANT\MEDGLOWINGTREE1.SCENE.MBIN", 60, 40, 50, 10, 0.18, 0.0075)..
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\GLOWING\MEDIUMPLANT\MEDGLOWINGBUSH1.SCENE.MBIN", 60, 2, 3, 10, 0.18, 0.03)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BERRYPLANT.SCENE.MBIN", 30, 20, 25, 10, 0.18, 0.03),
+
+							-- ["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\SAILPLANT.SCENE.MBIN", 40, 20, 30, 0, 0.18, 0.006).. --*************floating
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\ROTATINGDETAIL.SCENE.MBIN", 60, 15, 20, 5, 0.18, 0.1)..   --**************tiny
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\CAVEGROUNDLEAVES.SCENE.MBIN", 60, 3, 4, 10, 0.18, 0.11),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\MEDIUIMGLOWPLANT.SCENE.MBIN", 60, 6, 12, 10, 0.18, 0.025)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\SAILPLANT.SCENE.MBIN", 40, 10, 15, 0, 0.18, 0.015).. --*************floating
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\LAVA\MEDIUMPROPS\LAVACRYSTALS.SCENE.MBIN", 30, 10, 20, 10, 0.18, 0.05),
+
+
+							-- ["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\LAVA\MEDIUMPROPS\MEDSHARDINACTIVE01.SCENE.MBIN", 60, 6, 7, 10, 0.18, 0.02)..
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\CACTUSLRG.SCENE.MBIN", 60, 25, 30, 10, 0.18, 0.008)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\BARREN\PLANTS\TRUNK.SCENE.MBIN", 60, 2, 4, 10, 0.18, 0.08),
+
+
+							-- ["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PLAQUE\PLAQUEWARRIOR.SCENE.MBIN", 10, 2, 8, 0, 0.18, 0.05)..
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN", 60, 12, 15, 10, 0.18, 0.03)..
+							-- BiomeExtension("MODELS\PLANETS\BIOMES\BARREN\PLANTS\TRUNK.SCENE.MBIN", 60, 2, 4, 10, 0.18, 0.08),
+
+
+							-- ["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATEMAIN.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.025).. --**************HUGE
+							-- BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATESMALL.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.05)..
+							-- BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN", 60, 20, 25, 10, 0.18, 0.01),
 						-- },
 					-- },
 				-- },
-				
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 -- = = = = = = = = = = = = = = = = = = = = = = = = = = = = 5. ADD COLLISIONS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -3280,7 +3391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS\PLANETS\COMMON\FLAGS\MARTIANFLAG03.SCENE.MBIN",
 						"MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN",
 						--"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONOLITH\MONOLITH.SCENE.MBIN", --ok
-						--"MODELS\PLANETS\SNOW\CONSTRUCTS\CONSTRUCT01.SCENE.MBIN",
+						--"MODELS\PLANETS\SNOW\CONSTRUCTS\CONSTRUCT01.SCENE.MBIN", --ok
 						--"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RELIC\RELIC.SCENE.MBIN", --ok
 						"MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN",
 						--"MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\LARGEBUSH1.SCENE.MBIN", --ok
@@ -3577,11 +3688,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				
+				
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --= = = = = = = = = = = = = = = = = = = = = = = = = = = = 6. CUSTOM BIOMES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------			
+--------------------------------------------------------------------------------------------------------------------------------------------------		
 --This modifies the actual files in CUSTOMBIOMES
 				
 				--Custom biome 1
@@ -3619,7 +3731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_ROSE.SCENE.MBIN", 60, 0.5, 2, 10, 0.18, 0.064)..
 							BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_DAISY.SCENE.MBIN", 60, 0.3, 1.5, 10, 0.18, 0.084)..
@@ -3646,7 +3758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_ROSE.SCENE.MBIN", 60, 0.5, 2, 10, 0.18, 0.064)..
 							BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_DAISY.SCENE.MBIN", 60, 0.3, 1.5, 10, 0.18, 0.084)..
@@ -3670,7 +3782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEBIRCH\STYLEBIRCHGREEN.SCENE.MBIN", 60, 1, 11, 10, 0.18, 0.084)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEBIRCH\STYLEBIRCHYELLOW.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.084)..
@@ -3694,7 +3806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEBIRCHDEAD\STYLEDEADBIRCH1.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.084)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEBIRCHDEAD\STYLEDEADBIRCH2.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.084)..
@@ -3717,7 +3829,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEDEAD\STYLEDEADTREE1.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.084)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEDEAD\STYLEDEADTREE2.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.084)..
@@ -3740,15 +3852,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEPINK.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.13)..
-							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEDARKRED.SCENE.MBIN", 60, 1, 13, 10, 0.18, 0.13),
-						},
-						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\NEVADA\LARGEPROP\LARGEPYRAMID.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.02),
+							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEPINK.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.13)..
+							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEDARKRED.SCENE.MBIN", 60, 1, 13, 10, 0.18, 0.13)..
+							BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\NEVADA\LARGEPROP\LARGEPYRAMID.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.02),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -3766,7 +3874,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEGREEN.SCENE.MBIN", 60, 1, 14, 10, 0.18, 0.08)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREECYAN.SCENE.MBIN", 60, 1, 7, 12, 0.18, 0.1)..
@@ -3816,7 +3924,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEPINE\STYLEPINEGREEN.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.13)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEPINE\STYLEPINELIGHT.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.17)..
@@ -3840,7 +3948,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEPINE\STYLEPINEGREEN.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.13)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEPINE\STYLEPINELIGHT.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.1)..
@@ -4080,7 +4188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\ALIENFOLIAGE\ALIENFOLIAGE1_FLATTENT.SCENE.MBIN", 20, 0.5, 5, 10, 0.18, 0.022)..
 							BiomeExtension("CUSTOMMODELS\ALIENFOLIAGE\ALIENFOLIAGE1_TREEGREEN.SCENE.MBIN", 60, 4, 21, 10, 0.18, 0.05)..
@@ -4104,7 +4212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\ALIENSWAMP\ALIENSWAMP1_EGGTREETHING.SCENE.MBIN", 60, 170, 1400, 10, 0.18, 0.04)..
 							BiomeExtension("CUSTOMMODELS\ALIENSWAMP\ALIENSWAMP2_MANGROVE.SCENE.MBIN", 40, 170, 950, 10, 0.18, 0.007)..
@@ -4126,7 +4234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STRANGETREE_FLOATLEAF\STRANGETREE_FLOATLEAF1.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.035)..
 							BiomeExtension("CUSTOMMODELS\STRANGETREE_FLOATLEAF\STRANGETREE_FLOATLEAF2.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.035),
@@ -4155,12 +4263,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI5.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI6.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.001).. --VERY wide
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI8.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
-							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035),
-						},
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPGREEN.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
+							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
+							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPGREEN.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEGREEN.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONEGREEN.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008),
 						},
@@ -4188,12 +4292,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI5.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI6.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.001).. --VERY wide
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI8.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
-							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035),
-						},
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPSNOW.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
+							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
+							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPSNOW.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGESNOW.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONESNOW.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008),
 						},
@@ -4221,7 +4321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\COMMON\FLAGS\MARTIANFLAG02.SCENE.MBIN", 40, 1, 4, 0, 0.18, 0.02)..
 							BiomeExtension("MODELS\PLANETS\COMMON\FLAGS\MARTIANFLAG01.SCENE.MBIN", 40, 1, 3, 0, 0.18, 0.02),
@@ -4289,12 +4389,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\SNOW\CONSTRUCTS\CONSTRUCT01.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.006)..
-							BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RELIC\RELIC.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.05),
-						},
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.1),
+							BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RELIC\RELIC.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.05)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.1),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -4312,7 +4408,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\LARGEBUSH1.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.1)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\DIPLODOCUS\DIPLODOCUS.SCENE.MBIN", 10, 0.8, 6, 0, 0.18, 0.0005)..
@@ -4334,7 +4430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\LARGEPLANT03.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.1)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE03.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.1)..
@@ -4358,12 +4454,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\NEVADA\LARGEPROP\LARGEPYRAMID.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.03),
-						},
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALIEN\LARGEPLANT\BENDYTREE01.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.06),
+							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\NEVADA\LARGEPROP\LARGEPYRAMID.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.03)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\ALIEN\LARGEPLANT\BENDYTREE01.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.06),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -4381,7 +4473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALIEN\LARGEPLANT\LARGETREE02.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.09)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\DIPLODOCUS\DIPLODOCUSALIEN.SCENE.MBIN", 10, 2, 9, 0, 0.18, 0.0005)..
@@ -4403,16 +4495,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGEFIR01.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.05)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGESPRUCE01.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.05)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMDEADTREE01.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.05),
-						},
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\SNOW\WRECKS\GIANTWRECKEDSHIP.SCENE.MBIN", 10, 1, 1.1, 0, 0.18, 0.0005),
+							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMDEADTREE01.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.05)..
+							BiomeExtensionBuildings("MODELS\PLANETS\SNOW\WRECKS\GIANTWRECKEDSHIP.SCENE.MBIN", 10, 1, 1.1, 0, 0.18, 0.0005),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -4430,7 +4518,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGEFIR01.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.06)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGESPRUCE01.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.07)..
@@ -4452,7 +4540,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGEFIR01.SCENE.MBIN", 60, 1, 2.5, 10, 0.18, 0.07)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMSPRUCE01.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.07)..
@@ -4474,7 +4562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMUMBRELLA01.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.07)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\SMALLCEDAR01.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.07)..
@@ -4497,7 +4585,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGEFIR01.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.08)..
 							BiomeExtension("MODELS\SPACE\WRECKS\DEBRIS\PANEL.SCENE.MBIN", 60, 1, 2, 90, 0.18, 0.06)..
@@ -4520,7 +4608,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\CRYSTAL\LARGEPROP\GIANTSPIKE.SCENE.MBIN", 10, 2, 12, 10, 0.18, 0.05)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\CRYSTAL\LARGEPROP\PILLAR1.SCENE.MBIN", 60, 2, 20, 10, 0.18, 0.08)..
@@ -4542,7 +4630,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\MEDIUMCREATURE\ANTELOPE\ANTELOPE.SCENE.MBIN", 10, 0.7, 1.4, 0, 0.18, 0.001)..
 							BiomeExtension("MODELS\COMMON\CHARACTERS\ASTRONAUT\ASTRONAUT01.SCENE.MBIN", 10, 1, 4, 0, 0.18, 0.001)..
@@ -4565,7 +4653,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGEMANGROVE.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.07)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE1.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.075)..
@@ -4588,7 +4676,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGEPLANT1.SCENE.MBIN", 60, 1, 4, 12, 0.18, 0.07)..
 							--BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\RHINO\RHINOSTANDARD.SCENE.MBIN", 10, 1, 12, 0, 0.18, 0.001)..-----CRASH?
@@ -4611,7 +4699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGETREE1.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.06),
 							--BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE1BENT.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.07) -----ONE OF THESE CAUSES CRASH
@@ -4634,7 +4722,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE3.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.07)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\TREEVARIANTS.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.09),
@@ -4657,7 +4745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\STRAIGHTTREELARGE.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.08)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\VINETREELARGE.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.08),
@@ -4678,7 +4766,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GASBAGS.SCENE.MBIN", 30, 1, 10, 10, 0.18, 0.02)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LAMPSHAPE.SCENE.MBIN", 30, 3, 17, 10, 0.18, 0.02),
@@ -4699,7 +4787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPLANTS\UNDERWATERTREE.SCENE.MBIN", 60, 5, 18, 10, 0.18, 0.11)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\CUCUMBERSHAPE.SCENE.MBIN", 10, 2, 12, 10, 0.18, 0.05).. --HUGE PINEAPPLES
@@ -4730,11 +4818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI6.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.001).. --VERY wide
 							-- BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI8.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
 							-- BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							-- ["ADD_OPTION"] 	= "ADDafterLINE",
-							-- ["ADD"] = BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPROCK.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
+							-- BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPROCK.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							-- BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEROCK.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							-- BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONESTONE.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008),
 						-- },
@@ -4805,7 +4889,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGETREE1.SCENE.MBIN", 20, 2, 10, 10, 0.18, 0.04)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE1.SCENE.MBIN", 30, 1, 4, 10, 0.18, 0.05),
@@ -4826,7 +4910,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\STRAIGHTTREELARGE.SCENE.MBIN", 10, 3, 14, 10, 0.18, 0.03)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 20, 2, 4, 10, 0.18, 0.07),
@@ -4891,7 +4975,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionInWater("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 8, 20, 10, 0.18, 0.11),
 						},
@@ -4911,7 +4995,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 1, 6, 10, 0.18, 0.13),
 						},
@@ -4931,7 +5015,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionInWater("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 3, 15, 10, 0.18, 0.09)..
 							BiomeExtensionInWater("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE1BENT.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.08),
@@ -5054,7 +5138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\UNDERWATER\SEAURCHIN.SCENE.MBIN", 30, 15, 25, 10, 0.18, 0.045)..
 							BiomeExtensionInWater("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 8, 20, 10, 0.18, 0.11),
@@ -5067,6 +5151,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				
+				
+				
 				--Added in v4.0:
 				
 				--Custom biome 67
@@ -5078,7 +5164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\SMALLLANTERN.SCENE.MBIN", 40, 3, 5, 0, 0.18, 0.01)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYTWIST.SCENE.MBIN", 10, 4, 6, 5, 0.18, 0.03)..
@@ -5100,7 +5186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN", 30, 8, 24, 10, 0.18, 0.06)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN", 30, 20, 30, 10, 0.18, 0.07),
@@ -5121,7 +5207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ABANDONED\LIGHT_1.SCENE.MBIN", 40, 4, 5, 5, 0.18, 0.01)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ABANDONED\LIGHT_3.SCENE.MBIN", 40, 30, 40, 5, 0.18, 0.05)..
@@ -5143,7 +5229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE1.SCENE.MBIN", 60, 20, 25, 10, 0.18, 0.03)..
 							BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY.SCENE.MBIN", 30, 20, 25, 10, 0.18, 0.01)..
@@ -5165,7 +5251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\HYDROPONICS\HYDROPONICCENTER.SCENE.MBIN", 5, 23, 28, 0, 0.18, 0.005)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\EXPLODEPLANT.SCENE.MBIN", 60, 3, 5, 10, 0.18, 0.06).. --********************
@@ -5187,7 +5273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\COOKING\ALOEFLESH.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.08)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREBERRY.SCENE.MBIN", 30, 15, 30, 10, 0.18, 0.02),
@@ -5208,7 +5294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\COOKING\HEPTAWHEAT.SCENE.MBIN", 30, 25, 40, 10, 0.18, 0.02)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.08),
@@ -5229,7 +5315,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\COOKING\IMPULSEBEANS.SCENE.MBIN", 30, 15, 30, 10, 0.18, 0.02)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\COOKING\SWEETROOT.SCENE.MBIN", 60, 8, 12, 10, 0.18, 0.08),
@@ -5250,7 +5336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BERRYPLANT.SCENE.MBIN", 30, 25, 40, 10, 0.18, 0.02)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\COMMODITYPLANT2.SCENE.MBIN", 60, 3, 6, 10, 0.18, 0.08)..
@@ -5272,7 +5358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\COMMODITYPLANT1.SCENE.MBIN", 30, 25, 30, 10, 0.18, 0.02)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FUELPLANT.SCENE.MBIN", 60, 8, 12, 10, 0.18, 0.08)..
@@ -5294,7 +5380,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\HEALTHPLANT2.SCENE.MBIN", 30, 30, 40, 10, 0.18, 0.015)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\TENTACLEPLANT.SCENE.MBIN", 60, 3, 4, 10, 0.18, 0.04)..
@@ -5316,7 +5402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN", 30, 40, 50, 10, 0.18, 0.01).. --HUGE HD lush tree
 							BiomeExtensionForest("MODELS\PLANETS\BIOMES\BARREN\PLANTS\THINBUSHTREE.SCENE.MBIN", 60, 3, 5, 10, 0.18, 0.07),
@@ -5337,7 +5423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN", 30, 8, 20, 10, 0.18, 0.02).. --Giant HD lush tree
 							BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOSSCOVEREDWEIRDPROP.SCENE.MBIN", 60, 2, 3, 5, 0.18, 0.03),
@@ -5358,7 +5444,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\MEDIUMOAK1.SCENE.MBIN", 60, 7, 9, 10, 0.18, 0.05)..
 							BiomeExtensionForest("MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEICEROCK_1.SCENE.MBIN", 60, 15, 20, 20, 0.18, 0.025),
@@ -5379,7 +5465,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYTWIST.SCENE.MBIN", 10, 5, 7, 5, 0.18, 0.03)..
 							BiomeExtensionForest("MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYSHELLSAND.SCENE.MBIN", 10, 2, 3, 5, 0.18, 0.05),
@@ -5400,7 +5486,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\GLOWING\LARGEPLANT\MEDGLOWINGTREE1.SCENE.MBIN", 60, 3, 4, 10, 0.18, 0.04)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\GLOWING\LARGEPLANT\SMALLGLOWINGTREE1.SCENE.MBIN", 60, 2, 3, 10, 0.18, 0.09)..
@@ -5422,7 +5508,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\GLOWING\LARGEPLANT\MEDGLOWINGTREE1.SCENE.MBIN", 60, 40, 50, 10, 0.18, 0.0075)..
 							BiomeExtensionForest("MODELS\PLANETS\BIOMES\GLOWING\MEDIUMPLANT\MEDGLOWINGBUSH1.SCENE.MBIN", 60, 2, 3, 10, 0.18, 0.03)..
@@ -5444,7 +5530,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\SAILPLANT.SCENE.MBIN", 40, 20, 30, 0, 0.18, 0.006).. --*************floating
 							BiomeExtension("MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\ROTATINGDETAIL.SCENE.MBIN", 60, 15, 20, 5, 0.18, 0.1)..   --**************tiny
@@ -5466,7 +5552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\MEDIUIMGLOWPLANT.SCENE.MBIN", 60, 6, 12, 10, 0.18, 0.025)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\SAILPLANT.SCENE.MBIN", 40, 10, 15, 0, 0.18, 0.015).. --*************floating
@@ -5488,7 +5574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionForest("MODELS\PLANETS\BIOMES\LAVA\MEDIUMPROPS\MEDSHARDINACTIVE01.SCENE.MBIN", 60, 6, 7, 10, 0.18, 0.02)..
 							BiomeExtensionForest("MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\CACTUSLRG.SCENE.MBIN", 60, 25, 30, 10, 0.18, 0.008)..
@@ -5510,7 +5596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PLAQUE\PLAQUEWARRIOR.SCENE.MBIN", 10, 2, 8, 0, 0.18, 0.05)..
 							BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN", 60, 12, 15, 10, 0.18, 0.03)..
@@ -5532,7 +5618,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATEMAIN.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.025).. --**************HUGE
 							BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATESMALL.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.05)..
@@ -5554,7 +5640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\WEIRD\BONESPIRE\BONESEED.SCENE.MBIN", 30, 2, 4, 10, 0.18, 0.032).. --GLOWING TENDRILS
 							BiomeExtension("MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BURSTC.SCENE.MBIN", 50, 2, 4, 10, 0.18, 0.032)..
@@ -5590,7 +5676,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_ROSE.SCENE.MBIN", 60, 0.5, 2, 10, 0.18, 0.064)..
 							BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_DAISY.SCENE.MBIN", 60, 0.3, 1.5, 10, 0.18, 0.084)..
@@ -5609,7 +5695,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_ROSE.SCENE.MBIN", 60, 10, 30, 10, 0.18, 0.015)..
 							BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_DAISY.SCENE.MBIN", 60, 0.5, 1.5, 10, 0.18, 0.064)..
@@ -5716,7 +5802,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\NEWSHROOMS\MUSHROOM1_TALL.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.06),
 						},
@@ -5737,7 +5823,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\NEWSHROOMS\MUSHROOM2_TALL.SCENE.MBIN", 60, 6, 12, 10, 0.18, 0.02)..
 							BiomeExtension("CUSTOMMODELS\NEWSHROOMS\MUSHROOM1_TALL.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.06),
@@ -5871,7 +5957,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\REFLECTSHROOM\REFLECTSHROOM.SCENE.MBIN", 60, 0.5, 0.75, 10, 0.18, 0.09)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 1, 6, 10, 0.18, 0.13),
@@ -5893,7 +5979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\ROCKDOOR\ROCKDOOR.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.02)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPROCK.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
@@ -5929,8 +6015,56 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					},
 				},
+				
+							--BIOMES 106
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"CUSTOMBIOMES\GHOSTLYNEW106.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTAL.SCENE.MBIN", 30, 20, 40, 20, 0.18, 0.04)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALDRONESMALL.SCENE.MBIN", 30, 3, 7, 20, 0.18, 0.08),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddWeirdGrass("BUBBLELUSHGRASS"),
+						},
+					},
+				},
+							
+							
+							
+							
+							--BIOMES 107
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"CUSTOMBIOMES\GHOSTLYNEW107.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALDRONE.SCENE.MBIN", 30, 8, 24, 20, 0.18, 0.06)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALSMALL.SCENE.MBIN", 30, 20, 40, 20, 0.18, 0.07),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddGrass(),
+						},
+					},
+				},
 
-						
+				
+				
 			}
 		},
     }

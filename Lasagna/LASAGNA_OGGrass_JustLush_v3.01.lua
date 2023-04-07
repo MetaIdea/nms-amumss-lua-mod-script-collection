@@ -147,7 +147,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_OGGrass_JustLush_v3.0.pak",
+["MOD_FILENAME"] 			= "LASAGNA_OGGrass_JustLush_v3.01.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

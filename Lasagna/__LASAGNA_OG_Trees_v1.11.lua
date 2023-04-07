@@ -422,7 +422,7 @@ AddBasicCollisions =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "__LASAGNA_OG_Trees_v1.1.pak",
+["MOD_FILENAME"] 			= "__LASAGNA_OG_Trees_v1.11.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
