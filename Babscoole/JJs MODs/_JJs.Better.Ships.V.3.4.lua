@@ -72,16 +72,28 @@ TEXT_TO_ADD =
             <Property name="FrigateClass" value="Combat" />
           </Property>
         </Property>
+        <Property value="GcAISpaceshipModelData.xml">
+          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELSHIP_PROC.SCENE.MBIN" />
+          <Property name="Class" value="GcSpaceshipClasses.xml">
+            <Property name="ShipClass" value="Fighter" />
+          </Property>
+          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
+            <Property name="AIShipRole" value="Standard" />
+          </Property>
+          <Property name="FrigateClass" value="GcFrigateClass.xml">
+            <Property name="FrigateClass" value="Combat" />
+          </Property>
+        </Property>
 ]]
 
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_JJs.Better.Ships.V.3.3.pak",
+["MOD_FILENAME"]    = "_JJs.Better.Ships.V.3.4.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "JJHookah",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.10",
+["NMS_VERSION"]     = "4.20",
 ["MODIFICATIONS"]   =
     {
         {
@@ -199,7 +211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcAIShipSpawnData.xml","Role"},
-                            ["SECTION_ACTIVE"] = {22,},
+                            ["SECTION_ACTIVE"] = {17,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AIShipRole",    "CapitalFreighter"}, -- Original "Freighter"
@@ -318,8 +330,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",},
+                            ["SECTION_ACTIVE"] = {2,},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = TEXT_TO_ADD
                         },
