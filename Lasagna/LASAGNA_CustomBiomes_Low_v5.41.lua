@@ -3022,7 +3022,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Low_v5.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Low_v5.41.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna - with [unused] Shaidak's Gen code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -5930,6 +5930,53 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = AddGrassShort(),
+						},
+					},
+				},
+				
+							--BIOMES 106
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"CUSTOMBIOMES\GHOSTLYNEW106.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTAL.SCENE.MBIN", 30, 20, 40, 20, 0.18, 0.03)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALDRONESMALL.SCENE.MBIN", 30, 3, 7, 20, 0.18, 0.07),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddWeirdGrass("BUBBLELUSHGRASS"),
+						},
+					},
+				},
+							
+							
+							
+							
+							--BIOMES 107
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"CUSTOMBIOMES\GHOSTLYNEW107.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALDRONE.SCENE.MBIN", 30, 8, 24, 20, 0.18, 0.05)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALSMALL.SCENE.MBIN", 30, 20, 40, 20, 0.18, 0.06),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddGrass(),
 						},
 					},
 				},

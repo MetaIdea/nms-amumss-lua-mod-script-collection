@@ -395,7 +395,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "__LASAGNA_Grass_Colors_v1.0k.pak",
+["MOD_FILENAME"] 			= "__LASAGNA_Grass_Colors_v1.01.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

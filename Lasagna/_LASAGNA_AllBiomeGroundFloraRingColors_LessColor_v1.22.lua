@@ -10299,7 +10299,7 @@ NewSandColorsv2 = [[
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_AllBiomeGroundFloraRingColors_LessColor_v1.21.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_AllBiomeGroundFloraRingColors_LessColor_v1.22.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             

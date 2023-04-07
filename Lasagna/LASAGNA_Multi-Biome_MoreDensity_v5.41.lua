@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_LessDensity_v5.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_MoreDensity_v5.41.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with trevix code (LUA implementation by Babscoole)",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -600,6 +600,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						
 						{
+							["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN",}, --"TileType","GcTerrainTileType.xml"
+							["LINE_OFFSET"] = "+1",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{ "TileType",	"Base", }, --from "Mountain"
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE",},
 							["LINE_OFFSET"] = "-4",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -1177,6 +1185,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
         </Property>
       </Property>
     </Property>
@@ -1765,6 +1779,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
         </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcExternalObjectListOptions.xml">
@@ -2349,6 +2369,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
         </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
+        </Property>
 ]]
 						}
 					}
@@ -2776,6 +2802,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
         </Property>
 ]]				
 						},
@@ -3213,6 +3245,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
         </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
+        </Property>
 ]]				
 						},
 					}
@@ -3643,6 +3681,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
         </Property>
 ]]				
 						},
@@ -4082,6 +4126,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
         </Property>
 ]]				
 						},
@@ -4565,6 +4615,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
         </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
+        </Property>
 ]]				
 						},
 						{
@@ -4739,6 +4795,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
         </Property>
 ]]				
 						},
@@ -5264,6 +5326,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
         </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
+        </Property>
 ]]				
 						},
 						{
@@ -5618,6 +5686,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
         </Property>
 ]]				
 						},
@@ -5990,6 +6064,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
         </Property>
 ]]				
 						}
