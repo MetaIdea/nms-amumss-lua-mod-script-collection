@@ -60,7 +60,7 @@ local smallerIcons = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.smallerIcons = smallerIcons
 
 local noFocusedIconResize = function()
 	if not lyr:checkTweak("noFocusedIconResize") then return false end
@@ -76,7 +76,7 @@ local noFocusedIconResize = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noFocusedIconResize = noFocusedIconResize
 
 local shorterIconFadeDistance = function()
 	if not lyr:checkTweak("shorterIconFadeDistance") then return false end
@@ -98,7 +98,7 @@ local shorterIconFadeDistance = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.shorterIconFadeDistance = shorterIconFadeDistance
 
 local moreClumpyIcons = function()
 	if not lyr:checkTweak("moreClumpyIcons") then return false end
@@ -121,7 +121,7 @@ local moreClumpyIcons = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.moreClumpyIcons = moreClumpyIcons
 
 local retainBuildingIconSizes = function()
 	if not lyr:checkTweak("retainBuildingIconSizes") then return false end
@@ -138,7 +138,7 @@ local retainBuildingIconSizes = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.retainBuildingIconSizes = retainBuildingIconSizes
 
 local buldingDetectionRange = function()
 	if not lyr:checkTweak("buldingDetectionRange") then return false end
@@ -168,7 +168,7 @@ local buldingDetectionRange = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.buldingDetectionRange = buldingDetectionRange
 
 local colourizedHexagonIcons = function()
 	if not lyr:checkTweak("colourizedHexagonIcons") or lyr:checkTweak("biggerColourizedHexagonIcons") then return false end
@@ -179,7 +179,7 @@ local colourizedHexagonIcons = function()
 	}
 
 	return files
-end
+end; lyr.tweakFiles.colourizedHexagonIcons = colourizedHexagonIcons
 
 local biggerColourizedHexagonIcons = function()
 	if not lyr:checkTweak("biggerColourizedHexagonIcons") then return false end
@@ -190,7 +190,7 @@ local biggerColourizedHexagonIcons = function()
 	}
 
 	return files
-end
+end; lyr.tweakFiles.biggerColourizedHexagonIcons = biggerColourizedHexagonIcons
 
 local miscIconAdjustments = function()
 	if not lyr:checkTweak("miscIconAdjustments") then return false end
@@ -202,27 +202,10 @@ local miscIconAdjustments = function()
 	}
 
 	return files
-end
+end; lyr.tweakFiles.miscIconAdjustments = miscIconAdjustments
 
 --#endregion
 -- END OF TWEAKS
-
-lyr:checkTweakOverrides()
-
-lyr.tweakFiles = {
-	colourizedHexagonIcons,
-	biggerColourizedHexagonIcons,
-	miscIconAdjustments,
-}
-
-lyr.tweakTables = {
-	smallerIcons,
-	noFocusedIconResize,
-	shorterIconFadeDistance,
-	moreClumpyIcons,
-	retainBuildingIconSizes,
-	buldingDetectionRange,
-}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_iconTweaks.pak",

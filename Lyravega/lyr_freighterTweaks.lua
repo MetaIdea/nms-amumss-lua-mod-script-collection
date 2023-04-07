@@ -43,6 +43,7 @@ local tweakStates = {
 --	noHangarPadRotation = true,				-- hangar pad rotation is disabled; may eject as soon as pad is touched
 --	noExteriorPlatformLight = true,			-- removes the light spot in the middle of the exterior platforms (might look better if you are using a lot of these)
 	extendedFreighterBase = true,			-- extends the buildable volume on the freighters (WARNING: game WILL crash if you try to sneak buildables into the hangar)
+	extendedFreighterConstruction = true,	-- most things that can be built on a planetary base can also be built on freighters
 }
 
 --#region METHODS
@@ -72,7 +73,7 @@ local plantGrowthRateMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.plantGrowthRateMult = plantGrowthRateMult
 
 local unifiedPlantGrowthTime = function()
 	if not lyr:checkTweak("unifiedPlantGrowthTime") then return false end
@@ -111,7 +112,7 @@ local unifiedPlantGrowthTime = function()
 				specialKeyWords = {lyr:parsePair([[<Property name="LinkNetworkType" value="PlantGrowth" />]])},
 				selectLevel = 2,
 				fields = {
-					Storage = lyr.tweakStates.unifiedPlantGrowthTime*3600
+					Storage = math.floor(lyr.tweakStates.unifiedPlantGrowthTime*3600)
 				},
 				replaceAll = true
 			}
@@ -119,7 +120,7 @@ local unifiedPlantGrowthTime = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.unifiedPlantGrowthTime = unifiedPlantGrowthTime
 
 local freighterBridgeScanner = function()
 	if not lyr:checkTweak("freighterBridgeScanner") then return false end
@@ -163,7 +164,7 @@ local freighterBridgeScanner = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.freighterBridgeScanner = freighterBridgeScanner
 
 local hangarSalvageTerminal = function()
 	if not lyr:checkTweak("hangarSalvageTerminal") then return false end
@@ -217,7 +218,7 @@ local hangarSalvageTerminal = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.hangarSalvageTerminal = hangarSalvageTerminal
 
 local systemWideTelepads = function()
 	if not lyr:checkTweak("systemWideTelepads") then return false end
@@ -598,7 +599,7 @@ local systemWideTelepads = function()
 	}
 
 	return lyr:mergeTweaks(table.unpack(bigTweak))
-end
+end; lyr.tweakTables.systemWideTelepads = systemWideTelepads
 
 local useSolidRunwayTexture = function()
 	if not lyr:checkTweak("useSolidRunwayTexture") then return false end
@@ -617,7 +618,7 @@ local useSolidRunwayTexture = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.useSolidRunwayTexture = useSolidRunwayTexture
 
 local megaRunway = function()
 	if not lyr:checkTweak("megaRunway") then return false end
@@ -649,7 +650,7 @@ local megaRunway = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.megaRunway = megaRunway
 
 local noMiniRunways = function()
 	if not lyr:checkTweak("noMiniRunways") then return false end
@@ -674,7 +675,7 @@ local noMiniRunways = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noMiniRunways = noMiniRunways
 
 local miniRunwaysLengthMult = function()
 	if not lyr:checkTweak("miniRunwaysLengthMult") or lyr:checkTweak("noMiniRunways") then return false end
@@ -703,7 +704,7 @@ local miniRunwaysLengthMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.miniRunwaysLengthMult = miniRunwaysLengthMult
 
 local harvestDrone = function()
 	if not lyr:checkTweak("harvestDrone") then return false end
@@ -754,7 +755,7 @@ local harvestDrone = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.harvestDrone = harvestDrone
 
 local ownedShipsInHangar = function()
 	if not lyr:checkTweak("ownedShipsInHangar") then return false end
@@ -770,7 +771,7 @@ local ownedShipsInHangar = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.ownedShipsInHangar = ownedShipsInHangar
 
 local hangarDockingSpeedMult = function()
 	if not lyr:checkTweak("hangarDockingSpeedMult") then return false end
@@ -790,7 +791,7 @@ local hangarDockingSpeedMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.hangarDockingSpeedMult = hangarDockingSpeedMult
 
 local hangarDockingOptimizations = function()
 	if not lyr:checkTweak("hangarDockingOptimizations") then return false end
@@ -831,7 +832,7 @@ local hangarDockingOptimizations = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.hangarDockingOptimizations = hangarDockingOptimizations
 
 local noHangarPadRotation = function()
 	if not lyr:checkTweak("noHangarPadRotation") then return false end
@@ -849,7 +850,7 @@ local noHangarPadRotation = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noHangarPadRotation = noHangarPadRotation
 
 local noExteriorPlatformLight = function()
 	if not lyr:checkTweak("noExteriorPlatformLight") then return false end
@@ -864,7 +865,7 @@ local noExteriorPlatformLight = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.noExteriorPlatformLight = noExteriorPlatformLight
 
 local extendedFreighterBase = function()
 	if not lyr:checkTweak("extendedFreighterBase") then return false end
@@ -884,7 +885,30 @@ local extendedFreighterBase = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.extendedFreighterBase = extendedFreighterBase
+
+local extendedFreighterConstruction = function()
+	if not lyr:checkTweak("extendedFreighterConstruction") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = [[METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN]],
+			{
+				pkw = "GcBaseBuildingEntry.xml",
+				findSectionsWhereAllMatch = {
+					{lyr:parsePair([[<Property name="BuildableOnFreighter" value="False" />]])},
+					{lyr:parsePair([[<Property name="BuildableOnPlanetBase" value="True" />]])},
+				},
+				fields = {
+					BuildableOnFreighter = true
+				},
+				replaceAll = true
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.extendedFreighterConstruction = extendedFreighterConstruction
 
 local noHarvestAllSound = function()
 	-- if not lyr:checkTweak("noHarvestAllSound") then return false end
@@ -896,35 +920,10 @@ local noHarvestAllSound = function()
 	}
 
 	return files
-end
+end; lyr.tweakFiles.noHarvestAllSound = noHarvestAllSound
 
 --#endregion
 -- END OF TWEAKS
-
-lyr:checkTweakOverrides()
-
-lyr.tweakFiles = {
-	noHarvestAllSound,
-}
-
-lyr.tweakTables = {
-	plantGrowthRateMult,
-	unifiedPlantGrowthTime,
-	freighterBridgeScanner,
-	hangarSalvageTerminal,
-	systemWideTelepads,
-	useSolidRunwayTexture,
-	megaRunway,
-	noMiniRunways,
-	miniRunwaysLengthMult,
-	harvestDrone,
-	ownedShipsInHangar,
-	hangarDockingSpeedMult,
-	hangarDockingOptimizations,
-	noHangarPadRotation,
-	noExteriorPlatformLight,
-	extendedFreighterBase,
-}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_freighterTweaks.pak",

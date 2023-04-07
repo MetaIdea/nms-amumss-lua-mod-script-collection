@@ -32,7 +32,6 @@ local tweakStates = {
 	reworkedMechCamera = true,				-- all mech cameras are unified; wide angle with mech on the side, camera no longer jumps when fire location changes
 	generalMechTweaks = true,				-- some janky mech animations are fixed, foot and arm pitch angle limits are increased, fire location changes more often
 	enhancedAIMechCombat = true,			-- the AI mech uses both of its weapons more; changes the angle, range, cooldown and interval parameters of weapons
-	alternateAIMechCannon = true,			-- if enabled alongside 'enhancedAIMechCombat' option, allows the AI mech to fire stun cannon projectiles instead
 	longerAIMechLeash = true,				-- resummon distance for the AI controlled mech is increased
 	heavierTitanfall = true,				-- titanfall (mech summon) takes a bit longer and is more impactful / TITANFALL 3 WHEN
 	shipAndVehicleInventoryRange = 250		-- ship and vehicle inventory access range is set to the given value (item teleporter works beyond this range)
@@ -76,7 +75,7 @@ local improvedVehicleScannerPulse = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.improvedVehicleScannerPulse = improvedVehicleScannerPulse
 
 local sturdyVehicleTechs = function()
 	if not lyr:checkTweak("sturdyVehicleTechs") then return false end
@@ -93,7 +92,7 @@ local sturdyVehicleTechs = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.sturdyVehicleTechs = sturdyVehicleTechs
 
 local mechSpeedMult = function()
 	if not lyr:checkTweak("mechSpeedMult") then return false end
@@ -120,7 +119,7 @@ local mechSpeedMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.mechSpeedMult = mechSpeedMult
 
 local mechAnimSpeedMult = function()
 	if not lyr:checkTweak("mechAnimSpeedMult") then return false end
@@ -167,7 +166,7 @@ local mechAnimSpeedMult = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.mechAnimSpeedMult = mechAnimSpeedMult
 
 local betterMechJetPack = function()
 	if not lyr:checkTweak("betterMechJetPack") then return false end
@@ -189,7 +188,7 @@ local betterMechJetPack = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.betterMechJetPack = betterMechJetPack
 
 local reworkedMechCamera = function()
 	if not lyr:checkTweak("reworkedMechCamera") then return false end
@@ -241,7 +240,7 @@ local reworkedMechCamera = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.reworkedMechCamera = reworkedMechCamera
 
 local generalMechTweaks = function()
 	if not lyr:checkTweak("generalMechTweaks") then return false end
@@ -250,8 +249,7 @@ local generalMechTweaks = function()
 		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
 			{
 				precedingKeyWords = "MechWeaponData",
-				findSubSections = {{lyr.ignore, "GcExoMechWeaponData.xml"}},
-				findAllSubSections = true,
+				findAllSubSections = {{lyr.ignore, "GcExoMechWeaponData.xml"}},
 				fields = {
 					MaintainFireLocationMinTime = {default = 1.5, altered = 1}
 				}
@@ -276,29 +274,24 @@ local generalMechTweaks = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.generalMechTweaks = generalMechTweaks
 
 local enhancedAIMechCombat = function()
 	if not lyr:checkTweak("enhancedAIMechCombat") then return false end
 
 	local tweak = {
 		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
-			lyr.tweakStates.alternateAIMechCannon and {
+			{
 				fields = {
 					AIMechLaserFireDurationMin = {default = 3, altered = 3},
 					AIMechLaserFireDurationMax = {default = 5, altered = 3},
 					AIMechGunFireInterval = {default = 0.5, altered = 0},
 					AIMechGunNumShotsMin = {default = 3, altered = 1},
 					AIMechGunNumShotsMax = {default = 5, altered = 1},
-					AIMechGunProjectile = {default = "VEHICLEGUN", altered = "VEHICLESTUNGUN"}
-				}
-			} or {
-				fields = {
-					AIMechLaserFireDurationMin = {default = 3, altered = 3},
-					AIMechLaserFireDurationMax = {default = 5, altered = 3},
-					AIMechGunFireInterval = {default = 0.5, altered = 0.5},
-					AIMechGunNumShotsMin = {default = 3, altered = 2},
-					AIMechGunNumShotsMax = {default = 5, altered = 2}
+					-- AIMechGunProjectile = {default = "VEHICLEGUN", altered = "VEHICLESTUNGUN"},
+					AIMechStunGunFireInterval = {default = 1065353216, altered = 0},	-- the heck is 1065353216
+					AIMechStunGunNumShotsMin = {default = 1, altered = 1},
+					AIMechStunGunNumShotsMax = {default = 1, altered = 1},
 				}
 			},
 			{
@@ -306,9 +299,9 @@ local enhancedAIMechCombat = function()
 				findSubSections = {{"Laser", "GcExoMechWeaponData.xml"}},
 				fields = {
 					AngleToleranceForArmAiming = {default = 30, altered = 45},
-					AttackAngle = {default = 30, altered = 45},
+					AttackAngle = {default = 30, altered = 30},
 					MinRange = {default = 3, altered = 10},
-					MaxRange = {default = 30, altered = 35},
+					MaxRange = {default = 30, altered = 30},
 					CooldownTimeMin = {default = 2, altered = 1},
 					CooldownTimeMax = {default = 4, altered = 1},
 					SelectionWeight = {default = 1, altered = 1}
@@ -319,19 +312,32 @@ local enhancedAIMechCombat = function()
 				findSubSections = {{"Gun", "GcExoMechWeaponData.xml"}},
 				fields = {
 					AngleToleranceForArmAiming = {default = 60, altered = 60},
-					AttackAngle = {default = 50, altered = 60},
+					AttackAngle = {default = 50, altered = 50},
 					MinRange = {default = 6, altered = 5},
-					MaxRange = {default = 60, altered = 45},
+					MaxRange = {default = 60, altered = 50},
 					CooldownTimeMin = {default = 3, altered = 1},
 					CooldownTimeMax = {default = 5, altered = 1},
-					SelectionWeight = {default = 1.5, altered = 2}
+					SelectionWeight = {default = 1.5, altered = 1.5}
 				}
-			}
+			},
+			{
+				precedingKeyWords = "MechWeaponData",
+				findSubSections = {{"StunGun", "GcExoMechWeaponData.xml"}},
+				fields = {
+					AngleToleranceForArmAiming = {default = 60, altered = 60},
+					AttackAngle = {default = 50, altered = 60},
+					MinRange = {default = 6, altered = 1},
+					MaxRange = {default = 60, altered = 60},
+					CooldownTimeMin = {default = 5, altered = 1},
+					CooldownTimeMax = {default = 8, altered = 1},
+					SelectionWeight = {default = 0.5, altered = 0.5}
+				}
+			},
 		}
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.enhancedAIMechCombat = enhancedAIMechCombat
 
 local longerAIMechLeash = function()
 	if not lyr:checkTweak("longerAIMechLeash") then return false end
@@ -355,7 +361,7 @@ local longerAIMechLeash = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.longerAIMechLeash = longerAIMechLeash
 
 local heavierTitanfall = function()
 	if not lyr:checkTweak("heavierTitanfall") then return false end
@@ -377,7 +383,7 @@ local heavierTitanfall = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.heavierTitanfall = heavierTitanfall
 
 local shipAndVehicleInventoryRange = function()
 	if not lyr:checkTweak("shipAndVehicleInventoryRange") then return false end
@@ -394,28 +400,10 @@ local shipAndVehicleInventoryRange = function()
 	}
 
 	return tweak
-end
+end; lyr.tweakTables.shipAndVehicleInventoryRange = shipAndVehicleInventoryRange
 
 --#endregion
 -- END OF TWEAKS
-
-lyr:checkTweakOverrides()
-
-lyr.tweakFiles = {}
-
-lyr.tweakTables = {
-	improvedVehicleScannerPulse,
-	sturdyVehicleTechs,
-	mechSpeedMult,
-	mechAnimSpeedMult,
-	betterMechJetPack,
-	reworkedMechCamera,
-	generalMechTweaks,
-	enhancedAIMechCombat,
-	longerAIMechLeash,
-	heavierTitanfall,
-	shipAndVehicleInventoryRange,
-}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_vehicleTweaks.pak",
