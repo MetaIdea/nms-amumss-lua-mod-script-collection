@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "__Bonus_5000%_Fractal.pak",
+["MOD_FILENAME"]    = "__Bonus_5000%_INTERCEPTOR.pak",
 ["MOD_AUTHOR"]      = "Tuz1971",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.15",
@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
