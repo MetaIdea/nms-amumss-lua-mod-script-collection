@@ -1,5 +1,5 @@
 -- Choose one of these fe. english would be Languages[1], french Languages[2] ...
-Total_Seeds_Per_Class = 10000
+Total_Seeds_Per_Class = 10
 
 Languages =
 {
@@ -81,6 +81,13 @@ Custom_Language_Desccription_Strings =
         }
     },
     {
+        ["ID"] = "CL_BROBOT",
+        ["LANGUAGES"] =
+        {
+            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Sentinel Ship", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Sentinel Ship"}
+        }
+    },
+    {
         ["ID"] = "CL_STORE",
         ["LANGUAGES"] =
         {
@@ -101,6 +108,7 @@ Ship_Types =
     ["Royal"] = "Royal",
     ["Sail"] = "Sail",
     ["Alien"] = "Alien",
+    ["Robot"] = "Robot",
     -- ["Freighter"] = "Freighter"
 }
 
@@ -340,6 +348,26 @@ function Create_Ship_Base_Stats(ship_type)
             </Property>
         ]]
     end
+    if ship_type == "Robot" then
+        return [[
+            <Property value="GcInventoryBaseStatEntry.xml">
+                <Property name="BaseStatID" value="SHIP_DAMAGE" />
+                <Property name="Value" value="1" />
+            </Property>
+            <Property value="GcInventoryBaseStatEntry.xml">
+                <Property name="BaseStatID" value="SHIP_SHIELD" />
+                <Property name="Value" value="1" />
+            </Property>
+            <Property value="GcInventoryBaseStatEntry.xml">
+                <Property name="BaseStatID" value="SHIP_HYPERDRIVE" />
+                <Property name="Value" value="1" />
+            </Property>
+            <Property value="GcInventoryBaseStatEntry.xml">
+                <Property name="BaseStatID" value="ROBOT_SHIP" />
+                <Property name="Value" value="1" />
+            </Property>
+        ]]
+    end
 
     return [[
         <Property value="GcInventoryBaseStatEntry.xml">
@@ -454,6 +482,15 @@ function Get_Ship_Technologies(ship_type)
             {["TECH"] = "HYPERDRIVE", ["AMOUNT"] = 100, ["MAXAMOUNT"] = 100},
             {["TECH"] = ship_weapons[rand], ["AMOUNT"] = 200, ["MAXAMOUNT"] = 200}
         }
+    elseif ship_type == "Robot" then
+        technology_list = {
+            {["TECH"] = "SHIPJUMP_ROBO", ["AMOUNT"] = 200, ["MAXAMOUNT"] = 200},
+            {["TECH"] = "SHIPSHIELD_ROBO", ["AMOUNT"] = 200, ["MAXAMOUNT"] = 200},
+            {["TECH"] = "LAUNCHER_ROBO", ["AMOUNT"] = 200, ["MAXAMOUNT"] = 200},
+            {["TECH"] = "HYPERDRIVE_ROBO", ["AMOUNT"] = 200, ["MAXAMOUNT"] = 200},
+            {["TECH"] = "LIFESUP_ROBO", ["AMOUNT"] = 100, ["MAXAMOUNT"] = 100},
+            {["TECH"] = "SHIPGUN_ROBO", ["AMOUNT"] = 200, ["MAXAMOUNT"] = 200}
+        }
     else
         technology_list = {
             {["TECH"] = "SHIPJUMP1", ["AMOUNT"] = 200, ["MAXAMOUNT"] = 200},
@@ -525,6 +562,10 @@ function Get_Ship_Data(ship_type, ship_class )
         ship_model = "MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN"
         base_price = 2500000
         custom_language_string = "CL_BALIEN"
+    elseif ship_type == "Robot" then
+        ship_model = "MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELSHIP_PROC.SCENE.MBIN"
+        base_price = 2500000
+        custom_language_string = "CL_BROBOT"
     else
         ship_type = "Shuttle"
         ship_model = "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN"

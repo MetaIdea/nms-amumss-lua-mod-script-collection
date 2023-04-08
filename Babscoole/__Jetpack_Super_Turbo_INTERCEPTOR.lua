@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "__Jetpack_Super_Turbo_fraktal.pak",
+["MOD_FILENAME"]    = "__Jetpack_Super_Turbo_INTERCEPTOR.pak",
 ["MOD_AUTHOR"]      = "Tuz1971",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.15",
@@ -30,10 +30,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"JetpackIgnitionTime",                 "0.1"},
                                 {"JetpackFillRate",                     "10"},
                                 {"JetpackFillRateMidair",               "10"},
-                                {"JetpackUpForceDeadPlanetExtra",       "15"},
+                                {"JetpackUpForceDeadPlanetExtra",       "25"},
                                 {"JetpackForceDeadPlanetExtra",         "50"},
-                                {"JetpackIgnitionForceDeadPlanetExtra", "80"},
-                                {"MaximumHorizontalOffsetVR",           "0.95"},
+                                {"JetpackIgnitionForceDeadPlanetExtra", "75"},
+                                {"MaximumHorizontalOffsetVR",           "1.5"},
                             }
                         },
                         {
