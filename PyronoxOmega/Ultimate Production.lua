@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "Ultimate_Production"
-GameVersion = "4.1"
-ModVersion = "1.3"
+GameVersion = "4.2"
+ModVersion = "1.4"
 Description = "Freighter Production Enhancement"
 Filesource = {
 "MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/FARMALBUMEN/ENTITIES/PLANTINTERACTION.ENTITY.MBIN", 

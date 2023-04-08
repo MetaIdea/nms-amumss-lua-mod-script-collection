@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]     = "EnhancedThirdPersonCamera.pak",
   ["MOD_AUTHOR"]       = "Wazora",
-  ["NMS_VERSION"]      = "3.95",
+  ["NMS_VERSION"]      = "3.91",
   ["MOD_DESCRIPTION"]  = "Enhanced Third Person Camera",
   ["MODIFICATIONS"]    =
   {

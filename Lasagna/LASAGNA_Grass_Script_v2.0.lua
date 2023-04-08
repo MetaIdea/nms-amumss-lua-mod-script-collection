@@ -12,6 +12,355 @@ local function ChangeGrass()
 	local biomeModifier =
 	{
 -------------------------------------------------------------------------------------------------------------------------------------------------
+-- v2.0: REMOVE SMALL DETAIL STUFF THAT GRASS COVERS --------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+--Barren-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHSANDBLEND.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/CACTUSSML.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/FLUFFBUSH.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/SMALLCACTUS.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/THINBUSHTREE.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny
+--MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA02.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/POOFBUSH.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/SMALLBOULDER05.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/MEDIUMBOULDER01.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/HQ/CACTUS/HQFURRYCACTUS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/GRAVELPATCHSHINY.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --too small/blocky
+
+
+--Dead/Frozen-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLROCKS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHSNOWBLEND.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SNOWFRAGMENTS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLPLANT.SCENE.MBIN --ok
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/SNOWCLUMP.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMPLANT.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLROCKSSHARDS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/MEDIUMSNOWBLENDROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+
+
+--Huge-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --too small/blocky
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN --ok
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/SMALLBOULDER.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN
+
+
+--Lava-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/LAVACLUMP.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/LAVAGEMS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/SCORCHED/SMALL/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/SCORCHED/SMALL/LEAFDROPLET.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove
+--MODELS/PLANETS/BIOMES/SCORCHED/SMALL/SMALLSPIRE.SCENE.MBIN
+
+
+--Lush-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHMOSSBLEND.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LUSHROOM/SMALLSHROOMCLUSTER.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LUSHROOM/SMALLBLUESHROOMS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+--toxicgrassx2 on lushfull
+--remove lushultraobjects
+
+
+--Radio-----------------------------------------
+--MODELS/PLANETS/BIOMES/TOXIC/SMALL/SPORETUBESMALL.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/RADIOACTIVE/SMALL/CURVEDSMALL.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/RADIOACTIVE/SMALL/CURVEFRAGMENT.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove
+--MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/SPIKYPOTATO.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLDETAILPLANT.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/GLOWGRASS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove, tiny
+
+
+--Scorch-----------------------------------------
+
+
+--Swamp:
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERNLIGHT.SCENE.MBIN
+
+
+--Toxic-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/SPOREBARNACLE.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEGRAVELPATCH.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/BLOBFRAGMENTS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLERODEPLANT.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/TOXIC/SMALL/SMALLTOXICEGG.SCENE.MBIN
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 -- CHANGE GRASS DRAW DISTANCE, ETC --------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
 						--REPLACE:
@@ -48,17 +397,17 @@ local function ChangeGrass()
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Placement",				"GRASS"}, --Takes over bubble glow grass
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+							-- ["SECTION_UP"] = 1,
+							-- ["REPLACE_TYPE"] = "ALL",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"Placement",				"GRASS"}, --Takes over bubble glow grass
+								-- {"MaxAngle",				90},
+								-- {"LargeObjectCoverage",		"AlwaysPlace"},
+							-- }
+						-- },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"}, --Ultra planet quality tall grass
 							["SECTION_UP"] = 1,
@@ -187,22 +536,22 @@ local function ChangeGrass()
 								{"SlopeMultiplier",			2.5},
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								--{"MaxScale", 				1}, --Too large = overtakes glow BUBBLELUSHGRASS ..
-							}
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+							-- ["SECTION_UP"] = 1,
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"FlatDensity",			    0.5},
+								-- {"SlopeDensity",			0.5},
+								-- {"MaxRegionRadius",			1.8},
+								-- {"MaxImposterRadius",		1.8},
+								-- {"FadeOutStartDistance",	1.8},
+								-- {"FadeOutEndDistance",		1.8},
+								-- --{"MaxScale", 				1}, --Too large = overtakes glow BUBBLELUSHGRASS ..
+							-- }
+						-- },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
@@ -482,61 +831,61 @@ local function ChangeGrass()
 								{"LodDistances",	LodDistancesMultiplierFarGrass}
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+							-- ["SECTION_UP"] = 1,
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+1",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistancesMultiplierFarGrass}
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+							-- ["SECTION_UP"] = 1,
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+2",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistancesMultiplierFarGrass}
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+							-- ["SECTION_UP"] = 1,
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+3",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistancesMultiplierFarGrass}
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+							-- ["SECTION_UP"] = 1,
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+4",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistancesMultiplierFarGrass}
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+							-- ["SECTION_UP"] = 1,
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+5",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistancesMultiplierFarGrass}
+							-- }
+						-- },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
@@ -877,6 +1226,355 @@ local function ChangeAddGrassBetterPerformance() --Doesn't change toxicgrass, ot
 	local biomeModifier =
 	{
 -------------------------------------------------------------------------------------------------------------------------------------------------
+-- v2.0: REMOVE SMALL DETAIL STUFF THAT GRASS COVERS --------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+--Barren-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHSANDBLEND.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/CACTUSSML.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/FLUFFBUSH.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/SMALLCACTUS.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/THINBUSHTREE.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny
+--MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA02.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/POOFBUSH.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/SMALLBOULDER05.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/MEDIUMBOULDER01.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/HQ/CACTUS/HQFURRYCACTUS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/GRAVELPATCHSHINY.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --too small/blocky
+
+
+--Dead/Frozen-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLROCKS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHSNOWBLEND.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SNOWFRAGMENTS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLPLANT.SCENE.MBIN --ok
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/SNOWCLUMP.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMPLANT.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLROCKSSHARDS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/MEDIUMSNOWBLENDROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+
+
+--Huge-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --too small/blocky
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN --ok
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/SMALLBOULDER.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN
+
+
+--Lava-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/LAVACLUMP.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/LAVAGEMS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/SCORCHED/SMALL/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/SCORCHED/SMALL/LEAFDROPLET.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove
+--MODELS/PLANETS/BIOMES/SCORCHED/SMALL/SMALLSPIRE.SCENE.MBIN
+
+
+--Lush-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHMOSSBLEND.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LUSHROOM/SMALLSHROOMCLUSTER.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LUSHROOM/SMALLBLUESHROOMS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+--toxicgrassx2 on lushfull
+--remove lushultraobjects
+
+
+--Radio-----------------------------------------
+--MODELS/PLANETS/BIOMES/TOXIC/SMALL/SPORETUBESMALL.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/RADIOACTIVE/SMALL/CURVEDSMALL.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/RADIOACTIVE/SMALL/CURVEFRAGMENT.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove
+--MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/SPIKYPOTATO.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLDETAILPLANT.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/GLOWGRASS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove, tiny
+
+
+--Scorch-----------------------------------------
+
+
+--Swamp:
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERNLIGHT.SCENE.MBIN
+
+
+--Toxic-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/SPOREBARNACLE.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEGRAVELPATCH.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/BLOBFRAGMENTS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLERODEPLANT.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/TOXIC/SMALL/SMALLTOXICEGG.SCENE.MBIN
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 -- CHANGE GRASS DRAW DISTANCE, ETC --------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
 						--REPLACE:
@@ -1111,6 +1809,355 @@ local function ChangeGrassSuperPerformance() --Doesn't change toxicgrass, otherw
 	local biomeModifier =
 	{
 -------------------------------------------------------------------------------------------------------------------------------------------------
+-- v2.0: REMOVE SMALL DETAIL STUFF THAT GRASS COVERS --------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+--Barren-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHSANDBLEND.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/CACTUSSML.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/FLUFFBUSH.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/SMALLCACTUS.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/PLANTS/THINBUSHTREE.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny
+--MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA02.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/POOFBUSH.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/SMALLBOULDER05.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/MEDIUMBOULDER01.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/BARREN/HQ/CACTUS/HQFURRYCACTUS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/GRAVELPATCHSHINY.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --too small/blocky
+
+
+--Dead/Frozen-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLROCKS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHSNOWBLEND.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SNOWFRAGMENTS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLPLANT.SCENE.MBIN --ok
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/SNOWCLUMP.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMPLANT.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLROCKSSHARDS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/MEDIUMSNOWBLENDROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+
+
+--Huge-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --too small/blocky
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN --ok
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/SMALLBOULDER.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN
+
+
+--Lava-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/LAVACLUMP.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/LAVAGEMS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/SCORCHED/SMALL/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/SCORCHED/SMALL/LEAFDROPLET.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove
+--MODELS/PLANETS/BIOMES/SCORCHED/SMALL/SMALLSPIRE.SCENE.MBIN
+
+
+--Lush-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHMOSSBLEND.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LUSHROOM/SMALLSHROOMCLUSTER.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LUSHROOM/SMALLBLUESHROOMS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+--toxicgrassx2 on lushfull
+--remove lushultraobjects
+
+
+--Radio-----------------------------------------
+--MODELS/PLANETS/BIOMES/TOXIC/SMALL/SPORETUBESMALL.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/RADIOACTIVE/SMALL/CURVEDSMALL.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/RADIOACTIVE/SMALL/CURVEFRAGMENT.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove
+--MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/SPIKYPOTATO.SCENE.MBIN
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLDETAILPLANT.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/GLOWGRASS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --remove, tiny
+
+
+--Scorch-----------------------------------------
+
+
+--Swamp:
+--MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERNLIGHT.SCENE.MBIN
+
+
+--Toxic-----------------------------------------
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/SPOREBARNACLE.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEGRAVELPATCH.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/BLOBFRAGMENTS.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						}, --tiny, remove
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/SMALLROCK.SCENE.MBIN"},
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+--MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLERODEPLANT.SCENE.MBIN
+--MODELS/PLANETS/BIOMES/TOXIC/SMALL/SMALLTOXICEGG.SCENE.MBIN
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 -- CHANGE GRASS DRAW DISTANCE, ETC --------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
 						--REPLACE:
@@ -1223,7 +2270,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Grass_v1.02.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Grass_v2.0.pak",
 ["MOD_AUTHOR"]				= "Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
