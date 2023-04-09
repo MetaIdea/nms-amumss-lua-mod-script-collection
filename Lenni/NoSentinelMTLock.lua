@@ -10,17 +10,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= {
-												"METADATA/REALITY/TABLES/COSTTABLE.MBIN",
-											},
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\COMMON\BUILDINGS\ROBOT\ROBOTBASE\ENTITIES\ROBOTWEAPONCRATE.ENTITY.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SKW"]		= {"Id", "C_ROBOGUN_OPEN"},
-							["VCT"]		=
-							{
-								{"InteractionMissionState", "Unused"},
-							}
+							["PKW"]		= "ActivationCost",
+							["REMOVE"]	= "SECTION",
 						},
 					}
 				},

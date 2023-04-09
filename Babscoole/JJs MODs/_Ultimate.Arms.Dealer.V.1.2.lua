@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Ultimate.Arms.Dealer.V.1.1.pak",
+["MOD_FILENAME"]  = "_Ultimate.Arms.Dealer.V.1.2.pak",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole & Lyravega",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.21",
 ["MODIFICATIONS"] =
     {
         {
@@ -22,16 +22,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"File","MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"File","MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL.SCENE.MBIN"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="GcMultitoolPoolData.xml">
       <Property name="File" value="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN" />
-      <Property name="MinDraw" value="3" />
-      <Property name="MaxDraw" value="3" />
+      <Property name="MinDraw" value="1" />
+      <Property name="MaxDraw" value="2" />
       <Property name="PoolProbability" value="1" />
       <Property name="PoolIsSecret" value="False" />
+      <Property name="PoolIsSentinel" value="False" />
+    </Property>
+    <Property value="GcMultitoolPoolData.xml">
+      <Property name="File" value="MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL.SCENE.MBIN" />
+      <Property name="MinDraw" value="1" />
+      <Property name="MaxDraw" value="2" />
+      <Property name="PoolProbability" value="1" />
+      <Property name="PoolIsSecret" value="False" />
+      <Property name="PoolIsSentinel" value="False" />
     </Property>
 ]]
                         },

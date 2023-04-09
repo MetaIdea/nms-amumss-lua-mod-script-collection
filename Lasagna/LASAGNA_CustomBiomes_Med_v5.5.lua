@@ -35,6 +35,69 @@ ReplaceWithLandmarksRaw =
     </Property>
 ]]
 
+
+replaceCGDesc =
+[[
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_7" />
+          <Property name="Name" value="_lushgrass_7" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_1" />
+          <Property name="Name" value="_lushgrass_1" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_3" />
+          <Property name="Name" value="_lushgrass_3" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_6" />
+          <Property name="Name" value="_lushgrass_6" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_5" />
+          <Property name="Name" value="_lushgrass_5" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_4" />
+          <Property name="Name" value="_lushgrass_4" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_8" />
+          <Property name="Name" value="_lushgrass_8" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_2" />
+          <Property name="Name" value="_lushgrass_2" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+]]
+
 --This adds basic collisions to pre-release models:
 AddBasicCollisions = --scale y&z flipped compared to blender (v2.6: 0.24 from 0.189618)
 [[
@@ -1433,258 +1496,6 @@ AddSmallTree3Collisions =
     </Property>
 ]]
 
---------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------- v The below section is from Shaidak's Generation (*** = Ghostly comment) v -------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------
-
--- Density = {
-	-- HighE				= 0.048,
-	-- HighD				= 0.042,
-	-- HighC				= 0.038,
-	-- HighB				= 0.032,
-	-- HighA				= 0.028,
-	-- Mid					= 0.024,
-	-- LowA				= 0.020,
-	-- LowB				= 0.018,
-	-- LowC				= 0.012,
-	-- LowD				= 0.009,
-	-- LowE				= 0.006,
-	-- LowF				= 0.003,
-	-- LowG				= 0.0015,
--- }
-
--- MaxAngle = {
-	-- Inv					= 180,
-	-- AvA					= 60,
-	-- AvB					= 55,
-	-- AvC					= 50,
-	-- AvD					= 45,
-	-- AvE					= 40,
-	-- AvF					= 35,
--- }
-
--- Scale = {
-	-- LargeE				= { 6, 9, },
-	-- LargeD				= { 5, 8, },
-	-- LargeCE				= { 4, 9, },
-	-- LargeC				= { 4, 6, },
-	-- LargeB				= { 3, 5, },
-	-- LargeA				= { 2, 3, },
-	-- NormalA				= { 1, 3, },
-	-- Normal				= { 1, 2, },
-	-- SmallA				= { 0.6, 1.4, },
--- }
-
--- Mod = {
-	-- -----------------------------------------------------------------------------------------------------------------------------------------
-	-- Template	= "Highest", --***Type in your preference here. Five options: Highest, High, Medium, Low, or Lowest. Capitalization matters
-							 -- --the above changes FlatDensity, which AFAIK is how many props spawn on flat terrain (highest = highest density)
-	-- -----------------------------------------------------------------------------------------------------------------------------------------
-	-- DensityThreshold = {
-		-- High			= Density.HighB,
-		-- Mid				= Density.LowA,
-		-- Low				= Density.LowC,
-	-- },
-
-	-- DensityModifier = {
-		-- High			= 0.008,
-		-- Mid				= 0.004,
-		-- Low				= 0.001,
-	-- },
-
-	-- Preset = {
-		-- Lowest			= 4,
-		-- Low				= 3,
-		-- Medium			= 2,
-		-- High			= 1,
-		-- Highest			= 0,
-	-- },
--- }
---------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------- ^ The above section is from Shaidak's Generation ^ ------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------
-
-
---------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------
---= = = = = = = = = = = = = = = = = = = = = = = = = = = 2. UNUSED FUNCTION = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
---------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
--- --Function calls appear next to EXML_CHANGE_TABLE for all biomes. UNUSED.
-
--- local function BiomeModification(modelPath2,
-					-- placement2, priority2, coverage2, flatDensity2, maxRotation2, minScale2, maxScale2) --minScale1
-	
-	-- ----------------------------------------------------------------------------------------------------------------------------------------------
-	-- --The below section is from Shaidak's Generation (modified)-----------------------------------------------------------------------------------
-	-- ----------------------------------------------------------------------------------------------------------------------------------------------
-	-- local presetValue = Mod.Preset[Mod.Template]
-	-- local densityModifier = 0
-	-- local maxAngle2 = 50
-
-	-- if flatDensity2 > Mod.DensityThreshold.High then
-		-- densityModifier = Mod.DensityModifier.High * presetValue
-	-- elseif flatDensity2 > Mod.DensityThreshold.Mid then
-		-- densityModifier = Mod.DensityModifier.Mid * presetValue
-	-- elseif flatDensity2 > Mod.DensityThreshold.Low then
-		-- densityModifier = Mod.DensityModifier.Low * presetValue
-	-- end
-
-	-- flatDensity2 = flatDensity2 - densityModifier
-	
-	
-	-- if maxScale2 <= Scale.Normal[2] then
-		-- maxAngle2 = MaxAngle.AvA
-	-- elseif maxScale2 <= Scale.LargeA[2] then
-		-- maxAngle2 = MaxAngle.AvB
-	-- elseif maxScale2 <= Scale.LargeC[2] then
-		-- maxAngle2 = MaxAngle.AvC
-	-- else
-		-- maxAngle2 = MaxAngle.AvD
-	-- end
-	
-
-	
-	-- biomeModifier =
-	-- {
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["VALUE_MATCH"] 		= "", 
-							-- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["REPLACE_TYPE"] = "ALL",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"SlopeMultiplier",	0.0001}, --will affect lowest planet quality setting
-								-- {"SlopeDensity",	flatDensity2},			--i.e. 0
-							-- }	
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["VALUE_MATCH"] 		= "", 
-							-- --["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["REPLACE_TYPE"] = "ALL",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"Seed",	0},
-								-- {"AltId",	""},
-								-- {"ProceduralTexture",	"TkProceduralTextureChosenOptionList.xml"},
-								-- {"UseSeedValue",	"False"},
-								-- {"LargeObjectCoverage",	"DoNotPlaceClose"},
-								-- {"OverlapStyle",	"None"},
-								-- {"MinHeight",	-1},
-								-- {"MaxHeight",	128},
-								-- {"RelativeToSeaLevel",	"True"},
-								-- {"MinAngle",	0},
-								-- {"MinRegionRadius",	0},
-								-- {"MaxRegionRadius",	3},
-								-- {"MaxImposterRadius",	99}, --will affect lowest planet quality setting
-								-- {"FadeInStartDistance",		0},
-								-- {"FadeInEndDistance",		0},
-								-- {"FadeInOffsetDistance",	0},
-								-- {"FadeOutOffsetDistance",	0},
-								-- {"MatchGroundColour",	"False"},
-								-- {"GroundColourIndex",	"Auto"},
-								-- {"AlignToNormal",	"False"},
-								-- {"MinScaleY",	1},
-								-- {"MaxScaleY",	1},
-								-- {"SlopeScaling",	1},
-								-- {"AutoCollision",	"False"},
-								-- {"CollideWithPlayer",	"True"},
-								-- {"CollideWithPlayerVehicle",	"True"},
-								-- {"DestroyedByPlayerVehicle",	"True"},
-								-- {"DestroyedByPlayerShip",	"True"},
-								-- {"DestroyedByTerrainEdit",	"True"},
-								-- {"InvisibleToCamera",	"True"},
-								-- {"CreaturesCanEat",	"False"},
-								-- {"ShearWindStrength",	0},
-								-- {"DestroyedByVehicleEffect",	"VEHICLECRASH"},
-								-- {"Filename",						modelPath2}, 			--i.e. "MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLROCKS.SCENE.MBIN"
-								-- {"Placement",						placement2}, 			--i.e. "FLORACLUMP"
-								-- {"PlacementPriority",				priority2}, 			--i.e. "Normal"
-								-- {"Coverage",						coverage2}, 			--i.e. 0.2
-								-- {"FlatDensity",						flatDensity2}, 			--i.e. 0.5
-								-- {"MaxAngle",						maxAngle2}, 			--i.e. 60
-								-- {"MaxXZRotation",					maxRotation2}, 					--i.e. 0
-								-- {"PatchEdgeScaling",				0}, 		--i.e. 0.1
-								-- {"MinScale",						minScale2}, 			--i.e. 0.4
-								-- {"MaxScale",						maxScale2}, 			--i.e. 0.6
-							-- }	
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
-							-- ["PRECEDING_FIRST"] = "TRUE",
-							-- ["VALUE_MATCH"] 		= "", 
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+1",     --one line down
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	0}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
-							-- ["PRECEDING_FIRST"] = "TRUE",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+2",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	20} --All these = *2
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
-							-- ["PRECEDING_FIRST"] = "TRUE",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+3",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	60}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
-							-- ["PRECEDING_FIRST"] = "TRUE",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+4",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	150} 
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
-							-- ["PRECEDING_FIRST"] = "TRUE",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+5",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	500}
-							-- }
-						-- },
-						
-						
-						
-						-- --{
-							-- --["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks","GcObjectSpawnData.xml"},
-							-- --["REMOVE"] 				= "SECTION",
-						-- --},
-	-- }
--- return biomeModifier
--- end
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1832,13 +1643,13 @@ return [[
 ]]
 end
 
-function AddGrass()
+function AddTheGrass(grassName)
 return [[
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/]] .. grassName .. [[.SCENE.MBIN" />
           <Property name="ResHandle" value="GcResource.xml">
             <Property name="ResourceID" value="0" />
           </Property>
@@ -1865,7 +1676,7 @@ return [[
                       <Property name="B" value="0.239" />
                       <Property name="A" value="1" />
                     </Property>
-                    <Property name="OptionName" value="3" />
+                    <Property name="OptionName" value="" />
                   </Property>
                 </Property>
               </Property>
@@ -1886,18 +1697,18 @@ return [[
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="90" />
+        <Property name="MaxAngle" value="75" />
         <Property name="MatchGroundColour" value="True" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.75" />
-        <Property name="MaxScale" value="2.47" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
+        <Property name="MinScale" value="0.8" />
+        <Property name="MaxScale" value="1.0" />
+        <Property name="MinScaleY" value="1.3" />
+        <Property name="MaxScaleY" value="1.3" />
         <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="PatchEdgeScaling" value="0.1" />
         <Property name="MaxXZRotation" value="0" />
         <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="False" />
@@ -1912,8 +1723,8 @@ return [[
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="1" />
-          <Property name="FlatDensity" value="0.14" />
-          <Property name="SlopeDensity" value="0.14" />
+          <Property name="FlatDensity" value="0.21" />
+          <Property name="SlopeDensity" value="0.21" />
           <Property name="SlopeMultiplier" value="2.5" />
           <Property name="MaxRegionRadius" value="17998" />
           <Property name="MaxImposterRadius" value="18" />
@@ -1932,9 +1743,9 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.14" />
-            <Property name="SlopeDensity" value="0.14" />
-            <Property name="SlopeMultiplier" value="2.5" />
+            <Property name="FlatDensity" value="0.23" />
+            <Property name="SlopeDensity" value="0.23" />
+            <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="9" />
             <Property name="MaxImposterRadius" value="18" />
             <Property name="FadeOutStartDistance" value="63" />
@@ -1951,9 +1762,129 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.14" />
-            <Property name="SlopeDensity" value="0.14" />
-            <Property name="SlopeMultiplier" value="2.5" />
+            <Property name="FlatDensity" value="0.23" />
+            <Property name="SlopeDensity" value="0.23" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="5" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="126" />
+            <Property name="FadeOutEndDistance" value="144" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+]]
+end
+
+function AddSecondaryGrass(grassName)
+return [[
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/]] .. grassName .. [[.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers">
+            </Property>
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="GRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
+        <Property name="OverlapStyle" value="All" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="75" />
+        <Property name="MatchGroundColour" value="True" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="1.2" />
+        <Property name="MaxScale" value="1.4" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0.75" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.2" />
+          <Property name="SlopeDensity" value="0.2" />
+          <Property name="SlopeMultiplier" value="1" />
+          <Property name="MaxRegionRadius" value="17998" />
+          <Property name="MaxImposterRadius" value="18" />
+          <Property name="FadeOutStartDistance" value="17998" />
+          <Property name="FadeOutEndDistance" value="17998" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.22" />
+            <Property name="SlopeDensity" value="0.22" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="9" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="63" />
+            <Property name="FadeOutEndDistance" value="81" />
+            <Property name="FadeOutOffsetDistance" value="5" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="ULTRA" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.22" />
+            <Property name="SlopeDensity" value="0.22" />
+            <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="5" />
             <Property name="MaxImposterRadius" value="18" />
             <Property name="FadeOutStartDistance" value="126" />
@@ -3022,8 +2953,8 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v5.41.pak",
-["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna - with [unused] Shaidak's Gen code",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v5.5.pak",
+["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
 	{
@@ -3633,7 +3564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -3657,7 +3588,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -3776,7 +3707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -3827,7 +3758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -3874,7 +3805,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -3895,7 +3826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -3938,7 +3869,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4024,7 +3955,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4067,7 +3998,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4113,7 +4044,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4167,7 +4098,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4200,7 +4131,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4251,7 +4182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4273,7 +4204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4321,7 +4252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4368,7 +4299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4390,7 +4321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4439,7 +4370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4484,7 +4415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4507,7 +4438,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4529,7 +4460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4552,7 +4483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4598,7 +4529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4644,7 +4575,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4665,7 +4596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4792,7 +4723,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4813,7 +4744,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4858,7 +4789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4878,7 +4809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4898,7 +4829,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -4961,7 +4892,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5041,7 +4972,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5062,7 +4993,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5174,7 +5105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5237,7 +5168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5303,7 +5234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5324,7 +5255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5345,7 +5276,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5409,7 +5340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5431,7 +5362,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5541,7 +5472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5571,7 +5502,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5636,7 +5567,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5658,7 +5589,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5680,7 +5611,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5702,7 +5633,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5723,7 +5654,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5745,7 +5676,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5767,7 +5698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5789,7 +5720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5811,7 +5742,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5834,7 +5765,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5857,7 +5788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5879,7 +5810,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
@@ -5903,7 +5834,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5972,12 +5903,75 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 					},
 				},
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\NEWCROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
 
+
+
+						--REMOVE new grass_curly option (no old version of this model)
 						
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_GRASS_CURLY",},
+							["REMOVE"] = "SECTION"
+						},
+
+					},
+				},
+				
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\CROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+
+
+						--Reorder descriptor to match newcrossgrass
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["ADD"] = replaceCGDesc,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["REMOVE"] = "SECTION"
+						},
+
+					},
+				},
+
+				
 			}
 		},
     }
