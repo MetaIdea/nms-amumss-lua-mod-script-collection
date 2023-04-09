@@ -21,7 +21,7 @@ local CoverageMultiplier = 1			--object placement coverage multiplier (object de
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_LargeCrystals_v1.0.pak", 
+["MOD_FILENAME"] 			= "LASAGNA_LargeCrystals_v1.01.pak", 
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
