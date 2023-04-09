@@ -4,14 +4,14 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_AUTHOR"]      =   "shoemakerjones",
     ["LUA_AUTHOR"]      =   "shoemakerjones",
     ["NMS_VERSION"]     =   "4.x",
-    ["MOD_DESCRIPTION"] =   "v1.1 - Makes significant changes to they way gameplay is handled.",
+    ["MOD_DESCRIPTION"] =   "v1.2 - Makes significant changes to they way gameplay is handled.",
 	["MODIFICATIONS"] 		= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] =
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= {"GCGAMEPLAYGLOBALS.GLOBAL.MBIN"},
+					["MBIN_FILE_SOURCE"] 	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
@@ -46,7 +46,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-                    ["MBIN_FILE_SOURCE"]     = {"MODELS\EFFECTS\SPEEDLINES\SPEEDLINE.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]     = "MODELS\\EFFECTS\\SPEEDLINES\\SPEEDLINE.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"]     = 
                     {
                         {
@@ -71,8 +71,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     },
                 },
+                {
+					["MBIN_FILE_SOURCE"] 	= "GCCHARACTERGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"LadderDistanceToAutoMount", "-1"},
+                                {"SitPostureChangeTimeMin", "0.1"},
+                                {"SitPostureChangeTimeMax", "1"}
+							}
+						}
+                    }
+				}
 			}
-		},
+		}
 	}
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
