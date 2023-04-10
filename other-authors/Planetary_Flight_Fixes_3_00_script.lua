@@ -28,14 +28,14 @@ SCANSPEEDMULT = 0.75  -- This sets the speed of the scan pulse; The lower the nu
 MAXSCANMULT = 	1.5	  -- This will determine how many buildings you can scan at once;
 						-- By default this will allow you to scan a max of 3 instead of 2 at once;
 							
-COSTMULT = 		0.2	  -- This sets the ship launch fuel cost; The lower the number, the cheaper it gets; Tweak to your liking;
+COSTMULT = 		0.33  -- This sets the ship launch fuel cost; The lower the number, the cheaper it gets; Tweak to your liking;
 						-- Setting this to 0 makes launching your ship drain no fuel, setting it to 0.5 halves the amount it usually drains, etc; 0 makes it cost nothing;
 							
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]             = "_Planetary_Flight_Fixes_2_9.pak", 
+  ["MOD_FILENAME"]             = "_Planetary_Flight_Fixes_3_00.pak", 
   ["MOD_AUTHOR"]               = "chronicallybored",
-  ["NMS_VERSION"]              = "4.08",
+  ["NMS_VERSION"]              = "4.20",
   ["MOD_DESCRIPTION"]          = "Fixes various aspects of the flight system while inside a planets atmosphere",
   ["MODIFICATIONS"]            = 
 	{
@@ -149,23 +149,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER"},
 							["PRECEDING_KEY_WORDS"] = {"Ship_Launcher_TakeOffCost"},
+							["SECTION_UP"] = 1,
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",					COSTMULT}
+								{"Bonus",	COSTMULT}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER_ALIEN"},
 							["PRECEDING_KEY_WORDS"] = {"Ship_Launcher_TakeOffCost"},
+							["SECTION_UP"] = 1,
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",					COSTMULT}
+								{"Bonus",	COSTMULT}
 							}
-						}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER_SPEC"},
+							["PRECEDING_KEY_WORDS"] = {"Ship_Launcher_TakeOffCost"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"] 	= "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",	COSTMULT}
+							}
+						},
 					}
 				}
 			}
