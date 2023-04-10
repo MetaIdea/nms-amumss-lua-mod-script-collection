@@ -988,7 +988,7 @@ CUSTOM_PRESET ={
     {
         ["CREATURES_OVERHAUL"] = "ON",
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON", 
-        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
+        ["MAX_CREATURES_NUMBER"] = 25, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -5807,7 +5807,7 @@ OFTEN_SPAWN =-------------------------------------------------------------------
 						<Property name="DestroyedByPlayerVehicle" value="True" />
 						<Property name="DestroyedByPlayerShip" value="True" />
 						<Property name="DestroyedByTerrainEdit" value="True" />
-						<Property name="InvisibleToCamera" value="True" />
+						<Property name="InvisibleToCamera" value="False" />
 						<Property name="CreaturesCanEat" value="False" />
 						<Property name="ShearWindStrength" value="0" />
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -5815,20 +5815,19 @@ OFTEN_SPAWN =-------------------------------------------------------------------
 						<Property name="ID" value="STANDARD" />
 <Property name="Coverage" value="0.6" />
 						<Property name="FlatDensity" value="0.00041" />
-						<Property name="SlopeDensity" value="0" />
-						<Property name="SlopeMultiplier" value="1" />
-						<Property name="MaxRegionRadius" value="9999" />
-		<Property name="MaxRegionRadius" value="9999" />
-		<Property name="MaxImposterRadius" value="9999" />
-		<Property name="FadeOutStartDistance" value="9999" />
-		<Property name="FadeOutEndDistance" value="9999" />
-		<Property name="FadeOutOffsetDistance" value="9999" />
-		<Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
 						</Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -5844,7 +5843,7 @@ OFTEN_SPAWN_R =-----------------------------------------------------------------
 						<Property name="DestroyedByPlayerVehicle" value="True" />
 						<Property name="DestroyedByPlayerShip" value="True" />
 						<Property name="DestroyedByTerrainEdit" value="True" />
-						<Property name="InvisibleToCamera" value="True" />
+						<Property name="InvisibleToCamera" value="False" />
 						<Property name="CreaturesCanEat" value="False" />
 						<Property name="ShearWindStrength" value="0" />
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -5853,18 +5852,19 @@ OFTEN_SPAWN_R =-----------------------------------------------------------------
 <Property name="Coverage" value="0.1" />
 						<Property name="FlatDensity" value="0.0041" />
 						<Property name="SlopeDensity" value="0" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="3" />
-            <Property name="MaxImposterRadius" value="99" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
             </Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -5880,7 +5880,7 @@ OFTEN_SPAWN_R2 =----------------------------------------------------------------
 						<Property name="DestroyedByPlayerVehicle" value="True" />
 						<Property name="DestroyedByPlayerShip" value="True" />
 						<Property name="DestroyedByTerrainEdit" value="True" />
-						<Property name="InvisibleToCamera" value="True" />
+						<Property name="InvisibleToCamera" value="False" />
 						<Property name="CreaturesCanEat" value="False" />
 						<Property name="ShearWindStrength" value="0" />
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -5889,18 +5889,19 @@ OFTEN_SPAWN_R2 =----------------------------------------------------------------
 <Property name="Coverage" value="0.6" />
 						<Property name="FlatDensity" value="0.00041" />
 						<Property name="SlopeDensity" value="0" />
-						<Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="3" />
-            <Property name="MaxImposterRadius" value="99" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
             </Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -5916,7 +5917,7 @@ GIANT_OFTEN_SPAWN =-------------------------------------------------------------
 						<Property name="DestroyedByPlayerVehicle" value="True" />
 						<Property name="DestroyedByPlayerShip" value="True" />
 						<Property name="DestroyedByTerrainEdit" value="True" />
-						<Property name="InvisibleToCamera" value="True" />
+						<Property name="InvisibleToCamera" value="False" />
 						<Property name="CreaturesCanEat" value="False" />
 						<Property name="ShearWindStrength" value="0" />
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -5926,18 +5927,16 @@ GIANT_OFTEN_SPAWN =-------------------------------------------------------------
 						<Property name="FlatDensity" value="0.00041" />
 						<Property name="SlopeDensity" value="0" />
 						<Property name="SlopeMultiplier" value="1" />
-						<Property name="MaxRegionRadius" value="9999" />
-		<Property name="MaxRegionRadius" value="9999" />
-		<Property name="MaxImposterRadius" value="9999" />
-		<Property name="FadeOutStartDistance" value="9999" />
-		<Property name="FadeOutEndDistance" value="9999" />
-		<Property name="FadeOutOffsetDistance" value="9999" />
-		<Property name="LodDistances">
-            <Property value="0" />
-            <Property value="120" />
-            <Property value="1160" />
-            <Property value="1150" />
-            <Property value="1500" />
+            <Property name="MaxImposterRadius" value="9999" />
+            <Property name="FadeOutStartDistance" value="2200" />
+            <Property name="FadeOutEndDistance" value="3000" />
+            <Property name="FadeOutOffsetDistance" value="200" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="150" />
+              <Property value="300" />
+              <Property value="450" />
+              <Property value="600" />
 						</Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -5953,7 +5952,7 @@ GIANT_SPARSE_SPAWN = -----------------------------------------------------------
 						<Property name="DestroyedByPlayerVehicle" value="True" />
 						<Property name="DestroyedByPlayerShip" value="True" />
 						<Property name="DestroyedByTerrainEdit" value="True" />
-						<Property name="InvisibleToCamera" value="True" />
+						<Property name="InvisibleToCamera" value="False" />
 						<Property name="CreaturesCanEat" value="False" />
 						<Property name="ShearWindStrength" value="0" />
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -5964,16 +5963,16 @@ GIANT_SPARSE_SPAWN = -----------------------------------------------------------
 						<Property name="SlopeDensity" value="0" />
 						<Property name="SlopeMultiplier" value="1" />
 						<Property name="MaxRegionRadius" value="9999" />
-							<Property name="MaxImposterRadius" value="9999" />
-							<Property name="FadeOutStartDistance" value="9999" />
-							<Property name="FadeOutEndDistance" value="9999" />
-							<Property name="FadeOutOffsetDistance" value="9999" />
-							<Property name="LodDistances">
-            <Property value="0" />
-            <Property value="120" />
-            <Property value="1160" />
-            <Property value="1150" />
-            <Property value="1500" />
+            <Property name="MaxImposterRadius" value="9999" />
+            <Property name="FadeOutStartDistance" value="2200" />
+            <Property name="FadeOutEndDistance" value="3000" />
+            <Property name="FadeOutOffsetDistance" value="200" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="150" />
+              <Property value="300" />
+              <Property value="450" />
+              <Property value="600" />
 						</Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -5990,7 +5989,7 @@ GIANT_RARE_SPAWN = -------------------------------------------------------------
 						<Property name="DestroyedByPlayerVehicle" value="True" />
 						<Property name="DestroyedByPlayerShip" value="True" />
 						<Property name="DestroyedByTerrainEdit" value="True" />
-						<Property name="InvisibleToCamera" value="True" />
+						<Property name="InvisibleToCamera" value="False" />
 						<Property name="CreaturesCanEat" value="False" />
 						<Property name="ShearWindStrength" value="0" />
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -6028,7 +6027,7 @@ VERY_RARE_SPAWN = --------------------------------------------------------------
 						<Property name="DestroyedByPlayerVehicle" value="True" />
 						<Property name="DestroyedByPlayerShip" value="True" />
 						<Property name="DestroyedByTerrainEdit" value="True" />
-						<Property name="InvisibleToCamera" value="True" />
+						<Property name="InvisibleToCamera" value="False" />
 						<Property name="CreaturesCanEat" value="False" />
 						<Property name="ShearWindStrength" value="0" />
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -7198,7 +7197,7 @@ function generateORIGINSTREES
 									<Property name="DestroyedByPlayerVehicle" value="True" />
 									<Property name="DestroyedByPlayerShip" value="True" />
 									<Property name="DestroyedByTerrainEdit" value="True" />
-									<Property name="InvisibleToCamera" value="True" />
+									<Property name="InvisibleToCamera" value="False" />
 									<Property name="CreaturesCanEat" value="False" />
 									<Property name="ShearWindStrength" value="0" />
 									<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -7411,7 +7410,7 @@ function generateBrokenTreeS
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -7507,7 +7506,7 @@ function generateBrokenTreeS
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -7604,7 +7603,7 @@ function generateBrokenTreeS
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -7782,7 +7781,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -7879,7 +7878,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="True" />
 								<Property name="ShearWindStrength" value="0.3" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -8014,7 +8013,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="True" />
 								<Property name="ShearWindStrength" value="0.2" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -8166,7 +8165,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0.3" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -8317,7 +8316,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -8484,7 +8483,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -8635,7 +8634,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0.3" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -8786,7 +8785,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -8937,7 +8936,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0.3" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -9088,7 +9087,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -9223,7 +9222,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0.2" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -9374,7 +9373,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -9488,7 +9487,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0.3" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -9602,7 +9601,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0.2" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -9716,7 +9715,7 @@ function generateRocksBiomes
 								<Property name="DestroyedByPlayerVehicle" value="True" />
 								<Property name="DestroyedByPlayerShip" value="True" />
 								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
+								<Property name="InvisibleToCamera" value="False" />
 								<Property name="CreaturesCanEat" value="False" />
 								<Property name="ShearWindStrength" value="0" />
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -9871,7 +9870,7 @@ function generateCaveBiomes
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
         <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
+        <Property name="InvisibleToCamera" value="False" />
         <Property name="CreaturesCanEat" value="False" />
         <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -9945,7 +9944,7 @@ function generateCaveBiomes
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
         <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
+        <Property name="InvisibleToCamera" value="False" />
         <Property name="CreaturesCanEat" value="False" />
         <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -10020,7 +10019,7 @@ function generateCaveBiomes
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
         <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
+        <Property name="InvisibleToCamera" value="False" />
         <Property name="CreaturesCanEat" value="False" />
         <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -10137,7 +10136,7 @@ function generateCaveBiomes
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
         <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
+        <Property name="InvisibleToCamera" value="False" />
         <Property name="CreaturesCanEat" value="False" />
         <Property name="ShearWindStrength" value="0.75" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -10257,7 +10256,7 @@ function generateMountainBiomes
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
         <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
+        <Property name="InvisibleToCamera" value="False" />
         <Property name="CreaturesCanEat" value="False" />
         <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -10331,7 +10330,7 @@ function generateMountainBiomes
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
         <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
+        <Property name="InvisibleToCamera" value="False" />
         <Property name="CreaturesCanEat" value="False" />
         <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -10406,7 +10405,7 @@ function generateMountainBiomes
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
         <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
+        <Property name="InvisibleToCamera" value="False" />
         <Property name="CreaturesCanEat" value="False" />
         <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -10523,7 +10522,7 @@ function generateMountainBiomes
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
         <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
+        <Property name="InvisibleToCamera" value="False" />
         <Property name="CreaturesCanEat" value="False" />
         <Property name="ShearWindStrength" value="0.75" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
@@ -20757,9 +20756,9 @@ then
 		GENERATED_WATER_COLORS = ""
 		for loop=0 , PROCEDURALMAX do
 			print("------ ADDED NEW WATER COLOURS " .. loop)
-			_R_ = math.abs(0.6 - math.random() + 0.2)
-			_G_ = math.abs(0.6 - math.random() + 0.2)
-			_B_ = math.abs(0.6 - math.random() + 0.2)
+			_R_ = math.random(0,9)/10
+			_G_ = math.random(0,9)/10
+			_B_ = 0.9
 
 		GENERATED_WATER_COLORS = GENERATED_WATER_COLORS..
 		[[
@@ -20825,21 +20824,21 @@ then
 		GENERATED_FIRESKIES_COLORS = ""
 		for loop=0 , PROCEDURALMAX do
 			print("------ ADDED NEW FIRE SKIES COLOURS " .. loop)
-			_R_ = math.random(5,9)/10
+			_R_ = math.random(0,5)/10
 			_G_ = math.random(5,9)/10
-			_B_ = 0.9
+			_B_ = math.random(5,9)/10
 
-			_R3_ = math.random(0,9)/10
+			_R3_ = math.random(0,5)/10
 			_G3_ = math.random(0,9)/10
-			_B3_ = 0.95
+			_B3_ = math.random(5,9)/10
 
-			_R2_ = _R_+0.021
-			_G2_ = _G_+0.021
-			_B2_ = _B_+0.021
+			_R2_ = 0.4
+			_G2_ = 0.8
+			_B2_ = 0.7
 
-			_R4_ = _R3_-0.021
-			_G4_ = _G3_-0.021
-			_B4_ = _B3_-0.021
+			_R4_ = math.random(0,5)/10
+			_G4_ = math.random(0,9)/10
+			_B4_ = math.random(5,9)/10
 		GENERATED_FIRESKIES_COLORS = GENERATED_FIRESKIES_COLORS..
 		[[
 		      <Property value="GcPlanetWeatherColourData.xml">
@@ -20915,22 +20914,21 @@ then
 		GENERATED_NORMALSKIES_COLORS = ""
 		for loop=0 , PROCEDURALMAX do
 			print("------ ADDED NEW NORMAL SKIES COLOURS " .. loop)
-		_R_ = math.random(5,9)/10
+			_R_ = math.random(0,5)/10
 			_G_ = math.random(5,9)/10
-			_B_ = 0.9
+			_B_ = math.random(5,9)/10
 
-			_R3_ = math.random(0,9)/10
+			_R3_ = math.random(0,5)/10
 			_G3_ = math.random(0,9)/10
-			_B3_ = 0.95
+			_B3_ = math.random(5,9)/10
 
+			_R2_ = 0.4
+			_G2_ = 0.8
+			_B2_ = 0.7
 
-			_R2_ = _R_+0.021
-			_G2_ = _G_+0.021
-			_B2_ = _B_+0.021
-
-			_R4_ = _R3_-0.021
-			_G4_ = _G3_-0.021
-			_B4_ = _B3_-0.021
+			_R4_ = math.random(0,5)/10
+			_G4_ = math.random(0,9)/10
+			_B4_ = math.random(5,9)/10
 
 		GENERATED_NORMALSKIES_COLORS = GENERATED_NORMALSKIES_COLORS..
 		[[
@@ -21052,7 +21050,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -21071,19 +21069,19 @@ then
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
@@ -21099,12 +21097,7 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
+
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -21471,7 +21464,7 @@ then
 			},
 									{
 				["PATH"] = [[MODELS/RGO/RACESTATUE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.014"
 			},
@@ -21544,12 +21537,6 @@ then
 				["MAXSIZE"] = "0.20"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.20"
-			},
-			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
@@ -21557,6 +21544,12 @@ then
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -21593,37 +21586,37 @@ then
 				["MAXSIZE"] = "0.4"
 			},
 				{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.5"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.3"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE3.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
@@ -21727,12 +21720,7 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.44"
 			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.20"
-			},
+
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -21764,24 +21752,7 @@ then
 				["MAXSIZE"] = "0.24"
 			},
 			
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE02.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE03.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
+			
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
@@ -21851,7 +21822,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -21863,16 +21834,10 @@ then
 				["MAXSIZE"] = "2"
 			},
 
-									{
-				["PATH"] = [[MODELS\RGO\DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
 
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "10",
 				["MAXSIZE"] = "6"
 			},
@@ -21920,7 +21885,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCK_1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
@@ -21987,91 +21952,91 @@ then
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
 			},								{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -22086,12 +22051,6 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
-			},
-						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
@@ -22125,31 +22084,37 @@ then
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 
 			{
@@ -22170,105 +22135,165 @@ then
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "3"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
+			
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+									{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
@@ -22369,7 +22394,7 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTAL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALDRONE.SCENE.MBIN]],
@@ -22387,56 +22412,56 @@ then
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
+				["MAXSIZE"] = "10.01"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "14"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "14"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "14"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
+				["MAXSIZE"] = "17"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
+				["MAXSIZE"] = "17"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
+				["MAXSIZE"] = "17"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "16"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
@@ -22463,7 +22488,7 @@ then
 				["MAXSIZE"] = "5"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
@@ -22481,7 +22506,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -22499,7 +22524,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -22517,7 +22542,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -22535,7 +22560,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -22609,7 +22634,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -22675,7 +22700,7 @@ then
 				["MAXSIZE"] = "5"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
@@ -22693,7 +22718,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -22711,7 +22736,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -22729,220 +22754,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
-			},
-
-			{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -22960,7 +22772,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -23035,7 +22847,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -23101,7 +22913,7 @@ then
 				["MAXSIZE"] = "5"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
@@ -23119,7 +22931,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -23137,7 +22949,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -23155,7 +22967,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -23173,7 +22985,220 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+
+			{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.01"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -23618,7 +23643,7 @@ then
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -23636,7 +23661,7 @@ then
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -23654,7 +23679,7 @@ then
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -23672,7 +23697,7 @@ then
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -23696,60 +23721,6 @@ then
 				["MAXSIZE"] = "0.4"
 			},
 
-			{
-				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.5"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.3"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE3.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
-			},
 
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
@@ -23849,98 +23820,7 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.44"
 			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.20"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE02.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE03.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
 
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2.4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2.4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2.4"
-			},
 			{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -23955,7 +23835,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24021,7 +23901,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -24039,7 +23919,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24057,7 +23937,7 @@ then
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -24075,7 +23955,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -24093,7 +23973,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "34"
@@ -24167,7 +24047,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24233,7 +24113,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -24251,7 +24131,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24269,7 +24149,7 @@ then
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -24287,7 +24167,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -24305,7 +24185,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "34"
@@ -24380,7 +24260,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24446,7 +24326,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -24464,7 +24344,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24482,7 +24362,7 @@ then
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -24500,7 +24380,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -24518,7 +24398,220 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "34"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "34"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "62"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "22"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+							
+						{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.01"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "27"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "17"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "16"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "26"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "16"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "34"
@@ -24593,7 +24686,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24659,7 +24752,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -24677,7 +24770,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24695,7 +24788,7 @@ then
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -24713,7 +24806,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -24731,7 +24824,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "34"
@@ -24806,7 +24899,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24872,7 +24965,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -24890,7 +24983,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -24908,7 +25001,7 @@ then
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -24926,7 +25019,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -24944,7 +25037,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "34"
@@ -25019,7 +25112,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -25085,7 +25178,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -25103,7 +25196,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -25121,7 +25214,7 @@ then
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -25139,7 +25232,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -25157,7 +25250,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "34"
@@ -25232,7 +25325,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -25298,7 +25391,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -25316,7 +25409,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -25334,7 +25427,7 @@ then
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -25352,7 +25445,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -25370,7 +25463,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "34"
@@ -25445,7 +25538,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -25511,7 +25604,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -25529,7 +25622,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -25547,7 +25640,7 @@ then
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -25565,7 +25658,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -25583,7 +25676,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "34"
@@ -25658,7 +25751,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -25724,7 +25817,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -25742,7 +25835,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -25760,7 +25853,7 @@ then
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -25778,220 +25871,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "34"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "34"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "32"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "27"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "26"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -26009,7 +25889,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "34"
@@ -26124,20 +26004,20 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTCUBE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
@@ -26145,7 +26025,7 @@ then
 
 			{
 				["PATH"] = [[MODELS\RGO\STEAMVENT.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
@@ -26202,7 +26082,7 @@ then
 				["MAXSIZE"] = "20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
@@ -26220,7 +26100,7 @@ then
 				["MAXSIZE"] = "20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
@@ -26238,7 +26118,7 @@ then
 				["MAXSIZE"] = "20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
@@ -26256,7 +26136,7 @@ then
 				["MAXSIZE"] = "20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
@@ -26299,37 +26179,37 @@ then
 				["MAXSIZE"] = "4"
 			},
 				{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE3.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -26433,12 +26313,7 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "44"
 			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
+
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -26470,24 +26345,6 @@ then
 				["MAXSIZE"] = "24"
 			},
 			
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE02.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE03.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
@@ -26509,7 +26366,7 @@ then
 			},
 			--{
 			--	["PATH"] = [[MODELS\PLANETS\DESERT\TREES\TWISTEDTREE.SCENE.MBIN]],
-			--	["TYPE"] = "Single",
+			--	["TYPE"] = "Instanced",
 			--	["ROTATION"] = "0",
 			--	["MAXSIZE"] = "24"
 			--},
@@ -26638,7 +26495,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGESTRANDS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "24"
 			},
@@ -26664,7 +26521,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\UNDERWATERBOULDER.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "1",
 				["MAXSIZE"] = "2.4"
 			},
@@ -26952,7 +26809,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "2",
 				["MAXSIZE"] = "10"
 			},
@@ -26982,7 +26839,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTCUBE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "44"
 			},
@@ -27002,19 +26859,19 @@ then
 		{
 			{
 				["PATH"] = [[MODELS\RGO\LARGEROCK_1.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTGLOWINGSPIKE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTSPIKE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
@@ -27026,39 +26883,39 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\PILLAR1.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 		
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPILLAR.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			
 			{
 				["PATH"] = [[MODELS\RGO\LARGEROCKS2.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGESTRANDS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
@@ -27066,25 +26923,25 @@ then
 
 			{
 				["PATH"] = [[MODELS\RGO\MONOLITH.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.94"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SMALLTENDRIL.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\UNDERWATERBOULDER.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "1",
 				["MAXSIZE"] = "0.4"
 			},
@@ -27372,7 +27229,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "2",
 				["MAXSIZE"] = "10"
 			},
@@ -27387,6 +27244,129 @@ then
 --]=]
 		TABLERAREOBJECTS = 
 		{
+			
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.5"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.3"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			
+
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2.4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2.4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2.4"
+			},
 									{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTAL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -27415,7 +27395,7 @@ then
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "34"
 			},
 
 			{
@@ -27426,12 +27406,6 @@ then
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
@@ -27442,6 +27416,12 @@ then
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "34"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
@@ -27471,7 +27451,7 @@ then
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "36"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
@@ -27492,7 +27472,7 @@ then
 				["MAXSIZE"] = "5"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
@@ -27501,7 +27481,7 @@ then
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "44"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
@@ -27510,7 +27490,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -27525,10 +27505,10 @@ then
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "42"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -27546,10 +27526,10 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "42"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
@@ -27564,7 +27544,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -27573,13 +27553,13 @@ then
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "34"
 			},
 				{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "32"
 			},
 
 			{
@@ -27628,7 +27608,7 @@ then
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
+				["MAXSIZE"] = "80.01"
 			},
 
 			{
@@ -27638,7 +27618,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -27704,7 +27684,7 @@ then
 				["MAXSIZE"] = "5"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
@@ -27722,7 +27702,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -27740,7 +27720,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -27758,220 +27738,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
-			},
-
-			{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -27989,7 +27756,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -28064,7 +27831,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -28130,7 +27897,7 @@ then
 				["MAXSIZE"] = "5"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
@@ -28148,7 +27915,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -28166,7 +27933,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -28184,7 +27951,7 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -28202,7 +27969,220 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+
+			{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.01"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "44"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -28622,7 +28602,7 @@ then
 			},
 									{
 				["PATH"] = [[MODELS/RGO/RACESTATUE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.014"
 			},
@@ -28647,7 +28627,7 @@ then
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -28665,7 +28645,7 @@ then
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -28683,7 +28663,7 @@ then
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -28701,7 +28681,7 @@ then
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -28714,75 +28694,75 @@ then
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGEFULL.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 				{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.5"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.3"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/REDMASGROVE3.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "10",
 				["MAXSIZE"] = "0.20"
 			},
@@ -28878,12 +28858,7 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.44"
 			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.20"
-			},
+
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -28915,24 +28890,6 @@ then
 				["MAXSIZE"] = "0.24"
 			},
 			
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE02.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\DEADTREE03.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
@@ -28954,19 +28911,19 @@ then
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
@@ -28984,7 +28941,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -29050,7 +29007,7 @@ then
 				["MAXSIZE"] = "45"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "45"
@@ -29068,7 +29025,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -29086,7 +29043,7 @@ then
 				["MAXSIZE"] = "52"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "52"
@@ -29104,7 +29061,7 @@ then
 				["MAXSIZE"] = "52"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "52"
@@ -29122,7 +29079,7 @@ then
 				["MAXSIZE"] = "54"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "54"
@@ -29350,25 +29307,25 @@ then
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\STEAMVENT.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\DRONESHIP.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\DRONESHIP2.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
@@ -29399,7 +29356,7 @@ then
 			},
 						{
 				["PATH"] = [[MODELS\RGO\GEK_HEAD02.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
@@ -29431,37 +29388,37 @@ then
 
 			{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
@@ -29485,7 +29442,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "44"
 			},
@@ -29510,7 +29467,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTMETALSPIKE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "5",
 				["MAXSIZE"] = "4"
 			},
@@ -29541,7 +29498,7 @@ then
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
@@ -29553,20 +29510,20 @@ then
 			},
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
@@ -29574,7 +29531,7 @@ then
 
 			{
 				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
@@ -29646,7 +29603,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
@@ -29682,49 +29639,49 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\NEXUSTOWER.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\PLAQUE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\POLICESHIP.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\POLICESHIP02.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SKULL.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\TURRETA.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
@@ -31572,18 +31529,7 @@ LUSHGRASSLIST =
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMDEADTREE01.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R\MEDIUMDEADTREE01.DESCRIPTOR.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMDEADTREE01.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R\MEDIUMDEADTREE01.SCENE.EXML]]
-  		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
@@ -31747,39 +31693,7 @@ LUSHGRASSLIST =
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
-				EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE02.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE02.DESCRIPTOR.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
-				EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE02.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE02.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-				EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE03.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE03.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-
-				EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE01.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE01.DESCRIPTOR.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-
-				EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE01.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE01.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
@@ -32136,19 +32050,7 @@ LUSHGRASSLIST =
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMDEADTREE01.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMDEADTREE01.DESCRIPTOR.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMDEADTREE01.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMDEADTREE01.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
@@ -32376,8 +32278,8 @@ LUSHGRASSLIST =
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\SMALLOAK1.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\SMALLOAK1.DESCRIPTOR.EXML]]
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEOAK1.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\LARGEOAK1.DESCRIPTOR.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
@@ -33850,7 +33752,7 @@ LUSHGRASSLIST =
 			--
 			--
 		SUBBIOMES_MR = ""
-		--[=[
+		
 		for count=1, tablelength(TABLE_FERRITE_DUST_RESSOURCES) do
 			GENERATED_BIOME_PATH = [[METADATA/SIMULATION/SOLARSYSTEM\BIOMES/OBJECTS/MOUNTAINS/MR]]..count
 			generateMountainBiomes
@@ -33864,7 +33766,7 @@ LUSHGRASSLIST =
 					</Property>
 			]]
 		end
-		--]=]
+		
 		SUBBIOMES_M = SUBBIOMES_M..SUBBIOMES_MR
 		--
 
@@ -35194,7 +35096,7 @@ LUSHGRASSLIST =
 				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\R\BARRENINFESTED.EXML]]
 
 			}
-			--[==[
+			
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 			--
 				SUBBIOMES_R = SUBBIOMES_R..
@@ -35798,7 +35700,7 @@ LUSHGRASSLIST =
 						</Property>
 				]]
 			--
---]==]
+
 
 			-- can be changed later
 			SUBBIOMES_PR = SUBBIOMES_P..SUBBIOMES_R
@@ -37330,7 +37232,8 @@ LUSHGRASSLIST =
 										{
 						["MBIN_FILE_SOURCE"] =
 						{
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSBIOME.MBIN]],
+													[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN]],
+
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOURBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEBIOME.MBIN]],
@@ -37340,8 +37243,7 @@ LUSHGRASSLIST =
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSBIOME.MBIN]],
+
 						},
 						["EXML_CHANGE_TABLE"] =
 						{
@@ -37413,6 +37315,9 @@ LUSHGRASSLIST =
 					{
 						["MBIN_FILE_SOURCE"] =
 						{
+														[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSBIOME.MBIN]],
+														[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALBIOME.MBIN]],
@@ -37525,7 +37430,7 @@ LUSHGRASSLIST =
 					{
 						["MBIN_FILE_SOURCE"] =
 						{
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN]],
+
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVERUINSBIOME.MBIN]],
@@ -37642,6 +37547,7 @@ LUSHGRASSLIST =
 					{
 						["MBIN_FILE_SOURCE"] =
 						{
+	
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQBIOME.MBIN]],
@@ -40204,6 +40110,7 @@ end
 					{
 						["MBIN_FILE_SOURCE"] =
 						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOURBIOME.MBIN]],
@@ -40214,7 +40121,7 @@ end
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSBIOME.MBIN]],
+
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSBIOME.MBIN]],
 						},
 						["EXML_CHANGE_TABLE"] =
@@ -40246,7 +40153,7 @@ end
 					{
 						["MBIN_FILE_SOURCE"] =
 						{
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN]],
+							
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVERUINSBIOME.MBIN]],
@@ -40295,6 +40202,7 @@ end
 					{
 						["MBIN_FILE_SOURCE"] =
 						{
+														[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIOME.MBIN]],
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQBIOME.MBIN]],
@@ -42545,14 +42453,14 @@ end
 						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"FrameEnd",	"141"},
+							{"FrameEnd",	"171"},
 						}
 					},
 					{
 						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"FrameStart",	"40"},
+							{"FrameStart",	"10"},
 						}
 					}
 				}
@@ -42585,14 +42493,14 @@ end
 						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"FrameEnd",	"50"},
+							{"FrameEnd",	"166"},
 						}
 					},
 					{
 						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"FrameStart",	"131"},
+							{"FrameStart",	"15"},
 						}
 					}
 				}
