@@ -17403,10 +17403,10 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
+							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED},
 							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
 							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
+							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX},
 							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S },
 						}
 					},
@@ -17416,10 +17416,10 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
+							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED},
 							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
 							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
+							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX},
 							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S },
 						}
 					},
@@ -17429,10 +17429,10 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
+							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED},
 							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
 							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
+							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX},
 							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S },
 						}
 					},
@@ -17442,10 +17442,10 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
+							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED},
 							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
 							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
+							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX},
 							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S },
 						}
 					},
@@ -17489,6 +17489,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_H},
 						}
 					},
+
 					{
 						["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "AtmosCombatEngine" },
 						["INTEGER_TO_FLOAT"] = "FORCE",
@@ -17500,6 +17501,62 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_H},
 							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_H},
 							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_H},
+						}
+					},
+
+					-- SENTINELS 
+
+					{
+						["PRECEDING_KEY_WORDS"] = { "ControlHover", "SpaceEngine" },
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
+							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
+							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
+							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_H},
+							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
+							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S},
+						}
+					},
+					{
+						["PRECEDING_KEY_WORDS"] = { "ControlHover", "PlanetEngine" },
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
+							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
+							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
+							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
+							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
+							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S},
+						}
+					},
+					{
+						["PRECEDING_KEY_WORDS"] = { "ControlHover", "CombatEngine" },
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
+							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
+							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
+							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_S},
+							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
+							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S},
+						}
+					},
+					
+					{
+						["PRECEDING_KEY_WORDS"] = { "ControlHover", "AtmosCombatEngine" },
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
+							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
+							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
+							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
+							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
+							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S},
 						}
 					}
 				}
@@ -40411,6 +40468,8 @@ end
 		DAY_ONE_MODE
 	)
 
+	copyEXML(MASSIVE_FLEET,[[FREIGHTSHIP01.SCENE.EXML]],[[MODELS\RGO\FREIGHTSHIP01.SCENE.EXML]])
+	copyEXML(MASSIVE_FLEET,[[FREIGHTER_A.SCENE.EXML]],[[MODELS\RGO\FREIGHTER_A.SCENE.EXML]])
 
 	addFeature
 	(
