@@ -64,7 +64,7 @@ ER_STAND =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4211.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4212.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.21",
@@ -619,15 +619,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AmountMin", "1",},
                                 {"AmountMax", "3",},
                             }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Id", "RS_S6_PARTY2",},
-                                {"Id", "RS_S6_PARTY3",},
-                                {"Id", "RS_S6_PARTY4"},
-                            },
-                            ["REMOVE"] = "SECTION",
                         },
                     }
                 },
