@@ -2,7 +2,7 @@ Author = "Gumsk"				--Edited by Xen0nex
 ModName = "gPredators Frequency"
 ModNameSub = "MediumX"
 BaseDescription = "More dense predators; edited to tone down the effect to keep species sync with vanilla players"
-GameVersion = "393"
+GameVersion = "408"
 ModVersion = "a"
 
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORMED.MBIN"
@@ -11,17 +11,6 @@ FileSource2 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORLAR
 FileSource4 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONARCHETYPES.MBIN"
 --FileSource5 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"				--Removed the section of the mod that references this file, in order to maintain sync between which species I see on a planet and what all vanilla players also see
 
-DefaultTypeWeight = 0		--0
-ButterflyTypeWeight = 1		--1
-AlienTypeWeight = 1.5		--1.5
-DangerousTypeWeight = 3		--1
-HerdTypeWeight = 1			--1
-HuntedHerdTypeWeight = 1	--1
-ParadiseTypeWeight = 1.5	--1.5
-EmptyTypeWeight = 1			--1
-GiantTypeWeight = 1			--1
-SparseTypeWeight = 1		--1
-BusyTypeWeight = 1			--1
 
 AddPredatorText = [[        <Property value="GcCreatureGenerationDomainEntry.xml">
           <Property name="DensityModifier" value="GcCreatureGenerationDensity.xml">

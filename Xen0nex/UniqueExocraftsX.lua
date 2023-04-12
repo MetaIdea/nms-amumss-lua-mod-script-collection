@@ -1,4 +1,4 @@
-GameVersion = "3_99.1"
+GameVersion = "4_15"
 ModName = "UniqueExoCraftsX"
 Description = "A small mod that make exocraft faster but also stand out from eachother"
 
@@ -20,7 +20,7 @@ NomadVehicleBoostExtraMaxSpeedAir = "60" -- 40
 NomadVehicleBoostSpeedFalloff = "3" -- 7.5
 NomadVehicleBoostTime = "0.75" -- 0.5
 NomadVehicleBoostRechargeTime = "2" -- 2
-NomadVehicleJumpForce = 				"525"		--475
+NomadVehicleJumpForce = 				"525"		--475		JumpForce changes added by Xen0nex
 
 --MED_BUGGY/ROAMER
 RoamerVehicleBoostForce = "360" --300
@@ -75,9 +75,9 @@ MechSuitJPFillRate = "0.60"
 MechSuitLaserDamange = "350"
 MechSuitCanonDamange = "2500"
 ]]
-VehicleFuelRate = "0.3"					--0.4
-VehicleFuelRateSurvival = "0.6"			--0.8
-VehicleBoostFuelRate = "1"				--2
+VehicleFuelRate = "0.6"					--0.4		(0.3)
+--VehicleFuelRateSurvival = "0.6"		--0.8
+VehicleBoostFuelRate = "2"				--2			(1)
 VehicleBoostFuelRateSurvival = "2"		--4
 
 
@@ -129,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MechJetpackDrainRate", MechSuitJPDrainRate},
                                 {"MechJetpackFillRate", MechSuitJPFillRate},]]
 								{"VehicleFuelRate", VehicleFuelRate},
-								{"VehicleFuelRateSurvival", VehicleFuelRateSurvival},
+								--{"VehicleFuelRateSurvival", VehicleFuelRateSurvival},
 								{"VehicleBoostFuelRate", VehicleBoostFuelRate},
 								{"VehicleBoostFuelRateSurvival", VehicleBoostFuelRateSurvival}
 							}
@@ -149,6 +149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},]]
                         {
 							["SPECIAL_KEY_WORDS"] = {"Name","BIKE"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"TopSpeedForward", NomadSpeed}, 	-- Original "18"
@@ -164,6 +165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","WHEELEDBIKE"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"TopSpeedForward", PilgrimSpeed}, 	-- Original "18"
@@ -179,6 +181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","MED_BUGGY"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"TopSpeedForward", RoamerSpeed}, 	-- Original "16"
@@ -194,6 +197,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","TRUCK"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"TopSpeedForward", ColossusSpeed}, 	-- Original "12"
@@ -209,6 +213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUBMARINE" },
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"UnderwaterEngineMaxSpeed", NautilonSpeed}, 	-- Original "15"

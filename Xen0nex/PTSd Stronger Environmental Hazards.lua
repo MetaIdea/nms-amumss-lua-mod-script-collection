@@ -1,5 +1,5 @@
 ModName = "PTSd Stronger Environmental Hazards"
-GameVersion = "3_93"
+GameVersion = "4_20"
 Description = "Makes hazards (toxic, cold, hot, radiation) harsher. Also increases chances for special weather events (Tornadoes) and adjusts their properties."
 
 --TODO:
@@ -12,21 +12,33 @@ EventMult = 1												--Global Multiplier to apply to the chances for all the
 FreighterAbandonedHazardTimeMultiplier = 0.15				--0.15			(Seems to stack in some way with HardModeHazardTimeMultiplier ?)
 AbandonedFreighterRechargeMod = 0.33						--0.33			I assume this applies a multiplier to the normal HazardRechargeUnderground rate, i.e. Cold protection recharges at 1/3 of the normal rate next to a heater on a derelict freighter
 
-NormalModeHazardTimeMultiplier = 0.30						--0.9
-NormalModeHazardDamageRateMultiplier = 0.3					--0.8			How often your shield takes damage after hazard protection runs out
-NormalModeHazardDamageWoundRateMultiplier = 0.6				--0.8			How often your health takes damage after both hazard protection & your shield runs out
-NormalModeHazardRechargeUnderground = 1.5					--1.5
+NormalModeHazardTimeMultiplier = 0.15						--0.9	(0.30)	This appears deprecated as of NMS v4.0, make changes in GCGAMEPLAYGLOBALS.MBIN instead
+NormalModeHazardDamageRateMultiplier = 0.1					--0.8	(0.3)	How often your shield takes damage after hazard protection runs out
+NormalModeHazardDamageWoundRateMultiplier = 0.3				--0.8	(0.6)	How often your health takes damage after both hazard protection & your shield runs out
+NormalModeHazardRechargeUnderground = 3.5					--1.5	(1.5)	Lower value recharges faster when underground / indoors
 
-HardModeHazardTimeMultiplier = 0.15							--0.3
+HardModeHazardTimeMultiplier = 0.15							--0.3			This appears deprecated as of NMS v4.0, make changes in GCGAMEPLAYGLOBALS.MBIN instead
 HardModeHazardDamageRateMultiplier = 0.1					--0.3
 HardModeHazardDamageWoundRateMultiplier = 0.3				--0.5
-HardModeHazardRechargeUnderground = 3.5						--3.5
+HardModeHazardRechargeUnderground = 3.5						--3.5			Lower value recharges faster when underground / indoors
+
+--Some settings related to Hazard times, untested
+StartHazardTimeMultiplier =		3							--10			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier at the start of a new game (as long as you have no scanner tech installed on any multi-tool)
+EarlyHazardTimeMultiplier =		1.5							--1.6			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier from the time you have a scanner installed in a multi-tool, until you first reach your starship.
+
 --Life Support traits
+EnergyDischargeRateLow = 0.08								--0.02			Was 0.08 in the Deprecated "HardMode" version of this value pre-4.0
+EnergyDischargeRateMedium = 0.8								--0.25			Was 0.8 in the Deprecated "HardMode" version of this value pre-4.0
+EnergyDischargeRateHigh = 2.2								--0.9			Was 2.2 in the Deprecated "HardMode" version of this value pre-4.0
+EnergyDischargeRateFloatingInSpace = 30						--30
+
 EnergyDamageMinTime = 30									--30			Unknown function
-EnergyPainRate = 5											--20			How often your shield & health takes damage after life support runs out
+EnergyPainRate = 5											--20			How often your shield & health takes damage after life support runs out (lower is faster)
 
 --I assume this applies a multiplier to the HazardTimeMultiplier while in a vehicle, i.e. hazards drain 3x slower (so at 1/3 normal rate) while in a vehicle
 VehicleHazardDampingModifier = 3							--3
+
+JetpackFillRate = 0.2										--0.5			Was 0.2 in the Deprecated "HardMode" version of this value pre-4.0
 
 --Gravity storms seem to be possible on True Exotic Planets based on videos, but for some reason never randomly occur, only the scripted storms as part of certain missions...
 	--Also seems like the lowered gravity may just be the normal effect of the storm, not a special event like tornados
@@ -195,6 +207,7 @@ SpecialWeatherHazards =
 }
 
 --Note: GRAV_HAZ doesn't appear to ever be used in the vanilla game by default, but activating this causes the purple gravity storm orbs to appear constantly (the rare reduced gravity on Exotic planets is a constant storm effect, not an event)
+--[[
 GravityHazard =
 [[<Property name="WeatherHazardsIds">
     <Property value="NMSString0x10.xml">
@@ -203,11 +216,13 @@ GravityHazard =
   </Property>]]
 
 --Unknown Function
+--[[
 GravityEffect =
 [[<Property value="NMSString0x10.xml">
       <Property name="Value" value="GRAV_EFFECT" />
     </Property>]]
 	
+--[[
 GravityStormFilter =
 [[<Property name="StormFilterOptions">
     <Property value="GcScreenFilters.xml">
@@ -241,6 +256,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
+					{"EnergyDischargeRateLow", EnergyDischargeRateLow},
+					{"EnergyDischargeRateMedium", EnergyDischargeRateMedium},
+					{"EnergyDischargeRateHigh", EnergyDischargeRateHigh},
+					{"EnergyDischargeRateFloatingInSpace", EnergyDischargeRateFloatingInSpace},
 					{"EnergyDamageMinTime", EnergyDamageMinTime},
 					{"EnergyPainRate", EnergyPainRate},
 					{"FreighterAbandonedHazardTimeMultiplier", FreighterAbandonedHazardTimeMultiplier},
@@ -253,7 +272,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"HardModeHazardDamageRateMultiplier", HardModeHazardDamageRateMultiplier},
 					{"HardModeHazardDamageWoundRateMultiplier", HardModeHazardDamageWoundRateMultiplier},
 					{"HardModeHazardRechargeUnderground", HardModeHazardRechargeUnderground},
-					{"VehicleHazardDampingModifier", VehicleHazardDampingModifier}
+					{"VehicleHazardDampingModifier", VehicleHazardDampingModifier},
+					{"JetpackFillRate", JetpackFillRate},
+					{"EarlyHazardTimeMultiplier", EarlyHazardTimeMultiplier},
+					{"StartHazardTimeMultiplier", StartHazardTimeMultiplier},
 				}
 			}
 		}

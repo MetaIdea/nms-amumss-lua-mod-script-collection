@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"		--Edited by Xen0nex
 ModName = "GMech"
 ModNameSub = "+ReducedFuelX"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "399.1"
+GameVersion = "415"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
@@ -13,7 +13,7 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
 --GCVEHICLEGLOBALS Mech
 	MechContrailAlpha							= 0.6		--0.6
-	MechPlayerTurnSpeed							= 0.5		--0.5
+	MechPlayerGroundTurnSpeed					= 0.5		--0.5
 	MechJetpackTurnSpeed						= 1			--3			(0.8)
 	MechWalkToRunTimeIdle						= 0.8		--2
 	MechWalkToRunTimeSkid						= 0.1		--0.2
@@ -28,7 +28,7 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 	MechJetpackIgnitionTime						= 0.4		--0.4
 	MechJetpackDrainRate						= 0.5		--0.5
 	
-	MechJetpackFillRate							= 0.25		--0.5		(Slower Jetpack refilling)
+	MechJetpackFillRate							= 0.21		--0.5		(Slower Jetpack refilling)
 
 	MechHeadlightIntensity						= 10		--8	
 	MechTopSpeedForward							= 4			--2			(5)
@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{["INTEGER_TO_FLOAT"] = "FORCE",
 		["VALUE_CHANGE_TABLE"] = {
 			{"MechContrailAlpha",MechContrailAlpha},
-			{"MechPlayerGroundTurnSpeed",MechPlayerTurnSpeed},	
+			{"MechPlayerGroundTurnSpeed",MechPlayerGroundTurnSpeed},	
 			{"MechJetpackTurnSpeed",MechJetpackTurnSpeed},
 			{"MechWalkToRunTimeIdle",MechWalkToRunTimeIdle},
 			{"MechWalkToRunTimeSkid",MechWalkToRunTimeSkid},

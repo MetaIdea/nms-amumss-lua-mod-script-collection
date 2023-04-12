@@ -1,17 +1,17 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "3_99.1"
+GameVersion = "4_20"
 --Currently balancing around Survival Mode
 
 --Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
-UpgradeCMult	=		1							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
+UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
 UpgradeCBaseMarkup	=	0.2							--0.2						This replaces the vanilla "BuyBaseMarkup", affecting how much shops mark up the price ON TOP OF the actual value. E.G. "0.2" means shops charge BaseValue + (0.2 x BaseValue) for total price of 1.2x BaseValue. 
-UpgradeBMult	=		2							--Vanilla cost is	140
+UpgradeBMult	=		2.4							--Vanilla cost is	140
 UpgradeBBaseMarkup	=	0.2							--0.2
-UpgradeAMult	=		1.5							--Vanilla cost is	300
+UpgradeAMult	=		1.8							--Vanilla cost is	300
 UpgradeABaseMarkup	=	1							--0.2
-UpgradeSMult	=		2							--Vanilla cost is	480
+UpgradeSMult	=		2.4							--Vanilla cost is	480
 UpgradeSBaseMarkup	=	2							--0.2
-UpgradeXMult	=		1.5							--Vanilla cost is	280, 320, 600	(depends of which tech it upgrades)
+UpgradeXMult	=		1.8							--Vanilla cost is	280, 320, 600	(depends of which tech it upgrades)
 UpgradeXBaseMarkup	=	0.2							--0.2
 
 RegUpgradeSpaceStationMarkup = 0					--0						Doesn't seem to apply to regular upgrades.	Affects the buying AND selling price when using space station trade terminals or item vendors on outlaw stations ON TOP OF other values, e.g. a value of 0.5 means space stations charge & pay +50% more than other sources
@@ -39,7 +39,11 @@ CookingAndLivestockMult	=			3			--Multiplier applied to default cost of 10 Salva
 SimpleMachineMult	=				5			--Multiplier applied to default cost of 1 Salvaged Data
 MachineMult	=						3			--Multiplier applied to default cost of 10 Salvaged Data	(Alternative Landing Pad is 1 Salvaged Data, though)
 AntimatterReactorMult	=			2.5			--Multiplier applied to default cost of 20 Salvaged Data
-StorageContainersMult	=			1			--Multiplier applied to default cost of 5 Salvaged Data
+StorageContainers012Mult	=		1			--Multiplier applied to default cost of 5 Salvaged Data for Containers 0, 1, & 2	(These are the only ones given freely by the base building mission in PTSd)
+StorageContainers345Mult	=		2			--Multiplier applied to default cost of 5 Salvaged Data for Containers 3, 4, & 5
+StorageContainers678Mult	=		4			--Multiplier applied to default cost of 5 Salvaged Data for Containers 6, 7, & 8
+StorageContainer9Mult	=			8			--Multiplier applied to default cost of 5 Salvaged Data for Container 9
+FabricatorsMult	=					10			--Multiplier applied to default cost of 1 Salvaged Data (These are the Barrel/Crate Fabricators that spawn items)
 
 FreighterDoubleCultivationRoomMult	=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
 FreighterScannerRoomMult			=	3		--Multiplier applied to default cost of 1 Salvaged Frigate Data
@@ -74,7 +78,7 @@ TechAdjustments =
 		"VEHICLE_SCAN2",	0.5			--Exocraft Signal Booster Upgrade Tau	320 Nanites
 	},
 	{
-		"UT_MINER",	0.5					--Optical Drill
+		"UT_MINER",	0.3					--Optical Drill							460 Nanites
 	},
 	{
 		"UT_MIDAIR",	0.5				--Airburst Engine
@@ -83,7 +87,7 @@ TechAdjustments =
 		"UT_PULSEFUEL",	0.2				--Instability Drive
 	},
 	{
-		"UT_PULSESPEED",	0.2			--Sub-light amplifier
+		"UT_PULSESPEED",	0.3			--Sub-light amplifier					460 Nanites
 	},
 	{
 		"UT_QUICKWARP",	0.2				--Emergency Warp						240 Nanites
@@ -122,6 +126,9 @@ TechAdjustments =
 		"UT_RAD",	0.4					--Radiation Deflector			160
 	},
 	{
+		"UT_PROTECT",	0.67			--Shield Lattice				120		Cost reduced since it now is given freely in Base Computer Archive mission chain
+	},
+	{
 		"STEALTH",	1.5					--Cloaking Device 
 	},
 	{
@@ -149,19 +156,38 @@ TechAdjustments =
 		"UT_SHIPDRIFT",	0.3				--Flight Assist Override		460
 	},
 	{
+		"SUIT_ROCKET",	1.5				--Trade Rocket					90
+	},
+	{
 		"F_TELEPORT",	3.2				--Matter Beam					5 Salvaged Frigate Modules			(Not affected by TechCostMult)
 	},
 }
 
---New recipe for installing Matter Beam in freigther
+--New recipe for installing Oxygen Recycler (PTSd boosts its strength)
+OROxygen = 90							--60 Oxygen
+ORHermSeal = 1							--0 Hermetic Seal
+ORIonBatt = 3							--0 Ion Batteries
+
+--New recipe for installing Matter Beam in freighter
 MatterHeart = 16						--Heart of the Sun		(5 Antimatter in vanilla)
 MatterBulk = 1							--Cargo Bulkhead		(3 Magnet in vanilla)
-MatterAug = 1							--Storage AUgmentation	(10 Wiring Loom in vanilla)
+MatterAug = 1							--Storage Augmentation	(10 Wiring Loom in vanilla)
 
---New recipe for installing Interstellar Scanner in freigther
+--New recipe for installing Interstellar Scanner in freighter
 IntScannerWalkBrain = 1					--Walker Brain			(160 Chromatic Metal in vanilla)
 IntScannerHardEngine = 1				--Hardframe Engine		(70 Mag. Ferrite in vanilla)
 IntScannerWireLoom = 2					--2 Wiring Loom
+
+--New recipe for installing Pilot Interface in Sentinel Interceptor
+	--Note that the cost to repair/install for all of the following will actually be half of these values, but always at least 1
+InterceptShards = 12					--6 Radiant Shards
+InterceptMirror = 4						--1 Inverted Mirror
+InterceptBrain = 1						--1 Harmonic Brain
+InterceptAIValves = 4					--0 Starship AI Valves		(Technically added as a new custom separate tech to repair, not part of the Pilot Interface)
+
+--Added item costs for repairing all broken slots on Sentinel Multi-Tools
+RecycledCircuitAmount = 3							--0		Recycled Circuits
+SemiconductorAmount = 1								--0		Semiconductor
 
 --New recipe for installing Minotaur AI Pilot in Exomech
 AIPilotComputer = 8						--1 Quantum Computer
@@ -171,7 +197,7 @@ AIPilotLoom = 4							--1 Wiring Loom
 --Adds Hardframe Engine as a requirement for all Exo-Mech Hardframe upgrades
 MechPart = [[<Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="MECH_PROD" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
@@ -179,14 +205,22 @@ MechPart = [[<Property value="GcTechnologyRequirement.xml">
 --Adds 2x Quad Servo as a requirement for Sentinel Hardframe Legs upgrade (Since they already require Hardframe Engine)
 QuadParts = [[<Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="QUAD_PROD" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="2" />
         </Property>]]
 
---Changes base fuel usage rate for Minotaur exomech engine
-MinotaurFuelRate = 0.75					--0.5
+--Changes various fuel related values for Minotaur exomech
+MinotaurFuelRate = 3					--0.5		Changes base fuel usage rate for Minotaur exomech engine (higher value uses fuel faster)
+MinotaurBoreChargeAmount = 500			--200		The "tank size" of how much "charge"/"fuel" the Minotaur Bore can hold. (Terrain Manipulator is 600)
+MinotaurBoreChargeCost = 0.5			--			Multiplier to apply to the cost of recharging the Minotaur Bore. (Terrain Manipulator is 1/3 as expensive to recharge as Minotaur Bore normally) E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
+
+--Changes one of the ingredients for installing the Trade Rocket
+RocketDarkMatter = 4					--Dark Matter		(90 Di-Hydrogen in vanilla)
+--Changes the cost of using & recharging the Trade Rocket (fuel usage altered in PTSD Black Hole Distance + Ship Scrapping Items + Misc.lua)
+RocketChargeAmount = 50					--50	The "tank size" of how much "charge"/"fuel" it can hold
+RocketChargeCost = 8					--Multiplier to apply to the cost of recharging the Trade Rocket. E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
 
 --Everything below this point doesn't need to be changed, all the values can be edited in the sections above
 
@@ -367,20 +401,50 @@ RecipeChanges	=
 },
 {
 	{
-		StorageContainersMult
+		StorageContainers012Mult
 	},
 	{
 		"CONTAINER0",
 		"CONTAINER1",
-		"CONTAINER2",
+		"CONTAINER2"
+	},
+},
+{
+	{
+		StorageContainers345Mult
+	},
+	{
 		"CONTAINER3",
 		"CONTAINER4",
-		"CONTAINER5",
+		"CONTAINER5"
+	},
+},
+{
+	{
+		StorageContainers678Mult
+	},
+	{
 		"CONTAINER6",
 		"CONTAINER7",
-		"CONTAINER8",
+		"CONTAINER8"
+	},
+},
+{
+	{
+		StorageContainer9Mult
+	},
+	{
 		"CONTAINER9"
 	},
+},
+{
+	{
+		FabricatorsMult
+	},
+	{
+		"CRATELCYLINDER",				--1		Barrel Fabricator
+		"CRATELRARE"					--1		Crate Fabricator
+	}
 },
 {
 	{
@@ -676,6 +740,163 @@ UpgradeScannerChanges =
 TextA =
 [[<Property name="Children" />]]
 
+AddedSentToolRepairCost =
+[[<Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="SALVAGE_TECH7" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="]]..RecycledCircuitAmount..[[" />
+        </Property>
+		<Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="COMPOUND2" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="]]..SemiconductorAmount..[[" />
+        </Property>]]
+
+NewInterceptorRepairTech =
+[[<Property value="GcTechnology.xml">
+      <Property name="ID" value="MAINT_CEPTOR" />
+      <Property name="Group" value="" />
+      <Property name="Name" value="Broken AI Valves" />
+      <Property name="NameLower" value="broken ai valves" />
+      <Property name="Subtitle" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_MAINTAIN_TECH_SUB" />
+      </Property>
+      <Property name="Description" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_MAINTAIN_TECH5_DESC" />
+      </Property>
+      <Property name="Teach" value="False" />
+      <Property name="HintStart" value="" />
+      <Property name="HintEnd" value="" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TRADEPROD.EXOTICS5.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0.03529412" />
+        <Property name="G" value="0.36078432" />
+        <Property name="B" value="0.46666667" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="Level" value="1" />
+      <Property name="Chargeable" value="False" />
+      <Property name="ChargeAmount" value="100" />
+      <Property name="ChargeType" value="GcRealitySubstanceCategory.xml">
+        <Property name="SubstanceCategory" value="Earth" />
+      </Property>
+      <Property name="ChargeBy" />
+      <Property name="ChargeMultiplier" value="1" />
+      <Property name="BuildFullyCharged" value="True" />
+      <Property name="UsesAmmo" value="False" />
+      <Property name="AmmoId" value="" />
+      <Property name="PrimaryItem" value="False" />
+      <Property name="Upgrade" value="False" />
+      <Property name="Core" value="True" />
+      <Property name="RepairTech" value="False" />
+      <Property name="Procedural" value="False" />
+      <Property name="Category" value="GcTechnologyCategory.xml">
+        <Property name="TechnologyCategory" value="Maintenance" />
+      </Property>
+      <Property name="Rarity" value="GcTechnologyRarity.xml">
+        <Property name="TechnologyRarity" value="Impossible" />
+      </Property>
+      <Property name="Value" value="10" />
+      <Property name="Requirements">
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="SALVAGE_TECH10" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="]]..InterceptAIValves..[[" />
+        </Property>
+      </Property>
+      <Property name="BaseStat" value="GcStatsTypes.xml">
+        <Property name="StatsType" value="Unspecified" />
+      </Property>
+      <Property name="StatBonuses" />
+      <Property name="RequiredTech" value="" />
+      <Property name="RequiredLevel" value="0" />
+      <Property name="FocusLocator" value="" />
+      <Property name="UpgradeColour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="LinkColour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="RewardGroup" value="" />
+      <Property name="BaseValue" value="1" />
+      <Property name="Cost" value="GcItemPriceModifiers.xml">
+        <Property name="SpaceStationMarkup" value="0" />
+        <Property name="LowPriceMod" value="0" />
+        <Property name="HighPriceMod" value="0" />
+        <Property name="BuyBaseMarkup" value="0" />
+        <Property name="BuyMarkupMod" value="0" />
+      </Property>
+      <Property name="RequiredRank" value="1" />
+      <Property name="DispensingRace" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
+      </Property>
+      <Property name="FragmentCost" value="2" />
+      <Property name="TechShopRarity" value="GcTechnologyRarity.xml">
+        <Property name="TechnologyRarity" value="Impossible" />
+      </Property>
+      <Property name="WikiEnabled" value="False" />
+      <Property name="DamagedDescription" value="VariableSizeString.xml">
+        <Property name="Value" value="" />
+      </Property>
+      <Property name="ParentTechId" value="" />
+      <Property name="IsTemplate" value="False" />
+    </Property>]]
+
+NewInterceptorTechRepairSlot = 
+[[<Property value="GcMaintenanceElement.xml">
+          <Property name="ItemGroupOverride" value="GcMaintenanceElementGroups.xml">
+            <Property name="MaintenanceGroup" value="Custom" />
+          </Property>
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Technology" />
+          </Property>
+          <Property name="Id" value="MAINT_CEPTOR" />
+          <Property name="MinRandAmount" value="0" />
+          <Property name="MaxRandAmount" value="0" />
+          <Property name="MaxCapacity" value="-1" />
+          <Property name="AmountEmptyTimePeriod" value="0" />
+          <Property name="HideWhenComplete" value="False" />
+          <Property name="BlockDiscardWhenAllowedForParent" value="False" />
+          <Property name="UpdateType" value="UpdatesAlways" />
+          <Property name="DamagedAfterTimePeriodMin" value="0" />
+          <Property name="DamagedAfterTimePeriodMax" value="0" />
+          <Property name="DamageStatus" value="Damaged" />
+          <Property name="CompletionRequirement" value="FullyRepaired" />
+        </Property>]]
+
+function Invert (value)
+    return
+    1/value
+end
+
+function AddedProductCost (ProductID, ProductAmount)
+    return
+[[<Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="]]..ProductID..[[" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="]]..ProductAmount..[[" />
+        </Property>]]
+end
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
@@ -712,6 +933,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FragmentCost",	TechCostMult},						--Special case for High-Power Sonar since it's Nanite cost is not greater than or equal to 50 (10)
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "UT_ENERGY",	"ID", "OXYGEN"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	OROxygen},
 							}
 						},
 						{
@@ -803,6 +1034,60 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "", 
 							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "LIFESUP_ROBO",	"ID", "DRONE_SHARD"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	InterceptShards},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "LIFESUP_ROBO",	"ID", "DRONE_SALVAGE"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	InterceptMirror},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "LIFESUP_ROBO",	"ID", "SHIPBRAIN_CLEAN"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	InterceptBrain},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "WEAPSENT_DMG1"},
+							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = AddedSentToolRepairCost
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "WEAPSENT_DMG2"},
+							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = AddedSentToolRepairCost
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "WEAPSENT_DMG3"},
+							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = AddedSentToolRepairCost
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "WEAPSENT_DMG4"},
+							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = AddedSentToolRepairCost
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_PILOT",	"ID", "COMPUTER"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -843,6 +1128,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"] = "SECTION",
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","UT_ENERGY"},
+							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+							["ADD"] = AddedProductCost ("CARBON_SEAL", ORHermSeal),
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","UT_ENERGY"},
+							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+							["ADD"] = AddedProductCost ("POWERCELL", ORIonBatt),
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_L_ARM"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = MechPart,
@@ -874,20 +1171,88 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Bonus",	MinotaurFuelRate},
 							}
 						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_MINER"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ChargeAmount",	MinotaurBoreChargeAmount},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_MINER"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ChargeMultiplier",	Invert (MinotaurBoreChargeCost)},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "SUIT_ROCKET",	"ID", "LAUNCHSUB"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	RocketDarkMatter},
+								{"ID",	"ATLAS_SEED_4"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "SUIT_ROCKET",		"ID", "ATLAS_SEED_4"},
+							["VALUE_MATCH"] 	= "Substance",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"InventoryType", "Product"}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "SUIT_ROCKET"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ChargeAmount",	RocketChargeAmount},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "SUIT_ROCKET"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ChargeMultiplier",	Invert (RocketChargeCost)},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcTechnology.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = NewInterceptorRepairTech
+						},
 					}
 				},
-				--This entry intentionally left blank, to be filled in by the TechAdjustments function at the bottom of this script
 				{
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
+						--This entry intentionally left blank, to be filled in by the TechAdjustments function at the bottom of this script
 					}
 				},
-				--This entry intentionally left blank, to be filled in by the RecipeChanges function at the bottom of this script
 				{
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
+						--This entry intentionally left blank, to be filled in by the RecipeChanges function at the bottom of this script
 					}
 				},
 				{
@@ -896,7 +1261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = "",
-							["SPECIAL_KEY_WORDS"] = {"Id","FACT_TOKEN"}, 
+							["SPECIAL_KEY_WORDS"] = {"ID","FACT_TOKEN"}, 
                             ["MATH_OPERATION"]         = "*",  
                             ["REPLACE_TYPE"]         = "ALL",  
                             ["VALUE_MATCH"]         = "", 
@@ -936,6 +1301,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                     }
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELSHIP_PROC\ENTITIES\COCKPITDATA.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
+							["ADD"] = NewInterceptorTechRepairSlot,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["REPLACE_TYPE"] = "",
+							["MATH_OPERATION"]         = "+",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"VisibleMaintenanceSlots", 1},
+							}
+						},
+					}
 				},
             }
 		}
@@ -978,7 +1362,7 @@ for i = 1, #RecipeChanges do
 				["PRECEDING_KEY_WORDS"] = "",
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {"Id", RecipeID},
+				["SPECIAL_KEY_WORDS"] = {"ID", RecipeID},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1000,7 +1384,7 @@ for i = 1, #UpgradeChanges do
 			ChangesToProductTable[#ChangesToProductTable+1] =
 			{
 				["PRECEDING_KEY_WORDS"] = "",				-- what key words must occur in lines prior your desired value you want to change
-				["SPECIAL_KEY_WORDS"] = {"Id", ItemID},  
+				["SPECIAL_KEY_WORDS"] = {"ID", ItemID},  
 				["MATH_OPERATION"] 		= "*", 				-- "*", "+", "-", "/" or leave empty for normal replacement
 				["REPLACE_TYPE"] 		= "",			  -- "ALL" to change every matching values or leave empty for single replacement
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -1013,7 +1397,7 @@ for i = 1, #UpgradeChanges do
 			ChangesToProductTable[#ChangesToProductTable+1] =
 			{
 				["PRECEDING_KEY_WORDS"] = "",				-- what key words must occur in lines prior your desired value you want to change
-				["SPECIAL_KEY_WORDS"] = {"Id", ItemID},  
+				["SPECIAL_KEY_WORDS"] = {"ID", ItemID},  
 				["MATH_OPERATION"] 		= "", 				-- "*", "+", "-", "/" or leave empty for normal replacement
 				["REPLACE_TYPE"] 		= "",			  -- "ALL" to change every matching values or leave empty for single replacement
 				["INTEGER_TO_FLOAT"] = "FORCE",
@@ -1033,7 +1417,7 @@ for i = 1, #UpgradeScannerChanges do
 			ChangesToProductTable[#ChangesToProductTable+1] =
 			{
 				["PRECEDING_KEY_WORDS"] = "",				-- what key words must occur in lines prior your desired value you want to change
-				["SPECIAL_KEY_WORDS"] = {"Id", ScannerID},  
+				["SPECIAL_KEY_WORDS"] = {"ID", ScannerID},  
 				["MATH_OPERATION"] 		= "*", 				-- "*", "+", "-", "/" or leave empty for normal replacement
 				["REPLACE_TYPE"] 		= "",			  -- "ALL" to change every matching values or leave empty for single replacement
 				["INTEGER_TO_FLOAT"] = "PRESERVE",

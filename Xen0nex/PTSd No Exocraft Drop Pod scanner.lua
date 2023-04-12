@@ -1,5 +1,5 @@
 ModName = "PTSd No Exocraft Drop Pod scanner"
-GameVersion = "3_93"
+GameVersion = "4_08"
 
 --EndSection = [[        </Property>]]
 

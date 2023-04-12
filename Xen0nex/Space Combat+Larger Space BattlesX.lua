@@ -3,16 +3,36 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "398"
+GameVersion = "420"
 ModVersion = "a"
 
---Multipliers to apply to the hull & shields of all AI-controlled starships
-ShipHull =				1
-ShipShield =			1
+--Multipliers to apply to the hull & shields of all AI-controlled starships (individual ships have additonal multipliers applied)
+	--Note that "SpaceCombatDifficultyMultipliers" values in GCGAMEPLAYGLOBALS.GLOBAL.MBIN control additional (or subtract) Hull & Shields for enemy starships depending on Space Combat difficulty setting
+	--Multiplied by 1.15 to partially account for how additional supercharged weapon upgrades can increase DPS by up to 1.25~1.3x each time
+ShipHull =				2.5*1.15						--Starting AI Hull health
+ShipHullPerLevel =		2.5*1.15						--Additional AI Hull health added per level
+ShipShield =			2.5*1.15						--Starting AI Shield health
+ShipShieldPerLevel =	2.5*1.15						--Additional AI Shield health added per level
+
+--Adds additional Squadrons to appear at each Wanted Level, for all multiplayer group sizes
+AddedSquadrons =
+{
+	0,													--Wanted Level 1.	Default is 1 Squadron of Interceptors in solo, 2/2/2 in multiplayer groups
+	1,													--Wanted Level 2.	Default is 1 Squadron of Interceptors in solo, 2/3/4 in multiplayer groups
+	1,													--Wanted Level 3.	Default is 2 Squadron of Interceptors in solo, 3/5/6 in multiplayer groups
+	1,													--Wanted Level 4.	Default is 3 Squadron of Interceptors in solo, 4/6/8 in multiplayer groups
+	--0													--Wanted Level 5.	Default is 1 Squadron of Sentinel Freighters in solo, 1/1/1 in multiplayer groups (Each Freighter comes with it's own set of 2 Squadrons of 2 Interceptors each, so 4 Interceptors per Freighter)
+		--Changing the value for Wanted Level 5 doesn't seem to have an effect
+}
+--Sets how many Interceptors/Freighters appear in each Squadron at each Wanted level, for all multiplayer group sizes
+WantedSquadron1 =		1								--1 Interceptor per Squadron
+WantedSquadron2 =		1								--1 Interceptor per Squadron
+WantedSquadron3 =		1								--1 Interceptor per Squadron
+WantedSquadron4 =		1								--1 Interceptor per Squadron
+WantedSquadron5 =		1								--1 Sentinel Freighter per Squadron (Each Freighter comes with it's own set of 2 Squadrons of 2 Interceptors each, so 4 Interceptors per Freighter)
 
 --Currently missing 4 sets of changes to Spread and Count (Seems to just be for Freighters though), as I haven't found a way to target the sections they are in
 	--Similarly, this mod doesn't change the Scale on line 975 from 1.2 > 1.4
-
 LargerBattleChanges = 
 {
 	{
@@ -140,52 +160,52 @@ LargerBattleChanges =
 	},
 	{
 		{
-			"PoliceSpawns"
+			"PoliceSpawns"					--Enemy Sentinel Interceptors for different Wanted Level. Now has a separate "MaxCountsForFireteamSize" paramter, presumably to scale amount with the size of your multiplayer group?
 		},
 		{
 			{
 				{
-					"GcAIShipSpawnData.xml"
+					"GcPoliceSpawnWaveData.xml"
 				},
 				{
 					{"Spread",	100,		120},
-					{"Count",	1,			1}		--1,		1
+					{"Count",	WantedSquadron1,	WantedSquadron1}		--1,		1		(1,		2)
 				}
 			},
 			{--1st "ChildSpawns" entry
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml"
 				},
 				{
-					{"Spread",	60,			100},
-					{"Count",	2,			2}		--2,		2
+					{"Spread",	100,		120},
+					{"Count",	WantedSquadron2,	WantedSquadron2}		--1,		1		(2,		3)
 				}
 			},
 			{--2nd "ChildSpawns" entry, etc.
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml"
 				},
 				{
-					{"Spread",	60,			120},
-					{"Count",	3,			5}		--2,		2		(3,		4)
+					{"Spread",	100,		120},
+					{"Count",	WantedSquadron3,	WantedSquadron3}		--1,		1		(3,		4)
 				}
 			},
 			{--3rd "ChildSpawns" entry
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml"
 				},
 				{
-					{"Spread",	60,			120},
-					{"Count",	6,			8}		--2,		2		(3,		6)
+					{"Spread",	100,		120},
+					{"Count",	WantedSquadron4,	WantedSquadron4}		--1,		1		(3,		6)
 				}
 			},
-			{--4th "ChildSpawns" entry		This is the Sentinel Freighter
+			{--4th "ChildSpawns" entry
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml"
 				},
 				{
 					{"Spread",	200,		600},
-					{"Count",	1,			1}		--1,		1
+					{"Count",	WantedSquadron5,	WantedSquadron5}		--1,		1		(1,		2)
 				}
 			},
 		}
@@ -778,13 +798,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["NMS_VERSION"]		= GameVersion,
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {
-{
-	["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"},
-	["EXML_CHANGE_TABLE"] 	= 
-	{
-		--This entry intentionally left blank, to be filled in by the LargerBattleChanges at the bottom of this script
-	}
-},
 {	
 	["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"},
 	["EXML_CHANGE_TABLE"] 	= 
@@ -920,8 +933,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATLTEASY"},			--default "PIRATELOOT"			Note, changing to a custom modded lootpool such as PIRATLTEASY requires it to be defined and added to REWARDTABLE.MBIN, or this won't work.
-		{"Health", math.floor(ShipHull*12000)},			--default 5200
-		{"LevelledExtraHealth", math.floor(ShipHull*32000)},		--default 14000
+		{"Health", math.floor(ShipHull*5200*0.75)},				--default 5200
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*14000*0.75)},		--default 14000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 1},			--default 1
 		}},
@@ -935,8 +948,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", math.floor(ShipHull*22000)},			--default 5200
-		{"LevelledExtraHealth", math.floor(ShipHull*68000)},		--default 14000
+		{"Health", math.floor(ShipHull*5200*1.4)},				--default 5200
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*14000*1.4)},		--default 14000
 		{"Shield", "STRONG"},				--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -950,8 +963,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATLTHARD"},			--default "PIRATELOOT"			(Custom Lootpool)
-		{"Health", math.floor(ShipHull*45000)},			--default 6500
-		{"LevelledExtraHealth", math.floor(ShipHull*135000)},	--default 14000
+		{"Health", math.floor(ShipHull*6500*2.3)},			--default 6500
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*14000*3)},	--default 14000
 		{"Shield", "SLOW_STRONG"},			--default "FAST_STRONG"
 		{"LaserDamageLevel", 3},			--default 1
 		}},
@@ -965,8 +978,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		Probably maps to "POLICELOOT" somehow
-		{"Health", math.floor(ShipHull*34000)},			--default 11500
-		{"LevelledExtraHealth", math.floor(ShipHull*101000)},	--default 34000
+		{"Health", math.floor(ShipHull*11500)},			--default 11500
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*34000)},	--default 34000
 		{"Shield", "FAST"},					--default "FAST"
 		{"LaserDamageLevel", 2},			--default 1
 		}},	
@@ -980,8 +993,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "TRADERLOOT"},			--default "TRADERLOOT"
-		{"Health", math.floor(ShipHull*3800)},			--default 9000
-		{"LevelledExtraHealth", math.floor(ShipHull*6000)},		--default 16000
+		{"Health", math.floor(ShipHull*9000*0.13)},			--default 9000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*16000*0.13)},		--default 16000
 		{"Shield", "HUGE"},					--default "STANDARD"
 		{"LaserDamageLevel",2},				--default 1
 		}},
@@ -995,8 +1008,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "ESCORTLOOT"},			--default "TRADERLOOT"			(Custom Lootpool)
-		{"Health", math.floor(ShipHull*42000)},			--default 14000
-		{"LevelledExtraHealth", math.floor(ShipHull*83000)},	--default 36000
+		{"Health", math.floor(ShipHull*14000*0.75)},			--default 14000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*36000*0.75)},	--default 36000
 		{"Shield", "FAST"},					--default "FAST"
 		{"LaserDamageLevel",2},				--default 1
 		}},
@@ -1010,8 +1023,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "RAID_BUILDING"},	--default "RAID_BUILDING"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", math.floor(ShipHull*27000)},			--default 9000
-		{"LevelledExtraHealth", math.floor(ShipHull*45000)},		--default 16000
+		{"Health", math.floor(ShipHull*9000)},			--default 9000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*16000)},		--default 16000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1025,8 +1038,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", math.floor(ShipHull*27000)},			--default 9000
-		{"LevelledExtraHealth", math.floor(ShipHull*45000)},		--default 16000
+		{"Health", math.floor(ShipHull*9000)},			--default 9000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*16000)},		--default 16000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1040,8 +1053,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", math.floor(ShipHull*16000)},			--default 5200
-		{"LevelledExtraHealth", math.floor(ShipHull*38000)},		--default 14000
+		{"Health", math.floor(ShipHull*5200)},			--default 5200
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*14000)},		--default 14000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1056,8 +1069,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", math.floor(ShipHull*9000)},			--default 3000
-		{"LevelledExtraHealth", math.floor(ShipHull*9000)},		--default 3000
+		{"Health", math.floor(ShipHull*3000*0.75)},			--default 3000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*3000*0.75)},		--default 3000
 		{"Shield", "NULL"},					--default "NULL"
 		{"LaserDamageLevel", 1},			--default 1
 		}},
@@ -1071,8 +1084,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", math.floor(ShipHull*12000)},			--default 5000
-		{"LevelledExtraHealth", math.floor(ShipHull*12000)},		--default 5000
+		{"Health", math.floor(ShipHull*5000*0.75)},			--default 5000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*5000*0.75)},		--default 5000
 		{"Shield", "STANDARD"},				--default "STRONG"
 		{"LaserDamageLevel", 1},			--default 1
 		}},
@@ -1086,8 +1099,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", math.floor(ShipHull*15000)},			--default 5000
-		{"LevelledExtraHealth", math.floor(ShipHull*15000)},		--default 5000
+		{"Health", math.floor(ShipHull*5000)},			--default 5000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*5000)},		--default 5000
 		{"Shield", "STRONG"},				--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1101,8 +1114,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", math.floor(ShipHull*18000)},			--default 6000
-		{"LevelledExtraHealth", math.floor(ShipHull*18000)},		--default 6000
+		{"Health", math.floor(ShipHull*6000*1.25)},			--default 6000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*6000*1.25)},		--default 6000
 		{"Shield", "FAST_STRONG"},			--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1116,10 +1129,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", math.floor(ShipHull*39000)},			--default 13000
-		{"LevelledExtraHealth", math.floor(ShipHull*72000)},		--default 24000
+		{"Health", math.floor(ShipHull*13000)},			--default 13000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*24000)},		--default 24000
 		{"Shield", "NULL"},			--default "NULL"
 		{"LaserDamageLevel", 1},			--default 0
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","POLICEFREIGHTER"},				--Sentinel Freighters fought at wanted level 5
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_HARD"},		--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""
+		{"Health", math.floor(ShipHull*105000)},					--default 105000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*995000)},	--default 995000
+		{"Shield", "STRONG"},				--default "STANDARD"
+		{"LaserDamageLevel", 2},			--default 1
 		}},
 	--[[	Deprecated as of NMS v3.85
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
@@ -1746,8 +1774,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*11000)},								--5600
-		{"LevelledExtraHealth", math.floor(ShipShield*45000)},					--19000
+		{"Health", math.floor(ShipShield*5600*0.667)},								--5600
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*19000*0.667)},					--19000
 		{"RechargeTime", 11},										--5
 		{"RechargeDelayTime", 6},									--6
 		}},
@@ -1756,8 +1784,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*23000)},								--10000
-		{"LevelledExtraHealth", math.floor(ShipShield*68000)},					--35000
+		{"Health", math.floor(ShipShield*10000*0.75)},								--10000
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*35000*0.667)},					--35000
 		{"RechargeTime", 18},										--8
 		{"RechargeDelayTime", 10},									--10
 		}},
@@ -1766,8 +1794,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*6000)},								--2000
-		{"LevelledExtraHealth", math.floor(ShipShield*18000)},					--10000
+		{"Health", math.floor(ShipShield*2000)},								--2000
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*10000*0.667)},					--10000
 		{"RechargeTime", 3},										--1
 		{"RechargeDelayTime", 3},									--3
 		}},
@@ -1776,8 +1804,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*22000)},								--10000
-		{"LevelledExtraHealth", math.floor(ShipShield*56000)},					--25000
+		{"Health", math.floor(ShipShield*10000*0.75)},								--10000
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*25000*0.75)},					--25000
 		{"RechargeTime", 7},										--3
 		{"RechargeDelayTime", 4},									--4
 		}},
@@ -1787,7 +1815,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*0)},									--0
-		{"LevelledExtraHealth", math.floor(ShipShield*0)},						--0
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*0)},						--0
 		{"RechargeTime", 5},										--5
 		{"RechargeDelayTime", 10},									--10
 		}},
@@ -1796,8 +1824,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*45000)},								--Custom	[60000]
-		{"LevelledExtraHealth", math.floor(ShipShield*112000)},					--Custom	[150000]
+		{"Health", math.floor(ShipShield*15000)},										--Custom	[60000]
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*38000)},					--Custom	[150000]
 		{"RechargeTime", 54},										--Custom	[48]
 		{"RechargeDelayTime", 6},									--Custom	[4]
 		}},
@@ -1806,8 +1834,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*68000)},								--Custom	[90000]
-		{"LevelledExtraHealth", math.floor(ShipShield*165000)},					--Custom	[220000]
+		{"Health", math.floor(ShipShield*23000)},								--Custom	[90000]
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*55000)},					--Custom	[220000]
 		{"RechargeTime", 72},										--Custom	[96]
 		{"RechargeDelayTime", 12},									--Custom	[12]
 		}},
@@ -1816,6 +1844,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 local ChangesToLargerBattles = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
+for i = 1, #AddedSquadrons do
+	local AddAmount = AddedSquadrons[i]
+			
+			ChangesToLargerBattles[#ChangesToLargerBattles+1] =
+			{
+				["MATH_OPERATION"] 		= "+",
+				["PRECEDING_KEY_WORDS"] = {"GcPoliceSpawnWaveData.xml", "MaxCountsForFireteamSize"},
+				["SECTION_ACTIVE"] = {i,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"IGNORE", AddAmount}
+				}
+			}
+end
 for i = 1, #LargerBattleChanges do
 	local SceneID = LargerBattleChanges[i][1][1]
 	local ChildLevels = LargerBattleChanges[i][2]

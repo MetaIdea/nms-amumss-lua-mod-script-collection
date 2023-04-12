@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "3_99.1"
+GameVersion = "4_20"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -323,19 +323,19 @@ RecipeChanges =
 	},
 --Buffs a few recipes that either were inferiror to easier recipes, or to incentivise finding their raw ingredients
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_2",		125,				60},				--Makes Gold					x100		in	60 time
+		{"REFINERECIPE_2",		125,				60},				--Makes Gold					x100	in	60 time
 		{
 			{"CLAMPEARL",		1}										--Requires Living Pearl			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_4",		75	,				60},				--Makes Nanites					x50			in	60 time
+		{"REFINERECIPE_4",		75	,				60},				--Makes Nanites					x50		in	60 time
 		{
 			{"FISHCORE",		1}										--Requires Hadal Core			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_5",		75	,				90},				--Makes Sodium Nitrate			x50			in	60 time
+		{"REFINERECIPE_5",		75	,				90},				--Makes Sodium Nitrate			x50		in	60 time
 		{
 			{"VENTGEM",			1}										--Requires Crystal Sulphide		x1
 		}
@@ -409,6 +409,7 @@ RecipeChanges =
 			{"PLANT_CAVE",		5}										--Requires Marrow Bulb			x1
 		}
 	},
+--The amount of Creature Pellets made in this recipe will be multiplied by PelletsPerRecipe below
 	{							--Amount per batch	--Time per batch
 		{"RECIPE_577",			1,					5},					--Makes Creature Pellets		x1		in	5 time
 		{
@@ -423,6 +424,32 @@ RecipeChanges =
 		}
 	},
 }
+
+--Nerfs simple recipes that were too generous (These recipes all have the same ID so need to be searched by RecipeType instead)
+CorruptRecipeChanges =
+{
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_DRONESHARD",	16,					500},				--Makes Nanites					x50	in	500 time
+		{
+			{"DRONE_SHARD",		1}										--Requires Radiant Shard			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_DRONESCRAP",	48,					700},				--Makes Nanites					x95	in	700 time
+		{
+			{"DRONE_SALVAGE",	1}										--Requires Inverted Mirror			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_SHIPBRAIN",	96,					900},				--Makes Nanites					x260	in	900 time
+		{
+			{"SHIPBRAIN",		1}										--Requires Hyaline Brain			x1
+		}
+	},
+}
+
+--Multiplies how many Creature Pellets are created from all cooking recipes (Since the crafting recipe now creates multiple pellets after a game update)
+PelletsPerRecipe =				3										--1
 
 --Changes certain recipes for Creature Pellets to require 5x uncooked plantable crops instead of only 1x (along with 1x Faecium)
 RawCropsPerPellet = 			5										--1
@@ -443,7 +470,7 @@ NewAloeAndDrinkRecipes =
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="VEG_ALOE" />
       <Property name="RecipeType" value="RECIPE_ALOE" />
-      <Property name="RecipeName" value="R_NAME_ALOE" />
+      <Property name="RecipeName" value="PTSd: Aloe Steaming" />
       <Property name="TimeToMake" value="5" />
       <Property name="Cooking" value="True" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -473,7 +500,7 @@ NewAloeAndDrinkRecipes =
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="CREAM_DRINK" />
       <Property name="RecipeType" value="RECIPE_DRINK" />
-      <Property name="RecipeName" value="R_NAME_DRINK" />
+      <Property name="RecipeName" value="PTSd: Plant-Based Cream" />
       <Property name="TimeToMake" value="5" />
       <Property name="Cooking" value="True" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -506,7 +533,7 @@ NewRecipe1 =
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="TRITIUM_SACVENOM" />
       <Property name="RecipeType" value="RECIPE_TRITIUM" />
-      <Property name="RecipeName" value="R_NAME_TRITIUM" />
+      <Property name="RecipeName" value="PTSd: Tritium Sublimation" />
       <Property name="TimeToMake" value="1200" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -538,7 +565,7 @@ NewRecipe2 =
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DIH_ALBUMENPEARL" />
       <Property name="RecipeType" value="RECIPE_DIHYDROGEN" />
-      <Property name="RecipeName" value="R_NAME_DIHYDROGEN" />
+      <Property name="RecipeName" value="PTSd: Di-Hydrogen Extraction" />
       <Property name="TimeToMake" value="1200" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -571,7 +598,7 @@ NewRecipe3 =
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_NAVDATA" />
       <Property name="RecipeType" value="RECIPE_NAVDATA" />
-      <Property name="RecipeName" value="R_NAME_NAVDATA" />
+      <Property name="RecipeName" value="PTSd: Data Condensation" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -592,12 +619,48 @@ NewRecipe3 =
       </Property>
     </Property>]]
 	
---Adds Recipes for refining Quad Servo, Hardframe Enginer, and Walker Brain into Nanites
+--Adds Recipe for refining Exosuit Upgrade Chart into 50 Nanites
+NewRecipe4 = 
+[[<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="NANITE_NAVDROP" />
+      <Property name="RecipeType" value="RECIPE_NAVDROP" />
+      <Property name="RecipeName" value="PTSd: Dense Data Condensation" />
+      <Property name="TimeToMake" value="600" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="TECHFRAG" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Substance" />
+        </Property>
+        <Property name="Amount" value="50" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="NAV_DATA_DROP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>]]
+
+--For adding Hypnotic Eye as an ingredient in the final Worm Food recipe
+AddEyeball =
+[[<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="EYEBALL" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>]]
+
+--Adds Recipes for refining Quad Servo, Hardframe Engine, Crystallised Heart, and Walker Brain into Nanites
 NewSentinelNaniteRecipes = 
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_QUAD" />
       <Property name="RecipeType" value="RECIPE_QUAD" />
-      <Property name="RecipeName" value="R_NAME_QUAD" />
+      <Property name="RecipeName" value="PTSd: Small Nanite Extraction" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -620,7 +683,7 @@ NewSentinelNaniteRecipes =
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_MECH" />
       <Property name="RecipeType" value="RECIPE_MECH" />
-      <Property name="RecipeName" value="R_NAME_MECH" />
+      <Property name="RecipeName" value="PTSd: Medium Nanite Extraction" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -641,9 +704,32 @@ NewSentinelNaniteRecipes =
       </Property>
     </Property>
 	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="NANITE_SPIDER" />
+      <Property name="RecipeType" value="RECIPE_SPIDER" />
+      <Property name="RecipeName" value="PTSd: Corrupt Nanite Extraction" />
+      <Property name="TimeToMake" value="600" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="TECHFRAG" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Substance" />
+        </Property>
+        <Property name="Amount" value="200" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="SPIDER_PROD" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_WALKER" />
       <Property name="RecipeType" value="RECIPE_WALKER" />
-      <Property name="RecipeName" value="R_NAME_WALKER" />
+      <Property name="RecipeName" value="PTSd: Large Nanite Extraction" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -664,6 +750,249 @@ NewSentinelNaniteRecipes =
       </Property>
     </Property>]]
 
+--Adds Recipes for refining Larval Core, Hadal Core, Vile Spawn, Flesh Rope, Quad Servo, Hardframe Engine, Crystallised Heart, and Walker Brain into Data by refining with Microprocessor
+NewSalvagedDataRecipes = 
+[[<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_FIEND" />
+      <Property name="RecipeType" value="RECIPE_FIEND_D" />
+      <Property name="RecipeName" value="PTSd: Fiendish Data Extraction" />
+      <Property name="TimeToMake" value="3" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="1" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="FIENDCORE" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_FISH" />
+      <Property name="RecipeType" value="RECIPE_FISH_D" />
+      <Property name="RecipeName" value="PTSd: Abyssal Data Extraction" />
+      <Property name="TimeToMake" value="9" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="3" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="FISHCORE" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="2" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="3" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_VILE" />
+      <Property name="RecipeType" value="RECIPE_VILE_D" />
+      <Property name="RecipeName" value="PTSd: Vile Data Extraction" />
+      <Property name="TimeToMake" value="3" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="1" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="WORMPROD" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_FLESH" />
+      <Property name="RecipeType" value="RECIPE_FLESH_D" />
+      <Property name="RecipeName" value="PTSd: Fleshy Data Extraction" />
+      <Property name="TimeToMake" value="3" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="1" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="WORMPROD" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_QUAD" />
+      <Property name="RecipeType" value="RECIPE_QUAD_D" />
+      <Property name="RecipeName" value="PTSd: Small Data Extraction" />
+      <Property name="TimeToMake" value="6" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="2" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="QUAD_PROD" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="2" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_MECH" />
+      <Property name="RecipeType" value="RECIPE_MECH_D" />
+      <Property name="RecipeName" value="PTSd: Medium Data Extraction" />
+      <Property name="TimeToMake" value="12" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="4" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MECH_PROD" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="4" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_SPIDER" />
+      <Property name="RecipeType" value="RECIPE_SPIDER_D" />
+      <Property name="RecipeName" value="PTSd: Corrupt Data Extraction" />
+      <Property name="TimeToMake" value="12" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="4" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="SPIDER_PROD" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="4" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_WALKER" />
+      <Property name="RecipeType" value="RECIPE_WALKER_D" />
+      <Property name="RecipeName" value="PTSd: Large Data Extraction" />
+      <Property name="TimeToMake" value="24" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="8" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="WALKER_PROD" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="8" />
+        </Property>
+      </Property>
+    </Property>]]
+
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -673,13 +1002,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["NMS_VERSION"]			= GameVersion,
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
-	{
-		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
-		{
-			--This entry intentionally left blank, to be filled in by the SubstanceCostChanges at the bottom of this script
-		}
-	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
@@ -698,12 +1020,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = NewRecipe4
+			},
+			{
+				["PRECEDING_KEY_WORDS"] = {"Table"},
 				["ADD"] = NewAloeAndDrinkRecipes
 			},
 			{
 				["PRECEDING_KEY_WORDS"] = {"Table"},
 				["ADD"] = NewSentinelNaniteRecipes
-			}
+			},
+			{
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = NewSalvagedDataRecipes
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_893"},			--Removes the Worm Food alternative recipe that uses Hypnotic Eye, as in PTSd Hypnotic Eye is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_895"},
+				["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
+				--["SECTION_UP"] = 1,
+				["ADD"] = AddEyeball,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
 		}
 	}
 }}}}
@@ -748,6 +1091,41 @@ for i = 1, #RecipeChanges do
 				}
 			}
 end
+for i = 1, #CorruptRecipeChanges do
+	local RecipeType = CorruptRecipeChanges[i][1][1]
+	local Time = CorruptRecipeChanges[i][1][3]
+	local AmountResult = CorruptRecipeChanges[i][1][2]
+	local Ingredients = CorruptRecipeChanges[i][2]
+	
+		for j = 1, #Ingredients do
+			INGId = Ingredients[j][1]
+			AmountING = Ingredients[j][2]
+			
+			ChangesToRecipes[#ChangesToRecipes+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"RecipeType", RecipeType, "Id", INGId},
+				--["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Amount", AmountING}
+				}
+			}
+		end
+		
+		ChangesToRecipes[#ChangesToRecipes+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"RecipeType", RecipeType},
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"TimeToMake", Time},
+					{"Amount", AmountResult}
+				}
+			}
+end
 for i = 1, #CropPelletChanges do
 	local RecipeId = CropPelletChanges[i]
 	local AmountING = RawCropsPerPellet
@@ -764,6 +1142,16 @@ for i = 1, #CropPelletChanges do
 				}
 			}
 end
+ChangesToRecipes[#ChangesToRecipes+1] =
+{
+	["MATH_OPERATION"] 		= "*",
+	["SPECIAL_KEY_WORDS"] = {"Id", "BAIT_BASIC"},
+	["REPLACE_TYPE"] = "ALL",
+	["VALUE_CHANGE_TABLE"] 	=
+	{
+		{"Amount", PelletsPerRecipe}
+	}
+}
 
 --[[local ChangesToRecipes = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 

@@ -1,14 +1,14 @@
 ModName = "PTSd Weaker Fleet Upgrades"
-GameVersion = "3_93"
-Description = "Weakens Fleet Upgrade modules from giving 1~15% boost to 1~10% boosts"
-
+GameVersion = "4_08"
+Description = "Weakens Fleet Upgrade modules from giving 1~15% boost to 1~5% boosts"
+--When taking into account adjacency bonuses and the odd way that supercharged slots affect upgrades with multipliers listed as values greater than 1 in the game files like with fleet upgrades, the final bonuses quickly become enormous even with very small base values
 
 --Multipliers to apply to the base stats for various Fleet upgrades. (Excluding Fuel, which does nothing anyways)
 FleetUpgradeChanges =
 {
 	{
 		{	--C class upgrades
-			"1.01",			"1.03"			--"1.01",			"1.05"
+			"1.005",			"1.015"			--"1.01",			"1.05"
 		},
 		{--		Speed			Combat			Trade			Explore			Mining
 			"UP_FRSPE1",	"UP_FRCOM1",	"UP_FRTRA1",	"UP_FREXP1",	"UP_FRMIN1"
@@ -16,7 +16,7 @@ FleetUpgradeChanges =
 	},
 	{
 		{	--B class upgrades
-			"1.03",			"1.06"			--"1.05",			"1.1"
+			"1.015",			"1.03"			--"1.05",			"1.1"
 		},
 		{
 			"UP_FRSPE2",	"UP_FRCOM2",	"UP_FRTRA2",	"UP_FREXP2",	"UP_FRMIN2"
@@ -24,7 +24,7 @@ FleetUpgradeChanges =
 	},
 	{
 		{	--A class upgrades
-			"1.06",			"1.09"			--"1.1",			"1.14"
+			"1.03",			"1.045"			--"1.1",			"1.14"
 		},
 		{
 			"UP_FRSPE3",	"UP_FRCOM3",	"UP_FRTRA3",	"UP_FREXP3",	"UP_FRMIN3"
@@ -32,7 +32,7 @@ FleetUpgradeChanges =
 	},
 	{
 		{	--S class upgrades
-			"1.1",			"1.1"			--"1.15",			"1.15"
+			"1.05",			"1.05"			--"1.15",			"1.15"
 		},
 		{
 			"UP_FRSPE4",	"UP_FRCOM4",	"UP_FRTRA4",	"UP_FREXP4",	"UP_FRMIN4"
