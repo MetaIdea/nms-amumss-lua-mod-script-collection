@@ -1,5 +1,5 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "3_93"
+GameVersion = "4_20"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
 --GcDefaultMissionProductEnum.xml
@@ -10,7 +10,7 @@ Description = "Increases the amount of items required to complete certain 'Expan
 --"MissionID" value="G_COLLECT2" />
 
 StartingHazDamage =		25				--76	What percentage of your Hazard protection is missing when starting a new game file
-StarNewGameWithIonBatt = true			--true to begin new games with Ion Battery in the inventory, false otherwise
+StarNewGameWithIonBatt = false			--false 	Set true to begin new games with Ion Battery in the inventory, false otherwise
 NewGameIonBattAmmount = 1				--Amount of Ion Batteries to start the game with, if above setting set to true
 
 --Multipliers to apply to amount of items needed to hand in to complete certain stages of the "Expanding the Base" questline
@@ -19,6 +19,10 @@ ProductReqMult =		10				--7x quests: Vanilla requirements are 2 Microprocessors,
 --Overrides to replace the amount required for specific items 
 KorvaxCubeReq =			1				--1 Cube		(setting to values other than 1 makes that mission stage loop to keep giving you cubes until you have the new requirement))
 VyKeenDaggerReq =		10				--2 Daggers		This type of item is rarer to find than some others
+
+--Changes the UI text to match the new requirements for repairing the Pilot Interface for crashed Sentinel Interceptors
+RadiantShards =			6				--3
+InvertedMirrors =		2				--1
 
 --Quest Rewards to be replaced
 ReplacedRewardsSentinel =
@@ -29,7 +33,10 @@ ReplacedRewardsSentinel =
 }
 
 --Multipliers for the displayed blueprint costs for Roamer & Minotaur Geobay in the UI for quest objectives
-ExocraftBlueprintCostMult = 7.5				--Put the same value used in the "UnlockCosts.lua" file so the UI matches up with the actual cost
+ExocraftBlueprintCostMult = 7.5				--Put the same value used in the "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance.lua" file so the UI matches up with the actual cost
+
+--Set which recipes for Storage Containers to remove from the reward the Overseer gives you in the base building mission chain, where he normally gives all 10 recipes
+RemoveContainerMission = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9", }		
 
 --Replacement Reward
 SalvagedDataReward =
@@ -78,13 +85,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["NMS_VERSION"]			= GameVersion,
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
-	{
-		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\SENTINELSETTLEMENTMISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
-		{
-			--This entry intentionally left blank, to be filled in by the the function at the bottom of this script
-		}
-	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\SENTINELSETTLEMENTMISSIONTABLE.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
@@ -335,15 +335,41 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			}]]
 		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\STARTEDONUSEMISSIONTABLE.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"Message", "UI_SENTINEL_CRASH_MSG3"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", RadiantShards},
+					{"AmountMax", RadiantShards},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Message", "UI_SENTINEL_CRASH_MSG4"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", InvertedMirrors},
+					{"AmountMax", InvertedMirrors},
+				}
+			},
+		}
 	}
 }}}}
 
-local ChangesToCoreMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToSettlementMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
 for i = 1, #ReplacedRewardsSentinel do
 	local RewardID = ReplacedRewardsSentinel[i]
 
-			ChangesToCoreMissionTable[#ChangesToCoreMissionTable+1] =
+			ChangesToSettlementMissionTable[#ChangesToSettlementMissionTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", RewardID},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
@@ -351,7 +377,7 @@ for i = 1, #ReplacedRewardsSentinel do
 				["ADD"] = SalvagedDataReward
 			}
 			
-			ChangesToCoreMissionTable[#ChangesToCoreMissionTable+1] =
+			ChangesToSettlementMissionTable[#ChangesToSettlementMissionTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardID},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
@@ -361,17 +387,30 @@ for i = 1, #ReplacedRewardsSentinel do
 			}
 end
 
-local ChangesToTutorialMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local ChangesToTutorialMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
 if StarNewGameWithIonBatt then
 ChangesToTutorialMissionTable[#ChangesToTutorialMissionTable+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
+				--["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_SET_HAZ"},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 				["ADD"] = RewardIonBattery (NewGameIonBattAmmount)
+			}
+end
+
+local ChangesToCoreMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+
+for i = 1, #RemoveContainerMission do
+	local ContainerID = RemoveContainerMission[i]
+		
+			ChangesToCoreMissionTable[#ChangesToCoreMissionTable+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Id", "HAND_IN_OS4",	"Value",	ContainerID},
+				["REMOVE"] = "SECTION"
 			}
 end

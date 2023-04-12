@@ -1,5 +1,5 @@
 ModName = "PTSd Settlement Rewards"
-GameVersion = "3_93"
+GameVersion = "4_08"
 Description = "Rebalances settlement produced items by race & wealth, Increases cap on stored settlement rewards, and can optionally change settlement timers"
 
 --Multiplier to apply to the Max Production cap and Production StatProductivityContributionModifier

@@ -1,11 +1,17 @@
 ModName = "_Extra Savage Sentinels by ExosolarX"
-GameVersion = "3_99.1"
-Description = "Increases the difficulty of Sentinels by changing aggression, firrate, range, sight distance, etc."
+GameVersion = "4_20"
+Description = "Increases the difficulty of Sentinels by changing aggression, firerate, range, sight distance, etc."
+
+--Multiplier to apply to the base health of all planetary Sentinels
+SentHealth =				3*1.1							--was 4 in PTSd 3.99
+--Multiplier to apply to the base health increase per level of all planetary Sentinels
+	--Seems like the game may only apply one "level" worth of bonus health? In a quick test, an end game character with lots of S Class gear faced sentinels that only had one instance of the "health on level" applied
+SentLevelHealth =			2*1.1							--was 1 in PTSd 3.99
 
 function AddWaveSequence (Set)
     return
-[[<Property value="GcSentinelSpawnSequence.xml">
-          <Property name="Waves">
+[[<Property value="GcSentinelSpawnSequenceStep.xml">
+          <Property name="WavePool">
             <Property value="NMSString0x10.xml">
               <Property name="Value" value="]]..Set..[[" />
             </Property>
@@ -71,11 +77,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["MATH_OPERATION"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	--Old		New
-								{"10", 		20},								--10	seconds at Wanted level 1
+								--{"10", 		20},								--10	seconds at Wanted level 1
 								{"15", 		20},								--15	seconds at Wanted level 2, plus whatever the lower Wanted level times are	(e.g. 15 + 10 = 25 seconds total in vanilla)
-								{"10", 		15},								--10	etc.
-								{"15", 		15},								--15
-								{"10", 		10}									--10
+								--{"10", 		15},								--10	seconds at Wanted level 3, plus whatever the lower Wanted level times are
+								{"15", 		15},								--15	seconds at Wanted level 4, plus whatever the lower Wanted level times are
+								--{"10", 		10}									--10	seconds at Wanted level 5, plus whatever the lower Wanted level times are
+							}
+						},
+						--Had to split this section into two, to make sure the entries get changed in the right order
+						{
+							["PRECEDING_KEY_WORDS"] = {"WantedTimeout"},		--Controls how long Sentinels will Search for the player if they run away after a Crime
+							["REPLACE_TYPE"]         = "",
+							["MATH_OPERATION"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{	--Old		New
+								{"10", 		20},								--10	seconds at Wanted level 1
+								--{"15", 		20},								--15	seconds at Wanted level 2, plus whatever the lower Wanted level times are	(e.g. 15 + 10 = 25 seconds total in vanilla)
+								{"10", 		15},								--10	seconds at Wanted level 3, plus whatever the lower Wanted level times are
+								--{"15", 		15},								--15	seconds at Wanted level 4, plus whatever the lower Wanted level times are
+								{"10", 		10}									--10	seconds at Wanted level 5, plus whatever the lower Wanted level times are
 							}
 						},
 						{
@@ -88,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"30", 		30},								--30
 								{"60", 		60},								--60
 								{"90", 		90},								--90
-								{"-1", 		-1}									---1
+								--{"-1", 		-1}									---1
 							}
 						},
 						{
@@ -101,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"20", 		30},								--20
 								{"40", 		45},								--40	seconds at Wanted level 3 total (doesn't seem to add lower level Wanted times)
 								{"120", 	120},								--120
-								{"-1", 		-1}									---1
+								--{"-1", 		-1}									---1
 							}
 						}
 					}
@@ -117,41 +137,45 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4"},		--Wanted Level 4 spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequence.xml"},
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddWaveSequence ("QUAD_SOLO")			--Should add a single Sentinel Quad spawn between the initial drones and the Mech
 						},
 						--WANTED_4_EX already has Quads
 						--[[{
 							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_EX"},	--Wanted Level 4, "Extreme" version spawns?
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequence.xml"},
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddWaveSequence ("QUAD_SOLO")			--Should add a single Sentinel Quad spawn between the initial drones and the Mech
 						},]]
-						{
+						{--For some reason this one had trouble finding the section normally?
 							--["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
+							--["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
+							["PRECEDING_KEY_WORDS"] = {"Spawns"},
 							["SPECIAL_KEY_WORDS"] = {"Id","FACTORY_A"},		--Manufacturing Facility guards
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							--["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddSentinels ("Quad", 1, 1)
 						},
-						{--Causes a bug if run through AMUMSS without adding "Spawns", to the front of the Preceding Key Words?
+						{--in 3.99 Causes a bug if run through AMUMSS without adding "Spawns", to the front of the Preceding Key Words?
 							--["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData.xml"},
+							--["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData.xml"},
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
 							["SPECIAL_KEY_WORDS"] = {"Id","HARVESTER_A"},	--Planetary Harvester guards
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddSentinels ("SummonerDrone", 1, 1)
 						},
-						{--Causes a bug if run through AMUMSS without adding "Spawns", to the front of the Preceding Key Words?
+						{--in 3.99 Causes a bug if run through AMUMSS without adding "Spawns", to the front of the Preceding Key Words?
 							--["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData.xml"},
+							--["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData.xml"},
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
 							["SPECIAL_KEY_WORDS"] = {"Id","HIVE_A"},		--Sentinel Pillar guards
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddSentinels ("Quad", 1, 1)
 						},
-						{--Causes a bug if run through AMUMSS without adding "Spawns", to the front of the Preceding Key Words?
+						{--in 3.99 Causes a bug if run through AMUMSS without adding "Spawns", to the front of the Preceding Key Words?
 							--["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData.xml"},
+							--["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData.xml"},
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
 							["SPECIAL_KEY_WORDS"] = {"Id","HIVE_EX_A"},		--Sentinel Pillar guards, "Extreme" version?
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddSentinels ("Quad", 1, 1)
@@ -210,6 +234,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},]]
 					}
 				},
+				{	--This section added by Xen0nex
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\CORRUPTDRONEPILLAR\ENTITIES\DATA.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Health", 4200*5},				--4200				Health of Dissonance Resonators on Corrupt Planets
+							}
+						},
+					}
+				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCROBOTGLOBALS.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -219,12 +255,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"GrenadeLaunchFlightTime", 2},
-								{"MaxNumPatrolDrones", 6},						--(2)
-								{"UnderwaterPerceptionMargin", 3},				--(2)
-								{"CombatWaveSpawnTime", 5},						--(15)
-								--{"DroneMiningValueActivate", 100},			--From gexo's savage sentinels
-								--{"DroneCrimeWitnessLimit", 5},				--From gexo's savage sentinels
-								--{"DroneCrimeProximityMultiplier", 5},			--From gexo's savage sentinels
+								{"MaxNumPatrolDrones", 6},							--(2)
+								{"UnderwaterPerceptionMargin", 3},					--(2)
+								{"CombatWaveSpawnTime", 12},						--(15)
+								--{"DroneMiningValueActivate", 100},				--From gexo's savage sentinels
+								--{"DroneCrimeWitnessLimit", 5},					--From gexo's savage sentinels
+								--{"DroneCrimeProximityMultiplier", 5},				--From gexo's savage sentinels
 								{"WalkerEnergyLength", 20},
 								{"WalkerEnergyMinAlpha", 0.1},
 								{"RobotHUDMarkerRange", 120},
@@ -235,21 +271,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"WalkerGunShootTime", 7},
 								{"WalkerGunChargeTime", 0.8},
 								{"WalkerGunRate", 0.035},
-								{"QuadLookAngleMax", 120},								
-								{"QuadAttackRange", 80},
-								{"QuadAttackTurnAngleMax", 120},								
-								{"QuadAttackTurnAngleMin", 20},								
-								{"QuadAttackAngle", 10},
-								{"QuadChargeTargetLockPercent", 0.8},
-								{"QuadJumpBackRange", 16},
-								{"QuadPounceMinRange", 7},
-								{"QuadPounceMinTimeBetweenPounces", 6},
-								{"QuadPounceDamageRadius", 1.66},
-								{"QuadCannotSeeTargetRepositionTime", 1.5},
-								{"QuadChargeTime", 0.45},		
-								{"QuadFireTime", 1.2},
+								{"QuadLookAngleMax", 60},							--60, same as QuadLookAngleMin . pre-4.20 Min & Max were 40, 90
+								--{"QuadAttackRange", 80},							--30	Deprecated in 4.20
+								{"QuadAttackTurnAngleMax", 120},					--120			pre-4.20 was 160						
+								{"QuadAttackTurnAngleMin", 30},						--30			pre-4.20 was 5									
+								--{"QuadAttackAngle", 10},							--Deprecated in 4.20
+								--{"QuadChargeTargetLockPercent", 0.8},				--Deprecated in 4.20
+								{"QuadJumpBackRange", 16},							--10
+								--{"QuadPounceMinRange", 7},						--Deprecated in 4.20
+								--{"QuadPounceMinTimeBetweenPounces", 6},			--Deprecated in 4.20
+								{"QuadPounceDamageRadius", 1.66},					--2
+								{"QuadCannotSeeTargetRepositionTime", 0.3},			--0.3			pre-4.20 was 1
+								--{"QuadChargeTime", 0.45},							--Deprecated in 4.20
+								--{"QuadFireTime", 1.2},							--Deprecated in 4.20
 								
 								--Additions by Xen0nex	v
+								{"QuadAttackRate", 5},								--5					Smaller value seems to attack more frequently
+								{"QuadEvadeCooldown", 4},							--5
+								
 								{"DroneReAttackTime", 10},							--10				Unknown Function
 								{"DronePatrolAttackSightTime", 2.5},				--2.5				Unknown Function
 								{"DroneAttackGetInRangeBoost", 2},					--1.4
@@ -288,7 +327,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"DroneSearchCriminalScanRadiusWanted", 20},		--20				Seems to be how wide of a "net" they look within to try to find the player when searching for them after running away (smaller value means they should find you easier)
 								
 								{"MechMinMaintainFireTargetTime", 4},				--3
-								{"MechAttackRate", 2}								--5
+								{"MechAttackRate", 2},								--5					Smaller value seems to attack more frequently
+								
+								--New parameters in 4.20
+								{"QuadAttackMoveRange", 30},						--30
+								{"SpiderPounceAngle", 75},							--75
+								{"SpiderPounceRange", 35},							--25
+								{"SpiderPounceMinRange", 8},						--8
+								{"HitsToCancelStealthSmall", 4},					--2
+								{"HitsToCancelStealth", 8},							--5
 							}
 						},
 						{	--Also added by Xen0nex														This allows drones to continue to shoot at the player while you are moving away from them
@@ -314,7 +361,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"CooldownTimeMax", 4},								--5
 								{"IdealRange", 8},									--8
 								{"MinRange", 1},									--2
-								{"MaxRange", 30}									--20
+								{"MaxRange", 35}									--20	[40]
 								
 							}
 						},
@@ -328,7 +375,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"NumShotsMax", 75},								--25
 								{"IdealRange", 20},									--20
 								{"MinRange", 10},									--10
-								{"MaxRange", 40}									--40
+								{"MaxRange", 60}									--40	[70]
 							}
 						},
 						{	--Also added by Xen0nex
@@ -342,6 +389,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{	--Also added by Xen0nex
 							["SPECIAL_KEY_WORDS"] = {"Search","GcDroneControlData.xml"},
+							["INTEGER_TO_FLOAT"] = "FORCE",	
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxSpeed", 12},								--5
@@ -349,20 +397,141 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"DirectionBrake", 2.5}							--2
 							}
 						},
+						--New things in 4.20
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","QUADLASER"},				--Probably weapon of the new arachnid quads?
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0},							--0
+								{"FireInterval", 1},								--1
+								{"FireTimeMin", 4.5},								--4.5
+								{"FireTimeMax", 7},									--7
+								{"NumShotsMin", 1},									--1
+								{"NumShotsMax", 4},									--4
+								{"MinRange", 8},									--8
+								{"MaxRange", 50}									--40
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","QUADCANNON"},				--Probably weapon of the new arachnid quads?
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0},							--0
+								{"FireInterval", 0.33},								--0.33
+								{"FireTimeMin", 4.5},								--4.5
+								{"FireTimeMax", 7},									--7
+								{"NumShotsMin", 2},									--2
+								{"NumShotsMax", 4},									--4
+								{"MinRange", 8},									--8
+								{"MaxRange", 50}									--40
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","QUADGRENADE"},				--Probably weapon of the new arachnid quads?
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0},							--0
+								{"FireInterval", 1},								--1
+								{"FireTimeMin", 2},									--2
+								{"FireTimeMax", 5},									--5
+								{"NumShotsMin", 2},									--2
+								{"NumShotsMax", 4},									--4
+								{"MinRange", 17},									--17
+								{"MaxRange", 50},									--40
+								{"ExplosionRadius", 2.8}							--2.2
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","QUADFLAME"},				--Probably weapon of the new arachnid quads?
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0.07},							--0.05
+								{"FireInterval", 0.03},								--0.04
+								{"FireTimeMin", 3},									--3
+								{"FireTimeMax", 6},									--6
+								{"NumShotsMin", 15},								--10
+								{"NumShotsMax", 45},								--30
+								{"MinRange", 0},									--0
+								{"MaxRange", 24}									--18
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTSMG"},			--Probably weapon of the Corrupted Drones
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0},							--0
+								{"FireRate", 0.04},									--0.05
+								{"FireTimeMin", 1.5},								--1.5
+								{"FireTimeMax", 3},									--3
+								{"NumShotsMin", 12},								--8
+								{"NumShotsMax", 30},								--20
+								{"Range", 40}										--40	Multiplied by the change to GcDroneWeaponData.xml above
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTGRENADE"},			--Probably weapon of the Corrupted Drones
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0},							--0
+								{"FireRate", 0.5},									--0.5
+								{"FireTimeMin", 5},									--5
+								{"FireTimeMax", 8},									--8
+								{"NumShotsMin", 1},									--1
+								{"NumShotsMax", 3},									--3
+								{"Range", 120},										--120	NOT Multiplied by the change to GcDroneWeaponData.xml above
+								{"ExplosionRadius", 2.8}							--2.2
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTSHOTGUN"},			--Probably weapon of the Corrupted Drones
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0.07},							--0.06
+								{"FireRate", 0.2},									--0.2
+								{"FireTimeMin", 4.5},								--4.5
+								{"FireTimeMax", 7},									--7
+								{"NumShotsMin", 3},									--2
+								{"NumShotsMax", 5},									--4
+								{"Range", 30}										--30	Multiplied by the change to GcDroneWeaponData.xml above
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTFLAME"},			--Probably weapon of the Corrupted Drones
+							["INTEGER_TO_FLOAT"] = "FORCE",		
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0.07},							--0.05
+								{"FireRate", 0.04},									--0.04
+								{"FireTimeMin", 4.5},								--4.5
+								{"FireTimeMax", 7},									--7
+								{"NumShotsMin", 45},								--30
+								{"NumShotsMax", 60},								--40
+								{"Range", 20}										--20	Multiplied by the change to GcDroneWeaponData.xml above
+								
+							}
+						},
+						--There's also a new "PounceData" section, which seems like it may act as a mini "flurry attack" period where the enemy gets increases fire rate for a short time???
 						{
 							["PRECEDING_KEY_WORDS"] = {"QuadLookTurnSpeeds"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x", 1},		
-								{"y", 1.1}
+								{"x", 1},										--1			Pre-4.20 was 2
+								{"y", 1.1}										--1.1		Pre-4.20 was 2.2
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"QuadAttackTurnSpeeds"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x", 1},		
-								{"y", 1.2}
+								{"x", 1},										--1			Pre-4.20 was 2
+								{"y", 1.2}										--1.1		Pre-4.20 was 2.4
 							}
 						},						
 						{
@@ -450,9 +619,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"BaseHealth","3200",},					--800
-								{"HealthIncreasePerLevel","1400",},
-								{"RepairTime","1",},					--3
+								{"BaseHealth",	math.floor(SentHealth*800),},					--800
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*1400),},
+								{"RepairTime","1",},											--3
+								{"RepairThreshold","95",},										--95		Possibly how low the health needs to get before a repair drone will start repairing it?
 							}
 						},
 						{						
@@ -460,9 +630,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"BaseHealth","5800",},					--1450
-								{"HealthIncreasePerLevel","2100",},
-								{"RepairTime","2",},					--3
+								{"BaseHealth",	math.floor(SentHealth*1450),},					--1450
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*2100),},
+								{"RepairTime","2",},											--3
+								{"RepairThreshold","95",},										--95
 							}
 						},	
 						{						
@@ -470,9 +641,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"BaseHealth","4000",},					--1000
-								{"HealthIncreasePerLevel","1400",},
-								{"RepairTime","1.5",},					--1.5
+								{"BaseHealth",	math.floor(SentHealth*1000),},					--1000
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*1400*0.9),},				--reduced to 0.9x to ensure they can still be one-shot by Blaze Javelin
+								{"RepairTime","1.5",},											--1.5
+								{"RepairThreshold","50",},										--50
 							}
 						},	
 						{						
@@ -480,9 +652,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"BaseHealth","5000",},					--1250
-								{"HealthIncreasePerLevel","2100",},
-								{"RepairTime","1.5",},					--1.5
+								{"BaseHealth",	math.floor(SentHealth*1250),},					--1250
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*2100*0.8),},				--reduced to 0.8x to ensure they can still be one-shot by Blaze Javelin
+								{"RepairTime","1.5",},											--1.5
+								{"RepairThreshold","95",},										--95
 							}
 						},	
 						{						
@@ -490,9 +663,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"BaseHealth","12800",},				--3200
-								{"HealthIncreasePerLevel","4500",},
-								{"RepairTime","2",},					--3
+								{"BaseHealth",	math.floor(SentHealth*2800),},					--2800		pre-4.20 was 3200
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*6800),},	--6800		pre-4.20 was 4500
+								{"RepairTime","6",},											--9			pre-4.20 was 3
+								{"RepairThreshold","60",},										--60		pre-4.20 was 95
 							}
 						},
 						{						
@@ -500,9 +674,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"BaseHealth","16800",},				--4200
-								{"HealthIncreasePerLevel","8500",},
-								{"RepairTime","4",},					--5
+								{"BaseHealth",	math.floor(SentHealth*4200),},					--4200
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*8500),},
+								{"RepairTime","4",},											--5
+								{"RepairThreshold","95",},										--95
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth",	math.floor(SentHealth*6000),},					--6000
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*20000),},
+								{"RepairTime","6",},											--7
+								{"RepairThreshold","50",},										--50
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth",	math.floor(SentHealth*1050),},					--1050
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*3700),},
+								{"RepairTime","1.5",},											--1.5
+								{"RepairThreshold","95",},										--95
 							}
 						},
 						{						
@@ -510,9 +707,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"BaseHealth","30000",},				--7500
-								{"HealthIncreasePerLevel","12000",},
-								{"RepairTime","6",},					--7
+								{"BaseHealth",	math.floor(SentHealth*7500),},					--7500
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*12000),},
+								{"RepairTime","6",},											--7
+								{"RepairThreshold","95",},										--95
 							}
 						},
 						{						
@@ -520,19 +718,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"BaseHealth","64000",},				--16000
-								{"HealthIncreasePerLevel","25000",},
-								{"RepairTime","6",},					--7
+								{"BaseHealth",	math.floor(SentHealth*16000),},					--16000
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*25000),},
+								{"RepairTime","6",},											--7
+								{"RepairThreshold","95",},										--95
 							}
 						},
 						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONESHIELD.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth",	math.floor(SentHealth*2000),},					--2000
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*3000),},
+								{"RepairTime","7",},											--10
+								{"RepairThreshold","95",},										--95
+							}
+						},
+						--Now covered by an earlier section above
+						--[[{						
 							["SPECIAL_KEY_WORDS"] = {"Id","SENMECHGUN",},
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxRange","70",},
 							}
-						},
+						},]]
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Id","SENMECHCANON",},
 							["INTEGER_TO_FLOAT"] = "FORCE",							
@@ -541,14 +752,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxRange","100",},
 							}
 						},
-						{						
+						--Now covered by an earlier section above
+						--[[{						
 							["SPECIAL_KEY_WORDS"] = {"Id","MECHFLAME",},
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxRange","40",},
 							}
-						},						
+						},]]
 					}
 				},
 			}

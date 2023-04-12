@@ -1,5 +1,5 @@
 ModName = "PTSd Crops and Harvester Speed Changes"
-GameVersion = "3_99.1"
+GameVersion = "4_08"
 Description = "Changes the growth time for a few farmable plants to make Albumen Pearls, Sac Venom, etc. more worthwhile. Also the carbon-powered mining & gas harvesters Note that the build menu UI does not accurately show the correct growth times."
 
 --These specifically change the buildable crops in your base, not wild ones
@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"AmountEmptyTimePeriod",	-1*AMUHarvestTime},
-								{"MaxCapactiy",	AMUHarvestAmount}
+								{"MaxCapacity",	AMUHarvestAmount}
 							}
 						},
 					}
@@ -122,7 +122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"AmountEmptyTimePeriod",	-1*AtmoHarvestTime},
-								{"MaxCapactiy",	AtmoHarvestAmount}
+								{"MaxCapacity",	AtmoHarvestAmount}
 							}
 						},
 					}
@@ -147,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"AmountEmptyTimePeriod",	-1*O2HarvestTime},
-								{"MaxCapactiy",	O2HarvestAmount}
+								{"MaxCapacity",	O2HarvestAmount}
 							}
 						},
 					}
@@ -172,7 +172,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"AmountEmptyTimePeriod",	-1*AntiMatterHarvestTime},
-								{"MaxCapactiy",	AntiMatterHarvestAmount}
+								{"MaxCapacity",	AntiMatterHarvestAmount}
 							}
 						},
 					}

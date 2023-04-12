@@ -1,27 +1,29 @@
 ModName = "PTSd Rebalanced Hazard Tech"
-GameVersion = "3_98"
+GameVersion = "4_08"
 Description = "Nerfs the procedural Hazard techs & Buffs the Hazard techs / upgrades which grant a % resistance to hazards to hopefully make them worth considering. Note that the different sources of +% hazard protection (multiple X Class upgrades all count as the same source) appear to stack multiplicatively with each other, and that X Class Hazard Upgrades receive significant adjacency bonuses. E.G. two fully surrounded X Class upgrades with +25% each will typically double your protection time against all hazards."
 
 HazardRechargeMult =			1.5					--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging Hazard Protection			54 / 22 to fully charge
 ProcHazardRechargeMult =		2					--	Multiplier to apply to the cost of Dioxite / Phosphorus / Ammonia / Uranium on recharging the procedural Hazard Protection		16 / 16 / 16 / 16 to fully charge
+
 LifeSupportRechargeMult =		1.5					--	Multiplier to apply to the cost of Oxygen / Dioxite on recharging Life Support						50 / 20 to fully charge
+OxyRecyclerStrength =			0.36				--0.1 (0.1 means +10% Life Support tank size)	Replaces the bonus of the Oxygen Recyler tech, which is incredibly weak in vanilla (despite patch notes claiming it was buffed, it's stregth was never actually increased)
 
 HazardTechChanges =
 {
 	{--Shield Lattice (all elements)
-		"UT_PROTECT",		0.25					--0.2 		(+20% hazard protection for Hot/Cold/Toxic/Rad)
+		"UT_PROTECT",		0.24					--0.2 		(+20% hazard protection for Hot/Cold/Toxic/Rad)
 	},
 	{--Coolant Network
-		"UT_HOT",			1.4						--1.2 		(+20% hazard protection for Hot)
+		"UT_HOT",			1.38					--1.2 		(+20% hazard protection for Hot)
 	},
 	{--Thermic Layer
-		"UT_COLD",			1.4						--1.2 		(+20% hazard protection for Cold)
+		"UT_COLD",			1.38					--1.2 		(+20% hazard protection for Cold)
 	},
 	{--Toxic Suppressor
-		"UT_TOX",			1.4						--1.2 		(+20% hazard protection for Toxic)
+		"UT_TOX",			1.38					--1.2 		(+20% hazard protection for Toxic)
 	},
 	{--Radiation Deflector
-		"UT_RAD",			1.4						--1.2 		(+20% hazard protection for Radiation)
+		"UT_RAD",			1.38					--1.2 		(+20% hazard protection for Radiation)
 	},
 	{--Aeration Membrane
 		"UT_WATER",			1.9						--1.33 		(+33% hazard protection for Underwater / breath time)
@@ -30,14 +32,14 @@ HazardTechChanges =
 
 --Suspicious Hazard Protection module	(Gains huge bonuses when adjacent to any hazard tech / upgrades, often doubling in power)
 SusHazModMin =				1.1						--1.01		(+1% hazard protection for all 4 specific hazards)
-SusHazModMax =				1.25					--1.1		(+10% hazard protection for all 4 specific hazards)
+SusHazModMax =				1.24					--1.1		(+10% hazard protection for all 4 specific hazards)
 
 --Multiplier to apply to the duration of the "procedural" Hazard protection upgrade modules which act as a temporary "shield" against one type of hazard.
 	--These are lowered to fit with the "Stronger Hazards" mod, since they act a set duration and aren't affected by the strength of hazards
 HazardProcTechChanges =
 {
 	{
-		{0.45},					--180-265 duration for B Class Hazard Upgrade Modules
+		{0.4},					--200-300 duration for B Class Hazard Upgrade Modules (0.45x, 180-265 in 3.99)
 		{
 			"UP_RAD1",
 			"UP_TOX1",
@@ -46,7 +48,7 @@ HazardProcTechChanges =
 		}
 	},
 	{
-		{0.55},					--200-265 duration for A Class Hazard Upgrade Modules
+		{0.45},					--240-320 duration for A Class Hazard Upgrade Modules (0.55x, 200-265 in 3.99)
 		{
 			"UP_RAD2",
 			"UP_TOX2",
@@ -55,7 +57,7 @@ HazardProcTechChanges =
 		}
 	},
 	{
-		{0.667},				--220-265 duration for S Class Hazard Upgrade Modules		(In vanilla Survival seems to last roughly 180 seconds?)
+		{0.5},				--280-360 duration for S Class Hazard Upgrade Modules (0.667x, 220-265 in 3.99)		(In vanilla Survival for 3.99 seems to last roughly 180 seconds?)
 		{
 			"UP_RAD3",
 			"UP_TOX3",
@@ -63,7 +65,27 @@ HazardProcTechChanges =
 			"UP_HOT3"
 		}
 	},
+	--These are the "procedural" Underwater Hazard protection upgrades, which do the same thing as above but for underwater breathing time
+	{
+		{1},					--60-90 duration for B Class Underwater Upgrade Modules (60-85 in 3.99)
+		{
+			"UP_UNW1",
+		}
+	},
+	{
+		{1},					--95-120 duration for B Class Underwater Upgrade Modules (75-105 in 3.99)
+		{
+			"UP_UNW2",
+		}
+	},
+	{
+		{0.85},					--130-180 duration for B Class Underwater Upgrade Modules (95-105 in 3.99)
+		{
+			"UP_UNW3",
+		}
+	},
 }
+
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
@@ -135,6 +157,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "UT_ENERGY",		"StatsType", "Suit_Energy"},
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"]	= "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{'Bonus', OxyRecyclerStrength}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"ID", "T_RAD"},
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"]	= "FORCE",
@@ -172,6 +204,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 		}
 	},
+	--These changes apply to Ion Batteries / Life Support Gel so they keep the same effectiveness after the above changes
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 

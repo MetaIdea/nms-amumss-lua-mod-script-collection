@@ -1,5 +1,5 @@
 ModName = "PTSd Scanner and Mining Bonus"
-GameVersion = "3_93"
+GameVersion = "4_08"
 Description = "Makes a Multitool's Mining stat also increase the yield of mined resources, and it's Scan stat also increase the value of scanned flora/fauna"
 
 --This makes Multi-Tool's Scanning stat bonus also apply to the value of scanned fauna & flora.
@@ -13,6 +13,12 @@ ScannerUnitsBonus =
 		<Property value="GcInventoryBaseStatBonus.xml">
           <Property name="StatType" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Scan_Discovery_Flora" />
+          </Property>
+          <Property name="LessIsBetter" value="False" />
+        </Property>
+		<Property value="GcInventoryBaseStatBonus.xml">
+          <Property name="StatType" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Weapon_Scan_Discovery_Mineral" />
           </Property>
           <Property name="LessIsBetter" value="False" />
         </Property>]]
@@ -49,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{
 		{
 			["MATH_OPERATION"] 		= "",
-			["REPLACE_TYPE"] 		= "",
+			--["REPLACE_TYPE"] 		= "",
 			--["PRECEDING_FIRST"] = "True",
 			["SPECIAL_KEY_WORDS"] = {"LocID","STAT_WEAP_MIN"},
 			["PRECEDING_KEY_WORDS"] = {"StatBonus","GcInventoryBaseStatBonus.xml"},
@@ -58,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{
 			["MATH_OPERATION"] 		= "",
-			["REPLACE_TYPE"] 		= "",
+			--["REPLACE_TYPE"] 		= "",
 			--["PRECEDING_FIRST"] = "True",
 			["SPECIAL_KEY_WORDS"] = {"LocID","STAT_WEAP_SCAN"},
 			["PRECEDING_KEY_WORDS"] = {"StatBonus","GcInventoryBaseStatBonus.xml"},

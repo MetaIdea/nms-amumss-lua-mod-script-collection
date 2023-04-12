@@ -2,18 +2,17 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gGame"
 ModNameSub = "Misc Changes X"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "399.1"
+GameVersion = "408"
 ModVersion = "b"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
 --Tech Grouping Bonus Adjustments
---[[
-MaxNumSameGroupTech = 48						--3 ; Maximum grouping of same tech type
+MaxNumSameGroupTech = 5							--3 ; Maximum installed number of upgrade modules for a given base tech before overloading
 BonusSameTypeAdd = 0.06							--0.06 ; 
 BonusSameTypeMult = 0.04						--0.04 ; 
 BonusChildAdd = 0.05							--0.05 ; 
 BonusChildMult = 0.03							--0.03 ; 
-]]
+
 
 --Torch Adjustments
 TorchFoV = 120									--Torch arc width, in degrees. 181+=360 degrees. Original value "120"
@@ -45,9 +44,9 @@ BinocularScanTargetMinHeight = 5				--5 ; ???
 BinocularScanTargetHeightRange = 0				--0 ; ???
 ]]
 BinocTimeBeforeScan = 0.3						--0.5 ; ???		(0.2)
-BinocMinScanTime = 1.2							--3.9 ; ???		(0.2)
-BinocScanTime = 1.2								--3.9 ; ???		(0.2)
-BinocCreatureScanTime = 1.2						--3.9 ; How long to scan a new creature, in seconds		(0.2)
+BinocMinScanTime = 1.2							--2.2 ; ???		(0.2)
+BinocScanTime = 1.2								--2.2 ; ???		(0.2)
+BinocCreatureScanTime = 1.1						--1.9 ; How long to scan a new creature, in seconds		(0.2)
 	--Added by Xenonex
 BinocularScanTargetInitialFadeTime = 0.3		--0.5 ; 
 BinocularScanTargetFadeTime = 0.3				--0.5 ; 
@@ -107,14 +106,12 @@ TradeSubstanceRestock = 2						--?Original value "2"
 ]]
 
 --Sentinels
---[[
 AggressiveSentinelProbability = 0.13			--0.13 ;
 AggressiveSentinelProbabilitySurvival = 0.13	--0.13 ;
-LowSentinelProbability = 0.55					--0.55 ;
+LowSentinelProbability = 0.25					--0.55 ;
 LowSentinelProbabilitySurvival = 0.25			--0.25 ;
 NonAggressiveLushSurvivalProbability = 0.5		--0.5 ;
-]]
-MaxDronesLow = 0								--0
+MaxDronesLow = 1								--0
 MaxDronesLowSurvival = 1						--1
 MaxDronesNormal = 3								--2
 MaxDronesNormalSurvival = 3						--2
@@ -122,14 +119,15 @@ MaxDronesAggressive = 2							--1
 MaxDronesAggressiveSurvival = 2					--1
 --SentinelsHigh = 10							--10 ; 
 --SentinelsLow = 30								--30 ; 
---ViciousSentinelProbability = 0.25				--0.25 ; 
+ViciousSentinelProbability = 0.25				--0.25 ; 
 
 --Misc Adjustments
+
+RefinerProductsMadeInTime = 1					--2 ; 
+RefinerSubsMadeInTime = 100						--250 ; 
+RefinerProductsMadeInTimeSurvival = 1			--1 ; 
+RefinerSubsMadeInTimeSurvival = 100				--100 ; 
 --[[
-RefinerProductsMadeInTime = 20					--2 ; 
-RefinerSubsMadeInTime = 2500					--250 ; 
-RefinerProductsMadeInTimeSurvival = 10			--1 ; 
-RefinerSubsMadeInTimeSurvival = 1000			--100 ; 
 AtmosphereEntryTime = 1.0						--1.5
 ShipInteractRadius = 300						--80 ; How close you need to be to your ship to interact with it, in u
 LightStrength = 1.1								--1 ; All lights. 4 is blinding in small areas or up close
@@ -234,8 +232,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"BinocScanTime", BinocScanTime},
 						{"BinocCreatureScanTime", BinocCreatureScanTime},
 						--Added by Xenonex
-						{"BinocularScanTargetInitialFadeTime",	"0.3"},
-						{"BinocularScanTargetFadeTime",			"0.3"},
+						{"BinocularScanTargetInitialFadeTime",	BinocularScanTargetInitialFadeTime},
+						{"BinocularScanTargetFadeTime",			BinocularScanTargetFadeTime},
 						
 						--[[
 						{"ScanStartTimeDelayMinDist", ScanStartTimeDelayMinDist},
@@ -252,15 +250,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						--{"SurveySonarMinPulseSpeed", SurveySonarMinPulseSpeed},
 
 				--Grouping
-						--[[
 						{"MaxNumSameGroupTech", MaxNumSameGroupTech},
 						{"BonusSameTypeElementsAdd", BonusSameTypeAdd},
 						{"BonusSameTypeElementsMultiply", BonusSameTypeMult},
 						{"BonusChildTypeElementsAdd", BonusChildAdd},
 						{"BonusChildTypeElementsMultiply", BonusChildMult},
-						]]
 
 				--Random
+						{"RefinerProductsMadeInTime", RefinerProductsMadeInTime},
+						{"RefinerSubsMadeInTime", RefinerSubsMadeInTime},
+						{"RefinerProductsMadeInTimeSurvival", RefinerProductsMadeInTimeSurvival},
+						{"RefinerSubsMadeInTimeSurvival", RefinerSubsMadeInTimeSurvival},
 						--[[
 						{"AtmosphereEntryTime", AtmosphereEntryTime},
 						{"ShipInteractRadius", ShipInteractRadius},
@@ -272,10 +272,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"ProductItemStockReplenishTime", TradeProductRestock},
 						{"SubstanceItemStockDecayTime", TradeSubstanceDecay},
 						{"SubstanceItemStockReplenishTime", TradeSubstanceRestock},
-						{"RefinerProductsMadeInTime", RefinerProductsMadeInTime},
-						{"RefinerSubsMadeInTime", RefinerSubsMadeInTime},
-						{"RefinerProductsMadeInTimeSurvival", RefinerProductsMadeInTimeSurvival},
-						{"RefinerSubsMadeInTimeSurvival", RefinerSubsMadeInTimeSurvival},
 						{"FourthRaceSpawnPercentage", FourthRaceSpawnPercentage},
 						{"NonDominantRaceSpawnPercentage", NonDominantRaceSpawnPercentage},
 						{"ViciousStormProbability", ViciousStormProbability},
@@ -286,14 +282,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						]]
 
 				--Sentinels
-						--[[
 						{"ViciousSentinelProbability", ViciousSentinelProbability},
 						{"AggressiveSentinelProbability", AggressiveSentinelProbability},
 						{"AggressiveSentinelProbabilitySurvival", AggressiveSentinelProbabilitySurvival},
 						{"LowSentinelProbability", LowSentinelProbability},
 						{"LowSentinelProbabilitySurvival", LowSentinelProbabilitySurvival},
 						{"NonAggressiveLushSurvivalProbabability", NonAggressiveLushSurvivalProbability},
-						]]
 						{"MaxDronesLow", MaxDronesLow},
 						{"MaxDronesLowSurvival", MaxDronesLowSurvival},
 						{"MaxDronesNormal", MaxDronesNormal},

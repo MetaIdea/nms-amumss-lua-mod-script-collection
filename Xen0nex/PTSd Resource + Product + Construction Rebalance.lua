@@ -1,23 +1,28 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "3_99.1"
+GameVersion = "4_20"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
---This part applies multipliers to the actual value (buying and selling price) for certain substances or products
+--This part replaces the actual value (buying and selling price) for certain substances or products
 SubstanceSaleChanges =
 {																						--How much Chromatic Metal it refines into
-	{"ROCKETSUB",	6.0},							--6				Tritium
-	{"WATER1",		0.67},							--299			Salt
-	{"WATER2",		0.67},							--602			Chlorine
-	{"YELLOW2",		0.5},							--121			Copper				x0.5
-	{"RED2",		0.5},							--234			Cadmium				x1
-	{"GREEN2",		0.5},							--348			Emeril				x1.5
-	{"BLUE2",		0.5},							--464			Indium				x2
-	{"STELLAR2",	0.5},							--245			Chromatic Metal	
-	{"EX_YELLOW",	0.5},							--245			Activated Copper	x1
-	{"EX_RED",		0.5},							--450			Activated Cadmium	x2
-	{"EX_GREEN",	0.5},							--696			Activated Emeril	x3
-	{"EX_BLUE",		0.5}							--949			Activated Indium	x4
+	{"ROCKETSUB",	36},							--6				Tritium
+	{"WATER1",		160},							--101	(200)	Salt
+	{"WATER2",		336},							--205	(400)	Chlorine
+	{"CAVE1",		130},							--76	(198)	Cobalt
+	{"CAVE2",		275},							--162	(401)	Ion. Cobalt
+	{"YELLOW2",		47},							--41			Copper				x0.5
+	{"RED2",		95},							--83			Cadmium				x1
+	{"GREEN2",		142},							--114			Emeril				x1.5
+	{"BLUE2",		190},							--132			Indium				x2
+	{"STELLAR2",	100},							--88			Chromatic Metal		1
+	{"EX_YELLOW",	95},							--75			Activated Copper	x1
+	{"EX_RED",		190},							--111			Activated Cadmium	x2
+	{"EX_GREEN",	285},							--134			Activated Emeril	x3
+	{"EX_BLUE",		380}							--165			Activated Indium	x4
 }
+--Silver		186
+--Gold			353
+--Platinum		505
 
 ProductSaleChanges =
 {
@@ -59,7 +64,7 @@ ProductSaleChanges =
 	{"UI_ALLOY_SIMPLE_5_NAME",	1.0},				--25,000		Magno-Gold				
 	{"UI_ALLOY_SIMPLE_6_NAME",	1.0},				--25,000		Grantine				
 	
-	{"UI_STORMCRYSTAL_NAME",	0.8},				--126,000		Storm Crystal
+	{"UI_STORMCRYSTAL_NAME",	0.6},				--206,000		Storm Crystal	(0.8x 126,000 in 3.99)
 	{"UI_SHIPCHARGE_NAME",	18.0},					--500			Starshield Battery
 	
 	{"PROD_NIP_NAME",	1.5},						--17,776		Nip Nip Buds		(4hr grow time)
@@ -70,6 +75,9 @@ ProductSaleChanges =
 	{"UI_CLAMPEARL_NAME",	9.0},					--5,050			Living Pearl		(Refines to 100 Gold = 35,300u vanilla)
 	{"UI_VENTGEM_NAME",	5.0},						--7,800			Crystal Sulphide
 	{"UI_EYEBALL_NAME",	2.5},						--60,000		Hypnotic Eye
+	{"FOOD_W_CASE_NAME",	8},						--8,000			New worm food made from Flesh Rope stage 1
+	{"FOOD_W_MEAT_NAME",	10},					--16,000		New worm food made from Flesh Rope stage 2
+	{"FOOD_W_SWEETM_NAME",	11.25},					--32,000		New worm food made from Flesh Rope stage 3
 	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
 	{"NEWPROD2_NAME",	10.0},						--11,688		VYKEENDAGGER
@@ -79,8 +87,11 @@ ProductSaleChanges =
 	{"CURIO3_NAME",	3.0},							--22,000		Korvax Casing
 	
 	{"UI_QUAD_PROD_NAME",	4.0},					--20,000		Quad Servo
+	{"UI_SPIDER_PROD_NAME",	5.0},					--37,000		Crystallised Heart
 	{"UI_MECH_PROD_NAME",	6.0},					--28,000		Hardframe Engine
 	{"UI_WALKER_PROD_NAME",	8.0},					--35,000		Walker Brain
+	{"UI_DRONE_SALVAGE_NAME",	2.0},				--17,000		Inverted Mirror
+	{"UI_DRONE_SHARD_NAME",	0.842},					--1900			Radiant Shard
 	
 	{"UI_ILLEGAL_PROD1_NAME",	2.0},				--2,000			Illegal Trade item
 	{"UI_ILLEGAL_PROD2_NAME",	2.0},				--9,000			Illegal Trade item
@@ -90,6 +101,8 @@ ProductSaleChanges =
 	{"UI_ILLEGAL_PROD6_NAME",	2.0},				--68,000		Illegal Trade item
 	{"UI_ILLEGAL_PROD7_NAME",	2.0},				--83,000		Illegal Trade item
 	{"UI_ILLEGAL_PROD8_NAME",	2.0},				--98,000		Illegal Trade item
+	
+	{"UI_SALVAGE_TECH_6_NAME",	10.0},				--12,000		Salvaged Trade item		(Based on the pattern of the other items in this series I suspect a typo missed a 0 in this price)
 }
 
 --Gives a little buff to average profit per POI for both, skews Scrap to be more consistent, Bones to be usually less profitable but with a chance for a huge payoff
@@ -117,6 +130,7 @@ ProductStackChanges =
 	{"UI_CLAMPEARL_NAME",		1,					1},				--15	Living Pearl
 	{"UI_VENTGEM_NAME",			2,					1},				--5		Crystal Sulphide
 	{"UI_EYEBALL_NAME",			1,					1},				--5		Hypnotic Eye
+	{"UI_DRONE_SHARD_NAME",		2,					1},				--5		Radiant SHard
 
 	{"UI_TRADE_ITEM_ALLOY_1_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item
 	{"UI_TRADE_ITEM_ALLOY_2_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item
@@ -163,6 +177,9 @@ ProductStackChanges =
 	{"UI_ILLEGAL_PROD8_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
 }
 
+--Number of Creature Pellets created from the crafting recipe	(Requires 60 Carbon)
+PelletsPerCraft					=	3				--5
+
 --NipNip Plant construction recipe
 NipNipBudsNeeded				=	3				--1
 NipNipPlatinumNeeded			=	100				--0
@@ -186,7 +203,17 @@ BioDomeGlassNeeded				=	16				--5
 --Antimatter Reactor construction recipe
 AntiMatStormNeeded				=	10				--5		Storm Crystal
 AntiMatAntiNeeded				=	10				--2		Antimatter
-AntiMatFluidNeeded				=	10				--2		(Experimental Power Fluid, replaces 2 Metal Plates)
+AntiMatFluidNeeded				=	10				--0		(Experimental Power Fluid, replaces 2 Metal Plates)
+
+--Crate Fabricator construction recipe
+CraFabIonNeeded					=	16				--10	Ionised Cobalt
+CraFabAntiNeeded				=	3				--1		Antimatter
+CraFabShadeNeeded				=	1				--0		Englobed Shade	(From Atlas Path)
+
+--Barrel Fabricator construction recipe
+BarFabIonNeeded					=	16				--10	Ionised Cobalt
+BarFabAntiNeeded				=	12				--1		Antimatter
+BarFabDarkNeeded				=	1				--0		Dark Matter	(From Atlas Path)
 
 --New recipe for installing Nutrition Room in freighter
 CookRoomProcessors = 1								--how many Nutrient Processors required		(replaces 15 Oxygen in vanilla)
@@ -222,9 +249,10 @@ OrbitalExoPortReact = 1								--how many Portable Reactors required	(replaces 3
 --Changes the price of Star Charts, paid in Navigation Data at Space Stations
 RegChartCost =						2				--1		For "Secure Site of Interest", "Distress Signal", "Inhabited Outpost", and "Ancient Artifact Site" charts
 SettlementChartCost =				8				--5		For "Planetary Settlement" charts
+ExosuitUpgradeChartCost =			42				--3		For "Exosuit Upgrade Chart" charts
 
---SpaceStationMarkup seems to apply an extra + bonus % on top of BuyMarkupMod for the item, if bought OR SOLD at a trade terminal on a space station (or item vendor on outlaw station). e.g. a value of 0.5 means +50% to the price when buying OR SELLING
---BuyBaseMarkup seems to apply the bonus %  to the cost of the item when bought from any source. e.g. a value of 0.2 means +20% to the price
+--SpaceStationMarkup seems to apply an extra + bonus % on top of BuyMarkupMod for the item, if bought OR SOLD at a trade terminal on a space station (or item vendor on outlaw station). e.g. a value of 0.5 means +50% to the price when BUYING OR SELLING
+--BuyBaseMarkup seems to apply the bonus %  to the cost of the item when bought from any source. e.g. a value of 0.2 means +20% to the price when BUYING the item
 --BuyMarkupMod seemed to apply the bonus %  to consumable items bought (at least from my base's trade terminal), but didn't affect launcher fuel, which had BuyBaseMarkup of 98 instead of 0.2 for the others
 	--But BuyMarkupMod didn't seem to affect components anywhere. Haven't figure out exactly what this one does...
 	--Currently disabling changes to BuyMarkupMod until I figure out exactly what it does
@@ -237,8 +265,9 @@ SettlementChartCost =				8				--5		For "Planetary Settlement" charts
 --Substances
 --Substances are generally all of the "elements" / "chemicals", as well as the farmable plants
 SubstanceSpaceStationMarkup = 		0.3				--0
-SubstanceBuyBaseMarkup = 			19				--0.25
-	--SubstanceBuyMarkupMod = 			0				--0
+SubstanceBuyBaseMarkup = 			14				--0.25			Most Substances
+ExpensiveSubBuyBaseMarkup =			29				--3.5 or 4.5	(as of 4.08, now Oxygen, Di-Hydrogen, Sodium, Sodium Nitrate = 3.5, & Uranium = 4.5 instead)
+	--SubstanceBuyMarkupMod = 			0				--0			(as of 4.08, now Oxygen, Di-Hydrogen, Sodium, Sodium Nitrate, & Uranium = 1 instead)
 
 --Consumables
 --Consumables are Life Support Gel, Ion Battery, Starship Launch Fuel, Di-Hydrogen Jelly, Warp Fuel, Antimatter, etc.
@@ -282,6 +311,9 @@ HadalCoreSpaceStationMarkup =		0				--0			(BaseValue 97500)
 HadalCoreBaseMarkup =				1.4				--0.2
 NipNipSpaceStationMarkup =			0				--0			(BaseValue 17776)
 NipNipBaseMarkup =					16				--3		(8)
+--This items normally from scrapping starships, and added to shops in PTSd to be used for repairing Sentinel tech
+SalvagedTechSpaceStationMarkup =	0.05			--0
+SalvagedTechBaseMarkup =			0.1				--0.1
 	--The increased BaseMarkup for these items balanced out with increased amounts of Tainted Metal rewarded in Rewards Remixer.lua
 SusGoodsSpaceStationMarkup =		300				--300		(BaseValue 150)
 SusGoodsBaseMarkup =				2.6				--0.2
@@ -315,31 +347,31 @@ ProductBuyMarkupModChanges =
 SubstanceCostChanges =
 {
 	{"FUEL1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Carbon		BaseValue = 12
-	{"FUEL2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"OXYGEN",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"LAUNCHSUB",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Di-Hydrogen,	BaseValue = 34
+	{"FUEL2",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},
+	{"OXYGEN",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},
+	{"LAUNCHSUB",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},		--Di-Hydrogen,	BaseValue = 34
 	{"LAUNCHSUB2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"ROCKETSUB",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Tritium,		BaseValue = 6
 	{"LAND1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Ferrite Dust	BaseValue = 14
 	{"LAND2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Pure Ferrite	BaseValue = 28
 	{"LAND3",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Mag. Ferrite	BaseValue = 82
 	{"SAND1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"CATALYST1",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"CATALYST2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"CAVE1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Cobalt		BaseValue = 198
-	{"CAVE2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Ion. Cobalt	BaseValue = 401
-	{"WATER1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"WATER2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
+	{"CATALYST1",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},
+	{"CATALYST2",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},
+	{"CAVE1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Cobalt		BaseValue = 76	(198 in 3.99)
+	{"CAVE2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Ion. Cobalt	BaseValue = 162 (401 in 3.99)
+	{"WATER1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Salt			BaseValue = 101 (299 in 3.99)
+	{"WATER2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Chlorine		BaseValue = 205 (602 in 3.99)
 	{"WATERPLANT",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"YELLOW2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Copper		BaseValue = 121
-	{"RED2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"GREEN2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"BLUE2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--BaseValue = 464
-	{"STELLAR2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Chromatic Metal	BaseValue = 245
+	{"YELLOW2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Copper		BaseValue = 41	(121 in 3.99)
+	{"RED2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Cadmium		BaseValue = 83	(234 in 3.99)
+	{"GREEN2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Emeril		BaseValue = 114	(348 in 3.99)
+	{"BLUE2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Indium		BaseValue = 132	(464 in 3.99)
+	{"STELLAR2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Chromatic Metal	BaseValue = 88	(245 in 3.99)
 	{"LUSH1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"DUSTY1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"TOXIC1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"RADIO1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Uranium,		BaseValue = 62
+	{"RADIO1",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},		--Uranium,		BaseValue = 62
 	{"COLD1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"HOT1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"LAVA1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
@@ -351,7 +383,7 @@ SubstanceCostChanges =
 	{"GAS1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"GAS2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"GAS3",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"EX_YELLOW",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Activated Copper		BaseValue = 245
+	{"EX_YELLOW",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Activated Copper		BaseValue = 75
 	{"EX_RED",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"EX_GREEN",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"EX_BLUE",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--BaseValue = 949
@@ -416,6 +448,10 @@ ProductCostChanges =
 	{"UI_FIENDCORE_NAME",			LarvalCoreSpaceStationMarkup,	LarvalCoreBaseMarkup,	ComponentBuyMarkupMod},
 	{"UI_FISHCORE_NAME",			HadalCoreSpaceStationMarkup,	HadalCoreBaseMarkup,	ComponentBuyMarkupMod},
 	{"PROD_NIP_NAME",				NipNipSpaceStationMarkup,	NipNipBaseMarkup,	ComponentBuyMarkupMod},
+	
+	{"UI_SALVAGE_TECH_6_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},											--Spool of Nano-Cables	BaseValue = 12000	(x10 in PTSd)
+	{"UI_SALVAGE_TECH_7_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},											--Recycled Circuitry	BaseValue = 520000
+	{"UI_SALVAGE_TECH_10_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},											--Starship AI Valves	BaseValue = 12000000
 	
 	{"BLD_SPOOKY_PLANT_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
 	{"BLD_SLIME_MED_NAME",			0,	ScrapDealerDecorativeBaseMarkup,	0},
@@ -486,18 +522,19 @@ ProductCostChanges =
 }]]
 
 ChartCostChanges =
-{	--Id
+{	--ID
 	{"STARCHART_A",			RegChartCost},
 	{"STARCHART_B",			RegChartCost},
 	{"STARCHART_C",			RegChartCost},
 	{"STARCHART_D",			RegChartCost},
-	{"CHART_SETTLE",		SettlementChartCost}
+	{"CHART_SETTLE",		SettlementChartCost},
+	{"NAV_DATA_DROP",		ExosuitUpgradeChartCost}
 }
 
 AddedPlatinumCost =
 [[<Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="ASTEROID3" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Substance" />
           </Property>
           <Property name="Amount" value="]]..NipNipPlatinumNeeded..[[" />
@@ -507,10 +544,21 @@ function AddedPlatinumCost (Platinum)
     return
 [[<Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="ASTEROID3" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Substance" />
           </Property>
           <Property name="Amount" value="]]..Platinum..[[" />
+        </Property>]]
+end
+
+function AddedProductCost (ProductID, ProductAmount)
+    return
+[[<Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="]]..ProductID..[[" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="]]..ProductAmount..[[" />
         </Property>]]
 end
 
@@ -518,7 +566,7 @@ function AddedGlassCost (Glass)
     return
 [[<Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="FARMPROD3" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="]]..Glass..[[" />
@@ -583,10 +631,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Name", "BAIT_BASIC_NAME"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"CraftAmountMultiplier", PelletsPerCraft}
+							}
+						},
+						{
 							--["PRECEDING_FIRST"] = "TRUE",
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "NIPPLANT"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "NIPPLANT"},
 							["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							--["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	=
@@ -595,7 +652,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","NIPPLANT"},
+							["SPECIAL_KEY_WORDS"] = {"ID","NIPPLANT"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = AddedPlatinumCost (NipNipPlatinumNeeded),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -603,7 +660,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "GRAVPLANT",		"ID", "ASTEROID1"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "GRAVPLANT",		"ID", "ASTEROID1"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", GravHostSilverNeeded}
@@ -612,7 +669,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "GRAVPLANT",		"ID", "STELLAR2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "GRAVPLANT",		"ID", "STELLAR2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", GravHostCadmiumNeeded},
@@ -622,7 +679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "GRAVPLANT",		"ID", "LAND3"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "GRAVPLANT",		"ID", "LAND3"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", GravHostGravitinoBallsNeeded},
@@ -632,7 +689,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "GRAVPLANT",		"ID", "GRAVBALL"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "GRAVPLANT",		"ID", "GRAVBALL"},
 							["VALUE_MATCH"] 	= "Substance",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -642,7 +699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "U_SOLAR_S",		"ID", "CASING"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "U_SOLAR_S",		"ID", "CASING"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", SolarPlatesNeeded}
@@ -651,7 +708,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "U_SOLAR_S",		"ID", "ASTEROID2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "U_SOLAR_S",		"ID", "ASTEROID2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", SolarGoldNeeded},
@@ -660,7 +717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "U_SOLAR_S",		"ID", "STELLAR2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "U_SOLAR_S",		"ID", "STELLAR2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", SolarGlassNeeded},
@@ -670,7 +727,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "U_SOLAR_S",		"ID", "FARMPROD3"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "U_SOLAR_S",		"ID", "FARMPROD3"},
 							["VALUE_MATCH"] 	= "Substance",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -678,7 +735,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						--[[{
-							["SPECIAL_KEY_WORDS"] = {"Id","U_SOLAR_S"},
+							["SPECIAL_KEY_WORDS"] = {"ID","U_SOLAR_S"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = AddedGlassCost (SolarGlassNeeded),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -686,7 +743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "U_GENERATOR_S",		"ID", "CASING"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "U_GENERATOR_S",		"ID", "CASING"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", EGenPlatesNeeded}
@@ -695,7 +752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "U_GENERATOR_S",		"ID", "LAND3"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "U_GENERATOR_S",		"ID", "LAND3"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", EGenMagFerriteNeeded}
@@ -704,7 +761,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "U_GENERATOR_S",		"ID", "STELLAR2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "U_GENERATOR_S",		"ID", "STELLAR2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", EGenChromMetalNeeded}
@@ -713,7 +770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "BIOROOM",		"ID", "LAND3"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "BIOROOM",		"ID", "LAND3"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", BioDomeMagFerriteNeeded}
@@ -722,7 +779,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "BIOROOM",		"ID", "FARMPROD3"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "BIOROOM",		"ID", "FARMPROD3"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", BioDomeGlassNeeded}
@@ -731,7 +788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "BUILDANTIMATTER",		"ID", "STORM_CRYSTAL"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "BUILDANTIMATTER",		"ID", "STORM_CRYSTAL"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", AntiMatStormNeeded}
@@ -740,7 +797,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "BUILDANTIMATTER",		"ID", "ANTIMATTER"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "BUILDANTIMATTER",		"ID", "ANTIMATTER"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", AntiMatAntiNeeded},
@@ -749,7 +806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "BUILDANTIMATTER",		"ID", "CASING"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "BUILDANTIMATTER",		"ID", "CASING"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", AntiMatFluidNeeded},
@@ -760,7 +817,55 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_COOK",		"ID", "OXYGEN"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "CRATELRARE",		"ID", "CAVE2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CraFabIonNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "CRATELRARE",		"ID", "ANTIMATTER"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CraFabAntiNeeded}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","CRATELRARE"},
+							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+							["ADD"] = AddedProductCost ("ATLAS_SEED_2", CraFabShadeNeeded),
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "CRATELCYLINDER",		"ID", "CAVE2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", BarFabIonNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "CRATELCYLINDER",		"ID", "ANTIMATTER"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", BarFabAntiNeeded}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","CRATELCYLINDER"},
+							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+							["ADD"] = AddedProductCost ("ATLAS_SEED_4", BarFabDarkNeeded),
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_COOK",		"ID", "OXYGEN"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", CookRoomProcessors},
@@ -770,7 +875,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_COOK",		"ID", "COOKER"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_COOK",		"ID", "COOKER"},
 							["VALUE_MATCH"] 	= "Substance",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -780,7 +885,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_COOK",		"ID", "ASTEROID1"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_COOK",		"ID", "ASTEROID1"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", CookRoomSilver}
@@ -789,7 +894,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_COOK",		"ID", "LAND2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_COOK",		"ID", "LAND2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", CookRoomPureFerrite}
@@ -798,7 +903,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_REFINE",		"ID", "JELLY"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_REFINE",		"ID", "JELLY"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", RefinerRoomMicrochips},
@@ -808,7 +913,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_REFINE",		"ID", "ASTEROID1"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_REFINE",		"ID", "ASTEROID1"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", RefinerRoomSilver}
@@ -817,7 +922,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_REFINE",		"ID", "ASTEROID2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_REFINE",		"ID", "ASTEROID2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", RefinerRoomGold}
@@ -826,7 +931,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT1",		"ID", "ASTEROID1"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT1",		"ID", "ASTEROID1"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", CultivationChamberSilver}
@@ -835,7 +940,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT1",		"ID", "OXYGEN"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT1",		"ID", "OXYGEN"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", CultivationChamberPlates},
@@ -845,7 +950,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT1",		"ID", "CASING"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT1",		"ID", "CASING"},
 							["VALUE_MATCH"] 	= "Substance",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -855,7 +960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT1",		"ID", "PLANT_POOP"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT1",		"ID", "PLANT_POOP"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", CultivationChamberFaecium}
@@ -864,7 +969,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT0",		"ID", "ASTEROID1"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT0",		"ID", "ASTEROID1"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", DoubleCultivationChamberSilver}
@@ -873,7 +978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT0",		"ID", "OXYGEN"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT0",		"ID", "OXYGEN"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", DoubleCultivationChamberPlates},
@@ -883,7 +988,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT0",		"ID", "CASING"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT0",		"ID", "CASING"},
 							["VALUE_MATCH"] 	= "Substance",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -893,7 +998,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT0",		"ID", "PLANT_POOP"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT0",		"ID", "PLANT_POOP"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", DoubleCultivationChamberFaecium}
@@ -902,7 +1007,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_EXTR",		"ID", "ASTEROID1"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",		"ID", "ASTEROID1"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", StellarExtractorSilver}
@@ -911,7 +1016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_EXTR",		"ID", "ASTEROID2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",		"ID", "ASTEROID2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", StellarExtractorGold}
@@ -920,7 +1025,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_EXTR",		"ID", "LAND3"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",		"ID", "LAND3"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", StellarExtractorGravBall},
@@ -930,7 +1035,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_EXTR",		"ID", "GRAVBALL"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",		"ID", "GRAVBALL"},
 							["VALUE_MATCH"] 	= "Substance",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -940,7 +1045,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_SCAN",		"ID", "ASTEROID1"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_SCAN",		"ID", "ASTEROID1"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", ScannerRoomSilver}
@@ -949,7 +1054,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_SCAN",		"ID", "ASTEROID2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_SCAN",		"ID", "ASTEROID2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", ScannerRoomEmeril},
@@ -959,7 +1064,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_SCAN",		"ID", "POWERCELL"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_SCAN",		"ID", "POWERCELL"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", ScannerRoomQuantProc},
@@ -969,7 +1074,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_VEHICL",		"ID", "ASTEROID2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_VEHICL",		"ID", "ASTEROID2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", OrbitalExoGold}
@@ -978,7 +1083,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_VEHICL",		"ID", "CAVE2"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_VEHICL",		"ID", "CAVE2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", OrbitalExoEmeril},
@@ -988,7 +1093,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_VEHICL",		"ID", "HYPERFUEL1"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_VEHICL",		"ID", "HYPERFUEL1"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", OrbitalExoPortReact},
@@ -1052,16 +1157,16 @@ local ChangesToSubstanceSales = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]
 
 for i = 1, #SubstanceSaleChanges do
 	local NameID = SubstanceSaleChanges[i][1]
-	local ValueMult = SubstanceSaleChanges[i][2]
+	local NewValue = SubstanceSaleChanges[i][2]
 
 			ChangesToSubstanceSales_temp =
 			{
-				["MATH_OPERATION"] 		= "*",
+				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", NameID},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"BaseValue", ValueMult}
+					{"BaseValue", NewValue}
 				}
 			}
 			ChangesToSubstanceSales[#ChangesToSubstanceSales+1] = ChangesToSubstanceSales_temp
@@ -1101,7 +1206,7 @@ for i = 1, #ChartCostChanges do
 				--["PRECEDING_FIRST"] = "TRUE",
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "",
-				["SPECIAL_KEY_WORDS"] = {"Id", ChartId},
+				["SPECIAL_KEY_WORDS"] = {"ID", ChartId},
 				--["PRECEDING_KEY_WORDS"] = {""},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1182,7 +1287,7 @@ for i = 1, #ProceduralProductSaleChanges do
 				--["PRECEDING_KEY_WORDS"] = {Rarity},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"BasevalueMin", ValueMult},
+					{"BaseValueMin", ValueMult},
 					{"BaseValueMax", ValueMult}
 				}
 			}

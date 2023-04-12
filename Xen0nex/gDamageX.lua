@@ -2,7 +2,7 @@ Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage adjustments"
-GameVersion = "398"
+GameVersion = "420"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -13,6 +13,8 @@ Flora =						1				--Damage from all kinds of Hazardous Flora
 Fauna =						1				--Damage from all kinds of Hazardous Fauna / Creatures
 Robots =					1				--Damage from planetary Sentinels, turrets/drones in Derelict Freighters (Sentinel starships/freighters covered by "Starships")
 Other =						1				--Damage from most other damage sources such as environmental hazards, falling, starship impact, pirate building raids, etc.
+
+--For below items, values are set to what they would have been in Survival Mode. Hardmodemultiplier pre-4.0 is 1 unless otherwise specified.
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -26,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","BASICDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 1}}}, --default 1
+		{"Damage", 1.5}}}, --default 1, HardModeMultiplier 1.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ENERGY"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -52,6 +54,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 50*Other}}}, --default 28
 
+	{["SPECIAL_KEY_WORDS"] = {"Id","STANDING_STONE"},		--Added by Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 75*Other}}}, --default 50, HardModeMultiplier 1.5
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 5*Robots}}}, --default 2
@@ -70,47 +76,59 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","LASERDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 6*Robots}}}, --default 3	(used to be 7, default 5) ~Xen0nex
+		{"Damage", 9*Robots}}}, --default 3	(used to be 7, default 5) ~Xen0nex, HardModeMultiplier 1.5
 
+	{["SPECIAL_KEY_WORDS"] = {"Id","MINISPIDERDMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 18*Robots}}}, --default 12, 
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","SPIDERDMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 45*Robots}}}, --default 30, 
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","SMLCREATUREDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 30*Fauna}}}, --default 20
+		{"Damage", 60*Fauna}}}, --default 20, HardModeMultiplier 2
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","MEDCREATUREDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50*Fauna}}}, --default 30
+		{"Damage", 100*Fauna}}}, --default 30, HardModeMultiplier 2
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","LRGCREATUREDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 80*Fauna}}}, --default 50
+		{"Damage", 160*Fauna}}}, --default 50, HardModeMultiplier 2
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","HUGECREATUREDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100*Fauna}}}, --default 80
+		{"Damage", 200*Fauna}}}, --default 80, HardModeMultiplier 2
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","PLAYERPREDDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 60*Fauna}}}, --default 40
+		{"Damage", 120*Fauna}}}, --default 40, HardModeMultiplier 2
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","PREDDMGVR"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40*Fauna}}}, --default 20
+		{"Damage", 60*Fauna}}}, --default 20, HardModeMultiplier 1.5
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","WEIRDCRTDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 80*Fauna}}}, --default 40
+		{"Damage", 160*Fauna}}}, --default 40, HardModeMultiplier 2
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FIEND_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 45*Fauna}}}, --default 30
+		{"Damage", 90*Fauna}}}, --default 30, HardModeMultiplier 2
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FIENDSPIT_DMG"},				--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 3*Fauna}}}, --default 1
+		{"Damage", 4.5*Fauna}}}, --default 1, HardModeMultiplier 1.5
 		
+	{["SPECIAL_KEY_WORDS"] = {"Id","WORM_DMG"},				--Added Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 90*Fauna}}}, --default 30, HardModeMultiplier 2
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","PLANTDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100*Flora}}}, --default 20
+		{"Damage", 150*Flora}}}, --default 20, HardModeMultiplier 1.5
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -150,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","WALKERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 12*Robots}}}, --default 5		(used to be 25, default 9) ~Xen0nex
+		{"Damage", 18*Robots}}}, --default 5		(used to be 25, default 9) ~Xen0nex, HardModeMultiplier 1.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SENTINEL_FLAME"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -166,35 +184,39 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 150*Other}}},
+		{"Damage", 200*Other}}},	--default 5, HardModeMultiplier 1.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","MEDIUMASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 250*Other}}},
+		{"Damage", 350*Other}}},	--default 15, HardModeMultiplier 1.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","LARGEASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 400*Other}}},
+		{"Damage", 500*Other}}},	--default 40, HardModeMultiplier 1.5
 
+	{["SPECIAL_KEY_WORDS"] = {"Id","LANDING"},				--Added Xen0nex
+	["VALUE_CHANGE_TABLE"] = {
+		{"Damage", 320*Other}}},	--default 80, HardModeMultiplier 4
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 800*Other}}},
+		{"Damage", 800*Other}}},	--default 10
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTSHIP"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 25*Other}}},	--deafult 10
+		{"Damage", 100*Other}}},	--deafult 10
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTINSTANCE"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 400*Other}}},
+		{"Damage", 400*Other}}},	--deafult 30
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 120*Starships}}}, --default 20
+		{"Damage", 180*Starships}}}, --default 20, HardModeMultiplier 1.5
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 45*Starships}}}, --default 20
+		{"Damage", 67.5*Starships}}}, --default 20, HardModeMultiplier 1.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -206,11 +228,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SPORE_VENT"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 75*Flora}}}, --default 25
+		{"Damage", 125*Flora}}}, --default 25, HardModeMultiplier 1.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100*Fauna}}}, --default 65
+		{"Damage", 150*Fauna}}}, --default 65, HardModeMultiplier 2
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FLOATER_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -222,11 +244,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","GRABPLANT_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50*Flora}}}, --default 10
+		{"Damage", 75*Flora}}}, --default 10, HardModeMultiplier 1.5
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_PROP"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 10*Fauna}}}, --default 1
+		{"Damage", 15*Fauna}}}, --default 1, HardModeMultiplier 1.5
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","CLAM_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -234,11 +256,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","VENUSFLY_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100*Flora}}}, --default 20
+		{"Damage", 150*Flora}}}, --default 20, HardModeMultiplier 1.5
 		
+	{["SPECIAL_KEY_WORDS"] = {"Id","INTERACT_SMALL"},	--Added by Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 75*Other}}}, --default 50, HardModeMultiplier 1.5
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","INTERACT_LARGE"},	--Added by Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 160*Other}}}, --default 80, HardModeMultiplier 2
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","INTERACT_ENERGY"},	--Added by Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 28*Other}}}, --default 28
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","BARRELEXPLODE"},	--Added by Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 75*Other}}}, --default 50
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLERSPITDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40*Fauna}}}, --default 20
+		{"Damage", 40*Fauna}}}, --default 10
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","BASETURRETPDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -254,7 +292,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","TORNADO"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50*Other}}}, --default 35
+		{"Damage", 75*Other}}}, --default 35, HardModeMultiplier 1.5
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
