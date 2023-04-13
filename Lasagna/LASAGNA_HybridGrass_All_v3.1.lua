@@ -4,6 +4,168 @@ replaceDO =
     </Property>
 ]]
 
+replaceGrassMatFlags =
+[[
+  <Property name="Flags">
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F02_SKINNED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F03_NORMALMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F11_ALPHACUTOUT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F25_ROUGHNESS_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F36_DOUBLESIDED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F40_SUBSURFACE_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F29_VBCOLOUR" />
+    </Property>
+  </Property>
+]]
+
+--This adds basic collisions to shield plant that replaces hazard plants:
+AddShieldPlantCollisions =
+[[
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="CHILD1" />
+      <Property name="NameHash" value="182068161" />
+      <Property name="Type" value="LOCATOR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="1.852212" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="0.24" />
+        <Property name="ScaleY" value="0.5" />
+        <Property name="ScaleZ" value="0.24" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="ATTACHMENT" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\SHIELDPLANT\ENTITIES\SHIELDPLANT.ENTITY.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\TREESPINE\PINETREE_RED" />
+          <Property name="NameHash" value="793066182" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+]]
+
+
+replaceCGDesc =
+[[
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_7" />
+          <Property name="Name" value="_lushgrass_7" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_1" />
+          <Property name="Name" value="_lushgrass_1" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_3" />
+          <Property name="Name" value="_lushgrass_3" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_6" />
+          <Property name="Name" value="_lushgrass_6" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_5" />
+          <Property name="Name" value="_lushgrass_5" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_4" />
+          <Property name="Name" value="_lushgrass_4" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_8" />
+          <Property name="Name" value="_lushgrass_8" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_2" />
+          <Property name="Name" value="_lushgrass_2" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+]]
+
 function AddTheGrass(grassName)
 return [[
       <Property value="GcObjectSpawnData.xml">
@@ -37,7 +199,7 @@ return [[
                       <Property name="B" value="0.239" />
                       <Property name="A" value="1" />
                     </Property>
-                    <Property name="OptionName" value="3" />
+                    <Property name="OptionName" value="" />
                   </Property>
                 </Property>
               </Property>
@@ -64,8 +226,8 @@ return [[
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.9" />
-        <Property name="MaxScale" value="1.1" />
+        <Property name="MinScale" value="0.8" />
+        <Property name="MaxScale" value="1.0" />
         <Property name="MinScaleY" value="1.3" />
         <Property name="MaxScaleY" value="1.3" />
         <Property name="SlopeScaling" value="1" />
@@ -84,8 +246,8 @@ return [[
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="1" />
-          <Property name="FlatDensity" value="0.34" />
-          <Property name="SlopeDensity" value="0.34" />
+          <Property name="FlatDensity" value="0.21" />
+          <Property name="SlopeDensity" value="0.21" />
           <Property name="SlopeMultiplier" value="2.5" />
           <Property name="MaxRegionRadius" value="17998" />
           <Property name="MaxImposterRadius" value="18" />
@@ -104,8 +266,8 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.3" />
-            <Property name="SlopeDensity" value="0.3" />
+            <Property name="FlatDensity" value="0.23" />
+            <Property name="SlopeDensity" value="0.23" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="9" />
             <Property name="MaxImposterRadius" value="18" />
@@ -123,8 +285,8 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.3" />
-            <Property name="SlopeDensity" value="0.3" />
+            <Property name="FlatDensity" value="0.23" />
+            <Property name="SlopeDensity" value="0.23" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="5" />
             <Property name="MaxImposterRadius" value="18" />
@@ -144,9 +306,130 @@ return [[
 ]]
 end
 
+function AddSecondaryGrass(grassName)
+return [[
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/]] .. grassName .. [[.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers">
+            </Property>
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="GRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
+        <Property name="OverlapStyle" value="All" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="75" />
+        <Property name="MatchGroundColour" value="True" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="1.2" />
+        <Property name="MaxScale" value="1.4" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0.75" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.2" />
+          <Property name="SlopeDensity" value="0.2" />
+          <Property name="SlopeMultiplier" value="1" />
+          <Property name="MaxRegionRadius" value="17998" />
+          <Property name="MaxImposterRadius" value="18" />
+          <Property name="FadeOutStartDistance" value="17998" />
+          <Property name="FadeOutEndDistance" value="17998" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.22" />
+            <Property name="SlopeDensity" value="0.22" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="9" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="63" />
+            <Property name="FadeOutEndDistance" value="81" />
+            <Property name="FadeOutOffsetDistance" value="5" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="ULTRA" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.22" />
+            <Property name="SlopeDensity" value="0.22" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="5" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="126" />
+            <Property name="FadeOutEndDistance" value="144" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+]]
+end
+
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_OGGrass_All_v3.01.pak",
+["MOD_FILENAME"] 			= "LASAGNA_HybridGrass_All_v3.1.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -254,6 +537,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = AddTheGrass("CROSSGRASS"),
+							AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 							
 
@@ -413,7 +697,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddTheGrass("CROSSGRASS"),
+							["ADD"] = AddTheGrass("CROSSGRASS")..
+							AddSecondaryGrass("NEWCROSSGRASS"),
 						},
 							
 
@@ -464,16 +749,62 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddTheGrass("BUBBLELUSHGRASS"),
+							["ADD"] = AddTheGrass("BUBBLELUSHGRASS")..
+							AddSecondaryGrass("BUBBLELUSHGRASS"),
 						},
 							
 
 					},
 				},
+				
+				
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\NEWCROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
 
 
 
+						--REMOVE new grass_curly option (no old version of this model)
+						
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_GRASS_CURLY",},
+							["REMOVE"] = "SECTION"
+						},
 
+					},
+				},
+				
+				
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\CROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+
+
+						--Reorder descriptor to match newcrossgrass
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["ADD"] = replaceCGDesc,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["REMOVE"] = "SECTION"
+						},
+
+					},
+				},
+				
+				
 
 
 				--Replace 2 hazard plants with shield plants
@@ -524,6 +855,45 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 
 					},
+				},
+				
+				
+				--v3.1: To change original dandelion grass material flags (= multishade & white dandelion)
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\CROSSGRASS\LUSHGRASS1MAT1.MATERIAL.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						--Replace material flags:
+						{
+							["PRECEDING_KEY_WORDS"] = {"Flags",},
+							["ADD"] = replaceGrassMatFlags,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Flags",},
+							["REMOVE"] = "SECTION"
+						},
+					},
+				},
+				
+				
+				--Shield collisions & gives shield HP
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\SHIELDPLANT1.SCENE.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = { "TkSceneNodeData.xml", },
+							["ADD_OPTION"] 	= "ADDafterSECTION",
+							["ADD"] = AddShieldPlantCollisions,
+						},
+					}
 				},
 
 				
