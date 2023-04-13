@@ -645,6 +645,32 @@ NewRecipe4 =
       </Property>
     </Property>]]
 
+--Adds Recipe for refining Basalt into Silicate Powder
+NewRecipe5 = 
+[[<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="SILICATE_BASALT" />
+      <Property name="RecipeType" value="RECIPE_SILICATE" />
+      <Property name="RecipeName" value="PTSd: Basalt Pulverisation" />
+      <Property name="TimeToMake" value="20" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="SAND1" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Substance" />
+        </Property>
+        <Property name="Amount" value="2" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="LAVA1" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>]]
+
 --For adding Hypnotic Eye as an ingredient in the final Worm Food recipe
 AddEyeball =
 [[<Property value="GcRefinerRecipeElement.xml">
@@ -1021,6 +1047,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["PRECEDING_KEY_WORDS"] = {"Table"},
 				["ADD"] = NewRecipe4
+			},
+			{
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = NewRecipe5
 			},
 			{
 				["PRECEDING_KEY_WORDS"] = {"Table"},

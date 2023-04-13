@@ -184,14 +184,17 @@ PelletsPerCraft					=	3				--5
 NipNipBudsNeeded				=	3				--1
 NipNipPlatinumNeeded			=	100				--0
 --Gravitino Host plant construction recipe
-GravHostSilverNeeded			=	60				--120
+GravHostSilverNeeded			=	60				--120	Silver
 GravHostCadmiumNeeded			=	60				--0		(replaces 25 Chromatic Metal)
 GravHostGravitinoBallsNeeded	=	1				--0		(replaces 25 Magnetised Ferrite)
 
+--Biofuel Reactor construction recipe
+BioGenPlatesNeeded				=	1				--1		Metal Plates
+BioGenOxygenNeeded				=	50				--25	Oxygen
 --Solar Panel construction recipe
-SolarPlatesNeeded				=	3				--1
-SolarGoldNeeded					=	40				--30
-SolarGlassNeeded				=	2				--0		(replaces 50 Chromatic Metal)
+SolarPlatesNeeded				=	3				--1		Metal Plates
+SolarGoldNeeded					=	40				--30	Gold
+SolarGlassNeeded				=	4				--0		(replaces 50 Chromatic Metal)
 --Electromagnetic Generator construction recipe
 EGenPlatesNeeded				=	6				--2
 EGenMagFerriteNeeded			=	180				--60
@@ -694,6 +697,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"InventoryType", "Product"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "U_BIOGENERATOR",		"ID", "CASING"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", BioGenPlatesNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "U_BIOGENERATOR",		"ID", "OXYGEN"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", BioGenOxygenNeeded},
 							}
 						},
 						{

@@ -216,6 +216,9 @@ MinotaurFuelRate = 3					--0.5		Changes base fuel usage rate for Minotaur exomec
 MinotaurBoreChargeAmount = 500			--200		The "tank size" of how much "charge"/"fuel" the Minotaur Bore can hold. (Terrain Manipulator is 600)
 MinotaurBoreChargeCost = 0.5			--			Multiplier to apply to the cost of recharging the Minotaur Bore. (Terrain Manipulator is 1/3 as expensive to recharge as Minotaur Bore normally) E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
 
+--Changes how much substances it costs to refill the Biofuel Reactor for a set amount of time (the max size of the fuel tank is controlled in "gBase Items BasicX.lua")
+BiofuelRefillCostMult = 2					--1			In vanilla it takes 50 Carbon / 17 Cond. Carbon / 25 Oxygen for 25 hours worth of charge, so a "2" here means it would take 100 Carbon / 34 Cond. Carbon / 50 Oxygen to fill it for 25 hours worth of charge
+
 --Changes one of the ingredients for installing the Trade Rocket
 RocketDarkMatter = 4					--Dark Matter		(90 Di-Hydrogen in vanilla)
 --Changes the cost of using & recharging the Trade Rocket (fuel usage altered in PTSD Black Hole Distance + Ship Scrapping Items + Misc.lua)
@@ -880,6 +883,98 @@ NewInterceptorTechRepairSlot =
           <Property name="DamageStatus" value="Damaged" />
           <Property name="CompletionRequirement" value="FullyRepaired" />
         </Property>]]
+		
+NewContainerTree =
+[[<Property name="Root" value="GcUnlockableItemTreeNode.xml">
+            <Property name="Unlockable" value="CONTAINER0" />
+            <Property name="Children">
+			  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="FRE_ROOM_STORE0" />
+                    <Property name="Children" />
+                  </Property>
+              <Property value="GcUnlockableItemTreeNode.xml">
+                <Property name="Unlockable" value="CONTAINER1" />
+                <Property name="Children">
+                  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="FRE_ROOM_STORE1" />
+                    <Property name="Children" />
+                  </Property>
+				  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="CONTAINER2" />
+                    <Property name="Children">
+						<Property value="GcUnlockableItemTreeNode.xml">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE2" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
+                  </Property>
+                  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="CONTAINER3" />
+                    <Property name="Children">
+						<Property value="GcUnlockableItemTreeNode.xml">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE3" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcUnlockableItemTreeNode.xml">
+                <Property name="Unlockable" value="CONTAINER4" />
+                <Property name="Children">
+                  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="FRE_ROOM_STORE4" />
+                    <Property name="Children" />
+                  </Property>
+				  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="CONTAINER5" />
+                    <Property name="Children">
+						<Property value="GcUnlockableItemTreeNode.xml">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE5" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
+                  </Property>
+                  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="CONTAINER6" />
+                    <Property name="Children">
+						<Property value="GcUnlockableItemTreeNode.xml">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE6" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcUnlockableItemTreeNode.xml">
+                <Property name="Unlockable" value="CONTAINER7" />
+                <Property name="Children">
+                  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="FRE_ROOM_STORE7" />
+                    <Property name="Children" />
+                  </Property>
+				  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="CONTAINER8" />
+                    <Property name="Children">
+						<Property value="GcUnlockableItemTreeNode.xml">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE8" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
+                  </Property>
+                  <Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="CONTAINER9" />
+                    <Property name="Children">
+						<Property value="GcUnlockableItemTreeNode.xml">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE9" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>]]
 
 function Invert (value)
     return
@@ -1194,6 +1289,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "MAINT_BURNER"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ChargeMultiplier",	Invert (BiofuelRefillCostMult)},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "", 
 							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "SUIT_ROCKET",	"ID", "LAUNCHSUB"},
@@ -1242,20 +1348,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						--This entry intentionally left blank, to be filled in by the TechAdjustments function at the bottom of this script
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						--This entry intentionally left blank, to be filled in by the RecipeChanges function at the bottom of this script
-					}
-				},
-				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
 					["EXML_CHANGE_TABLE"]     = 
                     {
@@ -1300,6 +1392,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Unlockable",    "F_SCANNER"}
                             }
                         },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title","UI_STORAGE_TREE",		"Unlockable","CONTAINER0"},		--Removes vanilla Storage COntainer tree
+							--["SECTION_UP"] = 1,
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title","UI_STORAGE_TREE",		"CostTypeID","SALVAGE"},
+                            ["ADD"] = NewContainerTree
+                        },
                     }
 				},
 				{
@@ -1326,7 +1427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }	
 
-local ChangesToTechTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ChangesToTechTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
 for i = 1, #TechAdjustments do
 	-- local ChangesToProductTable5_temp
@@ -1347,7 +1448,7 @@ for i = 1, #TechAdjustments do
 			}
 end
 
-local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
 for i = 1, #RecipeChanges do
 	-- local ChangesToProductTable_temp
