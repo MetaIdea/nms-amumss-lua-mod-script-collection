@@ -365,15 +365,15 @@ AddBasicCollisions =
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
         <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="0.3" />
+        <Property name="ScaleX" value="0.4" />
         <Property name="ScaleY" value="4.113077" />
-        <Property name="ScaleZ" value="0.3" />
+        <Property name="ScaleZ" value="0.4" />
       </Property>
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\PHYSICS.ENTITY.MBIN" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\TREES\PARTS\TRUNKA\ENTITIES\_TRUNK_A.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
@@ -422,7 +422,7 @@ AddBasicCollisions =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "__LASAGNA_OG_Trees_v1.11.pak",
+["MOD_FILENAME"] 			= "__LASAGNA_OG_Trees_v2.0b.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -439,7 +439,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\TREEVARIANTS.SCENE.MBIN",
 						"MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMUMBRELLA01.SCENE.MBIN",
 						"MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\SMALLSPRUCE01.SCENE.MBIN",
-						"MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\MEDIUMOAK1.SCENE.MBIN",
+						"MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1.SCENE.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -461,7 +461,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",}, --This is to add DistantObjects section and to add custom models to it
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
 							["REPLACE_TYPE"] 		= "RAW",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -485,7 +485,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",}, --This is to add DistantObjects section and to add custom models to it
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
 							["REPLACE_TYPE"] 		= "RAW",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -510,7 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",}, --This is to add DistantObjects section and to add custom models to it
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
 							["REPLACE_TYPE"] 		= "RAW",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -520,7 +520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{		--replaces the added line above --ADDafterSECTION --REPLACEatLINE --ADDafterLINE
 							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddOGTrees("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\TREEVARIANTS.SCENE.MBIN", 50, 1.3, 1.9, 10, 0.18, 0.11),
+							["ADD"] = AddOGTrees("MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1.SCENE.MBIN", 50, 1.3, 1.9, 10, 0.18, 0.11),
 						},
 					},
 				},
@@ -534,7 +534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",}, --This is to add DistantObjects section and to add custom models to it
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
 							["REPLACE_TYPE"] 		= "RAW",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -558,7 +558,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",}, --This is to add DistantObjects section and to add custom models to it
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
 							["REPLACE_TYPE"] 		= "RAW",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -582,7 +582,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",}, --This is to add DistantObjects section and to add custom models to it
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
 							["REPLACE_TYPE"] 		= "RAW",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -592,7 +592,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{		--replaces the added line above --ADDafterSECTION --REPLACEatLINE --ADDafterLINE
 							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddOGTrees("MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\MEDIUMOAK1.SCENE.MBIN", 50, 4, 4.5, 10, 0.18, 0.02),
+							["ADD"] = AddOGTrees("MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1.SCENE.MBIN", 50, 1.5, 2, 10, 0.18, 0.02),
 						},
 					},
 				},
