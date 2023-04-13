@@ -20,6 +20,9 @@ ProductReqMult =		10				--7x quests: Vanilla requirements are 2 Microprocessors,
 KorvaxCubeReq =			1				--1 Cube		(setting to values other than 1 makes that mission stage loop to keep giving you cubes until you have the new requirement))
 VyKeenDaggerReq =		10				--2 Daggers		This type of item is rarer to find than some others
 
+--Multiplier to the amount of words needed to be learned for each step of the Base Computer Archives mission.
+BaseCompArchWordsMult =	5				-- Vanilla is 3 words for stage 1, increasing by 3 each stage up to 30 words needed for stage 10
+
 --Changes the UI text to match the new requirements for repairing the Pilot Interface for crashed Sentinel Interceptors
 RadiantShards =			6				--3
 InvertedMirrors =		2				--1
@@ -358,6 +361,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"AmountMin", InvertedMirrors},
 					{"AmountMax", InvertedMirrors},
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\BASECOMPUTERMISSIONTABLE.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"Stat", "WORDS_LEARNT"},
+				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
+				["REPLACE_TYPE"] 		= "ALL",
+				["MATH_OPERATION"] 		= "*",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Level", BaseCompArchWordsMult},
 				}
 			},
 		}

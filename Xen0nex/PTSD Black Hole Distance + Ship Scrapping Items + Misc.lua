@@ -46,6 +46,9 @@ ShipScrappingItemChanges =
 	}
 }
 
+--Sets most Freighter Storage Container recipes to be unknwon at the start of the game, to require unlocking at the Anomaly
+UnknownFreighterStorage =						
+{"FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9"}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
@@ -99,6 +102,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				--Intentionally left blank to be filled in by function below
+			}
+		}
 	}
 }}}}
 
@@ -127,4 +139,27 @@ for i = 1, #ShipScrappingItemChanges do
 				}
 			}
 	end
+end
+for i = 1, #UnknownFreighterStorage do
+	local ContainerID = UnknownFreighterStorage[i]
+		
+			ChangesToGamePlayGlobals[#ChangesToGamePlayGlobals+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "GcDifficultyStartWithAllItemsKnownOptionData.xml",	"Value",	ContainerID},
+				["REMOVE"] = "SECTION"
+			}
+end
+
+local ChangesToDefaultSaveData = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+
+for i = 1, #UnknownFreighterStorage do
+	local ContainerID = UnknownFreighterStorage[i]
+		
+			ChangesToDefaultSaveData[#ChangesToDefaultSaveData+1] =
+			{
+				["PRECEDING_FIRST"] = "TRUE",
+				["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
+				["SPECIAL_KEY_WORDS"] = {"Value",	ContainerID},
+				["REMOVE"] = "SECTION"
+			}
 end

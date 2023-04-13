@@ -8,6 +8,10 @@ MedNaniteCost =			200					--100
 --This will be the price paid in Nanites to a Traveller NPC when asking directions to a grave or to get memory fragments (In vanilla just uses the same value as MedNaniteCost)
 TravellerNaniteCost =	800					--100
 
+--Adds a cost to opening the containers at crashed freighters
+CrashedContSubstance =	"STELLAR2"			--""			STELLAR2 is Chromatic Metal
+CrashedContAmount =	10						--0
+
 --Makes Emergency Broadcast Receivers for finding Derelict Freighters start out a little more expensive and continue increasing in price up until the eleventh daily purchase, instead of stopping at the fourth.
 --Receiver prices reset each day
 FirstReceiverCost = 	8000000				--5000000
@@ -318,6 +322,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["PRECEDING_KEY_WORDS"] = {"Costs"},
 				["REPLACE_TYPE"] 		= "",
 				["REMOVE"] = "SECTION",
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\PARTS\CONTAINERTERMINAL\ENTITIES\TERMINALCHAR.ENTITY.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"ActivationCost","GcInteractionActivationCost.xml"},
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"SubstanceId", CrashedContSubstance},
+					{"Cost", CrashedContAmount},
+				}
 			},
 		}
 	},

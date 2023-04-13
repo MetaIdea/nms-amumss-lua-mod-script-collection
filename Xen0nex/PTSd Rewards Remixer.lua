@@ -243,7 +243,7 @@ ShipCurrencyChanges =
 --New Additional rewards for destroying POLICE (Sentinel Interceptors)
 PoliceFrigComMin = 					1			--Explosive Drones
 PoliceFrigComMax = 					1
-PoliceFrigComChance = 				100
+PoliceFrigComChance = 				60
 
 --New additional rewards for rescuing a Freighter from Pirates
 FreighterRescueUnitsMin = 			400000
@@ -854,7 +854,7 @@ CrashedFreighterLootChances =
 		}
 	},
 	{
-		{"CRASHCONT_S"},
+		{"CRASHCONT_S"},		--Seems to be if you loot a crashed freighter during the tutorial missions
 		{
 			{"FRIG_TOKEN",				15},					--8			Salvaged Frigate Module
 			{"WEAP_INV_TOKEN",			15},					--8			Multi-Tool Expansion Slot
