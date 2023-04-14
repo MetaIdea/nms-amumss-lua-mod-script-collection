@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Better Rifles"
-GameVersion = "4.20"
+GameVersion = "4.22"
 --ModVersion = "v1.1"
 Description = "Change Rifle base stats to the same as Alien Multi-Tool."
 
