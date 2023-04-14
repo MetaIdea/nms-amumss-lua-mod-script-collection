@@ -9,7 +9,7 @@ InputSpeedMultiplier = {SpeedMultiplier,
     Default = 1 | Current = >> ]] .. (SpeedMultiplier) .. [[ <<
 ]]}
 
-SpeedMultiplier = GUIF(InputSpeedMultiplier)
+SpeedMultiplier = GUIF(InputSpeedMultiplier, 10)
 GroundWalkSpeed = "4.4" --these are their actual values
 GroundRunSpeed = "8" --these are their actual values
 

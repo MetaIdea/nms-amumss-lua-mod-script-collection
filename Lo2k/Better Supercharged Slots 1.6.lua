@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Supercharged Slots 1.5.pak", 
+["MOD_FILENAME"] 			= "Better Supercharged Slots 1.6.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.13",
+["NMS_VERSION"]				= "4.22",
 ["MOD_DESCRIPTION"]			= "This mods reduces clicks and keys press duration",
 ["MODIFICATIONS"] 			= 
 	{
