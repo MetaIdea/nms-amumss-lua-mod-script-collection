@@ -12,6 +12,8 @@ QUICK_ACTION_LIST =
     "TOGGLE_SHIELD",
     "TOGGLE_INVISIBLE",
     "REVEAL_RUNES",
+    "R_CHART_ROBOT",
+    "R_SCANSENTCRASH",
     "CRASHED_SHIP",
     "WORD",
     "FREIGHTER_TRANS",
@@ -652,6 +654,8 @@ QUICK_ACTION_MENU =
         </Property>
 ]]
     },
+    ["R_CHART_ROBOT"] = {["TITLE"]="Locate Sentinel Multi-Tool",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.ROBOTHEAD.DDS",["ANIM"]="R_CHART_ROBOT",["TYPE"]="REWARD"},
+    ["R_SCANSENTCRASH"] = {["TITLE"]="Find Crashed Sentinel Ship",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.SENTINELCRASH.DDS",["ANIM"]="R_SCANSENTCRASH",["TYPE"]="REWARD"},
     ["CRASHED_SHIP"] = {["TITLE"]="Find Crashed Ship",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.CRASH.DDS",["ANIM"]="CRASHED_SHIP",["TYPE"]="REWARD",
         ["REWARDTABLE"] =
 [[
@@ -1329,7 +1333,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "4.20",
+["NMS_VERSION"]     = "4.22",
 ["MODIFICATIONS"]   =
     {
         {

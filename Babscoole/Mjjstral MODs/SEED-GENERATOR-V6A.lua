@@ -383,7 +383,7 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
                 elseif ANIM_ID == "SAIL" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.EXPEDITION.BANNER01.DDS"
                 elseif ANIM_ID == "ROBOT" then
-                    ICON = "TEXTURES\UI\FRONTEND\ICONS\MISSIONS\MISSION.SENTINELCRASH.MSHOP.DDS"
+                    ICON = "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS"
                 elseif ANIM_ID == "MULTITOOL" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS"
                 elseif ANIM_ID == "ROYALMULTITOOL" then
@@ -495,7 +495,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.20",
+["NMS_VERSION"]     = "4.22",
 ["MODIFICATIONS"]   =
     {
         {

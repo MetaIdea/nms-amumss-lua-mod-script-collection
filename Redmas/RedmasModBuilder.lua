@@ -1,8 +1,3 @@
-----------------------------------------------------------------------------------------
---
--- ( Ctrl + S to save )
---
-------------------------------------------------------------------------------------------
 -- ************************************************************************************************************
 -- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
 --
@@ -21,7 +16,7 @@
 ------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "CUSTOM_PRESET"
+INIT = "REDMAS_E3PIC_FANTASY_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -74,7 +69,7 @@ SPACESHIPS_SPACE_THRUSTFORCE = 140
 SPACESHIPS_SPACE_MAXPSEED = 4420
 SPACESHIPS_SPACE_FALLOFF = 0.007
 SPACESHIPS_SPACE_BOOST_FORCE = SPACESHIPS_SPACE_THRUSTFORCE*4
-SPACESHIPS_SPACE_BOOST_MAX = 4420
+SPACESHIPS_SPACE_BOOST_MAX = 2420
 --
 SPACESHIPS_PLANET_THRUSTFORCE = 800
 SPACESHIPS_PLANET_MAXPSEED = 111
@@ -915,7 +910,7 @@ FANTASY_PRESET ={
 ------------------------------------------------------------------------------------------
 
 CUSTOM_PRESET ={
-	["MODNAME"] = "UTOPIA-REVAMP-V15",
+	["MODNAME"] = "UTOPIA-REVAMP-V17",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
@@ -925,8 +920,8 @@ CUSTOM_PRESET ={
         ["BINOCULARS_TYPE"] = "CLEAR", -- SUN / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- (REALISTIC / VANILLA / E3 )
-        ["SPACE_COLOURS_TYPE"] = "VANILLA", -- (REALISTIC / VANILLA / FANTASY )
-        ["ASTEROIDS_FIELDS_TYPE"] = "REALISTIC", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["SPACE_COLOURS_TYPE"] = "FANTASY", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "FANTASY", -- ("FANTASY" / "REALISTIC" / "GLUED")
         ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
         ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
         ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
@@ -935,8 +930,8 @@ CUSTOM_PRESET ={
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
         ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name
         ["ENGINE_SPASH_SCREEN"] = "E-E3-1", --"E-E3-1"   or another img name
-        ["NMS_TITLE"] = "TITLE-ATLAS", --"TITLE-ATLAS"   or another img name
-        ["MENU_SPLASH_SCREEN"] = "LIBERTEUS", --"E3-RUINS"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
+        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE3", --"E3-RUINS"   or another img name
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
@@ -987,15 +982,15 @@ CUSTOM_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON", 
-        ["MAX_CREATURES_NUMBER"] = 25, -- 10 < - > 20
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
         ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF",
         ["GIANTS_CREATURES_FEATURE"] = "OFF",
-        ["GIANTS_MAX_SIZE"] = "54", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
+        ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
     ["GENERATION_FEATURES"] =
     {
@@ -1020,7 +1015,7 @@ CUSTOM_PRESET ={
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "OFF",
-                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["SKY_BIOMES_FEATURE"] = "ON",
                 ["STORM_BIOMES_FEATURES"] = "OFF",
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
@@ -2796,7 +2791,7 @@ REDMAS_CHALLENGE_MODE_PRESET ={
 ------------------------------------------------------------------------------------------
 
 REDMAS_E3PIC_FANTASY_PRESET ={
-	["MODNAME"] = "__EUPHORIA_WORLDS_GENERATION_extension_v6",
+	["MODNAME"] = "__EUPHORIA_WORLDS_GENERATION_extension_v6.1",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -5892,10 +5887,10 @@ OFTEN_SPAWN_R2 =----------------------------------------------------------------
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
+          <Property name="MaxImposterRadius" value="9999" />
           <Property name="FadeOutStartDistance" value="9999" />
           <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="FadeOutOffsetDistance" value="9999" />
           <Property name="LodDistances">
             <Property value="0" />
             <Property value="20" />
@@ -5927,16 +5922,17 @@ GIANT_OFTEN_SPAWN =-------------------------------------------------------------
 						<Property name="FlatDensity" value="0.00041" />
 						<Property name="SlopeDensity" value="0" />
 						<Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxImposterRadius" value="9999" />
-            <Property name="FadeOutStartDistance" value="2200" />
-            <Property name="FadeOutEndDistance" value="3000" />
-            <Property name="FadeOutOffsetDistance" value="200" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="9999" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="9999" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="150" />
-              <Property value="300" />
-              <Property value="450" />
-              <Property value="600" />
+              <Property value="1150" />
+              <Property value="1300" />
+              <Property value="1450" />
+              <Property value="1600" />
 						</Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -5958,21 +5954,21 @@ GIANT_SPARSE_SPAWN = -----------------------------------------------------------
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
 						<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 						<Property name="ID" value="STANDARD" />
-						<Property name="Coverage" value="0.2" />
+						<Property name="Coverage" value="0.4" />
 						<Property name="FlatDensity" value="0.0001" />
 						<Property name="SlopeDensity" value="0" />
 						<Property name="SlopeMultiplier" value="1" />
-						<Property name="MaxRegionRadius" value="9999" />
-            <Property name="MaxImposterRadius" value="9999" />
-            <Property name="FadeOutStartDistance" value="2200" />
-            <Property name="FadeOutEndDistance" value="3000" />
-            <Property name="FadeOutOffsetDistance" value="200" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="9999" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="9999" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="150" />
-              <Property value="300" />
-              <Property value="450" />
-              <Property value="600" />
+              <Property value="1250" />
+              <Property value="1300" />
+              <Property value="1450" />
+              <Property value="1600" />
 						</Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -6578,8 +6574,8 @@ function generateRareRessourcesBiome(BIOME_PATH,TYPE,PATH,MAXSIZE)
 								<Property name="MinHeight" value="-1" />
 								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
-								<Property name="MinAngle" value="15" />
-								<Property name="MaxAngle" value="55" />
+								<Property name="MinAngle" value="0" />
+								<Property name="MaxAngle" value="15" />
 								<Property name="MatchGroundColour" value="True" />
 								<Property name="GroundColourIndex" value="Auto" />
 								<Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -6591,7 +6587,7 @@ function generateRareRessourcesBiome(BIOME_PATH,TYPE,PATH,MAXSIZE)
 								<Property name="MaxScaleY" value="1" />
 								<Property name="SlopeScaling" value="1" />
 								<Property name="PatchEdgeScaling" value="0" />
-								<Property name="MaxXZRotation" value="60" />
+								<Property name="MaxXZRotation" value="0" />
 								]]..GIANT_SPARSE_SPAWN..[[						
 							</Property>
 						
@@ -15779,7 +15775,8 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 								{"WheelSuspensionForce",         "20"},
-								{"TopSpeedForward",              "45"},
+								{"TopSpeedForward",              "25"},
+								{"VehicleBoostMaxSpeed",         "30"},
 								{"TopSpeedReverse",              "40"},
 								{"WheelMaxAccelForceForward",    "350"},
 								{"WheelMaxAccelForceReverse",    "350.5"},
@@ -15793,7 +15790,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 								{"VehicleJumpForce",             "1875"},
 								{"VehicleJumpAirControlForce",   "220"},
 								{"VehicleBoostForce",            "800"},
-								{"VehicleBoostMaxSpeed",         "70"},
+								
 								{"VehicleBoostExtraMaxSpeedAir", "5"},
 								{"VehicleBoostSpeedFalloff",     "0.05"},
 								{"VehicleBoostTime",             "10.5"},
@@ -15812,7 +15809,8 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 								{"WheelSuspensionlength",        "0.7"},
-								{"TopSpeedForward",              "54"},
+								{"TopSpeedForward",              "14"},
+								{"VehicleBoostMaxSpeed",         "25"},
 								{"WheelMaxAccelForceForward",    "300.5"},
 								{"WheelMaxAccelForceReverse",    "900.1"},
 								{"WheelMaxDecelForceNonBraking", "0.02"},
@@ -15821,7 +15819,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 								{"VehicleGravityWater",          "38"},
 								{"VehicleJumpForce",             "920"},
 								{"VehicleBoostForce",            "480"},
-								{"VehicleBoostMaxSpeed",         "60"},
+								
 								{"VehicleBoostSpeedFalloff",     "0.001"},
 								{"VehicleBoostTime",             "1"},
 								{"VehicleBoostRechargeTime",     "0.03"},
@@ -15834,11 +15832,12 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 								{"WheelSuspensionForce",         "40"},
-								{"TopSpeedForward",              "42"},
+								{"TopSpeedForward",              "12"},
+								{"VehicleBoostMaxSpeed",         "20"},
 								{"WheelMaxDecelForceNonBraking", "0.002"},
 								{"VehicleJumpForce",             "40"},
 								{"VehicleBoostForce",            "520"},
-								{"VehicleBoostMaxSpeed",         "70"},
+								{"VehicleBoostMaxSpeed",         "40"},
 								{"VehicleBoostSpeedFalloff",     "0.005"},
 								{"VehicleBoostTime",             "100.25"},
 								{"AudioImpacts",                 "Buggy_Impacts"},
@@ -15853,7 +15852,8 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 								{"WheelSuspensionForce",           "12"},
-								{"TopSpeedForward",                "49"},
+								{"TopSpeedForward",                "19"},
+								{"VehicleBoostMaxSpeed",           "25"},
 								{"WheelMaxAccelForceForward",      "1060.5"},
 								{"WheelMaxAccelForceReverse",      "655.5"},
 								{"WheelMaxDecelForceNonBraking",   "0.002"},
@@ -15869,7 +15869,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 								{"VehicleJumpForce",               "1050"},
 								{"VehicleJumpAirControlForce",     "0"},
 								{"VehicleBoostForce",              "560"},
-								{"VehicleBoostMaxSpeed",           "65"},
+								{"VehicleBoostMaxSpeed",           "15"},
 								{"VehicleBoostSpeedFalloff",       "0.001"},
 								{"VehicleBoostTime",               "10.2"},
 								{"VehicleBoostRechargeTime",       "0.4"},
@@ -15888,6 +15888,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 								{"WheelSuspensionForce",           "20"},
 								{"WheelSuspensionDamping",         "0"},
 								{"TopSpeedForward",                "45"},
+								{"VehicleBoostMaxSpeed",           "60"},
 								{"TopSpeedReverse",                "10"},
 								{"WheelMaxAccelForceForward",      "30"},
 								{"WheelMaxAccelForceReverse",      "30.5"},
@@ -15904,7 +15905,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 								{"VehicleJumpForce",               "875"},
 								{"VehicleJumpAirControlForce",     "220"},
 								{"VehicleBoostForce",              "800"},
-								{"VehicleBoostMaxSpeed",           "60"},
+								
 								{"VehicleBoostExtraMaxSpeedAir",   "5"},
 								{"VehicleBoostSpeedFalloff",       "0.05"},
 								{"VehicleBoostTime",               "10.5"},
@@ -15926,12 +15927,12 @@ if GAMEPLAY_OVERHAUL == "ON" then
 								{"UnderwaterEngineFalloff",                "0.07"},
 								{"UnderwaterEngineDirectionBrakeVertical", "0.002"},
 								{"WheelSuspensionForce",                   "85"},
-								{"TopSpeedForward",                        "45"},
+								{"TopSpeedForward",                        "25"},
 								{"WheelMaxDecelForceNonBraking",           "1E-05"},
 								{"WheelMaxDecelForceBraking",              "500.05"},
 								{"VehicleGravity",                         "10"},
 								{"VehicleJumpAirControlForce",             "980"},
-								{"VehicleBoostMaxSpeed",                   "65"},
+								{"VehicleBoostMaxSpeed",                   "45"},
 								{"VehicleBoostExtraMaxSpeedAir",           "60"},
 								{"VehicleBoostTime",                       "12.5"},
 								{"HeadlightIntensity",                     "30"},
@@ -17403,10 +17404,10 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED},
+							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
 							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
 							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX},
+							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
 							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S },
 						}
 					},
@@ -17416,10 +17417,10 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED},
+							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
 							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
 							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX},
+							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
 							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S },
 						}
 					},
@@ -17429,10 +17430,10 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED},
+							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
 							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
 							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX},
+							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
 							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S },
 						}
 					},
@@ -17442,10 +17443,10 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED},
+							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
 							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
 							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX},
+							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
 							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S },
 						}
 					},
@@ -17489,7 +17490,6 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_H},
 						}
 					},
-
 					{
 						["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "AtmosCombatEngine" },
 						["INTEGER_TO_FLOAT"] = "FORCE",
@@ -17501,62 +17501,6 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_H},
 							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_H},
 							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_H},
-						}
-					},
-
-					-- SENTINELS 
-
-					{
-						["PRECEDING_KEY_WORDS"] = { "ControlHover", "SpaceEngine" },
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
-							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
-							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_H},
-							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
-							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S},
-						}
-					},
-					{
-						["PRECEDING_KEY_WORDS"] = { "ControlHover", "PlanetEngine" },
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
-							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
-							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
-							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S},
-						}
-					},
-					{
-						["PRECEDING_KEY_WORDS"] = { "ControlHover", "CombatEngine" },
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
-							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
-							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
-							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S},
-						}
-					},
-					
-					{
-						["PRECEDING_KEY_WORDS"] = { "ControlHover", "AtmosCombatEngine" },
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
-							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
-							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
-							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
-							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
-							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S},
 						}
 					}
 				}
@@ -19583,6 +19527,26 @@ if CREATURES_OVERHAUL == "ON" then
 
 				}
 			},
+			--test
+			{
+				["MBIN_FILE_SOURCE"]  = PATH_ECOSYSTEM..[[CREATUREROLEDESCRIPTIONTABLE.MBIN]],
+				["EXML_CHANGE_TABLE"] = 
+				{
+					{
+						["MATH_OPERATION"] = "+",
+						["REPLACE_TYPE"] = "ALL",
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Dead", "1"},
+							{"Low", "2"},
+							{"Mid", "3"},
+							{"Full", "5"},
+						}
+					},
+				}
+			},
+			
+			--fin test
 			{
 				["MBIN_FILE_SOURCE"]  = PATH_ECOSYSTEM.."CREATUREGENERATIONARCHETYPES.MBIN",
 				["EXML_CHANGE_TABLE"] =
@@ -32335,9 +32299,9 @@ LUSHGRASSLIST =
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEOAK1.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\LARGEOAK1.DESCRIPTOR.EXML]]
-  		}
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\SMALLOAK1.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\SMALLOAK1.DESCRIPTOR.EXML]]
+		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
@@ -40467,9 +40431,18 @@ end
 		},
 		DAY_ONE_MODE
 	)
-
-	copyEXML(MASSIVE_FLEET,[[FREIGHTSHIP01.SCENE.EXML]],[[MODELS\RGO\FREIGHTSHIP01.SCENE.EXML]])
-	copyEXML(MASSIVE_FLEET,[[FREIGHTER_A.SCENE.EXML]],[[MODELS\RGO\FREIGHTER_A.SCENE.EXML]])
+		copyEXML
+		(
+			MASSIVE_FLEET,
+			[[FREIGHTER_A.SCENE.EXML]],
+			[[MODELS\RGO\FREIGHTER_A.SCENE.EXML]]
+		)	
+		copyEXML
+		(
+			MASSIVE_FLEET,
+			[[FREIGHTERSMALL_PROC.SCENE.EXML]],
+			[[MODELS\RGO\FREIGHTER_A.SCENE.EXML]]
+		)
 
 	addFeature
 	(

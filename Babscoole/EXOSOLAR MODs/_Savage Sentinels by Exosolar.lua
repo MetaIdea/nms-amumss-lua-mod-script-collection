@@ -5,8 +5,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "_Savage Sentinels by Exosolar.pak",
 ["MOD_AUTHOR"]              = "Exosolar",
-["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.20",
+["LUA_AUTHOR"]              = "Babscoole & Xen0nex",
+["NMS_VERSION"]             = "4.22",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -34,19 +34,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"WalkerGunShootTime",                     7},
                                 {"WalkerGunChargeTime",                    0.8},
                                 {"WalkerGunRate",                          0.035},
-                                {"QuadLookAngleMax",                       120},
-                                {"QuadAttackMoveRange",                    80},
+                                {"QuadLookAngleMax",                       60},
                                 {"QuadAttackTurnAngleMax",                 120},
-                                {"QuadAttackTurnAngleMin",                 20},
-                                --{"QuadAttackAngle",                        10},
-                                --{"QuadChargeTargetLockPercent",            0.8},
+                                {"QuadAttackTurnAngleMin",                 30},
                                 {"QuadJumpBackRange",                      16},
-                                --{"QuadPounceMinRange",                     7},
-                                --{"QuadPounceMinTimeBetweenPounces",        6},
                                 {"QuadPounceDamageRadius",                 1.66},
-                                {"QuadCannotSeeTargetRepositionTime",      1.5},
-                                --{"QuadChargeTime",                         0.45},
-                                --{"QuadFireTime",                           1.2},
+                                {"QuadCannotSeeTargetRepositionTime",      0.3},
+                                {"QuadAttackRate",                         5},
+                                {"QuadEvadeCooldown",                      4},
                                 {"DroneReAttackTime",                      10},
                                 {"DronePatrolAttackSightTime",             2.5},
                                 {"DroneAttackGetInRangeBoost",             2},
@@ -80,7 +75,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"DroneSearchCriminalScanRadius",          8},
                                 {"DroneSearchCriminalScanRadiusWanted",    20},
                                 {"MechMinMaintainFireTargetTime",          4},
-                                {"MechAttackRate",                         2}
+                                {"MechAttackRate",                         2},								--5					Smaller value seems to attack more frequently
+                                {"QuadAttackMoveRange",                    30},
+                                {"SpiderPounceAngle",                      75},
+                                {"SpiderPounceRange",                      35},
+                                {"SpiderPounceMinRange",                   8},
+                                {"HitsToCancelStealthSmall",               4},
+                                {"HitsToCancelStealth",                    8},
                             }
                         },
                         {
@@ -172,72 +173,110 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONE.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BaseHealth",             "2000",},
-                                {"HealthIncreasePerLevel", "1400",},
-                                {"RepairTime",             "3",},
+                                {"BaseHealth",             2000},
+                                {"HealthIncreasePerLevel", 1400},
+                                {"RepairTime",             3},
+                                {"RepairThreshold",        95},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONEARMOURED.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BaseHealth",             "2500",},
-                                {"HealthIncreasePerLevel", "2100",},
-                                {"RepairTime",             "3",},
+                                {"BaseHealth",             2500},
+                                {"HealthIncreasePerLevel", 2100},
+                                {"RepairTime",             3},
+                                {"RepairThreshold",        95},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONEMEDIC.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BaseHealth",             "3000",},
-                                {"HealthIncreasePerLevel", "1400",},
-                                {"RepairTime",             "1.5",},
+                                {"BaseHealth",             3000},
+                                {"HealthIncreasePerLevel", 1400},
+                                {"RepairTime",             1.5},
+                                {"RepairThreshold",        50},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONESUMMONER.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BaseHealth",             "3000",},
-                                {"HealthIncreasePerLevel", "2100",},
-                                {"RepairTime",             "1.5",},
+                                {"BaseHealth",             3000},
+                                {"HealthIncreasePerLevel", 2100},
+                                {"RepairTime",             1.5},
+                                {"RepairThreshold",        95},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/CORRUPTEDDRONE.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BaseHealth",             "4500",},
-                                {"HealthIncreasePerLevel", "4500",},
-                                {"RepairTime",             "3",},
+                                {"BaseHealth",             4500},
+                                {"HealthIncreasePerLevel", 4500},
+                                {"RepairTime",             3},
+                                {"RepairThreshold",        60},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/QUADRUPED.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BaseHealth",             "8000",},
-                                {"HealthIncreasePerLevel", "8500",},
-                                {"RepairTime",             "5",},
+                                {"BaseHealth",             8000},
+                                {"HealthIncreasePerLevel", 8500},
+                                {"RepairTime",             5},
+                                {"RepairThreshold",        95},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/SENTINELMECH.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BaseHealth",             "20000",},
-                                {"HealthIncreasePerLevel", "12000",},
-                                {"RepairTime",             "7",},
+                                {"BaseHealth",             20000},
+                                {"HealthIncreasePerLevel", 12000},
+                                {"RepairTime",             7},
+                                {"RepairThreshold",        50},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/WALKER.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BaseHealth",             "30000",},
-                                {"HealthIncreasePerLevel", "25000",},
-                                {"RepairTime",             "7",},
+                                {"BaseHealth",             30000},
+                                {"HealthIncreasePerLevel", 25000},
+                                {"RepairTime",             7},
+                                {"RepairThreshold",        95},
+                            }
+                        },
+                        {						
+                            ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED.SCENE.MBIN"},
+                            ["VALUE_CHANGE_TABLE"] 	= 
+                            {
+                                {"BaseHealth",             12000},
+                                {"HealthIncreasePerLevel", 25000},
+                                {"RepairTime",             6},
+                                {"RepairThreshold",        50},
+                            }
+                        },
+                        {						
+                            ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD.SCENE.MBIN"},	
+                            ["VALUE_CHANGE_TABLE"] 	= 
+                            {
+                                {"BaseHealth",              15000},
+                                {"HealthIncreasePerLevel",	4500},
+                                {"RepairTime",              1.5},
+                                {"RepairThreshold",         95},
+                            }
+                        },
+                        {						
+                            ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONESHIELD.SCENE.MBIN"},
+                            ["VALUE_CHANGE_TABLE"] 	= 
+                            {
+                                {"BaseHealth",	            30000},
+                                {"HealthIncreasePerLevel",	4000},
+                                {"RepairTime",              7},
+                                {"RepairThreshold",         95},
                             }
                         },
                         {
@@ -273,6 +312,116 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"IdealRange",       8},
                                 {"MinRange",         1},
                                 {"MaxRange",         40},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "QUADLASER"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProjectileSpread", 0},
+                                {"FireInterval",     1},
+                                {"FireTimeMin",      4.5},
+                                {"FireTimeMax",      7},
+                                {"NumShotsMin",      1},
+                                {"NumShotsMax",      4},
+                                {"MinRange",         8},
+                                {"MaxRange",         50},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "QUADCANNON"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProjectileSpread", 0},
+                                {"FireInterval",     0.33},
+                                {"FireTimeMin",      4.5},
+                                {"FireTimeMax",      7},
+                                {"NumShotsMin",      2},
+                                {"NumShotsMax",      4},
+                                {"MinRange",         8},
+                                {"MaxRange",         50},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "QUADGRENADE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProjectileSpread", 0},
+                                {"FireInterval",     1},
+                                {"FireTimeMin",      2},
+                                {"FireTimeMax",      5},
+                                {"NumShotsMin",      2},
+                                {"NumShotsMax",      4},
+                                {"MinRange",         17},
+                                {"MaxRange",         50},
+                                {"ExplosionRadius",  2.8}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "QUADFLAME"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProjectileSpread", 0.07},
+                                {"FireInterval",     0.03},
+                                {"FireTimeMin",      3},
+                                {"FireTimeMax",      6},
+                                {"NumShotsMin",      15},
+                                {"NumShotsMax",      45},
+                                {"MinRange",         0},
+                                {"MaxRange",         24},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTSMG"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProjectileSpread", 0},
+                                {"FireRate",         0.04},
+                                {"FireTimeMin",      1.5},
+                                {"FireTimeMax",      3},
+                                {"NumShotsMin",      12},
+                                {"NumShotsMax",      30},
+                                {"Range",            40},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTGRENADE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProjectileSpread", 0},
+                                {"FireRate",         0.5},
+                                {"FireTimeMin",      5},
+                                {"FireTimeMax",      8},
+                                {"NumShotsMin",      1},
+                                {"NumShotsMax",      3},
+                                {"Range",            120},
+                                {"ExplosionRadius",  2.8}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTSHOTGUN"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProjectileSpread", 0.07},
+                                {"FireRate",         0.2},
+                                {"FireTimeMin",      4.5},
+                                {"FireTimeMax",      7},
+                                {"NumShotsMin",      3},
+                                {"NumShotsMax",      5},
+                                {"Range",            30},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTFLAME"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProjectileSpread", 0.07},
+                                {"FireRate",         0.04},
+                                {"FireTimeMin",      4.5},
+                                {"FireTimeMax",      7},
+                                {"NumShotsMin",      45},
+                                {"NumShotsMax",      60},
+                                {"Range",            20},
                             }
                         },
                         {
