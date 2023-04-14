@@ -35,6 +35,35 @@ ReplaceWithLandmarksRaw =
     </Property>
 ]]
 
+replaceGrassMatFlags =
+[[
+  <Property name="Flags">
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F02_SKINNED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F03_NORMALMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F11_ALPHACUTOUT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F25_ROUGHNESS_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F36_DOUBLESIDED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F40_SUBSURFACE_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F29_VBCOLOUR" />
+    </Property>
+  </Property>
+]]
 
 replaceCGDesc =
 [[
@@ -2953,7 +2982,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v5.6.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v5.61b.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -3256,6 +3285,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE1BENT.SCENE.MBIN",
 						"MODELS\PLANETS\BIOMES\GLOWING\LARGEPLANT\MEDGLOWINGTREE1.SCENE.MBIN",
 						"MODELS\PLANETS\BIOMES\GLOWING\LARGEPLANT\SMALLGLOWINGTREE1.SCENE.MBIN",
+						"MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -3555,16 +3585,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_ROSE.SCENE.MBIN", 60, 0.5, 2, 10, 0.18, 0.064)..
 							BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_DAISY.SCENE.MBIN", 60, 0.3, 1.5, 10, 0.18, 0.084)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\PLANTS\MYRTLEBUSH.SCENE.MBIN", 30, 3, 8, 10, 0.18, 0.04)..
-							BiomeExtension("CUSTOMMODELS\GIANTGRASS\GIANTGRASS_SHORT.SCENE.MBIN", 60, 3, 5, 5, 0.18, 0.28)..
-							BiomeExtension("CUSTOMMODELS\GIANTGRASS\GIANTGRASS_TALL.SCENE.MBIN", 60, 3, 5, 5, 0.18, 0.28)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPGREEN.SCENE.MBIN", 60, 0.8, 1.5, 0, 0.18, 0.008)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEGREEN.SCENE.MBIN", 60, 0.8, 1.5, 0, 0.18, 0.008)..
-							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONEGREEN.SCENE.MBIN", 60, 0.8, 1.5, 0, 0.18, 0.008),
-						},
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddTheGrass("CROSSGRASS"),
+							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONEGREEN.SCENE.MBIN", 60, 0.8, 1.5, 0, 0.18, 0.008)..
+							AddGiantSparseGrass(),
 						},
 					},
 				},
@@ -3582,13 +3606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_ROSE.SCENE.MBIN", 60, 0.5, 2, 10, 0.18, 0.064)..
 							BiomeExtension("CUSTOMMODELS\NEWHQPLANTS\HQFLOWER_DAISY.SCENE.MBIN", 60, 0.3, 1.5, 10, 0.18, 0.084)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\PLANTS\FERNLARGE.SCENE.MBIN", 30, 3, 8, 10, 0.18, 0.05)..
-							BiomeExtension("CUSTOMMODELS\GIANTGRASS\GIANTGRASS_SHORT.SCENE.MBIN", 60, 3, 5, 5, 0.18, 0.28)..
-							BiomeExtension("CUSTOMMODELS\GIANTGRASS\GIANTGRASS_TALL.SCENE.MBIN", 60, 3, 5, 5, 0.18, 0.28),
-						},
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							AddGiantSparseGrass(),
 						},
 					},
 				},
@@ -3673,8 +3691,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEPINK.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.13)..
-							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEDARKRED.SCENE.MBIN", 60, 1, 13, 10, 0.18, 0.13),
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN", 50, 0.8, 1.2, 10, 0.18, 0.09)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN", 50, 1.5, 2.0, 10, 0.18, 0.05),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
@@ -3699,10 +3717,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEGREEN.SCENE.MBIN", 60, 1, 14, 10, 0.18, 0.08)..
-							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREECYAN.SCENE.MBIN", 60, 1, 7, 12, 0.18, 0.1)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\STRAIGHTTREELARGE.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.06)..
-							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREERED.SCENE.MBIN", 60, 1, 8, 12, 0.18, 0.1),
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN", 50, 0.9, 1.1, 10, 0.18, 0.09)..
+							BiomeExtensionForest("MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN", 50, 1.5, 2.0, 10, 0.18, 0.02)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\STRAIGHTTREELARGE.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.06),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -3758,7 +3775,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -3826,7 +3843,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -3955,7 +3972,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4044,7 +4061,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4131,7 +4148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4204,7 +4221,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4247,7 +4264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\LARGEBUSH1.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.1)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\DIPLODOCUS\DIPLODOCUS.SCENE.MBIN", 10, 0.8, 6, 0, 0.18, 0.0005)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE02.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.1),
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN", 50, 1.2, 1.4, 10, 0.18, 0.07),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -4268,7 +4285,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\LARGEPLANT03.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.1)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE02.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.1)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN", 50, 2, 2.5, 10, 0.18, 0.05)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\LARGEPLANT01.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.02),
 						},
 						{
@@ -4299,7 +4316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4370,7 +4387,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4438,7 +4455,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4483,7 +4500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4568,14 +4585,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE3.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.07)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\TREEVARIANTS.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.09),
+							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\TREEVARIANTS.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.09)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\CRYSTAL\LARGEPROP\GIANTCUBE.SCENE.MBIN", 10, 1, 1.5, 90, 0.18, 0.03)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\CRYSTAL\SMALLPROP\TINYCUBES.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.06),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4723,7 +4740,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4789,7 +4806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4829,7 +4846,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -4972,7 +4989,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5168,7 +5185,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5276,7 +5293,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5362,7 +5379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5502,7 +5519,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5589,7 +5606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5633,7 +5650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5676,7 +5693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5720,7 +5737,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5765,7 +5782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5810,7 +5827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5903,7 +5920,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
+							["ADD"] = AddSecondaryGrass("CROSSGRASS"),
 						},
 					},
 				},
@@ -5925,7 +5942,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 				
 				
 				
-				
+				--v5.61: To change original dandelion grass material flags (= multishade & white dandelion)
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\CROSSGRASS\LUSHGRASS1MAT1.MATERIAL.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						--Replace material flags:
+						{
+							["PRECEDING_KEY_WORDS"] = {"Flags",},
+							["ADD"] = replaceGrassMatFlags,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Flags",},
+							["REMOVE"] = "SECTION"
+						},
+					},
+				},
 				
 				{
 					["MBIN_FILE_SOURCE"] 	= 

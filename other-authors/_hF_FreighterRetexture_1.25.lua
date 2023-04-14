@@ -9,17 +9,17 @@ TileLightDiffuse = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/TILINGLIGHTS.1X
 ContBeamDiffuse = "TEXTURES/SPACE/SPACESTATION/ENTRANCEBEAMX2.DDS" -- RED CONTAINER BEAM DIFFUSE
 SpotlightBase = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/SPOTLIGHT.BASEX.DDS" -- RED SPOTLIGHT
 
-Version = "1.2"
+Version = "1.25"
 GameVersion = "4.20"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_FreighterRetexture_LessShine_"..Version..".pak",
+["MOD_FILENAME"]	= "_hF_FreighterRetexture_"..Version..".pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
 ["LUA_AUTHOR"]		= "Lowkie, Forked by hemis FEAR",
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Overhaul of Exterior Freighter Textures / Retexture - Less Shine Version",
+["MOD_DESCRIPTION"]	= "Overhaul of Exterior Freighter Textures / Retexture",
 ["MODIFICATIONS"]	= 
 	{
 		{
@@ -186,7 +186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",	"0.75"}-- Original "0.9"
+								{"x",	"0.6"}-- Original "0.9"
 							}
 						}
 					}
@@ -251,7 +251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",	"0.95"}-- Original "0.9"
+								{"x",	"0.55"}-- Original "0.9"
 							}
 						}
 					}
@@ -294,7 +294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",	"0.85"}-- Original "0.9"
+								{"x",	"0.5"}-- Original "0.9"
 							}
 						}
 					}
@@ -397,7 +397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",	"1"} 	-- Original "0.9"
+								{"x",	"0.2"} 	-- Original "0.9"
 							}
 						}
 					}
@@ -430,7 +430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",	"0.8"}-- Original "0.9"
+								{"x",	"0"}-- Original "0.9"
 							}
 						}
 					}
