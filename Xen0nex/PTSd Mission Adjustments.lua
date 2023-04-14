@@ -1,5 +1,5 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "4_20"
+GameVersion = "4_22"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
 --GcDefaultMissionProductEnum.xml
@@ -344,21 +344,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["SPECIAL_KEY_WORDS"] = {"Message", "UI_SENTINEL_CRASH_MSG3"},
-				["REPLACE_TYPE"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Product", "DRONE_SHARD"},
+				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
+					{"Amount", RadiantShards},
 					{"AmountMin", RadiantShards},
 					{"AmountMax", RadiantShards},
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Message", "UI_SENTINEL_CRASH_MSG4"},
-				["REPLACE_TYPE"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Product", "DRONE_SALVAGE"},
+				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
+					{"Amount", InvertedMirrors},
 					{"AmountMin", InvertedMirrors},
 					{"AmountMax", InvertedMirrors},
 				}

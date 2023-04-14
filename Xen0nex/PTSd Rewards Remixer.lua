@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "4_20"
+GameVersion = "4_22"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
@@ -258,17 +258,17 @@ FreighterRescueFrigModChance = 		100
 SpaceStationMissionLootChanges =
 {
 	{
-		{"R_MB_FIRST"},		--Unclear what this is, does not appear tied to any missions. Possibly scripted first mission reward, or rewards while not owning a Freighter?
+		{"R_MB_FIRST"},		--This seems to be the reward pool for the first few missions you take from space stations. Unsure when it switches from these to the other rewards below
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		150},	--1,	1,		150		Drop Pod Coordinates
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		6},		--1,	1,		150		Drop Pod Coordinates
 			{"REPAIRKIT",				"REPAIRKIT",			1,	2,		2},		--1,	1,		1		Repair Kit
 			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		2},		--1,	2,		2		Warp Hypercore
-			{"BP_SALVAGE",				"BP_SALVAGE",			3,	5,		2},		--3,	5,		2		Salvaged Data
+			{"BP_SALVAGE",				"BP_SALVAGE",			3,	5,		6},		--3,	5,		2		Salvaged Data
 			{"POWERCELL",				"POWERCELL",			5,	10,		2},		--5,	5,		1		Ion Battery
 			{"PRODFUEL2",				"PRODFUEL2",			5,	10,		2},		--5,	5,		1		Life Support Gel
 			{"SHIPCHARGE",				"SHIPCHARGE",			6,	12,		2},		--5,	5,		1		Starshield Battery
-			{"EYEBALL",					"EYEBALL",				3,	5,		1},		--1,	3,		1		Hypnotic Eye
-			{"NIPNIPBUDS",				"NIPNIPBUDS",			3,	5,		0},		--1,	3,		1		NipNip Buds
+			{"EYEBALL",					"EYEBALL",				1,	3,		1},		--1,	3,		1		Hypnotic Eye
+			{"NIPNIPBUDS",				"NAV_DATA",				3,	5,		6},		--1,	3,		1		NipNip Buds		(Navigation Data)
 			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		3,	5,		1},		--1,	3,		1		Storm Crystal
 			{"FIENDCORE",				"FIENDCORE",			3,	5,		1},		--1,	3,		1		Larval Core
 			{"FISHCORE",				"FISHCORE",				3,	5,		1},		--1,	3,		1		Hadal Core
@@ -295,7 +295,7 @@ SpaceStationMissionLootChanges =
 			{"FOOD_DNUT_MEAT",			"FOOD_DNUT_MEAT",		4,	6,		0.1},	--1,	1,		0.2		Food worth 65000
 			{"FOOD_DNUT_AJAM",			"FOOD_DNUT_AJAM",		4,	6,		0.1},	--1,	1,		0.2		Food worth 70000
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		1},		--1,	1,		1		Storage Augmentation
-			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		30},	--1,	1,		30		Multi-Tool Expansion Slot
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		6},		--1,	1,		30		Multi-Tool Expansion Slot
 		}
 	},
 	{
@@ -313,7 +313,7 @@ SpaceStationMissionLootChanges =
 			{"POWERCELL",				"POWERCELL",			5,	10,		2},		--5,	5,		1		Ion Battery
 			{"PRODFUEL2",				"PRODFUEL2",			5,	10,		2},		--5,	5,		1		Life Support Gel
 			{"SHIPCHARGE",				"SHIPCHARGE",			6,	12,		2},		--5,	5,		1		Starshield Battery
-			{"EYEBALL",					"EYEBALL",				3,	5,		1},		--1,	3,		1		Hypnotic Eye
+			{"EYEBALL",					"EYEBALL",				1,	3,		1},		--1,	3,		1		Hypnotic Eye
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			3,	5,		0},		--1,	3,		1		NipNip Buds
 			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		3,	5,		1},		--1,	3,		1		Storm Crystal
 			{"FIENDCORE",				"FIENDCORE",			3,	5,		1},		--1,	3,		1		Larval Core
@@ -365,7 +365,7 @@ SpaceStationMissionLootChanges =
 			{"POWERCELL",				"POWERCELL",			10,	15,		0.5},	--5,	15,		1		Ion Battery
 			{"PRODFUEL2",				"PRODFUEL2",			10,	15,		0.5},	--5,	15,		1		Life Support Gel
 			{"SHIPCHARGE",				"SHIPCHARGE",			8,	14,		1},		--5,	5,		1		Starshield Battery
-			{"EYEBALL",					"EYEBALL",				5,	8,		1},		--3,	5,		1		Hypnotic Eye
+			{"EYEBALL",					"EYEBALL",				3,	5,		1},		--3,	5,		1		Hypnotic Eye
 			{"WALKER_PROD",				"WALKER_PROD",			1,	1,		0.5},	--1,	1,		0.5		Walker Brain
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			5,	8,		0.5},	--3,	5,		1		NipNip Buds
 			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		5,	8,		1},		--5,	5,		1		Storm Crystal
@@ -417,7 +417,7 @@ SpaceStationMissionLootChanges =
 			{"POWERCELL",				"POWERCELL",			5,	15,		0},		--5,	15,		0.5		Ion Battery
 			{"PRODFUEL2",				"PRODFUEL2",			5,	15,		0},		--5,	15,		0.5		Life Support Gel
 			{"SHIPCHARGE",				"SHIPCHARGE",			12,	18,		0.5},	--5,	5,		1		Starshield Battery
-			{"EYEBALL",					"EYEBALL",				7,	10,		1},		--3,	5,		1		Hypnotic Eye
+			{"EYEBALL",					"EYEBALL",				5,	8,		1},		--3,	5,		1		Hypnotic Eye
 			{"WALKER_PROD",				"WALKER_PROD",			1,	1,		1},		--1,	1,		1		Walker Brain
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			10,	12,		1},		--3,	5,		1		NipNip Buds
 			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		10,	12,		1},		--10,	10,		1		Storm Crystal
@@ -472,7 +472,7 @@ SpaceStationMissionLootChanges =
 			{"FRIG_BOOST_MIN",			"FRIG_BOOST_MIN",		2,	3,		1},		--1,	1,		1		Mineral Compressor
 			{"FRIG_BOOST_COM",			"FRIG_BOOST_COM",		2,	3,		1},		--1,	1,		1		Explosive Drones
 			{"FRIG_BOOST_SPD",			"FRIG_BOOST_SPD",		2,	3,		1},		--1,	1,		1		Fuel Oxidiser
-			{"EYEBALL",					"EYEBALL",				7,	10,		0},		--3,	5,		1		Hypnotic Eye
+			{"EYEBALL",					"EYEBALL",				8,	11,		0},		--3,	5,		1		Hypnotic Eye
 			{"WALKER_PROD",				"WALKER_PROD",			2,	3,		2},		--1,	1,		1		Walker Brain
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			12,	15,		1},		--3,	5,		1		NipNip Buds
 			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		12,	15,		1},		--10,	10,		1		Storm Crystal
@@ -532,7 +532,7 @@ SpaceStationMissionLootChanges =
 			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		60},	--1,	1,		60		Multi-Tool Expansion Slot
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		60},	--1,	1,		60		Storage Augmentation
 			{"FREI_INV_TOKEN",			"FREI_INV_TOKEN",		1,	1,		60},	--1,	1,		60		Freighter Bulkhead
-			{"EYEBALL",					"EYEBALL",				3,	5,		66},	--1,	3,		66		Hypnotic Eye
+			{"EYEBALL",					"EYEBALL",				4,	6,		66},	--1,	3,		66		Hypnotic Eye
 			{"WALKER_PROD",				"WALKER_PROD",			1,	3,		66},	--1,	3,		66		Walker Brain
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			5,	8,		66},	--3,	5,		66		NipNip Buds
 			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		10,	10,		66},	--10,	10,		66		Storm Crystal
@@ -574,10 +574,10 @@ SpaceStationMissionLootChanges =
 SpaceStationMissionCurrencyChanges =
 {
 	{
-		{"R_MB_FIRST"},		--Unclear when this is used
+		{"R_MB_FIRST"},		--This seems to be the reward pool for the first few missions you take from space stations. Unsure when it switches from these to the other rewards below
 		{	--Currency	Min			Max			%Chance (relative weight, roughly but not necessarily out of 100)
-			{"Units",	50000,		150000,		20},		--25000,		50000,		30
-			{"Nanites",	150,		250,		20}			--100,			150,		29		
+			{"Units",	50000,		150000,		16},		--25000,		50000,		30
+			{"Nanites",	150,		250,		16}			--100,			150,		29		
 		}
 	},
 	{

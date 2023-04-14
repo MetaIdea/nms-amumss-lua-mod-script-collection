@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_20"
+GameVersion = "4_22"
 --Currently balancing around Survival Mode
 
 --Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
@@ -976,6 +976,29 @@ NewContainerTree =
             </Property>
           </Property>]]
 
+AddRefinerRoom =
+[[<Property value="GcUnlockableItemTreeNode.xml">
+                        <Property name="Unlockable" value="BUILD_REFINER3" />
+                        <Property name="Children">
+                          <Property value="GcUnlockableItemTreeNode.xml">
+                            <Property name="Unlockable" value="FRE_ROOM_REFINE" />
+                            <Property name="Children" />
+                          </Property>
+                        </Property>
+                      </Property>]]
+
+AddTradeRoom =
+[[<Property value="GcUnlockableItemTreeNode.xml">
+                <Property name="Unlockable" value="FRE_ROOM_SHOP" />
+                <Property name="Children" />
+              </Property>]]
+
+AddCultRoom =
+[[<Property value="GcUnlockableItemTreeNode.xml">
+                <Property name="Unlockable" value="FRE_ROOM_PLANT1" />
+                <Property name="Children" />
+              </Property>]]
+
 function Invert (value)
     return
     1/value
@@ -1393,13 +1416,66 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
 						{
-							["SPECIAL_KEY_WORDS"] = {"Title","UI_STORAGE_TREE",		"Unlockable","CONTAINER0"},		--Removes vanilla Storage COntainer tree
+							["SPECIAL_KEY_WORDS"] = {"Title","UI_STORAGE_TREE",		"Unlockable","CONTAINER0"},		--Removes vanilla Storage Container tree
 							--["SECTION_UP"] = 1,
                             ["REMOVE"] = "SECTION"
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title","UI_STORAGE_TREE",		"CostTypeID","SALVAGE"},
                             ["ADD"] = NewContainerTree
+                        },
+						--Removes Refiner Room from Freighter unlock tree and replaces it with the Industrial Room
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable", "FRE_ROOM_IND"},	
+							--["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"Unlockable",    "FRE_ROOM_REFINE"}
+                            }
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable", "FRE_ROOM_REFINE"},		
+							--["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"Unlockable",    "FRE_ROOM_IND"}
+                            }
+                        },
+						--Adds Refiner Room under the Large Refiner in the base building unlock tree
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "BUILD_REFINER3"},		--Removes vanilla Storage Container tree
+							--["SECTION_UP"] = 1,
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "BUILDANTIMATTER"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+                            ["ADD"] = AddRefinerRoom
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILD_REFINER3"},		--Removes vanilla Storage Container tree
+							--["SECTION_UP"] = 1,
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILDANTIMATTER"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+                            ["ADD"] = AddRefinerRoom
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "BUILDSAVE"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+                            ["ADD"] = AddTradeRoom
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILDSAVE"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+                            ["ADD"] = AddTradeRoom
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable", "PLANTERMEGA"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+                            ["ADD"] = AddCultRoom
                         },
                     }
 				},

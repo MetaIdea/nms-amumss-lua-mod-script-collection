@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 ModName = 'PTSd Starship And Living Ship Tech + Speed Changes'
 ModAuthor = 'Xen0nex and lMonk'		--Edited by Xen0nex
-Version = '4.20'
+Version = '4.22'
 local desc = [[
   Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
@@ -9,7 +9,7 @@ local desc = [[
 
 --These changes originally by lMonk
 ShipTeleportMult = 7.5									--1			a value of 7.5 expands the range to ~= 750u range	
-TeleportAndScannerStatus = 'AllShips'					--'Ship'	determines if only metallic ships or also Living Ships & Sentinel Interceptors can install Ship Teleport ( Economy/Combat Scanners no longer needed as Living ships now have a dedicated upgrade for those)
+TeleportAndScannerStatus = 'AllShips'					--'AllShipsExceptAlien'	determines if only metallic ships or also Living Ships & Sentinel Interceptors can install Ship Teleport ( Economy/Combat Scanners no longer needed as Living ships now have a dedicated upgrade for those)
 LivingShipQuestTimers = 14400							--79200 seconds = 22 hours in vanilla
 
 	--These sections includes additions by Xen0nex
@@ -310,7 +310,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'SHIP_TELEPORT', 'TechnologyCategory', 'Ship'},
+				SPECIAL_KEY_WORDS	= {'ID', 'SHIP_TELEPORT', 'TechnologyCategory', 'AllShipsExceptAlien'},
 				VALUE_CHANGE_TABLE 	= {
 					{'TechnologyCategory', TeleportAndScannerStatus}
 				}

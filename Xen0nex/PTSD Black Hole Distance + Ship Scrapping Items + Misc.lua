@@ -1,5 +1,5 @@
 ModName = "PTSD Black Hole Distance + Ship Scrapping Items + Misc"
-GameVersion = "408"
+GameVersion = "422"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -46,9 +46,9 @@ ShipScrappingItemChanges =
 	}
 }
 
---Sets most Freighter Storage Container recipes to be unknwon at the start of the game, to require unlocking at the Anomaly
-UnknownFreighterStorage =						
-{"FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9"}
+--Sets some Freighter Rooms & most Freighter Storage Room recipes to be unknwon at the start of the game, to require unlocking at the Anomaly
+UnknownRecipes =						
+{"FRE_ROOM_SHOP", "FRE_ROOM_PLANT1", "FRE_ROOM_REFINE", "FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9"}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
@@ -140,8 +140,8 @@ for i = 1, #ShipScrappingItemChanges do
 			}
 	end
 end
-for i = 1, #UnknownFreighterStorage do
-	local ContainerID = UnknownFreighterStorage[i]
+for i = 1, #UnknownRecipes do
+	local ContainerID = UnknownRecipes[i]
 		
 			ChangesToGamePlayGlobals[#ChangesToGamePlayGlobals+1] =
 			{
@@ -152,8 +152,8 @@ end
 
 local ChangesToDefaultSaveData = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
-for i = 1, #UnknownFreighterStorage do
-	local ContainerID = UnknownFreighterStorage[i]
+for i = 1, #UnknownRecipes do
+	local ContainerID = UnknownRecipes[i]
 		
 			ChangesToDefaultSaveData[#ChangesToDefaultSaveData+1] =
 			{

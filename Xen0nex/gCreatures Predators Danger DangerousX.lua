@@ -1,14 +1,19 @@
 Author = "Gumsk"		--Edited by Xenonex
 ModName = "gCreatures Predators"
 ModNameSub = "DangerousX"
-BaseDescription = "More aggressive and dangerous predators (and more Angry Rocks)"
-GameVersion = "411"
+BaseDescription = "More aggressive and dangerous predators (and larger Rock Creature proportions with better loot)"
+GameVersion = "422"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
+FileSource2 = "MODELS\PLANETS\CREATURES\SANDWORMMINI\SANDWORMMINI\ENTITIES\DATA.ENTITY.MBIN"
+FileSource3 = "MODELS\PLANETS\CREATURES\FISH\FISHFIEND\ENTITIES\FISHFIEND.ENTITY.MBIN"
 
---These 2 added by Xen0nex
-AngryRockProportionNormal = 0.5				--Default 0.2
-AngryRockProportionSurvival = 0.5			--Default 0.5
+--This section added by Xen0nex
+AngryRockProportionNormal = 0.5				--Default 0.2		Unclear this effect, there is a separate parameter for RockTransformGlobalChance
+AngryRockProportionSurvival = 0.5			--Default 0.5		Unclear this effect, there is a separate parameter for RockTransformGlobalChance
+RockCreatureLoot = "GEODE_CRYSTAL"			--Default 5/8/12 (depending on size of rock?) of "FOOD_M_MEAT" (Meaty Chunks)
+WormHealthMult = 3							--Default 2600	(The big "Hungering Tendrils" / "Titan Worms")
+FishFiendHealthMult = 1						--Default 10	(The big Anglerfish that attacks underwater) Health may be controlled by FishFiendBigHealth in GCCREATUREGLOBALS.MBIN instead, need to test
 
 SharkAttackSpeed = 15						--Default 10
 SharkAttackAccel = 5						--Default 3
@@ -90,6 +95,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["MBIN_FILE_SOURCE"] = FileSource1,
 					["EXML_CHANGE_TABLE"] = {
 						{
+							["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"KillingProducts"},
+							["SPECIAL_KEY_WORDS"] = {"CreatureType","ROCKCREATURE"},
+							["MATH_OPERATION"] 		= "", 
+							["VALUE_CHANGE_TABLE"] = {
+								{"Item", RockCreatureLoot},
+							},
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {""},
 							["VALUE_CHANGE_TABLE"] = {
 								{"AngryRockProportionNormal", AngryRockProportionNormal},
@@ -162,6 +176,30 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"FishFiendBigBoostTime", FishFiendBigBoostTime},
 								{"FishFiendBigScale", FishFiendBigScale},
 								{"PredatorSpeedMultiplier", PredatorSpeedMultiplier},
+							},
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = FileSource2,
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["PRECEDING_KEY_WORDS"] = {""},
+							["MATH_OPERATION"] 		= "*", 
+							["VALUE_CHANGE_TABLE"] = {
+								{"Health", WormHealthMult},
+							},
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = FileSource3,
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["PRECEDING_KEY_WORDS"] = {""},
+							["MATH_OPERATION"] 		= "*", 
+							["VALUE_CHANGE_TABLE"] = {
+								{"Health", FishFiendHealthMult},
 							},
 						},
 					},
