@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "4_20"
+GameVersion = "4_22"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 --Un-SuperCharger Mult - Enter the current Supercharged tech slot bonus value used in GCGAMEPLAYGLOBALS.GLOBAL.MBIN here to divide most affected base weapon tech values by this amount, so they start underpowered, and placing them on a supercharged slot brings that back to "normal" strength
@@ -458,7 +458,7 @@ WeaponStatChanges =
 				"Weapon_Laser_HeatTime",	1/USCMult,	"FORCE"				--8
 			},
 			{
-				"Weapon_Laser_Damage",	MiningLaserDMG*GMD/USCMult,	"FORCE"				--20				Controls how much damage the laser does per tick
+				"Weapon_Laser_Damage",	MiningLaserDMG*GMD/(USCMult*USCMult),	"FORCE"				--20				Controls how much damage the laser does per tick
 			},
 			{
 				"Weapon_Laser_ReloadTime",	MiningOverheatMult,	"FORCE"				--0.6
@@ -477,7 +477,7 @@ WeaponStatChanges =
 				"Weapon_Laser_HeatTime",	0.5/USCMult,	"FORCE"				--8
 			},
 			{
-				"Weapon_Laser_Damage",	HijackedLaserDMG*GMD/USCMult,	"FORCE"				--20				Controls how much damage the laser does per tick
+				"Weapon_Laser_Damage",	HijackedLaserDMG*GMD/(USCMult*USCMult),	"FORCE"				--20				Controls how much damage the laser does per tick
 			},
 			{
 				"Weapon_Laser_ReloadTime",	HijackMiningOverheatMult,	"FORCE"				--0.6
@@ -495,6 +495,9 @@ WeaponStatChanges =
 			"SOUL_LASER"	--Animus Beam
 		},
 		{
+			{
+				"Weapon_Laser_Damage",	HijackedLaserDMG*GMD/(USCMult*USCMult),	"FORCE"				--40				Controls how much damage the laser does per tick
+			},
 			{
 				"Weapon_Laser_Mining_Speed",	0.999,	"FORCE"				--1			Controls how often the laser ticks for damage, lower values ticks faster. Set less than 1 so that supercharging it makes it faster instead of slower
 			},
