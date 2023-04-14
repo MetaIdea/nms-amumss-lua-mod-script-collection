@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MechAIResummonTriggerDistance",				"120"},			-- Fractal "100" Testing ? how far away AI Starts launch from character
+								{"MechAIResummonTriggerDistance",				"120"},			-- Fractal "100" Testing ? how far away AI Starts launch from character 120, 80, 60
 								{"MechAIResummonMinSpawnDistance",				"15"},			-- Fractal "10" Testing So Close to Me
 								{"MechJumpFlyBlendTime",						"0.75"},	-- Fractal "1" 
 								{"MechFirstPersonDamping",						"0.01"},	-- Fractal ""0.05 Testing Gun Float
@@ -48,6 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AIMechLaserFireDurationMax",					"9"},		-- Fractal "5" extra shot
 								{"AIMechGunNumShotsMax",						"11"},		-- Fractal "5" extra shot
 								{"AIMechGunExplosionRadius",					"1"},		-- Fractal "0" splash damage
+								--{"AIMechGunExplosionRadius",					"0"},		-- Fractal "0" splash damage HOTFIX
 								{"AIMechGunFireInterval",						"0.075"},	-- Fractal "0.5"? speed up								
 							}
 						}
@@ -61,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "VehicleCam",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"VertRotationMin",				"10"},		-- Fractal "-20" Positive interger to lower default Reticle centering Horizon 10 Needed for AI Mech Window.
+								{"VertRotationMin",				"-19"},		-- Fractal "-20" Positive interger to lower default Reticle centering Horizon 10 Needed for AI Mech Window. -1,-10,10,-19
 							}
 						},
 						{
