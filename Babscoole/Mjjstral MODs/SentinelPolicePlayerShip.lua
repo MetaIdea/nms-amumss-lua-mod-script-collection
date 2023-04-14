@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShip.pak",
 ["MOD_AUTHOR"]              = "Mjjstral",
 ["MOD_MAINTENANCE"]         = "Babscoole",
-["NMS_VERSION"]             = "4.20",
+["NMS_VERSION"]             = "4.22",
 ["DESCRIPTION"]             = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -161,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="EmoteID" value="POLICE" />
       <Property name="AnimationName" value="POLICE" />
       <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS" />
+        <Property name="Filename" value="TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS" />
         <Property name="ResHandle" value="GcResource.xml">
           <Property name="ResourceID" value="0" />
         </Property>
@@ -191,7 +191,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="EmoteID" value="POLICE" />
       <Property name="AnimationName" value="POLICE" />
       <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS" />
+        <Property name="Filename" value="TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS" />
         <Property name="ResHandle" value="GcResource.xml">
           <Property name="ResourceID" value="0" />
         </Property>

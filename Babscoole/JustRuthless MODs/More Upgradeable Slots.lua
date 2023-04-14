@@ -95,9 +95,7 @@ VehicleMaxUpgradeChanges =
 -- File Settings --
 FileName    = "More Upgradeable Slots.pak"
 ModAuthor   = "JustRuthless"
-LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
-Description = ""
 NMS_Version = "4.20"
 
 -- File Sources --
@@ -107,9 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]    = FileName,
   ["MOD_AUTHOR"]      = ModAuthor,
-  ["LUA_AUTHOR"]      = LuaAuthor,
   ["MOD_MAINTENANCE"] = ModMaintenance,
-  ["MOD_DESCRIPTION"] = Description,
   ["NMS_VERSION"]     = NMS_Version,
   ["MODIFICATIONS"]   =
   {
@@ -120,7 +116,27 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MBIN_FILE_SOURCE"]  = FileSource1,
           ["EXML_CHANGE_TABLE"] =
           {
-            -- InventoryTable
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MinSlots",     120},
+                {"MaxSlots",     120},
+                {"MinTechSlots", 60},
+                {"MaxTechSlots", 60}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
+	      ["PRECEDING_KEY_WORDS"] = {"Bounds"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MaxWidthSmall",     10},
+                {"MaxHeightSmall",    12},
+                {"MaxWidthStandard",  10},
+                {"MaxHeightStandard", 12}
+              }
+            },
           }
         },
       }

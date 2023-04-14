@@ -95,8 +95,7 @@ STATS =
         {["ID"] = "SHIPJUMP_ROBO", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
         {["ID"] = "SHIPGUN_ROBO", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
         {["ID"] = "SHIPSHIELD_ROBO", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "LAUNCHER_ROBO", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
+        {["ID"] = "LAUNCHER_ROBO", ["Amount"] ="300", ["MaxAmount"]="300", ["Damage"]="0"},
         {["ID"] = "HYPERDRIVE_ROBO", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
         {["ID"] = "LIFESUP_ROBO", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
     },
@@ -510,7 +509,7 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
                 elseif ANIM_ID == "SAIL" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.EXPEDITION.BANNER01.DDS"
                 elseif ANIM_ID == "ROBOT" then
-                    ICON = "TEXTURES\UI\FRONTEND\ICONS\MISSIONS\MISSION.SENTINELCRASH.MSHOP.DDS"
+                    ICON = "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS"
                 elseif ANIM_ID == "MULTITOOL" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS"
                 elseif ANIM_ID == "ROYALMULTITOOL" then
@@ -626,7 +625,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.20",
+["NMS_VERSION"]     = "4.22",
 ["MODIFICATIONS"]   =
     {
         {

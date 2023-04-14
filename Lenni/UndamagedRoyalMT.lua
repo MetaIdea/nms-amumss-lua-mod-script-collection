@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "UndamagedSentinelMT.pak", 
+["MOD_FILENAME"] 			= "UndamagedRoyalMT.pak", 
 ["MOD_AUTHOR"]				= "Lenni",
 ["NMS_VERSION"]				= "4.07",
 ["MOD_DESCRIPTION"]			= "Multitools from Sentinel Pillars are not damaged",

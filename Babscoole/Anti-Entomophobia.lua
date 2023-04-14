@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Anti-Entomophobia.pak",
 ["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.20",
+["NMS_VERSION"]   = "4.22",
 ["MODIFICATIONS"] =
     {
         {

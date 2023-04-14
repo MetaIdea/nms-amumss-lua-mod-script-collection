@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "RelicGateWarp.pak",
-["NMS_VERSION"]     = "4.20",
+["NMS_VERSION"]     = "4.22",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "WTFAI",
 ["MODIFICATIONS"]   =

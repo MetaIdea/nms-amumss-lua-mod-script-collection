@@ -4404,7 +4404,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]              = "Exosolar and Jasondude",
 ["LUA_AUTHOR"]              = "Jackty89, WinderTP, and Babscoole",
 ["MOD_MAINTENANCE"]         = "Babscoole",
-["NMS_VERSION"]             = "4.20",
+["NMS_VERSION"]             = "4.22",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -4645,26 +4645,8 @@ for i = 1, #BiomeDataTable do
         {
             {
                 ["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
-                ["REPLACE_TYPE"] = "RAW",
-                ["VALUE_CHANGE_TABLE"] =
-                {
-                    {
-                        [[<Property name="Settings" />]],
-                        [[<Property name="Settings">]]
-                    },
-                }
-            },
-            {
-                ["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
-                ["PRECEDING_KEY_WORDS"] = { "Settings" },
-                ["ADD"] =
-[[
-      </Property>
-]]
-            },
-            {
-                ["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
-                ["PRECEDING_KEY_WORDS"] = { "Settings" },
+                ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                ["CREATE_HOS"] = "TRUE",
                 ["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
             },
         }

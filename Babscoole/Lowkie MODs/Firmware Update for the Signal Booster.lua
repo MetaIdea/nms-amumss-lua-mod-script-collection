@@ -1,4 +1,4 @@
-NMSVersion = "4.20"
+NMSVersion = "4.22"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -443,8 +443,9 @@ Menu5_Options = Menu5_Option1..Menu5_Option2..Menu5_Option3..More_Options5
 
 --Sixth set of options, also get a close option
 Menu6_Option1 = GetPuzzleOption("UI_ABAND_ROBOT_CAMP_NAME", "R_CHART_ROBOT")  -- Sentinel Camp
+Menu6_Option2 = GetPuzzleOption("UI_POLICE_SHIP_NAME", "R_SCANSENTCRASH")  -- Crashed Sentinel Ship
 --Menu6_Options = Menu6_Option1..Menu6_Option2..Menu6_Option3..All_Request_Leave
-Menu6_Options = Menu6_Option1
+Menu6_Options = Menu6_Option1..Menu6_Option2 
 
 --Put all the options together.
 --ALL_PUZZLE_UPDATES = [[      <Property name="Options">]]
