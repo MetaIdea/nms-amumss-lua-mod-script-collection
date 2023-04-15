@@ -6,8 +6,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-21"
-ModVersion = "1-2-0"
+GameVersion = "4-22"
+ModVersion = "1-3-0"
 
 -- =========
 -- CONSTANTS
@@ -78,7 +78,7 @@ files.
 
 --]]
 
--- Total keys: 209
+-- Total keys: 213
 LANGUAGE_TABLE = {
   --
   ["ALCH_CHEF_IMC_TITLE"] = "Creature Products", --
@@ -135,6 +135,8 @@ LANGUAGE_TABLE = {
   ["CHEF_MENU_00_SALE_IMC1"] = "On Sale ~ Warm Proto-Milk", --
   ["CHEF_MENU_00_SALE_IMC10"] = "On Sale ~ Chewy Wires", --
   ["CHEF_MENU_00_SALE_IMC11"] = "On Sale ~ Craw Milk", --
+  ["CHEF_MENU_00_SALE_IMC12"] = "On Sale ~ Creature Egg", --
+  ["CHEF_MENU_00_SALE_IMC13"] = "On Sale ~ Wild Milk", --
   ["CHEF_MENU_00_SALE_IMC2"] = "On Sale ~ Giant Egg", --
   ["CHEF_MENU_00_SALE_IMC3"] = "On Sale ~ Regis Grease", --
   ["CHEF_MENU_00_SALE_IMC4"] = "On Sale ~ Leopard-Fruit", --
@@ -152,6 +154,7 @@ LANGUAGE_TABLE = {
   ["CHEF_MENU_00_SALE_IMM14"] = "On Sale ~ Crunchy Wings", --
   ["CHEF_MENU_00_SALE_IMM15"] = "On Sale ~ Lumpy Brainstem", --
   ["CHEF_MENU_00_SALE_IMM16"] = "On Sale ~ Dirty Meat", --
+  ["CHEF_MENU_00_SALE_IMM17"] = "On Sale ~ Meaty Chunks", --
   ["CHEF_MENU_00_SALE_IMM2"] = "On Sale ~ Fiendish Roe", --
   ["CHEF_MENU_00_SALE_IMM3"] = "On Sale ~ Offal Sac", --
   ["CHEF_MENU_00_SALE_IMM4"] = "On Sale ~ ProtoSausage", --
@@ -166,6 +169,7 @@ LANGUAGE_TABLE = {
   ["CHEF_MENU_00_SALE_IMP3"] = "On Sale ~ Jade Peas", --
   ["CHEF_MENU_00_SALE_IMP4"] = "On Sale ~ Grahberry", --
   ["CHEF_MENU_00_SALE_IMP5"] = "On Sale ~ Aloe Flesh", --
+  ["CHEF_MENU_00_SALE_IMP6"] = "On Sale ~ Hexaberry", --
   ["CHEF_MENU_00_WHALE_OPT"] = "Ask about whalesong...", --
   ["D_ALCF_BUY_LANG"] = "Each shipment contains <SPECIAL>50<> of the purchased item. Limited to <SPECIAL>5<> shipments of each category per day.", --
   ["D_ALCF_DV_0_LANG"] = "Today I will pay <TRADE>210<> nanites per unit of <SPECIAL>The Stellarator<>. A doughnut made of starlight, sublime!", --

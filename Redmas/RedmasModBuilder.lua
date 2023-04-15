@@ -1,3 +1,8 @@
+----------------------------------------------------------------------------------------
+--
+-- ( Ctrl + S to save )
+--
+------------------------------------------------------------------------------------------
 -- ************************************************************************************************************
 -- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
 --
@@ -16,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "REDMAS_E3PIC_FANTASY_PRESET"
+INIT = "CUSTOM_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -67,17 +72,17 @@ MULTIPLAYER_MODE = "OFF" --( Put On if you play heavily in Multiplayer )
 -- SPACESHIPS CONTROLS REWORK
 SPACESHIPS_SPACE_THRUSTFORCE = 140
 SPACESHIPS_SPACE_MAXPSEED = 4420
-SPACESHIPS_SPACE_FALLOFF = 0.007
+SPACESHIPS_SPACE_FALLOFF = -0.007
 SPACESHIPS_SPACE_BOOST_FORCE = SPACESHIPS_SPACE_THRUSTFORCE*4
-SPACESHIPS_SPACE_BOOST_MAX = 2420
+SPACESHIPS_SPACE_BOOST_MAX = 4420
 --
-SPACESHIPS_PLANET_THRUSTFORCE = 800
-SPACESHIPS_PLANET_MAXPSEED = 111
-SPACESHIPS_PLANET_FALLOFF = 0.07
-SPACESHIPS_PLANET_BOOST_FORCE = 900
-SPACESHIPS_PLANET_BOOST_MAX = 222
+SPACESHIPS_PLANET_THRUSTFORCE = 100
+SPACESHIPS_PLANET_MAXPSEED = 222
+SPACESHIPS_PLANET_FALLOFF = 0
+SPACESHIPS_PLANET_BOOST_FORCE = 200
+SPACESHIPS_PLANET_BOOST_MAX = 280
 --
-SPACESHIPS_SMALL_SPEED_MULTIPLIER = 1.1
+SPACESHIPS_SMALL_SPEED_MULTIPLIER = 1.111
 SPACESHIPS_HEAVY_SPEED_MULTIPLIER = 1
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
@@ -140,7 +145,7 @@ ASTEROIDS_VANILLA_PRESET ={
 	["ASTEROID_SCALE_MULTIPLIER"] = "1"
 }
 --------------------------------------------------------------------------------------------------------------
-PROCEDURALMAX = 10000  -- This is the number of procedural generated new params for this script
+PROCEDURALMAX = 1000  -- This is the number of procedural generated new params for this script
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
@@ -225,7 +230,7 @@ FANTASY_SYNTHESIS_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
         ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
@@ -414,7 +419,7 @@ FANTASY_ORIGINS_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
         ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
@@ -439,9 +444,9 @@ FANTASY_ORIGINS_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "140",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY",
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
+                ["TERRAIN_HEIGHT_MAX"] = "10",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -603,7 +608,7 @@ FANTASY_2_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
         ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
@@ -628,9 +633,9 @@ FANTASY_2_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "140",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY",
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
+                ["TERRAIN_HEIGHT_MAX"] = "40",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -792,7 +797,7 @@ FANTASY_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
         ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
@@ -982,7 +987,7 @@ CUSTOM_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
         ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
@@ -1170,7 +1175,7 @@ EUPHORIA_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
         ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
@@ -1195,9 +1200,9 @@ EUPHORIA_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "100",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY",
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
+                ["TERRAIN_HEIGHT_MAX"] = "140",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -2514,7 +2519,7 @@ REDMAS_CAMERA_OVERHAUL_PRESET ={
             {
                 ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY",
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
-                ["TERRAIN_HEIGHT_MAX"] = "440",
+                ["TERRAIN_HEIGHT_MAX"] = "40",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -5299,7 +5304,7 @@ SCIFI_FANTASY_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
         ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
@@ -5324,9 +5329,9 @@ SCIFI_FANTASY_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "422",
+                ["TERRAIN_HEIGHT_MAX"] = "22",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -5816,7 +5821,7 @@ OFTEN_SPAWN =-------------------------------------------------------------------
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
           <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="FadeOutOffsetDistance" value="9999" />
           <Property name="LodDistances">
             <Property value="0" />
             <Property value="20" />
@@ -5853,7 +5858,7 @@ OFTEN_SPAWN_R =-----------------------------------------------------------------
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
           <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="FadeOutOffsetDistance" value="9999" />
           <Property name="LodDistances">
             <Property value="0" />
             <Property value="20" />
@@ -5896,7 +5901,7 @@ OFTEN_SPAWN_R2 =----------------------------------------------------------------
             <Property value="20" />
             <Property value="60" />
             <Property value="150" />
-            <Property value="500" />
+            <Property value="1500" />
             </Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -5918,7 +5923,7 @@ GIANT_OFTEN_SPAWN =-------------------------------------------------------------
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
 						<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 						<Property name="ID" value="STANDARD" />
-						<Property name="Coverage" value="0.6" />
+						<Property name="Coverage" value="0.4" />
 						<Property name="FlatDensity" value="0.00041" />
 						<Property name="SlopeDensity" value="0" />
 						<Property name="SlopeMultiplier" value="1" />
@@ -5926,13 +5931,13 @@ GIANT_OFTEN_SPAWN =-------------------------------------------------------------
           <Property name="MaxImposterRadius" value="9999" />
           <Property name="FadeOutStartDistance" value="9999" />
           <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="1150" />
-              <Property value="1300" />
-              <Property value="1450" />
-              <Property value="1600" />
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="1500" />
 						</Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -5954,7 +5959,7 @@ GIANT_SPARSE_SPAWN = -----------------------------------------------------------
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
 						<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 						<Property name="ID" value="STANDARD" />
-						<Property name="Coverage" value="0.4" />
+						<Property name="Coverage" value="0.1" />
 						<Property name="FlatDensity" value="0.0001" />
 						<Property name="SlopeDensity" value="0" />
 						<Property name="SlopeMultiplier" value="1" />
@@ -5964,11 +5969,11 @@ GIANT_SPARSE_SPAWN = -----------------------------------------------------------
           <Property name="FadeOutEndDistance" value="9999" />
           <Property name="FadeOutOffsetDistance" value="9999" />
             <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="1250" />
-              <Property value="1300" />
-              <Property value="1450" />
-              <Property value="1600" />
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="1500" />
 						</Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -17502,7 +17507,60 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_H},
 							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_H},
 						}
-					}
+					},
+										-- Sentinels SPACESHIPS
+					{
+						["PRECEDING_KEY_WORDS"] = { "ControlHover", "SpaceEngine" },
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
+							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
+							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
+							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_S},
+							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
+							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S },
+						}
+					},
+					{
+						["PRECEDING_KEY_WORDS"] = { "ControlHover", "PlanetEngine" },
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
+							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
+							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
+							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
+							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
+							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S },
+						}
+					},
+					{
+						["PRECEDING_KEY_WORDS"] = { "ControlHover", "CombatEngine" },
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ThrustForce", SPACESHIPS_SPACE_THRUSTFORCE_S},
+							{"MaxSpeed", SPACESHIPS_SPACE_MAXPSEED_S},
+							{"Falloff", SPACESHIPS_SPACE_FALLOFF_S},
+							{"BoostThrustForce", SPACESHIPS_SPACE_BOOST_FORCE_S},
+							{"BoostMaxSpeed", SPACESHIPS_SPACE_BOOST_MAX_S},
+							{"BoostFalloff", SPACESHIPS_SPACE_FALLOFF_S },
+						}
+					},
+					{
+						["PRECEDING_KEY_WORDS"] = { "ControlHover", "AtmosCombatEngine" },
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ThrustForce", SPACESHIPS_PLANET_THRUSTFORCE_S},
+							{"MaxSpeed", SPACESHIPS_PLANET_MAXPSEED_S},
+							{"Falloff", SPACESHIPS_PLANET_FALLOFF_S},
+							{"BoostThrustForce", SPACESHIPS_PLANET_BOOST_FORCE_S},
+							{"BoostMaxSpeed", SPACESHIPS_PLANET_BOOST_MAX_S},
+							{"BoostFalloff", SPACESHIPS_PLANET_FALLOFF_S },
+						}
+					},
 				}
 			},
 			-- aim issue fix
@@ -19954,7 +20012,7 @@ if CREATURES_OVERHAUL == "ON" then
 						["REPLACE_TYPE"] = "ALL",
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"IncreasedSpawnDistance", "6"},
+							{"IncreasedSpawnDistance", "3"},
 						}
 					},
 
@@ -40440,8 +40498,8 @@ end
 		copyEXML
 		(
 			MASSIVE_FLEET,
-			[[FREIGHTERSMALL_PROC.SCENE.EXML]],
-			[[MODELS\RGO\FREIGHTER_A.SCENE.EXML]]
+			[[FREIGHTSHIP01.SCENE.EXML]],
+			[[MODELS\RGO\FREIGHTSHIP01.SCENE.EXML]]
 		)
 
 	addFeature
