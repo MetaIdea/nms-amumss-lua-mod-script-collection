@@ -175,6 +175,28 @@ return
 	}
 end
 
+function GetSentinelShipSpreadShape(TYPE, SHAPE)
+return
+	{
+		["PRECEDING_KEY_WORDS"] = {"PoliceSpawns"},
+		["SPECIAL_KEY_WORDS"] = {"AIShipRole", TYPE},
+		["PRECEDING_FIRST"] = "TRUE",
+		-- ["INTEGER_TO_FLOAT"] = "PRESERVE",
+		["SECTION_UP"] = 1,
+		["MATH_OPERATION"] = "*",
+		["REPLACE_TYPE"] = "ALL",
+		-- ["WISUBSEC_OPTION"] = "ALL",
+		-- ["WHERE_IN_SUBSECTION"] = 
+		-- {
+			-- {"Spread", "Vector2f.xml"},
+		-- },
+		["VALUE_CHANGE_TABLE"] 	= 
+		{
+			{"SpawnShape",	SHAPE},
+		}
+	}
+end
+
 function GetSentinelFreighterTypeMultiply(TYPE)
 return
 	{
@@ -257,6 +279,7 @@ return
 		{
 			["MATH_OPERATION"] = "*",
 			["REPLACE_TYPE"] = "ONCE",
+			["INTEGER_TO_FLOAT"] = "PRESERVE",
 			["VALUE_CHANGE_TABLE"] 	= 
 			{
 				{"PoliceStationNumToLaunch",	MIN},
@@ -308,7 +331,10 @@ for _,j in pairs(MULTIPLIER_TABLE) do
 end
 
 for _,j in pairs(FREIGHT_SHIP_MULTIPLIER) do
-	table.insert(CHANGE_TABLE, GetSentinelFreighterTypeMultiply(j["AIShipRole"]))
+	-- table.insert(CHANGE_TABLE, GetSentinelFreighterTypeMultiply(j["AIShipRole"]))
+	table.insert(CHANGE_TABLE, GetSentinelShipTypeMultiply(j["AIShipRole"], 3, 5))
+	table.insert(CHANGE_TABLE, GetSentinelShipSpreadMultiply(j["AIShipRole"], 18))
+	table.insert(CHANGE_TABLE, GetSentinelShipSpreadShape(j["AIShipRole"], "Cone"))
 end
 
 for _,j in pairs(SHIP_MULTIPLIER) do
