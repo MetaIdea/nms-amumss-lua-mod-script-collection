@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "NoStandingLoss.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "3.84",
+["NMS_VERSION"]				= "4.22",
 ["MOD_DESCRIPTION"]			= "You don't lose standing anymore",
 ["MODIFICATIONS"] 			= 
 	{
@@ -27,6 +27,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Id", "STD_DEC_WAR"},
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Id", "MB_STAND_NEG"},
 							["REMOVE"] = "SECTION",
 						},
 					},
