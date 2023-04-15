@@ -231,6 +231,21 @@ table.insert(FINAL_CHANGES,
 						}	)
 table.insert(FINAL_CHANGES,
 						{
+							["PRECEDING_KEY_WORDS"] = {"ControlHover", "SpaceEngine"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxSpeed",		"2"},	
+								{"MinSpeed",		"0.05"},
+								-- {"Falloff",			"1.75"},
+								-- {"BoostFalloff",	"1.75"},
+								{"ReverseBrake",	"1.5"},
+								{"TurnBrakeMax",	"1.3"},
+							}
+						}	)
+table.insert(FINAL_CHANGES,
+						{
 							["PRECEDING_KEY_WORDS"] = {"Control", "CombatEngine"},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]	= "FORCE",
@@ -261,6 +276,20 @@ table.insert(FINAL_CHANGES,
 table.insert(FINAL_CHANGES,
 						{
 							["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "CombatEngine"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxSpeed",		"2"},	
+								{"MinSpeed",		"0.05"},
+								-- {"BoostFalloff",	"1.75"},
+								{"ReverseBrake",	"1.5"},
+								{"TurnBrakeMax",	"1.3"},
+							}
+						}	)
+table.insert(FINAL_CHANGES,
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlHover", "CombatEngine"},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -323,6 +352,23 @@ table.insert(FINAL_CHANGES,
 						}	)
 table.insert(FINAL_CHANGES,
 						{
+							["PRECEDING_KEY_WORDS"] = {"ControlHover", "PlanetEngine"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ThrustForce",		"1.75"},	
+								{"MaxSpeed",		"1.6"},	
+								-- {"MinSpeed",		"0.0025"},
+								-- {"Falloff",			"0.7"},
+								{"BoostMaxSpeed",	"1.9"},
+								-- {"BoostFalloff",	"0.5"},
+								{"ReverseBrake",	"1.5"},
+								{"OverspeedBrake",	"1.6"},
+							}
+						}	)
+table.insert(FINAL_CHANGES,
+						{
 							["PRECEDING_KEY_WORDS"] = {"Control", "AtmosCombatEngine"},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]	= "FORCE",
@@ -354,6 +400,22 @@ table.insert(FINAL_CHANGES,
 table.insert(FINAL_CHANGES,
 						{
 							["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "AtmosCombatEngine"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ThrustForce",		"1.25"},	
+								{"MaxSpeed",		"1.6"},	
+								-- {"MinSpeed",		"0.0025"},
+								-- {"Falloff",			"0.7"},
+								{"BoostMaxSpeed",	"1.5"},
+								{"ReverseBrake",	"1.5"},
+								-- {"OverspeedBrake",	"0.8"},
+							}
+						}	)
+table.insert(FINAL_CHANGES,
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlHover", "AtmosCombatEngine"},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
