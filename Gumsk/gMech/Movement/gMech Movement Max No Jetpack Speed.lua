@@ -2,14 +2,17 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech Movement"
 ModNameSub = "Max No Jetpack Speed"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "420"
+GameVersion = "422"
 ModVersion = "a"
-FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
+FileSource1 = "MODELS\\COMMON\\VEHICLES\\MECH_SUIT\\MECH_SUIT\\ENTITIES\\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
 --MECH ENTITY Animation Speeds
 	FastWalkSpeed								= 1.2		--1
 	WalkSpeed									= 1.3		--0.8
+
+	MaxFootAngle								= 70		--45
+	MovementDamp								= 0.7		--0.2
 
 --GCVEHICLEGLOBALS Mech
 	MechContrailAlpha							= 0.6		--0.6
@@ -58,6 +61,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"Speed", WalkSpeed}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcCreatureFullBodyIKComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"MaxFootAngle", MaxFootAngle},
+								{"MovementDamp", MovementDamp}
 							}
 						},
 					}

@@ -222,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     https://nomansskymods.com/mods/easy-base-building/.
 ]],
   ["MOD_AUTHOR"] = "Bladehawke",
-  ["NMS_VERSION"] = "4.12", -- Changes in files made this change necessary
+  ["NMS_VERSION"] = "4.22", -- Changes in files made this change necessary
   ["UPDATE_LINK"] = "https://pastebin.com/raw/UkVFmagZ",
   
   ["MODIFICATIONS"] = {
@@ -323,7 +323,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SCANNING/SCANEVENTTABLEPLANET.MBIN",
           ["EXML_CHANGE_TABLE"] = {
             {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "DRONE_HIVE_DISABLED",},
+              ["SPECIAL_KEY_WORDS"] = {"Name", "ROBOT_CAMP",},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
               ["ADD"] = SCANEVENT_TEXT
             }

@@ -5,8 +5,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-21"
-ModVersion = "1-2-0"
+GameVersion = "4-22"
+ModVersion = "1-3-0"
 
 --[[
 
@@ -1507,6 +1507,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -3041,6 +3043,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="True" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -3079,6 +3083,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -3855,7 +3861,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
+                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -3868,20 +3874,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
+                  <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -3920,72 +3913,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
+                  <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4012,32 +3940,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4051,6 +3953,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4102,6 +4017,58 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -4128,6 +4095,32 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -4141,7 +4134,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4154,7 +4147,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4177,7 +4183,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="11" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4203,7 +4235,150 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="9" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="8" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="10" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="12" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4229,7 +4404,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="11" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4281,189 +4469,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="10" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="8" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
+                  <Property name="Amount" value="13" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4499,7 +4505,176 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="10" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="13" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="12" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="10" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="9" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="11" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4551,110 +4726,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="8" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="11" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -4668,7 +4739,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4681,72 +4752,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="10" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="10" />
+                  <Property name="Amount" value="7" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4772,7 +4778,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4785,7 +4791,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="6" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4798,7 +4804,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
+                  <Property name="Amount" value="8" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4821,215 +4827,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="14" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="16" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="8" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="16" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="12" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="8" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="11" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="15" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5055,7 +4853,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
+                  <Property name="Amount" value="12" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5068,20 +4866,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="10" />
+                  <Property name="Amount" value="9" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5107,7 +4892,124 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="12" />
+                  <Property name="Amount" value="11" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="14" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="10" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="8" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="8" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5121,6 +5023,110 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="13" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="10" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="15" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="11" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="17" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5143,7 +5149,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5156,176 +5162,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="8" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="10" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="15" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="10" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="14" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
+                  <Property name="Amount" value="16" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5364,7 +5201,46 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="12" />
+                  <Property name="Amount" value="16" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="9" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5390,7 +5266,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="12" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5403,7 +5279,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
+                  <Property name="Amount" value="15" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5429,6 +5318,58 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="12" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="10" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -5442,7 +5383,72 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="16" />
+                  <Property name="Amount" value="10" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="12" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="17" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="8" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5465,7 +5471,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5491,7 +5523,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
+                  <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5517,45 +5549,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -5595,59 +5588,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5712,32 +5666,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -5751,7 +5679,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5765,6 +5706,71 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5787,45 +5793,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -5840,97 +5807,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5969,111 +5845,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6087,6 +5859,240 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6174,7 +6180,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6187,20 +6193,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
+                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6214,6 +6207,110 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6291,71 +6388,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -6382,33 +6414,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6457,7 +6463,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6496,7 +6502,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6509,20 +6515,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6600,7 +6593,59 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6652,19 +6697,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -6678,59 +6710,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-                <Property name="LabelID" value="" />
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -10979,6 +10985,276 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_VEG_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMC12_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMC_A" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="12" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue" />
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionStatLevel.xml">
+                        <Property name="Stat" value="CHEF_ECO_S" />
+                        <Property name="StatGroup" value="GLOBAL_STATS" />
+                        <Property name="Level" value="1" />
+                        <Property name="LevelledStatRank" value="-1" />
+                        <Property name="TakeLevelFromSeasonData" value="False" />
+                        <Property name="ForceIgnoreLevelledStat" value="False" />
+                        <Property name="CompareStat" value="" />
+                        <Property name="DisplayMilestoneNumber" value="1" />
+                        <Property name="Test" value="TkEqualityEnum.xml">
+                          <Property name="EqualityEnum" value="Equal" />
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="CHEF_MENU_00_HIGH_DEMAND" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMC12_B" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMC_B" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="12" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_ECO_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="1" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_MILK_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMC13_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMC_A" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="13" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue" />
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionStatLevel.xml">
+                        <Property name="Stat" value="CHEF_ECO_S" />
+                        <Property name="StatGroup" value="GLOBAL_STATS" />
+                        <Property name="Level" value="1" />
+                        <Property name="LevelledStatRank" value="-1" />
+                        <Property name="TakeLevelFromSeasonData" value="False" />
+                        <Property name="ForceIgnoreLevelledStat" value="False" />
+                        <Property name="CompareStat" value="" />
+                        <Property name="DisplayMilestoneNumber" value="1" />
+                        <Property name="Test" value="TkEqualityEnum.xml">
+                          <Property name="EqualityEnum" value="Equal" />
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="CHEF_MENU_00_HIGH_DEMAND" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMC13_B" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMC_B" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="13" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_ECO_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="1" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
                 <Property name="Name" value="FOOD_FISH_MEAT_NAME_L" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
@@ -13274,6 +13550,141 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_MEAT_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMM17_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMM_A" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMM_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="17" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue" />
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionStatLevel.xml">
+                        <Property name="Stat" value="CHEF_ECO_S" />
+                        <Property name="StatGroup" value="GLOBAL_STATS" />
+                        <Property name="Level" value="2" />
+                        <Property name="LevelledStatRank" value="-1" />
+                        <Property name="TakeLevelFromSeasonData" value="False" />
+                        <Property name="ForceIgnoreLevelledStat" value="False" />
+                        <Property name="CompareStat" value="" />
+                        <Property name="DisplayMilestoneNumber" value="1" />
+                        <Property name="Test" value="TkEqualityEnum.xml">
+                          <Property name="EqualityEnum" value="Equal" />
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="CHEF_MENU_00_HIGH_DEMAND" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMM17_B" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMM_B" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMM_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="17" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_ECO_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="2" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
                 <Property name="Name" value="FOOD_PLANT_LUSH_WILD_NAME_L" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
@@ -14055,6 +14466,141 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="CHEF_IMP_S" />
                     <Property name="StatGroup" value="GLOBAL_STATS" />
                     <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_ECO_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="3" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_PLANT_GLITCH_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMP6_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMP_A" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMP_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="6" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue" />
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionStatLevel.xml">
+                        <Property name="Stat" value="CHEF_ECO_S" />
+                        <Property name="StatGroup" value="GLOBAL_STATS" />
+                        <Property name="Level" value="3" />
+                        <Property name="LevelledStatRank" value="-1" />
+                        <Property name="TakeLevelFromSeasonData" value="False" />
+                        <Property name="ForceIgnoreLevelledStat" value="False" />
+                        <Property name="CompareStat" value="" />
+                        <Property name="DisplayMilestoneNumber" value="1" />
+                        <Property name="Test" value="TkEqualityEnum.xml">
+                          <Property name="EqualityEnum" value="Equal" />
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="CHEF_MENU_00_HIGH_DEMAND" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMP6_B" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMP_B" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMP_S" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="6" />
                     <Property name="LevelledStatRank" value="-1" />
                     <Property name="TakeLevelFromSeasonData" value="False" />
                     <Property name="ForceIgnoreLevelledStat" value="False" />
@@ -16779,6 +17325,448 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="CHEF_IMC_B" />
                     <Property name="StatGroup" value="GLOBAL_STATS" />
                     <Property name="Level" value="11" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="GreaterEqual" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_VEG_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMC12" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="12" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Less" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue" />
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionStatLevel.xml">
+                        <Property name="Stat" value="CHEF_ECO_B" />
+                        <Property name="StatGroup" value="GLOBAL_STATS" />
+                        <Property name="Level" value="1" />
+                        <Property name="LevelledStatRank" value="-1" />
+                        <Property name="TakeLevelFromSeasonData" value="False" />
+                        <Property name="ForceIgnoreLevelledStat" value="False" />
+                        <Property name="CompareStat" value="" />
+                        <Property name="DisplayMilestoneNumber" value="1" />
+                        <Property name="Test" value="TkEqualityEnum.xml">
+                          <Property name="EqualityEnum" value="Equal" />
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="CHEF_MENU_00_SALE_IMC12" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMC_B" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMC12" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="12" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Less" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_ECO_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="1" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_VEG_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_OOS" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="12" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="GreaterEqual" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_MILK_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMC13" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="13" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Less" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue" />
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionStatLevel.xml">
+                        <Property name="Stat" value="CHEF_ECO_B" />
+                        <Property name="StatGroup" value="GLOBAL_STATS" />
+                        <Property name="Level" value="1" />
+                        <Property name="LevelledStatRank" value="-1" />
+                        <Property name="TakeLevelFromSeasonData" value="False" />
+                        <Property name="ForceIgnoreLevelledStat" value="False" />
+                        <Property name="CompareStat" value="" />
+                        <Property name="DisplayMilestoneNumber" value="1" />
+                        <Property name="Test" value="TkEqualityEnum.xml">
+                          <Property name="EqualityEnum" value="Equal" />
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="CHEF_MENU_00_SALE_IMC13" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMC_B" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMC13" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="13" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Less" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_ECO_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="1" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_MILK_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_OOS" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMC_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="13" />
                     <Property name="LevelledStatRank" value="-1" />
                     <Property name="TakeLevelFromSeasonData" value="False" />
                     <Property name="ForceIgnoreLevelledStat" value="False" />
@@ -20565,6 +21553,227 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_MEAT_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMM17" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMM_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="17" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMM_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Less" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue" />
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionStatLevel.xml">
+                        <Property name="Stat" value="CHEF_ECO_B" />
+                        <Property name="StatGroup" value="GLOBAL_STATS" />
+                        <Property name="Level" value="2" />
+                        <Property name="LevelledStatRank" value="-1" />
+                        <Property name="TakeLevelFromSeasonData" value="False" />
+                        <Property name="ForceIgnoreLevelledStat" value="False" />
+                        <Property name="CompareStat" value="" />
+                        <Property name="DisplayMilestoneNumber" value="1" />
+                        <Property name="Test" value="TkEqualityEnum.xml">
+                          <Property name="EqualityEnum" value="Equal" />
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="CHEF_MENU_00_SALE_IMM17" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMM_B" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMM17" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMM_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="17" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMM_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Less" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_ECO_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="2" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_MEAT_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_OOS" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMM_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="17" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMM_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="GreaterEqual" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
                 <Property name="Name" value="FOOD_PLANT_LUSH_WILD_NAME_L" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
@@ -21891,6 +23100,227 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_PLANT_GLITCH_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMP_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMP6" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMP_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="6" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMP_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Less" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue" />
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionStatLevel.xml">
+                        <Property name="Stat" value="CHEF_ECO_B" />
+                        <Property name="StatGroup" value="GLOBAL_STATS" />
+                        <Property name="Level" value="3" />
+                        <Property name="LevelledStatRank" value="-1" />
+                        <Property name="TakeLevelFromSeasonData" value="False" />
+                        <Property name="ForceIgnoreLevelledStat" value="False" />
+                        <Property name="CompareStat" value="" />
+                        <Property name="DisplayMilestoneNumber" value="1" />
+                        <Property name="Test" value="TkEqualityEnum.xml">
+                          <Property name="EqualityEnum" value="Equal" />
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="CHEF_MENU_00_SALE_IMP6" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_IMP_B" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_IMP6" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMP_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="6" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMP_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Less" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_ECO_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="3" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_PLANT_GLITCH_NAME_L" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_OOS" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMP_B" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="6" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_IMP_C" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="GreaterEqual" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
                 <Property name="Name" value="ALCH_CHEF_MENU_BACK_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
@@ -22800,6 +24230,158 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   </Property>
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BR_IMC11" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_IM" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_CHEF_MENU_NEXT_OPT" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_BR_IMC5" />
+                <Property name="SelectedOnBackOut" value="True" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+            </Property>
+            <Property name="AdditionalText" />
+            <Property name="AdditionalTextAlien" />
+            <Property name="Mood" value="GcAlienMood.xml">
+              <Property name="Mood" value="Neutral" />
+            </Property>
+            <Property name="Prop" value="GcNPCPropType.xml">
+              <Property name="NPCProp" value="DontCare" />
+            </Property>
+            <Property name="AdvancedInteractionFlow" />
+            <Property name="PersistancyBufferOverride" value="None" />
+            <Property name="CustomFreighterTextIndex" value="-1" />
+            <Property name="RadialInteraction" value="False" />
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT" />
+            </Property>
+          </Property>
+          <Property value="GcAlienPuzzleEntry.xml">
+            <Property name="ProgressionIndex" value="-1" />
+            <Property name="MinProgressionForSelection" value="0" />
+            <Property name="Id" value="D_ALCF_BR_IMC5" />
+            <Property name="Race" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None" />
+            </Property>
+            <Property name="Type" value="GcInteractionType.xml">
+              <Property name="InteractionType" value="None" />
+            </Property>
+            <Property name="Category" value="GcAlienPuzzleCategory.xml">
+              <Property name="AlienPuzzleCategory" value="Default" />
+            </Property>
+            <Property name="AdditionalOptions" value="None" />
+            <Property name="Title" value="" />
+            <Property name="Text" value="" />
+            <Property name="TextAlien" value="CHEF_MENU_00_BRIBE_LANG" />
+            <Property name="TranslateAlienText" value="False" />
+            <Property name="TranslationBrackets" value="True" />
+            <Property name="ProgressiveDialogue" value="False" />
+            <Property name="RequiresScanEvent" value="" />
+            <Property name="Options">
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_VEG_NAME_L" />
+                <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
+                <Property name="IsAlien" value="True" />
+                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_BRIBE" />
+                  </Property>
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_BR_IMC12" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_IM" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_MILK_NAME_L" />
+                <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
+                <Property name="IsAlien" value="True" />
+                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_BRIBE" />
+                  </Property>
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_BR_IMC13" />
                   </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
@@ -23942,6 +25524,46 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_GENERIC_MEAT_NAME_L" />
+                <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
+                <Property name="IsAlien" value="True" />
+                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_BRIBE" />
+                  </Property>
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_BR_IMM17" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_IM" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
                 <Property name="Name" value="ALCH_CHEF_MENU_BACK_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
@@ -24296,6 +25918,118 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   </Property>
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BR_IMP5" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_IM" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_CHEF_MENU_NEXT_OPT" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_BR_IMP3" />
+                <Property name="SelectedOnBackOut" value="True" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+            </Property>
+            <Property name="AdditionalText" />
+            <Property name="AdditionalTextAlien" />
+            <Property name="Mood" value="GcAlienMood.xml">
+              <Property name="Mood" value="Neutral" />
+            </Property>
+            <Property name="Prop" value="GcNPCPropType.xml">
+              <Property name="NPCProp" value="DontCare" />
+            </Property>
+            <Property name="AdvancedInteractionFlow" />
+            <Property name="PersistancyBufferOverride" value="None" />
+            <Property name="CustomFreighterTextIndex" value="-1" />
+            <Property name="RadialInteraction" value="False" />
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT" />
+            </Property>
+          </Property>
+          <Property value="GcAlienPuzzleEntry.xml">
+            <Property name="ProgressionIndex" value="-1" />
+            <Property name="MinProgressionForSelection" value="0" />
+            <Property name="Id" value="D_ALCF_BR_IMP3" />
+            <Property name="Race" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None" />
+            </Property>
+            <Property name="Type" value="GcInteractionType.xml">
+              <Property name="InteractionType" value="None" />
+            </Property>
+            <Property name="Category" value="GcAlienPuzzleCategory.xml">
+              <Property name="AlienPuzzleCategory" value="Default" />
+            </Property>
+            <Property name="AdditionalOptions" value="None" />
+            <Property name="Title" value="" />
+            <Property name="Text" value="" />
+            <Property name="TextAlien" value="CHEF_MENU_00_BRIBE_LANG" />
+            <Property name="TranslateAlienText" value="False" />
+            <Property name="TranslationBrackets" value="True" />
+            <Property name="ProgressiveDialogue" value="False" />
+            <Property name="RequiresScanEvent" value="" />
+            <Property name="Options">
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="FOOD_PLANT_GLITCH_NAME_L" />
+                <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
+                <Property name="IsAlien" value="True" />
+                <Property name="Cost" value="C_ALCF_IMP_A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_BRIBE" />
+                  </Property>
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_BR_IMP6" />
                   </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
@@ -25328,6 +27062,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -26007,6 +27743,52 @@ NMS_MOD_DEFINITION_CONTAINER = {
           </Property>
         </Property>
         <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_BR_IMC12" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="12" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_BR_IMC13" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="13" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
           <Property name="Id" value="R_ALCF_BR_IMM0" />
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
@@ -26398,6 +28180,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
           </Property>
         </Property>
         <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_BR_IMM17" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="17" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
           <Property name="Id" value="R_ALCF_BR_IMP0" />
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
@@ -26525,6 +28330,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_BR_IMP6" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -26723,6 +28551,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -26762,6 +28592,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -26801,6 +28633,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -26840,6 +28674,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -26879,6 +28715,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -26918,6 +28756,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -26957,6 +28797,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -26996,6 +28838,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27035,6 +28879,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27074,6 +28920,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27113,6 +28961,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27152,6 +29002,90 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_IMC12" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_C" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Add" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardSpecificProduct.xml">
+                  <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                    <Property name="DefaultProductType" value="None" />
+                  </Property>
+                  <Property name="ID" value="FOOD_V_EGG" />
+                  <Property name="AmountMin" value="50" />
+                  <Property name="AmountMax" value="50" />
+                  <Property name="HideAmountInMessage" value="False" />
+                  <Property name="ForceSpecialMessage" value="False" />
+                  <Property name="HideInSeasonRewards" value="False" />
+                  <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_IMC13" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_C" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Add" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardSpecificProduct.xml">
+                  <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                    <Property name="DefaultProductType" value="None" />
+                  </Property>
+                  <Property name="ID" value="FOOD_V_MILK" />
+                  <Property name="AmountMin" value="50" />
+                  <Property name="AmountMax" value="50" />
+                  <Property name="HideAmountInMessage" value="False" />
+                  <Property name="ForceSpecialMessage" value="False" />
+                  <Property name="HideInSeasonRewards" value="False" />
+                  <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27191,6 +29125,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27230,6 +29166,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27269,6 +29207,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27308,6 +29248,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27347,6 +29289,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27386,6 +29330,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27425,6 +29371,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27464,6 +29412,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27503,6 +29453,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27542,6 +29494,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27581,6 +29535,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27620,6 +29576,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27659,6 +29617,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27698,6 +29658,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27737,6 +29699,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27776,6 +29740,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27815,6 +29781,49 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_IMM17" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_C" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Add" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardSpecificProduct.xml">
+                  <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                    <Property name="DefaultProductType" value="None" />
+                  </Property>
+                  <Property name="ID" value="FOOD_M_MEAT" />
+                  <Property name="AmountMin" value="50" />
+                  <Property name="AmountMax" value="50" />
+                  <Property name="HideAmountInMessage" value="False" />
+                  <Property name="ForceSpecialMessage" value="False" />
+                  <Property name="HideInSeasonRewards" value="False" />
+                  <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27854,6 +29863,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27893,6 +29904,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27932,6 +29945,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -27971,6 +29986,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -28010,6 +30027,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -28049,6 +30068,49 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_IMP6" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_C" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Add" />
+                  </Property>
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardSpecificProduct.xml">
+                  <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                    <Property name="DefaultProductType" value="None" />
+                  </Property>
+                  <Property name="ID" value="FOOD_P_GLITCH" />
+                  <Property name="AmountMin" value="50" />
+                  <Property name="AmountMax" value="50" />
+                  <Property name="HideAmountInMessage" value="False" />
+                  <Property name="ForceSpecialMessage" value="False" />
+                  <Property name="HideInSeasonRewards" value="False" />
+                  <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -28075,6 +30137,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="True" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -29055,6 +31119,82 @@ NMS_MOD_DEFINITION_CONTAINER = {
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMC12_A" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="True" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_V_EGG" />
+            <Property name="Amount" value="25" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMC12_B" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_V_EGG" />
+            <Property name="Amount" value="25" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMC13_A" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="True" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_V_MILK" />
+            <Property name="Amount" value="25" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMC13_B" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_V_MILK" />
+            <Property name="Amount" value="25" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
           <Property name="Id" value="C_ALCF_IMM0_A" />
           <Property name="DisplayCost" value="True" />
           <Property name="DontCharge" value="False" />
@@ -29701,6 +31841,44 @@ NMS_MOD_DEFINITION_CONTAINER = {
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMM17_A" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="True" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_M_MEAT" />
+            <Property name="Amount" value="25" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMM17_B" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_M_MEAT" />
+            <Property name="Amount" value="25" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
           <Property name="Id" value="C_ALCF_IMP0_A" />
           <Property name="DisplayCost" value="True" />
           <Property name="DontCharge" value="False" />
@@ -29925,6 +32103,44 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="DefaultProductType" value="None" />
             </Property>
             <Property name="Id" value="FOOD_P_DUSTWILD" />
+            <Property name="Amount" value="25" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMP6_A" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="True" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_P_GLITCH" />
+            <Property name="Amount" value="25" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMP6_B" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_P_GLITCH" />
             <Property name="Amount" value="25" />
           </Property>
         </Property>
@@ -31957,6 +34173,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="True" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -31983,6 +34201,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
@@ -31999,6 +34219,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="ForceSpecialMessage" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="RequiresTech" value="" />
                 </Property>
                 <Property name="LabelID" value="" />
               </Property>
