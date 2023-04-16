@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "__MOD_NO_FADE.pak",
-["MOD_DESCRIPTION"] = "",
+["MOD_DESCRIPTION"] = "Tweak that removes the fading effect from terrain and objects",
 ["MOD_AUTHOR"]      = "WoodyMontana",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.08",
+["NMS_VERSION"]     = "4.22",
 ["MODIFICATIONS"]   =
     {
         {
