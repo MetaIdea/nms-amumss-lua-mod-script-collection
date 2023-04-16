@@ -5,7 +5,7 @@ mod_desc = [[
   * The ADD_FILES section can be safely disabled/ignored if you prefer
    to add the texture files in a different method.
 ]]--------------------------------------------------------------------
-mod_version = 1.11
+mod_version = '1.12'
 
 local tech_icons = {
 	---	ship
@@ -53,6 +53,7 @@ local tech_icons = {
 	{'UT_CANNON',		'TECHNOLOGY/RENDER.CANNON.GREEN.DDS'},
 	{'UT_RAIL_STUN',	'TECHNOLOGY/RENDER.BLAZEJAVELIN.BLUE.DDS'},
 	{'UT_SCAN',			'TECHNOLOGY/RENDER.SCAN.RED.DDS'},
+	{'SENT_LASER',		'TECHNOLOGY/RENDER.LASERSENTINEL2.DDS'},
 	---	suit
 	{'UT_ENERGY',		'TECHNOLOGY/RENDER.CELL.BLUE.DDS'},
 	{'UT_WATERENERGY',	'TECHNOLOGY/RENDER.CELL.BLUE.DDS'},
@@ -86,7 +87,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Technology Icons.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.21',
+	NMS_VERSION			= '4.22',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
