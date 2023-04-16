@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL" />
+  <Property name="Name" value="]].."MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL"..[[" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL.GEOMETRY.MBIN" />
+      <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL.GEOMETRY.MBIN"..[[" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDENGGLOWCAPMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL\DUDENGGLOWCAPMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -374,7 +374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\ENDGLOWMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL\ENDGLOWMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -395,7 +395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\EFFECTS\WARP\WARPLARGEPORTAL" />
+  <Property name="Name" value="]].."MODELS\EFFECTS\WARP\WARPLARGEPORTAL"..[[" />
   <Property name="NameHash" value="3057705456" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -413,7 +413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.GEOMETRY.MBIN" />
+      <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.GEOMETRY.MBIN"..[[" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -446,7 +446,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children">
@@ -3326,7 +3326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\TUNNELMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\TUNNELMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -3450,7 +3450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPTUNNELMAT1.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPTUNNELMAT1.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -3574,7 +3574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\WARPBGMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\WARPBGMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -3698,7 +3698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\SCROLLINGWAVESALTBMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\SCROLLINGWAVESALTBMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -3822,7 +3822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARSMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARSMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -3946,7 +3946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARS2MAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARS2MAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -4070,7 +4070,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARS2MAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARS2MAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -4194,7 +4194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -4318,7 +4318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPLARGEPORTAL\LIGHTSTREAKSMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPLARGEPORTAL\LIGHTSTREAKSMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -4442,7 +4442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -4471,7 +4471,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -4487,7 +4487,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\EFFECTS\WARP\WARPPORTAL" />
+  <Property name="Name" value="]].."MODELS\EFFECTS\WARP\WARPPORTAL"..[[" />
   <Property name="NameHash" value="1342974742" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -4505,7 +4505,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.GEOMETRY.MBIN" />
+      <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.GEOMETRY.MBIN"..[[" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -4538,7 +4538,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children">
@@ -7418,7 +7418,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\TUNNELMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\TUNNELMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -7542,7 +7542,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPTUNNELMAT1.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPTUNNELMAT1.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -7666,7 +7666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\WARPBGMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\WARPBGMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -7790,7 +7790,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\GRADIENTCLOUDALTBMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\GRADIENTCLOUDALTBMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -7914,7 +7914,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\GRADIENTCLOUDALTBMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\GRADIENTCLOUDALTBMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -8038,7 +8038,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARSMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARSMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -8162,7 +8162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARS2MAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARS2MAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -8286,7 +8286,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARS2MAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARS2MAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -8410,7 +8410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTARMSBLACKMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTARMSBLACKMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -8534,7 +8534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -8658,7 +8658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -8687,7 +8687,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8703,7 +8703,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\EFFECTS\WARP\WARPTUNNEL" />
+  <Property name="Name" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL"..[[" />
   <Property name="NameHash" value="350411362" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -8721,7 +8721,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.GEOMETRY.MBIN" />
+      <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.GEOMETRY.MBIN"..[[" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -8754,7 +8754,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children">
@@ -11634,7 +11634,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\TUNNELMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\TUNNELMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -11758,7 +11758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPTUNNELMAT1.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPTUNNELMAT1.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -11882,7 +11882,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\WARPBGMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\WARPBGMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -12006,7 +12006,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARSMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARSMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -12130,7 +12130,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARS2MAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARS2MAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -12254,7 +12254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARS2MAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARS2MAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -12378,7 +12378,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPLIGHTARMSREDMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPLIGHTARMSREDMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -12502,7 +12502,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -12626,7 +12626,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\LIGHTSTREAKSSMALLMAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -12655,7 +12655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.MBIN" />
+          <Property name="Value" value="]].."MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children" />

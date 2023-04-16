@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\CONDUIT_PIPELINE" />
+  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\CONDUIT_PIPELINE"..[[" />
   <Property name="NameHash" value="1964934132" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PLUGSOCKET_AVAILABLE\CONDUIT_PIPELINE.GEOMETRY.MBIN" />
+      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PLUGSOCKET_AVAILABLE\CONDUIT_PIPELINE.GEOMETRY.MBIN"..[[" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -226,7 +226,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\CONDUIT_PIPELINE\WIRE6_PASTED__HQTRIMMETALOPAQUE_MAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\CONDUIT_PIPELINE\WIRE6_PASTED__HQTRIMMETALOPAQUE_MAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -310,7 +310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\ENTITIES\POWERLINE.ENTITY.MBIN" />
+          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\ENTITIES\POWERLINE.ENTITY.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -326,7 +326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION" />
+  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION"..[[" />
   <Property name="NameHash" value="3347306815" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -361,12 +361,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION\ENTITIES\PIPELINE_CONNECTION.ENTITY.MBIN" />
+          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION\ENTITIES\PIPELINE_CONNECTION.ENTITY.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION" />
+          <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION"..[[" />
           <Property name="NameHash" value="3347306815" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -462,7 +462,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_SILOS" />
+  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_SILOS"..[[" />
   <Property name="NameHash" value="2281461487" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -480,7 +480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CYLINDERSNAPSHAPE.GEOMETRY.MBIN" />
+      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CYLINDERSNAPSHAPE.GEOMETRY.MBIN"..[[" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -603,7 +603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CYLINDERSNAPSHAPE\FLOORTILE_TILINGTEXTURE_MAT.MATERIAL.MBIN" />
+          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CYLINDERSNAPSHAPE\FLOORTILE_TILINGTEXTURE_MAT.MATERIAL.MBIN"..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -613,12 +613,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\PHYSICS.ENTITY.MBIN" />
+          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\PHYSICS.ENTITY.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CYLINDERSNAPSHAPE" />
+          <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CYLINDERSNAPSHAPE"..[[" />
           <Property name="NameHash" value="3851591725" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -672,7 +672,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_SILOS\ENTITIES\INTERACTION.ENTITY.MBIN" />
+          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_SILOS\ENTITIES\INTERACTION.ENTITY.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children">
@@ -695,7 +695,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_SILOS" />
+          <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_SILOS"..[[" />
           <Property name="NameHash" value="2281461487" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -772,7 +772,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION.SCENE.MBIN" />
+          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION.SCENE.MBIN"..[[" />
         </Property>
       </Property>
       <Property name="Children" />
