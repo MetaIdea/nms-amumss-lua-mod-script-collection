@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "4_20"
+GameVersion = "4_22"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -429,19 +429,19 @@ RecipeChanges =
 CorruptRecipeChanges =
 {
 	{							--Amount per batch	--Time per batch
-		{"RECIPE_DRONESHARD",	16,					500},				--Makes Nanites					x50	in	500 time
+		{"RECIPE_DRONESHARD",	16,					500},				--Makes Nanites					x50	in	1800 time
 		{
 			{"DRONE_SHARD",		1}										--Requires Radiant Shard			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"RECIPE_DRONESCRAP",	48,					700},				--Makes Nanites					x95	in	700 time
+		{"RECIPE_DRONESCRAP",	48,					1100},				--Makes Nanites					x95	in	2200 time
 		{
 			{"DRONE_SALVAGE",	1}										--Requires Inverted Mirror			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"RECIPE_SHIPBRAIN",	96,					900},				--Makes Nanites					x260	in	900 time
+		{"RECIPE_SHIPBRAIN",	96,					1400},				--Makes Nanites					x230	in	3200 time
 		{
 			{"SHIPBRAIN",		1}										--Requires Hyaline Brain			x1
 		}
@@ -776,7 +776,7 @@ NewSentinelNaniteRecipes =
       </Property>
     </Property>]]
 
---Adds Recipes for refining Larval Core, Hadal Core, Vile Spawn, Flesh Rope, Quad Servo, Hardframe Engine, Crystallised Heart, and Walker Brain into Data by refining with Microprocessor
+--Adds Recipes for refining Larval Core, Hadal Core, Vile Spawn, Flesh Rope, Radiant Shard, Inverted Mirror, Hyaline Brain, Quad Servo, Hardframe Engine, Crystallised Heart, and Walker Brain into Data by refining with Microprocessor
 NewSalvagedDataRecipes = 
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_FIEND" />
@@ -895,6 +895,96 @@ NewSalvagedDataRecipes =
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_SHARD" />
+      <Property name="RecipeType" value="RECIPE_SHARD_D" />
+      <Property name="RecipeName" value="PTSd: Radiant Data Extraction" />
+      <Property name="TimeToMake" value="3" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="1" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="DRONE_SHARD" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="3" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_MIRROR" />
+      <Property name="RecipeType" value="RECIPE_MIRROR_D" />
+      <Property name="RecipeName" value="PTSd: Inverted Data Extraction" />
+      <Property name="TimeToMake" value="3" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="1" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="DRONE_SALVAGE" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_HYALINE" />
+      <Property name="RecipeType" value="RECIPE_HYALINE_D" />
+      <Property name="RecipeName" value="PTSd: Sentient Data Extraction" />
+      <Property name="TimeToMake" value="6" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="2" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="SHIPBRAIN" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="2" />
         </Property>
       </Property>
     </Property>

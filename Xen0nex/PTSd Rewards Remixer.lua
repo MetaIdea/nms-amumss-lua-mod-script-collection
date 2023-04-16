@@ -394,10 +394,10 @@ SpaceStationMissionLootChanges =
 			{"FOOD_DNUT_MEAT",			"REACTION2",			5,	5,		2},		--1,	1,		0.2		Food worth 65000		(Enriched Carbon)
 			{"FOOD_DNUT_AJAM",			"REACTION3",			5,	5,		2},		--1,	1,		0.2		Food worth 70000		(Nitrogen Salt)
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		4},		--1,	1,		6		Storage Augmentation
-			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	2,		6},		--1,	1,		6		Multi-Tool Expansion Slot
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		6},		--1,	1,		6		Multi-Tool Expansion Slot
 			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		5},		--1,	1,		6		Exosuit Expansion Slot
 			{"NAV_DATA",				"NAV_DATA",				6,	8,		4},		--2,	4,		4		Navigation Data
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	2,		6},		--1,	1,		6		Drop Pod Coordinates
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		6},		--1,	1,		6		Drop Pod Coordinates
 			{"REPAIRKIT",				"REPAIRKIT",			2,	3,		2},		--1,	2,		2		Repair Kit
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		3},		--1,	1,		3		Salvaged Frigate Module
 			{"BP_SALVAGE",				"BP_SALVAGE",			6,	8,		6},		--3,	5,		6		Salvaged Data
@@ -454,8 +454,8 @@ SpaceStationMissionLootChanges =
 			{"COMPOUND4",				"COMPOUND4",			2,	3,		1},		--5,	5,		3		Fusion Accelerant
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	2,		6},		--1,	1,		5		Salvaged Frigate Module
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		6},		--1,	1,		6		Storage Augmentation
-			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		2,	3,		4},		--1,	1,		6		Multi-Tool Expansion Slot
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		2,	3,		7},		--1,	1,		7		Drop Pod Coordinates
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	2,		4},		--1,	1,		6		Multi-Tool Expansion Slot
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	2,		7},		--1,	1,		7		Drop Pod Coordinates
 			{"REPAIRKIT",				"REPAIRKIT",			4,	5,		4},		--3,	3,		5		Repair Kit
 			{"BP_SALVAGE",				"BP_SALVAGE",			8,	12,		5},		--3,	5,		6		Salvaged Data
 			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		5},		--1,	1,		6		Exosuit Expansion Slot
@@ -508,9 +508,9 @@ SpaceStationMissionLootChanges =
 			{"COMPOUND4",				"COMPOUND4",			3,	5,		1},		--2,	3,		3		Fusion Accelerant
 			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		5},		--1,	1,		4		Exosuit Expansion Slot
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	2,		7},		--1,	1,		7		Storage Augmentation
-			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		2,	3,		2},		--1,	1,		7		Multi-Tool Expansion Slot
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		2,	2,		2},		--1,	1,		7		Multi-Tool Expansion Slot
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			2,	2,		6},		--1,	1,		6		Salvaged Frigate Module
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		2,	3,		3},		--1,	1,		6		Drop Pod Coordinates
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		2,	2,		3},		--1,	1,		6		Drop Pod Coordinates
 			{"REPAIRKIT",				"REPAIRKIT",			6,	8,		2},		--3,	3,		6		Repair Kit
 			{"BP_SALVAGE",				"BP_SALVAGE",			10,	14,		5},		--3,	5,		5		Salvaged Data
 			{"NAV_DATA",				"NAV_DATA",				16,	16,		2},		--5,	5,		4		Navigation Data

@@ -2,20 +2,25 @@ Author = "Gumsk"			-- Edited by Xen0nex
 ModName = "gExos Challenge"
 ModNameSub = "RealityX"
 BaseDescription = "Increases suit upgrade prices, changes initial suit & ship slots"
-GameVersion = "420"
+GameVersion = "422"
 ModVersion = "a"
 
---Planning to go from 24 slots to 35 slots
+--Planning to go from 24 slots to 40 slots
 SuitMainPrices = [[ <Property name="SuitUpgradePrices">
-	<Property value="150000"  />
-	<Property value="350000"  />
-	<Property value="600000"  />
-	<Property value="900000"  />
+	<Property value="100000"  />
+	<Property value="200000"  />
+	<Property value="300000"  />
+	<Property value="400000"  />
+	<Property value="500000"  />
+	<Property value="750000"  />
+	<Property value="1000000"  />
 	<Property value="1250000"  />
+	<Property value="1500000"  />
 	<Property value="2000000"  />
-	<Property value="3000000"  />
-	<Property value="4000000"  />
-	<Property value="5000000"  />
+	<Property value="2500000"  />
+	<Property value="3500000"  />
+	<Property value="4500000"  />
+	<Property value="6000000"  />
 	<Property value="7500000"  />
 	<Property value="10000000"  />
 	<Property value="16161616"  />
@@ -23,11 +28,6 @@ SuitMainPrices = [[ <Property name="SuitUpgradePrices">
 	<Property value="16161616"  />
 	<Property value="16161616"  />
 	<Property value="16161616"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
 	<Property value="161616160"  />
 	<Property value="161616160"  />
 	<Property value="161616160"  />
