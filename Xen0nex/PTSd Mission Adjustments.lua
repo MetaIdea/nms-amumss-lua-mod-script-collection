@@ -36,7 +36,9 @@ ReplacedRewardsSentinel =
 }
 
 --Multipliers for the displayed blueprint costs for Roamer & Minotaur Geobay in the UI for quest objectives
-ExocraftBlueprintCostMult = 7.5				--Put the same value used in the "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance.lua" file so the UI matches up with the actual cost
+ExocraftBlueprintCostMult = 7.5			--Put the same value used in the "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance.lua" file so the UI matches up with the actual cost
+
+RemoveEarlyRoamerReward = true			--false		Set true to remove the recipe for the Roamer from the rewards as soon as you meet Apollo's contact on a Space Station. Remaining options are a Base Computer Archive reward, an Exocraft Technician reward, or buying at the Anomaly
 
 --Set which recipes for Storage Containers to remove from the reward the Overseer gives you in the base building mission chain, where he normally gives all 10 recipes
 RemoveContainerMission = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9", }		
@@ -383,6 +385,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\COREMISSIONTABLE.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			--Intentionally left blank to be filled in by a function below
+		}
 	}
 }}}}
 
@@ -424,15 +433,26 @@ ChangesToTutorialMissionTable[#ChangesToTutorialMissionTable+1] =
 			}
 end
 
-local ChangesToCoreMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local ChangesToMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 
 for i = 1, #RemoveContainerMission do
 	local ContainerID = RemoveContainerMission[i]
 		
-			ChangesToCoreMissionTable[#ChangesToCoreMissionTable+1] =
+			ChangesToMissionTable[#ChangesToMissionTable+1] =
 			{
 				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", "HAND_IN_OS4",	"Value",	ContainerID},
+				["REMOVE"] = "SECTION"
+			}
+end
+
+local ChangesToCoreMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
+
+if RemoveEarlyRoamerReward then
+ChangesToCoreMissionTable[#ChangesToCoreMissionTable+1] =
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				["SPECIAL_KEY_WORDS"] = {"Value",	"GARAGE_M"},
 				["REMOVE"] = "SECTION"
 			}
 end

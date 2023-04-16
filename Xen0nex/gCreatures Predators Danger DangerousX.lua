@@ -1,7 +1,7 @@
 Author = "Gumsk"		--Edited by Xenonex
 ModName = "gCreatures Predators"
 ModNameSub = "DangerousX"
-BaseDescription = "More aggressive and dangerous predators (and larger Rock Creature proportions with better loot)"
+BaseDescription = "More aggressive and dangerous predators"
 GameVersion = "422"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
@@ -9,12 +9,14 @@ FileSource2 = "MODELS\PLANETS\CREATURES\SANDWORMMINI\SANDWORMMINI\ENTITIES\DATA.
 FileSource3 = "MODELS\PLANETS\CREATURES\FISH\FISHFIEND\ENTITIES\FISHFIEND.ENTITY.MBIN"
 
 --This section added by Xen0nex
-AngryRockProportionNormal = 0.5				--Default 0.2		Unclear this effect, there is a separate parameter for RockTransformGlobalChance
-AngryRockProportionSurvival = 0.5			--Default 0.5		Unclear this effect, there is a separate parameter for RockTransformGlobalChance
-RockCreatureLoot = "GEODE_CRYSTAL"			--Default 5/8/12 (depending on size of rock?) of "FOOD_M_MEAT" (Meaty Chunks)
 WormHealthMult = 3							--Default 2600	(The big "Hungering Tendrils" / "Titan Worms")
 FishFiendHealthMult = 1						--Default 10	(The big Anglerfish that attacks underwater) Health may be controlled by FishFiendBigHealth in GCCREATUREGLOBALS.MBIN instead, need to test
+CreatureSmallHealth = 500					--Default 200
+CreatureMedHealth = 2100					--Default 1400
+CreatureLargeHealth = 3600					--Default 2800
+CreatureHugeHealth = 5400					--Default 3600
 
+--Original section below
 SharkAttackSpeed = 15						--Default 10
 SharkAttackAccel = 5						--Default 3
 AggressiveSharks = "True"					--Default False
@@ -95,19 +97,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["MBIN_FILE_SOURCE"] = FileSource1,
 					["EXML_CHANGE_TABLE"] = {
 						{
-							["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"KillingProducts"},
-							["SPECIAL_KEY_WORDS"] = {"CreatureType","ROCKCREATURE"},
-							["MATH_OPERATION"] 		= "", 
-							["VALUE_CHANGE_TABLE"] = {
-								{"Item", RockCreatureLoot},
-							},
-						},
-						{
 							["PRECEDING_KEY_WORDS"] = {""},
 							["VALUE_CHANGE_TABLE"] = {
-								{"AngryRockProportionNormal", AngryRockProportionNormal},
-								{"AngryRockProportionSurvival", AngryRockProportionSurvival},
+								{"CreatureSmallHealth", CreatureSmallHealth},
+								{"CreatureMedHealth", CreatureMedHealth},
+								{"CreatureLargeHealth", CreatureLargeHealth},
+								{"CreatureHugeHealth", CreatureHugeHealth},
 								
 								{"SharkAttackSpeed", SharkAttackSpeed},
 								{"SharkAttackAccel", SharkAttackAccel},

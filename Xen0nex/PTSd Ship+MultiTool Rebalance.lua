@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_20"
+GameVersion = "4_22"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -243,7 +243,7 @@ ShipBounds =
 --Replacers for INITIAL Inventory size found on spawned purchaseable / crashed ships. NOT maximum upgradeable size for ships.
 	--NOTE as of NMS 4.0, any reference in game files to "cargo" slots/inventory are actually referring to the deprecated 3rd inventory type, so no longer have any effect
 	--NOTE: # of supercharged slots can not be changed for starships or multi-tools, only for exocraft and the exosuit in DEFAULTSAVEDATA.MBIN
-		--However, the bounds where supercharged slots can be set for starships & multi-tools. SX & SY set these bounds (top left slot is X=0, Y=0)
+		--However, the bounds where supercharged slots can be set for multi-tools. SX & SY set these bounds (top left slot is X=0, Y=0)  (Does not appear to wrk for starships?)
 ShipInitialSizeChanges	=
 {	--Ship type & size			MinCarg	MaxCarg		MinTech	MaxTech		SX	SY		Vanilla	MinCarg	MaxCarg		MinTech	MaxTech		SX	SY
 	{"ShuSmall",				10,		16,			9,		15,			9,	2},			--	24,		32,			12,		19,			9,	2

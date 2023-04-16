@@ -286,10 +286,10 @@ LaunchAndSubFuelBuyBaseMarkup	=	199				--98
 AntimatterBuyBaseMarkup	=			9				--5
 	--AntimatterAndFrigateFuelBuyMarkupMod =1.5			--1.5
 
-NavDataSpaceStationMarkup =			1				--0.5
+NavDataSpaceStationMarkup =			1				--0.5		Navigation Data
 NavDataBuyBaseMarkup =				9				--0.2
-DropPodDataSpaceStationMarkup =		1				--0.5
-DropPodDataBuyBaseMarkup =			0.6				--0.2
+DropPodDataSpaceStationMarkup =		1				--0.5		Exosuit Upgrade Charts
+DropPodDataBuyBaseMarkup =			5				--0.2
 
 --Components
 --Components are generally the items used to craft/repair technology such as Metal Plating, Microprocessor, Hermetic Seal, Hydraulic Wiring, etc.
