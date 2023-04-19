@@ -348,6 +348,13 @@ RecipeChanges =
 			{"ASTEROID3",		15}										--Requires Platinum				x25
 		}
 	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_76",		1,					90},				--Makes Glass					x1		in	20 time
+		{
+			{"WATERPLANT",		10},									--Requires Cyto-Phosphate		x50
+			{"WATER1",			10}										--Requires Salt					x50
+		}
+	},
 --Some Nutrient Processor Recipes with ingredients that are very easy to obtain passively or in huge quantities have had their costs increased, to indirectly nerf cooking profits & incentivize harvesting wild ingredients
 	{							--Amount per batch	--Time per batch
 		{"RECIPE_2",			1,					5},					--Makes Silicon Egg				x1		in	5 time

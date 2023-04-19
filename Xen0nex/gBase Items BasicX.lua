@@ -2,7 +2,7 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "420"
+GameVersion = "422"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
@@ -35,9 +35,11 @@ MineralBaseLimit = 8		--0
 GasBaseLimit = 8			--0
 SiloBaseLimit = 16			--0
 
+PlanterPowerDraw = -6		--	-5 kPs		(Remember to make the value negative)
+LargePlanterPowerDraw = -16	--	-20 kPs		(Remember to make the value negative)
 BiodomeBaseLimit = 0		--0
 BiodomePowerDraw = -160		--	-50 kPs		(Remember to make the value negative)
-BiodomeFreighter = "False"	--Override for setting if Biodomes can be built on freighters or not
+PlanterFreighter = "False"	--Override for setting if Planters, Large Planters, and Biodomes can be built on freighters or not
 
 TeleportersBuildable = "True"	--"True"		Set this to "False" to disable the player from constructing Teleporters in bases or freighters. (You can still use Station Teleporters to teleport to your base or freighter)
 
@@ -181,12 +183,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"RegionLimit", SiloLimit},
 		{"PlanetBaseLimit", SiloBaseLimit},
 		}},
+		{["SPECIAL_KEY_WORDS"] = {"ID","PLANTER"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Rate", PlanterPowerDraw},
+		{"BuildableOnSpaceBase", PlanterFreighter},
+		{"BuildableOnFreighter", PlanterFreighter},
+		}},
+		{["SPECIAL_KEY_WORDS"] = {"ID","PLANTERMEGA"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Rate", LargePlanterPowerDraw},
+		{"BuildableOnSpaceBase", PlanterFreighter},
+		{"BuildableOnFreighter", PlanterFreighter},
+		}},
 		{["SPECIAL_KEY_WORDS"] = {"ID","BIOROOM"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"PlanetBaseLimit", BiodomeBaseLimit},
 		{"Rate", BiodomePowerDraw},
-		{"BuildableOnSpaceBase", BiodomeFreighter},
-		{"BuildableOnFreighter", BiodomeFreighter},
+		{"BuildableOnSpaceBase", PlanterFreighter},
+		{"BuildableOnFreighter", PlanterFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
 	["VALUE_CHANGE_TABLE"] = {

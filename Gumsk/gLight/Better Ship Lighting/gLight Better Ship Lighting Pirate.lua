@@ -1,11 +1,11 @@
 ModName = "gLight Better Ship Lighting"
-ModNameSub = "Station"
+ModNameSub = "Pirate"
 BaseDescription = ""
 GameVersion = "423"
 ModVersion = "a"
 
 --[[ Files Modified:
-MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN
+MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN
 ]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			["MBIN_CHANGE_TABLE"] = {
 				{
-					["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN",
+					["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] = {
 						{
 							["SPECIAL_KEY_WORDS"] = {
@@ -49,56 +49,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {
-								"Name","spotlight7",
-								"Name","INTENSITY"
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"Value",60000},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {
-								"Name","spotlight7",
 								"Name","FOV"
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",120},
+								{"Value","120"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {
-								"Name","spotlight8",
-								"Name","INTENSITY"
+								"Name","LandingPadLight",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",60000},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {
-								"Name","spotlight8",
-								"Name","FOV"
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"Value",120},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {
-								"Name","spotlight9",
-								"Name","INTENSITY"
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"Value",60000},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {
-								"Name","spotlight9",
-								"Name","FOV"
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"Value",120},
+								{"TransY",12},
 							}
 						},
 					}

@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_20"
+GameVersion = "4_22"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -199,9 +199,18 @@ SolarGlassNeeded				=	4				--0		(replaces 50 Chromatic Metal)
 EGenPlatesNeeded				=	6				--2
 EGenMagFerriteNeeded			=	180				--60
 EGenChromMetalNeeded			=	225				--75
+--Hydroponics Tray construction recipe
+PlanterPureFerriteNeeded		=	10				--30
+PlanterPlatesNeeded				=	1				--2
+PlanterCarbonNeeded				=	10				--20
+--Large Hydroponics Tray construction recipe
+LargePlanterPureFerriteNeeded	=	60				--60
+LargePlanterPlatesNeeded		=	6				--4
+LargePlanterCarbonNeeded		=	60				--50
 --Bio-Dome construction recipe
-BioDomeMagFerriteNeeded			=	75				--25
+BioDomeMagFerriteNeeded			=	480				--25
 BioDomeGlassNeeded				=	16				--5
+BioDomeOxygenNeeded				=	320				--0
 
 --Antimatter Reactor construction recipe
 AntiMatStormNeeded				=	10				--5		Storm Crystal
@@ -227,13 +236,13 @@ RefinerRoomMicrochips = 8							--how many Microprocessors required		(replaces 2
 RefinerRoomSilver = 50								--60 Silver
 RefinerRoomGold = 30								--45 Gold
 --New recipe for installing Cultivation Chamber in freighter
-CultivationChamberSilver = 60						--50 Silver
+CultivationChamberSilver = 80						--50 Silver
 CultivationChamberPlates = 6						--how many Metal Plates required	(replaces 25 Oxygen in vanilla)
-CultivationChamberFaecium = 80						--10 Faecium
+CultivationChamberFaecium = 120						--10 Faecium
 --New recipe for installing Double Cultivation Chamber in freighter
-DoubleCultivationChamberSilver = 160				--60 Silver
-DoubleCultivationChamberPlates = 16					--how many Metal Plates required	(replaces 35 Oxygen in vanilla)
-DoubleCultivationChamberFaecium = 220				--25 Faecium
+DoubleCultivationChamberSilver = 240				--60 Silver
+DoubleCultivationChamberPlates = 18					--how many Metal Plates required	(replaces 35 Oxygen in vanilla)
+DoubleCultivationChamberFaecium = 360				--25 Faecium
 --New recipe for installing Stellar Extractor in freighter
 StellarExtractorSilver = 120						--60 Silver
 StellarExtractorGold = 90							--45 Gold
@@ -534,23 +543,14 @@ ChartCostChanges =
 	{"NAV_DATA_DROP",		ExosuitUpgradeChartCost}
 }
 
-AddedPlatinumCost =
-[[<Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="ASTEROID3" />
-          <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Substance" />
-          </Property>
-          <Property name="Amount" value="]]..NipNipPlatinumNeeded..[[" />
-        </Property>]]
-
-function AddedPlatinumCost (Platinum)
+function AddedSubstanceCost (SubstanceID, SubstanceAmount)
     return
 [[<Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="ASTEROID3" />
+          <Property name="ID" value="]]..SubstanceID..[[" />
           <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Substance" />
           </Property>
-          <Property name="Amount" value="]]..Platinum..[[" />
+          <Property name="Amount" value="]]..SubstanceAmount..[[" />
         </Property>]]
 end
 
@@ -657,7 +657,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","NIPPLANT"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["ADD"] = AddedPlatinumCost (NipNipPlatinumNeeded),
+							["ADD"] = AddedSubstanceCost ("ASTEROID3", NipNipPlatinumNeeded),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
@@ -791,6 +791,60 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "PLANTER",		"ID", "LAND2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", PlanterPureFerriteNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "PLANTER",		"ID", "CASING"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", PlanterPlatesNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "PLANTER",		"ID", "FUEL1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", PlanterCarbonNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "PLANTERMEGA",		"ID", "LAND2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", LargePlanterPureFerriteNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "PLANTERMEGA",		"ID", "CASING"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", LargePlanterPlatesNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "PLANTERMEGA",		"ID", "FUEL1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", LargePlanterCarbonNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
 							["SPECIAL_KEY_WORDS"] = {"ID", "BIOROOM",		"ID", "LAND3"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -805,6 +859,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"Amount", BioDomeGlassNeeded}
 							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","BIOROOM"},
+							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+							["ADD"] = AddedSubstanceCost ("OXYGEN", BioDomeOxygenNeeded),
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
 							["REPLACE_TYPE"] 		= "",

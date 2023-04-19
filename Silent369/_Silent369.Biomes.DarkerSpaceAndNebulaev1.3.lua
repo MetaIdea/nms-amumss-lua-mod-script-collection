@@ -1,8 +1,8 @@
 local modfilename = "Biomes.DarkerSpaceAndNebulae"
 local lua_author  = "Silent"
-local lua_version = "v1.2"
+local lua_version = "v1.3"
 local mod_author  = "Silent369"
-local nms_version = "4.13"
+local nms_version = "4.21"
 local maintenance = mod_author
 local description = [[
 Makes Space Much Darker and Nebulae more subtle visually.
@@ -14,9 +14,9 @@ local _night_sky_colour                 = 0.1
 local _space_clouds_colour              = 0.1
 local _star_light_colour                = 1
 local _nebula_colour                    = 0.4
-local _nebua_alpha_strength             = 0.2
+local _nebua_alpha_strength             = 0.1
 local _space_fog_colour                 = 0.4
-local _space_fog_alpha_strength         = 0.2
+local _space_fog_alpha_strength         = 0.1
 --=====================================================================================================--
 
 COLOR_TABLE =

@@ -1,18 +1,22 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Nexus"
 BaseDescription = ""
-GameVersion = "422"
+GameVersion = "423"
 ModVersion = "a"
+
+--[[ Files Modified:
+MODELS\SPACE\NEXUS\PARTS\LANDINGBAYS\LANDINGPAD.SCENE.MBIN
+]]--
 
 AddLight = [[    <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="pointLight1" />
-      <Property name="NameHash" value="]]..GNH("pointLight1")..[[" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
-        <Property name="TransY" value="13" />
+        <Property name="TransY" value="12" />
         <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
+        <Property name="RotX" value="-90" />
         <Property name="RotY" value="0" />
         <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
@@ -23,7 +27,7 @@ AddLight = [[    <Property value="TkSceneNodeData.xml">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="360.000000" />
+          <Property name="Value" value="120.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
@@ -38,7 +42,7 @@ AddLight = [[    <Property value="TkSceneNodeData.xml">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="32000.000000" />
+          <Property name="Value" value="40000.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_R" />

@@ -39,6 +39,7 @@ ReplacedRewardsSentinel =
 ExocraftBlueprintCostMult = 7.5			--Put the same value used in the "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance.lua" file so the UI matches up with the actual cost
 
 RemoveEarlyRoamerReward = true			--false		Set true to remove the recipe for the Roamer from the rewards as soon as you meet Apollo's contact on a Space Station. Remaining options are a Base Computer Archive reward, an Exocraft Technician reward, or buying at the Anomaly
+RemoveLargePlanterReward = true			--false		Set true to make the Farmer NPC no longer teach you the recipe for the Large Hydroponic Tray when he teaches you the recipe for the regular Hydroponic Tray
 
 --Set which recipes for Storage Containers to remove from the reward the Overseer gives you in the base building mission chain, where he normally gives all 10 recipes
 RemoveContainerMission = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9", }		
@@ -442,6 +443,21 @@ for i = 1, #RemoveContainerMission do
 			{
 				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", "HAND_IN_OS4",	"Value",	ContainerID},
+				["REMOVE"] = "SECTION"
+			}
+end
+if RemoveLargePlanterReward then
+ChangesToMissionTable[#ChangesToMissionTable+1] =
+			{
+				["REPLACE_TYPE"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Value",	"PLANTERMEGA"},
+				["REMOVE"] = "SECTION"
+			}
+ChangesToMissionTable[#ChangesToMissionTable+1] =
+			{
+				["REPLACE_TYPE"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"ID",	"PLANTERMEGA"},
+				["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
 			}
 end
