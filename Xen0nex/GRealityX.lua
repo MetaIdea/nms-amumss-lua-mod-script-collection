@@ -33,16 +33,6 @@ SuitMainPrices = [[ <Property name="SuitUpgradePrices">
 	<Property value="161616160"  />
 	<Property value="161616160"  />
 	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
-	<Property value="161616160"  />
 	<Property value="1616161616"  />
   </Property>]]
 
@@ -73,6 +63,22 @@ SuitTechPrices = [[ <Property name="SuitTechOnlyUpgradePrices">
 	<Property value="5000000"  />
 	<Property value="7500000"  />
 	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="10000000"  />
+	<Property value="161616160"  />
+	<Property value="161616160"  />
+	<Property value="161616160"  />
+	<Property value="161616160"  />
+	<Property value="161616160"  />
+	<Property value="1616161616"  />
   </Property>]]
 
 --Deprecated as of NMS v4.0

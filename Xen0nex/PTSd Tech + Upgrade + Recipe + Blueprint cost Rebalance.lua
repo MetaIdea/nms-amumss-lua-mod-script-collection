@@ -34,15 +34,16 @@ ValuableCraftsMult	=				10			--Multiplier applied to default cost of 250 Nanites
 ExoCraftBuildingsMult	=			7.5			--Multiplier applied to default cost of 4, 8, or 10 Salvaged Data
 ExoCraftSummonBuildingsMult	=		2			--Multiplier applied to default cost of 12 Salvaged Data
 FarmingBlueprintsMult	=			8			--Multiplier applied to default cost of 3 Salvaged Data 
-LargePlanterBlueprintMult	=		3			--Multiplier applied to default cost of 10 Salvaged Data 
+LargePlanterBlueprintMult	=		0.5			--Multiplier applied to default cost of 10 Salvaged Data 
+BioDomeBlueprintMult	=			3			--Multiplier applied to default cost of 10 Salvaged Data 
 CookingAndLivestockMult	=			3			--Multiplier applied to default cost of 10 Salvaged Data
 SimpleMachineMult	=				5			--Multiplier applied to default cost of 1 Salvaged Data
 MachineMult	=						3			--Multiplier applied to default cost of 10 Salvaged Data	(Alternative Landing Pad is 1 Salvaged Data, though)
 AntimatterReactorMult	=			2.5			--Multiplier applied to default cost of 20 Salvaged Data
 StorageContainers012Mult	=		1			--Multiplier applied to default cost of 5 Salvaged Data for Containers 0, 1, & 2	(These are the only ones given freely by the base building mission in PTSd)
 StorageContainers345Mult	=		2			--Multiplier applied to default cost of 5 Salvaged Data for Containers 3, 4, & 5
-StorageContainers678Mult	=		4			--Multiplier applied to default cost of 5 Salvaged Data for Containers 6, 7, & 8
-StorageContainer9Mult	=			8			--Multiplier applied to default cost of 5 Salvaged Data for Container 9
+StorageContainers678Mult	=		3			--Multiplier applied to default cost of 5 Salvaged Data for Containers 6, 7, & 8
+StorageContainer9Mult	=			4			--Multiplier applied to default cost of 5 Salvaged Data for Container 9
 FabricatorsMult	=					10			--Multiplier applied to default cost of 1 Salvaged Data (These are the Barrel/Crate Fabricators that spawn items)
 
 FreighterDoubleCultivationRoomMult	=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
@@ -355,6 +356,13 @@ RecipeChanges	=
 	},
 	{
 		"PLANTERMEGA",			--10
+	}
+},
+{
+	{
+		BioDomeBlueprintMult
+	},
+	{
 		"BIOROOM"				--10
 	}
 },

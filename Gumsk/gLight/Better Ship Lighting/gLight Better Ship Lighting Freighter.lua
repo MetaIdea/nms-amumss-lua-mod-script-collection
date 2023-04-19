@@ -1,8 +1,12 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Freighter"
 BaseDescription = ""
-GameVersion = "422"
+GameVersion = "423"
 ModVersion = "a"
+
+--[[ Files Modified:
+MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN
+]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -58,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",30000},
+								{"Value",35000},
 							}
 						},
 					}

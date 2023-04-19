@@ -1,5 +1,5 @@
 ModName = "_Extra Savage Sentinels by ExosolarX"
-GameVersion = "4_20"
+GameVersion = "4_22"
 Description = "Increases the difficulty of Sentinels by changing aggression, firerate, range, sight distance, etc."
 
 --Multiplier to apply to the base health of all planetary Sentinels
@@ -17,6 +17,13 @@ function AddWaveSequence (Set)
             </Property>
           </Property>
         </Property>]]
+end
+
+function AddSpawnToWave (Spawn)
+    return
+[[<Property value="NMSString0x10.xml">
+              <Property name="Value" value="]]..Spawn..[[" />
+            </Property>]]
 end
 
 --Adds a new set of just a Sentinel Quad with nothing else
@@ -45,7 +52,218 @@ function AddSentinels (SentinelType, MinAmount, MaxAmount)
           <Property name="MaxAmount" value="]]..MaxAmount..[[" />
         </Property>]]
 end
---Possible SentinelTypes are: PatrolDrone	CombatDrone		MedicDrone	SummonerDrone	Quad	Mech	Walker
+--Possible SentinelTypes are: PatrolDrone	CombatDrone		MedicDrone	SummonerDrone	Quad	Mech	Walker	CorruptedDrone	SpiderQuad	SpiderQuadMini
+
+OneDroneThreeFourMinis = 
+[[<Property value="GcSentinelSpawnWave.xml">
+      <Property name="Id" value="1D_34MS" />
+      <Property name="Spawns">
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="CorruptedDrone" />
+          </Property>
+          <Property name="MinAmount" value="1" />
+          <Property name="MaxAmount" value="1" />
+        </Property>
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuadMini" />
+          </Property>
+          <Property name="MinAmount" value="3" />
+          <Property name="MaxAmount" value="4" />
+        </Property>
+      </Property>
+      <Property name="ReinforceAt" value="1" />
+    </Property>]]
+
+TwoThreeDronesThreeFourMinis = 
+[[<Property value="GcSentinelSpawnWave.xml">
+      <Property name="Id" value="23D_34MS" />
+      <Property name="Spawns">
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="CorruptedDrone" />
+          </Property>
+          <Property name="MinAmount" value="2" />
+          <Property name="MaxAmount" value="3" />
+        </Property>
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuadMini" />
+          </Property>
+          <Property name="MinAmount" value="3" />
+          <Property name="MaxAmount" value="4" />
+        </Property>
+      </Property>
+      <Property name="ReinforceAt" value="1" />
+    </Property>]]
+
+OneDroneOneSpiderThreeFourMinis = 
+[[<Property value="GcSentinelSpawnWave.xml">
+      <Property name="Id" value="1D_1S_34MS" />
+      <Property name="Spawns">
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="CorruptedDrone" />
+          </Property>
+          <Property name="MinAmount" value="1" />
+          <Property name="MaxAmount" value="1" />
+        </Property>
+		<Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuad" />
+          </Property>
+          <Property name="MinAmount" value="1" />
+          <Property name="MaxAmount" value="1" />
+        </Property>
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuadMini" />
+          </Property>
+          <Property name="MinAmount" value="3" />
+          <Property name="MaxAmount" value="4" />
+        </Property>
+      </Property>
+      <Property name="ReinforceAt" value="1" />
+    </Property>]]
+	
+TwoDronesOneSpiderFourFiveMinis = 
+[[<Property value="GcSentinelSpawnWave.xml">
+      <Property name="Id" value="2D_1S_45MS" />
+      <Property name="Spawns">
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="CorruptedDrone" />
+          </Property>
+          <Property name="MinAmount" value="2" />
+          <Property name="MaxAmount" value="2" />
+        </Property>
+		<Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuad" />
+          </Property>
+          <Property name="MinAmount" value="1" />
+          <Property name="MaxAmount" value="1" />
+        </Property>
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuadMini" />
+          </Property>
+          <Property name="MinAmount" value="4" />
+          <Property name="MaxAmount" value="5" />
+        </Property>
+      </Property>
+      <Property name="ReinforceAt" value="1" />
+    </Property>]]
+
+TwoThreeDronesTwoSpidersFourFiveMinis = 
+[[<Property value="GcSentinelSpawnWave.xml">
+      <Property name="Id" value="23D_2S_45MS" />
+      <Property name="Spawns">
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="CorruptedDrone" />
+          </Property>
+          <Property name="MinAmount" value="2" />
+          <Property name="MaxAmount" value="3" />
+        </Property>
+		<Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuad" />
+          </Property>
+          <Property name="MinAmount" value="2" />
+          <Property name="MaxAmount" value="2" />
+        </Property>
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuadMini" />
+          </Property>
+          <Property name="MinAmount" value="4" />
+          <Property name="MaxAmount" value="5" />
+        </Property>
+      </Property>
+      <Property name="ReinforceAt" value="2" />
+    </Property>]]
+
+ThreeFourDronesTwoSpidersFourFiveMinis = 
+[[<Property value="GcSentinelSpawnWave.xml">
+      <Property name="Id" value="34D_2S_45MS" />
+      <Property name="Spawns">
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="CorruptedDrone" />
+          </Property>
+          <Property name="MinAmount" value="3" />
+          <Property name="MaxAmount" value="4" />
+        </Property>
+		<Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuad" />
+          </Property>
+          <Property name="MinAmount" value="2" />
+          <Property name="MaxAmount" value="2" />
+        </Property>
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuadMini" />
+          </Property>
+          <Property name="MinAmount" value="4" />
+          <Property name="MaxAmount" value="5" />
+        </Property>
+      </Property>
+      <Property name="ReinforceAt" value="2" />
+    </Property>]]
+
+FourFiveDronesFiveSixMinis = 
+[[<Property value="GcSentinelSpawnWave.xml">
+      <Property name="Id" value="45D_56MS" />
+      <Property name="Spawns">
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="CorruptedDrone" />
+          </Property>
+          <Property name="MinAmount" value="4" />
+          <Property name="MaxAmount" value="5" />
+        </Property>
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuadMini" />
+          </Property>
+          <Property name="MinAmount" value="5" />
+          <Property name="MaxAmount" value="6" />
+        </Property>
+      </Property>
+      <Property name="ReinforceAt" value="1" />
+    </Property>]]
+
+FourFiveDronesThreeSpidersFiveSixMinis = 
+[[<Property value="GcSentinelSpawnWave.xml">
+      <Property name="Id" value="45D_3S_56MS" />
+      <Property name="Spawns">
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="CorruptedDrone" />
+          </Property>
+          <Property name="MinAmount" value="4" />
+          <Property name="MaxAmount" value="5" />
+        </Property>
+		<Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuad" />
+          </Property>
+          <Property name="MinAmount" value="3" />
+          <Property name="MaxAmount" value="3" />
+        </Property>
+        <Property value="GcSentinelSpawnData.xml">
+          <Property name="Type" value="GcSentinelTypes.xml">
+            <Property name="SentinelType" value="SpiderQuadMini" />
+          </Property>
+          <Property name="MinAmount" value="5" />
+          <Property name="MaxAmount" value="6" />
+        </Property>
+      </Property>
+      <Property name="ReinforceAt" value="2" />
+    </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -130,10 +348,51 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{	--adds the custom QUAD_SOLO set
+						--adds the various new spawn sets
+						{
 							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddQuadSoloSet
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = OneDroneThreeFourMinis
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = TwoThreeDronesThreeFourMinis
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = OneDroneOneSpiderThreeFourMinis
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = TwoDronesOneSpiderFourFiveMinis
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = TwoThreeDronesTwoSpidersFourFiveMinis
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = ThreeFourDronesTwoSpidersFourFiveMinis
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = FourFiveDronesFiveSixMinis
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = FourFiveDronesThreeSpidersFiveSixMinis
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4"},		--Wanted Level 4 spawns
@@ -148,6 +407,91 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddWaveSequence ("QUAD_SOLO")			--Should add a single Sentinel Quad spawn between the initial drones and the Mech
 						},]]
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_2_CR"},		--Wanted Level 2 Corrupt Planet spawns
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "1D_34MS"},						--"CORRUPT_MED"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_3_CR"},		--Wanted Level 3 Corrupt Planet spawns
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "23D_34MS"},						--"SPIDER_WAVE"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_3_CR",	"Value", "MINI_SPIDERS"},		--Wanted Level 3 Corrupt Planet spawns Wave 2
+							["REMOVE"]  = "SECTION",		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_3_CR"},		--Wanted Level 3 Corrupt Planet spawns
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
+							["SECTION_ACTIVE"] = {-2,},							--Wave 2
+							["VALUE_MATCH"] = "CORRUPT_MED",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "1D_1S_34MS"},					--"CORRUPT_MED"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_CR"},		--Wanted Level 4 Corrupt Planet spawns
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "2D_1S_45MS"},						--"SPIDER_GANG"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_CR",	"Value", "SPIDER_WAVE"},		--Wanted Level 4 Corrupt Planet spawns Wave 2
+							["REMOVE"]  = "SECTION",		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_CR"},		--Wanted Level 4 Corrupt Planet spawns
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
+							["SECTION_ACTIVE"] = {-2,},							--Wave 2
+							["VALUE_MATCH"] = "SPIDERS",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "23D_2S_45MS"},						--"SPIDERS"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR",	"Value", "SPIDER_WAVE"},		--Wanted Level 5 Corrupt Planet spawns
+							["REMOVE"]  = "SECTION",		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR"},		--Wanted Level 5 Corrupt Planet spawns
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
+							["VALUE_MATCH"] = "SPIDERS",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "34D_2S_45MS"},						--"SPIDERS"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR"},		--Wanted Level 5 Corrupt Planet spawns
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
+							["SECTION_ACTIVE"] = {-2,},							--Wave 2
+							["VALUE_MATCH"] = "CORRUPT_MED",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "45D_56MS"},						--"CORRUPT_MED"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR"},		--Wanted Level 5 Corrupt Planet spawns
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
+							["SECTION_ACTIVE"] = {-3,},							--Wave 3
+							["VALUE_MATCH"] = "SPIDER_GANG",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "45D_3S_56MS"},						--"SPIDER_GANG"
+							}		
+						},
 						{--For some reason this one had trouble finding the section normally?
 							--["PRECEDING_FIRST"] = "TRUE",
 							--["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
@@ -192,7 +536,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxAmount", 8},							--6
 							}
 						},
-						--[[{	--Adding non-Corrupted Drones to the Sentinel Defense assaults seems to make a regular Wanted Level event occur at the same time, so you will have escalting waves of regular sentinels in addition to the corrupted Drones
+						--[[{	--As of NMS v3.99, Adding non-Corrupted Drones to the Sentinel Defense assaults seems to make a regular Wanted Level event occur at the same time, so you will have escalting waves of regular sentinels in addition to the corrupted Drones
 							--["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
 							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE"},		--Settlement defense
@@ -418,13 +762,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0},							--0
-								{"FireInterval", 0.33},								--0.33
-								{"FireTimeMin", 4.5},								--4.5
-								{"FireTimeMax", 7},									--7
-								{"NumShotsMin", 2},									--2
-								{"NumShotsMax", 4},									--4
+								{"FireInterval", 0.25},								--0.33
+								{"FireTimeMin", 5.5},								--4.5
+								{"FireTimeMax", 9},									--7
+								{"NumShotsMin", 4},									--2
+								{"NumShotsMax", 8},									--4
 								{"MinRange", 8},									--8
-								{"MaxRange", 50}									--40
+								{"MaxRange", 60}									--40
 								
 							}
 						},
@@ -432,14 +776,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","QUADGRENADE"},				--Probably weapon of the new arachnid quads?
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"NumProjectiles", 2},								--1
 								{"ProjectileSpread", 0},							--0
 								{"FireInterval", 1},								--1
-								{"FireTimeMin", 2},									--2
-								{"FireTimeMax", 5},									--5
-								{"NumShotsMin", 2},									--2
-								{"NumShotsMax", 4},									--4
+								{"FireTimeMin", 3},									--2
+								{"FireTimeMax", 7},									--5
+								{"NumShotsMin", 3},									--2
+								{"NumShotsMax", 6},									--4
 								{"MinRange", 17},									--17
-								{"MaxRange", 50},									--40
+								{"MaxRange", 60},									--40
 								{"ExplosionRadius", 2.8}							--2.2
 								
 							}
@@ -450,8 +795,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"ProjectileSpread", 0.07},							--0.05
 								{"FireInterval", 0.03},								--0.04
-								{"FireTimeMin", 3},									--3
-								{"FireTimeMax", 6},									--6
+								{"FireTimeMin", 4},									--3
+								{"FireTimeMax", 8},									--6
 								{"NumShotsMin", 15},								--10
 								{"NumShotsMax", 45},								--30
 								{"MinRange", 0},									--0
@@ -461,12 +806,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{	--Also added by Xen0nex
 							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTSMG"},			--Probably weapon of the Corrupted Drones
+							["INTEGER_TO_FLOAT"] = "FORCE",	
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0},							--0
 								{"FireRate", 0.04},									--0.05
-								{"FireTimeMin", 1.5},								--1.5
-								{"FireTimeMax", 3},									--3
+								{"FireTimeMin", 2},									--1.5
+								{"FireTimeMax", 4.5},								--3
 								{"NumShotsMin", 12},								--8
 								{"NumShotsMax", 30},								--20
 								{"Range", 40}										--40	Multiplied by the change to GcDroneWeaponData.xml above
@@ -474,7 +820,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTGRENADE"},			--Probably weapon of the Corrupted Drones
+							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTGRENADE"},		--Probably weapon of the Corrupted Drones
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0},							--0
@@ -484,7 +830,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"NumShotsMin", 1},									--1
 								{"NumShotsMax", 3},									--3
 								{"Range", 120},										--120	NOT Multiplied by the change to GcDroneWeaponData.xml above
-								{"ExplosionRadius", 2.8}							--2.2
+								{"ExplosionRadius", 2.2}							--2.2
 								
 							}
 						},
@@ -492,12 +838,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTSHOTGUN"},			--Probably weapon of the Corrupted Drones
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"NumProjectiles", 12},								--10
 								{"ProjectileSpread", 0.07},							--0.06
-								{"FireRate", 0.2},									--0.2
-								{"FireTimeMin", 4.5},								--4.5
-								{"FireTimeMax", 7},									--7
+								{"FireRate", 0.18},									--0.2
+								{"FireTimeMin", 5},									--4.5
+								{"FireTimeMax", 8},									--7
 								{"NumShotsMin", 3},									--2
-								{"NumShotsMax", 5},									--4
+								{"NumShotsMax", 6},									--4
 								{"Range", 30}										--30	Multiplied by the change to GcDroneWeaponData.xml above
 								
 							}
@@ -508,7 +855,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0.07},							--0.05
-								{"FireRate", 0.04},									--0.04
+								{"FireRate", 0.03},									--0.04
 								{"FireTimeMin", 4.5},								--4.5
 								{"FireTimeMax", 7},									--7
 								{"NumShotsMin", 45},								--30
@@ -621,7 +968,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"BaseHealth",	math.floor(SentHealth*800),},					--800
 								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*1400),},
-								{"RepairTime","1",},											--3
+								{"RepairTime","1",},											--3			Seems to be how long it takes to be repaired from 1 HP back to full health
 								{"RepairThreshold","95",},										--95		Possibly how low the health needs to get before a repair drone will start repairing it?
 							}
 						},
@@ -631,7 +978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*1450),},					--1450
-								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*2100),},
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*2100),},	--2100
 								{"RepairTime","2",},											--3
 								{"RepairThreshold","95",},										--95
 							}
@@ -665,8 +1012,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"BaseHealth",	math.floor(SentHealth*2800),},					--2800		pre-4.20 was 3200
 								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*6800),},	--6800		pre-4.20 was 4500
-								{"RepairTime","6",},											--9			pre-4.20 was 3
-								{"RepairThreshold","60",},										--60		pre-4.20 was 95
+								{"RepairTime","10",},											--9			pre-4.20 was 3
+								{"RepairThreshold","45",},										--60		pre-4.20 was 95
 							}
 						},
 						{						
@@ -675,7 +1022,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*4200),},					--4200
-								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*8500),},
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*8500),},	--8500
 								{"RepairTime","4",},											--5
 								{"RepairThreshold","95",},										--95
 							}
@@ -686,8 +1033,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*6000),},					--6000
-								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*20000),},
-								{"RepairTime","6",},											--7
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*20000),},	--20000
+								{"RepairTime","7",},											--7
 								{"RepairThreshold","50",},										--50
 							}
 						},
@@ -697,9 +1044,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*1050),},					--1050
-								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*3700),},
-								{"RepairTime","1.5",},											--1.5
-								{"RepairThreshold","95",},										--95
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*3700),},	--3700
+								{"RepairTime","2",},											--1.5
+								{"RepairThreshold","45",},										--95
 							}
 						},
 						{						
@@ -708,7 +1055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*7500),},					--7500
-								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*12000),},
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*12000),},	--12000
 								{"RepairTime","6",},											--7
 								{"RepairThreshold","95",},										--95
 							}
@@ -719,7 +1066,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*16000),},					--16000
-								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*25000),},
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*25000),},	--25000
 								{"RepairTime","6",},											--7
 								{"RepairThreshold","95",},										--95
 							}
@@ -730,7 +1077,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*2000),},					--2000
-								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*3000),},
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*3000),},	--3000
 								{"RepairTime","7",},											--10
 								{"RepairThreshold","95",},										--95
 							}
@@ -767,3 +1114,4 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 	}	
 }
+

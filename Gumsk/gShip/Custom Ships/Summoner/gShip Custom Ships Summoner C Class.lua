@@ -5,6 +5,12 @@ BaseDescription = "Summons new ship models from gShip Custom Ships"
 GameVersion = "422"
 ModVersion = "a"
 
+--[[Files Modified:
+MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN
+METADATA/UI/EMOTEMENU.MBIN
+METADATA/REALITY/TABLES/REWARDTABLE.MBIN
+]]--
+
 ShipInfo = 	{
 				{"GOLDENVECTOR",		"Golden Vector",			"1"},
 				{"SERENITY",			"Serenity",					"3"},
@@ -113,10 +119,10 @@ for i = 1,#ShipInfo do
 					</Property>
 				  </Property>
 				  <Property name="ShipLayout" value="GcInventoryLayout.xml">
-					<Property name="Slots" value="60" />
+					<Property name="Slots" value="20" />
 					<Property name="Seed" value="GcSeed.xml">
 					  <Property name="Seed" value="1" />
-					  <Property name="UseSeedValue" value="False" />
+					  <Property name="UseSeedValue" value="True" />
 					</Property>
 					<Property name="Level" value="1" />
 				  </Property>
@@ -126,7 +132,7 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="LAUNCHER_SPEC" />
+						<Property name="Id" value="LAUNCHER" />
 						<Property name="Amount" value="200" />
 						<Property name="MaxAmount" value="200" />
 						<Property name="DamageFactor" value="0" />
@@ -140,37 +146,9 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="SHIPJUMP_SPEC" />
+						<Property name="Id" value="SHIPJUMP" />
 						<Property name="Amount" value="200" />
 						<Property name="MaxAmount" value="200" />
-						<Property name="DamageFactor" value="0" />
-						<Property name="FullyInstalled" value="True" />
-						<Property name="Index" value="GcInventoryIndex.xml">
-						  <Property name="X" value="-1" />
-						  <Property name="Y" value="-1" />
-						</Property>
-					  </Property>
-					  <Property value="GcInventoryElement.xml">
-						<Property name="Type" value="GcInventoryType.xml">
-						  <Property name="InventoryType" value="Technology" />
-						</Property>
-						<Property name="Id" value="PHOTONIX_CORE" />
-						<Property name="Amount" value="-1" />
-						<Property name="MaxAmount" value="100" />
-						<Property name="DamageFactor" value="0" />
-						<Property name="FullyInstalled" value="True" />
-						<Property name="Index" value="GcInventoryIndex.xml">
-						  <Property name="X" value="-1" />
-						  <Property name="Y" value="-1" />
-						</Property>
-					  </Property>
-					  <Property value="GcInventoryElement.xml">
-						<Property name="Type" value="GcInventoryType.xml">
-						  <Property name="InventoryType" value="Technology" />
-						</Property>
-						<Property name="Id" value="SOLAR_SAIL" />
-						<Property name="Amount" value="-1" />
-						<Property name="MaxAmount" value="100" />
 						<Property name="DamageFactor" value="0" />
 						<Property name="FullyInstalled" value="True" />
 						<Property name="Index" value="GcInventoryIndex.xml">
@@ -196,7 +174,7 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="HYPERDRIVE_SPEC" />
+						<Property name="Id" value="HYPERDRIVE" />
 						<Property name="Amount" value="120" />
 						<Property name="MaxAmount" value="120" />
 						<Property name="DamageFactor" value="0" />
@@ -210,50 +188,8 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="HDRIVEBOOST3" />
-						<Property name="Amount" value="-1" />
-						<Property name="MaxAmount" value="100" />
-						<Property name="DamageFactor" value="0" />
-						<Property name="FullyInstalled" value="True" />
-						<Property name="Index" value="GcInventoryIndex.xml">
-						  <Property name="X" value="-1" />
-						  <Property name="Y" value="-1" />
-						</Property>
-					  </Property>
-					  <Property value="GcInventoryElement.xml">
-						<Property name="Type" value="GcInventoryType.xml">
-						  <Property name="InventoryType" value="Technology" />
-						</Property>
-						<Property name="Id" value="SHIPSHOTGUN" />
+						<Property name="Id" value="SHIPGUN1" />
 						<Property name="Amount" value="100" />
-						<Property name="MaxAmount" value="100" />
-						<Property name="DamageFactor" value="0" />
-						<Property name="FullyInstalled" value="True" />
-						<Property name="Index" value="GcInventoryIndex.xml">
-						  <Property name="X" value="-1" />
-						  <Property name="Y" value="-1" />
-						</Property>
-					  </Property>
-					  <Property value="GcInventoryElement.xml">
-						<Property name="Type" value="GcInventoryType.xml">
-						  <Property name="InventoryType" value="Technology" />
-						</Property>
-						<Property name="Id" value="T_SHIP_GREEN" />
-						<Property name="Amount" value="-1" />
-						<Property name="MaxAmount" value="100" />
-						<Property name="DamageFactor" value="0" />
-						<Property name="FullyInstalled" value="True" />
-						<Property name="Index" value="GcInventoryIndex.xml">
-						  <Property name="X" value="-1" />
-						  <Property name="Y" value="-1" />
-						</Property>
-					  </Property>
-					  <Property value="GcInventoryElement.xml">
-						<Property name="Type" value="GcInventoryType.xml">
-						  <Property name="InventoryType" value="Technology" />
-						</Property>
-						<Property name="Id" value="SHIPSCAN_ECON" />
-						<Property name="Amount" value="-1" />
 						<Property name="MaxAmount" value="100" />
 						<Property name="DamageFactor" value="0" />
 						<Property name="FullyInstalled" value="True" />
@@ -265,7 +201,7 @@ for i = 1,#ShipInfo do
 					</Property>
 					<Property name="ValidSlotIndices" />
 					<Property name="Class" value="GcInventoryClass.xml">
-					  <Property name="InventoryClass" value="S" />
+					  <Property name="InventoryClass" value="C" />
 					</Property>
 					<Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
                       <Property name="InventoryStackSizeGroup" value="Default" />
