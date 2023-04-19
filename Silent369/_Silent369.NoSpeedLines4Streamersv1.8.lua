@@ -1,8 +1,8 @@
 local modfilename = "NoSpeedLines4Streamers"
 local lua_author  = "Silent"
-local lua_version = "v1.7"
+local lua_version = "v1.8"
 local mod_author  = "Silent369"
-local nms_version = "4.13"
+local nms_version = "4.22"
 local description = [[
 No speed lines. No ship halo effect at cruise/boost/pulse speeds in space. No Space Dust / Plasma.
 ]]
@@ -74,30 +74,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                     --|----------------------------------------------------------------------------------------
-                    --| Speed Tunnel Removal
-                    --|----------------------------------------------------------------------------------------
-
-                --{
-                --    ["MBIN_FILE_SOURCE"] =
-                --    {
-				--        "MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA_INTERIOR.SCENE.MBIN",
-				--        "MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITB_INTERIOR.SCENE.MBIN",
-				--        "MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPITCOMMON_INTERIOR.SCENE.MBIN",
-				--        "MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/INTERIOR/CANOPYA_INTERIOR.SCENE.MBIN",
-				--        "MODELS/COMMON/SPACECRAFT/S-CLASS/INTERIORS/CANOPYA_INTERIOR.SCENE.MBIN",
-				--        "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR.SCENE.MBIN",
-				--        "MODELS/COMMON/SPACECRAFT/SHUTTLE/INTERIORS/CANOPYA_INTERIOR/CANOPYA_INTERIOR.SCENE.MBIN"
-                --    },
-                --    ["EXML_CHANGE_TABLE"] =
-                --    {
-                --        {
-                --            ["SPECIAL_KEY_WORDS"]   = {"Name", "REFSpeedTunnel"},
-                --            ["REMOVE"]              = "SECTION"
-                --        },
-                --    }
-                --},
-                
-                    --|----------------------------------------------------------------------------------------
                     --| Speed Lines Scene File
                     --|----------------------------------------------------------------------------------------
 
@@ -156,9 +132,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                     --|----------------------------------------------------------------------------------------
-                    --| Space Plasma Particles
+                    --| Space Plasma / Particles
                     --|----------------------------------------------------------------------------------------
 
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACE\PLASMA\PLASMA.MATERIAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "AnimatedSmokeMat"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Class", ""},
+                            }
+
+                        }
+                    }
+                },
                 {
                     ["MBIN_FILE_SOURCE"] = {"MODELS/EFFECTS/HEAVYAIR/SPACE/SPACEPLASMA.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =

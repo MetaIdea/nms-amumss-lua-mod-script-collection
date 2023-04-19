@@ -1,8 +1,8 @@
-local modfilename = "AlmostPerfectFlightLite"
+local modfilename = "AlmostPerfectFlightFull"
 local lua_author  = "Silent"
-local lua_version = "v2.2"
+local lua_version = "v2.3"
 local mod_author  = "Silent369"
-local nms_version = "4.1.x"
+local nms_version = "4.21"
 local description = [[
 Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics.
 With optional settings to make flight much easier (a bit cheaty, hence optional).
@@ -21,12 +21,16 @@ local _warpSpeedMulti = true
 
 --|=======================================================================================--
 
+--Cheaty
+local _cheatMult = 5
+local _cheatTime = 0.1
+
 --Boosts
-local _boostMult = 1.25
-local _boostMxSp = 2
-local _max_speed = 1.75
-local _thrstMult = 1.25
-local _warpSMult = 3
+local _boostMult = 2
+local _boostMxSp = 5
+local _max_speed = 3.5
+local _thrstMult = 2.5
+local _warpSMult = 4.2
 
 --Handling
 local _brakeMult = 0.8
@@ -43,7 +47,7 @@ local _turnBMult = 0.5
 
 --Settings
 local _padTurnSp = 0.85
-local _fuelMulti = 0.25 --fuel cost on launch
+local _fuelMulti = 0.35 --fuel cost saving on launch
 
 --NoBoost/MiniWarp/Stopping
 local _Restricts = 0.15 --relax noboost/miniwarp
@@ -61,13 +65,14 @@ TableData = TableData or {}
 if _cheatySettings then
 table.insert(TableData,
                         {
+                            ["MATH_OPERATION"]      = "*",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"BoostChargeRate",                               "5"}, --Original "2.5"
-                                {"ShieldRechargeRate",                           "12"}, --Original "6"
-                                {"LaunchThrustersRegenTimePeriod",              "360"}, --Original "1440"
-                                {"MiniWarpFuelTime",                              "1"}, --Original "0.5"
+                                {"BoostChargeRate",                        _cheatMult}, --Original "2.5"
+                                {"ShieldRechargeRate",                     _cheatMult}, --Original "6"
+                                {"LaunchThrustersRegenTimePeriod",         _cheatTime}, --Original "1440"
+                                {"MiniWarpFuelTime",                       _cheatMult}, --Original "0.5"
                             }
                         })
 end
@@ -101,6 +106,122 @@ table.insert(TableData,
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"MiniWarpSpeed",   _warpSMult}, --(30000 x _warpSMult)
+                            }
+                        })
+end
+
+--| Flight ControlHover (Space Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHover", "GcPlayerSpaceshipControlData.xml", "SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight ControlHover (Planet Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHover", "GcPlayerSpaceshipControlData.xml", "PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control (Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHover", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight ControlHover (Atmos Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHover", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
                             }
                         })
 end
@@ -455,6 +576,20 @@ end
 
 --| Ship Hover
 --|=======================================================================================--
+if _shipHoverSpeed then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHover", "GcPlayerSpaceshipControlData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MinSpeed",        _min_speed},
+                                {"ExitLeaveAngle",        "10"},
+                            }
+                        })
+end
+
 if _shipHoverSpeed then
 table.insert(TableData,
                         {
