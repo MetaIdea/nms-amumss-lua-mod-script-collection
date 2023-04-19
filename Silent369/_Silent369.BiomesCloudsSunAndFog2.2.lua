@@ -1,8 +1,8 @@
 local modfilename = "Biomes.CloudsSunAndFog"
 local lua_author  = "Silent"
-local lua_version = "2.1"
+local lua_version = "2.2"
 local mod_author  = "Silent369"
-local nms_version = "4.12"
+local nms_version = "4.21"
 local description = [[
 Realtime (NMS time) Day Length (Optional), Better Detailed Clouds, Slower Cloud Animation,
 Sun Properties and Planet Fog Adjustments. LOD Adjustments, Optional Lens Dirt Removal.
@@ -105,7 +105,7 @@ _StratosphereHeightP     = 5400 --Original "5200"
 --EaseInOutSine
 --EaseInOutQuad
 
-_Curve                   = "EaseInOutSine" --Original "Linear"
+_Curve                   = "SmootherStep" --Original "Linear"
 
 --Wind Offset
 WindOffsetX              = 0.1  --Original "0.5"
@@ -217,9 +217,9 @@ _SpacePlanetFogStrength =
 _LODAdjust =
 [[
       <Property name="LODAdjust">
-        <Property value="3" />
-        <Property value="3" />
-        <Property value="3" />
+        <Property value="1" />
+        <Property value="2" />
+        <Property value="2" />
         <Property value="3" />
         <Property value="3" />
       </Property>

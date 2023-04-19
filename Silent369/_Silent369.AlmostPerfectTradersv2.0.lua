@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "v1.9"
+local lua_version = "v2.0"
 local mod_author  = "Silent369"
-local nms_version = "4.1"
+local nms_version = "4.21"
 local description = [[
 Modifies AI Ships Outpost / Planetary Archive / Station Approach and Landing Settings.
 
@@ -152,11 +152,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ApproachSpeed",               _sApproachSpeed}, --Original "150"
                                 {"PlayerAutoLandRange",         _sAutoLandRange}, --Original "300"
                                 {"CircleRadius",                         "1900"}, --Original "2000"
-                                {"TakeOffHeight",                           "2"}, --Original "3"
+                                {"TakeOffHeight",                           "3"}, --Original "3"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
                                 {"TakeOffAlignTime",                      "0.6"}, --Original "1"
                                 {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
-                                {"PostTakeOffExtraPlayerSpeed",           "100"}, --Original "60"
+                                {"PostTakeOffExtraPlayerSpeed",           "150"}, --Original "60"
                             }
                         },
                     }
@@ -177,12 +177,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ApproachRange",               _dApproachRange}, --Original "100"
                                 {"ApproachSpeed",               _dApproachSpeed}, --Original "100"
                                 {"PlayerAutoLandRange",         _dAutoLandRange}, --Original "300"
-                                {"CircleRadius",                          "190"}, --Original "200"
-                                {"TakeOffHeight",                           "2"}, --Original "10"
+                                {"CircleRadius",                          "150"}, --Original "200"
+                                {"TakeOffHeight",                           "3"}, --Original "10"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
                                 {"TakeOffAlignTime",                      "0.6"}, --Original "1"
                                 {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
-                                {"PostTakeOffExtraPlayerSpeed",           "100"}, --Original "60"
+                                {"PostTakeOffExtraPlayerSpeed",           "150"}, --Original "60"
                             }
                         },
                     }
@@ -232,7 +232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinHeight",                            "14.2"}, --Original "15"
+                                {"MinHeight",                            "14.3"}, --Original "15"
                             }
                         },
                         {
@@ -241,7 +241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinHeight",                            "14.2"}, --Original "15"
+                                {"MinHeight",                            "14.3"}, --Original "15"
                             }
                         },
                             ---------------------------------------------------------------------------------------
@@ -264,6 +264,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"OutpostToLandingDistance",               "40"}, --Original "50"
                                 {"LandingTipAngle",                        "15"}, --Original "25"
                                 {"LandingLongTipAngle",                     "7"}, --Original "10"
+                            }
+                        },
+                            ---------------------------------------------------------------------------------------
+                            --Ship Trail Scale Range Reduction
+                            ---------------------------------------------------------------------------------------
+                        {
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"TrailScaleRange",                     "10000"}, --Original "20000"
+                            }
+                        },
+                            ---------------------------------------------------------------------------------------
+                            --Stop Trade Route Flicker
+                            ---------------------------------------------------------------------------------------
+                        {
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"TradeRouteFlickerAmp",                    "0"}, --Original "0.01"
                             }
                         },
                     }

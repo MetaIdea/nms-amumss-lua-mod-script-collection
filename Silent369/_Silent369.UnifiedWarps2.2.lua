@@ -1,9 +1,13 @@
-local modfilename = "UnifiedWarps"
+local modfilename = "_UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "v2.1"
+local lua_version = "v2.2"
 local mod_author  = "Silent369"
-local nms_version = "4.12"
-local description = "Unifies Blackhole/Portal/Ship/Teleporter Warps"
+local nms_version = "4.21"
+local description = [[
+Unifies Blackhole/Portal/Ship/Teleporter Warps
+]]
+
+--|----------------------------------------------------------------------------------------
 
 --MODIFIES:
 --GCSIMULATIONGLOBALS.GLOBAL.MBIN
@@ -13,36 +17,23 @@ local description = "Unifies Blackhole/Portal/Ship/Teleporter Warps"
 --MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN
 
-_FOV        = "360"
-_FALLOFF    = "linear"
-_FALLOFF_R  = "5.000000"
+--|----------------------------------------------------------------------------------------
+
+_FOV        = "360.000000"
+_FALLOFF    = "quadratic"
+_FALLOFF_R  = "2.500000"
 _INTENSITY  = "000100.000000"
-_COL_R      = "1.000000"
-_COL_G      = "0.555000"
+_COL_R      = "0.850000"
+_COL_G      = "0.255000"
 _COL_B      = "1.000000"
 
-_WarpTunnelScale = 250 --200
+_WarpTunnelScale = 180 --140
 
-_TkMaterialFlags =
-[[
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F23_TRANSLUCENT" />
-    </Property>
-]]
-
-_TkPostProcessF50 =
-[[
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F50_DISABLE_POSTPROCESS" />
-    </Property>
-]]
+--|----------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]        = "_"..modfilename..lua_version..".pak",
+    ["MOD_FILENAME"]        = modfilename..lua_version..".pak",
     ["LUA_AUTHOR"]          = lua_author,
     ["MOD_AUTHOR"]          = mod_author,
     ["NMS_VERSION"]         = nms_version,
@@ -52,19 +43,100 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
             ["MBIN_CHANGE_TABLE"]   =
             {
-                {   --WARP TUNNEL EFFECT
+                {
                     ["MBIN_FILE_SOURCE"]    = {"MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"]   =
                     {
+                        --|----------------------------------------------------------------------------------------
+                        --| Make the changes first, then remove the sections we don't need!
+                        --|----------------------------------------------------------------------------------------
+                        
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "FOV"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Value",           _FOV},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "FALLOFF"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_MATCH"]         = "linear",
+                            ["VALUE_MATCH_OPTIONS"] = "~=",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Value",           _FALLOFF},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "FALLOFF_RATE"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Value",           _FALLOFF_R},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "INTENSITY"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Value",           _INTENSITY},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "COL_R"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Value",           _COL_R},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "COL_G"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Value",           _COL_G},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "COL_B"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Value",           _COL_B},
+                            }
+                        },
 
                         --|----------------------------------------------------------------------------------------
-                        --| Remove Unecessary Sections
+                        --| LightArms modification to fill the screen better
                         --|----------------------------------------------------------------------------------------
 
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "AnimatedLights"},
-                            ["REMOVE"]              = "SECTION",
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "LightArms", "Transform", "TkTransformData.xml"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"TransZ",           "-13"}, --Original "0"
+                            }
                         },
+
+                        --|----------------------------------------------------------------------------------------
+                        --| Remove the sections we don't need. Sorry HG, sometimes less IS more!
+                        --|----------------------------------------------------------------------------------------
+
+                        --{
+                        --    ["SPECIAL_KEY_WORDS"]   = {"Name", "AnimatedLights"},
+                        --    ["REMOVE"]              = "SECTION",
+                        --},
                         {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "scrollingwave9"},
                             ["REMOVE"]              = "SECTION",
@@ -94,6 +166,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"]              = "SECTION"
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "pointLight5"},
+                            ["REMOVE"]              = "SECTION"
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "LightStreaks"},
                             ["REMOVE"]              = "SECTION"
                         },
@@ -113,68 +189,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "LightLargeStreaks"},
                             ["REMOVE"]              = "SECTION"
                         },
+                    }
+                },
 
                         --|----------------------------------------------------------------------------------------
-                        --| SETTINGS / LIGHT COLOURS
+                        --| Change ENGGLOWCAPMAT
                         --|----------------------------------------------------------------------------------------
 
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "FOV"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value",           _FOV},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "FALLOFF"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value",           _FALLOFF},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "FALLOFF_RATE"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value",           _FALLOFF_R},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "INTENSITY"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value",           _INTENSITY},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "COL_R"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value",           _COL_R},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "COL_G"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value",           _COL_G},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "COL_B"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value",           _COL_B},
-                            }
-                        },
+                {
+                    ["MBIN_FILE_SOURCE"]    = {
+                        "MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN",
                     },
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x",              "0"}, --Original "1"
+                                {"y",              "0"}, --Original "40"
+                                {"z",              "0"}, --Original "0"
+                                {"t",              "0"}, --Original "0.04"
+                            }
+                        },
+                    }
                 },
 
                         --|----------------------------------------------------------------------------------------
@@ -192,13 +230,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Class",           "Translucent"}, --Original "GlowTranslucent"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gDiffuseMap"},
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Map", "TEXTURES/EFFECTS/WARP/LIGHTARMS.DDS"},
                             }
                         },
                     }
@@ -230,46 +261,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-
                         --|----------------------------------------------------------------------------------------
-                        --| End Glow Cap Material
-                        --|----------------------------------------------------------------------------------------
-
-                {
-                    ["MBIN_FILE_SOURCE"]    = {"MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN",},
-                    ["EXML_CHANGE_TABLE"]   =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Class",       "GlowTranslucent"}, --Original "Glow"
-                                {"TransparencyLayerID",    "-100"}, --waaay back in the z order
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"MaterialFlag", "_F10_NORECEIVESHADOW"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
-                            ["ADD"]                 = _TkMaterialFlags,
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"MaterialFlag", "_F29_VBCOLOUR"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
-                            ["ADD"]                 = _TkPostProcessF50,
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gCustomParams01Vec4"},
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"t",               "0.03"}, --Original "0.04"
-                            }
-                        },
-                    }
-                },
-
-                        --|----------------------------------------------------------------------------------------
-                        --| Create New Light Material (Thanks to LazMonk for the tip!)
+                        --| Create New Light Material
                         --| Since the default LIGHT.MATERIAL.MBIN is used throughout the game in many places we
-                        --| need to create a new material, edit it and insert back in the scene for our purposes.
+                        --| need to create a new material, edit it and insert it back in the scene for our purpose.
                         --|----------------------------------------------------------------------------------------
 
                 {   --Create the new Light Material
@@ -282,15 +277,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
-                {   --Edit the new Light Material
+                        --|----------------------------------------------------------------------------------------
+                        --| Edit the new Light Material
+                        --|----------------------------------------------------------------------------------------
+                {
                     ["MBIN_FILE_SOURCE"]    = {"MATERIALS\LIGHT_WARPTUNNEL.MATERIAL.MBIN",},
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Class",               "Opaque"}, --Original "Opaque"
-                                {"TransparencyLayerID",   "-100"}, --waaay back in the z order
+                                {"Class",           "Translucent"}, --Original "Opaque"
+                                {"TransparencyLayerID",       "0"}, --Original "0"
                             }
                         },
                         {
@@ -300,9 +298,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Anisotropy",      "0"},
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gLightCookiesMap"},
+                            ["REMOVE"]              = "SECTION"
+                        },
                     }
                 },
-                {   --Insert the new Light Material
+
+                        --|----------------------------------------------------------------------------------------
+                        --| Insert the new Light Material
+                        --|----------------------------------------------------------------------------------------
+
+                {
                     ["MBIN_FILE_SOURCE"]    = {"MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN",},
                     ["EXML_CHANGE_TABLE"]   =
                     {
@@ -311,14 +318,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Value",       "MATERIALS/LIGHT_WARPTUNNEL.MATERIAL.MBIN"},
+                                {"Value", "MATERIALS/LIGHT_WARPTUNNEL.MATERIAL.MBIN"},
                             }
                         },
                     }
                 },
 
                         --|----------------------------------------------------------------------------------------
-                        --| Merge All Warp scenes into one
+                        --| Merge All Warp scenes into one (optionally, activate new type b space stations)
                         --|----------------------------------------------------------------------------------------
 
                 {
@@ -326,11 +333,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {""},
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"WarpTunnelScale",                                    _WarpTunnelScale}, --Original "200"
+                                {"WarpTunnelScale",         _WarpTunnelScale}, --Original "140"
                                 {"BlackHoleTunnelFile",     "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE.SCENE.MBIN"
                                 {"TeleportTunnelFile",      "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPPORTAL.SCENE.MBIN"
                                 {"PortalTunnelFile",        "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPLARGEPORTAL.SCENE.MBIN""
@@ -338,7 +344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         }
                     }
-                },
+                }
             }
         },
     }
