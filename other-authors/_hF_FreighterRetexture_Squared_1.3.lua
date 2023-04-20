@@ -9,17 +9,17 @@ TileLightDiffuse = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/TILINGLIGHTS.1X
 ContBeamDiffuse = "TEXTURES/SPACE/SPACESTATION/ENTRANCEBEAMX2.DDS" -- RED CONTAINER BEAM DIFFUSE
 SpotlightBase = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/SPOTLIGHT.BASEX.DDS" -- RED SPOTLIGHT
 
-Version = "1.25"
-GameVersion = "4.20"
+Version = "1.3"
+GameVersion = "4.23"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_FreighterRetexture_"..Version..".pak",
+["MOD_FILENAME"]	= "_hF_FreighterRetexture_Squared_"..Version..".pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
 ["LUA_AUTHOR"]		= "Lowkie, Forked by hemis FEAR",
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Overhaul of Exterior Freighter Textures / Retexture",
+["MOD_DESCRIPTION"]	= "Squared Edition - Freighter Retexture",
 ["MODIFICATIONS"]	= 
 	{
 		{
