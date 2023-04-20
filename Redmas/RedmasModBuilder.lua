@@ -12,11 +12,9 @@
 -- ------------------You can configure the overhaul from the following VARs-------------------------------- --
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
--- Main Features enabler -- ----------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "REDMAS_SPAWNER_FOR_CONSTRUCTS_BY_MSSP_PRESET"
+INIT = "REDMAS_SANDWORM_OVERHAUL_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -904,7 +902,7 @@ FANTASY_PRESET ={
 
 
 CUSTOM_PRESET ={
-	["MODNAME"] = "UTOPIA-VISUAL-REVAMP-V17",
+	["MODNAME"] = "UTOPIA-VISUAL-REVAMP-V18",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
@@ -1655,7 +1653,7 @@ DARKSPACE_COLORS_PRESET ={
 }
 
 INSTANT_MINING_PRESET ={
-	["MODNAME"] = "UTOPIA-GAMEPLAY-REVAMP-V17",
+	["MODNAME"] = "UTOPIA-GAMEPLAY-REVAMP-V18",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -3712,7 +3710,7 @@ REDMAS_NEW_GAME_BONUSES_PRESET ={
 }
 
 REDMAS_SANDWORM_OVERHAUL_PRESET ={
-	["MODNAME"] = "UTOPIA-GENERATION-REVAMP-V17",
+	["MODNAME"] = "UTOPIA-GENERATION-REVAMP-V18",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -19169,6 +19167,16 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					},
 					{
 						["REPLACE_TYPE"] = "ALL",
+						["SPECIAL_KEY_WORDS"] = {"Group","FURNITURE"},
+						["SECTION_UP"] = 2,
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnSpaceBase","True"},
+							{"BuildableOnFreighter","True"}
+						}
+					},					
+					{
+						["REPLACE_TYPE"] = "ALL",
 						["SPECIAL_KEY_WORDS"] = {"Group","BASIC_S"},
 						["SECTION_UP"] = 2,
 						["VALUE_CHANGE_TABLE"] 	=
@@ -19190,6 +19198,16 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					{
 						["REPLACE_TYPE"] = "ALL",
 						["SPECIAL_KEY_WORDS"] = {"Group","BASIC_T"},
+						["SECTION_UP"] = 2,
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnSpaceBase","True"},
+							{"BuildableOnFreighter","True"}
+						}
+					},
+					{
+						["REPLACE_TYPE"] = "ALL",
+						["SPECIAL_KEY_WORDS"] = {"Group","BASIC_LEGACY"},
 						["SECTION_UP"] = 2,
 						["VALUE_CHANGE_TABLE"] 	=
 						{
@@ -19287,6 +19305,84 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							{"BuildableOnFreighter","True"}
 						}
 					},
+					-- more objects for planet bases
+					{
+						["REPLACE_TYPE"] = "ALL",
+						["SPECIAL_KEY_WORDS"] = {"Group","FURNITURE"},
+						["SECTION_UP"] = 2,
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnPlanetBase","True"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","WALL"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnPlanetBase","True"},
+							{"CanScale","True"}
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","WALLDOOR"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnPlanetBase","True"},
+							{"CanScale","True"}
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","WALLTALL"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnPlanetBase","True"},
+							{"CanScale","True"}
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","WALLCURVED"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnPlanetBase","True"},
+							{"CanScale","True"}
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","ROOMFLOOR"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnPlanetBase","True"},
+							{"CanScale","True"}
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","WALL"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnPlanetBase","True"},
+							{"CanScale","True"}
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","WALL"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnPlanetBase","True"},
+							{"CanScale","True"}
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","WALL"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"BuildableOnPlanetBase","True"},
+							{"CanScale","True"}
+						}
+					},
+
+
+
+					------------------------------------------------
 						-- Buildable on planets objects list ( related to the customisable settlements feature, and for new gameplay mechanics )
 						-- /!\ never put walls, doors, roofs, and other things related to the build mission in the story progression - That would break it /!\
 						{
@@ -20638,6 +20734,7 @@ end
 -- GENERATION OVERHAUL
 if GENERATION_OVERHAUL == "ON"
 then
+copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
 
 	val_TERRAIN_HEIGHT_MIN = tonumber(TERRAIN_HEIGHT_MAX) - 50
 	TERRAIN_HEIGHT_MIN = tostring (val_TERRAIN_HEIGHT_MIN)
@@ -22454,7 +22551,7 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTAL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALDRONE.SCENE.MBIN]],
@@ -22542,19 +22639,19 @@ then
 				["MAXSIZE"] = "5"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE03.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -22814,31 +22911,31 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -23021,19 +23118,19 @@ then
 				["MAXSIZE"] = "3"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE03.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -27459,29 +27556,29 @@ then
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "14"
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MANGROVEFULL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "14"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MANGROVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "34"
+				["MAXSIZE"] = "14"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
@@ -32347,6 +32444,29 @@ LUSHGRASSLIST =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\SMALLOAK1.SCENE.EXML]],
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\SMALLOAK1.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE01.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE01.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE02.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE02.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE03.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE03.SCENE.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
@@ -42304,13 +42424,14 @@ end
 		MULTIPLAYER_MODE
 	)
 	-- New parts for Freighters
-
+--[=[
 	copyEXML
 	(
 		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
 		[[INDUSTRIAL\GANTRYBCAPBRIDGEA.SCENE.EXML]],
 		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGEA.SCENE.EXML]]
 	)
+	--]=]
 	copyEXML
 	(
 		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
@@ -42564,14 +42685,14 @@ end
 						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"FrameEnd",	"166"},
+							{"FrameEnd",	"131"},
 						}
 					},
 					{
 						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"FrameStart",	"15"},
+							{"FrameStart",	"50"},
 						}
 					}
 				}
@@ -42870,7 +42991,7 @@ if INIT == "PLAYER_GAMEPLAY_REVISION_PRESET"
 then
 	JETPACKMAXBONUS = "100.2"
 else
-	JETPACKMAXBONUS = "24.2"
+	JETPACKMAXBONUS = "54.2"
 end
 
 	addFeature

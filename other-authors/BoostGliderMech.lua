@@ -56,20 +56,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlybyRange",							"50"},	--Fractal "120" Land closer During Battle please
 							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "MechFirstPersonCam",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"VertRotationMax",				"18"},	-- Fractal "0" Aim cursor Range of Motion in Cab
-								{"VertRotationMin",				"10"},	-- Fractal "-20" Positive interger to lower default Reticle centering Horizon
-								--{"VertRotationOffset",			"15"},	-- Fractal "0" ?
-								{"VertRotationSpeed",			"0.5"},	-- Fractal "1" Testing Slop movement in Controller when aiming and mining.
-								{"CenterStartTime",				"0.005"},	-- Fractal "0.2" Slower Center Only in Boosted Landing
-								{"CenterBlendTime",				"0.1"},	-- Fractal "0.5" Slower Enguage Only in Boosed Landing
-								{"LookStickLimitAngle",			"25"},	-- Fractal "20" Cursors range of motion within AI Cab Aim and Peek
-								{"VertStartLookingDown",		"True"},	--Fractal "Fasle" ? 
-							}
 						}
 					}
 				}

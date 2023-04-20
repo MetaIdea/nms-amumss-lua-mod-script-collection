@@ -1,6 +1,6 @@
-ModName = "PTSD Other Difficulty Settings"
-GameVersion = "420"
-Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
+ModName = "No Mans Land Adjusted Predefined Difficulty Settings" --based on Xen0nex work in PtsD, just modified by youngneil1 to max out difficulty Survival and Permadeath preset by default  
+GameVersion = "422"
+Description = "Fully maxed out difficulty options preset for Survial and permadeath by default "
 
 
 
@@ -316,4 +316,3 @@ for i = 1, #Presets do
 				}
 			}
 end
-

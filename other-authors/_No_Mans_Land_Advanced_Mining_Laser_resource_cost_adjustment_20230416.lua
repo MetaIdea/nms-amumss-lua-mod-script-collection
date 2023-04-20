@@ -1,4 +1,3 @@
-
 Author = "Youngneil1"		
 ModName = "No Mans Land"
 ModNameSub = "Advanced Mining Laser resource coist adjustment"
@@ -35,6 +34,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}
 },
 }}
-
 
 

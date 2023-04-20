@@ -4,7 +4,7 @@ ModNameSub = "No own teleporters"
 BaseDescription = "Disable building teleporters "
 GameVersion = "420"
 ModVersion = "a"
-FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
+FileSource1 = "METADATA\\REALITY\\TABLES\\BASEBUILDINGOBJECTSTABLE.MBIN"
 
 
 

@@ -1,4 +1,3 @@
-
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "No Mans Land Slow Terrain Manipulator", 
@@ -21,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							--["PRECEDING_KEY_WORDS"] = {"EnableTeleporters"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"SubtractEditFrequency",	"12.0"}			
+								{"SubtractEditFrequency",	"8.0"}			
 							}
 						}
 					}
