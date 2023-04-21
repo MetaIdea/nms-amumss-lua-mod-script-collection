@@ -1,6 +1,6 @@
-ModName = "No Mans Land Launchfuel production cost" --originally authored by Xen0nex for PtsD; modfiied by youngneil1
-GameVersion = "4_20"
-Description = "Increase Launchfuel production cost in Di-Hydrogen by 40x"
+ModName = "No Mans Land ION Battery production 50 Cobalt" --originally authored by Xen0nex for PtsD; modfiied by youngneil1
+GameVersion = "4_23"
+Description = "Increases ION Battery (POWERCELL) production in cobalt (CAVE1) by 5x times, to 50"
 
 
 
@@ -21,15 +21,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						
-						--yn1: Makes produing Launchfuel require 40x more launchsub (Di-Hydrogen)
+						
 						{
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"NameLower", "LAUNCHFUEL_NAME_L"},				--Normal Ship Launch Thruster
-							["PRECEDING_KEY_WORDS"] = {"Requirements"},
+							["SPECIAL_KEY_WORDS"] = {"NameLower", "POWERCELL_NAME_L", "ID", "CAVE1"},				--Normal Ship Launch Thruster
+							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Amount",	"1600"}			--40	
+								{"Amount",	"50"}			--10	
 							}
 						},
 					}

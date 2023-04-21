@@ -11,6 +11,12 @@ TEXT_TO_ADD =
         <Property value="NMSString0x10.xml">					
 			<Property name="Value" value="LAUNCHFUEL" />
 		</Property>
+		<Property value="NMSString0x10.xml">					
+			<Property name="Value" value="JELLY" />
+		</Property>
+		<Property value="NMSString0x10.xml">					
+			<Property name="Value" value="POWERCELL2" />
+		</Property>
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -36,3 +42,4 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}
 },
 }}
+

@@ -44,7 +44,16 @@ RecipeChanges =
 			{"ROCKETSUB",		50000},									--Requires Di-Hydrogen				x5
 			
 		}
-	}
+	},
+	--yn1: increase cost for refining an ION Battery by 2 times
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_261",	1,					90},				--Makes ION Battery (POWERCELL) 				x1	in	90 time
+		{
+			{"LAND1",		20},									--Requires Ferrite Dust				x10
+			{"ASTEROID1",		20},										--Requires Silver		x10
+			{"CATALYST1",		20}									--Requires Sodium 			x10
+		}
+	},
 }
 
 
@@ -58,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
-		["MBIN_FILE_SOURCE"] 	= {"METADATA\\REALITY\\TABLES\\NMS_REALITY_GCRECIPETABLE.MBIN"},
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			
@@ -106,5 +115,6 @@ for i = 1, #RecipeChanges do
 				}
 			}
 end
+
 
 

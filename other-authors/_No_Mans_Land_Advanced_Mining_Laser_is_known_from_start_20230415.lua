@@ -1,3 +1,4 @@
+
 Author = "Youngneil1"		
 ModName = "No Mans Land"
 ModNameSub = "Advanced Mining is known"
@@ -36,5 +37,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}
 },
 }}
+
 
 
