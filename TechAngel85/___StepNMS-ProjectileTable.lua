@@ -8,11 +8,11 @@ FileSource01 = "METADATA\PROJECTILES\PROJECTILETABLE.MBIN"
 
 --##### Variables #####
 --## Step ##
-ShipGunRadius=30		-- The distance the projectile will travel. | 15 | 2043
-ShipShotgunRadius=60	-- | 30 | 2170
-ShipMinigunRadius=2.25	-- | 0.75 | 2297
-ShipPlasmaGunRadius=60	-- | 30 | 2424
-ShipRocketRadius=60		-- | 25 | 3303
+ShipGunRadius=45		-- The distance the projectile will travel. | 15 | 2043
+ShipShotgunRadius=90	-- | 30 | 2170
+ShipMinigunRadius=3.25	-- | 0.75 | 2297
+ShipPlasmaGunRadius=90	-- | 30 | 2424
+ShipRocketRadius=120		-- | 25 | 3303
 SquadDefaultDamage=250	-- The damage each squad member will do | 40 | 4134
 
 
