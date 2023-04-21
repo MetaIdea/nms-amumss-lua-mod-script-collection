@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "NoMansStroll-1.4Walk5Run+SOSNoRecoil3xJetBoost3xUnderWater [Fractal].pak",
+["MOD_FILENAME"]    = "NoMansStroll-1.4Walk5Run+SOSNoRecoil3xJetBoost3xUnderWater [Interceptor].pak",
 ["MOD_AUTHOR"]      = "Dr Kaii",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.15",
