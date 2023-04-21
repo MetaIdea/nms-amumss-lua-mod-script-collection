@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "NoMansStroll1.4Walk5Run [Fractal].pak",
+["MOD_FILENAME"]    = "NoMansStroll1.4Walk5Run [Interceptor].pak",
 ["MOD_AUTHOR"]      = "Dr Kaii",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.15",
