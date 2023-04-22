@@ -52,6 +52,39 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"Legality",	"Illegal"}			
 							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "CAVE1"},				
+							["PRECEDING_KEY_WORDS"] = {"LEGAL"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Legality",	"Illegal"}			
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "CAVE2"},				
+							["PRECEDING_KEY_WORDS"] = {"LEGAL"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Legality",	"Illegal"}			
+							}
+						},
+						{
+						
+							["SPECIAL_KEY_WORDS"] = {"ID", "CATALYST1"},				
+							["PRECEDING_KEY_WORDS"] = {"LEGAL"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Legality",	"Illegal"}			
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "CATALYST2"},				
+							["PRECEDING_KEY_WORDS"] = {"LEGAL"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Legality",	"Illegal"}			
+							}
 						}
 					}
 				}	

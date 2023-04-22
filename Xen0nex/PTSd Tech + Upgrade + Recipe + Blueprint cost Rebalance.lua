@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_22"
+GameVersion = "4_23"
 --Currently balancing around Survival Mode
 
 --Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
@@ -39,6 +39,7 @@ BioDomeBlueprintMult	=			3			--Multiplier applied to default cost of 10 Salvaged
 CookingAndLivestockMult	=			3			--Multiplier applied to default cost of 10 Salvaged Data
 SimpleMachineMult	=				5			--Multiplier applied to default cost of 1 Salvaged Data
 MachineMult	=						3			--Multiplier applied to default cost of 10 Salvaged Data	(Alternative Landing Pad is 1 Salvaged Data, though)
+MedRefinerMult	=					1.5			--Multiplier applied to default cost of 10 Salvaged Data
 AntimatterReactorMult	=			2.5			--Multiplier applied to default cost of 20 Salvaged Data
 StorageContainers012Mult	=		1			--Multiplier applied to default cost of 5 Salvaged Data for Containers 0, 1, & 2	(These are the only ones given freely by the base building mission in PTSd)
 StorageContainers345Mult	=		2			--Multiplier applied to default cost of 5 Salvaged Data for Containers 3, 4, & 5
@@ -94,10 +95,19 @@ TechAdjustments =
 		"UT_QUICKWARP",	0.2				--Emergency Warp						240 Nanites
 	},
 	{
-		"UT_LAUNCHCHARGE",	0.3			--Launch System Recharger
+		"UT_LAUNCHCHARGE",	0.4			--Launch System Recharger				460 Nanites
+	},
+	{
+		"EXO_RECHARGE",	1.5				--Icarus Fuel System					120 Nanites
+	},
+	{
+		"SUB_RECHARGE",	0.3				--Osmotic Generator						350 Nanites		(doesn't actually recharge, just gives a discount)
 	},
 	{
 		"SUB_LASER",	0.5				--Tethys Beam
+	},
+	{
+		"SUB_BINOCS",	18				--High-Power Sonar 						10 Nanites
 	},
 	{
 		"SUIT_REFINER",	0.5				--Personal Refiner
@@ -109,58 +119,210 @@ TechAdjustments =
 		"UT_WATERENERGY",	0.65		--Oxygen Rerouter						240 Nanites
 	},
 	{
-		"SUB_RECHARGE",	0.3				--Osmotic Generator
-	},
-	{
 		"UT_SURVEY",	0.5				--Survey Device
 	},
 	{
-		"UT_HOT",	0.4					--Coolant Network				160
+		"UT_HOT",	0.4					--Coolant Network						160 Nanites
 	},
 	{
-		"UT_COLD",	0.4					--Thermic Layer					160
+		"UT_COLD",	0.4					--Thermic Layer							160 Nanites
 	},
 	{
-		"UT_TOX",	0.4					--Toxic Suppressor				160
+		"UT_TOX",	0.4					--Toxic Suppressor						160 Nanites
 	},
 	{
-		"UT_RAD",	0.4					--Radiation Deflector			160
+		"UT_RAD",	0.4					--Radiation Deflector					160 Nanites
 	},
 	{
-		"UT_PROTECT",	0.67			--Shield Lattice				120		Cost reduced since it now is given freely in Base Computer Archive mission chain
+		"UT_PROTECT",	0.67			--Shield Lattice						120 Nanites		Cost reduced since it now is given freely in Base Computer Archive mission chain
 	},
 	{
 		"STEALTH",	1.5					--Cloaking Device 
 	},
 	{
-		"SUB_BINOCS",	12				--High-Power Sonar 				10
+		"HDRIVEBOOST1",	1.5				--Cadmium Drive							80 Nanites
 	},
 	{
-		"HDRIVEBOOST1",	1.5				--Cadmium Drive					80
+		"HDRIVEBOOST2",	1.5				--Emeril Drive							120 Nanites
 	},
 	{
-		"HDRIVEBOOST2",	1.5				--Emeril Drive					120
-	},
-	{
-		"HDRIVEBOOST3",	1.5				--Indium Drive					200
+		"HDRIVEBOOST3",	1.5				--Indium Drive							200 Nanites
 	},
 	{
 		"STUN_GREN",	2				--Paralysis Mortar
 	},
 	{
-		"UT_ROCKETS",	3.5				--Large Rocket Tubes			50
+		"UT_ROCKETS",	3.5				--Large Rocket Tubes					50 Nanites
 	},
 	{
-		"CARGOSHIELD",	0.5				--Cargo Scan Deflector			240
+		"CARGOSHIELD",	0.5				--Cargo Scan Deflector					240 Nanites
 	},
 	{
-		"UT_SHIPDRIFT",	0.3				--Flight Assist Override		460
+		"UT_SHIPDRIFT",	0.3				--Flight Assist Override				460 Nanites
 	},
 	{
-		"SUIT_ROCKET",	1.5				--Trade Rocket					90
+		"SUIT_ROCKET",	1.5				--Trade Rocket							90 Nanites
 	},
 	{
-		"F_TELEPORT",	3.2				--Matter Beam					5 Salvaged Frigate Modules			(Not affected by TechCostMult)
+		"F_TELEPORT",	3.2				--Matter Beam							5 Salvaged Frigate Modules			(Not affected by TechCostMult)
+	},
+}
+
+--Changes how likely certain techs are to be found pre-installed on "wild" starships & multi-tools
+	--Options for Rarity are "Always", "VeryCommon", "Common", "Normal", "Rare", "VeryRare", "Impossible"
+TechRarityChanges =
+{
+--Starship techs
+	{
+		"UT_LAUNCHCHARGE",		"Impossible",				--Launch Auto-Charger	"VeryRare"
+	},
+	{
+		"HDRIVEBOOST1",			"Impossible",				--Cadmium Drive			"VeryRare"
+	},
+	{
+		"HDRIVEBOOST2",			"Impossible",				--Emeril Drive			"VeryRare"
+	},
+	{
+		"UT_ROCKETS",			"Impossible",				--Large Rocket Tubes	"Rare"
+	},
+	{
+		"SHIPSCAN_ECON",		"Rare",						--Economy Scanner		"Normal"
+	},
+	{
+		"SHIPSCAN_COMBAT",		"Rare",						--Conflict Scanner		"Normal"
+	},
+	{
+		"F_HDRIVEBOOST1",		"Impossible",				--Warp Core Resonator	"Rare"
+	},
+	{
+		"F_HDRIVEBOOST2",		"Impossible",				--Plasmatic Warp Injector	"VeryRare"
+	},
+--Multi-Tool techs
+	{
+		"UT_SURVEY",			"Impossible",				--Survey Device			"Common"
+	},
+	{
+		"UT_MINER",				"Impossible",				--Optical Drill			"Common"
+	},
+	{
+		"STUN_GREN",			"Impossible",				--Paralysis Mortar		"Common"
+	},
+	{
+		"STRONGLASER",			"VeryRare",					--Advanced Mining Laser	"Common"
+	},
+	{
+		"GRENADE",				"Rare",						--Plasma Launcher		"Common"
+	},
+	{
+		"TERRAIN_GREN",			"Rare",						--Geology Cannon		"Common"
+	},
+	{
+		"RAILGUN",				"Rare",						--Blaze Javelin			"Common"
+	},
+	{
+		"SHOTGUN",				"Rare",						--Scatter Blaster		"Common"
+	},
+	{
+		"SMG",					"Rare",						--Pulse Spitter			"Common"
+	},
+	{
+		"UT_STUNDMG",			"Impossible",				--Voltaic Amplifier		"Rare"
+	},
+	{
+		"T_SCAN",				"Normal",					--Procedural Scan upgrade	"Common"
+	},
+}
+
+--Adds various items as new components for certain techs
+AddItems =
+{		--Tech ID				Item ID			# of Items	Item Type
+	{	--Cadmium Drive			
+		"HDRIVEBOOST1",			"ATLAS_SEED_1",		1,		"Product",
+	},
+	{	--Emeril Drive			
+		"HDRIVEBOOST2",			"ATLAS_SEED_3",		1,		"Product",
+	},
+	{	--Indium Drive			
+		"HDRIVEBOOST2",			"ATLAS_SEED_5",		1,		"Product",
+	},
+	{	--Large Rocket Tubes			
+		"UT_ROCKETS",			"BLUE2",			50,		"Substance",
+	},
+	{	--Haz-Mat Gauntlet			
+		"POWERGLOVE",			"RED2",				50,		"Substance",
+	},
+	{	--Advanced Exocraft Laser 
+		"VEHICLE_LASER1",		"RED2",				50,		"Substance",
+	},
+	{	--Precision Minotaur Laser 
+		"MECH_LASER1",			"RED2",				50,		"Substance",
+	},
+}
+--Replaces an existing component for certain techs with various items instead
+ReplaceItems =
+{		--Tech ID				Item ID			# of Items	Item Type		Replaced Item
+	{	--Launch Auto-Charger 
+		"UT_LAUNCHCHARGE",		"ATLAS_SEED_6",		1,		"Product",		"ANTIMATTER",
+	},
+	{	--Warp Core Resonator 
+		"F_HDRIVEBOOST1",		"ATLAS_SEED_3",		1,		"Product",		"AM_HOUSING",
+	},
+	{	--Plasmatic Warp Injector 
+		"F_HDRIVEBOOST2",		"ATLAS_SEED_5",		1,		"Product",		"AM_HOUSING",
+	},
+	{	--Reality De-Threader 
+		"F_HDRIVEBOOST3",		"ATLAS_SEED_7",		1,		"Product",		"AM_HOUSING",
+	},
+	{	--Matter Beam 
+		"F_TELEPORT",			"ATLAS_SEED_10",	16,		"Product",		"ANTIMATTER",
+	},
+	{	--Superior Translator 
+		"UT_TRANSLATE2",		"RED2",				50,		"Substance",	"STELLAR2",
+	},
+	{	--Advanced Translator 
+		"UT_TRANSLATE3",		"GREEN2",			50,		"Substance",	"ASTEROID3",
+	},
+	{	--Survey Device 
+		"UT_SURVEY",			"BLUE2",			100,	"Substance",	"COMPUTER",
+	},
+	{	--Optical Drill 
+		"UT_MINER",				"GREEN2",			100,	"Substance",	"COMPUTER",
+	},
+	{	--Voltaic Amplifier 
+		"UT_STUNDMG",			"BLUE2",			50,		"Substance",	"POWERCELL",
+	},
+	{	--Paralysis Mortar 
+		"STUN_GREN",			"ATLAS_SEED_4",		1,		"Product",		"JELLY",
+	},
+	{	--Trade Rocket 
+		"SUIT_ROCKET",			"ATLAS_SEED_4",		4,		"Product",		"LAUNCHSUB",
+	},
+	{	--Icarus Fuel System 
+		"EXO_RECHARGE",			"BLUE2",			50,		"Substance",	"MICROCHIP",
+	},
+	{	--Radar Amplifier 
+		"VEHICLE_SCAN1",		"ATLAS_SEED_2",		1,		"Product",		"POWERCELL",
+	},
+	{	--Radar Power Resonator 
+		"VEHICLE_SCAN2",		"ATLAS_SEED_4",		1,		"Product",		"POWERCELL",
+	},
+	{	--Megawatt Heater 
+		"EXO_PROT_COLD",		"BLUE2",			50,		"Substance",	"RADIO1",
+	},
+	{	--Thermal Buffer 
+		"EXO_PROT_HOT",			"BLUE2",			50,		"Substance",	"CARBON_SEAL",
+	},
+	{	--Neutron Shielding 
+		"EXO_PROT_RAD",			"BLUE2",			50,		"Substance",	"CAVE2",
+	},
+	{	--Air Filtration Unit 
+		"EXO_PROT_TOX",			"BLUE2",			50,		"Substance",	"NANOTUBES",
+	},
+	{	--High-Power Sonar 
+		"SUB_BINOCS",			"BLUE2",			50,		"Substance",	"LAND1",
+	},
+	{	--Minotaur Radar Array 
+		"MECH_SCAN",			"BLUE2",			75,		"Substance",	"STELLAR2",
 	},
 }
 
@@ -170,7 +332,7 @@ ORHermSeal = 1							--0 Hermetic Seal
 ORIonBatt = 3							--0 Ion Batteries
 
 --New recipe for installing Matter Beam in freighter
-MatterHeart = 16						--Heart of the Sun		(5 Antimatter in vanilla)
+--MatterHeart = 16						--Heart of the Sun		(5 Antimatter in vanilla)
 MatterBulk = 1							--Cargo Bulkhead		(3 Magnet in vanilla)
 MatterAug = 1							--Storage Augmentation	(10 Wiring Loom in vanilla)
 
@@ -220,8 +382,6 @@ MinotaurBoreChargeCost = 0.5			--			Multiplier to apply to the cost of rechargin
 --Changes how much substances it costs to refill the Biofuel Reactor for a set amount of time (the max size of the fuel tank is controlled in "gBase Items BasicX.lua")
 BiofuelRefillCostMult = 2					--1			In vanilla it takes 50 Carbon / 17 Cond. Carbon / 25 Oxygen for 25 hours worth of charge, so a "2" here means it would take 100 Carbon / 34 Cond. Carbon / 50 Oxygen to fill it for 25 hours worth of charge
 
---Changes one of the ingredients for installing the Trade Rocket
-RocketDarkMatter = 4					--Dark Matter		(90 Di-Hydrogen in vanilla)
 --Changes the cost of using & recharging the Trade Rocket (fuel usage altered in PTSD Black Hole Distance + Ship Scrapping Items + Misc.lua)
 RocketChargeAmount = 50					--50	The "tank size" of how much "charge"/"fuel" it can hold
 RocketChargeCost = 8					--Multiplier to apply to the cost of recharging the Trade Rocket. E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
@@ -391,7 +551,6 @@ RecipeChanges	=
 		MachineMult
 	},
 	{
-		"BUILD_REFINER2",		--10	(Medium Refiner)
 		"BUILD_REFINER3",		--10	(Large Refiner)
 		"SHIPSUMMON",			
 		--"BUILDTERMINAL",		--10?	Galactic Trade Terminal
@@ -400,6 +559,14 @@ RecipeChanges	=
 		"U_EXTRACTOR_S",		--10	(Mineral Extractor)
 		"U_GASEXTRACTOR",		--10	(Gas Extractor)
 		"U_GENERATOR_S"			--10	(Electromagnetic Generator)
+	}
+},
+{
+	{
+		MedRefinerMult
+	},
+	{
+		"BUILD_REFINER2",		--10	(Medium Refiner)
 	}
 },
 {
@@ -1012,14 +1179,14 @@ function Invert (value)
     1/value
 end
 
-function AddedProductCost (ProductID, ProductAmount)
+function AddedItemCost (ItemCostID, ItemCostAmount, ItemCostType)
     return
 [[<Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="]]..ProductID..[[" />
+          <Property name="ID" value="]]..ItemCostID..[[" />
           <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Product" />
+            <Property name="InventoryType" value="]]..ItemCostType..[[" />
           </Property>
-          <Property name="Amount" value="]]..ProductAmount..[[" />
+          <Property name="Amount" value="]]..ItemCostAmount..[[" />
         </Property>]]
 end
 
@@ -1071,6 +1238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Amount",	OROxygen},
 							}
 						},
+						--[[
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "", 
@@ -1082,6 +1250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ID",	"ATLAS_SEED_10"},
 							}
 						},
+						]]
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "", 
@@ -1256,13 +1425,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UT_ENERGY"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["ADD"] = AddedProductCost ("CARBON_SEAL", ORHermSeal),
+							["ADD"] = AddedItemCost ("CARBON_SEAL", ORHermSeal, "Product"),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UT_ENERGY"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["ADD"] = AddedProductCost ("POWERCELL", ORIonBatt),
+							["ADD"] = AddedItemCost ("POWERCELL", ORIonBatt, "Product"),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
@@ -1327,27 +1496,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ChargeMultiplier",	Invert (BiofuelRefillCostMult)},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUIT_ROCKET",	"ID", "LAUNCHSUB"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Amount",	RocketDarkMatter},
-								{"ID",	"ATLAS_SEED_4"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] 		= "",
-							["MATH_OPERATION"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUIT_ROCKET",		"ID", "ATLAS_SEED_4"},
-							["VALUE_MATCH"] 	= "Substance",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"InventoryType", "Product"}
 							}
 						},
 						{
@@ -1528,6 +1676,54 @@ for i = 1, #TechAdjustments do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"FragmentCost", Multiplier}
+				}
+			}
+end
+for i = 1, #TechRarityChanges do
+	local TechIDNum = TechRarityChanges[i][1]
+	local TechRarity = TechRarityChanges[i][2]
+		
+			ChangesToTechTable[#ChangesToTechTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID",TechIDNum,	"Rarity", "GcTechnologyRarity.xml"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"TechnologyRarity", TechRarity}
+				}
+			}
+end
+for i = 1, #AddItems do
+	local TechIDNum = AddItems[i][1]
+	local AddItemID = AddItems[i][2]
+	local AddItemAmount = AddItems[i][3]
+	local AddItemType = AddItems[i][4]
+		
+			ChangesToTechTable[#ChangesToTechTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID",TechIDNum},
+				["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+				["ADD"] = AddedItemCost (AddItemID, AddItemAmount, AddItemType),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			}
+end
+for i = 1, #ReplaceItems do
+	local TechIDNum = ReplaceItems[i][1]
+	local AddItemID = ReplaceItems[i][2]
+	local AddItemAmount = ReplaceItems[i][3]
+	local AddItemType = ReplaceItems[i][4]
+	local OldCompID = ReplaceItems[i][5]
+		
+			ChangesToTechTable[#ChangesToTechTable+1] =
+			{
+				["PRECEDING_KEY_WORDS"] = "",
+				["MATH_OPERATION"] 		= "", 
+				["REPLACE_TYPE"] 		= "",	 
+				["SPECIAL_KEY_WORDS"] = {"ID", TechIDNum,	"ID", OldCompID},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Amount",	AddItemAmount},
+					{"ID",	AddItemID},
+					{"InventoryType", AddItemType}
 				}
 			}
 end

@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 ModName = 'PTSd Starship And Living Ship Tech + Speed Changes'
 ModAuthor = 'Xen0nex and lMonk'		--Edited by Xen0nex
-Version = '4.22'
+Version = '4.23'
 local desc = [[
   Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
@@ -47,6 +47,9 @@ TrailBonus = 10											--1.01
 
 --Removes all Maneuverability stats from the Vesper Sail tech so it no longer provides Maneuverability adjacency/supercharge bonuses
 RemoveVesperManeuver = true								--false
+
+--Set to true to remove the Auto-Recharging effect for Living Ship S-Class Launcher upgrade modules (Living SHips now have a dedicated tech for that)
+RemoveLivingAutoCharge = true							--false
 
 --Changes to using items to recharge starship tech
 ShipLaunchRechargeMult = 2								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
@@ -1031,6 +1034,14 @@ end
 
 local ChangesToProcTech = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
 
+if RemoveLivingAutoCharge then
+ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "UA_LAUN4",	"StatsType", "Ship_Launcher_AutoCharge"},
+				["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			}
+end
 for i = 1, #ShipPulseMods do
 	local ModID = ShipPulseMods[i]
 

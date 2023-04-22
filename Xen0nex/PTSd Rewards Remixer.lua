@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "4_22"
+GameVersion = "4_23"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
@@ -17,6 +17,11 @@ MemFragInvBulkChance =					20						--0		Relative chance weight to receive Freigh
 MemFragProcChanceMult =					4						--Multiplier to apply to the relative chance weight for the ~25 proc tech options in tech memory fragments (as opposed to the ~44 regular tech options)
 MemFragProcLauncherChanceMult =			0.4						--Multiplier to apply to the relative chance weight for Launcher proc tech, base of 300 (Most other proc tech have ~100 for their chance weight, with a few hazard/weapon ones having 15~25 instead)
 MemFragOutlierTechChance =				200						--500	Relative chance weight for certain regular techs in the tech memory fragment option pool, which normally have ~5x as much chance as others to be received (Specifically, Neural Stimulator, Advanced Mining Laser, Optical Drill, Launch Auto-Charger)
+
+--Replacers for the relative chance weighting for getting certain techs / upgrades when opening Psychonic Eggs (all 6 kinds of procedural upgrdaes have chance weighting = 50)
+PsychonicWormhole =						250						--500	"Wormhole Brain" Conflict/Economy Scanner equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
+PsychonicChloroplast =					30						--500	"Chloroplast Membrane" Launcher Autocharger equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
+PsychonicNeural =						250						--500	"Neural Shielding" Cargo Scan Deflector equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
 
 --Changes how many Nanites you receive for choosing "Extract Nanites" at a Manufacturing Facility
 FactoryMin = 							300						--90 Nanites
@@ -366,7 +371,7 @@ SpaceStationMissionLootChanges =
 			{"PRODFUEL2",				"PRODFUEL2",			10,	15,		0.5},	--5,	15,		1		Life Support Gel
 			{"SHIPCHARGE",				"SHIPCHARGE",			8,	14,		1},		--5,	5,		1		Starshield Battery
 			{"EYEBALL",					"EYEBALL",				3,	5,		1},		--3,	5,		1		Hypnotic Eye
-			{"WALKER_PROD",				"WALKER_PROD",			1,	1,		0.5},	--1,	1,		0.5		Walker Brain
+			{"WALKER_PROD",				"MECH_PROD",			1,	1,		0.5},	--1,	1,		0.5		Walker Brain	(Hardframe Engine)
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			5,	8,		0.5},	--3,	5,		1		NipNip Buds
 			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		5,	8,		1},		--5,	5,		1		Storm Crystal
 			{"FIENDCORE",				"FIENDCORE",			5,	8,		1},		--5,	5,		1		Larval Core
@@ -443,7 +448,7 @@ SpaceStationMissionLootChanges =
 			{"FOOD_STEW_M_CH",			"FOOD_STEW_M_CH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 36000
 			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		1,	1,		0.0},	--1,	1,		0.2		Food worth 54000
 			{"FOOD_PIE_CRAB",			"FOOD_PIE_CRAB",		1,	1,		0.0},	--1,	1,		0.2		Food worth 40000
-			{"FOOD_DNUT_MEAT",			"FOOD_DNUT_MEAT",		1,	1,		0.0},	--1,	1,		0.2		Food worth 65000
+			{"FOOD_DNUT_MEAT",			"MECH_PROD",			1,	2,		1},		--1,	1,		0.2		Food worth 65000	(Hardframe Engine)
 			{"FOOD_DNUT_AJAM",			"FREI_INV_TOKEN",		1,	1,		1},		--1,	1,		0.2		Food worth 70000		(Freighter Bulkhead)
 			{"REACTION1",				"REACTION1",			5,	5,		0},		--5,	5,		3		Thermic Condensate
 			{"REACTION2",				"REACTION2",			5,	5,		0},		--5,	5,		3		Enriched Carbon
@@ -498,7 +503,7 @@ SpaceStationMissionLootChanges =
 			{"FOOD_STEW_M_CH",			"FOOD_STEW_M_CH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 36000
 			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		1,	1,		0.0},	--1,	1,		0.2		Food worth 54000
 			{"FOOD_PIE_CRAB",			"FOOD_PIE_CRAB",		1,	1,		0.0},	--1,	1,		0.2		Food worth 40000
-			{"FOOD_DNUT_MEAT",			"FOOD_DNUT_MEAT",		1,	1,		0.0},	--1,	1,		0.2		Food worth 65000
+			{"FOOD_DNUT_MEAT",			"MECH_PROD",			2,	3,		2},		--1,	1,		0.2		Food worth 65000		(Hardframe Engine)
 			{"FOOD_DNUT_AJAM",			"FREI_INV_TOKEN",		1,	1,		5},		--1,	1,		0.2		Food worth 70000		(Freighter Bulkhead)
 			{"MEGAPROD1",				"MEGAPROD1",			2,	3,		2},		--1,	1,		3		Portable Reactor
 			{"MEGAPROD2",				"MEGAPROD2",			2,	3,		2},		--1,	1,		3		Quantum Processor
@@ -533,7 +538,7 @@ SpaceStationMissionLootChanges =
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		60},	--1,	1,		60		Storage Augmentation
 			{"FREI_INV_TOKEN",			"FREI_INV_TOKEN",		1,	1,		60},	--1,	1,		60		Freighter Bulkhead
 			{"EYEBALL",					"EYEBALL",				4,	6,		66},	--1,	3,		66		Hypnotic Eye
-			{"WALKER_PROD",				"WALKER_PROD",			1,	3,		66},	--1,	3,		66		Walker Brain
+			{"WALKER_PROD",				"WALKER_PROD",			1,	3,		40},	--1,	3,		66		Walker Brain
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			5,	8,		66},	--3,	5,		66		NipNip Buds
 			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		10,	10,		66},	--10,	10,		66		Storm Crystal
 			{"FIENDCORE",				"FIENDCORE",			10,	10,		66},	--10,	10,		66		Larval Core
@@ -559,7 +564,7 @@ SpaceStationMissionLootChanges =
 			{"FOOD_STEW_DIG",			"FOOD_STEW_DIG",		2,	6,		0},		--2,	6,		2		Food worth 6400
 			{"FOOD_J_HOT",				"FOOD_J_HOT",			3,	6,		0},		--3,	6,		2		Food worth 1800
 			{"FOOD_J_SALT",				"FOOD_J_SALT",			3,	6,		0},		--3,	6,		2		Food worth 1800
-			{"FOOD_ICE_FISH",			"FOOD_ICE_FISH",		5,	8,		0},		--3,	6,		2		Food worth 36000
+			{"FOOD_ICE_FISH",			"MECH_PROD",			1,	3,		30},	--3,	6,		2		Food worth 36000	(Hardframe Engine)
 			{"FOOD_MM_APPLE",			"FOOD_MM_APPLE",		5,	10,		2},		--2,	5,		2		Food worth 149400
 		}
 	},
@@ -630,7 +635,7 @@ GuildGiftChanges =
 	{	--Guild Giftpool ID
 		{"R_WGUILD_GIFT3"},
 		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance (weight?)
-			{"WALKER_PROD",		"SHIPCHARGE",		4,			8,			100},						--"WALKER_PROD",			2,			4,			100
+			{"WALKER_PROD",		"MECH_PROD",		1,			1,			100},						--"WALKER_PROD",			2,			4,			100
 			{"QUAD_PROD",		"QUAD_PROD",		1,			2,			100},						--"QUAD_PROD",				2,			5,			100
 		}
 	},
@@ -638,7 +643,7 @@ GuildGiftChanges =
 		{"R_WGUILD_GIFT4"},
 		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance (weight?)
 			{"WALKER_PROD",		"WALKER_PROD",		1,			1,			100},						--"WALKER_PROD",			3,			5,			100
-			{"QUAD_PROD",		"QUAD_PROD",		2,			3,			100},						--"QUAD_PROD",				3,			5,			100
+			{"QUAD_PROD",		"MECH_PROD",		1,			2,			100},						--"QUAD_PROD",				3,			5,			100
 		}
 	}
 }
@@ -694,6 +699,9 @@ PillarGlassMax			=	1			--1
 --% Chance to receive upgrade modules when opening Salvaged Glass
 SentGunChance			=	10			--20
 SentSuitChance			=	10			--20
+
+--% Chance to receive Sentinel Boundary Map from various sources
+SalvageSentMapChance	=	5			--10		Chance from destroying Salvageable Scrap
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	11			--7			Chance to drop from the large Arachnid Sentinels
@@ -1721,6 +1729,39 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_CARGOSHIELD"},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	PsychonicNeural},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_LAUNCHCHARGE"},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	PsychonicChloroplast},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_SHIPSCAN"},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	PsychonicWormhole},
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_CREW_GUILD"},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = CrewManGuildUnitReward,
@@ -1840,6 +1881,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"PercentageChance",	PillarGlassDropChance}, 
 					{"AmountMin",	PillarGlassMin}, 
 					{"AmountMax",	PillarGlassMax} 	
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAPHEAP","ID","CHART_HIVE"},
+				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
+				["SECTION_UP"] = 1,
+				["REPLACE_TYPE"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	SalvageSentMapChance}, 
 				}
 			},
 			{

@@ -199,11 +199,105 @@ AddShieldPlantCollisions =
     </Property>
 ]]
 
+replaceGrassMatFlags =
+[[
+  <Property name="Flags">
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F02_SKINNED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F03_NORMALMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F11_ALPHACUTOUT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F25_ROUGHNESS_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F36_DOUBLESIDED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F40_SUBSURFACE_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F29_VBCOLOUR" />
+    </Property>
+  </Property>
+]]
+
+replaceCGDesc =
+[[
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_7" />
+          <Property name="Name" value="_lushgrass_7" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_1" />
+          <Property name="Name" value="_lushgrass_1" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_3" />
+          <Property name="Name" value="_lushgrass_3" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_6" />
+          <Property name="Name" value="_lushgrass_6" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_5" />
+          <Property name="Name" value="_lushgrass_5" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_4" />
+          <Property name="Name" value="_lushgrass_4" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_8" />
+          <Property name="Name" value="_lushgrass_8" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_2" />
+          <Property name="Name" value="_lushgrass_2" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+]]
+
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --= = = = = = = = = = = = = = = = = = = = = = = = = = 1. FUNCTIONS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 local function AddGroundDetail(addGr1, addType1)
 	local biomeModifier =
 	{
@@ -529,6 +623,146 @@ return [[
             <Property name="Coverage" value="1" />
           <Property name="FlatDensity" value="0.05" />
           <Property name="SlopeDensity" value="0.05" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="5" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="126" />
+            <Property name="FadeOutEndDistance" value="144" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+]]
+end
+
+function AddTheGrassSparse(grassName)
+return [[
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="]] .. grassName .. [[" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers">
+              <Property value="TkProceduralTextureChosenOptionSampler.xml">
+                <Property name="Options">
+                  <Property value="TkProceduralTextureChosenOption.xml">
+                    <Property name="Layer" value="BASE" />
+                    <Property name="Group" value="" />
+                    <Property name="Palette" value="TkPaletteTexture.xml">
+                      <Property name="Palette" value="Plant" />
+                      <Property name="ColourAlt" value="Primary" />
+                    </Property>
+                    <Property name="OverrideColour" value="True" />
+                    <Property name="Colour" value="Colour.xml">
+                      <Property name="R" value="0.42" />
+                      <Property name="G" value="0.53" />
+                      <Property name="B" value="0.239" />
+                      <Property name="A" value="1" />
+                    </Property>
+                    <Property name="OptionName" value="3" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="GRASS" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
+        <Property name="OverlapStyle" value="All" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="75" />
+        <Property name="MatchGroundColour" value="True" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.9" />
+        <Property name="MaxScale" value="1.1" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.1" />
+          <Property name="SlopeDensity" value="0.1" />
+          <Property name="SlopeMultiplier" value="2.5" />
+          <Property name="MaxRegionRadius" value="17998" />
+          <Property name="MaxImposterRadius" value="18" />
+          <Property name="FadeOutStartDistance" value="17998" />
+          <Property name="FadeOutEndDistance" value="17998" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.1" />
+          <Property name="SlopeDensity" value="0.1" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="9" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="63" />
+            <Property name="FadeOutEndDistance" value="81" />
+            <Property name="FadeOutOffsetDistance" value="5" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="ULTRA" />
+            <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.1" />
+          <Property name="SlopeDensity" value="0.1" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="5" />
             <Property name="MaxImposterRadius" value="18" />
@@ -4389,7 +4623,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Med_v6.11c.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Med_v6.12.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -8942,13 +9176,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD2.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD3.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD4.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD5.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD6.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD7.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD8.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "BUBBLELUSHGRASS")
 				},
@@ -8957,31 +9184,211 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD2.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "CROSSGRASS")
+				},
+				
+
+				--v6.12
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD3.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD4.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD5.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD6.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD7.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD8.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD9.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD10.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD11.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD12.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWPROCGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD13.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\COMMON\PLANTS\SPRIGBUSH.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD14.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\FIENDEGG.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD15.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CAVE\METALCUBE.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD16.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\BLOBFRAGMENTS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD17.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\NEWCROSSGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD18.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\SMALLCAVEBUSH.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD19.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLCIELINGPLANT.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD20.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD21.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLPLANT.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD22.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLROCKS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD23.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLSHRUB.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD24.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\TINYROCKS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD25.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\CAVEGROUNDLEAVES.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD26.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\DUDLEYA.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD27.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\ALIEN\SMALLPLANT\SMALLPLANT02.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD28.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\ALIEN\SMALLPLANT\SMALLPLANT01.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD29.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\SWAMP\SMALLPLANT\SMALLTWIGS01.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD30.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "NEWCROSSGRASS")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\RAINFOREST\SMALLPLANT\SMALLCOLOUREDFLOWER01.SCENE.MBIN")
 				},
+				
+				--v6.11:
 				
 				--Detail 3 - OTHERS
 				{
@@ -9488,6 +9895,71 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = AddShieldPlantCollisions,
 						},
 					}
+				},
+				
+				--v5.61: To change original dandelion grass material flags (= multishade & white dandelion)
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\CROSSGRASS\LUSHGRASS1MAT1.MATERIAL.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						--Replace material flags:
+						{
+							["PRECEDING_KEY_WORDS"] = {"Flags",},
+							["ADD"] = replaceGrassMatFlags,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Flags",},
+							["REMOVE"] = "SECTION"
+						},
+					},
+				},
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\NEWCROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+
+
+
+						--REMOVE new grass_curly option (no old version of this model)
+						
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_GRASS_CURLY",},
+							["REMOVE"] = "SECTION"
+						},
+
+					},
+				},
+				
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\CROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+
+
+						--Reorder descriptor to match newcrossgrass
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["ADD"] = replaceCGDesc,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["REMOVE"] = "SECTION"
+						},
+
+					},
 				},
 				
 				

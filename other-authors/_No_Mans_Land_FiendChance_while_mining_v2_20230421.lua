@@ -1,13 +1,13 @@
-ModName = "No Mans Land Advanced Mining Laser required" --originally authored by Xen0nex for PtsD; modfiied by youngneil1
-GameVersion = "4_20"
-Description = "Mining crystals of ALL sizes, icluding those carrying Di-hydrogen (LANCHSUB), requires a advanced mining laser now (STRONGLASER). This way, a player cannot use their ship to farm di-hydrogen while airborne. "
+ModName = "No Mans Land FiendChance while mining" 
+GameVersion = "4_23"
+Description = "Mining crystals of ALL sizes, icluding those carrying Di-hydrogen (LANCHSUB), and various rocks has  a chance to spawn Fiends (Biological Horrors)."
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 	["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 	["MOD_DESCRIPTION"]		= Description,
-	["MOD_AUTHOR"]			= "youngneil1", --based on Xen0nex work
+	["MOD_AUTHOR"]			= "youngneil1", 
 	["NMS_VERSION"]			= GameVersion,
 	["MODIFICATIONS"]		= 
 	{
@@ -69,32 +69,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-				                              
-					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE\ENTITIES\SHARDS_CAVE.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWanted",	"True"}				
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWantedChance",	"0.068"}				
-							}
-						},
-					}
-				},
-				{
 					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN\ENTITIES\SHARDS_MOUNTAIN.ENTITY.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -140,31 +114,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"IncreaseFiendWantedChance",	"0.017"}				
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE\ENTITIES\CYSTAL_SMALL_CAVE.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWanted",	"True"}				
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWantedChance",	"0.068"}				
 							}
 						},
 					}
@@ -265,31 +214,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"IncreaseFiendWantedChance",	"0.017"}				
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE\ENTITIES\CRYSTAL_MEDIUM_CAVE.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWanted",	"True"}				
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWantedChance",	"0.068"}				
 							}
 						},
 					}
@@ -396,32 +320,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					
-					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\MEDIUMROCK\ENTITIES\MEDIUMROCKCAVE.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWanted",	"True"}				
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWantedChance",	"0.068"}				
-							}
-						},
-					}
-				},
-				{
-					
 					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\RESOURCEROCK\ENTITIES\RESOURCEROCK.ENTITY.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -468,83 +366,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"IncreaseFiendWantedChance",	"0.017"}				
-							}
-						},
-					}
-				},
-			
-				{
-					
-					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\SPOREBAG\ENTITIES\SPOREBAG.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWanted",	"True"}				
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWantedChance",	"0.068"}				
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\UNDERGROUNDLUMP\ENTITIES\UNDERGROUNDLUMP.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWanted",	"True"}				
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWantedChance",	"0.068"}				
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVE\SPOREVENT\ENTITIES\SPOREVENT.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWanted",	"True"}				
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"IncreaseFiendWantedChance",	"0.068"}				
 							}
 						},
 					}
