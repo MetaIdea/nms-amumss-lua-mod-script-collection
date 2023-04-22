@@ -18,9 +18,10 @@
 11. Rare, underwater & misc biomes- (BIOMES 11)	- i.e. plants for cooking, new underwater biomes, vanilla+ biomes
 12A. Caves biomes			  - (BIOMES 12)
 12B. Dead					  - (BIOMES 13)
-13. Patchscale/regionscale density 		  		- i.e. balance forests vs. empty areas
-14. Fast start									- i.e. remove intro logo
-15. Remove rocks/hazard plants				 	- i.e. remove small rocks & exploding plants
+13. Global misc terrain/LOD/fade time stuff 	- only section that affects global .mbins
+14. Patchscale/regionscale density 		  		- i.e. balance forests vs. empty areas
+15. Fast start									- i.e. remove intro logo
+16. Remove rocks/hazard plants				 	- i.e. remove small rocks & exploding plants
 
 Biomes 1-3 subsections: (old method = giant biomes, less scale variation, longer time)
 a. Scale changes
@@ -29,13 +30,14 @@ c. Destroyed by ship/Max angle/Etc
 d. Region/Imposter/Fade out
 e. Lod distances/Ultra invisible bug fix
 f. Placement/Placement priority
-g. [just "b" biomes] Change Objects to Landmarks
+g. [just "b" biomes] Change landmarks to DistantObjects
 
 Biomes 4-11 subsections: (new method = generally smaller biomes, more scale variation, shorter time)
 a. Destroyed by ship/Max scale/Max angle/Patch edge scaling/Etc
 b. Coverage/Density/Etc
 c. Lod distances/Ultra invisible bug fix
 d. Placement/Placement priority
+e. [just "b" biomes] Change landmarks to DistantObjects
 
 Just Biomes 11 - Crystals: d. Change objects to landmarks
 
@@ -51,33 +53,32 @@ InsaneRuffles code = "----IR:"
 --local DestroyedByPlayerShip = "False"
 
 --Only in biomes 1-3:
-local ScaleHugeMultiplier = 3.5
-local ScaleLargeMultiplier = 2 		--misc. outlier values
-local ScaleMediumMultiplier = 1.5 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
-local ScaleSmallestMultiplier = 1.3
+local ScaleHugeMultiplier = 9
+local ScaleLargeMultiplier = 4 		--misc. outlier values
+local ScaleMediumMultiplier = 2.2 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
+local ScaleSmallestMultiplier = 1.5
 
 --Only in biomes 4-10:
-local ScaleHuge = 29.5					--All scale replacement = balanced by patchedgescaling:
-local ScaleExtraLarge = 16
-local ScaleLarge = 7.5
-local ScaleMedium = 5.5
-local ScaleSmall = 4.2
-local ScaleSmallest = 1.7
+local ScaleHuge = 70					--All scale replacement = balanced by patchedgescaling:
+local ScaleExtraLarge = 38
+local ScaleLarge = 19
+local ScaleMedium = 11
+local ScaleSmall = 8
+local ScaleSmallest = 2.3
 
-local PatchEdgeScalingLarge = 0.73	--Changing these will heavily impact flora/object sizes
-local PatchEdgeScalingMedium = 0.72
-local PatchEdgeScalingSmall = 0.68				
+local PatchEdgeScalingLarge = 0.75	--Changing these will heavily impact flora/object sizes
+local PatchEdgeScalingMedium = 0.74
+local PatchEdgeScalingSmall = 0.7	
 
 --Only in biomes 12 (custom vanilla biomes):
-local ScaleHugeMultiplierBig = 4
+local ScaleHugeMultiplierBig = 7
 local DensityMediumMultiplierBig = 0.62 --Caution: raising this over 1 will break some planets
 local DensityLowMultiplierBig = 0.59
 
-local ScaleHugeMultiplierSmall = 2.5
+local ScaleHugeMultiplierSmall = 4
 local DensityMediumMultiplierSmall = 0.62
 local DensityLowestMultiplierSmall = 0.52
 local DensityMedLowMultiplierSmall = 0.59
-local DensityLowMultiplier = 0.59
 
 local minHeightAboveWater = -1
 local maxHeightAboveWater = 128
@@ -85,14 +86,14 @@ local maxHeightAboveWater = 128
 --In all:
 local harvestPlantDistance = 60; --from 15
 
-local DensityHighestMultiplier = 0.81
-local DensityMedHighMultiplier = 0.65
-local DensityMediumMultiplier = 0.62 --Caution: raising this over 1 will break some planets
-local DensityMedLowMultiplier = 0.59
-local DensityLowestMultiplier = 0.52
+local DensityHighestMultiplier = 0.92
+local DensityMedHighMultiplier = 0.69
+local DensityMediumMultiplier = 0.66 --Caution: raising this over 1 will break some planets
+local DensityLowMultiplier = 0.63
+local DensityLowestMultiplier = 0.59
 
---local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
-local DensityDETAILLowestMultiplier = 0.8 --Caution: raising this will break some planets
+local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
+local DensityDETAILLowestMultiplier = 0.9 --Caution: raising this will break some planets
 
 local DensityPointSevenMultiplier = 0.7 --Caution: raising this will break some planets
 local DensityPointEightMultiplier = 0.8 --Caution: raising this will break some planets
@@ -108,15 +109,25 @@ local PatchsizeRegionScaleMultiplierJustForest = 1.1
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
-local RadiusMultiplier = 2			--objects draw distance multiplier (limited by engine's hard-limit)
+local RadiusMultiplier = 3			--objects draw distance multiplier (limited by engine's hard-limit)
 local RadiusMultiplierLow = 2 					--***float = errors
-local LodDistancesMultiplierFarGrass = 1.5 --GRASS draw distance multiplier
-local LodDistanceMultiplierDistantObjects = 1.25 	--***i.e. big rings/huge objects
-local LodDistanceMultiplierLandmarks = 1.25 			--***i.e. trees/biome plants (unchanged rn)
-local LodDistanceMultiplierLow = 1.15 				--***i.e. high detailobjects biomes, like toxic
+--local GrassRadiusMultiplier = 3
+local LodDistancesMultiplierFarGrass = 2 --GRASS draw distance multiplier
+local LodDistanceMultiplierDistantObjects = 2 	--***i.e. big rings/huge objects
+local LodDistanceMultiplierLandmarks = 2 			--***i.e. trees/biome plants (unchanged rn)
+local LodDistanceMultiplierLow = 1.5 				--***i.e. high detailobjects biomes, like toxic
 local LodDistanceMultiplierLowest = 1.1 			--***i.e. HQ biomes that already have high LODD
 local LodDistanceMultiplierHQUltraForest = 0.1    --***just hq forest
-local CoverageMultiplier = 1			--object placement coverage multiplier (object density) --***needed to work
+local CoverageMultiplier = 0.66			--object placement coverage multiplier (object density) --***needed to work
+
+--GCGRAPHICSGLOBALS.GLOBAL
+local ForceUncachedTerrain = "True"	--fix slow terrain textures loading (default = false)
+local ShadowLengthMultiplier = 3	--shadows draw distance multiplier --***needed to work
+
+--GCENVIRONMENTGLOBALS.GLOBAL
+local LODAdjustMultiplier = 2		--inconsistent results
+local RegionLODRadiusAdd = 3			--increases draw distance hard-limit, value above '3' caused crash
+local PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --Code originally by InsaneRuffles in section above, modified by Lasagna -------------------------------------------------------------------------
@@ -197,11 +208,105 @@ AddShieldPlantCollisions =
     </Property>
 ]]
 
+replaceGrassMatFlags =
+[[
+  <Property name="Flags">
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F02_SKINNED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F03_NORMALMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F11_ALPHACUTOUT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F25_ROUGHNESS_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F36_DOUBLESIDED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F40_SUBSURFACE_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F29_VBCOLOUR" />
+    </Property>
+  </Property>
+]]
+
+replaceCGDesc =
+[[
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_7" />
+          <Property name="Name" value="_lushgrass_7" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_1" />
+          <Property name="Name" value="_lushgrass_1" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_3" />
+          <Property name="Name" value="_lushgrass_3" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_6" />
+          <Property name="Name" value="_lushgrass_6" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_5" />
+          <Property name="Name" value="_lushgrass_5" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_4" />
+          <Property name="Name" value="_lushgrass_4" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_8" />
+          <Property name="Name" value="_lushgrass_8" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_2" />
+          <Property name="Name" value="_lushgrass_2" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+]]
+
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --= = = = = = = = = = = = = = = = = = = = = = = = = = 1. FUNCTIONS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 local function AddGroundDetail(addGr1, addType1)
 	local biomeModifier =
 	{
@@ -546,11 +651,149 @@ return [[
 ]]
 end
 
+function AddTheGrassSparse(grassName)
+return [[
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="]] .. grassName .. [[" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers">
+              <Property value="TkProceduralTextureChosenOptionSampler.xml">
+                <Property name="Options">
+                  <Property value="TkProceduralTextureChosenOption.xml">
+                    <Property name="Layer" value="BASE" />
+                    <Property name="Group" value="" />
+                    <Property name="Palette" value="TkPaletteTexture.xml">
+                      <Property name="Palette" value="Plant" />
+                      <Property name="ColourAlt" value="Primary" />
+                    </Property>
+                    <Property name="OverrideColour" value="True" />
+                    <Property name="Colour" value="Colour.xml">
+                      <Property name="R" value="0.42" />
+                      <Property name="G" value="0.53" />
+                      <Property name="B" value="0.239" />
+                      <Property name="A" value="1" />
+                    </Property>
+                    <Property name="OptionName" value="3" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="GRASS" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
+        <Property name="OverlapStyle" value="All" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="75" />
+        <Property name="MatchGroundColour" value="True" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.9" />
+        <Property name="MaxScale" value="1.1" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.1" />
+          <Property name="SlopeDensity" value="0.1" />
+          <Property name="SlopeMultiplier" value="2.5" />
+          <Property name="MaxRegionRadius" value="17998" />
+          <Property name="MaxImposterRadius" value="18" />
+          <Property name="FadeOutStartDistance" value="17998" />
+          <Property name="FadeOutEndDistance" value="17998" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.1" />
+          <Property name="SlopeDensity" value="0.1" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="9" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="63" />
+            <Property name="FadeOutEndDistance" value="81" />
+            <Property name="FadeOutOffsetDistance" value="5" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="ULTRA" />
+            <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.1" />
+          <Property name="SlopeDensity" value="0.1" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="5" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="126" />
+            <Property name="FadeOutEndDistance" value="144" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+]]
+end
+
 local function BiomesNewVanilla(VanillaDensity1, VanillaDensity2)
 	local biomeModifier =
 	{
-
-
 						--REMOVE DetailObjects
 						
 						{
@@ -584,7 +827,7 @@ local function BiomesNewVanilla(VanillaDensity1, VanillaDensity2)
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity", 			VanillaDensity1}, --Low = lowest
+								{"FlatDensity", 			VanillaDensity1}, --high = highest
 								{"SlopeDensity",			VanillaDensity1},
 								{"MinScale",				1.5},
 								{"MaxScale",				1.5},
@@ -597,13 +840,13 @@ local function BiomesNewVanilla(VanillaDensity1, VanillaDensity2)
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity", 			VanillaDensity2}, --Low = lowest
+								{"FlatDensity", 			VanillaDensity2}, --High = highest
 								{"SlopeDensity",			VanillaDensity2},
 								{"MinScale",				1.5},
 								{"MaxScale",				1.5},
 							}	
 						},
-						
+
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
@@ -2005,7 +2248,7 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								{"Coverage",	DensityCustom4},
 								{"FlatDensity", DensityCustom4},
-								{"SlopeDensity",	DensityMedLowMultiplier},
+								{"SlopeDensity",	DensityLowMultiplier},
 							}	
 						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2028,6 +2271,22 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -2036,11 +2295,6 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
 								{"MaxAngle",				MaxAngleSmall},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -2089,7 +2343,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] = "ALL",
@@ -2189,7 +2445,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -2200,7 +2458,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -2211,7 +2471,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -2222,7 +2484,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -2233,7 +2497,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -2413,6 +2679,51 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{						
 								{ "Placement",	"FLORACLUMP" }
 							}
+						},
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+						
+						--If DistanceObjects section is closed, replace it to make it open
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							["REPLACE_TYPE"] 		= "RAW",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
+							}	
+						},
+						
+					--THEN DO:
+					
+						--If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    </Property>]], [[]] },
+							-- }	
+						-- },
+					
+					--THEN DO:
+					
+						--If Landmarks section is open, remove it so DistanceObjects takes over that section
+						--If Landmarks section is open, remove it so DistanceObjects takes over that section
+						{  
+							["PRECEDING_KEY_WORDS"]	= {"Objects", "Landmarks"},
+							["REMOVE"]  = "LINE",  
+						},
+						
+						--Not possible: DistanceObjects == closed && Landmarks == closed
+						--Not possible: DistanceObjects == open && Landmarks == closed
+						
+						--Add closed Landmarks line after DistantObjects, otherwise error:
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
+							["ADD_OPTION"] = "ADDafterSECTION",
+							["ADD"] 	= [[    <Property name="Landmarks" />]]
 						},
 	}
 return biomeModifier
@@ -2823,7 +3134,7 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							{
 								{"Coverage",	DensityCustom4},
 								{"FlatDensity", DensityCustom4},
-								{"SlopeDensity",	DensityMedLowMultiplier},
+								{"SlopeDensity",	DensityLowMultiplier},
 							}	
 						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3232,6 +3543,54 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
+-- -------------------------------------------------------------------------------------------------------------------------------------------------
+-- -- g. CHANGE LANDMARKS TO DISTANTOBJECTS <-Causes error in these biomes
+-- -------------------------------------------------------------------------------------------------------------------------------------------------
+						
+						-- --If DistanceObjects section is closed, replace it to make it open
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
+							-- }	
+						-- },
+						
+					-- --THEN DO:
+					
+						-- --If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- -- {
+							-- -- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- -- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- -- ["REPLACE_TYPE"] 		= "RAW",
+							-- -- ["VALUE_CHANGE_TABLE"] 	= 
+							-- -- {
+								-- -- { [[    </Property>]], [[]] },
+							-- -- }	
+						-- -- },
+					
+					-- --THEN DO:
+					
+						-- --If Landmarks section is open, remove it so DistanceObjects takes over that section
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    <Property name="Landmarks">]], [[]] },
+							-- }	
+						-- },
+						
+						-- --Not possible: DistanceObjects == closed && Landmarks == closed
+						-- --Not possible: DistanceObjects == open && Landmarks == closed
+						
+						-- --Add closed Landmarks line after DistantObjects, otherwise error:
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
+							-- ["ADD_OPTION"] = "ADDafterSECTION",
+							-- ["ADD"] 	= [[    <Property name="Landmarks" />]]
+						-- },
 	}
 return biomeModifier
 end
@@ -3262,6 +3621,22 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -3272,11 +3647,6 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"MaxScale",				Param2}, --for big/huge biomes
 								{"MaxAngle",				MaxAngleSmall},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -3332,7 +3702,9 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] = "ALL",
@@ -3347,6 +3719,22 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"MaxImposterRadius",		RadiusMultiplier},
 								{"FadeOutStartDistance",	RadiusMultiplier},
 								{"FadeOutEndDistance",		RadiusMultiplier}, ----
+							}	
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	Param4},
+								{"FlatDensity", Param3},
+								{"SlopeDensity",	Param5},
 							}	
 						},
 						{
@@ -3438,7 +3826,9 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -3449,7 +3839,9 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -3460,7 +3852,9 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -3471,7 +3865,9 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -3482,7 +3878,9 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -3669,6 +4067,51 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+						
+						--If DistanceObjects section is closed, replace it to make it open
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							["REPLACE_TYPE"] 		= "RAW",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
+							}	
+						},
+						
+					--THEN DO:
+					
+						--If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    </Property>]], [[]] },
+							-- }	
+						-- },
+					
+					--THEN DO:
+					
+						--If Landmarks section is open, remove it so DistanceObjects takes over that section
+						--If Landmarks section is open, remove it so DistanceObjects takes over that section
+						{  
+							["PRECEDING_KEY_WORDS"]	= {"Objects", "Landmarks"},
+							["REMOVE"]  = "LINE",  
+						},
+						
+						--Not possible: DistanceObjects == closed && Landmarks == closed
+						--Not possible: DistanceObjects == open && Landmarks == closed
+						
+						--Add closed Landmarks line after DistantObjects, otherwise error:
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
+							["ADD_OPTION"] = "ADDafterSECTION",
+							["ADD"] 	= [[    <Property name="Landmarks" />]]
+						},
 	}
 return biomeModifier
 end
@@ -3697,6 +4140,22 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -3707,11 +4166,6 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 								{"MaxScale",				Param2}, --for big/huge biomes
 								{"MaxAngle",				MaxAngleSmall},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -3767,7 +4221,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] = "ALL",
@@ -3782,6 +4238,22 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 								{"MaxImposterRadius",		RadiusMultiplier},
 								{"FadeOutStartDistance",	RadiusMultiplier},
 								{"FadeOutEndDistance",		RadiusMultiplier}, ----
+							}	
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	Param4},
+								{"FlatDensity", Param3},
+								{"SlopeDensity",	Param5},
 							}	
 						},
 						{
@@ -3873,7 +4345,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -3884,7 +4358,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -3895,7 +4371,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -3906,7 +4384,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -3917,7 +4397,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -4098,6 +4580,54 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
+-- -------------------------------------------------------------------------------------------------------------------------------------------------
+-- -- g. CHANGE LANDMARKS TO DISTANTOBJECTS -> removed, causes errors in these biomes
+-- -------------------------------------------------------------------------------------------------------------------------------------------------
+						
+						-- --If DistanceObjects section is closed, replace it to make it open
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
+							-- }	
+						-- },
+						
+					-- --THEN DO:
+					
+						-- --If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- -- {
+							-- -- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- -- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- -- ["REPLACE_TYPE"] 		= "RAW",
+							-- -- ["VALUE_CHANGE_TABLE"] 	= 
+							-- -- {
+								-- -- { [[    </Property>]], [[]] },
+							-- -- }	
+						-- -- },
+					
+					-- --THEN DO:
+					
+						-- --If Landmarks section is open, remove it so DistanceObjects takes over that section
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    <Property name="Landmarks">]], [[]] },
+							-- }	
+						-- },
+						
+						-- --Not possible: DistanceObjects == closed && Landmarks == closed
+						-- --Not possible: DistanceObjects == open && Landmarks == closed
+						
+						-- --Add closed Landmarks line after DistantObjects, otherwise error:
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
+							-- ["ADD_OPTION"] = "ADDafterSECTION",
+							-- ["ADD"] 	= [[    <Property name="Landmarks" />]]
+						-- },
 	}
 return biomeModifier
 end
@@ -4105,7 +4635,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v6.11c.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_High_v6.12.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -4303,7 +4833,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN","METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL_GHOSTLYNEW.MBIN"},
 						
 					},
-					["EXML_CHANGE_TABLE"] 	=  BiomesNewVanilla(0.9, 0.7)
+					["EXML_CHANGE_TABLE"] 	=  BiomesNewVanilla(1.1, 0.9)
 				},
 						
 
@@ -4371,9 +4901,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL.MBIN","METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL_GHOSTLYNEW.MBIN"},
 						
 					},
-					["EXML_CHANGE_TABLE"] 	=  BiomesNewVanilla(0.7, 0.5)---------------------------Lower density
+					["EXML_CHANGE_TABLE"] 	=  BiomesNewVanilla(0.9, 0.7)---------------------------Lower density
 				},
-				
+
 				
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -4422,7 +4952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERGROUNDFUN.MBIN",
 						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERWATERSPHERES.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifier(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityMedLowMultiplier) --biomes 1
+					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifier(ScaleHugeMultiplier, DensityMediumMultiplier, DensityMediumMultiplier, DensityLowMultiplier) --biomes 1
 				},
 				{
 				["MBIN_FILE_SOURCE"] 	= -------BIOMES 3A-----------------------------------------------------------------------------------------
@@ -4455,7 +4985,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERMONOLITHS.MBIN",--creates plants/shore rocks that stick out of water
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERPLANT.MBIN",--creates giant weeds, obstructing all waterCoverageMultiplier
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierDISTANTOBJECTS(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityMedLowMultiplier) --biomes 1
+					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierDISTANTOBJECTS(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityLowMultiplier) --biomes 1
 				},
 				{
 				["MBIN_FILE_SOURCE"] 	= -------BIOMES 3B-----------------------------------------------------------------------------------------
@@ -4615,6 +5145,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -4625,11 +5171,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxScale",				ScaleLarge},
 								{"MaxAngle",				MaxAngleLarge},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -4694,7 +5235,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",	CoverageMultiplier},
-								{"FlatDensity", DensityMedLowMultiplier},
+								{"FlatDensity", DensityLowMultiplier},
 								--{"SlopeDensity",	1},
 								-- {"MaxRegionRadius",			RadiusMultiplierLow},
 								-- {"MaxImposterRadius",		RadiusMultiplierLow},
@@ -5039,7 +5580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTS_GHOSTLYNEW.MBIN","CUSTOMBIOMES/UNDERWATER/GHOSTLYFROZENPILLAROBJECTS3.MBIN"},
 						{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS_GHOSTLYNEW.MBIN","CUSTOMBIOMES/UNDERWATER/GHOSTLYLUSHBUBBLEOBJECTS.MBIN"},
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensityMedLowMultiplier, DensityMedLowMultiplier, DensityPointSevenMultiplier)
+					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensitySHADOWLowMultiplier, DensityLowMultiplier, DensityPointSevenMultiplier)
 				},
 --Biomes 7B
 				{
@@ -5047,7 +5588,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN","CUSTOMBIOMES/UNDERWATER/GHOSTLYSWAMPOBJECTSFULL.MBIN"},
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifierDISTANTOBJECTS(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensityMedLowMultiplier, DensityMedLowMultiplier, DensityPointSevenMultiplier)
+					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifierDISTANTOBJECTS(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensitySHADOWLowMultiplier, DensityLowMultiplier, DensityPointSevenMultiplier)
 				},
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5069,7 +5610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN","CUSTOMBIOMES/UNDERWATER/GHOSTLYSHARDSOBJECTSDEAD.MBIN"},
 						{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN","CUSTOMBIOMES/UNDERWATER/GHOSTLYWIRECELLSOBJECTSDEAD.MBIN"},
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityMediumMultiplier, DensityLowestMultiplier, DensityMedLowMultiplier, DensityMedLowMultiplier, DensityPointEightMultiplier)
+					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityMediumMultiplier, DensityLowestMultiplier, DensityLowMultiplier, DensitySHADOWLowMultiplier, DensityPointEightMultiplier)
 				},
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5105,6 +5646,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -5115,11 +5672,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxScale",				ScaleLarge},
 								{"MaxAngle",				MaxAngleSmall},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -5199,7 +5751,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] = "ALL",
@@ -5208,12 +5762,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",		DensityLowestMultiplier},
-								{"FlatDensity", 	DensityMedLowMultiplier},
+								{"FlatDensity", 	DensityMediumMultiplier},
 								{"SlopeDensity",	DensityLowestMultiplier},
 								{"MaxRegionRadius",			RadiusMultiplierLow},
 								{"MaxImposterRadius",		RadiusMultiplierLow},
 								{"FadeOutStartDistance",	RadiusMultiplierLow},
 								{"FadeOutEndDistance",		RadiusMultiplierLow},
+							}	
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",		DensityLowestMultiplier},
+								{"FlatDensity", 	DensityMediumMultiplier},
+								{"SlopeDensity",	DensityLowestMultiplier},
 							}	
 						},
 						{
@@ -5305,7 +5875,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5316,7 +5888,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5327,7 +5901,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5338,7 +5914,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5349,7 +5927,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5567,6 +6147,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -5577,11 +6173,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxScale",				ScaleMedium},
 								{"MaxAngle",				MaxAngleSmall},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -5637,7 +6228,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] = "ALL",
@@ -5652,6 +6245,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		RadiusMultiplierLow},
 								{"FadeOutStartDistance",	RadiusMultiplierLow},
 								{"FadeOutEndDistance",		RadiusMultiplierLow},
+							}	
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",		DensityLowestMultiplier},
+								{"FlatDensity", 	DensityLowestMultiplier},
+								{"SlopeDensity",	DensityLowestMultiplier},
 							}	
 						},
 						{
@@ -5743,7 +6352,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5754,7 +6365,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5765,7 +6378,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5776,7 +6391,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5787,7 +6404,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -6086,7 +6705,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						
 						
-						
 						-- {
 							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects",},
 							-- ["ADD"] = [[    <Property name="Objects" />]],
@@ -6116,8 +6734,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxScale",	0.8},
 								{"MinScale",	0.8},
-								{ "FlatDensity", 0.9 },
-								{ "FlatDensity", 0.9 },
+								--{ "FlatDensity", 0.9 },
+								--{ "FlatDensity", 0.9 },
 							}	
 						},
 						{
@@ -6129,8 +6747,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxScale",	0.8},
 								{"MinScale",	0.8},
-								{ "FlatDensity", 0.7 },
-								{ "FlatDensity", 0.7 },
+								{ "FlatDensity", 0.8 },
+								{ "FlatDensity", 0.8 },
 							}	
 						},
 						{
@@ -6142,8 +6760,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxScale",	0.8},
 								{"MinScale",	0.8},
-								{ "FlatDensity", 0.65 },
-								{ "FlatDensity", 0.65 },
+								{ "FlatDensity", 0.75 },
+								{ "FlatDensity", 0.75 },
 							}	
 						},
 
@@ -6299,7 +6917,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"CUSTOMBIOMES\GHOSTLYUNDERWATERGASBAGS.MBIN",
 						"CUSTOMBIOMES\GHOSTLYUNDERWATERCRYSTALS.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierUnderwaterCave(ScaleHugeMultiplierBig, DensityMediumMultiplierSmall, DensityLowestMultiplierSmall, DensityMedLowMultiplierSmall),
+					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierUnderwaterCave(ScaleHugeMultiplierBig, DensityMediumMultiplierSmall, DensityLowestMultiplierSmall, DensityMedLowMultiplierSmall)
 				},
 				
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -6336,7 +6954,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"CUSTOMBIOMES/CAVE/GHOSTLYCAVE64.MBIN","CUSTOMBIOMES/DEAD/GHOSTLYDEAD22.MBIN"},--64 = lava
 						{"CUSTOMBIOMES/CAVE/GHOSTLYCAVE65.MBIN","CUSTOMBIOMES/DEAD/GHOSTLYDEAD23.MBIN"},
 						{"CUSTOMBIOMES/CAVE/GHOSTLYCAVE66.MBIN","CUSTOMBIOMES/DEAD/GHOSTLYDEAD24.MBIN"},
-						{"CUSTOMBIOMES/CAVE/GHOSTLYCAVE67.MBIN","CUSTOMBIOMES/DEAD/GHOSTLYDEAD25.MBIN"},
+						{"CUSTOMBIOMES/CAVE/GHOSTLYCAVE67.MBIN","CUSTOMBIOMES/DEAD/GHOSTLYDEAD25.MBIN"},--LUSHHQTENTACLE
 						{"CUSTOMBIOMES/CAVE/GHOSTLYCAVE68.MBIN","CUSTOMBIOMES/DEAD/GHOSTLYDEAD26.MBIN"},
 						{"CUSTOMBIOMES/CAVE/GHOSTLYCAVE69.MBIN","CUSTOMBIOMES/DEAD/GHOSTLYDEAD27.MBIN"},
 						{"CUSTOMBIOMES/CAVE/GHOSTLYCAVE70.MBIN","CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN"},
@@ -6833,8 +7451,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.6},
+								{"SlopeDensity",			0.6},
 								{"SlopeMultiplier",			2.8},
 							}
 						},
@@ -6846,14 +7464,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.4},
-								{"SlopeDensity",			0.4},
+								{"FlatDensity",			    0.5},
+								{"SlopeDensity",			0.5},
 								{"SlopeMultiplier",			2.8},
 								--To increase draw distance of just this grass:
-								{"MaxRegionRadius",			1.5},
-								{"MaxImposterRadius",		1.5},
-								{"FadeOutStartDistance",	1.5},
-								{"FadeOutEndDistance",		1.5},
+								{"MaxRegionRadius",			2},
+								{"MaxImposterRadius",		2},
+								{"FadeOutStartDistance",	2},
+								{"FadeOutEndDistance",		2},
 							}
 						},
 						{
@@ -6864,8 +7482,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.6},
+								{"SlopeDensity",			0.6},
 								{"SlopeMultiplier",			2.8},
 							}
 						},
@@ -6877,8 +7495,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- ["VALUE_CHANGE_TABLE"] 	= 
 							-- {
 								-- {"Coverage",			    1},
-								-- {"FlatDensity",			    0.5},
-								-- {"SlopeDensity",			0.5},
+								-- {"FlatDensity",			    0.6},
+								-- {"SlopeDensity",			0.6},
 								-- {"SlopeMultiplier",			2.8},
 							-- }
 						-- },
@@ -6890,8 +7508,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",			    0.43},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.6},
+								{"SlopeDensity",			0.6},
 							}
 						},
 						{
@@ -6902,8 +7520,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",			    0.43},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.6},
+								{"SlopeDensity",			0.6},
 							}
 						},
 						{
@@ -6914,8 +7532,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{ 
 								{"Coverage",			    0.43},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.6},
+								{"SlopeDensity",			0.6},
 							}
 						},
 						{
@@ -6926,8 +7544,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",			    0.43},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.6},
+								{"SlopeDensity",			0.6},
 							}
 						},
 						{
@@ -6938,8 +7556,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",			    0.43},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.6},
+								{"SlopeDensity",			0.6},
 							}
 						},
 						{
@@ -6950,8 +7568,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",			    0.43},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.6},
+								{"SlopeDensity",			0.6},
 							}
 						},
 						
@@ -7112,7 +7730,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","Objects",},
 							["REMOVE"] = "SECTION"
 						},
-						
 						
 						
 						
@@ -8567,13 +9184,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD2.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD3.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD4.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD5.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD6.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD7.MBIN",
-						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD8.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "BUBBLELUSHGRASS")
 				},
@@ -8582,31 +9192,211 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD2.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "CROSSGRASS")
+				},
+				
+
+				--v6.12
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD3.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD4.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD5.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD6.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD7.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD8.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD9.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD10.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD11.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD12.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWPROCGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD13.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\COMMON\PLANTS\SPRIGBUSH.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD14.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\FIENDEGG.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD15.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CAVE\METALCUBE.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD16.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\BLOBFRAGMENTS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD17.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\NEWCROSSGRASS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD18.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\SMALLCAVEBUSH.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD19.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLCIELINGPLANT.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD20.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD21.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLPLANT.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD22.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLROCKS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD23.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLSHRUB.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD24.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\TINYROCKS.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD25.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\CAVEGROUNDLEAVES.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD26.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\DUDLEYA.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD27.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\ALIEN\SMALLPLANT\SMALLPLANT02.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD28.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\ALIEN\SMALLPLANT\SMALLPLANT01.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD29.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\SWAMP\SMALLPLANT\SMALLTWIGS01.SCENE.MBIN")
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD30.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "NEWCROSSGRASS")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\RAINFOREST\SMALLPLANT\SMALLCOLOUREDFLOWER01.SCENE.MBIN")
 				},
+				
+				--v6.11:
 				
 				--Detail 3 - OTHERS
 				{
@@ -8818,13 +9608,207 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
+			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
+			["MBIN_CHANGE_TABLE"] 	= 
+			{ 
+				{
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = = 13. GLOBAL MISC TERRAIN/LOD/FADE TIME STUFF = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--This includes: uncached terrain, shadows, lod adjust, region, planet LOD, and fade time changes
+				
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"GCGRAPHICSGLOBALS.GLOBAL.MBIN"
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ForceUncachedTerrain",	ForceUncachedTerrain},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "*",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ShadowLength",			ShadowLengthMultiplier},
+								--{"ShadowLengthShip",		ShadowLengthMultiplier},
+								{"ShadowLengthSpace",		ShadowLengthMultiplier},
+								{"ShadowLengthStation",		ShadowLengthMultiplier},
+								{"ShadowLengthCameraView",	ShadowLengthMultiplier},
+							}
+						},
+					} 
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"GCENVIRONMENTGLOBALS.GLOBAL.MBIN"		
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "*",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["LINE_OFFSET"] 		= "+1",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier} 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "+",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["LINE_OFFSET"] 		= "+1",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	0}	--distance radius of finest details, increase causes flickering on some planets
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},						
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+6",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "*",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PlanetObjectSwitch",			PlanetLODMultiplier},
+								{"PlanetLodSwitch0",			PlanetLODMultiplier},
+								{"PlanetLodSwitch0Elevation",	PlanetLODMultiplier},
+								{"PlanetLodSwitch1",			PlanetLODMultiplier},
+								{"PlanetLodSwitch2",			PlanetLODMultiplier},
+								{"PlanetLodSwitch3",			PlanetLODMultiplier}
+								--{"PlanetFlipDistance",		PlanetLODMultiplier},
+								--{"PlanetEffectEndDistance",	PlanetLODMultiplier}
+							}
+						},
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)-----------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",  
+							["VALUE_CHANGE_TABLE"]	=
+							{
+								{"TerrainFadeTime",						  "0.7"},
+								{"TerrainFadeTimeInShip",				  "0.9"},
+								--{"CreatureFadeTime",					  "0.9"}, --caused hitching
+								{"FloraFadeTime",						  "0.5"}, --less causes hitching
+								{"FloraFadeTimeMax",				      "0.9"}, --less causes hitching
+							}
+						},
+					} 
+				}
+			}
+		},
+		{
 			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
---= = = = = = = = = = = = = = = = = = = 13. PATCH SCALE/REGION SCALE/SPAWN DENSITY CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--= = = = = = = = = = = = = = = = = = = 14. PATCH SCALE/REGION SCALE/SPAWN DENSITY CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --Modifies placement/regions on a planet, i.e. high density areas & expansive open areas
@@ -8986,7 +9970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
---= = = = = = = = = = = = = = = = = = = = = 14. FAST START CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--= = = = = = = = = = = = = = = = = = = = = 15. FAST START CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --makes boot load time faster, doesn't remove mod warning
@@ -9023,7 +10007,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
---= = = = = = = = = = = = = = = = = = = = = = = = = = 15. REMOVE ROCKS/HAZARD PLANTS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--= = = = = = = = = = = = = = = = = = = = = = = = = = 16. REMOVE ROCKS/HAZARD PLANTS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 		{
@@ -9106,8 +10090,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\SHIELDPLANT1.SCENE.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	=
-
-
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = { "TkSceneNodeData.xml", },
@@ -9115,6 +10097,71 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = AddShieldPlantCollisions,
 						},
 					}
+				},
+				
+				--v5.61: To change original dandelion grass material flags (= multishade & white dandelion)
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\CROSSGRASS\LUSHGRASS1MAT1.MATERIAL.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						--Replace material flags:
+						{
+							["PRECEDING_KEY_WORDS"] = {"Flags",},
+							["ADD"] = replaceGrassMatFlags,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Flags",},
+							["REMOVE"] = "SECTION"
+						},
+					},
+				},
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\NEWCROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+
+
+
+						--REMOVE new grass_curly option (no old version of this model)
+						
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_GRASS_CURLY",},
+							["REMOVE"] = "SECTION"
+						},
+
+					},
+				},
+				
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\CROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+
+
+						--Reorder descriptor to match newcrossgrass
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["ADD"] = replaceCGDesc,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["REMOVE"] = "SECTION"
+						},
+
+					},
 				},
 				
 				

@@ -17,6 +17,12 @@ TEXT_TO_ADD =
 		<Property value="NMSString0x10.xml">					
 			<Property name="Value" value="POWERCELL2" />
 		</Property>
+		<Property value="NMSString0x10.xml">					
+			<Property name="Value" value="CAVE1" />
+		</Property>
+		<Property value="NMSString0x10.xml">					
+			<Property name="Value" value="CAVE2" />
+		</Property>
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER = {

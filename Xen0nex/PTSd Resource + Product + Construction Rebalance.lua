@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_22"
+GameVersion = "4_23"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -177,6 +177,70 @@ ProductStackChanges =
 	{"UI_ILLEGAL_PROD8_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
 }
 
+--Adds various items as new components for certain techs
+AddItems =
+{		--Tech ID				Item ID			# of Items	Item Type
+	{	--Crate Fabricator
+		"CRATELRARE",			"ATLAS_SEED_2",		1,		"Product",
+	},
+	{	--Barrel Fabricator
+		"CRATELCYLINDER",		"ATLAS_SEED_4",		1,		"Product",
+	},
+	{	--Galactic Trade Terminal 
+		"BUILDTERMINAL",		"RED2",				25,		"Substance",
+	},
+}
+--Replaces an existing component for certain techs with various items instead
+ReplaceItems =
+{		--Tech ID				Item ID			# of Items	Item Type		Replaced Item
+	{	--Roamer Geobay 
+		"GARAGE_M",				"RED2",				50,		"Substance",	"POWERCELL",
+	},
+	{	--Colossus Geobay 
+		"GARAGE_L",				"RED2",				75,		"Substance",	"POWERCELL",
+	},
+	{	--Nomad Geobay 
+		"GARAGE_S",				"GREEN2",			50,		"Substance",	"POWERCELL",
+	},
+	{	--Pilgrim Geobay 
+		"GARAGE_B",				"GREEN2",			75,		"Substance",	"JELLY",
+	},
+	{	--Minotaur Geobay 
+		"GARAGE_MECH",			"GREEN2",			75,		"Substance",	"POWERCELL",
+	},
+	{	--Nautilon Chamber 
+		"GARAGE_SUB",			"GREEN2",			75,		"Substance",	"WATER1",
+	},
+	{	--Antimatter Reactor
+		"BUILDANTIMATTER",		"ATLAS_SEED_5",		1,		"Product",		"CASING",
+	},
+	{	--Nutrient Processor 
+		"COOKER",				"RED2",				25,		"Substance",	"CARBON_SEAL",
+	},
+	{	--Livestock Unit 
+		"CREATURE_FARM",		"GREEN2",			150,	"Substance",	"CASING",
+	},
+	{	--Automated Feeder 
+		"CREATURE_FEED",		"GREEN2",			150,	"Substance",	"CASING",
+	},
+	{	--Exocraft Summoning Station 
+		"SUMMON_GARAGE",		"GREEN2",			60,		"Substance",	"ROCKETSUB",
+	},
+	{	--Scanner Room 
+		"FRE_ROOM_SCAN",		"ATLAS_SEED_7",		1,		"Product",		"ASTEROID2",
+	},
+	{	--Orbital Exocraft Materialiser 
+		"FRE_ROOM_VEHICL",		"BLUE2",			50,		"Substance",	"CAVE2",
+	},
+	{	--Orbital Exocraft Materialiser (Deprecated)
+		"GARAGE_FREIGHT",		"BLUE2",			50,		"Substance",	"CAVE2",
+	},
+}
+
+--Changes ingredients for crafting some Atlas Seeds
+DarkMatterMordite				=	50				--Replaces 5 Magnetised Ferrite		(Mordite)
+DawnsEndCytoPhosphate			=	50				--Replaces 25 Chromatic Metal		(Cyto-Phosphate)
+
 --Number of Creature Pellets created from the crafting recipe	(Requires 60 Carbon)
 PelletsPerCraft					=	3				--5
 
@@ -215,17 +279,17 @@ BioDomeOxygenNeeded				=	320				--0
 --Antimatter Reactor construction recipe
 AntiMatStormNeeded				=	10				--5		Storm Crystal
 AntiMatAntiNeeded				=	10				--2		Antimatter
-AntiMatFluidNeeded				=	10				--0		(Experimental Power Fluid, replaces 2 Metal Plates)
+--AntiMatFluidNeeded				=	10				--0		(Experimental Power Fluid, replaces 2 Metal Plates)
 
 --Crate Fabricator construction recipe
 CraFabIonNeeded					=	16				--10	Ionised Cobalt
 CraFabAntiNeeded				=	3				--1		Antimatter
-CraFabShadeNeeded				=	1				--0		Englobed Shade	(From Atlas Path)
+--CraFabShadeNeeded				=	1				--0		Englobed Shade	(From Atlas Path)
 
 --Barrel Fabricator construction recipe
 BarFabIonNeeded					=	16				--10	Ionised Cobalt
 BarFabAntiNeeded				=	12				--1		Antimatter
-BarFabDarkNeeded				=	1				--0		Dark Matter	(From Atlas Path)
+--BarFabDarkNeeded				=	1				--0		Dark Matter	(From Atlas Path)
 
 --New recipe for installing Nutrition Room in freighter
 CookRoomProcessors = 1								--how many Nutrient Processors required		(replaces 15 Oxygen in vanilla)
@@ -249,11 +313,11 @@ StellarExtractorGold = 90							--45 Gold
 StellarExtractorGravBall = 6						--how many Gravitino Balls required	(replaces 40 Mag. Ferrite in vanilla)
 --New recipe for installing Scanner Room in freighter
 ScannerRoomSilver = 60								--60 Silver
-ScannerRoomEmeril = 30								--how much Emeril is required		(replaces 30 Gold in vanilla)
+--ScannerRoomEmeril = 30								--how much Emeril is required		(replaces 30 Gold in vanilla)
 ScannerRoomQuantProc = 1							--how many Quantum Processors required	(replaces 1 Ion Battery in vanilla)
 --New recipe for installing Orbital Exocraft Materializer in freighter
 OrbitalExoGold = 150								--150 Gold
-OrbitalExoEmeril = 50								--how much Emeril is required		(replaces 50 Ionized Cobalt in vanilla)
+--OrbitalExoEmeril = 50								--how much Emeril is required		(replaces 50 Ionized Cobalt in vanilla)
 OrbitalExoPortReact = 1								--how many Portable Reactors required	(replaces 3 Warp Cell in vanilla)
 
 --This part adjusts the buying price only (not the selling price) for certain substances/consumables/components.
@@ -543,36 +607,14 @@ ChartCostChanges =
 	{"NAV_DATA_DROP",		ExosuitUpgradeChartCost}
 }
 
-function AddedSubstanceCost (SubstanceID, SubstanceAmount)
+function AddedItemCost (ItemCostID, ItemCostAmount, ItemCostType)
     return
 [[<Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="]]..SubstanceID..[[" />
+          <Property name="ID" value="]]..ItemCostID..[[" />
           <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Substance" />
+            <Property name="InventoryType" value="]]..ItemCostType..[[" />
           </Property>
-          <Property name="Amount" value="]]..SubstanceAmount..[[" />
-        </Property>]]
-end
-
-function AddedProductCost (ProductID, ProductAmount)
-    return
-[[<Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="]]..ProductID..[[" />
-          <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="]]..ProductAmount..[[" />
-        </Property>]]
-end
-
-function AddedGlassCost (Glass)
-    return
-[[<Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="FARMPROD3" />
-          <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="]]..Glass..[[" />
+          <Property name="Amount" value="]]..ItemCostAmount..[[" />
         </Property>]]
 end
 
@@ -591,21 +633,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCSUBSTANCETABLE.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						--This entry intentionally left blank, to be filled in by the SubstanceCostChanges at the bottom of this script
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCSUBSTANCETABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						--This entry intentionally left blank, to be filled in by the SubstanceSaleChanges at the bottom of this script
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						--This entry intentionally left blank, to be filled in by the ProductCostChanges at the bottom of this script
+						--This entry intentionally left blank, to be filled in by the functions at the bottom of this script
 					}
 				},
 				{
@@ -636,6 +664,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "ATLAS_SEED_4",		"ID", "LAND3"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", DarkMatterMordite},
+								{"ID", "CREATURE1"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "ATLAS_SEED_5",		"ID", "STELLAR2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", DawnsEndCytoPhosphate},
+								{"ID", "WATERPLANT"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
 							["SPECIAL_KEY_WORDS"] = {"Name", "BAIT_BASIC_NAME"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -657,7 +705,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","NIPPLANT"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["ADD"] = AddedSubstanceCost ("ASTEROID3", NipNipPlatinumNeeded),
+							["ADD"] = AddedItemCost ("ASTEROID3", NipNipPlatinumNeeded, "Substance"),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
@@ -758,7 +806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--[[{
 							["SPECIAL_KEY_WORDS"] = {"ID","U_SOLAR_S"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["ADD"] = AddedGlassCost (SolarGlassNeeded),
+							["ADD"] = AddedItemCost ("FARMPROD3", SolarGlassNeeded, "Product"),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},]]
 						{
@@ -863,7 +911,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","BIOROOM"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["ADD"] = AddedSubstanceCost ("OXYGEN", BioDomeOxygenNeeded),
+							["ADD"] = AddedItemCost ("OXYGEN", BioDomeOxygenNeeded, "Substance"),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
@@ -884,6 +932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Amount", AntiMatAntiNeeded},
 							}
 						},
+						--[[
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
@@ -895,6 +944,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								
 							}
 						},
+						]]
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
@@ -913,12 +963,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Amount", CraFabAntiNeeded}
 							}
 						},
+						--[[
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","CRATELRARE"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["ADD"] = AddedProductCost ("ATLAS_SEED_2", CraFabShadeNeeded),
+							["ADD"] = AddedItemCost ("ATLAS_SEED_2", CraFabShadeNeeded, "Product"),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
+						]]
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
@@ -937,12 +989,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Amount", BarFabAntiNeeded}
 							}
 						},
+						--[[
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","CRATELCYLINDER"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["ADD"] = AddedProductCost ("ATLAS_SEED_4", BarFabDarkNeeded),
+							["ADD"] = AddedItemCost ("ATLAS_SEED_4", BarFabDarkNeeded, "Product"),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
+						]]
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
@@ -1132,6 +1186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Amount", ScannerRoomSilver}
 							}
 						},
+						--[[
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
@@ -1142,6 +1197,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ID", "GREEN2"}
 							}
 						},
+						]]
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
@@ -1161,6 +1217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Amount", OrbitalExoGold}
 							}
 						},
+						--[[
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
@@ -1171,6 +1228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ID", "GREEN2"}
 							}
 						},
+						]]
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
@@ -1188,7 +1246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	}
 }
 
-local ChangesToSubstanceCosts = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToSubstance = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
 for i = 1, #SubstanceCostChanges do
 	local ItemID = SubstanceCostChanges[i][1]
@@ -1196,7 +1254,7 @@ for i = 1, #SubstanceCostChanges do
 	local BuyBaseMarkup = SubstanceCostChanges[i][3]
 	--local BuyMarkupMod = SubstanceCostChanges[i][4]
 
-			ChangesToSubstanceCosts_temp =
+			ChangesToSubstance[#ChangesToSubstance+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
 				--["REPLACE_TYPE"] 		= "",
@@ -1212,14 +1270,13 @@ for i = 1, #SubstanceCostChanges do
 					{"BuyMarkupMod", BuyMarkupMod}]]
 				}
 			}
-			ChangesToSubstanceCosts[#ChangesToSubstanceCosts+1] = ChangesToSubstanceCosts_temp
 end
 for i = 1, #SubstanceStackChanges do
 	local NameID = SubstanceStackChanges[i][1]
 	local StackMult = SubstanceStackChanges[i][2]
 	local BuyMarkMult = SubstanceStackChanges[i][3]
 
-	ChangesToSubstanceCosts[#ChangesToSubstanceCosts+1] =
+	ChangesToSubstance[#ChangesToSubstance+1] =
 					{
 						["PRECEDING_KEY_WORDS"] = "",
 						["SPECIAL_KEY_WORDS"] = {"Name",	NameID}, 
@@ -1233,14 +1290,11 @@ for i = 1, #SubstanceStackChanges do
 						}
 					}
 end
-
-local ChangesToSubstanceSales = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
-
 for i = 1, #SubstanceSaleChanges do
 	local NameID = SubstanceSaleChanges[i][1]
 	local NewValue = SubstanceSaleChanges[i][2]
 
-			ChangesToSubstanceSales_temp =
+			ChangesToSubstance[#ChangesToSubstance+1] =
 			{
 				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", NameID},
@@ -1250,10 +1304,9 @@ for i = 1, #SubstanceSaleChanges do
 					{"BaseValue", NewValue}
 				}
 			}
-			ChangesToSubstanceSales[#ChangesToSubstanceSales+1] = ChangesToSubstanceSales_temp
 end
 
-local ChangesToProductCosts = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local ChangesToProduct = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
 for i = 1, #ProductCostChanges do
 	local NameID = ProductCostChanges[i][1]
@@ -1261,7 +1314,7 @@ for i = 1, #ProductCostChanges do
 	local BuyBaseMarkup = ProductCostChanges[i][3]
 	--local BuyMarkupMod = ProductCostChanges[i][4]
 
-			ChangesToProductCosts[#ChangesToProductCosts+1] =
+			ChangesToProduct[#ChangesToProduct+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
 				--["REPLACE_TYPE"] 		= "",
@@ -1282,7 +1335,7 @@ for i = 1, #ChartCostChanges do
 	local ChartId = ChartCostChanges[i][1]
 	local NewChartCost = ChartCostChanges[i][2]
 
-			ChangesToProductCosts[#ChangesToProductCosts+1] =
+			ChangesToProduct[#ChangesToProduct+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
 				["REPLACE_TYPE"] 		= "",
@@ -1299,7 +1352,7 @@ for i = 1, #ProductBuyMarkupModChanges do
 	local NameID = ProductBuyMarkupModChanges[i][1]
 	local BuyMarkupMod = ProductBuyMarkupModChanges[i][2]
 
-			ChangesToProductCosts[#ChangesToProductCosts+1] =
+			ChangesToProduct[#ChangesToProduct+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
 				--["REPLACE_TYPE"] 		= "",
@@ -1314,15 +1367,11 @@ for i = 1, #ProductBuyMarkupModChanges do
 				}
 			}
 end
-
-
-local ChangesToProductSales = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
-
 for i = 1, #ProductSaleChanges do
 	local NameID = ProductSaleChanges[i][1]
 	local ValueMult = ProductSaleChanges[i][2]
 
-			ChangesToProductSales[#ChangesToProductSales+1] =
+			ChangesToProduct[#ChangesToProduct+1] =
 			{
 				["MATH_OPERATION"] 		= "*",
 				["SPECIAL_KEY_WORDS"] = {"Name", NameID},
@@ -1338,7 +1387,7 @@ end
 		local StackMult = ProductStackChanges[i][2]
 		local BuyMarkMult = ProductStackChanges[i][3]
 	
-		ChangesToProductSales[#ChangesToProductSales+1] =
+		ChangesToProduct[#ChangesToProduct+1] =
 						{
                             ["PRECEDING_KEY_WORDS"] = "",
 							["SPECIAL_KEY_WORDS"] = {"Name",	NameID}, 
@@ -1352,8 +1401,43 @@ end
                             }
                         }
 	end
+for i = 1, #AddItems do
+	local TechIDNum = AddItems[i][1]
+	local AddItemID = AddItems[i][2]
+	local AddItemAmount = AddItems[i][3]
+	local AddItemType = AddItems[i][4]
+		
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID",TechIDNum},
+				["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+				["ADD"] = AddedItemCost (AddItemID, AddItemAmount, AddItemType),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			}
+end
+for i = 1, #ReplaceItems do
+	local TechIDNum = ReplaceItems[i][1]
+	local AddItemID = ReplaceItems[i][2]
+	local AddItemAmount = ReplaceItems[i][3]
+	local AddItemType = ReplaceItems[i][4]
+	local OldCompID = ReplaceItems[i][5]
+		
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["PRECEDING_KEY_WORDS"] = "",
+				["MATH_OPERATION"] 		= "", 
+				["REPLACE_TYPE"] 		= "",	 
+				["SPECIAL_KEY_WORDS"] = {"ID", TechIDNum,	"ID", OldCompID},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Amount",	AddItemAmount},
+					{"ID",	AddItemID},
+					{"InventoryType", AddItemType}
+				}
+			}
+end
 
-local ChangesToProceduralProductSales = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+local ChangesToProceduralProductSales = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 
 for i = 1, #ProceduralProductSaleChanges do
 	local NameID = ProceduralProductSaleChanges[i][1]

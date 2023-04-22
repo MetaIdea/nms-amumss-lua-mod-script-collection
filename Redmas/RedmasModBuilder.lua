@@ -12,9 +12,11 @@
 -- ------------------You can configure the overhaul from the following VARs-------------------------------- --
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
+-- Main Features enabler -- ----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "REDMAS_SANDWORM_OVERHAUL_PRESET"
+INIT = "REDMAS_E3PIC_FANTASY_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -437,7 +439,7 @@ FANTASY_ORIGINS_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
                 ["TERRAIN_HEIGHT_MAX"] = "10",
             },
@@ -626,7 +628,7 @@ FANTASY_2_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
                 ["TERRAIN_HEIGHT_MAX"] = "40",
             },
@@ -2499,7 +2501,7 @@ REDMAS_CAMERA_OVERHAUL_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
                 ["TERRAIN_HEIGHT_MAX"] = "40",
             },
@@ -5307,9 +5309,9 @@ SCIFI_FANTASY_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "22",
+                ["TERRAIN_HEIGHT_MAX"] = "222",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -7212,6 +7214,418 @@ function generateORIGINSTREES
 	}------------------------------------------------------------------------------------------------------------
 	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
 end	------------------------------------------------------------------------------------------------------------
+
+--generateORIGINSTREES------------------------------------------------------------------------------------------------------------
+function generateORIGINSTREESAlt
+	(
+		GENERATED_BIOME_PATH,
+		MAIN_TREE_TYPE,
+		MAIN_TREE_PATH,		
+		MAIN_TREE_SIZEMAX
+		
+	)
+
+	------------------------------------------------------------------------------------------------------------
+	GENERATED_BIOME = ------------------------------------------------------------------------------------------------------------
+	{	------------------------------------------------------------------------------------------------------------
+		{------------------------------------------------------------------------------------------------------------
+			["MBIN_FILE_SOURCE"] =------------------------------------------------------------------------------------------------------------
+			{------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\ALWAYSPRESENT.MBIN]],------------------------------------------------------------------------------------------------------------
+					GENERATED_BIOME_PATH..".MBIN"------------------------------------------------------------------------------------------------------------
+				}------------------------------------------------------------------------------------------------------------
+			}------------------------------------------------------------------------------------------------------------
+		},	------------------------------------------------------------------------------------------------------------
+		{------------------------------------------------------------------------------------------------------------
+			["MBIN_FILE_SOURCE"] = GENERATED_BIOME_PATH..".MBIN",------------------------------------------------------------------------------------------------------------
+			["EXML_CHANGE_TABLE"] = ------------------------------------------------------------------------------------------------------------
+			{------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},------------------------------------------------------------------------------------------------------------
+					["SECTION_ACTIVE"] = {1,2},------------------------------------------------------------------------------------------------------------
+					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
+				},------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},------------------------------------------------------------------------------------------------------------
+					["SECTION_ACTIVE"] = {1,2},------------------------------------------------------------------------------------------------------------
+					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
+				},------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------	
+					["ADD"] 	=------------------------------------------------------------------------------------------------------------
+					[[
+						<Property name="Landmarks"></Property>	
+							<Property name="Objects">	  
+
+								
+								<Property value="GcObjectSpawnData.xml">
+									<Property name="DebugName" value="" />
+									<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
+									<Property name="Resource" value="GcResourceElement.xml">
+									<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+									<Property name="Seed" value="GcSeed.xml">
+										<Property name="Seed" value="0" />
+										<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="AltId" value="" />
+									<Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+										<Property name="Samplers">
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="OVERLAY" />
+												<Property name="Group" value="BARKO" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Rock" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.673" />
+												<Property name="G" value="0.641" />
+												<Property name="B" value="0.567" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="GRASS" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARK" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Wood" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.93" />
+												<Property name="G" value="0.891" />
+												<Property name="B" value="0.838" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="3" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="2" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="LEAF" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Leaf" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.923" />
+												<Property name="G" value="0.484" />
+												<Property name="B" value="0.046" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="COLOUR" />
+												<Property name="Group" value="BARKC" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARKB" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Grass" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.542" />
+												<Property name="G" value="0.67" />
+												<Property name="B" value="0.333" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										</Property>
+									</Property>
+									</Property>
+									<Property name="AltResources" />
+									<Property name="ExtraTileTypes" />
+									<Property name="Placement" value="FLORACLUMP" />
+									<Property name="Seed" value="GcSeed.xml">
+									<Property name="Seed" value="0" />
+									<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="PlacementPriority" value="High" />
+									<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+									<Property name="OverlapStyle" value="SameSeed" />
+									<Property name="MinHeight" value="-1" />
+									<Property name="MaxHeight" value="1280" />
+									<Property name="RelativeToSeaLevel" value="True" />
+									<Property name="MinAngle" value="0" />
+									<Property name="MaxAngle" value="60" />
+									<Property name="MatchGroundColour" value="False" />
+									<Property name="GroundColourIndex" value="Auto" />
+									<Property name="SwapPrimaryForSecondaryColour" value="False" />
+									<Property name="SwapPrimaryForRandomColour" value="False" />
+									<Property name="AlignToNormal" value="False" />
+									<Property name="MinScale" value="1" />
+									<Property name="MaxScale" value="2" />
+									<Property name="MinScaleY" value="0.81" />
+									<Property name="MaxScaleY" value="1.02" />
+									<Property name="SlopeScaling" value="1" />
+									<Property name="PatchEdgeScaling" value="0" />
+									<Property name="MaxXZRotation" value="5" />
+									<Property name="AutoCollision" value="False" />
+									<Property name="CollideWithPlayer" value="True" />
+									<Property name="CollideWithPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerShip" value="True" />
+									<Property name="DestroyedByTerrainEdit" value="True" />
+									<Property name="InvisibleToCamera" value="False" />
+									<Property name="CreaturesCanEat" value="False" />
+									<Property name="ShearWindStrength" value="0" />
+									<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+									<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.5" />
+									<Property name="FlatDensity" value="0.003" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="10" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+									<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="60" />
+										<Property value="150" />
+										<Property value="500" />
+									</Property>
+									</Property>
+									<Property name="QualityVariants">
+									
+									</Property>
+								</Property>
+																<Property value="GcObjectSpawnData.xml">
+									<Property name="DebugName" value="" />
+									<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
+									<Property name="Resource" value="GcResourceElement.xml">
+									<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+									<Property name="Seed" value="GcSeed.xml">
+										<Property name="Seed" value="0" />
+										<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="AltId" value="" />
+									<Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+										<Property name="Samplers">
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="OVERLAY" />
+												<Property name="Group" value="BARKO" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Rock" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.673" />
+												<Property name="G" value="0.641" />
+												<Property name="B" value="0.567" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="GRASS" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARK" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Wood" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.93" />
+												<Property name="G" value="0.891" />
+												<Property name="B" value="0.838" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="3" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="2" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="LEAF" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Leaf" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.923" />
+												<Property name="G" value="0.484" />
+												<Property name="B" value="0.046" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="COLOUR" />
+												<Property name="Group" value="BARKC" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARKB" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Grass" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.542" />
+												<Property name="G" value="0.67" />
+												<Property name="B" value="0.333" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										</Property>
+									</Property>
+									</Property>
+									<Property name="AltResources" />
+									<Property name="ExtraTileTypes" />
+									<Property name="Placement" value="FLORACLUMP" />
+									<Property name="Seed" value="GcSeed.xml">
+									<Property name="Seed" value="0" />
+									<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="PlacementPriority" value="High" />
+									<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+									<Property name="OverlapStyle" value="SameSeed" />
+									<Property name="MinHeight" value="-1" />
+									<Property name="MaxHeight" value="1280" />
+									<Property name="RelativeToSeaLevel" value="True" />
+									<Property name="MinAngle" value="0" />
+									<Property name="MaxAngle" value="60" />
+									<Property name="MatchGroundColour" value="False" />
+									<Property name="GroundColourIndex" value="Auto" />
+									<Property name="SwapPrimaryForSecondaryColour" value="False" />
+									<Property name="SwapPrimaryForRandomColour" value="False" />
+									<Property name="AlignToNormal" value="False" />
+									<Property name="MinScale" value="0.93" />
+									<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
+									<Property name="MinScaleY" value="0.81" />
+									<Property name="MaxScaleY" value="1.02" />
+									<Property name="SlopeScaling" value="1" />
+									<Property name="PatchEdgeScaling" value="0" />
+									<Property name="MaxXZRotation" value="5" />
+									<Property name="AutoCollision" value="False" />
+									<Property name="CollideWithPlayer" value="True" />
+									<Property name="CollideWithPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerShip" value="True" />
+									<Property name="DestroyedByTerrainEdit" value="True" />
+									<Property name="InvisibleToCamera" value="False" />
+									<Property name="CreaturesCanEat" value="False" />
+									<Property name="ShearWindStrength" value="0" />
+									<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+									<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.6" />
+									<Property name="FlatDensity" value="0.001" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="10" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+									<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="60" />
+										<Property value="150" />
+										<Property value="500" />
+									</Property>
+									</Property>
+									<Property name="QualityVariants">
+									
+									</Property>
+								</Property>
+
+							</Property>
+					]]
+				},------------------------------------------------------------------------------------------------------------
+			}------------------------------------------------------------------------------------------------------------
+		}------------------------------------------------------------------------------------------------------------
+	}------------------------------------------------------------------------------------------------------------
+	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
+end	
 --generate BROKEN TREES
 --[=[
 function generateBrokenTreeS
@@ -11156,7 +11570,7 @@ addFeature
 					["VALUE_CHANGE_TABLE"] =
 					{
 						{"BackMinDistance", "3"},
-						{"BackMaxDistance", "5"},
+						{"BackMaxDistance", "15"},
 						{"UpMinDistance", "1"},
 						{"UpMaxDistance", "1"}
 					}
@@ -11223,7 +11637,7 @@ addFeature
 					{
 						{"OffsetY", "0.5"},
 						{"OffsetYAlt", "0.5"},
-						{"BackMinDistance", "5"},
+						{"BackMinDistance", "3"},
 						{"BackMaxDistance", "15"},
 						{"UpMinDistance", "0"},
 						{"UpMaxDistance", "0"}
@@ -11249,8 +11663,8 @@ addFeature
 					{
 						{"OffsetY", "3.8"},
 						--{"OffsetYAlt", "5"},-- to activate when/if vanilla is different
-						{"BackMinDistance", "5"},
-						{"BackMaxDistance", "13"},
+						{"BackMinDistance", "3"},
+						{"BackMaxDistance", "15"},
 						{"UpMinDistance", "0"}, -- to activate when/if vanilla is different
 						{"UpMaxDistance", "0"} -- to activate when/if vanilla is different
 					}
@@ -15759,7 +16173,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						{
 								{"WheelSuspensionForce",         "20"},
 								{"TopSpeedForward",              "25"},
-								{"VehicleBoostMaxSpeed",         "30"},
+								{"VehicleBoostMaxSpeed",         "40"},
 								{"TopSpeedReverse",              "40"},
 								{"WheelMaxAccelForceForward",    "350"},
 								{"WheelMaxAccelForceReverse",    "350.5"},
@@ -15793,7 +16207,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						{
 								{"WheelSuspensionlength",        "0.7"},
 								{"TopSpeedForward",              "14"},
-								{"VehicleBoostMaxSpeed",         "25"},
+								{"VehicleBoostMaxSpeed",         "45"},
 								{"WheelMaxAccelForceForward",    "300.5"},
 								{"WheelMaxAccelForceReverse",    "900.1"},
 								{"WheelMaxDecelForceNonBraking", "0.02"},
@@ -15852,7 +16266,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 								{"VehicleJumpForce",               "1050"},
 								{"VehicleJumpAirControlForce",     "0"},
 								{"VehicleBoostForce",              "560"},
-								{"VehicleBoostMaxSpeed",           "15"},
+								{"VehicleBoostMaxSpeed",           "45"},
 								{"VehicleBoostSpeedFalloff",       "0.001"},
 								{"VehicleBoostTime",               "10.2"},
 								{"VehicleBoostRechargeTime",       "0.4"},
@@ -20734,7 +21148,7 @@ end
 -- GENERATION OVERHAUL
 if GENERATION_OVERHAUL == "ON"
 then
-copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
+copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Fantasy_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
 
 	val_TERRAIN_HEIGHT_MIN = tonumber(TERRAIN_HEIGHT_MAX) - 50
 	TERRAIN_HEIGHT_MIN = tostring (val_TERRAIN_HEIGHT_MIN)
@@ -20789,7 +21203,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 							{
 								{"MinHeight","10"},
 								{"MaxHeight","50"},
-								{"NoiseGridType","Sphere"},
+								{"NoiseGridType","SuperPrimitiveRandom"},
 							}
 						},
 						{
@@ -20799,7 +21213,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 							{
 								{"MinHeight","10"},
 								{"MaxHeight","50"},
-								{"NoiseGridType","Sphere"},
+								{"NoiseGridType","Torus"},
 							}
 						},
 						{
@@ -20818,7 +21232,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 							{
 								{"MinHeight","10"},
 								{"MaxHeight","50"},
-								{"NoiseGridType","Torus"},
+								{"NoiseGridType","SuperPrimitiveRandom"},
 							}
 						},
 						{
@@ -20838,7 +21252,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 							{
 								{"MinHeight","10"},
 								{"MaxHeight","50"},
-								{"NoiseGridType","Cube"},
+								{"NoiseGridType","SuperFormula_03"},
 							}
 						},
 						{
@@ -20848,17 +21262,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 							{
 								{"MinHeight","10"},
 								{"MaxHeight","50"},
-								{"NoiseGridType","SuperPrimitiveRandom"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Small",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","10"},
-								{"MaxHeight","50"},
-								{"NoiseGridType","SuperPrimitiveRandom"},
+								{"NoiseGridType","SuperFormula_08"},
 							}
 						},
 						{
@@ -20866,10 +21270,20 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 							["PRECEDING_KEY_WORDS"] = "Large",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"SwapZY","True"},
-								{"MinHeight","110"},
-								{"MaxHeight","350"},
-								{"NoiseGridType","SuperPrimitiveRandom"},
+								{"MinHeight","130"},
+								{"MaxHeight","250"},
+								{"NoiseGridType","SuperFormula_08"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Small",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								--{"SwapZY","True"},
+								{"MinHeight","50"},
+								{"MaxHeight","150"},
+								{"NoiseGridType","Sphere"},
 							}
 						},
 
@@ -21480,18 +21894,12 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 		}
 		TABLE_CARBONE_RESSOURCES =
 		{
-						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALDRONE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},				
-	
+					
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\VOLCANICPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "0.2"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/LUSHROOM/MEDIUMSHROOM.SCENE.MBIN]],
@@ -21715,68 +22123,68 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGEFULL.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["MAXSIZE"] = "0.04"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["MAXSIZE"] = "0.04"
 			},
 				{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["MAXSIZE"] = "0.04"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["MAXSIZE"] = "0.04"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.5"
+				["MAXSIZE"] = "0.05"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.3"
+				["MAXSIZE"] = "0.03"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["MAXSIZE"] = "0.04"
 			},
 
 			{
@@ -21785,12 +22193,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["ROTATION"] = "10",
 				["MAXSIZE"] = "0.20"
 			},
-			{
-				["PATH"] = [[MODELS/RGO/BENDYTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.20"
-			},
+
 			{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -21804,7 +22207,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -21816,22 +22219,10 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.5"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.5"
-			},
-			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.5"
+				["MAXSIZE"] = "0.05"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
@@ -21854,99 +22245,72 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "0.24"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE2.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+					["PATH"] = [[MODELS\RGO\MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE4.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+					["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+						["PATH"] = [[MODELS\RGO\MEDIUMTREE7.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE8.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE9.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE10.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.44"
-			},
-
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			
-			
-
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTAL.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALDRONE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\SENTINELCRYSTALDRONESMALL.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
+		
 		
 
 		}
@@ -21993,7 +22357,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 
 
 			{
-				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "10",
 				["MAXSIZE"] = "6"
@@ -22106,7 +22470,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 		NORMALLUSHTREES =
 		{	
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
@@ -22327,103 +22691,103 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "3"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE3.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+					["PATH"] = [[MODELS\RGO\MEDIUMTREE4.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+					["PATH"] = [[MODELS\RGO\MEDIUMTREE7.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+					["PATH"] = [[MODELS\RGO\MEDIUMTREE8.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+					["PATH"] = [[MODELS\RGO\MEDIUMTREE9.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE10.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+							["PATH"] = [[MODELS\RGO\MEDIUMTREE11.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+							["PATH"] = [[MODELS\RGO\MEDIUMTREE12.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+					["PATH"] = [[MODELS\RGO\MEDIUMTREE13.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "3"
 			},
 									{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE14.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+							["PATH"] = [[MODELS\RGO\MEDIUMTREE15.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+									{
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE16.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+							["PATH"] = [[MODELS\RGO\MEDIUMTREE17.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
@@ -22748,7 +23112,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "2"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -22760,19 +23124,19 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
@@ -22948,7 +23312,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE6.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -22960,7 +23324,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "2"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE7.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -22972,7 +23336,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE8.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -22984,7 +23348,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "3"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE9.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
@@ -23161,7 +23525,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE10.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -23173,7 +23537,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "2"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE11.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -23185,7 +23549,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE12.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -23197,7 +23561,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "3"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE13.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
@@ -23374,7 +23738,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE14.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -23386,7 +23750,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "2"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE15.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -23398,7 +23762,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -23410,7 +23774,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "3"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
@@ -23448,7 +23812,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "3"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -23898,19 +24262,19 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -23954,19 +24318,19 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "0.24"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -24155,37 +24519,37 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE7.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "22"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE8.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE9.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE10.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE11.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE12.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -24361,7 +24725,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE13.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -24373,31 +24737,31 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "22"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE14.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE15.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -24787,7 +25151,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -24799,7 +25163,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "22"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "24"
@@ -24811,7 +25175,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "14"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
@@ -24823,7 +25187,646 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "13"
 			},
 						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+							
+						{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.01"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "27"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "17"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "16"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "26"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "16"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "34"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "34"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "32"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE6.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "22"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE7.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE8.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE9.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+							
+						{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.01"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "27"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "17"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "16"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "26"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "16"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "34"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "34"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "32"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE10.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "22"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE11.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE12.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE13.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+							
+						{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.01"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "27"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "17"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "16"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "26"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "16"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "45"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "34"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "34"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "32"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE14.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "22"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE15.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -25006,7 +26009,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "22"
@@ -25018,7 +26021,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "24"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
@@ -25036,7 +26039,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "13"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE14.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -25213,43 +26216,43 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE9.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE8.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "22"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE7.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE6.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -25426,7 +26429,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -25438,7 +26441,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "22"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "24"
@@ -25450,7 +26453,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "14"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
@@ -25462,646 +26465,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "13"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "27"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "26"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "34"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "34"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "32"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "27"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "26"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "34"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "34"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "32"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "27"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "26"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "45"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "34"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "34"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "32"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE15.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -26397,7 +26761,7 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
@@ -26447,19 +26811,19 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "24"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
+		["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
@@ -28998,13 +29362,13 @@ copyEXML("ON",[[SENT\EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYST
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
@@ -31709,6 +32073,267 @@ LUSHGRASSLIST =
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R\MEDIUMTREE1.SCENE.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE1.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\LARGETREE1.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE1.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\LARGETREE1.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE2.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE2.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE2.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE2.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE3.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE3.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE3.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE3.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE4.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE4.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE4.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE4.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE5.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE5.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE5.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE5.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE6.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE6.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE6.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE6.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE7.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE7.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE7.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE7.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE8.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE8.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE8.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE8.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE9.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE9.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE9.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE9.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+
+
+
+
+
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE10.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE2.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE10.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE2.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE11.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE3.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE11.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE3.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE12.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE4.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE12.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE4.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE13.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE5.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE13.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE5.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE14.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE6.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE14.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE6.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE15.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE7.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE15.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE7.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE16.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE8.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE16.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE8.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+				--
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE17.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE9.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE17.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE9.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+
+
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
@@ -32415,14 +33040,14 @@ LUSHGRASSLIST =
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\CHAOS.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\SMALLASTEROID.DESCRIPTOR.EXML]]
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\CHAOS.DESCRIPTOR.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\CHAOS.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\CHAOS.SCENE.EXML]]
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\SMALLASTEROID.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\SMALLASTEROID.SCENE.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
@@ -32449,6 +33074,13 @@ LUSHGRASSLIST =
 
 				EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE01.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE01.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE01.SCENE.EXML]],
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE01.SCENE.EXML]]
   		}
@@ -32462,11 +33094,18 @@ LUSHGRASSLIST =
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE02.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE02.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
 
 				EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE03.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE03.SCENE.EXML]]
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\LARGEOAK1.SCENE.EXML]] 
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
@@ -34241,6 +34880,10 @@ LUSHGRASSLIST =
 			--
 			copyEXML("ON","GRASS\NONE.EXML","METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHULTRAOBJECTS.EXML")
 			copyEXML("ON","GRASS\NONE.EXML","METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\ULTRAEXTERNALOBJECTS.EXML")
+
+
+
+
 			SUBBIOMES_TF = ""
 
 			NEW_CONTENT =
@@ -34312,6 +34955,7 @@ LUSHGRASSLIST =
 
 			for count=1, tablelength(FROZENPROPS) do
 				GENERATED_ORIGIN_BIOME_PATH = [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\TF\ORIGINS]]..count
+				if GIANTS_BIOMES_FEATURE == "ON" then
 				generateORIGINSTREES
 				(
 					GENERATED_ORIGIN_BIOME_PATH,
@@ -34323,6 +34967,19 @@ LUSHGRASSLIST =
 						<Property name="Value" value="]]..GENERATED_ORIGIN_BIOME_PATH..[[.MBIN" />
 						</Property>
 				]]
+				else
+				generateORIGINSTREESAlt
+				(
+					GENERATED_ORIGIN_BIOME_PATH,
+					FROZENPROPS[count].TYPE,FROZENPROPS[count].PATH,FROZENPROPS[count].MAXSIZE
+				)
+				SUBBIOMES_TF = SUBBIOMES_TF..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="]]..GENERATED_ORIGIN_BIOME_PATH..[[.MBIN" />
+						</Property>
+				]]
+				end
 			end
 
 			SUBBIOMES_TM = ""
@@ -36555,6 +37212,7 @@ LUSHGRASSLIST =
 			--
 			for count=1, tablelength(NORMALLUSHTREES) do
 				GENERATED_ORIGIN_BIOME_PATH = [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\T\ORIGINS]]..count
+				if GIANTS_BIOMES_FEATURE == "ON" then
 				generateORIGINSTREES
 				(
 					GENERATED_ORIGIN_BIOME_PATH,
@@ -36566,6 +37224,20 @@ LUSHGRASSLIST =
 						<Property name="Value" value="]]..GENERATED_ORIGIN_BIOME_PATH..[[.MBIN" />
 						</Property>
 				]]
+				else
+				generateORIGINSTREESAlt
+				(
+					GENERATED_ORIGIN_BIOME_PATH,
+					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE
+				)
+				SUBBIOMES_T = SUBBIOMES_T..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="]]..GENERATED_ORIGIN_BIOME_PATH..[[.MBIN" />
+						</Property>
+				]]
+
+				end
 			end
 			--
 			NEW_CONTENT =
@@ -36587,6 +37259,8 @@ LUSHGRASSLIST =
 			--
 						for count=1, tablelength(NORMALLUSHTREES) do
 				GENERATED_ORIGIN_BIOME_PATH = [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\T\ORIGINS]]..count
+
+				if GIANTS_BIOMES_FEATURE == "ON" then
 				generateORIGINSTREES
 				(
 					GENERATED_ORIGIN_BIOME_PATH,
@@ -36598,6 +37272,19 @@ LUSHGRASSLIST =
 						<Property name="Value" value="]]..GENERATED_ORIGIN_BIOME_PATH..[[.MBIN" />
 						</Property>
 				]]
+				else
+					generateORIGINSTREESAlt
+				(
+					GENERATED_ORIGIN_BIOME_PATH,
+					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE
+				)
+				SUBBIOMES_TM = SUBBIOMES_TM..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="]]..GENERATED_ORIGIN_BIOME_PATH..[[.MBIN" />
+						</Property>
+				]]
+				end
 			end
 			--
 			NEW_CONTENT =
@@ -38573,6 +39260,133 @@ LUSHGRASSLIST =
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 
 		end
+
+
+			-- density rebalancing - required-fixed, exclusive to fantasy biomes feature 
+			addFeature
+			(
+				FANTASY_BIOMES_FEATURE,
+				{
+					{
+						["MBIN_FILE_SOURCE"] =
+						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\ALLWILD1.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\ALLWILD2.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\ALLWILD3.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\ALLWILDFULL.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\BARREN.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\BARRENWILD.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\DEADPLANETS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FLYTRAPPLANT.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FROZEN.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FULL.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FULLSAFE.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\LUSH.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\LUSHWILD.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\PLANTLARGECROP.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\RADIOACTIVE.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\RADIOACTIVEWILD.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\SCORCHEDWILD.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\SPOREVENTPLANT.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\TENTACLEPLANT.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\TOXIC.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\TOXICWILD.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\WEIRDWILD.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BARRENFULL.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSING.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\DEAD.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSINGGLOW.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\FULL.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\LOW.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\MID.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\ALWAYSPRESENT.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CAVECUBES.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CAVEPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CLAMSHELLPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\FIENDEGGS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\FLOATINGPHYSICS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\FLOATINGPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\GEMPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\INFESTATION.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\LANDURCHINS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\METALFORMATION.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\NAVDATA.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PHYSICSPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PHYSICSSPOREPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PICKUPCUBE.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROCBONES.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROCSALVAGE.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROXIMITYPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROXIMITYTENTACLEPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\RARECRYSTALPROPS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\RAREROCKS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\ROBOTHEADS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\STORMCRYSTALS.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERGROUNDFUN.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERWATERSPHERES.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULL.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULLSAFE.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\BARREN.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\CAVEFULL.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\DEAD.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FROZEN.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\LUSH.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\RADIOACTIVE.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\SCORCHED.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\TOXIC.MBIN]],
+						--	[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\BEACH\FULL.MBIN]],
+						},
+						["EXML_CHANGE_TABLE"] =
+						{
+							{
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["MATH_OPERATION"] = "+",
+								["REPLACE_TYPE"] = "ALL",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"Coverage", "0.05"},
+								}
+
+							},
+							{
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["MATH_OPERATION"] = "*",
+								["REPLACE_TYPE"] = "ALL",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"MaxScale", "1.1"},
+								}
+
+							},--[=[
+							
+							{
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["MATH_OPERATION"] = "*",
+								["REPLACE_TYPE"] = "ALL",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"FlatDensity", "0.1"},
+								}
+
+							},
+							{
+								
+								["REPLACE_TYPE"] = "ALL",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"MaxImposterRadius", "9999"},
+									{"FadeOutOffsetDistance", "9999"},
+								}
+
+							},--]=]
+						
+
+						}
+					},
+				}
+			)
 
 		-- E3 DEPOSITS ASSETS
 		if E3_FANTASY_DEPOTS_ASSETS_FEATURE == "ON" then
@@ -42645,14 +43459,14 @@ end
 						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"FrameEnd",	"171"},
+							{"FrameEnd",	"145"},
 						}
 					},
 					{
 						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"FrameStart",	"10"},
+							{"FrameStart",	"36"},
 						}
 					}
 				}

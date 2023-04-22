@@ -1,5 +1,5 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "4_22"
+GameVersion = "4_23"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
 --GcDefaultMissionProductEnum.xml
@@ -40,6 +40,7 @@ ExocraftBlueprintCostMult = 7.5			--Put the same value used in the "PTSd Tech + 
 
 RemoveEarlyRoamerReward = true			--false		Set true to remove the recipe for the Roamer from the rewards as soon as you meet Apollo's contact on a Space Station. Remaining options are a Base Computer Archive reward, an Exocraft Technician reward, or buying at the Anomaly
 RemoveLargePlanterReward = true			--false		Set true to make the Farmer NPC no longer teach you the recipe for the Large Hydroponic Tray when he teaches you the recipe for the regular Hydroponic Tray
+LargeToMediumRefiner = true				--false		Set true to make the Scientists NPC teach the Medium Refiner recipe instead of the Large Refiner recipe
 
 --Set which recipes for Storage Containers to remove from the reward the Overseer gives you in the base building mission chain, where he normally gives all 10 recipes
 RemoveContainerMission = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9", }		
@@ -459,6 +460,17 @@ ChangesToMissionTable[#ChangesToMissionTable+1] =
 				["SPECIAL_KEY_WORDS"] = {"ID",	"PLANTERMEGA"},
 				["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
+			}
+end
+if LargeToMediumRefiner then
+ChangesToMissionTable[#ChangesToMissionTable+1] =
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_MATCH"] = "BUILD_REFINER3",  
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"IGNORE", "BUILD_REFINER2"},
+				}
 			}
 end
 

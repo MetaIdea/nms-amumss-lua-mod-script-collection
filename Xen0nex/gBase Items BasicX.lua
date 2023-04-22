@@ -2,7 +2,7 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "422"
+GameVersion = "423"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
@@ -39,9 +39,13 @@ PlanterPowerDraw = -6		--	-5 kPs		(Remember to make the value negative)
 LargePlanterPowerDraw = -16	--	-20 kPs		(Remember to make the value negative)
 BiodomeBaseLimit = 0		--0
 BiodomePowerDraw = -160		--	-50 kPs		(Remember to make the value negative)
-PlanterFreighter = "False"	--Override for setting if Planters, Large Planters, and Biodomes can be built on freighters or not
 
-TeleportersBuildable = "True"	--"True"		Set this to "False" to disable the player from constructing Teleporters in bases or freighters. (You can still use Station Teleporters to teleport to your base or freighter)
+TeleportersBuildable = "True"	--"True"		Set this to "False" to disable the player from constructing any Teleporters in bases or freighters at all. (You can still use Station Teleporters to teleport to your base or freighter)
+
+--Reverts certain things to not be buildable on freighters, since they have dedicated freighter rooms for them instead
+PlanterFreighter = "False"	--Override for setting if Hydroponic Trays, Large Hydroponic Trays, and Biodomes can be built on freighters or not
+RefinersFreighter = "False"	--Override for setting if Nutrient Processors, Medium/Large Refiners can be built on freighters or not
+OtherFreighter = "False"	--Override for setting if regular Galactic Trade Terminals, Appearance Modifiers, Storage Containers can be built on freighters or not
 
 --Changes to base values for extractor rates & storage in RegionHotspotsTable, to allow higher effective storage / extraction rates without disabling base uploading
 	-- <Storage or Rate values above> / AmountCost * SubstanceYeild => in-game storage amount or rate
@@ -51,8 +55,6 @@ SubstanceYeildAll = 1250		--250		Increasing this increases the final effective s
 --Increasing these values crashes the game
 --BaseExtractMinAll = 190			--190		Minimum range of the base extraction rate, before applying extractor or hotspot class modifiers
 --BaseExtractMaxAll = 225			--225		Maximum range of the base extraction rate, before applying extractor or hotspot class modifiers
-
-
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -201,6 +203,81 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"Rate", BiodomePowerDraw},
 		{"BuildableOnSpaceBase", PlanterFreighter},
 		{"BuildableOnFreighter", PlanterFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","COOKER"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", RefinersFreighter},
+		{"BuildableOnFreighter", RefinersFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","BUILD_REFINER2"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", RefinersFreighter},
+		{"BuildableOnFreighter", RefinersFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","BUILD_REFINER3"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", RefinersFreighter},
+		{"BuildableOnFreighter", RefinersFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","BUILDTERMINAL"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","DRESSING_TABLE"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER0"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER1"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER2"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER3"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER4"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER5"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER6"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER7"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER8"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER9"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", OtherFreighter},
+		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
 	["VALUE_CHANGE_TABLE"] = {
