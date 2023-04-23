@@ -5,13 +5,13 @@ GCTechnologyTablePath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABL
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = ModeName..".pak",
-["MOD_DESCRIPTION"] = ModeName,
-["MOD_AUTHOR"] = Author,
-["MODIFICATIONS"] =
+    ["MOD_FILENAME"] = ModeName..".pak",
+    ["MOD_DESCRIPTION"] = ModeName,
+    ["MOD_AUTHOR"] = Author,
+    ["MODIFICATIONS"] =
     {
         {
-            ["MBIN_CHANGE_TABLE"]     =
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = GCTechnologyTablePath,
@@ -19,16 +19,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID","SHIPGUN1"}, --this isnt in base game now
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Core",    "False"}
+                                {"Core", "False"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID","LASER"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Core",    "False"}
+                                {"Core", "False"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","SENT_LASER"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Core", "False"}
                             }
                         }
                     }
