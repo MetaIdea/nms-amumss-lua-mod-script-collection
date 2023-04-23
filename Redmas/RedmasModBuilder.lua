@@ -12,11 +12,9 @@
 -- ------------------You can configure the overhaul from the following VARs-------------------------------- --
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
--- Main Features enabler -- ----------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "REDMAS_E3PIC_FANTASY_PRESET"
+INIT = "REDMAS_SANDWORM_OVERHAUL_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -5911,7 +5909,7 @@ GIANT_OFTEN_SPAWN =-------------------------------------------------------------
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
           <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
             <Property value="20" />
@@ -5947,7 +5945,7 @@ GIANT_SPARSE_SPAWN = -----------------------------------------------------------
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
           <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
             <Property value="20" />
@@ -7192,7 +7190,7 @@ function generateORIGINSTREES
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
           <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
             <Property value="20" />
@@ -21148,7 +21146,7 @@ end
 -- GENERATION OVERHAUL
 if GENERATION_OVERHAUL == "ON"
 then
-copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Fantasy_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
+ copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Fantasy_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
 
 	val_TERRAIN_HEIGHT_MIN = tonumber(TERRAIN_HEIGHT_MAX) - 50
 	TERRAIN_HEIGHT_MIN = tostring (val_TERRAIN_HEIGHT_MIN)
@@ -39349,18 +39347,18 @@ LUSHGRASSLIST =
 									{"Coverage", "0.05"},
 								}
 
-							},
+							},--[=[
 							{
 								["INTEGER_TO_FLOAT"] = "FORCE",
 								["MATH_OPERATION"] = "*",
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"MaxScale", "1.1"},
+									{"MaxScale", "0.81"},
 								}
 
-							},--[=[
-							
+							},
+							--]=]
 							{
 								["INTEGER_TO_FLOAT"] = "FORCE",
 								["MATH_OPERATION"] = "*",
@@ -39370,7 +39368,7 @@ LUSHGRASSLIST =
 									{"FlatDensity", "0.1"},
 								}
 
-							},
+							},--[=[
 							{
 								
 								["REPLACE_TYPE"] = "ALL",
