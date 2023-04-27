@@ -177,6 +177,13 @@ ProductStackChanges =
 	{"UI_ILLEGAL_PROD8_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
 }
 
+--Adjusts the amount of components required for certain techs
+AdjustItems =
+{		--Tech ID				Item ID			# of Items
+	{	--Battery 				Mag. Ferrite
+		"U_BATTERY_S",			"LAND3",			80,			--60
+	},
+}
 --Adds various items as new components for certain techs
 AddItems =
 {		--Tech ID				Item ID			# of Items	Item Type
@@ -188,6 +195,9 @@ AddItems =
 	},
 	{	--Galactic Trade Terminal 
 		"BUILDTERMINAL",		"RED2",				25,		"Substance",
+	},
+	{	--Battery 				Ionised Cobalt
+		"U_BATTERY_S",			"CAVE2",			30,		"Substance",
 	},
 }
 --Replaces an existing component for certain techs with various items instead
@@ -253,11 +263,11 @@ GravHostCadmiumNeeded			=	60				--0		(replaces 25 Chromatic Metal)
 GravHostGravitinoBallsNeeded	=	1				--0		(replaces 25 Magnetised Ferrite)
 
 --Biofuel Reactor construction recipe
-BioGenPlatesNeeded				=	1				--1		Metal Plates
-BioGenOxygenNeeded				=	50				--25	Oxygen
+BioGenPlatesNeeded				=	4				--1		Metal Plates
+BioGenOxygenNeeded				=	90				--25	Oxygen
 --Solar Panel construction recipe
-SolarPlatesNeeded				=	3				--1		Metal Plates
-SolarGoldNeeded					=	40				--30	Gold
+SolarPlatesNeeded				=	4				--1		Metal Plates
+SolarGoldNeeded					=	60				--30	Gold
 SolarGlassNeeded				=	4				--0		(replaces 50 Chromatic Metal)
 --Electromagnetic Generator construction recipe
 EGenPlatesNeeded				=	6				--2
@@ -1401,6 +1411,23 @@ end
                             }
                         }
 	end
+for i = 1, #AdjustItems do
+	local TechIDNum = AdjustItems[i][1]
+	local AdjItemID = AdjustItems[i][2]
+	local AdjItemAmount = AdjustItems[i][3]
+		
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["PRECEDING_KEY_WORDS"] = "",
+				["MATH_OPERATION"] 		= "", 
+				["REPLACE_TYPE"] 		= "",	 
+				["SPECIAL_KEY_WORDS"] = {"ID", TechIDNum,	"ID", AdjItemID},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Amount",	AdjItemAmount},
+				}
+			}
+end
 for i = 1, #AddItems do
 	local TechIDNum = AddItems[i][1]
 	local AddItemID = AddItems[i][2]

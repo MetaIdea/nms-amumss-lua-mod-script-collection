@@ -72,14 +72,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["VALUE_CHANGE_TABLE"]     =
-                            {
-                                {"Samplers","IGNORE"},
-                            },
-                            ["ADD_OPTION"] = "REPLACEatLINE",
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},	
+                            ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-  <Property name="Samplers">
     <Property value="TkMaterialSampler.xml">
       <Property name="Name" value="gDiffuseMap" />
       <Property name="Map" value="TEXTURES/PLANETS/OCEAN/SHRUBS/TALLPLANTDUD1.BASE.DDS" />
@@ -116,7 +112,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="TextureFilterMode" value="Trilinear" />
       <Property name="Anisotropy" value="0" />
     </Property>
-  </Property>
 ]]
                         },
                     }

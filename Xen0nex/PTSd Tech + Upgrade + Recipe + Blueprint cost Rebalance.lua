@@ -32,6 +32,7 @@ ValuableCraftsMult	=				10			--Multiplier applied to default cost of 250 Nanites
 
 --Blueprint cost multipliers
 ExoCraftBuildingsMult	=			7.5			--Multiplier applied to default cost of 4, 8, or 10 Salvaged Data
+ColossusBuildingsMult	=			3.75		--Multiplier applied to default cost of 8
 ExoCraftSummonBuildingsMult	=		2			--Multiplier applied to default cost of 12 Salvaged Data
 FarmingBlueprintsMult	=			8			--Multiplier applied to default cost of 3 Salvaged Data 
 LargePlanterBlueprintMult	=		0.5			--Multiplier applied to default cost of 10 Salvaged Data 
@@ -146,7 +147,7 @@ TechAdjustments =
 		"HDRIVEBOOST2",	1.5				--Emeril Drive							120 Nanites
 	},
 	{
-		"HDRIVEBOOST3",	1.5				--Indium Drive							200 Nanites
+		"HDRIVEBOOST3",	1.2				--Indium Drive							200 Nanites
 	},
 	{
 		"STUN_GREN",	2				--Paralysis Mortar
@@ -243,7 +244,7 @@ AddItems =
 		"HDRIVEBOOST2",			"ATLAS_SEED_3",		1,		"Product",
 	},
 	{	--Indium Drive			
-		"HDRIVEBOOST2",			"ATLAS_SEED_5",		1,		"Product",
+		"HDRIVEBOOST3",			"ATLAS_SEED_5",		1,		"Product",
 	},
 	{	--Large Rocket Tubes			
 		"UT_ROCKETS",			"BLUE2",			50,		"Substance",
@@ -286,7 +287,7 @@ ReplaceItems =
 		"UT_SURVEY",			"BLUE2",			100,	"Substance",	"COMPUTER",
 	},
 	{	--Optical Drill 
-		"UT_MINER",				"GREEN2",			100,	"Substance",	"COMPUTER",
+		"UT_MINER",				"ATLAS_SEED_2",		1,		"Product",		"COMPUTER",
 	},
 	{	--Voltaic Amplifier 
 		"UT_STUNDMG",			"BLUE2",			50,		"Substance",	"POWERCELL",
@@ -473,12 +474,19 @@ RecipeChanges	=
 		ExoCraftBuildingsMult				-- Keep in mind the roamer (base cost 4 Salvage) needs to be unlocked first to unlock others...
 	},
 	{
-		"GARAGE_S",				--8
+		"GARAGE_S",				--8			(Nomad)
 		"GARAGE_M",				--4			(Roamer)
-		"GARAGE_L",				--8
-		"GARAGE_B",				--10
-		"GARAGE_SUB",			--10
-		"GARAGE_MECH"			--10
+		"GARAGE_B",				--10		(Pilgrim)
+		"GARAGE_SUB",			--10		(Nautilon)
+		"GARAGE_MECH"			--10		(Minotaur)
+	}
+},
+{
+	{
+		ColossusBuildingsMult				-- Keep in mind the roamer (base cost 4 Salvage) needs to be unlocked first to unlock others...
+	},
+	{
+		"GARAGE_L",				--8			(Colossus)
 	}
 },
 {
@@ -1174,6 +1182,12 @@ AddCultRoom =
                 <Property name="Children" />
               </Property>]]
 
+AddSavePoint =
+[[<Property value="GcUnlockableItemTreeNode.xml">
+                <Property name="Unlockable" value="BUILDSAVE" />
+                <Property name="Children" />
+              </Property>]]
+
 function Invert (value)
     return
     1/value
@@ -1632,6 +1646,52 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Unlockable", "PLANTERMEGA"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
                             ["ADD"] = AddCultRoom
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE"},
+							["REPLACE_TYPE"] = "",
+							["VALUE_MATCH"] 		= "BUILDSAVE",
+                            ["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Unlockable", "BUILDTERMINAL"},
+							}
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE"},
+							["REPLACE_TYPE"] = "",
+							["VALUE_MATCH"] 		= "BUILDTERMINAL",
+                            ["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Unlockable", "BUILDSAVE"},
+							}
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE"},
+							["REPLACE_TYPE"] = "",
+							["VALUE_MATCH"] 		= "BUILDSAVE",
+                            ["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Unlockable", "BUILDTERMINAL"},
+							}
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE"},
+							["REPLACE_TYPE"] = "",
+							["VALUE_MATCH"] 		= "BUILDTERMINAL",
+                            ["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Unlockable", "BUILDSAVE"},
+							}
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASICTECH_TREE",		"Unlockable", "BUILDBEACON"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+                            ["ADD"] = AddSavePoint
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASICPARTS_TREE",		"Unlockable", "BUILDBEACON"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+                            ["ADD"] = AddSavePoint
                         },
                     }
 				},

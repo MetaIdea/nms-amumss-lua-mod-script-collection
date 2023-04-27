@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FiendAggroTime",	"3000"},
+								{"FiendAggroTime",	"1500"},
 								{"FiendDespawnDistance",	"3000"},
 								{"FiendPounceDistanceModifier" , "6"},
 								{"FiendPerceptionDistance", "300"},
@@ -55,8 +55,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MoveSpeedScale",	"1.3"},
-								{"DelayBetweenPounceAttacks",	"1.5"}
+								{"MoveSpeedScale",	"1.2"},
+								{"DelayBetweenPounceAttacks",	"1.6"}
 								
 							},
 								

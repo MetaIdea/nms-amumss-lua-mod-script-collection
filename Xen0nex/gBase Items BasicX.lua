@@ -14,7 +14,7 @@ BioRate = 50				--Original 50
 BioStorage = 90000			--Original 180000		Sets how many seconds worth of fuel it can hold when full, default is 50 hours
 BatteryRate = 0				--Original 0
 BatteryStorage = 50000		--Original 50000
-EMRate = 1					--Original 1 (C=175, B=220, A=250, S=300)
+EMRate = 1					--Original 1 (C= ~175, B= ~220, A= ~250, S= ~300)
 EMLimit = 0					--0				(Regional Limit)
 EMAnywhere = "Power"		--Power, None for EMAnywhere
 MineralRate = 10			--100					Setting this value above 1440000 disables base uploading
@@ -30,6 +30,7 @@ ParagonDistance = 100000	--1000
 
 --Additions by Xen0nex below
 --(PlayerBase Limits)
+EMClassBStrength = 200		--250		Strength for Class B Electromagnetic Power hotspots (Vanilla is C=150, B=220, A=250, S=300)
 EMBaseLimit = 0				--0
 MineralBaseLimit = 8		--0
 GasBaseLimit = 8			--0
@@ -353,6 +354,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					{"AmountCost", AmountCostAll},
 					{"SubstanceYeild", SubstanceYeildAll},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Power", "GcRegionHotspotData.xml"},
+				["PRECEDING_KEY_WORDS"] = "ClassStrengths",
+				["REPLACE_TYPE"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"B", EMClassBStrength},
 				}
 			},
 		}

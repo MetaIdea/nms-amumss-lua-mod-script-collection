@@ -1,6 +1,6 @@
 local modfilename = "SentinelShipAnims"
 local lua_author  = "Silent"
-local lua_version = "v1.0"
+local lua_version = "v1.1"
 local mod_author  = "Silent369"
 local nms_version = "4.2x"
 local maintenance = mod_author
@@ -12,8 +12,16 @@ all Sentinel ships that have animated wing parts.
 
 --|-- Animation Reduction Amount -------------------------------------
 
-local _ProcSlowAmount = 0.665  --Original "1"
-local _WingSlowAmount = 0.525  --Original "1"
+local _ProcSlowAmount = 0.660  --Original "1"
+local _WingSlowAmount = 0.520  --Original "1"
+
+--|-------------------------------------------------------------------
+
+--Modifies:
+--MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY1\ENTITIES\DATA.ENTITY.MBIN
+--MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEL\ENTITIES\DATA.ENTITY.MBIN
+--MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\WINGSB\ENTITIES\ROOTJNT.ENTITY.MBIN
+--MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELSHIP_PROC\ENTITIES\ROOTJNT.ENTITY.MBIN
 
 --|-------------------------------------------------------------------
 
@@ -76,6 +84,56 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Speed", _WingSlowAmount},
+                            }
+                        },
+                    }
+                },
+                    --|-------------------------------------------------------------------
+                    --| Sentinel Ship Engine Flame Body 1 Animation Slow Down
+                    --|-------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"] = {"MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY1\ENTITIES\DATA.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF", "Filename", "MODELS/COMMON/SPACECRAFT/SENTINELSHIP/ANIMS/SENTINELTAKEOFF.ANIM.MBIN"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Speed", _ProcSlowAmount},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING", "Filename", "MODELS/COMMON/SPACECRAFT/SENTINELSHIP/ANIMS/SENTINELLANDING.ANIM.MBIN"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Speed", _ProcSlowAmount},
+                            }
+                        },
+                    }
+                },
+                    --|-------------------------------------------------------------------
+                    --| Sentinel Ship Engine Flame L Animation Slow Down
+                    --|-------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"] = {"MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEL\ENTITIES\DATA.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF", "Filename", "MODELS/COMMON/SPACECRAFT/SENTINELSHIP/ANIMS/SENTINELTAKEOFF.ANIM.MBIN"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Speed", _ProcSlowAmount},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING", "Filename", "MODELS/COMMON/SPACECRAFT/SENTINELSHIP/ANIMS/SENTINELLANDING.ANIM.MBIN"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Speed", _ProcSlowAmount},
                             }
                         },
                     }
