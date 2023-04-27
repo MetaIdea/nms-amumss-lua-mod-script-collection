@@ -5,7 +5,7 @@ mod_desc = [[
   * The ADD_FILES section can be safely disabled/ignored if you prefer
    to add the texture files in a different method.
 ]]--------------------------------------------------------------------
-mod_version = '1.2'
+mod_version = '1.22'
 
 local tech_icons = {
 	---	ship
@@ -28,8 +28,6 @@ local tech_icons = {
 	{'UT_SHIPSHIELD',	'TECHNOLOGY/RENDER.SHIELD.RED2.DDS'},
 	{'SHIPSCAN_ECON',	'TECHNOLOGY/RENDER.FREIGHTERSCANNER.DDS'},
 	{'SHIP_TELEPORT',	'TECHNOLOGY/TECHNOLOGY.FLEET.TRADE.DDS'},
-	{'SHIPJUMP_ROBO',	'TECHNOLOGY/ROBOTSHIP.HYPERDRIVE.DDS'},
-	{'HYPERDRIVE_ROBO',	'TECHNOLOGY/ROBOTSHIP.HYPERDRIVE.H.DDS'},
 	---	vehicle
 	{'EXO_RECHARGE',	'TECHNOLOGY/VEHICLE/RENDER.ENGINE.ICARUS.DDS'},
 	{'MECH_BOOST',		'TECHNOLOGY/VEHICLE/RENDER.MECH.BOOST.DDS'},
@@ -65,6 +63,7 @@ local tech_icons = {
 	{'UT_WATERJET',		'TECHNOLOGY/RENDER.JETPACK.MOD.DDS'},
 	{'UT_WATER',		'TECHNOLOGY/RENDER.PROTECT.WATER.DDS'},
 	{'UT_PROTECT',		'TECHNOLOGY/RENDER.PROTECT.BLUE.DDS'},
+	{'T_SHIELD',		'TECHNOLOGY/RENDER.SHIELD.SUIT.DDS'},
 	---	freighter
 	{'F_TELEPORT',		'TECHNOLOGY/TECHNOLOGY.FLEET.TRADE.DDS'},
 	{'F_HYPERDRIVE',	'SPECIALSHOP/SPECIAL1.FREIGHTJETS.GRAVITY.DDS'},

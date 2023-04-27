@@ -294,31 +294,8 @@ for i = 1, #BiomeDataTable do
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
-        ["REPLACE_TYPE"] = "RAW",
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {
-                        [[<Property name="Settings" />]],
-                        [[<Property name="Settings">]]
-            },
-        }
-    }
-
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
         ["PRECEDING_KEY_WORDS"] = {"Settings"},
-        ["ADD_OPTION"] = "ADDafterLINE",
-        ["ADD"] =
-[[
-      </Property>
-]]
-    }
-
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
-        ["PRECEDING_KEY_WORDS"] = {"Settings"},
+        ["CREATE_HOS"] = "TRUE",
         ["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
     }
 end

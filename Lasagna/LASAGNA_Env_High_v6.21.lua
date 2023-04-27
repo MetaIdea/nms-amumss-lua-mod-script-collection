@@ -450,8 +450,8 @@ return [[
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="1" />
-          <Property name="FlatDensity" value="0.34" />
-          <Property name="SlopeDensity" value="0.34" />
+          <Property name="FlatDensity" value="0.55" />
+          <Property name="SlopeDensity" value="0.55" />
           <Property name="SlopeMultiplier" value="2.5" />
           <Property name="MaxRegionRadius" value="17998" />
           <Property name="MaxImposterRadius" value="18" />
@@ -470,8 +470,8 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.3" />
-            <Property name="SlopeDensity" value="0.3" />
+            <Property name="FlatDensity" value="0.55" />
+            <Property name="SlopeDensity" value="0.55" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="9" />
             <Property name="MaxImposterRadius" value="18" />
@@ -489,8 +489,8 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.3" />
-            <Property name="SlopeDensity" value="0.3" />
+            <Property name="FlatDensity" value="0.55" />
+            <Property name="SlopeDensity" value="0.55" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="5" />
             <Property name="MaxImposterRadius" value="18" />
@@ -856,6 +856,12 @@ local function BiomesNewVanilla(VanillaDensity1, VanillaDensity2)
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/HUGEROCKRING.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/LARGEVOLCANO.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] 	= "",
 							["REMOVE"] = "SECTION",
@@ -1784,53 +1790,34 @@ return [[
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.07" />
-          <Property name="FlatDensity" value="0.045" />
+          <Property name="Coverage" value="0.082" />
+          <Property name="FlatDensity" value="0.36" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="30" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="MaxRegionRadius" value="13498" />
+          <Property name="MaxImposterRadius" value="14" />
+          <Property name="FadeOutStartDistance" value="13498" />
+          <Property name="FadeOutEndDistance" value="13498" />
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="20" />
-            <Property value="60" />
-            <Property value="150" />
-            <Property value="500" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
           </Property>
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.1" />
-            <Property name="FlatDensity" value="0.05" />
-            <Property name="SlopeDensity" value="0.05" />
+            <Property name="Coverage" value="0.03" />
+            <Property name="FlatDensity" value="0.3" />
+            <Property name="SlopeDensity" value="0.24" />
             <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="30" />
-            <Property name="MaxImposterRadius" value="30" />
-            <Property name="FadeOutStartDistance" value="210" />
-            <Property name="FadeOutEndDistance" value="240" />
-            <Property name="FadeOutOffsetDistance" value="10" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="30" />
-              <Property value="90" />
-              <Property value="225" />
-              <Property value="750" />
-            </Property>
-          </Property>
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="ULTRA" />
-            <Property name="Coverage" value="0.1" />
-            <Property name="FlatDensity" value="0.05" />
-            <Property name="SlopeDensity" value="0.05" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="30" />
-            <Property name="MaxImposterRadius" value="30" />
-            <Property name="FadeOutStartDistance" value="210" />
-            <Property name="FadeOutEndDistance" value="240" />
+            <Property name="MaxRegionRadius" value="14" />
+            <Property name="MaxImposterRadius" value="14" />
+            <Property name="FadeOutStartDistance" value="94" />
+            <Property name="FadeOutEndDistance" value="108" />
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
@@ -3904,11 +3891,11 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 						},
 						
 						--ADD NEW GRASS:
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
-						},
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							-- ["ADD_OPTION"] 	= "ADDafterLINE",
+							-- ["ADD"] = AddGrass(),
+						-- },
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
@@ -4635,7 +4622,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_High_v6.12.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_High_v6.21.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -6442,6 +6429,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "",
 							["REMOVE"] = "SECTION",
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/LARGEVOLCANO.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- d. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -6872,6 +6865,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/HUGEROCKRING.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/LARGEVOLCANO.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] 	= "",
 							["REMOVE"] = "SECTION",
@@ -7588,6 +7587,56 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD37.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD37.MBIN"},
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD38.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD38.MBIN"},
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD39.MBIN"},
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{ --Remove all non-detailObject stuff
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects",},
+							["ADD"] = [[    <Property name="DistantObjects" />]],
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["ADD"] = [[    <Property name="Landmarks" />]],
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects",},
+							["ADD"] = [[    <Property name="Objects" />]],
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						
+
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects",},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects",},
+							["REMOVE"] = "SECTION"
+						},
+						
+						--REMOVE DetailObjects
+						
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["ADD"] = replaceDO,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["REMOVE"] = "SECTION"
+						},
+					}
+				},
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD40.MBIN"},
 						
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD54.MBIN"},
@@ -7636,6 +7685,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["REMOVE"] = "SECTION"
+						},
+						--ADD NEW GRASS:
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddGrass(),
 						},
 					}
 				},
@@ -7742,28 +7797,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHSANDBLEND.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN
 --MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/CACTUSSML.SCENE.MBIN
@@ -7772,14 +7815,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/BARREN/PLANTS/FLUFFBUSH.SCENE.MBIN
 						{
@@ -7787,28 +7824,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN
 --MODELS/PLANETS/BIOMES/BARREN/PLANTS/SMALLCACTUS.SCENE.MBIN
@@ -7818,14 +7843,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --tiny
 --MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN
 						{
@@ -7833,14 +7852,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA02.SCENE.MBIN
 --MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/POOFBUSH.SCENE.MBIN
@@ -7849,14 +7862,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.MBIN
 						{
@@ -7864,61 +7871,29 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN
 --MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN
 --MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN
 --MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
-							["PRECEDING_FIRST"] = "TRUE",
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
-						},
 --MODELS/PLANETS/BIOMES/BARREN/HQ/CACTUS/HQFURRYCACTUS.SCENE.MBIN
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/GRAVELPATCHSHINY.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --too small/blocky
 
 
@@ -7928,42 +7903,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHSNOWBLEND.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SNOWFRAGMENTS.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLPLANT.SCENE.MBIN --ok
 						{
@@ -7971,28 +7928,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/SNOWCLUMP.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMPLANT.SCENE.MBIN
 						{
@@ -8000,42 +7945,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/SMALLROCKSSHARDS.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/MEDIUMSNOWBLENDROCK.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 
 
@@ -8045,14 +7972,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --too small/blocky
 --MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN --ok
 --MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN
@@ -8061,14 +7982,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN
 
@@ -8079,14 +7994,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/LAVAGEMS.SCENE.MBIN
 						{
@@ -8094,28 +8003,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/SCORCHED/SMALL/LEAFDROPLET.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --remove
 --MODELS/PLANETS/BIOMES/SCORCHED/SMALL/SMALLSPIRE.SCENE.MBIN
 
@@ -8126,14 +8023,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN
 --MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.MBIN
@@ -8143,28 +8034,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --tiny, remove
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LUSHROOM/SMALLBLUESHROOMS.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --tiny, remove
 --toxicgrassx2 on lushfull
 --remove lushultraobjects
@@ -8177,28 +8056,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --remove
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/RADIOACTIVE/SMALL/CURVEFRAGMENT.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --remove
 --MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/SPIKYPOTATO.SCENE.MBIN
 						{
@@ -8206,28 +8073,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/GLOWGRASS.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --remove, tiny
 
 
@@ -8244,62 +8099,39 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --tiny, remove
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEGRAVELPATCH.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/BLOBFRAGMENTS.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						}, --tiny, remove
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/SMALLROCK.SCENE.MBIN"},
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["PRECEDING_FIRST"] = "TRUE",
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.65},
-								{"FlatDensity",			    0.65},
-								{"SlopeDensity",			0.65},
-							},
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
 						},
 --MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLERODEPLANT.SCENE.MBIN
 --MODELS/PLANETS/BIOMES/TOXIC/SMALL/SMALLTOXICEGG.SCENE.MBIN
-						
-						
-						
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- CHANGE GRASS DRAW DISTANCE, ETC --------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						--REPLACE:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
@@ -8307,8 +8139,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"},
+								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -8319,7 +8150,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -8331,7 +8161,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -8343,8 +8172,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- ["REPLACE_TYPE"] = "ALL",
 							-- ["VALUE_CHANGE_TABLE"] 	= 
 							-- {
-								-- {"PatchEdgeScaling",		"0"},
-								-- {"Placement",				"FLORACLUMP"}, --Takes over bubble glow grass
+								-- {"Placement",				"GRASS"}, --Takes over bubble glow grass
 								-- {"MaxAngle",				90},
 								-- {"LargeObjectCoverage",		"AlwaysPlace"},
 							-- }
@@ -8355,7 +8183,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"}, 	--Causes lag
 								--{"MaxAngle",				90}, 		--Causes grass to "float" on an angle
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -8367,7 +8194,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -8379,7 +8205,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								--{"MaxAngle",				90}, 	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -8391,8 +8216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"},
+								{"Placement",				"GRASS"},
 								--{"MaxAngle",				90},	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -8403,8 +8227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
+								--{"Placement",				"GRASS"}, --Causees lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -8415,8 +8238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
+								--{"Placement",				"GRASS"}, --Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -8429,9 +8251,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.33},
-								{"FlatDensity",			    0.1},
-								{"SlopeDensity",			0.1},
+								{"Coverage",			    0.63},
+								{"FlatDensity",			    0.4},
+								{"SlopeDensity",			0.4},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -8446,9 +8268,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.33},
-								{"FlatDensity",			    0.1},
-								{"SlopeDensity",			0.1},
+								{"Coverage",			    0.63},
+								{"FlatDensity",			    0.4},
+								{"SlopeDensity",			0.4},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -8467,6 +8289,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
 								{"FadeOutEndDistance",		1.8},
+								{"MaxScale", 				1.9},
 							}
 						},
 						{
@@ -8476,10 +8299,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxScale",			    2.47},
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.14},
-								{"SlopeDensity",			0.14},
+								{"FlatDensity",			    0.28},
+								{"SlopeDensity",			0.28},
 								{"SlopeMultiplier",			2.5},
 							}
 						},
@@ -8490,8 +8312,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- ["REPLACE_TYPE"] 		= "ALL",
 							-- ["VALUE_CHANGE_TABLE"] 	= 
 							-- {
-								-- {"FlatDensity",			    0.12},
-								-- {"SlopeDensity",			0.12},
+								-- {"FlatDensity",			    0.5},
+								-- {"SlopeDensity",			0.5},
 								-- {"MaxRegionRadius",			1.8},
 								-- {"MaxImposterRadius",		1.8},
 								-- {"FadeOutStartDistance",	1.8},
@@ -8521,9 +8343,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.1},
-								{"FlatDensity",			    0.07},
-								{"SlopeDensity",			0.07},
+								{"Coverage",			    0.2},
+								{"FlatDensity",			    0.3},
+								{"SlopeDensity",			0.3},
 								{"MaxScale", 				1.8},
 							}
 						},
@@ -8534,9 +8356,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.4},
-								{"FlatDensity",			    0.17},
-								{"SlopeDensity",			0.17},
+								{"Coverage",			    0.8},
+								{"FlatDensity",			    0.7},
+								{"SlopeDensity",			0.7},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -8551,23 +8373,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{ 
-								{"Coverage",			    0.25}, 	--Too much = lag 
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
+								{"Coverage",			    0.5}, 	--Too much = lag 
+								{"FlatDensity",			    0.5},
+								{"SlopeDensity",			0.5},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
 								{"FadeOutEndDistance",		1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"}, --Frozen & barren small plants
-							["SECTION_UP"] = 1,
-							--REPLACES
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{ 
-								{"MaxScale", 				1.45}, 	--Too large = above eye level
+								{"MaxScale", 				2.1}, 	--Too large = above eye level
 							}
 						},
 						{
@@ -8577,9 +8390,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.08}, 	--Too much = weird faded lod in distance
-								{"FlatDensity",			    0.015}, 	--Lower
-								{"SlopeDensity",			0.015}, 	--Lower
+								{"Coverage",			    0.16}, 	--Too much = weird faded lod in distance
+								{"FlatDensity",			    0.06}, 	--Lower
+								{"SlopeDensity",			0.06}, 	--Lower
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -8594,9 +8407,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.4}, 	--Higher
-								{"FlatDensity",			    0.1}, 
-								{"SlopeDensity",			0.1},
+								{"Coverage",			    0.8}, 	--Higher
+								{"FlatDensity",			    0.4}, 
+								{"SlopeDensity",			0.4},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -8611,9 +8424,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.4},
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
+								{"Coverage",			    0.8},
+								{"FlatDensity",			    0.5},
+								{"SlopeDensity",			0.5},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -9218,28 +9031,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD5.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD6.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD7.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "BARRENGRASSSMALL")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD8.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "BARRENGRASSLARGE")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9253,28 +9066,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD10.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "BUBBLELUSHGRASS")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD11.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "NEWLUSHGRASS")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD12.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWPROCGRASS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrass, "NEWPROCGRASS")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD13.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\COMMON\PLANTS\SPRIGBUSH.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\COMMON\PLANTS\SPRIGBUSH.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9288,14 +9101,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD15.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CAVE\METALCUBE.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SMALLCACTUS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD16.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\BLOBFRAGMENTS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\BLOBFRAGMENTS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9309,7 +9122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD18.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\SMALLCAVEBUSH.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\SMALLCAVEBUSH.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9330,7 +9143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD21.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLPLANT.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLPLANT.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9351,49 +9164,49 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD24.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\TINYROCKS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\TINYROCKS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD25.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\CAVEGROUNDLEAVES.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\CAVEGROUNDLEAVES.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD26.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\DUDLEYA.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\CAVE\SMALLPLANT\DUDLEYA.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD27.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\ALIEN\SMALLPLANT\SMALLPLANT02.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\ALIEN\SMALLPLANT\SMALLPLANT02.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD28.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\ALIEN\SMALLPLANT\SMALLPLANT01.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\ALIEN\SMALLPLANT\SMALLPLANT01.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD29.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\SWAMP\SMALLPLANT\SMALLTWIGS01.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\SWAMP\SMALLPLANT\SMALLTWIGS01.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD30.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\RAINFOREST\SMALLPLANT\SMALLCOLOUREDFLOWER01.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS\PLANETS\BIOMES\RAINFOREST\SMALLPLANT\SMALLCOLOUREDFLOWER01.SCENE.MBIN")
 				},
 				
 				--v6.11:
@@ -9404,14 +9217,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD31.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/TOXIC/SMALL/BLOBFRAGMENTS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/TOXIC/SMALL/BLOBFRAGMENTS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD32.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9446,7 +9259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD37.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9467,21 +9280,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD40.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD41.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD42.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9495,14 +9308,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD44.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "BIOMES\BARREN\HQ\FOLIAGE\BARRENGRASSLARGE.SCENE.MBIN.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD45.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9516,14 +9329,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD47.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD48.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9537,7 +9350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD50.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
@@ -9551,49 +9364,49 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD52.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/SCORCHED/SMALL/LEAFDROPLET.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/SCORCHED/SMALL/LEAFDROPLET.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD53.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/SCORCHED/SMALL/SMALLROCK.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/SCORCHED/SMALL/SMALLROCK.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD54.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/LUSHROOM/SMALLSHROOMCLUSTER.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/LUSHROOM/SMALLSHROOMCLUSTER.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD55.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/LUSHROOM/SMALLBLUESHROOMS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/LUSHROOM/SMALLBLUESHROOMS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD56.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD57.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD58.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassSparse, "MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=

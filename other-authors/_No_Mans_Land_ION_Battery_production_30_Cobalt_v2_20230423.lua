@@ -1,6 +1,6 @@
 ModName = "No Mans Land ION Battery production 50 Cobalt" --originally authored by Xen0nex for PtsD; modfiied by youngneil1
 GameVersion = "4_23"
-Description = "Increases ION Battery (POWERCELL) production in cobalt (CAVE1) by 5x times, to 50"
+Description = "Increases ION Battery (POWERCELL) production in cobalt (CAVE1) by 3x times, to 30"
 
 
 
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Amount",	"50"}			--10	
+								{"Amount",	"30"}			--10	
 							}
 						},
 					}

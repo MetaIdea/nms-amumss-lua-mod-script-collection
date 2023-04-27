@@ -1,16 +1,16 @@
 DiffuseFront = "TEXTURES/EFFECTS/SHIP/ENTRANCERUNWAYX.DDS" -- DIFFUSE MAP FOR FRONT ENTRANCE BEAMS
 FrontDelete = "TEXTURES/EFFECTS/SHIP/ENTRANCERUNWAYXL.DDS" -- DELETED DIFFUSE MAP FOR FRONT ENTRANCE RUNWAY
 DiffuseInterior = "TEXTURES/SPACE/SPACESTATION/ENTRANCEBEAMX.DDS" -- DIFFUSE MAP FOR INTERIOR HANGAR DOOR BEAMS
-Version = "1.0"
-GameVersion = "4.15"
+Version = "1.1"
+GameVersion = "4.23"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_fBeam_Yellow_"..Version..".pak",
+["MOD_FILENAME"]	= "_hF_fBeam_Delete_"..Version..".pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Yellow & White Freighter Entrance Beams",
+["MOD_DESCRIPTION"]	= "Deleted Freighter Entrance Beams",
 ["MODIFICATIONS"]	= 
 	{
 		{

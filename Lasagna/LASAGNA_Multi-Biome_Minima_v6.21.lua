@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_MoreDensity_v6.12.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_Minima_v6.21.pak",
 ["MOD_AUTHOR"]				= "aghostlypepper (aka Lasagna) - with trevix code (LUA implementation by Babscoole)",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -19,7 +19,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMEFILENAMES.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
-					
 					
 					{
 						{
@@ -496,7 +495,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxFilesToChoose",	4},
 							},
 						},
-						
+
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN",}, --"TileType","GcTerrainTileType.xml"
 							["LINE_OFFSET"] = "+1",
@@ -743,87 +742,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/WIRECELLS/WIRECELLSOBJECTSDEAD.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITY.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITYFLOATINGISLANDS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY2GIANTFLOWERSFLOATINGISLANDS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY7STYLIZEDTREENORM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY8STYLIZEDTREENORM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY9STYLIZEDTREENORM3.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY24CITYFLOATINGISLANDS3.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY25CITYFLOATINGISLANDS4.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -888,12 +806,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -1037,54 +949,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -1100,18 +964,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -1335,315 +1187,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD37.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD38.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR1_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR2_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR3_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENINFESTEDOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHIVESOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSMID_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSLOW_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\FROZENDEADOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYWEIRDOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQOBJECTSMID_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSLOW_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSMID_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\FROZENDEADWEIRDOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEALIENOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSLOW_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSMID_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDSHIELDTREEOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDALIENOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSLOW_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSMID_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSMOONOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICINFESTEDOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICSPORESOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSLOW_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSMID_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSMID_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMAOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -1897,87 +1440,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/WIRECELLS/WIRECELLSOBJECTSDEAD.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITY.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITYFLOATINGISLANDS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY2GIANTFLOWERSFLOATINGISLANDS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY7STYLIZEDTREENORM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY8STYLIZEDTREENORM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY9STYLIZEDTREENORM3.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY24CITYFLOATINGISLANDS3.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY25CITYFLOATINGISLANDS4.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -2039,12 +1501,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -2188,54 +1644,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -2249,18 +1657,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -2486,36 +1882,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -2766,87 +2132,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/WIRECELLS/WIRECELLSOBJECTSDEAD.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITY.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITYFLOATINGISLANDS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY2GIANTFLOWERSFLOATINGISLANDS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY7STYLIZEDTREENORM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY8STYLIZEDTREENORM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY9STYLIZEDTREENORM3.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY24CITYFLOATINGISLANDS3.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY25CITYFLOATINGISLANDS4.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -2908,12 +2193,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -3057,54 +2336,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -3118,18 +2349,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -3351,42 +2570,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
         </Property>
       </Property>
@@ -3403,6 +2586,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AllowLimiting" value="False" />
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
+        </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
@@ -3563,19 +2755,19 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD59.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
@@ -4051,6 +3243,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -4210,19 +3411,19 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD59.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
@@ -4698,6 +3899,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -4857,19 +4067,19 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD59.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
+          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD28.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD1.MBIN" />
@@ -5444,63 +4654,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICTENTACLESOBJECTS.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITY.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -5562,12 +4715,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -5711,54 +4858,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -5772,18 +4871,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -6009,36 +5096,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -6166,63 +5223,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICTENTACLESOBJECTS.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITY.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -6284,12 +5284,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -6433,54 +5427,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -6494,18 +5440,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -6731,36 +5665,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -6891,63 +5795,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICTENTACLESOBJECTS.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITY.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -7009,12 +5856,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -7158,54 +5999,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -7219,18 +6012,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -7456,36 +6237,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -7616,63 +6367,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICTENTACLESOBJECTS.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITY.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -7734,12 +6428,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -7883,54 +6571,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -7944,18 +6584,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -8181,36 +6809,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -8392,63 +6990,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICSPORESOBJECTS.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -8510,12 +7051,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -8659,54 +7194,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -8720,18 +7207,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -8959,36 +7434,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
         </Property>
 ]]				
@@ -9028,48 +7473,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSFULL.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -9126,54 +7529,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY82.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD37.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -9181,18 +7536,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -9418,36 +7761,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -9560,18 +7873,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -9795,36 +8096,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -9943,63 +8214,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICTENTACLESOBJECTS.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY1CITY.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -10061,12 +8275,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -10210,54 +8418,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -10271,18 +8431,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -10508,36 +8656,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -10584,63 +8702,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSMID.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -10702,12 +8763,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -10851,54 +8906,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -10912,18 +8919,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -11149,36 +9144,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
@@ -11273,6 +9238,93 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY60.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY61.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY62.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY63.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY64.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY65.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY66.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY67.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY68.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY69.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY70.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY71.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY72.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY73.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY74.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY75.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY76.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY77.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY78.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY79.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY80.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY81.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY82.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY83.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY84.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY85.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY86.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY87.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY88.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY67.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -11303,6 +9355,12 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY88.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW107.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD37.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -11310,18 +9368,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -11549,36 +9595,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
         </Property>
 ]]				
@@ -11651,12 +9667,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBOBJECTS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -11797,54 +9807,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -11858,18 +9820,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
@@ -12097,36 +10047,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD_GHOSTLYNEW.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN" />
         </Property>
 ]]				
@@ -12141,8 +10061,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 					} 
-				}, 
+				},
 				
+
 				----------------------------------------------------------------------------------------------------------------------
 				--= = = = = = = = = = = = = = = = = = = = = = = OTHERS - CHANGE LIFE LEVEL = = = = = = = = = = = = = = = = = = = = = =
 				----------------------------------------------------------------------------------------------------------------------
@@ -12221,63 +10142,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSMID.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY26.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -12339,12 +10203,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY50.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY52.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLY53.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY54.MBIN" />
@@ -12488,54 +10346,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLY89.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW90.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW91.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW92.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW93.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW94.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW95.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW96.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW97.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW98.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW99.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW100.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW101.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW102.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW103.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW104.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW105.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES\GHOSTLYNEW106.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -12549,18 +10359,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD55.MBIN" />
-        </Property>
-		<Property value="NMSString0x80.xml">
-          <Property name="Value" value="CUSTOMBIOMES/DEAD/GHOSTLYDEAD56.MBIN" />
         </Property>
 ]]
 						},
@@ -12674,7 +10472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
-				
+
 				
 			}
 		},

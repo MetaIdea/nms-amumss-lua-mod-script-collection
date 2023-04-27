@@ -439,8 +439,8 @@ return [[
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="1" />
-          <Property name="FlatDensity" value="0.34" />
-          <Property name="SlopeDensity" value="0.34" />
+          <Property name="FlatDensity" value="0.55" />
+          <Property name="SlopeDensity" value="0.55" />
           <Property name="SlopeMultiplier" value="2.5" />
           <Property name="MaxRegionRadius" value="17998" />
           <Property name="MaxImposterRadius" value="18" />
@@ -459,8 +459,8 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.3" />
-            <Property name="SlopeDensity" value="0.3" />
+            <Property name="FlatDensity" value="0.55" />
+            <Property name="SlopeDensity" value="0.55" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="9" />
             <Property name="MaxImposterRadius" value="18" />
@@ -478,8 +478,8 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.3" />
-            <Property name="SlopeDensity" value="0.3" />
+            <Property name="FlatDensity" value="0.55" />
+            <Property name="SlopeDensity" value="0.55" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="5" />
             <Property name="MaxImposterRadius" value="18" />
@@ -848,6 +848,12 @@ local function BiomesNewVanilla(VanillaDensity1, VanillaDensity2)
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/HUGEROCKRING.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/LARGEVOLCANO.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] 	= "",
 							["REMOVE"] = "SECTION",
@@ -3741,11 +3747,11 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 						},
 						
 						--ADD NEW GRASS:
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
-						},
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							-- ["ADD_OPTION"] 	= "ADDafterLINE",
+							-- ["ADD"] = AddGrass(),
+						-- },
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
@@ -4340,7 +4346,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v6.12.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v6.21.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -6058,6 +6064,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "",
 							["REMOVE"] = "SECTION",
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/LARGEVOLCANO.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- d. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -6489,6 +6501,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/HUGEROCKRING.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/LARGEVOLCANO.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] 	= "",
 							["REMOVE"] = "SECTION",
@@ -7205,6 +7223,56 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD37.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD37.MBIN"},
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD38.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD38.MBIN"},
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD39.MBIN"},
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{ --Remove all non-detailObject stuff
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects",},
+							["ADD"] = [[    <Property name="DistantObjects" />]],
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["ADD"] = [[    <Property name="Landmarks" />]],
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects",},
+							["ADD"] = [[    <Property name="Objects" />]],
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						
+
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects",},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects",},
+							["REMOVE"] = "SECTION"
+						},
+						
+						--REMOVE DetailObjects
+						
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["ADD"] = replaceDO,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["REMOVE"] = "SECTION"
+						},
+					}
+				},
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD40.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD40.MBIN"},
 						
 						{"CUSTOMBIOMES/DEAD/GHOSTLYDEAD54.MBIN","CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD54.MBIN"},
@@ -7253,6 +7321,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
 							["REMOVE"] = "SECTION"
+						},
+						--ADD NEW GRASS:
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddGrass(),
 						},
 					}
 				},
@@ -8906,7 +8980,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"CUSTOMBIOMES/GROUNDDETAIL/GHOSTLYDEAD15.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CAVE\METALCUBE.SCENE.MBIN")
+					["EXML_CHANGE_TABLE"] 	= AddGroundDetail(AddTheGrassVerySparse, "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SMALLCACTUS.SCENE.MBIN")
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=
