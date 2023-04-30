@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Amount",	"30"}			--10	
+								{"Amount",	"25"}			--10	
 							}
 						},
 					}

@@ -23,13 +23,34 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				
 				{
 					["REPLACE_TYPE"] = "",
-					["SPECIAL_KEY_WORDS"] = {"ID","STRONGLASER"},
-					["PRECEDING_KEY_WORDS"] = "TECH_COMP",
+					["SPECIAL_KEY_WORDS"] = {"ID","STRONGLASER","ID","CARBON_SEAL"},
+					--["PRECEDING_KEY_WORDS"] = "Requirements",
 					["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"ID",	"CARBON_SEAL"}				
+								{"ID",	"NANOTUBES"},
+								{"Amount",	"1"}
 							} 
 				},
+				{
+					["REPLACE_TYPE"] = "",
+					["SPECIAL_KEY_WORDS"] = {"ID","STRONGLASER","ID","NANOTUBES"},
+					--["PRECEDING_KEY_WORDS"] = "Requirements",
+					["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ID",	"NANOTUBES"},
+								{"Amount",	"1"}
+							} 
+				},
+				{
+					["REPLACE_TYPE"] = "",
+					["SPECIAL_KEY_WORDS"] = {"ID","STRONGLASER","ID","TECH_COMP"},
+					--["PRECEDING_KEY_WORDS"] = "Requirements",
+					["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ID",	"NANOTUBES"},
+								{"Amount",	"1"}
+							} 
+				}
 			}
 		},
 	}

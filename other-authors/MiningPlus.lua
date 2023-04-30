@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UT_MINER"},
-							["PRECEDING_KEY_WORDS"] = {"Weapon_Laser_MiningBonus"},
+								["PRECEDING_KEY_WORDS"] = {"Weapon_Laser_MiningBonus"},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -22,7 +22,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"StatsType","Weapon_Laser_HeatTime"},
+							["SPECIAL_KEY_WORDS"] = {"ID","LASER"},
+								["PRECEDING_KEY_WORDS"] = {"Weapon_Laser_HeatTime"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",  "999999"} -- How long it takes for youre Mining Beam to overheat. This also makes it so you have max Efficiency 
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","SENT_LASER"},
+								["PRECEDING_KEY_WORDS"] = {"Weapon_Laser_HeatTime"},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
