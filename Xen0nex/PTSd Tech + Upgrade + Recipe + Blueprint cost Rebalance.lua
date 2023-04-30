@@ -69,6 +69,9 @@ TechAdjustments =
 		"MECH_PILOT",	0.625			--Minotaur AI Pilot
 	},
 	{
+		"MECH_SCAN0",	1				--Minotaur Basic Radar Array (added by PTSd)	120 Nanites
+	},
+	{
 		"MECH_SCAN",	2				--Minotaur Radar Array					120 Nanites
 	},
 	{
@@ -105,10 +108,16 @@ TechAdjustments =
 		"SUB_RECHARGE",	0.3				--Osmotic Generator						350 Nanites		(doesn't actually recharge, just gives a discount)
 	},
 	{
-		"SUB_LASER",	0.5				--Tethys Beam
+		"SUB_LASER",	0.5				--Tethys Beam							450 Nanites
 	},
 	{
-		"SUB_BINOCS",	18				--High-Power Sonar 						10 Nanites
+		"SUB_GUN",	0.5					--Nautilon Cannon						250 Nanites
+	},
+	{
+		"SUB_BINOCS0",	1				--Basic Sonar (Added by PTSd)			120 Nanites
+	},
+	{
+		"SUB_BINOCS",	24				--High-Power Sonar 						10 Nanites
 	},
 	{
 		"SUIT_REFINER",	0.5				--Personal Refiner
@@ -551,7 +560,8 @@ RecipeChanges	=
 	{
 		"O2_HARVESTER",			--1
 		"BUILDHARVESTER",		--1		(Autonomous Mining Unit)
-		"BUILDGASHARVEST"		--1		(Atmosphere Harvester)
+		"BUILDGASHARVEST",		--1		(Atmosphere Harvester)
+		"CARBONPLANTER"			--1		(Standing Planter)
 	}
 },
 {
@@ -1172,9 +1182,19 @@ AddRefinerRoom =
 
 AddTradeRoom =
 [[<Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="FRE_ROOM_SHOP" />
-                <Property name="Children" />
-              </Property>]]
+                    <Property name="Unlockable" value="BUILDSAVE" />
+                    <Property name="Children">
+                      <Property value="GcUnlockableItemTreeNode.xml">
+                        <Property name="Unlockable" value="BUILDTERMINAL" />
+                        <Property name="Children">
+                          <Property value="GcUnlockableItemTreeNode.xml">
+                            <Property name="Unlockable" value="FRE_ROOM_SHOP" />
+                            <Property name="Children" />
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>]]
 
 AddCultRoom =
 [[<Property value="GcUnlockableItemTreeNode.xml">
@@ -1633,12 +1653,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] = AddRefinerRoom
                         },
 						{
-							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "BUILDSAVE"},
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILDTERMINAL"},		--Removes vanilla Trade Terminal tree
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILDLANDINGPAD"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
                             ["ADD"] = AddTradeRoom
                         },
 						{
-							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILDSAVE"},
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "BUILDTERMINAL"},		--Removes vanilla Trade Terminal tree
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "DRESSING_TABLE"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
                             ["ADD"] = AddTradeRoom
                         },
@@ -1646,42 +1674,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Unlockable", "PLANTERMEGA"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
                             ["ADD"] = AddCultRoom
-                        },
-						{
-							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE"},
-							["REPLACE_TYPE"] = "",
-							["VALUE_MATCH"] 		= "BUILDSAVE",
-                            ["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Unlockable", "BUILDTERMINAL"},
-							}
-                        },
-						{
-							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE"},
-							["REPLACE_TYPE"] = "",
-							["VALUE_MATCH"] 		= "BUILDTERMINAL",
-                            ["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Unlockable", "BUILDSAVE"},
-							}
-                        },
-						{
-							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE"},
-							["REPLACE_TYPE"] = "",
-							["VALUE_MATCH"] 		= "BUILDSAVE",
-                            ["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Unlockable", "BUILDTERMINAL"},
-							}
-                        },
-						{
-							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE"},
-							["REPLACE_TYPE"] = "",
-							["VALUE_MATCH"] 		= "BUILDTERMINAL",
-                            ["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Unlockable", "BUILDSAVE"},
-							}
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASICTECH_TREE",		"Unlockable", "BUILDBEACON"},

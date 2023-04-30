@@ -64,9 +64,9 @@ ShipLootChanges =
 	{	--Pirates:	per destroyed ship containers
 		{"PIRATELOOT"},							--Ships with this reward drop 1x containers	(Except Raids, Dogfights, and Planetary Flybys drop 2x)
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			100},				--"SCRAP_GOODS",		1,			1,			100
-			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			100},				--"SCRAP_TECH",			1,			1,			100
-			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			100},				--"SCRAP_WEAP",			1,			1,			100
+			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			200},				--"SCRAP_GOODS",		1,			1,			100
+			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			50},				--"SCRAP_TECH",			1,			1,			100
+			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			50},				--"SCRAP_WEAP",			1,			1,			100
 			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100},				--"SHIPCHARGE",			3,			3,			100
 			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			10},				--"TRA_CURIO1",			1,			3,			40
 			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			10},				--"WAR_CURIO1",			1,			3,			40
@@ -76,9 +76,9 @@ ShipLootChanges =
 	{	--Easy Pirates:	per destroyed ship containers	(Added by this mod)
 		{"PIRATLTEASY"},						--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			50},				--"SCRAP_GOODS",		1,			1,			100
-			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			50},				--"SCRAP_TECH",			1,			1,			100
-			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			50},				--"SCRAP_WEAP",			1,			1,			100
+			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			100},				--"SCRAP_GOODS",		1,			1,			100
+			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			20},				--"SCRAP_TECH",			1,			1,			100
+			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			20},				--"SCRAP_WEAP",			1,			1,			100
 			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100},				--"SHIPCHARGE",			3,			3,			100
 			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			40},				--"TRA_CURIO1",			1,			3,			40
 			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			40},				--"WAR_CURIO1",			1,			3,			40
@@ -88,9 +88,9 @@ ShipLootChanges =
 	{	--Hard Pirates:	per destroyed ship containers	(Added by this mod)
 		{"PIRATLTHARD"},						--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			2,			100},				--"SCRAP_GOODS",		1,			1,			100
-			{"SCRAP_TECH",			"SCRAP_TECH",			1,			2,			100},				--"SCRAP_TECH",			1,			1,			100
-			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			2,			100},				--"SCRAP_WEAP",			1,			1,			100
+			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			2,			150},				--"SCRAP_GOODS",		1,			1,			100
+			{"SCRAP_TECH",			"SCRAP_TECH",			1,			2,			66},				--"SCRAP_TECH",			1,			1,			100
+			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			2,			66},				--"SCRAP_WEAP",			1,			1,			100
 			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100},				--"SHIPCHARGE",			3,			3,			100
 		}
 	},
@@ -877,8 +877,8 @@ CrashedFreighterLootChances =
 		{	--Item						%Chance (relative weight, roughly but not necessarily out of 100)
 			--{"",						35},					--35		Chooses 1x random procedural artifact
 			{"SCRAP_GOODS",				20},					--20		1x Suspicious Packet (Goods)
-			{"SCRAP_TECH",				20},					--20		1x Suspicious Packet (Tech)
-			{"SCRAP_WEAP",				20},					--20		1x Suspicious Packet (Arms)
+			{"SCRAP_TECH",				16},					--20		1x Suspicious Packet (Tech)
+			{"SCRAP_WEAP",				16},					--20		1x Suspicious Packet (Arms)
 			{"SHIP_INV_TOKEN",			20},					--20		1x Storage Augmentation
 			{"WEAP_INV_TOKEN",			20},					--20		1x Multi-Tool Expansion Slot
 			{"SUIT_INV_TOKEN",			20},					--20		1x Exosuit Expansion Unit

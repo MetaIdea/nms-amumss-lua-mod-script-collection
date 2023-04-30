@@ -421,12 +421,12 @@ return [[
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.9" />
-        <Property name="MaxScale" value="1.1" />
+        <Property name="MinScale" value="0.8" />
+        <Property name="MaxScale" value="1.0" />
         <Property name="MinScaleY" value="1.3" />
         <Property name="MaxScaleY" value="1.3" />
         <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="PatchEdgeScaling" value="0.5" />
         <Property name="MaxXZRotation" value="0" />
         <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="False" />
@@ -441,8 +441,8 @@ return [[
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="1" />
-          <Property name="FlatDensity" value="0.55" />
-          <Property name="SlopeDensity" value="0.55" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0.5" />
           <Property name="SlopeMultiplier" value="2.5" />
           <Property name="MaxRegionRadius" value="17998" />
           <Property name="MaxImposterRadius" value="18" />
@@ -461,8 +461,8 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.55" />
-            <Property name="SlopeDensity" value="0.55" />
+            <Property name="FlatDensity" value="0.5" />
+            <Property name="SlopeDensity" value="0.5" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="9" />
             <Property name="MaxImposterRadius" value="18" />
@@ -480,8 +480,8 @@ return [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.55" />
-            <Property name="SlopeDensity" value="0.55" />
+            <Property name="FlatDensity" value="0.5" />
+            <Property name="SlopeDensity" value="0.5" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="5" />
             <Property name="MaxImposterRadius" value="18" />
@@ -4610,7 +4610,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Med_v6.21.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Med_v6.22.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -8483,7 +8483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
 								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
+								{"MaxScale", 				1.7},
 							}
 						},
 						{
@@ -8500,7 +8500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
 								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
+								{"MaxScale", 				1.7},
 							}
 						},
 						{
@@ -8523,7 +8523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxScale",			    2.47},
+								{"MaxScale",			    2.27},
 								{"Coverage",			    1},
 								{"FlatDensity",			    0.24},
 								{"SlopeDensity",			0.24},
@@ -8557,7 +8557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
 								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.8},
+								{"MaxScale", 				1.6},
 							}
 						},
 						--Adds "Ultra" planet quality grass to all planet quality types:
@@ -8571,7 +8571,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Coverage",			    0.2},
 								{"FlatDensity",			    0.2},
 								{"SlopeDensity",			0.2},
-								{"MaxScale", 				1.8},
+								{"MaxScale", 				1.6},
 							}
 						},
 						{
@@ -8588,7 +8588,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
 								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
+								{"MaxScale", 				1.7},
 							}
 						},
 						{
@@ -8614,7 +8614,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{ 
-								{"MaxScale", 				1.45}, 	--Too large = above eye level
+								{"MaxScale", 				1.25}, 	--Too large = above eye level
 							}
 						},
 						{
@@ -8631,7 +8631,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
 								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				2.2},
+								{"MaxScale", 				2.0},
 							}
 						},
 						{
@@ -8648,7 +8648,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
 								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
+								{"MaxScale", 				1.7},
 							}
 						},
 						{
@@ -8665,7 +8665,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
 								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
+								{"MaxScale", 				1.7},
 							}
 						},
 						--LODDISTANCES:

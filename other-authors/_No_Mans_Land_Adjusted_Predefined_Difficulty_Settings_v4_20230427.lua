@@ -1,5 +1,5 @@
 ModName = "No Mans Land Adjusted Predefined Difficulty Settings" --based on Xen0nex work in PtsD, just modified by youngneil1 to max out difficulty Survival and Permadeath preset by default  
-GameVersion = "422"
+GameVersion = "423"
 Description = "Fully maxed out difficulty options preset for Survial and permadeath by default "
 
 
@@ -164,8 +164,8 @@ Presets =
 			{"DamageGivenDifficulty",			"Low"},					--Normal			(options are High, Normal, Low)
 			{"ActiveSurvivalBarsDifficulty",		"All"},					--All				(options are None, HealthOnly, HealthAndHazard, All)
 			{"HazardDrainDifficulty",			"Normal"},					--Fast				(options are Slow, Normal, Fast)
-			{"EnergyDrainDifficulty",			"Fast"},					--Fast				(options are Slow, Normal, Fast)
-			{"SubstanceCollectionDifficulty",	"Low"},					--Low				(options are High, Normal, Low)
+			{"EnergyDrainDifficulty",			"Normal"},					--Fast				(options are Slow, Normal, Fast)
+			{"SubstanceCollectionDifficulty",	"Normal"},					--Low				(options are High, Normal, Low)
 			{"InventoryStackLimitsDifficulty",	"Low"},					--Normal			(options are High, Normal, Low)
 			{"ChargingRequirementsDifficulty",	"High"},					--High				(options are None, Low, Normal, High)
 			{"FuelUseDifficulty",				"Expensive"},					--Expensive			(options are Free, Cheap, Normal, Expensive)
@@ -199,8 +199,8 @@ Presets =
 			{"DamageGivenDifficulty",			"Low"},					--Normal			(options are High, Normal, Low)
 			{"ActiveSurvivalBarsDifficulty",		"All"},					--All				(options are None, HealthOnly, HealthAndHazard, All)
 			{"HazardDrainDifficulty",			"Normal"},					--Fast				(options are Slow, Normal, Fast)
-			{"EnergyDrainDifficulty",			"Fast"},					--Fast				(options are Slow, Normal, Fast)
-			{"SubstanceCollectionDifficulty",	"Low"},					--Low				(options are High, Normal, Low)
+			{"EnergyDrainDifficulty",			"Normal"},					--Fast				(options are Slow, Normal, Fast)
+			{"SubstanceCollectionDifficulty",	"Normal"},					--Low				(options are High, Normal, Low)
 			{"InventoryStackLimitsDifficulty",	"Low"},					--Normal			(options are High, Normal, Low)
 			{"ChargingRequirementsDifficulty",	"High"},					--High				(options are None, Low, Normal, High)
 			{"FuelUseDifficulty",				"Expensive"},					--Expensive			(options are Free, Cheap, Normal, Expensive)
