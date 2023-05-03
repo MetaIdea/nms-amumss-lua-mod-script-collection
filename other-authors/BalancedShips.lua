@@ -1098,5 +1098,170 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Max","50"}
 			}
 		},
+		--Interceptor
+		--C Class
+		{--Damage
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","50"},
+				{"Max","50"} 
+			}
+		},
+		{--Damage
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","0"} 
+			}
+		},
+		{--Hyperdrive
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","30"},
+				{"Max","50"}
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","10"}
+			}
+		},
+		--B Class
+		{--Damage
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","100"},
+				{"Max","100"} 
+			}
+		},
+		{--Shield
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","0"} 
+			}
+		},
+		{--Hyperdrive
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","60"},
+				{"Max","100"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","11"},
+				{"Max","20"}
+			}
+		},
+		--A Class
+		{--Damage
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","150"},
+				{"Max","150"} 
+			}
+		},
+		{--Shield
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","0"} 
+			}
+		},
+		{--Hyperdrive
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","90"},
+				{"Max","150"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","21"},
+				{"Max","35"}
+			}
+		},
+		--S Class
+		{--Damage
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","200"},
+				{"Max","200"} 
+			}
+		},
+		{--Shield
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","0"}
+			}
+		},
+		{--Hyperdrive
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","120"},
+				{"Max","200"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Robot","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","36"},
+				{"Max","50"}
+			}
+		},
 	}},
 }}}}
