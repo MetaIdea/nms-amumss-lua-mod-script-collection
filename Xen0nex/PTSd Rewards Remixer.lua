@@ -676,6 +676,49 @@ ExpeditionRewardChanceMultiplier100 =						1				--Multiplier to apply to the per
 ExpeditionRewardChanceMultiplierlessthan100 =				1				--Multiplier to apply to the percentage chance for rewards which normally have less than a 100% chance of receiving. If you use a value lower than 0.5 here, rewards with a vanilla chance of 1% will get rounded down to 0%
 ExpeditionRewardChance0Replacer =							1				--If you use a value lower than 0.5 above, choose what value to replace any rewards which now have a % chance rounded down to 0%. Use 0 here to leave those reward chances rounded down to "0".
 
+--Replaces the possible Stellar Metal rewards when dismantling the "broken tech" consumable (from Buried Caches) with their Activated version instead
+BreakTechAmountMult =					0.5					--1			Default is 50 - 150 of Cadmium/Emeril/Indium
+BreakTechRed =							"EX_RED"			--"RED2"	Default is Cadmium
+BreakTechGreen =						"EX_GREEN"			--"GREEN2"	Default is Emeril
+BreakTechBlue =							"EX_BLUE"			--"BLUE2"	Default is Indium
+
+--Replaces the possible rewards from dismantling the consumable plant item from Subterranean Organic Structure
+	--Default Amount is 50-120, then multiplied by the "Amount Multiplier" below
+BreakPlantsChangesSubstance =
+{		--Old Reward			New Reward			Amount Multiplier
+	{	--Residual Goop 		Marrow Bulb   
+		"SPACEGUNK1",			"PLANT_CAVE",		1.5,
+	},
+	{	--Runaway Mould    		Runaway Mould
+		"SPACEGUNK2",			"SPACEGUNK2",		2,	
+	},
+	{	--Faecium 				Faecium
+		"PLANT_POOP",			"PLANT_POOP",		1.5,
+	},
+	{	--Mordite 				Mordite
+		"CREATURE1",			"CREATURE1",		1,	
+	},
+	{	--Cyto-Phosphate 		Cyto-Phosphate
+		"WATERPLANT",			"WATERPLANT",		1,	
+	},
+	{	--Condensed Carbon 		Condensed Carbon
+		"FUEL2",				"FUEL2",			1,	
+	},
+	{	--Carbon 				Carbon
+		"FUEL1",				"FUEL1",			1.5,
+	}
+}
+--The same as above, but changes these rewards into Products instead of Substances
+BreakPlantsChangesProduct =
+{		--Old Reward			New Reward			Amount Multiplier
+	{	--Living Slime    		Sweetroot
+		"SPACEGUNK4",			"FOOD_P_ALL2",		0.25,
+	},
+	{	--Viscous Fluids    	Pulpy Roots
+		"SPACEGUNK5",			"FOOD_P_ALL3",		0.25,
+	},
+}
+
 --Multipliers to how many Factory Override Tokens you get awarded
 FactoryOverrideTokenMult	=	10						--This should match the multiplier for "RecipeCost" in the Unlock Costs mod, to balance it out
 
@@ -1017,9 +1060,12 @@ function ProductReward (Product, Min, Max, Chance)
               <Property name="ID" value="]]..Product..[[" />
               <Property name="AmountMin" value="]]..Min..[[" />
               <Property name="AmountMax" value="]]..Max..[[" />
+			  <Property name="HideAmountInMessage" value="False" />
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+			  <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>]]
@@ -1070,9 +1116,12 @@ InvBoxBulkheadReward =
               <Property name="ID" value="FREI_INV_TOKEN" />
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
+              <Property name="HideAmountInMessage" value="False" />
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>]]
@@ -1113,9 +1162,12 @@ NewCrashedFreighterLoot =
               <Property name="ID" value="FREI_INV_TOKEN" />
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
+              <Property name="HideAmountInMessage" value="False" />
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>]]
@@ -1129,9 +1181,12 @@ GlassDrop = [[<Property value="GcRewardTableItem.xml">
               <Property name="ID" value="SENTINEL_LOOT" />
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
+              <Property name="HideAmountInMessage" value="False" />
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>]]
@@ -1164,6 +1219,8 @@ PIRATLTEASYRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1180,6 +1237,8 @@ PIRATLTEASYRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1196,6 +1255,8 @@ PIRATLTEASYRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1212,6 +1273,8 @@ PIRATLTEASYRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1228,6 +1291,8 @@ PIRATLTEASYRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1244,6 +1309,8 @@ PIRATLTEASYRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1260,6 +1327,8 @@ PIRATLTEASYRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1299,6 +1368,8 @@ PIRATLTHARDRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1315,6 +1386,8 @@ PIRATLTHARDRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1331,6 +1404,8 @@ PIRATLTHARDRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1347,6 +1422,8 @@ PIRATLTHARDRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1398,6 +1475,8 @@ ESCORTLOOTRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1414,6 +1493,8 @@ ESCORTLOOTRewards =
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -2281,7 +2362,64 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = NewAlluringSpecRewards,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-			}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "RED2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	BreakTechAmountMult},
+					{"AmountMax",	BreakTechAmountMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "RED2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ID",	BreakTechRed}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "GREEN2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	BreakTechAmountMult},
+					{"AmountMax",	BreakTechAmountMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "GREEN2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ID",	BreakTechGreen}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "BLUE2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	BreakTechAmountMult},
+					{"AmountMax",	BreakTechAmountMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "BLUE2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ID",	BreakTechBlue}
+				}
+			},
 		}
 	},
 	{
@@ -2463,7 +2601,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"ID", IndiumReplacement}
 				}
-			}
+			},
 		}
 	},
 	{
@@ -2777,6 +2915,52 @@ for i = 1, #PlaqueChanges do
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 				["ADD"] = AddFourWords(AlienType)
+			}
+end
+for i = 1, #BreakPlantsChangesSubstance do
+	local OldReward = BreakPlantsChangesSubstance[i][1]
+	local NewReward = BreakPlantsChangesSubstance[i][2]
+	local AmountMult = BreakPlantsChangesSubstance[i][3]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_BREAK_BIO",	"ID", OldReward},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	AmountMult},
+					{"AmountMax",	AmountMult}
+				}
+			}
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_BREAK_BIO",	"ID", OldReward},
+				["REPLACE_TYPE"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ID",	NewReward}
+				}
+			}
+end
+for i = 1, #BreakPlantsChangesProduct do
+	local OldReward = BreakPlantsChangesProduct[i][1]
+	local NewReward = BreakPlantsChangesProduct[i][2]
+	local AmountMult = BreakPlantsChangesProduct[i][3]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_BREAK_BIO",	"ID", OldReward},
+				["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			}
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_BREAK_BIO"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = ProductReward (NewReward, math.floor(50*AmountMult), math.floor(120*AmountMult), "100")
 			}
 end
 for i = 1, #CropYieldChanges do

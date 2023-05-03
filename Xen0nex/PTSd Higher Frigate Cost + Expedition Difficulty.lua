@@ -1,5 +1,5 @@
 ModName = "PTSd Higher Frigate Cost + Expedition Difficulty"
-GameVersion = "4_08"
+GameVersion = "4_23"
 Description = "Makes Frigates more expensive to buy, and enables 4 star difficulty Frigate missions, and increases by 2~3x how many stat points needed to make a fleet of a particular Star ranking"
 
 PercentChangeOfFrigateBeingPurchasable =			80			--60		Percentage of AI Frigates you encounter surrounding AI freigthers being purchasable
@@ -168,20 +168,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MBIN_FILE_SOURCE"] 	= {"GCFLEETGLOBALS.GLOBAL.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
 		{
-			--This entry intentionally left blank, to be filled in by the FrigateCostChanges at the bottom of this script
-		}
-	},
-	{
-		["MBIN_FILE_SOURCE"] 	= {"GCFLEETGLOBALS.GLOBAL.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
-		{
-			--This entry intentionally left blank, to be filled in by the FrigateRankChanges at the bottom of this script
-		}
-	},
-	{
-		["MBIN_FILE_SOURCE"] 	= {"GCFLEETGLOBALS.GLOBAL.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
-		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"PercentChanceOfDamageOnFailedEvent", "Vector2f.xml"},
 				["REPLACE_TYPE"] = "",
@@ -264,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}
 }}}}
 
-local ChangesToFrigateCosts = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToFrigates = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
 for i = 1, #FrigateCostChanges do
 	local CostType = FrigateCostChanges[i][1][1]
@@ -275,7 +261,7 @@ for i = 1, #FrigateCostChanges do
 		local CostID = Costs[j][1]
 		local CostMult = Costs[j][2]
 
-			ChangesToFrigateCosts_temp =
+			ChangesToFrigates[#ChangesToFrigates+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
 				["REPLACE_TYPE"] 		= "",
@@ -288,12 +274,8 @@ for i = 1, #FrigateCostChanges do
 					{CostID, CostMult}
 				}
 			}
-			ChangesToFrigateCosts[#ChangesToFrigateCosts+1] = ChangesToFrigateCosts_temp
 	end
 end
-
-local ChangesToFrigateRanks = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
-
 for i = 1, #FrigateRankChanges do
 	local Name = FrigateRankChanges[i][1][1]
 	local Values = FrigateRankChanges[i][2]
@@ -302,7 +284,7 @@ for i = 1, #FrigateRankChanges do
 		local OldValue = Values[j][1]
 		local NewValue = Values[j][2]
 
-			ChangesToFrigateRanks_temp =
+			ChangesToFrigates[#ChangesToFrigates+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
 				["REPLACE_TYPE"] 		= "",
@@ -315,6 +297,5 @@ for i = 1, #FrigateRankChanges do
 					{OldValue,	NewValue}
 				}
 			}
-			ChangesToFrigateRanks[#ChangesToFrigateRanks+1] = ChangesToFrigateRanks_temp
 	end
 end

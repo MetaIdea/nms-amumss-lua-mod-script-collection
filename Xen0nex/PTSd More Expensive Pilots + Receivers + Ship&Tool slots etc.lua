@@ -1,5 +1,5 @@
 ModName = "PTSd More Expensive Pilots + Receivers + Ship&Tool slots etc"
-GameVersion = "4_20"
+GameVersion = "4_23"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
 --This is the price paid in Nanites during certain dialog choices rarely used in certain alien NPC interactions
@@ -10,7 +10,15 @@ TravellerNaniteCost =	800					--100
 
 --Adds a cost to opening the containers at crashed freighters
 CrashedContSubstance =	"STELLAR2"			--""			STELLAR2 is Chromatic Metal
-CrashedContAmount =	10						--0
+CrashedContAmount =		10					--0
+
+--Prices to upgrade the Class of Starships / Multi-Tools at Space Stations
+UpgShipCtoB =			8000				--10000
+UpgShipBtoA =			16000				--25000
+UpgShipAtoS =			32000				--50000
+UpgToolCtoB =			4000				--10000
+UpgToolBtoA =			8000				--25000
+UpgToolAtoS =			16000				--50000
 
 --Makes Emergency Broadcast Receivers for finding Derelict Freighters start out a little more expensive and continue increasing in price up until the eleventh daily purchase, instead of stopping at the fourth.
 --Receiver prices reset each day
@@ -178,7 +186,21 @@ NewShipInvCost =
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
-NewCosts =
+NewShipClassCosts =
+[[<Property name="Costs">
+          <Property value="]]..UpgShipCtoB..[[" />
+		  <Property value="]]..UpgShipBtoA..[[" />
+		  <Property value="]]..UpgShipAtoS..[[" />
+        </Property>]]
+
+NewToolClassCosts =
+[[<Property name="Costs">
+          <Property value="]]..UpgToolCtoB..[[" />
+		  <Property value="]]..UpgToolBtoA..[[" />
+		  <Property value="]]..UpgToolAtoS..[[" />
+        </Property>]]
+
+NewReceiverCosts =
 [[<Property name="Costs">
           <Property value="]]..FirstReceiverCost..[[" />
 		  <Property value="]]..SecondReceiverCost..[[" />
@@ -238,9 +260,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "C_CLASS_UPGRADE"},
+				["PRECEDING_KEY_WORDS"] = {"Costs"},
+				["ADD"] = NewShipClassCosts,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "C_CLASS_UPGRADE"},
+				["PRECEDING_KEY_WORDS"] = {"Costs"},
+				["REPLACE_TYPE"] 		= "",
+				["REMOVE"] = "SECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "C_WEAP_UPGRADE"},
+				["PRECEDING_KEY_WORDS"] = {"Costs"},
+				["ADD"] = NewToolClassCosts,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "C_WEAP_UPGRADE"},
+				["PRECEDING_KEY_WORDS"] = {"Costs"},
+				["REPLACE_TYPE"] 		= "",
+				["REMOVE"] = "SECTION",
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "C_ABAND_START"},
 				["PRECEDING_KEY_WORDS"] = {"Costs"},
-				["ADD"] = NewCosts,
+				["ADD"] = NewReceiverCosts,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
 			{

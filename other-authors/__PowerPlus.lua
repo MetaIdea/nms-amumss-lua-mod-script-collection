@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"ID", "U_BATTERY_S"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Storage",  "120000"},
+								{"Storage",  "250000"},
 								{"CanPickUp", "True"},
 								{"DependsOnEnvironment", "None"},
 								{"DependsOnHotspots", "None"}
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"ID", "U_SOLAR_S"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Rate",  "150"},
+								{"Rate",  "200"},
 								{"CanPickUp", "True"},
 								{"DependsOnEnvironment", "None"},
 								{"DependsOnHotspots", "None"},
@@ -82,7 +82,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"EditsTerrain", "True"}
 							}
 						},
-{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"ID","O2_HARVESTER",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"CanPickUp", "True"},
+								{"EditsTerrain", "True"},
+								{"RegionLimit", "5"}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"]  = {"ID", "CONTAINER0"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

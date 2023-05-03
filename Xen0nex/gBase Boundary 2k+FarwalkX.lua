@@ -6,7 +6,7 @@ GameVersion = "408"
 ModVersion = "a"
 FileSource1 = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 
-MinRadiusForBases = 50						-- When you first build the base, how far out can you build? Original value "300"
+MinRadiusForBases = 300							-- When you first build the base, how far out can you build? Original value "300"
 BaseRadiusExtension = 2000						-- If you place an item on the edge of your border, how much does the border bump out? Original value "50"
 MaxRadiusForPlanetBases = 2000					-- What is the absolute maximum border distance? Original value "1000"
 MaxRadiusForSpaceBases = 2000					-- Not sure yet. Original 400

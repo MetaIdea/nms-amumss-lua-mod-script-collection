@@ -53,7 +53,7 @@ FreighterScannerRoomMult			=	3		--Multiplier applied to default cost of 1 Salvag
 FreighterExocraftRoomMult			=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
 
 
---Specific Tech Adjustment Multipliers	(stacks multiplicatively with the TechCostMult
+--Specific Tech Adjustment Multipliers	(stacks multiplicatively with the TechCostMult)
 TechAdjustments =
 {
 	{--	ID					Multiplier		Name					Unlock cost in Nanites / Salvaged Frigate Modules
@@ -87,7 +87,10 @@ TechAdjustments =
 		"UT_MINER",	0.3					--Optical Drill							460 Nanites
 	},
 	{
-		"UT_MIDAIR",	0.5				--Airburst Engine
+		"UT_MIDAIR",	0.35			--Airburst Engine						460 Nanites
+	},
+	{
+		"UT_JUMP",	0.8					--Rocket Boots							200 Nanites
 	},
 	{
 		"UT_PULSEFUEL",	0.2				--Instability Drive
@@ -159,24 +162,45 @@ TechAdjustments =
 		"HDRIVEBOOST3",	1.2				--Indium Drive							200 Nanites
 	},
 	{
-		"STUN_GREN",	2				--Paralysis Mortar
-	},
-	{
-		"UT_ROCKETS",	3.5				--Large Rocket Tubes					50 Nanites
-	},
-	{
 		"CARGOSHIELD",	0.5				--Cargo Scan Deflector					240 Nanites
 	},
 	{
 		"UT_SHIPDRIFT",	0.3				--Flight Assist Override				460 Nanites
 	},
 	{
-		"SUIT_ROCKET",	1.5				--Trade Rocket							90 Nanites
+		"SUIT_ROCKET",	2.3334			--Trade Rocket							90 Nanites
 	},
 	{
 		"F_TELEPORT",	3.2				--Matter Beam							5 Salvaged Frigate Modules			(Not affected by TechCostMult)
 	},
+	{
+		"UT_STUNDMG",	0.75			--Voltaic Amplifier						180 Nanites
+	},
+	{
+		"GRENADE",	0.8					--Plasma Launcher						150 Nanites
+	},
+	{
+		"TERRAIN_GREN",	0.8				--Geology Cannon						150 Nanites
+	},
+	{
+		"STUN_GREN",	1.6				--Paralysis Mortar						150 Nanites
+	},
+	{
+		"SHIPROCKETS",	1				--Rocket Launcher						100 Nanites
+	},
+	{
+		"UT_ROCKETS",	3				--Large Rocket Tubes					50 Nanites
+	},
 }
+
+--Weapon Tech Adjustment Multipliers	(stacks multiplicatively with the TechCostMult)
+	--Note: Does not include Rockets, Grenades, or Exocraft weapons, which are handled above instead
+MultiToolCoreWeaponMult =		0.6		--Most core weapon techs for Multi-Tools, like Blaze Javelin				250 Nanites
+MultiToolUpgWeaponMult =		0.6667	--Most "support" weapon techs for Multi-Tools, like Mass Accelerator		180 Nanites
+StarshipCoreWeaponMult =		1		--Most core weapon techs for Starships, like Phase Beam						150 Nanites
+StarshipUpgWeaponMult =			1		--Most "support" weapon techs for Starships, like Fourier De-Limiter		120 Nanites
+	--Note: By default, the Boltcaster & Photon Cannon "support" techs only have ~50% the price of other weapon techs
+BoltAndPhotonSupportMult =		1.5		--(Stacks with all previous multipliers)									90 / 75 Nanites
 
 --Changes how likely certain techs are to be found pre-installed on "wild" starships & multi-tools
 	--Options for Rarity are "Always", "VeryCommon", "Common", "Normal", "Rare", "VeryRare", "Impossible"
@@ -191,6 +215,9 @@ TechRarityChanges =
 	},
 	{
 		"HDRIVEBOOST2",			"Impossible",				--Emeril Drive			"VeryRare"
+	},
+	{
+		"SHIPROCKETS",			"Normal",					--Rocket Launcher		"Common"
 	},
 	{
 		"UT_ROCKETS",			"Impossible",				--Large Rocket Tubes	"Rare"
@@ -933,6 +960,50 @@ UpgradeScannerChanges =
 	}
 }
 
+WeaponTechCostChanges =
+{
+	{
+		{
+			MultiToolCoreWeaponMult
+		},
+		{
+			"RAILGUN", "SHOTGUN", "SMG", "FLAME", "CANNON"
+		}
+	},
+	{
+		{
+			MultiToolUpgWeaponMult
+		},
+		{
+			"UT_BOLT", "UT_BOLTBOUNCE", "BOLT_SM", "UT_RAIL", "UT_RAIL_STUN", "UT_SHOT", "UT_SMG", "UT_SMGBOUNCE", "UT_SMG_DOT", "UT_CANNON"
+		}
+	},
+	{
+		{
+			StarshipCoreWeaponMult
+		},
+		{
+			"SHIPLAS1", "SHIPSHOTGUN", "SHIPMINIGUN", "SHIPPLASMA"
+		}
+	},
+	{
+		{
+			StarshipUpgWeaponMult
+		},
+		{
+			"UT_SHIPGUN", "UT_SHIPLAS", "UT_SHIPSHOT", "UT_SHIPMINI", "UT_SHIPBLOB"
+		}
+	},
+	{
+		{
+			BoltAndPhotonSupportMult
+		},
+		{
+			"UT_BOLT", "UT_BOLTBOUNCE", "UT_SHIPGUN"
+		}
+	},
+}
+
 TextA =
 [[<Property name="Children" />]]
 
@@ -1653,6 +1724,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] = AddRefinerRoom
                         },
 						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable", "FRE_ROOM_DRESS"},	
+							["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"Unlockable",    "FRE_ROOM_SHOP"}
+                            }
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable", "FRE_ROOM_SHOP"},		
+							["REPLACE_TYPE"] = "",
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"Unlockable",    "FRE_ROOM_DRESS"}
+                            }
+                        },
+						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILDTERMINAL"},		--Removes vanilla Trade Terminal tree
                             ["REMOVE"] = "SECTION"
                         },
@@ -1730,6 +1817,27 @@ for i = 1, #TechAdjustments do
 					{"FragmentCost", Multiplier}
 				}
 			}
+end
+for i = 1, #WeaponTechCostChanges do
+	local Multiplier = WeaponTechCostChanges[i][1][1]
+	local TechIDs = WeaponTechCostChanges[i][2]
+
+	for j = 1, #TechIDs do
+	
+			local TechID = TechIDs[j]
+			ChangesToTechTable[#ChangesToTechTable+1] =
+			{
+				["PRECEDING_KEY_WORDS"] = "",
+				["SPECIAL_KEY_WORDS"] = {"ID", TechID},  
+				["MATH_OPERATION"] 		= "*",
+				["REPLACE_TYPE"] 		= "",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"FragmentCost", Multiplier}
+				}
+			}
+	end
 end
 for i = 1, #TechRarityChanges do
 	local TechIDNum = TechRarityChanges[i][1]

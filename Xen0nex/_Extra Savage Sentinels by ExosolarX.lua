@@ -1,5 +1,5 @@
 ModName = "_Extra Savage Sentinels by ExosolarX"
-GameVersion = "4_22"
+GameVersion = "4_23"
 Description = "Increases the difficulty of Sentinels by changing aggression, firerate, range, sight distance, etc."
 
 --Multiplier to apply to the base health of all planetary Sentinels
@@ -532,8 +532,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MinAmount", 4},							--6
-								{"MaxAmount", 8},							--6
+								{"MinAmount", 3},							--6
+								{"MaxAmount", 7},							--6
+							}
+						},
+						{
+							["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
+							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE_EX",		"SentinelType", "CorruptedDrone"},		--Settlement defense Corrupted Drones, "Extreme" version?
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] = "",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinAmount", 6},							--9
+								{"MaxAmount", 10},							--9
 							}
 						},
 						--[[{	--As of NMS v3.99, Adding non-Corrupted Drones to the Sentinel Defense assaults seems to make a regular Wanted Level event occur at the same time, so you will have escalting waves of regular sentinels in addition to the corrupted Drones
@@ -1012,8 +1024,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"BaseHealth",	math.floor(SentHealth*2800),},					--2800		pre-4.20 was 3200
 								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*6800),},	--6800		pre-4.20 was 4500
-								{"RepairTime","10",},											--9			pre-4.20 was 3
-								{"RepairThreshold","45",},										--60		pre-4.20 was 95
+								{"RepairTime","11",},											--9			pre-4.20 was 3
+								{"RepairThreshold","40",},										--60		pre-4.20 was 95
 							}
 						},
 						{						

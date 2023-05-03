@@ -477,6 +477,12 @@ CropPelletChanges =
 	"RECIPE_573",														--Cactus Flesh
 }
 
+--Increases the required amount of certain ingredients used as "additives / seasoning"
+SaltRequired =					5										--1		For Crunchy Caramel, Salty Custard, Salty Juice
+CarbonRequired =				5										--1		For Smoked Meat
+CondCarbonRequired =			2										--1		For Smoked Meat
+FrostCrystalRequired =			5										--1		For various "Ice Cream" recipes
+
 --Adds new recipes for using Aloe Flesh and Refreshing Drink since they otherwise have very few uses
 	--First recipe takesd 1 Aloe Flesh and 1 Condensed Carbon to make 2 Steamed Vegetables
 	--Second Recipe takes 1 Refreshing Drink and 1 Refined Flour to make 1 Cream
@@ -1125,6 +1131,26 @@ NewSalvagedDataRecipes =
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
+SeasoningChanges =
+{
+	{
+		{SaltRequired,	"WATER1"},
+		{"RECIPE_68", "RECIPE_50", "RECIPE_578"}
+	},
+	{
+		{CarbonRequired,	"FUEL1"},
+		{"RECIPE_97", "RECIPE_100", "RECIPE_112", "RECIPE_113", "RECIPE_114", "RECIPE_115", "RECIPE_116", "RECIPE_117", "RECIPE_118", "RECIPE_119", "RECIPE_120", "RECIPE_121", "RECIPE_736", "RECIPE_737", "RECIPE_738", "RECIPE_739", "RECIPE_740", "RECIPE_741"}
+	},
+	{
+		{CondCarbonRequired,	"FUEL2"},
+		{"RECIPE_98", "RECIPE_101", "RECIPE_122", "RECIPE_123", "RECIPE_124", "RECIPE_125", "RECIPE_126", "RECIPE_127", "RECIPE_128", "RECIPE_129", "RECIPE_130", "RECIPE_131", "RECIPE_742", "RECIPE_743", "RECIPE_744", "RECIPE_745", "RECIPE_746", "RECIPE_747"}
+	},
+	{
+		{FrostCrystalRequired,	"PLANT_SNOW"},
+		{"RECIPE_494", "RECIPE_495", "RECIPE_497", "RECIPE_499", "RECIPE_501", "RECIPE_503", "RECIPE_505", "RECIPE_507", "RECIPE_509", "RECIPE_511", "RECIPE_513", "RECIPE_515", "RECIPE_517", "RECIPE_519", "RECIPE_521", "RECIPE_523", "RECIPE_525", "RECIPE_527", "RECIPE_529", "RECIPE_531", "RECIPE_533", "RECIPE_535", "RECIPE_537", "RECIPE_539", "RECIPE_585", "RECIPE_587", "RECIPE_589", "RECIPE_591", "RECIPE_593", "RECIPE_595", "RECIPE_597", "RECIPE_599", "RECIPE_601", "RECIPE_603", "RECIPE_605", "RECIPE_607", "RECIPE_609", "RECIPE_611", "RECIPE_613", "RECIPE_615", "RECIPE_617", "RECIPE_619", "RECIPE_621"}
+	},
+}
+
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
@@ -1275,6 +1301,27 @@ for i = 1, #CropPelletChanges do
 					{"Amount", AmountING}
 				}
 			}
+end
+for i = 1, #SeasoningChanges do
+	local SeasonAmount = SeasoningChanges[i][1][1]
+	local SeasonId = SeasoningChanges[i][1][2]
+	local Recipes = SeasoningChanges[i][2]
+	
+		for j = 1, #Recipes do
+			local RecipeId = Recipes[j]
+			
+			ChangesToRecipes[#ChangesToRecipes+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Id", RecipeId, "Id", SeasonId},
+				--["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Amount", SeasonAmount}
+				}
+			}
+		end
 end
 ChangesToRecipes[#ChangesToRecipes+1] =
 {
