@@ -1,5 +1,5 @@
 ModName = "PTSd Settlement Rewards"
-GameVersion = "4_08"
+GameVersion = "4_23"
 Description = "Rebalances settlement produced items by race & wealth, Increases cap on stored settlement rewards, and can optionally change settlement timers"
 
 --Multiplier to apply to the Max Production cap and Production StatProductivityContributionModifier
@@ -27,7 +27,7 @@ ProducedItemChanges =
 		{	--Vanilla item			Replacement item
 			{"PLANT_POOP",			"LAUNCHSUB"},			--Faecium		20 x 10,		Di-Hydrogen		34 x 10
 			{"PLANT_WATER",			"ROCKETSUB"},			--Kelp Sac		41 x 10,		Tritium			6 x 10		(36 x 10)
-			{"PLANT_CAVE",			"FOOD_R_SCUSTARD"},		--Marrow Bulb	41 x 10,		Stellar Custard	28000
+			{"PLANT_CAVE",			"FOOD_R_PASTRY"},		--Marrow Bulb	41 x 10,		Pastry			24000
 			{"PLANT_LUSH",			"ALLOY5"},				--Star Bulb		32 x 10,		Magno-Gold		25000
 			{"TRA_CURIO2",			"ASTEROID3"}			--Geknip		20625,			Platinum		505 x 10
 		}
@@ -102,13 +102,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 	    {
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= {"GCSETTLEMENTGLOBALS.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						--This entry intentionally left blank, to be filled in by the ProducedItemChanges at the bottom of this script
-					}
-				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {"GCSETTLEMENTGLOBALS.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
@@ -192,7 +185,7 @@ for i = 1, #ProducedItemChanges do
 		local OldItem = Items[j][1]
 		local NewItem = Items[j][2]
 
-			ChangesToProducedItems_temp =
+			ChangesToProducedItems[#ChangesToProducedItems+1] =
 			{
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "",
@@ -203,6 +196,5 @@ for i = 1, #ProducedItemChanges do
 					{"Value", NewItem}
 				}
 			}
-			ChangesToProducedItems[#ChangesToProducedItems+1] = ChangesToProducedItems_temp
 	end
 end

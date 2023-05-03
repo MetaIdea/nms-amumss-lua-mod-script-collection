@@ -1,7 +1,11 @@
 Languages =
 {
-    ["English"]               = "English",
-    ["German"]                = "German",
+    ["English"]				= "English",
+	["Italian"]					= "Italian",
+	["French"]					= "French",
+	["Spanish"]				= "Spanish",
+    ["German"]				= "German",
+	["Russian"]				= "Russian",
 }
 
 SubstanceOrProduct = { ["Substance"] = "Substance", ["Product"] =  "Product"}
@@ -11,13 +15,32 @@ SubstanceOrProduct = { ["Substance"] = "Substance", ["Product"] =  "Product"}
 -- TLDR: --
 -- Speed is in SECONDS and MUST be a negative value, THE LOWER THE VALUE, THE FASTER THE EXTRACTOR FILLS
 --Storage is self explanatory lol
+gExtrSpeed =  -3600 -- 1hr
+gExtrCap = 9999 -- max cap
 
-ExtrSpeed = -3660 -- 1hr
-ExtrCap = 9999 -- max cap
+gExtrConfTable =
+{
+	DoExtrConf = { false, [[Would you like to set Extraction Speed and Capacity?]] },
+	gExtrSpeed			= { gExtrSpeed, [[Extr Speed, (default: ]]..gExtrSpeed..[[ )
+	enter a number less than or equal to -1  (Must be negative) :
+	]]},
+	gExtrCap				= { gExtrCap, [[gExtrCap (default: ]]..gExtrCap..[[)
+	enter a number between 1 and 9999 (inclusive):
+	]]}
+}
 
--- Extr Speed is calculated as a countdown, the lower the countdown value, the faster the extractor fills up. Higher Capacity + Faster ExtrSpeed = Higher Yields.
--- ExtrSpeed Default is -79200, or 22 hrs. I currently have it set to -3600, which is 1 hr
--- ExtrCap Default is 350, I set it to 9999.
+DoExtrConf = GUIF( gExtrConfTable.DoExtrConf )
+if DoExtrConf then
+	gExtrSpeed = GUIF( gExtrConfTable.gExtrSpeed )
+	gExtrCap = GUIF( gExtrConfTable.gExtrCap )
+end
+
+assert(type(gExtrSpeed) == "number" and gExtrSpeed <= -1, "Invalid Extractor Speed defined: Must be a numeric value less than -1")
+assert(type(gExtrCap) == "number" and gExtrCap >= 1 and gExtrCap <= 9999, "Invalid Extractor Capacity defined: Must be a numeric value between 1 and 9999 (inclusive)")
+
+-- Extr Speed is calculated as a countdown, the lower the countdown value, the faster the extractor fills up. Higher Capacity + Smaller gExtrSpeed = Higher Yields.
+-- gExtrSpeed Default is -79200, or 22 hrs. I currently have it set to -3600, which is 1 hr
+-- gExtrCap Default is 350, I set it to 9999.
 -- You can adjust this stuff to suit your needs, just be aware that making the extractors too fast/too slow may break immersion
 
 
@@ -33,8 +56,14 @@ AddNewExtrRooms =
         },
         ["Languages"] =
         {
-            --					language									name											subtitle																								description					--
-            {Languages["English"], "Stellar Extractor: Exotic Materials", "Moar Useful Elements", "Naturally ocurring in Stars, Helium is the product of the nuclear fusion of hydrogen atoms. New synthesis tehcnologies allow for Helium to be created in refiners."}
+            --					language									name											subtitle																								description																																																		UI Description--
+            {Languages["English"], "Stellar Extractor: Exotic Materials", "Moar Useful Elements", "Naturally occurring in Stars, Helium is the product of the nuclear fusion of hydrogen atoms. New synthesis technologies allow for Helium to be created in refiners.", "Harvest Exotic Materials"},
+            {Languages["French"], "Extracteur Stellaire : Matériaux Exotiques", "Plus d'Éléments Utiles", "Naturellement présent dans les étoiles, l'hélium est le produit de la fusion nucléaire des atomes d'hydrogène. De nouvelles technologies de synthèse permettent de créer de l'hélium dans les raffineries.", "Récoltez des Matériaux Exotiques"},
+            {Languages["Italian"], "Estrattore Stellare: Materiali Esotici", "Elementi più Utili", "Presente naturalmente nelle stelle, l'elio è il prodotto della fusione nucleare degli atomi di idrogeno. Nuove tecnologie di sintesi consentono di creare elio nei raffinatori.", "Raccogli Materiali Esotici"},
+            {Languages["Spanish"], "Extractor Estelar: Materiales Exóticos", "Más Elementos Útiles", "Presente de forma natural en las estrellas, el helio es el producto de la fusión nuclear de los átomos de hidrógeno. Las nuevas tecnologías de síntesis permiten crear helio en los refinadores.", "Cosecha Materiales Exóticos"},
+            {Languages["German"], "Stellarer Extraktor: Exotische Materialien", "Mehr Nützliche Elemente", "Natürlich vorkommend in Sternen, ist Helium das Produkt der Kernfusion von Wasserstoffatomen. Neue Synthesetechnologien ermöglichen die Erzeugung von Helium in Raffinerien.", "Sammeln Sie Exotische Materialien"},
+            {Languages["Russian"], "Звездный Экстрактор: Экзотические Материалы", "Больше Полезных Элементов", "Природным образом образующийся в звездах, гелий является продуктом ядерного синтеза атомов водорода. Новые технологии синтеза позволяют создавать гелий в рефайнерах.", "Добывайте Экзотические Материалы"}
+
         }
     },
 	{
@@ -48,7 +77,12 @@ AddNewExtrRooms =
         ["Languages"] =
         {
             --					language									name											subtitle																								description					--
-            {Languages["English"], "Stellar Extractor: Gasses", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Gasses like Carbon, Di-Hydrogen, and Ammonia from matter-dense Nebulae."}
+            {Languages["English"], "Stellar Extractor: Gasses", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Gasses like Carbon, Di-Hydrogen, and Ammonia from matter-dense Nebulae.", "Harvest Space Gasses"},
+			{Languages["French"], "Extracteur Stellaire : Gaz", "Moar extracteurs stellaires", "Une variante modifiée de l'extracteur stellaire standard, cet extracteur récolte des gaz comme le carbone, le di-hydrogène et l'ammoniac à partir de nébuleuses riches en matière.", "Récolte de gaz spatiaux"},
+			{Languages["Italian"], "Estrattore Stellare: Gas", "Più Estrattori Stellari", "Una variante modificata dello Stellar Extractor standard, questo estrattore raccoglie gas come Carbonio, Di-Idrogeno e Ammoniaca da nebulose dense di materia.", "Raccogli Gas Spaziali"},
+			{Languages["Spanish"], "Extractora Estelar: Gases", "Más extractoras estelares", "Una variante modificada del Extractor Estelar estándar, este extractor cosecha gases como Carbono, Di-Hidrógeno y Amoniaco de nebulosas densas en materia.", "Cosecha de gases espaciales"},
+			{Languages["German"], "Stellar Extraktor: Gase", "Mehr Stellar Extraktoren", "Eine modifizierte Variante des Standard Stellar Extraktors, dieser Extraktor erntet Gase wie Kohlenstoff, Di-Wasserstoff und Ammoniak aus dichtem Nebel.", "Ernte von Weltraumgasen"},
+			{Languages["Russian"], "Звездный экстрактор: газы", "Больше звездных экстракторов", "Измененный вариант стандартного звездного экстрактора, этот экстрактор собирает газы, такие как углерод, ди-водород и аммиак, из плотных туманностей.", "Сбор космических газов"}
         }
     },
 	{
@@ -62,7 +96,12 @@ AddNewExtrRooms =
         ["Languages"] =
         {
             --					language									name											subtitle																								description					--
-            {Languages["English"], "Stellar Extractor: Metals", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Metals like Pure Ferrite, Cobalt, and Salt from matter-dense Nebulae."}
+            {Languages["English"], "Stellar Extractor: Metals", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Metals like Pure Ferrite, Cobalt, and Salt from matter-dense Nebulae.", "Harvest Deep Space Metals"},
+			{Languages["French"], "Extracteur stellaire : Métaux", "Plus d'extracteurs stellaires", "Une variante modifiée de l'extracteur stellaire standard, cet extracteur récolte des métaux tels que la ferrite pure, le cobalt et le sel à partir de nébuleuses riches en matière.", "Récoltez des métaux en profondeur dans l'espace"},
+			{Languages["Italian"], "Estrattore Stellare: Metalli", "Più Estrattori Stellari", "Una variante modificata dello standard Estrattore Stellare, questo Estrattore raccoglie metalli come la ferrite pura, il cobalto e il sale dalle nebulose dense di materia.", "Raccogli metalli profondi nello spazio"},
+			{Languages["Spanish"], "Extractor Estelar: Metales", "Más Extractores Estelares", "Una variante modificada del Extractor Estelar estándar, este extractor cosecha metales como ferrita pura, cobalto y sal de nebulosas densas en materia.", "Cosecha metales profundos del espacio"},
+			{Languages["German"], "Stellar Extraktor: Metalle", "Mehr Stellar Extraktoren", "Eine modifizierte Variante des Standard Stellar Extraktors, dieser Extraktor erntet Metalle wie Reine Ferrite, Kobalt und Salz aus materiedichten Nebeln.", "Ernte tiefe Raummetalle"},
+			{Languages["Russian"], "Звездный экстрактор: металлы", "Больше звездных экстракторов", "Измененная версия стандартного звездного экстрактора, этот экстрактор собирает металлы, такие как чистый феррит, кобальт и соль из плотных туманностей материи.", "Собирайте глубокие космические металлы"} 
         }
     },
 	{
@@ -76,7 +115,12 @@ AddNewExtrRooms =
         ["Languages"] =
         {
             --					language									name											subtitle																								description					--
-            {Languages["English"], "Stellar Extractor: Stellar Materials", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Stellar Materials like Copper, Cadmium, and Indium from matter-dense Nebulae."}
+            {Languages["English"], "Stellar Extractor: Stellar Materials", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Stellar Materials like Copper, Cadmium, and Indium from matter-dense Nebulae.", "Harvest Stellar Materials"},
+			{Languages["French"], "Extracteur Stellaire : Matériaux stellaires", "Moar extracteurs stellaires", "Une variante modifiée de l'extracteur stellaire standard, cet extracteur récolte des matériaux stellaires comme le cuivre, le cadmium et l'indium à partir de nébuleuses riches en matière.", "Récolte de matériaux stellaires"},
+			{Languages["Italian"], "Estrattore Stellare: Materiali stellari", "Altri estrattori stellari", "Una variante modificata dello standard Estrattore Stellare, questo Estrattore raccoglie Materiali stellari come Rame, Cadmio e Indio dalle nebulose dense di materia.", "Raccolta di Materiali stellari"},
+			{Languages["Spanish"], "Extractor Estelar: Materiales estelares", "Más extractores estelares", "Una variante modificada del Extractor Estelar estándar, este extractor recolecta materiales estelares como Cobre, Cadmio e Indio de nebulosas densas de materia.", "Recolección de materiales estelares"},
+			{Languages["German"], "Sternenextraktor: Sternmaterialien", "Mehr Sternenextraktoren", "Eine modifizierte Variante des Standard-Sternenextraktors, dieser Extraktor erntet Sternmaterialien wie Kupfer, Cadmium und Indium aus materialreichen Nebeln.", "Ernte von Sternmaterialien"},
+			{Languages["Russian"], "Звездный экстрактор: звездные материалы", "Еще звездные экстракторы", "Измененный вариант стандартного Звездного экстрактора, этот экстрактор собирает звездные материалы, такие как медь, кадмий и индий из плотных небул.", "Сбор звездных материалов"}
         }
     }
 }
@@ -349,7 +393,7 @@ ModName 						= "Moar Stellar Extractors "
 Author								= "EchoTree"
 LuaAuthor							= "EchoTree & Jackty89"
 ModDescription				=	"Adds 4 new Stellar Extractor rooms to the game. Adds 20 New Files, Modifies METADATA/REALITY DEFAULTSAVEDATA.MBIN, DEFAULTSAVEDATACREATIVE.MBIN, /TABLES BASEBUILDINGOBJECTSTABLE.MBIN, BASEBUILDINGPARTSTABLE.MBIN, BASEBUILDINGPARTSNAVDATATABLE.MBIN, NMS_REALITY_GCPRODUCTTABLE.MBIN, and all of the PLACEMENTDATA.ENTITY.MBINS for the Industrial Rooms."
-GameVersion					=	"v4.06.0"
+GameVersion					=	"v4.2.3"
 Build									= ".1"
 CustomLanguageTag		= "NMSMSE"
 
@@ -486,8 +530,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"ROCKETSUB"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								 GREEN								--
@@ -495,8 +539,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"ASTEROID2"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								  BLUE									--
@@ -504,8 +548,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"ASTEROID3"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								  RED									--
@@ -513,8 +557,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id", "ASTEROID1"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{
@@ -601,8 +645,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"OXYGEN"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								 GREEN								--
@@ -610,8 +654,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"TOXIC1"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								  BLUE									--
@@ -619,8 +663,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"LAUNCHSUB"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								  RED									--
@@ -628,8 +672,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"FUEL1"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{
@@ -716,8 +760,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"CATALYST1"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								 GREEN								--
@@ -725,8 +769,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"WATER1"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								  BLUE									--
@@ -734,8 +778,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id", "CAVE1"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed},
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed},
 							},
 						},
 						{	--								  RED									--
@@ -743,8 +787,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"LAND2"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}								
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}								
 							},
 						},
 						{
@@ -831,8 +875,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"YELLOW2"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								 GREEN								--
@@ -840,8 +884,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"GREEN2"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								  BLUE									--
@@ -849,8 +893,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"BLUE2"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								  RED									--
@@ -858,8 +902,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Id",				"RED2"},
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{
@@ -879,32 +923,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 						    ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" ,},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod",				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod",				gExtrSpeed}
 							},
 						},											
 						{	--								 GREEN								--
 						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod",				 ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod",				 gExtrSpeed}
 							},
 						},
 						{	--								  BLUE									--
 						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod", 				gExtrSpeed}
 							},
 						},
 						{	--								  RED									--
 						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxCapacity",				ExtrCap},
-								{"AmountEmptyTimePeriod",				ExtrSpeed}
+								{"MaxCapacity",				gExtrCap},
+								{"AmountEmptyTimePeriod",				gExtrSpeed}
 							},
 						},					
 					}
@@ -1149,7 +1193,7 @@ AddToProductTable[#AddToProductTable + 1]  =
 
 function CreateNewBBObjects(NewBBObjectID, NewBBObjectFileName)
 	return [[
-		<Property value="GcBaseBuildingEntry.xml">
+	<Property value="GcBaseBuildingEntry.xml">
       <Property name="ID" value="]]..NewBBObjectID..[[" />
       <Property name="IsTemporary" value="False" />
       <Property name="IsFromModFolder" value="False" />
@@ -1883,7 +1927,7 @@ function FillCustomlangFile(Data)
         local SubID = "BLD_"..ProductID.."_SUB"
         local DescID = "BLD_"..ProductID.."_DESC"
 		
-		local UIDescID = "BLD_"..ProductID.."_DESC"
+		local UIDescID = "UI_"..ProductID.."_DESC"
 
         for j = 1, #LanguagesData do
             local Language = LanguagesData[j][1]
@@ -1900,7 +1944,7 @@ function FillCustomlangFile(Data)
             local NewDescription = LanguagesData[j][4]
             table.insert(DescriptionEntries, NewLanguageEntry(Language, NewDescription))
 			
-			local NewUIDesc = LanguagesData[j][2]
+			local NewUIDesc = LanguagesData[j][5]
 			table.insert(UIDescEntries, NewLanguageEntry(Language, NewUIDesc))
         end
 
