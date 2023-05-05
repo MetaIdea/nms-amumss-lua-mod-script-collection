@@ -2,8 +2,8 @@ Author = "Mjstral,Gumsk"
 ModName = "gShip Custom Ships Summoner"
 ModNameSub = "C Class"
 BaseDescription = "Summons new ship models from gShip Custom Ships"
-GameVersion = "422"
-ModVersion = "a"
+GameVersion = "423"
+ModVersion = "b"
 
 --[[Files Modified:
 MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN
@@ -146,7 +146,7 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="SHIPJUMP" />
+						<Property name="Id" value="SHIPJUMP1" />
 						<Property name="Amount" value="200" />
 						<Property name="MaxAmount" value="200" />
 						<Property name="DamageFactor" value="0" />

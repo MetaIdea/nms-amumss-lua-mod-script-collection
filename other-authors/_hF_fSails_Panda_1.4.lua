@@ -1,18 +1,20 @@
-Diffuse = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.DDS" -- DIFFUSE MAP
+Diffuse = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL_PANDA.DDS" -- DIFFUSE MAP
 Masks = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.MASKS.DDS" -- MASKS MAP
 Normal = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.NORMAL.DDS" -- NORMAL MAP
 
-Version = "1.3"
-GameVersion = "4.15"
+Version = "1.4"
+Game_Version = "4.23"
+Mod_Author = "hemis FEAR"
+Lua_Author = "Forked by hemis FEAR, Originally by Lowkie"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"]	= "_hF_fSails_Panda_"..Version..".pak",
-["MOD_AUTHOR"]		= "hemis FEAR",
-["LUA_AUTHOR"]		= "Lowkie, forked by hemis FEAR",
-["NMS_VERSION"]		= GameVersion,
+["MOD_AUTHOR"]		= Mod_Author,
+["LUA_AUTHOR"]		= Lua_Author,
+["NMS_VERSION"]		= Game_Version,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Panda Sail for Freighters",
+["MOD_DESCRIPTION"]	= "fSails: Panda Freighter Sail",
 ["MODIFICATIONS"]	= 
 	{
 		{
@@ -56,14 +58,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"z",	"0.6"}-- Original "1"
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
+							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},
+							["INTEGER_TO_FLOAT"]    = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x",	"0"}-- Original "0.7"
@@ -76,17 +72,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
+							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},	
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x",		"0"}, 	-- Original "0.9"
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"z",		"0.6"}, 	-- Original "1"
 							}
 						}
 					}
