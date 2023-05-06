@@ -532,7 +532,7 @@ SpaceStationMissionLootChanges =
 			{"BP_SALVAGE",				"BP_SALVAGE",			3,	8,		50},	--3,	8,		50		Salvaged Data
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		2,	3,		50},	--2,	3,		100		Frigate Fuel (200 tonnes)
 			{"NAV_DATA_DROP",			"SUIT_INV_TOKEN",		1,	1,		20},	--1,	1,		20		Drop Pod Coordinates		(Exosuit Expansion Slot)
-			{"CHART_HIVE",				"CHART_HIVE",			1,	1,		40},	--1,	1,		40		Sentinel Pillar Chart
+			{"CHART_HIVE",				"CHART_HIVE",			1,	1,		20},	--1,	1,		40		Sentinel Pillar Chart
 			{"STATION_KEY",				"STATION_KEY",			1,	1,		20},	--1,	1,		20		Forged Passport ???
 			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		60},	--1,	1,		60		Multi-Tool Expansion Slot
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		60},	--1,	1,		60		Storage Augmentation
@@ -769,9 +769,15 @@ SentQuad				=	2			--??? Quad Servo			From interacting with damaged sentinel mach
 
 --Multipliers to apply to rewards from some rare resource nodes
 MutantPlantSulphurine	=	0.75		--250 - 400
-OrganicRockMordite		=	1			--250 - 500
+OrganicRockMordite		=	0.4			--250 - 500			Unlike all the other rare resource nodes, this is unaffected by your Multi-Tool's Mining yield bonus
+OrganicRockChlorine		=	2			--25 - 60	
 CuriousDepositMould		=	0.6			--300 - 500
-GassyPods				=	0.3			--20 - 30		The 3 red "Gassy Pods" you can harvest from the common Gas Exploding plant hazardous flora on most planets
+	--Note: in practice, Metal Fingers seems to only yield around half of these values
+MetalFingerGold			=	0.6			--100 - 200
+MetalFingerUranium		=	0.4			--200 - 250
+MetalFingerUraniumChance=	0.5			--100	(Relative % Chance a Metal Finger will yield Uranium instead of Gold)
+
+GassyPods				=	0.5			--20 - 30		The 3 red "Gassy Pods" you can harvest from the common Gas Exploding plant hazardous flora on most planets
 
 --Changes how many crops are gathered from certain plants, and what the chance is to receive nanites instead of (for farmed versions) or in addition to (for wild Gravitino) the normal yield
 	--WIP: P_GRAVBALL doesn't control wild Gravitino balls, haven't tested P_ALBUMENPEARL or DE_URCHIN
@@ -2061,6 +2067,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_HOT"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	OrganicRockChlorine},
+					{"AmountMax",	OrganicRockChlorine}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_ROLLER"},
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
@@ -2069,6 +2086,31 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"AmountMin",	CuriousDepositMould},
 					{"AmountMax",	CuriousDepositMould}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_GOLD",	"ID","ASTEROID2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "*",
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	MetalFingerGold},
+					{"AmountMax",	MetalFingerGold}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_GOLD",	"ID","RADIO1"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "*",
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	MetalFingerUraniumChance},
+					{"AmountMin",	MetalFingerUranium},
+					{"AmountMax",	MetalFingerUranium}
 				}
 			},
 			{

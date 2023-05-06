@@ -52,13 +52,13 @@ RemoveVesperManeuver = true								--false
 RemoveLivingAutoCharge = true							--false
 
 --Changes to using items to recharge starship tech
-ShipLaunchRechargeMult = 2								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
+ShipLaunchRechargeMult = 3								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
 LivingShipLaunchRechargeMult = 0.75						--	Multiplier to apply to the cost of Mordite / Oxygen / Cond. Carbon on recharging Living ship launchers		200 / 200 / ? to fully charge
 ShipPulseRechargeMult = 1.25							--	Multiplier to apply to the cost of Tritium / Pyrite on recharging ship Pulse engine							100 / 40 to fully charge
 LivingShipPulseRechargeMult = 1							--	Multiplier to apply to the cost of Silver / Carbon / Viscous Fluids on recharging Living ship Pulse engine	200 / ? to fully charge
 LivingShipWarpRechargeMult = 1.5						--	Multiplier to apply to the cost of Chromatic Metal / Processed Meat / Living Slime on recharging Living ship Hyperdive		60 / ? / ? to fully charge
 
-ShipShieldRechargeMult = 2								--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging ship shields						100 / 40 to fully charge
+ShipShieldRechargeMult = 1.5							--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging ship shields						100 / 40 to fully charge
 LivingShipShieldRechargeMult = 0.75						--	Multiplier to apply to the cost of Pugneum / Mordite / Di-Hydrogen recharging Living ship shields			200 / ? / ? to fully charge
 
 StarshieldBattMult = 2									--	Multiplier to apply to the effectiveness of Starshield Battery. In vanilla it only refills half of your starship's shield

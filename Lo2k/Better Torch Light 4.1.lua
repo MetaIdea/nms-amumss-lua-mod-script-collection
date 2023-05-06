@@ -1,12 +1,13 @@
 NewFov = 40
-NewStrength = 6
+NewStrength = 8
+NewStrengthFar = 8.5
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Torch Light 4.0.pak", 
+["MOD_FILENAME"] 			= "Better Torch Light 4.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.22",
+["NMS_VERSION"]				= "4.23",
 ["MOD_DESCRIPTION"]			= "This mods makes torch light more realistic",
 ["MODIFICATIONS"] 			= 
 	{
@@ -28,6 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TorchDimStrength",	NewStrength},
 								{"InteractionTorchStrength",	NewStrength},
 								{"UndergroundTorchStrength",	NewStrength},
+								{"UndergroundTorchStrengthFar",	NewStrengthFar},
 								{"TorchOffsetY", "0"},
 								{"TorchFollowCameraTime", "0.05"},  --Original : 0.15
 							}

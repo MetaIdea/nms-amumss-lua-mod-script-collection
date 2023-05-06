@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_22"
+GameVersion = "4_23"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -520,7 +520,7 @@ CostChanges	=
 	--Lower this to offset the increased value for scrapping crashed A or S class ships		(not necessary in NMS v3.82 as now only Shuttles or Exotics will spawn as crashed ships with A or S class?)
 		--Supposedly NMS v3.85+ has re-enabled all shiptypes to spawn as S-Class at crashsites?
 ShipTradeInMultiplier = 40												--70				Applies to both trading in to buy a differnt ship or scrapping it at a space station ship salvage terminal
-FreighterTradeInMultiplier = 10											--70				Reduced with the assumption of accepting the first free freighter, but not using it until able to purchase a new freighter, and not wanting the trade-in value of the free freighter to easily pay for the new freighter
+FreighterTradeInMultiplier = 70											--70
 ToolTradeInMultiplier = 40												--70
 
 --SalvageValueMultiplier = 0.6											--0.6				Unknown function, doesn't appear to affect value of scrapping ship
