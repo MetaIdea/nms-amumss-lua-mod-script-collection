@@ -18,7 +18,7 @@ JudgementTimeMultiplier = 				1						--Multiplier to apply to the Min and Max wa
 
 BuildingUpgradeTimeInSeconds =			7200					--7200		Unclear what this controls
 
-SettlementMiniExpeditionSuccessChance = 0.85					--0.7	Chance that a settlement "expedition" will succeeed
+SettlementMiniExpeditionSuccessChance = 0.7						--0.7	Chance that a settlement "expedition" will succeeed
 
 ProducedItemChanges =	
 {
@@ -90,6 +90,23 @@ ProducedItemChanges =
 	}
 }
 
+--Adds +1 population when completing a Settlement Expedition regardless of outcome
+AddedExpeditionReward =
+[[<Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardSettlementStat.xml">
+                  <Property name="StatToAward" value="GcSettlementStatChange.xml">
+                    <Property name="Stat" value="GcSettlementStatType.xml">
+                      <Property name="SettlementStatType" value="Population" />
+                    </Property>
+                    <Property name="Strength" value="GcSettlementStatStrength.xml">
+                      <Property name="SettlementStatStrength" value="PositiveSmall" />
+                    </Property>
+                  </Property>
+                  <Property name="Silent" value="False" />
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -167,6 +184,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"IGNORE",	ConstructionTimeMultiplier}
 							}
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\SENTINELSETTLEMENTMISSIONTABLE.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "R_SETTEXPEDDONE"},
+							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+							["ADD"] = AddedExpeditionReward,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 					}
 				}

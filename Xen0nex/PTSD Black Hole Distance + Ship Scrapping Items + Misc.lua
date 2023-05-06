@@ -1,5 +1,5 @@
 ModName = "PTSD Black Hole Distance + Ship Scrapping Items + Misc"
-GameVersion = "422"
+GameVersion = "423"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -157,8 +157,8 @@ for i = 1, #UnknownRecipes do
 		
 			ChangesToDefaultSaveData[#ChangesToDefaultSaveData+1] =
 			{
-				["PRECEDING_FIRST"] = "TRUE",
-				["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
+				--["PRECEDING_FIRST"] = "TRUE",
+				--["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
 				["SPECIAL_KEY_WORDS"] = {"Value",	ContainerID},
 				["REMOVE"] = "SECTION"
 			}

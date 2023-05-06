@@ -183,6 +183,12 @@ AdjustItems =
 	{	--Battery 				Mag. Ferrite
 		"U_BATTERY_S",			"LAND3",			80,			--60
 	},
+	{	--Biological Room		Silver
+		"FRE_ROOM_BIO",			"ASTEROID1",		60,			--40
+	},
+	{	--Biological Room		Oxygen
+		"FRE_ROOM_BIO",			"OXYGEN",			60,			--30
+	},
 }
 --Adds various items as new components for certain techs
 AddItems =
@@ -198,6 +204,9 @@ AddItems =
 	},
 	{	--Battery 				Ionised Cobalt
 		"U_BATTERY_S",			"CAVE2",			30,		"Substance",
+	},
+	{	--Biological Room		Condensed Carbon
+		"FRE_ROOM_BIO",			"FUEL2",			30,		"Substance",
 	},
 }
 --Replaces an existing component for certain techs with various items instead
@@ -303,7 +312,7 @@ BarFabAntiNeeded				=	12				--1		Antimatter
 
 --New recipe for installing Nutrition Room in freighter
 CookRoomProcessors = 1								--how many Nutrient Processors required		(replaces 15 Oxygen in vanilla)
-CookRoomSilver = 20									--60 Silver
+CookRoomSilver = 60									--60 Silver
 CookRoomPureFerrite = 20							--40 Pure Ferrite
 --New recipe for installing Refiner Room in freighter
 RefinerRoomMicrochips = 8							--how many Microprocessors required		(replaces 2 Di-Hydrogen Jelly in vanilla)
