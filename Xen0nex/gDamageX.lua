@@ -1,18 +1,21 @@
 Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
-BaseDescription = "Damage adjustments"
-GameVersion = "420"
+BaseDescription = "Damage & Tech Damage adjustments"
+GameVersion = "423"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
 
 --Global damage multipliers to quickly adjust all damage values within a particular category, on top of any individual adjustments below
-Starships =					1				--Damage from starships / freighters
+Starships =					1				--Damage from enemy starships / freighters
 Flora =						1				--Damage from all kinds of Hazardous Flora
 Fauna =						1				--Damage from all kinds of Hazardous Fauna / Creatures
 Robots =					1				--Damage from planetary Sentinels, turrets/drones in Derelict Freighters (Sentinel starships/freighters covered by "Starships")
 Other =						1				--Damage from most other damage sources such as environmental hazards, falling, starship impact, pirate building raids, etc.
+
+--Multiplier to the chance that various damage sources will damage installed tech
+StarshipTech =				0.5				--Tech Damage chance from enemy starships / freighters
 
 --For below items, values are set to what they would have been in Survival Mode. Hardmodemultiplier pre-4.0 is 1 unless otherwise specified.
 
@@ -21,6 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {{
 ["MBIN_FILE_SOURCE"] = FileSource,
@@ -122,7 +126,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 4.5*Fauna}}}, --default 1, HardModeMultiplier 1.5
 		
-	{["SPECIAL_KEY_WORDS"] = {"Id","WORM_DMG"},				--Added Xen0nex
+	{["SPECIAL_KEY_WORDS"] = {"Id","WORM_DMG"},						--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 90*Fauna}}}, --default 30, HardModeMultiplier 2
 	
@@ -132,27 +136,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 30*Starships}}}, --default 14
+		{"Damage", 30*Starships}, --default 14
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075		Added Xen0nex
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 35*Starships}}}, --default 15
+		{"Damage", 35*Starships}, --default 15
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075		Added Xen0nex
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 35*Starships}}}, --default 16
+		{"Damage", 35*Starships}, --default 16
+		{"TechDamageChance", 0.05*StarshipTech}}}, --default 0.05		Added Xen0nex
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40*Starships}}}, --default 16
+		{"Damage", 40*Starships}, --default 16
+		{"TechDamageChance", 0.1*StarshipTech}}}, --default 0.1			Added Xen0nex
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 45*Starships}}}, --default 16
+		{"Damage", 45*Starships}, --default 16
+		{"TechDamageChance", 0.15*StarshipTech}}}, --default 0.15		Added Xen0nex
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40*Starships}}}, --default 20
+		{"Damage", 40*Starships}, --default 20
+		{"TechDamageChance", 0.05*StarshipTech}}}, --default 0.05		Added Xen0nex
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -160,11 +170,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50*Starships}}}, --default 30
+		{"Damage", 50*Starships}, --default 30
+		{"TechDamageChance", 0.1*StarshipTech}}}, --default 0.1		Added Xen0nex
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 75*Starships}}}, --default 50
+		{"Damage", 75*Starships}, --default 50
+		{"TechDamageChance", 0.15*StarshipTech}}}, --default 0.15		Added Xen0nex
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","WALKERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -176,11 +188,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50*Starships}}}, --default 16
+		{"Damage", 50*Starships}, --default 16
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075		Added Xen0nex
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50*Starships}}}, --default 15
+		{"Damage", 50*Starships}, --default 15
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075		Added Xen0nex
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
@@ -212,11 +226,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 180*Starships}}}, --default 20, HardModeMultiplier 1.5
+		{"Damage", 180*Starships}, --default 20, HardModeMultiplier 1.5
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075		Added Xen0nex
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 67.5*Starships}}}, --default 20, HardModeMultiplier 1.5
+		{"Damage", 67.5*Starships}, --default 20, HardModeMultiplier 1.5
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075		Added Xen0nex
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -248,7 +264,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_PROP"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 15*Fauna}}}, --default 1, HardModeMultiplier 1.5
+		{"Damage", 75*Fauna}}}, --default 1, HardModeMultiplier 1.5
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","CLAM_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	

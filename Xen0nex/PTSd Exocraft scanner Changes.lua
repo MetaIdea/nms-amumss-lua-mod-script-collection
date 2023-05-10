@@ -363,6 +363,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"ID","MECH_SCAN",		"Description", "VariableSizeString.xml"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value", "Allows for additional building types to be acquired by the Minotaur Basic Radar Array."},
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"ID","MECH_SCAN"},
 				["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
 				["VALUE_CHANGE_TABLE"] 	=
@@ -376,6 +383,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"PrimaryItem", "False"},
 					{"Upgrade", "True"},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID","SUB_BINOCS",		"Description", "VariableSizeString.xml"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value", "Allows for additional building types to be acquired by the Basic Sonar."},
 				}
 			},
 			{

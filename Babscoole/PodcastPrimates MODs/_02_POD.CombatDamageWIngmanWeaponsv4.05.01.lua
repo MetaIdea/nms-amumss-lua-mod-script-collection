@@ -114,37 +114,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "SHIPGUN"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPGUN"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DefaultDamage", "225"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "SHIPPLASMAGUN"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPPLASMAGUN"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DefaultDamage", "3700"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "SHIPROCKET"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPROCKET"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DefaultDamage",  "2500"},
                                 {"BehaviourFlags", "DestroyTerrain, ScareCreatures, ExplosionForce"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "SQUADGUN"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADGUN"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DefaultDamage", "1200"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "AI_FREIGHTER"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HitWidth",       "50"},
                                 {"PulseAmplitude", "0.2"},
@@ -152,8 +152,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "COP_FREIGHTER"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "COP_FREIGHTER"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HitWidth", "50"},
                             }
@@ -670,7 +670,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"y", "3000",},
                             },
                             ["WISUBSEC_LOP"] = "AND",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "2500"},
                                 {"y", "5000"},
@@ -684,7 +684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"y", "600",},
                             },
                             ["WISUBSEC_LOP"] = "AND",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "350"},
                                 {"y", "800"},
@@ -892,7 +892,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "8000"},
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
@@ -901,7 +901,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"RewardCount",         "2"},
                                 {"Health",              "10000"},
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
@@ -909,49 +909,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RewardCount",         "3"},
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","POLICE",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","TRADER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","TRADER_ESCORT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
@@ -959,7 +959,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "35000"},
-                                {"LevelledExtraHealth",    "75000"},
+                                {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
@@ -1174,7 +1174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","STANDARD",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "25000"},
+                                {"LevelledExtraHealth", "25000"},
                                 {"RechargeTime",        "8"},
                             }
                         },
@@ -1182,7 +1182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","STRONG",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "41000"},
+                                {"LevelledExtraHealth", "41000"},
                                 {"RechargeTime",        "12"},
                             }
                         },
@@ -1190,7 +1190,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","FAST",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "16000"},
+                                {"LevelledExtraHealth", "16000"},
                                 {"RechargeTime",        "3"},
                             }
                         },
@@ -1198,7 +1198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LevelledExtraHealth",    "31000"},
+                                {"LevelledExtraHealth", "31000"},
                                 {"RechargeTime",        "8"},
                             }
                         },

@@ -9,17 +9,17 @@ TileLightDiffuse = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/TILINGLIGHTS.1X
 ContBeamDiffuse = "TEXTURES/SPACE/SPACESTATION/ENTRANCEBEAMX2.DDS" -- RED CONTAINER BEAM DIFFUSE
 SpotlightBase = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/SPOTLIGHT.BASEX.DDS" -- RED SPOTLIGHT
 
-Version = "1.5"
+Version = "1.55"
 GameVersion = "4.23"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_FreighterRetexture_FM_"..Version..".pak",
+["MOD_FILENAME"]	= "_hF_FreighterRetexture_SMetal_"..Version..".pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
 ["LUA_AUTHOR"]		= "Lowkie, Forked by hemis FEAR",
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Overhaul of Exterior Freighter Textures / Retexture, Full Matte (FM) Version",
+["MOD_DESCRIPTION"]	= "Overhaul of Exterior Freighter Textures / Retexture, Squared Metal (SM) Version",
 ["MODIFICATIONS"]	= 
 	{
 		{
@@ -344,18 +344,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},
-							["INTEGER_TO_FLOAT"]    = "FORCE",								
+							["INTEGER_TO_FLOAT"]    = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"z",	"0"}-- Original "1"
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},
-							["INTEGER_TO_FLOAT"]    = "FORCE",								
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"x",	"1"}-- Original "0.9"
+								{"x",	"0"}-- Original "0.9"
 							}
 						}
 					}
