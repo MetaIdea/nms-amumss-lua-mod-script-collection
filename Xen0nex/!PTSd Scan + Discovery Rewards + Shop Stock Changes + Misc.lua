@@ -1,7 +1,7 @@
 Author = "Xen0nex"
 ModName = "PTSd Scan + Discovery Rewards + Shop Stock Changes + Misc"
 Description = "Adjusts scan & discovery rewards and items available in shops. Also changes % chance to spawn jellyfish / anglerfish underwater."
-GameVersion = "420"
+GameVersion = "423"
 
 --UnderwaterProtectionMultiplier = 2				--Default Range 0 - 310
 
@@ -123,8 +123,8 @@ FiendCrimeChanges =
 			{
 				{"FiendFishSmall",	3},	--The type of enemy spawned
 			--Number of enemies spawned on:	Off		Slow	Normal	Fast	Difficulty Setting
-				{"MinNum",					0,		0,		1,		2},				--0,	0,	0,	1
-				{"MaxNum",					0,		1,		3,		4},				--0,	0,	0,	3
+				{"MinNum",					0,		2,		3,		4},				--0, 0, 0, 1	(0, 0, 1, 2)
+				{"MaxNum",					0,		4,		6,		8},				--0, 0, 0, 3	(0, 1, 3, 4)
 			},
 		}
 	},

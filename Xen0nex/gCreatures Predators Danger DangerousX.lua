@@ -2,15 +2,16 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gCreatures Predators"
 ModNameSub = "DangerousX"
 BaseDescription = "More aggressive and dangerous predators"
-GameVersion = "422"
+GameVersion = "423"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 FileSource2 = "MODELS\PLANETS\CREATURES\SANDWORMMINI\SANDWORMMINI\ENTITIES\DATA.ENTITY.MBIN"
-FileSource3 = "MODELS\PLANETS\CREATURES\FISH\FISHFIEND\ENTITIES\FISHFIEND.ENTITY.MBIN"
+FileSource3 = "MODELS\PLANETS\CREATURES\FISH\GRABBYPLANT\ENTITIES\GRABBYPLANT.ENTITY.MBIN"
 
 --This section added by Xen0nex
-WormHealthMult = 3							--Default 2600	(The big "Hungering Tendrils" / "Titan Worms")
-FishFiendHealthMult = 1						--Default 10	(The big Anglerfish that attacks underwater) Health may be controlled by FishFiendBigHealth in GCCREATUREGLOBALS.MBIN instead, need to test
+WormHealthMult = 3							--Multiplier to the Default 2600	(The big "Hungering Tendrils" / "Titan Worms" on infested planets)
+EyeballHealthMult = 6						--Multiplier to the Default 1600	(The underwater Eyeball monster / "Abyssal Horror")
+
 CreatureSmallHealth = 500					--Default 200
 CreatureMedHealth = 2100					--Default 1400
 CreatureLargeHealth = 3600					--Default 2800
@@ -76,11 +77,11 @@ FiendDistReduceForBeingShot = 70			--Default 70
 FiendBeingShotMemoryTime = 10				--Default 10
 MaxFishFiends = 14							--Default 10
 FishFiendSmallHealth = 600					--Default 400
-FishFiendBigHealth = 12000					--Default 9000
+FishFiendBigHealth = 18000					--Default 9000		(12000)
 FishFiendSmallBoostStrength = 14			--Default 10
 FishFiendSmallBoostTime = 0.7				--Default 0.5
 FishFiendSmallScale = 0.3					--Default 0.3
-FishFiendBigBoostStrength = 5				--Default 4
+FishFiendBigBoostStrength = 6				--Default 4			(5)
 FishFiendBigBoostTime = 2					--Default 1
 FishFiendBigScale = 4						--Default 3
 PredatorSpeedMultiplier = 1.3				--Default 1.1
@@ -99,10 +100,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							["PRECEDING_KEY_WORDS"] = {""},
 							["VALUE_CHANGE_TABLE"] = {
+								--These added by Xen0nex
 								{"CreatureSmallHealth", CreatureSmallHealth},
 								{"CreatureMedHealth", CreatureMedHealth},
 								{"CreatureLargeHealth", CreatureLargeHealth},
 								{"CreatureHugeHealth", CreatureHugeHealth},
+								{"FishFiendBigHealth", FishFiendBigHealth},
+								{"FishFiendBigBoostTime", FishFiendBigBoostTime},
 								
 								{"SharkAttackSpeed", SharkAttackSpeed},
 								{"SharkAttackAccel", SharkAttackAccel},
@@ -194,7 +198,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["PRECEDING_KEY_WORDS"] = {""},
 							["MATH_OPERATION"] 		= "*", 
 							["VALUE_CHANGE_TABLE"] = {
-								{"Health", FishFiendHealthMult},
+								{"Health", EyeballHealthMult},
 							},
 						},
 					},

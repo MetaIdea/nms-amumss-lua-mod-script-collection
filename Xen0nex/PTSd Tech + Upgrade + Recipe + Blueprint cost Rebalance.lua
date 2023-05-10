@@ -386,8 +386,9 @@ InterceptBrain = 1						--1 Harmonic Brain
 InterceptAIValves = 4					--0 Starship AI Valves		(Technically added as a new custom separate tech to repair, not part of the Pilot Interface)
 
 --Added item costs for repairing all broken slots on Sentinel Multi-Tools
-RecycledCircuitAmount = 3							--0		Recycled Circuits
 SemiconductorAmount = 1								--0		Semiconductor
+RecycledCircuitAmount = 1							--0		Recycled Circuitry ( x3 )
+	--Note, there are 3 "slots" which each require the "RecycledCircuitAmount" amount of Recycled Circuitry
 
 --New recipe for installing Minotaur AI Pilot in Exomech
 AIPilotComputer = 8						--1 Quantum Computer
@@ -1009,6 +1010,13 @@ TextA =
 
 AddedSentToolRepairCost =
 [[<Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="COMPOUND2" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="]]..SemiconductorAmount..[[" />
+        </Property>
+		<Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="SALVAGE_TECH7" />
           <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
@@ -1016,11 +1024,18 @@ AddedSentToolRepairCost =
           <Property name="Amount" value="]]..RecycledCircuitAmount..[[" />
         </Property>
 		<Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="COMPOUND2" />
+          <Property name="ID" value="SALVAGE_TECH7" />
           <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
-          <Property name="Amount" value="]]..SemiconductorAmount..[[" />
+          <Property name="Amount" value="]]..RecycledCircuitAmount..[[" />
+        </Property>
+		<Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="SALVAGE_TECH7" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="]]..RecycledCircuitAmount..[[" />
         </Property>]]
 
 NewInterceptorRepairTech =

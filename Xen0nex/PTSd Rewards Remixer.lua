@@ -769,10 +769,10 @@ SentQuad				=	2			--??? Quad Servo			From interacting with damaged sentinel mach
 
 --Multipliers to apply to rewards from some rare resource nodes
 MutantPlantSulphurine	=	0.75		--250 - 400
-OrganicRockMordite		=	0.4			--250 - 500			Unlike all the other rare resource nodes, this is unaffected by your Multi-Tool's Mining yield bonus
 OrganicRockChlorine		=	2			--25 - 60	
 CuriousDepositMould		=	0.6			--300 - 500
-	--Note: in practice, Metal Fingers seems to only yield around half of these values
+	--Note: in practice, The following seem to only yield around half of these values
+OrganicRockMordite		=	0.4			--250 - 500			Unlike all the other rare resource nodes, this is unaffected by your Multi-Tool's Mining yield bonus
 MetalFingerGold			=	0.6			--100 - 200
 MetalFingerUranium		=	0.4			--200 - 250
 MetalFingerUraniumChance=	0.5			--100	(Relative % Chance a Metal Finger will yield Uranium instead of Gold)
@@ -851,9 +851,10 @@ HiveEnablingConditionId = ""		--""			("GcMissionConditionAreDroneHivePartsDestro
 
 --Changes the amount of items harvested from various underwater objects
 CrystalSulphide = 2						--1
-AlluringSpecHadalCore = 2				--1
+AlluringSpecHadalCore = 1				--1
 
 --Adds additional rewards to harvesting Aluuring Specimens
+	--NOTE: Currently rewarding 1 of each item instead of 2 of each item, since a side effect of making ship weapons not mine objects (disable explosions damaging objects) makes the Alluring Specimen no longer get destroyed by the Anglerfish when it spawns. 
 NewAlluringSpecRewards =
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -862,8 +863,8 @@ NewAlluringSpecRewards =
                 <Property name="DefaultProductType" value="None" />
               </Property>
               <Property name="ID" value="VENTGEM" />
-              <Property name="AmountMin" value="2" />
-              <Property name="AmountMax" value="2" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
@@ -877,8 +878,8 @@ NewAlluringSpecRewards =
                 <Property name="DefaultProductType" value="None" />
               </Property>
               <Property name="ID" value="CLAMPEARL" />
-              <Property name="AmountMin" value="2" />
-              <Property name="AmountMax" value="2" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
