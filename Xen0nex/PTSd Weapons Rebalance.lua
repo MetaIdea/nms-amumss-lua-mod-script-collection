@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "4_22"
+GameVersion = "4_23"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 --Un-SuperCharger Mult - Enter the current Supercharged tech slot bonus value used in GCGAMEPLAYGLOBALS.GLOBAL.MBIN here to divide most affected base weapon tech values by this amount, so they start underpowered, and placing them on a supercharged slot brings that back to "normal" strength
@@ -14,6 +14,7 @@ GSD = 						1							--1		For all player Starship weapon damage
 
 --Damage multiplier for Explosions against items designated as OBJECTS
 	-- (If set to 0, can't mine rocks & plants with ship weapons or explosions, other than an insignificant trickle with the Phase Beam)
+	-- As a side effect of setting to 0, Alluring Specimens won't get destroyed when "Anglerfish" Abyssal Horrors spawn
 ExplosionObjectMult = 0									--1
 
 --Damage multiplier for Lasers against items designated as CREATURES / ROBOTS
@@ -58,7 +59,7 @@ LivingShipBeamLeechUpgradeMult = 			0.1					--0.05~0.3		Multiplier to apply to t
 PhaseBeamUpgradesHeatMult =					0.25				--				Multiplier to apply to the bonus heat time for Phase Beam upgrades (1.1 ~ 2 for Class C ~ X)
 LivingShipBeamUpgradesHeatMult =			0.25				--				Multiplier to apply to the bonus heat time for Gazing Eye upgrades (1.1 ~ 1.95 for Class C ~ S)
 CyclotronUpgradesHeatMult =					0.5					--				Multiplier to apply to the bonus heat time for Cyclotron Ballista upgrades (1.1 ~ 1.4 for Class C ~ X)
-InfraKnifeUpgradesHeatMult =				0.8					--				Multiplier to apply to the bonus heat time for Infra-Knife upgrades (1.01 ~ 1.1 for Class C ~ X)
+InfraKnifeUpgradesHeatMult =				0.4					--				Multiplier to apply to the bonus heat time for Infra-Knife upgrades (1.01 ~ 1.1 for Class C ~ X)
 PositronUpgradesHeatMult =					0.5					--				Multiplier to apply to the bonus heat time for Positron upgrades (1.01 ~ 1.2 for Class C ~ X)
 
 PhotonUpgradesFireRateMult =				1.0					--				Multiplier to apply to the bonus fire rate for Photon Cannon upgrades (1.001 ~ 1.026 for Class C ~ X)
@@ -82,7 +83,7 @@ MTUMultMult =								0.5					--				Multiplier to apply to the strength of all mu
 SentWpnDMGMult =							0.5					--1~4			Multiplier to apply to Sentinel Weapon Upgrade Module damage bonus (Only applies to Boltcaster?)
 BoltcasterUpgradesDMGMult =					4.0					--				Multiplier to apply to the bonus damage for Boltcaster upgrades
 PulseUpgradesDMGMult =						0.7					--				Multiplier to apply to the bonus damage for Pulse Spitter upgrades
-ScatterUpgradesDMGMult =					0.4					--				Multiplier to apply to the bonus damage for Scatter Blaster upgrades
+ScatterUpgradesDMGMult =					2.4					--				Multiplier to apply to the bonus damage for Scatter Blaster upgrades
 NeutronUpgradesDMGMult =					0.3					--				Multiplier to apply to the bonus damage for Neutron Cannon upgrades
 BlazeUpgradesDMGMult =						2.5					--				Multiplier to apply to the bonus damage for Blaze Javelin upgrades
 PlasmaUpgradesDMGMult =						0.7					--				Multiplier to apply to the bonus damage for Plamsa Launcher upgrades
@@ -116,9 +117,9 @@ PulseUpgradeClipMult =						1.0					--				Multiplier to apply to the bonus clips
 NeutronUpgradeSpeedMult =					1.0					--				Multiplier to apply to the bonus projectile speed for Neutron Cannon upgrades
 
 --Multipliers to apply to the base damage for various player weapons (Also will be applied to upgrade modules for that weapon)  Stacks multiplicatively with the Global Damage Multipliers above
-BoltcasterDMG =								1.2					--180			(1,350 theoretical burst DPS)
+BoltcasterDMG =								1.08				--180			(1,350 theoretical burst DPS)
 PulseSpitterDMG =							0.9					--96 x 2		(1,536 theoretical burst DPS)
-ScatterBlasterDMG =							1.1					--150 x 8		(2,640 theoretical burst DPS)
+ScatterBlasterDMG =							1.6					--150 x 8		(2,640 theoretical burst DPS)
 NeutronCannonDMG =							2.96				--100			(Uncharged)
 BlazeJavelinDMG =							2.4					--1500			(500 theoretical sustained DPS)					(large DMG multiplier but also longer charge time below to make it possible with enough upgrades on a good enough Multii-Tool to one-shot both unarmored Drones and Repair Drones with the edited "Savage Sentinels" mod)
 PlasmaLauncherDMG =							1.45				--500
@@ -943,6 +944,26 @@ WeaponProjChanges =
 {
 	{
 		{
+			"BOLTGUN"								--Boltcaster
+		},
+		{
+			{
+				"CriticalHitModifier",	1.2			--1.5
+			},
+		}
+	},
+	{
+		{
+			"SHOTGUN"								--Scatter Blaster
+		},
+		{
+			{
+				"CriticalHitModifier",	0.87		--1.5
+			},
+		}
+	},
+	{
+		{
 			"SHIPGUN"								--Photon Cannon / Spewing Vents
 		},
 		{
@@ -1034,7 +1055,19 @@ WeaponProjChanges =
 				"DefaultSpeed",	1.65				--40
 			},
 		}
+	},
+	--[[
+	{
+		{
+			"CORRUPTGRENADE"						--Grenades from Corrupted Sentinel Drones and Large Spider Quad Sentinel grenades (enemy)
+		},
+		{
+			{
+				"ExtraPlayerDamage",	3			--5		Need to test effect of this parameter
+			},
+		}
 	}
+	]]
 }
 
 

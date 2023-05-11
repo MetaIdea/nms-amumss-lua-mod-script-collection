@@ -489,7 +489,7 @@ FrostCrystalRequired =			5										--1		For various "Ice Cream" recipes
 NewAloeAndDrinkRecipes =
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="VEG_ALOE" />
-      <Property name="RecipeType" value="RECIPE_ALOE" />
+      <Property name="RecipeType" value="UI_COOK_VEG" />
       <Property name="RecipeName" value="PTSd: Aloe Steaming" />
       <Property name="TimeToMake" value="5" />
       <Property name="Cooking" value="True" />
@@ -519,7 +519,7 @@ NewAloeAndDrinkRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="CREAM_DRINK" />
-      <Property name="RecipeType" value="RECIPE_DRINK" />
+      <Property name="RecipeType" value="UI_COOK_DRINK" />
       <Property name="RecipeName" value="PTSd: Plant-Based Cream" />
       <Property name="TimeToMake" value="5" />
       <Property name="Cooking" value="True" />
@@ -552,7 +552,7 @@ NewAloeAndDrinkRecipes =
 NewRecipe1 = 
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="TRITIUM_SACVENOM" />
-      <Property name="RecipeType" value="RECIPE_TRITIUM" />
+      <Property name="RecipeType" value="RECIPE_TECHFRAG_PLANT_CAVE" />
       <Property name="RecipeName" value="PTSd: Tritium Sublimation" />
       <Property name="TimeToMake" value="1200" />
       <Property name="Cooking" value="False" />
@@ -584,7 +584,7 @@ NewRecipe1 =
 NewRecipe2 = 
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DIH_ALBUMENPEARL" />
-      <Property name="RecipeType" value="RECIPE_DIHYDROGEN" />
+      <Property name="RecipeType" value="RECIPE_LAUNCHSUB" />
       <Property name="RecipeName" value="PTSd: Di-Hydrogen Extraction" />
       <Property name="TimeToMake" value="1200" />
       <Property name="Cooking" value="False" />
@@ -617,7 +617,7 @@ NewRecipe2 =
 NewRecipe3 = 
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_NAVDATA" />
-      <Property name="RecipeType" value="RECIPE_NAVDATA" />
+      <Property name="RecipeType" value="RECIPE_BURIEDTECH" />
       <Property name="RecipeName" value="PTSd: Data Condensation" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
@@ -643,7 +643,7 @@ NewRecipe3 =
 NewRecipe4 = 
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_NAVDROP" />
-      <Property name="RecipeType" value="RECIPE_NAVDROP" />
+      <Property name="RecipeType" value="RECIPE_BURIEDTECH" />
       <Property name="RecipeName" value="PTSd: Dense Data Condensation" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
@@ -669,7 +669,7 @@ NewRecipe4 =
 NewRecipe5 = 
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="SILICATE_BASALT" />
-      <Property name="RecipeType" value="RECIPE_SILICATE" />
+      <Property name="RecipeType" value="Requested Operation: Powderise" />
       <Property name="RecipeName" value="PTSd: Basalt Pulverisation" />
       <Property name="TimeToMake" value="20" />
       <Property name="Cooking" value="False" />
@@ -705,7 +705,7 @@ AddEyeball =
 NewSentinelNaniteRecipes = 
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_QUAD" />
-      <Property name="RecipeType" value="RECIPE_QUAD" />
+      <Property name="RecipeType" value="RECIPE_BURIEDTECH" />
       <Property name="RecipeName" value="PTSd: Small Nanite Extraction" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
@@ -728,7 +728,7 @@ NewSentinelNaniteRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_MECH" />
-      <Property name="RecipeType" value="RECIPE_MECH" />
+      <Property name="RecipeType" value="RECIPE_BURIEDTECH" />
       <Property name="RecipeName" value="PTSd: Medium Nanite Extraction" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
@@ -751,7 +751,7 @@ NewSentinelNaniteRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_SPIDER" />
-      <Property name="RecipeType" value="RECIPE_SPIDER" />
+      <Property name="RecipeType" value="RECIPE_BURIEDTECH" />
       <Property name="RecipeName" value="PTSd: Corrupt Nanite Extraction" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
@@ -774,7 +774,7 @@ NewSentinelNaniteRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_WALKER" />
-      <Property name="RecipeType" value="RECIPE_WALKER" />
+      <Property name="RecipeType" value="RECIPE_BURIEDTECH" />
       <Property name="RecipeName" value="PTSd: Large Nanite Extraction" />
       <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
@@ -796,11 +796,41 @@ NewSentinelNaniteRecipes =
       </Property>
     </Property>]]
 
---Adds Recipes for refining Larval Core, Hadal Core, Vile Spawn, Flesh Rope, Radiant Shard, Inverted Mirror, Hyaline Brain, Quad Servo, Hardframe Engine, Crystallised Heart, and Walker Brain into Data by refining with Microprocessor
+--Adds Recipes for refining Tainted Metal, Larval Core, Hadal Core, Vile Spawn, Flesh Rope, Radiant Shard, Inverted Mirror, Hyaline Brain, Quad Servo, Hardframe Engine, Crystallised Heart, and Walker Brain into Salvaged Data by refining with Microprocessor
 NewSalvagedDataRecipes = 
 [[<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_TAINT" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
+      <Property name="RecipeName" value="PTSd: Tainted Data Extraction" />
+      <Property name="TimeToMake" value="3" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="1" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="AF_METAL" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="75" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_FIEND" />
-      <Property name="RecipeType" value="RECIPE_FIEND_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Fiendish Data Extraction" />
       <Property name="TimeToMake" value="3" />
       <Property name="Cooking" value="False" />
@@ -830,7 +860,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_FISH" />
-      <Property name="RecipeType" value="RECIPE_FISH_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Abyssal Data Extraction" />
       <Property name="TimeToMake" value="9" />
       <Property name="Cooking" value="False" />
@@ -860,7 +890,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_VILE" />
-      <Property name="RecipeType" value="RECIPE_VILE_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Vile Data Extraction" />
       <Property name="TimeToMake" value="3" />
       <Property name="Cooking" value="False" />
@@ -890,7 +920,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_FLESH" />
-      <Property name="RecipeType" value="RECIPE_FLESH_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Fleshy Data Extraction" />
       <Property name="TimeToMake" value="3" />
       <Property name="Cooking" value="False" />
@@ -920,7 +950,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_SHARD" />
-      <Property name="RecipeType" value="RECIPE_SHARD_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Radiant Data Extraction" />
       <Property name="TimeToMake" value="3" />
       <Property name="Cooking" value="False" />
@@ -950,7 +980,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_MIRROR" />
-      <Property name="RecipeType" value="RECIPE_MIRROR_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Inverted Data Extraction" />
       <Property name="TimeToMake" value="3" />
       <Property name="Cooking" value="False" />
@@ -980,7 +1010,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_HYALINE" />
-      <Property name="RecipeType" value="RECIPE_HYALINE_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Sentient Data Extraction" />
       <Property name="TimeToMake" value="6" />
       <Property name="Cooking" value="False" />
@@ -1010,7 +1040,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_QUAD" />
-      <Property name="RecipeType" value="RECIPE_QUAD_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Small Data Extraction" />
       <Property name="TimeToMake" value="6" />
       <Property name="Cooking" value="False" />
@@ -1040,7 +1070,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_MECH" />
-      <Property name="RecipeType" value="RECIPE_MECH_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Medium Data Extraction" />
       <Property name="TimeToMake" value="12" />
       <Property name="Cooking" value="False" />
@@ -1070,7 +1100,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_SPIDER" />
-      <Property name="RecipeType" value="RECIPE_SPIDER_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Corrupt Data Extraction" />
       <Property name="TimeToMake" value="12" />
       <Property name="Cooking" value="False" />
@@ -1100,7 +1130,7 @@ NewSalvagedDataRecipes =
     </Property>
 	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_WALKER" />
-      <Property name="RecipeType" value="RECIPE_WALKER_D" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Large Data Extraction" />
       <Property name="TimeToMake" value="24" />
       <Property name="Cooking" value="False" />
