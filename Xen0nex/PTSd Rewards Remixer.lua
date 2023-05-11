@@ -447,8 +447,8 @@ SpaceStationMissionLootChanges =
 			{"FOOD_CG_HONEY",			"FOOD_CG_HONEY",		1,	1,		0.0},	--1,	1,		0.2		Food worth 62200
 			{"FOOD_STEW_M_CH",			"FOOD_STEW_M_CH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 36000
 			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		1,	1,		0.0},	--1,	1,		0.2		Food worth 54000
-			{"FOOD_PIE_CRAB",			"FOOD_PIE_CRAB",		1,	1,		0.0},	--1,	1,		0.2		Food worth 40000
-			{"FOOD_DNUT_MEAT",			"MECH_PROD",			1,	2,		1},		--1,	1,		0.2		Food worth 65000	(Hardframe Engine)
+			{"FOOD_PIE_CRAB",			"ABAND_LOCATOR",		1,	1,		1},		--1,	1,		0.2		Food worth 40000		(Emergency Signal Scanner)
+			{"FOOD_DNUT_MEAT",			"MECH_PROD",			1,	2,		1},		--1,	1,		0.2		Food worth 65000		(Hardframe Engine)
 			{"FOOD_DNUT_AJAM",			"FREI_INV_TOKEN",		1,	1,		1},		--1,	1,		0.2		Food worth 70000		(Freighter Bulkhead)
 			{"REACTION1",				"REACTION1",			5,	5,		0},		--5,	5,		3		Thermic Condensate
 			{"REACTION2",				"REACTION2",			5,	5,		0},		--5,	5,		3		Enriched Carbon
@@ -502,7 +502,7 @@ SpaceStationMissionLootChanges =
 			{"FOOD_CG_HONEY",			"FOOD_CG_HONEY",		1,	1,		0.0},	--1,	1,		0.2		Food worth 62200
 			{"FOOD_STEW_M_CH",			"FOOD_STEW_M_CH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 36000
 			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		1,	1,		0.0},	--1,	1,		0.2		Food worth 54000
-			{"FOOD_PIE_CRAB",			"FOOD_PIE_CRAB",		1,	1,		0.0},	--1,	1,		0.2		Food worth 40000
+			{"FOOD_PIE_CRAB",			"ABAND_LOCATOR",		1,	1,		2},		--1,	1,		0.2		Food worth 40000		(Emergency Signal Scanner)
 			{"FOOD_DNUT_MEAT",			"MECH_PROD",			2,	3,		2},		--1,	1,		0.2		Food worth 65000		(Hardframe Engine)
 			{"FOOD_DNUT_AJAM",			"FREI_INV_TOKEN",		1,	1,		5},		--1,	1,		0.2		Food worth 70000		(Freighter Bulkhead)
 			{"MEGAPROD1",				"MEGAPROD1",			2,	3,		2},		--1,	1,		3		Portable Reactor
@@ -563,7 +563,7 @@ SpaceStationMissionLootChanges =
 			{"FOOD_PIE_BONE",			"FOOD_PIE_BONE",		10,	20,		2},		--2,	5,		2		Food worth 62000
 			{"FOOD_STEW_DIG",			"FOOD_STEW_DIG",		2,	6,		0},		--2,	6,		2		Food worth 6400
 			{"FOOD_J_HOT",				"FOOD_J_HOT",			3,	6,		0},		--3,	6,		2		Food worth 1800
-			{"FOOD_J_SALT",				"FOOD_J_SALT",			3,	6,		0},		--3,	6,		2		Food worth 1800
+			{"FOOD_J_SALT",				"ABAND_LOCATOR",		1,	1,		20},	--3,	6,		2		Food worth 1800		(Emergency Signal Scanner)
 			{"FOOD_ICE_FISH",			"MECH_PROD",			1,	3,		30},	--3,	6,		2		Food worth 36000	(Hardframe Engine)
 			{"FOOD_MM_APPLE",			"FOOD_MM_APPLE",		5,	10,		2},		--2,	5,		2		Food worth 149400
 		}
@@ -657,6 +657,13 @@ CaptLogGuildStand =						6						--3
 --Adds a Units Reward for turning over Derelict Freighter Crew Manifest / Captain's Log to Guild Envoys instead of Scrap Dealers
 CrewManGuildUnits =						600000					--0
 CaptLogGuildUnits =						900000					--0
+
+--Replacers for the Min and Max Units awarded for the repeatable mission from the Exocraft Technician NPC, in addition to the other random rewards
+ExocraftMinUnits =						100001					--1000 or 0
+ExocraftMaxUnits =						500000					--5000 or 0
+--Adds a Nanites Reward for the repeatable mission from the Exocraft Technician NPC, in addition to the other random rewards
+ExocraftMinNanites =					200						--0
+ExocraftMaxNanites =					500						--0
 
 --Multipliers to apply to the various kinds of rewards from Frigate Expedition missions
 ExpeditionUnitsMultiplier =				0.8
@@ -769,9 +776,9 @@ SentQuad				=	2			--??? Quad Servo			From interacting with damaged sentinel mach
 
 --Multipliers to apply to rewards from some rare resource nodes
 MutantPlantSulphurine	=	0.75		--250 - 400
-OrganicRockChlorine		=	2			--25 - 60	
 CuriousDepositMould		=	0.6			--300 - 500
 	--Note: in practice, The following seem to only yield around half of these values
+OrganicRockChlorine		=	4			--25 - 60	
 OrganicRockMordite		=	0.4			--250 - 500			Unlike all the other rare resource nodes, this is unaffected by your Multi-Tool's Mining yield bonus
 MetalFingerGold			=	0.6			--100 - 200
 MetalFingerUranium		=	0.4			--200 - 250
@@ -812,23 +819,23 @@ StormCrystalNanitesAmount	=				8				--0
 CropYieldReduction = 
 {
 	--Wild plants		Multiplier		(Wild plants values / 0.9 to counter the * 0.9 factor I use in "Substance Collection" intended just for minable objects)
-	{"WILD_BARREN",		1.33/0.9},				--40 - 60	Cactus Flesh
-	{"WILD_LUSH",		2.0/0.9},				--10 - 15	Star Bulb
-	{"WILD_RADIO",		1.67/0.9},				--18 - 30	Gamma Root
-	{"WILD_SNOW",		1.67/0.9},				--18 - 30	Frost Crystal
-	{"WILD_SCORCHED",	1.67/0.9},				--18 - 30	Solanium
-	{"WILD_TOXIC",		1.67/0.9},				--18 - 30	Fungal Mould
+	{"WILD_BARREN",		1.25/0.9},				--40 - 60	Cactus Flesh
+	{"WILD_LUSH",		2.5/0.9},				--10 - 15	Star Bulb
+	{"WILD_RADIO",		1.75/0.9},				--18 - 30	Gamma Root
+	{"WILD_SNOW",		1.75/0.9},				--18 - 30	Frost Crystal
+	{"WILD_SCORCHED",	1.75/0.9},				--18 - 30	Solanium
+	{"WILD_TOXIC",		1.75/0.9},				--18 - 30	Fungal Mould
 	{"PLANT_COMMODITY",	1.33/0.9},				--9  - 18	Sodium			(1.333333 HardModeMultiplier pre-NMS 4.0)
 	{"PLANT_FUEL",		1.33/0.9},				--20 - 25	Oxygen			(1.333333 HardModeMultiplier pre-NMS 4.0)
 	--Farm plants
-	{"PLANT_BARREN",	0.9},					--100		Cactus Flesh
-	{"PLANT_LUSH",		0.9},					--25		Star Bulb
-	{"PLANT_RADIO",		0.9},					--50		Gamma Root
-	{"PLANT_SNOW",		0.9},					--50		Frost Crystal
-	{"PLANT_SCORCHED",	0.9},					--50		Solanium
-	{"PLANT_TOXIC",		0.9},					--50		Fungal Mould
-	{"PLANT_CREATURE",	0.9},					--25		Mordite
-	{"PLANT_POOP",		0.9}					--25		Faecium
+	{"PLANT_BARREN",	1},						--100		Cactus Flesh
+	{"PLANT_LUSH",		1},						--25		Star Bulb
+	{"PLANT_RADIO",		1},						--50		Gamma Root
+	{"PLANT_SNOW",		1},						--50		Frost Crystal
+	{"PLANT_SCORCHED",	1},						--50		Solanium
+	{"PLANT_TOXIC",		1},						--50		Fungal Mould
+	{"PLANT_CREATURE",	1},						--25		Mordite
+	{"PLANT_POOP",		1}						--25		Faecium
 }
 
 --Multiplier to appy to the carbon reward from Standing Planters
@@ -837,8 +844,8 @@ StandingPlanterMult = 0.5									--Vanilla gives 40 - 80 carbon
 FreighterCarbonWallReward = "INTERIORPLANTS"				--"PLANTER_CARBON" in vanilla copies reward of standing planters above (40 - 80 carbon)
 
 --WIP attempt: Swaps the reward for "DE_SEAHORROR", which I am guessing is defeating an Abyssal Horror (anglerfish), which currently seems to drop no loot?
-	--Tested and this doesn't seem to be the case...
-SeaHorrorReward = "SeaHorror"			--"SeaHorror"
+	--Tested and this doesn't seem to be the case... Anglerfish seems to be refered to as FIENDFISHBIG in most files
+--SeaHorrorReward = "SeaHorror"			--"SeaHorror"
 
 --WIP attempt: for making Sentinel Pillars require defeating all nearby sentinels first
 	--DRONE_HIVE_COMBAT_SHUTDOWN in NMS_DIALOG_GCALIENPUZZLETABLE.MBIN
@@ -1627,6 +1634,46 @@ function AddFourWords(AlienType)
           </Property>]]
 end
 
+AddedExocraftNPCMoney =
+[[<Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_D_EXOTUT_MONEY" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardMoney.xml">
+              <Property name="AmountMin" value="]]..ExocraftMinUnits..[[" />
+              <Property name="AmountMax" value="]]..ExocraftMaxUnits..[[" />
+              <Property name="RoundNumber" value="False" />
+              <Property name="Currency" value="GcCurrency.xml">
+                <Property name="Currency" value="Units" />
+              </Property>
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+		  <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardMoney.xml">
+              <Property name="AmountMin" value="]]..ExocraftMinNanites..[[" />
+              <Property name="AmountMax" value="]]..ExocraftMaxNanites..[[" />
+              <Property name="RoundNumber" value="False" />
+              <Property name="Currency" value="GcCurrency.xml">
+                <Property name="Currency" value="Nanites" />
+              </Property>
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>]]
+
+AddedExocraftNPCMoneyID =
+[[<Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_D_EXOTUT_MONEY" />
+                  </Property>]]
 TeachPellets =
 [[<Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -1787,6 +1834,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"AmountMin",	CaptLogGuildStand},
 					{"AmountMax",	CaptLogGuildStand}
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","NPC_VEHICLE16S"},
+				["MATH_OPERATION"] 		= "", 
+				["REPLACE_TYPE"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	ExocraftMinUnits},
+					{"AmountMax",	ExocraftMaxUnits}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","NPC_VEHICLE16S"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = CurrencyReward ("Nanites", ExocraftMinNanites, ExocraftMaxNanites, "100"),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_INVBOX"},
@@ -2368,6 +2431,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 				["ADD"] = AddOneWord("None")
 			},
+			--[[
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_SEAHORROR"},
 				["REPLACE_TYPE"] 		= "",
@@ -2378,6 +2442,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"ProceduralProductCategory",	SeaHorrorReward} 	
 				}
 			},
+			]]
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_VENTGEM", "ID", "VENTGEM"},
 				["REPLACE_TYPE"] 		= "",
@@ -2735,6 +2800,46 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"MinRandAmount", RobotheadRandMin},
 					{"MaxRandAmount", RobotheadRandMax},
 				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\MISSIONTABLE.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_EXOTUT_LOOP"},
+				["MATH_OPERATION"] 		= "", 
+				["REPLACE_TYPE"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	math.floor(1*ExocraftMinUnits)},
+					{"AmountMax",	math.floor(1*ExocraftMaxUnits)}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_EXOTUT_LOOP"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = CurrencyReward ("Nanites", math.floor(1*ExocraftMinNanites), math.floor(1*ExocraftMaxNanites), "100"),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\RECURRINGMISSIONTABLE.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"Value","R_D_EXOTUT"},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = AddedExocraftNPCMoneyID,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = AddedExocraftNPCMoney,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
 		}
 	},

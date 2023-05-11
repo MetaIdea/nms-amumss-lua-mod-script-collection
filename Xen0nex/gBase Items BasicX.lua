@@ -44,9 +44,10 @@ BiodomePowerDraw = -160		--	-50 kPs		(Remember to make the value negative)
 TeleportersBuildable = "True"	--"True"		Set this to "False" to disable the player from constructing any Teleporters in bases or freighters at all. (You can still use Station Teleporters to teleport to your base or freighter)
 
 --Reverts certain things to not be buildable on freighters, since they have dedicated freighter rooms for them instead
-PlanterFreighter = "False"	--Override for setting if Hydroponic Trays, Large Hydroponic Trays, and Biodomes can be built on freighters or not
-RefinersFreighter = "False"	--Override for setting if Nutrient Processors, Medium/Large Refiners can be built on freighters or not
-OtherFreighter = "False"	--Override for setting if regular Galactic Trade Terminals, Appearance Modifiers, Storage Containers can be built on freighters or not
+StandPlanterFreighter = "False"	--"True"		Override for setting if Standing Planters can be built on freighters or not
+CropsFreighter = "False"		--"False"		Override for setting if Hydroponic Trays, Large Hydroponic Trays, and Biodomes can be built on freighters or not
+RefinersFreighter = "False"		--"False"		Override for setting if Nutrient Processors, Medium/Large Refiners can be built on freighters or not
+OtherFreighter = "False"		--"False"		Override for setting if regular Galactic Trade Terminals, Appearance Modifiers, Storage Containers can be built on freighters or not
 
 --Changes to base values for extractor rates & storage in RegionHotspotsTable, to allow higher effective storage / extraction rates without disabling base uploading
 	-- <Storage or Rate values above> / AmountCost * SubstanceYeild => in-game storage amount or rate
@@ -54,8 +55,8 @@ AmountCostAll =	 360000			--360000	Decreasing this increases the final effective
 SubstanceYeildAll = 1250		--250		Increasing this increases the final effective storage amount and extraction rate for this substance. Must be an integer
 
 --Increasing these values crashes the game
---BaseExtractMinAll = 190			--190		Minimum range of the base extraction rate, before applying extractor or hotspot class modifiers
---BaseExtractMaxAll = 225			--225		Maximum range of the base extraction rate, before applying extractor or hotspot class modifiers
+--BaseExtractMinAll = 190		--190		Minimum range of the base extraction rate, before applying extractor or hotspot class modifiers
+--BaseExtractMaxAll = 225		--225		Maximum range of the base extraction rate, before applying extractor or hotspot class modifiers
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -186,24 +187,29 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"RegionLimit", SiloLimit},
 		{"PlanetBaseLimit", SiloBaseLimit},
 		}},
-		{["SPECIAL_KEY_WORDS"] = {"ID","PLANTER"},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CARBONPLANTER"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnSpaceBase", StandPlanterFreighter},
+		{"BuildableOnFreighter", StandPlanterFreighter},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","PLANTER"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Rate", PlanterPowerDraw},
-		{"BuildableOnSpaceBase", PlanterFreighter},
-		{"BuildableOnFreighter", PlanterFreighter},
+		{"BuildableOnSpaceBase", CropsFreighter},
+		{"BuildableOnFreighter", CropsFreighter},
 		}},
-		{["SPECIAL_KEY_WORDS"] = {"ID","PLANTERMEGA"},
+	{["SPECIAL_KEY_WORDS"] = {"ID","PLANTERMEGA"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Rate", LargePlanterPowerDraw},
-		{"BuildableOnSpaceBase", PlanterFreighter},
-		{"BuildableOnFreighter", PlanterFreighter},
+		{"BuildableOnSpaceBase", CropsFreighter},
+		{"BuildableOnFreighter", CropsFreighter},
 		}},
-		{["SPECIAL_KEY_WORDS"] = {"ID","BIOROOM"},
+	{["SPECIAL_KEY_WORDS"] = {"ID","BIOROOM"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"PlanetBaseLimit", BiodomeBaseLimit},
 		{"Rate", BiodomePowerDraw},
-		{"BuildableOnSpaceBase", PlanterFreighter},
-		{"BuildableOnFreighter", PlanterFreighter},
+		{"BuildableOnSpaceBase", CropsFreighter},
+		{"BuildableOnFreighter", CropsFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","COOKER"},
 	["VALUE_CHANGE_TABLE"] = {

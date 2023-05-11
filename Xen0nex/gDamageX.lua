@@ -164,6 +164,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"Damage", 40*Starships}, --default 20
 		{"TechDamageChance", 0.05*StarshipTech}}}, --default 0.05		Added Xen0nex
 		
+	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Id", "BOUNTYLASER3"}}}, --In case HG ever corrects this typo, this redundant edit will make sure the edit below doesn't "overcorrect"
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Id", "BOUNTYLASER2"}}}, --default "BOUNTYLASER3", presumably a typo

@@ -995,7 +995,7 @@ ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 				["SPECIAL_KEY_WORDS"] = {"StatsType", "Ship_Maneuverability"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"StatsType", "Ship_BoostManeuverability"},
+					{"StatsType", "Ship_BoostManeuverability"},		--In case HG ever corrects this typo, this redundant edit will make sure the edit below doesn't "overcorrect"
 				}
 			}
 			
