@@ -1,13 +1,13 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "MultipleFreightersMultiplayer.pak",
-["MOD_DESCRIPTION"]			= "Disables the restriction to warp a freighter into a system with another player freighter already present.",
-["MOD_AUTHOR"]				= "Danilotumix",
-["NMS_VERSION"]				= "3.0+",
+["MOD_FILENAME"] 			= "MultipleFreighters.pak",
+["MOD_DESCRIPTION"]			= "MultipleFreighters",
+["MOD_AUTHOR"]				= "Gobi42",
+["NMS_VERSION"]				= "4.23",
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
+			
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
