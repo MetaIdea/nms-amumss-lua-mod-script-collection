@@ -17,13 +17,13 @@ BatteryStorage = 50000		--Original 50000
 EMRate = 1					--Original 1 (C= ~175, B= ~220, A= ~250, S= ~300)
 EMLimit = 0					--0				(Regional Limit)
 EMAnywhere = "Power"		--Power, None for EMAnywhere
-MineralRate = 10			--100					Setting this value above 1440000 disables base uploading
-MineralStorage = 36000		--360000				Setting this value above 1440000 disables base uploading
+MineralRate = 2*50/5		--100					Setting this value above 1440000 disables base uploading
+MineralStorage = 2*180000/5	--360000				Setting this value above 1440000 disables base uploading
 MineralLimit = 0			--0				(Regional Limit)
-GasRate = 10				--100					Setting this value above 1440000 disables base uploading
-GasStorage = 36000			--360000				Setting this value above 1440000 disables base uploading
+GasRate = 2*50/5			--100					Setting this value above 1440000 disables base uploading
+GasStorage = 2*180000/5		--360000				Setting this value above 1440000 disables base uploading
 GasLimit = 0				--0				(Regional Limit)
-SiloStorage = 144000		--Original 1440000		Setting this value above 1440000 disables base uploading
+SiloStorage = 2*720000/5	--Original 1440000		Setting this value above 1440000 disables base uploading
 SiloLimit = 0				--0				(Regional Limit)
 FreighterRate = 999999		--10000
 ParagonDistance = 100000	--1000
@@ -51,8 +51,12 @@ OtherFreighter = "False"		--"False"		Override for setting if regular Galactic Tr
 
 --Changes to base values for extractor rates & storage in RegionHotspotsTable, to allow higher effective storage / extraction rates without disabling base uploading
 	-- <Storage or Rate values above> / AmountCost * SubstanceYeild => in-game storage amount or rate
-AmountCostAll =	 360000			--360000	Decreasing this increases the final effective storage amount and extraction rate for this substance. Must be an integer
-SubstanceYeildAll = 1250		--250		Increasing this increases the final effective storage amount and extraction rate for this substance. Must be an integer
+	--NOTE: The "Diminishing Returns" threshold is calculated in reference to AmountCostAll & SubstanceYeildAll. IE the vanilla threshold of 1000 units/hr can be raised or lowered by altering these values.
+AmountCostAll =	 360000/5		--360000	Decreasing this increases the final effective storage amount and extraction rate for this substance. Must be an integer. (Setting this value above 1440000 may possibly disable base uploading?)
+SubstanceYeildAll = 250/2		--250		Increasing this increases the final effective storage amount and extraction rate for this substance. Must be an integer
+	--NOTE: As a secondary effect, SubstanceYeild appears to control the smallest "step" or "increment" of BOTH how much total storage your extraction network can have, and the size of the "packets" of substances that get periodically delivered to the storage. E.G. in Vanilla your total storage will be in increments of the nearest 250, and each time 250 substances get "collected" by the Extractors, the amount currently in the storage will go up by 250 as it sends a "packet".
+	--Thus, you should generally set SubstanceYeild to match the in-game storage size of the smallest extractor network object (Supply Depot, Mineral/Gas Extractor), or if using a smaller number make sure it divides cleanly into all your storage sizes
+	--ALSO NOTE: The ratio of SubstanceYeild to AmountCost appears to control the smallest "step" or "increment" of extraction rate for Mineral / Gas Extractors. E.G. In vanilla Extractors round their extraction rate to the nearest multiple of "1 units/hr". Multiplying SubstanceYeild by 10 OR dividing AmountCost by 10 will make Extractors round their extraction rate to the nearest multiple of "25 units/hr".
 
 --Increasing these values crashes the game
 --BaseExtractMinAll = 190		--190		Minimum range of the base extraction rate, before applying extractor or hotspot class modifiers
@@ -163,8 +167,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_EXTRACTOR_S"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Storage",MineralStorage},
-		{"Rate",MineralRate},
+		{"Storage",math.floor(1*MineralStorage)},
+		{"Rate",math.floor(1*MineralRate)},
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"RegionLimit", MineralLimit},
@@ -172,8 +176,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_GASEXTRACTOR"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Storage",GasStorage},
-		{"Rate",GasRate},
+		{"Storage",math.floor(1*GasStorage)},
+		{"Rate",math.floor(1*GasRate)},
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"RegionLimit", GasLimit},
@@ -181,7 +185,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_SILO_S"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Storage",SiloStorage},
+		{"Storage",math.floor(1*SiloStorage)},
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"RegionLimit", SiloLimit},
@@ -358,8 +362,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountCost", AmountCostAll},
-					{"SubstanceYeild", SubstanceYeildAll},
+					{"AmountCost", math.floor(1*AmountCostAll)},
+					{"SubstanceYeild", math.floor(1*SubstanceYeildAll)},
 				}
 			},
 			{

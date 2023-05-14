@@ -660,10 +660,15 @@ CaptLogGuildUnits =						900000					--0
 
 --Replacers for the Min and Max Units awarded for the repeatable mission from the Exocraft Technician NPC, in addition to the other random rewards
 ExocraftMinUnits =						100001					--1000 or 0
-ExocraftMaxUnits =						500000					--5000 or 0
+ExocraftMaxUnits =						600000					--5000 or 0
 --Adds a Nanites Reward for the repeatable mission from the Exocraft Technician NPC, in addition to the other random rewards
 ExocraftMinNanites =					200						--0
 ExocraftMaxNanites =					500						--0
+--Replacers for the quality chance % (C, B, A, S Class) for random Exocraft upgrades from the repeatable mission from the Exocraft Technician NPC
+ExoClassCChance =						0						--55
+ExoClassBChance =						60						--25
+ExoClassAChance =						30						--15
+ExoClassSChance =						10						--5
 
 --Multipliers to apply to the various kinds of rewards from Frigate Expedition missions
 ExpeditionUnitsMultiplier =				0.8
@@ -1674,6 +1679,24 @@ AddedExocraftNPCMoneyID =
 [[<Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_D_EXOTUT_MONEY" />
                   </Property>]]
+
+function AddUpgrade(UpgradeGroup, NormalChance, RareChance, EpicChance, LegendChance)
+    return
+	[[<Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardProcTechProduct.xml">
+                  <Property name="Group" value="]]..UpgradeGroup..[[" />
+                  <Property name="WeightedChanceNormal" value="]]..NormalChance..[[" />
+                  <Property name="WeightedChanceRare" value="]]..RareChance..[[" />
+                  <Property name="WeightedChanceEpic" value="]]..EpicChance..[[" />
+                  <Property name="WeightedChanceLegendary" value="]]..LegendChance..[[" />
+                  <Property name="ForceRelevant" value="False" />
+                  <Property name="ForceQualityRelevant" value="False" />
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>]]
+end
+
 TeachPellets =
 [[<Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -2830,6 +2853,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
+				["MATH_OPERATION"] 		= "", 
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"WeightedChanceNormal",	ExoClassCChance},
+					{"WeightedChanceRare",	ExoClassBChance},
+					{"WeightedChanceEpic",	ExoClassAChance},
+					{"WeightedChanceLegendary",	ExoClassSChance},
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Value","R_D_EXOTUT"},
 				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = AddedExocraftNPCMoneyID,
@@ -2839,6 +2874,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
 				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = AddedExocraftNPCMoney,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = AddUpgrade("UI_MECH_LASER_NAME_L", "0", math.floor(ExoClassCChance+ExoClassBChance), ExoClassAChance, ExoClassSChance),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = AddUpgrade("UI_MECH_GUN_NAME_L", "0", math.floor(ExoClassCChance+ExoClassBChance), ExoClassAChance, ExoClassSChance),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = AddUpgrade("UI_MECH_ENGINE_NAME_L", "0", math.floor(ExoClassCChance+ExoClassBChance), ExoClassAChance, ExoClassSChance),
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
 		}

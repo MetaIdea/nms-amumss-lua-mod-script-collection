@@ -1,4 +1,8 @@
 
+							-- Use https://docs.google.com/spreadsheets/d/1J8WdrubKgo8A9hPY-hbQLq4eVrb3n3lZAgiI2J7ncAU/edit#gid=984581625
+							-- to find mapping of names to IDs (credit Lo2k)
+							
+							
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "dolphin-product-changes.pak",
@@ -18,19 +22,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							-- Use https://docs.google.com/spreadsheets/d/1J8WdrubKgo8A9hPY-hbQLq4eVrb3n3lZAgiI2J7ncAU/edit#gid=984581625
-							-- to find mapping of names to IDs (credit Lo2k)
-							["SPECIAL_KEY_WORDS"] = {"ID", "DRONE_SHARD"},
+							["PRECEDING_KEY_WORDS"] = {"GcProductData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "JELLY"},					--Di-Hydrogen Jelly
 							["VALUE_CHANGE_TABLE"] 	= 
 								{
-									{ "StackMultiplier", 				"10" }, 		-- was 1
+									{ "StackMultiplier", 				"16" }, 		-- was 2
 								}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "DRONE_SALVAGE"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "DRONE_SHARD"},				-- Radiant Shard
 							["VALUE_CHANGE_TABLE"] 	= 
 								{
-									{ "StackMultiplier", 				"10" }, 		-- was 1
+									{ "StackMultiplier", 				"16" }, 		-- was 1
+								}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "DRONE_SALVAGE"}, 			-- Inverted Mirror
+							["VALUE_CHANGE_TABLE"] 	= 
+								{
+									{ "StackMultiplier", 				"16" }, 		-- was 1
+								}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "FIENDCORE"},				-- Larval Core
+							["VALUE_CHANGE_TABLE"] 	= 
+								{
+									{ "StackMultiplier", 				"16" }, 		-- was 1
 								}
 						},
 
