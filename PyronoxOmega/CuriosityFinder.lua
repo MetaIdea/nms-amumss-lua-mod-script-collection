@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "CuriosityFinder"
-GameVersion = "4.2"
-ModVersion = "1.3"
+GameVersion = "4.23"
+ModVersion = "1.4"
 Description = "easily find curiosities on planet surface"
 
 NMS_MOD_DEFINITION_CONTAINER = 
