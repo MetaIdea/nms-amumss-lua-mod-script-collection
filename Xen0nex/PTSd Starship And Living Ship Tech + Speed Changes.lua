@@ -10,7 +10,7 @@ local desc = [[
 --These changes originally by lMonk
 ShipTeleportMult = 7.5									--1			a value of 7.5 expands the range to ~= 750u range	
 TeleportAndScannerStatus = 'AllShips'					--'AllShipsExceptAlien'	determines if only metallic ships or also Living Ships & Sentinel Interceptors can install Ship Teleport ( Economy/Combat Scanners no longer needed as Living ships now have a dedicated upgrade for those)
-LivingShipQuestTimers = 14400							--79200 seconds = 22 hours in vanilla
+LivingShipQuestTimers = 28800							--79200 seconds = 22 hours in vanilla
 
 	--These sections includes additions by Xen0nex
 --Multipliers to apply to the base attributes of all ships
@@ -48,7 +48,10 @@ TrailBonus = 10											--1.01
 --Removes all Maneuverability stats from the Vesper Sail tech so it no longer provides Maneuverability adjacency/supercharge bonuses
 RemoveVesperManeuver = true								--false
 
---Set to true to remove the Auto-Recharging effect for Living Ship S-Class Launcher upgrade modules (Living SHips now have a dedicated tech for that)
+--Removes the Auto-Recharging effect from the Vesper Sail tech, replaces it with a -34% Takeoff discount like Shuttles
+RemoveVesperAutoCharge = true							--false
+
+--Set to true to remove the Auto-Recharging effect for Living Ship S-Class Launcher upgrade modules (Living Ships now have a dedicated tech for that)
 RemoveLivingAutoCharge = true							--false
 
 --Changes to using items to recharge starship tech
@@ -63,6 +66,12 @@ LivingShipShieldRechargeMult = 0.75						--	Multiplier to apply to the cost of P
 
 StarshieldBattMult = 2									--	Multiplier to apply to the effectiveness of Starshield Battery. In vanilla it only refills half of your starship's shield
 LivingShipUseBatt = true								--false		Allows Living Ships to use Starshield Batteries to recharge shields in addition to Pugneum
+
+--Price to buy an additional Living Ship aftering completing the Starbirth missionline
+LivingNanitePrice = 8000								--10000
+
+--Sets the Consciousness Bridge item used at the start of the Living Ship Starbirth mission to require Emeril instead of Pugneum
+ConBridgeSubstance = "GREEN2"							--"ROBOT1"
 
 --Multipliers to apply to the "Approximate Location" distance for missions in the "Starbith" mission line.
 DistanceMultLong = 4									--Multiplier to apply to distances greater than 650
@@ -280,6 +289,15 @@ function LauncherClassSpeed (ValueMin, ValueMax)
           <Property name="AlwaysChoose" value="False" />
         </Property>]]
 end
+
+AddLaunchDiscount =
+[[<Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Ship_Launcher_TakeOffCost" />
+          </Property>
+          <Property name="Bonus" value="0.66" />
+          <Property name="Level" value="2" />
+        </Property>]]
 
 AddStarShieldBatt =
 [[<Property value="NMSString0x10.xml">
@@ -917,6 +935,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				MATH_OPERATION 		= '',
+				VALUE_MATCH 		= 'ROBOT1',
+				VALUE_MATCH_OPTIONS = '=',
+				REPLACE_TYPE 		= '',	
+				VALUE_CHANGE_TABLE 	= {
+					{'Substance',		ConBridgeSubstance}
+				}
+			},
+			{
+				MATH_OPERATION 		= '',
+				VALUE_MATCH 		= '10000',
+				VALUE_MATCH_OPTIONS = '=',
+				REPLACE_TYPE 		= '',	
+				VALUE_CHANGE_TABLE 	= {
+					{'Cost',		LivingNanitePrice}
+				}
+			},
+			{
+				MATH_OPERATION 		= '',
 				VALUE_MATCH 		= '79200',
 				VALUE_MATCH_OPTIONS = '=',
 				REPLACE_TYPE 		= 'ALL',	
@@ -942,6 +978,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	=
 				{
 					{'SurveyDistance', DistanceMultShort}
+				}
+			},
+		}
+	},
+	{
+		MBIN_FILE_SOURCE	= 'METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"ID", "BIOSHIP_COMP1",		"ID", "ROBOT1"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ID", ConBridgeSubstance}
 				}
 			},
 		}
@@ -1013,6 +1063,21 @@ ChangesToShipTech[#ChangesToShipTech+1] =
 				["SPECIAL_KEY_WORDS"] = {"ID", "SOLAR_SAIL",	"StatsType", "Ship_Maneuverability"},
 				["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
+			}
+end
+if RemoveVesperAutoCharge then
+ChangesToShipTech[#ChangesToShipTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "SOLAR_SAIL",	"StatsType", "Ship_Launcher_AutoCharge"},
+				["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			}
+ChangesToShipTech[#ChangesToShipTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "SOLAR_SAIL"},
+				["PRECEDING_KEY_WORDS"] = {"GcStatsBonus.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = AddLaunchDiscount
 			}
 end
 if RemoveRoboAutoCharge then

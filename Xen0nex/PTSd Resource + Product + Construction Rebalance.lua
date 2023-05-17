@@ -105,6 +105,17 @@ ProductSaleChanges =
 	{"UI_SALVAGE_TECH_6_NAME",	10.0},				--12,000		Salvaged Trade item		(Based on the pattern of the other items in this series I suspect a typo missed a 0 in this price)
 }
 
+--These various "geode" style items are given values equal to 1.33x the expected value of opening & selling their contents on average (3x value for Tritium Hypercluster & Crystal Shard due to the difficulty in getting Tritium/Di-Hydrogen)
+GeodeSaleChanges =
+{
+	{"GEODE_LAND",		0.8},						--3200			Geode (Ferrite)
+	{"GEODE_CAVE",		2.8},						--3200			Geode (Cobalt)
+	{"GEODE_ASTEROID",	7.0},						--3200			Gold Nugget
+	{"GEODE_RARE",		10.2},						--3200			Glowing Mineral
+	{"GEODE_SPACE",		2.8},						--3200			Tritium Hypercluster
+	{"GEODE_CRYSTAL",	6.9},						--3200			Crystal Fragment
+}
+
 --Gives a little buff to average profit per POI for both, skews Scrap to be more consistent, Bones to be usually less profitable but with a chance for a huge payoff
 ProceduralProductSaleChanges =
 {
@@ -1394,6 +1405,21 @@ for i = 1, #ProductSaleChanges do
 			{
 				["MATH_OPERATION"] 		= "*",
 				["SPECIAL_KEY_WORDS"] = {"Name", NameID},
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BaseValue", ValueMult}
+				}
+			}
+end
+for i = 1, #GeodeSaleChanges do
+	local ItemID = GeodeSaleChanges[i][1]
+	local ValueMult = GeodeSaleChanges[i][2]
+
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["MATH_OPERATION"] 		= "*",
+				["SPECIAL_KEY_WORDS"] = {"ID", ItemID},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{

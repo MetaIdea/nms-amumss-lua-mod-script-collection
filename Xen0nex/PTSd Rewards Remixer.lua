@@ -265,7 +265,7 @@ SpaceStationMissionLootChanges =
 	{
 		{"R_MB_FIRST"},		--This seems to be the reward pool for the first few missions you take from space stations. Unsure when it switches from these to the other rewards below
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		6},		--1,	1,		150		Drop Pod Coordinates
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		6},		--1,	1,		150		Exosuit Upgrade Chart
 			{"REPAIRKIT",				"REPAIRKIT",			1,	2,		2},		--1,	1,		1		Repair Kit
 			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		2},		--1,	2,		2		Warp Hypercore
 			{"BP_SALVAGE",				"BP_SALVAGE",			3,	5,		6},		--3,	5,		2		Salvaged Data
@@ -347,9 +347,9 @@ SpaceStationMissionLootChanges =
 			{"FOOD_DNUT_AJAM",			"FOOD_DNUT_AJAM",		4,	6,		0.1},	--1,	1,		0.2		Food worth 70000
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		2},		--1,	1,		5		Storage Augmentation
 			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		4},		--1,	1,		5		Multi-Tool Expansion Slot
-			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		3},		--1,	1,		5		Exosuit Expansion Slot
+			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		1},		--1,	1,		5		Exosuit Expansion Slot
 			{"NAV_DATA",				"NAV_DATA",				3,	6,		3},		--2,	2,		3		Navigation Data
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		4},		--1,	1,		5		Drop Pod Coordinates
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		5},		--1,	1,		5		Exosuit Upgrade Chart
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		1},		--1,	1,		2		Salvaged Frigate Module
 			{"REPAIRKIT",				"REPAIRKIT",			1,	2,		2},		--1,	1,		1		Repair Kit
 			{"BP_SALVAGE",				"BP_SALVAGE",			3,	5,		5},		--3,	5,		5		Salvaged Data
@@ -400,9 +400,9 @@ SpaceStationMissionLootChanges =
 			{"FOOD_DNUT_AJAM",			"REACTION3",			5,	5,		2},		--1,	1,		0.2		Food worth 70000		(Nitrogen Salt)
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		4},		--1,	1,		6		Storage Augmentation
 			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		6},		--1,	1,		6		Multi-Tool Expansion Slot
-			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		5},		--1,	1,		6		Exosuit Expansion Slot
+			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		3},		--1,	1,		6		Exosuit Expansion Slot
 			{"NAV_DATA",				"NAV_DATA",				6,	8,		4},		--2,	4,		4		Navigation Data
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		6},		--1,	1,		6		Drop Pod Coordinates
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		5},		--1,	1,		6		Exosuit Upgrade Chart
 			{"REPAIRKIT",				"REPAIRKIT",			2,	3,		2},		--1,	2,		2		Repair Kit
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		3},		--1,	1,		3		Salvaged Frigate Module
 			{"BP_SALVAGE",				"BP_SALVAGE",			6,	8,		6},		--3,	5,		6		Salvaged Data
@@ -460,10 +460,10 @@ SpaceStationMissionLootChanges =
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	2,		6},		--1,	1,		5		Salvaged Frigate Module
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		6},		--1,	1,		6		Storage Augmentation
 			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	2,		4},		--1,	1,		6		Multi-Tool Expansion Slot
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	2,		7},		--1,	1,		7		Drop Pod Coordinates
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	2,		5},		--1,	1,		7		Exosuit Upgrade Chart
 			{"REPAIRKIT",				"REPAIRKIT",			4,	5,		4},		--3,	3,		5		Repair Kit
 			{"BP_SALVAGE",				"BP_SALVAGE",			8,	12,		5},		--3,	5,		6		Salvaged Data
-			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		5},		--1,	1,		6		Exosuit Expansion Slot
+			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		1},		--1,	1,		6		Exosuit Expansion Slot
 			{"NAV_DATA",				"NAV_DATA",				9,	12,		2},		--3,	5,		4		Navigation Data
 		}
 	},
@@ -511,11 +511,11 @@ SpaceStationMissionLootChanges =
 			{"COMPOUND6",				"COMPOUND6",			3,	5,		1},		--2,	3,		3		Cryo-Pump
 			{"COMPOUND5",				"COMPOUND5",			3,	5,		1},		--2,	3,		3		Superconductor
 			{"COMPOUND4",				"COMPOUND4",			3,	5,		1},		--2,	3,		3		Fusion Accelerant
-			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		5},		--1,	1,		4		Exosuit Expansion Slot
+			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		3},		--1,	1,		4		Exosuit Expansion Slot
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	2,		7},		--1,	1,		7		Storage Augmentation
 			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		2,	2,		2},		--1,	1,		7		Multi-Tool Expansion Slot
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			2,	2,		6},		--1,	1,		6		Salvaged Frigate Module
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		2,	2,		3},		--1,	1,		6		Drop Pod Coordinates
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		2,	2,		0},		--1,	1,		6		Exosuit Upgrade Chart
 			{"REPAIRKIT",				"REPAIRKIT",			6,	8,		2},		--3,	3,		6		Repair Kit
 			{"BP_SALVAGE",				"BP_SALVAGE",			10,	14,		5},		--3,	5,		5		Salvaged Data
 			{"NAV_DATA",				"NAV_DATA",				16,	16,		2},		--5,	5,		4		Navigation Data
@@ -531,7 +531,7 @@ SpaceStationMissionLootChanges =
 			--{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	1,		2},		--1,	1,		2		Defence Chit
 			{"BP_SALVAGE",				"BP_SALVAGE",			3,	8,		50},	--3,	8,		50		Salvaged Data
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		2,	3,		50},	--2,	3,		100		Frigate Fuel (200 tonnes)
-			{"NAV_DATA_DROP",			"SUIT_INV_TOKEN",		1,	1,		20},	--1,	1,		20		Drop Pod Coordinates		(Exosuit Expansion Slot)
+			{"NAV_DATA_DROP",			"SUIT_INV_TOKEN",		1,	1,		20},	--1,	1,		20		Exosuit Upgrade Chart		(Exosuit Expansion Slot)
 			{"CHART_HIVE",				"CHART_HIVE",			1,	1,		20},	--1,	1,		40		Sentinel Pillar Chart
 			{"STATION_KEY",				"STATION_KEY",			1,	1,		20},	--1,	1,		20		Forged Passport ???
 			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		60},	--1,	1,		60		Multi-Tool Expansion Slot
