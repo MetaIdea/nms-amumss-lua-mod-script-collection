@@ -355,6 +355,46 @@ RecipeChanges =
 			{"WATER1",			5}										--Requires Salt					x50
 		}
 	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_249",	5,					600},				--Makes Platinum				x10		in	1200 time
+		{
+			{"LAND1",			1},										--Requires Ferrite Dust			1
+			{"OXYGEN",			1},										--Requires Oxygen				1
+			{"STELLAR2",		10}										--Requires Chromatic Metal		250
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_250",	1,					600},				--Makes Warp Cell				x1		in	600 time
+		{
+			{"FUEL2",			10},									--Requires Condensed Carbon		25
+			{"CATALYST1",		20},									--Requires Sodium				10
+			{"STELLAR2",		15}										--Requires Chromatic Metal		250
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_251",	1,					600},				--Makes Warp Cell				x1		in	600 time
+		{
+			{"FUEL1",			20},									--Requires Carbon				50
+			{"CATALYST2",		10},									--Requires Sodium Nitrate		5
+			{"STELLAR2",		15}										--Requires Chromatic Metal		250
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_252",	1,					600},				--Makes Warp Cell				x1		in	600 time
+		{
+			{"FUEL2",			10},									--Requires Condensed Carbon		25
+			{"CATALYST2",		10},									--Requires Sodium Nitrate		5
+			{"STELLAR2",		15}										--Requires Chromatic Metal		250
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_261",	1,					90},				--Makes Ion Battery				x1		in	90 time
+		{
+			{"LAND1",			5},										--Requires Ferrite Dust			10
+			{"ASTEROID1",		1},										--Requires Silver				10
+			{"CATALYST1",		5}										--Requires Sodium				10
+		}
+	},
 --Some Nutrient Processor Recipes with ingredients that are very easy to obtain passively or in huge quantities have had their costs increased, to indirectly nerf cooking profits & incentivize harvesting wild ingredients
 	{							--Amount per batch	--Time per batch
 		{"RECIPE_2",			1,					5},					--Makes Silicon Egg				x1		in	5 time

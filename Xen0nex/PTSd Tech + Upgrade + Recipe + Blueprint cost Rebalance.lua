@@ -17,7 +17,7 @@ UpgradeXBaseMarkup	=	0.2							--0.2
 RegUpgradeSpaceStationMarkup = 0					--0						Doesn't seem to apply to regular upgrades.	Affects the buying AND selling price when using space station trade terminals or item vendors on outlaw stations ON TOP OF other values, e.g. a value of 0.5 means space stations charge & pay +50% more than other sources
 SusUpgradeSpaceStationMarkup = 1					--0						For suspicious upgrades in Outlaw stations.	Untested.
 
-UpgradeScannerMult	=	1.2							--Additional multiplier to apply to BaseValue of all Scanner upgrades (including X class) on top of the above multipliers
+UpgradeScannerMult	=	1							--Additional multiplier to apply to BaseValue of all Scanner upgrades (including X class) on top of the above multipliers
 
 --Global Tech cost multipliers		(Currently also affects the price of Technology purchased from other places like Minor Settlements also. )
 TechCostMult = 			20							--Multiplier applies to the "FragmentCost" of the technology items with costs greater than or equal to 50, which are all probably techs the Anomaly is selling for 50~460 Nanites?	(Nautilon High-Power Sonar is 10, though)
@@ -66,13 +66,22 @@ TechAdjustments =
 		"UT_TRANSLATE3",	0.15
 	},
 	{
-		"MECH_PILOT",	0.625			--Minotaur AI Pilot
+		"MECH_PILOT",	0.6875			--Minotaur AI Pilot						480 Nanites
 	},
 	{
 		"MECH_SCAN0",	1				--Minotaur Basic Radar Array (added by PTSd)	120 Nanites
 	},
 	{
 		"MECH_SCAN",	2				--Minotaur Radar Array					120 Nanites
+	},
+	{
+		"MECH_LASER1",	0.7143			--Precision Minotaur Laser				210 Nanites
+	},
+	{
+		"MECH_GUN",	0.7143				--Minotaur Cannon						210 Nanites
+	},
+	{
+		"MECH_MINER",	0.7143			--Minotaur Bore							210 Nanites
 	},
 	{
 		"VEHICLE_SCAN",	1				--Exocraft Signal Booster				120 Nanites
@@ -1294,6 +1303,24 @@ AddSavePoint =
                 <Property name="Children" />
               </Property>]]
 
+AddNewHerox =
+[[<Property value="GcUnlockableItemTreeNode.xml">
+                        <Property name="Unlockable" value="ALLOY3" />
+                        <Property name="Children">
+                          <Property value="GcUnlockableItemTreeNode.xml">
+                            <Property name="Unlockable" value="ALLOY7" />
+                            <Property name="Children" />
+                          </Property>
+                        </Property>
+                      </Property>]]
+
+AddNewGrantine =
+[[<Property value="GcUnlockableItemTreeNode.xml">
+                        <Property name="Unlockable" value="ALLOY6" />
+                        <Property name="Children" />
+                      </Property>]]
+
+
 function Invert (value)
     return
     1/value
@@ -1786,6 +1813,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASICPARTS_TREE",		"Unlockable", "BUILDBEACON"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
                             ["ADD"] = AddSavePoint
+                        },
+						--These 4 edits move the recipe for Geodesite to be below Herox instead of Grantine
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable", "ALLOY3"},
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable", "ALLOY2"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+                            ["ADD"] = AddNewHerox
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable", "ALLOY6"},
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable", "ALLOY5"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+                            ["ADD"] = AddNewGrantine
                         },
                     }
 				},

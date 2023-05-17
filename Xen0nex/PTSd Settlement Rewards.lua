@@ -6,10 +6,13 @@ Description = "Rebalances settlement produced items by race & wealth, Increases 
 --MaxProductionCapMult = 					1						--Multiplier to apply to the vanilla cap for Production of 1,000,000 units per day		(Changing this has side effects, avoid for now)
 ExtraDebtMult =							1						--Extra Multiplier to apply to the DailyDebtPaymentModifier, which if left at 1 will result in a DailyDebtPaymentModifier that is 2x whatever the max Production Cap is.
 
-ProductMult = 							1						--Multiplier to apply to the vanilla "default" amount of Products made per day of 50.		In practice this seems to vary from around 9 ~ 29 based on Settlement Pop, Happiness, Production.
-SubstanceMult =							4						--Multiplier to apply to the vanilla "default" amount of Substances made per day of 500.	In practice this seems to vary from around 90 ~ 290 based on Settlement Pop, Happiness, Production.
+ProductionCycleMult =					0.3						--Multiplier to apply to the vanilla ProductionCycleDurationInSeconds of 72000 (20 hours), determines how often the settlement outputs its products
+ProductMult = 							1*0.3*1.2				--Multiplier to apply to the vanilla "default" amount of Products made per day of 50.		In practice this seems to vary from around 9 ~ 29 based on Settlement Pop, Happiness, Production.
+SubstanceMult =							4*0.3					--Multiplier to apply to the vanilla "default" amount of Substances made per day of 500.	In practice this seems to vary from around 90 ~ 290 based on Settlement Pop, Happiness, Production.
 
+--WIP
 --ProductionContributionModifier =		30						--30 Not quite sure how this works, supposedly controls how strongly each settlement stat affects the final item output rate in some way, but changing it gives strange results
+--DebtContributionModifier =				1						--0		Replacer for StatProductivityContributionModifiers for Debt
 
 MaxProductionSlotUnits =				9999					--Vanilla cap is 999, is probably how many items can be "stocked" in the settlement waiting for you to come pick them up
 
@@ -149,6 +152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"DailyDebtPaymentModifier",	ExtraDebtMult},					--Sometimes this seems like it should be doubled again, to be 4x Production cap in order to closely match expected time?
+								{"ProductionCycleDurationInSeconds",	ProductionCycleMult},
 								{"ProductUnitsPerCycleRateModifier",	ProductMult},
 								{"SubstanceUnitsPerCycleRateModifier",	SubstanceMult},
 								{"JudgementWaitTimeMin",	JudgementTimeMultiplier},
@@ -166,15 +170,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BuildingUpgradeTimeInSeconds",	BuildingUpgradeTimeInSeconds},
 							}
 						},
-						--[[{
+						--[[
+						{
 							["PRECEDING_KEY_WORDS"] = {"StatProductivityContributionModifiers"},
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] = "", 
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Production",	ProductionContributionModifier}	
+								--{"Production",	ProductionContributionModifier},
+								{"Debt",	DebtContributionModifier},
 							}
-						},]]
+						},
+						]]
 						{
 							["PRECEDING_KEY_WORDS"] = {"SettlementBuildingTimes"},
 							["MATH_OPERATION"] = "*",  
