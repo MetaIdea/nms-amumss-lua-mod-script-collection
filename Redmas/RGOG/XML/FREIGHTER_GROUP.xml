@@ -1,0 +1,5 @@
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHTER_TECH" />
+          <Property name="SubGroupName" value="FRE_TECH_OTHER" />
+          <Property name="SubGroup" value="0" />
+        </Property>

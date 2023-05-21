@@ -141,7 +141,7 @@ ProductStackChanges =
 	{"UI_CLAMPEARL_NAME",		1,					1},				--15	Living Pearl
 	{"UI_VENTGEM_NAME",			2,					1},				--5		Crystal Sulphide
 	{"UI_EYEBALL_NAME",			1,					1},				--5		Hypnotic Eye
-	{"UI_DRONE_SHARD_NAME",		2,					1},				--5		Radiant SHard
+	{"UI_DRONE_SHARD_NAME",		3,					1},				--5		Radiant SHard
 
 	{"UI_TRADE_ITEM_ALLOY_1_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item
 	{"UI_TRADE_ITEM_ALLOY_2_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item

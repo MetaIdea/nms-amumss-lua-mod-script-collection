@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.6.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_TRUNK_" />
+      <Property name="Descriptors">
+   <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TRUNK_F" />
+          <Property name="Name" value="_TRUNK_F" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_F4" />
+                      <Property name="Name" value="_ACC_F4" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_F5" />
+                      <Property name="Name" value="_ACC_F5" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_FNONE" />
+                      <Property name="Name" value="_ACC_FNONE" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_FNONE1" />
+                      <Property name="Name" value="_ACC_FNONE1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_BRANCH_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BRANCH_F1" />
+                      <Property name="Name" value="_BRANCH_F1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_LEAF_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F1B" />
+                                  <Property name="Name" value="_LEAF_F1B" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F1C" />
+                                  <Property name="Name" value="_LEAF_F1C" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BRANCH_F2" />
+                      <Property name="Name" value="_BRANCH_F2" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_LEAF_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F2B" />
+                                  <Property name="Name" value="_LEAF_F2B" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F2C" />
+                                  <Property name="Name" value="_LEAF_F2C" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BRANCH_F3" />
+                      <Property name="Name" value="_BRANCH_F3" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_LEAF_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F3B" />
+                                  <Property name="Name" value="_LEAF_F3B" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F3C" />
+                                  <Property name="Name" value="_LEAF_F3C" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BRANCH_F4" />
+                      <Property name="Name" value="_BRANCH_F4" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_LEAF_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F4B" />
+                                  <Property name="Name" value="_LEAF_F4B" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F4C" />
+                                  <Property name="Name" value="_LEAF_F4C" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BRANCH_F5" />
+                      <Property name="Name" value="_BRANCH_F5" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_LEAF_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F5B" />
+                                  <Property name="Name" value="_LEAF_F5B" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_LEAF_F5C" />
+                                  <Property name="Name" value="_LEAF_F5C" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+   </Property>
+    </Property>
+  </Property>
+</Data>

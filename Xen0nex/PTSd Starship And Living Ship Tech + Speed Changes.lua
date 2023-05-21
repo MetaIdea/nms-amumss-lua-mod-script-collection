@@ -66,6 +66,7 @@ LivingShipShieldRechargeMult = 0.75						--	Multiplier to apply to the cost of P
 
 StarshieldBattMult = 2									--	Multiplier to apply to the effectiveness of Starshield Battery. In vanilla it only refills half of your starship's shield
 LivingShipUseBatt = true								--false		Allows Living Ships to use Starshield Batteries to recharge shields in addition to Pugneum
+RoboUseBattNotSodium = true								--false		Allows Sentinel Interceptors to use Starshield Batteries to recharge shields INSTEAD OF Sodium
 
 --Price to buy an additional Living Ship aftering completing the Starbirth missionline
 LivingNanitePrice = 8000								--10000
@@ -85,8 +86,10 @@ HyperDistBonusMult = 1.1								--1		Multiplier to apply to the strength of the 
 --Changes some attributes of the special tech that Sentinel Interceptors start with
 RemoveRoboAutoCharge = true								--false		Set to true to remove the Sentinel Interceptor's innate Launch Thruster autocharge ability
 RemoveRoboJumpSpeed = true								--false		Set to true to remove the Sentinel Interceptor's bonus to Pulse Jump speed so it no longer provides adjacency/supercharge bonuses
-RoboJumpDist = 600										--How many lightyears the Sentinel Interceptor can jump at base level	(Other ships = 100)
-RoboWarpsPerCell = 1									--How many times the ship can warp from the fuel in a single Warp Cell (20 units of fuel per cell) (Other ships = 1, IE they use 20% of a full hyperdrive tank per warp) 
+RoboJumpDist = 600										--600		How many lightyears the Sentinel Interceptor can jump at base level	(Other ships = 100)
+RoboWarpsPerCell = 1									--2			How many times the Sentinel Interceptor can warp from the fuel in a single Warp Cell (24 units of fuel per cell, fuel tank size is 120) (Other ships = 1, IE they use 24 units of fuel, or 20% of a full hyperdrive tank per warp) 
+RoboWarpTankSize = 48									--120		How much fuel the Crimson Core can hold when full. By default each warp consumes 24 units of fuel, so the default tank holds enough for 5 warps
+RoboPulseTankSize = 80									--200		How much fuel the Luminence Engine can hold when full. 
 
 --Replacers for attributes of all ships be adjusting specific pre-installed tech, or other tech adjustments
 ShipTechChanges =
@@ -453,6 +456,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus', BonusMult (1.05, EngModSpdMult)},
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {"ID", "HYPERDRIVE_ROBO"},
+				MATH_OPERATION 		= '',
+				VALUE_CHANGE_TABLE 	= {
+					{'ChargeAmount', RoboWarpTankSize}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {"ID", "SHIPJUMP_ROBO"},
+				MATH_OPERATION 		= '',
+				VALUE_CHANGE_TABLE 	= {
+					{'ChargeAmount', RoboPulseTankSize}
 				}
 			},
 			--[[
@@ -1035,6 +1052,24 @@ ChangesToShipTech[#ChangesToShipTech+1] =
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 				["ADD"] = AddStarShieldBatt
 			}
+end
+if RoboUseBattNotSodium then
+ChangesToShipTech[#ChangesToShipTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "SHIPSHIELD_ROBO",	"Value", "CATALYST1"},
+				["REMOVE"] = "SECTION"
+			}
+ChangesToShipTech[#ChangesToShipTech+1] =
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				--["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"ID", "SHIPSHIELD_ROBO"},
+				["PRECEDING_KEY_WORDS"] = {"ChargeBy",		"NMSString0x10.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = AddStarShieldBatt
+			}
+
 end
 for i = 1, #ShipTrailTechs do
 	local TrailID = ShipTrailTechs[i]

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (3.98.0)-->
+<Data template="GcExternalObjectList">
+  <Property name="Objects" value="GcEnvironmentSpawnData.xml">
+    <Property name="Creatures" />
+    <Property name="DistantObjects" />
+    <Property name="Landmarks" ></Property>
+	     
+  
+	
+    <Property name="Objects" />
+    <Property name="DetailObjects">
+
+    </Property>
+    <Property name="SelectableObjects">
+      <Property value="GcSelectableObjectSpawnList.xml">
+        <Property name="Name" value="" />
+        <Property name="Objects" />
+      </Property>
+      <Property value="GcSelectableObjectSpawnList.xml">
+        <Property name="Name" value="" />
+        <Property name="Objects" />
+      </Property>
+      <Property value="GcSelectableObjectSpawnList.xml">
+        <Property name="Name" value="" />
+        <Property name="Objects" />
+      </Property>
+      <Property value="GcSelectableObjectSpawnList.xml">
+        <Property name="Name" value="" />
+        <Property name="Objects" />
+      </Property>
+      <Property value="GcSelectableObjectSpawnList.xml">
+        <Property name="Name" value="" />
+        <Property name="Objects" />
+      </Property>
+    </Property>
+  </Property>
+</Data>

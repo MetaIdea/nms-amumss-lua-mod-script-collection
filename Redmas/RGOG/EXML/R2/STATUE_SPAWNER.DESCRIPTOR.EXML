@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.6.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_MESH_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_MESH_WARRIOR" />
+          <Property name="Name" value="_Mesh_Warrior" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_MASK_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_MASK_1" />
+                      <Property name="Name" value="_Mask_1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_CHEEKACZ_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHEEKACZ_4" />
+                                  <Property name="Name" value="_CheekAcZ_4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_CA4Z_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA4Z_1" />
+                                              <Property name="Name" value="_CA4Z_1" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA4Z_2" />
+                                              <Property name="Name" value="_CA4Z_2" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA4Z_3" />
+                                              <Property name="Name" value="_CA4Z_3" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHEEKACZ_NULL1" />
+                                  <Property name="Name" value="_CheekAcZ_Null1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_PLATEA_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_PLATEA_TOP" />
+                                  <Property name="Name" value="_PlateA_top" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_PLATEA_NONE" />
+                                  <Property name="Name" value="_PlateA_none" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_EYELIDS_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_EYELIDS_1" />
+                                  <Property name="Name" value="_Eyelids_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_EYES_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_EYES_1" />
+                                              <Property name="Name" value="_Eyes_1" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_PLATEB_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_PLATEB_FOREH" />
+                                  <Property name="Name" value="_PlateB_foreh" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_PLATEB_NONE" />
+                                  <Property name="Name" value="_PlateB_none" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_BACKNECKZ_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BACKNECKZ_NULL" />
+                                  <Property name="Name" value="_BackNeckZ_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BACKNECKZ_1" />
+                                  <Property name="Name" value="_BackNeckZ_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_PLATEC_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_PLATEC_EARS" />
+                                  <Property name="Name" value="_PlateC_ears" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_PLATEC_NONE" />
+                                  <Property name="Name" value="_PlateC_none" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_SIDENECKZ_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDENECKZ_NULL" />
+                                  <Property name="Name" value="_SideNeckZ_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDENECKZ_1" />
+                                  <Property name="Name" value="_SideNeckZ_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDENECKZ_2" />
+                                  <Property name="Name" value="_SideNeckZ_2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_PLATED_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_PLATED_MOUTH" />
+                                  <Property name="Name" value="_PlateD_mouth" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_MOUTH_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_MOUTH_CLAWS" />
+                                              <Property name="Name" value="_Mouth_Claws" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_PLATED_NONE" />
+                                  <Property name="Name" value="_PlateD_none" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_MASK_2" />
+                      <Property name="Name" value="_Mask_2" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_CHEEKACX_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHEEKACX_NULL" />
+                                  <Property name="Name" value="_CheekAcX_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHEEKACX_5" />
+                                  <Property name="Name" value="_CheekAcX_5" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_CA3X_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA3X_1" />
+                                              <Property name="Name" value="_CA3X_1" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA3X_2" />
+                                              <Property name="Name" value="_CA3X_2" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_BACKNECX_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BACKNECX_NULL" />
+                                  <Property name="Name" value="_BackNecX_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BACKNECX_1" />
+                                  <Property name="Name" value="_BackNecX_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_JAW_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_JAW_1" />
+                                  <Property name="Name" value="_Jaw_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_JAWFILLER_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_JAWFILLER_1" />
+                                              <Property name="Name" value="_Jawfiller_1" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_JAW_NONE" />
+                                  <Property name="Name" value="_Jaw_none" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_EYELIDSB_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_EYELIDSB_1" />
+                                  <Property name="Name" value="_EyelidsB_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_UPPER_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_UPPER_2" />
+                                  <Property name="Name" value="_Upper_2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_UPPER_1" />
+                                  <Property name="Name" value="_Upper_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_SIDENECX_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDENECX_NULL" />
+                                  <Property name="Name" value="_SideNecX_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDENECX_1" />
+                                  <Property name="Name" value="_SideNecX_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDENECX_2" />
+                                  <Property name="Name" value="_SideNecX_2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_HHORNX_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_HHORNX_1XRARE" />
+                                  <Property name="Name" value="_HHornX_1xRARE" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_HHORNX_NULL" />
+                                  <Property name="Name" value="_HHornX_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_MASK_3" />
+                      <Property name="Name" value="_Mask_3" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_SIDENECK_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDENECK_NULL" />
+                                  <Property name="Name" value="_SideNeck_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDENECK_1" />
+                                  <Property name="Name" value="_SideNeck_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDENECK_2" />
+                                  <Property name="Name" value="_SideNeck_2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_CHEEKACC_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHEEKACC_NULL" />
+                                  <Property name="Name" value="_CheekAcc_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHEEKACC_1" />
+                                  <Property name="Name" value="_CheekAcc_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHEEKACC_2" />
+                                  <Property name="Name" value="_CheekAcc_2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHEEKACC_3" />
+                                  <Property name="Name" value="_CheekAcc_3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_CA3_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA3_2" />
+                                              <Property name="Name" value="_CA3_2" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA3_1" />
+                                              <Property name="Name" value="_CA3_1" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHEEKACC_4" />
+                                  <Property name="Name" value="_CheekAcc_4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_CA4_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA4_1" />
+                                              <Property name="Name" value="_CA4_1" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA4_2" />
+                                              <Property name="Name" value="_CA4_2" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_CA4_3" />
+                                              <Property name="Name" value="_CA4_3" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_CHINACC_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHINACC_NULL" />
+                                  <Property name="Name" value="_ChinAcc_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHINACC_2" />
+                                  <Property name="Name" value="_ChinAcc_2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CHINACC_1" />
+                                  <Property name="Name" value="_ChinAcc_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_TEMPLEACC_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_TEMPLEACC_NULL" />
+                                  <Property name="Name" value="_TempleAcc_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_TEMPLEACC_1" />
+                                  <Property name="Name" value="_TempleAcc_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_TEMPLEACC_2" />
+                                  <Property name="Name" value="_TempleAcc_2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_BACKNECK_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BACKNECK_NULL" />
+                                  <Property name="Name" value="_BackNeck_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BACKNECK_1" />
+                                  <Property name="Name" value="_BackNeck_1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_HHORNS_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_HHORNS_1XRARE" />
+                                  <Property name="Name" value="_HHorns_1xRARE" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_HHORNS_NULL" />
+                                  <Property name="Name" value="_HHorns_Null" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.6.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_ENGINE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_ENGINE_BR" />
+          <Property name="Name" value="_ENGINE_BR" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_ENGINE_CR" />
+          <Property name="Name" value="_Engine_CR" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS\RGO\ENGINEB.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_Engine_DR" />
+          <Property name="Name" value="_Engine_DR" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\SQUIDPARTS\ENGINE\ENGINE_A.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_WINGS_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_A" />
+          <Property name="Name" value="_Wings_A" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WINGS/WINGS_A/WINGS_A.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ABIG" />
+                      <Property name="Name" value="_Acc_ABIG" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+										<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL" />
+                      <Property name="Name" value="_Acc_ASMALL" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY" />
+                      <Property name="Name" value="_Acc_AWINDY" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+										<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY2" />
+                      <Property name="Name" value="_Acc_AWINDY2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_B" />
+          <Property name="Name" value="_Wings_B" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WINGS/WINGS_B/WINGSB.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY" />
+                      <Property name="Name" value="_Acc_AWINDY" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL2" />
+                      <Property name="Name" value="_Acc_ASMALL2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+
+										<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL" />
+                      <Property name="Name" value="_Acc_ASMALL" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY2" />
+                      <Property name="Name" value="_Acc_AWINDY2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_D" />
+          <Property name="Name" value="_Wings_D" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WINGS/WINGS_D/WINGSD.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_E" />
+          <Property name="Name" value="_Wings_E" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WINGS/WINGS_E/WINGSE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY2" />
+                      <Property name="Name" value="_Acc_AWINDY2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY" />
+                      <Property name="Name" value="_Acc_AWINDY" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL" />
+                      <Property name="Name" value="_Acc_ASMALL" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL2" />
+                      <Property name="Name" value="_Acc_ASMALL2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ABIG" />
+                      <Property name="Name" value="_Acc_ABIG" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+
+                  <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_NONE2" />
+                      <Property name="Name" value="_Acc_None2" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_F" />
+          <Property name="Name" value="_Wings_F" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS\RGO\_WINGS_F.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY2" />
+                      <Property name="Name" value="_Acc_AWINDY2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY" />
+                      <Property name="Name" value="_Acc_AWINDY" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL" />
+                      <Property name="Name" value="_Acc_ASMALL" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL2" />
+                      <Property name="Name" value="_Acc_ASMALL2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ABIG" />
+                      <Property name="Name" value="_Acc_ABIG" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_G" />
+          <Property name="Name" value="_Wings_G" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WINGS/WINGS_G/WINGSG.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+				                      <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY2" />
+                      <Property name="Name" value="_Acc_AWINDY2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY" />
+                      <Property name="Name" value="_Acc_AWINDY" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL" />
+                      <Property name="Name" value="_Acc_ASMALL" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL2" />
+                      <Property name="Name" value="_Acc_ASMALL2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ABIG" />
+                      <Property name="Name" value="_Acc_ABIG" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_H" />
+          <Property name="Name" value="_Wings_H" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WINGS/WINGS_H/WINGSH.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY2" />
+                      <Property name="Name" value="_Acc_AWINDY2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY" />
+                      <Property name="Name" value="_Acc_AWINDY" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL" />
+                      <Property name="Name" value="_Acc_ASMALL" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL2" />
+                      <Property name="Name" value="_Acc_ASMALL2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ABIG" />
+                      <Property name="Name" value="_Acc_ABIG" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>                 
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_NONE5" />
+                      <Property name="Name" value="_Acc_None5" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_I" />
+          <Property name="Name" value="_Wings_I" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WINGS/WINGS_I/WINGSI.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_NONE6" />
+                      <Property name="Name" value="_Acc_None6" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY2" />
+                      <Property name="Name" value="_Acc_AWINDY2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY" />
+                      <Property name="Name" value="_Acc_AWINDY" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL" />
+                      <Property name="Name" value="_Acc_ASMALL" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL2" />
+                      <Property name="Name" value="_Acc_ASMALL2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ABIG" />
+                      <Property name="Name" value="_Acc_ABIG" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+
+                 
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_J" />
+          <Property name="Name" value="_Wings_J" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WINGS/WINGS_J/WINGSJ.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY2" />
+                      <Property name="Name" value="_Acc_AWINDY2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_AWINDY" />
+                      <Property name="Name" value="_Acc_AWINDY" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL" />
+                      <Property name="Name" value="_Acc_ASMALL" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ASMALL2" />
+                      <Property name="Name" value="_Acc_ASMALL2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Acc_ABIG" />
+                      <Property name="Name" value="_Acc_ABIG" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+
+                 
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_K" />
+          <Property name="Name" value="_WINGS_K" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_WINGS_K" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_WINGS_KK" />
+                      <Property name="Name" value="_WINGS_KK" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_K\WINGSK.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_Wings_X" />
+                      <Property name="Name" value="_Wings_X" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\WINGS_X.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" >
+
+							</Property>
+	
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+	  </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_COCKPIT_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_COCKPIT_A" />
+          <Property name="Name" value="_Cockpit_A" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_A/COCKPITA.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ANOSE_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ANOSE_A" />
+                      <Property name="Name" value="_ANose_A" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSEA/COCKPITANOSEA.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ANose_B" />
+                      <Property name="Name" value="_ANose_B" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS\RGO\COCKPITANOSEAW.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ANOSE_C" />
+                      <Property name="Name" value="_ANose_C" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSEC/COCKPITANOSEC.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ANOSE_D" />
+                      <Property name="Name" value="_ANose_D" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSED/COCKPITANOSED.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ANOSE_E" />
+                      <Property name="Name" value="_ANose_E" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSEE/COCKPITANOSEE.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_COCKPIT_B" />
+          <Property name="Name" value="_Cockpit_B" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_B/COCKPITB.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+		<Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_COCKPIT_D" />
+          <Property name="Name" value="_Cockpit_D" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_COCKPIT_D" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_COCKPIT_DV" />
+                      <Property name="Name" value="_Cockpit_DV" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_D/COCKPITD.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_COCKPIT_SA" />
+                      <Property name="Name" value="_Cockpit_SA" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/RGO/SAIL_COCKPIT.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" >
+
+							</Property>
+	
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_COCKPIT_E" />
+          <Property name="Name" value="_Cockpit_E" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_Cockpit_E" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_COCKPIT_EV" />
+                      <Property name="Name" value="_Cockpit_EV" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_E/COCKPIT_E.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_COCKPIT_F" />
+          <Property name="Name" value="_Cockpit_F" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_COCKPIT_F" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_COCKPIT_FV" />
+                      <Property name="Name" value="_Cockpit_FV" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_F/COCKPTF.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+					<Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_COCKPIT_RA" />
+                      <Property name="Name" value="_Cockpit_RA" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/RGO/BALL_COCKPIT.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+     
+	  </Property>
+    </Property>
+
+	  <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_SUBWINGS_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SUBWINGS_C" />
+          <Property name="Name" value="_SubWings_C" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/SUBWINGS/SUBWINGS_C/SUBWINGSCLEFT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/SUBWINGS/SUBWINGS_C/SUBWINGSCRIGHT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SUBWINGS_D" />
+          <Property name="Name" value="_SubWings_D" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/SUBWINGS/SUBWINGS_D/SUBWINGSDLEFT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/SUBWINGS/SUBWINGS_D/SUBWINGSDRIGHT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SUBWINGS_E" />
+          <Property name="Name" value="_SubWings_E" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/ACCESSORIES/TURBINEAA.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+     
+	 </Property>
+    </Property>
+ </Property>
+</Data>
