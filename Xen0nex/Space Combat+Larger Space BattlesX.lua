@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "420"
+GameVersion = "423"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships (individual ships have additonal multipliers applied)
@@ -978,8 +978,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		Probably maps to "POLICELOOT" somehow
-		{"Health", math.floor(ShipHull*11500)},			--default 11500
-		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*34000)},	--default 34000
+		{"Health", math.floor(ShipHull*11500*0.85)},			--default 11500
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*34000*0.85)},	--default 34000
 		{"Shield", "FAST"},					--default "FAST"
 		{"LaserDamageLevel", 2},			--default 1
 		}},	
@@ -1796,8 +1796,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*2000)},								--2000
 		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*10000*0.667)},					--10000
-		{"RechargeTime", 3},										--1
-		{"RechargeDelayTime", 3},									--3
+		{"RechargeTime", 4},										--1
+		{"RechargeDelayTime", 4},									--3
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG"},
@@ -1806,8 +1806,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*10000*0.75)},								--10000
 		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*25000*0.75)},					--25000
-		{"RechargeTime", 7},										--3
-		{"RechargeDelayTime", 4},									--4
+		{"RechargeTime", 8},										--3
+		{"RechargeDelayTime", 5},									--4
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","NULL"},

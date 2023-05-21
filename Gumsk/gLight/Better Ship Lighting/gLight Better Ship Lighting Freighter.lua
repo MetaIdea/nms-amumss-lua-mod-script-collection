@@ -2,7 +2,7 @@ ModName = "gLight Better Ship Lighting"
 ModNameSub = "Freighter"
 BaseDescription = ""
 GameVersion = "423"
-ModVersion = "b"
+ModVersion = "c"
 
 --[[ Files Modified:
 MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN
@@ -62,13 +62,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",35000},
+								{"Value",35000.0},
 							}
 						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\HANGARLAYOUT.SCENE.MBIN",
+					["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] = {
 						{
 							["SPECIAL_KEY_WORDS"] = {
@@ -98,7 +98,39 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 					}
-				}
+				},
+				{
+					["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								"Name","COL_R"
+							},
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] = {
+								{"Value",1.0},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								"Name","COL_G"
+							},
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] = {
+								{"Value",1.0},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								"Name","COL_B"
+							},
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] = {
+								{"Value",1.0},
+							}
+						},
+					}
+				},
 			}
 		}
 	}

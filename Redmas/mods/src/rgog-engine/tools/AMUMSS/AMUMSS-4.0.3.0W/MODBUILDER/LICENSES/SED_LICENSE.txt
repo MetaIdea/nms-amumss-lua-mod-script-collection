@@ -1,5 +1,0 @@
-See https://github.com/mbuilov/sed-windows
-
-All patches under the same license as sources of Gnu Sed: GPLv3 or later
-
-Author of the patches: Michael M. Builov (mbuilov@gmail.com)
