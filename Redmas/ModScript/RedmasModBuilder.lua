@@ -112,10 +112,9 @@ INIT_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON", -- "EPIC_FANTASY" or "SCI_FI_FANTASY" or "ON" or "OFF"
-                -- "SCI_FI_FANTASY" terrain is a lighter version of "EPIC_FANTASY" terrain 
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "EPIC_FANTASY" or "ON" or "OFF"-- "SCI_FI_FANTASY"is deprecated
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- inverts the ressources deposits ( making them out of the ground )
-                ["TERRAIN_HEIGHT_MAX"] = "140", -- higher values can make the game unstable
+                ["TERRAIN_HEIGHT_MAX"] = "40", -- higher values can make the game unstable
             },
             ["BIOMES_FEATURES"] = -- world generation features
             {
@@ -196,8 +195,7 @@ INIT_PRESET ={
         ["WARPCELL_USAGE_MULTIPLIER"] = 5,
         ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
     }
-}
----------------------------------------------------------------------------------------------------
+}---------------------------------------------------------------------------------------------------
 -- **ADVANCED PARAMS**
 ---------------------------
 DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
