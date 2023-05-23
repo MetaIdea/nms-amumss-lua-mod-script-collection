@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_GrassFix_v4071.pak",
+["MOD_FILENAME"]  = "MOD_DUD_GrassFix_v4211.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.21",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {
@@ -129,9 +129,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxAngle", "50"},
-                                {"MinScale", "1.8"},
-                                {"MaxScale", "3"},
+                                {"MaxAngle",  "50"},
+                                {"MinScale",  "1.8"},
+                                {"MaxScale",  "3"},
+                                {"MaxScaleY", "1"},
                             }
                         },
                         {
@@ -141,11 +142,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",             "0.7"},
-                                {"FlatDensity",             "0.33"},
+                                {"FlatDensity",          "0.33"},
                                 {"SlopeDensity",         "0.33"},
-                                {"SlopeMultiplier",         "1"},
+                                {"SlopeMultiplier",      "1"},
                                 {"FadeOutStartDistance", "45"},
-                                {"FadeOutEndDistance",     "60"},
+                                {"FadeOutEndDistance",   "60"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SlopeMultiplier",      "1"},
                             }
                         },
                     }
