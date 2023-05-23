@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "CleanerCockpit 1.1.pak",
+["MOD_FILENAME"]  = "CleanerCockpit 1.2.pak",
 ["MOD_AUTHOR"]    = "Phoenixdive",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.23",
@@ -24,6 +24,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "SentinelCableR",},
                                 {"Name", "HijackCables",},
                             },
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FS"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\COCKPITCHAIR.SCENE.MBIN",
+                    ["EXML_CT"] =
+                    {
+                        {
+                            ["SKW"] = {"Name", "dables2",},
                             ["REMOVE"] = "SECTION",
                         },
                     }
