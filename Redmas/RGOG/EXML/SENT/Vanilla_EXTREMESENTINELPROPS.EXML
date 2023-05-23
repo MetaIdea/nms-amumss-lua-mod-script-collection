@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
 <Data template="GcExternalObjectList">
   <Property name="Objects" value="GcEnvironmentSpawnData.xml">
@@ -175,6 +176,25 @@
           </Property>
         </Property>
         <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="20" />
+            <Property name="FlatDensity" value="0.00083" />
+            <Property name="SlopeDensity" value="0.00083" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="9999" />
+            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
+              <Property value="500" />
+            </Property>
+          </Property>
         </Property>
       </Property>
       <Property value="GcObjectSpawnData.xml">
@@ -251,6 +271,25 @@
           </Property>
         </Property>
         <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="20" />
+            <Property name="FlatDensity" value="0.00083" />
+            <Property name="SlopeDensity" value="0.00083" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="9999" />
+            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
+              <Property value="500" />
+            </Property>
+          </Property>
         </Property>
       </Property>
       <Property value="GcObjectSpawnData.xml">
@@ -327,6 +366,25 @@
           </Property>
         </Property>
         <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="20" />
+            <Property name="FlatDensity" value="0.00083" />
+            <Property name="SlopeDensity" value="0.00083" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="9999" />
+            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
+              <Property value="500" />
+            </Property>
+          </Property>
         </Property>
       </Property>
       <Property value="GcObjectSpawnData.xml">
@@ -403,6 +461,25 @@
           </Property>
         </Property>
         <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="8" />
+            <Property name="FlatDensity" value="0.0005" />
+            <Property name="SlopeDensity" value="0.0005" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="9999" />
+            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
+              <Property value="500" />
+            </Property>
+          </Property>
         </Property>
       </Property>
     </Property>
@@ -481,6 +558,25 @@
           </Property>
         </Property>
         <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.3" />
+            <Property name="FlatDensity" value="0.005" />
+            <Property name="SlopeDensity" value="0.005" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="60" />
+            <Property name="FadeOutEndDistance" value="70" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
+              <Property value="500" />
+            </Property>
+          </Property>
         </Property>
       </Property>
       <Property value="GcObjectSpawnData.xml">
@@ -557,7 +653,25 @@
           </Property>
         </Property>
         <Property name="QualityVariants">
-
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.3" />
+            <Property name="FlatDensity" value="0.005" />
+            <Property name="SlopeDensity" value="0.005" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="60" />
+            <Property name="FadeOutEndDistance" value="70" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
+              <Property value="500" />
+            </Property>
+          </Property>
         </Property>
       </Property>
       <Property value="GcObjectSpawnData.xml">
@@ -634,6 +748,25 @@
           </Property>
         </Property>
         <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.3" />
+            <Property name="FlatDensity" value="0.001" />
+            <Property name="SlopeDensity" value="0.001" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="60" />
+            <Property name="FadeOutEndDistance" value="70" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
+              <Property value="500" />
+            </Property>
+          </Property>
         </Property>
       </Property>
     </Property>

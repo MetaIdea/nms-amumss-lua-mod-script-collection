@@ -38,8 +38,8 @@
         <Property name="SwapPrimaryForSecondaryColour" value="True" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="False" />
-        <Property name="MinScale" value="36.9" />
-        <Property name="MaxScale" value="38" />
+        <Property name="MinScale" value="6.9" />
+        <Property name="MaxScale" value="8" />
         <Property name="MinScaleY" value="0.81" />
         <Property name="MaxScaleY" value="1.5" />
         <Property name="SlopeScaling" value="1" />
