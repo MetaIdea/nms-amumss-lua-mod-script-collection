@@ -146,8 +146,8 @@
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="False" />
-        <Property name="MinScale" value="3" />
-        <Property name="MaxScale" value="3.2" />
+        <Property name="MinScale" value="1" />
+        <Property name="MaxScale" value="2" />
         <Property name="MinScaleY" value="0.51" />
         <Property name="MaxScaleY" value="1.5" />
         <Property name="SlopeScaling" value="1" />
