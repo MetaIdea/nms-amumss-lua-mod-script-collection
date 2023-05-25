@@ -112,7 +112,7 @@ INIT_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "EPIC_FANTASY" or "ON" or "OFF"-- "SCI_FI_FANTASY"is deprecated
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ORIGINS", -- "EPIC_FANTASY" , "ORIGINS" or "ON" or "OFF"-- "SCI_FI_FANTASY"is deprecated
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- inverts the ressources deposits ( making them out of the ground )
                 ["TERRAIN_HEIGHT_MAX"] = "40", -- higher values can make the game unstable
             },
