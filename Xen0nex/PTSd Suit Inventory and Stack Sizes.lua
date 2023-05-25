@@ -1,5 +1,5 @@
 ModName = "PTSd Suit Inventory and Stack Sizes"
-GameVersion = "4_08"
+GameVersion = "4_23"
 Description = "Rebalance of inventory Slot stack sizes, as well as initial & max exosuit inventory size"
 
 --NOTE: certain specific items may have their stack size further adjusted in the "PTSd Resource + Product + Construction Rebalance" section
@@ -33,7 +33,7 @@ StackLimits =
 			{"Vehicle",				1500,		750,		450},			--	9999,		1000,		300
 			{"Chest",				4000,		2000,		1200},			--	9999,		1000,		750
 			{"BaseCapsule",			6000,		3000,		1800},			--	9999,		2000,		1250
-			{"MaintenanceObject",	1000,		500,		300},			--	9999,		250,		150
+			{"MaintenanceObject",	2000,		1000,		600},			--	9999,		250,		150		Affects the Input & Outputs for Refiners
 			{"UIPopup",				1000,		500,		300},			--	9999,		250,		150
 		}
 	},
@@ -47,7 +47,7 @@ StackLimits =
 			{"Vehicle",				12,			8,			4},				--	10,			10,			3
 			{"Chest",				32,			20,			12},			--	20,			20,			10
 			{"BaseCapsule",			160,		100,		60},			--	100,		100,		50
-			{"MaintenanceObject",	8,			5,			3},				--	10,			10,			5
+			{"MaintenanceObject",	16,			10,			6},				--	10,			10,			5		Affects the Input & Outputs for Refiners
 			{"UIPopup",				1,			1,			1},				--	1,			1,			1
 		}
 	},
