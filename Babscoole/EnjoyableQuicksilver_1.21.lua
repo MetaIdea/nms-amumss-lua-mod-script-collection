@@ -1,4 +1,4 @@
-Mod_version = "1.21"
+Mod_version = "1.22"
 
 QUICKSILV_S =
 [[
@@ -240,11 +240,11 @@ Rewards =
   },
   {
     ["REWARD"] = REWARD_S,
-    ["IDS"] = {"QUAD_LOOT", "PIRATE_BOUNTY1", "PROC_PROD_BONES", "PROC_PROD_SCRAP"},
+    ["IDS"] = {"QUAD_LOOT", "CORRUPT_LOOT", "DE_HIVESUB", "PIRATE_BOUNTY1", "PROC_PROD_BONES", "PROC_PROD_SCRAP"}
   },
   {
     ["REWARD"] = REWARD_M,
-    ["IDS"] = {"PIRATE_BOUNTY2", "BEGIN_SALVAGE", "PIRATE_REJECT", "MECH_LOOT", "R_SENTINELS_OFF"},
+    ["IDS"] = {"PIRATE_BOUNTY2", "BEGIN_SALVAGE", "PIRATE_REJECT", "MECH_LOOT", "POLICELOOT", "R_SENTINELS_OFF"}
   },
   {
     ["REWARD"] = REWARD_MM,
@@ -266,7 +266,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"]            = "Allows the player to grind Quicksilver through a wide variety of different ways",
 ["MOD_AUTHOR"]                = "ArtisticMisfit",
 ["LUA_AUTHOR"]                = "TheLich, Babscoole, ArtisticMisfit",
-["NMS_VERSION"]                = "3.97",
+    ["NMS_VERSION"] = "4.2",
 ["MODIFICATIONS"]             =
     {
         {
@@ -304,19 +304,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-                -- {
-                    -- ["MBIN_FILE_SOURCE"]     = "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
-                    -- ["EXML_CHANGE_TABLE"]     =
-                    -- {
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "R_RESET_SAL"},
-                            -- ["PRECEDING_KEY_WORDS"] = {"List", "List"},
-                            -- ["ADD_OPTION"] = "ADDafterSECTION",
-                            -- ["LINE_OFFSET"] = -1,
-                            -- ["ADD"] = REWARD_M,
-                        -- },
-                    -- }
-                -- },
                 {
                     ["MBIN_FILE_SOURCE"]     = "METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"]     =
