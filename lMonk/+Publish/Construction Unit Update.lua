@@ -460,7 +460,7 @@ local function AddTreeToChangeTable(node)
 		table.insert(T, {
 			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
 			PRECEDING_KEY_WORDS = 'Children',
-			SECTION_ACTIVE		= 1,
+			SECTION_ACTIVE		= -1,
 			ADD					= BuildExmlNodes(node.tree, false)
 		})
 	end
@@ -485,7 +485,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit Update.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.21',
+	NMS_VERSION			= '4.23',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
