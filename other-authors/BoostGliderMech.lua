@@ -2,13 +2,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "BoostGliderMech.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "4.12.2-pre ",
+["NMS_VERSION"]				= "v4.25.0.1 ",
 ["MOD_DESCRIPTION"]			= "Mech will stay aloft longer and fall slower to pad Boost distants",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
+			["PAK_FILE_SOURCE"] 	= "NMSARC.globals.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{

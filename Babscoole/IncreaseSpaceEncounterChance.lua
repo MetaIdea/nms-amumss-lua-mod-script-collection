@@ -4,7 +4,7 @@ Author          = "Babscoole & Gumsk"
 ModName         = "IncreaseSpaceEncounterChance"
 ModNameSub      = ChanceMultiplier.."x"
 BaseDescription = "Makes space pulse encounters more likely"
-GameVersion     = "4.22"
+GameVersion     = "4.25"
 --ModVersion      = "a"
 
 --[[ Files Modified:
@@ -69,6 +69,7 @@ ENCOUNTER_DATA_TABLE =
         {"ALIEN_PIRATES","False",0},
         {"S8_POD_POI","False",0},
         {"S9_PIRATE","False",0},
+        {"SENT_SHIP","False",12},
     }
 
 NMS_MOD_DEFINITION_CONTAINER = {

@@ -28,6 +28,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{
 									{ "StackMultiplier", 				"16" }, 		-- was 2
 								}
+						},						{
+							["PRECEDING_KEY_WORDS"] = {"GcProductData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "CASING"},					--Metal Plating
+							["VALUE_CHANGE_TABLE"] 	= 
+								{
+									{ "StackMultiplier", 				"16" }, 		-- was 2
+								}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "DRONE_SHARD"},				-- Radiant Shard

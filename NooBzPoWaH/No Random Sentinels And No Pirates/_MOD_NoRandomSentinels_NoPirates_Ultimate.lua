@@ -13,10 +13,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					["MBIN_FILE_SOURCE"] 	= 
 					{
-						"MODELS\COMMON\ROBOTS\DRONE\ENTITIES\DRONE.ENTITY.MBIN",
-						"MODELS\COMMON\ROBOTS\CORRUPTEDDRONE\ENTITIES\CORRUPTEDDRONE.ENTITY.MBIN",
-						"MODELS\COMMON\ROBOTS\DRONEARMOURED\ENTITIES\DRONEARMOURED.ENTITY.MBIN",
-						"MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP\ENTITIES\SHIP.ENTITY.MBIN",
+						"MODELS\\COMMON\\ROBOTS\\DRONE\\ENTITIES\\DRONE.ENTITY.MBIN",
+						"MODELS\\COMMON\\ROBOTS\\CORRUPTEDDRONE\\ENTITIES\\CORRUPTEDDRONE.ENTITY.MBIN",
+						"MODELS\\COMMON\\ROBOTS\\DRONEARMOURED\\ENTITIES\\DRONEARMOURED.ENTITY.MBIN",
+						"MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESHIP\\ENTITIES\\SHIP.ENTITY.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Action">
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Remove" />
-                  <Property name="Name" value="MODELS\COMMON\ROBOTS\DRONE" />
+                  <Property name="Name" value="MODELS\\COMMON\\ROBOTS\\DRONE" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
                   <Property name="IncludeChildPhysics" value="True" />
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>					
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Remove" />
-                  <Property name="Name" value="MODELS\COMMON\ROBOTS\CORRUPTEDDRONE" />
+                  <Property name="Name" value="MODELS\\COMMON\\ROBOTS\\CORRUPTEDDRONE" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
                   <Property name="IncludeChildPhysics" value="True" />
@@ -63,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Remove" />
-                  <Property name="Name" value="MODELS\COMMON\ROBOTS\DRONEARMOURED" />
+                  <Property name="Name" value="MODELS\\COMMON\\ROBOTS\\DRONEARMOURED" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
                   <Property name="IncludeChildPhysics" value="True" />
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>				
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Remove" />
-                  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP" />
+                  <Property name="Name" value="MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESHIP" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
                   <Property name="IncludeChildPhysics" value="True" />
@@ -124,7 +124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -151,7 +151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA\\SIMULATION\\SPACE\\AISPACESHIPMANAGER.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{

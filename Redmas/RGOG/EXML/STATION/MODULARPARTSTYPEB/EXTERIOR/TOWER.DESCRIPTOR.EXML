@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.25.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_TOWER_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TOWER_" />
+          <Property name="Name" value="_Tower_" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_TYPE_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TYPE_STRAIGHT" />
+                      <Property name="Name" value="_Type_Straight" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/EXTERIOR/AERIALSB.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/EXTERIOR/AERIALSA.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_CORNER_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORNER_EXHAUST" />
+                                  <Property name="Name" value="_Corner_Exhaust" />
+                                  <Property name="ReferencePaths">
+                                    <Property value="NMSString0x80.xml">
+                                      <Property name="Value" value="MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/EXTERIOR/EXHAUST.SCENE.MBIN" />
+                                    </Property>
+                                  </Property>
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_SIDE_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_SIDE_ACCOM" />
+                                  <Property name="Name" value="_Side_Accom" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TYPE_ANGLED" />
+                      <Property name="Name" value="_Type_Angled" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/EXTERIOR/AERIALSB.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/EXTERIOR/AERIALSA.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/EXTERIOR/FOOT.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

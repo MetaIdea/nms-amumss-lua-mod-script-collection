@@ -2,13 +2,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	= "NoSeeUms.pak",
 ["MOD_AUTHOR"]		= "OTBP",
-["NMS_VERSION"]		= "4.15",
+["NMS_VERSION"]		= "v4.25.0.1",
 ["MOD_DESCRIPTION"]	= "Honey I Shrunk the Bettles",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]	= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
+			["PAK_FILE_SOURCE"] 	= "NMSARC.Precache.pak ",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{

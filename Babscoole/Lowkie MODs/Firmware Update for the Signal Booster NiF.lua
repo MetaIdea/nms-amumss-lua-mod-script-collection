@@ -1,4 +1,4 @@
-NMSVersion = "4.22"
+NMSVersion = "4.25"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -73,6 +73,7 @@ return
         <Property name="NeedsWaterPlanet" value="False" />
         <Property name="NeedsPrimePlanet" value="False" />
         <Property name="NeedsSentinels" value="False" />
+        <Property name="NeedsCorruptSentinelPlanet" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
         <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -126,6 +127,7 @@ return
         <Property name="NeedsWaterPlanet" value="False" />
         <Property name="NeedsPrimePlanet" value="False" />
         <Property name="NeedsSentinels" value="False" />
+        <Property name="NeedsCorruptSentinelPlanet" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
         <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -213,6 +215,7 @@ return
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardScanEvent.xml">
               <Property name="Event" value="]]..EVENT..[[" />
               <Property name="ScanEventTable" value="Planet" />
@@ -222,7 +225,6 @@ return
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
               <Property name="ForceSilentFailure" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>

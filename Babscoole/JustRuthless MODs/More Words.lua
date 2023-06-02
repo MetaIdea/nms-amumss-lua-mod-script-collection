@@ -577,6 +577,7 @@ return
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="]]..race..[[" />
@@ -588,7 +589,6 @@ return
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -602,6 +602,7 @@ return
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="]]..race..[[" />
@@ -613,7 +614,6 @@ return
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
 end
@@ -635,7 +635,7 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "4.22"
+NMS_Version = "4.25"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"

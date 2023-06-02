@@ -50,12 +50,12 @@ function GetUpgrade(Upgrade)
         <Property name="Reward" value="GcRewardProceduralProduct.xml">
             <Property name="Type" value="GcProceduralProductCategory.xml">
             <Property name="ProceduralProductCategory" value="]]..Upgrade..[[" />
-            </Property>
+          </Property>
             <Property name="OSDMessage" value="" />
             <Property name="SubIfPlayerAlreadyHasOne" value="False" />
             <Property name="OverrideRarity" value="False" />
             <Property name="Rarity" value="GcRarity.xml">
-            <Property name="Rarity" value="Common" />
+			  <Property name="Rarity" value="Common" />
             </Property>
         </Property>
         <Property name="LabelID" value="" />

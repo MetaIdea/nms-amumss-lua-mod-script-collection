@@ -2,13 +2,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "OG_BoostGliderMechAI.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "4.14, FRACTAL PATCH 4.15 ",
+["NMS_VERSION"]				= "v4.25.0.1 ",
 ["MOD_DESCRIPTION"]			= "Mech will stay aloft longer, Camera Tweaks, etc",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
+			["PAK_FILE_SOURCE"] 	= "NMSARC.globals.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MechAIResummonTriggerDistance",				"120"},			-- Fractal "100" Testing ? how far away AI Starts launch from character 120, 80, 60
+								{"MechAIResummonTriggerDistance",				"50"},			-- Fractal "100" Testing ? how far away AI Starts launch from character 120, 80, 60
 								{"MechAIResummonMinSpawnDistance",				"15"},			-- Fractal "10" Testing So Close to Me
 								{"MechJumpFlyBlendTime",						"0.75"},	-- Fractal "1" 
 								{"MechFirstPersonDamping",						"0.01"},	-- Fractal ""0.05 Testing Gun Float
@@ -46,9 +46,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MechJetpackFillRate",							"0.05"},	-- Fractal "0.5" Good
 								{"AIMechLaserFireDurationMin",					"6"},		-- Fractal "5"? extra shot
 								{"AIMechLaserFireDurationMax",					"9"},		-- Fractal "5" extra shot
-								{"AIMechGunNumShotsMax",						"11"},		-- Fractal "5" extra shot
-								{"AIMechGunExplosionRadius",					"1"},		-- Fractal "0" splash damage
-								--{"AIMechGunExplosionRadius",					"0"},		-- Fractal "0" splash damage HOTFIX
+								{"AIMechGunNumShotsMax",						"50"},		-- Fractal "5" extra shot ME!
+								--{"AIMechGunNumShotsMax",						"15"},		-- Fractal "5" extra shot 11
+								--{"AIMechGunNumShotsMax",						"11"},		-- Fractal "5" extra shot 11 HOTFIX
+								{"AIMechGunExplosionRadius",					"0"},		-- Fractal "0" splash damage HOTFIX
+								--{"AIMechGunExplosionRadius",					"1"},		-- Fractal "0" splash damage
 								{"AIMechGunFireInterval",						"0.075"},	-- Fractal "0.5"? speed up								
 							}
 						}
@@ -59,10 +61,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "VehicleCam",
+							--["PRECEDING_KEY_WORDS"] = "VehicleCam",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"VertRotationMin",				"-19"},		-- Fractal "-20" Positive interger to lower default Reticle centering Horizon 10 Needed for AI Mech Window. -1,-10,10,-19
+								{"FlybyRange",					"50"},	--Fractal "120" Land closer During Battle please
+								--{"VertRotationMin",				"-19"},		-- Fractal "-20" Positive interger to lower default Reticle centering Horizon 10 Needed for AI Mech Window. -1,-10,10,-19
 							}
 						},
 						{
@@ -88,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{			
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
+			["PAK_FILE_SOURCE"] 	= "NMSARC.Precache.pak",
 			["MBIN_CHANGE_TABLE"] 	=  
 			{
 				{

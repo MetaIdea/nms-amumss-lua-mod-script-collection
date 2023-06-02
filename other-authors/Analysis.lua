@@ -2,12 +2,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "Analysis.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "4.12.2-pre",
+["NMS_VERSION"]				= "v4.25.0.1",
 ["MOD_DESCRIPTION"]			= "Target scanning trigger time mimimized",
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak", 
+			["PAK_FILE_SOURCE"] 	= "NMSARC.globals.pak", 
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{

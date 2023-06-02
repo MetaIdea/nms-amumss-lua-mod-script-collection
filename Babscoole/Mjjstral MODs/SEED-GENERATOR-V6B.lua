@@ -264,6 +264,7 @@ local GENERIC_REWARD_ENTRY =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificWeapon.xml">
               <Property name="WeaponInventory" value="GcInventoryContainer.xml">
                 <Property name="Slots">
@@ -304,7 +305,6 @@ local GENERIC_REWARD_ENTRY =
               <Property name="IsRewardWeapon" value="True" />
               <Property name="FormatAsSeasonal" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
 return GENERIC_REWARD_ENTRY
@@ -315,6 +315,7 @@ local GENERIC_REWARD_SUB_ENTRY =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificShip.xml">
               <Property name="ShipResource" value="GcResourceElement.xml">
                 <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
@@ -367,7 +368,6 @@ local GENERIC_REWARD_SUB_ENTRY =
               <Property name="IsRewardShip" value="True" />
               <Property name="FormatAsSeasonal" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
 return GENERIC_REWARD_SUB_ENTRY
@@ -625,7 +625,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.22",
+["NMS_VERSION"]     = "4.25",
 ["MODIFICATIONS"]   =
     {
         {
