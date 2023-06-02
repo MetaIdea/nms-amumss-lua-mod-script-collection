@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's Dead Wreckoning.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.22",
+["NMS_VERSION"]   = "4.25",
 ["MODIFICATIONS"] =
     {
         {
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Shelter",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Dead",  "3"},
+                                {"Dead", "3"},
                             }
                         },
                         {
@@ -47,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Harvester",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GivesShelter",  "True"},
+                                {"GivesShelter", "True"},
                             }
                         },
                         {
@@ -84,8 +84,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "DistressSignal",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Dead",         "2"},
-                                {"Weird",         "1"},
+                                {"Dead",            "2"},
+                                {"Weird",           "1"},
                                 {"OverrideRadius",  "45"},
                             }
                         },
@@ -94,8 +94,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WaterPlacement", "Underwater"},
-                                {"Dead",        "2"},
-                                {"Weird",        "2"},
+                                {"Dead",           "2"},
+                                {"Weird",          "2"},
                             }
                         },
                         {
@@ -123,6 +123,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "NPCDebris",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Dead", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "SentinelDistressSignal",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Dead", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "AbandonedRobotCamp",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead", "1"},

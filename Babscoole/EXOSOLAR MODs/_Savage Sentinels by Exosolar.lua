@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Savage Sentinels by Exosolar.pak",
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Babscoole & Xen0nex",
-["NMS_VERSION"]             = "4.22",
+["NMS_VERSION"]             = "4.25",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"DroneSearchCriminalScanRadius",          8},
                                 {"DroneSearchCriminalScanRadiusWanted",    20},
                                 {"MechMinMaintainFireTargetTime",          4},
-                                {"MechAttackRate",                         2},								--5					Smaller value seems to attack more frequently
+                                {"MechAttackRate",                         2},
                                 {"QuadAttackMoveRange",                    30},
                                 {"SpiderPounceAngle",                      75},
                                 {"SpiderPounceRange",                      35},
@@ -263,20 +263,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD.SCENE.MBIN"},	
                             ["VALUE_CHANGE_TABLE"] 	= 
                             {
-                                {"BaseHealth",              15000},
-                                {"HealthIncreasePerLevel",	4500},
-                                {"RepairTime",              1.5},
-                                {"RepairThreshold",         95},
+                                {"BaseHealth",             15000},
+                                {"HealthIncreasePerLevel", 4500},
+                                {"RepairTime",             1.5},
+                                {"RepairThreshold",        95},
                             }
                         },
                         {						
                             ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONESHIELD.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] 	= 
                             {
-                                {"BaseHealth",	            30000},
-                                {"HealthIncreasePerLevel",	4000},
-                                {"RepairTime",              7},
-                                {"RepairThreshold",         95},
+                                {"BaseHealth",	           30000},
+                                {"HealthIncreasePerLevel", 4000},
+                                {"RepairTime",             7},
+                                {"RepairThreshold",        95},
                             }
                         },
                         {
@@ -333,27 +333,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ProjectileSpread", 0},
-                                {"FireInterval",     0.33},
-                                {"FireTimeMin",      4.5},
-                                {"FireTimeMax",      7},
-                                {"NumShotsMin",      2},
-                                {"NumShotsMax",      4},
+                                {"FireInterval",     0.25},
+                                {"FireTimeMin",      5.5},
+                                {"FireTimeMax",      9},
+                                {"NumShotsMin",      4},
+                                {"NumShotsMax",      8},
                                 {"MinRange",         8},
-                                {"MaxRange",         50},
+                                {"MaxRange",         60},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "QUADGRENADE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"NumProjectiles",   2},
                                 {"ProjectileSpread", 0},
                                 {"FireInterval",     1},
-                                {"FireTimeMin",      2},
-                                {"FireTimeMax",      5},
-                                {"NumShotsMin",      2},
-                                {"NumShotsMax",      4},
+                                {"FireTimeMin",      3},
+                                {"FireTimeMax",      7},
+                                {"NumShotsMin",      3},
+                                {"NumShotsMax",      6},
                                 {"MinRange",         17},
-                                {"MaxRange",         50},
+                                {"MaxRange",         60},
                                 {"ExplosionRadius",  2.8}
                             }
                         },
@@ -363,8 +364,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"ProjectileSpread", 0.07},
                                 {"FireInterval",     0.03},
-                                {"FireTimeMin",      3},
-                                {"FireTimeMax",      6},
+                                {"FireTimeMin",      4},
+                                {"FireTimeMax",      8},
                                 {"NumShotsMin",      15},
                                 {"NumShotsMax",      45},
                                 {"MinRange",         0},
@@ -377,8 +378,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"ProjectileSpread", 0},
                                 {"FireRate",         0.04},
-                                {"FireTimeMin",      1.5},
-                                {"FireTimeMax",      3},
+                                {"FireTimeMin",      2},
+                                {"FireTimeMax",      4.5},
                                 {"NumShotsMin",      12},
                                 {"NumShotsMax",      30},
                                 {"Range",            40},
@@ -395,19 +396,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumShotsMin",      1},
                                 {"NumShotsMax",      3},
                                 {"Range",            120},
-                                {"ExplosionRadius",  2.8}
+                                {"ExplosionRadius",  2.2}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTSHOTGUN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"NumProjectiles",   12},	
                                 {"ProjectileSpread", 0.07},
-                                {"FireRate",         0.2},
-                                {"FireTimeMin",      4.5},
-                                {"FireTimeMax",      7},
+                                {"FireRate",         0.18},
+                                {"FireTimeMin",      5},
+                                {"FireTimeMax",      8},
                                 {"NumShotsMin",      3},
-                                {"NumShotsMax",      5},
+                                {"NumShotsMax",      6},
                                 {"Range",            30},
                             }
                         },
@@ -416,7 +418,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ProjectileSpread", 0.07},
-                                {"FireRate",         0.04},
+                                {"FireRate",         0.03},
                                 {"FireTimeMin",      4.5},
                                 {"FireTimeMax",      7},
                                 {"NumShotsMin",      45},

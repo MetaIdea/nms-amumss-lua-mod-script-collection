@@ -440,6 +440,7 @@ QUICK_ACTION_MENU =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardScanEvent.xml">
               <Property name="Event" value="PLANET_FINDER" />
               <Property name="ScanEventTable" value="Tutorial" />
@@ -449,7 +450,6 @@ QUICK_ACTION_MENU =
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
               <Property name="ForceSilentFailure" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -527,6 +527,7 @@ QUICK_ACTION_MENU =
             <Property name="NeedsWaterPlanet" value="False"/>
             <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -580,6 +581,7 @@ QUICK_ACTION_MENU =
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -668,6 +670,7 @@ QUICK_ACTION_MENU =
         <Property name="List">
          <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="Distress" />
             <Property name="Reward" value="GcRewardScanEvent.xml">
               <Property name="Event" value="DISTRESS" />
               <Property name="ScanEventTable" value="Planet" />
@@ -677,7 +680,6 @@ QUICK_ACTION_MENU =
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
               <Property name="ForceSilentFailure" value="False" />
             </Property>
-            <Property name="LabelID" value="Distress" />
           </Property>
         </Property>
       </Property>
@@ -696,10 +698,10 @@ QUICK_ACTION_MENU =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="Trigger Storm" />
             <Property name="Reward" value="GcRewardTriggerStorm.xml">
               <Property name="Duration" value="0.01" />
             </Property>
-            <Property name="LabelID" value="Trigger Storm" />
           </Property>
         </Property>
       </Property>
@@ -719,8 +721,8 @@ QUICK_ACTION_MENU =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardUploadBase.xml" />
             <Property name="LabelID" value="Upload Base" />
+            <Property name="Reward" value="GcRewardUploadBase.xml" />
           </Property>
         </Property>
       </Property>
@@ -739,8 +741,8 @@ QUICK_ACTION_MENU =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardDeactivateFiends.xml" />
             <Property name="LabelID" value="Deactivate Fiends" />
+            <Property name="Reward" value="GcRewardDeactivateFiends.xml" />
           </Property>
         </Property>
       </Property>
@@ -759,38 +761,38 @@ QUICK_ACTION_MENU =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardHealth.xml">
               <Property name="AmountMin" value="100" />
               <Property name="AmountMax" value="100" />
               <Property name="SilentUnlessShieldAtMax" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardShield.xml">
               <Property name="AmountMin" value="100" />
               <Property name="AmountMax" value="100" />
               <Property name="ShowOSDOnSuccess" value="True" />
               <Property name="ShowOSDOnFail" value="True" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardHazard.xml">
               <Property name="AmountMin" value="100" />
               <Property name="AmountMax" value="100" />
               <Property name="Silent" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardEnergy.xml">
               <Property name="Amount" value="100" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -845,10 +847,10 @@ QUICK_ACTION_MENU =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardJourneyThroughCentre.xml">
               <Property name="CentreJourneyDestination" value="Next" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -995,6 +997,7 @@ return [[
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificShip.xml">
               <Property name="ShipResource" value="GcResourceElement.xml">
                 <Property name="Filename" value="]] .. TYPE .. [[" />
@@ -1125,7 +1128,6 @@ return [[
               <Property name="IsRewardShip" value="True" />
               <Property name="FormatAsSeasonal" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -1144,6 +1146,7 @@ return [[
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificWeapon.xml">
               <Property name="WeaponResource" value="GcExactResource.xml">
                 <Property name="Filename" value="]] .. TYPE .. [[" />
@@ -1178,7 +1181,6 @@ return [[
               </Property>
               <Property name="NameOverride" value="]] .. "" .. [[" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -1333,7 +1335,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "4.22",
+["NMS_VERSION"]     = "4.25",
 ["MODIFICATIONS"]   =
     {
         {

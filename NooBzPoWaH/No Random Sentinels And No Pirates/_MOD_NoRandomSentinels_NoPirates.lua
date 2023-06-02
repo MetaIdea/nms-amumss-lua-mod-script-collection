@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "_MOD_NoRandomSentinels_NoPirates.pak", 
 ["MOD_AUTHOR"]				= "Mjjstral AKA MetaIdea & NooBzPoWaH",
-["MOD_AUTHOR"]				= "NooBzPoWaH",
+["LUA_AUTHOR"]				= "NooBzPoWaH",
 ["NMS_VERSION"]				= "3.+",
 ["MOD_DESCRIPTION"]			= "This mods removes pirate spawns in space and random (drones) sentinels spawns on planets.",
 ["MODIFICATIONS"] 			= 

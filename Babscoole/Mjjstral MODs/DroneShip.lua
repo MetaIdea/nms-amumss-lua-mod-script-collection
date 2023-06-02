@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "DroneShip.pak",
 ["MOD_AUTHOR"]      = "Mjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.22",
+["NMS_VERSION"]     = "4.25",
 ["DESCRIPTION"]     = "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
 ["MODIFICATIONS"]   =
     {
@@ -284,6 +284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificShip.xml">
               <Property name="ShipResource" value="GcResourceElement.xml">
                 <Property name="Filename" value="]] .. SHIP_SCENE .. [[" />
@@ -417,7 +418,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="IsRewardShip" value="True" />
               <Property name="FormatAsSeasonal" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>

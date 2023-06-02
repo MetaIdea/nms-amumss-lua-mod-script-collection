@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "You're going to Brazil - Random Black Hole"
-GameVersion = "4.23"
+GameVersion = "4.25"
 Description = "Black Hole destination is now random instead of fixed."
 
 NMS_MOD_DEFINITION_CONTAINER = 

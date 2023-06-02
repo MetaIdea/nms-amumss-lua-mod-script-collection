@@ -199,6 +199,15 @@ REWARDS_8 = {
 
 REWARDS_9 = {
 ----SEASON 9 REWARDS-------
+    "EXPD_BANNER09",
+    "EXPD_DECAL09",
+    "EXPD_TITLE09",
+    "EXPD_EGG_09",
+    "SPEC_BUCKETHELM",
+    "BLD_HOLOGEK",
+    "EXPD_POSTER09C",
+    "EXPD_POSTER09B",
+    "EXPD_POSTER09A",
     "RS_S9_COMPLETE",
     "RS_S9_EGG",
     "RS_S9_PHASE1",
@@ -258,6 +267,48 @@ REWARDS_10 = {
     "RS_S10_S5M6",
 }
 
+-- REWARDS_11 = {
+-- -----SEASON 11 REWARDS-------
+    -- "RS_S11_COMPLETE",
+    -- "RS_S11_EGG",
+    -- "RS_S11_PHASE1",
+    -- "RS_S11_PHASE2",
+    -- "RS_S11_PHASE3",
+    -- "RS_S11_PHASE4",
+    -- "RS_S11_PHASE5",
+    -- "RS_S11_PARTY",
+    -- "RS_S11_S1M1",
+    -- "RS_S11_S1M2",
+    -- "RS_S11_S1M3",
+    -- "RS_S11_S1M4",
+    -- "RS_S11_S1M5",
+    -- "RS_S11_S1M6",
+    -- "RS_S11_S1M7",
+    -- "RS_S11_S2M1",
+    -- "RS_S11_S2M2",
+    -- "RS_S11_S2M3",
+    -- "RS_S11_S2M4",
+    -- "RS_S11_S2M5",
+    -- "RS_S11_S2M6",
+    -- "RS_S11_S2M7",
+    -- "RS_S11_S3M1",
+    -- "RS_S11_S3M2",
+    -- "RS_S11_S3M3",
+    -- "RS_S11_S3M4",
+    -- "RS_S11_S4M1",
+    -- "RS_S11_S4M2",
+    -- "RS_S11_S4M3",
+    -- "RS_S11_S4M4",
+    -- "RS_S11_S4M5",
+    -- "RS_S11_S4M6",
+    -- "RS_S11_S5M1",
+    -- "RS_S11_S5M2",
+    -- "RS_S11_S5M3",
+    -- "RS_S11_S5M4",
+    -- "RS_S11_S5M5",
+    -- "RS_S11_S5M6",
+-- }
+
 REWARDS_GVECTOR = {
     "RS_S1_SHIP",
 }
@@ -282,6 +333,7 @@ QUICK_ACTION_LIST =
     "S8_REWARDS",
     "S9_REWARDS",
     "S10_REWARDS",
+    -- "S11_REWARDS",
     "S1_GV",
     "S3_NORMANDY",
     "S9_VRSPEEDER",
@@ -356,9 +408,16 @@ QUICK_ACTION_MENU =
     {
         ["TITLE"]  = "Unlock Season 10 Reward",
         ["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.10.DDS",
-        ["ANIM"]   = "UnlockS9Reward",
+        ["ANIM"]   = "UnlockS10Reward",
         ["REWARD"] = REWARDS_10
     },
+    -- ["S11_REWARDS"] =
+    -- {
+        -- ["TITLE"]  = "Unlock Season 11 Reward",
+        -- ["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.11.DDS",
+        -- ["ANIM"]   = "UnlockS11Reward",
+        -- ["REWARD"] = REWARDS_11
+    -- },
     ["S1_GV"] =
     {
         ["TITLE"]  = "Unlock Golden Vector Reward",
@@ -502,7 +561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "4.22",
+["NMS_VERSION"]     = "4.25",
 ["MODIFICATIONS"]   =
     {
         {
@@ -532,6 +591,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Emotes"},
                             ["ADD"]                 = EMOTEMENU
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","RS_S1_PHASE2"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml"},
+                            ["REMOVE"]              = "SECTION",
                         }
                     }
                 }

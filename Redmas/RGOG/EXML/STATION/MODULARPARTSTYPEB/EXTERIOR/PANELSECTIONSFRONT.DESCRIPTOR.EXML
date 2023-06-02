@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.25.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_FPANELS_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_FPANELS_" />
+          <Property name="Name" value="_FPanels_" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_STYLE_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_STYLE_HEX" />
+                      <Property name="Name" value="_Style_Hex" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_STYLE_RINGS" />
+                      <Property name="Name" value="_Style_Rings" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_STYLE_SPLITA" />
+                      <Property name="Name" value="_Style_SplitA" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_STYLE_SPLITB" />
+                      <Property name="Name" value="_Style_SplitB" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_STYLE_SPLITC" />
+                      <Property name="Name" value="_Style_SplitC" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_STYLE_SPLITD" />
+                      <Property name="Name" value="_Style_SplitD" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

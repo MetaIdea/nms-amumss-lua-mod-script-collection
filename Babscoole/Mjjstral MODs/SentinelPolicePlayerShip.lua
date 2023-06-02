@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShip.pak",
 ["MOD_AUTHOR"]              = "Mjjstral",
 ["MOD_MAINTENANCE"]         = "Babscoole",
-["NMS_VERSION"]             = "4.22",
+["NMS_VERSION"]             = "4.25",
 ["DESCRIPTION"]             = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -235,6 +235,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificShip.xml">
               <Property name="ShipResource" value="GcResourceElement.xml">
                 <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN" />
@@ -368,7 +369,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="IsRewardShip" value="True" />
               <Property name="FormatAsSeasonal" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
