@@ -5719,7 +5719,39 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ---------------------------------------------------------------- **FEATURES** -------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--vanilla Debug 
+
+addFeature
+(
+	ONFOOT_CONTROLS_REVISON_FEATURE,
+	{
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						['REPLACE_TYPE'] = "ALL",
+						["SECTION_ACTIVE"] = {0,1,2,3,4},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"StandardGravityScale", "0"},
+							{"ApplyGameWind", "0"},
+							{"AirSpeedFromMovementSpeedScale", "0"},
+						}
+					}
+				}
+			}
+
+	}
+)
+
+
+
+
 -- CAMERA OVERHAUL
+
 addFeature
 (
 	CENTERED_CAMERA_FEATURE,
