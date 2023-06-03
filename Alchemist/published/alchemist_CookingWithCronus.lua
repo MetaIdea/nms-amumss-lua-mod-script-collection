@@ -5,7 +5,7 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-22"
+GameVersion = "4-26"
 ModVersion = "1-3-0"
 
 --[[
@@ -953,6 +953,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_POE" />
                   <Property name="OtherStat" value="" />
@@ -962,24 +963,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMissionMessage.xml">
                   <Property name="MessageID" value="M_CHEFHI_DONE" />
                   <Property name="BroadcastInMultiplayer" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMission.xml">
                   <Property name="Mission" value="ALCH_CHEF_TDONE" />
                   <Property name="SetAsSelected" value="False" />
                   <Property name="FailRewardIfMissionActive" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -993,6 +993,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_LORE" />
                   <Property name="OtherStat" value="" />
@@ -1002,7 +1003,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -1016,6 +1016,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_WS_TUT" />
                   <Property name="OtherStat" value="" />
@@ -1025,10 +1026,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_LORE" />
                   <Property name="OtherStat" value="" />
@@ -1038,7 +1039,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -1052,16 +1052,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProductRecipe.xml">
                   <Property name="ID" value="P_CHEF_SONG" />
                   <Property name="Silent" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="SeasonRewardFormat" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_LORE" />
                   <Property name="OtherStat" value="" />
@@ -1071,7 +1072,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -1496,6 +1496,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -1510,17 +1511,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProductRecipe.xml">
                   <Property name="ID" value="COOKER" />
                   <Property name="Silent" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="SeasonRewardFormat" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -2066,11 +2066,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSendChatMessage.xml">
                   <Property name="StatusMessageId" value="CHEF_CHAT" />
                   <Property name="CustomText" value="ALCH_CHEF_JUDGE_CHAT_RDY" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -2084,11 +2084,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSendChatMessage.xml">
                   <Property name="StatusMessageId" value="CHEF_CHAT" />
                   <Property name="CustomText" value="ALCH_CHEF_JUDGE_CHAT_BYE" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -3032,6 +3032,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -3046,7 +3047,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -3060,6 +3060,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="5000" />
                   <Property name="AmountMax" value="5000" />
@@ -3068,10 +3069,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -3086,10 +3087,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_LORE" />
                   <Property name="OtherStat" value="" />
@@ -3099,7 +3100,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -3648,6 +3648,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Stage" value="GcMissionSequenceWaitForScanEvent.xml">
                   <Property name="Message" value="ALCH_CHEF_OFFER_CRON_OBJ_WAIT_B" />
                   <Property name="GalaxyMapMessage" value="UI_SCANEVENT_GOTO_MAP" />
+                  <Property name="NexusMessage" value="" />
                   <Property name="Event" value="SE_CHEFOF_CRON" />
                   <Property name="Timeout" value="0" />
                   <Property name="DistanceTimeout" value="False" />
@@ -3658,7 +3659,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
                   <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
                   <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                  <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                  <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY_CAR" />
                   <Property name="DebugText" value="" />
                 </Property>
               </Property>
@@ -3827,14 +3828,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMissionMessage.xml">
                   <Property name="MessageID" value="M_CHEF_RESET_DAY" />
                   <Property name="BroadcastInMultiplayer" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_CDH" />
                   <Property name="OtherStat" value="" />
@@ -3844,7 +3846,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -3858,6 +3859,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3867,10 +3869,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3880,10 +3882,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3893,10 +3895,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3906,10 +3908,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3919,10 +3921,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3932,10 +3934,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3945,10 +3947,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3958,10 +3960,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3971,10 +3973,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3984,10 +3986,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -3997,10 +3999,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4010,10 +4012,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4023,10 +4025,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4036,10 +4038,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4049,10 +4051,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4062,10 +4064,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4075,10 +4077,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4088,10 +4090,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4101,10 +4103,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4114,10 +4116,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4127,10 +4129,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4140,10 +4142,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4153,10 +4155,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API" />
                   <Property name="OtherStat" value="" />
@@ -4166,7 +4168,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -4180,6 +4181,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4189,10 +4191,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4202,10 +4204,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4215,10 +4217,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4228,10 +4230,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4241,10 +4243,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4254,10 +4256,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4267,10 +4269,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4280,10 +4282,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4293,10 +4295,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4306,10 +4308,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4319,10 +4321,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4332,10 +4334,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4345,10 +4347,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4358,10 +4360,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4371,10 +4373,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4384,10 +4386,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4397,10 +4399,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4410,10 +4412,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4423,10 +4425,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4436,10 +4438,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4449,10 +4451,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4462,10 +4464,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4475,10 +4477,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -4488,7 +4490,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -4502,6 +4503,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4511,10 +4513,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4524,10 +4526,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4537,10 +4539,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4550,10 +4552,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4563,10 +4565,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4576,10 +4578,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4589,10 +4591,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4602,10 +4604,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4615,10 +4617,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4628,10 +4630,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4641,10 +4643,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4654,10 +4656,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4667,10 +4669,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4680,10 +4682,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4693,10 +4695,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4706,10 +4708,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4719,10 +4721,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4732,10 +4734,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4745,10 +4747,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4758,10 +4760,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4771,10 +4773,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4784,10 +4786,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4797,10 +4799,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
@@ -4810,7 +4812,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -4824,6 +4825,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4833,10 +4835,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4846,10 +4848,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4859,10 +4861,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4872,10 +4874,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4885,10 +4887,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4898,10 +4900,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4911,10 +4913,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4924,10 +4926,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4937,10 +4939,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4950,10 +4952,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4963,10 +4965,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4976,10 +4978,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -4989,10 +4991,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5002,10 +5004,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5015,10 +5017,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5028,10 +5030,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5041,10 +5043,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5054,10 +5056,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5067,10 +5069,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5080,10 +5082,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5093,10 +5095,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5106,10 +5108,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5119,10 +5121,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -5132,7 +5134,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -5146,6 +5147,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5155,10 +5157,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5168,10 +5170,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5181,10 +5183,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5194,10 +5196,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5207,10 +5209,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5220,10 +5222,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5233,10 +5235,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5246,10 +5248,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5259,10 +5261,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5272,10 +5274,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5285,10 +5287,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5298,10 +5300,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5311,10 +5313,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5324,10 +5326,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5337,10 +5339,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5350,10 +5352,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5363,10 +5365,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5376,10 +5378,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5389,10 +5391,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5402,10 +5404,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5415,10 +5417,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5428,10 +5430,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5441,10 +5443,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
@@ -5454,7 +5456,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -5468,6 +5469,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5477,10 +5479,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5490,10 +5492,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5503,10 +5505,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5516,10 +5518,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5529,10 +5531,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5542,10 +5544,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5555,10 +5557,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5568,10 +5570,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5581,10 +5583,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5594,10 +5596,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5607,10 +5609,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5620,10 +5622,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5633,10 +5635,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5646,10 +5648,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5659,10 +5661,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5672,10 +5674,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5685,10 +5687,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5698,10 +5700,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5711,10 +5713,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5724,10 +5726,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5737,10 +5739,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5750,10 +5752,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5763,10 +5765,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -5776,7 +5778,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -5790,6 +5791,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5799,10 +5801,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5812,10 +5814,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5825,10 +5827,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5838,10 +5840,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5851,10 +5853,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5864,10 +5866,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5877,10 +5879,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5890,10 +5892,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5903,10 +5905,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5916,10 +5918,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5929,10 +5931,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5942,10 +5944,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5955,10 +5957,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5968,10 +5970,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5981,10 +5983,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -5994,10 +5996,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -6007,10 +6009,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -6020,10 +6022,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -6033,10 +6035,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -6046,10 +6048,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -6059,10 +6061,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -6072,10 +6074,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -6085,10 +6087,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
@@ -6098,7 +6100,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -6112,6 +6113,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6121,10 +6123,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6134,10 +6136,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6147,10 +6149,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6160,10 +6162,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6173,10 +6175,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6186,10 +6188,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6199,10 +6201,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6212,10 +6214,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6225,10 +6227,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6238,10 +6240,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6251,10 +6253,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6264,10 +6266,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6277,10 +6279,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6290,10 +6292,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6303,10 +6305,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6316,10 +6318,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6329,10 +6331,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6342,10 +6344,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6355,10 +6357,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6368,10 +6370,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6381,10 +6383,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6394,10 +6396,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6407,10 +6409,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
@@ -6420,7 +6422,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -6434,6 +6435,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6443,10 +6445,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6456,10 +6458,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6469,10 +6471,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6482,10 +6484,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6495,10 +6497,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6508,10 +6510,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6521,10 +6523,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6534,10 +6536,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6547,10 +6549,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6560,10 +6562,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6573,10 +6575,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6586,10 +6588,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6599,10 +6601,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6612,10 +6614,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6625,10 +6627,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6638,10 +6640,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6651,10 +6653,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6664,10 +6666,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6677,10 +6679,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6690,10 +6692,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6703,10 +6705,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6716,10 +6718,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6729,10 +6731,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -6742,7 +6744,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -6756,6 +6757,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -6765,10 +6767,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -6778,10 +6780,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_C" />
                   <Property name="OtherStat" value="" />
@@ -6791,7 +6793,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -7634,6 +7635,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="EnablingConditions">
                   <Property value="GcMissionConditionMissionCompleted.xml">
                     <Property name="MissionID" value="BIO_FRIG" />
+                    <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
                   </Property>
@@ -7686,6 +7688,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="EnablingConditions">
                   <Property value="GcMissionConditionMissionCompleted.xml">
                     <Property name="MissionID" value="BIO_FRIG" />
+                    <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
                   </Property>
@@ -7774,6 +7777,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="ForceSearchFreighterAndChests" value="True" />
                         <Property name="SearchEveryShip" value="True" />
                         <Property name="TakeAmountFromSeasonData" value="False" />
+                        <Property name="TakeIdFromSeasonData" value="False" />
                         <Property name="DependentOnSeasonMilestone" value="False" />
                         <Property name="UseAmountToAffordRecipe" value="" />
                         <Property name="TakeAffordRecipeFromSeasonData" value="False" />
@@ -7781,6 +7785,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Purpose" value="GcItemNeedPurpose.xml">
                           <Property name="ItemPurpose" value="None" />
                         </Property>
+                        <Property name="ForceInventoryHintAtAllTimes" value="False" />
+                        <Property name="UseProductIconAsMissionIcon" value="False" />
+                        <Property name="DoNotFormatText" value="False" />
                       </Property>
                       <Property value="GcMissionConditionHasProduct.xml">
                         <Property name="Default" value="GcDefaultMissionProductEnum.xml">
@@ -7792,6 +7799,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="ForceSearchFreighterAndChests" value="True" />
                         <Property name="SearchEveryShip" value="True" />
                         <Property name="TakeAmountFromSeasonData" value="False" />
+                        <Property name="TakeIdFromSeasonData" value="False" />
                         <Property name="DependentOnSeasonMilestone" value="False" />
                         <Property name="UseAmountToAffordRecipe" value="" />
                         <Property name="TakeAffordRecipeFromSeasonData" value="False" />
@@ -7799,6 +7807,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Purpose" value="GcItemNeedPurpose.xml">
                           <Property name="ItemPurpose" value="None" />
                         </Property>
+                        <Property name="ForceInventoryHintAtAllTimes" value="False" />
+                        <Property name="UseProductIconAsMissionIcon" value="False" />
+                        <Property name="DoNotFormatText" value="False" />
                       </Property>
                     </Property>
                   </Property>
@@ -8014,6 +8025,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="EnablingConditions">
                   <Property value="GcMissionConditionMissionCompleted.xml">
                     <Property name="MissionID" value="BIO_FRIG" />
+                    <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
                   </Property>
@@ -27051,6 +27063,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -27065,7 +27078,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27079,6 +27091,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="242" />
                   <Property name="AmountMax" value="242" />
@@ -27087,7 +27100,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27101,6 +27113,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="1208" />
                   <Property name="AmountMax" value="1208" />
@@ -27109,7 +27122,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27123,6 +27135,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="2415" />
                   <Property name="AmountMax" value="2415" />
@@ -27131,7 +27144,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27145,6 +27157,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="207" />
                   <Property name="AmountMax" value="207" />
@@ -27153,7 +27166,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27167,6 +27179,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="1035" />
                   <Property name="AmountMax" value="1035" />
@@ -27175,7 +27188,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27189,6 +27201,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="2070" />
                   <Property name="AmountMax" value="2070" />
@@ -27197,7 +27210,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27211,6 +27223,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="219" />
                   <Property name="AmountMax" value="219" />
@@ -27219,7 +27232,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27233,6 +27245,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="1093" />
                   <Property name="AmountMax" value="1093" />
@@ -27241,7 +27254,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27255,6 +27267,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="2185" />
                   <Property name="AmountMax" value="2185" />
@@ -27263,7 +27276,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27277,6 +27289,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="230" />
                   <Property name="AmountMax" value="230" />
@@ -27285,7 +27298,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27299,6 +27311,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="1150" />
                   <Property name="AmountMax" value="1150" />
@@ -27307,7 +27320,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27321,6 +27333,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="2300" />
                   <Property name="AmountMax" value="2300" />
@@ -27329,7 +27342,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27343,6 +27355,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="242" />
                   <Property name="AmountMax" value="242" />
@@ -27351,7 +27364,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27365,6 +27377,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="1208" />
                   <Property name="AmountMax" value="1208" />
@@ -27373,7 +27386,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27387,6 +27399,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="2415" />
                   <Property name="AmountMax" value="2415" />
@@ -27395,7 +27408,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27409,6 +27421,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="207" />
                   <Property name="AmountMax" value="207" />
@@ -27417,7 +27430,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27431,6 +27443,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="1035" />
                   <Property name="AmountMax" value="1035" />
@@ -27439,7 +27452,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27453,6 +27465,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="2070" />
                   <Property name="AmountMax" value="2070" />
@@ -27461,7 +27474,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27475,6 +27487,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27484,7 +27497,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27498,6 +27510,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27507,7 +27520,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27521,6 +27533,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27530,7 +27543,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27544,6 +27556,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27553,7 +27566,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27567,6 +27579,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27576,7 +27589,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27590,6 +27602,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27599,7 +27612,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27613,6 +27625,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27622,7 +27635,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27636,6 +27648,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27645,7 +27658,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27659,6 +27671,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27668,7 +27681,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27682,6 +27694,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27691,7 +27704,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27705,6 +27717,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27714,7 +27727,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27728,6 +27740,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27737,7 +27750,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27751,6 +27763,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27760,7 +27773,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27774,6 +27786,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
@@ -27783,7 +27796,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27797,6 +27809,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -27806,7 +27819,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27820,6 +27832,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -27829,7 +27842,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27843,6 +27855,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -27852,7 +27865,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27866,6 +27878,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -27875,7 +27888,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27889,6 +27901,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -27898,7 +27911,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27912,6 +27924,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -27921,7 +27934,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27935,6 +27947,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -27944,7 +27957,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27958,6 +27970,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -27967,7 +27980,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -27981,6 +27993,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -27990,7 +28003,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28004,6 +28016,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -28013,7 +28026,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28027,6 +28039,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -28036,7 +28049,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28050,6 +28062,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -28059,7 +28072,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28073,6 +28085,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -28082,7 +28095,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28096,6 +28108,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -28105,7 +28118,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28119,6 +28131,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -28128,7 +28141,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28142,6 +28154,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -28151,7 +28164,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28165,6 +28177,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -28174,7 +28187,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28188,6 +28200,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
@@ -28197,7 +28210,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28211,6 +28223,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -28220,7 +28233,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28234,6 +28246,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -28243,7 +28256,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28257,6 +28269,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -28266,7 +28279,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28280,6 +28292,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -28289,7 +28302,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28303,6 +28315,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -28312,7 +28325,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28326,6 +28338,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -28335,7 +28348,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28349,6 +28361,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
@@ -28358,7 +28371,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28372,6 +28384,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
@@ -28381,7 +28394,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28395,6 +28407,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="225" />
                   <Property name="AmountMax" value="375" />
@@ -28403,7 +28416,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28417,6 +28429,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="150" />
                   <Property name="AmountMax" value="250" />
@@ -28425,7 +28438,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28439,6 +28451,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="75" />
                   <Property name="AmountMax" value="125" />
@@ -28447,7 +28460,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28461,6 +28473,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="375" />
                   <Property name="AmountMax" value="375" />
@@ -28469,7 +28482,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28483,6 +28495,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="250" />
                   <Property name="AmountMax" value="250" />
@@ -28491,7 +28504,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28505,6 +28517,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="125" />
                   <Property name="AmountMax" value="125" />
@@ -28513,7 +28526,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Currency" value="Nanites" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28527,6 +28539,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28536,10 +28549,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28554,7 +28567,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28568,6 +28580,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28577,10 +28590,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28595,7 +28608,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28609,6 +28621,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28618,10 +28631,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28636,7 +28649,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28650,6 +28662,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28659,10 +28672,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28677,7 +28690,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28691,6 +28703,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28700,10 +28713,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28718,7 +28731,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28732,6 +28744,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28741,10 +28754,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28759,7 +28772,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28773,6 +28785,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28782,10 +28795,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28800,7 +28813,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28814,6 +28826,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28823,10 +28836,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28841,7 +28854,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28855,6 +28867,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28864,10 +28877,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28882,7 +28895,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28896,6 +28908,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28905,10 +28918,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28923,7 +28936,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28937,6 +28949,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28946,10 +28959,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -28964,7 +28977,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -28978,6 +28990,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -28987,10 +29000,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29005,7 +29018,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29019,6 +29031,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -29028,10 +29041,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29046,7 +29059,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29060,6 +29072,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_C" />
                   <Property name="OtherStat" value="" />
@@ -29069,10 +29082,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29087,7 +29100,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29101,6 +29113,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29110,10 +29123,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29128,7 +29141,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29142,6 +29154,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29151,10 +29164,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29169,7 +29182,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29183,6 +29195,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29192,10 +29205,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29210,7 +29223,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29224,6 +29236,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29233,10 +29246,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29251,7 +29264,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29265,6 +29277,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29274,10 +29287,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29292,7 +29305,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29306,6 +29318,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29315,10 +29328,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29333,7 +29346,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29347,6 +29359,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29356,10 +29369,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29374,7 +29387,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29388,6 +29400,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29397,10 +29410,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29415,7 +29428,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29429,6 +29441,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29438,10 +29451,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29456,7 +29469,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29470,6 +29482,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29479,10 +29492,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29497,7 +29510,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29511,6 +29523,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29520,10 +29533,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29538,7 +29551,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29552,6 +29564,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29561,10 +29574,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29579,7 +29592,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29593,6 +29605,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29602,10 +29615,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29620,7 +29633,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29634,6 +29646,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29643,10 +29656,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29661,7 +29674,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29675,6 +29687,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29684,10 +29697,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29702,7 +29715,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29716,6 +29728,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29725,10 +29738,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29743,7 +29756,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29757,6 +29769,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29766,10 +29779,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29784,7 +29797,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29798,6 +29810,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_C" />
                   <Property name="OtherStat" value="" />
@@ -29807,10 +29820,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29825,7 +29838,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29839,6 +29851,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_C" />
                   <Property name="OtherStat" value="" />
@@ -29848,10 +29861,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29866,7 +29879,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29880,6 +29892,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_C" />
                   <Property name="OtherStat" value="" />
@@ -29889,10 +29902,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29907,7 +29920,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29921,6 +29933,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_C" />
                   <Property name="OtherStat" value="" />
@@ -29930,10 +29943,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29948,7 +29961,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -29962,6 +29974,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_C" />
                   <Property name="OtherStat" value="" />
@@ -29971,10 +29984,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -29989,7 +30002,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -30003,6 +30015,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_C" />
                   <Property name="OtherStat" value="" />
@@ -30012,10 +30025,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -30030,7 +30043,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -30044,6 +30056,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_C" />
                   <Property name="OtherStat" value="" />
@@ -30053,10 +30066,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -30071,7 +30084,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -30085,6 +30097,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_C" />
                   <Property name="OtherStat" value="" />
@@ -30094,10 +30107,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Add" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -30112,7 +30125,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -30126,6 +30138,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -30140,7 +30153,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -30154,13 +30166,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProductRecipe.xml">
                   <Property name="ID" value="P_CHEF_SONG" />
                   <Property name="Silent" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="SeasonRewardFormat" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -30174,6 +30186,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_WS_TUT" />
                   <Property name="OtherStat" value="" />
@@ -30183,10 +30196,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_LORE" />
                   <Property name="OtherStat" value="" />
@@ -30196,16 +30209,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="ModifyType" value="Set" />
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMission.xml">
                   <Property name="Mission" value="ALCH_CHEF_OFFER" />
                   <Property name="SetAsSelected" value="False" />
                   <Property name="FailRewardIfMissionActive" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -33905,6 +33917,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="EnablingConditions">
                   <Property value="GcMissionConditionMissionCompleted.xml">
                     <Property name="MissionID" value="BIO_SHIP5" />
+                    <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
                   </Property>
@@ -33951,6 +33964,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="EnablingConditions">
                   <Property value="GcMissionConditionMissionCompleted.xml">
                     <Property name="MissionID" value="BIO_SHIP5" />
+                    <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
                   </Property>
@@ -34007,6 +34021,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="EnablingConditions">
                   <Property value="GcMissionConditionMissionCompleted.xml">
                     <Property name="MissionID" value="BIO_SHIP5" />
+                    <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
                   </Property>
@@ -34108,24 +34123,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardEndFrigateFlyby.xml" />
                 <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardEndFrigateFlyby.xml" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMissionMessage.xml">
                   <Property name="MessageID" value="M_CHEFWS_DONE" />
                   <Property name="BroadcastInMultiplayer" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMissionMessage.xml">
                   <Property name="MessageID" value="M_CHEF_DREAM" />
                   <Property name="BroadcastInMultiplayer" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -34139,16 +34154,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
-                <Property name="Reward" value="GcRewardEndFrigateFlyby.xml" />
                 <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardEndFrigateFlyby.xml" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMissionMessage.xml">
                   <Property name="MessageID" value="M_CHEFWS_DONE" />
                   <Property name="BroadcastInMultiplayer" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -34162,6 +34177,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -34176,7 +34192,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -34190,6 +34205,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -34204,10 +34220,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -34222,7 +34238,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="SeasonRewardListFormat" value="" />
                   <Property name="RequiresTech" value="" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -34589,6 +34604,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                   <Property name="ForceSearchFreighterAndChests" value="True" />
                                   <Property name="SearchEveryShip" value="True" />
                                   <Property name="TakeAmountFromSeasonData" value="False" />
+                                  <Property name="TakeIdFromSeasonData" value="False" />
                                   <Property name="DependentOnSeasonMilestone" value="False" />
                                   <Property name="UseAmountToAffordRecipe" value="" />
                                   <Property name="TakeAffordRecipeFromSeasonData" value="False" />
@@ -34596,6 +34612,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                   <Property name="Purpose" value="GcItemNeedPurpose.xml">
                                     <Property name="ItemPurpose" value="None" />
                                   </Property>
+                                  <Property name="ForceInventoryHintAtAllTimes" value="False" />
+                                  <Property name="UseProductIconAsMissionIcon" value="False" />
+                                  <Property name="DoNotFormatText" value="False" />
                                 </Property>
                               </Property>
                               <Property name="Consequences" />
@@ -35080,6 +35099,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardExchangeProduct.xml">
                   <Property name="IDToGive" value="P_CHEF_SONG" />
                   <Property name="IDToTake" value="P_CHEF_SONG_X" />
@@ -35089,7 +35109,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="HideNewProduct" value="True" />
                   <Property name="ForceSpecialMessage" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -35175,6 +35194,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ForceSearchFreighterAndChests" value="False" />
               <Property name="SearchEveryShip" value="False" />
               <Property name="TakeAmountFromSeasonData" value="False" />
+              <Property name="TakeIdFromSeasonData" value="False" />
               <Property name="DependentOnSeasonMilestone" value="False" />
               <Property name="UseAmountToAffordRecipe" value="" />
               <Property name="TakeAffordRecipeFromSeasonData" value="False" />
@@ -35182,6 +35202,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="Purpose" value="GcItemNeedPurpose.xml">
                 <Property name="ItemPurpose" value="None" />
               </Property>
+              <Property name="ForceInventoryHintAtAllTimes" value="False" />
+              <Property name="UseProductIconAsMissionIcon" value="False" />
+              <Property name="DoNotFormatText" value="False" />
             </Property>
           </Property>
         </Property>
@@ -36120,13 +36143,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMissionSeeded.xml">
               <Property name="Mission" value="ALCH_CHEF_RESET" />
               <Property name="MissionNoGroundCombat" value="" />
               <Property name="MissionNoSpaceCombat" value="" />
               <Property name="InheritActiveMultiplayerMissionSeed" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -36140,6 +36163,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardModifyStat.xml">
               <Property name="Stat" value="CHEF_CDH" />
               <Property name="OtherStat" value="" />
@@ -36149,7 +36173,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="ModifyType" value="Set" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -36163,6 +36186,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardModifyStat.xml">
               <Property name="Stat" value="CHEF_POE" />
               <Property name="OtherStat" value="" />
@@ -36172,16 +36196,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="ModifyType" value="Set" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMission.xml">
               <Property name="Mission" value="ALCH_CHEF_JUDGE" />
               <Property name="SetAsSelected" value="False" />
               <Property name="FailRewardIfMissionActive" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -36195,6 +36218,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardModifyStat.xml">
               <Property name="Stat" value="CHEF_POE" />
               <Property name="OtherStat" value="" />
@@ -36204,7 +36228,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="ModifyType" value="Set" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -36218,6 +36241,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardExchangeProduct.xml">
               <Property name="IDToGive" value="P_CHEF_SONG_X" />
               <Property name="IDToTake" value="P_CHEF_SONG" />
@@ -36227,16 +36251,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="HideNewProduct" value="True" />
               <Property name="ForceSpecialMessage" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMission.xml">
               <Property name="Mission" value="ALCH_CHEF_WHALE" />
               <Property name="SetAsSelected" value="False" />
               <Property name="FailRewardIfMissionActive" value="True" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
