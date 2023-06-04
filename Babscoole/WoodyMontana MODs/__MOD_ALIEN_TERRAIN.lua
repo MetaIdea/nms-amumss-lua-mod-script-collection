@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "__MOD_ALIEN_TERRAIN.pak",
 ["MOD_AUTHOR"]    = "WoodyMontana",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.25",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {

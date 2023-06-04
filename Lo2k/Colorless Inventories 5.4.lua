@@ -236,10 +236,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 		= "Colorless Inventories 5.3.pak", 
+  ["MOD_FILENAME"] 		= "Colorless Inventories 5.4.pak", 
   ["MOD_AUTHOR"]		= "Lo2k",
   ["LUA_AUTHOR"]		= "Lo2k",
-  ["NMS_VERSION"]		= "4.21",
+  ["NMS_VERSION"]		= "4.26",
   ["MOD_DESCRIPTION"]	= "This mods changes background of most items",
   ["MODIFICATIONS"] = 
   {

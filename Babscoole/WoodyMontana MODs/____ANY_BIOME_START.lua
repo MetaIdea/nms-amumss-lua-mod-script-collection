@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "____ANY_BIOME_START.pak",
 ["MOD_AUTHOR"]    = "WoodyMontana",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.25",
 ["MODIFICATIONS"] =
     {
         {
@@ -22,6 +22,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
     <Property value="GcBiomeType.xml">
       <Property name="Biome" value="Barren" />
+    </Property>
+    <Property value="GcBiomeType.xml">
+      <Property name="Biome" value="Swamp" />
+    </Property>
+    <Property value="GcBiomeType.xml">
+      <Property name="Biome" value="Lava" />
     </Property>
 ]]
                         },

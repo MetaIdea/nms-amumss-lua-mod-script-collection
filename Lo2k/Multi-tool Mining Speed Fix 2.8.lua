@@ -29,10 +29,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 				= "Multi-Tool Mining Speed Fix 2.7.pak", 
+  ["MOD_FILENAME"] 				= "Multi-Tool Mining Speed Fix 2.8.pak", 
   ["MOD_AUTHOR"]				= "Lo2k",
   ["LUA_AUTHOR"]				= "Lo2k",
-  ["NMS_VERSION"]				= "4.22",
+  ["NMS_VERSION"]				= "4.26",
   ["MOD_DESCRIPTION"]			= "This mod really changes multi-tool efficiency",
   ["MODIFICATIONS"] 			= 
   {

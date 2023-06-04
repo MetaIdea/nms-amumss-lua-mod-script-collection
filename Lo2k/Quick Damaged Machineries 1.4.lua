@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Quick Damaged Machineries 1.3.pak", 
+["MOD_FILENAME"] 			= "Quick Damaged Machineries 1.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.21",
+["NMS_VERSION"]				= "4.26",
 ["MOD_DESCRIPTION"]			= "This mod opens damaged machineries in 1-click",
 ["MODIFICATIONS"] 			= 
 	{

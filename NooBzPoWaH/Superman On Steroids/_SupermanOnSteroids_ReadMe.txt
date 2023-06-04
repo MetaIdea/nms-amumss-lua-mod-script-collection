@@ -23,9 +23,9 @@ with any other ones modifying the same file(s) or update the Mod yourself when i
 
 Compatibility : 
 
-Current Mod version : 4.20
+Current Mod version : 4.26
 
-Compatible with game version : NMS "INTERCEPTOR" v.4.20 (Steam's build 10939490)
+Compatible with game version : NMS "ON MAC" v.4.26 (Steam's build 11378922)
 
 3xperimental branch is not supported !
 

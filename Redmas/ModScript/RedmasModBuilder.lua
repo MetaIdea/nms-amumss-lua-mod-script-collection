@@ -15,186 +15,256 @@
 --                               			CTRL+F **FEATURES**
 --                                              to edit them
 INIT_PRESET ={
-	["MODNAME"] = "____REDMAS_UTOPIA-REVAMP-GAMEOVERHAUL-CUSTOMISABLE-VERSION",
+["MODNAME"] = "UNTITLED_MOD_EXAMPLE",--> change the mod name here
+----------------------------------------------------------------------------
+-- Don't forget to build again your mod after each vanilla updates ( it's better to wait 2 days before doing it in order to have all features updated)
+-- Check for new version of that script after a vanilla update at https://www.nexusmods.com/nomanssky/mods/2791
+-- When you change the mod name, don't forget to remove the previously named one inside the No Man's Sky "MODS" folder ( [NMSGAMEFOLDER] / GAMEDATA / PCBANKS / MODS )
+-- I ve put alternative values in comments inside ""
+----------------------------------------------------------------------------
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
-        ["VISUAL_OVERHAUL"] = "ON", -- > this var off will disable all features under that node / Modded space station are enabled here
-        ["REDMAS_WATER_REFLECTIONS"] = "ON", -- redmas water mod
-        ["SPACE_BLUR_FEATURE"] = "ON",
-        ["FILTERS_SWAP_FEATURE"] = "ON",
-        ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
-        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
-        ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
-        ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- (REALISTIC / ON / FANTASY )
-        ["ASTEROIDS_FIELDS_TYPE"] = "REALISTIC", -- ("FANTASY" / "REALISTIC" / "GLUED")
-        ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",  -- ( METALIC SPACESHIP MOD )
-        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",  -- ( METALIC SPACESHIP MOD )
-        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON", -- ( METALIC SPACESHIP MOD )
+        ["VISUAL_OVERHAUL"] = "ON", -- > this var {"OFF"} will disable all features under that node / Modded space station are enabled here
+        --
+        ["REDMAS_WATER_REFLECTIONS"] = "ON", -- {"OFF"} / redmas water mod -- Creates foam , waves and reflections on water --> it makes it look more realistic       
+        ["SPACE_BLUR_FEATURE"] = "ON", -- {"OFF"} This value will create a blur effect while in space -- /!\ with this var on you have to activate DepthOfField in photomode      
+        ["FILTERS_SWAP_FEATURE"] = "ON", -- {"OFF"} with this value on, default filter are replaced with brighter ones Ctrl+F "SPACE_BLUR_FEATURE" to edit it
+        -- BINOCULARS_TYPE SUN value will replace the binoclar filter with a vintage filter,
+        -- BINOCULARS_TYPE Clear will remove the visual filter when using binoculars  
+        ["BINOCULARS_TYPE"] = "SUN", -- {"SUN"} / {"CLEAR"}  
+        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON", -- {"OFF"} / This will reduce the speed lines while using the pulse warp in solar systems
+        -- SPACESHIPS_TRAILS_TYPE REALISTIC : No visible trails for player and AI spaceships - Enemies and allies trails are visible during spaceships combat
+        -- SPACESHIPS_TRAILS_TYPE E3 : restore the previous spaceship trails of NMS ( Pre-NEXT update)
+        ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- ( {"REALISTIC"} / {"VANILLA"} / {"E3"} )
+        -- REALISTIC SPACE_COLOURS_TYPE Make space much darker( but not always full black) - it can be combined with ULTRA_DIVERSE_SPACE_COLOURS option ON
+        -- SPACE_COLOURS_TYPE ON is vanilla unless you use the ULTRA_DIVERSE_SPACE_COLOURS option ON 
+        -- FANTASY SPACE_COLOURS_TYPE Make all space darker ( but still colorful) - it can be combined with ULTRA_DIVERSE_SPACE_COLOURS option ON
+        ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- ({"REALISTIC"} / {"ON"} / {"FANTASY"} )
+        -- REALISTIC ASTEROIDS_FIELDS_TYPE this meant to make astroid fields more natural ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
+        -- FANTASY ASTEROIDS_FIELDS_TYPE this meant to make astroid easier to flight around ( very spaced and smaller) ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
+        -- GLUED ASTEROIDS_FIELDS_TYPE this will make asteroids packed, like they are in vanilla, but with more spacing ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
+        ["ASTEROIDS_FIELDS_TYPE"] = "REALISTIC", -- ({"FANTASY"}  / {"REALISTIC"} / {"GLUED"})
+        -- FIGHTERS_SPACESHIPS_REPAINT ON for Dirty looking metal spaceships ( allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
+        -- FIGHTERS_SPACESHIPS_REPAINT FULL for full metal spaceships ( do not allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "FULL",  -- {"ON"} / {"FULL"} / {"OFF"} ( METALIC SPACESHIP MOD )
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON", -- {"ON"} / {"OFF"} -- ( METALIC SPACESHIP MOD ) CTRL + F **SPACESHIPS_REPAINT** to edit it 
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON", -- {"ON"} / {"OFF"} ( METALIC SPACESHIP MOD ) CTRL + F **SPACESHIPS_REPAINT** to edit it 
+        --
     },
+    -----------------------------------------------------------------------------------------------------------
+
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name from ../RGOG/IMAGES
-        ["ENGINE_SPASH_SCREEN"] = "E-E3-1", --"E-E3-1"   or another img name ../RGOG/IMAGES
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name ../RGOG/IMAGES
-        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE3", --"E3-RUINS"   or another img name ../RGOG/IMAGES
-        ["TRANSPARENT_OPTIONS_MENU"] = "OFF", -- -- this var is not used anymore 
+        -- Edit them with paintdotnet tool for example 
+        -- You can download a background at https://wall.alphacoders.com/by_sub_category.php?id=226189&name=No+Man%27s+Sky+Wallpapers
+        ---------------------------------------------------------------------------------------------------------------------------
+        -- Trick for creating your own image:
+        -- 1 open with paintdotnet _TEMPLATE.DDS in ../RGOG/IMAGES/
+        -- 2 open with paintdotnet the image that you want to add ( + edit it if you want )
+        -- 3 Edit > select all + Edit>copy on the image that you want to add
+        -- 4 go to the template image .dds already open in paintdotnet ( you did it in step 1)
+        -- 5 Edit > Paste in a new layer ( dont adjust the image area when asked to )
+        -- 6 save as a new .DDS inside ../RGOG/IMAGES/
+        ---------------------------------------------------------------------------------------------------------------------------
+        -- Copy paste the dds images names from ../RGOG/IMAGES/ and paste them here
+        ["HELLO_GAMES_SPASH_SCREEN"] = "SCIFIPAINT",  -- "","HG-E3-1"  or another img name from ../RGOG/IMAGES
+        -- This is the first loading Screen
+        ["ENGINE_SPASH_SCREEN"] = "E3-SHIPS", --  "" , "E-E3-1"   or another img name ../RGOG/IMAGES
+        -- This is the seconf loading Screen
+        ["NMS_TITLE"] = "TITLE-ATLAS", --  "" , "TITLE-WAYPOINT"   or another img name ../RGOG/IMAGES
+        -- this will replace the title loading screen
+        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE4", --  "" , "E3-RUINS"   or another img name ../RGOG/IMAGES
+        -- this will replace the Menus Screens
+        ["TRANSPARENT_OPTIONS_MENU"] = "OFF", -- -- this var is not used anymore because it was impossibe to read the menus in some situations
     },
     ["CAMERA_FEATURES"] =
     {
-	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
+	    ["CAMERA_OVERHAUL_FEATURE"] = "ON", -- "ON"/"OFF" this value enable the camera changes
+        -- ( larger FOV , exocrafts cam improvements for mining from exocrafts, camera is more far during system warp)
+        -- CTRL+F **CAMERA_OVERHAUL_FEATURES** to edit the changes
 	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
-	    ["CENTERED_CAMERA_FEATURE"] = "OFF", -- this var is not used anymore 
+        -- this is different from the game menu no shake : this changes will remove shaking for everything exept getting hit, sandworms , and volcanos.
+        -- it can be combine with the vanilla share adjustement
+        -- I suggest to use it, in order to have a feeling of danger and to be in rare situations
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF", -- this var is not used anymore -- had a cam auto move bug / felt unconfortable to use
     },
     ["GAMEPLAY_FEATURES"] =
     {
         ["GAMEPLAY_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
         ["QOL_FEATURES"] =
         {
-            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON",
-            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
-            ["NEW_INTERACTIONS_FEATURE"] = "ON",
-            ["ADVANCED_BUILDS_FEATURE"] = "ON",
-            ["FREE_POWER_ON_EM_GENERATORS"] = "ON",
+            -- Quality of Life features
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON", -- "ON"/"OFF"  more character shape customisations -- vanilla have 5 boty types, this mod will add 20 in between body shapes
+            ["MINING_SPEED"] = "3", -- 2 to 10 (10 = REDMAS INSTANT MINING mod) -- adjust the mining speed. it works by reducing all props lifebar / health
+            ["NEW_INTERACTIONS_FEATURE"] = "ON", -- "ON"/"OFF"  ( New Gameplay Mechanics ) -- add new interactions to decorations - add useful stuff in hangars - reworks freighters bridge
+            ["ADVANCED_BUILDS_FEATURE"] = "ON", --  "ON"/"OFF"  ( more buildable objects on freighter planets and setlements )
+            ["FREE_POWER_ON_EM_GENERATORS"] = "ON", -- "ON"/"OFF"   ( electro magnetic generator always give power with that value on )
         },
         ["ONFOOT_GAMEPLAY_FEATURES"] =
         {
-            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",
-            ["LONGER_STEATH_FEATURE"] = "OFF",
-            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "OFF",
-            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
-            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "ON",
-            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",  -- > this var off will disable all features under that node
+            -- Character movements polishing -- since NMS 4.25 it also improve the capes movements
+            ["LONGER_STEALTH_FEATURE"] = "OFF", -- "ON"/"OFF" 
+            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON", -- "ON"/"OFF" 
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF", -- "ON"/"OFF" 
+            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "ON", -- "ON"/"OFF" 
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "ON", -- "ON"/"OFF" 
         },
         ["SPACESHIPS_GAMEPLAY_FEATURES"] =
         {
-          ["HOVER_MODE"] = "ON",
-          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON", -- player and AI spaceships controls rework 
+          ["HOVER_MODE"] = "ON", -- "ON"/"OFF" HOVERMODE FOR ALL SPACESHIPS
+          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON", -- -- "ON"/"OFF"  player and AI spaceships controls rework 
         },
         ["VEHICLES_FEATURES"] =
         {
-            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON",
-            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON",
-            ["CUSTOM_NOMAD_EXOCRAFT"] = "ON",
-            ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON", --  "KANEDA BIKE INSPIRED SKIN"
-            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
-            ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
-            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
-            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
-            ["GIANT_MECHS_BETA_FEATURE"] = "ON",
-            ["MECHS_SIZE_MULTIPLIER"] = 2,  -- ( 2 to 10 -- adviced size : 2 )
+            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON", -- "ON"/"OFF"  player and AI spaceships controls rework CTRL+F **VEHICULE_HANDLINGS** for editing it
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "OFF", -- "ON"/"OFF" this will add dragonfly unused exocraft with a custom model that can be summoned & customised at trading posts
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF", -- "ON"/"OFF" this value ON will enable the custom model that i did for the nomad ( ball exocraft ) i am planing to add more models ( the hoverbike for example)
+            ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON", -- "ON"/"OFF" this value ON will enable the custom model that i did for the pilgrim: REDMASPOD v3 ( a KANEDA BIKE INSPIRED SKIN )
+            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "ON"/"OFF" "MAKO-A" ( "Mass Effect" Inspired custom model" for the colossus
+            ["CUSTOM_ROAMER_EXOCRAFT"] = "ON", -- "ON"/"OFF" this value ON will enable the custom model that i did for the roamer : a more aggressive / sport car looking version of the vanilla roamer
+            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF", -- "ON"/"OFF" this value on will add LARGER BEHIND WHEELS on the custom model for the roamer
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "OFF", -- "ON"/"OFF" this value on will add additional lamps on the custom model for the roamer ( i had to disable their light they were too strong )
+            ["GIANT_MECHS_BETA_FEATURE"] = "ON", -- "ON"/"OFF" this value on will rescale both mechs ( player and sentinel ( because they are the same one for the game ))
+            ["MECHS_SIZE_MULTIPLIER"] = 2,  -- ( "2" to "10" -- adviced size : 2 ) notice that this param requires a integer, not a string
         },
     },
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
-        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
+        --
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON", -- "ON"/"OFF" This will increase the birds, fishs and butterflies, but will make everything else sparse for balancing the performance
+        ["MAX_CREATURES_NUMBER"] = 40, -- "10" < - > "20"  max number of the birds, fishs and butterflies when CREATURES_HIGH_DENSITY_FEATURE is ON. notice that this param requires a integer, not a string
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
-        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
+        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps )
         ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON", -- this var is not used anymore 
         ["GIANTS_CREATURES_FEATURE"] = "ON",
-        ["GIANTS_MAX_SIZE"] = "54", -- 8 <-> 94 (8 ( vanilla ) / 94 (very huge.)) -- recommanded 54
+        ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 94 (very huge.)) -- recommanded 54
     },
     ["GENERATION_FEATURES"] =
     {
         ["GENERATION_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
+        --
         ["COLORS_AUTO_GENERATION_FEATURES"] =
         {
 			-- The script will procedurally generate new colours possibilties // they will be diferent at each generation of the pak
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
-            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
         },
         ["PLANETS_GENERATION_FEATURES"] =
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ORIGINS", -- "EPIC_FANTASY" , "ORIGINS" or "ON" or "OFF"-- "SCI_FI_FANTASY"is deprecated
+                -- Mods for the voxel generation
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "EPIC_FANTASY" , "ORIGINS" or "ON" or "OFF" 
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- inverts the ressources deposits ( making them out of the ground )
                 ["TERRAIN_HEIGHT_MAX"] = "40", -- higher values can make the game unstable
             },
             ["BIOMES_FEATURES"] = -- world generation features
             {
-                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "ON", -- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
-                ["SKY_BIOMES_FEATURE"] = "ON", -- floating things in the skies
-                ["STORM_BIOMES_FEATURES"] = "OFF", -- this var is not used anymore 
-                ["GIANTS_BIOMES_FEATURE"] = "ON", -- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
-                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON", -- swamp biomes ( trees and constructs on water) & flora / rocks on beaches
-                ["MONTAINS_BIOMES_FEATURE"] = "ON", -- more diversity on montains
-                ["CAVE_BIOMES_FEATURE"] = "ON",-- more diversity on caves
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF", -- "ON"/"OFF" -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["FANTASY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
+                ["SKY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- floating things in the skies
+                ["STORM_BIOMES_FEATURES"] = "OFF", -- "ON"/"OFF"-- this var is not used anymore 
+                ["GIANTS_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- swamp biomes ( trees and constructs on water) & flora / rocks on beaches
+                ["MONTAINS_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- more diversity on montains
+                ["CAVE_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF"-- more diversity on caves
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] = -- world generation features, by models replacement
             { 
-                ["E3_FANTASY_ASSETS_FEATURES"] = "ON", -- > this var off will disable all features under that node
-                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON", -- modded wordstones models
-                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON", -- E3 building aside planets beacons
-                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON", -- portals model replacements with e3 ones
-                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON", -- Rings buildings aside planet deposits
-                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "ON", -- E3 Crystals instead of vanilla crystals ( heridium / carbon, titan ones )
-                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON", -- Planets colours and tiles rework -- ( 90% "Pathfinder" colors )
-                ["REDMAS_RUINS_FEATURES"] = "ON", -- very Large ruins
-                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON", -- put archeologic buildings aside trading posts 
+
+                ["E3_FANTASY_ASSETS_FEATURES"] = "ON", -- > this var off will disable all features under that node -- "ON"/"OFF"
+                --
+                -- this will give the first No man's sky look ( pre-release to v1 )
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- modded wordstones models
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- E3 building aside planets beacons
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",-- "ON"/"OFF" -- portals model replacements with e3 ones
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- Rings buildings aside planet deposits
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "ON",-- "ON"/"OFF" -- E3 Crystals instead of vanilla crystals ( heridium / carbon, titan ones )
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON", -- "ON"/"OFF"-- Planets colours and tiles rework -- ( 90% "Pathfinder" colors )
+                ["REDMAS_RUINS_FEATURES"] = "OFF", -- "ON"/"OFF"-- very Large ruins
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON", -- "ON"/"OFF"-- put archeologic buildings aside trading posts 
             },
         },
         ["SPACE_GENERATION_FEATURES"] =
         {
             ["REDMAS_SPACE_GENERATION"] = "ON",-- > this var off will disable all features under that node
+            --
             ["TRADING_ROUTES"] = "OFF", -- vanilla value is "on"
             ["MASSIVE_FLEET"] = "ON", -- ADD frigates aside freighters and redesign freighters - that change can be ressource heavy
             ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON", -- this will enable the custom models that i did for the derelic mission crash sites
         },
         ["SPACESHIPS_GENERATION_FEATURES"] =
         {
-            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON",
-            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON", -- ( fighters and solars are in the same section ( technical limitation ))
-            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON",
-            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON",
-            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON",
+            -- Redmas Spaceships Generation Mod
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",  -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
         },
     },
     ["SKINS"] =
     {
-        ["CHARACTERS_SKINS_FEATURE"] = "ON",
-        -- (E3-DAMAGED or E3)
+        ["CHARACTERS_SKINS_FEATURE"] = "OFF",   -- > this var off will disable all features under that node  -- "ON"/"OFF" 
+        --    
         ["DRONE_PET_SKIN_FEATURE"] = "ON",
-		["DRONE_PET_SKIN"] = "E3",
-        -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
-        -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
-        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
+		["DRONE_PET_SKIN"] = "E3",-- ("E3-DAMAGED" or "E3") replacement with custom models for flare ( the friendly sentinel drone ) ( i will add more ones)
         ["CHAR_PRESETS_SKINS"] = "UTOPIA"
+        -- this will replace the default character customisations by more advanced looking skins ( which are characters from my youtube mini series NMS FANTASY )
+        -- they are visible by vanilla players as soon as you rdit and save them in a character customisation slot
+        -- "THE-WATCHER"  /or/   "SPACE-PIRATE" /or/     "GIRLY"       /or/
+        -- "KORVAX"      /or/   "OUTLAWS"      /or/     "TRAVELLER"   /or/
+        -- "VY-KEEN"    /or/   "ANOMALY"      /or/      "GEK"        /or/
+        -- "UTOPIA"
     },
     ["NEWGAME_BONUS_FEATURES"] ={
-         ["NEWGAME_BONUSES"] = "OFF", -- > this var off will disable all features under that node
-		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
-		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
-		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
-		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+
+        ["NEWGAME_BONUSES"] = "OFF",-- > this var off will disable all features under that node
+        --
+        -- I recommend to always wait 1 or 2 week(s) after a vanilla base game update before activating that section
+        -- ( the gamefiles it changes is always updated last )
         ["STARTING_SHIP"] = "ALPHA_VECTOR",
-		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
-		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
-		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        -- "OUTLAW1" / "OUTLAW2" / "ALPHA_VECTOR" /
+		-- "PLANETEXPLO2" / "PLANETEXPLO3" / "PLANETEXPLO4" / "PLANETEXPLO5" / "PLANETEXPLO6" / "PLANETEXPLO7" /
+		-- "SPACEEXPLO1" / "SPACEEXPLO2" / "SPACEEXPLO3" / "SPACEEXPLO4" / "SPACEEXPLO5" / "SPACEEXPLO6" / "SPACEEXPLO7"
+		-- "BOUNTYHUNTER1" / "BOUNTYHUNTER2" / "BOUNTYHUNTER3" / "BOUNTYHUNTER4" / "BOUNTYHUNTER5"
         ["STARTING_MULTITOOL"] = "OUTLAW1",
+        -- "OUTLAW1" / "OUTLAW2" / "EXPLO1" / "SPACE" /
+		-- "EXPLO2" / "EXPLO3" / "EXPLO4" / "EXPLO5" / "EXPLO6" / "EXPLO7" /
+		-- "BOUNTYHUNTER1" / "BOUNTYHUNTER2" / "BOUNTYHUNTER3" / "BOUNTYHUNTER4" / "BOUNTYHUNTER5"
     },
     ["CHALLENGE_FEATURES"] =
     {
-        ["CHALLENGE_MODE"] = "OFF",
-		["STRONG_CREATURES_FEATURE"] = "ON",
-        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
-        ["DARK_UNDERWATER"] = "OFF",
-        ["STRONG_PIRATES_FEATURE"] = "OFF",
+        ["CHALLENGE_MODE"] = "OFF", -- > this var off will disable all features under that node
+        --
+		["STRONG_CREATURES_FEATURE"] = "OFF", -- note the base game already does it since NMS v 4.0
+        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6 -- this param is related to STRONG_CREATURES_FEATURE = ON
+        ["DARK_UNDERWATER"] = "OFF", -- This will make vision harder under water
+        ["STRONG_PIRATES_FEATURE"] = "OFF", -- note the base game already does it since NMS v 4.0
     },
     ["EASY_MODE_FEATURES"] =
     {
-        ["EASY_MODE"] = "ON",
-        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 2 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
-        ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
-        ["WARPCELL_USAGE_MULTIPLIER"] = 5,
-        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
+        -- this section is for the cheats of the Game overhaul ( there are few as you can see )
+        ["EASY_MODE"] = "OFF", -- "ON"/"OFF" -- > this var off will disable all features under that node
+        --
+        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 2 , -- ( "1" < - > "4" ( too much will be glitchy when entering planets' atmosphere)) -- notice that this param requires a integer, not a string
+        ["LAUNCH_COST_REDUCTION"] = 5 , -- In % ( take off reduce ) note the base game already does it since NMS v 4.0 -- notice that this param requires a integer, not a string
+        ["WARPCELL_USAGE_MULTIPLIER"] = 5, --> increase the number of usages of normal warpcells -- notice that this param requires a integer, not a string
+        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000, --> increase all hyperdrive ranges -- notice that this param requires a integer, not a string
     }
-}---------------------------------------------------------------------------------------------------
+}
+--------------------------------------------------------------------------------------------------------------
+HQ_SPACESTATIONS = "ON" -- "ON"/"OFF" enables the unreleased space stations models ( at the time i write )
+--------------------------------------------------------------------------------------------------------------
+PROCEDURALMAX = 10  -- 10 to 1000 --This is the number of procedural generated new params for this script
+-- change this var to increase the number of autogenerated colors, if they are enabled ( for skies, seas & space)
+-- increasing that var will increase the rendering time
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- **ADVANCED PARAMS**
 ---------------------------
 DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
@@ -242,6 +312,7 @@ LONG_SPACESHIPS_UP_MIN_DIST = tostring(LONG_SPACESHIPS_UP_MIN_DIST)
 LONG_SPACESHIPS_UP_MAX_DIST = tostring(LONG_SPACESHIPS_UP_MAX_DIST)
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
+---------------**ASTEROIDS_FIELDS_SPACING_PRESETS**----------------------------------------------------------
 
 --
 ASTEROIDS_GLUED_PRESET ={
@@ -279,9 +350,7 @@ ASTEROIDS_REALISTIC_PRESET ={
 	["ASTEROID_SCALE_MULTIPLIER"] = "1.5"
 }
 
---------------------------------------------------------------------------------------------------------------
-PROCEDURALMAX = 1000  -- This is the number of procedural generated new params for this script
---------------------------------------------------------------------------------------------------------------
+
 --
 -- BUILDER  -----------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
@@ -349,7 +418,7 @@ FREE_POWER_ON_EM_GENERATORS = ""
 HOVER_MODE = ""
 SANKUKAI_SPACESHIPS_COMBAT = ""
 ONFOOT_CONTROLS_REVISON_FEATURE = ""
-LONGER_STEATH_FEATURE = ""
+LONGER_STEALTH_FEATURE = ""
 FASTER_WALK_WHILE_SHIELDING_FEATURE = ""
 PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE = ""
 CONTROLLED_FALL_ANIMATION_REPLACEMENT = ""
@@ -629,7 +698,7 @@ FREE_POWER_ON_EM_GENERATORS = INIT_PRESET.GAMEPLAY_FEATURES.QOL_FEATURES.FREE_PO
 HOVER_MODE = INIT_PRESET.GAMEPLAY_FEATURES.SPACESHIPS_GAMEPLAY_FEATURES.HOVER_MODE
 SANKUKAI_SPACESHIPS_COMBAT = INIT_PRESET.GAMEPLAY_FEATURES.SPACESHIPS_GAMEPLAY_FEATURES.SANKUKAI_SPACESHIPS_COMBAT
 ONFOOT_CONTROLS_REVISON_FEATURE = INIT_PRESET.GAMEPLAY_FEATURES.ONFOOT_GAMEPLAY_FEATURES.ONFOOT_CONTROLS_REVISON_FEATURE
-LONGER_STEATH_FEATURE = INIT_PRESET.GAMEPLAY_FEATURES.ONFOOT_GAMEPLAY_FEATURES.LONGER_STEATH_FEATURE
+LONGER_STEALTH_FEATURE = INIT_PRESET.GAMEPLAY_FEATURES.ONFOOT_GAMEPLAY_FEATURES.LONGER_STEALTH_FEATURE
 FASTER_WALK_WHILE_SHIELDING_FEATURE = INIT_PRESET.GAMEPLAY_FEATURES.ONFOOT_GAMEPLAY_FEATURES.FASTER_WALK_WHILE_SHIELDING_FEATURE
 PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE = INIT_PRESET.GAMEPLAY_FEATURES.ONFOOT_GAMEPLAY_FEATURES.PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE
 CONTROLLED_FALL_ANIMATION_REPLACEMENT = INIT_PRESET.GAMEPLAY_FEATURES.ONFOOT_GAMEPLAY_FEATURES.CONTROLLED_FALL_ANIMATION_REPLACEMENT
@@ -5749,6 +5818,1645 @@ addFeature
 
 
 
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[SPACESTATIONTYPEB.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\SPACESTATION.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[SPACESTATIONTYPEB.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\SPACESTATION.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\ORANGEGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\ORANGEGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\\ARMA\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\\ARMA\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\LIGHTCARD1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\LIGHTCARD1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\\ARMA\STATIONLARGETILE1_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\STATIONLARGETILE1_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\COLLISION_MAT4.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\COLLISION_MAT4.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\LIGHTCARD1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\LIGHTCARD1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\COLLISIONMAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\COLLISIONMAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+		copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\SPACESTATIONTYPEB.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB.GEOMETRY.MBIN.PC]]
+	)
+		copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\SPACESTATIONTYPEB.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB.GEOMETRY.DATA.MBIN.PC]]
+	)
+		copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\COLLISIONMAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\COLLISIONMAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\GLOW_MAT4.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\GLOW_MAT4.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\LIGHTCARD1_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\LIGHTCARD1_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\REDBLINKSCROLL_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\REDBLINKSCROLL_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\GLOW_MAT4.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\GLOW_MAT4.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\LIGHTCARD1_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\LIGHTCARD1_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\REDBLINKSCROLL_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\REDBLINKSCROLL_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE\SPACESTATION_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE\SPACESTATION_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\ORANGEGLOWFADE_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\ORANGEGLOWFADE_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\LIGHTCARD1_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\LIGHTCARD1_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOW_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOW_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\LIGHTCARD1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\LIGHTCARD1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\MESHDECAL_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\MESHDECAL_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\TRIMLIGHTS_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\TRIMLIGHTS_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\COLLISIONMAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\COLLISIONMAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\GLOW_MAT2.MATERIAL.EXML]]
+	)
+		copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\COLLISIONMAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\COLLISIONMAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\LIGHTCARD1_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\LIGHTCARD1_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\COLLISIONMAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\COLLISIONMAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\MESHDECAL_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\MESHDECAL_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\ORANGEGLOWFADE_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\ORANGEGLOWFADE_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\ORANGEGLOWFADE_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\ORANGEGLOWFADE_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\GLOW_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\GLOW_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\LIGHTCARD1_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\LIGHTCARD1_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SHARED\ENTITIES\PARTLODDATA.ENTITY.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SHARED\ENTITIES\PARTLODDATA.ENTITY.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SHARED\ENTITIES\PARTLODONLY.ENTITY.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SHARED\ENTITIES\PARTLODONLY.ENTITY.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\GLOW_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\GLOW_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\LIGHTCARD1_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\LIGHTCARD1_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\GLOW_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\GLOW_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\LIGHTCARD1_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\LIGHTCARD1_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\REDGLOW_MAT1.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\REDGLOW_MAT1.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\LIGHTCARD1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\LIGHTCARD1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\MESHDECAL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\MESHDECAL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\LIGHTCARD1_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\LIGHTCARD1_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\GLOW_MAT2.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\GLOW_MAT2.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\GLOWPRIMARY_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\GLOWPRIMARY_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\MISTLIGHTFADE_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\MISTLIGHTFADE_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\REDGLOW_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\REDGLOW_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\TRIMLIGHTS_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\TRIMLIGHTS_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.SCENE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.DESCRIPTOR.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.SCENE.EXML]]
+	)
+
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.SCENE.EXML]]
+	)
+
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.DESCRIPTOR.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.DESCRIPTOR.EXML]]
+	)
+
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.SCENE.EXML]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.SCENE.EXML]]
+	)
+
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.GEOMETRY.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.GEOMETRY.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.GEOMETRY.MBIN.PC]]
+	)
+		copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.GEOMETRY.DATA.MBIN.PC]],
+		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.GEOMETRY.DATA.MBIN.PC]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\SPACESTATIONTYPEB\COLLISION_MAT3.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\COLLISION_MAT3.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\SPACESTATIONTYPEB\POMSHEET_MAT.MATERIAL.EXML]],
+		[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\POMSHEET_MAT.MATERIAL.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.ACCENTPANELS.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.ACCENTPANELS.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.ALTPANELS.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.ALTPANELS.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.BASE.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.BASE.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.BASE.MASKS.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.BASE.MASKS.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.BASE.NORMAL.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.BASE.NORMAL.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.BASE.PARALLAX.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.BASE.PARALLAX.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.PAINTED.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.PAINTED.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.STRIP.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.STRIP.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1.TEXTURE.EXML]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.TEXTURE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.BASE.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.BASE.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.BASE.MASKS.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.BASE.MASKS.DDS]]
+	)
+		copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.BASE.NORMAL.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.BASE.NORMAL.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.BASE.PARALLAX.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.BASE.PARALLAX.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.COLPANELS.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.COLPANELS.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.PAINTED.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.PAINTED.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.1.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.1.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.2.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.2.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.3.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.3.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.4.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.4.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.TEXTURE.EXML]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.TEXTURE.EXML]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\TRIM1.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\TRIM1.MASKS.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.MASKS.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\TRIM1.NORMAL.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.NORMAL.DDS]]
+	)
+	copyEXML(
+		HQ_SPACESTATIONS,
+		[[STATION\TEXTURES\TYPEB\TRIM1.PARALLAX.DDS]],
+		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.PARALLAX.DDS]]
+	)
+
+
+
+
 
 -- CAMERA OVERHAUL
 
@@ -5785,7 +7493,7 @@ addFeature
 
 
 
-
+-- **CAMERA_OVERHAUL_FEATURES**
 addFeature
 (
 	CAMERA_OVERHAUL_FEATURE,
@@ -6195,1645 +7903,6 @@ then
 		},
 		DAY_ONE_MODE
 	)
-
-
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[SPACESTATIONTYPEB.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\SPACESTATION.DESCRIPTOR.EXML]]
-	)
-		copyEXML(
-		VISUAL_OVERHAUL,
-		[[SPACESTATIONTYPEB.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\SPACESTATION.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\ORANGEGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\ORANGEGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\\ARMA\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\\ARMA\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\LIGHTCARD1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\LIGHTCARD1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\\ARMA\STATIONLARGETILE1_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\STATIONLARGETILE1_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\COLLISION_MAT4.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\COLLISION_MAT4.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\LIGHTCARD1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\LIGHTCARD1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\COLLISIONMAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\COLLISIONMAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-		copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\SPACESTATIONTYPEB.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB.GEOMETRY.MBIN.PC]]
-	)
-		copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\SPACESTATIONTYPEB.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB.GEOMETRY.DATA.MBIN.PC]]
-	)
-		copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\COLLISIONMAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\COLLISIONMAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\GLOW_MAT4.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\GLOW_MAT4.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\LIGHTCARD1_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\LIGHTCARD1_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\REDBLINKSCROLL_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\REDBLINKSCROLL_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\GLOW_MAT4.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\GLOW_MAT4.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\LIGHTCARD1_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\LIGHTCARD1_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\REDBLINKSCROLL_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\REDBLINKSCROLL_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE\SPACESTATION_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE\SPACESTATION_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\ORANGEGLOWFADE_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\ORANGEGLOWFADE_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\LIGHTCARD1_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\LIGHTCARD1_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOW_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOW_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\LIGHTCARD1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\LIGHTCARD1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\MESHDECAL_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\MESHDECAL_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\TRIMLIGHTS_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT\TRIMLIGHTS_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\COLLISIONMAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\COLLISIONMAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\GLOW_MAT2.MATERIAL.EXML]]
-	)
-		copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\COLLISIONMAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\COLLISIONMAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\LIGHTCARD1_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\LIGHTCARD1_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\COLLISIONMAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\COLLISIONMAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\MESHDECAL_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\MESHDECAL_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\ORANGEGLOWFADE_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\ORANGEGLOWFADE_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\ORANGEGLOWFADE_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\ORANGEGLOWFADE_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\GLOW_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\GLOW_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\LIGHTCARD1_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\LIGHTCARD1_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SHARED\ENTITIES\PARTLODDATA.ENTITY.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SHARED\ENTITIES\PARTLODDATA.ENTITY.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SHARED\ENTITIES\PARTLODONLY.ENTITY.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SHARED\ENTITIES\PARTLODONLY.ENTITY.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\GLOW_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\GLOW_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\LIGHTCARD1_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\LIGHTCARD1_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\GLOW_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\GLOW_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\LIGHTCARD1_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\LIGHTCARD1_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\REDGLOW_MAT1.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\REDGLOW_MAT1.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\LIGHTCARD1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\LIGHTCARD1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\MESHDECAL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\MESHDECAL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\REDBLINKSCROLL_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\REDBLINKSCROLL_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\STATIONLARGETILE1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\STATIONLARGETILE1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\LIGHTCARD1_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\LIGHTCARD1_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\GLOW_MAT2.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\GLOW_MAT2.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\GLOWPRIMARY_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\GLOWPRIMARY_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\MISTLIGHTFADE_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\MISTLIGHTFADE_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\REDGLOW_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\REDGLOW_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\STATIONLARGETILE1ALT_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\TRIMLIGHTS_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING\TRIMLIGHTS_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.SCENE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.DESCRIPTOR.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.SCENE.EXML]]
-	)
-
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.SCENE.EXML]]
-	)
-
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.DESCRIPTOR.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.DESCRIPTOR.EXML]]
-	)
-
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.SCENE.EXML]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.SCENE.EXML]]
-	)
-
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.GEOMETRY.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.GEOMETRY.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.GEOMETRY.MBIN.PC]]
-	)
-		copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSA.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\AERIALSB.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMA.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ARMB.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASP.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\CLASPTRI.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISK.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISK.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\DISKPARTIAL.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\ENTRANCE.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXHAUST.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCORE.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\EXTCOREOCT.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOT.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\FOOTSTUB.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONA.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONB.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSFRONT.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSHALF.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRING.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PANELSECTIONSRINGQUAD.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\PRISM.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\SPHERE.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\STORAGE.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TOWER.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TRIANGLEBASE.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.GEOMETRY.DATA.MBIN.PC]],
-		[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\EXTERIOR\TUNNELOPENING.GEOMETRY.DATA.MBIN.PC]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\SPACESTATIONTYPEB\COLLISION_MAT3.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\COLLISION_MAT3.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\SPACESTATIONTYPEB\POMSHEET_MAT.MATERIAL.EXML]],
-		[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\POMSHEET_MAT.MATERIAL.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.ACCENTPANELS.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.ACCENTPANELS.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.ALTPANELS.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.ALTPANELS.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.BASE.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.BASE.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.BASE.MASKS.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.BASE.MASKS.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.BASE.NORMAL.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.BASE.NORMAL.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.BASE.PARALLAX.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.BASE.PARALLAX.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.PAINTED.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.PAINTED.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.STRIP.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.STRIP.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1.TEXTURE.EXML]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1.TEXTURE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.BASE.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.BASE.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.BASE.MASKS.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.BASE.MASKS.DDS]]
-	)
-		copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.BASE.NORMAL.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.BASE.NORMAL.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.BASE.PARALLAX.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.BASE.PARALLAX.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.COLPANELS.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.COLPANELS.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.PAINTED.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.PAINTED.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.1.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.1.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.2.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.2.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.3.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.3.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.4.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.4.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.STRIP.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.STRIP.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\LARGETILING1ALT.TEXTURE.EXML]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\LARGETILING1ALT.TEXTURE.EXML]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\TRIM1.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\TRIM1.MASKS.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.MASKS.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\TRIM1.NORMAL.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.NORMAL.DDS]]
-	)
-	copyEXML(
-		VISUAL_OVERHAUL,
-		[[STATION\TEXTURES\TYPEB\TRIM1.PARALLAX.DDS]],
-		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.PARALLAX.DDS]]
-	)
-
-
 
 	
 	----------------------------------------------------------------------
@@ -8426,27 +8495,48 @@ then
 	)
 	----------------------------------------------------------------------
 	-- Metal Spaceships
+
+	-- you can edit the textures that i ve chosen for the repaint here , in that block
 	FRESH_PAINT = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\HULL\HULL_A\FREIGHTERPROC_MAT.MATERIAL.MBIN]]
 	METAL_PAINT = [[MODELS\SPACE\NEXUS\NEXUSEXTERIOR\METALSHINY_MAT.MATERIAL.MBIN]]
 	GOLD_PAINT = [[MODELS\SPACE\NEXUS\NEXUSEXTERIOR\GOLDMETAL_MAT.MATERIAL.MBIN]]
 	OLD_PAINT = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\CRASHEDFREIGHTER\CRASHEDFREIGHTER_MAT.MATERIAL.MBIN]]
 	PLASTIC_PAINT = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\CANOPY\CANOPYB\CANOPYB\SCIENTIFIC_MAT.MATERIAL.MBIN]]
 	--
-	FIGHTERS_PAINT1 = METAL_PAINT
-	FIGHTERS_PAINT2 = FRESH_PAINT
-	FIGHTERS_PAINT3 = GOLD_PAINT
-	FIGHTERS_PAINT4 = OLD_PAINT
 	--
-	DROPSHIP_PAINT1 = METAL_PAINT
-	DROPSHIP_PAINT2 = OLD_PAINT
-	DROPSHIP_PAINT3 = GOLD_PAINT
-	DROPSHIP_PAINT4 = METAL_PAINT
-	--
-	SHUTTLE_PAINT = PLASTIC_PAINT
+	-----------------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------------------------
+	--------------- **SPACESHIPS_REPAINT**-------------------------------------------------------------------
+	-- Change those values for fighters spaceships
 
+	--dirty metal
+	FIGHTERS_PAINT1 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	FIGHTERS_PAINT2 = FRESH_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	FIGHTERS_PAINT3 = GOLD_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	FIGHTERS_PAINT4 = OLD_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+
+	if FIGHTERS_SPACESHIPS_REPAINT == "FULL" then
+	-- Full Metal
+	FIGHTERS_PAINT1 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	FIGHTERS_PAINT2 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	FIGHTERS_PAINT3 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	FIGHTERS_PAINT4 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	end
+	-- Change those values for DROPSHIP ("Hauler") spaceships
+	DROPSHIP_PAINT1 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	DROPSHIP_PAINT2 = OLD_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	DROPSHIP_PAINT3 = GOLD_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	DROPSHIP_PAINT4 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	-- Change those values for Shuttle spaceships
+	SHUTTLE_PAINT = PLASTIC_PAINT
+	-----------------------------------------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------------------------------------------------------------
+	
+	if FIGHTERS_SPACESHIPS_REPAINT ~= "OFF" then
+	
 	addFeature
 	(
-		FIGHTERS_SPACESHIPS_REPAINT,
+		"ON",
 		{
 
 				{
@@ -9122,6 +9212,7 @@ then
 
 		}
 	)
+	end
 	addFeature
 	(
 		DROPSHIPS_SPACESHIPS_REPAINT,
@@ -11450,7 +11541,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 	)
 	addFeature
 	(
-		LONGER_STEATH_FEATURE,
+		LONGER_STEALTH_FEATURE,
 		{
 			{
 				["MBIN_FILE_SOURCE"] = "GCPLAYERGLOBALS.GLOBAL.MBIN",
@@ -12016,6 +12107,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 			},
 		}
 	)
+	-- **VEHICULE_HANDLINGS**
 	addFeature
 	(
 		EXOCRAFTS_CONTROLS_REVISON_FEATURE,

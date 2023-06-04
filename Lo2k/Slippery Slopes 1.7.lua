@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Slippery Slopes 1.6.pak", 
+["MOD_FILENAME"] 			= "Slippery Slopes 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.20.1",
+["NMS_VERSION"]				= "4.26",
 ["MOD_DESCRIPTION"]			= "This mods makes slopes slippery",
 ["MODIFICATIONS"] 			= 
 	{
