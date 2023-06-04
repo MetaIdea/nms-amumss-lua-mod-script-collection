@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Salvaged Data inside Damage Machineries 3.6.pak", 
+["MOD_FILENAME"] 			= "Salvaged Data inside Damage Machineries 3.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.22",
+["NMS_VERSION"]				= "4.26",
 ["MOD_DESCRIPTION"]			= "This mod place salvaged blueprints directly into damaged machineries",
 ["MODIFICATIONS"] 			= 
 	{
@@ -28,6 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -41,8 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Silent" value="False" />
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
-            </Property>
-            <Property name="LabelID" value="" />
+            </Property>           
           </Property>]],
 						},
 					},
