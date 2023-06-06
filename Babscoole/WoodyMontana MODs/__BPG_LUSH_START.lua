@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "__BPG_LUSH_START.pak",
 ["MOD_AUTHOR"]    = "WoodyMontana",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.25",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {
@@ -1512,70 +1512,70 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
 ]]
                         },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Id", "VALUABLE_STUFF"},
-                                {"Id", "STORMCRYSTALS"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ForceOnSeasonStart", "False"},
-                            }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "PROC_SALVAGE"},
-                                {"Name", "PROC_BONES"},
-                                {"Name", "WATER_HAZ"},
-                                {"Name", "CAVECUBES"},
-                                {"Name", "CAVEEGGS"},
-                                {"Name", "CLAM"},
-                                {"Name", "TENTACLE"},
-                                {"Name", "GEMS"},--
-                                {"Name", "PHYSICSSPOREPRO"},
-                                {"Name", "FLOATINGPROPS"},
-                                {"Name", "RARECRYSTALPROP"},
-                                {"Name", "PROXIMITY"},
-                                {"Name", "URCHIN"},
-                                {"Name", "METAL"},
-                                {"Name", "PHYSICS"},
-                                {"Name", "FARMSNOW"},
-                                {"Name", "WILDSNOW"},
-                                {"Name", "FARMTOXIC"},
-                                {"Name", "WILDTOXIC"},
-                                {"Name", "FARMSCORCHED"},
-                                {"Name", "WILDSCORCH"},
-                                {"Name", "FARMRADIOACTIVE"},
-                                {"Name", "WILDRADIO"},
-                                {"Name", "FARMBARREN"},
-                                {"Name", "WILDBARREN"},
-                                {"Name", "FARMLUSH"},
-                                {"Name", "WILDLUSH"},
-                                {"Name", "ALLWILDFULL"},
-                                {"Name", "NAVDATA"},
-                                {"Name", "RAREROCKS"},
-                                {"Name", "PLANTCROP"},
-                                {"Name", "FIENDEGGS"},
-                                {"Name", "CRYSTALPROPS"},
-                                {"Name", "BURIED_EXTRAS"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"SeasonalProbabilityOverride", "0"},
-                                {"AllowLimiting",               "False"},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WILDWEIRD"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"SeasonalProbabilityOverride", "0"},
-                                {"AllowLimiting",               "False"},
-                            }
-                        },
+                        -- {
+                            -- ["FOREACH_SKW_GROUP"] =
+                            -- {
+                                -- {"Id", "VALUABLE_STUFF"},
+                                -- {"Id", "STORMCRYSTALS"},
+                            -- },
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"ForceOnSeasonStart", "False"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["FOREACH_SKW_GROUP"] =
+                            -- {
+                                -- {"Name", "PROC_SALVAGE"},
+                                -- {"Name", "PROC_BONES"},
+                                -- {"Name", "WATER_HAZ"},
+                                -- {"Name", "CAVECUBES"},
+                                -- {"Name", "CAVEEGGS"},
+                                -- {"Name", "CLAM"},
+                                -- {"Name", "TENTACLE"},
+                                -- {"Name", "GEMS"},--
+                                -- {"Name", "PHYSICSSPOREPRO"},
+                                -- {"Name", "FLOATINGPROPS"},
+                                -- {"Name", "RARECRYSTALPROP"},
+                                -- {"Name", "PROXIMITY"},
+                                -- {"Name", "URCHIN"},
+                                -- {"Name", "METAL"},
+                                -- {"Name", "PHYSICS"},
+                                -- {"Name", "FARMSNOW"},
+                                -- {"Name", "WILDSNOW"},
+                                -- {"Name", "FARMTOXIC"},
+                                -- {"Name", "WILDTOXIC"},
+                                -- {"Name", "FARMSCORCHED"},
+                                -- {"Name", "WILDSCORCH"},
+                                -- {"Name", "FARMRADIOACTIVE"},
+                                -- {"Name", "WILDRADIO"},
+                                -- {"Name", "FARMBARREN"},
+                                -- {"Name", "WILDBARREN"},
+                                -- {"Name", "FARMLUSH"},
+                                -- {"Name", "WILDLUSH"},
+                                -- {"Name", "ALLWILDFULL"},
+                                -- {"Name", "NAVDATA"},
+                                -- {"Name", "RAREROCKS"},
+                                -- {"Name", "PLANTCROP"},
+                                -- {"Name", "FIENDEGGS"},
+                                -- {"Name", "CRYSTALPROPS"},
+                                -- {"Name", "BURIED_EXTRAS"},
+                            -- },
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"SeasonalProbabilityOverride", "0"},
+                                -- {"AllowLimiting",               "False"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Name","WILDWEIRD"},
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"SeasonalProbabilityOverride", "0"},
+                                -- {"AllowLimiting",               "False"},
+                            -- }
+                        -- },
                     }
                 },
             }
