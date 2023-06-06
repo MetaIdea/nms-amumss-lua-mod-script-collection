@@ -24,7 +24,7 @@ INIT_PRESET ={
 ----------------------------------------------------------------------------
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
-        ["VISUAL_OVERHAUL"] = "ON", -- > this var {"OFF"} will disable all features under that node / Modded space station are enabled here
+        ["VISUAL_OVERHAUL"] = "ON", -- > this var {"OFF"} will disable all features under that node 
         --
         ["REDMAS_WATER_REFLECTIONS"] = "ON", -- {"OFF"} / redmas water mod -- Creates foam , waves and reflections on water --> it makes it look more realistic       
         ["SPACE_BLUR_FEATURE"] = "ON", -- {"OFF"} This value will create a blur effect while in space -- /!\ with this var on you have to activate DepthOfField in photomode      
@@ -134,7 +134,7 @@ INIT_PRESET ={
         ["CREATURES_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
         --
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON", -- "ON"/"OFF" This will increase the birds, fishs and butterflies, but will make everything else sparse for balancing the performance
-        ["MAX_CREATURES_NUMBER"] = 40, -- "10" < - > "20"  max number of the birds, fishs and butterflies when CREATURES_HIGH_DENSITY_FEATURE is ON. notice that this param requires a integer, not a string
+        ["MAX_CREATURES_NUMBER"] = 10, -- "10" < - > "20"  max number of the birds, fishs and butterflies when CREATURES_HIGH_DENSITY_FEATURE is ON. notice that this param requires a integer, not a string
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -36670,8 +36670,8 @@ end
 
 		}
 	)
-end
--- END GENERATION OVERHAUL
+
+	if REDMAS_SPACE_GENERATION == "ON" then
 
 	--------------------------------------------------------------------------
 	-- BUSY SPACE TRAFFIC
@@ -36845,7 +36845,7 @@ end
 			}
 		}
 	)
-
+	end
 	--------------------------------------------------------------------
 	-- REDMAS SPACESHIPS GENERATION
 
@@ -38791,15 +38791,14 @@ end
 	)
 	----------------------------------------------------------------------------------------------
 
+end
+-- END GENERATION OVERHAUL
 
 
 
 
 
 
-
-
--- SPAce GENERATION_FEATURES
 
 
 
