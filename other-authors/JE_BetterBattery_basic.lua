@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "BetterBattery"
 ModNameSub = "JE"
 BaseDescription = "Adjusts ion battery, starship battery and life gel so they give full recharge on all difficulties."
-GameVersion = "4.22"
-ModVersion = "v4.22"
+GameVersion = "4.23"
+ModVersion = "v4.23a"
 FileSource1 = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"
 
 -- Original game settings in comments
@@ -13,6 +13,7 @@ WCChargeAmount = 24  	-- Warp Cell Default is 24
 WHCChargeAmount = 240 	-- Warph HyperCore Default is 240
 GFChargeAmount = 40		-- Grenade Fuel Default is 20
 SFChargeAmount = 600	-- Nautilon Subfuel default is 400
+DSChargeAmount = 300	-- Drone Shard (radiant shard)  default is 200
 
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -82,6 +83,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ChargeValue", SFChargeAmount}
+                            }
+                        },
+						{
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRONE_SHARD",}, -- Radiant Crystal
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ChargeValue", DSChargeAmount}
                             }
                         }
                     }
