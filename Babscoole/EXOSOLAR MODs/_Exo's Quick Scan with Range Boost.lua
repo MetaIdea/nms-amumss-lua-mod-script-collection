@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exo's Quick Scan with Range Boost.pak",
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.25",
+["NMS_VERSION"]             = "4.30",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -29,103 +29,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"BuildingBeamDistance",        "1200"},  -- Original "800"
                                 {"WaypointScanTime",            "2"},     -- Original "3"
                                 {"PainTime",                    "1"},     -- Original "1.5"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "ToolScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "300"}, -- Original "200"
-                                {"ChargeTime", "1"},   -- Original "30"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "ToolScanHardMode",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "225"}, -- Original "150"
-                                {"ChargeTime", "5"},   -- Original "90"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "WaypointScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "7500"}, -- Original "5000"
-                                {"PulseTime",  "0.5"},  -- Original "4"
-                                {"ChargeTime", "0.5"},  -- Original "4"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "BeaconScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "7500"}, -- Original "5000"
-                                {"PulseTime",  "0.5"},  -- Original "8"
-                                {"ChargeTime", "0.5"},  -- Original "4"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "RadioTowerScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "150000"}, -- Original "100000"
-                                {"PulseTime",  "0.5"},    -- Original "8"
-                                {"ChargeTime", "0.5"},    -- Original "4"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "ObservatoryScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "150000"}, -- Original "100000"
-                                {"PulseTime",  "0.5"},    -- Original "8"
-                                {"ChargeTime", "0.5"},    -- Original "4"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "DistressSignalScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "150000"}, -- Original "100000"
-                                {"PulseTime",  "0.5"},    -- Original "8"
-                                {"ChargeTime", "0.5"},    -- Original "4"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "DebugScanPlanet",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "1500000"}, -- Original "100000"
-                                {"PulseTime",  "0.5"},     -- Original "5"
-                                {"ChargeTime", "0.25"},    -- Original "4"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "DebugScanSpace",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "1500000"}, -- Original "100000"
-                                {"PulseTime",  "0.5"},     -- Original "5"
-                                {"ChargeTime", "0.25"},    -- Original "4"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "ShipScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "15000"}, -- Original "10000"
-                                {"PulseTime",  "0.5"},   -- Original "3"
-                                {"ChargeTime", "0.25"},  -- Original "10"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "VisualScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseRange", "15000"}, -- Original "10000"
-                                {"PulseTime",  "0.5"},   -- Original "8"
-                                {"ChargeTime", "0.25"},  -- Original "4"
                             }
                         },
                         {
@@ -165,7 +68,110 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                     }
-                }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SCANNING\SCANDATATABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","TOOL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "300"}, -- Original "200"
+                                {"ChargeTime", "1"},   -- Original "30"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","TOOL_HARD"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "225"}, -- Original "150"
+                                {"ChargeTime", "5"},   -- Original "90"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","WAYPOINT"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "7500"}, -- Original "5000"
+                                {"PulseTime",  "0.5"},  -- Original "4"
+                                {"ChargeTime", "0.5"},  -- Original "4"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","BEACON"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "7500"}, -- Original "5000"
+                                {"PulseTime",  "0.5"},  -- Original "8"
+                                {"ChargeTime", "0.5"},  -- Original "4"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","RADIO_TOWER"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "150000"}, -- Original "100000"
+                                {"PulseTime",  "0.5"},    -- Original "8"
+                                {"ChargeTime", "0.5"},    -- Original "4"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","OBSERVATORY"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "150000"}, -- Original "100000"
+                                {"PulseTime",  "0.5"},    -- Original "8"
+                                {"ChargeTime", "0.5"},    -- Original "4"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","DISTRESS_SIGNAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "150000"}, -- Original "100000"
+                                {"PulseTime",  "0.5"},    -- Original "8"
+                                {"ChargeTime", "0.5"},    -- Original "4"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","DEBUG_PLANET"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "1500000"}, -- Original "100000"
+                                {"PulseTime",  "0.5"},     -- Original "5"
+                                {"ChargeTime", "0.25"},    -- Original "4"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","DEBUG_SPACE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "1500000"}, -- Original "100000"
+                                {"PulseTime",  "0.5"},     -- Original "5"
+                                {"ChargeTime", "0.25"},    -- Original "4"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","SHIP"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "15000"}, -- Original "10000"
+                                {"PulseTime",  "0.5"},   -- Original "3"
+                                {"ChargeTime", "0.25"},  -- Original "10"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","VISUAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "15000"}, -- Original "10000"
+                                {"PulseTime",  "0.5"},   -- Original "8"
+                                {"ChargeTime", "0.25"},  -- Original "4"
+                            }
+                        },
+                    }
+                },
             }
         }
     }
