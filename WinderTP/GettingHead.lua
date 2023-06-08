@@ -2,8 +2,33 @@ DEFAULT_EDITION = "CLASSICS_B" -- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
 
 -- Suit parts minus backpack
 -- VYK = Armoured Suit
--- GOLD = Golden Suit
-GET_SUIT = "VYK"
+-- BUILDERS = Robot/Builders Suit
+GET_SUIT = "BUILDERS"
+
+SUIT_SETS = {"VYK", "BUILDERS"}
+
+SUIT_PARTS =
+{	
+	["VYK"] 	= {"TORSO_VYK", "ARMOUR_VYK", "GLOVES_VYK", "LEGS_VYK", "BOOTS_VYK"},
+	["BUILDERS"] 	= {"TORSO_BUILDERS", "GLOVES_BUILDERS", "LEGS_BUILDERS", "BOOTS_BUILDERS", "ARMOUR_NULL"},
+	-- ["GOLD"] 	= {"TORSO_VYK", "ARMOUR_VYK", "GLOVES_VYK", "LEGS_VYK", "BOOTS_VYK"}, -- unused in game
+}
+
+-- Default value to remove armour piece and subsequent torso piece selection
+REMOVE_ARMOUR = true
+
+DEFAULT_TORSO = "TORSO_GEK"
+-- Choose the torso without armour
+-- Copy and paste the IDs or your game may become unstable!
+-- Unused if not removing armour piece
+--[[
+TORSO_VANILLA
+TORSO_ASTRO
+TORSO_GEK
+TORSO_VYK
+TORSO_FOURTH
+TORSO_BUILDERS
+]]
 
 DEFAULT_CAPE = "CAPE_SEED"
 -- Choose the cape
@@ -194,6 +219,8 @@ HEADS =
 						["HEAD"]	= {
 										"REG_HEAD_HOOD01",
 										"HEAD_BUCKET",
+										"HEAD_ASTBOT1",
+										"HEAD_ASTBOT2",
 									  },
 					  },
 							
@@ -226,15 +253,6 @@ HEADS =
 	}
 }
 
-SUIT_PARTS =
-{	
-	["VYK"] 	= {"TORSO_VYK", "ARMOUR_VYK", "GLOVES_VYK", "LEGS_VYK", "BOOTS_VYK"},
-	["GOLD"] 	= {"TORSO_VYK", "ARMOUR_VYK", "GLOVES_VYK", "LEGS_VYK", "BOOTS_VYK"},
-}
-
-SHOULDERKNESSANDTOES = SUIT_PARTS[GET_SUIT]
-
-
 PRESET_SLOT = {"DEFAULT", "0", "1", "2", "3", "4", "5", "6", "7", "8"} -- default preset suffix of every race
 
 RGB = {"R", "G", "B"}
@@ -253,10 +271,10 @@ EDITION_PROMPT =
 2 - CLASSICS B
 3 - FOURTH A
 4 - FOURTH B
-Ignore for 10 seconds to use default stated in DEFAULT_EDITION
+Ignore for 15 seconds to use default stated in DEFAULT_EDITION: ]] .. DEFAULT_EDITION .. [[
 ]] }
 
-EDITION_DECISION = GUIF(EDITION_PROMPT, 10)
+EDITION_DECISION = GUIF(EDITION_PROMPT, 15)
 if EDITION_DECISION == 0 or EDITION_DECISION > #EDITION_LIST then
 	EDITION = DEFAULT_EDITION
 	else EDITION = EDITION_LIST[EDITION_DECISION]
@@ -278,10 +296,10 @@ CAPE_PROMPT =
 [[Which Cape would you like to equip?
 0 - None
 ]] .. LIST_DISPLAY .. [[
-Ignore for 10 seconds to use default stated in DEFAULT_CAPE
+Ignore for 15 seconds to use default stated in DEFAULT_CAPE: ]] .. DEFAULT_CAPE .. [[
 ]] }
 
-CAPE_DECISION = GUIF(CAPE_PROMPT, 10)
+CAPE_DECISION = GUIF(CAPE_PROMPT, 15)
 if CAPE_DECISION > #CAPE_LIST then
 	CAPE = DEFAULT_CAPE
 	elseif CAPE_DECISION ~= 0 then
@@ -301,18 +319,75 @@ end
 
 BACKPACK_PROMPT =
 { 69,
-[[Which Cape would you like to equip?
+[[Which Backpack would you like to equip?
 0 - Vanilla Default
 ]] .. LIST_DISPLAY .. [[
-Ignore for 10 seconds to use default stated in DEFAULT_BACKPACK
+Ignore for 15 seconds to use default stated in DEFAULT_BACKPACK: ]] .. DEFAULT_BACKPACK .. [[
 ]] }
 
-BACKPACK_DECISION = GUIF(BACKPACK_PROMPT, 10)
+BACKPACK_DECISION = GUIF(BACKPACK_PROMPT, 15)
 if BACKPACK_DECISION > #BACKPACK_LIST then
 	BACKPACK = DEFAULT_BACKPACK
 	elseif BACKPACK_DECISION ~= 0 then
 	BACKPACK = BACKPACK_LIST[BACKPACK_DECISION]
 end
+
+LIST_DISPLAY = ""
+for i,j in pairs(SUIT_SETS) do
+	LIST_DISPLAY = LIST_DISPLAY .. i .. [[ - ]] .. j .. [[
+
+]]
+end
+
+SUIT_EXPORT = ""
+
+SUIT_PROMPT =
+{ 69,
+[[Which set of Body Part Set would you like to equip?
+]] .. LIST_DISPLAY .. [[
+Ignore for 15 seconds to use default stated in GET_SUIT: ]] .. GET_SUIT .. [[
+]] }
+
+SUIT_DECISION = GUIF(SUIT_PROMPT, 15)
+if SUIT_DECISION > #SUIT_SETS or SUIT_DECISION <= 0 then
+	SUIT_EXPORT = GET_SUIT
+	else SUIT_EXPORT = SUIT_SETS[SUIT_DECISION]
+end
+
+SHOULDERKNESSANDTOES = SUIT_PARTS[SUIT_EXPORT]
+
+ARMOUR_PROMPT =
+{ REMOVE_ARMOUR,
+[[Do you want to remove your Armour piece?
+Ignore for 15 seconds to use default stated in REMOVE_ARMOUR: ]] .. tostring(REMOVE_ARMOUR) .. [[
+]] }
+
+TORSO_LIST = {"TORSO_VANILLA", "TORSO_ASTRO", "TORSO_GEK", "TORSO_VYK", "TORSO_FOURTH", "TORSO_BUILDERS"}
+
+LIST_DISPLAY = ""
+for i,j in pairs(TORSO_LIST) do
+	LIST_DISPLAY = LIST_DISPLAY .. i .. [[ - ]] .. j .. [[
+
+]]
+end
+
+TORSO_PROMPT =
+{ 69,
+[[Which Torso would you like to equip?
+]] .. LIST_DISPLAY .. [[
+Ignore for 15 seconds to use default stated in DEFAULT_TORSO: ]] .. DEFAULT_TORSO .. [[
+]]}
+
+TORSO_EXPORT = ""
+ARMOUR_DECISION = GUIF(ARMOUR_PROMPT, 15)
+if ARMOUR_DECISION then
+	TORSO_DECISION = GUIF(TORSO_PROMPT, 15)
+	if TORSO_DECISION > #TORSO_LIST or TORSO_DECISION <= 0 then
+		TORSO_EXPORT = DEFAULT_TORSO
+		else TORSO_EXPORT = TORSO_LIST[TORSO_DECISION]
+	end
+end
+
 
 function trunc(x)
 	return math.modf(x*1000)/1000
@@ -331,6 +406,29 @@ function GetCapeChange(CHOICE)
 				}
 			}
 end
+
+function GetTorsoChange(CHOICE)
+	return 	{
+				["PRECEDING_KEY_WORDS"] = {"GcCustomisationPreset.xml", "DescriptorGroups"},
+				["VALUE_MATCH"] = "{TORSO_.}",
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] =
+				{
+					{"Value", CHOICE}
+				}
+			}
+end
+
+-- exchange all armour pieces to empty armour (ARMOUR_NULL)
+GetNullArmour = {
+					["PRECEDING_KEY_WORDS"] = {"GcCustomisationPreset.xml", "DescriptorGroups"},
+					["VALUE_MATCH"] = "{ARMOUR_.}",
+					["REPLACE_TYPE"] = "ALL",
+					["VALUE_CHANGE_TABLE"] =
+					{
+						{"Value", "ARMOUR_NULL"}
+					}
+				}
 
 function GetDescriptorGroupEntry(ENTRY)
 return[[
@@ -430,6 +528,11 @@ end
 if CAPE ~= "" then
 	table.insert(HEAD_CHANGE_TABLE, GetCapeChange(CAPE))
 end
+if ARMOUR_DECISION then
+	table.insert(HEAD_CHANGE_TABLE, GetTorsoChange(TORSO_EXPORT))
+	table.insert(HEAD_CHANGE_TABLE, GetNullArmour)
+end
+
 
 MAX_COLOUR_SLOTS = 64 - NUM_VANILLA_COLOUR -- limits number of custom colours since colour palettes are fixed 64 slots
 -- SECTION_RATIO_GENERAL = ""
