@@ -4,9 +4,9 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "426"
-METADATA_LOCATIZATION   = "LOC1"
-METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 1."
+METADATA_NMS_VERSION    = "430"
+METADATA_LOCATIZATION   = "LOC8"
+METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 8."
 
 -- credits:
 -- bk201                                        pointing out typos, providing feedback on changes
@@ -19,31 +19,30 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 -- fixed text elements
 ----------------------------------------------------------------------------------------------------
 
--- special text operators
-NL = "&#xA;"                        -- new line
-SL = "&lt;IMG&gt;SLASH&lt;&gt;"     -- double slash icon
-HS = "&#xa0; "                      -- hard space + space
+-- changed description for Anti-Gravity Well (recharge functionality)
+TEXT_GRAVITYWELL_RECHARGE = "Gently detaches the starship from gravitational fields, lifting it toward the stars.&#xA; &#xA;The well hungers for &lt;SPECIAL&gt;pugneum&lt;&gt; or &lt;SPECIAL&gt;radiant shards&lt;&gt;, and must be sufficiently fueled before launch. When in slumber, it dreams of realm of &lt;SPECIAL&gt;g l a s s&lt;&gt;, harnessing the otherworldly energy to &lt;STELLAR&gt;recharge&lt;&gt; the starship's transcendental &lt;TECHNOLOGY&gt;launch systems&lt;&gt;.&#xA;&#xA;Hold &lt;IMG&gt;THRUST&lt;&gt; to take off from planet.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost."
 
--- new save messsage for multiplayer session
-TEXT_SAVE_MULTIPLAYER = SL.."Multiplayer"..SL.."Player position not saved."..NL..HS.."Mission progress and player inventory saved."
+-- label for portal glyphs that have no name assigned
+TEXT_DATA_CORRUPTED = "// DATA CORRUPTED //"
 
--- new save message for Nexus mission
-TEXT_SAVE_NEXUSMISSION = SL.." Nexus mission "..SL.." Player inventory saved."..NL..HS.."Mission progress and player position not saved."
+-- portal glyph names from Starbirth quest
+TEXT_PORTALGLYPH_01 = "THE STAR OVER WATER"
+TEXT_PORTALGLYPH_02 = "THE HUNTER"
+TEXT_PORTALGLYPH_03 = "THE REFLECTION"
+TEXT_PORTALGLYPH_04 = "THE ANCIENT GIANT"
+TEXT_PORTALGLYPH_05 = "THE OBSCURED COMPANION"
+TEXT_PORTALGLYPH_06 = "THE ASCENDING ORB"
+TEXT_PORTALGLYPH_07 = "THE SAILOR"
+TEXT_PORTALGLYPH_08 = "THE LOWLY INSECT"
 
--- fixed typo in author's name (seriously HG, what the actual fuck)
-TEXT_DEATH_AUTHOR = "- KURT VONNEGUT, A MAN WITHOUT A COUNTRY"
-
--- fixed typo in Traveller
-TEXT_TRAVELLER_DIALOGUE = "Have the travellers come? Are they here?"
-
--- new verbiage for Solar Panel Power stat
-TEXT_LIFESUPPORT_SOLAR = "Daytime Efficiency"
-
--- fixed typo in Warp Cell description
-TEXT_WARPCELL_TYPO = "This &lt;FUEL&gt;antimatter-based fuel&lt;&gt; is one of the few power sources capable of meeting the incredible energy requirements of a &lt;TECHNOLOGY&gt;starship hyperdrive&lt;&gt;.&#xA;&#xA;Secured within a robust housing, the cell is guaranteed paradox-free during FTL travel."
-
--- fixed grow time for Albumin Pearl
-TEXT_ALBUMEN_GROWTIME = "A medium-sized, farmable Crystal Orb that yields an occasional harvest of valuable Albumen Pearls.&#xA;&#xA;Suitable for hydroponic indoor planting. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;2 hours&lt;&gt;"
+TEXT_PORTALGLYPH_09 = TEXT_DATA_CORRUPTED
+TEXT_PORTALGLYPH_10 = "THE SPIRAL OF REALITY"
+TEXT_PORTALGLYPH_11 = "THE ANOMALY"
+TEXT_PORTALGLYPH_12 = "THE OCEAN KING"
+TEXT_PORTALGLYPH_13 = TEXT_DATA_CORRUPTED
+TEXT_PORTALGLYPH_14 = "THE VESSEL TO BEYOND"
+TEXT_PORTALGLYPH_15 = TEXT_DATA_CORRUPTED
+TEXT_PORTALGLYPH_16 = TEXT_DATA_CORRUPTED
 
 
 
@@ -52,18 +51,30 @@ TEXT_ALBUMEN_GROWTIME = "A medium-sized, farmable Crystal Orb that yields an occ
 ----------------------------------------------------------------------------------------------------
 
 -- localization file path
-PATH_LANGUAGE = "LANGUAGE\\NMS_LOC1_ENGLISH.MBIN"
+PATH_LANGUAGE = "LANGUAGE\\NMS_LOC8_ENGLISH.MBIN"
 
 -- data array
 DATA = 
 {
-    INTRCT_SAVE_NO_POS = TEXT_SAVE_MULTIPLAYER,
-    INTRCT_SAVE_NO_POS_NEXUS = TEXT_SAVE_NEXUSMISSION,
-    DEATH_AUTHOR_12 = TEXT_DEATH_AUTHOR,
-    EXP_1_PORT_LANG_1 = TEXT_TRAVELLER_DIALOGUE,
-    SUIT_ENERGY_REGEN = TEXT_LIFESUPPORT_SOLAR,
-    HYPERFUEL1_DESCRIPTION = TEXT_WARPCELL_TYPO,
-    PLANT_PEARL_DESC = TEXT_ALBUMEN_GROWTIME,
+    UI_LAUNCHER_ROBO_DESC = TEXT_GRAVITYWELL_RECHARGE,
+
+    UI_PORTAL_GLYPH_NAME_1 = TEXT_PORTALGLYPH_01,
+    UI_PORTAL_GLYPH_NAME_2 = TEXT_PORTALGLYPH_02,
+    UI_PORTAL_GLYPH_NAME_3 = TEXT_PORTALGLYPH_03,
+    UI_PORTAL_GLYPH_NAME_4 = TEXT_PORTALGLYPH_04,
+    UI_PORTAL_GLYPH_NAME_5 = TEXT_PORTALGLYPH_05,
+    UI_PORTAL_GLYPH_NAME_6 = TEXT_PORTALGLYPH_06,
+    UI_PORTAL_GLYPH_NAME_7 = TEXT_PORTALGLYPH_07,
+    UI_PORTAL_GLYPH_NAME_8 = TEXT_PORTALGLYPH_08,
+
+    UI_PORTAL_GLYPH_NAME_9 = TEXT_PORTALGLYPH_09,
+    UI_PORTAL_GLYPH_NAME_10 = TEXT_PORTALGLYPH_10,
+    UI_PORTAL_GLYPH_NAME_11 = TEXT_PORTALGLYPH_11,
+    UI_PORTAL_GLYPH_NAME_12 = TEXT_PORTALGLYPH_12,
+    UI_PORTAL_GLYPH_NAME_13 = TEXT_PORTALGLYPH_13,
+    UI_PORTAL_GLYPH_NAME_14 = TEXT_PORTALGLYPH_14,
+    UI_PORTAL_GLYPH_NAME_15 = TEXT_PORTALGLYPH_15,
+    UI_PORTAL_GLYPH_NAME_16 = TEXT_PORTALGLYPH_16,
 }
 
 

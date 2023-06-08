@@ -2,9 +2,13 @@ Author = "Gumsk"
 ModName = "gMech No Damage"
 ModNameSub = ""
 BaseDescription = "Disables mech tech damage"
-GameVersion = "422"
+GameVersion = "430"
 ModVersion = "a"
-	
+
+--[[ Files Modified:
+GCGAMEPLAYGLOBALS.GLOBAL.MBIN
+]]--
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
 	["MOD_DESCRIPTION"]	= BaseDescription,

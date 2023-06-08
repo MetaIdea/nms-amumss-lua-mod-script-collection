@@ -2,10 +2,10 @@ Author = "Mjstral,Gumsk"
 ModName = "gShip Custom Ships Summoner"
 ModNameSub = "S Class"
 BaseDescription = "Summons new ship models from gShip Custom Ships"
-GameVersion = "422"
+GameVersion = "430"
 ModVersion = "a"
 
---[[Files Used:
+--[[Files Modified:
 MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN
 METADATA/UI/EMOTEMENU.MBIN
 METADATA/REALITY/TABLES/REWARDTABLE.MBIN

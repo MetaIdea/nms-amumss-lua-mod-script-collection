@@ -1,48 +1,58 @@
-Author = "Gumsk"
 ModName = "gGame Gameplay"
 ModNameSub = "Full"
-BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "422"
+GameVersion = "430"
 ModVersion = "a"
-FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
+
+--[[ Files Modified:
+METADATA\\SIMULATION\\SCANNING\\SCANDATATABLE.MBIN
+GCGAMEPLAYGLOBALS.GLOBAL.MBIN
+]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
+	["MOD_DESCRIPTION"]	= "Various modifications to gameplay globals",
+	["MOD_AUTHOR"]		= "Gumsk",
+	["LUA_AUTHOR"]		= "Gumsk",
 	["NMS_VERSION"]		= GameVersion,
+	["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 	["MODIFICATIONS"]	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {
+			--Scanning
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
+					["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SCANNING\\SCANDATATABLE.MBIN",
 					["EXML_CHANGE_TABLE"] = {
-
-				--Scanning
 						{
-							["PRECEDING_KEY_WORDS"] = "ToolScan",
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {
+								"ID", "TOOL",
+							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"PulseRange",500},									--200; Multitool scan range, in u, easy mode
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "ToolScanHardMode",
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {
+								"ID", "TOOL_HARD",
+							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"PulseRange",500},									--150; Multitool scan range, in u, hard mode
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "ShipScan",
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {
+								"ID", "SHIP",
+							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"PulseRange",30000},								--10000; Ship scan range, in u
 							},
 						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = {
 						{
 							["PRECEDING_KEY_WORDS"] = "BinocularSelectedEffect",
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"BasecolourIntensity",2.0},						--0.4; 
 								{"ScanlinesSeparation",5},							--5; 
@@ -54,7 +64,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "BinocularSelectedColour",
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"R",0},											--0.588; 
 								{"G",1},											--1; 
@@ -64,7 +73,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},	
 						{
 							["PRECEDING_KEY_WORDS"] = "BinocularSelectedUnknownColour",
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"R",1},											--0.926; 
 								{"G",0},											--0.539; 
@@ -82,7 +90,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"TerrainResourceScanTime",30},						--30; 
 								{"TerrainResourceScanRange",2000},					--1200; 
@@ -105,7 +112,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"SurveyMaxDistance",2000},							--400; How far away the scanner can detect hotspots, in u. Maximum is about 1300, but over 1000 is unreliable.
 								{"SurveySonarMinPulseSpeed",-2.4},					--0.4; Frequency for sweeps or pings of the hotspot scanner. Lower is slower.
 
-				--Grouping
+			--Grouping
 								-- {"TechMustBeInTechInventory", "False"},				--True
 								{"MaxNumSameGroupTech", 120},						--3; Maximum number of same tech group on one inventory page
 								{"BonusSameTypeElementsAdd", 0.06},					--0.06; 
@@ -113,7 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BonusChildTypeElementsAdd", 0.05},				--0.05; 
 								{"BonusChildTypeElementsMultiply", 0.03},			--0.03; 
 
-				--Random
+			--Random
 								{"AtmosphereEntryTime",1.0},						--1.5; 
 								{"ShipInteractRadius",300},							--80; 
 								{"LightStrength",1.1},								--1; All lights. 4 is blinding in small areas or up close
@@ -136,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"HoursBetweenBattles",1},							--3; 
 								{"DeadPlanetGravityFactor",0.4},					--0.6; 
 
-				--Sentinels
+			--Sentinels
 								{"ViciousSentinelProbability",0.25},				--0.25; 
 								{"AggressiveSentinelProbability",0.13},				--0.13; 
 								{"AggressiveSentinelProbabilitySurvival",0.13},		--0.13; 
@@ -150,7 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"MaxDronesAggressive",1},							--1; 
 								{"MaxDronesAggressiveSurvival",1},					--1; 
 
-				--Terrain Resources
+			--Terrain Resources
 								{"ResourceReducer",7},								--10; Reduces amount of standard resource deposit yields. Higher means fewer resources.
 								{"ResourceMinAmount",2},							--1; Minimum amount of standard resource deposit yields per hit.
 								{"ResourceMaxAmount",3},							--2; Maximum amount of standard resource deposit yields per hit.
@@ -161,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"ResourceDirtMinAmount",2},						--1; Minimum amount of silicate powder yields per hit.
 								{"ResourceDirtMaxAmount",12},						--8; Maximum amount of silicate powder yields per hit.
 
-				--Torch
+			--Torch
 								{"TorchFoV", 120},									--120; 
 								{"TorchStrength", 4.2},								--3.5; 
 								{"TorchCookieIndex", 0},							--0; 
@@ -181,7 +188,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "TorchColour",
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"R", 0.95},										--0.95; torch red saturation percent
 								{"G", 0.993},										--0.993; torch green saturation percent

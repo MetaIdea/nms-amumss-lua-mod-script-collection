@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSettlement"
 ModNameSub = "Instant"
 BaseDescription = "Removes all timers from settlement activities"
-GameVersion = "426"
+GameVersion = "430"
 ModVersion = "a"
 FileSource1 = "GCSETTLEMENTGLOBALS.MBIN"
 

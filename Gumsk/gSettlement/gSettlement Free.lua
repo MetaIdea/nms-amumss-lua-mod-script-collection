@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSettlement"
 ModNameSub = "Free"
 BaseDescription = "Makes all settlement buildings cost 1 unit"
-GameVersion = "426"
+GameVersion = "430"
 ModVersion = "a"
 FileSource1 = "GCSETTLEMENTGLOBALS.MBIN"
 

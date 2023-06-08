@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gDoor"
 ModNameSub = "Garage"
 BaseDescription = "Proximity garage doors"
-GameVersion = "411"
+GameVersion = "430"
 ModVersion = "a"
-FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\COMMON\ENTITIES\GARAGEDOOR.ENTITY.MBIN"
+FileSource1 = "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\BASICPARTS\\MESHES\\COMMON\\ENTITIES\\GARAGEDOOR.ENTITY.MBIN"
 
 States = [[
 		<Property value="GcTriggerActionComponentData.xml">

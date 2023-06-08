@@ -2438,6 +2438,16 @@ CUSTOM_REWARDS = --REWARDTABLE REWARDS
     </Property>
 	]]
 
+HUBFLAG_SPECIFIC_NPCS =
+{
+	{ ["ID"] =			"ROBOT_G",
+	  ["Filename"] = 	"MODELS\COMMON\PLAYER\PLAYERCHARACTER\NPCROBOT.SCENE.MBIN",
+	  ["Seed"] =		"0",
+	  ["UseSeedValue"] ="False",
+	  ["AlienRace"] =	"Diplomats",
+	},
+}
+
 HUBFLAG_NPCSPAWN = 
 {
 	{ ["ID"] = 					"WNPC_SCI",
@@ -2650,6 +2660,27 @@ HUBFLAG_NPCSPAWN =
 	  ["ForceInteraction"] =	"?BLUEPRINT_ANALYSER",
 	  ["DisableInteraction"] =	"False",
 	},
+	{ ["ID"] = 					"WNPC_ROBOT",
+	  ["SpawnUnderNodeName"] = 	"",
+	  ["PlacementNodeName"] = 	"WSPAWNROB_",
+	  ["SpawnSpecific"] = 		"ROBOT_G",
+	  ["Race"] = 				"Diplomats",
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
+	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
+	  ["ForceInteraction"] =	"",
+	  ["DisableInteraction"] =	"False",
+	},
+	{ ["ID"] = 					"WNPC_SPIDER",
+	  ["SpawnUnderNodeName"] = 	"",
+	  ["PlacementNodeName"] = 	"WSPAWNSPI_",
+	  ["SpawnSpecific"] = 		"NEXUSSPIDER",
+	  ["Race"] = 				"Diplomats",
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
+	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
+	  ["ForceInteraction"] =	"",
+	  ["DisableInteraction"] =	"False",
+	},
+	
 }
 
 
@@ -25385,6 +25416,94 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"WNPCROBOG",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\NPCS\NPCROBOT_G.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WNPC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Zinang-Bunbin",
+						["Subtitle"] = 					"Construct",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A traveller who can stay in your base... forever.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ASTEROID1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
+											}
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WNPCROBO_SPI",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\NPCS\NPCROBOT_SPIDER_G.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WNPC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Zizhuhap",
+						["Subtitle"] = 					"Construct",		-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A traveller who can stay in your base... forever.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ASTEROID1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
+											}
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"RADIOMON",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -46729,6 +46848,186 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"ROBOT_TORSO",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\ROBOTS\SPIDER\NPCROBOT_TORSO.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_P" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Geihaai-Soengsan",
+						["Subtitle"] = 					"Model Construct Torso",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A decomissioned Construct.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ROBOT1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"40"
+											},
+											{ ["ID"] = 				"ROBOT2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"5"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"ROBOT_LIGHT",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\ROBOTS\SPIDER\NPCROBOTSPIDERPROPS_LAMP.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WLIGHTS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Zodei-dang",
+						["Subtitle"] = 					"BLD_LIGHT_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_LIGHT_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"CATALYST1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"ROBOT_BARREL",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\ROBOTS\SPIDER\NPCROBOTSPIDERPROPS_BARREL.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Bauzaa-tung",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A barrel.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"ROBOT_CONSOLE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\ROBOTS\SPIDER\NPCROBOTSPIDERPROPS_CONSOLE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_DIS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Samdintou-Ji",
+						["Subtitle"] = 					"Small Screen",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A standing console.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"30"
+											},
+										}
+					}
+	},
 	
 }
 
@@ -66976,6 +67275,54 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"ROBOT_CRYS1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\ROBOTS\SPIDER\NPCROBOTCRYSTALS.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"UI_ROBOT2_CRYSTAL_NAME",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											-- { ["ID"] = 				"DRONE_SHARD",
+											  -- ["InventoryType"] = 	"Product",
+											  -- ["Amount"] = 			"1"
+											-- },
+											{ ["ID"] = 				"ROBOT2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+										}
+					}
+	},
 	
 }
 
@@ -67880,6 +68227,32 @@ TOPGROUP_MAX = 312 	-- MAX AMOUNT OF BASE OBJECTS INSIDE ONE TOP GROUP
 TOPGROUP_COUNTER = {}
 GROUPS_INJECT = {}
 math.randomseed(os.time())
+
+function GetSpecificNPC(ID, FILENAME, SEED, USESEED, RACE)
+return[[
+    <Property value="GcUniqueNPCSpawnData.xml">
+      <Property name="Id" value="]] .. ID .. [[" />
+      <Property name="PresetId" value="" />
+      <Property name="ResourceElement" value="GcResourceElement.xml">
+        <Property name="Filename" value="]] .. FILENAME .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="]] .. SEED .. [[" />
+          <Property name="UseSeedValue" value="]] .. USESEED .. [[" />
+        </Property>
+        <Property name="AltId" value="" />
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers" />
+        </Property>
+      </Property>
+      <Property name="Race" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="]] .. RACE .. [[" />
+      </Property>
+    </Property>
+]]
+end
 
 function GetNPCtable(ID, PARENT, NODE, SPEC, RACE, INT, TECH, INT_F, INT_NO)
 return [[
@@ -69011,6 +69384,11 @@ for i,j in pairs(HUBFLAG_NPCSPAWN) do
 	CUSTOM_NPCS_LIST[i+1] =  GetNPCtable(j["ID"],j["SpawnUnderNodeName"],j["PlacementNodeName"],j["SpawnSpecific"],j["Race"],j["InteractionOverride"],j["TechShopCategory"],j["ForceInteraction"],j["DisableInteraction"])
 end
 
+CUSTOM_SPECIFIC_NPC_LIST = {""}
+for i,j in pairs(HUBFLAG_SPECIFIC_NPCS) do
+	CUSTOM_SPECIFIC_NPC_LIST[i+1] = GetSpecificNPC(j["ID"],j["Filename"],j["Seed"],j["UseSeedValue"],j["AlienRace"])
+end
+
 EXPORT_GROUPS_LIST = {""}
 for i,j in pairs(GROUPS_INJECT) do
 	EXPORT_GROUPS_LIST[i+1] = GetGroupData(j["ID"],j["Name"],j["Icon"],j["SubGroups"])
@@ -69084,6 +69462,7 @@ end
 
 -- END TAGS FOR MANUAL READING EXML_Helper FILES
 CUSTOM_NPCS_LIST[#CUSTOM_NPCS_LIST + 1] = ""
+CUSTOM_SPECIFIC_NPC_LIST[#CUSTOM_SPECIFIC_NPC_LIST + 1] = ""
 EXPORT_KNOWNPRODUCTS_LIST[#EXPORT_KNOWNPRODUCTS_LIST + 1] = ""
 EXPORT_COST_LIST[#EXPORT_COST_LIST + 1] = ""
 EXPORT_BASEOBJECTS_LIST[#EXPORT_BASEOBJECTS_LIST + 1] = ""
@@ -69094,6 +69473,7 @@ EXPORT_AUTOPARTDATA_LIST[#EXPORT_AUTOPARTDATA_LIST + 1] = ""
 EXPORT_SPECSHOP = EXPORT_SPECSHOP .. ""
 
 CUSTOM_NPCS				= table.concat(CUSTOM_NPCS_LIST)
+CUSTOM_SPECIFIC_NPC		= table.concat(CUSTOM_SPECIFIC_NPC_LIST)
 EXPORT_KNOWNPRODUCTS	= table.concat(EXPORT_KNOWNPRODUCTS_LIST)
 EXPORT_COST				= table.concat(EXPORT_COST_LIST)
 EXPORT_BASEOBJECTS		= table.concat(EXPORT_BASEOBJECTS_LIST)
@@ -70101,7 +70481,12 @@ FINAL_VALUE_CHANGE =
 							["PRECEDING_KEY_WORDS"] = {"PlacementInfos"},
 							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= CUSTOM_NPCS
-						}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"UniqueNPCs"},
+							--["LINE_OFFSET"] 		= "+0",
+							["ADD"] 				= CUSTOM_SPECIFIC_NPC
+						},
 					},
 				},
 				{
@@ -70124,8 +70509,8 @@ FINAL_VALUE_CHANGE =
 					["EXML_CHANGE_TABLE"]	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Table"},
-							--["LINE_OFFSET"] 		= "+0",
+							["SPECIAL_KEY_WORDS"] 	= {"ID", "STATUE_ASTRO_G"},
+							["ADD_OPTION"]  		= "ADDafterSECTION",
 							["ADD"] 				= EXPORT_SPECSHOP
 						}
 					},
