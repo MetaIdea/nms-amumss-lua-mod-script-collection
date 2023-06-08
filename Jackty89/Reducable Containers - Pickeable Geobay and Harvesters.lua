@@ -20,29 +20,29 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CheckPlaceholderCollision", "False"},
-                                {"CanScale", "True"},
+                                {"CanScale", "True"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "BUILDHARVESTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CanPickUp", "True"},
+                                {"CanPickUp", "True"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "O2_HARVESTER"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BuildableOnPlanet", "True"},
-                                {"Value", "PLANET_TECH"},
-                                {"CanPickUp", "True"},
+                                {"Group", "PLANET_TECH"},
+                                {"CanPickUp", "True"}
                             }
-                        },
+                        }
                     }
-                },
-            },
-        },
+                }
+            }
+        }
     }
 }
 
@@ -53,10 +53,10 @@ for i=1,#ContainerID do
     local temp_table =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID",value},
-                ["REPLACE_TYPE"]         = "ALL",
+                ["REPLACE_TYPE"] = "ALL",
                 ["VALUE_CHANGE_TABLE"]  =
                 {
-                    {"BuildableOnFreighter",                "True"},
+                    {"BuildableOnFreighter", "True"},
                     {"FreighterBaseLimit", 1},
                 }
             }
@@ -68,10 +68,10 @@ for i=1,#GarageID do
     local temp_table =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID",value},
-                ["REPLACE_TYPE"]         = "ALL",
-                ["VALUE_CHANGE_TABLE"]  =
+                ["REPLACE_TYPE"] = "ALL",
+                ["VALUE_CHANGE_TABLE"] =
                 {
-                    {"CanPickUp",                "True"},
+                    {"CanPickUp", "True"},
                 }
             }
     Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
