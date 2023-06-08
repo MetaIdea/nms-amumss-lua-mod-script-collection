@@ -16,7 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {},
-							--["SPECIAL_KEY_WORDS"] = {"VehicleDataTable"},
 							["SPECIAL_KEY_WORDS"] = {"Name", "MED_BUGGY"},
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -24,11 +23,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 									
 										
 										
-											{"TopSpeedForward",				"45"}, 	
-											{"TopSpeedReverse",				"25"},
-											{"UnderwaterEngineMaxSpeed",	"30"}, 	
-											{"VehicleBoostMaxSpeed", 		"70"},
-											{"VehicleBoostTime",			"2.5"}
+											{"TopSpeedForward",				"50"}, 	
+											{"TopSpeedReverse",				"35"},
+											{"UnderwaterEngineMaxSpeed",	"35"}, 	
+											{"VehicleBoostMaxSpeed", 		"100"},
+											{"VehicleBoostTime",			"2.5"},
+											{"VehicleBoostRechargeTime",    "1.5"}
 										
 									
 								}

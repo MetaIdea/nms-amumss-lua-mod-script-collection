@@ -26,9 +26,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 											{"TopSpeedForward",				"40"}, 	
 											{"TopSpeedReverse",				"10"},
 											{"UnderwaterEngineMaxSpeed",	"25"}, 	
-											{"VehicleBoostMaxSpeed",		"60"},
-											{"VehicleBoostTime",			"3"}
-										
+											{"VehicleBoostMaxSpeed",		"100"},
+											{"VehicleBoostTime",			"3"},
+											{"VehicleBoostRechargeTime",    "1.5"}
 										
 									
 								}

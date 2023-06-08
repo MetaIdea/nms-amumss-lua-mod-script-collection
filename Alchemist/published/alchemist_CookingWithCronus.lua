@@ -5,7 +5,7 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-26"
+GameVersion = "4-30"
 ModVersion = "1-3-0"
 
 --[[
@@ -337,6 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -515,6 +516,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -624,6 +626,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -740,6 +743,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -817,6 +821,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -870,6 +875,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -1930,6 +1936,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -1983,6 +1990,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -2568,6 +2576,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -2669,6 +2678,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -2819,6 +2829,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -2896,6 +2907,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -2949,6 +2961,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -7539,6 +7552,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -7922,6 +7936,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -8081,6 +8096,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -8264,6 +8280,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -8447,6 +8464,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -8630,6 +8648,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -8813,6 +8832,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -8996,6 +9016,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -9179,6 +9200,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -9350,6 +9372,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -14687,6 +14710,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -23378,6 +23402,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -23549,6 +23574,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -23741,6 +23767,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -23933,6 +23960,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -24125,6 +24153,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -24317,6 +24346,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -24469,6 +24499,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -24661,6 +24692,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -24853,6 +24885,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -25045,6 +25078,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -25237,6 +25271,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -25429,6 +25464,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -25621,6 +25657,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -25813,6 +25850,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -26005,6 +26043,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -26117,6 +26156,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -26275,6 +26315,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -26390,6 +26431,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -26519,6 +26561,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -26655,6 +26698,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -26732,6 +26776,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -26785,6 +26830,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -26927,6 +26973,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -26980,6 +27027,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
+            <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -30232,6 +30280,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30251,6 +30300,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30270,6 +30320,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30289,6 +30340,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30308,6 +30360,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30327,6 +30380,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30346,6 +30400,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30365,6 +30420,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30384,6 +30440,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30403,6 +30460,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30422,6 +30480,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30441,6 +30500,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30460,6 +30520,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30479,6 +30540,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30498,6 +30560,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30517,6 +30580,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30536,6 +30600,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30555,6 +30620,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30574,6 +30640,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30592,6 +30659,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30610,6 +30678,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30628,6 +30697,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30646,6 +30716,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30664,6 +30735,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30682,6 +30754,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30701,6 +30774,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30720,6 +30794,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30739,6 +30814,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30758,6 +30834,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30777,6 +30854,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30796,6 +30874,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30815,6 +30894,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30834,6 +30914,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30853,6 +30934,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30872,6 +30954,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30891,6 +30974,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30910,6 +30994,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30929,6 +31014,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30948,6 +31034,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30967,6 +31054,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -30986,6 +31074,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31005,6 +31094,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31024,6 +31114,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31043,6 +31134,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31062,6 +31154,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31081,6 +31174,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31100,6 +31194,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31119,6 +31214,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31138,6 +31234,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31157,6 +31254,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31176,6 +31274,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31195,6 +31294,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31214,6 +31314,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31233,6 +31334,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31252,6 +31354,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31271,6 +31374,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31290,6 +31394,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31309,6 +31414,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31328,6 +31434,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31347,6 +31454,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31366,6 +31474,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31385,6 +31494,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31404,6 +31514,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31423,6 +31534,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31442,6 +31554,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31461,6 +31574,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31480,6 +31594,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31499,6 +31614,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31518,6 +31634,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31537,6 +31654,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31556,6 +31674,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31575,6 +31694,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31594,6 +31714,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31613,6 +31734,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31632,6 +31754,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31651,6 +31774,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31670,6 +31794,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31689,6 +31814,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31708,6 +31834,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31727,6 +31854,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31746,6 +31874,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31765,6 +31894,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31784,6 +31914,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31803,6 +31934,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31822,6 +31954,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31841,6 +31974,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31860,6 +31994,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31879,6 +32014,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31898,6 +32034,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31917,6 +32054,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31936,6 +32074,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31955,6 +32094,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31974,6 +32114,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -31993,6 +32134,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32012,6 +32154,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32031,6 +32174,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32050,6 +32194,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32069,6 +32214,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32088,6 +32234,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32107,6 +32254,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32126,6 +32274,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32145,6 +32294,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32164,6 +32314,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32181,6 +32332,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32199,6 +32351,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -32949,6 +33102,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -33092,6 +33246,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -33299,6 +33454,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -33506,6 +33662,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -33713,6 +33870,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -33854,6 +34012,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -34106,6 +34265,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None" />
             <Property name="CustomFreighterTextIndex" value="-1" />
             <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
             <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -34252,6 +34412,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DisplayOnlyCostIfCantAfford" value="False" />
           <Property name="HideCostStringIfCanAfford" value="False" />
           <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
@@ -34669,6 +34830,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Seeded" value="False" />
                                     <Property name="SendToAllMatchingSeeds" value="False" />
                                     <Property name="Multiplayer" value="False" />
+                                    <Property name="CanSendToInactive" value="False" />
                                     <Property name="BroadcastToActiveMultiplayerMission" value="False" />
                                   </Property>
                                 </Property>
@@ -34692,6 +34854,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                               <Property name="Seeded" value="False" />
                               <Property name="SendToAllMatchingSeeds" value="False" />
                               <Property name="Multiplayer" value="False" />
+                              <Property name="CanSendToInactive" value="False" />
                               <Property name="BroadcastToActiveMultiplayerMission" value="False" />
                             </Property>
                           </Property>
@@ -34743,6 +34906,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Seeded" value="False" />
                         <Property name="SendToAllMatchingSeeds" value="False" />
                         <Property name="Multiplayer" value="False" />
+                        <Property name="CanSendToInactive" value="False" />
                         <Property name="BroadcastToActiveMultiplayerMission" value="False" />
                       </Property>
                     </Property>
@@ -34926,6 +35090,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property name="ShipHUDOverride" value="UI_HAIL_BIOFRIG_HUD" />
                               </Property>
                               <Property name="AutoOpen" value="False" />
+                              <Property name="UsePulseEncounterObjectAsAttachment" value="False" />
                               <Property name="DebugText" value="" />
                             </Property>
                           </Property>
@@ -35467,6 +35632,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="PersistancyBufferOverride" value="None" />
       <Property name="CustomFreighterTextIndex" value="-1" />
       <Property name="RadialInteraction" value="False" />
+      <Property name="UseTitleOverrideInLabel" value="False" />
       <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
@@ -35669,6 +35835,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="PersistancyBufferOverride" value="None" />
       <Property name="CustomFreighterTextIndex" value="-1" />
       <Property name="RadialInteraction" value="False" />
+      <Property name="UseTitleOverrideInLabel" value="False" />
       <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
@@ -35871,6 +36038,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="PersistancyBufferOverride" value="None" />
       <Property name="CustomFreighterTextIndex" value="-1" />
       <Property name="RadialInteraction" value="False" />
+      <Property name="UseTitleOverrideInLabel" value="False" />
       <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
@@ -36306,6 +36474,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="RequiresMissionNotComplete" value="" />
         <Property name="RequiresMissionNotActive" value="" />
         <Property name="RequiresAlienShip" value="False" />
+        <Property name="RequiresNearbyCorruptWorld" value="False" />
         <Property name="StandardEncounter" value="False" />
         <Property name="MissionEncounter" value="False" />
       </Property>
