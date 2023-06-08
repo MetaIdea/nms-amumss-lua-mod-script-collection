@@ -1,6 +1,30 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "79",
+		["Table"] =  
+		{
+			{ ["ID"] = "EXPD_POSTER10A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER10B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER10C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_CRYS_SENT0",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_CRYS_SENT1",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_CRYS_DRONE",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_ROCKETHAT",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE10",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL10",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER10",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "FREI_TRAIL_RED",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "JETS_CORRUPT",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "S10_PART1A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "S10_PART1B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "S10_PART2",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "S10_PART3",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "S10_PART4",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "S10_PART5",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "75",
 		["Table"] =  
 		{
@@ -63,7 +87,6 @@ SPECIAL_LIST =
 			{ ["ID"] = "TWITCH_FIREW05C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "TWITCH_FIREW05D",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "TWITCH_FIREW05E",	["IsConsumable"] = "False", ["IsCape"] = "False"},
-			{ ["ID"] = "SPEC_SAILHELM",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 		}
 	},
 	{
@@ -275,7 +298,7 @@ NEW_SPECIAL = {}
 for _i,j in pairs(SPECIAL_LIST) do
 	SHOP_LIST_TEMP = {}
 	SPECIAL_EXPORT = {}
-	for k,l in ipairs(j["Table"]) do
+	for _k,l in ipairs(j["Table"]) do
 		table.insert(SHOP_LIST_TEMP, GetNewSpecial(l["ID"], l["IsConsumable"], l["IsCape"]))
 	end
 	SPECIAL_EXPORT =

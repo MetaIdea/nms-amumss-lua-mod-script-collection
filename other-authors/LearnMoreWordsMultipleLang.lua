@@ -23,20 +23,11 @@
           </Property>
 ]]
 
--- Change this to your liking
-WORDS_LEARN = 5
+--[[
+	
+	For Version 3.99 (Endurance) and earlier:
 
--- Code may change with new updates
---[[ 
-        If you need a newer version of this code, you should use the 
-        AMUMSS unpacker exeuctable to find the "REWARDTABLE.MBIN"
-        file, and unpack it. Once you have its EXML file, you can then
-        search for "WORD" (all uppercase), and then find the piece of code
-        similar to what we have here.
-]]
-
-ORIGINAL_CODE = [[
-          <Property value="GcRewardTableItem.xml">
+		  <Property value="GcRewardTableItem.xml">
               <Property name="PercentageChance" value="100" />
               <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -50,6 +41,59 @@ ORIGINAL_CODE = [[
               <Property name="AmountMax" value="1" />
               </Property>
               <Property name="LabelID" value="" />
+          </Property>
+	
+
+]]
+
+--[[
+
+	For Version 4.23 (Interceptor) and earlier:
+	
+          <Property value="GcRewardTableItem.xml">
+              <Property name="PercentageChance" value="100" />
+              <Property name="Reward" value="GcRewardTeachWord.xml">
+              <Property name="Race" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+              </Property>
+              <Property name="UseCategory" value="False" />
+              <Property name="Category" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+              </Property>
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+              </Property>
+              <Property name="LabelID" value="" />
+          </Property>
+]]
+
+-- Change this to your liking
+WORDS_LEARN = 5
+
+-- Code may change with new updates
+--[[ 
+        If you need a newer version of this code, you should use the 
+        AMUMSS unpacker exeuctable to find the "REWARDTABLE.MBIN"
+        file, and unpack it. Once you have its EXML file, you can then
+        search for "WORD" (all uppercase), and then find the piece of code
+        similar to what we have here.
+]]
+
+ORIGINAL_CODE = [[
+		  <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardTeachWord.xml">
+              <Property name="Race" value="GcAlienRace.xml">
+                <Property name="AlienRace" value="None" />
+              </Property>
+              <Property name="UseCategory" value="False" />
+              <Property name="Category" value="GcWordCategoryTableEnum.xml">
+                <Property name="wordcategorytableEnum" value="MISC" />
+              </Property>
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+            </Property>
           </Property>
 ]]
 
@@ -67,10 +111,10 @@ CODE_TO_INCLUDE = EXPLORER_CODE..TRADER_CODE..WARRIOR_CODE
 NMS_MOD_DEFINITION_CONTAINER = {
 
     -- Just stuff to define the .pak file
-    ["MOD_FILENAME"]    = "LearnMoreWordsMultiLang.pak",
+    ["MOD_FILENAME"]    = "LearnMoreWordsMultiLang5.pak",
     ["MOD_AUTHOR"]      = "TheJollyDuck with help from AMUMSS and Nexus lua scripts",
     ["MOD_DESCRIPTION"] = "Increases the number of words learned from different sources",
-    ["NMS_VERSION"]     = "3.38",
+    ["NMS_VERSION"]     = "4.30",
 
     -- This contains all the stuff to append
     ["MODIFICATIONS"] = {{      

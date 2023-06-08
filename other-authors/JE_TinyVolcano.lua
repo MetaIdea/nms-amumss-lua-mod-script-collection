@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "TinyVolcano"
 ModNameSub = "__JE"
 BaseDescription = "Makes Volcanos very small so they do not block POI's"
-GameVersion = "4.26"
--- ModVersion = "v4.26"
+GameVersion = "4.30"
+-- ModVersion = "v4.30"
 FileSource1 = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =

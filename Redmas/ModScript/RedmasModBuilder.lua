@@ -31,7 +31,7 @@ INIT_PRESET ={
         ["FILTERS_SWAP_FEATURE"] = "ON", -- {"OFF"} with this value on, default filter are replaced with brighter ones Ctrl+F "SPACE_BLUR_FEATURE" to edit it
         -- BINOCULARS_TYPE SUN value will replace the binoclar filter with a vintage filter,
         -- BINOCULARS_TYPE Clear will remove the visual filter when using binoculars  
-        ["BINOCULARS_TYPE"] = "SUN", -- {"SUN"} / {"CLEAR"}  
+        ["BINOCULARS_TYPE"] = "CLEAR", -- {"SUN"} / {"CLEAR"}  
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON", -- {"OFF"} / This will reduce the speed lines while using the pulse warp in solar systems
         -- SPACESHIPS_TRAILS_TYPE REALISTIC : No visible trails for player and AI spaceships - Enemies and allies trails are visible during spaceships combat
         -- SPACESHIPS_TRAILS_TYPE E3 : restore the previous spaceship trails of NMS ( Pre-NEXT update)
@@ -43,7 +43,7 @@ INIT_PRESET ={
         -- REALISTIC ASTEROIDS_FIELDS_TYPE this meant to make astroid fields more natural ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
         -- FANTASY ASTEROIDS_FIELDS_TYPE this meant to make astroid easier to flight around ( very spaced and smaller) ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
         -- GLUED ASTEROIDS_FIELDS_TYPE this will make asteroids packed, like they are in vanilla, but with more spacing ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
-        ["ASTEROIDS_FIELDS_TYPE"] = "REALISTIC", -- ({"FANTASY"}  / {"REALISTIC"} / {"GLUED"})
+        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ({"FANTASY"}  / {"REALISTIC"} / {"GLUED"})
         -- FIGHTERS_SPACESHIPS_REPAINT ON for Dirty looking metal spaceships ( allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
         -- FIGHTERS_SPACESHIPS_REPAINT FULL for full metal spaceships ( do not allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
         ["FIGHTERS_SPACESHIPS_REPAINT"] = "FULL",  -- {"ON"} / {"FULL"} / {"OFF"} ( METALIC SPACESHIP MOD )
@@ -69,11 +69,11 @@ INIT_PRESET ={
         -- Copy paste the dds images names from ../RGOG/IMAGES/ and paste them here
         ["HELLO_GAMES_SPASH_SCREEN"] = "SCIFIPAINT",  -- "","HG-E3-1"  or another img name from ../RGOG/IMAGES
         -- This is the first loading Screen
-        ["ENGINE_SPASH_SCREEN"] = "E3-SHIPS", --  "" , "E-E3-1"   or another img name ../RGOG/IMAGES
+        ["ENGINE_SPASH_SCREEN"] = "E3-SHIPS", --  "" , "E-E3-1"   or another img name from ../RGOG/IMAGES
         -- This is the seconf loading Screen
-        ["NMS_TITLE"] = "TITLE-ATLAS", --  "" , "TITLE-WAYPOINT"   or another img name ../RGOG/IMAGES
+        ["NMS_TITLE"] = "TITLE-ATLAS", --  "" , "TITLE-WAYPOINT"   or another img name from ../RGOG/IMAGES
         -- this will replace the title loading screen
-        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE4", --  "" , "E3-RUINS"   or another img name ../RGOG/IMAGES
+        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE4", --  "" , "E3-RUINS"   or another img name from ../RGOG/IMAGES
         -- this will replace the Menus Screens
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF", -- -- this var is not used anymore because it was impossibe to read the menus in some situations
     },
@@ -84,7 +84,7 @@ INIT_PRESET ={
         -- CTRL+F **CAMERA_OVERHAUL_FEATURES** to edit the changes
 	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
         -- this is different from the game menu no shake : this changes will remove shaking for everything exept getting hit, sandworms , and volcanos.
-        -- it can be combine with the vanilla share adjustement
+        -- it can be combine with the vanilla camera shakes adjustement
         -- I suggest to use it, in order to have a feeling of danger and to be in rare situations
 	    ["CENTERED_CAMERA_FEATURE"] = "OFF", -- this var is not used anymore -- had a cam auto move bug / felt unconfortable to use
     },
@@ -94,7 +94,7 @@ INIT_PRESET ={
         ["QOL_FEATURES"] =
         {
             -- Quality of Life features
-            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON", -- "ON"/"OFF"  more character shape customisations -- vanilla have 5 boty types, this mod will add 20 in between body shapes
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON", -- "ON"/"OFF"  more character shape customisations -- vanilla have 5 body types, this mod will add 20 in between body shapes
             ["MINING_SPEED"] = "3", -- 2 to 10 (10 = REDMAS INSTANT MINING mod) -- adjust the mining speed. it works by reducing all props lifebar / health
             ["NEW_INTERACTIONS_FEATURE"] = "ON", -- "ON"/"OFF"  ( New Gameplay Mechanics ) -- add new interactions to decorations - add useful stuff in hangars - reworks freighters bridge
             ["ADVANCED_BUILDS_FEATURE"] = "ON", --  "ON"/"OFF"  ( more buildable objects on freighter planets and setlements )
@@ -160,15 +160,15 @@ INIT_PRESET ={
             {
                 -- Mods for the voxel generation
                 ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "EPIC_FANTASY" , "ORIGINS" or "ON" or "OFF" 
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- inverts the ressources deposits ( making them out of the ground )
-                ["TERRAIN_HEIGHT_MAX"] = "40", -- higher values can make the game unstable
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- inverts the ressources deposits ( making them out of the ground )
+                ["TERRAIN_HEIGHT_MAX"] = "10", -- "-40" to "40" higher values can make the game unstable
             },
             ["BIOMES_FEATURES"] = -- world generation features
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF", -- "ON"/"OFF" -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
+                ["FANTASY_BIOMES_FEATURE"] = "OFF", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
                 ["SKY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- floating things in the skies
-                ["STORM_BIOMES_FEATURES"] = "OFF", -- "ON"/"OFF"-- this var is not used anymore 
+                ["STORM_BIOMES_FEATURES"] = "OFF", -- this var is not used anymore 
                 ["GIANTS_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- swamp biomes ( trees and constructs on water) & flora / rocks on beaches
                 ["MONTAINS_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- more diversity on montains
@@ -210,7 +210,7 @@ INIT_PRESET ={
     },
     ["SKINS"] =
     {
-        ["CHARACTERS_SKINS_FEATURE"] = "OFF",   -- > this var off will disable all features under that node  -- "ON"/"OFF" 
+        ["CHARACTERS_SKINS_FEATURE"] = "ON",   -- > this var off will disable all features under that node  -- "ON"/"OFF" 
         --    
         ["DRONE_PET_SKIN_FEATURE"] = "ON",
 		["DRONE_PET_SKIN"] = "E3",-- ("E3-DAMAGED" or "E3") replacement with custom models for flare ( the friendly sentinel drone ) ( i will add more ones)
@@ -250,7 +250,7 @@ INIT_PRESET ={
     ["EASY_MODE_FEATURES"] =
     {
         -- this section is for the cheats of the Game overhaul ( there are few as you can see )
-        ["EASY_MODE"] = "OFF", -- "ON"/"OFF" -- > this var off will disable all features under that node
+        ["EASY_MODE"] = "ON", -- "ON"/"OFF" -- > this var off will disable all features under that node
         --
         ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 2 , -- ( "1" < - > "4" ( too much will be glitchy when entering planets' atmosphere)) -- notice that this param requires a integer, not a string
         ["LAUNCH_COST_REDUCTION"] = 5 , -- In % ( take off reduce ) note the base game already does it since NMS v 4.0 -- notice that this param requires a integer, not a string
@@ -7817,19 +7817,12 @@ addFeature
 -- VISUAL OVERHAUL
 if VISUAL_OVERHAUL == "ON"
 then
-
-
 	addFeature
 	(
 		VISUAL_OVERHAUL,
 		{
-
-
-				
-				{
-
-					
-					-- asteroids rework
+			{
+				-- asteroids rework
 					["MBIN_FILE_SOURCE"]  = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] =
 					{
@@ -17078,7 +17071,29 @@ addFeature(
 								--{"Active","True"},
 							}
 						},
-												{
+
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Large",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight","130"},
+								{"MaxHeight","250"},
+								{"NoiseGridType","SuperFormula_08"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Small",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								--{"SwapZY","True"},
+								{"MinHeight","50"},
+								{"MaxHeight","150"},
+								{"NoiseGridType","SuperPrimitiveRandom"},
+							}
+						},
+																		{
 							["REPLACE_TYPE"] = "ALL",
 							["PRECEDING_KEY_WORDS"] = "Resources_Aluminium",
 							["VALUE_CHANGE_TABLE"] =
@@ -17147,27 +17162,6 @@ addFeature(
 								{"NoiseGridType","SuperFormula_08"},
 							}
 						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Large",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","130"},
-								{"MaxHeight","250"},
-								{"NoiseGridType","SuperFormula_08"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Small",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								--{"SwapZY","True"},
-								{"MinHeight","50"},
-								{"MaxHeight","150"},
-								{"NoiseGridType","SuperPrimitiveRandom"},
-							}
-						},
 
 					}
 				}
@@ -17189,9 +17183,8 @@ addFeature(
 							["PRECEDING_KEY_WORDS"] = "Large",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"MinHeight","130"},
-								{"MaxHeight","250"},
-								{"NoiseGridType","SuperFormula_08"},
+								{"MinHeight","50"},
+								{"MaxHeight","150"},
 							}
 						},
 						{
@@ -17200,11 +17193,11 @@ addFeature(
 							["VALUE_CHANGE_TABLE"] =
 							{
 								--{"SwapZY","True"},
-								{"MinHeight","50"},
-								{"MaxHeight","150"},
-								{"NoiseGridType","SuperPrimitiveRandom"},
+								{"MinHeight","10"},
+								{"MaxHeight","50"},
 							}
 						},
+
 
 
 					}

@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MechCameraArmShootOffsetY",           "2.5"}
+								{"MechCameraArmShootOffsetY",           "2"}
 								
 							},
 							
@@ -33,8 +33,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"OffsetX",                             "1.5"},
-								{"OffsetY",                             "2.5"},
-								{"OffsetYAlt",                          "2.5"},
+								{"OffsetY",                             "2"},
+								{"OffsetYAlt",                          "2"},
 								{"OffsetYSlopeExtra",                   "1.0"}
 							},
 							
@@ -46,8 +46,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"OffsetY",                             "2.5"},
-								{"OffsetYAlt",                          "2.5"},
+								{"OffsetY",                             "2"},
+								{"OffsetYAlt",                          "2"},
 								{"OffsetYSlopeExtra",                   "1.0"}
 							},
 							

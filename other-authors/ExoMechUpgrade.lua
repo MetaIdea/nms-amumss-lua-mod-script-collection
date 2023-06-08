@@ -27,7 +27,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MechJetpackLandTime",			"0.4"},		-- Original "0.6"
 								{"MechTitanFallLandIntroTime",			"3.5"},		-- Original "4.5"
 								{"MechJetpackMaxSpeed", 		"30"},
-								{"VehicleBoostSpeedMultiplierPercent", 	"100"}
+								{"VehicleBoostTime",           "3.0"},      -- Original "2.5"
+								{"VehicleBoostRechargeTime",   "1.5"},      -- Original "2.5"
+								{"VehicleBoostSpeedMultiplierPercent", 	"100"},
+								{"TopSpeedForward",             "3"},
+								{"TopSpeedReverse",            "18"}
 							},
 							
 							
