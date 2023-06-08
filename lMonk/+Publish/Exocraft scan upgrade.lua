@@ -1,12 +1,12 @@
 ----------------------------------------------------------------------------------------
 mod_desc = [[
   Adds observatory settlement, drone-hive, ship debris, sentinel pillar, claimable base site,
-  minor settlement, secure facility, ancient plaque, remote terminal, treausere ruin,
+  minor settlement, secure facility, ancient plaque, remote terminal, treasure ruin,
   traveler grave, distress signals and underwater locations to exocraft scanner.
-  Re-arange scanner icons grouping for improved target selection.
+  Re-arrange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]--------------------------------------------------------------------------------------
-mod_version = '1.99.2'
+mod_version = '1.99.3'
 
 local icon = {
 	glitch		= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.HIDE_N_SEEK.MSHOP.DDS',
@@ -231,7 +231,7 @@ function scan_table:GetEntry(entry)
 	return exml
 end
 
-local function BuildVehicleScanTable()
+local function BuildVehicleScanMenuTable()
 	local exml = ''
 	for _,entry in ipairs(scan_table) do
 		exml = exml..scan_table:GetEntry(entry)
@@ -322,7 +322,7 @@ local scan_events = {
 	}
 }
 
-local function AddNewScanEventsAndIcons()
+local function VehicleScanEventsChangeTable()
 	local T = {
 		{
 			PRECEDING_KEY_WORDS		= 'GcScanEventData.xml',
@@ -365,37 +365,32 @@ local function AddNewScanEventsAndIcons()
 			VALUE_CHANGE_TABLE	= { {'Filename', s[2]} }
 		}
 	end
+	-- ancient bug fix
+	T[#T+1] = {
+		SPECIAL_KEY_WORDS	= {'Name', 'RUIN'},
+		VALUE_CHANGE_TABLE 	= {
+			{'OSDMessage', 'UI_SIGNAL_TREASURERUIN'}
+		}
+	}	
 	return T
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.22',
+	NMS_VERSION			= '4.30',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES = {
 		{
 			FILE_DESTINATION 	= 'METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.EXML',
-			FILE_CONTENT		= BuildVehicleScanTable()
+			FILE_CONTENT		= BuildVehicleScanMenuTable()
 		}
 	},
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				-- old bug fix
-				SPECIAL_KEY_WORDS	= {'Name', 'RUIN'},
-				VALUE_CHANGE_TABLE 	= {
-					{'OSDMessage', 'UI_SIGNAL_TREASURERUIN'}
-				}
-			}
-		}
-	},
-	{
-		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN',
-		EXML_CHANGE_TABLE	= AddNewScanEventsAndIcons()
+		EXML_CHANGE_TABLE	= VehicleScanEventsChangeTable()
 	},
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',

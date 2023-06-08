@@ -2,15 +2,15 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Boundary 20k"
 BaseDescription = "Base boundary and wire length extensions"
-GameVersion = "420"
+GameVersion = "430"
 ModVersion = "a"
 FileSource1 = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 
-MinRadiusForBases = 50						-- When you first build the base, how far out can you build? Original value "300"
-BaseRadiusExtension = 20000						-- If you place an item on the edge of your border, how much does the border bump out? Original value "50"
+MinRadiusForBases = 20000						-- When you first build the base, how far out can you build? Original value "300"
+BaseRadiusExtension = 0							-- If you place an item on the edge of your border, how much does the border bump out? Original value "50"
 MaxRadiusForPlanetBases = 20000					-- What is the absolute maximum border distance? Original value "1000"
 MaxRadiusForSpaceBases = 20000					-- Not sure yet. Original 400
-BuildingPlacementMaxConnectionLength = 40000		-- How long can one segment of power line or teleporter cable be? Original value "200"
+BuildingPlacementMaxConnectionLength = 40000	-- How long can one segment of power line or teleporter cable be? Original value "200"
 BuildingPlacementScaleMin = .1					-- How small can you scale items? (0.25)
 BuildingPlacementScaleMax = 5					-- How large can you scale items? (3)
 

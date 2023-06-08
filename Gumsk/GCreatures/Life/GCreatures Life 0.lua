@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Life"
 ModNameSub = "0"
 BaseDescription = ModNameSub.."x normal life"
-GameVersion = "422"
+GameVersion = "430"
 ModVersion = "a"
 
 --[[Files Modified:

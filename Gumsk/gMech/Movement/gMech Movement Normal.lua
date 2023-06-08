@@ -2,9 +2,9 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech Movement"
 ModNameSub = "Normal"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "422"
+GameVersion = "430"
 ModVersion = "a"
-FileSource1 = "MODELS\\COMMON\\VEHICLES\\MECH_SUIT\\MECH_SUIT\\ENTITIES\\MECH.ENTITY.MBIN"
+FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
 --MECH ENTITY Animation Speeds

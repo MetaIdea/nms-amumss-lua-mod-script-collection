@@ -1,48 +1,59 @@
-Author = "Gumsk"
 ModName = "gGame Gameplay"
 ModNameSub = "Scan"
-BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "422"
+GameVersion = "430"
 ModVersion = "a"
-FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
+
+--[[ Files Modified:
+METADATA\\SIMULATION\\SCANNING\\SCANDATATABLE.MBIN
+GCGAMEPLAYGLOBALS.GLOBAL.MBIN
+]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
+	["MOD_DESCRIPTION"]	= "Various modifications to gameplay globals",
+	["MOD_AUTHOR"]		= "Gumsk",
+	["LUA_AUTHOR"]		= "Gumsk",
 	["NMS_VERSION"]		= GameVersion,
+	["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 	["MODIFICATIONS"]	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {
+			
+			--Scanning
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
+					["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SCANNING\\SCANDATATABLE.MBIN",
 					["EXML_CHANGE_TABLE"] = {
-
-				--Scanning
 						{
-							["PRECEDING_KEY_WORDS"] = "ToolScan",
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {
+								"ID", "TOOL",
+							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"PulseRange",500},									--200; Multitool scan range, in u, easy mode
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "ToolScanHardMode",
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {
+								"ID", "TOOL_HARD",
+							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"PulseRange",500},									--150; Multitool scan range, in u, hard mode
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "ShipScan",
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {
+								"ID", "SHIP",
+							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"PulseRange",30000},								--10000; Ship scan range, in u
 							},
 						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = {
 						{
 							["PRECEDING_KEY_WORDS"] = "BinocularSelectedEffect",
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"BasecolourIntensity",2.0},						--0.4; 
 								{"ScanlinesSeparation",5},							--5; 
@@ -54,7 +65,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "BinocularSelectedColour",
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"R",0},											--0.588; 
 								{"G",1},											--1; 
@@ -64,7 +74,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},	
 						{
 							["PRECEDING_KEY_WORDS"] = "BinocularSelectedUnknownColour",
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"R",1},											--0.926; 
 								{"G",0},											--0.539; 
@@ -82,7 +91,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								{"TerrainResourceScanTime",30},						--30; 
 								{"TerrainResourceScanRange",2000},					--1200; 
