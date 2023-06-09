@@ -67,28 +67,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"WalkSpeed",       "1"},    -- Original "0.3"
                             }
                         },
-						{
-							["PRECEDING_KEY_WORDS"] = {"BinocularSelectedColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{"R",	"0"},  
-								{"G",	"1"},  
-								{"B",	"0"},  
-								{"A",	"0"},  
-							},
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"BinocularSelectedUnknownColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{"R",	"1"},  
-								{"G",	"0"},  
-								{"B",	"0"},  
-								{"A",	"1"},  
-							},
-						},
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"BinocularSelectedColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R",    "0"},
+                                {"G",    "1"},
+                                {"B",    "0"},
+                                {"A",    "0"},
+                            },
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"BinocularSelectedUnknownColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R",    "1"},
+                                {"G",    "0"},
+                                {"B",    "0"},
+                                {"A",    "1"},
+                            },
+                        },
                     }
                 },
                 {
@@ -190,9 +190,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PulseRange", "15000"}, -- Original "10000"
                                 {"PulseTime",  "0.5"},   -- Original "8"
                                 {"ChargeTime", "0.25"},  -- Original "4"
-                    }
+                            }
                         },
-                }
+                    }
                 },
             }
         }

@@ -951,6 +951,98 @@
                       <Property name="UnselectingRemovesGroup" />
                       <Property name="UnselectingAddsGroup" />
                     </Property>
+                    <Property value="GcCustomisationDescriptorGroupOption.xml">
+                      <Property name="DescriptorOption" value="HEAD_ASTBOT1" />
+                      <Property name="TextureGroups">
+                        <Property value="GcCustomisationTextureGroup.xml">
+                          <Property name="GroupID" value="" />
+                          <Property name="Title" value="CUSTOMISE_MARKINGS_L" />
+                          <Property name="TextureOptionGroup" value="HEAD_ASTRO" />
+                        </Property>
+                      </Property>
+                      <Property name="ReplaceBaseColours" value="False" />
+                      <Property name="ColourGroups">
+                        <Property value="GcCustomisationColourGroup.xml">
+                          <Property name="GroupID" value="" />
+                          <Property name="Title" value="CUSTOMISE_PRIMARY" />
+                          <Property name="Palette" value="TkPaletteTexture.xml">
+                            <Property name="Palette" value="Custom_Head" />
+                            <Property name="ColourAlt" value="Primary" />
+                          </Property>
+                        </Property>
+                        <Property value="GcCustomisationColourGroup.xml">
+                          <Property name="GroupID" value="" />
+                          <Property name="Title" value="CUSTOMISE_SECONDARY" />
+                          <Property name="Palette" value="TkPaletteTexture.xml">
+                            <Property name="Palette" value="Custom_Head" />
+                            <Property name="ColourAlt" value="Alternative1" />
+                          </Property>
+                        </Property>
+                        <Property value="GcCustomisationColourGroup.xml">
+                          <Property name="GroupID" value="" />
+                          <Property name="Title" value="CUSTOMISE_TERTIARY" />
+                          <Property name="Palette" value="TkPaletteTexture.xml">
+                            <Property name="Palette" value="Custom_Head" />
+                            <Property name="ColourAlt" value="Alternative2" />
+                          </Property>
+                        </Property>
+                      </Property>
+                      <Property name="ReplaceBaseBoneScales" value="False" />
+                      <Property name="BoneScales" />
+                      <Property name="InteractionCameraIndexOverride" value="-1" />
+                      <Property name="InteracttionCameraFocusJointOverride" value="" />
+                      <Property name="HideIfGroupActive" />
+                      <Property name="SelectingRemovesGroup" />
+                      <Property name="SelectingAddsGroup" />
+                      <Property name="UnselectingRemovesGroup" />
+                      <Property name="UnselectingAddsGroup" />
+                    </Property>
+                    <Property value="GcCustomisationDescriptorGroupOption.xml">
+                      <Property name="DescriptorOption" value="HEAD_ASTBOT2" />
+                      <Property name="TextureGroups">
+                        <Property value="GcCustomisationTextureGroup.xml">
+                          <Property name="GroupID" value="" />
+                          <Property name="Title" value="CUSTOMISE_MARKINGS_L" />
+                          <Property name="TextureOptionGroup" value="HEAD_ASTRO" />
+                        </Property>
+                      </Property>
+                      <Property name="ReplaceBaseColours" value="False" />
+                      <Property name="ColourGroups">
+                        <Property value="GcCustomisationColourGroup.xml">
+                          <Property name="GroupID" value="" />
+                          <Property name="Title" value="CUSTOMISE_PRIMARY" />
+                          <Property name="Palette" value="TkPaletteTexture.xml">
+                            <Property name="Palette" value="Custom_Head" />
+                            <Property name="ColourAlt" value="Primary" />
+                          </Property>
+                        </Property>
+                        <Property value="GcCustomisationColourGroup.xml">
+                          <Property name="GroupID" value="" />
+                          <Property name="Title" value="CUSTOMISE_SECONDARY" />
+                          <Property name="Palette" value="TkPaletteTexture.xml">
+                            <Property name="Palette" value="Custom_Head" />
+                            <Property name="ColourAlt" value="Alternative1" />
+                          </Property>
+                        </Property>
+                        <Property value="GcCustomisationColourGroup.xml">
+                          <Property name="GroupID" value="" />
+                          <Property name="Title" value="CUSTOMISE_TERTIARY" />
+                          <Property name="Palette" value="TkPaletteTexture.xml">
+                            <Property name="Palette" value="Custom_Head" />
+                            <Property name="ColourAlt" value="Alternative2" />
+                          </Property>
+                        </Property>
+                      </Property>
+                      <Property name="ReplaceBaseBoneScales" value="False" />
+                      <Property name="BoneScales" />
+                      <Property name="InteractionCameraIndexOverride" value="-1" />
+                      <Property name="InteracttionCameraFocusJointOverride" value="" />
+                      <Property name="HideIfGroupActive" />
+                      <Property name="SelectingRemovesGroup" />
+                      <Property name="SelectingAddsGroup" />
+                      <Property name="UnselectingRemovesGroup" />
+                      <Property name="UnselectingAddsGroup" />
+                    </Property>
                   </Property>
                   <Property name="PrerequisiteGroup" />
                 </Property>
@@ -3614,6 +3706,68 @@
                     <Property name="UnselectingRemovesGroup" />
                     <Property name="UnselectingAddsGroup" />
                   </Property>
+                  <Property value="GcCustomisationDescriptorGroupOption.xml">
+                    <Property name="DescriptorOption" value="TORSO_BUILDERS" />
+                    <Property name="TextureGroups">
+                      <Property value="GcCustomisationTextureGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_MARKINGS_L" />
+                        <Property name="TextureOptionGroup" value="TORSO_BUILDERS" />
+                      </Property>
+                    </Property>
+                    <Property name="ReplaceBaseColours" value="False" />
+                    <Property name="ColourGroups">
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_PRIMARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Torso" />
+                          <Property name="ColourAlt" value="Primary" />
+                        </Property>
+                      </Property>
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_SECONDARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Torso" />
+                          <Property name="ColourAlt" value="Alternative1" />
+                        </Property>
+                      </Property>
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_TERTIARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Torso" />
+                          <Property name="ColourAlt" value="Alternative2" />
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property name="ReplaceBaseBoneScales" value="False" />
+                    <Property name="BoneScales" />
+                    <Property name="InteractionCameraIndexOverride" value="-1" />
+                    <Property name="InteracttionCameraFocusJointOverride" value="" />
+                    <Property name="HideIfGroupActive" />
+                    <Property name="SelectingRemovesGroup">
+                      <Property value="NMSString0x10.xml">
+                        <Property name="Value" value="ARMOUR" />
+                      </Property>
+                    </Property>
+                    <Property name="SelectingAddsGroup">
+                      <Property value="NMSString0x10.xml">
+                        <Property name="Value" value="ARMOUR_NULL" />
+                      </Property>
+                    </Property>
+                    <Property name="UnselectingRemovesGroup">
+                      <Property value="NMSString0x10.xml">
+                        <Property name="Value" value="ARMOUR" />
+                      </Property>
+                    </Property>
+                    <Property name="UnselectingAddsGroup">
+                      <Property value="NMSString0x10.xml">
+                        <Property name="Value" value="ARMOUR_ASTRO" />
+                      </Property>
+                    </Property>
+                  </Property>
                 </Property>
                 <Property name="PrerequisiteGroup" />
               </Property>
@@ -3862,6 +4016,27 @@
                     <Property name="UnselectingRemovesGroup" />
                     <Property name="UnselectingAddsGroup" />
                   </Property>
+                  <Property value="GcCustomisationDescriptorGroupOption.xml">
+                    <Property name="DescriptorOption" value="ARMOUR_NULL" />
+                    <Property name="TextureGroups">
+                      <Property value="GcCustomisationTextureGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="" />
+                        <Property name="TextureOptionGroup" value="" />
+                      </Property>
+                    </Property>
+                    <Property name="ReplaceBaseColours" value="False" />
+                    <Property name="ColourGroups" />
+                    <Property name="ReplaceBaseBoneScales" value="False" />
+                    <Property name="BoneScales" />
+                    <Property name="InteractionCameraIndexOverride" value="-1" />
+                    <Property name="InteracttionCameraFocusJointOverride" value="" />
+                    <Property name="HideIfGroupActive" />
+                    <Property name="SelectingRemovesGroup" />
+                    <Property name="SelectingAddsGroup" />
+                    <Property name="UnselectingRemovesGroup" />
+                    <Property name="UnselectingAddsGroup" />
+                  </Property>
                 </Property>
                 <Property name="PrerequisiteGroup" />
               </Property>
@@ -4094,6 +4269,52 @@
                         <Property name="GroupID" value="" />
                         <Property name="Title" value="CUSTOMISE_MARKINGS_L" />
                         <Property name="TextureOptionGroup" value="GLOVES_VYK" />
+                      </Property>
+                    </Property>
+                    <Property name="ReplaceBaseColours" value="False" />
+                    <Property name="ColourGroups">
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_PRIMARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Hands" />
+                          <Property name="ColourAlt" value="Primary" />
+                        </Property>
+                      </Property>
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_SECONDARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Hands" />
+                          <Property name="ColourAlt" value="Alternative1" />
+                        </Property>
+                      </Property>
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_TERTIARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Hands" />
+                          <Property name="ColourAlt" value="Alternative2" />
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property name="ReplaceBaseBoneScales" value="False" />
+                    <Property name="BoneScales" />
+                    <Property name="InteractionCameraIndexOverride" value="-1" />
+                    <Property name="InteracttionCameraFocusJointOverride" value="" />
+                    <Property name="HideIfGroupActive" />
+                    <Property name="SelectingRemovesGroup" />
+                    <Property name="SelectingAddsGroup" />
+                    <Property name="UnselectingRemovesGroup" />
+                    <Property name="UnselectingAddsGroup" />
+                  </Property>
+                  <Property value="GcCustomisationDescriptorGroupOption.xml">
+                    <Property name="DescriptorOption" value="GLOVES_BUILDERS" />
+                    <Property name="TextureGroups">
+                      <Property value="GcCustomisationTextureGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_MARKINGS_L" />
+                        <Property name="TextureOptionGroup" value="GLOVES_BUILDERS" />
                       </Property>
                     </Property>
                     <Property name="ReplaceBaseColours" value="False" />
@@ -4389,6 +4610,52 @@
                     <Property name="UnselectingRemovesGroup" />
                     <Property name="UnselectingAddsGroup" />
                   </Property>
+                  <Property value="GcCustomisationDescriptorGroupOption.xml">
+                    <Property name="DescriptorOption" value="LEGS_BUILDERS" />
+                    <Property name="TextureGroups">
+                      <Property value="GcCustomisationTextureGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_MARKINGS_L" />
+                        <Property name="TextureOptionGroup" value="LEGS_BUILDERS" />
+                      </Property>
+                    </Property>
+                    <Property name="ReplaceBaseColours" value="False" />
+                    <Property name="ColourGroups">
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_PRIMARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Legs" />
+                          <Property name="ColourAlt" value="Primary" />
+                        </Property>
+                      </Property>
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_SECONDARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Legs" />
+                          <Property name="ColourAlt" value="Alternative1" />
+                        </Property>
+                      </Property>
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_TERTIARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Legs" />
+                          <Property name="ColourAlt" value="Alternative2" />
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property name="ReplaceBaseBoneScales" value="False" />
+                    <Property name="BoneScales" />
+                    <Property name="InteractionCameraIndexOverride" value="-1" />
+                    <Property name="InteracttionCameraFocusJointOverride" value="" />
+                    <Property name="HideIfGroupActive" />
+                    <Property name="SelectingRemovesGroup" />
+                    <Property name="SelectingAddsGroup" />
+                    <Property name="UnselectingRemovesGroup" />
+                    <Property name="UnselectingAddsGroup" />
+                  </Property>
                 </Property>
                 <Property name="PrerequisiteGroup" />
               </Property>
@@ -4645,6 +4912,52 @@
                     <Property name="UnselectingRemovesGroup" />
                     <Property name="UnselectingAddsGroup" />
                   </Property>
+                  <Property value="GcCustomisationDescriptorGroupOption.xml">
+                    <Property name="DescriptorOption" value="BOOTS_BUILDERS" />
+                    <Property name="TextureGroups">
+                      <Property value="GcCustomisationTextureGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_MARKINGS_L" />
+                        <Property name="TextureOptionGroup" value="BOOTS_BUILDERS" />
+                      </Property>
+                    </Property>
+                    <Property name="ReplaceBaseColours" value="False" />
+                    <Property name="ColourGroups">
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_PRIMARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Feet" />
+                          <Property name="ColourAlt" value="Primary" />
+                        </Property>
+                      </Property>
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_SECONDARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Feet" />
+                          <Property name="ColourAlt" value="Alternative1" />
+                        </Property>
+                      </Property>
+                      <Property value="GcCustomisationColourGroup.xml">
+                        <Property name="GroupID" value="" />
+                        <Property name="Title" value="CUSTOMISE_TERTIARY" />
+                        <Property name="Palette" value="TkPaletteTexture.xml">
+                          <Property name="Palette" value="Custom_Feet" />
+                          <Property name="ColourAlt" value="Alternative2" />
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property name="ReplaceBaseBoneScales" value="False" />
+                    <Property name="BoneScales" />
+                    <Property name="InteractionCameraIndexOverride" value="-1" />
+                    <Property name="InteracttionCameraFocusJointOverride" value="" />
+                    <Property name="HideIfGroupActive" />
+                    <Property name="SelectingRemovesGroup" />
+                    <Property name="SelectingAddsGroup" />
+                    <Property name="UnselectingRemovesGroup" />
+                    <Property name="UnselectingAddsGroup" />
+                  </Property>
                 </Property>
                 <Property name="PrerequisiteGroup" />
               </Property>
@@ -4759,7 +5072,7 @@
                     </Property>
                   </Property>
                   <Property value="GcCustomisationDescriptorGroupOption.xml">
-                    <Property name="DescriptorOption" value="" />
+                    <Property name="DescriptorOption" value="BACKPACK_SENT" />
                     <Property name="TextureGroups" />
                     <Property name="ReplaceBaseColours" value="False" />
                     <Property name="ColourGroups" />
