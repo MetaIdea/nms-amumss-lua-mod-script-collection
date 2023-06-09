@@ -31,19 +31,19 @@ INIT_PRESET ={
         ["FILTERS_SWAP_FEATURE"] = "ON", -- {"OFF"} with this value on, default filter are replaced with brighter ones Ctrl+F "SPACE_BLUR_FEATURE" to edit it
         -- BINOCULARS_TYPE SUN value will replace the binoclar filter with a vintage filter,
         -- BINOCULARS_TYPE Clear will remove the visual filter when using binoculars  
-        ["BINOCULARS_TYPE"] = "CLEAR", -- {"SUN"} / {"CLEAR"}  
+        ["BINOCULARS_TYPE"] = "SUN", -- {"SUN"} / {"CLEAR"}  
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON", -- {"OFF"} / This will reduce the speed lines while using the pulse warp in solar systems
         -- SPACESHIPS_TRAILS_TYPE REALISTIC : No visible trails for player and AI spaceships - Enemies and allies trails are visible during spaceships combat
         -- SPACESHIPS_TRAILS_TYPE E3 : restore the previous spaceship trails of NMS ( Pre-NEXT update)
-        ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- ( {"REALISTIC"} / {"VANILLA"} / {"E3"} )
+        ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- ( {"REALISTIC"} / {"VANILLA"} / {"E3"} )
         -- REALISTIC SPACE_COLOURS_TYPE Make space much darker( but not always full black) - it can be combined with ULTRA_DIVERSE_SPACE_COLOURS option ON
         -- SPACE_COLOURS_TYPE ON is vanilla unless you use the ULTRA_DIVERSE_SPACE_COLOURS option ON 
         -- FANTASY SPACE_COLOURS_TYPE Make all space darker ( but still colorful) - it can be combined with ULTRA_DIVERSE_SPACE_COLOURS option ON
-        ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- ({"REALISTIC"} / {"ON"} / {"FANTASY"} )
+        ["SPACE_COLOURS_TYPE"] = "FANTASY", -- ({"REALISTIC"} / {"ON"} / {"FANTASY"} )
         -- REALISTIC ASTEROIDS_FIELDS_TYPE this meant to make astroid fields more natural ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
         -- FANTASY ASTEROIDS_FIELDS_TYPE this meant to make astroid easier to flight around ( very spaced and smaller) ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
         -- GLUED ASTEROIDS_FIELDS_TYPE this will make asteroids packed, like they are in vanilla, but with more spacing ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
-        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ({"FANTASY"}  / {"REALISTIC"} / {"GLUED"})
+        ["ASTEROIDS_FIELDS_TYPE"] = "FANTASY", -- ({"FANTASY"}  / {"REALISTIC"} / {"GLUED"})
         -- FIGHTERS_SPACESHIPS_REPAINT ON for Dirty looking metal spaceships ( allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
         -- FIGHTERS_SPACESHIPS_REPAINT FULL for full metal spaceships ( do not allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
         ["FIGHTERS_SPACESHIPS_REPAINT"] = "FULL",  -- {"ON"} / {"FULL"} / {"OFF"} ( METALIC SPACESHIP MOD )
@@ -118,13 +118,13 @@ INIT_PRESET ={
         ["VEHICLES_FEATURES"] =
         {
             ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON", -- "ON"/"OFF"  player and AI spaceships controls rework CTRL+F **VEHICULE_HANDLINGS** for editing it
-            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "OFF", -- "ON"/"OFF" this will add dragonfly unused exocraft with a custom model that can be summoned & customised at trading posts
-            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF", -- "ON"/"OFF" this value ON will enable the custom model that i did for the nomad ( ball exocraft ) i am planing to add more models ( the hoverbike for example)
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON", -- "ON"/"OFF" this will add dragonfly unused exocraft with a custom model that can be summoned & customised at trading posts
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "ON", -- "ON"/"OFF" this value ON will enable the custom model that i did for the nomad ( ball exocraft ) i am planing to add more models ( the hoverbike for example)
             ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON", -- "ON"/"OFF" this value ON will enable the custom model that i did for the pilgrim: REDMASPOD v3 ( a KANEDA BIKE INSPIRED SKIN )
             ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "ON"/"OFF" "MAKO-A" ( "Mass Effect" Inspired custom model" for the colossus
             ["CUSTOM_ROAMER_EXOCRAFT"] = "ON", -- "ON"/"OFF" this value ON will enable the custom model that i did for the roamer : a more aggressive / sport car looking version of the vanilla roamer
-            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF", -- "ON"/"OFF" this value on will add LARGER BEHIND WHEELS on the custom model for the roamer
-            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "OFF", -- "ON"/"OFF" this value on will add additional lamps on the custom model for the roamer ( i had to disable their light they were too strong )
+            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- "ON"/"OFF" this value on will add LARGER BEHIND WHEELS on the custom model for the roamer
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON", -- "ON"/"OFF" this value on will add additional lamps on the custom model for the roamer ( i had to disable their light they were too strong )
             ["GIANT_MECHS_BETA_FEATURE"] = "ON", -- "ON"/"OFF" this value on will rescale both mechs ( player and sentinel ( because they are the same one for the game ))
             ["MECHS_SIZE_MULTIPLIER"] = 2,  -- ( "2" to "10" -- adviced size : 2 ) notice that this param requires a integer, not a string
         },
@@ -166,7 +166,7 @@ INIT_PRESET ={
             ["BIOMES_FEATURES"] = -- world generation features
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF", -- "ON"/"OFF" -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "OFF", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
+                ["FANTASY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
                 ["SKY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- floating things in the skies
                 ["STORM_BIOMES_FEATURES"] = "OFF", -- this var is not used anymore 
                 ["GIANTS_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
@@ -214,13 +214,13 @@ INIT_PRESET ={
         --    
         ["DRONE_PET_SKIN_FEATURE"] = "ON",
 		["DRONE_PET_SKIN"] = "E3",-- ("E3-DAMAGED" or "E3") replacement with custom models for flare ( the friendly sentinel drone ) ( i will add more ones)
-        ["CHAR_PRESETS_SKINS"] = "UTOPIA"
+        ["CHAR_PRESETS_SKINS"] = "UTOPIA2"
         -- this will replace the default character customisations by more advanced looking skins ( which are characters from my youtube mini series NMS FANTASY )
         -- they are visible by vanilla players as soon as you rdit and save them in a character customisation slot
         -- "THE-WATCHER"  /or/   "SPACE-PIRATE" /or/     "GIRLY"       /or/
         -- "KORVAX"      /or/   "OUTLAWS"      /or/     "TRAVELLER"   /or/
         -- "VY-KEEN"    /or/   "ANOMALY"      /or/      "GEK"        /or/
-        -- "UTOPIA"
+        -- "UTOPIA"    /or/    "UTOPIA2" 
     },
     ["NEWGAME_BONUS_FEATURES"] ={
 
@@ -12127,6 +12127,8 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							{"MechTitanFallCameraShakeDist",    "180"},
 						}
 					},
+					--[=[DEPRECATED NMS 4.30.3.
+						
 					{
 						["SPECIAL_KEY_WORDS"] = {"VehicleLocalScan","GcScanData.xml",},
 						["INTEGER_TO_FLOAT"] = "FORCE",
@@ -12135,7 +12137,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							{"PulseRange", "200"},
 							{"ChargeTime", "20"},
 						}
-					},
+					},--]=]
 					{
 						["SPECIAL_KEY_WORDS"] = {"Name","BIKE",},
 						["INTEGER_TO_FLOAT"] = "FORCE",
@@ -22721,19 +22723,19 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGEBLOB.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGGSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
@@ -23046,7 +23048,7 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE2.SCENE.MBIN]],
@@ -23070,14 +23072,14 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
@@ -23089,19 +23091,19 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			
 
@@ -23109,19 +23111,19 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			--{
 			--	["PATH"] = [[MODELS\PLANETS\DESERT\TREES\TWISTEDTREE.SCENE.MBIN]],
@@ -23206,19 +23208,19 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "21"
+				["MAXSIZE"] = "1"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "81"
+				["MAXSIZE"] = "1"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "81"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\PILLAR1.SCENE.MBIN]],
@@ -23237,7 +23239,7 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\RGO\LARGEPILLAR.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
@@ -23250,7 +23252,7 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\RGO\LARGEROCKS2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "21"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGESTRANDS.SCENE.MBIN]],
@@ -23300,13 +23302,13 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEMOUNTAINROCKCLOSED.SCENE.MBIN]],
@@ -23360,7 +23362,7 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\LARGEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
@@ -23492,43 +23494,43 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCKSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\LARGETENTACLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\MEDIUMTENTACLEBLOB.SCENE.MBIN]],
@@ -23540,19 +23542,19 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
@@ -23603,7 +23605,7 @@ min_giant_props = "0.1"
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS\RGO\METASpi.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\GIANTMETALSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
@@ -38888,6 +38890,18 @@ if CHARACTERS_SKINS_FEATURE == "ON" then
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+
+	end
+	if CHAR_PRESETS_SKINS == "UTOPIA2" then
+		NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONPRESETCUSTOMISATIONSDATA.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CHARPRESETS\UTOPIA2.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			
 	end
 	if CHAR_PRESETS_SKINS == "THE-WATCHER" then
 		NEW_CONTENT =
