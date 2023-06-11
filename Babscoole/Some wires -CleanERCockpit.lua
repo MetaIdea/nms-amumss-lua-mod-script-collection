@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "CleanerCockpit 1.2.pak",
+["MOD_FILENAME"]  = "CleanerCockpit 1.3.pak",
 ["MOD_AUTHOR"]    = "Phoenixdive",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.23",

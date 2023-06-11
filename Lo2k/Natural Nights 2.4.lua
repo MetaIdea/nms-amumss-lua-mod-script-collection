@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Natural Nights 2.3.pak", 
-["MOD_AUTHOR"]				= "Degraaaff & Lo2k",
-["NMS_VERSION"]				= "3.52",
+["MOD_FILENAME"] 			= "Natural Nights 2.4.pak", 
+["MOD_AUTHOR"]				= "Degraaaff",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "4.30.3",
 ["MOD_DESCRIPTION"]			= "This mods changes night lighting",
 ["MODIFICATIONS"] 			= 
 	{

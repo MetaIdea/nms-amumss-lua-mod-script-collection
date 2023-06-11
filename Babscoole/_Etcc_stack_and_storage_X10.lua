@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Etcc_stack_and_storage_X10.v2.2.pak",
+["MOD_FILENAME"]  = "_Etcc_stack_and_storage_X10.v3.1.pak",
 ["MOD_AUTHOR"]    = "pottedfrog",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.23",
+["NMS_VERSION"]   = "4.26",
 ["MODIFICATIONS"] =
     {
         {
@@ -76,22 +76,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaintenanceObject", "100"},
                             }
                         },
-                        {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"SmugglerSellingMarkup",          "0.2"},
-                                {"IllegalTechProductTradingMod",   "1.66"},
-                                {"CombatLevelBestWeaponBias",      "0.2"},
-                                {"CombatLevelBaseValueBoltcaster", "0.66"},
-                                {"CombatLevelBaseValueShotgun",    "0.1"},
-                                {"CombatLevelBaseValueRailgun",    "0.2"},
-                                {"CombatLevelBaseValueSMG",        "0.25"},
-                                {"CombatLevelBaseValueCannon",     "0.2"},
-                                {"CombatLevelBaseValueGrenade",    "0.25"},
-                                {"CombatLevelSClassValue",         "0.1"},
-                            }
-                        },
+                        -- {
+                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"SmugglerSellingMarkup",          "0.2"},
+                                -- {"IllegalTechProductTradingMod",   "1.66"},
+                                -- {"CombatLevelBestWeaponBias",      "0.2"},
+                                -- {"CombatLevelBaseValueBoltcaster", "0.66"},
+                                -- {"CombatLevelBaseValueShotgun",    "0.1"},
+                                -- {"CombatLevelBaseValueRailgun",    "0.2"},
+                                -- {"CombatLevelBaseValueSMG",        "0.25"},
+                                -- {"CombatLevelBaseValueCannon",     "0.2"},
+                                -- {"CombatLevelBaseValueGrenade",    "0.25"},
+                                -- {"CombatLevelSClassValue",         "0.1"},
+                            -- }
+                        -- },
                     }
                 },
                 {
