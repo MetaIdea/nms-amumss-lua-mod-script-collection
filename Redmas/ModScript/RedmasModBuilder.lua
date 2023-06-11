@@ -8503,23 +8503,23 @@ then
 	-- Change those values for fighters spaceships
 
 	--dirty metal
-	FIGHTERS_PAINT1 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
-	FIGHTERS_PAINT2 = FRESH_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
-	FIGHTERS_PAINT3 = GOLD_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
-	FIGHTERS_PAINT4 = OLD_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	FIGHTERS_PAINT1 = METAL_PAINT -- "FRESH_PAINT"/ "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	FIGHTERS_PAINT2 = FRESH_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	FIGHTERS_PAINT3 = GOLD_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	FIGHTERS_PAINT4 = OLD_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
 
 	if FIGHTERS_SPACESHIPS_REPAINT == "FULL" then
 	-- Full Metal
-	FIGHTERS_PAINT1 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
-	FIGHTERS_PAINT2 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
-	FIGHTERS_PAINT3 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
-	FIGHTERS_PAINT4 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	FIGHTERS_PAINT1 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	FIGHTERS_PAINT2 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	FIGHTERS_PAINT3 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	FIGHTERS_PAINT4 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
 	end
 	-- Change those values for DROPSHIP ("Hauler") spaceships
-	DROPSHIP_PAINT1 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
-	DROPSHIP_PAINT2 = OLD_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
-	DROPSHIP_PAINT3 = GOLD_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
-	DROPSHIP_PAINT4 = METAL_PAINT -- GOLD_PAINT / METAL_PAINT / OLD_PAINT options
+	DROPSHIP_PAINT1 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	DROPSHIP_PAINT2 = OLD_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	DROPSHIP_PAINT3 = GOLD_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	DROPSHIP_PAINT4 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
 	-- Change those values for Shuttle spaceships
 	SHUTTLE_PAINT = PLASTIC_PAINT
 	-----------------------------------------------------------------------------------------------------------------------------------
@@ -11578,7 +11578,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							{"RocketBootsMaxDesiredHeight", "36"},
 							{"RocketBootsBoostTankDrainSpeed", "0.006"},
 							{"RocketBootsMaxSpeed", "40"},
-							{"JetpackMinLevel", "-10.5"}, -- put 0 if you dont want the "EMMERGY TANK" feature
+							{"JetpackMinLevel", "-10.5"}, -- put 0 if you dont want the 'EMMERGENCY TANK' feature ( meant to give you time to see that you dont have fuel )
 							{"JetpackMaxSpeed", "9"},
 							{"JetpackMaxUpSpeed", "7"},
 							{"JetpackFillRate", "15"},
@@ -29867,7 +29867,7 @@ end
 		)
 
 
-			-- density rebalancing - required-fixed, exclusive to fantasy biomes feature 
+			-- density rebalancing - required-fix, exclusive to fantasy biomes feature 
 			addFeature
 			(
 				FANTASY_BIOMES_FEATURE,
@@ -29932,7 +29932,7 @@ end
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"Coverage", "0.1"},
+									{"Coverage", "0.15"},
 								}
 
 							},				
@@ -29951,33 +29951,42 @@ end
 							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.MBIN]],
 						},
 						["EXML_CHANGE_TABLE"] =
-						{
+						{	
+							{
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["REPLACE_TYPE"] = "ALL",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"MaxAngle", "120"},
+									{"MaxScale", "2"},									
+								}
+
+							},	
+
 							{
 								["INTEGER_TO_FLOAT"] = "FORCE",
 								["SPECIAL_KEY_WORDS"] = {"DebugName","PILLAR"},
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"MaxScale", "20"},
-									{"FlatDensity", "0.005"},
-									{"SlopeMultiplier", "1"},
+									{"MaxScale", "35"},
+
 								}
 
 							},
-														{
+
+							{
 								["INTEGER_TO_FLOAT"] = "FORCE",
 								["SPECIAL_KEY_WORDS"] = {"DebugName","LCRYSTAL2"},
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
 									{"MaxScale", "5"},
-									{"FlatDensity", "0.01"},
-									{"SlopeMultiplier", "1"},
+
 								}
 
 							},
-
-						
+				
 
 						}
 					},

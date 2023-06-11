@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Reduced Launch Cost 0% 3.1.pak", 
+["MOD_FILENAME"] 			= "Reduced Launch Cost 0% 3.2.pak", 
 ["MOD_AUTHOR"]				= "Lexman6",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.22",
+["NMS_VERSION"]				= "4.30.3",
 ["MOD_DESCRIPTION"]			= "This mods removes any launch cost",
 ["MODIFICATIONS"] 			= 
 	{

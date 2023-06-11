@@ -13,7 +13,7 @@ ReduceHigh ="0.7"
 NormalValue = "1"
 LowValue = "1.1"
 LowMedValue ="1.25"
-MedVale = "1.5"
+MedVal = "1.5"
 MedHighValue = "1.75"
 HighValue = "2"
 HighExtrValue ="2.5"
@@ -35,10 +35,11 @@ Shipchanges =
             -- Shiptype, modifier-C-Class, B, A, S
             {"Scientific", MedHighValue,HighValue,HighExtrValue,ExtremeValue},
             {"Dropship", ReduceHigh,ReduceMedium,ReduceLow, NormalValue},
-            {"Fighter", MedVale, MedHighValue, HighValue, HighExtrValue},
-            {"Shuttle", NormalValue, LowValue, LowMedValue, MedVale},
-            {"Royal", LowMedValue, MedVale, MedHighValue, HighValue},
-            {"Sail", MedVale, MedHighValue, HighValue, HighExtrValue},
+            {"Fighter", MedVal, MedHighValue, HighValue, HighExtrValue},
+            {"Shuttle", NormalValue, LowValue, LowMedValue, MedVal},
+            {"Royal", "", "", "", HighValue},
+            {"Robot", LowMedValue, MedVal, MedHighValue, HighValue},
+            {"Sail", MedVal, MedHighValue, HighValue, HighExtrValue},
             {"Alien", "", "", "", HighValue}
         }
     },
@@ -47,12 +48,13 @@ Shipchanges =
             "SHIP_DAMAGE"
         },
         {
-            {"Scientific", LowValue, LowMedValue, MedVale, MedHighValue},
-            {"Dropship", MedVale, MedHighValue, HighValue, HighExtrValue},
-            {"Fighter", MedHighValue,HighValue,HighExtrValue,ExtremeValue},
-            {"Shuttle", NormalValue, LowValue, LowMedValue, MedVale},
-            {"Royal", LowMedValue, MedVale, MedHighValue, HighValue},
-            {"Sail", MedVale, MedHighValue, HighValue, HighExtrValue},
+            {"Scientific", LowValue, LowMedValue, MedVal, MedHighValue},
+            {"Dropship", MedVal, MedHighValue, HighValue, HighExtrValue},
+            {"Fighter", MedHighValue,HighValue,HighExtrValue, ExtremeValue},
+            {"Shuttle", NormalValue, LowValue, LowMedValue, MedVal},
+            {"Royal", "", "", "", HighValue},
+            {"Robot", LowMedValue, MedVal, MedHighValue, HighValue},
+            {"Sail", MedVal, MedHighValue, HighValue, HighExtrValue},
             {"Alien", "", "", "", HighValue}
         }
     },
@@ -62,11 +64,27 @@ Shipchanges =
         },
         {
             {"Scientific", ReduceHigh,ReduceMedium,ReduceLow, NormalValue},
-            {"Dropship", MedHighValue,HighValue,HighExtrValue,ExtremeValue},
-            {"Fighter", LowValue, LowMedValue, MedVale, MedHighValue},
-            {"Shuttle", NormalValue, LowValue, LowMedValue, MedVale},
-            {"Royal", LowMedValue, MedVale, MedHighValue, HighValue},
-            {"Sail", MedVale, MedHighValue, HighValue, HighExtrValue},
+            {"Dropship", MedHighValue,HighValue,HighExtrValue, ExtremeValue},
+            {"Fighter", LowValue, LowMedValue, MedVal, MedHighValue},
+            {"Shuttle", NormalValue, LowValue, LowMedValue, MedVal},
+            {"Royal", "", "", "", HighValue},
+            {"Robot", LowMedValue, MedVal, MedHighValue, HighValue},
+            {"Sail", NormalValue, LowValue, LowMedValue, MedVal},
+            {"Alien", "", "", "", HighValue}
+        }
+    },
+    {
+        {
+            "SHIP_AGILE"
+        },
+        {
+            {"Scientific", NormalValue, LowValue, LowMedValue, MedVal},
+            {"Dropship", NormalValue, LowValue, LowMedValue, MedVal},
+            {"Fighter", LowMedValue, MedVal, MedHighValue, HighValue},
+            {"Shuttle", NormalValue, LowValue, LowMedValue, MedVal},
+            {"Royal", "", "", "", HighValue},
+            {"Robot", MedHighValue, HighValue, HighExtrValue, ExtremeValue},
+            {"Sail", ReduceLow, NormalValue, LowValue, LowMedValue},
             {"Alien", "", "", "", HighValue}
         }
     },
@@ -78,16 +96,6 @@ Shipchanges =
             {"Freighter", FreighterC, FreighterB, FreighterA, FreighterS}
         }
     }
-}
-
-AlienShipInventory = "48"
-AlienShipTech = "35"
-AlienShipCargo = "32"
-
-AlienEdits = {
-    "AlienSmall",
-    "AlienMedium",
-    "AlienLarge"
 }
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -136,7 +144,7 @@ for i = 1, #Shipchanges do
         local ShipType = ShipTypes[j][1]
         local Modifier
         for k = 1, #Class do
-            if ShipType == "Alien" then
+            if ShipType == "Alien" or ShipType ==  "Royal" then
                 k = #Class
             end
 
@@ -144,11 +152,11 @@ for i = 1, #Shipchanges do
             ChangesToInventoryTable_temp =
             {
                 ["PRECEDING_FIRST"] = "TRUE",
-                ["MATH_OPERATION"] = "*", -- "*", "+", "-", "/" or leave empty for normal replacement
+                ["MATH_OPERATION"] = "*",
                 ["INTEGER_TO_FLOAT"] = "FORCE",
                 ["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData", ShipType,"BaseStatsPerClass",Class[k]},
                 ["SPECIAL_KEY_WORDS"] = {"BaseStatID", StatID},
-                ["VALUE_CHANGE_TABLE"]     =
+                ["VALUE_CHANGE_TABLE"] =
                 {
                     {"Min", Modifier},
                     {"Max", Modifier}
@@ -157,20 +165,4 @@ for i = 1, #Shipchanges do
             ChangesToInventoryTable[#ChangesToInventoryTable+1] = ChangesToInventoryTable_temp
         end
     end
-end
-
-for i = 1, #AlienEdits do
-    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {AlienEdits[i], "GcInventoryLayoutGenerationDataEntry.xml"},
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"MinSlots", AlienShipInventory},
-            {"MaxSlots", AlienShipInventory},
-            {"MinTechSlots", AlienShipTech},
-            {"MaxTechSlots", AlienShipTech},
-            {"MinCargoSlots", AlienShipCargo},
-            {"MaxCargoSlots", AlienShipCargo}
-        }
-    }
 end

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_SerialGriller.4XFreighterRange.1.0.pak",
 ["MOD_AUTHOR"]    = "SerialGriller",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.26",
+["NMS_VERSION"]   = "4.30",
 ["MODIFICATIONS"] =
     {
         {
@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ValueMin", "800"},
-                                {"ValueMax", "1000"},
+                                {"ValueMax", "100"},
                             }
                         },
                     }
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Bonus", "1200"},
+                                {"Bonus", "1600"},
                             }
                         },
                         {
@@ -84,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Bonus", "1600"},
+                                {"Bonus", "3200"},
                             }
                         },
                         {
