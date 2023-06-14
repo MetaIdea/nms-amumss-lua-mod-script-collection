@@ -1,8 +1,8 @@
 local modfilename = "Biomes.DarkerSpaceAndNebulae"
 local lua_author  = "Silent"
-local lua_version = "v1.3"
+local lua_version = "v1.4"
 local mod_author  = "Silent369"
-local nms_version = "4.21"
+local nms_version = "4.33"
 local maintenance = mod_author
 local description = [[
 Makes Space Much Darker and Nebulae more subtle visually.

@@ -1,8 +1,8 @@
-local modfilename = "Biomes.FireFliesAndParticlesReduced"
+local modfilename = "Biomes.FireFliesAndParticlesRemoved"
 local lua_author  = "Silent"
-local lua_version = "v2.0"
+local lua_version = "v2.1"
 local mod_author  = "Silent369"
-local nms_version = "4.21"
+local nms_version = "4.33"
 local description = [[
 Resized / Reduced(optional) 'heavyair' firefly particles in all biomes.
 ]]
@@ -12,7 +12,7 @@ Resized / Reduced(optional) 'heavyair' firefly particles in all biomes.
 --
 --DIVIDER is affecting the particles for the fire flies
 --
-DIVIDER = 0.1   --Modifies the number of firefly particles.
+DIVIDER = 0     --Modifies the number of firefly particles.
 SPEED_V = 0.01  --Modifies the visible speed of particles.
 MULTPLY = 1.4   --Modifies the particles radius / radiusY.
 FADES_M = 0.5   --Modifies fade speed of rendered particles.

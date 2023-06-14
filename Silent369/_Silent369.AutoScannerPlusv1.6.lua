@@ -1,8 +1,8 @@
 local modfilename = "AutoScannerPlus"
 local lua_author  = "Silent"
-local lua_version = "v1.5"
+local lua_version = "v1.6"
 local mod_author  = "Silent369"
-local nms_version = "4.21"
+local nms_version = "4.33"
 local description = "Auto Scan planet entities (objects, structures) within given range."
 
 --Inspired by the Scan_Auto.cs script provided by cmkNMSModBuilder
@@ -10,10 +10,19 @@ local description = "Auto Scan planet entities (objects, structures) within give
 
 ------------------------------------------------------------------------------------------
 -- Base scan settings
+
+	-- todo see: MODELS/COMMON/PLAYER/PLACEMARKER/ENTITIES/PLACEMARKER.ENTITY.MBIN
+	-- for possible settings to view from any distance.
+	-- ScanRange = 0
+	-- ScanTime = 5
+	-- CompassRangeMultiplier = 1E+09
+	-- AlwaysShowRange = 0
+	-- MinDisplayDistanceOverride = -1
+
 ------------------------------------------------------------------------------------------
 
-local _ScanRange = 10000   --max, lod range ~2,100u
-local _ScanTime  = 10
+local _ScanRange = 10000   --max based on a lod? range ~2,100u
+local _ScanTime  = 5
 local _RangeMult = 1E+09
 local _ShowRange = 10000
 local _Override  = -1      --hide when this close
@@ -51,25 +60,29 @@ function CreateScannableComponentData(ScanRange, ScanName, ScanTime, RangeMult, 
     return result
 end
 
+-- For scene and lsystem mbin's for all buildings:
+-- METADATA/SIMULATION/ENVIRONMENT/PLANETBUILDINGTABLE.MBIN
+	
 --Note: if you enable any of the commented sections below then ensure you also uncomment the
 --      related sections further in the script, otherwise you will encounter compile errors!
 
 --BUILDING                                                 SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
-AddAbandoned   = CreateScannableComponentData(_ScanRange, "BUILDING_ABANDONED_L",        _ScanTime, _RangeMult, _ShowRange, "HazardEgg",          "True")
+AddAbandoned   = CreateScannableComponentData(_ScanRange, "BUILDING_ABANDONED_L",        _ScanTime, _RangeMult, _ShowRange, "HazardEgg",          "True") --BUILDING_ABANDONED_L
 AddBase        = CreateScannableComponentData(_ScanRange, "UI_RECOVER_BASE_MARKER",      _ScanTime, _RangeMult, _ShowRange, "Shield",            "False")
 --AddBones       = CreateScannableComponentData(_ScanRange, "UI_UNDERGROUND_BONES_NAME_L", _ScanTime, _RangeMult, _ShowRange, "BuriedRare",         "True")
 AddDepot       = CreateScannableComponentData(_ScanRange, "SIGNAL_DEPOT",                _ScanTime, _RangeMult, _ShowRange, "Drone",              "True")
 AddDistress    = CreateScannableComponentData(_ScanRange, "BUILDING_DISTRESSSIGNAL_L",   _ScanTime, _RangeMult, _ShowRange, "HazardPlant",       "False")
-AddFactory     = CreateScannableComponentData(_ScanRange, "BUILDING_FACTORY_L",          _ScanTime, _RangeMult, _ShowRange, "Drone",              "True")
+AddFactory     = CreateScannableComponentData(_ScanRange, "SIGNAL_FACTORY",              _ScanTime, _RangeMult, _ShowRange, "Drone",              "True") --BUILDING_FACTORY_L
 AddFreighter   = CreateScannableComponentData(_ScanRange, "BUILDING_FREIGHTER_ALT",      _ScanTime, _RangeMult, _ShowRange, "HazardPlant",       "False")
 AddGrave       = CreateScannableComponentData(_ScanRange, "BUILDING_GRAVEINCAVE",        _ScanTime, _RangeMult, _ShowRange, "Grave",             "False")
 AddMessage     = CreateScannableComponentData(_ScanRange, "BLD_MESSAGEMODULE_NAME_L",    _ScanTime, _RangeMult, _ShowRange, "Grave",             "False")
-AddMonolith    = CreateScannableComponentData(_ScanRange, "BUILDING_MONOLITH_L",         _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False")
-AddObserver    = CreateScannableComponentData(_ScanRange, "BUILDING_OBSERVATORY_L",      _ScanTime, _RangeMult, _ShowRange, "SignalBooster",      "True")
-AddOutpost     = CreateScannableComponentData(_ScanRange, "BUILDING_OUTPOST_L",          _ScanTime, _RangeMult, _ShowRange, "FreighterDoor",      "True")
-AddPSettlement = CreateScannableComponentData(_ScanRange, "UI_SETTLEMENT_LOCATED_OSD",   _ScanTime, _RangeMult, _ShowRange, "HazardPlant",       "False")
-AddPortal      = CreateScannableComponentData(_ScanRange, "BUILDING_PORTAL_L",           _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False")
-AddRadioTower  = CreateScannableComponentData(_ScanRange, "BUILDING_RADIOTOWER_L",       _ScanTime, _RangeMult, _ShowRange, "CustomMarker",       "True")
+AddMonolith    = CreateScannableComponentData(_ScanRange, "SIGNAL_MONOLITH",             _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False")
+AddObserver    = CreateScannableComponentData(_ScanRange, "SIGNAL_OBSERVATORY",          _ScanTime, _RangeMult, _ShowRange, "SignalBooster",      "True") --BUILDING_OBSERVATORY_L
+AddOutpost     = CreateScannableComponentData(_ScanRange, "BUILDING_OUTPOST_L",          _ScanTime, _RangeMult, _ShowRange, "FreighterDoor",      "True") --BUILDING_OUTPOST_L
+AddPlaque      = CreateScannableComponentData(_ScanRange, "BUILDING_PLAQUE_L",           _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False")
+AddPSettlement = CreateScannableComponentData(_ScanRange, "UI_SETTLEMENT_LOCATED_OSD",   _ScanTime, _RangeMult, _ShowRange, "HazardPlant",       "False") --UI_SETTLEMENT_LOCATED_OSD
+AddPortal      = CreateScannableComponentData(_ScanRange, "BUILDING_PORTAL_L",           _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False") --BUILDING_PORTAL_L
+AddRadioTower  = CreateScannableComponentData(_ScanRange, "BUILDING_RADIOTOWER_L",       _ScanTime, _RangeMult, _ShowRange, "CustomMarker",       "True") --BUILDING_RADIOTOWER_L
 AddRuin        = CreateScannableComponentData(_ScanRange, "UI_SIGNAL_TREASURERUIN",      _ScanTime, _RangeMult, _ShowRange, "Artifact",           "True")
 AddTreasure    = CreateScannableComponentData(_ScanRange, "PLANT_FOOD_38",               _ScanTime, _RangeMult, _ShowRange, "ArtifactCrate",      "True")
 AddSentinelH   = CreateScannableComponentData(_ScanRange, "UI_MP_HIVE_LABEL",            _ScanTime, _RangeMult, _ShowRange, "Drone",              "True")
@@ -79,6 +92,12 @@ AddTerminal    = CreateScannableComponentData(_ScanRange, "SIGNAL_TERMINAL",    
 
 --FLORA TEST                                               SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
 AddRunawayMold = CreateScannableComponentData(_ScanRange, "UI_WEIRD_BALL_NAME_L",        _ScanTime, _RangeMult, _ShowRange, "Rare3",              "True")
+
+--ROBOTS TEST                                              SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
+AddSentinCrash = CreateScannableComponentData(_ScanRange, "SENT_CRASH_CORRUPT",          _ScanTime, _RangeMult, _ShowRange, "Drone",              "True")
+
+--STORY GLITCH TEST                                        SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
+AddStoryGlitch = CreateScannableComponentData(_ScanRange, "Alien Anomaly Detected",      _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False")
 
 ------------------------------------------------------------------------------------------
 -- SOUND EFFECT
@@ -134,6 +153,31 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                     ----------------------------------------------------------------------------------------------
+                    --SENTINEL CRASH SCENE
+                    ----------------------------------------------------------------------------------------------
+               {
+                   ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\SENTINELCRASHSCENE\ENTITIES\DATA.ENTITY.MBIN"},
+                   ["EXML_CHANGE_TABLE"] =
+                   {
+                       {
+                           ["REPLACE_TYPE"]        = "RAW",
+                           ["VALUE_CHANGE_TABLE"]  =
+                           {
+                               {[[<Property name="Components" />]], [[<Property name="Components">]]},
+                           }
+                       },
+                       {
+                           ["PRECEDING_KEY_WORDS"] = {"Components"},
+                           ["ADD"]                 = AddSentinCrash,
+                       },
+                       {
+                           ["PRECEDING_KEY_WORDS"] = {"GcScannableComponentData.xml"},
+                           ["ADD_OPTION"]          = "ADDafterSECTION",
+                           ["ADD"]                 = [[  </Property>]],
+                       },
+                   }
+               },
+                    ----------------------------------------------------------------------------------------------
                     --RUNAWAY MOLD - Already has GcScannableComponentData, but we're overriding for AllowMerge
                     ----------------------------------------------------------------------------------------------
                {
@@ -184,10 +228,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                     ----------------------------------------------------------------------------------------------
+                    --STORY GLITCH
+                    ----------------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BUILDINGSIZEDPROPS\ALIENRING\ENTITIES\ALIENRING.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = AddStoryGlitch,
+                        },
+                    },
+                },
+                    ----------------------------------------------------------------------------------------------
                     --BASE SITE (WILD)
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASECOMPUTER\ENTITIES\BASECOMPUTER.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASECOMPUTER\ENTITIES\BASECOMPUTER.ENTITY.MBIN",
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DEFAULTROOM\ENTITIES\DEFAULTROOM.ENTITY.MBIN"
+                    },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -240,6 +302,57 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                     ----------------------------------------------------------------------------------------------
+                    --DISTRESS SIGNAL
+                    ----------------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\PARTS\BLACKBOX\ENTITIES\BLACKBOX.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = AddDistress..DistressSound,
+                        },
+                    }
+                },
+                    ----------------------------------------------------------------------------------------------
+                    --REMOTE TERMINAL
+                    ----------------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\HOLOCOM\HOLOCOM\ENTITIES\HOLOCOM.ENTITY.MBIN"
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = AddTerminal,
+                        },
+                    }
+                },
+                    ----------------------------------------------------------------------------------------------
+                    --RADIOTOWER (Transmission Tower)
+                    ----------------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\SCIENTIFICRADIOTOWERPARTS\SCIENTIFICTERMINAL\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN",
+                        --"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERSCIENTIFIC\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN",
+                        --"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERWARRIOR\ENTITIES\RADIOTOWERWARRIOR.ENTITY.MBIN",
+                        --"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERTRADER\ENTITIES\RADIOTOWERTRADER.ENTITY.MBIN"
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = AddRadioTower,
+                        },
+                    }
+                },
+                    ----------------------------------------------------------------------------------------------
                     --PORTAL \ MONUMENT SITE
                     ----------------------------------------------------------------------------------------------
                 {
@@ -265,58 +378,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                     ----------------------------------------------------------------------------------------------
-                    --DISTRESS SIGNAL
-                    ----------------------------------------------------------------------------------------------
-                {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\PARTS\BLACKBOX\ENTITIES\BLACKBOX.ENTITY.MBIN"},
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
-                            ["ADD"]                 = AddDistress..DistressSound,
-                        },
-                    }
-                },
-                    ----------------------------------------------------------------------------------------------
-                    --REMOTE TERMINAL
-                    ----------------------------------------------------------------------------------------------
-                {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\HOLOCOM\HOLOCOM\ENTITIES\HOLOCOM.ENTITY.MBIN"},
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
-                            ["ADD"]                 = AddTerminal,
-                        },
-                    }
-                },
-                    ----------------------------------------------------------------------------------------------
-                    --RADIOTOWER (Transmission Tower)
-                    ----------------------------------------------------------------------------------------------
-                {
-                    ["MBIN_FILE_SOURCE"]  =
-                    {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\SCIENTIFICRADIOTOWERPARTS\SCIENTIFICTERMINAL\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
-                            ["ADD"]                 = AddRadioTower,
-                        },
-                    }
-                },
-                    ----------------------------------------------------------------------------------------------
                     --MONOLITH SITES
                     ----------------------------------------------------------------------------------------------
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\CENTERPIECE\INTERACTIONPLATFORM\ENTITIES\INTERACTIONPLATFORM.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\CENTERPIECE\RUBIXCUBE\ENTITIES\RUBIXCUBE.ENTITY.MBIN"
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\CENTERPIECE\RUBIXCUBE\ENTITIES\RUBIXCUBE.ENTITY.MBIN",
+                        --"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\MONOLITH\ENTITIES\MONOLITH.ENTITY.MBIN"
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -324,6 +393,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["LINE_OFFSET"]         = "+0",
                             ["ADD"]                 = AddMonolith,
+                        },
+                    }
+                },
+                    ----------------------------------------------------------------------------------------------
+                    --PLAQUE SITE
+                    ----------------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE\ENTITIES\PLAQUE.ENTITY.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = AddPlaque,
                         },
                     }
                 },

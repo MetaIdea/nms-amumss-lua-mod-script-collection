@@ -1,8 +1,8 @@
 local modfilename = "SentinelShipAnims"
 local lua_author  = "Silent"
-local lua_version = "v1.1"
+local lua_version = "v1.2"
 local mod_author  = "Silent369"
-local nms_version = "4.2x"
+local nms_version = "4.30.x"
 local maintenance = mod_author
 local description = [[
 Slows down the Sentinel ships wing fold/unfold animations so we can
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Speed", _ProcSlowAmount},
+                                {"Speed",           _ProcSlowAmount},
                             }
                         },
                         {
@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Speed", _ProcSlowAmount},
+                                {"Speed",           _ProcSlowAmount},
                             }
                         },
                     }
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Speed", _WingSlowAmount},
+                                {"Speed",           _WingSlowAmount},
                             }
                         },
                         {
@@ -83,7 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Speed", _WingSlowAmount},
+                                {"Speed",           _WingSlowAmount},
                             }
                         },
                     }
@@ -100,7 +100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Speed", _ProcSlowAmount},
+                                {"Speed",           _ProcSlowAmount},
                             }
                         },
                         {
@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Speed", _ProcSlowAmount},
+                                {"Speed",           _ProcSlowAmount},
                             }
                         },
                     }
@@ -125,7 +125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Speed", _ProcSlowAmount},
+                                {"Speed",           _ProcSlowAmount},
                             }
                         },
                         {
@@ -133,7 +133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Speed", _ProcSlowAmount},
+                                {"Speed",           _ProcSlowAmount},
                             }
                         },
                     }

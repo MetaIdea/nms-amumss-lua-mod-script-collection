@@ -2,6 +2,7 @@ REWARD_TABLE_TEXT =
   [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="10" />
+            <Property name="LabelID" value="Base" />
             <Property name="Reward" value="GcRewardScanEvent.xml">
               <Property name="Event" value="BASE" />
               <Property name="ScanEventTable" value="Planet" />
@@ -9,8 +10,9 @@ REWARD_TABLE_TEXT =
               <Property name="UseMissionSeedForEvent" value="False" />
               <Property name="StartDelay" value="6" />
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
+              <Property name="ForceSilentFailure" value="False" />
+              <Property name="FailureOSD" value="" />
             </Property>
-            <Property name="LabelID" value="Base" />
           </Property>
 ]]
 
@@ -86,6 +88,7 @@ SCANEVENT_TEXT =
         <Property name="NeedsWaterPlanet" value="False" />
         <Property name="NeedsPrimePlanet" value="False" />
         <Property name="NeedsSentinels" value="False" />
+        <Property name="NeedsCorruptSentinelPlanet" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
         <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -139,6 +142,7 @@ SCANEVENT_TEXT =
         <Property name="NeedsWaterPlanet" value="False" />
         <Property name="NeedsPrimePlanet" value="False" />
         <Property name="NeedsSentinels" value="False" />
+        <Property name="NeedsCorruptSentinelPlanet" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
         <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -222,7 +226,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     https://nomansskymods.com/mods/easy-base-building/.
 ]],
   ["MOD_AUTHOR"] = "Bladehawke",
-  ["NMS_VERSION"] = "4.22", -- Changes in files made this change necessary
+  ["NMS_VERSION"] = "4.33", -- Changes in files made this change necessary
   ["UPDATE_LINK"] = "https://pastebin.com/raw/UkVFmagZ",
   
   ["MODIFICATIONS"] = {

@@ -1,12 +1,12 @@
 Author = "PyronoxOmega"
-ModName = "Ultimate_Fleet_S_Instant_Time"
+ModName = "Ultimate_Fleet_S_Normal_Time"
 GameVersion = "4.30"
 ModVersion = "1.3"
 Description = "Mostly S-class with high Stats based on RNG "
 FileSource1 = "METADATA/REALITY/TABLES/FRIGATETRAITTABLE.MBIN"
 FileSource2 ="GCFLEETGLOBALS.GLOBAL.MBIN"
-TimeExpEZ = "0" --time for easy expedition 900
-TimeExpEV = "0" --time for expedition event 5400
+TimeExpEZ = "900" --time for easy expedition 900
+TimeExpEV = "5400" --time for expedition event 5400
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName..""..GameVersion..-ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= Description,

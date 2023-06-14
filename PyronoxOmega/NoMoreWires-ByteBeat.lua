@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "NoMoreWires-Byte"
-GameVersion = "4.1"
-ModVersion = "1.3"
+GameVersion = "4.30"
+ModVersion = "1.4"
 Description = "Makes Byte-beat wires invisible"
 
 FileSource1 = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/CONDUIT_BYTEBEAT/BYTEWIRESCROLLEFFECTMAT.MATERIAL.MBIN"}

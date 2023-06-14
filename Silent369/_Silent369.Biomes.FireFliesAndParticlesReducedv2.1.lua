@@ -1,8 +1,8 @@
-local modfilename = "Biomes.FireFliesAndParticlesRemoved"
+local modfilename = "Biomes.FireFliesAndParticlesReduced"
 local lua_author  = "Silent"
-local lua_version = "v2.0"
+local lua_version = "v2.1"
 local mod_author  = "Silent369"
-local nms_version = "4.21"
+local nms_version = "4.33"
 local description = [[
 Resized / Reduced(optional) 'heavyair' firefly particles in all biomes.
 ]]
@@ -12,12 +12,12 @@ Resized / Reduced(optional) 'heavyair' firefly particles in all biomes.
 --
 --DIVIDER is affecting the particles for the fire flies
 --
-DIVIDER = 0     --Modifies the number of firefly particles.
-SPEED_V = 0     --Modifies the visible speed of particles.
-MULTPLY = 0     --Modifies the particles radius / radiusY.
-FADES_M = 0     --Modifies fade speed of rendered particles.
-SCALE_M = 0     --Modifies the x,y,z particles scale ranges.
-ROTAT_R = 0     --Modifies the rotational range of particles.
+DIVIDER = 0.1   --Modifies the number of firefly particles.
+SPEED_V = 0.01  --Modifies the visible speed of particles.
+MULTPLY = 1.4   --Modifies the particles radius / radiusY.
+FADES_M = 0.5   --Modifies fade speed of rendered particles.
+SCALE_M = 1.5   --Modifies the x,y,z particles scale ranges.
+ROTAT_R = 0.5   --Modifies the rotational range of particles.
 
 local function round(number, precision)
    local fmtStr = string.format('%%0.%sf',precision)
