@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "v2.0"
+local lua_version = "v2.1"
 local mod_author  = "Silent369"
-local nms_version = "4.21"
+local nms_version = "4.33"
 local description = [[
 Modifies AI Ships Outpost / Planetary Archive / Station Approach and Landing Settings.
 

@@ -1,8 +1,8 @@
 local modfilename = "Biomes.CloudsSunAndFog"
 local lua_author  = "Silent"
-local lua_version = "2.2"
+local lua_version = "2.3"
 local mod_author  = "Silent369"
-local nms_version = "4.21"
+local nms_version = "4.33"
 local description = [[
 Realtime (NMS time) Day Length (Optional), Better Detailed Clouds, Slower Cloud Animation,
 Sun Properties and Planet Fog Adjustments. LOD Adjustments, Optional Lens Dirt Removal.
@@ -30,19 +30,19 @@ Also disables all Bloom effects but leaves lensing effects intact.
 _Day_Length              = 1800 --Original "1800"
 
 --CLOUD ANIM SPEED
-_Anim_Scale              = 23   --Original "50" wtf!
+_Anim_Scale              = 30   --Original "50" wtf!
 
 ----------------------------------------------------------------------------------------------------
 --------------------------- SHOULD LEAVE THESE VALUES ALONE - PROBABLY!  ---------------------------
 ----------------------------------------------------------------------------------------------------
 
 --SUN BRIGHTNESS
-_LUTDFMult               = 1    --Original "0"
-_Intensity               = 3.4  --Original "3"
-_MaxSpaceFogStrength     = 0.3  --Original "0.5"
-_ReflectionStrength      = 0.2  --Original "0.3"
-_DOFFarStrengthWater     = 0.3  --Original "0"
-_WeatherFilterSTCTime    = 5    --Original "10"
+_LUTDFMult               = 0.2  --Original "0"
+_Intensity               = 3    --Original "3"
+_MaxSpaceFogStrength     = 0.2  --Original "0.5"
+_ReflectionStrength      = 0.1  --Original "0.3"
+_DOFFarStrengthWater     = 0.2  --Original "0"
+_WeatherFilterSTCTime    = 6    --Original "10"
 
 --STORM SETTINGS
 _StormWarningTime        = 25   --Original "25"
@@ -62,8 +62,8 @@ _ExtremeAudioLevel       = 0.2  --Original "0.3"
 _StormAudioLevel         = 0.4  --Original "0.5"
 
 --CLOUD RATIO
-_CloudRatio              = 0.59  --Original "0.5-0.6"
-_CloudRatioPrime         = 0.69  --Original "0.5-0.6"
+_CloudRatio              = 0.69  --Original "0.5-0.6"
+_CloudRatioPrime         = 0.79  --Original "0.5-0.6"
 
 --CLOUD SETTINGS
 _LightScalar             = 5    --Original "5"
@@ -72,7 +72,7 @@ _Density                 = 2    --Original "1"
 _AmbientDensity          = 0.1  --Original "0.1"
 _BaseScale               = 1    --Original "1"
 _SampleScalar            = 3    --Original "5"
-_SampleThreshold         = 0.22 --Original "0.25"
+_SampleThreshold         = 0.23 --Original "0.25"
 _CloudBottomFade         = 1    --Original "1"
 _DetailScale             = 7    --Original "6"
 _ErosionEdgeSize         = 0.65 --Original "0.5"
@@ -105,7 +105,7 @@ _StratosphereHeightP     = 5400 --Original "5200"
 --EaseInOutSine
 --EaseInOutQuad
 
-_Curve                   = "SmootherStep" --Original "Linear"
+_Curve                   = "EaseInOutSine" --Original "Linear"
 
 --Wind Offset
 WindOffsetX              = 0.1  --Original "0.5"
@@ -284,7 +284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TerrainMipBiasLow",                   "0"}, --Original "0.5"
                 
                                 ----TAA Settings
-                                {"TaaLowFreqConstant",                  "1"}, --Original "0.5"
+                                {"TaaLowFreqConstant",                "0.8"}, --Original "0.5"
                                 {"TaaHighFreqConstant",               "100"}, --Original "100"
                                 {"TaaAccumDelay",                    "1.05"}, --Original "0.9"
                                 {"FrustumJitterAmount",                 "0"}, --Original "0.6"
@@ -408,7 +408,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SunClampHeightMin",               _SunClmHMin}, --Original "300"
                                 {"SunClampHeightMax",               _SunClmHMax}, --Original "390"
                                 {"SunFactorMin",                  _SunFactorMin}, --Original "0.4"
-                                {"InteractionRadius",                    "0.35"}, --Original "0.15"
+                                {"InteractionRadius",                    "0.30"}, --Original "0.15"
 
                                 ----------------------------------------------------------------------------
                                 --No Asteroids while pulsing
@@ -696,9 +696,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"SunSize",               "0.0001"}, --Original "0.005"
-                                {"StarVisibility",          "0.80"}, --Original "0.82"
+                                {"StarVisibility",          "0.85"}, --Original "0.82"
                                 {"CenterPower",                "3"}, --Original "2.5"
-                                {"AtmosphereThickness",     "0.25"}, --Original "0.28"
+                                {"AtmosphereThickness",     "0.26"}, --Original "0.28"
                             }
                         },
                         {
@@ -707,9 +707,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"SunSize",               "0.0001"}, --Original "0.005"
-                                {"StarVisibility",          "0.80"}, --Original "0.82"
+                                {"StarVisibility",          "0.85"}, --Original "0.82"
                                 {"CenterPower",                "3"}, --Original "2.5"
-                                {"AtmosphereThickness",     "0.25"}, --Original "0.28"
+                                {"AtmosphereThickness",     "0.26"}, --Original "0.28"
                             }
                         },
 

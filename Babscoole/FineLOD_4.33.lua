@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = "_Fine_LOD_4.26.pak",
+["MOD_FILENAME"] = "_Fine_LOD_4.33.pak",
 ["MOD_AUTHOR"] = "Prof Horatio Hafnaugels",
 ["LUA_AUTHOR"] = "Babscoole",
 ["NMS_VERSION"] = "4.26",

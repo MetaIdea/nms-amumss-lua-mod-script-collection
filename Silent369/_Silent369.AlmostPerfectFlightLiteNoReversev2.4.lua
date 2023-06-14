@@ -1,8 +1,8 @@
-local modfilename = "AlmostPerfectFlightFull"
+local modfilename = "AlmostPerfectFlightLiteNoReverse"
 local lua_author  = "Silent"
-local lua_version = "v2.3"
+local lua_version = "v2.4"
 local mod_author  = "Silent369"
-local nms_version = "4.21"
+local nms_version = "4.33"
 local description = [[
 Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics.
 With optional settings to make flight much easier (a bit cheaty, hence optional).
@@ -26,17 +26,17 @@ local _cheatMult = 5
 local _cheatTime = 0.1
 
 --Boosts
-local _boostMult = 2
-local _boostMxSp = 5
-local _max_speed = 3.5
-local _thrstMult = 2.5
-local _warpSMult = 4.2
+local _boostMult = 1.25
+local _boostMxSp = 2
+local _max_speed = 1.75
+local _thrstMult = 1.25
+local _warpSMult = 3
 
 --Handling
 local _brakeMult = 0.8
 local _rev_break = 2
 local _lsptrnDmp = 0.1
-local _min_speed = -1
+local _min_speed = 0.01
 local _overBreak = 0.15
 local _rolAmount = 1.23
 local _rollForce = 1.25
@@ -706,12 +706,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MiniWarpHUDArrowAttractAngle",                  "8"}, --Original "10"
+                                {"MiniWarpHUDArrowAttractAngle",                  "2"}, --Original "10"
 								{"MiniWarpHUDArrowAttractAngleStation",           "4"}, --Original "5"
 								{"MiniWarpHUDArrowAttractAngleOtherPlayerStuff",  "1"}, --Original "2"
 								{"MiniWarpHUDArrowAttractAngleSaveBeacon",        "2"}, --Original "2.5
-								{"MiniWarpHUDArrowAttractAngleDense",             "6"}, --Original "4"
-								{"MiniWarpHUDArrowNumMarkersToBeDense",           "6"}, --Original "6"
+								{"MiniWarpHUDArrowAttractAngleDense",             "3"}, --Original "4"
+								{"MiniWarpHUDArrowNumMarkersToBeDense",           "5"}, --Original "6"
 								
                             }
                         },
@@ -741,7 +741,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LandingButtonMinTime",                       "0.15"}, --Original "0.5"
                                 {"LandHeightThreshold",                          "80"}, --Original "100"
                                 {"LandingPushNoseUpFactor",                     "0.1"}, --Original "0.15"
-                                {"MiniWarpChargeTime",                          "1.4"}, --Original "2"
+                                {"MiniWarpChargeTime",                            "1"}, --Original "2"
                                 {"MiniWarpLinesNum",                              "0"}, --Original "4"      --METRIC LINES
                                 {"MiniWarpFlashIntensity",                        "0"}, --Original "0.9"
                                 {"MiniWarpFlashDuration",                         "0"}, --Original "0.9"

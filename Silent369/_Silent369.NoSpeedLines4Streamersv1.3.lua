@@ -1,10 +1,12 @@
 local modfilename = "NoSpeedLines4Streamers"
 local lua_author  = "Silent"
-local lua_version = "v1.8"
+local lua_version = "v1.3"
 local mod_author  = "Silent369"
-local nms_version = "4.22"
+local nms_version = "4.33"
 local description = [[
+
 No speed lines. No ship halo effect at cruise/boost/pulse speeds in space. No Space Dust / Plasma.
+
 ]]
 
 --Modifies:
@@ -15,6 +17,8 @@ No speed lines. No ship halo effect at cruise/boost/pulse speeds in space. No Sp
 --MODELS\EFFECTS\HEAVYAIR\SPACE\SPACEPLASMA.HEAVYAIR.MBIN
 --MODELS\EFFECTS\SPEEDLINES\SPEEDLINE.SCENE.MBIN
 --MODELS\EFFECTS\WARP\SPEEDTUNNEL\SPEEDTUNNELMAT.MATERIAL.MBIN
+
+--|----------------------------------------------------------------------------------------------------------
 
 --Material Vec4
 local _tParamsVec4             = 0
@@ -28,6 +32,8 @@ local _dpartLifeMax            = 0.01     --Original "2.5"
 local _pparticleNum            = 1        --Original "100"
 local _ppartLifeMin            = 0.01     --Original "1"
 local _ppartLifeMax            = 0.01     --Original "1"
+
+--|----------------------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
 {

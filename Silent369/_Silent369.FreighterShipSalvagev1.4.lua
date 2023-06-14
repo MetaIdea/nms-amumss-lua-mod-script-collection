@@ -1,8 +1,8 @@
 local modfilename = "FreighterSalvageTerminals"
 local lua_author  = "Silent"
-local lua_version = "v1.3"
+local lua_version = "v1.4"
 local mod_author  = "Silent369"
-local nms_version = "4.21"
+local nms_version = "4.33"
 local maintenance = mod_author
 local description = [[
 Adds Ship Salvage Terminals to the rear of your Freighter's Hanger Teleport Lift Area

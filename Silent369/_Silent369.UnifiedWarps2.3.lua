@@ -1,8 +1,8 @@
 local modfilename = "_UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "v2.2"
+local lua_version = "v2.3"
 local mod_author  = "Silent369"
-local nms_version = "4.21"
+local nms_version = "4.33"
 local description = [[
 Unifies Blackhole/Portal/Ship/Teleporter Warps
 ]]
@@ -27,7 +27,7 @@ _COL_R      = "0.850000"
 _COL_G      = "0.255000"
 _COL_B      = "1.000000"
 
-_WarpTunnelScale = 180 --140
+_WarpTunnelScale = 150 --140
 
 --|----------------------------------------------------------------------------------------
 
@@ -116,19 +116,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Value",           _COL_B},
                             }
                         },
-
                         --|----------------------------------------------------------------------------------------
                         --| LightArms modification to fill the screen better
                         --|----------------------------------------------------------------------------------------
-
                         {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "LightArms", "Transform", "TkTransformData.xml"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"TransZ",           "-13"}, --Original "0"
+                                {"TransZ",        "-100"}, --Original "0"
+                                {"ScaleX",          "15"}, --Original "1"
+                                {"ScaleY",          "15"}, --Original "1"
+                                {"ScaleZ",          "15"}, --Original "1"
                             }
                         },
-
                         --|----------------------------------------------------------------------------------------
                         --| Remove the sections we don't need. Sorry HG, sometimes less IS more!
                         --|----------------------------------------------------------------------------------------
@@ -170,6 +170,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"]              = "SECTION"
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "EndGlowCaps"},
+                            ["REMOVE"]              = "SECTION"
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "LightStreaks"},
                             ["REMOVE"]              = "SECTION"
                         },
@@ -178,11 +182,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"]              = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "LightStreaksSmall1"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "LightStreaks1"},
                             ["REMOVE"]              = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "LightStreaks1"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "LightStreaksSmall1"},
                             ["REMOVE"]              = "SECTION"
                         },
                         {
@@ -191,54 +195,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-
-                        --|----------------------------------------------------------------------------------------
-                        --| Change ENGGLOWCAPMAT
-                        --|----------------------------------------------------------------------------------------
-
-                {
-                    ["MBIN_FILE_SOURCE"]    = {
-                        "MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"]   =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"x",              "0"}, --Original "1"
-                                {"y",              "0"}, --Original "40"
-                                {"z",              "0"}, --Original "0"
-                                {"t",              "0"}, --Original "0.04"
-                            }
-                        },
-                    }
-                },
-
-                        --|----------------------------------------------------------------------------------------
-                        --| Change LIGHTARMS
-                        --|----------------------------------------------------------------------------------------
-
-                {
-                    ["MBIN_FILE_SOURCE"]    = {
-                        "MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"]   =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "LightArmsMat"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Class",           "Translucent"}, --Original "GlowTranslucent"
-                            }
-                        },
-                    }
-                },
-
                         --|----------------------------------------------------------------------------------------
                         --| Change TUNNELMAT1 Image
                         --|----------------------------------------------------------------------------------------
-
                 {
                     ["MBIN_FILE_SOURCE"]    = {
                         "MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN",
@@ -253,10 +212,56 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gUVScrollStepVec4"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"y",               "1"}, --Original "0.6"
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "gDiffuseMap"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Map", ""}, --TEXTURES/EFFECTS/WARP/LINES.DDS
+                                {"Map",             "TEXTURES/EFFECTS/WARP/LINES.DDS"}, --TEXTURES/EFFECTS/WARP/LINES.DDS
+                            }
+                        },
+                    }
+                },
+                        --|----------------------------------------------------------------------------------------
+                        --| Change LIGHTARMS
+                        --|----------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]    = {
+                        "MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gCustomParams01Vec4"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"t",               "1"}, --Original "0.04"
+                            }
+                        },
+                    }
+                },
+                        --|----------------------------------------------------------------------------------------
+                        --| Change ENGGLOWCAPMAT for EndFade Section
+                        --|----------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]    = {
+                        "MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gCustomParams01Vec4"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"t",                "1"}, --Original "0.04"
                             }
                         },
                     }
@@ -287,8 +292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Class",           "Translucent"}, --Original "Opaque"
-                                {"TransparencyLayerID",       "0"}, --Original "0"
+                                {"Class",           "Opaque"}, --Original "Opaque"
                             }
                         },
                         {
@@ -298,17 +302,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Anisotropy",      "0"},
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gLightCookiesMap"},
-                            ["REMOVE"]              = "SECTION"
-                        },
                     }
                 },
-
                         --|----------------------------------------------------------------------------------------
                         --| Insert the new Light Material
                         --|----------------------------------------------------------------------------------------
-
                 {
                     ["MBIN_FILE_SOURCE"]    = {"MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN",},
                     ["EXML_CHANGE_TABLE"]   =
@@ -323,11 +321,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-
                         --|----------------------------------------------------------------------------------------
                         --| Merge All Warp scenes into one (optionally, activate new type b space stations)
                         --|----------------------------------------------------------------------------------------
-
                 {
                     ["MBIN_FILE_SOURCE"]    = {"GCSIMULATIONGLOBALS.GLOBAL.MBIN"},
                     ["EXML_CHANGE_TABLE"]   =
