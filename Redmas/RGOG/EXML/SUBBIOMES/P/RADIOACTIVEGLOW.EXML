@@ -22,7 +22,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="BARRENROCKCLUMX" />
+        <Property name="Placement" value="FOREST" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -34,7 +34,7 @@
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="150" />
+        <Property name="MaxAngle" value="5" />
         <Property name="MatchGroundColour" value="True" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -77,25 +77,7 @@
           </Property>
         </Property>
         <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.215" />
-            <Property name="FlatDensity" value="0.0015" />
-            <Property name="SlopeDensity" value="0.0015" />
-            <Property name="SlopeMultiplier" value="1" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="9999" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="200" />
-            <Property value="600" />
-            <Property value="1000" />
-            <Property value="1400" />
-            </Property>
-          </Property>
+
         </Property>
       </Property>
 
