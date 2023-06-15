@@ -29944,7 +29944,7 @@ end
 					},
 				}
 			)
---[=[
+
 			addFeature
 			(
 				FANTASY_BIOMES_FEATURE,
@@ -29958,12 +29958,11 @@ end
 						{
 							{
 								["INTEGER_TO_FLOAT"] = "FORCE",
-								["SPECIAL_KEY_WORDS"] = {"DebugName","LCRYSTALTORSO"},
 								["MATH_OPERATION"] = "*",
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"FlatDensity", "18"}, 
+									{"FlatDensity", "2"}, 
 								}
 
 							},							
@@ -29973,7 +29972,7 @@ end
 					},
 				}
 			)
-	--]=]
+	
 			
 		-- UNDERWATER BIOMES
 		if LOWWATER_AND_BEACH_BIOMES_FEATURE == "ON" then
