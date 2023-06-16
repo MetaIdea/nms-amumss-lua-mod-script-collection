@@ -1,4 +1,3 @@
-
 -- 0.5 = faster*2
 -- 2 = would take two times to produce same result
 -- don't use 0, refiner won't work
@@ -21,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					["MBIN_FILE_SOURCE"] 	=
             {
-              "METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN",
+              "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCRECIPETABLE.MBIN",
             },
 					["EXML_CHANGE_TABLE"] 	= 
 					{

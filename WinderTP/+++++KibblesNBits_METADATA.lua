@@ -10528,7 +10528,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_BATCHNAME"]   = "~~~KibblesNBits_COMPATIBILITY.pak",
 ["MOD_DESCRIPTION"] = "Generates Metadata files and patch other mods with this script",
 ["MOD_AUTHOR"]      = "Kibbles, WinderTP, Babscoole",
-["NMS_VERSION"]     = "4.30",
+["NMS_VERSION"]     = "4.34",
 ["MODIFICATIONS"]   =
     {
         {

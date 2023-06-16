@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "dolphin-product-changes.pak",
 ["MOD_AUTHOR"]				= "Dolphin",
-["NMS_VERSION"]				= "4.23",
+["NMS_VERSION"]				= "4.34",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -57,7 +57,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 									{ "StackMultiplier", 				"16" }, 		-- was 1
 								}
 						},
-
 					},
 				},
 				

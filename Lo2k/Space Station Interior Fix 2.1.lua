@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = "Space Station Interior Fix 2.0.pak",
+["MOD_FILENAME"] = "Space Station Interior Fix 2.1.pak",
 ["MOD_AUTHOR"]= "Lo2k",
-["NMS_VERSION"]= "4.26",
+["NMS_VERSION"]= "4.34",
 ["MOD_DESCRIPTION"]= "Always displays full Space Station interior correctly",
 ["MODIFICATIONS"] =
 	{
