@@ -33,9 +33,9 @@ COSTMULT = 		0.33  -- This sets the ship launch fuel cost; The lower the number,
 							
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]             = "_Planetary_Flight_Fixes_3_2.pak", 
+  ["MOD_FILENAME"]             = "_Planetary_Flight_Fixes_3_3.pak", 
   ["MOD_AUTHOR"]               = "chronicallybored",
-  ["NMS_VERSION"]              = "4.30",
+  ["NMS_VERSION"]              = "4.33",
   ["MOD_DESCRIPTION"]          = "Fixes various aspects of the flight system while inside a planets atmosphere",
   ["MODIFICATIONS"]            = 
 	{
@@ -98,18 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"ShipInteractRadius",		INVENTORYMULT},		
 							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "ShipScan",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"] 	= "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PulseRange",				SCANRANGEMULT},	
-								{"PulseTime",				SCANSPEEDMULT},
-								{"ChargeTime",				COOLDOWNMULT},						
-							}
-						},
+						}
 					} 
 				},
 				{
