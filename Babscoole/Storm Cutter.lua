@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "Storm Cutter.pak",
 ["MOD_AUTHOR"]              = "Zurls",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.30",
+["NMS_VERSION"]             = "4.34",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -38,23 +38,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/BLUEWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","8",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FogStrength","0.1"},
-                                {"FogColourStrength","5"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.8",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.2"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","8",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"FogStrength","0.1"},
+                                -- {"FogColourStrength","5"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.8",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"LowStormsChance","0.2"},
+                                -- {"HighStormsChance","0.1"},
+                                -- {"ExtremeWeatherChance","0.2"},
+                            -- }
+                        -- },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -101,58 +101,58 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","5",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"HeightFogStrength","0.3"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Speed","0.2",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Thickness","0.5"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Alpha2","0.7",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Alpha1","0.5"},
-                                {"Alpha2","0.5"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldDistance","2000",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"CloudRatio","0.3"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Weighting","1",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Weighting","0"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","0.8",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FogStrength","3"},
-                                {"FogColourStrength","0.5"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldFade","500",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DepthOfFieldDistance","500"},
-                                {"DepthOfFieldFade","1000"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","5",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"HeightFogStrength","0.3"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Speed","0.2",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Thickness","0.5"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Alpha2","0.7",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Alpha1","0.5"},
+                                -- {"Alpha2","0.5"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldDistance","2000",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"CloudRatio","0.3"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Weighting","1",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Weighting","0"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","0.8",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"FogStrength","3"},
+                                -- {"FogColourStrength","0.5"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldFade","500",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"DepthOfFieldDistance","500"},
+                                -- {"DepthOfFieldFade","1000"},
+                            -- }
+                        -- },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -756,68 +756,68 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/RAINWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog",},
-                            ["SECTION_ACTIVE"] = {"1",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FogColourStrength","1"},
-                                {"HeightFogStrength","0.5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","Settings","GcHeavyAirSettingValues.xml",},
-                            ["SECTION_ACTIVE"] = {"1",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Speed","0.5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","Settings","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml",},
-                            ["SECTION_ACTIVE"] = {"1",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Speed","0.5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog",},
-                            ["SECTION_ACTIVE"] = {"1",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DepthOfFieldFade","5000"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FlightFog",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DepthOfFieldFade","5000"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FogStrength","0.5"},
-                                {"DepthOfFieldFade","5000"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Weighting","1",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Weighting","0.5"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FogStrength","2",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FogStrength","1"},
-                            }
-                        },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"Fog",},
+                            -- ["SECTION_ACTIVE"] = {"1",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"FogColourStrength","1"},
+                                -- {"HeightFogStrength","0.5"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","Settings","GcHeavyAirSettingValues.xml",},
+                            -- ["SECTION_ACTIVE"] = {"1",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Speed","0.5"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","Settings","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml",},
+                            -- ["SECTION_ACTIVE"] = {"1",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Speed","0.5"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"Fog",},
+                            -- ["SECTION_ACTIVE"] = {"1",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"DepthOfFieldFade","5000"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"FlightFog",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"DepthOfFieldFade","5000"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"ExtremeFog",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"FogStrength","0.5"},
+                                -- {"DepthOfFieldFade","5000"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Weighting","1",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Weighting","0.5"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"FogStrength","2",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"FogStrength","1"},
+                            -- }
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4",},
                             ["VALUE_CHANGE_TABLE"] =

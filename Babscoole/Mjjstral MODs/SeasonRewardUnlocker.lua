@@ -529,7 +529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "4.30",
+["NMS_VERSION"]     = "4.34",
 ["MODIFICATIONS"]   =
     {
         {

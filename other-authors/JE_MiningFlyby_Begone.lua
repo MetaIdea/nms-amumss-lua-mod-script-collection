@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "MiningFlyby_Begone"
 ModNameSub = "JE"
 BaseDescription = "Adjusts the frequency and distance of various flyby types within the game"
-GameVersion = "4.30"
--- ModVersion = "v4.30"
+GameVersion = "4.34"
+-- ModVersion = "v4.34"
 FileSource1 = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Trade Routes 2.4.pak", 
+["MOD_FILENAME"] 			= "No Trade Routes 2.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.20",
+["NMS_VERSION"]				= "4.34",
 ["MOD_DESCRIPTION"]			= "This mod removes space trade routes",
 ["MODIFICATIONS"] 			= 
 	{
