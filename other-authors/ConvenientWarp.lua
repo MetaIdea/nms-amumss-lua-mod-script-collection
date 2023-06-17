@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'ConvenientWarp.pak',
 	MOD_AUTHOR			= 'InfiniteSource',
-	NMS_VERSION			= '3.02',
+	NMS_VERSION			= '4.34',
 	MOD_DESCRIPTION		= [[
 							Increases the base warp distance just enough to get you close to the core ]],
 	MODIFICATIONS 		= {{
@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'HYPERDRIVE'},
+				SPECIAL_KEY_WORDS	= {'ID', 'HYPERDRIVE'},              -- Normal ships
 				PRECEDING_KEY_WORDS	= {'Ship_Hyperdrive_JumpDistance'},
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
@@ -18,13 +18,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'WARP_ALIEN'},
+				SPECIAL_KEY_WORDS	= {'ID', 'WARP_ALIEN'},              -- Living ships
 				PRECEDING_KEY_WORDS	= {'Ship_Hyperdrive_JumpDistance'},
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus',	'700000'}  -- Original "100"
 				}
 			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'HYPERDRIVE_ROBO'},         -- Sentinel ships
+				PRECEDING_KEY_WORDS	= {'Ship_Hyperdrive_JumpDistance'},
+				SECTION_UP = 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'Bonus',	'700000'}  -- Original "600"
+				}
+			}
 		}
 	},
 	{

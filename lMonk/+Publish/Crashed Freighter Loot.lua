@@ -3,7 +3,7 @@ mod_desc = [[
   Update crashed freighters loot with a better selection
   including a small chance for freighter upgrades
 ]]---------------------------------------------------------
-mod_version = '1.1'
+mod_version = '1.11'
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -94,8 +94,7 @@ local E_ = {
 }
 
 local new_reward = {
-	{
-	---	crashed freighter containers ---
+	{--- crashed freighter containers ---
 		id			= 'CRASHCONT_M',
 		choice		= E_.ONE,
 		replacement	= true,
@@ -356,7 +355,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Crashed Freighter Loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.30',
+	NMS_VERSION			= '4.34',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
