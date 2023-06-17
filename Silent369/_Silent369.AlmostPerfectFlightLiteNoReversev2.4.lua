@@ -2,7 +2,7 @@ local modfilename = "AlmostPerfectFlightLiteNoReverse"
 local lua_author  = "Silent"
 local lua_version = "v2.4"
 local mod_author  = "Silent369"
-local nms_version = "4.33"
+local nms_version = "4.34"
 local description = [[
 Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics.
 With optional settings to make flight much easier (a bit cheaty, hence optional).

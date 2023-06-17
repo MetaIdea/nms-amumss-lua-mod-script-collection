@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "v2.1"
+local lua_version = "v2.2"
 local mod_author  = "Silent369"
-local nms_version = "4.33"
+local nms_version = "4.34"
 local description = [[
 Modifies AI Ships Outpost / Planetary Archive / Station Approach and Landing Settings.
 
@@ -244,6 +244,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinHeight",                            "14.3"}, --Original "15"
                             }
                         },
+
+                            ---------------------------------------------------------------------------------------
+                            --WARP Settings
+                            ---------------------------------------------------------------------------------------
+
+                        {
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"WarpInPlayerLocatorMinOffset",         "5000"}, --Original "3000"
+                            }
+                        },
+                                                
                             ---------------------------------------------------------------------------------------
                             --Outpost Approach / Landing / Speed
                             ---------------------------------------------------------------------------------------
@@ -254,8 +266,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinimumCircleTimeBeforeLanding",          "1"}, --Original "5"
                                 {"MinimumTimeBetweenOutpostLandings",       "1"}, --Original "3"
                                 {"SpaceStationTraderRequestTime",           "3"}, --Original "20"
+                                {"DockingRotateStartTime",                  "0"}, --Original "1"
                                 {"DockingWaitDistance",                     "8"}, --Original "10"
                                 {"DockingRotateSpeed",                    "0.6"}, --Original "0.5"
+                                {"DockWaitMinTime",                        "10"}, --Original "20"
+                                {"DockWaitMaxTime",                        "40"}, --Original "60"
+                                {"AtmosphereTerminalSpeed",                 "0"}, --Original "30"     ***
                                 {"DockingLandingBounceTime",              "0.6"}, --Original "0.8"
                                 {"DockingLandingBounceHeight",            "0.4"}, --Original "0.5"
                                 {"OutpostDockMinTipLength",                 "5"}, --Original "5"
