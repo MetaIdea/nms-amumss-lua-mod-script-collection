@@ -1,5 +1,11 @@
 -- Choose one of these fe. english would be Languages[1], french Languages[2] ...
-Total_Seeds_Per_Class = 10
+Total_Seeds_Per_Class = 10000
+
+Input_Total_Seeds_Per_Class = {Total_Seeds_Per_Class,
+[[
+    How many seeds do you wish to generate per Class-Type?
+    Default = 10000  Current = >> ]] .. Total_Seeds_Per_Class .. [[ <<
+]]}
 
 Languages =
 {
@@ -98,6 +104,7 @@ Custom_Language_Desccription_Strings =
 
 Classes = {"C", "B", "A", "S"}
 ClassesS = {"S"}
+PriceMultiplier = 1
 
 Ship_Types =
 {
@@ -111,6 +118,39 @@ Ship_Types =
     ["Robot"] = "Robot",
     -- ["Freighter"] = "Freighter"
 }
+
+ClassChoice = 4
+InputClassChoice = {ClassChoice,
+[[
+    What class range do you wish?
+    * 4 = C -> S
+    * 3 = B -> S
+    * 2 = A -> S
+    * 1 = S
+    Default = 4 | Current = >> ]] .. ClassChoice .. [[ <<
+]]}
+
+
+if ClassChoice == 4 then
+    Classes = {"C", "B", "A", "S"}
+elseif ClassChoice == 3  then
+    Classes = {"B", "A", "S"}
+elseif ClassChoice == 2  then
+    Classes = {"A", "S"}
+else
+    Classes = ClassesS
+end
+
+InputPriceMultiplier = {PriceMultiplier,
+[[
+    Do you wish to cahnge the price multiplier?
+    Default = 1 | Current = >> ]] .. PriceMultiplier .. [[ <<
+]]}
+
+Total_Seeds_Per_Class = GUIF(Input_Total_Seeds_Per_Class, 10)
+ExtraChanges = GUIF(InputClassChoice, 10)
+PriceMultiplier = GUIF(InputPriceMultiplier, 10)
+
 
 ----------------------------------------------------------------------------------------------
 -------------------------------     CODE LOGIC START      ------------------------------------
@@ -532,44 +572,44 @@ function Get_Ship_Data(ship_type, ship_class )
 
     if ship_type == "Freighter" then
         ship_model = freighter_models[rand]
-        base_price = 25000000
+        base_price = 25000000 * PriceMultiplier
         custom_language_string = "CL_BFREIGH"
     elseif ship_type == "Dropship" then
         ship_model = "MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN"
-        base_price = 2500000
+        base_price = 2500000 * PriceMultiplier
         custom_language_string = "CL_BHAUL"
     elseif ship_type == "Shuttle" then
         ship_model = "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN"
-        base_price = 1000000
+        base_price = 1000000 * PriceMultiplier
         custom_language_string = "CL_BSHUT"
     elseif ship_type == "Fighter" then
         ship_model = "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN"
-        base_price = 2500000
+        base_price = 2500000 * PriceMultiplier
         custom_language_string = "CL_BFIGHT"
     elseif ship_type == "Royal" then
         ship_model = "MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN"
-        base_price = 5000000
+        base_price = 5000000 * PriceMultiplier
         custom_language_string = "CL_BROYAL"
     elseif ship_type == "Scientific" then
         ship_model = "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN"
-        base_price = 1000000
+        base_price = 1000000 * PriceMultiplier
         custom_language_string = "CL_BEXPLO"
     elseif ship_type == "Sail" then
         ship_model = "MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN"
-        base_price = 2000000
+        base_price = 2000000 * PriceMultiplier
         custom_language_string = "CL_BSOLAR"
     elseif ship_type == "Alien" then
         ship_model = "MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN"
-        base_price = 2500000
+        base_price = 2500000 * PriceMultiplier
         custom_language_string = "CL_BALIEN"
     elseif ship_type == "Robot" then
         ship_model = "MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELSHIP_PROC.SCENE.MBIN"
-        base_price = 2500000
+        base_price = 2500000 * PriceMultiplier
         custom_language_string = "CL_BROBOT"
     else
         ship_type = "Shuttle"
         ship_model = "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN"
-        base_price = 1000000
+        base_price = 1000000 * PriceMultiplier
         custom_language_string = "CL_BSHUT"
     end
 
@@ -624,7 +664,7 @@ for _, ship_type in pairs(Ship_Types) do
         Add_To_Product_Table[#Add_To_Product_Table + 1]  =
         {
             ["PRECEDING_KEY_WORDS"] = {"Table"},
-            ["ADD"] = Create_New_Product(product_id, name_id, name_LC_id, desc_id, desc_id, 1, price, product_icon)
+            ["ADD"] = Create_New_Product(product_id, name_id, name_LC_id, desc_id, desc_id, 1, math.floor(price), product_icon)
         }
         Add_To_Consumable_Table[#Add_To_Consumable_Table + 1] =
         {
