@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v4211.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v4341.pak",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole and Wbertro",
-["NMS_VERSION"]             = "4.21",
+["NMS_VERSION"]             = "4.34",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -1146,7 +1146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="NameHash" value="1548811781" />
           <Property name="Type" value="LIGHT" />
           <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
+            <Property name="TransX" value="-0.1" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
             <Property name="RotX" value="0" />
@@ -1285,7 +1285,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="NameHash" value="57263980" />
           <Property name="Type" value="LIGHT" />
           <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
+            <Property name="TransX" value="0.1" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
             <Property name="RotX" value="0" />

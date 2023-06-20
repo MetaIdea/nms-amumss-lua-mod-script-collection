@@ -2,6 +2,7 @@ ER_TRADE =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="20" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardFactionStanding.xml">
               <Property name="Faction" value="GcMissionFaction.xml">
                 <Property name="MissionFaction" value="TradeGuild" />
@@ -10,7 +11,6 @@ ER_TRADE =
               <Property name="AmountMax" value="1" />
               <Property name="SetToMinBeforeAdd" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
 
@@ -18,6 +18,7 @@ ER_WAR =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="20" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardFactionStanding.xml">
               <Property name="Faction" value="GcMissionFaction.xml">
                 <Property name="MissionFaction" value="WarriorGuild" />
@@ -26,7 +27,6 @@ ER_WAR =
               <Property name="AmountMax" value="1" />
               <Property name="SetToMinBeforeAdd" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
 
@@ -34,6 +34,7 @@ ER_EXPL =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="20" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardFactionStanding.xml">
               <Property name="Faction" value="GcMissionFaction.xml">
                 <Property name="MissionFaction" value="ExplorerGuild" />
@@ -42,7 +43,6 @@ ER_EXPL =
               <Property name="AmountMax" value="1" />
               <Property name="SetToMinBeforeAdd" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
 
@@ -50,6 +50,7 @@ ER_STAND =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="20" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="None" />
@@ -57,17 +58,16 @@ ER_STAND =
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
 
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4221.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4341.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.22",
+["NMS_VERSION"]     = "4.34",
 ["MODIFICATIONS"]   =
     {
         {
@@ -174,6 +174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="50" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="Traders" />
@@ -181,10 +182,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="50" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="Explorers" />
@@ -192,7 +193,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
                         },
@@ -204,6 +204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="50" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="Warriors" />
@@ -211,10 +212,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="50" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="Explorers" />
@@ -222,7 +223,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
                         },
@@ -234,6 +234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="50" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="Warriors" />
@@ -241,10 +242,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="50" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="Traders" />
@@ -252,7 +253,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 ]]
                         },
@@ -338,7 +338,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Id", "RS_S2_S4M1",},
                                 {"Id", "RS_S5_S1M3",},
                                 -- {"Id", "RS_S9_S1M3"},
-                                {"Id", "RS_S10_S1M3"},
+                                -- {"Id", "RS_S10_S1M3"},
                                 {"Id", "RS_S11_S1M3"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
@@ -572,6 +572,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="33" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardStanding.xml">
                   <Property name="Race" value="GcAlienRace.xml">
                     <Property name="AlienRace" value="Explorers" />
@@ -579,10 +580,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="AmountMin" value="-1" />
                   <Property name="AmountMax" value="-1" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="33" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardStanding.xml">
                   <Property name="Race" value="GcAlienRace.xml">
                     <Property name="AlienRace" value="Traders" />
@@ -590,10 +591,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="AmountMin" value="-1" />
                   <Property name="AmountMax" value="-1" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="33" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardStanding.xml">
                   <Property name="Race" value="GcAlienRace.xml">
                     <Property name="AlienRace" value="Warriors" />
@@ -601,10 +602,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="AmountMin" value="-1" />
                   <Property name="AmountMax" value="-1" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="20" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
                     <Property name="MissionFaction" value="ExplorerGuild" />
@@ -613,10 +614,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="AmountMax" value="-1" />
                   <Property name="SetToMinBeforeAdd" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="20" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
                     <Property name="MissionFaction" value="TradeGuild" />
@@ -625,10 +626,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="AmountMax" value="-1" />
                   <Property name="SetToMinBeforeAdd" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="20" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
                     <Property name="MissionFaction" value="WarriorGuild" />
@@ -637,7 +638,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="AmountMax" value="-1" />
                   <Property name="SetToMinBeforeAdd" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
 ]]
                         },
