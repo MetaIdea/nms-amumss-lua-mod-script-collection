@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "___PortalOnSpacestationV2.pak",
 ["MOD_AUTHOR"]              = "Mjjstral and Babscoole",
-["NMS_VERSION"]             = "4.34",
+["NMS_VERSION"]             = "4.36",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -76,51 +76,52 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ScaleZ", "0.5"},
                             }
                         },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name", "PillarsB"},
+                                {"Name", "PillarsA"},
+                                -- {"Name", "REFPortalMistVFX"},
+                                -- {"Name", "REFPortalCloudsVFX"},
+                                {"Name", "_Clump1"},
+                                {"Name", "_Clump2"},
+                                {"Name", "_Clump3"},
+                                {"Name", "_Clump4"},
+                                {"Name", "_Clump5"},
+                                {"Name", "_Clump6"},
+                            },
+                            ["REMOVE"] = "SECTION",
+                        },
                     }
                 },
                 -- {
-                    -- ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALMEMBRANE.SCENE.MBIN",
+                    -- ["MBIN_FILE_SOURCE"] =
+                    -- {
+                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSA.ENTITY.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSB.ENTITY.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALPILLARS\ENTITIES\PORTALPILLARS.ENTITY.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALTERMINAL\ENTITIES\PORTALTERMINAL.ENTITY.MBIN",
+                    -- },
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Name", "Pillar"},
-                            -- --["REMOVE"] = "SECTION",
+                            -- ["SPECIAL_KEY_WORDS"] = {"Distance", "10"},
                             -- ["VCT"] =
                             -- {
-                                -- {"TransY", "3.4"},
-                                -- {"ScaleY", "0.3"},
+                                -- {"Distance", "300"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Distance", "15"},
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VCT"] =
+                            -- {
+                                -- {"Distance", "450"},
                             -- }
                         -- },
                     -- }
                 -- },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSA.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSB.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALPILLARS\ENTITIES\PORTALPILLARS.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALTERMINAL\ENTITIES\PORTALTERMINAL.ENTITY.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Distance", "10"},
-                            ["VCT"] =
-                            {
-                                {"Distance", "300"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Distance", "15"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VCT"] =
-                            {
-                                {"Distance", "450"},
-                            }
-                        },
-                    }
-                },
                 {
                     ["MBIN_FILE_SOURCE"]     = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"]     =
