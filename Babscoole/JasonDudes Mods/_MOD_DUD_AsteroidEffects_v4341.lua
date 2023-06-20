@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AsteroidEffects_v4211.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_AsteroidEffects_v4341.pak",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.21",
+["NMS_VERSION"]             = "4.34",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="4" />
+          <Property name="Number" value="3" />
           <Property name="Radius" value="15" />
           <Property name="Scale" value="0.008" />
           <Property name="Speed" value="1000" />
@@ -110,10 +110,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Number", "3",},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
                             ["VALUE_MATCH"] = 80,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Scale",              "30",},
+                                {"Scale", "30",},
                             }
                         },
                         {
@@ -140,7 +148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="4" />
+          <Property name="Number" value="3" />
           <Property name="Radius" value="15" />
           <Property name="Scale" value="0.15" />
           <Property name="Speed" value="1000" />

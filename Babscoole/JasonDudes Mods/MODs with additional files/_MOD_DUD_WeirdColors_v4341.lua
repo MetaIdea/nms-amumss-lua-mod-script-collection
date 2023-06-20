@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_WeirdColors_v4151.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_WeirdColors_v4341.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.15",
+["NMS_VERSION"]   = "4.34",
 ["MODIFICATIONS"] =
     {
         {
@@ -447,6 +447,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\FLOATJOINT\DUDFLOAT_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","FloatJoint_imposter","Name","AABBMINX"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "-10.025988"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","FloatJoint_imposter","Name","AABBMAXX"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "10.025989"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","FloatJoint_imposter","Name","AABBMAXY"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "51.429756"}
                             }
                         },
                     }

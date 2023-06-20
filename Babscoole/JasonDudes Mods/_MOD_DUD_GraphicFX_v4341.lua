@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_GraphicFX_v4211.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_GraphicFX_v4341.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.21",
+["NMS_VERSION"]   = "4.34",
 ["MODIFICATIONS"] =
     {
         {
