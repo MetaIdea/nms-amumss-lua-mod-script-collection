@@ -139,7 +139,7 @@ INIT_PRESET ={
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps )
-        ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON", -- this var is not used anymore 
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF", -- this var is not used anymore 
         ["GIANTS_CREATURES_FEATURE"] = "ON",
         ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 94 (very huge.)) -- recommanded 54
     },
@@ -502,7 +502,7 @@ STARTING_SHIP = ""
 STARTING_MULTITOOL =""
 -----------------------------------------------------------------------------------
 -- INIT
-OFTEN_SPAWN_R =------------------------------------------------------------------------------------------------------------
+OFTEN_SPAWN_R2 =------------------------------------------------------------------------------------------------------------
 [[
 		<Property name="AutoCollision" value="False" />
 						<Property name="CollideWithPlayer" value="True" />
@@ -539,7 +539,7 @@ OFTEN_SPAWN_R =-----------------------------------------------------------------
 						</Property>
 ]]
 
-OFTEN_SPAWN_R2 =------------------------------------------------------------------------------------------------------------
+OFTEN_SPAWN_R =------------------------------------------------------------------------------------------------------------
 [[
 		<Property name="AutoCollision" value="False" />
 						<Property name="CollideWithPlayer" value="True" />
@@ -1151,7 +1151,7 @@ function generateRessourcesBiomeR(BIOME_PATH,TYPE,PATH,MAXSIZE)
 								<Property name="SwapPrimaryForSecondaryColour" value="False" />
 								<Property name="SwapPrimaryForRandomColour" value="False" />
 								<Property name="AlignToNormal" value="True" />
-								<Property name="MinScale" value="2" />
+								<Property name="MinScale" value="0.2" />
 								<Property name="MaxScale" value="]]..MAXSIZE..[[" />
 								<Property name="MinScaleY" value="0.91" />
 								<Property name="MaxScaleY" value="1.15" />
@@ -17647,9 +17647,9 @@ addFeature(
 --]=]
 
 
-max_normal_trees = "2"
-min_normal_trees ="1"
-max_giant_props = "6"
+max_normal_trees = "6"
+min_normal_trees ="3"
+max_giant_props = "26"
 min_giant_props = "0.1"
 
 
@@ -19138,19 +19138,19 @@ min_giant_props = "0.1"
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = max_normal_trees
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = max_normal_trees
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = max_normal_trees
 			},
 
 		}
@@ -29935,7 +29935,7 @@ end
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"FlatDensity", "2"}, -- x2
+									{"FlatDensity", "1.52"}, -- x2
 								}
 
 							},			
@@ -34294,27 +34294,8 @@ end
 								</Property>
 								]]
 							},
-														{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="SUBBIOMES_TB" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-										<Property name="Options">]]..SUBBIOMES_PR..[[
-									</Property>
-								</Property>
-								]]
-							},
+							
+
 														{
 								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
 								["SECTION_ACTIVE"] = {1,2},

@@ -3353,10 +3353,10 @@
           </Property>
           <Property value="GcCharacterCustomisationBoneScaleData.xml">
             <Property name="BoneName" value="BODYSHAPE" />
-            <Property name="Scale" value="0.05" />
+            <Property name="Scale" value="0" />
           </Property>
         </Property>
-        <Property name="Scale" value="1" />
+        <Property name="Scale" value="1.2" />
       </Property>
     </Property>
      
@@ -9386,7 +9386,7 @@
             <Property name="Value" value="GEK_BASE" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GEK_HEAD_1" />
+            <Property name="Value" value="GEK_HEAD_11" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="TORSO_GEK" />
@@ -9418,9 +9418,9 @@
               <Property name="ColourAlt" value="Primary" />
             </Property>
             <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.297" />
-          <Property name="G" value="0.297" />
-          <Property name="B" value="0.297" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
               <Property name="A" value="1" />
             </Property>
           </Property>
@@ -9741,7 +9741,7 @@
             <Property name="Value" value="GEK_BASE" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GEK_HEAD_1" />
+            <Property name="Value" value="GEK_HEAD_11" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="TORSO_GEK" />
@@ -9772,9 +9772,9 @@
               <Property name="ColourAlt" value="Primary" />
             </Property>
             <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.297" />
-          <Property name="G" value="0.297" />
-          <Property name="B" value="0.297" />
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
               <Property name="A" value="1" />
             </Property>
           </Property>
@@ -10415,7 +10415,7 @@
             <Property name="Value" value="GEK_BASE" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GEK_HEAD_1" />
+            <Property name="Value" value="GEK_HEAD_11" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="TORSO_GEK" />
@@ -10446,9 +10446,9 @@
               <Property name="ColourAlt" value="Primary" />
             </Property>
             <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.297" />
-          <Property name="G" value="0.297" />
-          <Property name="B" value="0.297" />
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
               <Property name="A" value="1" />
             </Property>
           </Property>
@@ -10755,7 +10755,7 @@
             <Property name="Value" value="GEK_BASE" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GEK_HEAD_5" />
+            <Property name="Value" value="GEK_HEAD_11" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="TORSO_GEK" />
@@ -16184,9 +16184,9 @@
               <Property name="ColourAlt" value="Primary" />
             </Property>
             <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.297" />
-          <Property name="G" value="0.297" />
-          <Property name="B" value="0.297" />
+              <Property name="R" value="0.56" />
+              <Property name="G" value="0.333" />
+              <Property name="B" value="0.424" />
               <Property name="A" value="1" />
             </Property>
           </Property>
@@ -16196,9 +16196,9 @@
               <Property name="ColourAlt" value="Alternative1" />
             </Property>
             <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="1" />
-          <Property name="G" value="0.52" />
-          <Property name="B" value="0" />
+              <Property name="R" value="0.236" />
+              <Property name="G" value="0.566" />
+              <Property name="B" value="0.87" />
               <Property name="A" value="1" />
             </Property>
           </Property>
@@ -16208,9 +16208,9 @@
               <Property name="ColourAlt" value="Alternative2" />
             </Property>
             <Property name="Colour" value="Colour.xml">
-              <Property name="R" value="1" />
-              <Property name="G" value="1" />
-              <Property name="B" value="1" />
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
               <Property name="A" value="1" />
             </Property>
           </Property>
