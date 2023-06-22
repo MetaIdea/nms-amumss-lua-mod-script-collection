@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "NoCaveCreatures.pak",
-["MOD_AUTHOR"]              = "MusicAndSilence",
+["MOD_AUTHOR"]              = "courtykat",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "3.97",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
