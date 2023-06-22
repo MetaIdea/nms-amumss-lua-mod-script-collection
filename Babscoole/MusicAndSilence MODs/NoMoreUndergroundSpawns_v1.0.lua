@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "NoMoreUndergroundSpawns_v1.0.pak",
-["MOD_AUTHOR"]    = "MusicAndSilence",
+["MOD_AUTHOR"]    = "courtykat",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.93",
 ["MODIFICATIONS"] =

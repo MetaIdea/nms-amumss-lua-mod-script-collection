@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "MoreCaveCreatures_x20.pak",
-["MOD_AUTHOR"]    = "MusicAndSilence",
+["MOD_AUTHOR"]    = "courtykat",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.97",
 ["MODIFICATIONS"] =

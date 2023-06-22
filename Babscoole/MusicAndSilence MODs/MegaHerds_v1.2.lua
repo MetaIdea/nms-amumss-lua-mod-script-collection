@@ -3,7 +3,7 @@ MULTIPLIER = 6
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "MegaHerds_v1.2.pak",
-["MOD_AUTHOR"]    = "MusicAndSilence",
+["MOD_AUTHOR"]    = "courtykat",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.97",
 ["MODIFICATIONS"] =
