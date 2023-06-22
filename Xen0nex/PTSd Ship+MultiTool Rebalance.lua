@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_23"
+GameVersion = "4_36"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -511,7 +511,7 @@ CostChanges	=
 			{"Pristine",			0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			5,	24		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
 			{"Royal",				5.15,		16*1.25,	10,			20},		--Vanilla values are 10 mil,		120 mil,		15,	48		Catalogued at 5.15 mil		~	??? mil		(??? mil)		11	~	???	tech slots initially	(Only offered as C Class from Pillars?)
 			{"Alien",				0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			5,	24		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
-			{"Robot",				2.5,		16*1.25,	6,			20}			--Vanilla values are 10 mil,		120 mil,		15,	48		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
+			{"Robot",				2.5,		8*1.25,		6,			20}			--Vanilla values are 4.2 mil,		34.5 mil,		19,	36		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
 		}
 	},
 }
@@ -541,7 +541,7 @@ CostClassModifierChanges =	--Replaces vanilla cost bonus at different Classes
 			{"Royal",					0,		0,		0,		400},				--Vanilla values are +		0,		0,		0,		0	%
 			{"Alien",					0,		0,		0,		300},				--Vanilla values are +		0,		0,		0,		0	%
 			{"Sail",					0,		50,		150,	400},				--Vanilla values are +		0,		20,		70,		100	%
-			{"Robot",					0,		0,		0,		0},					--Vanilla values are +		0,		0,		0,		0	%
+			{"Robot",					0,		10,		25,		50},				--Vanilla values are +		0,		10,		25,		50	%
 			{"Freighter",				0,		50,		150,	400},				--Vanilla values are +		0,		40,		60,		100	%
 			{"PlayerFreighter",			0,		50,		150,	400},				--Vanilla values are +		0,		40,		60,		100	%
 		}

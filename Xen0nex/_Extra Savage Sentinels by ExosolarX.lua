@@ -1,5 +1,5 @@
 ModName = "_Extra Savage Sentinels by ExosolarX"
-GameVersion = "4_23"
+GameVersion = "4_36"
 Description = "Increases the difficulty of Sentinels by changing aggression, firerate, range, sight distance, etc."
 
 --Multiplier to apply to the base health of all planetary Sentinels
@@ -692,6 +692,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SpiderPounceMinRange", 8},						--8
 								{"HitsToCancelStealthSmall", 4},					--2
 								{"HitsToCancelStealth", 8},							--5
+								
+								{"CorruptedDroneRepairInteruptCooldownTime", 3},	--5
 							}
 						},
 						{	--Also added by Xen0nex														This allows drones to continue to shoot at the player while you are moving away from them
@@ -1024,7 +1026,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"BaseHealth",	math.floor(SentHealth*2800),},					--2800		pre-4.20 was 3200
 								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*6800),},	--6800		pre-4.20 was 4500
-								{"RepairTime","11",},											--9			pre-4.20 was 3
+								{"RepairTime","9",},											--9			pre-4.20 was 3
 								{"RepairThreshold","40",},										--60		pre-4.20 was 95
 							}
 						},
@@ -1046,7 +1048,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"BaseHealth",	math.floor(SentHealth*6000),},					--6000
 								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*20000),},	--20000
-								{"RepairTime","7",},											--7
+								{"RepairTime","6",},											--7
 								{"RepairThreshold","50",},										--50
 							}
 						},
