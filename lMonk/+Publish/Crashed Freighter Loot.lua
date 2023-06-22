@@ -3,7 +3,7 @@ mod_desc = [[
   Update crashed freighters loot with a better selection
   including a small chance for freighter upgrades
 ]]---------------------------------------------------------
-mod_version = '1.11'
+mod_version = '1.12'
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -154,8 +154,8 @@ local new_reward = {
 			{
 				f=R_MultiItem,
 				c=2,
-				{id='FREI_INV_TOKEN',	n=2, 	t=E_.PDT},	-- freighter inv
-				{id='SENTFREI_PROD',	n=303, 	t=E_.PDT},	-- AI Fragment
+				{id='FREI_INV_TOKEN',	n=1, 	t=E_.PDT},	-- freighter inv
+				{id='SENTFREI_PROD',	n=2, 	t=E_.PDT},	-- AI Fragment
 			},
 
 			-- freighter hyper
@@ -163,7 +163,7 @@ local new_reward = {
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRH, 		q=0,	t=E_.PRP},
-				{id='CASING',		n=1, 	t=E_.PDT},
+				{id='CASING',		n=5, 	t=E_.PDT},
 			},
 			{
 				f=R_MultiItem,
@@ -188,7 +188,7 @@ local new_reward = {
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRF, 		q=0,	t=E_.PRP},
-				{id='NANOTUBES',	n=1, 	t=E_.PDT},
+				{id='NANOTUBES',	n=5, 	t=E_.PDT},
 			},
 			{
 				f=R_MultiItem,
@@ -213,7 +213,7 @@ local new_reward = {
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRT, 		q=0,	t=E_.PRP},
-				{id='JELLY',		n=1, 	t=E_.PDT},
+				{id='JELLY',		n=3, 	t=E_.PDT},
 			},
 			{
 				f=R_MultiItem,
@@ -238,7 +238,7 @@ local new_reward = {
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRC, 		q=0,	t=E_.PRP},
-				{id='POWERCELL',	n=187, 	t=E_.PDT},
+				{id='POWERCELL',	n=5, 	t=E_.PDT},
 			},
 			{
 				f=R_MultiItem,
@@ -288,7 +288,7 @@ local new_reward = {
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRE, 		q=0,	t=E_.PRP},
-				{id='CARBON_SEAL',	n=187, 	t=E_.PDT},
+				{id='CARBON_SEAL',	n=3, 	t=E_.PDT},
 			},
 			{
 				f=R_MultiItem,
@@ -355,7 +355,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Crashed Freighter Loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.34',
+	NMS_VERSION			= '4.36',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
