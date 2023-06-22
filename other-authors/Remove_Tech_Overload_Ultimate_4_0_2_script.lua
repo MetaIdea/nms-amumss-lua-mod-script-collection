@@ -57,9 +57,9 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]             = "_Remove_Tech_Overload_Ultimate_4_0_1.pak", 
+	["MOD_FILENAME"]             = "_Remove_Tech_Overload_Ultimate_4_0_2.pak", 
 	["MOD_AUTHOR"]               = "chronicallybored",
-	["NMS_VERSION"]              = "4.34",
+	["NMS_VERSION"]              = "4.36",
 	["MOD_DESCRIPTION"]          = "Removes technology overload, enables tech in cargo slots (deactivated for now since it's bugged), fixes UI/inventory bounds, expands inv/tech slots of just about anything depending on it's class and increases stack sizes by x100.",
 	["MODIFICATIONS"]            = 
 
