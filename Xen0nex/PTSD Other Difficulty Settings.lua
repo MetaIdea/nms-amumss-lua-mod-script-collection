@@ -1,5 +1,5 @@
 ModName = "PTSD Other Difficulty Settings"
-GameVersion = "420"
+GameVersion = "436"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
 --Controls whether you can both increase and decrease the Stack Size limit from the options menu after starting a game
@@ -591,21 +591,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ToolScan","GcScanData.xml"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"PulseRange", ScannerRange},
-					{"ChargeTime", ScannerRecharge},
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"ShipScan","GcScanData.xml"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"ChargeTime", ShipScanRecharge},
-				}
-			},
-			{
 				["PRECEDING_KEY_WORDS"] = "DamageReceivedMultipliers",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -886,6 +871,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"Low","GcItemShopAvailabilityDifficultyOptionData.xml"},
 				--["LINE_OFFSET"] = "+1",
 				ADD = LowNeverSoldItems
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA/SIMULATION/SCANNING/SCANDATATABLE.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID","TOOL"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PulseRange", ScannerRange},
+					{"ChargeTime", ScannerRecharge},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID","SHIP"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeTime", ShipScanRecharge},
+				}
 			},
 		}
 	}
