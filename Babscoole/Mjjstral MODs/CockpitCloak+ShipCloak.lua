@@ -382,7 +382,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 -- ["ADD_FILES"] =
     -- {
         -- {
-            -- ["FILE_DESTINATION"] = [[MODELS\HUD\SPACEMAP.SCENE.EXML]],
+            -- ["FILE_DESTINATION"] = "MODELS\HUD\SPACEMAP.SCENE.EXML",
             -- ["FILE_CONTENT"]      =
 -- [[
 -- <?xml version="1.0" encoding="utf-8"?>

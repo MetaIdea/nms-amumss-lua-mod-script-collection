@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "BetterBattery"
 ModNameSub = "JE"
 BaseDescription = "Adjusts ion battery, starship battery and life gel so they give full recharge on all difficulties."
-GameVersion = "4.34"
--- ModVersion = "v4.34"
+GameVersion = "4.36"
+-- ModVersion = "v4.36"
 FileSource1 = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"
 
 -- Original game settings in comments
