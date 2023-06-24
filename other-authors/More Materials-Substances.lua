@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "MoreSubstances.pak",
 ["MOD_AUTHOR"]				= "Flugelwulff",
 ["LUA_AUTHOR"]				= "Babscoole/Flugelwulff",
-["NMS_VERSION"]				= "4.03",
+["NMS_VERSION"]				= "4.10",
 ["MODIFICATIONS"] 			= 
 	{
 		{
