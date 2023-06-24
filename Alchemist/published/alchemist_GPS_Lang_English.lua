@@ -5,7 +5,7 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "4-30"
+GameVersion = "4-36"
 ModVersion = "2-4-2"
 
 -- =========
@@ -363,11 +363,11 @@ end
 -- actual AMUMSS instructions
 NMS_MOD_DEFINITION_CONTAINER = {
 
-["MOD_FILENAME"]				= Author.."_"..pakName.."_"..GameVersion.."_"..ModVersion..".pak",
-["MOD_DESCRIPTION"]			= BaseDescription,
-["MOD_AUTHOR"]					= Author,
-["NMS_VERSION"]					= GameVersion,
-["MODIFICATIONS"] = {{ ["MBIN_CHANGE_TABLE"] = {} }}
+MOD_FILENAME      = Author.."_"..pakName.."_"..GameVersion.."_"..ModVersion..".pak",
+MOD_DESCRIPTION   = BaseDescription,
+MOD_AUTHOR        = Author,
+NMS_VERSION       = GameVersion,
+MODIFICATIONS = {{ ["MBIN_CHANGE_TABLE"] = {} }}
 
 }
 
@@ -378,12 +378,13 @@ if CreateSeperateLanguageFiles == true then
 
   local modRef = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
   modRef[#modRef + 1] = {
-    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-    ["EXML_CHANGE_TABLE"] = {
+    MBIN_FILE_SOURCE = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+    EXML_CHANGE_TABLE = {
         {
-          ["PRECEDING_KEY_WORDS"] = {"LocTableList"},
-          ["LINE_OFFSET"] = "+18",
-          ["ADD"] = [[
+          PRECEDING_KEY_WORDS = {"LocTableList"},
+          ADD_OPTION = "ADDafterSECTION",
+          LINE_OFFSET = "-1",
+          ADD = [[
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="]]..Author.."_"..ModName..[[" />
     </Property>]]
@@ -396,7 +397,7 @@ end
 
 -- for if the filename spelling of a language is different than just string.upper()
 LANGUAGE_FILENAME_TABLE = {
-  ["LatinAmericanSpanish"] = "LATINAMERAICANSPANISH"
+  LatinAmericanSpanish = "LATINAMERAICANSPANISH"
 }
 
 local function langFilenameSuffix(lang)
@@ -412,22 +413,22 @@ end
 local function addChangeTable(lang)
   local langFilename = langFilenameSuffix(lang)
   Ref[#Ref + 1] = {
-    ["MBIN_FILE_SOURCE"] = "LANGUAGE\\"..LanguageFilePrefix..langFilename..".MBIN",
-	  ["EXML_CHANGE_TABLE"] = {
+    MBIN_FILE_SOURCE = "LANGUAGE\\"..LanguageFilePrefix..langFilename..".MBIN",
+    EXML_CHANGE_TABLE = {
       {
-        ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["LINE_OFFSET"] = 0,
-        ["ADD"] = buildForLanguage(lang)
+        PRECEDING_KEY_WORDS = {"Table"},
+        LINE_OFFSET = 0,
+        ADD = buildForLanguage(lang)
       },
-	  }
+    }
   }
 end
 
 local function createLanguageFile(lang)
   local langFilename = langFilenameSuffix(lang)
   Ref[#Ref + 1] = {
-    ["FILE_DESTINATION"] = "LANGUAGE\\"..Author:upper().."_"..ModName:upper().."_"..langFilename..".EXML",
-    ["FILE_CONTENT"] = [[<Data template="TkLocalisationTable">
+    FILE_DESTINATION = "LANGUAGE\\"..Author:upper().."_"..ModName:upper().."_"..langFilename..".EXML",
+    FILE_CONTENT = [[<Data template="TkLocalisationTable">
   <Property name="Table">
 ]]..buildForLanguage(lang)..[[
   </Property>

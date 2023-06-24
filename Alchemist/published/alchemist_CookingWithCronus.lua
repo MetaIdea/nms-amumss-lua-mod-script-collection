@@ -5,8 +5,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-30"
-ModVersion = "1-3-0"
+GameVersion = "4-36"
+ModVersion = "1-3-1"
 
 --[[
 
@@ -100,37 +100,43 @@ METADATA/GAMESTATE/STATS/STATGROUPSTABLE.MBIN
 
 NMS_MOD_DEFINITION_CONTAINER = {
 
-["MOD_FILENAME"]				= Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
-["MOD_DESCRIPTION"]			= BaseDescription,
-["MOD_AUTHOR"]					= Author,
-["NMS_VERSION"]					= GameVersion,
+MOD_FILENAME      = Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
+MOD_DESCRIPTION   = BaseDescription,
+MOD_AUTHOR        = Author,
+NMS_VERSION       = GameVersion,
 
-["MODIFICATIONS"]	= {
-{["MBIN_CHANGE_TABLE"] = {
+--
 
-  -- Dialog Removals
-  {["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
+MODIFICATIONS = {{
+  MBIN_CHANGE_TABLE = {
+
+    -- Dialog Removals
     {
-      -- remove existing judgement dialog as we will provide our own
-      ["SPECIAL_KEY_WORDS"] = {"Id", "EXOTIC_CHEF"},
-      ["REMOVE"] = "SECTION",
-      ["REPLACE_TYPE"] = "ALL"
+      MBIN_FILE_SOURCE = "METADATA\\REALITY\\TABLES\\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+      EXML_CHANGE_TABLE = {
+        {
+          -- remove existing judgement dialog as we will provide our own
+          SPECIAL_KEY_WORDS = {"Id", "EXOTIC_CHEF"},
+          REMOVE = "SECTION",
+          REPLACE_TYPE = "ALL"
+        },
+      }
     },
-  }},
 
-  -- Injected Tables
-  {["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\COREMISSIONTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
-    --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Missions", --
-    },--
-    ["ADD"] = [[
+    -- Injected Tables
+    {
+      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/COREMISSIONTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Missions", --
+          },--
+          ADD = [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="ALCH_CHEF_INTRO" />
       <Property name="MissionClass" value="Secondary" />
@@ -3709,21 +3715,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\RECURRINGMISSIONTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Missions", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/RECURRINGMISSIONTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Missions", --
+          },--
+          ADD = [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="ALCH_CHEF_RESET" />
       <Property name="MissionClass" value="Guide" />
@@ -7012,21 +7021,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\ENABLINGCONDITIONSTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Missions", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/ENABLINGCONDITIONSTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Missions", --
+          },--
+          ADD = [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="CHEF_MENU_00" />
       <Property name="MissionClass" value="Guide" />
@@ -32428,7 +32440,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="StartIsCancel" value="True" />
       <Property name="StartingConditions">
         <Property value="GcMissionConditionLocation.xml">
-          <Property name="MissionPlayerLocation" value="InNexus" />
+          <Property name="MissionPlayerLocation" value="InNexusOnFoot" />
         </Property>
         <Property value="GcMissionConditionStatLevel.xml">
           <Property name="Stat" value="CHEF_POE" />
@@ -32834,21 +32846,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\SPACEPOIMISSIONTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Missions", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/SPACEPOIMISSIONTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Missions", --
+          },--
+          ADD = [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="ALCH_CHEF_WHALE" />
       <Property name="MissionClass" value="Guide" />
@@ -35419,21 +35434,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Table", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Table", --
+          },--
+          ADD = [[
     <Property value="GcAlienPuzzleEntry.xml">
       <Property name="ProgressionIndex" value="0" />
       <Property name="MinProgressionForSelection" value="0" />
@@ -36044,21 +36062,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       </Property>
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Table", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Table", --
+          },--
+          ADD = [[
     <Property value="GcProductData.xml">
       <Property name="ID" value="P_CHEF_SONG" />
       <Property name="Name" value="UI_P_CHEF_SONG_NAME" />
@@ -36254,21 +36275,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="CanSendToOtherPlayers" value="False" />
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\CONSUMABLEITEMTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Table", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Table", --
+          },--
+          ADD = [[
     <Property value="GcConsumableItem.xml">
       <Property name="ID" value="P_CHEF_SONG" />
       <Property name="RewardID" value="R_CHEF_SONG" />
@@ -36287,21 +36311,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="RequiresMissionActive" value="" />
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "GenericTable", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/REWARDTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "GenericTable", --
+          },--
+          ADD = [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_CHEF_RESET" />
       <Property name="List" value="GcRewardTableItemList.xml">
@@ -36433,21 +36460,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       </Property>
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "PulseEncounters", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/SCENE/EXPERIENCESPAWNTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "PulseEncounters", --
+          },--
+          ADD = [[
     <Property value="GcPulseEncounterInfo.xml">
       <Property name="Id" value="PE_CHEF_SONG" />
       <Property name="MarkerLabel" value="UI_PULSE_ENCOUNTER_NAME_BIOFRIG" />
@@ -36501,21 +36531,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       </Property>
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\MISSIONSCHEDULESTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Schedules", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/MISSIONSCHEDULESTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Schedules", --
+          },--
+          ADD = [[
     <Property value="GcMissionSchedulingData.xml">
       <Property name="RecurrenceType" value="GcDailyRecurrence.xml">
         <Property name="RecurrenceMinute" value="0" />
@@ -36550,22 +36583,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
       </Property>
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\STORIESTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Diplomats", --
-      "Pages", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/STORIESTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Diplomats", --
+            "Pages", --
+          },--
+          ADD = [[
         <Property value="GcStoryPage.xml">
           <Property name="InteractionType" value="GcInteractionType.xml">
             <Property name="InteractionType" value="None" />
@@ -36717,21 +36753,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
           </Property>
         </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\GAMESTATE\\STATS\\STATDEFINITIONSTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "StatDefinitionTable", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/GAMESTATE/STATS/STATDEFINITIONSTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "StatDefinitionTable", --
+          },--
+          ADD = [[
     <Property value="GcStatDefinition.xml">
       <Property name="Type" value="GcStatType.xml">
         <Property name="StatType" value="Int" />
@@ -37073,21 +37112,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="MissionMessageDecimals" value="0" />
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\GAMESTATE\\MESSAGES\\STATUSMESSAGEDEFINITIONS.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "Messages", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/GAMESTATE/MESSAGES/STATUSMESSAGEDEFINITIONS.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "Messages", --
+          },--
+          ADD = [[
     <Property value="GcStatusMessageDefinition.xml">
       <Property name="Id" value="CHEF_DEBUG" />
       <Property name="Message" value="" />
@@ -37123,26 +37165,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
       </Property>
     </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
-  {["MBIN_FILE_SOURCE"] = "METADATA\\GAMESTATE\\STATS\\STATGROUPSTABLE.MBIN",
-  ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = -1,
-    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
-    ["SPECIAL_KEY_WORDS"] = {
-      --
-      "GroupName", --
-      "GLOBAL_STATS", --
-    },--
-    --
-    ["PRECEDING_KEY_WORDS"] = {
-      --
-      "TrackedStats", --
-    },--
-    ["ADD"] = [[
+    {
+      MBIN_FILE_SOURCE = [[METADATA/GAMESTATE/STATS/STATGROUPSTABLE.MBIN]],
+      EXML_CHANGE_TABLE = {
+        {
+          LINE_OFFSET = -1,
+          ADD_OPTION = "ADDafterSECTION",
+          --
+          SPECIAL_KEY_WORDS = {
+            --
+            "GroupName", --
+            "GLOBAL_STATS", --
+          },--
+          --
+          PRECEDING_KEY_WORDS = {
+            --
+            "TrackedStats", --
+          },--
+          ADD = [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="CHEF_LORE" />
         </Property>
@@ -37195,9 +37240,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="Value" value="CHEF_WS_TUT" />
         </Property>      
 ]]
+        },
+      }
     },
-  }},
 
-  --
+    --
 
-}}}}
+  } -- END MBIN_CHANGE_TABLE
+}} -- END MODIFICATIONS
+
+} -- END NMS_MOD_DEFINITION_CONTAINER
