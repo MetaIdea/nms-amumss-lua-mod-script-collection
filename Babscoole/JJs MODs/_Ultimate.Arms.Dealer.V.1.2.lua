@@ -56,11 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {
-                            [[MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN]],
-                            [[MODELS/PHONG15.MATERIAL.MBIN]],
-                            "REMOVE"
-                        },
+                        {"MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN","MODELS/PHONG15.MATERIAL.MBIN","REMOVE"},
                     },
                 },
                 {
@@ -88,11 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {
-                            [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN]],
-                            [[MODELS/CRATE_WEAPON.SCENE.MBIN]],
-                            "REMOVE"
-                        },
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN","MODELS/CRATE_WEAPON.SCENE.MBIN","REMOVE"},
                     },
                 },
                 {

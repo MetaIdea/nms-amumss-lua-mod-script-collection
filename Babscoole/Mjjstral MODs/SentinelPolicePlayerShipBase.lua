@@ -14,11 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {
-                            [[MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN]],
-                            [[MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN]],
-                            "REMOVE"
-                        },
+                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN","MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN","REMOVE"},
                     },
                 },
                 {
@@ -55,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.EXML]],
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.EXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.EXML]],
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.EXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>

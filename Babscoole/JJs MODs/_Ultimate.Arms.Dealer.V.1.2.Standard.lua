@@ -81,11 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {
-                            [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN]],
-                            [[MODELS/CRATE_WEAPON.SCENE.MBIN]],
-                            "REMOVE"
-                        },
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN","MODELS/CRATE_WEAPON.SCENE.MBIN","REMOVE"},
                     },
                 },
                 {
