@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]	= "_ModTeamMad.QuickDocks.1.0.3.pak",
+["MOD_FILENAME"]	= "_ModTeamMad.QuickDocks.1.0.4.pak",
 ["MOD_AUTHOR"]		= "Mod Team Mad",
-["NMS_VERSION"]		= "4.13",
+["NMS_VERSION"]		= "4.27",
 ["MOD_DESCRIPTION"]	= "8x faster docking rotation",
 ["MODIFICATIONS"]	=
 	{
@@ -20,6 +20,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						}
 					}
+				},
+			}
+		},
+		{
+			["MBIN_CHANGE_TABLE"] 	=
+			{
+				{	
 					["MBIN_FILE_SOURCE"] 	= "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] 	=
 					{
