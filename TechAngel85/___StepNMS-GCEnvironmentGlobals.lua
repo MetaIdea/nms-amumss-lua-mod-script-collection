@@ -8,10 +8,10 @@ FileSource01 = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN"
 
 --##### Variables #####
 TerrainFadeTime = 1			-- Amount of time it takes for terrain to fade in/out of different detail modes | 2 | 333
-TerrainFadeTimeInShip = 0	-- Amount of time it takes for terrain to fade in/out of different detail modes while in a ship | 2 | 
-CreatureFadeTime = 0.5		-- Amount of time it takes for creatures to fade in/out of different detail modes | 1.5 | 
-FloraFadeTimeMin = 0.1		-- Minimum amount of time to take for all flora to fade in/out of different detail modes | 0.6 | 
-FloraFadeTimeMax = 1.1		-- Max amount of time to take for all flora to fade in/out of different detail modes | 2.25 | 
+TerrainFadeTimeInShip = 1	-- Amount of time it takes for terrain to fade in/out of different detail modes while in a ship | 2 | 
+CreatureFadeTime = 1.0		-- Amount of time it takes for creatures to fade in/out of different detail modes | 1.5 | 
+FloraFadeTimeMin = 1.0		-- Minimum amount of time to take for all flora to fade in/out of different detail modes | 0.6 | 
+FloraFadeTimeMax = 1.5		-- Max amount of time to take for all flora to fade in/out of different detail modes | 2.25 | 
 
 --## Step ##
 AnimationScale = 15			-- Determines how fast the clouds morph | 50 | 234
@@ -91,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 --
---##### Everything after here is from Fine LOD, courtesy of Babscoole #####
+--##### Everything after here is from Fine LOD, courtesy of Babscoole, altered by Step #####
 --
 				{["PRECEDING_KEY_WORDS"] = {"LODAdjust",},
 					["SECTION_ACTIVE"] = {4,},
@@ -130,22 +130,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{["PRECEDING_KEY_WORDS"] = {"EnvironmentProperties",},
 					["VALUE_CHANGE_TABLE"] = {
-						{"PlanetObjectSwitch",        "2100"},  -- Original "700"
-						{"PlanetLodSwitch0",          "900"},   -- Original "300"
-						{"PlanetLodSwitch0Elevation", "2100"},  -- Original "700"
-						{"PlanetLodSwitch1",          "6000"},  -- Original "2000"
-						{"PlanetLodSwitch2",          "30000"}, -- Original "10000"
-						{"PlanetLodSwitch3",          "60000"}, -- Original "20000"
+						{"PlanetObjectSwitch",        "1400"},  -- Original "700"
+						{"PlanetLodSwitch0",          "600"},   -- Original "300"
+						{"PlanetLodSwitch0Elevation", "1400"},  -- Original "700"
+						{"PlanetLodSwitch1",          "4000"},  -- Original "2000"
+						{"PlanetLodSwitch2",          "20000"}, -- Original "10000"
+						{"PlanetLodSwitch3",          "40000"}, -- Original "20000"
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"EnvironmentPrimeProperties",},
 					["VALUE_CHANGE_TABLE"] = {
-						{"PlanetObjectSwitch",        "6000"},  -- Original "2000"
-						{"PlanetLodSwitch0",          "6000"},  -- Original "2000"
-						{"PlanetLodSwitch0Elevation", "6000"},  -- Original "2000"
-						{"PlanetLodSwitch1",          "6000"},  -- Original "2000"
-						{"PlanetLodSwitch2",          "30000"}, -- Original "10000"
-						{"PlanetLodSwitch3",          "60000"}, -- Original "20000"
+						{"PlanetObjectSwitch",        "4000"},  -- Original "2000"
+						{"PlanetLodSwitch0",          "4000"},  -- Original "2000"
+						{"PlanetLodSwitch0Elevation", "4000"},  -- Original "2000"
+						{"PlanetLodSwitch1",          "4000"},  -- Original "2000"
+						{"PlanetLodSwitch2",          "20000"}, -- Original "10000"
+						{"PlanetLodSwitch3",          "40000"}, -- Original "20000"
 					}
 				},
 			}

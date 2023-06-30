@@ -17,7 +17,6 @@ ExHeatDamageRateX = 30			--  | 50 | 68
 ExHeatDamageRateY = 15			--  | 20 | 69
 ExHeatWoundRateX = 30			--  | 50 | 72
 ExHeatWoundRateY = 15			--  | 20 | 73
-ExHeatTriggerValue = 51			--  | 49 | 82
 
 ExColdProtectionTimeX = 720		--  | 540 | 92
 ExColdProtectionTimeY = 54		--  | 40 | 93
@@ -25,7 +24,6 @@ ExColdDamageRateX = 30			--  | 50 | 96
 ExColdDamageRateY = 15			--  | 20 | 97
 ExColdWoundRateX = 30			--  | 50 | 100
 ExColdWoundRateY = 15			--  | 20 | 101
-ExColdTriggerValue = -51		--  | -49 | 110
 
 GasProtectionTimeX = 720		--  | 540 | 120
 GasProtectionTimeY = 54			--  | 40 | 121
@@ -74,12 +72,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"x", ExHeatWoundRateX}, {"y", ExHeatWoundRateY},						
 					}
 				},
-				{["PRECEDING_KEY_WORDS"] = {"ExtremeHeat",},
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"TriggerValue", ExHeatTriggerValue},						
-					}
-				},
 				{["PRECEDING_KEY_WORDS"] = {"ExtremeCold", "ProtectionTime",},
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
@@ -96,12 +88,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", ExColdWoundRateX}, {"y", ExColdWoundRateY},						
-					}
-				},
-				{["PRECEDING_KEY_WORDS"] = {"ExtremeCold",},
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"TriggerValue", ExColdTriggerValue},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ToxicGas", "ProtectionTime",},
