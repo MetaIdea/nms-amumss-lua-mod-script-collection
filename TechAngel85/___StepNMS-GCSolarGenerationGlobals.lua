@@ -7,30 +7,30 @@ FileSource01 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 
 --##### Variables #####
 --## Step ##
-LocatorScatterChanceOfPirates = 10	--	| 20 | 38
+LocatorScatterChanceOfPirates = 10	--	| 20 | 42
 
-PlanetInvalidAsteroidZone = 24000	-- No asteroid zone around planets | vanilla=10000 // CSO=30000 | 39
-SparseAsteroidSpread = -21			-- How sparse the random floating asteroids not connected to a field are | -7 | 41		
+PlanetInvalidAsteroidZone = 24000	-- No asteroid zone around planets | vanilla=10000 // CSO=30000 | 43
+SparseAsteroidSpread = "-21"		-- How sparse the random floating asteroids not connected to a field are | -7 | 45	
 
-CommonAsteroidScale = 0.45			-- Initial size of the asteroid | 0.28 | 45
-CommonAsteroidSpacing = 4500 		-- Distance between normal asteroids // affects the drawing distance of asteroids too | vanilla=645 // CSO=6000 | 51
-CommonAsteroidFadeRange = 18000		-- The max range that normal asteroids will end fading out; beyond here there are no asteroids displayed | vanilla=9000 // CSO=12000 | 56
-CommonAsteroidNoiseScale = 60000	-- The size of the asteroid field | 50000 | 57
+CommonAsteroidScale = 0.45			-- Initial size of the asteroid | 0.28 | 49
+CommonAsteroidSpacing = 3300 		-- Distance between normal asteroids // affects the drawing distance of asteroids too | vanilla=645 // CSO=6000 | 55
+CommonAsteroidFadeRange = 18000		-- The max range that normal asteroids will end fading out; beyond here there are no asteroids displayed | vanilla=9000 // CSO=12000 | 60
+CommonAsteroidNoiseScale = 60000	-- The size of the asteroid field | 50000 | 61
 
-RingAsteroidScale = 0.21			-- | 0.15 | 60
-RingAsteroidSpacing = 1500			-- | vanilla=200 // CSO=1800 | 66
-RingAsteroidFadeRange = 15000		-- | vanilla=3000 // CSO=12000 | 71
-RingAsteroidNoiseScale = 33000		-- | 120000 | 72
+RingAsteroidScale = 0.21			-- | 0.15 | 64
+RingAsteroidSpacing = 1200			-- | vanilla=200 // CSO=1800 | 70
+RingAsteroidFadeRange = 15000		-- | vanilla=3000 // CSO=12000 | 75
+RingAsteroidNoiseScale = 90000		-- | 120000 | 76
 
-LargeAsteroidSpacing = 7000			-- | 9000 | 81
-LargeAsteroidFadeRange = 24000		-- | vanilla=9000 // CSO=16000 | 86
-LargeAsteroidNoiseScale = 60000		-- | 120000 | 87
+LargeAsteroidSpacing = 6000			-- | 9000 | 85
+LargeAsteroidFadeRange = 24000		-- | vanilla=9000 // CSO=16000 | 90
+LargeAsteroidNoiseScale = 60000		-- | 120000 | 91
 
-RareAsteroidSpacing = 3000			-- | vanilla=850 | 96
-RareAsteroidFadeRange = 18000		-- | vanilla=9000 | 101
-RareAsteroidNoiseScale = 39000		-- | 50000 | 102
+RareAsteroidSpacing = 2100			-- | vanilla=850 | 100
+RareAsteroidFadeRange = 18000		-- | vanilla=9000 | 105
+RareAsteroidNoiseScale = 39000		-- | 50000 | 106
 
-LargeAsteroidFadeTime = 0.3			-- The time it takes the large asteroids to fade | 0.1 | 143
+LargeAsteroidFadeTime = 0.3			-- The time it takes the large asteroids to fade | 0.1 | 147
 
 Resources_Mult = 3					-- Multiplies the resources gathered from asteroids by this amount (integer preferred)
 LowProbability_Mult  = 3			-- Multiplies settings with low odds/probability by this number (integer preferred)
