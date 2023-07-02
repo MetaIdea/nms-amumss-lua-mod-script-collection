@@ -1,7 +1,7 @@
 Author = "Syzzle"
 ModName = "sProtect"
 BaseDescription = "Makes so your tech won't be breaking until your shield is down."
-GameVersion = "4.34"
+GameVersion = "4.36"
 --ModVersion = "v1.4"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
