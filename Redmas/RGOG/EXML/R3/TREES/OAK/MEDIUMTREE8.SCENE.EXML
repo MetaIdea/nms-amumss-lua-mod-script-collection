@@ -28,14 +28,14 @@
     </Property>
   </Property>
   <Property name="Children">
-      
+       
  <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="_TRUNK_JxRARE" />
       <Property name="NameHash" value="657991526" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
+        <Property name="TransY" value="-1" />
         <Property name="TransZ" value="0" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />

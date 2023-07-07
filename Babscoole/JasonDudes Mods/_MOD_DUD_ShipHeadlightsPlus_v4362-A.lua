@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v4341.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v4362-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.34",
+["NMS_VERSION"]             = "4.36.2",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

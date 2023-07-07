@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "MoreModules.pak",
-["MOD_AUTHOR"]      = "Therrad",
+["MOD_AUTHOR"]      = "AzureShork",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.23",
+["NMS_VERSION"]     = "4.36.2",
 ["MOD_DESCRIPTION"] = "Ever wanted space station technology vendors to sell more modules?",
 ["MODIFICATIONS"]   =
     {

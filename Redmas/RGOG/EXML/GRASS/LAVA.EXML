@@ -88,7 +88,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="1" />
+            <Property name="FlatDensity" value="0.71" />
             <Property name="SlopeDensity" value="1" />
             <Property name="SlopeMultiplier" value="2.5" />
             <Property name="MaxRegionRadius" value="3" />

@@ -28,14 +28,14 @@
     </Property>
   </Property>
   <Property name="Children">
-      
+       
   <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="_TRUNK_C" />
       <Property name="NameHash" value="2199666162" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
+        <Property name="TransY" value="-1" />
         <Property name="TransZ" value="0" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
@@ -1920,7 +1920,7 @@
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1\TRUNKCBILLBOARD_NEWLEAFMAT.MATERIAL.MBIN" />
+                  <Property name="Value" value="MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1\LEAF01.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -3039,7 +3039,7 @@
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                      <Property name="Value" value="MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1\LEAF01.MATERIAL.MBIN" />
+                  <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1\TRUNKCBILLBOARD_NEWLEAFMAT.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
