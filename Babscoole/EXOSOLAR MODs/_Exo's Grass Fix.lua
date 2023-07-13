@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exo's Grass Fix.pak",
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.34",
+["NMS_VERSION"]             = "4.37",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -348,436 +348,436 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-                {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinScale",MINSCALE_MULTIPLIER},
-                            }
-                        },
-                        {
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["MATH_OPERATION"] = "*",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Seed", "1"},
-                                {"UseSeedValue", "True"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
-                            ["ADD"] = [[            <Property name="Samplers" />]],
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"LargeObjectCoverage", "AlwaysPlace"},
-                                {"MaxAngle",            "46"},
-                                {"MinScale",            "1.66"},
-                                {"MaxScale",            "1.67"},
-                                {"MinScaleY",           "0.7"},
-                                {"MaxScaleY",           "0.75"},
-                                {"SlopeScaling",        "1.1"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Coverage",          "0.21"},
-                                {"FlatDensity",       "0.36"},
-                                {"SlopeDensity",      "0.4"},
-                                {"SlopeMultiplier",   "1.1"},
-                                {"MaxImposterRadius", "8"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Coverage",          "0.21"},
-                                {"FlatDensity",       "0.36"},
-                                {"SlopeDensity",      "0.4"},
-                                {"SlopeMultiplier",   "1.1"},
-                                {"MaxRegionRadius",   "6"},
-                                {"MaxImposterRadius", "6"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "15"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "25"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
-                            ["LINE_OFFSET"] = "+5",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "180"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","GcObjectSpawnDataVariant.xml",},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] =
-[[
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="ULTRA" />
-            <Property name="Coverage" value="0.21" />
-            <Property name="FlatDensity" value="0.36" />
-            <Property name="SlopeDensity" value="0.4" />
-            <Property name="SlopeMultiplier" value="1.1" />
-            <Property name="MaxRegionRadius" value="8" />
-            <Property name="MaxImposterRadius" value="8" />
-            <Property name="FadeOutStartDistance" value="80" />
-            <Property name="FadeOutEndDistance" value="120" />
-            <Property name="FadeOutOffsetDistance" value="15" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="10" />
-              <Property value="20" />
-              <Property value="35" />
-              <Property value="180" />
-            </Property>
-          </Property>
-]]
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] = [[    <Property name="SelectableObjects" />]],
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinScale",MINSCALE_MULTIPLIER},
-                            }
-                        },
-                        {
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["MATH_OPERATION"] = "*",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Seed",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Seed", "1"},
-                                {"UseSeedValue", "True"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Samplers",},
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","ProceduralTexture",},
-                            ["ADD"] = [[            <Property name="Samplers" />]],
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Placement",           "GRASS"},
-                                {"LargeObjectCoverage", "AlwaysPlace"},
-                                {"MaxAngle",            "46"},
-                                {"MatchGroundColour",   "True"},
-                                {"MinScale",            "1.66"},
-                                {"MaxScale",            "1.67"},
-                                {"MinScaleY",           "0.7"},
-                                {"MaxScaleY",           "0.75"},
-                                {"SlopeScaling",        "1.1"},
-                                {"PatchEdgeScaling",    "0.5"},
-                                {"CreaturesCanEat",     "False"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariantData",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Coverage",          "0.21"},
-                                {"FlatDensity",       "0.36"},
-                                {"SlopeDensity",      "0.4"},
-                                {"SlopeMultiplier",   "1.1"},
-                                {"MaxImposterRadius", "8"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Coverage",              "0.21"},
-                                {"FlatDensity",           "0.36"},
-                                {"SlopeDensity",          "0.4"},
-                                {"SlopeMultiplier",       "1.1"},
-                                {"MaxRegionRadius",       "6"},
-                                {"MaxImposterRadius",     "6"},
-                                {"FadeOutStartDistance",  "35"},
-                                {"FadeOutEndDistance",    "45"},
-                                {"FadeOutOffsetDistance", "5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances"},
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "8"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "15"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances",},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "25"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances",},
-                            ["LINE_OFFSET"] = "+5",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "180"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Coverage",              "0.21"},
-                                {"FlatDensity",           "0.36"},
-                                {"SlopeDensity",          "0.4"},
-                                {"SlopeMultiplier",       "1.1"},
-                                {"MaxRegionRadius",       "8"},
-                                {"MaxImposterRadius",     "8"},
-                                {"FadeOutStartDistance",  "80"},
-                                {"FadeOutEndDistance",    "120"},
-                                {"FadeOutOffsetDistance", "15"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "20"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "35"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
-                            ["LINE_OFFSET"] = "+5",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "180"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"LargeObjectCoverage", "AlwaysPlace"},
-                                {"MaxAngle",            "46"},
-                                {"MinScale",            "1.51"},
-                                {"MaxScale",            "1.52"},
-                                {"MinScaleY",           "0.751"},
-                                {"MaxScaleY",           "0.752"},
-                                {"SlopeScaling",        "1.1"},
-                                {"PatchEdgeScaling",    "0.85"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Coverage",          "0.185"},
-                                {"FlatDensity",       "0.32"},
-                                {"SlopeDensity",      "0.36"},
-                                {"SlopeMultiplier",   "1.1"},
-                                {"MaxImposterRadius", "8"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Coverage",          "0.185"},
-                                {"FlatDensity",       "0.32"},
-                                {"SlopeDensity",      "0.36"},
-                                {"SlopeMultiplier",   "1.1"},
-                                {"MaxRegionRadius",   "8"},
-                                {"MaxImposterRadius", "8"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "15"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "25"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
-                            ["LINE_OFFSET"] = "+5",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "180"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Coverage",              "0.185"},
-                                {"FlatDensity",           "0.32"},
-                                {"SlopeDensity",          "0.36"},
-                                {"SlopeMultiplier",       "1.1"},
-                                {"MaxRegionRadius",       "8"},
-                                {"MaxImposterRadius",     "8"},
-                                {"FadeOutStartDistance",  "80"},
-                                {"FadeOutEndDistance",    "120"},
-                                {"FadeOutOffsetDistance", "15"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "15"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "25"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
-                            ["LINE_OFFSET"] = "+5",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "180"},
-                            }
-                        },
-                    }
-                },
+                -- {
+                    -- ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHOBJECTSFULL.MBIN",
+                    -- ["EXML_CHANGE_TABLE"] =
+                    -- {
+                        -- {
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["MATH_OPERATION"] = "*F:MaxScale",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"MinScale",MINSCALE_MULTIPLIER},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["MATH_OPERATION"] = "*",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"FlatDensity",DENSITY_MULTIPLIER},
+                                -- {"SlopeDensity",DENSITY_MULTIPLIER},
+                                -- {"MaxScale",MAXSCALE_MULTIPLIER},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Seed", "1"},
+                                -- {"UseSeedValue", "True"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            -- ["REMOVE"] = "SECTION"
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            -- ["ADD"] = [[            <Property name="Samplers" />]],
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP"] = 1,
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"LargeObjectCoverage", "AlwaysPlace"},
+                                -- {"MaxAngle",            "46"},
+                                -- {"MinScale",            "1.66"},
+                                -- {"MaxScale",            "1.67"},
+                                -- {"MinScaleY",           "0.7"},
+                                -- {"MaxScaleY",           "0.75"},
+                                -- {"SlopeScaling",        "1.1"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Coverage",          "0.21"},
+                                -- {"FlatDensity",       "0.36"},
+                                -- {"SlopeDensity",      "0.4"},
+                                -- {"SlopeMultiplier",   "1.1"},
+                                -- {"MaxImposterRadius", "8"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Coverage",          "0.21"},
+                                -- {"FlatDensity",       "0.36"},
+                                -- {"SlopeDensity",      "0.4"},
+                                -- {"SlopeMultiplier",   "1.1"},
+                                -- {"MaxRegionRadius",   "6"},
+                                -- {"MaxImposterRadius", "6"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+3",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "15"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+4",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "25"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+5",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "180"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","GcObjectSpawnDataVariant.xml",},
+                            -- ["ADD_OPTION"]  = "ADDafterSECTION",
+                            -- ["ADD"] =
+-- [[
+          -- <Property value="GcObjectSpawnDataVariant.xml">
+            -- <Property name="ID" value="ULTRA" />
+            -- <Property name="Coverage" value="0.21" />
+            -- <Property name="FlatDensity" value="0.36" />
+            -- <Property name="SlopeDensity" value="0.4" />
+            -- <Property name="SlopeMultiplier" value="1.1" />
+            -- <Property name="MaxRegionRadius" value="8" />
+            -- <Property name="MaxImposterRadius" value="8" />
+            -- <Property name="FadeOutStartDistance" value="80" />
+            -- <Property name="FadeOutEndDistance" value="120" />
+            -- <Property name="FadeOutOffsetDistance" value="15" />
+            -- <Property name="LodDistances">
+              -- <Property value="0" />
+              -- <Property value="10" />
+              -- <Property value="20" />
+              -- <Property value="35" />
+              -- <Property value="180" />
+            -- </Property>
+          -- </Property>
+-- ]]
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
+                            -- ["REMOVE"] = "SECTION"
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+                            -- ["ADD_OPTION"]  = "ADDafterSECTION",
+                            -- ["ADD"] = [[    <Property name="SelectableObjects" />]],
+                        -- },
+                    -- }
+                -- },
+                -- {
+                    -- ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
+                    -- ["EXML_CHANGE_TABLE"] =
+                    -- {
+                        -- {
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["MATH_OPERATION"] = "*F:MaxScale",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"MinScale",MINSCALE_MULTIPLIER},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["MATH_OPERATION"] = "*",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"FlatDensity",DENSITY_MULTIPLIER},
+                                -- {"SlopeDensity",DENSITY_MULTIPLIER},
+                                -- {"MaxScale",MAXSCALE_MULTIPLIER},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Seed",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Seed", "1"},
+                                -- {"UseSeedValue", "True"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Samplers",},
+                            -- ["REMOVE"] = "SECTION"
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","ProceduralTexture",},
+                            -- ["ADD"] = [[            <Property name="Samplers" />]],
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Placement",           "GRASS"},
+                                -- {"LargeObjectCoverage", "AlwaysPlace"},
+                                -- {"MaxAngle",            "46"},
+                                -- {"MatchGroundColour",   "True"},
+                                -- {"MinScale",            "1.66"},
+                                -- {"MaxScale",            "1.67"},
+                                -- {"MinScaleY",           "0.7"},
+                                -- {"MaxScaleY",           "0.75"},
+                                -- {"SlopeScaling",        "1.1"},
+                                -- {"PatchEdgeScaling",    "0.5"},
+                                -- {"CreaturesCanEat",     "False"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariantData",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Coverage",          "0.21"},
+                                -- {"FlatDensity",       "0.36"},
+                                -- {"SlopeDensity",      "0.4"},
+                                -- {"SlopeMultiplier",   "1.1"},
+                                -- {"MaxImposterRadius", "8"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Coverage",              "0.21"},
+                                -- {"FlatDensity",           "0.36"},
+                                -- {"SlopeDensity",          "0.4"},
+                                -- {"SlopeMultiplier",       "1.1"},
+                                -- {"MaxRegionRadius",       "6"},
+                                -- {"MaxImposterRadius",     "6"},
+                                -- {"FadeOutStartDistance",  "35"},
+                                -- {"FadeOutEndDistance",    "45"},
+                                -- {"FadeOutOffsetDistance", "5"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances"},
+                            -- ["LINE_OFFSET"] = "+2",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "8"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances"},
+                            -- ["LINE_OFFSET"] = "+3",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "15"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+4",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "25"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+5",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "180"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Coverage",              "0.21"},
+                                -- {"FlatDensity",           "0.36"},
+                                -- {"SlopeDensity",          "0.4"},
+                                -- {"SlopeMultiplier",       "1.1"},
+                                -- {"MaxRegionRadius",       "8"},
+                                -- {"MaxImposterRadius",     "8"},
+                                -- {"FadeOutStartDistance",  "80"},
+                                -- {"FadeOutEndDistance",    "120"},
+                                -- {"FadeOutOffsetDistance", "15"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+2",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "10"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+3",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "20"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+4",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "35"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+5",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "180"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP"] = 1,
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"LargeObjectCoverage", "AlwaysPlace"},
+                                -- {"MaxAngle",            "46"},
+                                -- {"MinScale",            "1.51"},
+                                -- {"MaxScale",            "1.52"},
+                                -- {"MinScaleY",           "0.751"},
+                                -- {"MaxScaleY",           "0.752"},
+                                -- {"SlopeScaling",        "1.1"},
+                                -- {"PatchEdgeScaling",    "0.85"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Coverage",          "0.185"},
+                                -- {"FlatDensity",       "0.32"},
+                                -- {"SlopeDensity",      "0.36"},
+                                -- {"SlopeMultiplier",   "1.1"},
+                                -- {"MaxImposterRadius", "8"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Coverage",          "0.185"},
+                                -- {"FlatDensity",       "0.32"},
+                                -- {"SlopeDensity",      "0.36"},
+                                -- {"SlopeMultiplier",   "1.1"},
+                                -- {"MaxRegionRadius",   "8"},
+                                -- {"MaxImposterRadius", "8"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+3",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "15"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+4",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "25"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+5",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "180"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Coverage",              "0.185"},
+                                -- {"FlatDensity",           "0.32"},
+                                -- {"SlopeDensity",          "0.36"},
+                                -- {"SlopeMultiplier",       "1.1"},
+                                -- {"MaxRegionRadius",       "8"},
+                                -- {"MaxImposterRadius",     "8"},
+                                -- {"FadeOutStartDistance",  "80"},
+                                -- {"FadeOutEndDistance",    "120"},
+                                -- {"FadeOutOffsetDistance", "15"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+3",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "15"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+4",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "25"},
+                            -- }
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["LINE_OFFSET"] = "+5",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"IGNORE", "180"},
+                            -- }
+                        -- },
+                    -- }
+                -- },
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
                     ["EXML_CHANGE_TABLE"] =

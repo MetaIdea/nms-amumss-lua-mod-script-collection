@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "AdrenalJuice-4.08-1.00.pak",
+["MOD_FILENAME"] 			= "AdrenalJuice-4.37-1.00.pak",
 ["MOD_AUTHOR"]				= "Tinz",
-["NMS_VERSION"]				= "4.08",
+["NMS_VERSION"]				= "4.37",
 ["MODIFICATIONS"] 			= 
 	{
 		{
