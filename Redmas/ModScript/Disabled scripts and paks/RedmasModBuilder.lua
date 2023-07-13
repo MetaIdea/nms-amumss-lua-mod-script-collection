@@ -28,10 +28,10 @@ INIT_PRESET ={
         --
         ["REDMAS_WATER_REFLECTIONS"] = "ON", -- {"OFF"} / redmas water mod -- Creates foam , waves and reflections on water --> it makes it look more realistic       
         ["SPACE_BLUR_FEATURE"] = "ON", -- {"OFF"} This value will create a blur effect while in space -- /!\ with this var on you have to activate DepthOfField in photomode   -- Ctrl+F "SPACE_BLUR_FEATURE" to edit it   
-        ["FILTERS_SWAP_FEATURE"] = "ON", -- {"OFF"} with this value on, default filter are replaced with brighter ones 
+        ["FILTERS_SWAP_FEATURE"] = "OFF", -- {"OFF"} with this value on, default filter are replaced with brighter ones 
         -- BINOCULARS_TYPE SUN value will replace the binoclar filter with a vintage filter,
         -- BINOCULARS_TYPE Clear will remove the visual filter when using binoculars  -- Ctrl+F "FILTERS_SWAP_FEATURE" to edit it   
-        ["BINOCULARS_TYPE"] = "CLEAR", -- {"SUN"} / {"CLEAR"}  
+        ["BINOCULARS_TYPE"] = "SUN", -- {"SUN"} / {"CLEAR"}  
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON", -- {"OFF"} / This will reduce the speed lines while using the pulse warp in solar systems
         -- SPACESHIPS_TRAILS_TYPE REALISTIC : No visible trails for player and AI spaceships - Enemies and allies trails are visible during spaceships combat
         -- SPACESHIPS_TRAILS_TYPE E3 : restore the previous spaceship trails of NMS ( Pre-NEXT update)
@@ -95,7 +95,7 @@ INIT_PRESET ={
         {
             -- Quality of Life features
             ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON", -- "ON"/"OFF"  more character shape customisations -- vanilla have 5 body types, this mod will add 20 in between body shapes
-            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod) -- adjust the mining speed. it works by reducing all props lifebar / health
+            ["MINING_SPEED"] = "3", -- 2 to 10 (10 = REDMAS INSTANT MINING mod) -- adjust the mining speed. it works by reducing all props lifebar / health
             ["NEW_INTERACTIONS_FEATURE"] = "ON", -- "ON"/"OFF"  ( New Gameplay Mechanics ) -- add new interactions to decorations - add useful stuff in hangars - reworks freighters bridge
             ["ADVANCED_BUILDS_FEATURE"] = "ON", --  "ON"/"OFF"  ( more buildable objects on freighter planets and settlements )
             ["FREE_POWER_ON_EM_GENERATORS"] = "ON", -- "ON"/"OFF"   ( electro magnetic generator always give power with that value on )
@@ -134,7 +134,7 @@ INIT_PRESET ={
         ["CREATURES_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
         --
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON", -- "ON"/"OFF" This will increase the birds, fishs and butterflies, but will make everything else sparse for balancing the performance
-        ["MAX_CREATURES_NUMBER"] = 20, -- "10" < - > "20"  max number of the birds, fishs and butterflies when CREATURES_HIGH_DENSITY_FEATURE is ON. notice that this param requires a integer, not a string
+        ["MAX_CREATURES_NUMBER"] = 10, -- "10" < - > "20"  max number of the birds, fishs and butterflies when CREATURES_HIGH_DENSITY_FEATURE is ON. notice that this param requires a integer, not a string
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -169,7 +169,7 @@ INIT_PRESET ={
                 ["FANTASY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
                 ["SKY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- floating things in the skies
                 ["STORM_BIOMES_FEATURES"] = "OFF", -- this var is not used anymore 
-                ["GIANTS_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
+                ["GIANTS_BIOMES_FEATURE"] = "OFF", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- swamp biomes ( trees and constructs on water) & flora / rocks on beaches
                 ["MONTAINS_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- more diversity on montains
                 ["CAVE_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF"-- more diversity on caves
@@ -7908,7 +7908,7 @@ then
 	
 	----------------------------------------------------------------------
 	if SPACE_BLUR_FEATURE == "ON" then
-	SPACEBLURVALUE = "0.6"
+	SPACEBLURVALUE = "0.8"
 	else
 		SPACEBLURVALUE ="0"
 	end
@@ -18717,13 +18717,13 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
@@ -18735,7 +18735,7 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
@@ -18753,7 +18753,7 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
@@ -18771,7 +18771,7 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
@@ -18789,7 +18789,7 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
@@ -18879,7 +18879,7 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 
 			{
@@ -18893,232 +18893,232 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "3"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "1"
 			},
 			
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE04.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE05.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE4.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE7.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE8.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE9.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE10.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 							["PATH"] = [[MODELS\RGO\MEDIUMTREE11.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 							["PATH"] = [[MODELS\RGO\MEDIUMTREE12.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE13.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE14.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 							["PATH"] = [[MODELS\RGO\MEDIUMTREE15.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE16.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 							["PATH"] = [[MODELS\RGO\MEDIUMTREE17.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE06.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE07.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE08.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE12.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE13.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE14.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE15.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE16.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE17.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE18.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE19.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "2"
 			},
 
 			{
@@ -19137,26 +19137,26 @@ addFeature(
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "2"
 			},
 
 		}
 
-		max_giant_props2 = "14"
-		max_giant_props = "20"
-		max_rare_props = "55"
+		max_giant_props2 = "2"
+		max_giant_props = "5"
+		max_rare_props = "25"
 		GIANTLUSHTREES =
 		{	
 						{
@@ -22731,19 +22731,19 @@ addFeature(
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGEBLOB.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGGSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
@@ -24521,7 +24521,7 @@ addFeature(
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\SPORETUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
+				["MAXSIZE"] = "52"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
@@ -24546,7 +24546,7 @@ addFeature(
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "21"
+				["MAXSIZE"] = "111"
 			},	
 
 
@@ -24572,13 +24572,13 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "44"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "44"
 			},
 			
 		
@@ -24586,7 +24586,7 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "44"
 			},
 			
 			
@@ -32280,7 +32280,7 @@ end
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"FlatDensity", "1.52"}, -- ( it s a mulplicator )
+									{"FlatDensity", "1.52"}, -- x2
 								}
 
 							},			
@@ -32307,7 +32307,7 @@ end
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"FlatDensity", "1.82"}, -- ( it s a mulplicator )
+									{"FlatDensity", "2"}, 
 								}
 
 							},							

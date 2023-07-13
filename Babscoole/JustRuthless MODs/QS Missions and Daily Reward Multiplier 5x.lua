@@ -51,14 +51,14 @@ DailyReward =
 {
   {
     {"R_NEXUS_QS"}, -- Nexus Daily Mission
-    { -- Currency,   Min,    Max,    Original
-      {"Specials",  1250,  1250}, -- 250, 250
+    { -- Currency,   Min,   Max,     Original
+      {"Specials",   5,   5}, -- 400, 400
     }
   },
   {
     {"R_NEXUS_QS_PQ"}, -- Nexus Weekly Mission
     {
-      {"Specials",  6000,  6000}, -- 1200, 1200
+      {"Specials",  5,  5}, -- 1800, 1800
     }
   },
 }
@@ -90,10 +90,10 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "4.34"
+NMS_Version = "4.37"
 
 -- File Sources --
-FileSource1 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
+FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -154,6 +154,7 @@ for i = 1, #DailyReward do
     {
       ["SPECIAL_KEY_WORDS"]  = {"Id", ListID, "Currency", Currency},
       ["SECTION_UP_SPECIAL"] = 1,
+      ["MATH_OPERATION"]  = "*",
       ["VALUE_CHANGE_TABLE"] =
       {
         {"AmountMin", Min},

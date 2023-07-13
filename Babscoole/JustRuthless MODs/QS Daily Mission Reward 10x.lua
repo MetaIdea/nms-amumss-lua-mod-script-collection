@@ -1,16 +1,16 @@
--- Quicksliver Reward Settings --
+-- Quicksilver Reward Settings --
 Quicksilver =
 {
   { -- ListID
     {"R_NEXUS_QS"}, -- Nexus Daily Mission
     { -- Currency,   Min,   Max,     Original
-      {"Specials",  2500,  2500}, -- 250, 250
+      {"Specials",   10,   10}, -- 400, 400
     }
   },
   {
     {"R_NEXUS_QS_PQ"}, -- Nexus Weekly Mission
     {
-      {"Specials", 12000, 12000}, -- 1200, 1200
+      {"Specials",  10,  10}, -- 1800, 1800
     }
   },
 }
@@ -22,10 +22,10 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "4.34"
+NMS_Version = "4.37"
 
 -- File Sources --
-FileSource1 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
+FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -67,6 +67,7 @@ for i = 1, #Quicksilver do
     {
       ["SPECIAL_KEY_WORDS"]  = {"Id", ListID, "Currency", Currency},
       ["SECTION_UP_SPECIAL"] = 1,
+      ["MATH_OPERATION"]  = "*",
       ["VALUE_CHANGE_TABLE"] =
       {
         {"AmountMin", Min},
