@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Predators Danger"
 ModNameSub = "Deadly"
 BaseDescription = "More aggressive and dangerous predators"
-GameVersion = "434"
+GameVersion = "4363"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 
