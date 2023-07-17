@@ -510,42 +510,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scorched","GcWeatherColourSettingList.xml"},
-                            ["REPLACE_TYPE"] = "RAW",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {
-                                    [[<Property name="Settings" />]],
-                                    [[<Property name="Settings">]]
-                                },
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Scorched","GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},	
+                            ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-      </Property>
 ]]
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Frozen","GcWeatherColourSettingList.xml"},
-                            ["REPLACE_TYPE"] = "RAW",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {
-                                    [[<Property name="Settings" />]],
-                                    [[<Property name="Settings">]]
-                                },
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Frozen","GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},	
+                            ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-      </Property>
 ]]
                         },
                         {

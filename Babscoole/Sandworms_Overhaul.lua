@@ -121,6 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -159,6 +160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="False" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -177,6 +179,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="UseCostID" value="" />
+        <Property name="StartMissionOnCantAfford" value="" />
+        <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="TriggerAction" value="INACTIVE" />
       <Property name="TriggerActionOnPrepare" value="" />
@@ -193,6 +198,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="UseCostID" value="" />
+        <Property name="StartMissionOnCantAfford" value="" />
+        <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="EventRenderers" />
       <Property name="EventRenderersAlt" />
@@ -215,6 +223,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ReseedAfterRewardSuccess" value="False" />
       <Property name="UsePersonalPersistentBuffer" value="False" />
       <Property name="InWorldUIScaler" value="0" />
+      <Property name="InWorldUIMinDistOverride" value="0" />
+      <Property name="InWorldUIMinDistOverrideV2" value="0" />
+      <Property name="InWorldUIForcedOffset" value="0" />
+      <Property name="InWorldUIForcedOffsetV2" value="0" />
+      <Property name="InWorldUIUseCameraUp" value="False" />
+      <Property name="StartMissionOnUse" value="" />
+      <Property name="AllowMissionUnderwater" value="True" />
+      <Property name="UseUnlockedInteractionIfMaintDone" value="False" />
     </Property>
     <Property value="GcSimpleInteractionComponentData.xml">
       <Property name="SimpleInteractionType" value="GenericReward" />
@@ -239,6 +255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="InteractFiendCrimeChance" value="1" />
       <Property name="InteractCrimeLevel" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
@@ -246,15 +263,19 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="UseCostID" value="" />
+        <Property name="StartMissionOnCantAfford" value="" />
+        <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="StatToTrack" value="GcStatsEnum.xml">
-        <Property name="GcStatEnum" value="BONES_FOUND" />
+        <Property name="StatEnum" value="BONES_FOUND" />
       </Property>
       <Property name="StartsBuried" value="False" />
       <Property name="MustBeVisibleToInteract" value="False" />
       <Property name="NeedsStorm" value="False" />
       <Property name="Name" value="" />
       <Property name="VRInteractMessage" value="" />
+      <Property name="TerminalHeading" value="" />
       <Property name="TerminalMessage" value="" />
       <Property name="ScanType" value="" />
       <Property name="ScanData" value="" />
@@ -279,7 +300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="GcPersistencyMissionOverride.xml">
           <Property name="Mission" value="MP_DIGSITE" />
           <Property name="Buffer" value="GcInteractionBufferType.xml">
-            <Property name="InterationBufferType" value="FireteamSync" />
+            <Property name="InteractionBufferType" value="FireteamSync" />
           </Property>
         </Property>
       </Property>
@@ -308,18 +329,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
-                            ["REPLACE_TYPE"] = "RAW",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {
-                                    [[<Property name="ChainEnds" />]],
-                                    [[<Property name="ChainEnds">]]
-                                },
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
-                            ["LINE_OFFSET"] = "+3",
+                            ["PRECEDING_KEY_WORDS"] = {"ChainEnds"},	
+                            ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
           <Property value="NMSString0x20.xml">
@@ -334,19 +345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property value="NMSString0x20.xml">
             <Property name="Value" value="LWingJNT" />
           </Property>
-        </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-                            ["REPLACE_TYPE"] = "RAW",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {
-                                    [[<Property name="ReplacementImpacts" />]],
-                                    [[<Property name="ReplacementImpacts">]]
-                                },
-                            }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
@@ -357,7 +356,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-                            ["LINE_OFFSET"] = "+7",
+                            ["PRECEDING_KEY_WORDS"] = {"ReplacementImpacts"},	
+                            ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
         <Property value="GcReplacementEffectData.xml">
@@ -368,7 +368,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="BLOODSPLAT" />
           <Property name="ReplaceWith" value="DUST" />
         </Property>
-      </Property>
 ]]
                         },
                         {
@@ -387,6 +386,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Impact" value="Default" />
       </Property>
       <Property name="IncreaseWanted" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="IncreaseWantedThresholdTime" value="0.5" />
       <Property name="FiendCrimeType" value="GcFiendCrime.xml">
         <Property name="FiendCrime" value="None" />
