@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Unpredictable Roaming Ships 1.9.pak", 
+["MOD_FILENAME"] 			= "Unpredictable Roaming Ships 2.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.30",
+["NMS_VERSION"]				= "4.37",
 ["MOD_DESCRIPTION"]			= "This mod makes roaming ship formation unpredictable",
 ["MODIFICATIONS"] 			= 
 	{
@@ -21,6 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MinRange",	"500"},  --original : 200
 							},
 						},
+						--[[  //cause ships landing on player landing pads to be ridiculously small
 						{
 							["PRECEDING_KEY_WORDS"]  = {"FlybySpawns", "Scale"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -30,6 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"y",	"0.5"},  --original : 1
 							},
 						},
+						]]--
 						{
 							["PRECEDING_KEY_WORDS"]  = {"FlybySpawns", "Spread"},
 							["VALUE_CHANGE_TABLE"] 	= 

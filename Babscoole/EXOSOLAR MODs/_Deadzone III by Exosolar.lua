@@ -82,13 +82,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["REPLACE_TYPE"] = "RAW",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {
-                                    [[    <Property name="DistantObjects" />]],
+                            ["PRECEDING_KEY_WORDS"] = {"DistantObjects"},	
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
 [[
-    <Property name="DistantObjects">
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
@@ -273,10 +270,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
       </Property>
-    </Property>
 ]]
-                                },
-                            }
                         },
                         {
                             ["PRECEDING_FIRST"] = "True",
