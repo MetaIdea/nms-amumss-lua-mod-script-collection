@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SwarmMovementSpeed",  "1"},      -- Original "90"
                                 {"SwarmMovementRadius", "1000"},   -- Original "100"
                                 {"SwarmMovementType",   "Circle"}, -- Original "FollowPlayer"
-                                {"MaxSpeed",            "90"},    -- Original "80"
+                                {"MaxSpeed",            "70"},    -- Original "80"
                                 {"CircleAttractor",     "Player"},
                             }
                         },
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"PredatorProbabilityModifier",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CreatureRoleFrequencyModifier",    "Never"}, -- Original "Normal"
+                                {"CreatureRoleFrequencyModifier", "Never"}, -- Original "Normal"
                             }
                         },
                         {
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HerbivoreProbabilityModifier",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CreatureRoleFrequencyModifier",    "High"}, -- Original "Normal"
+                                {"CreatureRoleFrequencyModifier", "High"}, -- Original "Normal"
                             }
                         },
                     },
@@ -279,7 +279,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="TerminalMessage" value="" />
       <Property name="ScanType" value="" />
       <Property name="ScanData" value="" />
-      <Property name="ScanIcon" value="GcDiscoveryTypes.xml">
+      <Property name="ScanIcon" value="GcDiscoveryType.xml">
         <Property name="DiscoveryType" value="Unknown" />
       </Property>
       <Property name="ActivateLocatorsFromRarity" value="True" />

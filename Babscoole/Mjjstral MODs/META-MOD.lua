@@ -3,7 +3,7 @@ QUICK_ACTION_LIST =
     "SAVE",
     "GALACTICMAP",
     "PLANETARYSCANNER", 
-    "TOGGLE_BACKPACK",   
+    "TOGGLE_BACKPACK",
     "REVEAL_PORTAL",
     "HEALTH_SUIT",
     "R_SENTINELS_OFF",
@@ -729,7 +729,7 @@ QUICK_ACTION_MENU =
             <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="Trigger Storm" />
             <Property name="Reward" value="GcRewardTriggerStorm.xml">
-              <Property name="Duration" value="0.01" />
+              <Property name="Duration" value="1" />
             </Property>
           </Property>
         </Property>
@@ -1364,7 +1364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "4.34",
+["NMS_VERSION"]     = "4.37",
 ["MODIFICATIONS"]   =
     {
         {
@@ -1501,7 +1501,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1529,7 +1529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2199,7 +2199,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\SHIELD.SCENE.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3012,7 +3012,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_A.ENTITY.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3152,7 +3152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_B.ENTITY.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3292,7 +3292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\HARVEST.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3325,7 +3325,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\HARVEST.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
