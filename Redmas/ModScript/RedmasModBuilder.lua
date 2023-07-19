@@ -819,6 +819,8 @@ local interactButton = function(path)
 	return BUTTON
 end
 BTN_CARGO = interactButton([[MODELS\RGO\ENTITIES\CARGOGENERATOR.ENTITY.MBIN]])
+BTN_SAVE = interactButton([[MODELS\RGO\ENTITIES\SAVEPOINT.ENTITY.MBIN]])
+BTN_CUSTOMIZER = interactButton([[MODELS\RGO\ENTITIES\CHARCUSTOMISER.ENTITY.MBIN]])
 BTN_CRATES = interactButton([[MODELS\RGO\ENTITIES\FERRITEDUSTGENERATOR.ENTITY.MBIN]])
 BTN_HYDRO = interactButton([[MODELS\RGO\ENTITIES\DIHYDROGENGENERATOR.ENTITY.MBIN]])
 BTN_SIGNAL = interactButton([[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SIGNALSCANNER\ENTITIES\SIGNALSCANNER.ENTITY.MBIN]])
@@ -15250,6 +15252,56 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							["PRECEDING_KEY_WORDS"] = "Children",
 							["SECTION_ACTIVE"] = {0},
 							["ADD"] 	= BTN_CRATES							
+						},
+					}					
+				},
+				-------------
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LOCKER.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0},
+							["ADD"] 	= BTN_CUSTOMIZER							
+						},
+					}					
+				},
+				-------------
+				-------------
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\DRAWS.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0},
+							["ADD"] 	= BTN_CUSTOMIZER							
+						},
+					}					
+				},
+				------------- 
+				-------------
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0},
+							["ADD"] 	= BTN_SAVE					
+						},
+					}					
+				},
+				-------------
+								{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BED.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0},
+							["ADD"] 	= BTN_SAVE					
 						},
 					}					
 				},
