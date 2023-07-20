@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--["INTEGER_TO_FLOAT"] = "FORCE",
 								["VALUE_CHANGE_TABLE"] 	= 
 								{
-								--additional multiplier of a setting above for space flight, 
+								--same as above for space flight, 
 									{"x", 			1},		--default(1)
 									{"y", 			1},     --default(1)
 									{"z", 			1},     --default(1)
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								["VALUE_CHANGE_TABLE"] 	= 
 								{
 								--my preference - bigger deadzone for ship rolling, but more sensitive up/down left/right
-									{"x", 			0.4},			--default(0.2)	deadzone rotate 			
+									{"x", 			0.35},			--default(0.2)	deadzone rotate 			
 									{"y", 			0.075},			--default(0.2)	deadzone for  up/down		
 									{"z", 			0.075},			--default(0.2)	deadzone for left/right	
 								
