@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "4_23"
+GameVersion = "4_37"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
@@ -8,6 +8,12 @@ TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pelle
 ExpShipClass = 							"C"						--"S"
 ExpShipCargoSlots = 					8						--36				The game adds 1 to whatever value is entered here
 ExpShipSize = 							"FgtSmall"				--"FgtLarge"		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN (Seems to pick exactly between the Min & Max range)
+
+--If set to "true", makes all starships & multitools rewarded from Expeditions & Twitch streams come as C Class
+AllTwitchExpRewardsC =					false					--false
+AllTwitchExpRewardsCargo =				8						--Varies	Only used if AllTwitchExpRewardsC = true
+AllTwitchExpRewardsShipSize =			"FgtSmall"				--Varies	Only used if AllTwitchExpRewardsC = true
+AllTwitchExpRewardsToolSize =			8						--Varies	Only used if AllTwitchExpRewardsC = true
 
 --This controls what the COST (not reward) is certain dialogue choices with Travellers, such as asking directions to a grave
 TravellerNaniteCost =					"TECHFRAG_TRAV"			--"TECHFRAG_MD" 100 Nanites		"PTSd Expensive Pilots + Broadcast Receivers.lua" changes the value of TECHFRAG_MD and adds TECHFRAG_TRAV as a new entry costing 800 Nanites
@@ -2949,6 +2955,38 @@ for i = 1, #ExpeditionMetalChanges do
 end
 
 local ChangesToRewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+
+if AllTwitchExpRewardsC then
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"InventoryClass", "C"},
+					{"SizeType", AllTwitchExpRewardsShipSize},
+				}
+			}
+			
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				["SPECIAL_KEY_WORDS"] = {"ShipLayout", "GcInventoryLayout.xml"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots", AllTwitchExpRewardsCargo}
+				}
+			}
+			
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				["SPECIAL_KEY_WORDS"] = {"WeaponLayout", "GcInventoryLayout.xml"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots", AllTwitchExpRewardsToolSize}
+				}
+			}
+end
 
 if TeachCreaturePelletsEarly then
 
