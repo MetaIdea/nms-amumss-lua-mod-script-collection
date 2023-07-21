@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "Fi_LowerCost_Repair_Slots(Multitool+Ships).pak",
 ["MOD_AUTHOR"]				= "Ficell",
-["NMS_VERSION"]				= "3.6",
+["NMS_VERSION"]				= "4.38",
 ["MODIFICATIONS"] 			= 
 	{
 		{
