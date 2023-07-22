@@ -1,12 +1,10 @@
--- Mod_Version = "1.12"
-
 ShipMaxUpgradeChanges =
 {
   { -- Type
-    {"Shuttle"},
+    {"Dropship"}, -- Hauler
     { -- InvType,                    C,  B,  A,  S,     Originals
-      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 50 80 90 110
-      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 25 40 50 60
+      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 60 80 100 120
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
     }
   },
   {
@@ -24,10 +22,10 @@ ShipMaxUpgradeChanges =
     }
   },
   {
-    {"Dropship"}, -- Hauler
+    {"Shuttle"},
     {
-      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 60 80 100 120
-      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
+      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 50 80 90 110
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 25 40 50 60
     }
   },
   {
@@ -48,6 +46,13 @@ ShipMaxUpgradeChanges =
     {"Sail"}, -- Solar
     {
       {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 50 70 90 110
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
+    }
+  },
+  {
+    {"Robot"}, -- Interceptor
+    {
+      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 60 80 100 120
       {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
     }
   },
@@ -96,10 +101,10 @@ VehicleMaxUpgradeChanges =
 FileName    = "More Upgradeable Slots.pak"
 ModAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
-NMS_Version = "4.20"
+NMS_Version = "4.38"
 
 -- File Sources --
-FileSource1 = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
+FileSource1 = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
