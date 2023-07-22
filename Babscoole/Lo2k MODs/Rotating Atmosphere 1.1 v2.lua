@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
         },
     },
-["ADD_FILES"]             =
+["ADD_FILES"]=
     {
         {
             ["FILE_DESTINATION"] = "MODELS\SPACE\PLANETS\ATMOSPHERE\ENTITIES\ATMOSPHERE.ENTITY.EXML",
