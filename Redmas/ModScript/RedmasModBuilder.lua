@@ -15,254 +15,193 @@
 --                               			CTRL+F **FEATURES**
 --                                              to edit them
 INIT_PRESET ={
-["MODNAME"] = "UNTITLED_MOD_EXAMPLE",--> change the mod name here
-----------------------------------------------------------------------------
--- Don't forget to build again your mod after each vanilla updates ( it's better to wait 2 days before doing it in order to have all features updated)
--- Check for new version of that script after a vanilla update at https://www.nexusmods.com/nomanssky/mods/2791
--- When you change the mod name, don't forget to remove the previously named one inside the No Man's Sky "MODS" folder ( [NMSGAMEFOLDER] / GAMEDATA / PCBANKS / MODS )
--- I ve put alternative values in comments inside ""
-----------------------------------------------------------------------------
+	["MODNAME"] = "____REDMAS_NMS_FANTASY_GAME-OVERHAUL",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
-        ["VISUAL_OVERHAUL"] = "ON", -- > this var {"OFF"} will disable all features under that node 
-        --
-        ["REDMAS_WATER_REFLECTIONS"] = "ON", -- {"OFF"} / redmas water mod -- Creates foam , waves and reflections on water --> it makes it look more realistic       
-        ["SPACE_BLUR_FEATURE"] = "ON", -- {"OFF"} This value will create a blur effect while in space -- /!\ with this var on you have to activate DepthOfField in photomode   -- Ctrl+F "SPACE_BLUR_FEATURE" to edit it   
-        ["FILTERS_SWAP_FEATURE"] = "ON", -- {"OFF"} with this value on, default filter are replaced with brighter ones 
-        -- BINOCULARS_TYPE SUN value will replace the binoclar filter with a vintage filter,
-        -- BINOCULARS_TYPE Clear will remove the visual filter when using binoculars  -- Ctrl+F "FILTERS_SWAP_FEATURE" to edit it   
-        ["BINOCULARS_TYPE"] = "CLEAR", -- {"SUN"} / {"CLEAR"}  
-        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON", -- {"OFF"} / This will reduce the speed lines while using the pulse warp in solar systems
-        -- SPACESHIPS_TRAILS_TYPE REALISTIC : No visible trails for player and AI spaceships - Enemies and allies trails are visible during spaceships combat
-        -- SPACESHIPS_TRAILS_TYPE E3 : restore the previous spaceship trails of NMS ( Pre-NEXT update)
-        ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- ( {"REALISTIC"} / {"VANILLA"} / {"E3"} )
-        -- REALISTIC SPACE_COLOURS_TYPE Make space much darker( but not always full black) - it can be combined with ULTRA_DIVERSE_SPACE_COLOURS option ON
-        -- SPACE_COLOURS_TYPE ON is vanilla unless you use the ULTRA_DIVERSE_SPACE_COLOURS option ON 
-        -- FANTASY SPACE_COLOURS_TYPE Make all space darker ( but still colorful) - it can be combined with ULTRA_DIVERSE_SPACE_COLOURS option ON
-        ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- ({"REALISTIC"} / {"ON"} / {"FANTASY"} )
-        -- REALISTIC ASTEROIDS_FIELDS_TYPE this meant to make astroid fields more natural ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
-        -- FANTASY ASTEROIDS_FIELDS_TYPE this meant to make astroid easier to flight around ( very spaced and smaller) ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
-        -- GLUED ASTEROIDS_FIELDS_TYPE this will make asteroids packed, like they are in vanilla, but with more spacing ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
-        ["ASTEROIDS_FIELDS_TYPE"] = "FANTASY", -- ({"FANTASY"}  / {"REALISTIC"} / {"GLUED"})
-        -- FIGHTERS_SPACESHIPS_REPAINT ON for Dirty looking metal spaceships ( allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
-        -- FIGHTERS_SPACESHIPS_REPAINT FULL for full metal spaceships ( do not allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
-        ["FIGHTERS_SPACESHIPS_REPAINT"] = "FULL",  -- {"ON"} / {"FULL"} / {"OFF"} ( METALIC SPACESHIP MOD )
-        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON", -- {"ON"} / {"OFF"} -- ( METALIC SPACESHIP MOD ) CTRL + F **SPACESHIPS_REPAINT** to edit it 
-        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON", -- {"ON"} / {"OFF"} ( METALIC SPACESHIP MOD ) CTRL + F **SPACESHIPS_REPAINT** to edit it 
-        --
+        ["VISUAL_OVERHAUL"] = "ON",
+        ["REDMAS_WATER_REFLECTIONS"] = "ON",
+        ["SPACE_BLUR_FEATURE"] = "ON",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
+        ["BINOCULARS_TYPE"] = "CLEAR", -- SUN / CLEAR
+        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
+        ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- (REALISTIC / VANILLA / E3 )
+        ["SPACE_COLOURS_TYPE"] = "FANTASY", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "OFF", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
     },
-    -----------------------------------------------------------------------------------------------------------
-
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        -- Edit them with paintdotnet tool for example 
-        -- You can download a background at https://wall.alphacoders.com/by_sub_category.php?id=226189&name=No+Man%27s+Sky+Wallpapers
-        ---------------------------------------------------------------------------------------------------------------------------
-        -- Trick for creating your own image:
-        -- 1 open with paintdotnet _TEMPLATE.DDS in ../RGOG/IMAGES/
-        -- 2 open with paintdotnet the image that you want to add ( + edit it if you want )
-        -- 3 Edit > select all + Edit>copy on the image that you want to add
-        -- 4 go to the template image .dds already open in paintdotnet ( you did it in step 1)
-        -- 5 Edit > Paste in a new layer ( dont adjust the image area when asked to )
-        -- 6 save as a new .DDS inside ../RGOG/IMAGES/
-        ---------------------------------------------------------------------------------------------------------------------------
-        -- Copy paste the dds images names from ../RGOG/IMAGES/ and paste them here
-        ["HELLO_GAMES_SPASH_SCREEN"] = "SCIFIPAINT",  -- "","HG-E3-1"  or another img name from ../RGOG/IMAGES
-        -- This is the first loading Screen
-        ["ENGINE_SPASH_SCREEN"] = "E3-SHIPS", --  "" , "E-E3-1"   or another img name from ../RGOG/IMAGES
-        -- This is the seconf loading Screen
-        ["NMS_TITLE"] = "TITLE-ATLAS", --  "" , "TITLE-WAYPOINT"   or another img name from ../RGOG/IMAGES
-        -- this will replace the title loading screen
-        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE4", --  "" , "E3-RUINS"   or another img name from ../RGOG/IMAGES
-        -- this will replace the Menus Screens
-        ["TRANSPARENT_OPTIONS_MENU"] = "OFF", -- -- this var is not used anymore because it was impossibe to read the menus in some situations
+        ["HELLO_GAMES_SPASH_SCREEN"] = "PRE-RELEASE5",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "LARGEBACKDROP", --"E-E3-1"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
+        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE2", --"E3-RUINS"   or another img name
+        ["TRANSPARENT_OPTIONS_MENU"] = "ON",
     },
     ["CAMERA_FEATURES"] =
     {
-	    ["CAMERA_OVERHAUL_FEATURE"] = "ON", -- "ON"/"OFF" this value enable the camera changes
-        -- ( larger FOV , exocrafts cam improvements for mining from exocrafts, camera is more far during system warp)
-        -- CTRL+F **CAMERA_OVERHAUL_FEATURES** to edit the changes
+	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
 	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
-        -- this is different from the game menu no shake : this changes will remove shaking for everything exept getting hit, sandworms , and volcanos.
-        -- it can be combine with the vanilla camera shakes adjustement
-        -- I suggest to use it, in order to have a feeling of danger and to be in rare situations
-	    ["CENTERED_CAMERA_FEATURE"] = "OFF", -- this var is not used anymore -- had a cam auto move bug / felt unconfortable to use
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
     },
     ["GAMEPLAY_FEATURES"] =
     {
-        ["GAMEPLAY_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
+        ["GAMEPLAY_OVERHAUL"] = "ON",
         ["QOL_FEATURES"] =
         {
-            -- Quality of Life features
-            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON", -- "ON"/"OFF"  more character shape customisations -- vanilla have 5 body types, this mod will add 20 in between body shapes
-            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod) -- adjust the mining speed. it works by reducing all props lifebar / health
-            ["NEW_INTERACTIONS_FEATURE"] = "ON", -- "ON"/"OFF"  ( New Gameplay Mechanics ) -- add new interactions to decorations - add useful stuff in hangars - reworks freighters bridge
-            ["ADVANCED_BUILDS_FEATURE"] = "ON", --  "ON"/"OFF"  ( more buildable objects on freighter planets and settlements )
-            ["FREE_POWER_ON_EM_GENERATORS"] = "ON", -- "ON"/"OFF"   ( electro magnetic generator always give power with that value on )
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON",
+            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
+            ["NEW_INTERACTIONS_FEATURE"] = "ON",
+            ["ADVANCED_BUILDS_FEATURE"] = "ON",
+            ["FREE_POWER_ON_EM_GENERATORS"] = "ON",
         },
         ["ONFOOT_GAMEPLAY_FEATURES"] =
         {
-            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",  -- > this var off will disable all features under that node
-            -- Character movements polishing -- since NMS 4.25 it also improve the capes movements
-            ["LONGER_STEALTH_FEATURE"] = "OFF", -- "ON"/"OFF" 
-            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON", -- "ON"/"OFF" 
-            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF", -- "ON"/"OFF" 
-            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "ON", -- "ON"/"OFF" 
-            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "ON", -- "ON"/"OFF" 
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["LONGER_STEALTH_FEATURE"] = "ON",
+            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON",
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
+            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "OFF",
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
         },
         ["SPACESHIPS_GAMEPLAY_FEATURES"] =
         {
-          ["HOVER_MODE"] = "ON", -- "ON"/"OFF" HOVERMODE FOR ALL SPACESHIPS
-          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON", -- -- "ON"/"OFF"  player and AI spaceships controls rework 
+          ["HOVER_MODE"] = "ON",
+          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON",
         },
         ["VEHICLES_FEATURES"] =
         {
-            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON", -- "ON"/"OFF"  player and AI spaceships controls rework CTRL+F **VEHICULE_HANDLINGS** for editing it
-            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON", -- "ON"/"OFF" this will add dragonfly unused exocraft with a custom model that can be summoned & customised at trading posts
-            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF", -- "ON"/"OFF" this value ON will enable the custom model that i did for the nomad ( ball exocraft ) i am planing to add more models ( the hoverbike for example)
-            ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON", -- "ON"/"OFF" this value ON will enable the custom model that i did for the pilgrim: REDMASPOD v3 ( a KANEDA BIKE INSPIRED SKIN )
-            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "ON"/"OFF" "MAKO-A" ( "Mass Effect" Inspired custom model" for the colossus
-            ["CUSTOM_ROAMER_EXOCRAFT"] = "ON", -- "ON"/"OFF" this value ON will enable the custom model that i did for the roamer : a more aggressive / sport car looking version of the vanilla roamer
-            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- "ON"/"OFF" this value on will add LARGER BEHIND WHEELS on the custom model for the roamer
-            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON", -- "ON"/"OFF" this value on will add additional lamps on the custom model for the roamer ( i had to disable their light they were too strong )
-            ["GIANT_MECHS_BETA_FEATURE"] = "ON", -- "ON"/"OFF" this value on will rescale both mechs ( player and sentinel ( because they are the same one for the game ))
-            ["MECHS_SIZE_MULTIPLIER"] = 2,  -- ( "2" to "10" -- adviced size : 2 ) notice that this param requires a integer, not a string
+            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON",
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF",
+            ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF", --  "KANEDA BIKE INSPIRED SKIN"
+            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
+            ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
+            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
+            ["GIANT_MECHS_BETA_FEATURE"] = "OFF",
+            ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
         },
     },
     ["CREATURES_FEATURES"] =
     {
-        ["CREATURES_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
-        --
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON", -- "ON"/"OFF" This will increase the birds, fishs and butterflies, but will make everything else sparse for balancing the performance
-        ["MAX_CREATURES_NUMBER"] = 20, -- "10" < - > "20"  max number of the birds, fishs and butterflies when CREATURES_HIGH_DENSITY_FEATURE is ON. notice that this param requires a integer, not a string
+        ["CREATURES_OVERHAUL"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
-        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps )
-        ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF", -- this var is not used anymore 
-        ["GIANTS_CREATURES_FEATURE"] = "ON",
-        ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 94 (very huge.)) -- recommanded 54
+        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
+        ["GIANTS_CREATURES_FEATURE"] = "OFF",
+        ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
     ["GENERATION_FEATURES"] =
     {
-        ["GENERATION_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
-        --
+        ["GENERATION_OVERHAUL"] = "ON",
         ["COLORS_AUTO_GENERATION_FEATURES"] =
         {
-			-- The script will procedurally generate new colours possibilties // they will be diferent at each generation of the pak
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+			-- The script will procedurally generate new colours possibilties
+			-- different each time the overhaul is generated ( x100 by default).
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
         },
         ["PLANETS_GENERATION_FEATURES"] =
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                -- Mods for the voxel generation
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "EPIC_FANTASY" , "SCI_FI_FANTASY" or "ON" or "OFF" 
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- inverts the ressources deposits ( making them out of the ground )
-                ["TERRAIN_HEIGHT_MAX"] = "10", -- "-40" to "40" higher values can make the game unstable
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
+                ["TERRAIN_HEIGHT_MAX"] = "140",
             },
-            ["BIOMES_FEATURES"] = -- world generation features
+            ["BIOMES_FEATURES"] =
             {
-                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF", -- "ON"/"OFF" -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
-                ["SKY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- floating things in the skies
-                ["STORM_BIOMES_FEATURES"] = "OFF", -- this var is not used anymore 
-                ["GIANTS_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
-                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- swamp biomes ( trees and constructs on water) & flora / rocks on beaches
-                ["MONTAINS_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- more diversity on montains
-                ["CAVE_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF"-- more diversity on caves
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["FANTASY_BIOMES_FEATURE"] = "ON",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["STORM_BIOMES_FEATURES"] = "OFF",
+                ["GIANTS_BIOMES_FEATURE"] = "OFF",
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
+                ["MONTAINS_BIOMES_FEATURE"] = "ON",
+                ["CAVE_BIOMES_FEATURE"] = "ON",
             },
-            ["ASSETS_REPLACEMENTS_FEATURES"] = -- world generation features, by models replacement
-            { 
-
-                ["E3_FANTASY_ASSETS_FEATURES"] = "ON", -- > this var off will disable all features under that node -- "ON"/"OFF"
-                --
-                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- modded wordstones models
-                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- E3 building aside planets beacons
-                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",-- "ON"/"OFF" -- portals model replacements with e3 ones
-                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- Rings buildings aside planet deposits
-                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",-- "ON"/"OFF" -- E3 Crystals instead of vanilla crystals ( heridium / carbon, titan ones )
-                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON", -- "ON"/"OFF"-- Planets colours and tiles rework -- ( 90% "Pathfinder" colors )
-                ["REDMAS_RUINS_FEATURES"] = "OFF", -- "ON"/"OFF"-- very Large ruins
-                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON", -- "ON"/"OFF"-- put archeologic buildings aside trading posts 
+            ["ASSETS_REPLACEMENTS_FEATURES"] =
+            {
+                ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "OFF",
             },
         },
         ["SPACE_GENERATION_FEATURES"] =
         {
-            ["REDMAS_SPACE_GENERATION"] = "ON",-- > this var off will disable all features under that node
-            --
-            ["TRADING_ROUTES"] = "OFF", -- vanilla value is "on"
-            ["MASSIVE_FLEET"] = "ON", -- ADD frigates aside freighters and redesign freighters - that change can be ressource heavy
-            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON", -- this will enable the custom models that i did for the derelic mission crash sites
+            ["REDMAS_SPACE_GENERATION"] = "ON",
+            ["TRADING_ROUTES"] = "OFF",
+            ["MASSIVE_FLEET"] = "ON",
+            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON",
         },
         ["SPACESHIPS_GENERATION_FEATURES"] =
         {
-            -- Redmas Spaceships Generation Mod
-            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",  -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON",
         },
     },
     ["SKINS"] =
     {
-        ["CHARACTERS_SKINS_FEATURE"] = "ON",   -- > this var off will disable all features under that node  -- "ON"/"OFF" 
-        --    
+        ["CHARACTERS_SKINS_FEATURE"] = "ON",
+        -- (E3-DAMAGED or E3)
         ["DRONE_PET_SKIN_FEATURE"] = "ON",
-		["DRONE_PET_SKIN"] = "E3",-- ("E3-DAMAGED" or "E3") replacement with custom models for flare ( the friendly sentinel drone ) ( i will add more ones)
-        ["CHAR_PRESETS_SKINS"] = "SCIFI"
-        -- this will replace the default character customisations by more advanced looking skins ( which are characters from my youtube mini series NMS FANTASY )
-        -- they are visible by vanilla players as soon as you rdit and save them in a character customisation slot
-        -- "THE-WATCHER"  /or/   "SPACE-PIRATE" /or/     "GIRLY"       /or/
-        -- "KORVAX"      /or/   "OUTLAWS"      /or/     "TRAVELLER"   /or/
-        -- "VY-KEEN"    /or/   "ANOMALY"      /or/      "GEK"        /or/
-        -- "UTOPIA"    /or/    "UTOPIA2"     /or/      "SCIFI"
+		["DRONE_PET_SKIN"] = "E3-DAMAGED",
+        -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
+        -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
+        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
+        ["CHAR_PRESETS_SKINS"] = "ANOMALY"
     },
     ["NEWGAME_BONUS_FEATURES"] ={
-
-        ["NEWGAME_BONUSES"] = "OFF",-- > this var off will disable all features under that node
-        --
-        -- I recommend to always wait 1 or 2 week(s) after a vanilla base game update before activating that section
-        -- ( the gamefiles it changes is always updated last )
+         ["NEWGAME_BONUSES"] = "OFF",
+		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
+		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
+		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
         ["STARTING_SHIP"] = "ALPHA_VECTOR",
-        -- "OUTLAW1" / "OUTLAW2" / "ALPHA_VECTOR" /
-		-- "PLANETEXPLO2" / "PLANETEXPLO3" / "PLANETEXPLO4" / "PLANETEXPLO5" / "PLANETEXPLO6" / "PLANETEXPLO7" /
-		-- "SPACEEXPLO1" / "SPACEEXPLO2" / "SPACEEXPLO3" / "SPACEEXPLO4" / "SPACEEXPLO5" / "SPACEEXPLO6" / "SPACEEXPLO7"
-		-- "BOUNTYHUNTER1" / "BOUNTYHUNTER2" / "BOUNTYHUNTER3" / "BOUNTYHUNTER4" / "BOUNTYHUNTER5"
-        ["STARTING_MULTITOOL"] = "OUTLAW1",
-        -- "OUTLAW1" / "OUTLAW2" / "EXPLO1" / "SPACE" /
-		-- "EXPLO2" / "EXPLO3" / "EXPLO4" / "EXPLO5" / "EXPLO6" / "EXPLO7" /
-		-- "BOUNTYHUNTER1" / "BOUNTYHUNTER2" / "BOUNTYHUNTER3" / "BOUNTYHUNTER4" / "BOUNTYHUNTER5"
+		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
+		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_MULTITOOL"] = "EXPLO1",
     },
     ["CHALLENGE_FEATURES"] =
     {
-        ["CHALLENGE_MODE"] = "OFF", -- > this var off will disable all features under that node
-        --
-		["STRONG_CREATURES_FEATURE"] = "OFF", -- note the base game already does it since NMS v 4.0
-        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6 -- this param is related to STRONG_CREATURES_FEATURE = ON
-        ["DARK_UNDERWATER"] = "OFF", -- This will make vision harder under water
-        ["STRONG_PIRATES_FEATURE"] = "OFF", -- note the base game already does it since NMS v 4.0
+        ["CHALLENGE_MODE"] = "OFF",
+		["STRONG_CREATURES_FEATURE"] = "ON",
+        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
+        ["DARK_UNDERWATER"] = "OFF",
+        ["STRONG_PIRATES_FEATURE"] = "OFF",
     },
     ["EASY_MODE_FEATURES"] =
     {
-        -- this section is for the cheats of the Game overhaul ( there are few as you can see )
-        ["EASY_MODE"] = "ON", -- "ON"/"OFF" -- > this var off will disable all features under that node
-        --
-        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 2 , -- ( "1" < - > "4" ( too much will be glitchy when entering planets' atmosphere)) -- notice that this param requires a integer, not a string
-        ["LAUNCH_COST_REDUCTION"] = 5 , -- In % ( take off reduce ) note the base game already does it since NMS v 4.0 -- notice that this param requires a integer, not a string
-        ["WARPCELL_USAGE_MULTIPLIER"] = 5, --> increase the number of usages of normal warpcells -- notice that this param requires a integer, not a string
-        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000, --> increase all hyperdrive ranges -- notice that this param requires a integer, not a string
+        ["EASY_MODE"] = "ON",
+        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 2 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
+        ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
+        ["WARPCELL_USAGE_MULTIPLIER"] = 5,
+        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
     }
 }
 --------------------------------------------------------------------------------------------------------------
-HQ_SPACESTATIONS = "ON" -- "ON"/"OFF" enables the unreleased space stations models ( at the time i write )
+HQ_SPACESTATIONS = "ON" -- "ON"/"OFF" enables the unreleased space station ( at the time i write )
 --------------------------------------------------------------------------------------------------------------
-PROCEDURALMAX = 10  -- 10 to 1000 --This is the number of procedural generated new params for this script
+PROCEDURALMAX = 100  -- 10 to 1000 --This is the number of procedural generated new params for this script
 -- change this var to increase the number of autogenerated colors, if they are enabled ( for skies, seas & space)
--- increasing that var will increase the rendering time
+-- increasing that var will increase the rendering 
 --------------------------------------------------------------------------------------------------------------
 COLORS_GENERATION_REWORK = "FANTASY_COLOURS" -- "FANTASY_COLOURS" or "SCIFI_COLOURS"
 -- must have the following vars ON to be applied :
@@ -12569,15 +12508,20 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\EXO_LAMP.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							[["Value" value="MODELS\\COMMON\\SPACECRAFT\\SCIENTIFIC\\ACCESSORIES\\LAMP\\SHUTTLE_MAT.MATERIAL.MBIN"]],
-							[["Value" value="MODELS\\SPACE\\NEXUS\\NEXUSEXTERIOR\\METALSHINY_MAT.MATERIAL.MBIN"]]
-						},
+							["SPECIAL_KEY_WORDS"] = {"NameHash","3665260437"},
+							["PRECEDING_KEY_WORDS"] = {"MATERIAL"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\SPACE\NEXUS\NEXUSEXTERIOR\METALSHINY_MAT.MATERIAL.MBIN]]},
+							}
+						}
 					}
 				},
-								{
+				{
 					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\EXO_LAMP.SCENE.MBIN]],
 					["EXML_CHANGE_TABLE"] =
 					{
@@ -12979,14 +12923,21 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					},
 				}
 			},
+			--
 			{
 				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\KANEDA_COCKPIT.SCENE.MBIN]],
-				["REGEXAFTER"] =
+				["EXML_CHANGE_TABLE"] 	=
 				{
-					{[[MODELS\\COMMON\\VEHICLES\\BIKE\\BIKE\\ENTITIES\\BIKE.ENTITY.MBIN]],
-					[[MODELS\\COMMON\\VEHICLES\\WHEELEDBIKE\\WHEELEDBIKE\\ENTITIES\\WHEELEDBIKE.ENTITY.MBIN]]},
+					{
+						["SPECIAL_KEY_WORDS"] = {"NameHash","4012473969"},
+						["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\COMMON\VEHICLES\WHEELEDBIKE\WHEELEDBIKE\ENTITIES\WHEELEDBIKE.ENTITY.MBIN]]},
+						}
+					}
 				},
-
 			},
 			{
 				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\KANEDA_WHEELS.SCENE.MBIN]],
@@ -13387,43 +13338,15 @@ if GAMEPLAY_OVERHAUL == "ON" then
 			},
 			{
 				["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\VEHICLEGARAGEMECH\ENTITIES\CUSTOMISER.ENTITY.MBIN]],
-				["REGEXBEFORE"] =
+				["EXML_CHANGE_TABLE"] 	=
 				{
 					{
-						[[
-							<Property name="Distance" value="0" />
-							<Property name="Offset" value="Vector3f.xml">
-							<Property name="x" value="0" />
-							<Property name="y" value="0" />
-							<Property name="z" value="0" />
-						]],
-						--
-						[[
-							<Property name="Distance" value="50" />
-							<Property name="Offset" value="Vector3f.xml">
-							<Property name="x" value="100" />
-							<Property name="y" value="100" />
-							<Property name="z" value="0" />
-						]]
-					},
-					--
-					{
-						[[
-							<Property name="Distance" value="1.5" />
-							<Property name="Offset" value="Vector3f.xml">
-							<Property name="x" value="0" />
-							<Property name="y" value="0" />
-							<Property name="z" value="0" />
-						]],
-						--
-						[[
-							<Property name="Distance" value="50" />
-							<Property name="Offset" value="Vector3f.xml">
-							<Property name="x" value="100" />
-							<Property name="y" value="100" />
-							<Property name="z" value="0" />
-						]]
-					},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Distance",	"50"},
+						}
+					}
 				},
 			},
 			{
@@ -14532,13 +14455,22 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					}
 				},
 				 ----FREIGHTER HANGAR CUSTOM MODELS generation
-				 {
+				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					
+
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\MISSIONS.ENTITY.MBIN"]]},
-					},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","3601946984"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\MISSIONS.ENTITY.MBIN]]},
+							}
+						}
+					}
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {
@@ -14550,10 +14482,18 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	=  [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[[MISSIONS.ENTITY]],[[MP-MISSIONS.ENTITY]]},
-					},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","3601946984"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\MP-MISSIONS.ENTITY.MBIN]]},
+							}
+						}
+					}
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {
@@ -14566,12 +14506,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				-- New Entities creation
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\SPACE\NEXUS\NEXUS\ENTITIES\MPTERMINAL.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["UseInteractCamera" value="True"]],[["UseInteractCamera" value="False"]]},
-						{[["RepeatInteraction" value="False"]],[["RepeatInteraction" value="True"]]},
-					},
-
+						{
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"UseInteractCamera",	"False"},
+								{"RepeatInteraction",	"True"},
+							}
+						}
+					}
 				},
 				{
 
@@ -14584,10 +14529,14 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\SPACE\NEXUS\NEXUS\ENTITIES\MPTERMINAL.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
-					{
-						{[[MPMissionGiver]],[[MissionGiver]]},
-					},
+											{
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT",},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"InteractionType",	[[MissionGiver]]},
+							}
+						}
 
 				},
 				{
@@ -14915,10 +14864,16 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				-- TRADING POST CUSTOM MODELS generation
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.MBIN]],
-					["REGEXBEFORE"] =
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\SAVEPOINT.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","2810148397"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\SAVEPOINT.ENTITY.MBIN]]},
+							}
+						}
 					},
 				},
 				{
@@ -14956,12 +14911,16 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
-					{
-						{[["Id" value="BARREL"]],[["Id" value="FREIGHTERLOOT"]]},
-					},
 					["EXML_CHANGE_TABLE"] =
 					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"FREIGHTERLOOT"},
+							}
+
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcScannableComponentData.xml"},
 							["REMOVE"] 	= "SECTION"
@@ -14980,11 +14939,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["Id" value="FREIGHTERLOOT"]],[["Id" value="DE_RARE_COPPER"]]},
-					},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"DE_RARE_COPPER"},
+							}
 
+						}
+					}
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {
@@ -14999,10 +14964,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				--------------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["Id" value="DE_RARE_COPPER"]],[["Id" value="DE_GEM_B_LARGE"]]},
-					},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"DE_GEM_B_LARGE"},
+							}
+
+						}
+					}
 
 				},
 				{
@@ -15017,10 +14989,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				--------------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["Id" value="DE_GEM_B_LARGE"]],[["Id" value="DE_GEODE_LAND"]]},
-					},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"DE_GEODE_LAND"},
+							}
+
+						}
+					}
 
 				},
 				{
@@ -15035,10 +15014,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				--------------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["Id" value="DE_GEODE_LAND"]],[["Id" value="PLANT_FUEL"]]},
-					},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"PLANT_FUEL"},
+							}
+
+						}
+					}
 
 				},
 				{
@@ -15053,10 +15039,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				--------------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["Id" value="PLANT_FUEL"]],[["Id" value="PLANTER_CARBON"]]},
-					},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"PLANTER_CARBON"},
+							}
+
+						}
+					}
 
 				},
 				{
@@ -15071,10 +15064,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				--------------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["Id" value="PLANTER_CARBON"]],[["Id" value="SHIELDLARGE"]]},
-					},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"SHIELDLARGE"},
+							}
+
+						}
+					}
 
 				},
 				{
@@ -15089,10 +15089,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				--------------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["Id" value="SHIELDLARGE"]],[["Id" value="DE_CAVE_SECOND"]]},
-					},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"DE_CAVE_SECOND"},
+							}
+
+						}
+					}
 
 				},
 				{
@@ -15107,10 +15114,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				--------------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["Id" value="DE_CAVE_SECOND"]],[["Id" value="DE_WATER_LARGE"]]},
-					},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"DE_WATER_LARGE"},
+							}
+
+						}
+					}
 
 				},
 				{
@@ -15125,10 +15139,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				--------------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["Id" value="DE_WATER_LARGE"]],[["Id" value="DE_WATERPLANT_A"]]},
-					},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Id",	"DE_WATERPLANT_A"},
+							}
+
+						}
+					}
 
 				},
 				{
@@ -15144,13 +15165,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\CRYOCHAMBERPOD\ENTITIES\CRYOCHAMBERPOD.ENTITY.MBIN]],
-					["REGEXAFTER"] =
-					{
-						{[["UseInteractCamera" value="True"]],[["UseInteractCamera" value="False"]]},
-						{[["RepeatInteraction" value="False"]],[["RepeatInteraction" value="True"]]},
-					},
+	
 					["EXML_CHANGE_TABLE"] =
 					{
+						{
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"UseInteractCamera",	"False"},
+								{"RepeatInteraction",	"True"},
+							}
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
 							["REMOVE"] 	= "SECTION"
@@ -15174,11 +15199,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CHARCUSTOMISER\CHARCUSTOMISER\ENTITIES\CHARCUSTOMISER.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{[["UseInteractCamera" value="True"]],[["UseInteractCamera" value="False"]]},
-						{[["RepeatInteraction" value="False"]],[["RepeatInteraction" value="True"]]},
-					},
+						{
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"UseInteractCamera",	"False"},
+								{"RepeatInteraction",	"True"},
+							}
+						},
+					}
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {
@@ -15193,13 +15224,16 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRATE\CRATE_WEAPON\ENTITIES\CRATE_WEAPON.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
-					{
-						{[["UseInteractCamera" value="True"]],[["UseInteractCamera" value="False"]]},
-						{[["RepeatInteraction" value="False"]],[["RepeatInteraction" value="True"]]},
-					},
 					["EXML_CHANGE_TABLE"] =
 					{
+						{
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"UseInteractCamera",	"False"},
+								{"RepeatInteraction",	"True"},
+							}
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
 							["REMOVE"] 	= "SECTION"
@@ -15221,11 +15255,17 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BED.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\BED\\ENTITIES\\BED.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\SAVEPOINT.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","501765465"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\SAVEPOINT.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
@@ -15310,20 +15350,34 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\DRAWS.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\CHARCUSTOMISER.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","1616260697"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\CHARCUSTOMISER.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\FANVENT.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\OXYGENFAN.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","1339394650"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\OXYGENFAN.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
@@ -15342,110 +15396,185 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SIGNALSCANNER\ENTITIES\SIGNALSCANNER.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
-						{"BaseBuild_Item_SignalBooster_Start",""},
+						{
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["PRECEDING_KEY_WORDS"] = {"TkAudioComponentData.xml"},
+							["REMOVE"] 	= "SECTION"
+						}
+
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LOCKER.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\CHARCUSTOMISER.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","2810148397"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\CHARCUSTOMISER.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\PLANTPOT_1.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\PLANTERWALLSHELVES.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","247822816"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\PLANTERWALLSHELVES.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\PLANTPOT_2.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\SHIELDPLANT.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","2663608103"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\SHIELDPLANT.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\PLANTPOT_3.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\PLANTERWALLSHELVES.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","3639339141"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\PLANTERWALLSHELVES.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\PLANTPOTWALL.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\PLANTERWALLSHELVES.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","1932763104"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\PLANTERWALLSHELVES.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\ROBOTICARM.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\SUITUPGRADE.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","2234383842"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\SUITUPGRADE.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\ROOFMONITOR.SCENE.MBIN]],
-
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\SUITUPGRADE.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","2810148397"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\SUITUPGRADE.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\SHELVES.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\CHARCUSTOMISER.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","1790091986"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\CHARCUSTOMISER.ENTITY.MBIN]]},
+							}
+						}
 					}
+
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLMONITOR_A.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\MISSIONS.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","1932763104"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\MISSIONS.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLMONITOR_B.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\MISSIONS.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","3704986639"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\MISSIONS.ENTITY.MBIN]]},
+							}
+						}
 					}
 
 				},
@@ -15453,40 +15582,68 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLMONITOR_B2.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\MP-MISSIONS.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","3704986639"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\MP-MISSIONS.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WATERCORALTREEDECORATION.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\WATER2GENERATOR.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","1043640970"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\WATER2GENERATOR.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WATERGLOWPLANTDECORATION.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\SALTGENERATOR.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","3904623923"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\SALTGENERATOR.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WEAPONRACK.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
-						[["Value" value="MODELS\\RGO\\ENTITIES\\CRATE_WEAPON.ENTITY.MBIN"]]},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","245433769"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\RGO\ENTITIES\CRATE_WEAPON.ENTITY.MBIN]]},
+							}
+						}
 					}
 				},
 				-------------
@@ -29332,22 +29489,32 @@ LUSHGRASSLIST =
 				},
 				{
 					["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE.SCENE.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							[[MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\STANDINGSTONE\\STANDINGSTONEWARRIOR\\ENTITIES\\STANDINGSTONE_RARE.ENTITY.MBIN]],
-							[[MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\RUINPARTS\\WORDSTONE\\ENTITIES\\WORDSTONE.ENTITY.MBIN]]
+							["SPECIAL_KEY_WORDS"] = {"NameHash","1959231336"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN]]},
+							}
 						}
 					}
+
 				},
 				{
 					["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							[["UseInteractCamera" value="True"]],
-							[["UseInteractCamera" value="False"]]
-						}
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"UseInteractCamera",	"False"},
+								{"RepeatInteraction",	"True"},
+							}
+						},
 					}
 				},
 				-- plaques
@@ -29363,17 +29530,28 @@ LUSHGRASSLIST =
 				{
 					["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE.SCENE.MBIN]],
 					["REPLACE_TYPE"] = "ALL",
-					["REGEXBEFORE"] =
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							[[MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\MONOLITH\\MONOLITH\\ENTITIES\\MONOLITH.ENTITY.MBIN]],
-							[[MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\RUINPARTS\\PLAQUE\\ENTITIES\\PLAQUE.ENTITY.MBIN]]
+							["SPECIAL_KEY_WORDS"] = {"NameHash","2969419012"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE\ENTITIES\PLAQUE.ENTITY.MBIN]]},
+							}
 						},
 						{
-							[[MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\MONOLITH\\MONOLITH\\ENTITIES\\STANDINGSTONES.ENTITY.MBIN]],
-							[[MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\RUINPARTS\\PLAQUE\\ENTITIES\\PLAQUE.ENTITY.MBIN]]
-						},
+							["SPECIAL_KEY_WORDS"] = {"NameHash","362111922"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE\ENTITIES\PLAQUE.ENTITY.MBIN]]},
+							}
+						}
 					}
+					
 				},
 			}
 		)
@@ -31600,19 +31778,21 @@ LUSHGRASSLIST =
 			},
 			{
 				["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN]],
-				["REGEXBEFORE"] =
-				{
-					{
-						[[MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\MONUMENTS\\STARGATEMAIN.SCENE.MBIN]],
-						[[MODELS\\RGO\\_STARGATEMAIN.SCENE.MBIN]]
-					}
-				},
 				["EXML_CHANGE_TABLE"] =
 				{
 					{
 						["REPLACE_TYPE"] = "ALL",
 						["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
 						["REMOVE"] = "SECTION"
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"NameHash","3621565930"},
+						["PRECEDING_KEY_WORDS"] = {"SCENEGRAPH"},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\RGO\_STARGATEMAIN.SCENE.MBIN]]},
+						}
 					},
 
 				}
@@ -38006,15 +38186,18 @@ end
 			},
 			{
 				["MBIN_FILE_SOURCE"] = [[MODELS\RGO\ENTITIES\BEACON.ENTITY.MBIN]],
-				["REGEXBEFORE"] =
+				["EXML_CHANGE_TABLE"] =
 				{
 					{
-						[[InteractDistance" value="0"]],
-						[[InteractDistance" value="50"]]
-					}
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"InteractDistance",	"50"},
+						}
+					},
 				}
 			},
-						{
+			{
 				["MBIN_FILE_SOURCE"] = {
 					[[METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN]],
 				},
@@ -39068,11 +39251,18 @@ end
 			{
 
 				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTSHIP01.SCENE.MBIN",
-				["REGEXBEFORE"] =
+				["EXML_CHANGE_TABLE"] 	=
 				{
-					{"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTSHIP01\ENTITIES\FREIGHTSHIP.ENTITY.MBIN",
-					"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERSMALL_PROC\ENTITIES\SMALLFREIGHTER.ENTITY.MBIN"}
-				},
+					{
+						["SPECIAL_KEY_WORDS"] = {"NameHash","2027018462"},
+						["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERSMALL_PROC\ENTITIES\SMALLFREIGHTER.ENTITY.MBIN]]},
+						}
+					}
+				}
 
 			},
 			{
@@ -41064,10 +41254,16 @@ end
 			},
 			{
 				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_A2.SCENE.MBIN]],
-				["REGEXBEFORE"] =
+				["EXML_CHANGE_TABLE"] 	=
 				{
-					{[["Value" value="MODELS\\COMMON\\SPACECRAFT\\S-CLASS\\ROYALPARTS\\WINGS\\WINGS_A\\ENTITIES\\WINGS_A.ENTITY.MBIN"]],
-					[["Value" value="MODELS\\RGO\\ENTITIES\\WINGS_A2.ENTITY.MBIN"]]},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\RGO\ENTITIES\WINGS_A2.ENTITY.MBIN]]},
+						}
+					}
 				}
 			},
 			{
@@ -41082,10 +41278,16 @@ end
 			},
 			{
 				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_A3.SCENE.MBIN]],
-				["REGEXBEFORE"] =
+				["EXML_CHANGE_TABLE"] 	=
 				{
-					{[["Value" value="MODELS\\COMMON\\SPACECRAFT\\S-CLASS\\ROYALPARTS\\WINGS\\WINGS_A\\ENTITIES\\WINGS_A.ENTITY.MBIN"]],
-					[["Value" value="MODELS\\RGO\\ENTITIES\\WINGS_A3.ENTITY.MBIN"]]},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\RGO\ENTITIES\WINGS_A3.ENTITY.MBIN]]},
+						}
+					}
 				}
 			},
 			{
@@ -41100,10 +41302,16 @@ end
 			},
 			{
 				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_A4.SCENE.MBIN]],
-				["REGEXBEFORE"] =
+				["EXML_CHANGE_TABLE"] 	=
 				{
-					{[["Value" value="MODELS\\COMMON\\SPACECRAFT\\S-CLASS\\ROYALPARTS\\WINGS\\WINGS_A\\ENTITIES\\WINGS_A.ENTITY.MBIN"]],
-					[["Value" value="MODELS\\RGO\\ENTITIES\\WINGS_A4.ENTITY.MBIN"]]},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\RGO\ENTITIES\WINGS_A4.ENTITY.MBIN]]},
+						}
+					}
 				}
 			},
 		},
