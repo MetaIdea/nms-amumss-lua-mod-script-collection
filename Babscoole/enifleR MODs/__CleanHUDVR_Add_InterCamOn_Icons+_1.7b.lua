@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"InWorldScreenScaleDistance","9"},
+                                {"InWorldScreenScaleDistance","7"},
                                 {"ShowVRDistanceWarning","False"},
                                 {"VRFaceLockedScreenWidth","700"},
                                 {"CompassScreenWidth","600"},
@@ -48,8 +48,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CrosshairScaleHmd","1.5"},
                                 {"InteractionInWorldPlayerCamAlways","True"},
                                 {"InteractionInWorldPitchDistance","0"},
-                                {"InteractionInWorldMinScreenDistance","2.5"},
-                                {"InteractionInWorldMinScreenDistanceV2","1.5"},
+                                {"InteractionInWorldMinScreenDistance","2.0"},
+                                {"InteractionInWorldMinScreenDistanceV2","1.0"},
                                 {"ShopInteractionInWorldForcedOffset","-1.5"},
                                 {"ShopInteractionInWorldForcedOffsetV2","-1.5"},
                                 {"TakeoffFuelMessageTime","0"},
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NotificationMissionHintTimeSecondary","999999"},
                                 {"MessageNotificationTime","6"},
                                 {"MessageTimeQuick","3"},
-                                {"PlanetLabelTime","999"},
+                                {"PlanetLabelTime","1"},
                                 {"DiscoverPlanetTotalTime","5"},
                                 {"DiscoverPlanetMessageWait","0"},
                                 {"DiscoverPlanetMessageTime","3"},
