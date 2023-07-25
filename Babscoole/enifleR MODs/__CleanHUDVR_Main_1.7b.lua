@@ -164,6 +164,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {"MATERIALS\LINE3D.MATERIAL.MBIN", "MATERIALS\LINE3DGALAXY.MATERIAL.MBIN"},
+                    },
+                },
+                {
                     ["MBIN_FILE_SOURCE"]  = "MATERIALS\LINE3D.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -171,6 +177,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Shader",""},
+                                {"Map",""},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\LINES\LINERENDERERGALAXY.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value","MATERIALS/LINE3DGALAXY.MATERIAL.MBIN"},
                             }
                         },
                     }
