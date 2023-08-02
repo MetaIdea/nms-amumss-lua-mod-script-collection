@@ -64,22 +64,22 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Options">
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\NADABOBBLEHEAD.SCENE.MBIN"..[[" />
+          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\NADABOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN"..[[" />
+          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\ARTEMISBOBBLEHEAD.SCENE.MBIN"..[[" />
+          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\ARTEMISBOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\APOLLOBOBBLEHEAD.SCENE.MBIN"..[[" />
+          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\APOLLOBOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN"..[[" />
+          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\ATLASBOBBLEHEAD.SCENE.MBIN"..[[" />
+          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\ATLASBOBBLEHEAD.SCENE.MBIN" />
         </Property>
       </Property>
     </Property>
@@ -157,7 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\JJSBRIDGE.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\JJSBRIDGE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -330,7 +330,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -348,7 +348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -376,12 +376,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -405,12 +405,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\STRAIGHTSHAPE0.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\STRAIGHTSHAPE0.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -434,12 +434,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -463,7 +463,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SHOPROOM\PARTS\WALLDOORWAYBB0.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SHOPROOM\PARTS\WALLDOORWAYBB0.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -487,12 +487,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\EXTINCORNER0.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\EXTINCORNER0.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -516,12 +516,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\EXTINCORNER0.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\EXTINCORNER0.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -545,7 +545,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERFLOOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERFLOOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -569,7 +569,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERFLOOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERFLOOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -593,7 +593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERFLOOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERFLOOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -609,7 +609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -627,7 +627,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -655,7 +655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\BRIDGETERMINAL.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\BRIDGETERMINAL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -747,7 +747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\DRONE.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\DRONE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -771,7 +771,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\HELMDESK.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\HELMDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -795,7 +795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -819,7 +819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -843,7 +843,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -867,7 +867,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -891,7 +891,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\NPCS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\NPCS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -915,7 +915,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\MAINROOM_REF.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\MAINROOM_REF.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -939,7 +939,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -963,7 +963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -987,7 +987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1011,7 +1011,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1035,7 +1035,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1059,7 +1059,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1083,7 +1083,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\TURRETA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\TURRETA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1107,7 +1107,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\TURRETA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\TURRETA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1131,7 +1131,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1155,7 +1155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1179,7 +1179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1203,7 +1203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1227,7 +1227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORGROUP.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORGROUP.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1251,7 +1251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\PROPS\WALLDESKS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\PROPS\WALLDESKS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1275,7 +1275,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\PROPS\WALLDESKS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\PROPS\WALLDESKS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1299,7 +1299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\PROPS\WALLDESKS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\PROPS\WALLDESKS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1323,7 +1323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1347,7 +1347,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1371,7 +1371,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1395,7 +1395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1419,7 +1419,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1443,7 +1443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1467,7 +1467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1491,7 +1491,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1515,7 +1515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\PROPS\PROPS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\PROPS\PROPS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1539,7 +1539,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1563,7 +1563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1587,7 +1587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1611,7 +1611,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1635,7 +1635,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\TELEPORTER.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\TELEPORTER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1659,7 +1659,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\TELEPORTER.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\TELEPORTER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1683,7 +1683,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\CORRIDOR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\CORRIDOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1707,7 +1707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1731,7 +1731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1755,7 +1755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1779,7 +1779,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1803,7 +1803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1827,7 +1827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1851,7 +1851,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBE_INTPILLAR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBE_INTPILLAR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1875,7 +1875,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBE_INTPILLAR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBE_INTPILLAR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1899,7 +1899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBE_INTPILLAR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBE_INTPILLAR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1923,7 +1923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBE_INTPILLAR.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBE_INTPILLAR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1947,7 +1947,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1971,7 +1971,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1995,7 +1995,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2019,7 +2019,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2035,7 +2035,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -2053,7 +2053,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -2081,7 +2081,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOM_CORE.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOM_CORE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2105,12 +2105,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOM_CIELING.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOM_CIELING.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2134,7 +2134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\LADDERHATCH.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\LADDERHATCH.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2158,12 +2158,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\LADDERHATCH.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\LADDERHATCH.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2187,12 +2187,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOM_CIELINGCAP.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOM_CIELINGCAP.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2216,7 +2216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2240,7 +2240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_WALL_WINDOW.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_WALL_WINDOW.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2264,7 +2264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2288,7 +2288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2312,7 +2312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2336,7 +2336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2360,7 +2360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2384,7 +2384,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2400,7 +2400,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA"..[[" />
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA" />
   <Property name="NameHash" value="3916463041" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -2418,7 +2418,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -2446,7 +2446,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\ENTITIES\NPCPLACEMENTFREIGHTER.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\ENTITIES\NPCPLACEMENTFREIGHTER.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
@@ -2775,7 +2775,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL"..[[" />
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL" />
   <Property name="NameHash" value="3615956715" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -2793,7 +2793,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -2916,7 +2916,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\PHONG134.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\PHONG134.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -2926,12 +2926,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\PHYSICS.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\PHYSICS.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL"..[[" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL" />
           <Property name="NameHash" value="3615956715" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -3092,7 +3092,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL"..[[" />
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL" />
   <Property name="NameHash" value="3615956715" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -3110,7 +3110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -3233,7 +3233,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\METALHORZAO_MAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\METALHORZAO_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -3243,12 +3243,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\PHYSICS.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\PHYSICS.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL"..[[" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL" />
           <Property name="NameHash" value="3615956715" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -3410,7 +3410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL" />
   <Property name="NameHash" value="2437321258" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -3428,7 +3428,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="LODDIST1" />
@@ -3471,7 +3471,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\ENTITIES\MIDDLEEFFECT.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\ENTITIES\MIDDLEEFFECT.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
@@ -3589,7 +3589,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\LARGEPLANET_MAT1.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\LARGEPLANET_MAT1.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -3599,7 +3599,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEVERYSLOW.ENTITY.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEVERYSLOW.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -3718,7 +3718,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\LARGEPLANET_MAT1.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\LARGEPLANET_MAT1.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -3842,7 +3842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\LARGEPLANET_MAT1.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\LARGEPLANET_MAT1.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -3966,7 +3966,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\LARGEPLANET_MAT1.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\LARGEPLANET_MAT1.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -4090,7 +4090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -4100,7 +4100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEVERYSLOW.ENTITY.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEVERYSLOW.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -4219,7 +4219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -4343,7 +4343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -4467,7 +4467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -4591,7 +4591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -4601,7 +4601,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEVERYSLOW.ENTITY.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEVERYSLOW.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -4720,7 +4720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -4844,7 +4844,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -4968,7 +4968,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\SCANLINES_MAT4.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -5092,7 +5092,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\TRANSBACKGROND_MAT5.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\TRANSBACKGROND_MAT5.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -5216,7 +5216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\TRANSBACKGROND_MAT5.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\TRANSBACKGROND_MAT5.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -5340,7 +5340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\TRANSBACKGROND_MAT5.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\TRANSBACKGROND_MAT5.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -5464,7 +5464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\TRANSBACKGROND_MAT5.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\TRANSBACKGROND_MAT5.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -5493,12 +5493,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\EFFECTS\SPACECRAFT\BRIDGETERMINALVOLUMELIGHT\FLARE.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\EFFECTS\SPACECRAFT\BRIDGETERMINALVOLUMELIGHT\FLARE.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DATA" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\EFFECTS\SPACECRAFT\BRIDGETERMINALVOLUMELIGHT\FLARE.PARTICLE.MBIN"..[[" />
+              <Property name="Value" value="MODELS\EFFECTS\SPACECRAFT\BRIDGETERMINALVOLUMELIGHT\FLARE.PARTICLE.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -5516,7 +5516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\CONCRETE\BASIC_WALL_WINDOW_LOD"..[[" />
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\CONCRETE\BASIC_WALL_WINDOW_LOD" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -5534,7 +5534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\CONCRETE\BASIC_WALL_WINDOW_LOD.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\CONCRETE\BASIC_WALL_WINDOW_LOD.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -5657,7 +5657,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\CONCRETE\BASIC_WALL_WINDOW_LOD\SHADOWMAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\CONCRETE\BASIC_WALL_WINDOW_LOD\SHADOWMAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -5678,7 +5678,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER"..[[" />
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER" />
   <Property name="NameHash" value="3662478814" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -5696,7 +5696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -5819,7 +5819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\TILINGTEXTURE_MAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\TILINGTEXTURE_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -5942,7 +5942,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\INTERIORFREIGHTERBASE_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\INTERIORFREIGHTERBASE_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -6066,7 +6066,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\GLOWMAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\GLOWMAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -6190,7 +6190,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\INTERIORFREIGHTERTRIM_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\INTERIORFREIGHTERTRIM_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -6316,7 +6316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\SCREENSCROLLMAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\SCREENSCROLLMAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -6345,12 +6345,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\ENTITIES\TELEPORTER.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\ENTITIES\TELEPORTER.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER"..[[" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER" />
           <Property name="NameHash" value="3662478814" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -6432,12 +6432,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_BRIDGE\ENTITIES\DATA.ENTITY.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_BRIDGE\ENTITIES\DATA.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children">
             <Property value="TkSceneNodeData.xml">
-              <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_BRIDGE"..[[" />
+              <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_BRIDGE" />
               <Property name="NameHash" value="2317532854" />
               <Property name="Type" value="COLLISION" />
               <Property name="Transform" value="TkTransformData.xml">
@@ -6677,7 +6677,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\INTERIORLIGHTS_MAT1.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\INTERIORLIGHTS_MAT1.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -6801,7 +6801,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\SCREENSCROLLMAT.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\SCREENSCROLLMAT.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -6925,7 +6925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\TELEPORTERSCROLLEFFECTMAT.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\TELEPORTERSCROLLEFFECTMAT.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -6954,7 +6954,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="SCENEGRAPH" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."ODELS\EFFECTS\ABANDONEDFREIGHTER\AIRLOCKTUBEMIST.SCENE.MBIN"..[[" />
+                  <Property name="Value" value="ODELS\EFFECTS\ABANDONEDFREIGHTER\AIRLOCKTUBEMIST.SCENE.MBIN" />
                 </Property>
               </Property>
               <Property name="Children" />
@@ -6978,12 +6978,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\EFFECTS\ABANDONEDFREIGHTER\AIRLOCKTUBEMIST\DUSTMOTES.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\EFFECTS\ABANDONEDFREIGHTER\AIRLOCKTUBEMIST\DUSTMOTES.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="DATA" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\EFFECTS\ABANDONEDFREIGHTER\AIRLOCKTUBEMIST\DUSTMOTES.PARTICLE.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\EFFECTS\ABANDONEDFREIGHTER\AIRLOCKTUBEMIST\DUSTMOTES.PARTICLE.MBIN" />
                 </Property>
               </Property>
               <Property name="Children" />
@@ -7119,7 +7119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\TRIGGERVOL_MAT.MATERIAL.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\TRIGGERVOL_MAT.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -7129,7 +7129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="ATTACHMENT" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MINIPORTAL\ENTITIES\TELEFX.ENTITY.MBIN"..[[" />
+                      <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MINIPORTAL\ENTITIES\TELEFX.ENTITY.MBIN" />
                     </Property>
                   </Property>
                   <Property name="Children" />
@@ -7153,7 +7153,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="SCENEGRAPH" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\EFFECTS\BASE\MINITELEPORTSPARKS.SCENE.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\EFFECTS\BASE\MINITELEPORTSPARKS.SCENE.MBIN" />
                     </Property>
                   </Property>
                   <Property name="Children" />
@@ -7276,7 +7276,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\TILINGTEXTURE_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\TILINGTEXTURE_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -7286,7 +7286,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MINIPORTAL\ENTITIES\ROTATINGBITS.ENTITY.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MINIPORTAL\ENTITIES\ROTATINGBITS.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children">
@@ -7404,7 +7404,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\GLOWMAT.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER\GLOWMAT.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -7447,7 +7447,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA" />
   <Property name="NameHash" value="1347520393" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -7465,7 +7465,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="LODDIST1" />
@@ -7685,7 +7685,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -7811,7 +7811,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -7934,7 +7934,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\PHONG68.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\PHONG68.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -8060,7 +8060,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -8183,7 +8183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\PHONG68.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\PHONG68.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -8309,7 +8309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -8432,7 +8432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\PHONG68.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\PHONG68.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -8558,7 +8558,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\FREIGHTER_PROC.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -8681,7 +8681,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\PHONG68.MATERIAL.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\PHONG68.MATERIAL.MBIN" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MESHLINK" />
@@ -8714,12 +8714,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."ODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\ENTITIES\TURRET.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="ODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\ENTITIES\TURRET.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA"..[[" />
+          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA" />
           <Property name="NameHash" value="1347520393" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -8907,7 +8907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA"..[[" />
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA" />
   <Property name="NameHash" value="3962994453" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -8925,7 +8925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="LODDIST1" />
@@ -9063,7 +9063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\INTERIORPROPS_MAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\INTERIORPROPS_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -9186,7 +9186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\LIGHTS1_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\LIGHTS1_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -9310,7 +9310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENREFRACTMAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENREFRACTMAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -9434,7 +9434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIMISCPARTS_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIMISCPARTS_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -9558,7 +9558,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIDULL_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIDULL_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -9682,7 +9682,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\GRAPHPANNING_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\GRAPHPANNING_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -9806,7 +9806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENBUTTON_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENBUTTON_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -9930,7 +9930,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCANLINE_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCANLINE_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -10010,7 +10010,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA"..[[" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA" />
           <Property name="NameHash" value="3962994453" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -10164,7 +10164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\INTERIORPROPS_MAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\INTERIORPROPS_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -10287,7 +10287,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\LIGHTS1_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\LIGHTS1_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -10411,7 +10411,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENTRANSPARENT_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENTRANSPARENT_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -10535,7 +10535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIMISCPARTS_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIMISCPARTS_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -10659,7 +10659,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIDULL_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIDULL_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -10783,7 +10783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\GRAPHPANNING_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\GRAPHPANNING_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -10907,7 +10907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENBUTTON_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENBUTTON_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -10987,7 +10987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA"..[[" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA" />
           <Property name="NameHash" value="3962994453" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -11141,7 +11141,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\INTERIORPROPS_MAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\INTERIORPROPS_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -11264,7 +11264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\LIGHTS1_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\LIGHTS1_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -11388,7 +11388,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENTRANSPARENT_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENTRANSPARENT_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -11512,7 +11512,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIMISCPARTS_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIMISCPARTS_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -11636,7 +11636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIDULL_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\UIDULL_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -11760,7 +11760,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\GRAPHPANNING_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\GRAPHPANNING_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -11884,7 +11884,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENBUTTON_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENBUTTON_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -12079,7 +12079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\INTERIORPROPS_MAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\INTERIORPROPS_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -12202,7 +12202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\LIGHTS1_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\LIGHTS1_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -12326,7 +12326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENTRANSPARENT_MAT.MATERIAL.MBIN"..[[" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA\SCREENTRANSPARENT_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
@@ -12357,7 +12357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\SHARED\PROP_LOD_DIST.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\SHARED\PROP_LOD_DIST.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -12373,7 +12373,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA"..[[" />
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA" />
   <Property name="NameHash" value="3916463041" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -12391,7 +12391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -12419,7 +12419,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\OBJECTSPAWNERFULL.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\OBJECTSPAWNERFULL.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
@@ -12523,7 +12523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA"..[[" />
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA" />
   <Property name="NameHash" value="3916463041" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -12541,7 +12541,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -12569,7 +12569,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\OBJECTSPAWNERFULL.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\OBJECTSPAWNERFULL.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
@@ -12972,7 +12972,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -12990,7 +12990,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13018,12 +13018,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\SOFA2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\SOFA2.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13047,7 +13047,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13071,7 +13071,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13087,7 +13087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13105,7 +13105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13133,7 +13133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\WALLDESK.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\WALLDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13157,7 +13157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13181,7 +13181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13205,7 +13205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\WALLDESK.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\WALLDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13229,7 +13229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13253,7 +13253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13269,7 +13269,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13287,7 +13287,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13315,7 +13315,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\TOY_CORE_PRESCALE.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\TOY_CORE_PRESCALE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13331,7 +13331,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13349,7 +13349,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13359,7 +13359,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -13382,7 +13382,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLOCOMBAT.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLOCOMBAT.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13406,7 +13406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\COMBATFRIGATELOD2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\COMBATFRIGATELOD2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13422,7 +13422,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13440,7 +13440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13468,7 +13468,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLODIPLOMATIC.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLODIPLOMATIC.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13492,7 +13492,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\DIPLOMATICFRIGATELOD1.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\DIPLOMATICFRIGATELOD1.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13508,7 +13508,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13526,7 +13526,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13554,12 +13554,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\SCENES\HOLODIPLOMATIC.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\SCENES\HOLODIPLOMATIC.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13575,7 +13575,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13593,7 +13593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13603,7 +13603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -13626,7 +13626,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLOINDUSTRIAL.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLOINDUSTRIAL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13650,7 +13650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\INDUSTRIALFRIGATELOD2.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\INDUSTRIALFRIGATELOD2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13666,7 +13666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13684,7 +13684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13712,7 +13712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\NORMANDYFRIGATELOD1.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\NORMANDYFRIGATELOD1.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13728,7 +13728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13746,7 +13746,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13774,12 +13774,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\SCENES\HOLONORMANDY.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\SCENES\HOLONORMANDY.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13795,7 +13795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13813,7 +13813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13823,7 +13823,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -13846,7 +13846,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLOSCIENCE.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLOSCIENCE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13870,7 +13870,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\SCIENCEFRIGATELOD1.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\SCIENCEFRIGATELOD1.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13886,7 +13886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13904,7 +13904,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -13932,7 +13932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLOSUPPORT.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\HOLOGRAMFRIGATES\HOLOSUPPORT.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13956,7 +13956,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FRIGATES\SUPPORTFRIGATELOD1.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\SUPPORTFRIGATELOD1.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -13972,7 +13972,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -13990,7 +13990,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -14018,12 +14018,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\SCENES\HOLOSUPPORT.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\SCENES\HOLOSUPPORT.SCENE.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\TKROTATEMEDIUM.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -14039,7 +14039,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\EFFECTS\SPHERE"..[[" />
+  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -14057,7 +14057,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -14085,7 +14085,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS_MAIN.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS_MAIN.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -14109,7 +14109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\JJSBRIDGE\BREAKABLES\SHADOWMESH.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\JJSBRIDGE\BREAKABLES\SHADOWMESH.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />

@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NotificationMissionHintTimeSecondary","999999"},
                                 {"MessageNotificationTime","6"},
                                 {"MessageTimeQuick","3"},
-                                {"PlanetLabelTime","999"},
+                                {"PlanetLabelTime","1"},
                                 {"DiscoverPlanetTotalTime","5"},
                                 {"DiscoverPlanetMessageWait","0"},
                                 {"DiscoverPlanetMessageTime","3"},
