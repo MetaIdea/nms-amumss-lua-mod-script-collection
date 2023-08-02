@@ -227,7 +227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB\PARTS\DUDENGINEBTHRUSTER"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB\PARTS\DUDENGINEBTHRUSTER" />
   <Property name="NameHash" value="3821677782" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -431,7 +431,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEGLOW_MAT.MATERIAL.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEGLOW_MAT.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -574,7 +574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -698,7 +698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -822,7 +822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -970,7 +970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINES_B_MAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINES_B_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -980,7 +980,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENTITIES\ENGINEB.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENTITIES\ENGINEB.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />

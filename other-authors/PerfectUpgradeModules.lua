@@ -1,16 +1,16 @@
 -- Perfect Upgrade Modules
 -- Author: DarkScythe
 -- Date Created: Jul 18, 2022
--- Last Updated: Nov 14, 2022
+-- Last Updated: Aug 01, 2023
 --------------------------------------------------------------------------------
 modName		= "PerfectUpgradeModules"
 batchName	= ""
 modAuthor	= "DarkScythe"
 modMaint	= "DarkScythe"
 modDesc		= "Overrides all upgrade modules to have the best possible vanilla stats, with optional custom power scaling"
-modVer		= "1.0"
+modVer		= "1.1"
 scriptVer	= "a"
-gameVer		= "4.06"
+gameVer		= "4.38"
 
 --[[
 Enter a number here to set the approximate Power Scaling of upgrade module stats
@@ -605,6 +605,73 @@ end
 -- This is AFTER the script has completed updating all stat values
 -- Use this block for changes that should not be adjusted, or for
 -- overriding values that have already been changed by this script
+
+-- NOTE:
+-- The v4.30 "Singularity" Update buffed Neutron Cannon upgrades
+-- Unfortunately, HG forgot/overlooked the X-class Neutron Cannon upgrades
+-- As a result, Neutron Cannon X-class upgrades are currently worse than S-class
+-- This is an OPTIONAL override with some arbitrary values to make them better
+-- Will be unnecessary whenever HG fixes this officially
+-- Change the numerical values below as desired (ChargeTime is better when lower)
+-- Additional overrides can be added to any modules by following the same pattern
+
+-- To scale these, use "lin" if the stat name appears in the scaleLinear pool above
+-- Use "exp" if they appear in any other pool, or omit entirely to force hardcoding
+overrideStats = {
+	{"UP_CANNX",	"Weapon_Projectile_Damage",				20,		"lin"},
+	{"UP_CANNX",	"Weapon_ChargedProjectile_ExtraSpeed",	30,		"lin"},
+	{"UP_CANNX",	"Weapon_ChargedProjectile_ChargeTime",	0.45,	"exp"},
+}
+
+-- If the above Override Table is not empty, we'll process its entries
+if #overrideStats > 0 then
+	for i = 1, #overrideStats do
+		-- We need to insert the necessary keywords for AMUMSS' SKW to function
+		table.insert(overrideStats[i], 1, "ID")
+		table.insert(overrideStats[i], 3, statKey)
+
+		-- Cache the last two parameters we'll need to figure out new stat values
+		-- Not strictly necessary, but makes the next sections far easier to read
+		local statVal	= overrideStats[i][5]
+		local scaling	= overrideStats[i][6]
+
+		-- If powerScale is changed, then we need to scale the overrides too
+		-- Because this override pool may be a mix of stats with different scaling,
+		-- we can't re-use the createScalarEntry() function earlier in the script
+		if powerScale ~= 1 then
+			-- However, we only check for an explicit scaling parameter
+			-- This allows for non-scaling hardcoded entries if the last
+			-- parameter is left blank/empty
+			if scaling == "lin" then
+				statVal = statVal * powerScale
+			elseif scaling == "exp" then
+				statVal = statVal ^ powerScale
+			end
+		end
+
+		-- Begin adding entries for AMUMSS to process
+		statModTable[#statModTable + 1] = {
+			SKW				= {table.unpack(overrideStats[i], 1, 4)},
+			SECTION_UP		= 1,
+			REPLACE_TYPE	= "ALL",
+			ITF				= "FORCE",
+			VCT				= {
+				{statMin,	statVal},
+				{statMax,	statVal},
+			},
+		}
+	end
+end
+--]]
+
+--[[
+-- Add a third dash to the beginning of the PREVIOUS line to enable this block
+------------------------------------------------------------------------------
+-- As before, this is AFTER the script has completed updating all stat values
+-- INCLUDING the overrides set directly above this block
+-- Use this block for any additional changes necessary, such as the addition
+-- of new Upgrade Modules, or to add/remove stats, to merge another mod, etc.
+-- Multiple blocks may be needed (just copy/paste them sequentially for each action)
 statModTable[#statModTable + 1] = {
 	-----------------------------------------------------------------------
 	---- Merge additional changes to GCPROCEDURALTECHNOLOGYTABLE below ----

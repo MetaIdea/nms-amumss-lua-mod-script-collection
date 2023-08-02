@@ -68,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\DROPHEADLIGHTS.SCENE.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\DROPHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTHEADLIGHTS.SCENE.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -254,7 +254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTCGOLDHEADLIGHTS.SCENE.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTCGOLDHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -291,7 +291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\VRSPEEDERHEADLIGHTS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\VRSPEEDERHEADLIGHTS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -711,7 +711,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\SAILHEADLIGHTS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\SAILHEADLIGHTS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -777,7 +777,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\SCIHEADLIGHTS.SCENE.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\SCIHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -949,7 +949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="SCENEGRAPH" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ROYALHEADLIGHTS.SCENE.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ROYALHEADLIGHTS.SCENE.MBIN" />
                 </Property>
               </Property>
               <Property name="Children" />
@@ -980,7 +980,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="SCENEGRAPH" />
                   <Property name="AltID" value="" />
-                  <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\SQUIDHEADLIGHTS.SCENE.MBIN"..[[" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\SQUIDHEADLIGHTS.SCENE.MBIN" />
                 </Property>
               </Property>
               <Property name="Children" />
@@ -1046,7 +1046,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\BIOHEADLIGHTS.SCENE.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\BIOHEADLIGHTS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1112,7 +1112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\SENTINELSHIPHEADLIGHTS.SCENE.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\SENTINELSHIPHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -1211,7 +1211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1235,7 +1235,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1259,7 +1259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1283,7 +1283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1326,7 +1326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1350,7 +1350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1374,7 +1374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1398,7 +1398,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1448,7 +1448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1472,7 +1472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1496,7 +1496,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1520,7 +1520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1563,7 +1563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1587,7 +1587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1611,7 +1611,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1635,7 +1635,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1678,7 +1678,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1702,7 +1702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1726,7 +1726,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1750,7 +1750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1800,7 +1800,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1824,7 +1824,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1848,7 +1848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1872,7 +1872,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1915,7 +1915,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1939,7 +1939,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1963,7 +1963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1987,7 +1987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2030,7 +2030,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2054,7 +2054,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2078,7 +2078,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2102,7 +2102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2152,7 +2152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2176,7 +2176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2200,7 +2200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2224,7 +2224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2267,7 +2267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2291,7 +2291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN"..[[" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -2324,7 +2324,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\SHUTHEADLIGHTS.SCENE.MBIN"..[[" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\SHUTHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -2355,7 +2355,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB\PARTS\DUDENGINEBTHRUSTER"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB\PARTS\DUDENGINEBTHRUSTER" />
   <Property name="NameHash" value="3821677782" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -2373,7 +2373,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER.GEOMETRY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
@@ -2559,7 +2559,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEGLOW_MAT.MATERIAL.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEGLOW_MAT.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -2702,7 +2702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -2826,7 +2826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -2950,7 +2950,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN"..[[" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINEJET_MAT.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -3098,7 +3098,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINES_B_MAT.MATERIAL.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENGINES_B_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -3108,7 +3108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENTITIES\ENGINEB.ENTITY.MBIN"..[[" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\PARTS\ENGINEBTHRUSTER\ENTITIES\ENGINEB.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3124,7 +3124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\DROPHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\DROPHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -3142,7 +3142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\ENTITIES\DROPHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\ENTITIES\DROPHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -3334,7 +3334,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTCGOLDHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTCGOLDHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -3352,7 +3352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\FIGHTCGOLDHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\FIGHTCGOLDHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -3421,7 +3421,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -3439,7 +3439,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\FIGHTHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\FIGHTHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -3508,7 +3508,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\VRSPEEDERHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\VRSPEEDERHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -3526,7 +3526,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\VRSPEEDERHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\VRSPEEDERHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -3964,7 +3964,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\SAILHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\SAILHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -3982,7 +3982,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\ENTITIES\SAILHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\ENTITIES\SAILHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -4174,7 +4174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\SCIHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\SCIHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -4192,7 +4192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\ENTITIES\SCIHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\ENTITIES\SCIHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -4384,7 +4384,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\BIOHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\BIOHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -4402,7 +4402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\BIOHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\BIOHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -4594,7 +4594,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ROYALHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ROYALHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -4612,7 +4612,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\ROYALHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\ROYALHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -4804,7 +4804,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\SQUIDHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\SQUIDHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -4822,7 +4822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\SQUIDHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\SQUIDHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -5014,7 +5014,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\SENTINELSHIPHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\SENTINELSHIPHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -5032,7 +5032,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\ENTITIES\SENTINELSHIPHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\ENTITIES\SENTINELSHIPHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
@@ -5101,7 +5101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\SHUTHEADLIGHTS"..[[" />
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\SHUTHEADLIGHTS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -5119,7 +5119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="]].."MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\ENTITIES\SHUTHEADLIGHTS.ENTITY.MBIN"..[[" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\ENTITIES\SHUTHEADLIGHTS.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children">
