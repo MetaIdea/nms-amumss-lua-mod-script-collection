@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "430"
-METADATA_LOCATIZATION   = "LOC7"
+METADATA_NMS_VERSION    = "438"
+METADATA_LOCALIZATION   = "LOC7"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 7."
 
 -- credits:
@@ -40,6 +40,9 @@ TEXT_DIFFICULTY_MULTIPLAYER = "- Not available during Nexus mission or Multiplay
 -- fixed typo in Nitrogen in names of refining recipies
 TEXT_NITROGEN_REFINING = "Harness Organic Nitrogen"
 
+-- Vesper Sail - launch systems recharge when ship is not in operation
+TEXT_SAIL_RECHARGE = "A high-performance &lt;STELLAR&gt;solar sail&lt;&gt;, deployed automatically during flight. This advanced &lt;TECHNOLOGY&gt;propulsion device&lt;&gt; generates an electric field within the sails themselves, allowing the starship to build momentum from the solar wind.&#xA;&#xA;Offers substantial gains in &lt;STELLAR&gt;fuel efficiency&lt;&gt; and &lt;STELLAR&gt;boost&lt;&gt; performance over conventional engine systems. Additionally it enables photovoltaic &lt;STELLAR&gt;recharge&lt;&gt; of the starship's &lt;TECHNOLOGY&gt;launch systems&lt;&gt; while the ship is not in operation."
+
 
 
 ----------------------------------------------------------------------------------------------------
@@ -64,6 +67,7 @@ DATA =
     R_NAME_PLANT_WATER_CATALYST1 = TEXT_NITROGEN_REFINING,
     R_NAME_PLANT_CAVE_CATALYST2 = TEXT_NITROGEN_REFINING,
     R_NAME_PLANT_WATER_CATALYST2 = TEXT_NITROGEN_REFINING,
+    UI_SOLAR_SAIL_DESC = TEXT_SAIL_RECHARGE,
 }
 
 
@@ -74,7 +78,7 @@ DATA =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_LOCATIZATION.."_"..METADATA_NMS_VERSION..".pak",
+    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_LOCALIZATION.."_"..METADATA_NMS_VERSION..".pak",
     ["MOD_AUTHOR"]		    = METADATA_MOD_AUTHOR,
     ["LUA_AUTHOR"]		    = METADATA_LUA_AUTHOR,
     ["NMS_VERSION"]		    = METADATA_NMS_VERSION,

@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "430"
-METADATA_LOCATIZATION   = "LOC3"
+METADATA_NMS_VERSION    = "438"
+METADATA_LOCALIZATION   = "LOC3"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 3."
 
 -- credits:
@@ -31,6 +31,9 @@ TEXT_BETTERRATIO_REFINER2 = "A vital piece of planetary equipment. The &lt;TECHN
 -- changed verbiage for "better ratios" in refiners descriptions
 TEXT_BETTERRATIO_REFINER3 = "A vital piece of planetary equipment. The &lt;TECHNOLOGY&gt;Refiner&lt;&gt; allows gathered substances to be processed into more powerful and more advanced materials.&#xA;&#xA;The Large Refiner features &lt;COMMODITY&gt;three&lt;&gt; input slots, allowing user to combine more substances and utilise new refining techniques.&#xA;&#xA;The Large Refiner must be installed in a &lt;VAL_ON&gt;Habitable Base&lt;&gt;, but does not require additional power sources."
 
+-- specified teleporter range
+TEXT_TELEPORTER_RANGE = "A device that modulates standard starship communication signals to &lt;TECHNOLOGY&gt;enable the transport of matter&lt;&gt; as well as data.&#xA;&#xA;Starships fitted with such a device can send and receive products and substances to a user's exosuit over a distance of &lt;VAL_ON&gt;up to 150 units&lt;&gt;."
+
 
 
 ----------------------------------------------------------------------------------------------------
@@ -47,6 +50,7 @@ DATA =
     UI_PLANT_11_DESC = TEXT_NIPNIP_GROWTIME,
     REFINER2_DESC = TEXT_BETTERRATIO_REFINER2,
     REFINER3_DESC = TEXT_BETTERRATIO_REFINER3,
+    SHIP_TELEPORT_DESC = TEXT_TELEPORTER_RANGE,
 }
 
 
@@ -57,7 +61,7 @@ DATA =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_LOCATIZATION.."_"..METADATA_NMS_VERSION..".pak",
+    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_LOCALIZATION.."_"..METADATA_NMS_VERSION..".pak",
     ["MOD_AUTHOR"]		    = METADATA_MOD_AUTHOR,
     ["LUA_AUTHOR"]		    = METADATA_LUA_AUTHOR,
     ["NMS_VERSION"]		    = METADATA_NMS_VERSION,
