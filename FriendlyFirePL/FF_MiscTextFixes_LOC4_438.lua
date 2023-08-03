@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "430"
-METADATA_LOCATIZATION   = "LOC4"
+METADATA_NMS_VERSION    = "438"
+METADATA_LOCALIZATION   = "LOC4"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 4."
 
 -- credits:
@@ -31,63 +31,6 @@ TEXT_SUBMARINE_RECHARGE = "Installed into the drive system aboard the &lt;STELLA
 -- fixed typo in Nitrogen in names of refining recipies
 TEXT_NITROGEN_REFINING = "Requested Operation: Harness Organic Nitrogen"
 
--- new crafting tooltip for Warp Hypercore
-PROPERTY_CRAFT_HYPERCORE =
-[[<Property value="TkLocalisationEntry.xml">
-<Property name="Id" value="UI_PIN_HYPERFUEL2_OBJ_TIP" />
-<Property name="English" value="VariableSizeString.xml">
-  <Property name="Value" value="Craft %ITEM% from &lt;FUEL&gt;Antimatter&lt;&gt; and &lt;RARE&gt;Storm Crystal&lt;&gt;. Use &lt;IMG&gt;PRODMENU&lt;&gt; to craft in empty &lt;TECHNOLOGY&gt;Inventory Slots&lt;&gt;." />
-</Property>
-<Property name="French" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="Italian" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="German" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="Spanish" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="Russian" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="Polish" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="Dutch" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="Portuguese" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="LatinAmericanSpanish" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="BrazilianPortuguese" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="SimplifiedChinese" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="TraditionalChinese" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="TencentChinese" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="Korean" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="Japanese" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-<Property name="USEnglish" value="VariableSizeString.xml">
-  <Property name="Value" value="" />
-</Property>
-</Property>]]
-
 -- label for portal glyphs with no name assigned
 TEXT_DATA_CORRUPTED = "// DATA CORRUPTED //"
 
@@ -100,7 +43,6 @@ TEXT_PORTALGLYPH_05 = "THE OBSCURED COMPANION"
 TEXT_PORTALGLYPH_06 = "THE ASCENDING ORB"
 TEXT_PORTALGLYPH_07 = "THE SAILOR"
 TEXT_PORTALGLYPH_08 = "THE LOWLY INSECT"
-
 TEXT_PORTALGLYPH_09 = TEXT_DATA_CORRUPTED
 TEXT_PORTALGLYPH_10 = "THE SPIRAL OF REALITY"
 TEXT_PORTALGLYPH_11 = "THE ANOMALY"
@@ -109,6 +51,65 @@ TEXT_PORTALGLYPH_13 = TEXT_DATA_CORRUPTED
 TEXT_PORTALGLYPH_14 = "THE VESSEL TO BEYOND"
 TEXT_PORTALGLYPH_15 = TEXT_DATA_CORRUPTED
 TEXT_PORTALGLYPH_16 = TEXT_DATA_CORRUPTED
+
+-- new crafting tooltip for Warp Hypercore
+PROPERTY_CRAFT_HYPERCORE =
+[[
+<Property value="TkLocalisationEntry.xml">
+  <Property name="Id" value="UI_PIN_HYPERFUEL2_OBJ_TIP" />
+  <Property name="English" value="VariableSizeString.xml">
+    <Property name="Value" value="Craft %ITEM% from &lt;FUEL&gt;Antimatter&lt;&gt; and &lt;RARE&gt;Storm Crystal&lt;&gt;. Use &lt;IMG&gt;PRODMENU&lt;&gt; to craft in empty &lt;TECHNOLOGY&gt;Inventory Slots&lt;&gt;." />
+  </Property>
+  <Property name="French" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="Italian" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="German" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="Spanish" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="Russian" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="Polish" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="Dutch" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="Portuguese" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="LatinAmericanSpanish" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="BrazilianPortuguese" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="SimplifiedChinese" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="TraditionalChinese" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="TencentChinese" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="Korean" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="Japanese" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+  <Property name="USEnglish" value="VariableSizeString.xml">
+    <Property name="Value" value="" />
+  </Property>
+</Property>
+]]
 
 
 
@@ -132,7 +133,6 @@ DATA =
     RECIPE_PLANT_WATER_CATALYST1 = TEXT_NITROGEN_REFINING,
     RECIPE_PLANT_CAVE_CATALYST2 = TEXT_NITROGEN_REFINING,
     RECIPE_PLANT_WATER_CATALYST2 = TEXT_NITROGEN_REFINING,
-
     UI_GUIDE_PORTAL_01_NAME = TEXT_PORTALGLYPH_01,
     UI_GUIDE_PORTAL_02_NAME = TEXT_PORTALGLYPH_02,
     UI_GUIDE_PORTAL_03_NAME = TEXT_PORTALGLYPH_03,
@@ -141,7 +141,6 @@ DATA =
     UI_GUIDE_PORTAL_06_NAME = TEXT_PORTALGLYPH_06,
     UI_GUIDE_PORTAL_07_NAME = TEXT_PORTALGLYPH_07,
     UI_GUIDE_PORTAL_08_NAME = TEXT_PORTALGLYPH_08,
-
     UI_GUIDE_PORTAL_09_NAME = TEXT_PORTALGLYPH_09,
     UI_GUIDE_PORTAL_10_NAME = TEXT_PORTALGLYPH_10,
     UI_GUIDE_PORTAL_11_NAME = TEXT_PORTALGLYPH_11,
@@ -160,7 +159,7 @@ DATA =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_LOCATIZATION.."_"..METADATA_NMS_VERSION..".pak",
+    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_LOCALIZATION.."_"..METADATA_NMS_VERSION..".pak",
     ["MOD_AUTHOR"]		    = METADATA_MOD_AUTHOR,
     ["LUA_AUTHOR"]		    = METADATA_LUA_AUTHOR,
     ["NMS_VERSION"]		    = METADATA_NMS_VERSION,
