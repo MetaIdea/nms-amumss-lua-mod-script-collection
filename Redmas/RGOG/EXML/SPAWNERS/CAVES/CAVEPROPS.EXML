@@ -135,10 +135,10 @@
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-        <Property name="Coverage" value="1" />
-        <Property name="FlatDensity" value="0.7" />
+        <Property name="Coverage" value="0.31" />
+        <Property name="FlatDensity" value="0.37" />
         <Property name="SlopeDensity" value="0" />
-        <Property name="SlopeMultiplier" value="2.8" />
+        <Property name="SlopeMultiplier" value="1" />
           <Property name="MaxRegionRadius" value="9999" />
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
@@ -149,7 +149,7 @@
             <Property value="20" />
             <Property value="60" />
             <Property value="150" />
-            <Property value="500" />
+            <Property value="1500" />
           </Property>
         </Property>
         <Property name="QualityVariants" />

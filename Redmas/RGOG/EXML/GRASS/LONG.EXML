@@ -702,7 +702,7 @@
 
     			<Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
+        <Property name="Type" value="Single" />
         <Property name="Resource" value="GcResourceElement.xml">
          <Property name="Filename" value="MODELS\RGO\MEDIUMBUSH01.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
@@ -1919,7 +1919,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.15" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="199" />
@@ -1939,7 +1939,7 @@
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="0.2" />
-            <Property name="FlatDensity" value="0.1" />
+            <Property name="FlatDensity" value="0.11" />
             <Property name="SlopeDensity" value="0" />
             <Property name="SlopeMultiplier" value="3" />
             <Property name="MaxRegionRadius" value="10" />

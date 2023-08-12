@@ -408,7 +408,7 @@
 
     			<Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
+        <Property name="Type" value="Single" />
         <Property name="Resource" value="GcResourceElement.xml">
          <Property name="Filename" value="MODELS\RGO\MEDIUMBUSH01.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">

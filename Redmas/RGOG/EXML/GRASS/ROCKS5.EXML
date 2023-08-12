@@ -1099,7 +1099,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.15" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />

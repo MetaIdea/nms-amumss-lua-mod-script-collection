@@ -476,10 +476,10 @@ OFTEN_SPAWN_R2 =----------------------------------------------------------------
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="20" />
-            <Property value="60" />
-            <Property value="150" />
-            <Property value="500" />
+            <Property value="120" />
+            <Property value="610" />
+            <Property value="1150" />
+            <Property value="1500" />
             </Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -513,10 +513,10 @@ OFTEN_SPAWN_R =-----------------------------------------------------------------
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="20" />
-            <Property value="60" />
-            <Property value="150" />
-            <Property value="500" />
+            <Property value="120" />
+            <Property value="610" />
+            <Property value="1150" />
+            <Property value="1500" />
             </Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -549,10 +549,10 @@ GIANT_OFTEN_SPAWN =-------------------------------------------------------------
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="120" />
-            <Property value="160" />
-            <Property value="1150" />
-            <Property value="1500" />
+            <Property value="1120" />
+            <Property value="1610" />
+            <Property value="2150" />
+            <Property value="2500" />
 						</Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -585,10 +585,10 @@ GIANT_SPARSE_SPAWN = -----------------------------------------------------------
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="120" />
-            <Property value="610" />
-            <Property value="1150" />
-            <Property value="1500" />
+            <Property value="1120" />
+            <Property value="1610" />
+            <Property value="2150" />
+            <Property value="2500" />
 						</Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -742,9 +742,9 @@ local interactButton = function(path)
             <Property name="RotX" value="0" />
             <Property name="RotY" value="0" />
             <Property name="RotZ" value="0" />
-            <Property name="ScaleX" value="1" />
-            <Property name="ScaleY" value="1" />
-            <Property name="ScaleZ" value="1" />
+            <Property name="ScaleX" value="0.1" />
+            <Property name="ScaleY" value="0.1" />
+            <Property name="ScaleZ" value="0.1" />
           </Property>
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
@@ -1531,10 +1531,10 @@ function generateORIGINSTREES
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
             <Property value="0" />
-            <Property value="120" />
-            <Property value="160" />
-            <Property value="150" />
-            <Property value="500" />
+            <Property value="1120" />
+            <Property value="1160" />
+            <Property value="1150" />
+            <Property value="1500" />
 									</Property>
 									</Property>
 									<Property name="QualityVariants">
@@ -1943,10 +1943,10 @@ function generateORIGINSTREESAlt
 									<Property name="FadeOutOffsetDistance" value="0" />
 									<Property name="LodDistances">
 										<Property value="0" />
-										<Property value="20" />
-										<Property value="60" />
-										<Property value="150" />
-										<Property value="500" />
+										<Property value="1120" />
+										<Property value="1160" />
+										<Property value="1250" />
+										<Property value="1500" />
 									</Property>
 									</Property>
 									<Property name="QualityVariants">
@@ -5146,10 +5146,10 @@ function generateMountainBiomes
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.8" />
+          <Property name="Coverage" value="0.18" />
           <Property name="FlatDensity" value="0.2" />
-          <Property name="SlopeDensity" value="0.7" />
-          <Property name="SlopeMultiplier" value="2.8" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="1" />
           <Property name="MaxRegionRadius" value="7" />
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="100" />
@@ -5160,7 +5160,7 @@ function generateMountainBiomes
             <Property value="8" />
             <Property value="15" />
             <Property value="25" />
-            <Property value="500" />
+            <Property value="1500" />
           </Property>
         </Property>
         <Property name="QualityVariants" />
@@ -14410,6 +14410,12 @@ if GAMEPLAY_OVERHAUL == "ON" then
 	)
 
 	-- INERACTIVE OBJECTS
+	copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVETABLE.SCENE.EXML]],[[MODELS\RGO\SAVETABLE.SCENE.EXML]])
+	copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVEPOINT.ENTITY.EXML]],[[MODELS\RGO\ENTITIES\SAVEPOINT.ENTITY.EXML]])
+
+
+ 	copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVETABLE.SCENE.EXML]],[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.EXML]])
+	
 	addFeature
 	(
 		NEW_INTERACTIONS_FEATURE,
@@ -14863,51 +14869,11 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					}
 				},
 				-- TRADING POST CUSTOM MODELS generation
-				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.MBIN]],
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"NameHash","2810148397"},
-							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
-							["SECTION_ACTIVE"] = {0,1,2,3},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Value",	[[MODELS\RGO\ENTITIES\SAVEPOINT.ENTITY.MBIN]]},
-							}
-						}
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.MBIN]],
-							[[MODELS\RGO\SAVETABLE.SCENE.MBIN]]
-					 	}
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT\ENTITIES\SAVEPOINT.ENTITY.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Anims"},
-							["REMOVE"] 	= "SECTION"
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"States"},
-							["REMOVE"] 	= "SECTION"
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT\ENTITIES\SAVEPOINT.ENTITY.MBIN]],
-							[[MODELS\RGO\ENTITIES\SAVEPOINT.ENTITY.MBIN]],
-							"REMOVE"
-					 	}
-					}
-				},
+				
+				
+				
+				
+
 				---- INTERACTIVE DECORATION ENTITIES generation
 				------------
 				{
@@ -15254,6 +15220,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				------------
 				-- INTERACTIVE DECORATION MODELS generation
 				-------------
+				
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BED.SCENE.MBIN]],
 					["EXML_CHANGE_TABLE"] 	=
@@ -15323,6 +15290,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				},
 				------------- 
 				-------------
+				
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.MBIN]],
 					["EXML_CHANGE_TABLE"] =
@@ -15346,6 +15314,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						},
 					}					
 				},
+				
 				-------------
 				-------------
 				-------------
@@ -19298,13 +19267,13 @@ addFeature(
 
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMBUSH01.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMBUSH02.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "10"
 			},
@@ -25599,6 +25568,18 @@ LUSHGRASSLIST =
 					</Property>
 					<Property value="NMSString0x80.xml">
 						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\ROCKS5.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\CAVEBIOMESPARSETOXIC.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\CAVEBIOMEMID.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\CAVEBIOMEGRASSBUSHES.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\CAVEBIOMEFULL.MBIN" />
 					</Property>
 					]]..SUBBIOMES_GR..[[
 						<Property value="NMSString0x80.xml">
@@ -32163,13 +32144,13 @@ end
 		(
 			"ON",
 			"R2/MEDIUMBUSH1.SCENE.EXML",
-			"MODELS/RGO/MEDIUMFALLENTREE2.SCENE.EXML"
+			"MODELS/RGO/MEDIUMBUSH1.SCENE.EXML"
 		)
 		copyEXML
 		(
 			"ON",
 			"R2/MEDIUMBUSH2.SCENE.EXML",
-			"MODELS/RGO/MEDIUMFALLENTREE2.SCENE.EXML"
+			"MODELS/RGO/MEDIUMBUSH2.SCENE.EXML"
 		)
 		copyEXML
 		(
@@ -33598,6 +33579,41 @@ end
 
 				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\LONG.EXML]],
 				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\GRASS\LONG.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\CAVEBIOMEFULL.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMEFULL.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+
+NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\CAVEBIOMEGRASSBUSHES.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMEGRASSBUSHES.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\CAVEBIOMEMID.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMEMID.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\CAVEBIOMESPARSETOXIC.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMESPARSETOXIC.EXML]]
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
