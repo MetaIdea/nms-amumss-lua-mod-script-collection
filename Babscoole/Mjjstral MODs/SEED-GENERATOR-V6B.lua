@@ -514,7 +514,7 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS"
                 elseif ANIM_ID == "ROYALMULTITOOL" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN05.DDS"
-                else ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
+                else ICON = "TEXTURES\UI\FRONTEND\COMPONENTS\STAR.DDS"
                 end
 
 
