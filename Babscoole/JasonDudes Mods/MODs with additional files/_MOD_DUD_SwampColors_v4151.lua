@@ -1,4 +1,4 @@
---Must get the TEXTURES folder from the orignal .pak and place into ModExtraFilesToInclude
+--Must get the TEXTURES folder from the orignal .pak and place into ModScript\GlobalMEFTI
 
 LushDataTable =
 {
