@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "BiggerVolcanoesByJST.pak",
+["MOD_FILENAME"]  = "JustSpaceThings_Volcanoes2023.pak",
 ["MOD_AUTHOR"]    = "JustSpaceThings",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.02",
+["NMS_VERSION"]   = "4.38",
 ["MODIFICATIONS"] =
     {
         {
@@ -17,8 +17,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MaxScale",  "7"}, -- Original "3"
-                                {"MaxScaleY", "3"}, -- Original "1"
+                                {"MaxScale",  "8"},   -- Original "3"
+                                {"MaxScaleY", "2"},   -- Original "1"
+                                {"Coverage",  "0.4"}, -- Original "0.2"
                             }
                         }
                     }
