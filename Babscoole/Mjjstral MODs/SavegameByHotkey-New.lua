@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "z-SavegameByHotkey-New.pak",
-["NMS_VERSION"]     = "4.34",
+["NMS_VERSION"]     = "4.40",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
 ["MODIFICATIONS"]   =
@@ -172,7 +172,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     {
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
@@ -228,7 +228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.ENTITY.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 

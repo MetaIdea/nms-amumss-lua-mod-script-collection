@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Overclocked Industry"
-GameVersion = "4.38"
+GameVersion = "4.40"
 --ModVersion = "v1.4"
 Description = "Power up Autonomous Mining, Atmosphere Harvester and Oxygen Harvester to harvest a full stack of 9999 in 5 minutes."
 
@@ -86,6 +86,26 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"MaxCapacity",Output},
                 {"AmountEmptyTimePeriod",WorkTime}
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
+          ["EXML_CHANGE_TABLE"] 	= 
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID","BUILDHARVESTER"},
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+                {"CanPickUp","True"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID","O2_HARVESTER"},
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+                {"CanPickUp","True"}
               }
             },
           }

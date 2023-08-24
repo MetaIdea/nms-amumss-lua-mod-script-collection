@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Deadzone III by Exosolar.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.34",
+["NMS_VERSION"]   = "4.40",
 ["MODIFICATIONS"] =
     {
         {
@@ -165,9 +165,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="SlopeMultiplier" value="1" />
             <Property name="MaxRegionRadius" value="9999" />
             <Property name="MaxImposterRadius" value="9999" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="FadeOutStartDistance" value="9999" />
+            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="300" />
@@ -257,9 +257,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="SlopeMultiplier" value="1" />
             <Property name="MaxRegionRadius" value="6" />
             <Property name="MaxImposterRadius" value="9999" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="FadeOutStartDistance" value="9999" />
+            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="300" />

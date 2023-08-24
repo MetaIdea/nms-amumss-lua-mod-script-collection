@@ -33,6 +33,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Id", "MB_STAND_NEG"},
 							["REMOVE"] = "SECTION",
 						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Id", "STD_DEC_BUI"},
+							["REMOVE"] = "SECTION",
+						},
 					},
 				},
 			}

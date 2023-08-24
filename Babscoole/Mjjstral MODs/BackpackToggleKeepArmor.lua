@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]     = "4.34",
+["NMS_VERSION"]     = "4.40",
 ["MODIFICATIONS"]   =
     {
         {
@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
@@ -205,7 +205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     {
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 

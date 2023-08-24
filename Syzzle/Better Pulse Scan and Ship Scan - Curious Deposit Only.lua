@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan and Ship Scan - Curious Deposit Only"
-GameVersion = "4.38"
+GameVersion = "4.40"
 --ModVersion = "v1.5"
 Description = "Curious Deposity now show up when you use Pulse Scan with Multitool or Exocraft, increased range and minimum amount of Buildings you can find with Ship Scan."
 

@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "438"
+METADATA_NMS_VERSION    = "440"
 METADATA_LOCALIZATION   = "LOC4"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 4."
 
@@ -18,9 +18,6 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 ----------------------------------------------------------------------------------------------------
 -- fixed text elements
 ----------------------------------------------------------------------------------------------------
-
--- fixed typo in commercial
-TEXT_COMMERCIAL_BUILD = "Commercial HoloTerminus"
 
 -- renamed sodium crystals
 TEXT_SODIUM_CRYSTALS = "Sodium Crystals"
@@ -126,7 +123,6 @@ PATH_PRODUCT_TABLE = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPRODUCTTABLE.MBIN
 -- data array
 DATA = 
 {
-    UI_BASE_SHOP_SUB = TEXT_COMMERCIAL_BUILD,
     UI_YELLOW_CRYSTAL_NAME = TEXT_SODIUM_CRYSTALS,
     UI_SUB_RECHARGE_DESC = TEXT_SUBMARINE_RECHARGE,
     RECIPE_PLANT_CAVE_CATALYST1 = TEXT_NITROGEN_REFINING,

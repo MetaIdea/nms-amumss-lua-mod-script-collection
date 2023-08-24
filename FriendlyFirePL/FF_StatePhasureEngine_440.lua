@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "StatePhasureEngine"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "430"
+METADATA_NMS_VERSION    = "440"
 METADATA_MOD_DESC       = "Use Singularity Engine freighter tech on non-expedition game saves with State Phasure as the payment item."
 
 

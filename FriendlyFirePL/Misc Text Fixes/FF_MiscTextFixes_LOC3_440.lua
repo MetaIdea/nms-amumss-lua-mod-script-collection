@@ -4,9 +4,9 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "438"
-METADATA_LOCALIZATION   = "LOC8"
-METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 8."
+METADATA_NMS_VERSION    = "440"
+METADATA_LOCALIZATION   = "LOC3"
+METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 3."
 
 -- credits:
 -- bk201                                        pointing out typos, providing feedback on changes
@@ -19,29 +19,20 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 -- fixed text elements
 ----------------------------------------------------------------------------------------------------
 
--- changed description for Anti-Gravity Well (recharge functionality)
-TEXT_GRAVITYWELL_RECHARGE = "Gently detaches the starship from gravitational fields, lifting it toward the stars.&#xA; &#xA;The well hungers for &lt;SPECIAL&gt;pugneum&lt;&gt; or &lt;SPECIAL&gt;radiant shards&lt;&gt;, and must be sufficiently fueled before launch. When in slumber, it dreams of realm of &lt;SPECIAL&gt;g l a s s&lt;&gt;, harnessing the otherworldly energy to &lt;STELLAR&gt;recharge&lt;&gt; the starship's transcendental &lt;TECHNOLOGY&gt;launch systems&lt;&gt;.&#xA;&#xA;Hold &lt;IMG&gt;THRUST&lt;&gt; to take off from planet.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost."
+-- removed double dot from Cactus Flesh description
+TEXT_CACTUSFLESH_DESC = "Succulent, edible cactus flesh from the &lt;TRADEABLE&gt;Echinocactus plant&lt;&gt;. As well as being juicy on the tongue, the flesh has many industrial uses.&#xA;&#xA;The Echinocactus thrives only on &lt;STELLAR&gt;desert planets&lt;&gt;, but can be farmed in all environments with the aid of a &lt;TECHNOLOGY&gt;Hydroponics Tray&lt;&gt;."
 
--- label for portal glyphs that have no name assigned
-TEXT_DATA_CORRUPTED = "// DATA CORRUPTED //"
+-- fixed description of NipNip
+TEXT_NIPNIP_GROWTIME = "This medicinal herb is known for its pungent buds, which are harvested to produce Gek Nip. NipNip thrives in dank environments, and often grows as a weed.&#xA;&#xA;Suitable for hydroponic indoor planting. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;4 hours&lt;&gt;"
 
--- portal glyph names from Starbirth quest
-TEXT_PORTALGLYPH_01 = "THE STAR OVER WATER"
-TEXT_PORTALGLYPH_02 = "THE HUNTER"
-TEXT_PORTALGLYPH_03 = "THE REFLECTION"
-TEXT_PORTALGLYPH_04 = "THE ANCIENT GIANT"
-TEXT_PORTALGLYPH_05 = "THE OBSCURED COMPANION"
-TEXT_PORTALGLYPH_06 = "THE ASCENDING ORB"
-TEXT_PORTALGLYPH_07 = "THE SAILOR"
-TEXT_PORTALGLYPH_08 = "THE LOWLY INSECT"
-TEXT_PORTALGLYPH_09 = TEXT_DATA_CORRUPTED
-TEXT_PORTALGLYPH_10 = "THE SPIRAL OF REALITY"
-TEXT_PORTALGLYPH_11 = "THE ANOMALY"
-TEXT_PORTALGLYPH_12 = "THE OCEAN KING"
-TEXT_PORTALGLYPH_13 = TEXT_DATA_CORRUPTED
-TEXT_PORTALGLYPH_14 = "THE VESSEL TO BEYOND"
-TEXT_PORTALGLYPH_15 = TEXT_DATA_CORRUPTED
-TEXT_PORTALGLYPH_16 = TEXT_DATA_CORRUPTED
+-- changed verbiage for "better ratios" in refiners descriptions
+TEXT_BETTERRATIO_REFINER2 = "A vital piece of planetary equipment. The &lt;TECHNOLOGY&gt;Refiner&lt;&gt; allows gathered substances to be processed into more powerful and more advanced materials.&#xA;&#xA;The Medium Refiner features &lt;COMMODITY&gt;two&lt;&gt; input slots, allowing user to combine more substances and utilise new refining techniques.&#xA;&#xA;The Medium Refiner must be installed in a &lt;VAL_ON&gt;Habitable Base&lt;&gt;, but does not require additional power sources."
+
+-- changed verbiage for "better ratios" in refiners descriptions
+TEXT_BETTERRATIO_REFINER3 = "A vital piece of planetary equipment. The &lt;TECHNOLOGY&gt;Refiner&lt;&gt; allows gathered substances to be processed into more powerful and more advanced materials.&#xA;&#xA;The Large Refiner features &lt;COMMODITY&gt;three&lt;&gt; input slots, allowing user to combine more substances and utilise new refining techniques.&#xA;&#xA;The Large Refiner must be installed in a &lt;VAL_ON&gt;Habitable Base&lt;&gt;, but does not require additional power sources."
+
+-- specified teleporter range
+TEXT_TELEPORTER_RANGE = "A device that modulates standard starship communication signals to &lt;TECHNOLOGY&gt;enable the transport of matter&lt;&gt; as well as data.&#xA;&#xA;Starships fitted with such a device can send and receive products and substances to a user's exosuit over a distance of &lt;VAL_ON&gt;up to 150 units&lt;&gt;."
 
 
 
@@ -50,28 +41,16 @@ TEXT_PORTALGLYPH_16 = TEXT_DATA_CORRUPTED
 ----------------------------------------------------------------------------------------------------
 
 -- localization file path
-PATH_LANGUAGE = "LANGUAGE\\NMS_LOC8_ENGLISH.MBIN"
+PATH_LANGUAGE = "LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN"
 
 -- data array
 DATA = 
 {
-    UI_LAUNCHER_ROBO_DESC = TEXT_GRAVITYWELL_RECHARGE,
-    UI_PORTAL_GLYPH_NAME_1 = TEXT_PORTALGLYPH_01,
-    UI_PORTAL_GLYPH_NAME_2 = TEXT_PORTALGLYPH_02,
-    UI_PORTAL_GLYPH_NAME_3 = TEXT_PORTALGLYPH_03,
-    UI_PORTAL_GLYPH_NAME_4 = TEXT_PORTALGLYPH_04,
-    UI_PORTAL_GLYPH_NAME_5 = TEXT_PORTALGLYPH_05,
-    UI_PORTAL_GLYPH_NAME_6 = TEXT_PORTALGLYPH_06,
-    UI_PORTAL_GLYPH_NAME_7 = TEXT_PORTALGLYPH_07,
-    UI_PORTAL_GLYPH_NAME_8 = TEXT_PORTALGLYPH_08,
-    UI_PORTAL_GLYPH_NAME_9 = TEXT_PORTALGLYPH_09,
-    UI_PORTAL_GLYPH_NAME_10 = TEXT_PORTALGLYPH_10,
-    UI_PORTAL_GLYPH_NAME_11 = TEXT_PORTALGLYPH_11,
-    UI_PORTAL_GLYPH_NAME_12 = TEXT_PORTALGLYPH_12,
-    UI_PORTAL_GLYPH_NAME_13 = TEXT_PORTALGLYPH_13,
-    UI_PORTAL_GLYPH_NAME_14 = TEXT_PORTALGLYPH_14,
-    UI_PORTAL_GLYPH_NAME_15 = TEXT_PORTALGLYPH_15,
-    UI_PORTAL_GLYPH_NAME_16 = TEXT_PORTALGLYPH_16,
+    UI_PLANTSUB_BARREN_DESC = TEXT_CACTUSFLESH_DESC,
+    UI_PLANT_11_DESC = TEXT_NIPNIP_GROWTIME,
+    REFINER2_DESC = TEXT_BETTERRATIO_REFINER2,
+    REFINER3_DESC = TEXT_BETTERRATIO_REFINER3,
+    SHIP_TELEPORT_DESC = TEXT_TELEPORTER_RANGE,
 }
 
 

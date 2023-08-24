@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan and Ship Scan"
-GameVersion = "4.38"
+GameVersion = "4.40"
 --ModVersion = "v1.8"
 Description = "Rare resources and other things now show up when you use Pulse Scan with Multitool or Exocraft, increased range and minimum amount of Buildings you can find with Ship Scan."
 

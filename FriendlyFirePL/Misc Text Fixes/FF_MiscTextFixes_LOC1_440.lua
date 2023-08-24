@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "438"
+METADATA_NMS_VERSION    = "440"
 METADATA_LOCALIZATION   = "LOC1"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 1."
 
@@ -30,9 +30,6 @@ TEXT_SAVE_MULTIPLAYER = SL.."Multiplayer"..SL.."Player position not saved."..NL.
 -- new save message for Nexus mission
 TEXT_SAVE_NEXUSMISSION = SL.." Nexus mission "..SL.." Player inventory saved."..NL..HS.."Mission progress and player position not saved."
 
--- fixed typo in author's name (seriously HG, what the actual fuck)
-TEXT_DEATH_AUTHOR = "- KURT VONNEGUT, A MAN WITHOUT A COUNTRY"
-
 -- fixed typo in Traveller
 TEXT_TRAVELLER_DIALOGUE = "Have the travellers come? Are they here?"
 
@@ -54,6 +51,13 @@ TEXT_HAZARDPROT_RADIO = "Greatly reduces user peril during the exploration of ir
 -- changed label on the ship buy option to fit the screen
 TEXT_BUY_STARSHIP = "Buy the lifeform's starship"
 
+-- new verbiage for Multi-Tool damage potential stats
+TEXT_LABEL_DAMAGESTAT = "Damage Per Second"
+
+-- changes to AtlasPasses desctiptions
+TEXT_ATLASPASS_V2 = "Security and permissions pass granted to specific travellers by many primary galactic species.&#xA; &#xA;Provides access to mid-tier restricted areas and outpost systems. Can be used to overwrite AtlasPass v1 credentials."
+TEXT_ATLASPASS_V3 = "Security and permissions pass granted to specific travellers by many primary galactic species.&#xA; &#xA;Provides access to high level restricted areas and outpost systems. Can be used to overwrite both AtlasPass v1 and v2 credentials."
+
 
 
 ----------------------------------------------------------------------------------------------------
@@ -68,7 +72,6 @@ DATA =
 {
     INTRCT_SAVE_NO_POS = TEXT_SAVE_MULTIPLAYER,
     INTRCT_SAVE_NO_POS_NEXUS = TEXT_SAVE_NEXUSMISSION,
-    DEATH_AUTHOR_12 = TEXT_DEATH_AUTHOR,
     EXP_1_PORT_LANG_1 = TEXT_TRAVELLER_DIALOGUE,
     SUIT_ENERGY_REGEN = TEXT_LIFESUPPORT_SOLAR,
     HYPERFUEL1_DESCRIPTION = TEXT_WARPCELL_TYPO,
@@ -78,6 +81,9 @@ DATA =
     TOX1_DESCRIPTION = TEXT_HAZARDPROT_TOXIC,
     RAD1_DESCRIPTION = TEXT_HAZARDPROT_RADIO,
     NPC_TRADER_BUY_SHIP = TEXT_BUY_STARSHIP,
+    STATS_WEAPON_ATTACK = TEXT_LABEL_DAMAGESTAT,
+    ACCESS2_DESCRIPTION = TEXT_ATLASPASS_V2,
+    ACCESS3_DESCRIPTION = TEXT_ATLASPASS_V3,
 }
 
 

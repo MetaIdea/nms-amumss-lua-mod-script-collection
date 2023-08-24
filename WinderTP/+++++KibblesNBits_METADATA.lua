@@ -3119,47 +3119,47 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             }
         }
     },
-    {
-        ["OBJECT"] = {
-            ["ID"] = "KNXVISTLGP4",
-            ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGP4_PLACEMENT.SCENE.MBIN",
-            ["Style"] = "None",
-            ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP4.SCENE.MBIN",
-            ["DecorationType"] = "Normal",
-            ["IsPlaceable"] = "True",
-            ["IsDecoration"] = "False",
-            ["Biome"] = "Lush",
-            ["BuildableOnFreighter"] = "True",
-            ["BuildableOnPlanet"] = "False",
-            ["CheckPlaceholderCollision"] = "False",
-            ["EnableCollision"] = "True",
-            ["CanScale"] = "True",
-            --["Group"] = "KIBBLESNBITS",
-            ["SubGroupName"] = { "KNXDECOR3" },
-            ["StorageContainerIndex"] = "-1",
-            ["CanChangeColour"] = "True",
-            ["CanChangeMaterial"] = "False",
-            ["RemovesAttachedDecoration"] = "False",
-            ["EditsTerrain"] = "False",
-            ["BaseTerrainEditShape"] = "Cube",
-            ["IsSealed"] = "False",
-            ["Connection"] = "DECOR",
-        },
-         ["PRODUCT"] = {
-            ["Name"] = "Large Prop 4",
-            ["NameLower"] = "Large Prop 4",
-            ["Subtitle"] = "Large Prop 4",
-            ["Description"] = "Large Prop 4",
-            ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP4_ICON.DDS",
-            ["Requirements"] = {
-                {
-                    ["ID"] = "FUEL1",
-                    ["InventoryType"] = "Substance",
-                    ["Amount"] = "5"
-                }
-            }
-        }
-    },
+    -- {
+        -- ["OBJECT"] = {
+            -- ["ID"] = "KNXVISTLGP4",
+            -- ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGP4_PLACEMENT.SCENE.MBIN",
+            -- ["Style"] = "None",
+            -- ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP4.SCENE.MBIN",
+            -- ["DecorationType"] = "Normal",
+            -- ["IsPlaceable"] = "True",
+            -- ["IsDecoration"] = "False",
+            -- ["Biome"] = "Lush",
+            -- ["BuildableOnFreighter"] = "True",
+            -- ["BuildableOnPlanet"] = "False",
+            -- ["CheckPlaceholderCollision"] = "False",
+            -- ["EnableCollision"] = "True",
+            -- ["CanScale"] = "True",
+            -- --["Group"] = "KIBBLESNBITS",
+            -- ["SubGroupName"] = { "KNXDECOR3" },
+            -- ["StorageContainerIndex"] = "-1",
+            -- ["CanChangeColour"] = "True",
+            -- ["CanChangeMaterial"] = "False",
+            -- ["RemovesAttachedDecoration"] = "False",
+            -- ["EditsTerrain"] = "False",
+            -- ["BaseTerrainEditShape"] = "Cube",
+            -- ["IsSealed"] = "False",
+            -- ["Connection"] = "DECOR",
+        -- },
+         -- ["PRODUCT"] = {
+            -- ["Name"] = "Large Prop 4",
+            -- ["NameLower"] = "Large Prop 4",
+            -- ["Subtitle"] = "Large Prop 4",
+            -- ["Description"] = "Large Prop 4",
+            -- ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP4_ICON.DDS",
+            -- ["Requirements"] = {
+                -- {
+                    -- ["ID"] = "FUEL1",
+                    -- ["InventoryType"] = "Substance",
+                    -- ["Amount"] = "5"
+                -- }
+            -- }
+        -- }
+    -- },
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBVFEATR1",
@@ -4021,47 +4021,47 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             }
         }
     },
-    {
-        ["OBJECT"] = {
-            ["ID"] = "KNXRSARCH",
-            ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRSARCH_PLACEMENT.SCENE.MBIN",
-            ["Style"] = "None",
-            ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/ARCH.SCENE.MBIN",
-            ["DecorationType"] = "Normal",
-            ["IsPlaceable"] = "True",
-            ["IsDecoration"] = "False",
-            ["Biome"] = "Lush",
-            ["BuildableOnFreighter"] = "True",
-            ["BuildableOnPlanet"] = "False",
-            ["CheckPlaceholderCollision"] = "False",
-            ["EnableCollision"] = "True",
-            ["CanScale"] = "True",
-            --["Group"] = "KIBBLESNBITS",
-            ["SubGroupName"] = { "KNXDECOR3" },
-            ["StorageContainerIndex"] = "-1",
-            ["CanChangeColour"] = "True",
-            ["CanChangeMaterial"] = "False",
-            ["RemovesAttachedDecoration"] = "False",
-            ["EditsTerrain"] = "False",
-            ["BaseTerrainEditShape"] = "Cube",
-            ["IsSealed"] = "False",
-            ["Connection"] = "DECOR",
-        },
-         ["PRODUCT"] = {
-            ["Name"] = "Nexus Arch",
-            ["NameLower"] = "Nexus Arch",
-            ["Subtitle"] = "Nexus Arch",
-            ["Description"] = "Nexus Arch",
-            ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRSARCH_ICON.DDS",
-            ["Requirements"] = {
-                {
-                    ["ID"] = "FUEL1",
-                    ["InventoryType"] = "Substance",
-                    ["Amount"] = "5"
-                }
-            }
-        }
-    },
+    -- {
+        -- ["OBJECT"] = {
+            -- ["ID"] = "KNXRSARCH",
+            -- ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRSARCH_PLACEMENT.SCENE.MBIN",
+            -- ["Style"] = "None",
+            -- ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/ARCH.SCENE.MBIN",
+            -- ["DecorationType"] = "Normal",
+            -- ["IsPlaceable"] = "True",
+            -- ["IsDecoration"] = "False",
+            -- ["Biome"] = "Lush",
+            -- ["BuildableOnFreighter"] = "True",
+            -- ["BuildableOnPlanet"] = "False",
+            -- ["CheckPlaceholderCollision"] = "False",
+            -- ["EnableCollision"] = "True",
+            -- ["CanScale"] = "True",
+            -- --["Group"] = "KIBBLESNBITS",a
+            -- ["SubGroupName"] = { "KNXDECOR3" },
+            -- ["StorageContainerIndex"] = "-1",
+            -- ["CanChangeColour"] = "True",
+            -- ["CanChangeMaterial"] = "False",
+            -- ["RemovesAttachedDecoration"] = "False",
+            -- ["EditsTerrain"] = "False",
+            -- ["BaseTerrainEditShape"] = "Cube",
+            -- ["IsSealed"] = "False",
+            -- ["Connection"] = "DECOR",
+        -- },
+         -- ["PRODUCT"] = {
+            -- ["Name"] = "Nexus Arch",
+            -- ["NameLower"] = "Nexus Arch",
+            -- ["Subtitle"] = "Nexus Arch",
+            -- ["Description"] = "Nexus Arch",
+            -- ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRSARCH_ICON.DDS",
+            -- ["Requirements"] = {
+                -- {
+                    -- ["ID"] = "FUEL1",
+                    -- ["InventoryType"] = "Substance",
+                    -- ["Amount"] = "5"
+                -- }
+            -- }
+        -- }
+    -- },
     {
         ["OBJECT"] = {
             ["ID"] = "KNXRSARCHS",
@@ -4815,7 +4815,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             ["CheckPlaceholderCollision"] = "False",
             ["EnableCollision"] = "True",
             ["CanScale"] = "True",
-            --["Group"] = "KIBBLESNBITS",
+            -- ["Group"] =  "KIBBLESNBITS",
             ["SubGroupName"] = { "KBPNEXUS" },
             ["StorageContainerIndex"] = "-1",
             ["CanChangeColour"] = "True",
@@ -4856,7 +4856,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             ["CheckPlaceholderCollision"] = "False",
             ["EnableCollision"] = "True",
             ["CanScale"] = "True",
-            --["Group"] = "KIBBLESNBITS",
+            -- ["Group"] = "KIBBLESNBITS",
             ["SubGroupName"] = { "KBPNEXUS" },
             ["StorageContainerIndex"] = "-1",
             ["CanChangeColour"] = "True",
@@ -9673,6 +9673,47 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             }
         }
     },
+    {
+        ["OBJECT"] = {
+            ["ID"] = "KPIPENEXU",
+            ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KPIPENEXU_PLACEMENT.SCENE.MBIN",
+            ["Style"] = "None",
+            ["Model"] = "CUSTOMMODELS/KIBBLES/PIPES/NEXUS/NEXUS_PIPE_REF.SCENE",
+            ["DecorationType"] = "SurfaceNormal",
+            ["IsPlaceable"] = "True",
+            ["IsDecoration"] = "False",
+            ["Biome"] = "Lush",
+            ["BuildableOnFreighter"] = "True",
+            ["BuildableOnPlanet"] = "False",
+            ["CheckPlaceholderCollision"] = "False",
+            ["EnableCollision"] = "True",
+            ["CanScale"] = "True",
+            --["Group"] = "KIBBLESNBITS",
+            ["SubGroupName"] = { "KPIPES" },
+            ["StorageContainerIndex"] = "-1",
+            ["CanChangeColour"] = "True",
+            ["CanChangeMaterial"] = "False",
+            ["RemovesAttachedDecoration"] = "False",
+            ["EditsTerrain"] = "False",
+            ["BaseTerrainEditShape"] = "Cube",
+            ["IsSealed"] = "False",
+            ["Connection"] = "DECOR",
+        },
+         ["PRODUCT"] = {
+            ["Name"] = "Nexus Pipes",
+            ["NameLower"] = "Nexus Pipes",
+            ["Subtitle"] = "Nexus Pipes",
+            ["Description"] = "Nexus Pipes",
+            ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPPIPENEXU_ICON.DDS",
+            ["Requirements"] = {
+                {
+                    ["ID"] = "FUEL1",
+                    ["InventoryType"] = "Substance",
+                    ["Amount"] = "5"
+                }
+            }
+        }
+    },
 }
 
 function GetBaseBuildingCost(ID, POPIN)
@@ -10528,7 +10569,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_BATCHNAME"]   = "~~~KibblesNBits_COMPATIBILITY.pak",
 ["MOD_DESCRIPTION"] = "Generates Metadata files and patch other mods with this script",
 ["MOD_AUTHOR"]      = "Kibbles, WinderTP, Babscoole",
-["NMS_VERSION"]     = "4.34",
+["NMS_VERSION"]     = "4.40",
 ["MODIFICATIONS"]   =
     {
         {

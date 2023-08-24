@@ -192,9 +192,6 @@ REWARDS_8 = {
     "RS_S8_PARTY1",
     "RS_S8_PARTY2",
     "RS_S8_PARTY3",
-    "RS_S8_S3M5",
-    "RS_S8_S3M6",
-    "RS_S8_S3M7",
 }
 
 REWARDS_9 = {
@@ -220,9 +217,6 @@ REWARDS_9 = {
     "RS_S9_PARTY3",
     "RS_S9_PARTY4",
     "RS_S9_PARTY5",
-    "RS_S9_S3M5",
-    "RS_S9_S3M6",
-    "RS_S9_S3M7",
 }
 
 REWARDS_10 = {
@@ -252,38 +246,68 @@ REWARDS_10 = {
     "RS_S10_PHASE4",
     "RS_S10_PHASE5",
     "RS_S10_PARTY",
-    "RS_S10_S1M1",
-    "RS_S10_S1M2",
-    "RS_S10_S1M3",
-    "RS_S10_S1M4",
-    "RS_S10_S1M5",
-    "RS_S10_S1M6",
-    "RS_S10_S1M7",
-    "RS_S10_S2M1",
-    "RS_S10_S2M2",
-    "RS_S10_S2M3",
-    "RS_S10_S2M4",
-    "RS_S10_S2M5",
-    "RS_S10_S2M6",
-    "RS_S10_S2M7",
-    "RS_S10_S3M1",
-    "RS_S10_S3M2",
-    "RS_S10_S3M3",
-    "RS_S10_S3M4",
-    "RS_S10_S4M1",
-    "RS_S10_S4M2",
-    "RS_S10_S4M3",
-    "RS_S10_S4M4",
-    "RS_S10_S4M5",
-    "RS_S10_S4M6",
-    "RS_S10_S5M1",
-    "RS_S10_S5M2",
-    "RS_S10_S5M3",
-    "RS_S10_S5M4",
-    "RS_S10_S5M5",
     "RS_S10_S5M6",
+    "RS_S10_S5M7",
 }
 
+REWARDS_11 = {
+-----SEASON 11 REWARDS-------
+	"RS_S11_EGG",
+	"RS_S11_COMPLETE",
+	"RS_S11_PHASE1",
+	"RS_S11_PHASE2",
+	"RS_S11_PHASE3",
+	"RS_S11_PHASE4",
+	"RS_S11_PHASE5",
+	"RS_S11_PARTY",
+	"RS_S11_S1M1",
+	"RS_S11_S1M2",
+	"RS_S11_S1M3",
+	"RS_S11_S1M4",
+	"RS_S11_S1M5",
+	"RS_S11_S1M6",
+	"RS_S11_S1M7",
+	"RS_S11_S2M1",
+	"RS_S11_S2M2",
+	"RS_S11_S2M3",
+	"RS_S11_S2M4",
+	"RS_S11_S2M5",
+	"RS_S11_S2M6",
+	"RS_S11_S2M7",
+	"RS_S11_S3M1",
+	"RS_S11_S3M2",
+	"RS_S11_S3M3",
+	"RS_S11_S3M4",
+	"RS_S11_S3M5",
+	"RS_S11_S3M6",
+	"RS_S11_S3M7",
+	"RS_S11_S4M1",
+	"RS_S11_S4M2",
+	"RS_S11_S4M3",
+	"RS_S11_S4M4",
+	"RS_S11_S4M5",
+	"RS_S11_S4M6",
+	"RS_S11_S4M7",
+	"RS_S11_S5M1",
+	"RS_S11_S5M2",
+	"RS_S11_S5M3",
+	"RS_S11_S5M4",
+	"RS_S11_S5M5",
+	"RS_S11_S5M6",
+	"RS_S11_S5M7",
+    "EXPD_EGG_11",
+    "EXPD_BANNER11",
+    "EXPD_TITLE11",
+    "EXPD_DECAL11",
+    "BLD_BUI_HEAD",
+    "BLD_BUI_HAND",
+    "BLD_BUI_TENT",
+    "EXPD_PETCUST11",
+    "EXPD_POSTER11C",
+    "EXPD_POSTER11B",
+    "EXPD_POSTER11A",
+    "JETS_ELECTRIC",
+}
 
 REWARDS_GVECTOR = {
     "RS_S1_SHIP",
@@ -309,6 +333,7 @@ QUICK_ACTION_LIST =
     "S8_REWARDS",
     "S9_REWARDS",
     "S10_REWARDS",
+    "S11_REWARDS",
     "S1_GV",
     "S3_NORMANDY",
     "S9_VRSPEEDER",
@@ -320,7 +345,7 @@ QUICK_ACTION_MENU =
     {
         ["TITLE"]  = "Unlock Season 1 Reward",
         ["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.1.DDS",
-        ["ANIM"]   = "Unlock1Reward",
+        ["ANIM"]   = "UnlockS1Reward",
         ["REWARD"] = REWARDS_1
     },
     ["S2_REWARDS"] =
@@ -385,6 +410,13 @@ QUICK_ACTION_MENU =
         ["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.10.DDS",
         ["ANIM"]   = "UnlockS10Reward",
         ["REWARD"] = REWARDS_10
+    },
+    ["S11_REWARDS"] =
+    {
+        ["TITLE"]  = "Unlock Season 11 Reward",
+        ["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.11.DDS",
+        ["ANIM"]   = "UnlockS11Reward",
+        ["REWARD"] = REWARDS_11
     },
     ["S1_GV"] =
     {
@@ -529,7 +561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "4.34",
+["NMS_VERSION"]     = "4.40",
 ["MODIFICATIONS"]   =
     {
         {

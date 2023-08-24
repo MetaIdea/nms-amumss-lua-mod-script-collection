@@ -4,9 +4,9 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "438"
-METADATA_LOCALIZATION   = "LOC3"
-METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 3."
+METADATA_NMS_VERSION    = "440"
+METADATA_LOCALIZATION   = "LOC5"
+METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 5."
 
 -- credits:
 -- bk201                                        pointing out typos, providing feedback on changes
@@ -19,20 +19,11 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 -- fixed text elements
 ----------------------------------------------------------------------------------------------------
 
--- removed double dot from Cactus Flesh description
-TEXT_CACTUSFLESH_DESC = "Succulent, edible cactus flesh from the &lt;TRADEABLE&gt;Echinocactus plant&lt;&gt;. As well as being juicy on the tongue, the flesh has many industrial uses.&#xA;&#xA;The Echinocactus thrives only on &lt;STELLAR&gt;desert planets&lt;&gt;, but can be farmed in all environments with the aid of a &lt;TECHNOLOGY&gt;Hydroponics Tray&lt;&gt;."
+-- fixed typo in British spelling of practise (verb)
+TEXT_DIALOGUE_PRACTISE = "Practise language skills"
 
--- fixed description of NipNip
-TEXT_NIPNIP_GROWTIME = "This medicinal herb is known for its pungent buds, which are harvested to produce Gek Nip. NipNip thrives in dank environments, and often grows as a weed.&#xA;&#xA;Suitable for hydroponic indoor planting. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;4 hours&lt;&gt;"
-
--- changed verbiage for "better ratios" in refiners descriptions
-TEXT_BETTERRATIO_REFINER2 = "A vital piece of planetary equipment. The &lt;TECHNOLOGY&gt;Refiner&lt;&gt; allows gathered substances to be processed into more powerful and more advanced materials.&#xA;&#xA;The Medium Refiner features &lt;COMMODITY&gt;two&lt;&gt; input slots, allowing user to combine more substances and utilise new refining techniques.&#xA;&#xA;The Medium Refiner must be installed in a &lt;VAL_ON&gt;Habitable Base&lt;&gt;, but does not require additional power sources."
-
--- changed verbiage for "better ratios" in refiners descriptions
-TEXT_BETTERRATIO_REFINER3 = "A vital piece of planetary equipment. The &lt;TECHNOLOGY&gt;Refiner&lt;&gt; allows gathered substances to be processed into more powerful and more advanced materials.&#xA;&#xA;The Large Refiner features &lt;COMMODITY&gt;three&lt;&gt; input slots, allowing user to combine more substances and utilise new refining techniques.&#xA;&#xA;The Large Refiner must be installed in a &lt;VAL_ON&gt;Habitable Base&lt;&gt;, but does not require additional power sources."
-
--- specified teleporter range
-TEXT_TELEPORTER_RANGE = "A device that modulates standard starship communication signals to &lt;TECHNOLOGY&gt;enable the transport of matter&lt;&gt; as well as data.&#xA;&#xA;Starships fitted with such a device can send and receive products and substances to a user's exosuit over a distance of &lt;VAL_ON&gt;up to 150 units&lt;&gt;."
+-- changed label for automatic recharge on starships
+TEXT_LAUNCHER_RECHARGE = "Standby Recharging"
 
 
 
@@ -41,16 +32,13 @@ TEXT_TELEPORTER_RANGE = "A device that modulates standard starship communication
 ----------------------------------------------------------------------------------------------------
 
 -- localization file path
-PATH_LANGUAGE = "LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN"
+PATH_LANGUAGE = "LANGUAGE\\NMS_LOC5_ENGLISH.MBIN"
 
 -- data array
 DATA = 
 {
-    UI_PLANTSUB_BARREN_DESC = TEXT_CACTUSFLESH_DESC,
-    UI_PLANT_11_DESC = TEXT_NIPNIP_GROWTIME,
-    REFINER2_DESC = TEXT_BETTERRATIO_REFINER2,
-    REFINER3_DESC = TEXT_BETTERRATIO_REFINER3,
-    SHIP_TELEPORT_DESC = TEXT_TELEPORTER_RANGE,
+    ALL_REQUEST_WORD_SAY = TEXT_DIALOGUE_PRACTISE,
+    SHIP_LAUNCHER_AUTOCHARGE = TEXT_LAUNCHER_RECHARGE,
 }
 
 
