@@ -1,82 +1,46 @@
 CREATURE_INTERACT_DISTANCE = 100 --Original 5
-CREATURE_INTERACT_RANGE = 150
-CREATURE_INTERACT_BOOST = 2
-CREATURE_INCUBATE_TIME = 0
-EGG_TIMERS = true
+CREATURE_INTERACT_RANGE    = 150
+CREATURE_INTERACT_BOOST    = 2
+CREATURE_INCUBATE_TIME     = 0
+EGG_INTERACT_DISTANCE      = 25
+EGG_TIMERS                 = true
 
 EGG_TIMERS = GUIF({true, [[Do you want pet egg times to be reduced?  Default = Y.  Press ENTER for default value.]]},10)
-print("EGG_TIMERS = "..tostring(EGG_TIMERS))  
-
-function CreateJoint(JointName)
-    local result =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="]]..JointName..[[" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
-return result
-end
+print("EGG_TIMERS = "..tostring(EGG_TIMERS))
 
 CREATURE_JOINT_DATA_TABLE =
     {
-        {"FISH","joint1"},
-        {"FISHFLOCK","RootJNT"},
-        {"SWIMCOW","RootJNT"},
-        {"SWIMRODENT","GlobalJNT"},
-        {"JELLYFISH","centre"},
-        {"SEASNAKE","RootJNT"},
-        {"SHARK","Root"},
-        {"BIRD","Root"},
-        {"FLYINGSNAKE","RootJNT"},
-        {"FLYINGLIZARD","Back2JNT"},
-        {"BUTTERFLY","Root"},
-        {"SMALLBIRD","Root"},
-        {"BUTTERFLOCK","RootJNT"},
-        {"MOLE","DiggerROOT"},
-        {"PROTOROLLER","RootJNT"},
-        {"PROTODIGGER","EyeStalkROOT"},
-        {"PLOUGH","RootJNT"},
-        {"DRILL","DiggerROOT"},
-        {"WEIRDROLL","RootJNT"},
-        {"WEIRDFLOAT","RootJNT"},
-        {"WEIRDCRYSTAL","RootJNT"},
-        {"WEIRDBUTTERFLY","shellfly_ROOTSHJnt"},
-        -- {"FIEND","RootJNT"},
-        {"SCUTTLER","RootJNT"},
-        {"SLUG","RootJNT"},
-        {"MINIFIEND","RootJNT"},
-        {"FIENDFISHSMALL","joint1"},
-        {"FLOATER","FrontJNT"},
-        {"MINIDRONE","RootJNT"},
-        {"FIENDFISHBIG","joint1"},
-        {"ROCKCREATURE","RootJNT"},
+        {"FISH",           "joint1"},
+        {"FISHFLOCK",      "RootJNT"},
+        {"SWIMCOW",        "RootJNT"},
+        {"SWIMRODENT",     "GlobalJNT"},
+        {"JELLYFISH",      "centre"},
+        {"SEASNAKE",       "RootJNT"},
+        {"SHARK",          "Root"},
+        {"BIRD",           "Root"},
+        -- {"FLYINGSNAKE",    "RootJNT"},
+        -- {"FLYINGLIZARD",   "Back2JNT"},
+        {"BUTTERFLY",      "Root"},
+        {"SMALLBIRD",      "Root"},
+        {"BUTTERFLOCK",    "RootJNT"},
+        {"MOLE",           "DiggerROOT"},
+        {"PROTOROLLER",    "RootJNT"},
+        {"PROTODIGGER",    "EyeStalkROOT"},
+        {"PLOUGH",         "RootJNT"},
+        {"DRILL",          "DiggerROOT"},
+        {"WEIRDROLL",      "RootJNT"},
+        {"WEIRDFLOAT",     "RootJNT"},
+        {"WEIRDCRYSTAL",   "RootJNT"},
+        {"WEIRDBUTTERFLY", "shellfly_ROOTSHJnt"},
+        -- {"FIEND",          "RootJNT"},
+        {"SCUTTLER",       "RootJNT"},
+        {"SLUG",           "RootJNT"},
+        {"MINIFIEND",      "RootJNT"},
+        {"FIENDFISHSMALL", "joint1"},
+        {"FLOATER",        "FrontJNT"},
+        {"MINIDRONE",      "RootJNT"},
+        {"FIENDFISHBIG",   "joint1"},
+        {"ROCKCREATURE",   "RootJNT"},
     }
 
 ROBOT_JOINT_DATA_TABLE =
@@ -89,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "CompanionPetUnlocker.pak",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
 ["CONTRIBUTORS"]            = "Silent369 and Corvus",
-["NMS_VERSION"]             = "4.37",
+["NMS_VERSION"]             = "4.40",
 ["DESCRIPTION"]             = "Enables more creatures to become companion pets",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -108,6 +72,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"InteractionAction","PressButton",},
                             ["REMOVE"] = "SECTION"
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\ANTELOPERIG\ANTELOPE\ENTITIES\_BODY_SKINNY.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcInteractionComponentData.xml"},
+                            ["SEC_SAVE_TO"] = "ADD_PET",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_PET",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"InteractDistance", CREATURE_INTERACT_DISTANCE},
+                            }
                         },
                     }
                 },
@@ -187,161 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["ADD"] =
-[[
-    <Property value="GcInteractionComponentData.xml">
-      <Property name="InteractionAction" value="PressButton" />
-      <Property name="InteractionType" value="GcInteractionType.xml">
-        <Property name="InteractionType" value="Pet" />
-      </Property>
-      <Property name="UseIntermediateUI" value="False" />
-      <Property name="Renderer" value="TkModelRendererData.xml">
-        <Property name="Camera" value="TkModelRendererCameraData.xml">
-          <Property name="Distance" value="1.8" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0.45" />
-            <Property name="y" value="0.65" />
-            <Property name="z" value="3" />
-          </Property>
-          <Property name="Roll" value="0" />
-          <Property name="Pitch" value="10" />
-          <Property name="Rotate" value="180" />
-          <Property name="LightPitch" value="45" />
-          <Property name="LightRotate" value="45" />
-          <Property name="Wander" value="TkCameraWanderData.xml">
-            <Property name="CamWander" value="False" />
-            <Property name="CamWanderPhase" value="0.003" />
-            <Property name="CamWanderAmplitude" value="0.5" />
-          </Property>
-        </Property>
-        <Property name="Fov" value="30" />
-        <Property name="AspectRatio" value="1.7777" />
-        <Property name="ThumbnailMode" value="None" />
-        <Property name="FocusType" value="ResourceBounds" />
-        <Property name="FocusLocator" value="" />
-        <Property name="FocusOffset" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="0" />
-          <Property name="z" value="0" />
-        </Property>
-        <Property name="FocusInterpTime" value="0" />
-        <Property name="BlendInTime" value="0.8" />
-        <Property name="BlendInOffset" value="0" />
-        <Property name="Anim" value="" />
-        <Property name="HeightOffset" value="0.005" />
-        <Property name="UsePlayerCameraInHmd" value="True" />
-        <Property name="AlignUIToCameraInHmd" value="False" />
-        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
-        <Property name="LookForFocusInMasterModel" value="False" />
-      </Property>
-      <Property name="RendererAlt" value="TkModelRendererData.xml">
-        <Property name="Camera" value="TkModelRendererCameraData.xml">
-          <Property name="Distance" value="1.5" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="Roll" value="0" />
-          <Property name="Pitch" value="0" />
-          <Property name="Rotate" value="180" />
-          <Property name="LightPitch" value="45" />
-          <Property name="LightRotate" value="45" />
-          <Property name="Wander" value="TkCameraWanderData.xml">
-            <Property name="CamWander" value="False" />
-            <Property name="CamWanderPhase" value="0.003" />
-            <Property name="CamWanderAmplitude" value="0.5" />
-          </Property>
-        </Property>
-        <Property name="Fov" value="30" />
-        <Property name="AspectRatio" value="1.7777" />
-        <Property name="ThumbnailMode" value="None" />
-        <Property name="FocusType" value="ResourceBounds" />
-        <Property name="FocusLocator" value="" />
-        <Property name="FocusOffset" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="0" />
-          <Property name="z" value="0" />
-        </Property>
-        <Property name="FocusInterpTime" value="0" />
-        <Property name="BlendInTime" value="0.8" />
-        <Property name="BlendInOffset" value="0" />
-        <Property name="Anim" value="" />
-        <Property name="HeightOffset" value="0.005" />
-        <Property name="UsePlayerCameraInHmd" value="False" />
-        <Property name="AlignUIToCameraInHmd" value="False" />
-        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
-        <Property name="LookForFocusInMasterModel" value="False" />
-      </Property>
-      <Property name="Race" value="GcAlienRace.xml">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="AttractDistanceSq" value="100" />
-      <Property name="SecondaryMeshAlwaysVisible" value="False" />
-      <Property name="RepeatInteraction" value="False" />
-      <Property name="UseInteractCamera" value="False" />
-      <Property name="BlendToCameraTime" value="1.5" />
-      <Property name="BlendFromCameraTime" value="-1" />
-      <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
-        <Property name="SubstanceId" value="" />
-        <Property name="AltIds" />
-        <Property name="Cost" value="0" />
-        <Property name="Repeat" value="False" />
-        <Property name="RequiredTech" value="" />
-        <Property name="UseCostID" value="" />
-        <Property name="StartMissionOnCantAfford" value="" />
-        <Property name="OnlyChargeDuringSeasons" />
-      </Property>
-      <Property name="TriggerAction" value="INACTIVE" />
-      <Property name="TriggerActionOnPrepare" value="" />
-      <Property name="BroadcastTriggerAction" value="False" />
-      <Property name="InteractAngle" value="360" />
-      <Property name="InteractDistance" value="]] .. CREATURE_INTERACT_DISTANCE .. [[" />
-      <Property name="InteractInvertFace" value="True" />
-      <Property name="SecondaryInteractionType" value="GcInteractionType.xml">
-        <Property name="InteractionType" value="Creature" />
-      </Property>
-      <Property name="SecondaryActivationCost" value="GcInteractionActivationCost.xml">
-        <Property name="SubstanceId" value="BAIT_BASIC" />
-        <Property name="AltIds" />
-        <Property name="Cost" value="1" />
-        <Property name="Repeat" value="True" />
-        <Property name="RequiredTech" value="" />
-        <Property name="UseCostID" value="" />
-        <Property name="StartMissionOnCantAfford" value="" />
-        <Property name="OnlyChargeDuringSeasons" />
-      </Property>
-      <Property name="EventRenderers" />
-      <Property name="EventRenderersAlt" />
-      <Property name="SecondaryCameraTransitionTime" value="1" />
-      <Property name="DepthOfField" value="GcInteractionDof.xml">
-        <Property name="IsEnabled" value="True" />
-        <Property name="UseGlobals" value="True" />
-        <Property name="NearPlaneMin" value="2" />
-        <Property name="NearPlaneAdjust" value="1" />
-        <Property name="FarPlane" value="3" />
-        <Property name="FarFadeDistance" value="2" />
-      </Property>
-      <Property name="PuzzleMissionOverrideTable" />
-      <Property name="StoryUtilityOverrideData" value="GcStoryUtilityOverride.xml">
-        <Property name="Name" value="" />
-        <Property name="Reward" value="" />
-        <Property name="SpecificRewardOverrideTable" />
-      </Property>
-      <Property name="OverrideInteriorExteriorMarker" value="No" />
-      <Property name="ReseedAfterRewardSuccess" value="False" />
-      <Property name="UsePersonalPersistentBuffer" value="False" />
-      <Property name="InWorldUIScaler" value="0" />
-      <Property name="InWorldUIMinDistOverride" value="0" />
-      <Property name="InWorldUIMinDistOverrideV2" value="0" />
-      <Property name="InWorldUIForcedOffset" value="0" />
-      <Property name="InWorldUIForcedOffsetV2" value="0" />
-      <Property name="InWorldUIUseCameraUp" value="False" />
-      <Property name="StartMissionOnUse" value="" />
-      <Property name="AllowMissionUnderwater" value="True" />
-      <Property name="UseUnlockedInteractionIfMaintDone" value="False" />
-    </Property>
-]]
+                            ["SEC_ADD_NAMED"] = "ADD_PET",
                         }
                     }
                 },
@@ -369,7 +196,34 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id","LARGEBUTTERFLY"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureRidingData.xml"},
+                            ["SEC_SAVE_TO"] = "ADD_RIDE",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_RIDE",
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x",                        "0"},
+                                {"y",                        "0"},
+                                {"z",                        "0"},
+                                {"UprightStrength",          "1"},
+                                {"ScaleForNeutralLegSpread", "1.25"},
+                                {"ScaleForMinLegSpread",     "0.5"},
+                                {"ScaleForMaxLegSpread",     "4.75"},
+                            }
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_RIDE",
+                            ["SPECIAL_KEY_WORDS"]  = {"Offset","Vector3f.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"y", "0.25"},
+                                {"z", "-0.125"},
+                            }
+                        },
                     }
                 },
                 {
@@ -378,10 +232,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"Id","QUAD"},
-                            ["REPLACEMENT_TYPE"]   = {"ADDAFTERSECTION"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LegSpread",    "True"},
+                                {"LegSpread",                "True"},
                                 {"ScaleForNeutralLegSpread", "1.25"},
                                 {"ScaleForMinLegSpread",     "0.5"},
                                 {"ScaleForMaxLegSpread",     "4.75"},
@@ -396,8 +249,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"] = "*",
+                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureInteractBaseRange",              CREATURE_INTERACT_RANGE},
@@ -412,10 +265,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinRideSize",      "0.1"}, --Smallest Viable
-                                {"AllowSleeping",    "True"}, --Original "False"
+                                {"MinRideSize",      "0.1"},   --Smallest Viable
+                                {"AllowSleeping",    "True"},  --Original "False"
                                 {"AggressiveSharks", "False"}, --Original "False"
                                 {"PiedPiper",        "False"}, --Original "False"
                             }
@@ -472,12 +325,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVE\PET_EGG\ENTITIES\PET_EGG.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id","R_PETEGGLOOT"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"InteractDistance", EGG_INTERACT_DISTANCE}, --Original "0"
+                            }
+                        }
+                    }
+                },
             }
         }
     }
 }
 
-local ChangesToCDTJoints = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+local ChangesToCDTJoints = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
 
 for i = 1, #CREATURE_JOINT_DATA_TABLE do
     local Id = CREATURE_JOINT_DATA_TABLE[i][1]
@@ -488,11 +354,21 @@ for i = 1, #CREATURE_JOINT_DATA_TABLE do
             {
                 ["SPECIAL_KEY_WORDS"]   = {"Id", Id},
                 ["PRECEDING_KEY_WORDS"] = {"Data"},
-                ["ADD"]                 = CreateJoint(JointName)
+                ["SEC_ADD_NAMED"]       = "ADD_RIDE",
+            }
+
+            ChangesToCDTJoints[#ChangesToCDTJoints+1] =
+            {
+                ["SPECIAL_KEY_WORDS"]   = {"Id", Id},
+                ["PRECEDING_KEY_WORDS"] = {"GcCreatureRidingData.xml"},
+                ["VALUE_CHANGE_TABLE"]  =
+                {
+                   {"JointName", JointName},
+                }
             }
 end
 
-local ChangesToRDTJoints = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+local ChangesToRDTJoints = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
 
 for i = 1, #ROBOT_JOINT_DATA_TABLE do
     local Id = ROBOT_JOINT_DATA_TABLE[i][1]
@@ -503,13 +379,23 @@ for i = 1, #ROBOT_JOINT_DATA_TABLE do
             {
                 ["SPECIAL_KEY_WORDS"]   = {"Id", Id},
                 ["PRECEDING_KEY_WORDS"] = {"Data"},
-                ["ADD"]                 = CreateJoint(JointName)
+                ["SEC_ADD_NAMED"]       = "ADD_RIDE",
+            }
+
+            ChangesToRDTJoints[#ChangesToRDTJoints+1] =
+            {
+                ["SPECIAL_KEY_WORDS"]   = {"Id", Id},
+                ["PRECEDING_KEY_WORDS"] = {"GcCreatureRidingData.xml"},
+                ["VALUE_CHANGE_TABLE"]  =
+                {
+                   {"JointName", JointName},
+                }
             }
 end
 
 if EGG_TIMERS then
 
-local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
 
     local temp_table_eggtimers =
     {
@@ -522,11 +408,11 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
             {"PetEggLayingInterval",   CREATURE_INCUBATE_TIME}, --Original "86400"
             {"PetEggFirstEggDelay",    CREATURE_INCUBATE_TIME}, --Original "86400"
             {"PetTrustChangeInterval", CREATURE_INCUBATE_TIME}, --Original "86400"
-            {"CanAlwaysLayEgg",        "True"}, --Original "False"
-            {"PetTrustOnAdoption",     "1"}, --Original "0.6"
-            {"PetTrustOnHatch",        "1"}, --Original "0.7"
-            {"PetMinTrust",            "1"}, --Original "0.2"
-            {"PetEggModificationTime", "1"}, --Original "5"
+            {"CanAlwaysLayEgg",        "True"},                 --Original "False"
+            {"PetTrustOnAdoption",     "1"},                    --Original "0.6"
+            {"PetTrustOnHatch",        "1"},                    --Original "0.7"
+            {"PetMinTrust",            "1"},                    --Original "0.2"
+            {"PetEggModificationTime", "1"},                    --Original "5"
         }
     }
     Change_Table_Array[#Change_Table_Array + 1] = temp_table_eggtimers

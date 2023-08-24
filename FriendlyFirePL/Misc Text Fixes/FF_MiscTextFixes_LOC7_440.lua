@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "438"
+METADATA_NMS_VERSION    = "440"
 METADATA_LOCALIZATION   = "LOC7"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 7."
 
@@ -25,11 +25,6 @@ TEXT_EXOMECH_HARDFRAME = "A collection of salvaged components from a Sentinel Ha
 
 -- fixed typo in cargo scan deflection message
 TEXT_CARGOSCAN_SCRAMBLED = "Incoming Cargo Probe Scrambled!"
-
--- fixed typo in commercial
-TEXT_COMMERCIAL_FREQ = "COMMERCIAL FREQUENCY"
-TEXT_COMMERCIAL_QUEST = "Intercept and destroy the &lt;STELLAR&gt;%FREIGHTER%&lt;&gt;&#xA;Locate the mission's &lt;TECHNOLOGY&gt;expedition path&lt;&gt;&#xA;Searching commercial traffic signals: %SIGNAL%"
-TEXT_COMMERCIAL_SETL = "commercial innovation"
 
 -- added Boltcaster to description of Sentinel Weapons Shards
 TEXT_WEAPON_SHARD = "An &lt;SPECIAL&gt;anomalous&lt;&gt; upgrade for the Multi-Tool's &lt;TECHNOLOGY&gt;Boltcaster weapon system&lt;&gt;. Use &lt;VAL_ON&gt;&lt;IMG&gt;FE_ALT1&lt;&gt;&lt;&gt; to begin upgrade &lt;VAL_ON&gt;installation process&lt;&gt;.&#xA;&#xA;This eerie, glassy shard was extracted from &lt;SPECIAL&gt;Sentinel debris&lt;&gt;. Its exact effect upon the Multi-Tool will not be known until after installation is complete."
@@ -58,9 +53,6 @@ DATA =
     UI_MECH_AUTOPILOT_DESC = TEXT_EXOMECH_AI_MODULE,
     UI_MECH_SENT_HEAD_DESC = TEXT_EXOMECH_HARDFRAME,
     UI_SCAN_BLOCKER_SUCCESS = TEXT_CARGOSCAN_SCRAMBLED,
-    UI_UNOWNED_FLEET_HUD = TEXT_COMMERCIAL_FREQ,
-    UI_FREIGHTER_ATTACK_MSG3 = TEXT_COMMERCIAL_QUEST,
-    UI_JUDGEMENT_POLICY5_NAME4 = TEXT_COMMERCIAL_SETL,
     UP_SENTGUN_DESC = TEXT_WEAPON_SHARD,
     UI_OPTIONS_DIFFICULTY_BAN = TEXT_DIFFICULTY_MULTIPLAYER,
     R_NAME_PLANT_CAVE_CATALYST1 = TEXT_NITROGEN_REFINING,

@@ -397,11 +397,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.34",
+["NMS_VERSION"]     = "4.40",
 ["MODIFICATIONS"]   =
     {
         {
-            ["MBIN_CHANGE_TABLE"]     =
+            ["MBIN_CHANGE_TABLE"] =
             {
             }
         }
@@ -564,8 +564,8 @@ for i = 1, #DataTable do
     {
         ["MBIN_FILE_SOURCE"] =
         {
-            [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN]],
-            [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],
+            "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN",
+            "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN",
         },
         ["EXML_CHANGE_TABLE"]     =
         {

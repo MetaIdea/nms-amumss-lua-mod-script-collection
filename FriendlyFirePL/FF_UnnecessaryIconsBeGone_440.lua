@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "UnnecessaryIconsBeGone"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "434"
+METADATA_NMS_VERSION    = "440"
 METADATA_MOD_DESC       = "This mod gets rid of some unnecessary icons displayed on bases and player names."
 
 

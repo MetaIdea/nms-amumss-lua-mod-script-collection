@@ -4,6 +4,76 @@ SPECIAL_LIST =
 		["ShopNumber"] = "79",
 		["Table"] =  
 		{
+			{ ["ID"] = "EXPD_POSTER11A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER11B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER11C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE11",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL11",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER11",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "JETS_ELECTRIC",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_EGG_11",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_PETCUST11",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_BUI_HAND",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_BUI_HEAD",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_BUI_TENT",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_1",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_2",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_3",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_4",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_5",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_6",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_7",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_8",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_9",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_10",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_11",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_12",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_13",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_14",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_HEAD_15",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_ARMOUR_1",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_ARMOUR_2",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_ARMOUR_3",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_ARMOUR_4",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_CLOTH_1",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_CLOTH_2",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BUI_CLOTH_3",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_PART_A",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_CORE1",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_CORE2",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_CORE3",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_CORE4",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_CORE5",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_CORE6",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_PART_B",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_HEAD1",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_HEAD2",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_HEAD3",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_HEAD4A",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_HEAD4B",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_HEAD5",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_HEAD6",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_PART_C",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_POLE1",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_POLE2",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_POLE3",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_POLE4",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_POLE5",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "STAFF_POLE6",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP31",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP32",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP33",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP34",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP35",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN13",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN14",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN15",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW07A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW07B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW07C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW07D",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW07E",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_POSTER10A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_POSTER10B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_POSTER10C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
@@ -283,13 +353,12 @@ UNLOCK_ALL =
 	}
 }
 
-function GetNewSpecial(ID, REPEAT, CAPE)
+function GetNewSpecial(ID, REPEAT)
 return[[    <Property value="GcPurchaseableSpecial.xml">
       <Property name="ID" value="]] .. ID .. [[" />
       <Property name="ShopNumber" value="1" />
       <Property name="MissionTier" value="-1" />
       <Property name="IsConsumable" value="]] .. REPEAT .. [[" />
-      <Property name="IsCape" value="]] .. CAPE .. [[" />
     </Property>
 ]]
 end
@@ -299,7 +368,7 @@ for _i,j in pairs(SPECIAL_LIST) do
 	SHOP_LIST_TEMP = {}
 	SPECIAL_EXPORT = {}
 	for _k,l in ipairs(j["Table"]) do
-		table.insert(SHOP_LIST_TEMP, GetNewSpecial(l["ID"], l["IsConsumable"], l["IsCape"]))
+		table.insert(SHOP_LIST_TEMP, GetNewSpecial(l["ID"], l["IsConsumable"]))
 	end
 	SPECIAL_EXPORT =
 	{
@@ -314,8 +383,8 @@ table.insert(NEW_SPECIAL, UNLOCK_ALL)
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "~Consumerism.pak",
-["MOD_AUTHOR"]				= "You",
-["NMS_VERSION"]				= "uhhh",
+["MOD_AUTHOR"]				= "WinderTP",
+["NMS_VERSION"]				= "1.1.6",
 ["MODIFICATIONS"] 			= 
 	{
 		{

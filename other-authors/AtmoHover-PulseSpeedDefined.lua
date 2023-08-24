@@ -22,8 +22,9 @@ PULSE_SPEED_DEFINED          = 1 -- Define your pulse speed on this line by chan
 --
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]             = "AtmoHover-PulseSpeedDefined", 
+["MOD_FILENAME"]             = "AtmoHover-PulseSpeedDefined",
 ["MOD_AUTHOR"]               = "BigEx20 AKA Chromos",
+["LUA_AUTHOR"]				 = "BigEx20 AKA Chromos",
 ["NMS_VERSION"]              = "3.84",
 ["MOD_DESCRIPTION"]          = "This mod allows hovering at 0u/s in the atmosphere and also brings quality-of-life adjustments to pulse engine speed defined by you via this .lua script.",
 ["MODIFICATIONS"]            = 

@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "Storm Cutter.pak",
 ["MOD_AUTHOR"]              = "Zurls",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.36",
+["NMS_VERSION"]             = "4.40",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/BLUEWEATHER.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BLUEWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -98,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -257,7 +257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/DUSTWEATHER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\DUSTWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -381,7 +381,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/GREENWEATHER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\GREENWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -504,7 +504,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/HUMIDWEATHER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\HUMIDWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -624,7 +624,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/RADIOACTIVE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\RADIOACTIVE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -753,7 +753,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/RAINWEATHER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\RAINWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -940,7 +940,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/REDWEATHER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\REDWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1035,7 +1035,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/SCORCHED.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SCORCHED.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1090,7 +1090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/SNOWWEATHER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SNOWWEATHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1145,7 +1145,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/TOXIC.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\TOXIC.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1266,7 +1266,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/WEATHERLIST.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\WEATHERLIST.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

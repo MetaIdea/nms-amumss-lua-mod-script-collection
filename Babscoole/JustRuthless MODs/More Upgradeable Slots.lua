@@ -101,7 +101,7 @@ VehicleMaxUpgradeChanges =
 FileName    = "More Upgradeable Slots.pak"
 ModAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
-NMS_Version = "4.38"
+NMS_Version = "4.40"
 
 -- File Sources --
 FileSource1 = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"

@@ -1,4 +1,4 @@
-NMSVersion = "4.34"
+NMSVersion = "4.40"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -465,7 +465,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 -- {
-                    -- ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
+                    -- ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
@@ -477,7 +477,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- },
                 -- },
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         -- {
@@ -497,7 +497,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -515,7 +515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\SIMULATION\SCANNING\SCANEVENTTABLEPLANET.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SCANNING\SCANEVENTTABLEPLANET.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                          {

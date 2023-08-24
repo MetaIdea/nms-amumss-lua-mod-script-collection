@@ -1,4 +1,3 @@
-
 -- You can enable/disable mod features here :
 ---------------------------------------------
 ---------------------------------------------
@@ -281,7 +280,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "4.34",
+    ["NMS_VERSION"]   = "4.40",
     ["MODIFICATIONS"] =
     {
         {
@@ -326,6 +325,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FreighterBaseLimit", 0},
                             },
                         },
+                        -- {
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = 0,
+                            -- ["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
+                            -- ["VALUE_CHANGE_TABLE"] = 
+                            -- {
+                                -- {"GhostsCountOverride", 0},
+                            -- },
+                        -- },
                         -- Reverts posters : must be destroyed when parent (wall, etc) is destroyed.
                         -- Posters are matched by their "SubGroupName" keyword : if any new one is added by the devs it should trigger this.
                         {
@@ -650,7 +658,7 @@ if CAN_SCALE_PREFAB_PARTS == false then
         local temp_table_conexnotscale =
         {
             ["SPECIAL_KEY_WORDS"]    = {"ID", FREIGHTER_CONTAINERS_ID_TABLE[i]},
-            ["VALUE_MATCH"] = "True",
+            -- ["VALUE_MATCH"] = "True",
             ["REPLACE_TYPE"] = "ALL",
             ["VALUE_CHANGE_TABLE"]    =
             {
@@ -750,8 +758,8 @@ else
         local temp_table_nofarmnotbuildlimit =
         {
             ["SPECIAL_KEY_WORDS"]    = {"ID", UNLIMITED_BUILPART_ID_TABLE[i]},
-            ["VALUE_MATCH"] = 0,
-            ["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
+            -- ["VALUE_MATCH"] = 0,
+            -- ["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
             ["NOTICE_OFF"] = "True",
             ["VALUE_CHANGE_TABLE"]    =
             {
