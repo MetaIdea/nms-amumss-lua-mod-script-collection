@@ -4,10 +4,10 @@ NewStrengthFar = 8.5
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Torch Light 4.2.pak", 
+["MOD_FILENAME"] 			= "Better Torch Light 4.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.30.3",
+["NMS_VERSION"]				= "4.40",
 ["MOD_DESCRIPTION"]			= "This mods makes torch light more realistic",
 ["MODIFICATIONS"] 			= 
 	{
