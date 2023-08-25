@@ -5,7 +5,7 @@ mod_desc = [[
   * The ADD_FILES section can be safely disabled/ignored if you prefer
    to add the texture files in a different method.
 ]]--------------------------------------------------------------------
-mod_version = '1.23'
+mod_version = '1.24'
 
 local tech_icons = {
 	---	ship
@@ -79,40 +79,41 @@ local tech_icons = {
 	{'F_HACCESS2',		'TECHNOLOGY/RENDER.FREIGHTER.RED.DDS'},
 	{'F_HACCESS3',		'TECHNOLOGY/RENDER.FREIGHTER.BLUE.DDS'}
 }
-function tech_icons:GetExmlCT()
-	local T = {}
-	for _,x in ipairs(self) do
-		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'ID', x[1]},
-			VALUE_CHANGE_TABLE 	= { {'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..x[2]} }
-		})
-	end
-	return T
-end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Technology Icons.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.31',
+	NMS_VERSION			= '4.4',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',
-		EXML_CHANGE_TABLE	= tech_icons:GetExmlCT()
+		EXML_CHANGE_TABLE	= (
+			function()
+				T = {}
+				for _,x in ipairs(tech_icons) do
+					table.insert(T, {
+						SPECIAL_KEY_WORDS	= {'ID', x[1]},
+						VALUE_CHANGE_TABLE 	= { {'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..x[2]} }
+					})
+				end
+				return T
+			end		
+		)()
 	}
 }}},
 	ADD_FILES	= {
 		{
-			EXTERNAL_FILE_SOURCE = 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Technology/*.DDS',
+			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Technology/*.DDS',
 			FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/*.DDS',
 		},
 		{
-			EXTERNAL_FILE_SOURCE = 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Technology/Bio/*.DDS',
+			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Technology/Bio/*.DDS',
 			FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/BIO/*.DDS',
 		},
 		{
-			EXTERNAL_FILE_SOURCE = 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Technology/Vehicle/*.DDS',
+			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Technology/Vehicle/*.DDS',
 			FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/VEHICLE/*.DDS',
 		},
 	}

@@ -1,10 +1,11 @@
 ----------------------------------------------------------------------
 -- Loaded_D <..\ModScript\ModHelperScripts\LIB/lua_2_exml.lua>
--------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.82) ... by lMonk
----	A tool for converting exml to an equivalent lua table and back again
----	(with added color helper functions)
--------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+---	LUA 2 EXML (VERSION: 0.82.3) ... by lMonk
+---	A tool for converting exml to an equivalent lua table and back again.
+---	Helper functions for color class, vector class and string arrays
+---	* This should be placed at [AMUMSS folder]\ModScript\ModHelperScripts\LIB
+-------------------------------------------------------------------------------
 
 --	replace a boolean with its text equivalent (ignore otherwise)
 --	@param b: any value
@@ -12,13 +13,15 @@ function bool(b)
 	return (type(b) == 'boolean') and ((b == true) and 'True' or 'False') or b
 end
 
+--	get the count of ALL objects in a table (non-recursive)
+--	@param t: any table
+function len2(t)
+	i=0; for _ in pairs(t) do i=i+1 end; return i
+end
+
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
 function ToExml(class)
-	local function len2(t)
-	--	get the count of ALL objects in a table (non-recursive)
-		i=0; for _ in pairs(t) do i=i+1 end ; return i
-	end
 	local function exml_r(tlua)
 		local exml = {}
 		function exml:add(t)
@@ -73,7 +76,7 @@ end
 --	Adds the xml header and data template
 --	Uses the contained template META if found (instead of the received variable)
 --	@param data: a lua2exml formatted table
---	@param template: an nms template string
+--	@param template: an nms file template string
 function FileWrapping(data, template)
 	local wrapper = [[<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>]]
 	if type(data) == 'string' then
@@ -93,30 +96,19 @@ end
 
 -- END: <..\ModScript\ModHelperScripts\LIB/lua_2_exml.lua>
 -- Loaded_D <..\ModScript\ModHelperScripts\LIB/scene_tools.lua>
--------------------------------------------------------------------------
----	Model scene tools (VERSION: 0.82) ... by lMonk
+-------------------------------------------------------------------------------
+---	Model scene tools (VERSION: 0.82.1) ... by lMonk
 ---	Helper functions for adding new TkSceneNodeData nodes and properties
----	!! Requires lua_2_exml.lua !!
--------------------------------------------------------------------------
-
---	Returns a keyed table of TkSceneNodeData sections, using the Name property as keys,
---	* Use to enable direct access to nodes in a table generated with ToLua
-function SceneNames(node, keys)
-	keys = keys or {}
-	if node.META[2] == 'TkSceneNodeData.xml' then
-		keys[node.Name] = node
-	end
-	for k, scn in pairs(node.Children or {}) do
-		if k ~= 'META' then SceneNames(scn, keys) end
-	end
-	return keys
-end
+---	* Requires lua_2_exml.lua !
+---	* This should be placed at [AMUMSS folder]\ModScript\ModHelperScripts\LIB
+-------------------------------------------------------------------------------
 
 --	T (optional) is a table for scene class properties >> attributes, transform and children
 function ScNode(name, stype, T)
 	T = T or {}
 	T.META 		= {'value', 'TkSceneNodeData.xml'}
 	T.Name 		= name
+	T.NameHash	= JenkinsHash(name)
 	T.Type 		= stype
 	return T
 end
@@ -151,6 +143,28 @@ function ScAttributes(t)
 	return T
 end
 
+function ScChildren(t)
+	t.META = {'name', 'Children'}
+	return t
+end
+
+--	returns a jenkins hash from a string (by lyravega)
+function JenkinsHash(input)
+    local hash = 0
+    local t_chars = {string.byte(input:upper(), 1, #input)}
+
+    for i = 1, #input do
+        hash = (hash + t_chars[i]) & 0xffffffff
+        hash = (hash + (hash << 10)) & 0xffffffff
+        hash = (hash ~ (hash >> 6)) & 0xffffffff
+    end
+    hash = (hash + (hash << 3)) & 0xffffffff
+    hash = (hash ~ (hash >> 11)) & 0xffffffff
+    hash = (hash + (hash << 15)) & 0xffffffff
+
+    return tostring(hash)
+end
+
 -- END: <..\ModScript\ModHelperScripts\LIB/scene_tools.lua>
 ----------------------------------------------------------------------
 mod_desc = [[
@@ -161,21 +175,21 @@ mod_desc = [[
 local keys = {
 	tid	 = '_CRATES_KEY_',
 	name = '_Cratekey_',
-	{-26.324,	-7.32,		-2.868,		-21.9603,	95.8,		-18.8346},	-- below side walk
-	{47.79934,	-10.29004,	8.20181,	30.20214,	28.048,		-16.6737},	-- bottom of slant
-	{35.64062,	-3.38012,	21.2812,	-2.890653,	23.66665,	6.40387},	-- in tower
-	{5.75298,	-8.189,		29.6927,	-16.1759,	-159.0387,	3.875},		-- mid center & tower
-	{-1.9188,	-19.8312,	-51.76936,	9.22353,	184.20784,	-1.3652},	-- stairs bottom
-	{-0.9938,	-6.0703,	-38.33277,	-4.67097,	9.22354,	-1.3652},	-- stairs top
+	{-26.1,		-7.45,		-3.5,		21.0,		31.0,		1.0},
+	{47.79934,	-10.29004,	8.20181,	30.20214,	28.048,		-16.6737},
+	{35.64062,	-3.38012,	21.2812,	-2.890653,	23.66665,	6.40387},
+	{4.6,		-7.85,		30.0,		-18,		-160,		4.0},
+	{-1.9188,	-19.8312,	-51.76936,	9.22353,	184.20784,	-1.3652},
+	{-0.9938,	-6.0703,	-38.33277,	-4.67097,	9.22354,	-1.3652}
 }
 
 local locks = {
 	tid	 = '_CRATES_LOCK_',
 	name = '_Cratelock_',
-	{-0.91945,	-8.16323,	0.4867,		1.69392,	2.41958,	4.91478},				-- original center
-	{-0.91945,	-12.19,		-31.1867,	1.6939,		182.42,		-1.51},					-- behind stairs
-	{33.35,		0.45,		22.2867,	4.694,		-48.43,		3.615,	0.8, 0.8, 0.8},	-- on tower
-	{-25.6,		-5.84,		-17.1,		1.6939,		182.24,		4.9148},				-- end of side walk
+	{-0.91945,	-8.16323,	0.4867,		1.69392,	2.41958,	4.91478},
+	{-0.91945,	-12.19,		-31.1867,	1.7,		-175,		-1.2},
+	{33.4,		0.55,		23.2,		2.0,		-35,		3.5,	0.8, 0.8, 0.8},
+	{-25.6,		-5.84,		-17.1,		8.0,		-177,		5.0}
 }
 
 local function AddChar(n, i, u)
@@ -303,9 +317,9 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Treasure Ruin Procedural Crates.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 4.23,
+	NMS_VERSION			= '4.4',
 	MOD_DESCRIPTION		= mod_desc,
-	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
+	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,UNUSED_VARIABLE',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

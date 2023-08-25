@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Integrated Planets 1.8.pak", 
+["MOD_FILENAME"] 			= "Integrated Planets 1.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.10",
+["NMS_VERSION"]				= "4.40",
 ["MOD_DESCRIPTION"]			= "This mod rebalances space fog over planets, distant ships and asteroids",
 ["MODIFICATIONS"] 			= 
 	{
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"SpaceFogMax",	"0.55"},		 -- Original "0.7"   
-								{"SpaceFogPlanetMax",	"0.65"}, -- Original "0"  
+								{"SpaceFogPlanetMax",	"0.65"}, -- Original "0.3"  
 							},
 						},
 						{
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"SpaceFogMax",	"0.55"},		 -- Original "0.7"   
-								{"SpaceFogPlanetMax",	"0.65"}, -- Original "0"  
+								{"SpaceFogPlanetMax",	"0.65"}, -- Original "0.6"  
 							}
 						}
 					}

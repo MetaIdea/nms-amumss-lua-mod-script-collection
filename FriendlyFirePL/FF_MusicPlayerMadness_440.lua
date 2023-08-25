@@ -4,13 +4,13 @@
 METADATA_MOD_NAME       = "MusicPlayerMadness"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "438"
+METADATA_NMS_VERSION    = "440"
 METADATA_MOD_DESC       = "This mod adds music player items which can be used to play selected music tracks during gameplay"
 
 
 
 ----------------------------------------------------------------------------------------------------
--- text elements
+-- text elements for items
 ----------------------------------------------------------------------------------------------------
 
 TEXT_PACKET_N = "SUSPICIOUS PACKET (DATA)"
@@ -21,34 +21,71 @@ TEXT_PACKET_D = "A suspicious looking parcel, acquired via an unusual transactio
 TEXT_ITEM_N = "MUSIC PLAYER: "
 TEXT_ITEM_L = "Music Player: "
 TEXT_ITEM_S = "Music Playback Device"
-TEXT_ITEM_D = "A portable music playback device, storing an audio fragment:&#xA;&#xA;"
-TEXT_ITEM_P = "START PLAYBACK"
 
+TEXT_ITEM_T = "A portable music playback device, storing an audio fragment:&#xA;&#xA;"
+TEXT_ITEM_E = "A portable music playback device, storing a collection of sound effects:&#xA;&#xA;"
+TEXT_ITEM_B = "PLAY"
+TEXT_ITEM_C = "Start playback of the audio file"
+
+
+
+----------------------------------------------------------------------------------------------------
+-- side A - music up to 4.40 Echoes
 ----------------------------------------------------------------------------------------------------
 
 TEXT_T01_N = TEXT_ITEM_N .. "SUPERMOON"
 TEXT_T01_L = TEXT_ITEM_L .. "Supermoon"
-TEXT_T01_D = TEXT_ITEM_D .. "Track 01 - &lt;VAL_ON&gt;Supermoon&lt;&gt; - 65daysofstatic"
+TEXT_T01_D = TEXT_ITEM_T .. "Track 01 - &lt;VAL_ON&gt;Supermoon&lt;&gt; - 65daysofstatic"
 
 TEXT_T02_N = TEXT_ITEM_N .. "ASIMOV (INTRO)"
 TEXT_T02_L = TEXT_ITEM_L .. "Asimov (Intro)"
-TEXT_T02_D = TEXT_ITEM_D .. "Track 02 - &lt;VAL_ON&gt;Asimov (Intro)&lt;&gt; - 65daysofstatic"
+TEXT_T02_D = TEXT_ITEM_T .. "Track 02 - &lt;VAL_ON&gt;Asimov (Intro)&lt;&gt; - 65daysofstatic"
 
 TEXT_T03_N = TEXT_ITEM_N .. "ASIMOV (OUTRO)"
 TEXT_T03_L = TEXT_ITEM_L .. "Asimov (Outro)"
-TEXT_T03_D = TEXT_ITEM_D .. "Track 03 - &lt;VAL_ON&gt;Asimov (Outro)&lt;&gt; - 65daysofstatic"
+TEXT_T03_D = TEXT_ITEM_T .. "Track 03 - &lt;VAL_ON&gt;Asimov (Outro)&lt;&gt; - 65daysofstatic"
 
-TEXT_T04_N = TEXT_ITEM_N .. "BLUEPRINT FOR A SLOW MACHINE (INTRO)"
-TEXT_T04_L = TEXT_ITEM_L .. "Blueprint For A Slow Machine (Intro)"
-TEXT_T04_D = TEXT_ITEM_D .. "Track 04 - &lt;VAL_ON&gt;Blueprint For A Slow Machine (Intro)&lt;&gt; - 65daysofstatic"
+TEXT_T04_N = TEXT_ITEM_N .. "BLUEPRINT FOR A SLOW MACHINE"
+TEXT_T04_L = TEXT_ITEM_L .. "Blueprint For A Slow Machine"
+TEXT_T04_D = TEXT_ITEM_T .. "Track 04 - &lt;VAL_ON&gt;Blueprint For A Slow Machine&lt;&gt; - 65daysofstatic"
 
-TEXT_T05_N = TEXT_ITEM_N .. "ESCAPE VELOCITY (OUTRO)"
-TEXT_T05_L = TEXT_ITEM_L .. "Escape Velocity (Outro)"
-TEXT_T05_D = TEXT_ITEM_D .. "Track 05 - &lt;VAL_ON&gt;Escape Velocity (Outro)&lt;&gt; - 65daysofstatic"
+TEXT_T05_N = TEXT_ITEM_N .. "ESCAPE VELOCITY"
+TEXT_T05_L = TEXT_ITEM_L .. "Escape Velocity"
+TEXT_T05_D = TEXT_ITEM_T .. "Track 05 - &lt;VAL_ON&gt;Escape Velocity&lt;&gt; - 65daysofstatic"
 
 TEXT_T06_N = TEXT_ITEM_N .. "EXPEDITIONS"
 TEXT_T06_L = TEXT_ITEM_L .. "Expeditions"
-TEXT_T06_D = TEXT_ITEM_D .. "Track 06 - &lt;VAL_ON&gt;Expeditions&lt;&gt; - Paul Weir"
+TEXT_T06_D = TEXT_ITEM_T .. "Track 06 - &lt;VAL_ON&gt;Expeditions&lt;&gt; - Paul Weir"
+
+
+
+----------------------------------------------------------------------------------------------------
+-- side AB - music added with 4.40 Echoes + sound effects
+----------------------------------------------------------------------------------------------------
+
+TEXT_T07_N = TEXT_ITEM_N .. "AUTOPHAGE NOISE"
+TEXT_T07_L = TEXT_ITEM_L .. "Autophage Noise"
+TEXT_T07_D = TEXT_ITEM_T .. "Track 07 - &lt;VAL_ON&gt;Autophage Noise&lt;&gt;"
+
+TEXT_T11_N = TEXT_ITEM_N .. "NEXUS MISSION"
+TEXT_T11_L = TEXT_ITEM_L .. "Nexus Mission"
+TEXT_T11_D = TEXT_ITEM_E .. "Effect 01 - &lt;VAL_ON&gt;Nexus Mission&lt;&gt; - 65daysofstatic"
+
+TEXT_T12_N = TEXT_ITEM_N .. "JOURNEY MILESTONES"
+TEXT_T12_L = TEXT_ITEM_L .. "Journey Milestones"
+TEXT_T12_D = TEXT_ITEM_E .. "Effect 02 - &lt;VAL_ON&gt;Journey Milestones&lt;&gt; - various artists"
+
+TEXT_T13_N = TEXT_ITEM_N .. "EXPEDITION MILESTONES (SET 1)"
+TEXT_T13_L = TEXT_ITEM_L .. "Expedition Milestones (Set 1)"
+TEXT_T13_D = TEXT_ITEM_E .. "Effect 03 - &lt;VAL_ON&gt;Expedition Milestones (Set 1)&lt;&gt; - various artists"
+
+TEXT_T14_N = TEXT_ITEM_N .. "EXPEDITION MILESTONES (SET 2)"
+TEXT_T14_L = TEXT_ITEM_L .. "Expedition Milestones (Set 2)"
+TEXT_T14_D = TEXT_ITEM_E .. "Effect 04 - &lt;VAL_ON&gt;Expedition Milestones (Set 2)&lt;&gt; - various artists"
+
+TEXT_T15_N = TEXT_ITEM_N .. "AUTOPHAGE ALERT"
+TEXT_T15_L = TEXT_ITEM_L .. "Autophage Alert"
+TEXT_T15_D = TEXT_ITEM_E .. "Effect 05 - &lt;VAL_ON&gt;Autophage Alert&lt;&gt;"
 
 
 
@@ -212,8 +249,8 @@ function BuildConsumable(name,audio) return
     <Property name="ID" value="ITEM_]]..name..[[" />
     <Property name="RewardID" value="" />
     <Property name="TutorialRewardID" value="" />
-    <Property name="ButtonLocID" value="TEXT_ITEM_P" />
-    <Property name="ButtonSubLocID" value="" />
+    <Property name="ButtonLocID" value="TEXT_ITEM_B" />
+    <Property name="ButtonSubLocID" value="TEXT_ITEM_C" />
     <Property name="CloseInventoryWhenUsed" value="True" />
     <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="]]..audio..[[" />
@@ -354,6 +391,7 @@ PROPERTY_RWRD_PACKET =
       <Property name="OverrideZeroSeed" value="True" />
       <Property name="UseInventoryChoiceOverride" value="False" />
       <Property name="List">
+
         <Property value="GcRewardTableItem.xml">
           <Property name="PercentageChance" value="100" />
           <Property name="LabelID" value="" />
@@ -372,6 +410,7 @@ PROPERTY_RWRD_PACKET =
             <Property name="RequiresTech" value="" />
           </Property>
         </Property>
+
         <Property value="GcRewardTableItem.xml">
           <Property name="PercentageChance" value="100" />
           <Property name="LabelID" value="" />
@@ -390,6 +429,7 @@ PROPERTY_RWRD_PACKET =
             <Property name="RequiresTech" value="" />
           </Property>
         </Property>
+
         <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="" />
@@ -408,6 +448,7 @@ PROPERTY_RWRD_PACKET =
             <Property name="RequiresTech" value="" />
             </Property>
         </Property>
+
         <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="" />
@@ -426,6 +467,7 @@ PROPERTY_RWRD_PACKET =
             <Property name="RequiresTech" value="" />
             </Property>
         </Property>
+
         <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="" />
@@ -462,6 +504,121 @@ PROPERTY_RWRD_PACKET =
             <Property name="RequiresTech" value="" />
             </Property>
         </Property>
+
+        <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="ID" value="ITEM_T07" />
+            <Property name="AmountMin" value="1" />
+            <Property name="AmountMax" value="1" />
+            <Property name="HideAmountInMessage" value="False" />
+            <Property name="ForceSpecialMessage" value="False" />
+            <Property name="HideInSeasonRewards" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="SeasonRewardListFormat" value="" />
+            <Property name="RequiresTech" value="" />
+            </Property>
+        </Property>
+
+        <Property value="GcRewardTableItem.xml">        
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="ID" value="ITEM_T11" />
+            <Property name="AmountMin" value="1" />
+            <Property name="AmountMax" value="1" />
+            <Property name="HideAmountInMessage" value="False" />
+            <Property name="ForceSpecialMessage" value="False" />
+            <Property name="HideInSeasonRewards" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="SeasonRewardListFormat" value="" />
+            <Property name="RequiresTech" value="" />
+            </Property>
+        </Property>
+
+        <Property value="GcRewardTableItem.xml">        
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="ID" value="ITEM_T12" />
+            <Property name="AmountMin" value="1" />
+            <Property name="AmountMax" value="1" />
+            <Property name="HideAmountInMessage" value="False" />
+            <Property name="ForceSpecialMessage" value="False" />
+            <Property name="HideInSeasonRewards" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="SeasonRewardListFormat" value="" />
+            <Property name="RequiresTech" value="" />
+            </Property>
+        </Property>
+
+        <Property value="GcRewardTableItem.xml">        
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="ID" value="ITEM_T13" />
+            <Property name="AmountMin" value="1" />
+            <Property name="AmountMax" value="1" />
+            <Property name="HideAmountInMessage" value="False" />
+            <Property name="ForceSpecialMessage" value="False" />
+            <Property name="HideInSeasonRewards" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="SeasonRewardListFormat" value="" />
+            <Property name="RequiresTech" value="" />
+            </Property>
+        </Property>
+
+        <Property value="GcRewardTableItem.xml">        
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="ID" value="ITEM_T14" />
+            <Property name="AmountMin" value="1" />
+            <Property name="AmountMax" value="1" />
+            <Property name="HideAmountInMessage" value="False" />
+            <Property name="ForceSpecialMessage" value="False" />
+            <Property name="HideInSeasonRewards" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="SeasonRewardListFormat" value="" />
+            <Property name="RequiresTech" value="" />
+            </Property>
+        </Property>
+
+        <Property value="GcRewardTableItem.xml">        
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="ID" value="ITEM_T15" />
+            <Property name="AmountMin" value="1" />
+            <Property name="AmountMax" value="1" />
+            <Property name="HideAmountInMessage" value="False" />
+            <Property name="ForceSpecialMessage" value="False" />
+            <Property name="HideInSeasonRewards" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="SeasonRewardListFormat" value="" />
+            <Property name="RequiresTech" value="" />
+            </Property>
+        </Property>
+
       </Property>
     </Property>
 </Property>
@@ -483,23 +640,34 @@ PROPERTY_SHOP_PACKET =
 LIST_ITEMS = 
 {
     PROPERTY_ITEM_PACKET,
-    BuildItem("T01"),
-    BuildItem("T02"),
-    BuildItem("T03"),
-    BuildItem("T04"),
-    BuildItem("T05"),
-    BuildItem("T06"),
+
+    BuildItem("T01"),BuildItem("T02"),
+    BuildItem("T03"),BuildItem("T04"),
+    BuildItem("T05"),BuildItem("T06"),
+    BuildItem("T07"),
+
+    BuildItem("T11"),BuildItem("T12"),
+    BuildItem("T13"),BuildItem("T14"),
+    BuildItem("T15"),
 }
 
 LIST_CONSUMABLES =
 {
     PROPERTY_CONS_PACKET,
+
     BuildConsumable("T01","MUS_ENDING"),
     BuildConsumable("T02","MUS_FIRSTTIMEWARP"),
     BuildConsumable("T03","MUS_FIRSTTIMESPACESTATION"),
     BuildConsumable("T04","MUS_SPACEVIRGIN"),
     BuildConsumable("T05","MUS_ATLASSTATION"),
     BuildConsumable("T06","MUS_EXPEDITION_START"),
+    BuildConsumable("T07","MUS_CORRUPTED_STING_LONG"),
+
+    BuildConsumable("T11","MUS_STATUS_UPDATE"),
+    BuildConsumable("T12","MUS_LEVEL_UP"),
+    BuildConsumable("T13","MUS_MILESTONE_COMPLETE"),
+    BuildConsumable("T14","MUS_MILESTONE_REWARDS"),
+    BuildConsumable("T15","MUS_CORRUPTED_MUSICCUE"),
 }
 
 
@@ -605,7 +773,8 @@ function ModifyEXML(exml)
         BuildText("TEXT_PACKET_D",TEXT_PACKET_D),
 
         BuildText("TEXT_ITEM_S",TEXT_ITEM_S),
-        BuildText("TEXT_ITEM_P",TEXT_ITEM_P),
+        BuildText("TEXT_ITEM_B",TEXT_ITEM_B),
+        BuildText("TEXT_ITEM_C",TEXT_ITEM_C),
 
         BuildText("TEXT_T01_N",TEXT_T01_N),
         BuildText("TEXT_T01_L",TEXT_T01_L),
@@ -630,6 +799,30 @@ function ModifyEXML(exml)
         BuildText("TEXT_T06_N",TEXT_T06_N),
         BuildText("TEXT_T06_L",TEXT_T06_L),
         BuildText("TEXT_T06_D",TEXT_T06_D),
+
+        BuildText("TEXT_T07_N",TEXT_T07_N),
+        BuildText("TEXT_T07_L",TEXT_T07_L),
+        BuildText("TEXT_T07_D",TEXT_T07_D),
+
+        BuildText("TEXT_T11_N",TEXT_T11_N),
+        BuildText("TEXT_T11_L",TEXT_T11_L),
+        BuildText("TEXT_T11_D",TEXT_T11_D),
+
+        BuildText("TEXT_T12_N",TEXT_T12_N),
+        BuildText("TEXT_T12_L",TEXT_T12_L),
+        BuildText("TEXT_T12_D",TEXT_T12_D),
+
+        BuildText("TEXT_T13_N",TEXT_T13_N),
+        BuildText("TEXT_T13_L",TEXT_T13_L),
+        BuildText("TEXT_T13_D",TEXT_T13_D),
+
+        BuildText("TEXT_T14_N",TEXT_T14_N),
+        BuildText("TEXT_T14_L",TEXT_T14_L),
+        BuildText("TEXT_T14_D",TEXT_T14_D),
+
+        BuildText("TEXT_T15_N",TEXT_T15_N),
+        BuildText("TEXT_T15_L",TEXT_T15_L),
+        BuildText("TEXT_T15_D",TEXT_T15_D),
     },
   }
 

@@ -2,7 +2,7 @@
 mod_desc = [[
   Replace space pirates & raids loot with a more varied selection
 ]]------------------------------------------------------------------------
-mod_version = '1.64'
+mod_version = '1.66'
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -113,7 +113,7 @@ local new_reward = {
 			{id='ILLEGAL_PROD3',	n=1,	x=2,	c=40,	f=R_Product},
 			{id=E_.DBI,				r=E_.C,			c=30,	f=R_Procedural},
 			{id=E_.DTC,				r=E_.C,			c=30,	f=R_Procedural},
-			{id=E_.UT,				n=18000,x=30000,c=80,	f=R_Money}
+			{id=E_.UT,				n=18000,x=30000,c=30,	f=R_Money}
 		}
 	},
 	{
@@ -136,7 +136,7 @@ local new_reward = {
 			{id='AF_METAL',			n=100,	x=130,	c=30,	f=R_Substance},
 			{id=E_.DBI,				o=true,	r=E_.U,	c=30,	f=R_Procedural},
 			{id=E_.DTC,				o=true,	r=E_.U,	c=30,	f=R_Procedural},
-			{id=E_.NN,				n=100,	x=250,	c=100,	f=R_Money}
+			{id=E_.NN,				n=100,	x=250,	c=30,	f=R_Money}
 		}
 	},
 	{
@@ -162,7 +162,7 @@ local new_reward = {
 			{id='GEODE_RARE',				x=1,	c=20,	f=R_Product},
 			{id=E_.DBI,				o=true,	r=E_.U,	c=20,	f=R_Procedural},
 			{id=E_.DTC,				o=true,	r=E_.U,	c=20,	f=R_Procedural},
-			{id=E_.NN,				n=300,	x=400,	c=100,	f=R_Money}
+			{id=E_.NN,				n=300,	x=400,	c=20,	f=R_Money}
 		}
 	},
 	{
@@ -179,7 +179,7 @@ local new_reward = {
 			{id='GEODE_RARE',				x=1,	c=20,	f=R_Product},
 			{id=E_.DBI,				o=true,	r=E_.U,	c=20,	f=R_Procedural},
 			{id=E_.DTC,				o=true,	r=E_.U,	c=20,	f=R_Procedural},
-			{id=E_.UT,				n=25000,x=35000,c=80,	f=R_Money}
+			{id=E_.UT,				n=25000,x=35000,c=20,	f=R_Money}
 		}
 	}
 }
@@ -227,7 +227,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Loot pirates loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.30',
+	NMS_VERSION			= '4.4',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
