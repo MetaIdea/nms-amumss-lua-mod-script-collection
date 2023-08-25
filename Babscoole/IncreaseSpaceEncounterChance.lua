@@ -70,6 +70,7 @@ ENCOUNTER_DATA_TABLE =
         {"S8_POD_POI","False",0},
         {"S9_PIRATE","False",0},
         {"SENT_SHIP","False",12},
+        {"ROBOM_BOAT","False",0},
     }
 
 NMS_MOD_DEFINITION_CONTAINER = {
