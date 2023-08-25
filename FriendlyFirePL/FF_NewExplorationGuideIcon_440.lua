@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "NewExplorationGuideIcon"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "438"
+METADATA_NMS_VERSION    = "440"
 METADATA_MOD_DESC       = "This mod changes the icon for Exploration Guide in mission log and tooltips"
 
 

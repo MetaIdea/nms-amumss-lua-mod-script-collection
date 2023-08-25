@@ -3,7 +3,7 @@ DEFAULT_SEED_NUMBER = 17000
 SELECTED_SEED_TYPES =
 {
     "Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail", "Robot",
-    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB",
+    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL",
 }
 
 SEED_TYPE_PATH =
@@ -21,6 +21,7 @@ SEED_TYPE_PATH =
     ["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
     ["ROBOTMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL.SCENE.MBIN",
     ["ROBOTMULTITOOLB"]="MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOLB.SCENE.MBIN",
+    ["ATLASMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMULTITOOL.SCENE.MBIN",
 }
 
 STATS =
@@ -124,6 +125,14 @@ STATS =
         {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
     },
     ["ROBOTMULTITOOLB"] =
+    {
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+    },
+    ["ATLASMULTITOOL"] =
     {
         {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
         {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
@@ -595,7 +604,7 @@ function CreateSeedRewardLists()
             for _j=1,DEFAULT_SEED_NUMBER,1 do
                 Seed = GetSeed()
                 local SREA_tmp = ""
-                if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" or SST == "ROBOTMULTITOOL" or SST == "ROBOTMULTITOOLB" then
+                if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" or SST == "ROBOTMULTITOOL" or SST == "ROBOTMULTITOOLB" or SST == "ATLASMULTITOOL" then
                     SREA_tmp = CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SST)
                 else
                     SREA_tmp = CreateCustomShipRewardSubEntry(HexToDec(Seed), Seed, SST)

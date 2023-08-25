@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "UtopiaSpeederNoNanitesCost"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "434"
+METADATA_NMS_VERSION    = "440"
 METADATA_MOD_DESC       = "Fixed a bug where redeeming the Utopia Speeder expedition reward shows a cost of 1400 nanites"
 
 

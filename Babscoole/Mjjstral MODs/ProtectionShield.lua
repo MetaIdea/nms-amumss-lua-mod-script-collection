@@ -1159,6 +1159,18 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="" />
         </Property>
       </Property>
+      <Property name="StandingChangeOnDeath">
+        <Property name="Gek" value="0" />
+        <Property name="Korvax" value="0" />
+        <Property name="Vykeen" value="0" />
+        <Property name="TradeGuild" value="0" />
+        <Property name="WarriorGuild" value="0" />
+        <Property name="ExplorerGuild" value="0" />
+        <Property name="Nexus" value="0" />
+        <Property name="Pirates" value="0" />
+        <Property name="Builders" value="0" />
+        <Property name="None" value="0" />
+      </Property>
       <Property name="UseSystemColorsForTexture" value="False" />
       <Property name="RemoveModel" value="False" />
       <Property name="HideModel" value="False" />
@@ -1298,6 +1310,18 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Rare" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
+      </Property>
+      <Property name="StandingChangeOnDeath">
+        <Property name="Gek" value="0" />
+        <Property name="Korvax" value="0" />
+        <Property name="Vykeen" value="0" />
+        <Property name="TradeGuild" value="0" />
+        <Property name="WarriorGuild" value="0" />
+        <Property name="ExplorerGuild" value="0" />
+        <Property name="Nexus" value="0" />
+        <Property name="Pirates" value="0" />
+        <Property name="Builders" value="0" />
+        <Property name="None" value="0" />
       </Property>
       <Property name="UseSystemColorsForTexture" value="False" />
       <Property name="RemoveModel" value="False" />
