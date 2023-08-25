@@ -6,7 +6,7 @@ mod_desc = [[
   Re-arrange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]--------------------------------------------------------------------------------------
-mod_version = '1.99.3'
+mod_version = '1.99.4'
 
 local icon = {
 	glitch		= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.HIDE_N_SEEK.MSHOP.DDS',
@@ -37,7 +37,7 @@ local icon = {
 }
 
 local scan_table = {
-	{
+	{--	all possible targets
 		name  = 'SHIP_CLOSESTTARGET',
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
 		scan  = {
@@ -74,7 +74,7 @@ local scan_table = {
 			{'SETTLEMENT',			icon.settlement}
 		}
 	},
-	{
+	{--	shop / trading post
 		name  = 'VEHICLE_BUILDING_OUTPOST',
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
 		scan  = {
@@ -82,7 +82,7 @@ local scan_table = {
 			{'SHOP',				icon.shop},
 		}
 	},
-	{
+	{--	sentinel depot / store terminal
 		name  = 'VEHICLE_BUILDING_DEPOT',
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
 		scan  = {
@@ -90,12 +90,12 @@ local scan_table = {
 			{'TERMINAL',			icon.terminal}
 		}
 	},
-	{
+	{--	drop pod
 		name  = 'VEHICLE_BUILDING_DAMAGEDMACHINE',
 		tech  = {'VEHICLE_SCAN1'},
 		scan  = {{'DROPPOD',		icon.droppod}}
 	},
-	{
+	{--	abandoned building
 		name  = 'VEHICLE_BUILDING_ABANDONED',
 		tech  = {'VEHICLE_SCAN1'},
 		scan  = {
@@ -103,7 +103,7 @@ local scan_table = {
 			{'UW_ABANDONED',		icon.abandoned}
 		}
 	},
-	{
+	{--	treasure / underwater / regular ruin
 		name  = 'VEHICLE_BUILDING_RUIN',
 		tech  = {'VEHICLE_SCAN2'},
 		scan  = {
@@ -112,7 +112,7 @@ local scan_table = {
 			{'UW_RUIN',				icon.ruin}
 		}
 	},
-	{
+	{--	monolith / plaque
 		name  = 'VEHICLE_BUILDING_NPC',
 		tech  = {'VEHICLE_SCAN2'},
 		scan  = {
@@ -120,7 +120,7 @@ local scan_table = {
 			{'PLAQUE',				icon.rune}
 		}
 	},
-	{
+	{--	radio / observatory
 		name  = 'BUILDING_RADIOTOWER_L',
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
 		scan  = {
@@ -128,7 +128,7 @@ local scan_table = {
 			{'OBSERVATORY',			icon.observatory}
 		}
 	},
-	{
+	{--	factory / harvester
 		name  = 'MECH_SCAN_FACT',
 		tech  = {'VEHICLE_SCAN1'},
 		scan  = {
@@ -136,7 +136,7 @@ local scan_table = {
 			{'HARVESTER',			icon.tech}
 		}
 	},
-	{
+	{--	crashed ship / sentinel / NPC / underwater ship
 		name  = 'MECH_SCAN_CRASH',
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
 		scan  = {
@@ -147,7 +147,7 @@ local scan_table = {
 			{'UW_SHIPCRASH',		icon.ship}
 		}
 	},
-	{
+	{--	crashed freighter / underwater freighter
 		name  = 'SUB_RADAR_SCAN_FREIGHTER',
 		tech  = {'VEHICLE_SCAN1'},
 		scan  = {
@@ -155,12 +155,12 @@ local scan_table = {
 			{'UW_FREIGHTCRASH',		icon.freighter}
 		}
 	},
-	{
+	{--	unclaimed base site
 		name  = 'UI_RECOVER_BASE_MARKER',
 		tech  = {'VEHICLE_SCAN2'},
 		scan  = {{'NEW_BASE',		icon.base}}
 	},
-	{
+	{--	library / glitched building
 		name  = 'UI_LIBRARY_ENTRANCE_DESC',
 		tech  = {'VEHICLE_SCAN1'},
 		scan  = {
@@ -168,7 +168,7 @@ local scan_table = {
 			{'BOUND_GLITCH',		icon.glitch}
 		}
 	},
-	{
+	{--	sentinel hive pillar
 		name  = 'UI_SENTINEL_HIVE_NAME',
 		tech  = {'VEHICLE_SCAN2'},
 		scan  = {
@@ -176,28 +176,27 @@ local scan_table = {
 			{'ROBOT_CAMP',			icon.robocamp}
 		}
 	},
-	{
+	{--	unclaimed settlement
 		name  = 'UI_SETTLEMENT_LABEL',
 		tech  = {'VEHICLE_SCAN2'},
 		scan  = {{'SETTLEMENT',		icon.settlement}}
 	},
-	---	submarine targets
-	{
+	{--	submarine: underwater building
 		name  = 'SUB_RADAR_SCAN_ABANDON',
 		tech  = {'SUB_BINOCS'},
 		scan  = {{'UW_ABANDONED',	icon.abandoned}}
 	},
-	{
+	{--	submarine: underwater ruin
 		name  = 'SUB_RADAR_SCAN_RUIN',
 		tech  = {'SUB_BINOCS'},
 		scan  = {{'UW_RUIN',		icon.ruin}}
 	},
-	{
+	{--	submarine: underwater crashed ship
 		name  = 'SUB_RADAR_SCAN_CRASH',
 		tech  = {'SUB_BINOCS'},
 		scan  = {{'UW_SHIPCRASH',	icon.ship}}
 	},
-	{
+	{--	submarine: underwater crashed freighter
 		name  = 'SUB_RADAR_SCAN_FREIGHTER',
 		tech  = {'SUB_BINOCS'},
 		scan  = {{'UW_FREIGHTCRASH',icon.freighter}}
@@ -243,37 +242,43 @@ local function BuildVehicleScanMenuTable()
 end
 
 local scan_events = {
-	{
+	{--	store termimal
 		event	= 'TERMINAL',
 		class	= 'Terminal',
 		osd		= 'SIGNAL_TERMINAL',
 		tip		= 'TIP_TERMINAL'
-	},{
+	},
+	{--	locked chest ruin
 		event	= 'T_RUIN',
 		class	= 'TreasureRuins',
 		osd		= 'UI_SIGNAL_TREASURERUIN',
 		tip		= 'UI_TIP_TREASURERUIN'
-	},{
+	},
+	{--	NPC in distress
 		event	= 'DEBRIS_NPC',
 		class	= 'NPCDebris',
 		osd		= 'SIGNAL_DEBRIS',
 		tip		= 'TIP_DEBRIS'
-	},{
+	},
+	{--	plaque (mionor monolith)
 		event	= 'PLAQUE',
 		class	= 'Plaque',
 		osd		= 'SIGNAL_PLAQUE',
 		tip		= 'TIP_PLAQUE'
-	},{
+	},
+	{--	unclaimed base site
 		event	= 'NEW_BASE',
 		class	= 'Base',
 		osd		= 'SIGNAL_BASE',
 		tip		= 'TIP_BASE'
-	},{
+	},
+	{--	library building
 		event	= 'LIBRARY',
 		class	= 'LargeBuilding',
 		osd		= 'SIGNAL_LIBRARY',
 		tip		= 'TIP_LIBRARY'
-	},{
+	},
+	{--	unclaimed settlement
 		event	= 'SETTLEMENT',
 		evprior	= 'High',
 		blocal	= 'AllNearest',
@@ -281,38 +286,44 @@ local scan_events = {
 		class	= 'Settlement_Hub',
 		osd		= 'UI_SETTLEMENT_LOCATED_OSD',
 		tip		= 'UI_SETTLEMENT_LOCATED'
-	},{
+	},
+	{--	glitched planet building
 		name	= 'BUILDING_GLITCHYSTORYBOX_L',
 		event	= 'BOUND_GLITCH',
 		class	= 'StoryGlitch',
 		osd		= 'UI_MP_PORTALQUEST_RIFT_OSD',
 		tip		= 'TUT_BASEBUILD_SURVEY_OSD'
-	},{
+	},
+	{--	traveller grave
 		name	= 'SCAN_GRAVE',
 		event	= 'TRAVEL_GRAVE',
 		class	= 'GraveInCave',
 		osd		= 'UI_BIOSHIP5_SURVEY_OSD',
 		tip		= 'UI_MP_PLANTKILL_GRAVE_SURV_OSD2'
-	},{
+	},
+	{--	holographic hub comms tower
 		name	= 'UI_CORE_HOLOHUB_MARKER',
 		event	= 'HOLO_TOWER',
 		class	= 'MissionTower',
 		osd		= 'UI_CORE_A1S4_SURVEY_OSD',
 		tip		= 'UI_CORE_HOLOHUB_OSD1'
-	},{
+	},
+	{--	drone hive pillar
 		event	= 'DRONE_HIVE',
 		class	= 'DroneHive',
 		osd		= 'UI_DRONEHIVE_LOCATED_OSD',
 		mlabel	= 'UI_SENTINEL_HIVE_NAME',
 		tip		= 'UI_DRONEHIVE_LOCATED'
-	},{
+	},
+	{--	crashed sentinel ship
 		event	= 'SENT_CRASH_CORRUPT',
 		replace	= true,
 		class	= 'SentinelDistressSignal',
 		osd		= 'UI_CRASH_REVEAL_OSD',
 		mlabel	= 'UI_CRASH_REVEAL_MARKER',
 		tip		= 'UI_CRASH_REVEAL_MSG'
-	},{
+	},
+	{--	autophage camp
 		event	= 'ROBOT_CAMP',
 		replace	= true,
 		class	= 'AbandonedRobotCamp',
@@ -378,7 +389,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.30',
+	NMS_VERSION			= '4.4',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES = {
 		{

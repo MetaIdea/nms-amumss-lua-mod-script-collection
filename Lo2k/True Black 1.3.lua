@@ -1,6 +1,7 @@
 ColorSections =
 {
 "Freighter",
+"Pet",
 "Player",
 "Vehicle",  --buggy
 "Vehicle_Bike",
@@ -57,10 +58,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "True Black 1.2.pak", 
+["MOD_FILENAME"] 			= "True Black 1.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.10",
+["NMS_VERSION"]				= "4.40",
 ["MOD_DESCRIPTION"]			= "This mod changes darkest paint color into pure black",
 ["MODIFICATIONS"] 			= 
 	{

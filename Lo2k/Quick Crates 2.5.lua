@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "Quick Crates 2.4.pak",
+	["MOD_FILENAME"]	= "Quick Crates 2.5.pak",
 	["MOD_AUTHOR"]		= "Lo2k",
 	["LUA_AUTHOR"]		= "Lo2k",
 	["MOD_DESCRIPTION"]	= "This mod opens crates in one click",
-	["NMS_VERSION"]		= "4.30.3",	
+	["NMS_VERSION"]		= "4.40",	
 	["MODIFICATIONS"]	= 
 	{
 		{

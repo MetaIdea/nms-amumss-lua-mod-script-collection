@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Unpredictable Roaming Ships 1.9.pak", 
+["MOD_FILENAME"] 			= "No Unpredictable Roaming Ships 2.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.30",
+["NMS_VERSION"]				= "4.40",
 ["MOD_DESCRIPTION"]			= "This mod removes roaming ship formations",
 ["MODIFICATIONS"] 			= 
 	{

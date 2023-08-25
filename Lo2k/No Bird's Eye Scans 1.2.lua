@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Bird's Eye Scans 1.1.pak", 
+["MOD_FILENAME"] 			= "No Bird's Eye Scans 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k (based on Penitence)",
 ["LUA_AUTHOR"]				= "Lo2k (based on Penitence)",
-["NMS_VERSION"]				= "4.30",
+["NMS_VERSION"]				= "4.40",
 ["MOD_DESCRIPTION"]			= "Disables Aerial Camera Zoom on Waypoints, Beacons, Signals, and Transmission Towers",
 ["MODIFICATIONS"] 			= 
 	{
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},   ]]--
 						{
-							["PRECEDING_KEY_WORDS"] = {"BeaconTransition",},  -- Used by signal scanner
+							["SPECIAL_KEY_WORDS"] = {"ID"; "BEACON",},  -- Used by signal scanner
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	

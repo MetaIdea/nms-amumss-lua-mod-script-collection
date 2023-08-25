@@ -1,10 +1,11 @@
 ------------------------------------------------------------------------------------------
 -- Loaded_D <..\ModScript\ModHelperScripts\LIB/lua_2_exml.lua>
--------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.82) ... by lMonk
----	A tool for converting exml to an equivalent lua table and back again
----	(with added color helper functions)
--------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+---	LUA 2 EXML (VERSION: 0.82.3) ... by lMonk
+---	A tool for converting exml to an equivalent lua table and back again.
+---	Helper functions for color class, vector class and string arrays
+---	* This should be placed at [AMUMSS folder]\ModScript\ModHelperScripts\LIB
+-------------------------------------------------------------------------------
 
 --	replace a boolean with its text equivalent (ignore otherwise)
 --	@param b: any value
@@ -12,13 +13,15 @@ function bool(b)
 	return (type(b) == 'boolean') and ((b == true) and 'True' or 'False') or b
 end
 
+--	get the count of ALL objects in a table (non-recursive)
+--	@param t: any table
+function len2(t)
+	i=0; for _ in pairs(t) do i=i+1 end; return i
+end
+
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
 function ToExml(class)
-	local function len2(t)
-	--	get the count of ALL objects in a table (non-recursive)
-		i=0; for _ in pairs(t) do i=i+1 end ; return i
-	end
 	local function exml_r(tlua)
 		local exml = {}
 		function exml:add(t)
@@ -72,30 +75,19 @@ end
 
 -- END: <..\ModScript\ModHelperScripts\LIB/lua_2_exml.lua>
 -- Loaded_D <..\ModScript\ModHelperScripts\LIB/scene_tools.lua>
--------------------------------------------------------------------------
----	Model scene tools (VERSION: 0.82) ... by lMonk
+-------------------------------------------------------------------------------
+---	Model scene tools (VERSION: 0.82.1) ... by lMonk
 ---	Helper functions for adding new TkSceneNodeData nodes and properties
----	!! Requires lua_2_exml.lua !!
--------------------------------------------------------------------------
-
---	Returns a keyed table of TkSceneNodeData sections, using the Name property as keys,
---	* Use to enable direct access to nodes in a table generated with ToLua
-function SceneNames(node, keys)
-	keys = keys or {}
-	if node.META[2] == 'TkSceneNodeData.xml' then
-		keys[node.Name] = node
-	end
-	for k, scn in pairs(node.Children or {}) do
-		if k ~= 'META' then SceneNames(scn, keys) end
-	end
-	return keys
-end
+---	* Requires lua_2_exml.lua !
+---	* This should be placed at [AMUMSS folder]\ModScript\ModHelperScripts\LIB
+-------------------------------------------------------------------------------
 
 --	T (optional) is a table for scene class properties >> attributes, transform and children
 function ScNode(name, stype, T)
 	T = T or {}
 	T.META 		= {'value', 'TkSceneNodeData.xml'}
 	T.Name 		= name
+	T.NameHash	= JenkinsHash(name)
 	T.Type 		= stype
 	return T
 end
@@ -130,6 +122,28 @@ function ScAttributes(t)
 	return T
 end
 
+function ScChildren(t)
+	t.META = {'name', 'Children'}
+	return t
+end
+
+--	returns a jenkins hash from a string (by lyravega)
+function JenkinsHash(input)
+    local hash = 0
+    local t_chars = {string.byte(input:upper(), 1, #input)}
+
+    for i = 1, #input do
+        hash = (hash + t_chars[i]) & 0xffffffff
+        hash = (hash + (hash << 10)) & 0xffffffff
+        hash = (hash ~ (hash >> 6)) & 0xffffffff
+    end
+    hash = (hash + (hash << 3)) & 0xffffffff
+    hash = (hash ~ (hash >> 11)) & 0xffffffff
+    hash = (hash + (hash << 15)) & 0xffffffff
+
+    return tostring(hash)
+end
+
 -- END: <..\ModScript\ModHelperScripts\LIB/scene_tools.lua>
 ------------------------------------------------------------------------------------------
 mod_desc = [[
@@ -138,53 +152,56 @@ mod_desc = [[
 
 local containers = {
 	{
-		id	 = '_OutLeft_',
+		name = '_OutLeft_',
 		form = {
-			{62.2, -4.1, -64.0, -66.2, 66.62, -33.5, 0.3, 0.3, 0.3},
-			{70.8, -4.2, -52.3, -96.2, 46.62, -13.5, 0.3, 0.3, 0.3},
-			{74.7, -5.8, -50.1, -26.2, 96.62, -93.5, 0.3, 0.3, 0.3},
-			{77.7, -6.2, -50.1, -6.2, 6.62, -113.5, 0.3, 0.3, 0.3},
+			{45, -4.6, -46, 310, 65, -33.5, 0.6, 0.6, 0.6},
+			{70.8, -4.2, -52.3, -96.2, 46.62, -13.5, 0.6, 0.6, 0.6},
+			{27.2, -1.7, -48.5, 10, 45, 5, 0.5, 0.5, 0.5},
+			{62, -4.5, -45, 0, 105, 30, 0.5, 0.5, 0.5}
 		}
 	},
 	{
-		id	 = '_OutBack_',
+		name = '_OutBack_',
 		form = {
-			{-6.2, 36.1, 83.8, 0, 0.5, 0, 0.6, 0.6, 0.6},
+			{-5, 35.5, 85.6, -9, 55, -28, 0.6, 0.6, 0.6},
 			{-58.49, -3.4, 23.5, -29.0, 122.0, -165.8, 0.8, 0.8, 0.8},
-			{-78.5, -3.6, 19.3, -28.2, 110.8, -166.9, 0.5, 0.5, 0.5},
-			{-42.4, -3.4, 16.4, -29.2, 122.9, -162.1, 0.4, 0.4, 0.4},
+			{-79, -3.8, 16, 0, -20, 0, 0.5, 0.5, 0.5},
+			{-42.4, -3.4, 16.4, -55, 30, 115, 0.4, 0.4, 0.4}
 		}
 	},
 	{
-		id	 = '_FrontLt_',
+		name = '_FrontLt_',
 		form = {
-			{40.6, -6.3, -19.3, 8.5, 2.2, 175.42, 0.5, 0.5, 0.5},
-			{41.5, -6.2, -6.47, 0.5, 170.9, -10.42, 0.6, 0.6, 0.6},
-			{33.0, -7.8, -6.47, -6.5, 120.0, -5.42, 0.5, 0.5, 0.5}
+			{40.6, -5.9, -19.6, 2, -8, 175.4, 0.5, 0.5, 0.5},
+			{41.5, -6.2, -6.5, 0.5, 171, -10.4, 0.6, 0.6, 0.6},
+			{32.4, -7.6, -5.2, -11, 80, 0, 0.5, 0.5, 0.5}
 		}
 	},
 	{
-		id	 = '_CenterDn_',
+		name = '_CenterDn_',
 		form = {
-			{44.5, -4.45, 22.5, 0, 0, 12, 0.4, 0.4, 0.4},
-			{57.5, -4.8, 21.5, 39.5, 61.0, 5.2, 0.4, 0.4, 0.4},
-			{52.0, -3.5, 16.0, 0.2, 15.0, -12.2, 0.6, 0.6, 0.6},
+			{45.4, -4.3, 23.3, 5, 210, -2, 0.4, 0.4, 0.4},
+			{57.5, -5.1, 21.5, 30, 61.0, 5.4, 0.4, 0.4, 0.4},
+			{55.5, -1.9, 16.5, 260, 75, 5, 0.6, 0.6, 0.6},
+			{43, -5.1, 13, -1, -10, 8, 0.6, 0.6, 0.6}
 		}
 	},
 	{
-		id	 = '_RightUp_',
+		name = '_RightUp_',
 		form = {
 			{58.5, -4.5, 57.2, -70.5, 30.1, 15.4, 0.6, 0.6, 0.6},
-			{52.5, 4.7, 65.7, -1.2, -5.1, 10.4, 0.6, 0.6, 0.6},
-			{38.0, 1.2, 42.4, -1.2, -5.1, 10.4, 0.3, 0.3, 0.3}
+			{52.5, 4.6, 65.7, 0, -10, 8, 0.6, 0.6, 0.6},
+			{37.7, 1.2, 42.4, -1.2, -5.1, 9.8, 0.3, 0.3, 0.3},
+			{31.8, 1.1, 63.6, -10, -80, 0, 0.3, 0.3, 0.3}
 		}
 	},
 	{
-		id	 = '_LeftUp_',
+		name = '_LeftUp_',
 		form = {
 			{72.2, -5.2, -0.5, 240, 20, -30, 0.5, 0.5, 0.5},
-			{72.2, 10.8, -2.5, 250, 50, 110, 0.6, 0.6, 0.2},
-			{78.2, 5.6, -4.5, -1.2, -5.1, 10.4, 0.7, 0.7, 0.7}
+			{71.6, 11.1, -3.6, 280, -140, -60, 0.4, 0.4, 0.4},
+			{77.5, 5.7, 3, 8, 270, 0, 0.6, 0.6, 0.6},
+			{79, 5.7, -5.8, 1, -15, 10.4, 0.7, 0.7, 0.7}
 		}
 	}
 }
@@ -193,9 +210,9 @@ local function AddSceneNodes()
 	local T = {}
 	for _,scn in ipairs(containers) do
 		for i=1, #scn.form do
-			T[#T+1] = ScNode(scn.id..string.char(64 + i), 'LOCATOR')
+			T[#T+1] = ScNode(scn.name..string.char(64 + i), 'LOCATOR')
 			T[#T+1] = ScNode(
-				scn.id..string.char(64 + i), 'REFERENCE', {
+				scn.name..string.char(64 + i), 'REFERENCE', {
 					ScTransform(scn.form[i]),
 					ScAttributes({
 						{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CRASH_CONTAINER.SCENE.MBIN'}
@@ -212,14 +229,14 @@ local function AddDescriptors()
 	for _,scn in ipairs(containers) do
 		local tmp = {
 			META		= {'value', 'TkResourceDescriptorList.xml'},
-			TypeId		= scn.id:upper(),
+			TypeId		= scn.name:upper(),
 			Descriptors	= {META = {'name', 'Descriptors'}}
 		}
 		for i=1, #scn.form do
 			tmp.Descriptors[#tmp.Descriptors+1] = {
 				META	= {'value', 'TkResourceDescriptorData.xml'},
-				Id		= (scn.id..string.char(64 + i)):upper(),
-				Name	= scn.id..string.char(64 + i),
+				Id		= (scn.name..string.char(64 + i)):upper(),
+				Name	= scn.name..string.char(64 + i),
 				Chance	= 0
 			}
 		end
@@ -231,9 +248,9 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Crashed Freighter Procedural Containers.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 4.23,
+	NMS_VERSION			= '4.4',
 	MOD_DESCRIPTION		= mod_desc,
-	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
+	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,UNUSED_VARIABLE',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -252,7 +269,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {
 					{'Name', 'HeightAdjust3'},
 					{'Name', 'HeightAdjust4'}
 				},

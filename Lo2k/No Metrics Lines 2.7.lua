@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Metrics Lines 2.6.pak", 
+["MOD_FILENAME"] 			= "No Metrics Lines 2.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.34",
+["NMS_VERSION"]				= "4.40",
 ["MOD_DESCRIPTION"]			= "This mod removes thin regular vertical white lines during pulse jumps",
 ["MODIFICATIONS"] 			= 
 	{
