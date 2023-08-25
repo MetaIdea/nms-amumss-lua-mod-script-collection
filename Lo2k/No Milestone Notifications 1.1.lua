@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Quick Milestone Notifications.pak", 
+["MOD_FILENAME"] 			= "No Milestone Notifications 1.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.03",
-["MOD_DESCRIPTION"]			= "This mod makes notifications shorter",
+["NMS_VERSION"]				= "4.40",
+["MOD_DESCRIPTION"]			= "This mod removes milestones notifications",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"StatMessageType",	"Quick"},
+								{"StatMessageType",	"Silent"},
 							}
 						},
 					},
