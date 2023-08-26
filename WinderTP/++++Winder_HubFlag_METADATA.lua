@@ -2438,15 +2438,15 @@ CUSTOM_REWARDS = --REWARDTABLE REWARDS
     </Property>
 	]]
 
-HUBFLAG_SPECIFIC_NPCS =
-{
-	{ ["ID"] =			"ROBOT_G",
-	  ["Filename"] = 	"MODELS\COMMON\PLAYER\PLAYERCHARACTER\NPCROBOT.SCENE.MBIN",
-	  ["Seed"] =		"0",
-	  ["UseSeedValue"] ="False",
-	  ["AlienRace"] =	"Diplomats",
-	},
-}
+-- HUBFLAG_SPECIFIC_NPCS =
+-- {
+	-- { ["ID"] =			"ROBOT_G",
+	  -- ["Filename"] = 	"MODELS\COMMON\PLAYER\PLAYERCHARACTER\NPCROBOT.SCENE.MBIN",
+	  -- ["Seed"] =		"0",
+	  -- ["UseSeedValue"] ="False",
+	  -- ["AlienRace"] =	"Builders",
+	-- },
+-- }
 
 HUBFLAG_NPCSPAWN = 
 {
@@ -2663,8 +2663,8 @@ HUBFLAG_NPCSPAWN =
 	{ ["ID"] = 					"WNPC_ROBOT",
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNROB_",
-	  ["SpawnSpecific"] = 		"ROBOT_G",
-	  ["Race"] = 				"Diplomats",
+	  ["SpawnSpecific"] = 		"",
+	  ["Race"] = 				"Builders",
 	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
@@ -2674,7 +2674,7 @@ HUBFLAG_NPCSPAWN =
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNSPI_",
 	  ["SpawnSpecific"] = 		"NEXUSSPIDER",
-	  ["Race"] = 				"Diplomats",
+	  ["Race"] = 				"Builders",
 	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
@@ -5161,7 +5161,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["Connection"] = 				"OUTPOST",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Gek Radio Tower",
+						["NameLower"] = 				"Gek Outpost",
 						["Subtitle"] = 					"BLD_MAINROOM_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_MAINROOM_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -69384,10 +69384,10 @@ for i,j in pairs(HUBFLAG_NPCSPAWN) do
 	CUSTOM_NPCS_LIST[i+1] =  GetNPCtable(j["ID"],j["SpawnUnderNodeName"],j["PlacementNodeName"],j["SpawnSpecific"],j["Race"],j["InteractionOverride"],j["TechShopCategory"],j["ForceInteraction"],j["DisableInteraction"])
 end
 
-CUSTOM_SPECIFIC_NPC_LIST = {""}
-for i,j in pairs(HUBFLAG_SPECIFIC_NPCS) do
-	CUSTOM_SPECIFIC_NPC_LIST[i+1] = GetSpecificNPC(j["ID"],j["Filename"],j["Seed"],j["UseSeedValue"],j["AlienRace"])
-end
+-- CUSTOM_SPECIFIC_NPC_LIST = {""}
+-- for i,j in pairs(HUBFLAG_SPECIFIC_NPCS) do
+	-- CUSTOM_SPECIFIC_NPC_LIST[i+1] = GetSpecificNPC(j["ID"],j["Filename"],j["Seed"],j["UseSeedValue"],j["AlienRace"])
+-- end
 
 EXPORT_GROUPS_LIST = {""}
 for i,j in pairs(GROUPS_INJECT) do
@@ -69462,7 +69462,7 @@ end
 
 -- END TAGS FOR MANUAL READING EXML_Helper FILES
 CUSTOM_NPCS_LIST[#CUSTOM_NPCS_LIST + 1] = ""
-CUSTOM_SPECIFIC_NPC_LIST[#CUSTOM_SPECIFIC_NPC_LIST + 1] = ""
+-- CUSTOM_SPECIFIC_NPC_LIST[#CUSTOM_SPECIFIC_NPC_LIST + 1] = ""
 EXPORT_KNOWNPRODUCTS_LIST[#EXPORT_KNOWNPRODUCTS_LIST + 1] = ""
 EXPORT_COST_LIST[#EXPORT_COST_LIST + 1] = ""
 EXPORT_BASEOBJECTS_LIST[#EXPORT_BASEOBJECTS_LIST + 1] = ""
@@ -69473,7 +69473,7 @@ EXPORT_AUTOPARTDATA_LIST[#EXPORT_AUTOPARTDATA_LIST + 1] = ""
 EXPORT_SPECSHOP = EXPORT_SPECSHOP .. ""
 
 CUSTOM_NPCS				= table.concat(CUSTOM_NPCS_LIST)
-CUSTOM_SPECIFIC_NPC		= table.concat(CUSTOM_SPECIFIC_NPC_LIST)
+-- CUSTOM_SPECIFIC_NPC		= table.concat(CUSTOM_SPECIFIC_NPC_LIST)
 EXPORT_KNOWNPRODUCTS	= table.concat(EXPORT_KNOWNPRODUCTS_LIST)
 EXPORT_COST				= table.concat(EXPORT_COST_LIST)
 EXPORT_BASEOBJECTS		= table.concat(EXPORT_BASEOBJECTS_LIST)
@@ -70482,11 +70482,11 @@ FINAL_VALUE_CHANGE =
 							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= CUSTOM_NPCS
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"UniqueNPCs"},
-							--["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= CUSTOM_SPECIFIC_NPC
-						},
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"UniqueNPCs"},
+							-- --["LINE_OFFSET"] 		= "+0",
+							-- ["ADD"] 				= CUSTOM_SPECIFIC_NPC
+						-- },
 					},
 				},
 				{
