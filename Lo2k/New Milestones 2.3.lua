@@ -1,6 +1,7 @@
- MOD_NAME		= "New Milestones 2.2.pak"; 
+ MOD_NAME		= "New Milestones 2.3.pak"; 
  MOD_AUTHOR 	= "Lo2k";
- NMS_VERSION 	= "4.04";
+ LUA_AUTHOR 	= "Lo2k";
+ NMS_VERSION 	= "4.41";
  MOD_DESC		= "This mods changes milestones pacing";
   
 
@@ -81,6 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] 		= MOD_NAME, 
   ["MOD_AUTHOR"]		= MOD_AUTHOR,
+  ["LUA_AUTHOR"]		= LUA_AUTHOR,
   ["NMS_VERSION"]		= NMS_VERSION,
   ["MOD_DESCRIPTION"]	= MOD_DESC,
   ["MODIFICATIONS"] = 

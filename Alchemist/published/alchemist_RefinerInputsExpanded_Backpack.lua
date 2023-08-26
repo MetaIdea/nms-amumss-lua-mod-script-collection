@@ -1,44 +1,65 @@
-
 Author = "alchemist"
 ModName = "RefinerInputsExpanded_Backpack"
-BaseDescription = "Survive."
-GameVersion = "3-6x"
-ModVersion = "1"
+BaseDescription = "Increases the number of inputs for the backpack refiners."
+GameVersion = "4-41"
+ModVersion = "2"
 
--- must be 1-3 or game will crash
-NUM_INPUTS = 3
-FUEL_TIME = 15 * 60
+local Config = {
+  -- FuelTime is shared by all backpack refiners.
+  FuelTime = 15 * 60,
+
+  NumInputs = 2,
+  NumInputsMk2 = 3,
+}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 
-["MOD_FILENAME"]				= Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
-["MOD_DESCRIPTION"]			= BaseDescription,
-["MOD_AUTHOR"]					= Author,
-["NMS_VERSION"]					= GameVersion,
+MOD_FILENAME				= Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
+MOD_DESCRIPTION			= BaseDescription,
+MOD_AUTHOR					= Author,
+NMS_VERSION					= GameVersion,
 
-["MODIFICATIONS"]	= {
-{["MBIN_CHANGE_TABLE"] = {
+MODIFICATIONS	= {{
+  MBIN_CHANGE_TABLE = {
 
-	{["MBIN_FILE_SOURCE"] = "MODELS\\COMMON\\PLAYER\\PLAYERCHARACTER\\PLAYERCHARACTER\\ENTITIES\\PLAYERCHARACTER.ENTITY.MBIN",
-	["EXML_CHANGE_TABLE"] = {
+    {
+      MBIN_FILE_SOURCE = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
+      EXML_CHANGE_TABLE = {
+        {
+          SPECIAL_KEY_WORDS = {
+            "Title", "UI_SUIT_REFINER_NAME_L",
+            "Id", "MAINT_FUEL1"
+          },
+          VALUE_CHANGE_TABLE = {
+            {"AmountEmptyTimePeriod", Config.FuelTime}
+          }
+        },
+      }
+    },
 
-		{["SPECIAL_KEY_WORDS"] = {
-			"Title", "UI_SUIT_REFINER_NAME_L",
-			"Id", "MAINT_FUEL1"
-		},
-		["VALUE_CHANGE_TABLE"] = {
-			{"AmountEmptyTimePeriod", FUEL_TIME}
-		}},
+    {
+      MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+      EXML_CHANGE_TABLE = {
 
-		{["SPECIAL_KEY_WORDS"] = {
-			"Title", "UI_SUIT_REFINER_NAME_L"
-		},
-		["SECTION_UP"] = 1,
-		["VALUE_CHANGE_TABLE"] = {
-			{"VisibleMaintenanceSlots", 2 + NUM_INPUTS},
-			{"NumInputs", NUM_INPUTS},
-		}},
+        {
+          SPECIAL_KEY_WORDS = {"Name", "UI_SUIT_REFINER_NAME"},
+          PRECEDING_KEY_WORDS = {"StatBonuses"},
+          VALUE_CHANGE_TABLE = {
+            {"Bonus", Config.NumInputs}
+          }
+        },
 
-	}},
+        {
+          SPECIAL_KEY_WORDS = {"Name", "UI_SUIT_REFINER2_NAME"},
+          PRECEDING_KEY_WORDS = {"StatBonuses"},
+          VALUE_CHANGE_TABLE = {
+            {"Bonus", Config.NumInputsMk2}
+          }
+        },
+      }
+    },
 
-}}}}
+  } -- END MBIN_CHANGE_TABLE
+}} -- END MODIFICATIONS
+
+} -- END NMS_MOD_DEFINITION_CONTAINER

@@ -412,6 +412,57 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Maximum", 4}, -- Original 0
                             },
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 5}, -- Original 1
+                                {"Maximum", 6}, -- Original 5
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 0
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 4}, -- Original 0
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 0
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 3}, -- Original 8
+                                {"Maximum", 3}, -- Original 12
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 0
+                                {"Maximum", 4}, -- Original 0
+                            },
+                        },
                     }
                 },
                 {
@@ -459,6 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Normandy",        "0"},
                                 {"DeepSpace",       "0"},
                                 {"DeepSpaceCommon", "0"},
+                                {"Pirate",          "0"},
                             }
                         },
                     }
