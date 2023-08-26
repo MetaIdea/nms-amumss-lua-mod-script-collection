@@ -39,9 +39,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"R", "1"},
+								{"R", "1.0"},
 								{"G", "0.5"},
-								{"B", "0"},
+								{"B", "0.0"},
 							}
 						},
 						
@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"R", "0.2"},
 								{"G", "0.8"},
-								{"B", "0"},
+								{"B", "0.0"},
 							}
 						},
 						
@@ -82,7 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"R", "0.75"},
-								{"G", "1"},
+								{"G", "1.0"},
 								{"B", "0.75"},
 							}
 						},
@@ -156,7 +156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"R", "0.6"},
 								{"G", "0.85"},
-								{"B", "1"},
+								{"B", "1.0"},
 							}
 						},
 						
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"R", "0.2"},
 								{"G", "0.8"},
-								{"B", "0"},
+								{"B", "0.0"},
 							}
 						},
 						
@@ -263,7 +263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"R", "0.8"},
 								{"G", "0.3"},
-								{"B", "0"},
+								{"B", "0.0"},
 							}
 						}, 
 						
@@ -316,8 +316,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"R", "1"},
-								{"G", "1"},
+								{"R", "1.0"},
+								{"G", "1.0"},
 								{"B", "0.8"},
 							}
 						},

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Hazardous Plants 1.1.pak", 
+["MOD_FILENAME"] 			= "No Hazardous Plants 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k (Mod idea by anon219038)",
 ["LUA_AUTHOR"]				= "Lo2k (additional code by Arjed)",
-["NMS_VERSION"]				= "4.15",
+["NMS_VERSION"]				= "4.41",
 ["MOD_DESCRIPTION"]			= "This mod removes all hazardous plants",
 ["MODIFICATIONS"] 			= 
 	{
