@@ -3,8 +3,8 @@ AuthorLua = "Xen0nex"
 ModName = "Larger Space Combat"
 ModNameType = "Tweak"
 BaseDescription = "Larger Space Combat - separate from Reworked Space Combat for modularity"
-GameVersion = "4.21"
-ModVersion = "1.0X"
+GameVersion = "4.41"
+ModVersion = "1.3X"
 
 --Adds additional Squadrons to appear at each Wanted Level, for all multiplayer group sizes
 AddedSquadrons =
@@ -338,13 +338,112 @@ LargerBattleChanges =
 					{"Count",	2,			3}		--2,		2
 				}
 			}]]
+			
+		--[[
+			--the following 4 sets of changes omitted because I can't find a way to target them.
+			--These also seem to mostly target Freighters.  E.G. CapitalFreighter, Freighter, Standard, SmallFreighter, TinyFreighter
+				--The last of these sets of changes (lines 1241 ~ 1246) is added manually at the bottom of the MBIN_CHANGE_TABLE
+		]]
+			--[[
+			{--8th "ChildSpawns" entry			--CapitalFreighter
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--9th "ChildSpawns" entry			--Freighter
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	3200,		2500},	--3200,		2500
+					{"Count",	3,			5}		--3,		5
+				}
+			},
+			{--10th "ChildSpawns" entry			--Standard (regular starship???)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	1000,		100},	--1000,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--11th "ChildSpawns" entry			--SmallFreighter
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	1000,		1500},	--1000,		1500
+					{"Count",	1,			4}		--1,		4
+				}
+			},
+			{--12th "ChildSpawns" entry			--TinyFreighter		(this entry is added manually at the bottom of the MBIN_CHANGE_TABLE)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	500,		700},	--500,		700
+					{"Count",	0,			3}		--0,		3
+				}
+			},]]
 		}
 	},
-	--[[{
-		--4 sets of changes from lines 1130 - 1246 omitted because I can't find a way to target them.
-		--These also seem to mostly target Freighters.  E.G. CapitalFreighter, Freighter, Standard, SmallFreighter, TinyFreighter
-			--The last of these 4 sets of changes (lines 1241 ~ 1246) is added manually at the bottom of the MBIN_CHANGE_TABLE
-	},]]
+	{
+		{
+			"BattlePirateSpawns"				--These are presumably all related to Pirate Capital battles, as this section was added in the NMS v4.4 update
+		},
+		{
+			{									--Standard (regular starship???)
+				{
+					"GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--1st "ChildSpawns" entry			--Standard (regular starship???)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--2nd "ChildSpawns" entry			--Standard (regular starship???)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--3rd "ChildSpawns" entry			--CapitalFreighter (this is the Pirate Capital Freighter)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--4th "ChildSpawns" entry			--Frigate	(presumably the pirate torpedo frigates)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	1500,		1800},	--1200,		1300
+					{"Count",	6,			12}		--6,		6
+				}
+			}
+		}
+	},
 	{
 		{
 			"BattleInitialStandardSpawns"			--These are presumably friendly ships that fight the pirates during freighter-pirates battles
@@ -368,13 +467,22 @@ LargerBattleChanges =
 					{"Count",	3,			12}		--2,		2		(5,			15)
 				}
 			},
-			{--2nd "ChildSpawns" entry, etc.
+			{--2nd "ChildSpawns" entry
 				{
 					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
 				},
 				{
 					{"Spread",	100,		150},
 					{"Count",	4,			8}		--2,		2		(6,			12)
+				}
+			},
+			{--3rd "ChildSpawns" entry		(added in the NMS v4.4 update)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	100,		150},
+					{"Count",	4,			8}		--2,		2
 				}
 			}
 		}
@@ -402,13 +510,22 @@ LargerBattleChanges =
 					{"Count",	3,			15}		--2,		2		(4,			16)
 				}
 			},
-			{--2nd "ChildSpawns" entry, etc.
+			{--2nd "ChildSpawns" entry
 				{
 					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
 				},
 				{
 					{"Spread",	180,		360},
 					{"Count",	4,			8}		--1,		1		(6,			12)
+				}
+			},
+			{--3rd "ChildSpawns" entry		(added in the NMS v4.4 update)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	0,			0},
+					{"Count",	0,			0}		--0,		0
 				}
 			}
 		}
@@ -436,13 +553,81 @@ LargerBattleChanges =
 					{"Count",	3,			14}		--2,		2		(4,			16)
 				}
 			},
-			{--2nd "ChildSpawns" entry, etc.
+			{--2nd "ChildSpawns" entry
 				{
 					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
 				},
 				{
 					{"Spread",	140,		240},
 					{"Count",	3,			6}		--1,		1		(2,			6)
+				}
+			},
+			{--3rd "ChildSpawns" entry		(added in the NMS v4.4 update)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	0,			0},
+					{"Count",	0,			0}		--0,		0
+				}
+			}
+		}
+	},
+	{
+		{
+			"BattleRecurringPirateSpawns"			--(This section added in the NMS v4.4 update)
+		},
+		{
+			{
+				{
+					"GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	180,		360},	--100,		120
+					{"Count",	4,			10}		--2,		2
+				}
+			},
+			{--1st "ChildSpawns" entry
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	140,		280},	--100,		120
+					{"Count",	3,			14}		--2,		2
+				}
+			},
+			{--2nd "ChildSpawns" entry
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	140,		240},	--100,		120
+					{"Count",	3,			6}		--1,		1
+				}
+			},
+			{--3rd "ChildSpawns" entry		(added in the NMS v4.4 update)
+				{
+					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+				},
+				{
+					{"Spread",	140,		280},	--100,		120
+					{"Count",	3,			14}		--2,		2
+				}
+			}
+		}
+	},
+	{
+		{
+			"BattleReinforcingPirateFrigateSpawn"			--(This section added in the NMS v4.4 update)
+		},
+		{
+			{	--Presumably pirate torpedo frigates that reinforce?
+				{
+					
+				},
+				{
+					{"Spread",	5000,		2000},	--5000,		2000
+					{"Count",	3,			6}		--3,		3
 				}
 			}
 		}
