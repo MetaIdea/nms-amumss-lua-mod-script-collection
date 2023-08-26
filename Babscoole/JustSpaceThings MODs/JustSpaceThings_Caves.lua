@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_JSTCaveOverhaul2022.pak",
+["MOD_FILENAME"]            = "JustSpaceThings_Caves.pak",
 ["MOD_AUTHOR"]              = "JuatSpaceThings",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.08",
+["NMS_VERSION"]             = "4.41",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.3"},
+                                {"Coverage", "0.6"},
                             }
                         },
                         {
@@ -36,7 +36,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.4"},
+                                {"Coverage", "0.7"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaxXZRotation","5",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Coverage", "0.6"},
                             }
                         },
                         {
@@ -60,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.3"},
+                                {"Coverage", "0.6"},
                             }
                         },
                         {
@@ -80,6 +88,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Coverage", "0.5"},
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaxAngle","100",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Coverage", "0.6"},
+                            }
+                        },
                     }
                 },
                 {
@@ -92,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SwapPrimaryForRandomColour", "True"},
-                                {"MaxScale",                   "1"},
+                                {"MaxScale",                   "2"},
                             }
                         },
                         {
@@ -101,8 +117,111 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.5"},
+                                {"Coverage", "0.7"},
                             }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["ADD_OPTION"]  = "ADDafterSECTION", 
+                            ["ADD"] =
+[[
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Single" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLGLOWPLANT.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="High" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="15" />
+        <Property name="MaxAngle" value="45" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="True" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.6" />
+        <Property name="MaxScale" value="0.9" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="15" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="SupportsScanToReveal" value="False" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="5" />
+            <Property name="FlatDensity" value="0.005" />
+            <Property name="SlopeDensity" value="0.005" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="110" />
+            <Property name="FadeOutEndDistance" value="130" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="15" />
+              <Property value="25" />
+              <Property value="35" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+]]
                         },
                     }
                 },
@@ -225,14 +344,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"FlatDensity","0.14",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.10"},
+                                {"Coverage", "0.1"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Coverage","0.54",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.60"},
+                                {"Coverage", "0.6"},
                             }
                         },
                         {
@@ -242,6 +361,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.8"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN",},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Coverage", "0.55"}, --1565
                             }
                         },
                         {
@@ -273,7 +401,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Coverage","0.08",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.10"},
+                                {"Coverage", "0.15"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLROCKS.SCENE.MBIN",},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Coverage", "0.6"},
                             }
                         },
                         {
@@ -282,7 +419,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.5"},
+                                {"Coverage", "1"},
                             }
                         },
                         {
@@ -296,10 +433,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMGLOWPLANT.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Coverage", "0.6"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMGLOWPLANT.SCENE.MBIN",},
+                            ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.40"},
+                                {"Coverage", "0.5"},
                             }
                         },
                     }
@@ -381,7 +527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.60"},
+                                {"Coverage", "0.6"},
                             }
                         },
                         {
@@ -424,7 +570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage", "0.40"},
+                                {"Coverage", "0.4"},
                             }
                         },
                     }
