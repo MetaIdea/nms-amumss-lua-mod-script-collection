@@ -2,8 +2,8 @@ ModName         =   "_MPDebris"
 ModAuthor       =   "Knightmare077"
 LuaAuthor       =   "Babscoole & Hypn0tick"
 BaseDescription =   "Spawns more debris and keeps it around longer."
-GameVersion     =   "4.40"
-ModVersion      =   "01.0"
+GameVersion     =   "4.41"
+ModVersion      =   "1.1"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -443,7 +443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property name="Number" value="14" />
-          <Property name="Radius" value="25" />
+          <Property name="Radius" value="45" />
           <Property name="Scale" value="40" />
           <Property name="Speed" value="600" />
           <Property name="AnglularSpeed" value="30" />
@@ -460,10 +460,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property name="Number" value="13" />
-          <Property name="Radius" value="24" />
-          <Property name="Scale" value="60" />
-          <Property name="Speed" value="200" />
-          <Property name="AnglularSpeed" value="15" />
+          <Property name="Radius" value="44" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="400" />
+          <Property name="AnglularSpeed" value="25" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -494,8 +494,8 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property name="Number" value="14" />
-          <Property name="Radius" value="25" />
-          <Property name="Scale" value="40" />
+          <Property name="Radius" value="55" />
+          <Property name="Scale" value="20" />
           <Property name="Speed" value="600" />
           <Property name="AnglularSpeed" value="30" />
           <Property name="OverrideSeed" value="GcSeed.xml">
@@ -505,15 +505,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="GcDebrisData.xml">
           <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/PANELL_GIB.SCENE.MBIN" />
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
           <Property name="Number" value="13" />
-          <Property name="Radius" value="24" />
-          <Property name="Scale" value="60" />
-          <Property name="Speed" value="200" />
+          <Property name="Radius" value="54" />
+          <Property name="Scale" value="20" />
+          <Property name="Speed" value="500" />
           <Property name="AnglularSpeed" value="15" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -547,8 +547,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Number" value="8" />
           <Property name="Radius" value="85" />
-          <Property name="Scale" value="7" />
-          <Property name="Speed" value="800" />
+          <Property name="Scale" value="15" />
+          <Property name="Speed" value="600" />
           <Property name="AnglularSpeed" value="30" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -557,15 +557,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="GcDebrisData.xml">
           <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISA.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
           <Property name="Number" value="7" />
-          <Property name="Radius" value="24" />
-          <Property name="Scale" value="7" />
-          <Property name="Speed" value="700" />
+          <Property name="Radius" value="64" />
+          <Property name="Scale" value="15" />
+          <Property name="Speed" value="600" />
           <Property name="AnglularSpeed" value="25" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -598,7 +598,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Number" value="8" />
           <Property name="Radius" value="85" />
-          <Property name="Scale" value="7" />
+          <Property name="Scale" value="15" />
           <Property name="Speed" value="800" />
           <Property name="AnglularSpeed" value="30" />
           <Property name="OverrideSeed" value="GcSeed.xml">
@@ -615,7 +615,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Number" value="7" />
           <Property name="Radius" value="24" />
-          <Property name="Scale" value="7" />
+          <Property name="Scale" value="15" />
           <Property name="Speed" value="700" />
           <Property name="AnglularSpeed" value="25" />
           <Property name="OverrideSeed" value="GcSeed.xml">
@@ -700,7 +700,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Number" value="8" />
           <Property name="Radius" value="85" />
-          <Property name="Scale" value="7" />
+          <Property name="Scale" value="15" />
           <Property name="Speed" value="800" />
           <Property name="AnglularSpeed" value="30" />
           <Property name="OverrideSeed" value="GcSeed.xml">
@@ -717,7 +717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Number" value="7" />
           <Property name="Radius" value="24" />
-          <Property name="Scale" value="7" />
+          <Property name="Scale" value="15" />
           <Property name="Speed" value="700" />
           <Property name="AnglularSpeed" value="25" />
           <Property name="OverrideSeed" value="GcSeed.xml">
@@ -1293,6 +1293,280 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "NEWSPBLDPOIEXPL",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="14" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="600" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="13" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="600" />
+          <Property name="AnglularSpeed" value="15" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "NEWSPBLDPOIEXPL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life", "120"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOSUCCESS",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="12" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="30" />
+          <Property name="Speed" value="200" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOSUCCESS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "120"},
+                                {"ShakeStrengthModifier",     "5"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOFAILED",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="12" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="30" />
+          <Property name="Speed" value="200" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOFAILED"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "120"},
+                                {"ShakeStrengthModifier",     "1"},
+                                {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATETURRETEXP",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="14" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="600" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="7" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="30" />
+          <Property name="Speed" value="300" />
+          <Property name="AnglularSpeed" value="15" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATETURRETEXP"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "120"},
+                                {"ShakeStrengthModifier",     "1"},
+                                {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATETUREXPLGE",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="14" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="600" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="7" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="30" />
+          <Property name="Speed" value="300" />
+          <Property name="AnglularSpeed" value="15" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATETUREXPLGE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "120"},
+                                {"ShakeStrengthModifier",     "1"},
+                                {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEENGINEEXP",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="12" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="200" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="12" />
+          <Property name="Radius" value="29" />
+          <Property name="Scale" value="30" />
+          <Property name="Speed" value="200" />
+          <Property name="AnglularSpeed" value="35" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEENGINEEXP"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "120"},
+                                {"ShakeStrengthModifier",     "1"},
+                                {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
                             ["FOREACH_SKW_GROUP"] =
                             {
                                 {"Id", "FIREWORKEND"},
@@ -1324,14 +1598,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOSUCCESS"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShakeStrengthModifier",     "5"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                            }
-                        },
-                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOSHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1342,12 +1608,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Id", "TORPEDOFAILED"},
-                                {"Id", "PIRATETURRETEXP"},
-                                {"Id", "PIRATETUREXPLGE"},
                                 {"Id", "PIRATESHIELGEXP"},
                                 {"Id", "PIRATEFUELEXP"},
-                                {"Id", "PIRATEENGINEEXP"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
