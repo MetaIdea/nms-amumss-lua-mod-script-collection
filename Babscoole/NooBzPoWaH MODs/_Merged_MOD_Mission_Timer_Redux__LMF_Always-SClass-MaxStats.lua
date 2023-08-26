@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\ATLASPATHTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\ATLASPATHTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\BASECOMPUTERMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\BASECOMPUTERMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\SPACEPOIMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\SPACEPOIMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -91,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentChangeOfFrigateBeingPurchasable",       "100"}, -- Original 60
-                                {"MinFrigateStatValue",                          "50"},  -- Original -10
+                                --{"MinFrigateStatValue",                          "50"},  -- Original -10
                                 {"PercentChanceOfFrigateAdditionalSpawnedTrait", "600"}, -- Original 55
                                 {"LowDamageNumberOfExpeditions",                 "1"},   -- Original 3
                                 {"RampDamageNumberOfExpeditions",                "5"},   -- Original 10
@@ -105,6 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 5}, -- Original 1
+                                {"Maximum", 6}, -- Original 5
                             },
                         },
                         {
@@ -137,7 +138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 3}, -- Original 8
-                                {"Maximum", 6}, -- Original 12
+                                {"Maximum", 3}, -- Original 12
                             },
                         },
                         {
@@ -154,6 +155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 5}, -- Original 1
+                                {"Maximum", 6}, -- Original 5
                             },
                         },
                         {
@@ -178,7 +180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 3}, -- Original 8
-                                {"Maximum", 6}, -- Original 12
+                                {"Maximum", 3}, -- Original 12
                             },
                         },
                         {
@@ -203,6 +205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 5}, -- Original 1
+                                {"Maximum", 6}, -- Original 5
                             },
                         },
                         {
@@ -219,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 3}, -- Original 8
-                                {"Maximum", 6}, -- Original 12
+                                {"Maximum", 3}, -- Original 12
                             },
                         },
                         {
@@ -252,6 +255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 5}, -- Original 1
+                                {"Maximum", 6}, -- Original 5
                             },
                         },
                         {
@@ -260,7 +264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 3}, -- Original 8
-                                {"Maximum", 6}, -- Original 12
+                                {"Maximum", 3}, -- Original 12
                             },
                         },
                         {
@@ -293,6 +297,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 4}, -- Original 0
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 2
+                                {"Maximum", 2}, -- Original 5
                             },
                         },
                         {
@@ -300,9 +313,55 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Minimum", 5}, -- Original 1
+                                {"Minimum", 4}, -- Original 1
+                                {"Maximum", 5}, -- Original 5
                             },
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","ExtraLoot"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 1}, -- Original 0
+                                {"Maximum", 2}, -- Original 0
+                            },
+                        }, 
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 3}, -- Original 8
+                                {"Maximum", 3}, -- Original 8
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","ExtraLoot"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 1}, -- Original 0
+                                {"Maximum", 2}, -- Original 0
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 4}, -- Original 0
+                                {"Maximum", 4}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DeepSpace","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 3}, -- Original 8
+                                {"Maximum", 3}, -- Original 8
+                            },
+                        }, 
                         {
                             ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
@@ -341,13 +400,73 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Minimum", 3}, -- Original 8
-                                {"Maximum", 6}, -- Original 12
+                                {"Maximum", 3}, -- Original 12
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 0
+                                {"Maximum", 4}, -- Original 0
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 5}, -- Original 1
+                                {"Maximum", 6}, -- Original 5
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 0
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 4}, -- Original 0
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 0
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 3}, -- Original 8
+                                {"Maximum", 3}, -- Original 12
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 0
+                                {"Maximum", 4}, -- Original 0
                             },
                         },
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\FRIGATETRAITTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -391,6 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Normandy",        "0"},
                                 {"DeepSpace",       "0"},
                                 {"DeepSpaceCommon", "0"},
+                                {"Pirate",          "0"},
                             }
                         },
                     }
