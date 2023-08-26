@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "farShipHud.pak",
 ["MOD_AUTHOR"]    = "hhliow",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.36",
+["NMS_VERSION"]   = "4.40",
 ["MODIFICATIONS"] =
     {
         {

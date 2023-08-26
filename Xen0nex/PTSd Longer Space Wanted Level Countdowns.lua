@@ -1,5 +1,5 @@
 ModName = "PTSd Longer Space Wanted Level Countdowns"
-GameVersion = "4_23"
+GameVersion = "4_41"
 Description = "Increases the countdown timer between waves of Wanted Levels in space when you are free to Pulse Jump away."
 
 Path1 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"

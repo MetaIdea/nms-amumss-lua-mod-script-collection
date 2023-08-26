@@ -2,8 +2,8 @@ ModName         =   "_MPDebris"
 ModAuthor       =   "Knightmare077"
 LuaAuthor       =   "Babscoole & Hypn0tick"
 BaseDescription =   "Spawns more debris and keeps it around longer."
-GameVersion     =   "4.25"
-ModVersion      =   "0.9c"
+GameVersion     =   "4.40"
+ModVersion      =   "01.0"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -19,11 +19,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/EFFECTS/EXPLOSIONTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "GROUNDEXPLODE"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "7"},
                             }
@@ -31,14 +31,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SPARKSSLOW"},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life", "3"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPLOSION",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -80,7 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life", "120"},
                             }
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "11"},
                                 {"Radius", "40"},
@@ -99,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Radius", "30"},
                                 {"Scale",  "7"},
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "3"},
                                 {"Radius", "35"},
@@ -120,7 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","Filename"},
                             ["LINE_OFFSET"] = "+1",
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Filename", "MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISA.SCENE.MBIN"},
                             }
@@ -128,7 +128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Radius", "40"},
                                 {"Scale",  "4"},
@@ -137,7 +137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TURRETEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number",        "6"},
                                 {"AnglularSpeed", "13"}
@@ -146,14 +146,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TURRETEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "6"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SENTHIVEEXPL",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -214,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","Filename"},
                             ["LINE_OFFSET"] = "+1",
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Filename", "MODELS/EFFECTS/DEBRIS/SPACE/SMALLDEBRIS/SMALLDEBRIS3.SCENE.MBIN"},
                             }
@@ -222,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "14"},
                                 {"Radius", "30"},
@@ -232,7 +232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Radius", "40"},
                                 {"Scale",  "7"},
@@ -242,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Scale", "7"},
                             }
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Scale", "7"},
                             }
@@ -258,28 +258,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
                             ["VALUE_MATCH"] = "2.5",
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Scale", "1"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life", "120"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADSHIPMUZ"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life", "3"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEREXPL",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -321,28 +321,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEREXPL"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life", "120"}
+                                {"Life",                      "120"},
+                                {"ShakeStrengthModifier",     "20"},
+                                {"CamShakeCustomMaxDistance", "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBULDEXPL",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEXPLSML",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
         <Property value="GcDebrisData.xml">
           <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISA.SCENE.MBIN" />
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
           <Property name="Number" value="10" />
-          <Property name="Radius" value="65" />
-          <Property name="Scale" value="25" />
-          <Property name="Speed" value="1000" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="600" />
           <Property name="AnglularSpeed" value="30" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -351,15 +353,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="GcDebrisData.xml">
           <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SPACE/SMALLDEBRIS/SMALLDEBRIS2.SCENE.MBIN" />
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/PANELL_GIB.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="13" />
-          <Property name="Radius" value="34" />
+          <Property name="Number" value="8" />
+          <Property name="Radius" value="24" />
           <Property name="Scale" value="60" />
-          <Property name="Speed" value="1000" />
+          <Property name="Speed" value="200" />
           <Property name="AnglularSpeed" value="15" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -369,22 +371,381 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBULDEXPL"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEXPLSML"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life", "120"}
+                                {"Life",                      "120"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFRIGATEEX",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="14" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="600" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/PANELL_GIB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="13" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="60" />
+          <Property name="Speed" value="200" />
+          <Property name="AnglularSpeed" value="15" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFRIGATEEX"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "120"},
+                                {"ShakeStrengthModifier",     "5"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEXPLLRG",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="14" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="600" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/PANELL_GIB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="13" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="60" />
+          <Property name="Speed" value="200" />
+          <Property name="AnglularSpeed" value="15" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEXPLLRG"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "120"},
+                                {"ShakeStrengthModifier",     "20"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFREIGHTEX",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="14" />
+          <Property name="Radius" value="25" />
+          <Property name="Scale" value="40" />
+          <Property name="Speed" value="600" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/PANELL_GIB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="13" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="60" />
+          <Property name="Speed" value="200" />
+          <Property name="AnglularSpeed" value="15" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFREIGHTEX"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "120"},
+                                {"ShakeStrengthModifier",     "30"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                                {"G",                         "0.7"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBULDEXPL",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="8" />
+          <Property name="Radius" value="85" />
+          <Property name="Scale" value="7" />
+          <Property name="Speed" value="800" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="7" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="7" />
+          <Property name="Speed" value="700" />
+          <Property name="AnglularSpeed" value="25" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBULDEXPL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "60"},
+                                {"ShakeStrengthModifier",     "10"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFRBUILDEX",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="8" />
+          <Property name="Radius" value="85" />
+          <Property name="Scale" value="7" />
+          <Property name="Speed" value="800" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="7" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="7" />
+          <Property name="Speed" value="700" />
+          <Property name="AnglularSpeed" value="25" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFRBUILDEX"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "60"},
+                                {"ShakeStrengthModifier",     "20"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PRTEFRIGATEBUEX",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="8" />
+          <Property name="Radius" value="85" />
+          <Property name="Scale" value="7" />
+          <Property name="Speed" value="800" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="7" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="7" />
+          <Property name="Speed" value="700" />
+          <Property name="AnglularSpeed" value="25" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PRTEFRIGATEBUEX"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "60"},
+                                {"ShakeStrengthModifier",     "5"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBLDEXPLL",},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="8" />
+          <Property name="Radius" value="85" />
+          <Property name="Scale" value="7" />
+          <Property name="Speed" value="800" />
+          <Property name="AnglularSpeed" value="30" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="7" />
+          <Property name="Radius" value="24" />
+          <Property name="Scale" value="7" />
+          <Property name="Speed" value="700" />
+          <Property name="AnglularSpeed" value="25" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBLDEXPLL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life",                      "60"},
+                                {"ShakeStrengthModifier",     "10"},
+                                {"CamShakeCustomMaxDistance", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CORPTPILLDESTR"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number", "4"},
+                                {"Number", "5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CORPTPILLEXPL",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -409,7 +770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SENTCRYSTALEXPL",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -451,7 +812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SENTCRYSEXPLSML",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -493,7 +854,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPDRONEEXPL",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -603,7 +964,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPARMOUREXP",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -713,7 +1074,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTQUADEXP",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -823,7 +1184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTSELFDEST",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -962,15 +1323,48 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Life",  "60"},
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOSUCCESS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShakeStrengthModifier",     "5"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOSHIELD"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShakeStrengthModifier",     "5"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Id", "TORPEDOFAILED"},
+                                {"Id", "PIRATETURRETEXP"},
+                                {"Id", "PIRATETUREXPLGE"},
+                                {"Id", "PIRATESHIELGEXP"},
+                                {"Id", "PIRATEFUELEXP"},
+                                {"Id", "PIRATEENGINEEXP"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShakeStrengthModifier",     "1"},
+                                {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/EFFECTS/PLANETEFFECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BLUEEXPLODE",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1000,7 +1394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTMUZZLE"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] = 
+                            ["ADD"] =
 [[
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="DRONEDYING" />
@@ -1146,7 +1540,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "2"},
                             }
@@ -1154,7 +1548,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "4"},
                             }
@@ -1162,7 +1556,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "4"},
                             }
@@ -1170,7 +1564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "3"},
                             }
@@ -1178,16 +1572,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "RESOURCEEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "12"},
-                                {"Radius", "3"},
-                                {"Speed",  "3"},
+                                {"Radius", "1"},
+                                {"Speed",  "2"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "WALKEREXPLODE",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1297,24 +1691,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEHIT"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life", "30"},
+                                {"Life", "60"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDHATCH"},
                             ["PRECEDING_KEY_WORDS"] = {"Model"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Filename", "MODELS/EFFECTS/BLOOD/FIENDEXPLODE.SCENE.MBIN"},
+                                {"Filename", "MODELS/EFFECTS/NATURE/EGGHATCH.SCENE.MBIN"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDHATCH"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] = 
+                            ["ADD"] =
 [[
         <Property value="GcDebrisData.xml">
           <Property name="Filename" value="TkModelResource.xml">
@@ -1337,15 +1731,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ROCKDEBRIS"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "12"},
-                                {"Speed",  "3"},
+                                {"Speed",  "2"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PLANTDEBRIS"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "8"},
                                 {"Speed",  "3"},
@@ -1353,7 +1747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BAITDEBRIS"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Radius", "1"},
                                 {"Speed",  "3"},
@@ -1402,7 +1796,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTERBROKEN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number", "3"},
+                                {"Number", "1"},
                             }
                         },
                         {
@@ -1420,12 +1814,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Number", "6"},
                                 {"Radius", "3"},
                                 {"Scale",  "0.5"},
-                                {"Speed",  "3"},                              
+                                {"Speed",  "3"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDCRYSTAL",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1450,21 +1844,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TORNADODEBRIS"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life", "30"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "METEORSPARKS"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life", "20"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","REDEXPLODE",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1489,7 +1883,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","GREENEXPLODE",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1514,7 +1908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","YELLOWEXPLODE",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1539,7 +1933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SENTINELARMOUR",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1649,7 +2043,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","DRONEWALKEREXPL",},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1760,9 +2154,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEWALKEREXPL", "Life", "3"},
                             ["LINE_OFFSET"] = "+1",
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Scale", "8"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRISSPARKS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life", "10"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRISSMOKE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life", "10"}
                             }
                         },
                         {
@@ -1797,7 +2205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Id", "SCRAPEXPLODE"},
                                 {"Id", "STORMCRYSTAL"},
                                 {"Id", "WEIRDCRYSTAL"},
-                                {"Id", "FJELLYSPLAT"},                            
+                                {"Id", "FJELLYSPLAT"},
                                 {"Id", "REDEXPLODE"},
                                 {"Id", "GREENEXPLODE"},
                                 {"Id", "YELLOWEXPLODE"},
@@ -1813,67 +2221,67 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/EFFECTS/PLAYEREFFECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FASTLAND"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "7"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SUBSTANCEPOP"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "7"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TERRAINEDIT"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "6"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TERRAINCREATE"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "3"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "GROUNDPOP"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "8"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "VEHICLEGUNHIT"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "4"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "LASERNEEDTECH"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life", "0.7"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TERRAIN_FLATTEN"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "6"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "GRENEXPROBOT"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life", "3"},
                             }
@@ -1899,25 +2307,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/EFFECTS/SPACEEFFECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_HIT"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AkEvent", "ASTEROID_EXPLODE"},
+                                {"AkEvent", "ASTEROID_HIT"},
+                                {"Life",    "60"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","ASTEROID_HIT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1960,7 +2369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "5"},
                                 {"Speed",  "30"},
@@ -1968,14 +2377,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_S_EXP"},
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed",  "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","ASTEROID_L_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -2018,7 +2427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPEXPLODE", "Filename", "TkModelResource.xml"},
                             ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = 
+                            ["ADD"] =
 [[
             <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
@@ -2094,11 +2503,33 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number",         "4"},
                                 {"Scale",          "4"},
                                 {"AnglularSpeed",  "0.1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPEXPLODE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShakeStrengthModifier",     "1"},
+                                {"CamShakeCustomMaxDistance", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TURRETGUN"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life", "3"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FRDEBRISDAMAGE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShakeStrengthModifier", "1"},
                             }
                         },
                         {

@@ -2,8 +2,8 @@ Author = "Xaliber"
 LuaAuthor = "DeathWrench and Babscoole, updated by Xen0nex"
 ModName = "Reworked Space Combat"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "4.23"
-ModVersion = "1.2X"
+GameVersion = "4.41"
+ModVersion = "1.3X"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships (individual ships have additonal multipliers applied)
 	--Note that "SpaceCombatDifficultyMultipliers" values in GCGAMEPLAYGLOBALS.GLOBAL.MBIN control additional (or subtract) Hull & Shields for enemy starships depending on Space Combat difficulty setting
@@ -240,6 +240,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 	
 	--Definitions
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_NOSHIELD"},				--Added in NMS v4.4
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
+		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
+		{"Engine", "SPACE_EASY"},			--default "SPACE_EASY"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
+		{"RewardCount", 1},					--default 1
+		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
+		{"Health", math.floor(ShipHull*4100/1.5)},				--default 4100
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*15000/1.5)},		--default 15000
+		{"Shield", "WEAK"},					--default "WEAK"
+		{"LaserDamageLevel", 1},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},				--Used in vanilla for BOUNTY1 (wandering easy), EASYBOUNTY1 & EASYBOUNTY2 (space station mission),	PIRATE_SQUAD (Possibly the additional enemy pirates in the space station missions?),	& Base Armourer unique mission
 	["PRECEDING_FIRST"] = "True",
 	["VALUE_CHANGE_TABLE"] = {
@@ -463,6 +478,112 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"Health", math.floor(ShipHull*105000)},					--default 105000
 		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*995000)},	--default 995000
 		{"Shield", "STRONG"},				--default "STANDARD"
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	--The following were added in NMS v4.4:
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER"},					--Neutral Freighters?
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_HARD"},		--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""
+		{"Health", math.floor(ShipHull*40000)},					--default 40000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*220000)},	--default 220000
+		{"Shield", "FREIGHTER"},				--default "FREIGHTER"
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_TINY"},					--Neutral Tiny Freighters?
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_HARD"},		--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""
+		{"Health", math.floor(ShipHull*2000)},					--default 2000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*9000)},	--default 9000
+		{"Shield", "FREIGHTER"},				--default "FREIGHTER"
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_SMALL"},					--Neutral Small Freighters?
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_HARD"},		--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""
+		{"Health", math.floor(ShipHull*4000)},					--default 4000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*12000)},	--default 12000
+		{"Shield", "FREIGHTER"},				--default "FREIGHTER"
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","FRIGATE"},					--Neutral Frigates?
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_HARD"},		--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""
+		{"Health", math.floor(ShipHull*7000)},					--default 7000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*18000)},	--default 18000
+		{"Shield", ""},				--default ""
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_CAP"},					--Neutral Capital Freighters?
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_HARD"},		--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""
+		{"Health", math.floor(ShipHull*105000)},					--default 105000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*3200000)},	--default 3200000
+		{"Shield", "FREIGHTER"},				--default "FREIGHTER"
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},					--Pirate Freighters?
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_HARD"},		--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""
+		{"Health", math.floor(ShipHull*105000)},					--default 105000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*995000)},	--default 995000
+		{"Shield", "PIRATE_FREIGHT"},				--default "PIRATE_FREIGHT"
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FRIG"},					--Pirate Frigates?
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_EASY"},		--default "SPACE_EASY"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""
+		{"Health", math.floor(ShipHull*13125)},					--default 13125
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*124375)},	--default 124375
+		{"Shield", ""},				--default ""
 		{"LaserDamageLevel", 2},			--default 1
 		}},
 	--[[	Deprecated as of NMS v3.85
@@ -1085,6 +1206,46 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}},]]
 	
 	--Shields
+	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER"},			--added in NMS v4.4
+	["PRECEDING_FIRST"] = "True",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Health", math.floor(ShipShield*25000*0.75)},								--25000
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*120000*0.75)},					--120000
+		{"RechargeTime", 0},										--0
+		{"RechargeDelayTime", 0},									--0
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","CIVLEAD_SHIELD"},		--added in NMS v4.4
+	["PRECEDING_FIRST"] = "True",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Health", math.floor(ShipShield*5000000*0.75)},								--5000000
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*19000*0.75)},					--19000
+		{"RechargeTime", 0},										--0
+		{"RechargeDelayTime", 0},									--0
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},		--added in NMS v4.4
+	["PRECEDING_FIRST"] = "True",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Health", math.floor(ShipShield*10000000*0.75)},								--10000000
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*0*0.75)},					--0
+		{"RechargeTime", 0},										--0
+		{"RechargeDelayTime", 0},									--0
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","WEAK"},					--added in NMS v4.4
+	["PRECEDING_FIRST"] = "True",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Health", math.floor(ShipShield*1200*0.75)},								--1200
+		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*12000*0.75)},					--12000
+		{"RechargeTime", 18},										--10
+		{"RechargeDelayTime", 10},									--12
+		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","STANDARD"},
 	["PRECEDING_FIRST"] = "True",
