@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Pulse Drive Aim 1.4.pak", 
+["MOD_FILENAME"] 			= "Better Pulse Drive Aim 1.5.pak", 
 ["MOD_AUTHOR"]				= "Andarius",
 ["LUA_AUTHOR"]				= "Andarius and Lo2k",
-["NMS_VERSION"]				= "4.34",
+["NMS_VERSION"]				= "4.41",
 ["MOD_DESCRIPTION"]			= "This mod allows to warp closer to space markers without snapping to them",
 ["MODIFICATIONS"] 			= 
 	{

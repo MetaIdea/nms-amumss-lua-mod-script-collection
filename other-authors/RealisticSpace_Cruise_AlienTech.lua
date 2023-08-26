@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	
-	{["MBIN_FILE_SOURCE"]	= "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {		
 		{ --Rocket Launcher Damage Tweak
 		["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","StatsType","Ship_Weapons_Guns_Damage"},
@@ -72,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllVehicles"}}},		
 	}},
 
-	{["MBIN_FILE_SOURCE"]	= "METADATA\\REALITY\\TABLES\\DAMAGETABLE.MBIN",
+	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {		
 		{ --SHIPLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"BoostMaxSpeed","250"}}},
 	}},
 
-	{["MBIN_FILE_SOURCE"]	= "METADATA\\SIMULATION\\SPACE\\AISPACESHIPATTACKDATATABLE.MBIN",
+	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {
 		--OUTLAW and later: uses this MBIN instead of GCAISPACESHIPGLOBALS.MBIN
 		{--Balances NPC ships speed to match player
@@ -490,7 +490,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"Shield","FAST_STRONG"}}},
 	}},
 	
-	{["MBIN_FILE_SOURCE"]	= "METADATA\\PROJECTILES\\PROJECTILETABLE.MBIN",
+	{["MBIN_FILE_SOURCE"]	= "METADATA\PROJECTILES\PROJECTILETABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {	
 		--Buffs NPC damage againsts each other, just like player would have done.
 		-- Photon Cannons
@@ -542,7 +542,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","7500"}}},
 	}},
 	
-	{["MBIN_FILE_SOURCE"]	= "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN",
+	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {
 		{ --Capital freighters spawns instead of normal ones for motherships, sentinel only.
 		["SPECIAL_KEY_WORDS"] = {"MinRange","2200"}, --sentinel use this minrange, and only this in the file, stupid but works

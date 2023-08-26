@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       {
         {
 		
-          ["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\DEFAULTREALITY.MBIN",
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
           ["EXML_CHANGE_TABLE"] =
           {
             --S Class Modules, remove blacklist
