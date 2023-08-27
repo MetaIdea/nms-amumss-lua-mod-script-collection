@@ -5,8 +5,10 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-36"
+GameVersion = "4-41"
 ModVersion = "1-3-1"
+
+--
 
 --[[
 
@@ -110,32 +112,14 @@ NMS_VERSION       = GameVersion,
 MODIFICATIONS = {{
   MBIN_CHANGE_TABLE = {
 
-    -- Dialog Removals
+    --
     {
-      MBIN_FILE_SOURCE = "METADATA\\REALITY\\TABLES\\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-      EXML_CHANGE_TABLE = {
-        {
-          -- remove existing judgement dialog as we will provide our own
-          SPECIAL_KEY_WORDS = {"Id", "EXOTIC_CHEF"},
-          REMOVE = "SECTION",
-          REPLACE_TYPE = "ALL"
-        },
-      }
-    },
-
-    -- Injected Tables
-    {
-      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/COREMISSIONTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/SIMULATION/MISSIONS/COREMISSIONTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Missions", --
-          },--
+          PRECEDING_KEY_WORDS = { "Missions" },
           ADD = [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="ALCH_CHEF_INTRO" />
@@ -766,6 +750,9 @@ MODIFICATIONS = {{
           <Property name="RequireInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -785,6 +772,7 @@ MODIFICATIONS = {{
           <Property name="EventPriority" value="Regular" />
           <Property name="CanEndFromOutsideMission" value="False" />
           <Property name="DisableMultiplayerSync" value="True" />
+          <Property name="BlockStartedOnUseEvents" value="False" />
           <Property name="ReplaceEventIfAlreadyActive" value="False" />
           <Property name="BuildingLocation" value="Nearest" />
           <Property name="BuildingType" value="Nexus" />
@@ -795,6 +783,7 @@ MODIFICATIONS = {{
           <Property name="ForceWideRandom" value="False" />
           <Property name="MustFindSystem" value="False" />
           <Property name="AllowOverriddenBuildings" value="True" />
+          <Property name="TargetMustMatchMissionSeed" value="False" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -908,7 +897,7 @@ MODIFICATIONS = {{
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
-            <Property name="Range" value="100" />
+            <Property name="Range" value="0" />
             <Property name="Triggers" />
             <Property name="AllowRetrigger" value="False" />
           </Property>
@@ -1752,6 +1741,7 @@ MODIFICATIONS = {{
                 <Property name="InsertItemName" value="" />
               </Property>
             </Property>
+            <Property name="DebugText" value="" />
           </Property>
         </Property>
       </Property>
@@ -1881,6 +1871,9 @@ MODIFICATIONS = {{
           <Property name="RequireInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -1900,6 +1893,7 @@ MODIFICATIONS = {{
           <Property name="EventPriority" value="Regular" />
           <Property name="CanEndFromOutsideMission" value="False" />
           <Property name="DisableMultiplayerSync" value="True" />
+          <Property name="BlockStartedOnUseEvents" value="False" />
           <Property name="ReplaceEventIfAlreadyActive" value="False" />
           <Property name="BuildingLocation" value="Nearest" />
           <Property name="BuildingType" value="Nexus" />
@@ -1910,6 +1904,7 @@ MODIFICATIONS = {{
           <Property name="ForceWideRandom" value="False" />
           <Property name="MustFindSystem" value="False" />
           <Property name="AllowOverriddenBuildings" value="True" />
+          <Property name="TargetMustMatchMissionSeed" value="False" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -2023,7 +2018,7 @@ MODIFICATIONS = {{
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
-            <Property name="Range" value="100" />
+            <Property name="Range" value="0" />
             <Property name="Triggers" />
             <Property name="AllowRetrigger" value="False" />
           </Property>
@@ -2545,6 +2540,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -2559,6 +2557,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -2573,6 +2574,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -2661,6 +2665,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -2675,6 +2682,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -2770,6 +2780,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -2784,6 +2797,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_REVEAL" />
                 </Property>
@@ -2798,6 +2814,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -2812,6 +2831,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -2826,6 +2848,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -2852,6 +2877,9 @@ MODIFICATIONS = {{
           <Property name="RequireInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -2871,6 +2899,7 @@ MODIFICATIONS = {{
           <Property name="EventPriority" value="High" />
           <Property name="CanEndFromOutsideMission" value="False" />
           <Property name="DisableMultiplayerSync" value="True" />
+          <Property name="BlockStartedOnUseEvents" value="False" />
           <Property name="ReplaceEventIfAlreadyActive" value="False" />
           <Property name="BuildingLocation" value="Nearest" />
           <Property name="BuildingType" value="Nexus" />
@@ -2881,6 +2910,7 @@ MODIFICATIONS = {{
           <Property name="ForceWideRandom" value="False" />
           <Property name="MustFindSystem" value="False" />
           <Property name="AllowOverriddenBuildings" value="True" />
+          <Property name="TargetMustMatchMissionSeed" value="False" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -2994,7 +3024,7 @@ MODIFICATIONS = {{
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
-            <Property name="Range" value="100" />
+            <Property name="Range" value="0" />
             <Property name="Triggers" />
             <Property name="AllowRetrigger" value="False" />
           </Property>
@@ -3376,6 +3406,7 @@ MODIFICATIONS = {{
                         <Property name="Conditions">
                           <Property value="GcMissionConditionIsMissionInProgress.xml">
                             <Property name="MissionID" value="ALCH_CHEF_WHALE" />
+                            <Property name="MustBeSelectedMission" value="False" />
                           </Property>
                         </Property>
                         <Property name="AllowedToFormatObjectives" value="False" />
@@ -3465,6 +3496,7 @@ MODIFICATIONS = {{
                               <Property name="Conditions">
                                 <Property value="GcMissionConditionIsMissionInProgress.xml">
                                   <Property name="MissionID" value="ALCH_CHEF_WHALE" />
+                                  <Property name="MustBeSelectedMission" value="False" />
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False" />
@@ -3713,25 +3745,19 @@ MODIFICATIONS = {{
       <Property name="BlocksPinning" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/RECURRINGMISSIONTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/SIMULATION/MISSIONS/RECURRINGMISSIONTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Missions", --
-          },--
+          PRECEDING_KEY_WORDS = { "Missions" },
           ADD = [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="ALCH_CHEF_RESET" />
@@ -7019,25 +7045,19 @@ MODIFICATIONS = {{
       <Property name="BlocksPinning" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/ENABLINGCONDITIONSTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/SIMULATION/MISSIONS/ENABLINGCONDITIONSTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Missions", --
-          },--
+          PRECEDING_KEY_WORDS = { "Missions" },
           ADD = [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="CHEF_MENU_00" />
@@ -7787,8 +7807,11 @@ MODIFICATIONS = {{
                   </Property>
                   <Property value="GcMissionConditionIsMissionInProgress.xml">
                     <Property name="MissionID" value="ALCH_CHEF_OFFER" />
+                    <Property name="MustBeSelectedMission" value="False" />
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -7799,9 +7822,12 @@ MODIFICATIONS = {{
                         </Property>
                         <Property name="Product" value="P_CHEF_SONG" />
                         <Property name="Amount" value="1" />
+                        <Property name="UseDefaultAmount" value="False" />
                         <Property name="SyncWithMissionFireteam" value="False" />
                         <Property name="ForceSearchFreighterAndChests" value="True" />
                         <Property name="SearchEveryShip" value="True" />
+                        <Property name="SearchGrave" value="False" />
+                        <Property name="SearchCookingIngredients" value="False" />
                         <Property name="TakeAmountFromSeasonData" value="False" />
                         <Property name="TakeIdFromSeasonData" value="False" />
                         <Property name="DependentOnSeasonMilestone" value="False" />
@@ -7821,9 +7847,12 @@ MODIFICATIONS = {{
                         </Property>
                         <Property name="Product" value="P_CHEF_SONG_X" />
                         <Property name="Amount" value="1" />
+                        <Property name="UseDefaultAmount" value="False" />
                         <Property name="SyncWithMissionFireteam" value="False" />
                         <Property name="ForceSearchFreighterAndChests" value="True" />
                         <Property name="SearchEveryShip" value="True" />
+                        <Property name="SearchGrave" value="False" />
+                        <Property name="SearchCookingIngredients" value="False" />
                         <Property name="TakeAmountFromSeasonData" value="False" />
                         <Property name="TakeIdFromSeasonData" value="False" />
                         <Property name="DependentOnSeasonMilestone" value="False" />
@@ -7887,12 +7916,15 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
                     <Property name="Conditions">
                       <Property value="GcMissionConditionIsMissionInProgress.xml">
                         <Property name="MissionID" value="ALCH_CHEF_OFFER" />
+                        <Property name="MustBeSelectedMission" value="False" />
                       </Property>
                     </Property>
                   </Property>
@@ -9457,6 +9489,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -9592,6 +9626,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -9727,6 +9763,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -9862,6 +9900,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -9997,6 +10037,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -10132,6 +10174,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -10267,6 +10311,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -10402,6 +10448,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -10537,6 +10585,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -10672,6 +10722,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -10807,6 +10859,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -10942,6 +10996,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -11077,6 +11133,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -11212,6 +11270,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -11347,6 +11407,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -11482,6 +11544,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -11617,6 +11681,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -11752,6 +11818,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -11887,6 +11955,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -12022,6 +12092,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -12157,6 +12229,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -12292,6 +12366,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -12427,6 +12503,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -12562,6 +12640,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -12697,6 +12777,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -12832,6 +12914,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -12967,6 +13051,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -13102,6 +13188,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -13237,6 +13325,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -13372,6 +13462,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -13507,6 +13599,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -13642,6 +13736,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -13777,6 +13873,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -13912,6 +14010,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -14047,6 +14147,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -14182,6 +14284,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -14317,6 +14421,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -14452,6 +14558,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -14587,6 +14695,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -14808,6 +14918,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -15029,6 +15141,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -15250,6 +15364,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -15471,6 +15587,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -15692,6 +15810,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -15913,6 +16033,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -16134,6 +16256,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -16355,6 +16479,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -16576,6 +16702,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -16797,6 +16925,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -17018,6 +17148,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -17239,6 +17371,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -17460,6 +17594,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -17681,6 +17817,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -17902,6 +18040,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -18123,6 +18263,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -18344,6 +18486,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -18565,6 +18709,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -18786,6 +18932,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -19007,6 +19155,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -19228,6 +19378,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -19449,6 +19601,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -19670,6 +19824,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -19891,6 +20047,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -20112,6 +20270,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -20333,6 +20493,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -20554,6 +20716,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -20775,6 +20939,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -20996,6 +21162,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -21217,6 +21385,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -21438,6 +21608,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -21659,6 +21831,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -21880,6 +22054,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -22101,6 +22277,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -22322,6 +22500,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -22543,6 +22723,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -22764,6 +22946,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -22985,6 +23169,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -23206,6 +23392,8 @@ MODIFICATIONS = {{
                     </Property>
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -26272,6 +26460,9 @@ MODIFICATIONS = {{
                 <Property name="EnablingConditions">
                   <Property value="GcMissionConditionProductKnown.xml">
                     <Property name="Product" value="P_CHEF_SONG" />
+                    <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                      <Property name="DefaultProductType" value="None" />
+                    </Property>
                     <Property name="DependentOnSeasonMilestone" value="False" />
                     <Property name="TakeProductFromSeasonData" value="False" />
                   </Property>
@@ -26406,6 +26597,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26420,6 +26614,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26434,6 +26631,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26522,6 +26722,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26536,6 +26739,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26550,6 +26756,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26564,6 +26773,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26659,6 +26871,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26673,6 +26888,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26687,6 +26905,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -26701,6 +26922,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
                 </Property>
@@ -26727,6 +26951,9 @@ MODIFICATIONS = {{
           <Property name="RequireInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -26746,6 +26973,7 @@ MODIFICATIONS = {{
           <Property name="EventPriority" value="Regular" />
           <Property name="CanEndFromOutsideMission" value="False" />
           <Property name="DisableMultiplayerSync" value="True" />
+          <Property name="BlockStartedOnUseEvents" value="False" />
           <Property name="ReplaceEventIfAlreadyActive" value="False" />
           <Property name="BuildingLocation" value="Nearest" />
           <Property name="BuildingType" value="Nexus" />
@@ -26756,6 +26984,7 @@ MODIFICATIONS = {{
           <Property name="ForceWideRandom" value="False" />
           <Property name="MustFindSystem" value="False" />
           <Property name="AllowOverriddenBuildings" value="True" />
+          <Property name="TargetMustMatchMissionSeed" value="False" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -26869,7 +27098,7 @@ MODIFICATIONS = {{
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
-            <Property name="Range" value="100" />
+            <Property name="Range" value="0" />
             <Property name="Triggers" />
             <Property name="AllowRetrigger" value="False" />
           </Property>
@@ -26924,6 +27153,9 @@ MODIFICATIONS = {{
           <Property name="RequireInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -26943,6 +27175,7 @@ MODIFICATIONS = {{
           <Property name="EventPriority" value="Regular" />
           <Property name="CanEndFromOutsideMission" value="False" />
           <Property name="DisableMultiplayerSync" value="True" />
+          <Property name="BlockStartedOnUseEvents" value="False" />
           <Property name="ReplaceEventIfAlreadyActive" value="False" />
           <Property name="BuildingLocation" value="Nearest" />
           <Property name="BuildingType" value="Nexus" />
@@ -26953,6 +27186,7 @@ MODIFICATIONS = {{
           <Property name="ForceWideRandom" value="False" />
           <Property name="MustFindSystem" value="False" />
           <Property name="AllowOverriddenBuildings" value="True" />
+          <Property name="TargetMustMatchMissionSeed" value="False" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -27066,7 +27300,7 @@ MODIFICATIONS = {{
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
-            <Property name="Range" value="100" />
+            <Property name="Range" value="0" />
             <Property name="Triggers" />
             <Property name="AllowRetrigger" value="False" />
           </Property>
@@ -30294,6 +30528,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30302,6 +30537,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_DNUT_SCUST" />
             <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30314,6 +30550,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30322,6 +30559,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_DNUT_SCUST" />
             <Property name="Amount" value="5" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30334,6 +30572,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30342,6 +30581,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_DNUT_SCUST" />
             <Property name="Amount" value="10" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30354,6 +30594,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30362,6 +30603,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_EGGPIE_MU" />
             <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30374,6 +30616,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30382,6 +30625,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_EGGPIE_MU" />
             <Property name="Amount" value="5" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30394,6 +30638,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30402,6 +30647,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_EGGPIE_MU" />
             <Property name="Amount" value="10" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30414,6 +30660,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30422,6 +30669,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_CG_CHOC" />
             <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30434,6 +30682,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30442,6 +30691,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_CG_CHOC" />
             <Property name="Amount" value="5" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30454,6 +30704,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30462,6 +30713,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_CG_CHOC" />
             <Property name="Amount" value="10" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30474,6 +30726,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30482,6 +30735,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_PIE_MCUST" />
             <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30494,6 +30748,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30502,6 +30757,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_PIE_MCUST" />
             <Property name="Amount" value="5" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30514,6 +30770,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30522,6 +30779,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_PIE_MCUST" />
             <Property name="Amount" value="10" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30534,6 +30792,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30542,6 +30801,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_CM_JHOT" />
             <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30554,6 +30814,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30562,6 +30823,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_CM_JHOT" />
             <Property name="Amount" value="5" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30574,6 +30836,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30582,6 +30845,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_CM_JHOT" />
             <Property name="Amount" value="10" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30594,6 +30858,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30602,6 +30867,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_W_SWEETM" />
             <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30614,6 +30880,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30622,6 +30889,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_W_SWEETM" />
             <Property name="Amount" value="5" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30634,6 +30902,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30642,6 +30911,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_W_SWEETM" />
             <Property name="Amount" value="10" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30654,6 +30924,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostMoney.xml">
@@ -30673,6 +30944,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostMoney.xml">
@@ -30692,6 +30964,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostMoney.xml">
@@ -30711,6 +30984,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostMoney.xml">
@@ -30730,6 +31004,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostMoney.xml">
@@ -30749,6 +31024,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostMoney.xml">
@@ -30768,6 +31044,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30776,6 +31053,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_BLOB" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30788,6 +31066,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30796,6 +31075,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_BLOB" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30808,6 +31088,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30816,6 +31097,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_GEK" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30828,6 +31110,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30836,6 +31119,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_GEK" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30848,6 +31132,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30856,6 +31141,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_DIPLO" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30868,6 +31154,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30876,6 +31163,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_DIPLO" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30888,6 +31176,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30896,6 +31185,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_REX" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30908,6 +31198,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30916,6 +31207,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_REX" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30928,6 +31220,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30936,6 +31229,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_CAT" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30948,6 +31242,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30956,6 +31251,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_CAT" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30968,6 +31264,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30976,6 +31273,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_STRIDER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -30988,6 +31286,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -30996,6 +31295,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_STRIDER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31008,6 +31308,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31016,6 +31317,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_COW" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31028,6 +31330,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31036,6 +31339,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_COW" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31048,6 +31352,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31056,6 +31361,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_CRAB" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31068,6 +31374,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31076,6 +31383,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_CRAB" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31088,6 +31396,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31096,6 +31405,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_BONE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31108,6 +31418,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31116,6 +31427,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_BONE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31128,6 +31440,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31136,6 +31449,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_MOLE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31148,6 +31462,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31156,6 +31471,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_MOLE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31168,6 +31484,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31176,6 +31493,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_ROBOT" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31188,6 +31506,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31196,6 +31515,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_ROBOT" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31208,6 +31528,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31216,6 +31537,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_FLYER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31228,6 +31550,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31236,6 +31559,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_FLYER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31248,6 +31572,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31256,6 +31581,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_EGG" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31268,6 +31594,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31276,6 +31603,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_EGG" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31288,6 +31616,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31296,6 +31625,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_MILK" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31308,6 +31638,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31316,6 +31647,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_V_MILK" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31328,6 +31660,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31336,6 +31669,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_FISH" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31348,6 +31682,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31356,6 +31691,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_FISH" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31368,6 +31704,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31376,6 +31713,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_FLYER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31388,6 +31726,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31396,6 +31735,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_FLYER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31408,6 +31748,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31416,6 +31757,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_FIEND" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31428,6 +31770,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31436,6 +31779,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_FIEND" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31448,6 +31792,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31456,6 +31801,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_BLOB" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31468,6 +31814,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31476,6 +31823,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_BLOB" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31488,6 +31836,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31496,6 +31845,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_GEK" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31508,6 +31858,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31516,6 +31867,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_GEK" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31528,6 +31880,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31536,6 +31889,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_DIPLO" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31548,6 +31902,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31556,6 +31911,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_DIPLO" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31568,6 +31924,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31576,6 +31933,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_REX" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31588,6 +31946,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31596,6 +31955,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_REX" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31608,6 +31968,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31616,6 +31977,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_CAT" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31628,6 +31990,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31636,6 +31999,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_CAT" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31648,6 +32012,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31656,6 +32021,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_STRIDER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31668,6 +32034,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31676,6 +32043,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_STRIDER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31688,6 +32056,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31696,6 +32065,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_COW" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31708,6 +32078,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31716,6 +32087,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_COW" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31728,6 +32100,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31736,6 +32109,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_CRAB" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31748,6 +32122,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31756,6 +32131,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_CRAB" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31768,6 +32144,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31776,6 +32153,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_MOLE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31788,6 +32166,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31796,6 +32175,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_MOLE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31808,6 +32188,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31816,6 +32197,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_BONE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31828,6 +32210,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31836,6 +32219,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_BONE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31848,6 +32232,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31856,6 +32241,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_DRILL" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31868,6 +32254,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31876,6 +32263,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_DRILL" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31888,6 +32276,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31896,6 +32285,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_BEETLE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31908,6 +32298,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31916,6 +32307,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_BEETLE" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31928,6 +32320,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31936,6 +32329,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_BALL" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31948,6 +32342,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31956,6 +32351,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_BALL" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31968,6 +32364,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31976,6 +32373,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_DIGGER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -31988,6 +32386,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -31996,6 +32395,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_DIGGER" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32008,6 +32408,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32016,6 +32417,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_MEAT" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32028,6 +32430,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32036,6 +32439,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_M_MEAT" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32048,6 +32452,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32056,6 +32461,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_LUSHWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32068,6 +32474,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32076,6 +32483,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_LUSHWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32088,6 +32496,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32096,6 +32505,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_HOTWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32108,6 +32518,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32116,6 +32527,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_HOTWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32128,6 +32540,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32136,6 +32549,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_COLDWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32148,6 +32562,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32156,6 +32571,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_COLDWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32168,6 +32584,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32176,6 +32593,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_TOXWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32188,6 +32606,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32196,6 +32615,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_TOXWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32208,6 +32628,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32216,6 +32637,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_RADWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32228,6 +32650,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32236,6 +32659,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_RADWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32248,6 +32672,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32256,6 +32681,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_DUSTWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32268,6 +32694,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32276,6 +32703,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_DUSTWILD" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32288,6 +32716,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32296,6 +32725,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_GLITCH" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32308,6 +32738,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -32316,6 +32747,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="FOOD_P_GLITCH" />
             <Property name="Amount" value="25" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -32328,6 +32760,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostMissionComplete.xml">
@@ -32346,6 +32779,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostMoney.xml">
@@ -32365,6 +32799,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostMoney.xml">
@@ -32844,25 +33279,19 @@ MODIFICATIONS = {{
       <Property name="BlocksPinning" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/SPACEPOIMISSIONTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/SIMULATION/MISSIONS/SPACEPOIMISSIONTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Missions", --
-          },--
+          PRECEDING_KEY_WORDS = { "Missions" },
           ADD = [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="ALCH_CHEF_WHALE" />
@@ -33080,6 +33509,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33094,6 +33526,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33108,6 +33543,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33196,6 +33634,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33210,6 +33651,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33224,6 +33668,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33238,6 +33685,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33252,6 +33702,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33317,6 +33770,8 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="EnablingConditions">
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
@@ -33460,6 +33915,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33668,6 +34126,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -33876,6 +34337,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -34004,6 +34468,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -34018,6 +34485,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -34143,12 +34613,15 @@ MODIFICATIONS = {{
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
+                    <Property name="OnlyUsedForTextFormatting" value="False" />
+                    <Property name="ValueToReturnForTextFormatting" value="False" />
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
                     <Property name="Conditions">
                       <Property value="GcMissionConditionIsMissionInProgress.xml">
                         <Property name="MissionID" value="BIOSHIP_REPEAT" />
+                        <Property name="MustBeSelectedMission" value="False" />
                       </Property>
                     </Property>
                   </Property>
@@ -34257,6 +34730,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -34271,6 +34747,9 @@ MODIFICATIONS = {{
                 </Property>
                 <Property name="TranslateAlienTextOverride" value="None" />
                 <Property name="BracketsOverride" value="None" />
+                <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+                  <Property name="AlienRace" value="None" />
+                </Property>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="FRIGATE_LIVING_TALK" />
                 </Property>
@@ -34429,6 +34908,7 @@ MODIFICATIONS = {{
           <Property name="RemoveOptionIfCantAfford" value="False" />
           <Property name="InvertCanAffordOutcome" value="False" />
           <Property name="MustAffordInCreative" value="False" />
+          <Property name="UseCommunityContributionCap" value="False" />
           <Property name="CannotAffordOSDMsg" value="" />
           <Property name="MissionMessageWhenCharged" value="" />
           <Property name="Cost" value="GcCostProduct.xml">
@@ -34437,6 +34917,7 @@ MODIFICATIONS = {{
             </Property>
             <Property name="Id" value="P_CHEF_SONG_X" />
             <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
           </Property>
         </Property>
       </Property>
@@ -34776,9 +35257,12 @@ MODIFICATIONS = {{
                                   </Property>
                                   <Property name="Product" value="P_CHEF_SONG_X" />
                                   <Property name="Amount" value="1" />
+                                  <Property name="UseDefaultAmount" value="False" />
                                   <Property name="SyncWithMissionFireteam" value="False" />
                                   <Property name="ForceSearchFreighterAndChests" value="True" />
                                   <Property name="SearchEveryShip" value="True" />
+                                  <Property name="SearchGrave" value="False" />
+                                  <Property name="SearchCookingIngredients" value="False" />
                                   <Property name="TakeAmountFromSeasonData" value="False" />
                                   <Property name="TakeIdFromSeasonData" value="False" />
                                   <Property name="DependentOnSeasonMilestone" value="False" />
@@ -34834,6 +35318,7 @@ MODIFICATIONS = {{
                                     <Property name="PulseEncounterID" value="PE_CHEF_SONG" />
                                     <Property name="AllowAnyEncounter" value="False" />
                                     <Property name="Silent" value="False" />
+                                    <Property name="AllowOutsideShip" value="False" />
                                     <Property name="DebugText" value="" />
                                   </Property>
                                 </Property>
@@ -35094,6 +35579,7 @@ MODIFICATIONS = {{
                             <Property name="Stage" value="GcMissionSequenceCommunicator.xml">
                               <Property name="Message" value="" />
                               <Property name="VRMessage" value="UI_CORE_COMMS_MSG2_VR1" />
+                              <Property name="OptionalWaitMessage" value="" />
                               <Property name="OSDMessage" value="UI_HAIL_BIOFRIG_OSD" />
                               <Property name="Comms" value="GcPlayerCommunicatorMessage.xml">
                                 <Property name="Dialog" value="D_CHEF_SONG" />
@@ -35103,9 +35589,13 @@ MODIFICATIONS = {{
                                   <Property name="AlienRace" value="None" />
                                 </Property>
                                 <Property name="ShipHUDOverride" value="UI_HAIL_BIOFRIG_HUD" />
+                                <Property name="HailAudioOverride" value="GcAudioWwiseEvents.xml">
+                                  <Property name="AkEvent" value="INVALID_EVENT" />
+                                </Property>
                               </Property>
                               <Property name="AutoOpen" value="False" />
                               <Property name="UsePulseEncounterObjectAsAttachment" value="False" />
+                              <Property name="MinTimeInSpaceBeforeCall" value="0" />
                               <Property name="DebugText" value="" />
                             </Property>
                           </Property>
@@ -35360,6 +35850,8 @@ MODIFICATIONS = {{
       <Property name="StartIsCancel" value="True" />
       <Property name="StartingConditions">
         <Property value="GcMissionConditionGroup.xml">
+          <Property name="OnlyUsedForTextFormatting" value="False" />
+          <Property name="ValueToReturnForTextFormatting" value="False" />
           <Property name="ConditionTest" value="GcMissionConditionTest.xml">
             <Property name="ConditionTest" value="AllFalse" />
           </Property>
@@ -35370,9 +35862,12 @@ MODIFICATIONS = {{
               </Property>
               <Property name="Product" value="P_CHEF_SONG_X" />
               <Property name="Amount" value="1" />
+              <Property name="UseDefaultAmount" value="False" />
               <Property name="SyncWithMissionFireteam" value="False" />
               <Property name="ForceSearchFreighterAndChests" value="False" />
               <Property name="SearchEveryShip" value="False" />
+              <Property name="SearchGrave" value="False" />
+              <Property name="SearchCookingIngredients" value="False" />
               <Property name="TakeAmountFromSeasonData" value="False" />
               <Property name="TakeIdFromSeasonData" value="False" />
               <Property name="DependentOnSeasonMilestone" value="False" />
@@ -35389,12 +35884,15 @@ MODIFICATIONS = {{
           </Property>
         </Property>
         <Property value="GcMissionConditionGroup.xml">
+          <Property name="OnlyUsedForTextFormatting" value="False" />
+          <Property name="ValueToReturnForTextFormatting" value="False" />
           <Property name="ConditionTest" value="GcMissionConditionTest.xml">
             <Property name="ConditionTest" value="AnyTrue" />
           </Property>
           <Property name="Conditions">
             <Property value="GcMissionConditionIsMissionInProgress.xml">
               <Property name="MissionID" value="ALCH_CHEF_WHALE" />
+              <Property name="MustBeSelectedMission" value="False" />
             </Property>
           </Property>
         </Property>
@@ -35432,25 +35930,19 @@ MODIFICATIONS = {{
       <Property name="BlocksPinning" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Table", --
-          },--
+          PRECEDING_KEY_WORDS = { "Table" },
           ADD = [[
     <Property value="GcAlienPuzzleEntry.xml">
       <Property name="ProgressionIndex" value="0" />
@@ -35641,6 +36133,9 @@ MODIFICATIONS = {{
           </Property>
           <Property name="TranslateAlienTextOverride" value="None" />
           <Property name="BracketsOverride" value="None" />
+          <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -35844,6 +36339,9 @@ MODIFICATIONS = {{
           </Property>
           <Property name="TranslateAlienTextOverride" value="None" />
           <Property name="BracketsOverride" value="None" />
+          <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -36047,6 +36545,9 @@ MODIFICATIONS = {{
           </Property>
           <Property name="TranslateAlienTextOverride" value="None" />
           <Property name="BracketsOverride" value="None" />
+          <Property name="AlienLanguageOverride" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
@@ -36060,25 +36561,19 @@ MODIFICATIONS = {{
       <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Table", --
-          },--
+          PRECEDING_KEY_WORDS = { "Table" },
           ADD = [[
     <Property value="GcProductData.xml">
       <Property name="ID" value="P_CHEF_SONG" />
@@ -36273,25 +36768,19 @@ MODIFICATIONS = {{
       <Property name="EggModifierIngredient" value="False" />
       <Property name="IsTechbox" value="False" />
       <Property name="CanSendToOtherPlayers" value="False" />
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Table", --
-          },--
+          PRECEDING_KEY_WORDS = { "Table" },
           ADD = [[
     <Property value="GcConsumableItem.xml">
       <Property name="ID" value="P_CHEF_SONG" />
@@ -36309,25 +36798,19 @@ MODIFICATIONS = {{
       <Property name="SuppressResourceMessage" value="False" />
       <Property name="CustomOSD" value="" />
       <Property name="RequiresMissionActive" value="" />
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/REWARDTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "GenericTable", --
-          },--
+          PRECEDING_KEY_WORDS = { "GenericTable" },
           ADD = [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_CHEF_RESET" />
@@ -36344,6 +36827,8 @@ MODIFICATIONS = {{
               <Property name="MissionNoGroundCombat" value="" />
               <Property name="MissionNoSpaceCombat" value="" />
               <Property name="InheritActiveMultiplayerMissionSeed" value="False" />
+              <Property name="SelectMissionAsLocalMissionBoard" value="False" />
+              <Property name="ForceUseConversationSeed" value="False" />
             </Property>
           </Property>
         </Property>
@@ -36458,25 +36943,19 @@ MODIFICATIONS = {{
           </Property>
         </Property>
       </Property>
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/SCENE/EXPERIENCESPAWNTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/SIMULATION/SCENE/EXPERIENCESPAWNTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "PulseEncounters", --
-          },--
+          PRECEDING_KEY_WORDS = { "PulseEncounters" },
           ADD = [[
     <Property value="GcPulseEncounterInfo.xml">
       <Property name="Id" value="PE_CHEF_SONG" />
@@ -36527,27 +37006,24 @@ MODIFICATIONS = {{
             <Property name="AlienRace" value="None" />
           </Property>
           <Property name="ShipHUDOverride" value="UI_HAIL_BIOFRIG_HUD" />
+          <Property name="HailAudioOverride" value="GcAudioWwiseEvents.xml">
+            <Property name="AkEvent" value="INVALID_EVENT" />
+          </Property>
         </Property>
       </Property>
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/SIMULATION/MISSIONS/MISSIONSCHEDULESTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/SIMULATION/MISSIONS/MISSIONSCHEDULESTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Schedules", --
-          },--
+          PRECEDING_KEY_WORDS = { "Schedules" },
           ADD = [[
     <Property value="GcMissionSchedulingData.xml">
       <Property name="RecurrenceType" value="GcDailyRecurrence.xml">
@@ -36581,26 +37057,19 @@ MODIFICATIONS = {{
           <Property name="Value" value="ALCH_CHEF_RESET" />
         </Property>
       </Property>
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/REALITY/TABLES/STORIESTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/STORIESTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Diplomats", --
-            "Pages", --
-          },--
+          PRECEDING_KEY_WORDS = { "Diplomats", "Pages" },
           ADD = [[
         <Property value="GcStoryPage.xml">
           <Property name="InteractionType" value="GcInteractionType.xml">
@@ -36751,25 +37220,19 @@ MODIFICATIONS = {{
           <Property name="WikiGridType" value="GcWikiTopicType.xml">
             <Property name="WikiTopicType" value="Substances" />
           </Property>
-        </Property>      
-]]
+        </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/GAMESTATE/STATS/STATDEFINITIONSTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/GAMESTATE/STATS/STATDEFINITIONSTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "StatDefinitionTable", --
-          },--
+          PRECEDING_KEY_WORDS = { "StatDefinitionTable" },
           ADD = [[
     <Property value="GcStatDefinition.xml">
       <Property name="Type" value="GcStatType.xml">
@@ -37110,25 +37573,19 @@ MODIFICATIONS = {{
       <Property name="TelemetryUpload" value="False" />
       <Property name="IsProgression" value="False" />
       <Property name="MissionMessageDecimals" value="0" />
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/GAMESTATE/MESSAGES/STATUSMESSAGEDEFINITIONS.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/GAMESTATE/MESSAGES/STATUSMESSAGEDEFINITIONS.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "Messages", --
-          },--
+          PRECEDING_KEY_WORDS = { "Messages" },
           ADD = [[
     <Property value="GcStatusMessageDefinition.xml">
       <Property name="Id" value="CHEF_DEBUG" />
@@ -37163,30 +37620,20 @@ MODIFICATIONS = {{
       <Property name="MissionMarkup" value="GcStatusMessageMissionMarkup.xml">
         <Property name="MissionMarkup" value="None" />
       </Property>
-    </Property>      
-]]
+    </Property>
+]],
         },
-      }
+      },
     },
 
-    --
     {
-      MBIN_FILE_SOURCE = [[METADATA/GAMESTATE/STATS/STATGROUPSTABLE.MBIN]],
+      MBIN_FILE_SOURCE = "METADATA/GAMESTATE/STATS/STATGROUPSTABLE.MBIN",
       EXML_CHANGE_TABLE = {
         {
           LINE_OFFSET = -1,
           ADD_OPTION = "ADDafterSECTION",
-          --
-          SPECIAL_KEY_WORDS = {
-            --
-            "GroupName", --
-            "GLOBAL_STATS", --
-          },--
-          --
-          PRECEDING_KEY_WORDS = {
-            --
-            "TrackedStats", --
-          },--
+          SPECIAL_KEY_WORDS = { "GroupName", "GLOBAL_STATS" },
+          PRECEDING_KEY_WORDS = { "TrackedStats" },
           ADD = [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="CHEF_LORE" />
@@ -37238,15 +37685,30 @@ MODIFICATIONS = {{
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="CHEF_WS_TUT" />
-        </Property>      
-]]
+        </Property>
+]],
         },
-      }
+      },
     },
 
-    --
 
   } -- END MBIN_CHANGE_TABLE
 }} -- END MODIFICATIONS
 
 } -- END NMS_MOD_DEFINITION_CONTAINER
+
+--
+
+Ref = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
+
+table.insert(Ref, 1, {
+  MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+  EXML_CHANGE_TABLE = {
+    {
+      -- remove existing judgement dialog as we will provide our own
+      SPECIAL_KEY_WORDS = {"Id", "EXOTIC_CHEF"},
+      REMOVE = "SECTION",
+      REPLACE_TYPE = "ALL"
+    },
+  }
+})

@@ -5,7 +5,7 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "4-36"
+GameVersion = "4-41"
 ModVersion = "2-4-2"
 
 -- =========
@@ -77,7 +77,7 @@ files.
 
 --]]
 
--- Total keys: 225
+-- Total keys: 248
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_FREI_QRY_CFG"] = "Configure Deep Space Scanning...", --
@@ -112,12 +112,13 @@ LANGUAGE_TABLE = {
   ["ALCH_FLYBY_PORT_SHIP_COMM"] = "Incoming Fleet Message", --
   ["ALCH_FLYBY_PORT_SUB_1"] = "Planetary Scanning Operation", --
   ["ALCH_FLYBY_PORT_TITLE_1"] = "Frigate Recon Expedition", --
-  ["ALCH_PLANET_EXP_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_RECON_SHIP_RECON_OBJ"] = "Planetary Sweep", --
   ["ALCH_RECON_SHIP_RECON_OBJ_TIP"] = "Remain in atmospheric flight", --
   ["ALCH_SCAN_ERR_PS_ACTIVE"] = "Search Active", --
   ["ALCH_SCAN_ERR_PS_ACTIVE_OSD"] = "ERROR <HIGHLIGHT>//<> SEARCH ACTIVE <HIGHLIGHT>//<> Abandon mission from log", --
   ["ALCH_SCAN_FLYBY_COMM_DESC"] = "Request received Commander. What type of frequencies should we focus on?", --
+  ["ALCH_SCAN_GA_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_GB_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_GPS_INTRO_OSD"] = "GALACTIC POSITIONING SYSTEM <HIGHLIGHT>//<> <TRADE>ONLINE<>", --
   ["ALCH_SCAN_GRP_ANC_DESC"] = "Tuned for Ancient Sites", --
   ["ALCH_SCAN_GRP_ANC_FLYBY"] = "Confirmed. Focusing on relics of the past. Deploying frigate detachment.", --
@@ -174,6 +175,11 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_MENU_SHIP_RECON"] = "Planetary Sweep...", --
   ["ALCH_SCAN_MENU_SHIP_RECON_DESC"] = "<SPECIAL>Planetary Sweep<> <HIGHLIGHT>//<> Select signal analysis focus...", --
   ["ALCH_SCAN_MENU_SHIP_RECON_ERR"] = "Planetary Sweep <HIGHLIGHT>//<> UNAVAILABLE <HIGHLIGHT>//<> Atmospheric flight required", --
+  ["ALCH_SCAN_OA_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_OB_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_OC_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_OD_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_OE_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_PIO_GRAVE_TIP"] = "<TITLE>Fallen traveler exosuit signal detected<>\nEcho may have knowledge required for Portal travel", --
   ["ALCH_SCAN_POI_TREA_MENU"] = "Treasure Ruins", --
   ["ALCH_SCAN_POI_UWAB"] = "Submerged Building", --
@@ -265,6 +271,23 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_SYSTEM_OBJ_TIP"] = "A planet matching the given <SPECIAL>query parameters<> has been identified in a <TECHNOLOGY>remote system<>.\nUse ship or freighter's <STELLAR>Galactic Map<> and travel to the marked system.", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ_WAIT"] = "<TITLE>Query result located in<> <TECHNOLOGY>remote system<>\nUse ship or freighter's <STELLAR>Galactic Map<> to initiate warp travel", --
   ["ALCH_SCAN_PR_DESC"] = "<TECHNOLOGY>Resource<> Pattern Query <HIGHLIGHT>//<> Immediate results expected <HIGHLIGHT>//<> Consult <STELLAR>Mission Log<> for details", --
+  ["ALCH_SCAN_QA_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QB_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QC_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QD_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QE_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QF_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QG_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QH_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QI_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QJ_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QK_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QL_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_RA_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_RB_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_RC_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_RD_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_RE_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_SCAN_EXACT_DESC"] = "Select category for further options.", --
   ["ALCH_SCAN_SCAN_FAST_DESC"] = "Tuned to common signals...", --
   ["ALCH_SCAN_TASK_NOTIF"] = "<TECHNOLOGY>[ System Notification ]<>: <SPECIAL>Deep Space Query<> <HIGHLIGHT>//<> <TITLE>Nearby systems scanned, some queries still<> {{ PENDING MATCH }} <HIGHLIGHT>//<> <TITLE>Hibernating...<>", --
