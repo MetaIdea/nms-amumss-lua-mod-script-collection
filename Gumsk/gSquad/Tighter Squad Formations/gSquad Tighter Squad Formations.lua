@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSquad Tighter Squad Formations"
 ModNameSub = ""
 BaseDescription = "Makes squads fly closer"
-GameVersion = "4363"
+GameVersion = "4412"
 ModVersion = "a"
 FileSource1 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 

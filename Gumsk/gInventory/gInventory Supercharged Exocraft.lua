@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gInventory Supercharged"
 ModNameSub = "Exocraft"
 BaseDescription = "Makes alll exocraft slots supercharged"
-GameVersion = "4363"
+GameVersion = "4412"
 ModVersion = "a"
 FileSource1 = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"
 

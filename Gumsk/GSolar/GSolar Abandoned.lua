@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSolar"
 ModNameSub = "Abandoned"
 BaseDescription = "Most systems are abandoned"
-GameVersion = "4363"
+GameVersion = "4412"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 

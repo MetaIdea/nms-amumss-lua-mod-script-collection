@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gCreatures Giants"
 ModNameSub = Multiplier.."x"
 BaseDescription = "Increases creature sizes"
-GameVersion = "4363"
+GameVersion = "4412"
 ModVersion = "a"
 
 --[[

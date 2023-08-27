@@ -2,7 +2,7 @@ Author = "Mjstral,Gumsk"
 ModName = "gShip Custom Ships Summoner"
 ModNameSub = "N1 Mando S Class"
 BaseDescription = "Summons new ship models from gShip Custom Ships"
-GameVersion = "430"
+GameVersion = "4412"
 ModVersion = "a"
 
 --[[Files Used:

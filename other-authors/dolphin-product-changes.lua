@@ -51,6 +51,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 								}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "SPIDER_PROD"}, 				-- Crystallizd Heart
+							["VALUE_CHANGE_TABLE"] 	= 
+								{
+									{ "StackMultiplier", 				"16" }, 		-- was 1
+								}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "SHIPBRAIN"}, 				-- Hyaline Brain
+							["VALUE_CHANGE_TABLE"] 	= 
+								{
+									{ "StackMultiplier", 				"16" }, 		-- was 1
+								}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "SHIPBRAIN_CLEAN"}, 			-- Harmonic Brain
+							["VALUE_CHANGE_TABLE"] 	= 
+								{
+									{ "StackMultiplier", 				"16" }, 		-- was 1
+								}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcProductData.xml"},
 							["SPECIAL_KEY_WORDS"] = {"ID", "FIENDCORE"},				-- Larval Core
 							["VALUE_CHANGE_TABLE"] 	= 
 								{
