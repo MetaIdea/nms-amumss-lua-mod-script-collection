@@ -1,7 +1,7 @@
 -- Ship Hunting Assistant // Will NOT affect default seeds!
 -- Author: DarkScythe
 -- Date Created: Jul 03, 2022
--- Last Updated: Aug 01, 2023
+-- Last Updated: Aug 27, 2023
 --------------------------------------------------------------------------------
 modName		= "FastLocateAssistantforShipHunting"
 batchName	= ""
@@ -10,7 +10,7 @@ modMaint	= "DarkScythe"
 modDesc		= "Speeds up ship hunting by filtering to specific types and increases spawn rates WITHOUT affecting default seeds so you get the same ships as vanilla players in every system. Helpful for players who want to share coordinates of interesting finds with others."
 modVer		= "1.1"
 scriptVer	= "a"
-gameVer		= "4.38"
+gameVer		= "4.40"
 -- Credits --
 -- Thanks to Lenni and Apex Fatality for the idea of isolating ship models.
 -- Thanks to Gumsk for the idea of speeding up NPC spawns.

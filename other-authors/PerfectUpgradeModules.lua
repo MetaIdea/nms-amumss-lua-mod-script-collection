@@ -1,7 +1,7 @@
 -- Perfect Upgrade Modules
 -- Author: DarkScythe
 -- Date Created: Jul 18, 2022
--- Last Updated: Aug 01, 2023
+-- Last Updated: Aug 27, 2023
 --------------------------------------------------------------------------------
 modName		= "PerfectUpgradeModules"
 batchName	= ""
@@ -10,7 +10,7 @@ modMaint	= "DarkScythe"
 modDesc		= "Overrides all upgrade modules to have the best possible vanilla stats, with optional custom power scaling"
 modVer		= "1.1"
 scriptVer	= "a"
-gameVer		= "4.38"
+gameVer		= "4.40"
 
 --[[
 Enter a number here to set the approximate Power Scaling of upgrade module stats
@@ -611,7 +611,7 @@ end
 -- Unfortunately, HG forgot/overlooked the X-class Neutron Cannon upgrades
 -- As a result, Neutron Cannon X-class upgrades are currently worse than S-class
 -- This is an OPTIONAL override with some arbitrary values to make them better
--- Will be unnecessary whenever HG fixes this officially
+-- Will be unnecessary whenever HG fixes this officially (still borked in v4.40)
 -- Change the numerical values below as desired (ChargeTime is better when lower)
 -- Additional overrides can be added to any modules by following the same pattern
 
