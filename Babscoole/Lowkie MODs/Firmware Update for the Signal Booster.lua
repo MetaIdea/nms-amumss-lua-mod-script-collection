@@ -1,4 +1,4 @@
-NMSVersion = "4.40"
+NMSVersion = "4.42"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -10,6 +10,9 @@ return
         <Property name="InteractionType" value="None" />
       </Property>
       <Property name="RequireInteractionRace" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
+      </Property>
+      <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
         <Property name="AlienRace" value="None" />
       </Property>
       <Property name="ForceBroken" value="False" />
@@ -31,6 +34,7 @@ return
       <Property name="EventPriority" value="Regular" />
       <Property name="CanEndFromOutsideMission" value="False" />
       <Property name="DisableMultiplayerSync" value="True" />
+      <Property name="BlockStartedOnUseEvents" value="False" />
       <Property name="ReplaceEventIfAlreadyActive" value="True"/>
       <Property name="BuildingLocation" value="]]..BUILDINGLOCATION..[[" />
       <Property name="BuildingType" value="]]..BUILDINGTYPE..[[" />
@@ -41,6 +45,7 @@ return
       <Property name="ForceWideRandom" value="]]..FORCEWIDERANDOM..[["/>
       <Property name="MustFindSystem" value="False" />
       <Property name="AllowOverriddenBuildings" value="]]..ALLOWOVERRIDDENBUILDINGS..[["/>
+      <Property name="TargetMustMatchMissionSeed" value="False" />
       <Property name="SolarSystemLocation" value="]]..SOLARSYSTEMLOCATION..[[" />
       <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
         <Property name="UseStarType" value="False" />
@@ -224,6 +229,7 @@ return
               <Property name="StartDelay" value="6" />
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
               <Property name="ForceSilentFailure" value="False" />
+              <Property name="FailureOSD" value="" />
             </Property>
           </Property>
         </Property>

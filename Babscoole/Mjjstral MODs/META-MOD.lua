@@ -478,6 +478,7 @@ QUICK_ACTION_MENU =
               <Property name="StartDelay" value="6" />
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
               <Property name="ForceSilentFailure" value="False" />
+              <Property name="FailureOSD" value="" />
             </Property>
           </Property>
         </Property>
@@ -493,6 +494,9 @@ QUICK_ACTION_MENU =
             <Property name="InteractionType" value="None" />
           </Property>
           <Property name="RequireInteractionRace" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
+          <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
           <Property name="ForceBroken" value="False" />
@@ -514,6 +518,7 @@ QUICK_ACTION_MENU =
           <Property name="EventPriority" value="Regular" />
           <Property name="CanEndFromOutsideMission" value="False" />
           <Property name="DisableMultiplayerSync" value="False" />
+          <Property name="BlockStartedOnUseEvents" value="False" />
           <Property name="ReplaceEventIfAlreadyActive" value="False" />
           <Property name="BuildingLocation" value="PlanetSearch" />
           <Property name="BuildingType" value="Any" />
@@ -524,6 +529,7 @@ QUICK_ACTION_MENU =
           <Property name="ForceWideRandom" value="False" />
           <Property name="MustFindSystem" value="False" />
           <Property name="AllowOverriddenBuildings" value="True" />
+          <Property name="TargetMustMatchMissionSeed" value="False" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False"/>
@@ -1364,7 +1370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "4.40",
+["NMS_VERSION"]     = "4.42",
 ["MODIFICATIONS"]   =
     {
         {
