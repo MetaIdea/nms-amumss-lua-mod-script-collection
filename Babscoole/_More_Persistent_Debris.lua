@@ -3,7 +3,7 @@ ModAuthor       =   "Knightmare077"
 LuaAuthor       =   "Babscoole & Hypn0tick"
 BaseDescription =   "Spawns more debris and keeps it around longer."
 GameVersion     =   "4.41"
-ModVersion      =   "1.2"
+ModVersion      =   "1.3"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -224,7 +224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number", "14"},
+                                {"Number", "8"},
                                 {"Radius", "30"},
                                 {"Scale",  "7"},
                             }
@@ -234,6 +234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"Number", "8"},
                                 {"Radius", "40"},
                                 {"Scale",  "7"},
                                 {"Speed",  "700"},
@@ -244,6 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"Number", "8"},
                                 {"Scale", "7"},
                             }
                         },
@@ -252,6 +254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"Number", "8"},
                                 {"Scale", "7"},
                             }
                         },
@@ -267,7 +270,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life", "120"},
+                                {"Life",             "120"},
+                                {"MaxSpawnDistance", "100000"},
                             }
                         },
                         {
@@ -325,6 +329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Life",                      "120"},
                                 {"ShakeStrengthModifier",     "20"},
+                                {"MaxSpawnDistance",          "100000"},
                                 {"CamShakeCustomMaxDistance", "0"},
                                 {"AddLight",                  "False"},
                             }
@@ -353,7 +358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="3" />
+          <Property name="Number" value="8" />
           <Property name="Radius" value="35" />
           <Property name="Scale" value="30" />
           <Property name="Speed" value="800" />
@@ -392,7 +397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AllowTriggerActionOnDebris" value="False" />
       <Property name="AllowShootableDebris" value="False" />
       <Property name="AllowDestructableDebris" value="False" />
-      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="MaxSpawnDistance" value="100000" />
       <Property name="CamShakeCustomMaxDistance" value="0" />
       <Property name="LightFadeInTime" value="0" />
       <Property name="LightFadeOutTime" value="1" />
@@ -488,6 +493,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "120"},
+                                {"MaxSpawnDistance",          "100000"},
                                 {"CamShakeCustomMaxDistance", "0"},
                                 {"AddLight",                  "False"},
                             }
@@ -500,67 +506,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
         <Property value="GcDebrisData.xml">
           <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SPACE/SMALLDEBRIS/SMALLDEBRIS1.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
-          </Property>
-          <Property name="Number" value="4" />
-          <Property name="Radius" value="40" />
-          <Property name="Scale" value="25" />
-          <Property name="Speed" value="900" />
-          <Property name="AnglularSpeed" value="130" />
-          <Property name="OverrideSeed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-        </Property>
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
             <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SPACE/SMALLDEBRIS/SMALLDEBRIS2.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="5" />
-          <Property name="Radius" value="30" />
-          <Property name="Scale" value="30" />
-          <Property name="Speed" value="800" />
-          <Property name="AnglularSpeed" value="170" />
-          <Property name="OverrideSeed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-        </Property>
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISA.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
-          </Property>
-          <Property name="Number" value="3" />
-          <Property name="Radius" value="35" />
-          <Property name="Scale" value="30" />
-          <Property name="Speed" value="800" />
-          <Property name="AnglularSpeed" value="145" />
-          <Property name="OverrideSeed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-        </Property>
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SPACE/SMALLDEBRIS/SMALLDEBRIS3.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
-          </Property>
-          <Property name="Number" value="6" />
+          <Property name="Number" value="8" />
           <Property name="Radius" value="40" />
-          <Property name="Scale" value="40" />
-          <Property name="Speed" value="700" />
-          <Property name="AnglularSpeed" value="160" />
+          <Property name="Scale" value="20" />
+          <Property name="Speed" value="500" />
+          <Property name="AnglularSpeed" value="60" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -572,8 +527,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFRIGATEEX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life",                      "120"},
+                                {"Life",                      "60"},
                                 {"ShakeStrengthModifier",     "5"},
+                                {"MaxSpawnDistance",          "100000"},
                                 {"CamShakeCustomMaxDistance", "0"},
                                 {"AddLight",                  "False"},
                             }
@@ -625,7 +581,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="3" />
+          <Property name="Number" value="6" />
           <Property name="Radius" value="35" />
           <Property name="Scale" value="30" />
           <Property name="Speed" value="800" />
@@ -660,6 +616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Life",                      "120"},
                                 {"ShakeStrengthModifier",     "20"},
+                                {"MaxSpawnDistance",          "100000"},
                                 {"CamShakeCustomMaxDistance", "0"},
                                 {"AddLight",                  "False"},
                             }
@@ -774,7 +731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="14" />
+          <Property name="Number" value="8" />
           <Property name="Radius" value="35" />
           <Property name="Scale" value="45" />
           <Property name="Speed" value="600" />
@@ -791,7 +748,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="14" />
+          <Property name="Number" value="8" />
           <Property name="Radius" value="34" />
           <Property name="Scale" value="45" />
           <Property name="Speed" value="600" />
@@ -807,7 +764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBULDEXPL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life",                      "60"},
+                                {"Life",                      "120"},
                                 {"ShakeStrengthModifier",     "10"},
                                 {"CamShakeCustomMaxDistance", "0"},
                                 {"AddLight",                  "False"},
@@ -827,7 +784,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property name="Number" value="24" />
-          <Property name="Radius" value="85" />
+          <Property name="Radius" value="75" />
           <Property name="Scale" value="47" />
           <Property name="Speed" value="800" />
           <Property name="AnglularSpeed" value="130" />
@@ -856,33 +813,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
         <Property value="GcDebrisData.xml">
           <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
-          </Property>
-          <Property name="Number" value="4" />
-          <Property name="Radius" value="85" />
-          <Property name="Scale" value="7" />
-          <Property name="Speed" value="800" />
-          <Property name="AnglularSpeed" value="130" />
-          <Property name="OverrideSeed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-        </Property>
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
             <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISC.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="6" />
-          <Property name="Radius" value="24" />
+          <Property name="Number" value="9" />
+          <Property name="Radius" value="45" />
           <Property name="Scale" value="7" />
-          <Property name="Speed" value="700" />
-          <Property name="AnglularSpeed" value="125" />
+          <Property name="Speed" value="200" />
+          <Property name="AnglularSpeed" value="50" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -896,6 +836,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Life",                      "60"},
                                 {"ShakeStrengthModifier",     "5"},
+                                {"MaxSpawnDistance",          "100000"},
                                 {"CamShakeCustomMaxDistance", "0"},
                                 {"AddLight",                  "False"},
                             }
@@ -913,8 +854,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="8" />
-          <Property name="Radius" value="35" />
+          <Property name="Number" value="12" />
+          <Property name="Radius" value="65" />
           <Property name="Scale" value="15" />
           <Property name="Speed" value="800" />
           <Property name="AnglularSpeed" value="130" />
@@ -930,8 +871,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Number" value="8" />
-          <Property name="Radius" value="34" />
+          <Property name="Number" value="12" />
+          <Property name="Radius" value="64" />
           <Property name="Scale" value="15" />
           <Property name="Speed" value="700" />
           <Property name="AnglularSpeed" value="125" />
@@ -1653,7 +1594,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Radius" value="25" />
           <Property name="Scale" value="40" />
           <Property name="Speed" value="600" />
-          <Property name="AnglularSpeed" value="30" />
+          <Property name="AnglularSpeed" value="50" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1670,7 +1611,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Radius" value="24" />
           <Property name="Scale" value="30" />
           <Property name="Speed" value="300" />
-          <Property name="AnglularSpeed" value="15" />
+          <Property name="AnglularSpeed" value="45" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1685,6 +1626,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Life",                      "120"},
                                 {"ShakeStrengthModifier",     "1"},
                                 {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"MaxSpawnDistance",          "100000"},
                                 {"CamShakeCustomMaxDistance", "0"},
                             }
                         },
@@ -1705,7 +1647,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Radius" value="25" />
           <Property name="Scale" value="40" />
           <Property name="Speed" value="600" />
-          <Property name="AnglularSpeed" value="30" />
+          <Property name="AnglularSpeed" value="60" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1722,7 +1664,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Radius" value="24" />
           <Property name="Scale" value="30" />
           <Property name="Speed" value="300" />
-          <Property name="AnglularSpeed" value="15" />
+          <Property name="AnglularSpeed" value="45" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1737,6 +1679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Life",                      "120"},
                                 {"ShakeStrengthModifier",     "1"},
                                 {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"MaxSpawnDistance",          "100000"},
                                 {"CamShakeCustomMaxDistance", "0"},
                             }
                         },
@@ -1754,7 +1697,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property name="Number" value="12" />
-          <Property name="Radius" value="25" />
+          <Property name="Radius" value="45" />
           <Property name="Scale" value="40" />
           <Property name="Speed" value="200" />
           <Property name="AnglularSpeed" value="30" />
@@ -1771,7 +1714,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property name="Number" value="12" />
-          <Property name="Radius" value="29" />
+          <Property name="Radius" value="39" />
           <Property name="Scale" value="30" />
           <Property name="Speed" value="200" />
           <Property name="AnglularSpeed" value="35" />
@@ -1789,6 +1732,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Life",                      "120"},
                                 {"ShakeStrengthModifier",     "1"},
                                 {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"MaxSpawnDistance",          "100000"},
                                 {"CamShakeCustomMaxDistance", "0"},
                             }
                         },
