@@ -32,35 +32,6 @@ BinocMinScanTime = 1.1				-- Minimum time to scan | 2.2 | 4776
 BinocScanTime = 1.1					-- Time it takes to scan | 2.2 | 4777
 CreatureMinScanTime = 0.4			-- Minimum time to scan a creature | 0.8 | 5031
 
-ToolScanRange = 300					-- Range the default scanner will reach | 200 | 5247
-ToolScanCharge = 15					-- Time it takes for another scanner pulse to be ready | 30 | 5250
-ToolScanRangeHM = 200				-- Range the default scanner will reach in Survival | 150 | 5254
-ToolScanChargeHM = 45				-- Time it takes for another scanner pulse to be ready in Survival | 90 | 5257
-WaypointScanRange = 7500			-- Range the waypoint scanner will reach | 5000 | 5261
-WaypointScanCharge = 2				-- Time it takes for another scanner pulse to be ready | 4 | 5264
-BeaconScanRange = 7500				-- Range the beacon scanner will reach | 5000 | 5268
-BeaconScanTime = 4					-- Time it take to complete the scan | 8 | 
-BeaconScanCharge = 2				-- Time it takes for another scanner pulse to be ready | 4 |
-RadioTowerScanRange = 150000		-- Range the tower scanner will reach | 100000 |  5275
-RadioTowerScanTime = 4				-- Time it take to complete the scan | 8 |
-RadioTowerScanCharge = 2			-- Time it takes for another scanner pulse to be ready | 4 |
-ObservatoryScanRange = 150000		-- Range the tower scanner will reach | 100000 |  5282
-ObservatoryScanTime = 4				-- Time it take to complete the scan | 8 |
-ObservatoryScanCharge = 2			-- Time it takes for another scanner pulse to be ready | 4 |
-DistressSignalScanRange = 150000	-- Range the tower scanner will reach | 100000 |  5289
-DistressSignalScanTime = 4			-- Time it take to complete the scan | 8 |
-DistressSignalScanCharge = 2		-- Time it takes for another scanner pulse to be ready | 4 |
-DebugScanPlanetRange = 1500000		-- Range the tower scanner will reach | 1000000 |  5296
-DebugScanPlanetTime = 4				-- Time it take to complete the scan | 5 |
-DebugScanPlanetCharge = 2			-- Time it takes for another scanner pulse to be ready | 4 |
-DebugScanSpaceRange = 1500000		-- Range the tower scanner will reach | 1000000 |  5303
-DebugScanSpaceTime = 4				-- Time it take to complete the scan | 5 |
-DebugScanSpaceCharge = 2			-- Time it takes for another scanner pulse to be ready | 4 | 
-ShipScanRange = 15000				-- Range the tower scanner will reach | 10000 |  5310
-ShipScanCharge = 2					-- Time it takes for another scanner pulse to be ready | 10 |
-VisualScanTime = 4					-- Time it take to complete the scan | 8 | 5318
-VisualScanCharge = 1				-- Time it takes for another scanner pulse to be ready | 4 | 
-
 -- Binocular Zooms
 ZoomNoneMaxDistance = 15	-- Max distance able to scan without zoom | 10 | 5334
 ZoomFarMaxDistance = 33		-- Max distance able to scan | 25 | 5343
