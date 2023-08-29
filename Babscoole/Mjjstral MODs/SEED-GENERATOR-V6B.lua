@@ -3,7 +3,7 @@ DEFAULT_SEED_NUMBER = 17000
 SELECTED_SEED_TYPES =
 {
     "Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail", "Robot",
-    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL",
+    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL", "STAFFMULTITOOL",
 }
 
 SEED_TYPE_PATH =
@@ -22,6 +22,7 @@ SEED_TYPE_PATH =
     ["ROBOTMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL.SCENE.MBIN",
     ["ROBOTMULTITOOLB"]="MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOLB.SCENE.MBIN",
     ["ATLASMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMULTITOOL.SCENE.MBIN",
+    ["STAFFMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOL.SCENE.MBIN",
 }
 
 STATS =
@@ -136,9 +137,19 @@ STATS =
     {
         {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
         {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "ATLAS_LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+    },
+    ["STAFFMULTITOOL"] =
+    {
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
         {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
         {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
         {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
     },
 }
 
@@ -523,6 +534,8 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS"
                 elseif ANIM_ID == "ROYALMULTITOOL" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN05.DDS"
+                elseif ANIM_ID == "STAFFMULTITOOL" then
+                    ICON = "TEXTURES\UI\FRONTEND\ICONS\ROBOTPARTS\ROBOTPARTS.STAFFPOLE.5.DDS"
                 else ICON = "TEXTURES\UI\FRONTEND\COMPONENTS\STAR.DDS"
                 end
 
@@ -604,7 +617,7 @@ function CreateSeedRewardLists()
             for _j=1,DEFAULT_SEED_NUMBER,1 do
                 Seed = GetSeed()
                 local SREA_tmp = ""
-                if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" or SST == "ROBOTMULTITOOL" or SST == "ROBOTMULTITOOLB" or SST == "ATLASMULTITOOL" then
+                if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" or SST == "ROBOTMULTITOOL" or SST == "ROBOTMULTITOOLB" or SST == "ATLASMULTITOOL" or SST == "STAFFMULTITOOL" then
                     SREA_tmp = CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SST)
                 else
                     SREA_tmp = CreateCustomShipRewardSubEntry(HexToDec(Seed), Seed, SST)
@@ -634,7 +647,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.40",
+["NMS_VERSION"]     = "4.42",
 ["MODIFICATIONS"]   =
     {
         {

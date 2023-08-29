@@ -134,6 +134,48 @@ WordChanges =
       {"Warriors", "MISC", "True", NPC},
     }
   },
+  {
+    {"BUI_WORD_DIRECT"},
+    {
+      {"Builders", "DIRECTIONS", "True", NPC},
+    }
+  },
+  {
+    {"BUI_WORD_HELP"},
+    {
+      {"Builders", "HELP", "True", NPC},
+    }
+  },
+  {
+    {"BUI_WORD_TRADE"},
+    {
+      {"Builders", "TRADE", "True", NPC},
+    }
+  },
+  {
+    {"BUI_WORD_LORE"},
+    {
+      {"Builders", "LORE", "True", NPC},
+    }
+  },
+  {
+    {"BUI_WORD_TECH"},
+    {
+      {"Builders", "TECH", "True", NPC},
+    }
+  },
+  {
+    {"BUI_WORD_THREAT"},
+    {
+      {"Builders", "THREAT", "True", NPC},
+    }
+  },
+  {
+    {"BUI_WORD_MISC"},
+    {
+      {"Builders", "MISC", "True", NPC},
+    }
+  },
 }
 
 NewWordChanges =
@@ -561,6 +603,98 @@ MonolithChanges =
       {"WAR_MON_OPT_B_20", "TEACHWORD_ATLAS", Monolith_Atlas},
     }
   },
+  {
+    {"BUI_MON_1"},
+    {
+      {"BUI_MON_OPT_A_1", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_1", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_C_1", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_2"},
+    {
+      {"BUI_MON_OPT_A_2", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_2", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_C_2", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_3"},
+    {
+      {"BUI_MON_OPT_A_3", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_3", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_4"},
+    {
+      {"BUI_MON_OPT_A_4", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_4", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_C_4", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_5"},
+    {
+      {"BUI_MON_OPT_A_5", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_5", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_C_5", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_6"},
+    {
+      {"BUI_MON_OPT_A_6", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_6", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_C_6", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_7"},
+    {
+      {"BUI_MON_OPT_A_7", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_7", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_C_7", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_8"},
+    {
+      {"BUI_MON_OPT_A_8", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_8", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_9"},
+    {
+      {"BUI_MON_OPT_A_9", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_9", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_C_9", "TEACHWORD_ATLAS", Monolith_Atlas},
+
+    }
+  },
+  {
+    {"BUI_MON_10"},
+    {
+      {"BUI_MON_OPT_A_10", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_10", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_11"},
+    {
+      {"BUI_MON_OPT_A_11", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_B_11", "TEACHWORD_ATLAS", Monolith_Atlas},
+      {"BUI_MON_OPT_C_11", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
+  {
+    {"BUI_MON_12"},
+    {
+      {"BUI_MON_OPT_A_12", "TEACHWORD_ATLAS", Monolith_Atlas},
+    }
+  },
 }
 
 --------------------------------------------------
@@ -583,7 +717,7 @@ return
                 <Property name="AlienRace" value="]]..race..[[" />
               </Property>
               <Property name="UseCategory" value="False" />
-              <Property name="Category" value="wordcategorytableEnum.xml">
+              <Property name="Category" value="GcWordCategoryTableEnum.xml">
                 <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
@@ -608,7 +742,7 @@ return
                 <Property name="AlienRace" value="]]..race..[[" />
               </Property>
               <Property name="UseCategory" value="]]..usecategory..[[" />
-              <Property name="Category" value="wordcategorytableEnum.xml">
+              <Property name="Category" value="GcWordCategoryTableEnum.xml">
                 <Property name="wordcategorytableEnum" value="]]..category..[[" />
               </Property>
               <Property name="AmountMin" value="1" />
@@ -631,11 +765,9 @@ end
 
 -- File Settings --
 FileName    = "More Words.pak"
-ModAuthor   = "JustRuthless"
-LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
+ModAuthor   = "JustRuthless & Babscoole"
 Description = ""
-NMS_Version = "4.40"
+NMS_Version = "4.42"
 
 -- File Sources --
 FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
@@ -648,8 +780,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]    = FileName,
   ["MOD_AUTHOR"]      = ModAuthor,
-  ["LUA_AUTHOR"]      = LuaAuthor,
-  ["MOD_MAINTENANCE"] = ModMaintenance,
   ["MOD_DESCRIPTION"] = Description,
   ["NMS_VERSION"]     = NMS_Version,
   ["MODIFICATIONS"]   =
