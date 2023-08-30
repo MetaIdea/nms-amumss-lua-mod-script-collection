@@ -1,13 +1,15 @@
 local modfilename = "SentinelShipAnims"
 local lua_author  = "Silent"
-local lua_version = "v1.2"
+local lua_version = "v1.3"
 local mod_author  = "Silent369"
-local nms_version = "4.30.x"
+local nms_version = "4.42"
 local maintenance = mod_author
 local description = [[
+
 Slows down the Sentinel ships wing fold/unfold animations so we can
 better appreciate the effort that went into creating them. It affects
 all Sentinel ships that have animated wing parts.
+
 ]]
 
 --|-- Animation Reduction Amount -------------------------------------
@@ -27,7 +29,7 @@ local _WingSlowAmount = 0.520  --Original "1"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]         = "_"..modfilename..lua_version..".pak",
+    ["MOD_FILENAME"]         = string.format("_%s%s.pak", modfilename, lua_version),
     ["LUA_AUTHOR"]           = lua_author,
     ["MOD_AUTHOR"]           = mod_author,
     ["NMS_VERSION"]          = nms_version,
@@ -42,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --| Sentinel Ship Proc Root Animation Slow Down
                     --|-------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELSHIP_PROC\ENTITIES\ROOTJNT.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"MODELS\\COMMON\\SPACECRAFT\\SENTINELSHIP\\SENTINELSHIP_PROC\\ENTITIES\\ROOTJNT.ENTITY.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -67,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --| Sentinel Ship WingsB Root Animation Slow Down
                     --|-------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\WINGSB\ENTITIES\ROOTJNT.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"MODELS\\COMMON\\SPACECRAFT\\SENTINELSHIP\\PARTS\\WINGSB\\ENTITIES\\ROOTJNT.ENTITY.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -92,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --| Sentinel Ship Engine Flame Body 1 Animation Slow Down
                     --|-------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY1\ENTITIES\DATA.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"MODELS\\COMMON\\SPACECRAFT\\SENTINELSHIP\\PARTS\\ENGINEFLAMEBODY1\\ENTITIES\DATA.ENTITY.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -117,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --| Sentinel Ship Engine Flame L Animation Slow Down
                     --|-------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEL\ENTITIES\DATA.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"MODELS\\COMMON\\SPACECRAFT\\SENTINELSHIP\\PARTS\\ENGINEFLAMEL\\ENTITIES\\DATA.ENTITY.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -142,3 +144,4 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
     }
 }
+

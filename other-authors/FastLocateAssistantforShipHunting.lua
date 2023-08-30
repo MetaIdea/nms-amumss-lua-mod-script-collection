@@ -1,7 +1,7 @@
 -- Ship Hunting Assistant // Will NOT affect default seeds!
 -- Author: DarkScythe
 -- Date Created: Jul 03, 2022
--- Last Updated: Aug 27, 2023
+-- Last Updated: Aug 29, 2023
 --------------------------------------------------------------------------------
 modName		= "FastLocateAssistantforShipHunting"
 batchName	= ""
@@ -10,7 +10,7 @@ modMaint	= "DarkScythe"
 modDesc		= "Speeds up ship hunting by filtering to specific types and increases spawn rates WITHOUT affecting default seeds so you get the same ships as vanilla players in every system. Helpful for players who want to share coordinates of interesting finds with others."
 modVer		= "1.1"
 scriptVer	= "a"
-gameVer		= "4.40"
+gameVer		= "4.42"
 -- Credits --
 -- Thanks to Lenni and Apex Fatality for the idea of isolating ship models.
 -- Thanks to Gumsk for the idea of speeding up NPC spawns.
@@ -112,19 +112,19 @@ inputPrompts		= {
 }
 
 -- Allow overrides to avoid needing to make any changes to the Lua at all
-if GUIF(inputPrompts.tweakSettings) then
+if GUIF(inputPrompts.tweakSettings, 10) then
 	-- Get ship types desired
-	huntExotics		= GUIF(inputPrompts.findExotics)
-	huntExplorers	= GUIF(inputPrompts.findExplorers)
-	huntFighters	= GUIF(inputPrompts.findFighters)
-	huntHaulers		= GUIF(inputPrompts.findHaulers)
-	huntShuttles	= GUIF(inputPrompts.findShuttles)
-	huntSolars		= GUIF(inputPrompts.findSolars)
+	huntExotics		= GUIF(inputPrompts.findExotics,	5)
+	huntExplorers	= GUIF(inputPrompts.findExplorers,	5)
+	huntFighters	= GUIF(inputPrompts.findFighters,	5)
+	huntHaulers		= GUIF(inputPrompts.findHaulers,	5)
+	huntShuttles	= GUIF(inputPrompts.findShuttles,	5)
+	huntSolars		= GUIF(inputPrompts.findSolars,		5)
 	-- See if Optional Settings need changing
-	if GUIF(inputPrompts.tweakOpts) then
-		forceSClass				= GUIF(inputPrompts.toggleSRank)
-		modSpawnFreqMultis		= GUIF(inputPrompts.toggleSpawnFreq)
-		spawnFreqMultiOverride	= modSpawnFreqMultis and GUIF(inputPrompts.getFreqOverride) or spawnFreqMultiOverride
+	if GUIF(inputPrompts.tweakOpts, 5) then
+		forceSClass				= GUIF(inputPrompts.toggleSRank,		5)
+		modSpawnFreqMultis		= GUIF(inputPrompts.toggleSpawnFreq,	5)
+		spawnFreqMultiOverride	= modSpawnFreqMultis and GUIF(inputPrompts.getFreqOverride, 10) or spawnFreqMultiOverride
 	end
 end
 
@@ -221,7 +221,7 @@ activeShipCount	= #shipInfo - #shipsToRemove
 
 -- Second safety check, in case all ship types got filtered out
 if activeShipCount == 0 then
-	assert(GUIF(inputPrompts.processNone),
+	assert(GUIF(inputPrompts.processNone, 10),
 		"Script processing canceled by user: No ship types selected.")
 end
 

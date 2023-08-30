@@ -1,10 +1,13 @@
-local modfilename = "_UnifiedWarps"
+local modfilename = "UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "v2.3"
+local lua_version = "v2.4"
 local mod_author  = "Silent369"
-local nms_version = "4.33"
+local nms_version = "4.42"
+local maintenance = mod_author
 local description = [[
+
 Unifies Blackhole/Portal/Ship/Teleporter Warps
+
 ]]
 
 --|----------------------------------------------------------------------------------------
@@ -12,10 +15,12 @@ Unifies Blackhole/Portal/Ship/Teleporter Warps
 --MODIFIES:
 --GCSIMULATIONGLOBALS.GLOBAL.MBIN
 --MATERIALS\LIGHT_WARPTUNNEL.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN
+--MODELS\EFFECTS\WARP\WARPTUNNEL\SCROLLINGWAVES2MAT.MATERIAL.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN
+--MODELS\EFFECTS\WARP\WARPTUNNEL\WARPBGMAT.MATERIAL.MBIN
+--MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
 
 --|----------------------------------------------------------------------------------------
 
@@ -25,32 +30,50 @@ _FALLOFF_R  = "2.500000"
 _INTENSITY  = "000100.000000"
 _COL_R      = "0.850000"
 _COL_G      = "0.255000"
-_COL_B      = "1.000000"
+_COL_B      = "1.500000"
 
-_WarpTunnelScale = 150 --140
+_UVScroll = [[
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F14_UVSCROLL" />
+    </Property>
+]]
+
+_ScrollStep = [[
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gUVScrollStepVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="1.3" />
+        <Property name="z" value="0" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+]]
 
 --|----------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]        = modfilename..lua_version..".pak",
-    ["LUA_AUTHOR"]          = lua_author,
-    ["MOD_AUTHOR"]          = mod_author,
-    ["NMS_VERSION"]         = nms_version,
-    ["MOD_DESCRIPTION"]     = description,
-    ["MODIFICATIONS"]       =
+    ["MOD_FILENAME"]         = string.format("_%s%s.pak", modfilename, lua_version),
+    ["LUA_AUTHOR"]           = lua_author,
+    ["MOD_AUTHOR"]           = mod_author,
+    ["NMS_VERSION"]          = nms_version,
+    ["MOD_DESCRIPTION"]      = description,
+    ["MOD_MAINTENANCE"]      = maintenance,
+    ["MODIFICATIONS"]        =
     {
         {
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = {"MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]    = {"MODELS\\EFFECTS\\WARP\\WARPTUNNEL.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         --|----------------------------------------------------------------------------------------
                         --| Make the changes first, then remove the sections we don't need!
                         --|----------------------------------------------------------------------------------------
-                        
+
                         {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "FOV"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -123,20 +146,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "LightArms", "Transform", "TkTransformData.xml"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"TransZ",        "-100"}, --Original "0"
-                                {"ScaleX",          "15"}, --Original "1"
-                                {"ScaleY",          "15"}, --Original "1"
-                                {"ScaleZ",          "15"}, --Original "1"
+                                {"TransZ",          "-100"}, --Original "0"
+                                {"ScaleX",             "8"}, --Original "1"
+                                {"ScaleY",             "8"}, --Original "1"
+                                {"ScaleZ",             "8"}, --Original "1"
                             }
                         },
                         --|----------------------------------------------------------------------------------------
                         --| Remove the sections we don't need. Sorry HG, sometimes less IS more!
                         --|----------------------------------------------------------------------------------------
-
-                        --{
-                        --    ["SPECIAL_KEY_WORDS"]   = {"Name", "AnimatedLights"},
-                        --    ["REMOVE"]              = "SECTION",
-                        --},
                         {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "scrollingwave9"},
                             ["REMOVE"]              = "SECTION",
@@ -199,24 +217,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --| Change TUNNELMAT1 Image
                         --|----------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]    = {
-                        "MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN",
-                    },
+                    ["MBIN_FILE_SOURCE"]    = {"MODELS\\EFFECTS\\WARP\\WARPTUNNEL\\TUNNELMAT1.MATERIAL.MBIN"},
                     ["EXML_CHANGE_TABLE"]   =
                     {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {""},
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Class",           "Translucent"}, --Original "GlowTranslucent"
-                            }
-                        },
                         {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "gUVScrollStepVec4"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"y",               "1"}, --Original "0.6"
+                                {"y",               "0.7"}, --Original "0.6"
                             }
                         },
                         {
@@ -229,20 +238,68 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                         --|----------------------------------------------------------------------------------------
-                        --| Change LIGHTARMS
+                        --| Change LightArms Material
                         --|----------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]    = {
-                        "MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN",
-                    },
+                    ["MBIN_FILE_SOURCE"]    = {"MODELS\\EFFECTS\\WARP\\WARPTUNNEL\\LIGHTARMSMAT.MATERIAL.MBIN"},
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
+                            ["SPECIAL_KEY_WORDS"]   = {"Class", "GlowTranslucent"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Class",           "Translucent"}, --Original "GlowTranslucent"
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "gCustomParams01Vec4"},
+                            ["REMOVE"]              = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gMaterialSFXColVec4"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = _ScrollStep,
+                        },
+                    }
+                },
+                        --|----------------------------------------------------------------------------------------
+                        --| Change ScrollingWaves2Mat Material
+                        --|----------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]    = {"MODELS\\EFFECTS\\WARP\\WARPTUNNEL\\SCROLLINGWAVES2MAT.MATERIAL.MBIN"},
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Class", "GlowTranslucent"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Class",           "Translucent"}, --Original "GlowTranslucent"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gCustomParams01Vec4"},
+                            ["REMOVE"]              = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gMaterialSFXColVec4"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = _ScrollStep,
+                        },
+                    }
+                },
+                        --|----------------------------------------------------------------------------------------
+                        --| Change WarpBGMat Material
+                        --|----------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]    = {"MODELS\\EFFECTS\\WARP\\WARPTUNNEL\\WARPBGMAT.MATERIAL.MBIN"},
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gUVScrollStepVec4"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"t",               "1"}, --Original "0.04"
+                                {"y",               "2"}, --Original "0.3"
                             }
                         },
                     }
@@ -251,9 +308,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --| Change ENGGLOWCAPMAT for EndFade Section
                         --|----------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]    = {
-                        "MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN",
-                    },
+                    ["MBIN_FILE_SOURCE"]    = {"MODELS\\EFFECTS\\WARP\\WARPTUNNEL\\ENGGLOWCAPMAT.MATERIAL.MBIN"},
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
@@ -261,8 +316,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"t",                "1"}, --Original "0.04"
+                                {"x",               "20"}, --Original "40"
                             }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gCustomParams01Vec4"},
+                            ["REMOVE"]              = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gMaterialSFXColVec4"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = _ScrollStep,
                         },
                     }
                 },
@@ -286,15 +350,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --| Edit the new Light Material
                         --|----------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]    = {"MATERIALS\LIGHT_WARPTUNNEL.MATERIAL.MBIN",},
+                    ["MBIN_FILE_SOURCE"]    = {"MATERIALS\\LIGHT_WARPTUNNEL.MATERIAL.MBIN",},
                     ["EXML_CHANGE_TABLE"]   =
                     {
-                        {
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Class",           "Opaque"}, --Original "Opaque"
-                            }
-                        },
                         {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "gHSVOverlay"},
                             ["VALUE_CHANGE_TABLE"]  =
@@ -308,7 +366,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --| Insert the new Light Material
                         --|----------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]    = {"MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN",},
+                    ["MBIN_FILE_SOURCE"]    = {"MODELS\\EFFECTS\\WARP\\WARPTUNNEL.SCENE.MBIN",},
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
@@ -332,7 +390,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"WarpTunnelScale",         _WarpTunnelScale}, --Original "140"
                                 {"BlackHoleTunnelFile",     "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE.SCENE.MBIN"
                                 {"TeleportTunnelFile",      "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPPORTAL.SCENE.MBIN"
                                 {"PortalTunnelFile",        "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPLARGEPORTAL.SCENE.MBIN""

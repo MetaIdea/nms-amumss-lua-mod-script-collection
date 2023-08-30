@@ -2,7 +2,7 @@ local modfilename = "AlmostPerfectFlightFullNoReverse"
 local lua_author  = "Silent"
 local lua_version = "v2.5"
 local mod_author  = "Silent369"
-local nms_version = "4.40"
+local nms_version = "4.42"
 local maintenance = mod_author
 local description = [[
 
@@ -55,7 +55,7 @@ local _turnBMult = 2
 local _3rdPerson = 1.5
 
 --Control bonus
-local _cmultiply = 4
+local _cmultiply = 2
 
 --Settings
 local _padTurnSp = 0.75
@@ -367,7 +367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PulseDriveStationApproachSlowdownRangeMin",   "700"}, --Original "1000"
                                 {"TurnRudderStrength",                     _rudTurnSt}, --Original "0.4"
                                 {"MaximumDistanceFromShipWhenExiting",            "4"}, --Original "10"
-                                {"EnablePulseDriveSpaceStationOrient",         "True"}, --Original "False"
+                                --{"EnablePulseDriveSpaceStationOrient",        "False"}, --Original "False"
                                 --{"ShipMinHeightForce",                          "0.1"}, --Original "1"
 
                         --|=======================================================================================--
@@ -450,4 +450,3 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
     }
 }
-

@@ -1,11 +1,14 @@
 local modfilename = "SpaceStationTweaks"
 local lua_author  = "Silent"
-local lua_version = "v1.7"
+local lua_version = "v1.8"
 local mod_author  = "Silent369"
-local nms_version = "4.33"
+local nms_version = "4.42"
+local maintenance = mod_author
 local description = [[
+
 Beautify Landing Pads at the various Space Stations within the game.
 Also includes subtle animations to some of the pad glowing textures.
+
 ]]
 
 --Created:
@@ -153,11 +156,12 @@ _gDiffuseMapP =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]         = "_"..modfilename..lua_version..".pak",
+    ["MOD_FILENAME"]         = string.format("_%s%s.pak", modfilename, lua_version),
     ["LUA_AUTHOR"]           = lua_author,
     ["MOD_AUTHOR"]           = mod_author,
     ["NMS_VERSION"]          = nms_version,
     ["MOD_DESCRIPTION"]      = description,
+    ["MOD_MAINTENANCE"]      = maintenance,
     ["MODIFICATIONS"]        =
     {
         {
@@ -292,9 +296,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ScaleX",         "0.95"},
-                                {"ScaleY",         "0.95"},
-                                {"ScaleZ",         "0.95"},
+                                {"ScaleX",         "0.97"},
+                                {"ScaleY",         "0.97"},
+                                {"ScaleZ",         "0.97"},
                             }
                         },
                         {
@@ -313,6 +317,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\GLOW_ORA_MAT.MATERIAL.MBIN"},
                             }
                         },
+                    }
+                },
+                {   --Landing Pad Material
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Wall_Section_FloorTile_Glow_Mat1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Class",           "Opaque"}, --Original "Glow"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"MaterialFlag", "_F34_GLOW"},
+                            ["REMOVE"]             = "SECTION"
+                        },
+                        --{
+                        --    ["SPECIAL_KEY_WORDS"]  = {"Name", "gMaterialColourVec4"},
+                        --    ["INTEGER_TO_FLOAT"]   = "FORCE",
+                        --    ["VALUE_CHANGE_TABLE"] =
+                        --    {
+                        --        {"x",              "0.09"},
+                        --        {"y",              "0.09"},
+                        --        {"z",              "0.09"},
+                        --        {"t",              "0.09"},
+                        --    }
+                        --},
                     }
                 },
 
@@ -506,13 +541,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN"},
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Markings", "Name", "MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN"}, --Original "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\FLOORTILE_GLOW_MAT.MATERIAL.MBIN"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Markings1_DUP", "Name", "MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN"}, --Original "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\FLOORTILE_GLOW_MAT.MATERIAL.MBIN"
+                            }
+                        },
                     }
                 },
-
                     --|----------------------------------------------------------------------------------------
                     --| Modify Landing Pads (Pirate Station)
                     --|----------------------------------------------------------------------------------------
-
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
@@ -674,3 +721,4 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
     }
 }
+
