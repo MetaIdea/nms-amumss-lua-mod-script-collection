@@ -1,8 +1,8 @@
 local modfilename = "FreighterSalvageTerminals"
 local lua_author  = "Silent"
-local lua_version = "v1.5"
+local lua_version = "v1.6"
 local mod_author  = "Silent369"
-local nms_version = "4.41"
+local nms_version = "4.42"
 local maintenance = mod_author
 local description = [[
 

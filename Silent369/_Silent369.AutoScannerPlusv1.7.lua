@@ -1,30 +1,24 @@
 local modfilename = "AutoScannerPlus"
 local lua_author  = "Silent"
-local lua_version = "v1.6"
+local lua_version = "v1.7"
 local mod_author  = "Silent369"
-local nms_version = "4.33"
-local description = "Auto Scan planet entities (objects, structures) within given range."
+local nms_version = "4.42"
+local maintenance = mod_author
+local description = [[
+
+Auto Scan planet entities (objects, structures) within given range.
+
+]]
 
 --Inspired by the Scan_Auto.cs script provided by cmkNMSModBuilder
 --https://github.com/cmkushnir/NMSModBuilder
 
 ------------------------------------------------------------------------------------------
--- Base scan settings
 
-	-- todo see: MODELS/COMMON/PLAYER/PLACEMARKER/ENTITIES/PLACEMARKER.ENTITY.MBIN
-	-- for possible settings to view from any distance.
-	-- ScanRange = 0
-	-- ScanTime = 5
-	-- CompassRangeMultiplier = 1E+09
-	-- AlwaysShowRange = 0
-	-- MinDisplayDistanceOverride = -1
-
-------------------------------------------------------------------------------------------
-
-local _ScanRange = 10000   --max based on a lod? range ~2,100u
+local _ScanRange = 15000   --max based on a lod? range ~2,100u
 local _ScanTime  = 5
 local _RangeMult = 1E+09
-local _ShowRange = 10000
+local _ShowRange = 15000
 local _Override  = -1      --hide when this close
 
 ------------------------------------------------------------------------------------------
@@ -62,7 +56,7 @@ end
 
 -- For scene and lsystem mbin's for all buildings:
 -- METADATA/SIMULATION/ENVIRONMENT/PLANETBUILDINGTABLE.MBIN
-	
+
 --Note: if you enable any of the commented sections below then ensure you also uncomment the
 --      related sections further in the script, otherwise you will encounter compile errors!
 
@@ -79,7 +73,6 @@ AddMessage     = CreateScannableComponentData(_ScanRange, "BLD_MESSAGEMODULE_NAM
 AddMonolith    = CreateScannableComponentData(_ScanRange, "SIGNAL_MONOLITH",             _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False")
 AddObserver    = CreateScannableComponentData(_ScanRange, "SIGNAL_OBSERVATORY",          _ScanTime, _RangeMult, _ShowRange, "SignalBooster",      "True") --BUILDING_OBSERVATORY_L
 AddOutpost     = CreateScannableComponentData(_ScanRange, "BUILDING_OUTPOST_L",          _ScanTime, _RangeMult, _ShowRange, "FreighterDoor",      "True") --BUILDING_OUTPOST_L
-AddPlaque      = CreateScannableComponentData(_ScanRange, "BUILDING_PLAQUE_L",           _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False")
 AddPSettlement = CreateScannableComponentData(_ScanRange, "UI_SETTLEMENT_LOCATED_OSD",   _ScanTime, _RangeMult, _ShowRange, "HazardPlant",       "False") --UI_SETTLEMENT_LOCATED_OSD
 AddPortal      = CreateScannableComponentData(_ScanRange, "BUILDING_PORTAL_L",           _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False") --BUILDING_PORTAL_L
 AddRadioTower  = CreateScannableComponentData(_ScanRange, "BUILDING_RADIOTOWER_L",       _ScanTime, _RangeMult, _ShowRange, "CustomMarker",       "True") --BUILDING_RADIOTOWER_L
@@ -119,11 +112,12 @@ DistressSound =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "_"..modfilename..lua_version..".pak",
+    ["MOD_FILENAME"]            = string.format("_%s%s.pak", modfilename, lua_version),
     ["LUA_AUTHOR"]              = lua_author,
     ["MOD_AUTHOR"]              = mod_author,
     ["NMS_VERSION"]             = nms_version,
     ["MOD_DESCRIPTION"]         = description,
+    ["MOD_MAINTENANCE"]         = maintenance,
     ["MODIFICATIONS"]           =
     {
         {
@@ -133,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --BUILDING SCAN DISTANCE / TIMING DATA
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"GCBUILDINGGLOBALS.GLOBAL.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[GCBUILDINGGLOBALS.GLOBAL.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -156,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --SENTINEL CRASH SCENE
                     ----------------------------------------------------------------------------------------------
                {
-                   ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\SENTINELCRASHSCENE\ENTITIES\DATA.ENTITY.MBIN"},
+                   ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\SENTINELCRASHSCENE\ENTITIES\DATA.ENTITY.MBIN]],
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
@@ -181,7 +175,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --RUNAWAY MOLD - Already has GcScannableComponentData, but we're overriding for AllowMerge
                     ----------------------------------------------------------------------------------------------
                {
-                   ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\ROLLINGPLANT\ENTITIES\ROLLINGPROP.ENTITY.MBIN"},
+                   ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\ROLLINGPLANT\ENTITIES\ROLLINGPROP.ENTITY.MBIN]],
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
@@ -199,7 +193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --TRAVELLER GRAVE - Already has GcScannableComponentData, but we're overriding for AllowMerge
                     ----------------------------------------------------------------------------------------------
                {
-                   ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\GRAVEINCAVE\GRAVEINCAVE\ENTITIES\GRAVEINCAVE.ENTITY.MBIN"},
+                   ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\GRAVEINCAVE\GRAVEINCAVE\ENTITIES\GRAVEINCAVE.ENTITY.MBIN]],
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
@@ -217,7 +211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --MESSAGE MODULE
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\MESSAGEMODULE\ENTITIES\MESSAGEMODULE.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\MESSAGEMODULE\ENTITIES\MESSAGEMODULE.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -231,7 +225,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --STORY GLITCH
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BUILDINGSIZEDPROPS\ALIENRING\ENTITIES\ALIENRING.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BUILDINGSIZEDPROPS\ALIENRING\ENTITIES\ALIENRING.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -247,8 +241,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASECOMPUTER\ENTITIES\BASECOMPUTER.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DEFAULTROOM\ENTITIES\DEFAULTROOM.ENTITY.MBIN"
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASECOMPUTER\ENTITIES\BASECOMPUTER.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DEFAULTROOM\ENTITIES\DEFAULTROOM.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -260,24 +254,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                     ----------------------------------------------------------------------------------------------
-                    --MINOR SETTLEMENT
-                    ----------------------------------------------------------------------------------------------
-                {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LANDINGPAD\ENTITIES\LANDINGPAD.ENTITY.MBIN"},
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
-                            ["ADD"]                 = AddMinorSettle,
-                        },
-                    }
-                },
-                    ----------------------------------------------------------------------------------------------
                     --TRADE OUTPOST
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN]],
+                    },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -288,10 +271,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                     ----------------------------------------------------------------------------------------------
+                    --MINOR SETTLEMENT
+                    ----------------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LANDINGPAD\ENTITIES\LANDINGPAD.ENTITY.MBIN]],
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = AddMinorSettle,
+                        },
+                    }
+                },
+                    ----------------------------------------------------------------------------------------------
                     --PLANETARY SETTLEMENT
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\TOWER_STONE_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\TOWER_STONE_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -305,7 +305,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --DISTRESS SIGNAL
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\PARTS\BLACKBOX\ENTITIES\BLACKBOX.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\PARTS\BLACKBOX\ENTITIES\BLACKBOX.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -321,7 +321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\HOLOCOM\HOLOCOM\ENTITIES\HOLOCOM.ENTITY.MBIN"
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\HOLOCOM\HOLOCOM\ENTITIES\HOLOCOM.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -338,10 +338,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\SCIENTIFICRADIOTOWERPARTS\SCIENTIFICTERMINAL\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN",
-                        --"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERSCIENTIFIC\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN",
-                        --"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERWARRIOR\ENTITIES\RADIOTOWERWARRIOR.ENTITY.MBIN",
-                        --"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERTRADER\ENTITIES\RADIOTOWERTRADER.ENTITY.MBIN"
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\SCIENTIFICRADIOTOWERPARTS\SCIENTIFICTERMINAL\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN]],
+                        ---[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERSCIENTIFIC\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN]],
+                        ---[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERWARRIOR\ENTITIES\RADIOTOWERWARRIOR.ENTITY.MBIN]],
+                        ---[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERTRADER\ENTITIES\RADIOTOWERTRADER.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -356,7 +356,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --PORTAL \ MONUMENT SITE
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTALSTRUCTURE.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTALSTRUCTURE.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -367,7 +367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTAL.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTAL.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -383,9 +383,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\CENTERPIECE\INTERACTIONPLATFORM\ENTITIES\INTERACTIONPLATFORM.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\CENTERPIECE\RUBIXCUBE\ENTITIES\RUBIXCUBE.ENTITY.MBIN",
-                        --"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\MONOLITH\ENTITIES\MONOLITH.ENTITY.MBIN"
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\CENTERPIECE\INTERACTIONPLATFORM\ENTITIES\INTERACTIONPLATFORM.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\CENTERPIECE\RUBIXCUBE\ENTITIES\RUBIXCUBE.ENTITY.MBIN]],
+                        ---[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\MONOLITH\ENTITIES\MONOLITH.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -397,27 +397,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                     ----------------------------------------------------------------------------------------------
-                    --PLAQUE SITE
-                    ----------------------------------------------------------------------------------------------
-                {
-                    ["MBIN_FILE_SOURCE"]  =
-                    {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE\ENTITIES\PLAQUE.ENTITY.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
-                            ["ADD"]                 = AddPlaque,
-                        },
-                    }
-                },
-                    ----------------------------------------------------------------------------------------------
                     --ANCIENT RUINS
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PROCRUINS\ENTITIES\RUINS.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PROCRUINS\ENTITIES\RUINS.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -428,7 +411,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/UNDERGROUNDRUINS/ENTITIES/TRIGGERVOLUME.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\UNDERGROUNDRUINS\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -444,9 +427,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTWARRIOR\ENTITIES\CLUMPMASTER.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTTRADER\ENTITIES\CLUMPMASTER.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTSCIENTIFIC\ENTITIES\CLUMPMASTER.ENTITY.MBIN"
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTWARRIOR\ENTITIES\CLUMPMASTER.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTTRADER\ENTITIES\CLUMPMASTER.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTSCIENTIFIC\ENTITIES\CLUMPMASTER.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -463,9 +446,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYSCIENTIFIC\ENTITIES\SCIENTIFICFACTORY.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYTRADER\ENTITIES\FACTORYTRADER.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYWARRIOR\ENTITIES\FACTORY.ENTITY.MBIN"
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYSCIENTIFIC\ENTITIES\SCIENTIFICFACTORY.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYTRADER\ENTITIES\FACTORYTRADER.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYWARRIOR\ENTITIES\FACTORY.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -481,8 +464,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ----------------------------------------------------------------------------------------------
                 {
                     ["MBIN_FILE_SOURCE"]  = {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\OBSERVATORY\WARRIORPARTS\OBSERVATORYWARRIOR_ROOF\ENTITIES\RADAR.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\WARRIORPARTS\ROOF_OBSERVATORY\ENTITIES\RADAR.ENTITY.MBIN"
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\OBSERVATORY\WARRIORPARTS\OBSERVATORYWARRIOR_ROOF\ENTITIES\RADAR.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\WARRIORPARTS\ROOF_OBSERVATORY\ENTITIES\RADAR.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -495,9 +478,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"]  = {
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\OBSERVATORY\OBSERVATORYSCIENTIFIC\ENTITIES\OBSERVATORYINTERACTION.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\OBSERVATORY\OBSERVATORYTRADER\ENTITIES\OBSERVATORYINTERACTION.ENTITY.MBIN",
-                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\OBSERVATORY\OBSERVATORYWARRIOR\ENTITIES\OBSERVATORYINTERACTION.ENTITY.MBIN"
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\OBSERVATORY\OBSERVATORYSCIENTIFIC\ENTITIES\OBSERVATORYINTERACTION.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\OBSERVATORY\OBSERVATORYTRADER\ENTITIES\OBSERVATORYINTERACTION.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\OBSERVATORY\OBSERVATORYWARRIOR\ENTITIES\OBSERVATORYINTERACTION.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -512,7 +495,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --SENTINEL HIVE ACTIVE
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SENTINELHIVE\SENTINELHIVEDESTRUCTIBLE\ENTITIES\SENTINELHIVEDESTRUCTIBLE.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SENTINELHIVE\SENTINELHIVEDESTRUCTIBLE\ENTITIES\SENTINELHIVEDESTRUCTIBLE.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -526,7 +509,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --SENTINEL HIVE DISABLED
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SENTINELHIVE\SENTINELHIVEDESTRUCTIBLE_DESTROYED\ENTITIES\DEBRIS.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SENTINELHIVE\SENTINELHIVEDESTRUCTIBLE_DESTROYED\ENTITIES\DEBRIS.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -540,7 +523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --ABANDONED SITE
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\ABANDONEDTERMINAL\ENTITIES\ABANDONEDTERMINAL.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\ABANDONEDTERMINAL\ENTITIES\ABANDONEDTERMINAL.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -554,7 +537,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --RARE RESOURCE, Already has GcScannableComponentData, but we're overriding for AllowMerge
                     ----------------------------------------------------------------------------------------------
                 --{
-                --  ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\BONEPILE\ENTITIES\BONEPILE.ENTITY.MBIN"},
+                --  ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\BONEPILE\ENTITIES\BONEPILE.ENTITY.MBIN]],
                 --  ["EXML_CHANGE_TABLE"] =
                 --  {
                 --          {
@@ -572,7 +555,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --CRASHED FREIGHTER
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\PARTS\CRASHEDFREIGHTER_DISTRESSSIGNAL\ENTITIES\CRASHEDFREIGHTER_DISTRESSSIGNAL.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\PARTS\CRASHEDFREIGHTER_DISTRESSSIGNAL\ENTITIES\CRASHEDFREIGHTER_DISTRESSSIGNAL.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

@@ -1,11 +1,13 @@
 local modfilename = "BgDarkerUIFonts"
 local lua_author  = "Silent"
-local lua_version = "v1.6"
+local lua_version = "v1.7"
 local mod_author  = "Silent369"
-local nms_version = "4.33"
+local nms_version = "4.42"
 local maintenance = mod_author
 local description = [[
+
 Changes Start/Options Backgrounds/Transparent UI and Fonts
+
 ]]
 
 --credit to Lo2k (https://www.nexusmods.com/nomanssky/mods/1706)
@@ -13,7 +15,7 @@ Changes Start/Options Backgrounds/Transparent UI and Fonts
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]         = "_"..modfilename..lua_version..".pak",
+    ["MOD_FILENAME"]         = string.format("_%s%s.pak", modfilename, lua_version),
     ["LUA_AUTHOR"]           = lua_author,
     ["MOD_AUTHOR"]           = mod_author,
     ["NMS_VERSION"]          = nms_version,
@@ -22,15 +24,15 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MODIFICATIONS"]        =
     {
         {
-            ["MBIN_CHANGE_TABLE"]   =
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = {"UI\BOOT\TWOLINEBUTTON.MBIN"},
-                    ["EXML_CHANGE_TABLE"]   =
+                    ["MBIN_FILE_SOURCE"]  = {"UI\BOOT\TWOLINEBUTTON.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "ICON"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["SPECIAL_KEY_WORDS"]  = {"ID", "ICON"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PositionX",       "50"},  -- Original "41.364212"
                                 {"Horizontal",  "Center"},  -- Original "Left"
@@ -42,3 +44,4 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
+

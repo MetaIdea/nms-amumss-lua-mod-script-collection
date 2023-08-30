@@ -1,12 +1,15 @@
-local modfilename = "Biomes.CloudsSunAndFog"
+local modfilename = "Biomes.CloudsSunAndFog-(1.0-Hour)"
 local lua_author  = "Silent"
-local lua_version = "2.3"
+local lua_version = "2.4"
 local mod_author  = "Silent369"
-local nms_version = "4.33"
+local nms_version = "4.42"
+local maintenance = mod_author
 local description = [[
+
 Realtime (NMS time) Day Length (Optional), Better Detailed Clouds, Slower Cloud Animation,
 Sun Properties and Planet Fog Adjustments. LOD Adjustments, Optional Lens Dirt Removal.
 Also disables all Bloom effects but leaves lensing effects intact.
+
 ]]
 
 --modifies the following:
@@ -14,6 +17,7 @@ Also disables all Bloom effects but leaves lensing effects intact.
 --GCENVIRONMENTGLOBALS.GLOBAL.MBIN
 --GCSKYGLOBALS.GLOBALS.MBIN
 --PIPELINES\PIPELINEDEFERRED.BIN
+--PIPELINES\PIPELINEDEFERREDVR.BIN
 
 --TIME RATIOS
 --30 Mn =   1800
@@ -27,22 +31,22 @@ Also disables all Bloom effects but leaves lensing effects intact.
 --96 Hr = 345600
 --192Hr = 691200
 
-_Day_Length              = 1800 --Original "1800"
+_Day_Length              = 3600 --Original "1800"
 
 --CLOUD ANIM SPEED
-_Anim_Scale              = 30   --Original "50" wtf!
+_Anim_Scale              = 25   --Original "50" wtf!
 
 ----------------------------------------------------------------------------------------------------
 --------------------------- SHOULD LEAVE THESE VALUES ALONE - PROBABLY!  ---------------------------
 ----------------------------------------------------------------------------------------------------
 
 --SUN BRIGHTNESS
-_LUTDFMult               = 0.2  --Original "0"
-_Intensity               = 3    --Original "3"
+_LUTDFMult               = 1    --Original "0"
+_Intensity               = 3.2  --Original "3"
 _MaxSpaceFogStrength     = 0.2  --Original "0.5"
-_ReflectionStrength      = 0.1  --Original "0.3"
-_DOFFarStrengthWater     = 0.2  --Original "0"
-_WeatherFilterSTCTime    = 6    --Original "10"
+_ReflectionStrength      = 0.2  --Original "0.3"
+_DOFFarStrengthWater     = 0    --Original "0"
+_WeatherFilterSTCTime    = 5    --Original "10"
 
 --STORM SETTINGS
 _StormWarningTime        = 25   --Original "25"
@@ -62,8 +66,8 @@ _ExtremeAudioLevel       = 0.2  --Original "0.3"
 _StormAudioLevel         = 0.4  --Original "0.5"
 
 --CLOUD RATIO
-_CloudRatio              = 0.69  --Original "0.5-0.6"
-_CloudRatioPrime         = 0.79  --Original "0.5-0.6"
+_CloudRatio              = 0.59  --Original "0.5-0.6"
+_CloudRatioPrime         = 0.69  --Original "0.5-0.6"
 
 --CLOUD SETTINGS
 _LightScalar             = 5    --Original "5"
@@ -72,13 +76,13 @@ _Density                 = 2    --Original "1"
 _AmbientDensity          = 0.1  --Original "0.1"
 _BaseScale               = 1    --Original "1"
 _SampleScalar            = 3    --Original "5"
-_SampleThreshold         = 0.23 --Original "0.25"
+_SampleThreshold         = 0.3  --Original "0.25"
 _CloudBottomFade         = 1    --Original "1"
 _DetailScale             = 7    --Original "6"
 _ErosionEdgeSize         = 0.65 --Original "0.5"
 _CloudDistortion         = 69   --Original "50"
 _CloudDistortionScale    = 0.85 --Original "1"
-_MaxIterations           = 128  --Original "128"
+_MaxIterations           = 256  --Original "128"
 
 --Horizon
 _HorizonFadeStartAlpha   = -0.3 --Original "0"
@@ -177,12 +181,6 @@ _SunClmHMax              = 390  --Original "390"
 _SunClampAngle           = 55   --Original "55"
 _SunFactorMin            = 0.4 --Original "0.4"
 
---HEAVYAIR
-_ThickNess               = 0.5  --Original "1"
-_Speed                   = 0.1  --Original "1"
-_Alpha1                  = 0.5  --Original "1"
-_Alpha2                  = 0.5  --Original "1"
-
 --STAR CHANCE
 _BinaryStarChance        = 0.2  --Original "0.2"
 _TernaryStarChance       = 0.05 --Original "0.05"
@@ -227,11 +225,12 @@ _LODAdjust =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "_"..modfilename..lua_version..".pak",
+    ["MOD_FILENAME"]            = string.format("_%s%s.pak", modfilename, "v"..lua_version),
     ["LUA_AUTHOR"]              = lua_author,
     ["MOD_AUTHOR"]              = mod_author,
     ["NMS_VERSION"]             = nms_version,
     ["MOD_DESCRIPTION"]         = description,
+    ["MOD_MAINTENANCE"]         = maintenance,
     ["MODIFICATIONS"]           =
     {
         {
@@ -254,47 +253,71 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxSpaceFogStrength",_MaxSpaceFogStrength}, --Original "0.5"
                                 {"ReflectionStrength",  _ReflectionStrength}, --Original "0.3"
                                 {"DOFFarStrengthWater",_DOFFarStrengthWater}, --Original "0"
-                
+
                                 {"ShadowLength",                      "800"}, --Original "400"
                                 {"ShadowLengthStation",              "2000"}, --Original "1300"
-                
+
                                 {"HBAOBias",                          "0.2"}, --Original "0.1"
                                 {"HBAORadius",                          "5"}, --Original "2"
                                 {"HBAOIntensity",                     "1.0"}, --Original "5"
-                
+
                                 ----------------------------------------------------------------------------
                                 --Lens Dirt Options
                                 ----------------------------------------------------------------------------
-                
+
                                 {"LensScale",                           "0"}, --Original "0.3"
                                 {"LensDirt",                            "0"}, --Original "0.3"
                                 {"LensScaleCave",                       "0"}, --Original "4"
                                 {"LensDirtCave",                        "0"}, --Original "0.4"
-                
+
                                 ----------------------------------------------------------------------------
                                 --LOD / TAA Adjustments
                                 ----------------------------------------------------------------------------
-                
+
                                 --For LOD settings
                                 {"ForceUncachedTerrain",             "True"}, --Original "False"
-                
+
                                 --LOD Adjustments
                                 {"TerrainDroppedMipsLow",               "0"}, --Original "1"
                                 {"TerrainDroppedMipsMed",               "0"}, --Original "1"
                                 {"TerrainMipBiasLow",                   "0"}, --Original "0.5"
-                
+
                                 ----TAA Settings
-                                {"TaaLowFreqConstant",                "0.8"}, --Original "0.5"
+                                {"TaaLowFreqConstant",                "100"}, --Original "0.5"
                                 {"TaaHighFreqConstant",               "100"}, --Original "100"
                                 {"TaaAccumDelay",                    "1.05"}, --Original "0.9"
                                 {"FrustumJitterAmount",                 "0"}, --Original "0.6"
+                                --{"FrustumJitterAmountDLSS",             "0"}, --Original "1"
+                                {"UseTaaResolve",                   "False"}, --Original "False"
+                                {"ApplyTaaTest",                    "False"}, --Original "False"
+                                {"ShowTaaBuf",                      "False"}, --Original "False"
+                                {"TonemapInLuminance",              "False"}, --Original "False"
+                                {"ShowTaaVarianceBuf",              "False"}, --Original "False"
+                                {"ShowTaaNVarianceBuf",             "False"}, --Original "False"
+                                {"ShowTaaCVarianceBuf",             "False"}, --Original "False"
                             }
                         },
-                
+
+                        ----------------------------------------------------------------------------
+                        --TAA SETTINGS (Shimmer Fix)
+                        ----------------------------------------------------------------------------
+
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"TaaSettings", "Vector4f.xml"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"x",                          "1"}, --Original "0.263"
+                                {"y",                       "0.99"}, --Original "0.263"
+                                {"z",               "-0.909999967"}, --Original "0.263"
+                                {"t",                        "-10"}, --Original "1"
+                            }
+                        },
+
                         ----------------------------------------------------------------------------
                         --LIGHT SHAFT PROPERTIES
                         ----------------------------------------------------------------------------
-                
+
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties",},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -674,7 +697,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"SunSize",               "0.0001"}, --Original "0.25"
+                                {"SunSize",              "0.00001"}, --Original "0.25"
                                 {"SunSurroundSize",         "0.02"}, --Original "10"
                                 {"SunSurroundStrength",     "0.02"}, --Original "12"
                             }
@@ -685,7 +708,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"SunSize",               "0.0001"}, --Original "0.25"
+                                {"SunSize",              "0.00001"}, --Original "0.25"
                                 {"SunSurroundSize",         "0.02"}, --Original "10"
                                 {"SunSurroundStrength",     "0.02"}, --Original "12"
                             }
@@ -695,8 +718,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"SunSize",               "0.0001"}, --Original "0.005"
-                                {"StarVisibility",          "0.85"}, --Original "0.82"
+                                {"SunSize",              "0.00001"}, --Original "0.005"
+                                {"StarVisibility",          "0.80"}, --Original "0.82"
                                 {"CenterPower",                "3"}, --Original "2.5"
                                 {"AtmosphereThickness",     "0.26"}, --Original "0.28"
                             }
@@ -707,7 +730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"SunSize",               "0.0001"}, --Original "0.005"
-                                {"StarVisibility",          "0.85"}, --Original "0.82"
+                                {"StarVisibility",          "0.80"}, --Original "0.82"
                                 {"CenterPower",                "3"}, --Original "2.5"
                                 {"AtmosphereThickness",     "0.26"}, --Original "0.28"
                             }
@@ -752,6 +775,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 --STAR CHANCE--
                                 {"BinaryStarChance",              _BinaryStarChance}, --Original "0.2"
                                 {"TernaryStarChance",            _TernaryStarChance}, --Original "0.05"
+
+                                --SPACE FOG--
+                                {"SpaceFogStrength",                            "0"}, --Original "0.04"
                             }
                         },
                         {
@@ -760,7 +786,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"R",                           "1"}, --Original "1"
                                 {"G",                           "1"}, --Original "1"
-                                {"B",                        "0.96"}, --Original "0.904"
+                                {"B",                        "0.91"}, --Original "0.904"
                                 {"A",                           "1"}, --Original "1"
                             }
                         },
@@ -774,6 +800,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A",                           "1"}, --Original "1"
                             }
                         },
+
+                        ----------------------------------------------------------------------------
+                        --PHOTO MODE VIGNETTE
+                        ----------------------------------------------------------------------------
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"PhotoModeVignette", "Vector2f.xml"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"x",                         "1"}, --Original "0.9"
+                                {"y",                         "1"}, --Original "0.3"
+                            }
+                        },
+
                         ----------------------------------------------------------------------------
                         --FOG PROPERTIES
                         ----------------------------------------------------------------------------
@@ -909,72 +948,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Cloudiness",              "ClearWithCloudySpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
                             }
                         },
-                        ----------------------------------------------------------------------------
-                        --HEAVY AIR PROPERTIES
-                        ----------------------------------------------------------------------------
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PlanetFog", "HeavyAir",},
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Thickness",           _ThickNess}, --Original "1"
-                                {"Speed",                   _Speed}, --Original "1"
-                                {"Alpha1",                 _Alpha1}, --Original "1"
-                                {"Alpha2",                 _Alpha2}, --Original "1"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PlanetFlightFog", "HeavyAir",},
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Thickness",           _ThickNess}, --Original "1"
-                                {"Speed",                   _Speed}, --Original "1"
-                                {"Alpha1",                 _Alpha1}, --Original "1"
-                                {"Alpha2",                 _Alpha2}, --Original "1"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PlanetExtremeFog", "HeavyAir",},
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Thickness",           _ThickNess}, --Original "1"
-                                {"Speed",                   _Speed}, --Original "1"
-                                {"Alpha1",                 _Alpha1}, --Original "1"
-                                {"Alpha2",                 _Alpha2}, --Original "1"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PlanetStormFog", "HeavyAir",},
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Thickness",           _ThickNess}, --Original "1"
-                                {"Speed",                   _Speed}, --Original "1"
-                                {"Alpha1",                 _Alpha1}, --Original "1"
-                                {"Alpha2",                 _Alpha2}, --Original "1"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"AbandonedFreighterFog", "HeavyAir",},
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Thickness",           _ThickNess}, --Original "1"
-                                {"Speed",                   _Speed}, --Original "1"
-                                {"Alpha1",                 _Alpha1}, --Original "1"
-                                {"Alpha2",                 _Alpha2}, --Original "1"
-                            }
-                        },
                     }
                 },
             }
         },
     }
 }
+
