@@ -2,7 +2,7 @@ Author			= "Gumsk"
 ModName 		= "gMission No Approximate Location"
 ModNameSub		= ""
 BaseDescription = "Removes the approximate location scanning from missions"
-GameVersion 	= "415"
+GameVersion 	= "4412"
 ModVersion		= "a"
 
 --[[Files Modified
@@ -29,6 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						"METADATA/SIMULATION/MISSIONS/SPACEPOIMISSIONTABLE.MBIN",
 						"METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
 						"METADATA/SIMULATION/MISSIONS/WATERMISSIONTABLE.MBIN",
+						"METADATA/SIMULATION/MISSIONS/NPCBUILDERSMISSIONTABLE.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] = {
 						{
