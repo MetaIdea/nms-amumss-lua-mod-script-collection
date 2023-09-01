@@ -23,8 +23,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MechJetpackDrainRate",	".4"}, 	-- Original ".5"
 								{"MechJetpackFillRate",		"0.5"}, 	-- Original ".5"
 								{"MechJetpackTurnSpeed",		"6"}, 	-- Original "3"
-								{"TopSpeedForward",				"48"}, 	-- Original "16"
-								{"UnderwaterEngineMaxSpeed",	"45"} 	-- Original "15"
+								--{"TopSpeedForward",				"48"}, 	-- Original "16"
+								--{"UnderwaterEngineMaxSpeed",	"45"} 	-- Original "15"
 							}
 						},
 						{
@@ -40,6 +40,56 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "SUBMARINE" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "BIKE" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "MED_BUGGY" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "TRUCK" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "WHEELEDBIKE" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "HOVERCRAFT" },
 						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
