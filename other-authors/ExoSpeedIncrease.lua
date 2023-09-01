@@ -13,18 +13,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "GCVEHICLEGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{
-							["PRECEDING_KEY_WORDS"] = {},
+						--{
+							--["PRECEDING_KEY_WORDS"] = {},
 						
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TopSpeedForward",				"48"}, 	-- Original "16"
-								{"UnderwaterEngineMaxSpeed",	"45"} 	-- Original "15"
-							}
-						},
+							--["VALUE_CHANGE_TABLE"] 	= 
+							--{
+								--{"TopSpeedForward",				"48"}, 	-- Original "16"
+								--{"UnderwaterEngineMaxSpeed",	"45"} 	-- Original "15"
+							--}
+						--},
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "MECH" },
-							--["PRECEDING_KEY_WORDS"] = { "Name", "MECH" },
 						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -35,6 +34,56 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "SUBMARINE" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "BIKE" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "MED_BUGGY" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "TRUCK" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "WHEELEDBIKE" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "HOVERCRAFT" },
 						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

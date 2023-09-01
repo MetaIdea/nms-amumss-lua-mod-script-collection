@@ -1,83 +1,9 @@
 --[[ This is the script to increase the number of words from knowledge stones]]
 
---[[    
-        For Version 3.38 (Expedition Patch):
-
-        This block of code increases the number of words learned.
-        Increasing the Min and Max only gives you the same number of words.
-
-          <Property value="GcRewardTableItem.xml">
-              <Property name="PercentageChance" value="100" />
-              <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                  <Property name="AlienRace" value="None" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              </Property>
-              <Property name="LabelID" value="" />
-          </Property>
-]]
-
---[[
-	
-	For Version 3.99 (Endurance) and earlier:
-
-		  <Property value="GcRewardTableItem.xml">
-              <Property name="PercentageChance" value="100" />
-              <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                  <Property name="AlienRace" value="None" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              </Property>
-              <Property name="LabelID" value="" />
-          </Property>
-	
-
-]]
-
---[[
-
-	For Version 4.23 (Interceptor) and earlier:
-	
-          <Property value="GcRewardTableItem.xml">
-              <Property name="PercentageChance" value="100" />
-              <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                  <Property name="AlienRace" value="None" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                  <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              </Property>
-              <Property name="LabelID" value="" />
-          </Property>
-]]
-
 -- Change this to your liking
-WORDS_LEARN = 5
+WORDS_LEARN = 10
 
--- Code may change with new updates
---[[ 
-        If you need a newer version of this code, you should use the 
-        AMUMSS unpacker exeuctable to find the "REWARDTABLE.MBIN"
-        file, and unpack it. Once you have its EXML file, you can then
-        search for "WORD" (all uppercase), and then find the piece of code
-        similar to what we have here.
-]]
+
 
 ORIGINAL_CODE = [[
 		  <Property value="GcRewardTableItem.xml">
@@ -100,18 +26,20 @@ ORIGINAL_CODE = [[
 EXPLORER_CODE  = string.gsub(ORIGINAL_CODE, "None", "Explorers")
 TRADER_CODE    = string.gsub(ORIGINAL_CODE, "None", "Traders")
 WARRIOR_CODE   = string.gsub(ORIGINAL_CODE, "None", "Warriors")
+BUILDER_CODE   = string.gsub(ORIGINAL_CODE, "None", "Builders")
 
 -- Since there is already one block of this inside the EXML file, we only need to add the number of words to learn minus 1.
 EXPLORER_CODE = string.rep(EXPLORER_CODE, WORDS_LEARN -1)
 TRADER_CODE   = string.rep(TRADER_CODE, WORDS_LEARN)
 WARRIOR_CODE  = string.rep(WARRIOR_CODE, WORDS_LEARN)
-CODE_TO_INCLUDE = EXPLORER_CODE..TRADER_CODE..WARRIOR_CODE
+BUILDER_CODE  = string.rep(BUILDER_CODE, WORDS_LEARN)
+CODE_TO_INCLUDE = EXPLORER_CODE..TRADER_CODE..WARRIOR_CODE..BUILDER_CODE
 
 -- If you need more information on how this works, refer back to the Script_Rules.txt file.
 NMS_MOD_DEFINITION_CONTAINER = {
 
     -- Just stuff to define the .pak file
-    ["MOD_FILENAME"]    = "LearnMoreWordsMultiLang5.pak",
+    ["MOD_FILENAME"]    = "LearnMoreWordsMultiLangx10.pak",
     ["MOD_AUTHOR"]      = "TheJollyDuck with help from AMUMSS and Nexus lua scripts",
     ["MOD_DESCRIPTION"] = "Increases the number of words learned from different sources",
     ["NMS_VERSION"]     = "4.30",
