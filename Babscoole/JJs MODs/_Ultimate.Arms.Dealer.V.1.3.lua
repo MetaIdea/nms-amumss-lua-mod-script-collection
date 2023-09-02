@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Ultimate.Arms.Dealer.V.1.2.Standard.pak",
+["MOD_FILENAME"]  = "_Ultimate.Arms.Dealer.V.1.3.pak",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole & Lyravega",
-["NMS_VERSION"]   = "4.21",
+["NMS_VERSION"]   = "4.43",
 ["MODIFICATIONS"] =
     {
         {
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"File","MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"File","MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMULTITOOL.SCENE.MBIN"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -31,29 +31,34 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="MinDraw" value="1" />
       <Property name="MaxDraw" value="2" />
       <Property name="PoolProbability" value="1" />
-      <Property name="PoolIsSecret" value="False" />
-      <Property name="PoolIsSentinel" value="False" />
+      <Property name="PoolType" value="GcMultitoolPoolType.xml">
+        <Property name="MultiToolPoolType" value="Standard" />
+      </Property>
     </Property>
     <Property value="GcMultitoolPoolData.xml">
       <Property name="File" value="MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL.SCENE.MBIN" />
       <Property name="MinDraw" value="1" />
       <Property name="MaxDraw" value="2" />
       <Property name="PoolProbability" value="1" />
-      <Property name="PoolIsSecret" value="False" />
-      <Property name="PoolIsSentinel" value="False" />
+      <Property name="PoolType" value="GcMultitoolPoolType.xml">
+        <Property name="MultiToolPoolType" value="Standard" />
+      </Property>
     </Property>
 ]]
                         },
                     }
                 },
                 {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\WEAPONS\MULTITOOL\MULTITOOL.DESCRIPTOR.MBIN",
+                    ["REGEXBEFORE"] =
+                    {
+                        {[[(<Property name="Name") value="(.*)xRARE" \/>]], [[\1 value="\2" \/>]]}, --REGEX, provided by Lyravega, searches for Name properties ending in xRARE and removes those characters
+                    },
+                },
+                {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {
-                            [[MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN]],
-                            [[MODELS/PHONG15.MATERIAL.MBIN]],
-                            "REMOVE"
-                        },
+                        {"MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN","MODELS/PHONG15.MATERIAL.MBIN","REMOVE"},
                     },
                 },
                 {
