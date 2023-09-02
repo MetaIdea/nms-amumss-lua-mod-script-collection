@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Bird's Eye Scans 1.3.pak", 
+["MOD_FILENAME"] 			= "No Bird's Eye Scans 1.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k (based on Penitence)",
 ["LUA_AUTHOR"]				= "Lo2k (based on Penitence)",
-["NMS_VERSION"]				= "4.42",
+["NMS_VERSION"]				= "4.43",
 ["MOD_DESCRIPTION"]			= "Disables Aerial Camera Zoom on Waypoints, Beacons, Signals, and Transmission Towers",
 ["MODIFICATIONS"] 			= 
 	{
@@ -35,7 +35,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TimeBack",	"0.9"},  --original "4"
 								{"StartTime",	"0.4"},  --original "1" -- Back from marker to horizon
 								{"PauseTime",	"0"},  --original "2.5"
-								{"Distance",	"0"},  --original "2000", 20 is pretty nice with FaceOut
+								{"Distance",	"0.1"},  --original "2000", 20 is pretty nice with FaceOut
+								--{"FocusTargetOffsetDistance", "0.5"},  --original 2
 							},
 						},
 						--[[{
