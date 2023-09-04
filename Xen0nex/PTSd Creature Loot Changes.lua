@@ -1,5 +1,5 @@
 ModName = "PTSd Creature Loot Changes"
-GameVersion = "422"
+GameVersion = "441"
 Description = "Lowers amount of meat dropped by creatures, and improves loot of Rock Creatures"
 
 AngryRockProportionNormal = 0.5				--Default 0.2		Unclear this effect, there is a separate parameter for RockTransformGlobalChance

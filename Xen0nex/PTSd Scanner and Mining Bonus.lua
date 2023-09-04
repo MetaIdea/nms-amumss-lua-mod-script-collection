@@ -1,5 +1,5 @@
 ModName = "PTSd Scanner and Mining Bonus"
-GameVersion = "4_08"
+GameVersion = "4_41"
 Description = "Makes a Multitool's Mining stat also increase the yield of mined resources, and it's Scan stat also increase the value of scanned flora/fauna"
 
 --This makes Multi-Tool's Scanning stat bonus also apply to the value of scanned fauna & flora.

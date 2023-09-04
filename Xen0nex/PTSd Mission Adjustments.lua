@@ -1,5 +1,5 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "4_23"
+GameVersion = "4_41"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
 --GcDefaultMissionProductEnum.xml
@@ -49,6 +49,7 @@ RemoveContainerMission = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6"
 SalvagedDataReward =
 [[<Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+				<Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProduct.xml">
                   <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                     <Property name="DefaultProductType" value="None" />
@@ -60,7 +61,6 @@ SalvagedDataReward =
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="Silent" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>]]
 
 
@@ -70,6 +70,7 @@ function RewardIonBattery (amount)
     return
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -81,7 +82,6 @@ function RewardIonBattery (amount)
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 end
 

@@ -1,5 +1,5 @@
 ModName = "PTSd Rarer Free Sentinel Ship"
-GameVersion = "4_20"
+GameVersion = "4_41"
 Description = "Makes the random space encounter leading to a crashed Sentinel Interceptor (if you haven't already claimed one) more rare"
 
 

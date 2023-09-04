@@ -1,5 +1,5 @@
 ModName = "PTSd Suit Inventory and Stack Sizes"
-GameVersion = "4_23"
+GameVersion = "4_41"
 Description = "Rebalance of inventory Slot stack sizes, as well as initial & max exosuit inventory size"
 
 --NOTE: certain specific items may have their stack size further adjusted in the "PTSd Resource + Product + Construction Rebalance" section

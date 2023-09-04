@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_23"
+GameVersion = "4_41"
 --Currently balancing around Survival Mode
 
 --Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
@@ -132,7 +132,10 @@ TechAdjustments =
 		"SUB_BINOCS",	24				--High-Power Sonar 						10 Nanites
 	},
 	{
-		"SUIT_REFINER",	0.5				--Personal Refiner
+		"SUIT_REFINER",	0.4				--Personal Refiner						360 nanites
+	},
+	{
+		"SUIT_REFINER2",	0.4			--Personal Refiner Mk 2					580 nanites
 	},
 	{
 		"UT_WATERJET",	0.3				--Efficient Water Jets
@@ -370,6 +373,12 @@ ReplaceItems =
 	{	--Minotaur Radar Array 
 		"MECH_SCAN",			"BLUE2",			75,		"Substance",	"STELLAR2",
 	},
+	{	--Personal Refiner Mk 2 
+		"SUIT_REFINER2",		"GREEN2",			120,	"Substance",	"CAVE2",
+	},
+	{	--Polyphonic Core
+		"UT_BUI_SCAN2",			"RED2",				160,	"Substance",	"COMPUTER",
+	},
 }
 
 --New recipe for installing Oxygen Recycler (PTSd boosts its strength)
@@ -422,16 +431,16 @@ QuadParts = [[<Property value="GcTechnologyRequirement.xml">
         </Property>]]
 
 --Changes various fuel related values for Minotaur exomech
-MinotaurFuelRate = 3					--0.5		Changes base fuel usage rate for Minotaur exomech engine (higher value uses fuel faster)
-MinotaurBoreChargeAmount = 500			--200		The "tank size" of how much "charge"/"fuel" the Minotaur Bore can hold. (Terrain Manipulator is 600)
-MinotaurBoreChargeCost = 0.5			--			Multiplier to apply to the cost of recharging the Minotaur Bore. (Terrain Manipulator is 1/3 as expensive to recharge as Minotaur Bore normally) E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
+MinotaurFuelRate = 3						--0.5		Changes base fuel usage rate for Minotaur exomech engine (higher value uses fuel faster)
+MinotaurBoreChargeAmount = 500				--200		The "tank size" of how much "charge"/"fuel" the Minotaur Bore can hold. (Terrain Manipulator is 600)
+MinotaurBoreChargeCost = 0.5				--			Multiplier to apply to the cost of recharging the Minotaur Bore. (Terrain Manipulator is 1/3 as expensive to recharge as Minotaur Bore normally) E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
 
 --Changes how much substances it costs to refill the Biofuel Reactor for a set amount of time (the max size of the fuel tank is controlled in "gBase Items BasicX.lua")
 BiofuelRefillCostMult = 2					--1			In vanilla it takes 50 Carbon / 17 Cond. Carbon / 25 Oxygen for 25 hours worth of charge, so a "2" here means it would take 100 Carbon / 34 Cond. Carbon / 50 Oxygen to fill it for 25 hours worth of charge
 
 --Changes the cost of using & recharging the Trade Rocket (fuel usage altered in PTSD Black Hole Distance + Ship Scrapping Items + Misc.lua)
-RocketChargeAmount = 50					--50	The "tank size" of how much "charge"/"fuel" it can hold
-RocketChargeCost = 8					--Multiplier to apply to the cost of recharging the Trade Rocket. E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
+RocketChargeAmount = 50						--50	The "tank size" of how much "charge"/"fuel" it can hold
+RocketChargeCost = 8						--Multiplier to apply to the cost of recharging the Trade Rocket. E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
 
 --Everything below this point doesn't need to be changed, all the values can be edited in the sections above
 
@@ -1148,6 +1157,7 @@ NewInterceptorRepairTech =
       </Property>
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
+	  <Property name="ExclusivePrimaryStat" value="False" />
     </Property>]]
 
 NewInterceptorTechRepairSlot = 

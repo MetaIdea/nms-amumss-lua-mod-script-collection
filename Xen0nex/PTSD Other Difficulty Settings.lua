@@ -1,5 +1,5 @@
 ModName = "PTSD Other Difficulty Settings"
-GameVersion = "436"
+GameVersion = "441"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
 --Controls whether you can both increase and decrease the Stack Size limit from the options menu after starting a game

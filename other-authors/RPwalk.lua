@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
 						{
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"BobAmount","0.15",},
+								{"BobAmount","0.13",},
 								{"BobFactor","0.35",}
 							}	
 						},

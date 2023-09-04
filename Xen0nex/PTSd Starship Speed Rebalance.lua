@@ -1,6 +1,6 @@
 ModName = "PTSd Starship Speed Rebalance"
 ModAuthor = 'Xen0nex'
-GameVersion = "4.20"
+GameVersion = "4.41"
 Description = 'Makes all ships start out slower but end up faster with enough upgrades, tweaks balance of boosting speed for different ship types'
 
 ThrustMult = 1												--	Global multiplier for Thrust for all ships. (accelration?)
@@ -44,7 +44,7 @@ ShipSpeedChanges =
 				{"CombatEngine"},						--Speed while fighting in space		???
 				{
 					{"ThrustForce",						40*ThrustMult},						--40		Thrust / acceleration?
-					{"MaxSpeed",						80*MaxSpeedMult},					--80		Top Speed?
+					{"MaxSpeed",						115*MaxSpeedMult},					--115		Top Speed?
 					{"BoostThrustForce",				500*BoostThrustMult},				--500		Boosting Thrust / acceleration?
 					{"BoostMaxSpeed",					1200*MaxBoostSpeedMult},			--1200		Boosting Top Speed?
 					{"TurnStrength",					1.3*ManMult},						--1.3		Maneuverability?
@@ -89,7 +89,7 @@ ShipSpeedChanges =
 				{"CombatEngine"},						--Speed while fighting in space		???
 				{
 					{"ThrustForce",						60*ThrustMult},						--80		Thrust / acceleration?
-					{"MaxSpeed",						90*MaxSpeedMult},					--80		Top Speed?
+					{"MaxSpeed",						130*MaxSpeedMult},					--130		Top Speed?
 					{"BoostThrustForce",				600*BoostThrustMult},				--500		Boosting Thrust / acceleration?
 					{"BoostMaxSpeed",					1500*MaxBoostSpeedMult},			--1300		Boosting Top Speed?
 					{"TurnStrength",					1.5*ManMult},						--1.5		Maneuverability?
@@ -134,7 +134,7 @@ ShipSpeedChanges =
 				{"CombatEngine"},						--Speed while fighting in space		???
 				{
 					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
-					{"MaxSpeed",						70*MaxSpeedMult},					--80		Top Speed?
+					{"MaxSpeed",						100*MaxSpeedMult},					--100		Top Speed?
 					{"BoostThrustForce",				400*BoostThrustMult},				--500		Boosting Thrust / acceleration?
 					{"BoostMaxSpeed",					1000*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
 					{"TurnStrength",					1*ManMult},							--1			Maneuverability?
@@ -179,7 +179,7 @@ ShipSpeedChanges =
 				{"CombatEngine"},						--Speed while fighting in space		???
 				{
 					{"ThrustForce",						45*ThrustMult},						--40		Thrust / acceleration?
-					{"MaxSpeed",						75*MaxSpeedMult},					--80		Top Speed?
+					{"MaxSpeed",						120*MaxSpeedMult},					--80		Top Speed?
 					{"BoostThrustForce",				525*BoostThrustMult},				--500		Boosting Thrust / acceleration?
 					{"BoostMaxSpeed",					1300*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
 					{"TurnStrength",					1.3*ManMult},						--1			Maneuverability?

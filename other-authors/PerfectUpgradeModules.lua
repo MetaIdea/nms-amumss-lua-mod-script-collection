@@ -1,7 +1,7 @@
 -- Perfect Upgrade Modules
 -- Author: DarkScythe
 -- Date Created: Jul 18, 2022
--- Last Updated: Aug 27, 2023
+-- Last Updated: Sep 02, 2023
 --------------------------------------------------------------------------------
 modName		= "PerfectUpgradeModules"
 batchName	= ""
@@ -10,7 +10,7 @@ modMaint	= "DarkScythe"
 modDesc		= "Overrides all upgrade modules to have the best possible vanilla stats, with optional custom power scaling"
 modVer		= "1.1"
 scriptVer	= "a"
-gameVer		= "4.40"
+gameVer		= "4.43"
 
 --[[
 Enter a number here to set the approximate Power Scaling of upgrade module stats
@@ -67,9 +67,9 @@ getMaxStack		= {maxTechStack,
 ]]}
 
 -- Allow overrides to avoid needing to make any changes to the Lua at all
-powerScale		= GUIF(overrideScale)
-overloadTech	= GUIF(getOverload)
-maxTechStack	= overloadTech and GUIF(getMaxStack) or maxTechStack
+powerScale		= GUIF(overrideScale,	15)
+overloadTech	= GUIF(getOverload,		10)
+maxTechStack	= overloadTech and GUIF(getMaxStack, 10) or maxTechStack
 
 -- Safety checks
 assert(type(powerScale) == "number" and powerScale >= 0.1,

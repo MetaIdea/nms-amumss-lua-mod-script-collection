@@ -1,6 +1,6 @@
  MOD_NAME		= "New Milestones 2.2X.pak"; 
  MOD_AUTHOR 	= "Lo2k";		--Edited by Xen0nex
- NMS_VERSION 	= "4.23";
+ NMS_VERSION 	= "4.41";
  MOD_DESC		= "This mods changes milestones pacing";
   
 

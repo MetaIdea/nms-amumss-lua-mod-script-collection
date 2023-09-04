@@ -1,5 +1,5 @@
 ModName = "PTSd Crops and Harvester Speed Changes"
-GameVersion = "4_08"
+GameVersion = "4_41"
 Description = "Changes the growth time for a few farmable plants to make Albumen Pearls, Sac Venom, etc. more worthwhile. Also the carbon-powered mining & gas harvesters Note that the build menu UI does not accurately show the correct growth times."
 
 --These specifically change the buildable crops in your base, not wild ones

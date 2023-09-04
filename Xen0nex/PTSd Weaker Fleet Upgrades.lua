@@ -1,5 +1,5 @@
 ModName = "PTSd Weaker Fleet Upgrades"
-GameVersion = "4_08"
+GameVersion = "4_41"
 Description = "Weakens Fleet Upgrade modules from giving 1~15% boost to 1~5% boosts"
 --When taking into account adjacency bonuses and the odd way that supercharged slots affect upgrades with multipliers listed as values greater than 1 in the game files like with fleet upgrades, the final bonuses quickly become enormous even with very small base values
 

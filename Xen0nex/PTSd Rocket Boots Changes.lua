@@ -1,5 +1,5 @@
 ModName = "PTSd Rocket Boots Changes"
-GameVersion = "423"
+GameVersion = "441"
 Description = "Makes Melee-Boosting a little worse and Rocket Boots a little better"
 
 

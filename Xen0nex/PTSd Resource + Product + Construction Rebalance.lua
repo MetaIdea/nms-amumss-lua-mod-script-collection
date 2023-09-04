@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_23"
+GameVersion = "4_41"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -103,6 +103,32 @@ ProductSaleChanges =
 	{"UI_ILLEGAL_PROD8_NAME",	2.0},				--98,000		Illegal Trade item
 	
 	{"UI_SALVAGE_TECH_6_NAME",	10.0},				--12,000		Salvaged Trade item		(Based on the pattern of the other items in this series I suspect a typo missed a 0 in this price)
+	
+	--Different versions of the Staff Pole for Voltaic Staves, bought with Void Motes
+	{"UI_STAFF_PART_A_NAME",	1.0},				--333		Void Motes
+	{"UI_STAFF_POLE1_NAME",		1.0},				--333		Void Motes
+	{"UI_STAFF_POLE2_NAME",		1.0},				--333		Void Motes
+	{"UI_STAFF_POLE3_NAME",		1.0},				--333		Void Motes
+	{"UI_STAFF_POLE4_NAME",		1.0},				--333		Void Motes
+	{"UI_STAFF_POLE5_NAME",		1.0},				--333		Void Motes
+	{"UI_STAFF_POLE6_NAME",		1.0},				--333		Void Motes
+	--Different versions of the Staff Core for Voltaic Staves, bought with Void Motes
+	{"UI_STAFF_PART_B_NAME",	1.0},				--646		Void Motes
+	{"UI_STAFF_CORE1_NAME",		1.0},				--646		Void Motes
+	{"UI_STAFF_CORE2_NAME",		1.0},				--646		Void Motes
+	{"UI_STAFF_CORE3_NAME",		1.0},				--646		Void Motes
+	{"UI_STAFF_CORE4_NAME",		1.0},				--646		Void Motes
+	{"UI_STAFF_CORE5_NAME",		1.0},				--646		Void Motes
+	{"UI_STAFF_CORE6_NAME",		1.0},				--646		Void Motes
+	--Different versions of the Staff Head for Voltaic Staves, bought with Void Motes
+	{"UI_STAFF_PART_C_NAME",	1.0},				--999		Void Motes
+	{"UI_STAFF_HEAD1_NAME",		1.0},				--999		Void Motes
+	{"UI_STAFF_HEAD2_NAME",		1.0},				--999		Void Motes
+	{"UI_STAFF_HEAD3_NAME",		1.0},				--999		Void Motes
+	{"UI_STAFF_HEAD4A_NAME",	1.0},				--999		Void Motes
+	{"UI_STAFF_HEAD4B_NAME",	1.0},				--999		Void Motes
+	{"UI_STAFF_HEAD5_NAME",		1.0},				--999		Void Motes
+	{"UI_STAFF_HEAD6_NAME",		1.0},				--999		Void Motes
 }
 
 --These various "geode" style items are given values equal to 1.33x the expected value of opening & selling their contents on average (3x value for Tritium Hypercluster & Crystal Shard due to the difficulty in getting Tritium/Di-Hydrogen)

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "stackmod.pak",
 ["MOD_AUTHOR"]    = "GrandTickler",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.41",
+["NMS_VERSION"]   = "4.43",
 ["MODIFICATIONS"] = 
 	{
 		{

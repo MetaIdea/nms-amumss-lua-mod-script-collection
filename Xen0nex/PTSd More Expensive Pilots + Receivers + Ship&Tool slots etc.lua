@@ -1,5 +1,5 @@
 ModName = "PTSd More Expensive Pilots + Receivers + Ship&Tool slots etc"
-GameVersion = "4_23"
+GameVersion = "4_41"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
 --This is the price paid in Nanites during certain dialog choices rarely used in certain alien NPC interactions
@@ -11,6 +11,11 @@ TravellerNaniteCost =	800					--100
 --Adds a cost to opening the containers at crashed freighters
 CrashedContSubstance =	"STELLAR2"			--""			STELLAR2 is Chromatic Metal
 CrashedContAmount =		10					--0
+
+--WIP
+--Adds a cost to opening the sentinel weapon cabinets at Abandoned Camps
+--AbandonedCabinetItem =	"SALVAGE_TECH7"		--""			SALVAGE_TECH7 is Recycled Circuitry
+--AbandonedCabinetAmount = 1					--0
 
 --Prices to upgrade the Class of Starships / Multi-Tools at Space Stations
 UpgShipCtoB =			8000				--10000
@@ -386,4 +391,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 		}
 	},
+	--[[
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/COMMON/BUILDINGS/ROBOT/ROBOTBASE/ENTITIES/ROBOTWEAPONCRATE.ENTITY.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"ActivationCost","GcInteractionActivationCost.xml"},
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"SubstanceId", AbandonedCabinetItem},
+					{"Cost", AbandonedCabinetAmount},
+				}
+			},
+		}
+	},
+	]]
 }}}}

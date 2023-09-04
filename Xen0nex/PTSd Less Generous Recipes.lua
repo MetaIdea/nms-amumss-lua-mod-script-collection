@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "4_23"
+GameVersion = "4_41"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -474,7 +474,14 @@ RecipeChanges =
 	{							--Amount per batch	--Time per batch
 		{"REFINERECIPE_328",	2,					30},				--Makes Pugneum					x2		in	30 time
 		{
-			{"ROBOT2",		3}											--Requires Atlantideum			x1
+			{"ROBOT2",			3}										--Requires Atlantideum			x1
+		}
+	},
+--Fixes the ratio for Cadmium > Chromatic Metal refining that oddly got changed NMS v4.4 made 
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_32",		2,					70},				--Makes Chromatic Metal			x1		in	70 time
+		{
+			{"RED2",			2}										--Requires Cadmium				x2
 		}
 	},
 }
