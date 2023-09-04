@@ -100,12 +100,14 @@ ORIGINAL_CODE = [[
 EXPLORER_CODE  = string.gsub(ORIGINAL_CODE, "None", "Explorers")
 TRADER_CODE    = string.gsub(ORIGINAL_CODE, "None", "Traders")
 WARRIOR_CODE   = string.gsub(ORIGINAL_CODE, "None", "Warriors")
+BUILDER_CODE   = string.gsub(ORIGINAL_CODE, "None", "Builders")
 
 -- Since there is already one block of this inside the EXML file, we only need to add the number of words to learn minus 1.
 EXPLORER_CODE = string.rep(EXPLORER_CODE, WORDS_LEARN -1)
 TRADER_CODE   = string.rep(TRADER_CODE, WORDS_LEARN)
 WARRIOR_CODE  = string.rep(WARRIOR_CODE, WORDS_LEARN)
-CODE_TO_INCLUDE = EXPLORER_CODE..TRADER_CODE..WARRIOR_CODE
+BUILDER_CODE  = string.rep(BUILDER_CODE, WORDS_LEARN)
+CODE_TO_INCLUDE = EXPLORER_CODE..TRADER_CODE..WARRIOR_CODE..BUILDER_CODE
 
 -- If you need more information on how this works, refer back to the Script_Rules.txt file.
 NMS_MOD_DEFINITION_CONTAINER = {

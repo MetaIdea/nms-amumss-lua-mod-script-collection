@@ -436,7 +436,7 @@ end
 local function addChangeTable(lang)
   local langFilename = langFilenameSuffix(lang)
   Ref[#Ref + 1] = {
-    MBIN_FILE_SOURCE = "LANGUAGE\"..LanguageFilePrefix..langFilename..".MBIN",
+    MBIN_FILE_SOURCE = "LANGUAGE\\"..LanguageFilePrefix..langFilename..".MBIN",
     EXML_CHANGE_TABLE = {
       {
         PRECEDING_KEY_WORDS = {"Table"},
@@ -450,7 +450,7 @@ end
 local function createLanguageFile(lang)
   local langFilename = langFilenameSuffix(lang)
   Ref[#Ref + 1] = {
-    FILE_DESTINATION = "LANGUAGE\"..Author:upper().."_"..ModName:upper().."_"..langFilename..".EXML",
+    FILE_DESTINATION = "LANGUAGE\\"..Author:upper().."_"..ModName:upper().."_"..langFilename..".EXML",
     FILE_CONTENT = [[<Data template="TkLocalisationTable">
   <Property name="Table">
 ]]..buildForLanguage(lang)..[[
