@@ -24,6 +24,10 @@ LANGUAGES = {
 		ENGLISH = "Alternative NPC Landing Pad",
 		GERMAN = "Alternatives NPC Landefeld",
 	},
+	UI_LANDINGPAD_TREE= {
+		ENGLISH = "Landing Pads",
+		GERMAN = "Landefelder",
+	},
 }
 
 function GetBaseBuildingObject(ID_NAME, PLACEMENT)
@@ -415,6 +419,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
 {
 ["MOD_FILENAME"] 			=	"NPC_LandingPad.pak",
 ["MOD_AUTHOR"]				=	"XiNaaru",
+["MOD_VERSION"]				=	"1.1",
 ["LUA_AUTHOR"]				=	"Lenni",
 ["NMS_VERSION"]				=	"4.43",
 ["MODIFICATIONS"]			=
@@ -424,7 +429,10 @@ NMS_MOD_DEFINITION_CONTAINER	=
 			{
 				-- Landing Pad
 				{
-                    ["MBIN_FILE_SOURCE"]    = {{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/LANDINGPAD.SCENE.MBIN]],[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/NPCLANDINGPAD.SCENE.MBIN]], "REMOVE"}},
+                    ["MBIN_FILE_SOURCE"]    = {
+						{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/LANDINGPAD.SCENE.MBIN]],[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/NPCLANDINGPAD.SCENE.MBIN]], "REMOVE"},
+						{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/LANDINGZONE.SCENE.MBIN]],[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/NPCLANDINGZONE.SCENE.MBIN]], "REMOVE"}
+					},
 				},
 				{
 					["MBIN_FILE_SOURCE"]	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/NPCLANDINGPAD.SCENE.MBIN",
@@ -439,22 +447,6 @@ NMS_MOD_DEFINITION_CONTAINER	=
 					},
 				},
 				{
-                    ["MBIN_FILE_SOURCE"]    = {{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/LANDINGPAD/ENTITIES/LANDINGDATA.ENTITY.MBIN]],[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/NPCLANDINGPAD/ENTITIES/LANDINGDATA.ENTITY.MBIN]]}},
-					["EXML_CHANGE_TABLE"]	= 
-					{
-						{
-							["VCT"]	=	{
-								{"AIDestination", "False"},
-							}
-						},
-					},
-				},
-				
-				-- Alternate Landing Pad
-				{
-                    ["MBIN_FILE_SOURCE"]    = {{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/LANDINGZONE.SCENE.MBIN]],[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/NPCLANDINGZONE.SCENE.MBIN]], "REMOVE"}},
-				},
-				{
 					["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/NPCLANDINGZONE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"]	= 
 					{
@@ -466,8 +458,12 @@ NMS_MOD_DEFINITION_CONTAINER	=
 						},
 					},
 				},
+
 				{
-                    ["MBIN_FILE_SOURCE"]    = {{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/LANDINGZONE/ENTITIES/LANDINGZONEDATA.ENTITY.MBIN]],[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\NPCLANDINGZONE\ENTITIES\LANDINGZONEDATA.ENTITY.MBIN]]}},
+                    ["MBIN_FILE_SOURCE"]    = {
+						{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/LANDINGPAD/ENTITIES/LANDINGDATA.ENTITY.MBIN]],[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/NPCLANDINGPAD/ENTITIES/LANDINGDATA.ENTITY.MBIN]]},
+						{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/LANDINGZONE/ENTITIES/LANDINGZONEDATA.ENTITY.MBIN]],[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\NPCLANDINGZONE\ENTITIES\LANDINGZONEDATA.ENTITY.MBIN]]}
+					},
 					["EXML_CHANGE_TABLE"]	= 
 					{
 						{
@@ -557,6 +553,66 @@ NMS_MOD_DEFINITION_CONTAINER	=
 					["EXML_CHANGE_TABLE"]	= 
 					{
 						{
+							["SKW"] = {"Title", "UI_BASETECH_TREE", "Unlockable", "BUILDLANDINGPAD"},
+							["SEC_SAVE_TO"] = "ITEM_TREE",
+						},
+						{
+							["SKW"] = {"Title", "UI_BASETECH_TREE", "Unlockable", "S_LANDINGZONE"},
+							["SEC_SAVE_TO"] = "MISC_ITEM_TREE",
+						},
+						{
+							["SEC_EDIT"] = "MISC_ITEM_TREE",
+							["SKW"] = {"Unlockable", "U_MINIPORTAL"},
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SEC_EDIT"] = "MISC_ITEM_TREE",
+							["SKW"] = {"Unlockable", "S_LANDINGZONE"},
+							["VCT"] = {
+								{"Unlockable", "U_MINIPORTAL"},
+							},
+						},
+						{
+							["SKW"] = {"Title", "UI_BASETECH_TREE", "Unlockable", "BUILDLANDINGPAD"},
+							["ADD_OPTION"] = "ADDafterSECTION",
+							["SEC_ADD_NAMED"] = "MISC_ITEM_TREE",
+						},
+						{
+							["SKW"] = {"Title", "UI_BASETECH_TREE", "Unlockable", "BUILDLANDINGPAD"},
+							["REMOVE"] = "SECTION",
+						},
+
+
+						{
+							["SKW"] = {"Title", "UI_BASETECH_TREE"},
+							["SEC_SAVE_TO"] = "UNLOCK_TREE",
+						},
+						{
+							["SEC_EDIT"] = "UNLOCK_TREE",
+							["PKW"] = "Root",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SEC_EDIT"] = "UNLOCK_TREE",
+							["SKW"] = {"Title", "UI_BASETECH_TREE"},
+							["VCT"] = {
+								{"Title", "UI_LANDINGPAD_TREE"},
+							},
+						},
+						{
+							["SEC_EDIT"] = "ITEM_TREE",
+							["ADD_OPTION"] = "REPLACEatLINE",
+							["ADD"] = '<Property name="Root" value="GcUnlockableItemTreeNode.xml">',
+						},
+						{
+							["SEC_EDIT"] = "ITEM_TREE",
+							["SKW"]	= {"Unlockable", "BUILDLANDINGPAD"},
+							["VCT"] = {
+								{"Unlockable", "_U_NPCLANDING"},
+							},
+						},
+						{
+							["SEC_EDIT"] = "ITEM_TREE",
 							["SKW"]	= {"Unlockable", "S_LANDINGZONE"},
 							["ADD_OPTION"] = "ADDAFTERSECTION",
 							["ADD"] = [[
@@ -567,28 +623,34 @@ NMS_MOD_DEFINITION_CONTAINER	=
 							]],
 						},
 						{
-							["SKW"]	= {"Unlockable", "S_LANDINGZONE"},
-							["SECTION_UP"] = 2,
+							["SEC_EDIT"] = "ITEM_TREE",
+							["SKW"]	= {"Unlockable", "U_MINIPORTAL"},
 							["VCT"] = {
-								{"Unlockable", "_U_NPCLANDING"},
+								{"Unlockable", "S_LANDINGZONE"},
 							},
 						},
 						{
-							["SKW"]	= {"Unlockable", "U_MINIPORTAL"},
-							["ADD_OPTION"] = "ADDAFTERSECTION",
-							["ADD"] = [[
-								<Property value="GcUnlockableItemTreeNode.xml">
-									<Property name="Unlockable" value="S_LANDINGZONE" />
-									<Property name="Children" />
-								</Property>
-							]],
-						},
-						{
-							["SKW"]	= {"Unlockable", "U_MINIPORTAL"},
-							["SECTION_UP"] = 2,
+							["SEC_EDIT"] = "ITEM_TREE",
+							["SKW"]	= {"Unlockable", "S_LANDINGZONE"},
 							["VCT"] = {
 								{"Unlockable", "ALT_NPCLANDING"},
 							},
+						},
+						{
+							["SEC_EDIT"] = "ITEM_TREE",
+							["SKW"]	= {"Unlockable", "U_PORTALLINE"},
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SEC_EDIT"] = "UNLOCK_TREE",
+							["SKW"] = {"CostTypeID", "SALVAGE"},
+							["SEC_ADD_NAMED"] = "ITEM_TREE",
+						},
+
+						{
+							["SKW"] = {"Title", "UI_BASETECH_TREE"},
+							["ADD_OPTION"] = "ADDafterSECTION",
+							["SEC_ADD_NAMED"] = "UNLOCK_TREE",
 						},
 					},
 				},
