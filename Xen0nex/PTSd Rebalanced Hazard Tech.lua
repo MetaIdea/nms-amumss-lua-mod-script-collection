@@ -1,5 +1,5 @@
 ModName = "PTSd Rebalanced Hazard Tech"
-GameVersion = "4_08"
+GameVersion = "4_41"
 Description = "Nerfs the procedural Hazard techs & Buffs the Hazard techs / upgrades which grant a % resistance to hazards to hopefully make them worth considering. Note that the different sources of +% hazard protection (multiple X Class upgrades all count as the same source) appear to stack multiplicatively with each other, and that X Class Hazard Upgrades receive significant adjacency bonuses. E.G. two fully surrounded X Class upgrades with +25% each will typically double your protection time against all hazards."
 
 HazardRechargeMult =			1.5					--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging Hazard Protection			54 / 22 to fully charge

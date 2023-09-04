@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_36"
+GameVersion = "4_41"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -495,7 +495,7 @@ CostChanges	=
 			{"Royal",				2.5,		8*1.21,		5,			11},		--Vanilla values are 5 mil,			12 mil,			15,	20		Catalogued at 5 mil		~	12 mil		(12 mil)			15	~	20	general &	4	~	6	tech slots initially
 			{"Alien",				5,			70,			16,			30},		--Vanilla values are 5 mil,			70 mil,			25,	48		Catalogued at 2.98 mil	~	2.98mil		(2.98 mil)			22	~	22	general &	21	~	21	tech slots initially
 			{"Sail",				1*0.95,		100*0.4,	8,			20},		--Vanilla values are 2.2 mil,		11.1 mil,		19,	36		Catalogued at 1.00 mil	~	2.42mil		(2.2 mil)			15	~	19	general &	4	~	6	tech slots initially
-			{"Robot",				6,			64,			5,			15},		--Vanilla values are 10 mil,		120 mil,		15,	48		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
+			{"Robot",				6,			48,			5,			15},		--Vanilla values are 4.2 mil,		34.5 mil,		19,	36		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
 			{"Freighter",			25,			200,		17,			45},		--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
 			{"PlayerFreighter",		25,			200,		17,			45}			--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
 		}
@@ -506,12 +506,16 @@ CostChanges	=
 		},
 		{													--MinSlots & MaxSlots here don't actually control slots, just lets the game know how many slots to expect on spawned tools in order to extrapolate the price at different toolsizes (in vanilla many of these slot values are inaccurate)
 		--Base value in millions 	MinValue	MaxValue	MinSlots	MaxSlots																	Price at Class C with lowest inventory and at Class S with highest inventory as seen in game v3.99 by players and catalogued to the wiki	(And max S rank cost after undoing the S rank cost bonus)
-			{"Pistol",				0.08,		0.4*2.5,	6,			20},		--Vanilla values are 0.08 mil,		0.28 mil,		6,	9		Catalogued at 0.0455 mil	~	1.165 mil	(0.388 mil)		5	~	10	tech slots initially
-			{"Rifle",				0.635,		3*1.25,		10,			20},		--Vanilla values are 1.5 mil,		4 mil,			17,	28		Catalogued at 0.635 mil		~	3.7 mil		(2.96 mil)		11	~	24	tech slots initially
-			{"Pristine",			0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			5,	24		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
-			{"Royal",				5.15,		16*1.25,	10,			20},		--Vanilla values are 10 mil,		120 mil,		15,	48		Catalogued at 5.15 mil		~	??? mil		(??? mil)		11	~	???	tech slots initially	(Only offered as C Class from Pillars?)
-			{"Alien",				0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			5,	24		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
-			{"Robot",				2.5,		8*1.25,		6,			20}			--Vanilla values are 4.2 mil,		34.5 mil,		19,	36		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
+			{"Pistol",				0.08,		0.4*2.5,	6,			20},		--Vanilla values are 0.08 mil,		0.28 mil,		10,	30		Catalogued at 0.0455 mil	~	1.165 mil	(0.388 mil)		5	~	10	tech slots initially
+			{"Rifle",				0.635,		3*1.25,		10,			20},		--Vanilla values are 1.5 mil,		4 mil,			17,	30		Catalogued at 0.635 mil		~	3.7 mil		(2.96 mil)		11	~	24	tech slots initially
+			{"Pristine",			0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			11,	30		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
+			{"Royal",				1.5,		7.5*1.25,	10,			20},		--Vanilla values are 1 mil,			7 mil,			13,	30		Catalogued at 5.15 mil		~	??? mil		(??? mil)		11	~	???	tech slots initially	(Only offered as C Class from Pillars?)
+			{"Alien",				0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			11,	30		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
+			{"Robot",				1,			5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		6 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
+			{"Atlas",				1,			5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
+			{"AtlasYellow",			1,			5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
+			{"AtlasBlue",			1,			5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
+			{"Staff",				1,			4*1.25,		6,			20}			--Vanilla values are 0.5 mil,		4 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
 		}
 	},
 }
@@ -540,7 +544,7 @@ CostClassModifierChanges =	--Replaces vanilla cost bonus at different Classes
 			{"Scientific",				0,		30,		100,	300},				--Vanilla values are +		0,		10,		25,		50	%
 			{"Royal",					0,		0,		0,		400},				--Vanilla values are +		0,		0,		0,		0	%
 			{"Alien",					0,		0,		0,		300},				--Vanilla values are +		0,		0,		0,		0	%
-			{"Sail",					0,		50,		150,	400},				--Vanilla values are +		0,		20,		70,		100	%
+			{"Sail",					0,		50,		150,	400},				--Vanilla values are +		0,		10,		25,		50	%
 			{"Robot",					0,		10,		25,		50},				--Vanilla values are +		0,		10,		25,		50	%
 			{"Freighter",				0,		50,		150,	400},				--Vanilla values are +		0,		40,		60,		100	%
 			{"PlayerFreighter",			0,		50,		150,	400},				--Vanilla values are +		0,		40,		60,		100	%
@@ -552,19 +556,23 @@ CostClassModifierChanges =	--Replaces vanilla cost bonus at different Classes
 		},
 		{
 		--Extra % added to cost at		C		B		A		S		class
-			{"Pistol",					0,		100,	300,	700},				--Vanilla values are +		0,		50,		100,	200	%	
+			{"Pistol",					0,		100,	300,	700},				--Vanilla values are +		0,		5,		15,		25	%	
 			{"Rifle",					0,		50,		150,	300},				--Vanilla values are +		0,		5,		15,		25	%
 			{"Pristine",				0,		50,		150,	400},				--Vanilla values are +		0,		10,		25,		50	%
-			{"Royal",					0,		0,		0,		0},					--Vanilla values are +		0,		0,		0,		0	%
+			{"Royal",					0,		50,		150,	300},				--Vanilla values are +		0,		10,		25,		50	%
 			{"Alien",					0,		50,		150,	400},				--Vanilla values are +		0,		10,		25,		50	%
-			{"Robot",					0,		0,		0,		0},					--Vanilla values are +		0,		0,		0,		0	%
+			{"Robot",					0,		50,		150,	300},				--Vanilla values are +		0,		10,		25,		50	%
+			{"Atlas",					0,		50,		150,	300},				--Vanilla values are +		0,		1,		2,		3	%
+			{"AtlasYellow",				0,		50,		150,	300},				--Vanilla values are +		0,		1,		2,		3	%
+			{"AtlasBlue",				0,		50,		150,	300},				--Vanilla values are +		0,		1,		2,		3	%
+			{"Staff",					0,		50,		150,	300},				--Vanilla values are +		0,		10,		25,		50	%
 		}
 	},
 }
 
 --Extra multiplier for Pistol's WEAPON_MINING Min value at S Class to make it equivalent to being +25-35% instead of +20-35%
 PistolMiningSMinMult =			1.25					--1
---Extra multiplier for Sentinel Multi-Tool's WEAPON_DAMAGE Min value at S Class to make it equivalent to being +35-50% instead of +25-50%
+--Extra multiplier for Sentinel & Staff Multi-Tool's WEAPON_DAMAGE Min value at S Class to make it equivalent to being +35-50% instead of +25-50%
 SentinelDamageSMinMult =		1.4						--1
 --Extra multipliers for the "Min" Scanning value of S Class Experimental & Royal Multi-tools, so they have an effective "base" range of bonuses of 90-100 instead of always exactly 100 at S Class, before apply the modifiers in ToolStatChanges below
 ExperimentalScanSMinMult =		0.9						--1		(Base is 100)
@@ -618,7 +626,7 @@ ToolStatChanges	=
 			"Alien"			--"Exotic"
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			1.35,	1.35,	1.35,	1.35},		--			+		10-15,		15-20,		20-25,		25-35	%
+			{"WEAPON_DAMAGE",			1.43,	1.43,	1.43,	1.43},		--			+		10-15,		15-20,		20-25,		25-35	%
 			{"WEAPON_MINING",			1,		1,		1,		1},			--			+		0-5,		5-10,		10-15,		15-20	%
 			{"WEAPON_SCAN",				0.8,	0.8,	0.8,	0.8}		--			+		20-25,		30-35,		40-45,		50-60	%
 		}
@@ -628,11 +636,51 @@ ToolStatChanges	=
 			"Robot"			--"Sentinel"
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			0.5,	0.667,	0.8,	0.7},		--			+		10-20,		15-25,		20-30,		25-50[35-50]%
+			{"WEAPON_DAMAGE",			0.57,	0.76,	0.9,	0.8},		--			+		10-20,		15-25,		20-30,		25-50[35-50]%
 			{"WEAPON_MINING",			1,		1,		2,		2},			--			+		0-5,		5-10,		5-10,		10-15	%
 			{"WEAPON_SCAN",				1.1,	1.1,	1.1,	1.1}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
-	}
+	},
+	{
+		{
+			"Atlas"			--"Atlantid"
+		},
+		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
+			{"WEAPON_DAMAGE",			0.5,	1.0,	1.0,	1.0},		--			+		5-10,		5-10,		10-15,		10-20	%
+			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
+			{"WEAPON_SCAN",				1.3,	1.3,	1.3,	1.3}		--			+		20-25,		30-35,		35-45,		40-50	%
+		}
+	},
+	{
+		{
+			"AtlasYellow"	--"Atlantid" Yellow version?
+		},
+		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
+			{"WEAPON_DAMAGE",			0.5,	1.0,	1.0,	1.0},		--			+		5-10,		5-10,		10-15,		10-20	%
+			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
+			{"WEAPON_SCAN",				1.3,	1.3,	1.3,	1.3}		--			+		20-25,		30-35,		35-45,		40-50	%
+		}
+	},
+	{
+		{
+			"AtlasBlue"		--"Atlantid" Blue version?
+		},
+		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
+			{"WEAPON_DAMAGE",			0.5,	1.0,	1.0,	1.0},		--			+		5-10,		5-10,		10-15,		10-20	%
+			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
+			{"WEAPON_SCAN",				1.3,	1.3,	1.3,	1.3}		--			+		20-25,		30-35,		35-45,		40-50	%
+		}
+	},
+	{
+		{
+			"Staff"			--"Voltaic Staff"
+		},
+		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
+			{"WEAPON_DAMAGE",			0.5,	0.667,	0.8,	0.7},		--			+		10-20,		15-25,		20-30,		25-50[35-50]%
+			{"WEAPON_MINING",			1.1,	1.1,	2.2,	2.2},		--			+		0-5,		5-10,		5-10,		10-15	%
+			{"WEAPON_SCAN",				1.5,	1.5,	1.5,	1.5}		--			+		20-25,		30-35,		35-45,		40-50	%
+		}
+	},
 }
 
 --If the game tries to spawn a Multi-Tool in a Space Station with a number of slots which can't fit in the TechBounds below, the game crashes when warping to that system
@@ -702,6 +750,8 @@ ToolSizeChanges =
 
 --Changes the "SizeType" of Rifles and Sentinel Multi-Tools. Normally Pistols are WeaponSmall, Rifles are WeaponLarge, and all others are WeaponMedium
 RifleSize =				"WeaponMedium"				--"WeaponLarge"			Changed away from WeaponLarge so the game won't try to spawn multi-tools with more than 24 slots which crashes the game with PTSd's smaller Multi-Tool TechBounds size
+AtlasSize =				"WeaponMedium"				--"WeaponLarge"
+StaffSize =				"WeaponMedium"				--"WeaponLarge"
 SentinelRifleSize =		"WeaponMedium"				--"WeaponLarge"
 SentinelPistolSize =	"WeaponSmall"				--"WeaponMedium"
 
@@ -815,6 +865,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
+							["PRECEDING_KEY_WORDS"] = {"WeaponBaseStatsData", "Staff","BaseStatsPerClass","S"},
+							["SPECIAL_KEY_WORDS"] = {"BaseStatID", "WEAPON_DAMAGE"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Min", SentinelDamageSMinMult}
+							}
+						},
+						{
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["PRECEDING_KEY_WORDS"] = {"WeaponBaseStatsData", "Pristine","BaseStatsPerClass","S"},
 							["SPECIAL_KEY_WORDS"] = {"BaseStatID", "WEAPON_SCAN"},
 							["VALUE_CHANGE_TABLE"] 	=
@@ -896,6 +957,50 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"MinSize",	2},			--4		Unclear what this does
 								--{"MaxSize",	3},			--4		Unclear what this does
 								{"SizeType",	RifleSize},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS"},
+							["MATH_OPERATION"] = "",
+							["REPLACE_TYPE"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								--{"MinSize",	2},			--4		Unclear what this does
+								--{"MaxSize",	3},			--4		Unclear what this does
+								{"SizeType",	AtlasSize},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS_Y"},
+							["MATH_OPERATION"] = "",
+							["REPLACE_TYPE"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								--{"MinSize",	2},			--4		Unclear what this does
+								--{"MaxSize",	3},			--4		Unclear what this does
+								{"SizeType",	AtlasSize},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS_B"},
+							["MATH_OPERATION"] = "",
+							["REPLACE_TYPE"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								--{"MinSize",	2},			--4		Unclear what this does
+								--{"MaxSize",	3},			--4		Unclear what this does
+								{"SizeType",	AtlasSize},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_LARGE"},
+							["MATH_OPERATION"] = "",
+							["REPLACE_TYPE"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								--{"MinSize",	2},			--4		Unclear what this does
+								--{"MaxSize",	3},			--4		Unclear what this does
+								{"SizeType",	StaffSize},
 							}
 						},
 						{

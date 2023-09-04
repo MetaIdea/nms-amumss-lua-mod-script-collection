@@ -1,5 +1,5 @@
 ModName = "PTSd Exocraft scanner Changes"
-GameVersion = "4_23"
+GameVersion = "4_41"
 
 AddMechScan0 = 
 [[<Property value="GcTechnology.xml">
@@ -124,6 +124,7 @@ AddMechScan0 =
       </Property>
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
+	  <Property name="ExclusivePrimaryStat" value="False" />
     </Property>]]
 
 AddSubBinocs0 = 
@@ -249,6 +250,7 @@ AddSubBinocs0 =
       </Property>
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
+	  <Property name="ExclusivePrimaryStat" value="False" />
     </Property>]]
 
 AddMechScan =

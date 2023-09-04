@@ -1,5 +1,5 @@
 ModName = "_Extra Savage Sentinels by ExosolarX"
-GameVersion = "4_36"
+GameVersion = "4_41"
 Description = "Increases the difficulty of Sentinels by changing aggression, firerate, range, sight distance, etc."
 
 --Multiplier to apply to the base health of all planetary Sentinels

@@ -1,5 +1,5 @@
 ModName = "PTSd Farther Target Sweep"
-GameVersion = "4_20"
+GameVersion = "4_41"
 Description = "Makes the distance between the 'Approximate Location' and final mission target using Target Sweep farther away."
 
 --Multipliers to use for the "approximate Location" distances, depending on the mission group / file
@@ -22,6 +22,8 @@ Filepaths =
 	{"METADATA\SIMULATION\MISSIONS\COREMISSIONTABLE.MBIN"},						--400,	200,	450,	350,	600,	500,	650,	300			Expanding the Base missions, possbily others?
 	{"METADATA\SIMULATION\MISSIONS\TUTORIALMISSIONTABLE.MBIN"},					--300,	600,	350,	500,	380,	
 	{"METADATA\SIMULATION\MISSIONS\STARTEDONUSEMISSIONTABLE.MBIN"},				--200
+	{"METADATA\SIMULATION\MISSIONS\NPCBUILDERSMISSIONTABLE.MBIN"},				--300,	300,	180,	150				Presumably missions from the new Autophages
+	{"METADATA\SIMULATION\MISSIONS\SEASONALBESPOKEMISSIONTABLE.MBIN"},			--900,	1500,	450,	200 x2,	300 x9,	800		Possibly a new way to handle Expedition missions? Unclear.
 }
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line

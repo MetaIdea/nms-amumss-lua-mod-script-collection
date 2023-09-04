@@ -2,7 +2,7 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gGame"
 ModNameSub = "Misc Changes X"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "408"
+GameVersion = "441"
 ModVersion = "b"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

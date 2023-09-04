@@ -1,5 +1,5 @@
 ModName = "PTSd Settlement Rewards"
-GameVersion = "4_23"
+GameVersion = "4_41"
 Description = "Rebalances settlement produced items by race & wealth, Increases cap on stored settlement rewards, and can optionally change settlement timers"
 
 --Multiplier to apply to the Max Production cap and Production StatProductivityContributionModifier
@@ -97,6 +97,7 @@ ProducedItemChanges =
 AddedExpeditionReward =
 [[<Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+				<Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSettlementStat.xml">
                   <Property name="StatToAward" value="GcSettlementStatChange.xml">
                     <Property name="Stat" value="GcSettlementStatType.xml">
@@ -108,7 +109,6 @@ AddedExpeditionReward =
                   </Property>
                   <Property name="Silent" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = 

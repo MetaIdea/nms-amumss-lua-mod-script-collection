@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "4_37"
+GameVersion = "4_41"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
@@ -256,7 +256,7 @@ PoliceFrigComMin = 					1			--Explosive Drones
 PoliceFrigComMax = 					1
 PoliceFrigComChance = 				60
 
---New additional rewards for rescuing a Freighter from Pirates
+--New additional rewards for rescuing a Freighter from Pirates in starships
 FreighterRescueUnitsMin = 			400000
 FreighterRescueUnitsMax = 			1000000
 FreighterRescueUnitsChance = 		100
@@ -264,6 +264,36 @@ FreighterRescueUnitsChance = 		100
 FreighterRescueFrigModMin = 		1			--Salvaged Frigate Module
 FreighterRescueFrigModMax = 		1
 FreighterRescueFrigModChance = 		100
+
+--Presumably rewards for rescuing Civilian Freighters from Pirate Freighters (added in NMS v4.4)
+CivilianFreighterRewardChanges =
+{
+	{
+		{"R_CIV_SAVED_SM"},		--Presumably the reward for saving "small" civilian freighters?
+		{	--Currency	Min			Max			%Chance (relative weight, roughly but not necessarily out of 100)
+			{"Units",	800000,		1200000,	100}		--400000,		600000,		100
+		}
+	},
+	{
+		{"R_CIV_SAVED_LG"},		--Presumably the reward for saving "large" civilian freighters?
+		{	--Currency	Min			Max			%Chance (relative weight, roughly but not necessarily out of 100)
+			{"Units",	1200000,	1800000,	100},		--600000,		900000,		100
+			{"Nanites",	800,		1000,		100}		--400,			500,		100		
+		}
+	}
+}
+
+--Presumably rewards for destroying Pirate Freighters (added in NMS v4.4)
+PirateFreighterLootChanges =
+{
+	{
+		{"R_PIR_FREI"},		--This seems to be the reward pool for the first few missions you take from space stations. Unsure when it switches from these to the other rewards below
+		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"FREI_INV_TOKEN",			"FREI_INV_TOKEN",		3,	6,		300},	--3,	3,		300		Cargo Bulkhead
+			--Also has all 7 of the Freighter/Frigate procedural upgrade modules as possible rewards, each at 100 relative Chance %
+		}
+	},
+}
 
 --Changes % Chance and amounts for different reward lootpools for Missions, typically from Space Stations but sometimes from NPCs at POIs on planets or a few other mission sources
 SpaceStationMissionLootChanges =
@@ -628,6 +658,8 @@ SpaceStationMissionCurrencyChanges =
 	}
 }
 
+
+
 --Replaces certain gifts from Guild Envoys in Space Stations
 GuildGiftChanges =
 {
@@ -876,6 +908,7 @@ AlluringSpecHadalCore = 1				--1
 NewAlluringSpecRewards =
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -887,10 +920,10 @@ NewAlluringSpecRewards =
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 		  <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -902,7 +935,6 @@ NewAlluringSpecRewards =
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 
 --Loot from Crashed Freighters and Harmonic Scrap wheelbarrows at Abandoned Camps
@@ -992,6 +1024,7 @@ CrashedFreighterCurrencyChances =
 --Large Artifact Chests awlays give a guaranteed Common Rarity "Lost Artifact" (Tool) in addition to a random artifact	 (The Tool Artifact should usually be exchangeable at a Colossal Archive for a better rarity)
 ExtraChestArtifact = [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardProceduralProduct.xml">
               <Property name="Type" value="GcProceduralProductCategory.xml">
                 <Property name="ProceduralProductCategory" value="Tool" />
@@ -1003,7 +1036,6 @@ ExtraChestArtifact = [[<Property value="GcRewardTableItem.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 
 --Set which recipes for Storage Containers to remove from most rewards where the game normally awards all 10 recipes
@@ -1045,6 +1077,7 @@ NewNaniteReward = [[<Property value="GcGenericRewardTableEntry.xml">
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="]]..FactoryMin..[[" />
               <Property name="AmountMax" value="]]..FactoryMax..[[" />
@@ -1053,7 +1086,6 @@ NewNaniteReward = [[<Property value="GcGenericRewardTableEntry.xml">
                 <Property name="Currency" value="Nanites" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -1063,6 +1095,7 @@ function CurrencyReward (Currency, Min, Max, Chance)
     return
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="]]..Chance..[[" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="]]..Min..[[" />
               <Property name="AmountMax" value="]]..Max..[[" />
@@ -1070,7 +1103,6 @@ function CurrencyReward (Currency, Min, Max, Chance)
                 <Property name="Currency" value="]]..Currency..[[" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 end
 
@@ -1078,6 +1110,7 @@ function ProductReward (Product, Min, Max, Chance)
     return
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="]]..Chance..[[" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1092,7 +1125,6 @@ function ProductReward (Product, Min, Max, Chance)
 			  <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 end
 
@@ -1100,6 +1132,7 @@ function SubstanceReward (Substance, Min, Max, Chance)
     return
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="]]..Chance..[[" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificSubstance.xml">
               <Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
                 <Property name="DefaultSubstanceType" value="None" />
@@ -1112,7 +1145,6 @@ function SubstanceReward (Substance, Min, Max, Chance)
               <Property name="UseFuelMultiplier" value="False" />
               <Property name="Silent" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 end
 
@@ -1120,6 +1152,7 @@ function CropNanites (NanitesChance, NanitesAmount)
     return
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="]]..NanitesChance..[[" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="]]..NanitesAmount..[[" />
               <Property name="AmountMax" value="]]..NanitesAmount..[[" />
@@ -1127,13 +1160,13 @@ function CropNanites (NanitesChance, NanitesAmount)
                 <Property name="Currency" value="Nanites" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 end
 
 InvBoxBulkheadReward =
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="]]..MemFragInvBulkChance..[[" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1148,12 +1181,12 @@ InvBoxBulkheadReward =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 
 CrewManGuildUnitReward =
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="]]..CrewManGuildUnits..[[" />
               <Property name="AmountMax" value="]]..CrewManGuildUnits..[[" />
@@ -1161,12 +1194,12 @@ CrewManGuildUnitReward =
                 <Property name="Currency" value="Units" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 
 CaptLogGuildUnitReward =
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="]]..CaptLogGuildUnits..[[" />
               <Property name="AmountMax" value="]]..CaptLogGuildUnits..[[" />
@@ -1174,12 +1207,12 @@ CaptLogGuildUnitReward =
                 <Property name="Currency" value="Units" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 
 NewCrashedFreighterLoot = 
 [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="]]..CrashFreightBulkheadChance..[[" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1194,11 +1227,11 @@ NewCrashedFreighterLoot =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 
 GlassDrop = [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1213,7 +1246,6 @@ GlassDrop = [[<Property value="GcRewardTableItem.xml">
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 
 ExpeditionMetalChanges	=	
@@ -1233,6 +1265,7 @@ PIRATLTEASYRewards =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1247,10 +1280,10 @@ PIRATLTEASYRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1265,10 +1298,10 @@ PIRATLTEASYRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1283,10 +1316,10 @@ PIRATLTEASYRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1301,10 +1334,10 @@ PIRATLTEASYRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="40" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1319,10 +1352,10 @@ PIRATLTEASYRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="40" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1337,10 +1370,10 @@ PIRATLTEASYRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="40" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1355,10 +1388,10 @@ PIRATLTEASYRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="100" />
               <Property name="AmountMax" value="250" />
@@ -1367,7 +1400,6 @@ PIRATLTEASYRewards =
                 <Property name="Currency" value="Nanites" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -1382,6 +1414,7 @@ PIRATLTHARDRewards =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1396,10 +1429,10 @@ PIRATLTHARDRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1414,10 +1447,10 @@ PIRATLTHARDRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1432,10 +1465,10 @@ PIRATLTHARDRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1450,10 +1483,10 @@ PIRATLTHARDRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="100" />
               <Property name="AmountMax" value="250" />
@@ -1462,7 +1495,6 @@ PIRATLTHARDRewards =
                 <Property name="Currency" value="Nanites" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -1477,6 +1509,7 @@ ESCORTLOOTRewards =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="20" />
               <Property name="AmountMax" value="30" />
@@ -1485,10 +1518,10 @@ ESCORTLOOTRewards =
                 <Property name="Currency" value="Nanites" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1503,10 +1536,10 @@ ESCORTLOOTRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 		  <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
                 <Property name="DefaultProductType" value="None" />
@@ -1521,10 +1554,10 @@ ESCORTLOOTRewards =
               <Property name="SeasonRewardListFormat" value="" />
               <Property name="RequiresTech" value="" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardProcTechProduct.xml">
               <Property name="Group" value="SHIPJUMP_NAME_L" />
               <Property name="WeightedChanceNormal" value="55" />
@@ -1534,10 +1567,10 @@ ESCORTLOOTRewards =
               <Property name="ForceRelevant" value="False" />
               <Property name="ForceQualityRelevant" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardProcTechProduct.xml">
               <Property name="Group" value="SHIPSHIELD_NAME_L" />
               <Property name="WeightedChanceNormal" value="55" />
@@ -1547,7 +1580,6 @@ ESCORTLOOTRewards =
               <Property name="ForceRelevant" value="False" />
               <Property name="ForceQualityRelevant" value="False" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -1565,6 +1597,7 @@ function AddOneWord(AlienType)
     return
     [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="]]..AlienType..[[" />
@@ -1576,7 +1609,6 @@ function AddOneWord(AlienType)
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 end
 
@@ -1585,6 +1617,7 @@ function AddFourWords(AlienType)
     return
     [[<Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="]]..AlienType..[[" />
@@ -1596,10 +1629,10 @@ function AddFourWords(AlienType)
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 		  <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="]]..AlienType..[[" />
@@ -1611,10 +1644,10 @@ function AddFourWords(AlienType)
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 		  <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="]]..AlienType..[[" />
@@ -1626,10 +1659,10 @@ function AddFourWords(AlienType)
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 		  <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="]]..AlienType..[[" />
@@ -1641,7 +1674,6 @@ function AddFourWords(AlienType)
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>]]
 end
 
@@ -1655,6 +1687,7 @@ AddedExocraftNPCMoney =
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="]]..ExocraftMinUnits..[[" />
               <Property name="AmountMax" value="]]..ExocraftMaxUnits..[[" />
@@ -1663,10 +1696,10 @@ AddedExocraftNPCMoney =
                 <Property name="Currency" value="Units" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
 		  <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
+			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
               <Property name="AmountMin" value="]]..ExocraftMinNanites..[[" />
               <Property name="AmountMax" value="]]..ExocraftMaxNanites..[[" />
@@ -1675,7 +1708,6 @@ AddedExocraftNPCMoney =
                 <Property name="Currency" value="Nanites" />
               </Property>
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
@@ -1690,6 +1722,7 @@ function AddUpgrade(UpgradeGroup, NormalChance, RareChance, EpicChance, LegendCh
     return
 	[[<Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+				<Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardProcTechProduct.xml">
                   <Property name="Group" value="]]..UpgradeGroup..[[" />
                   <Property name="WeightedChanceNormal" value="]]..NormalChance..[[" />
@@ -1699,20 +1732,19 @@ function AddUpgrade(UpgradeGroup, NormalChance, RareChance, EpicChance, LegendCh
                   <Property name="ForceRelevant" value="False" />
                   <Property name="ForceQualityRelevant" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>]]
 end
 
 TeachPellets =
 [[<Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+				<Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardSpecificProductRecipe.xml">
                   <Property name="ID" value="BAIT_BASIC" />
                   <Property name="Silent" value="False" />
                   <Property name="HideInSeasonRewards" value="False" />
                   <Property name="SeasonRewardFormat" value="UI_BLUEPRINT_REWARD_FORMAT" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>]]
 
 MemFragOutlierTechs =
@@ -3315,6 +3347,61 @@ for i = 1, #CrashedFreighterCurrencyChances do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Currency",	NewCurrency},
+				}
+			}
+	end
+end
+for i = 1, #CivilianFreighterRewardChanges do
+	local RewardType = CivilianFreighterRewardChanges[i][1][1]
+	local Items = CivilianFreighterRewardChanges[i][2]
+	
+	for j=1, #Items do
+		Currency = Items[j][1]
+		AmountMin = Items[j][2]
+		AmountMax = Items[j][3]
+		Chance = Items[j][4]
+		
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"Currency", Currency},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	Chance},
+					{"AmountMin",	AmountMin},
+					{"AmountMax",	AmountMax}
+				}
+			}
+	end
+end
+for i = 1, #PirateFreighterLootChanges do
+	local RewardType = PirateFreighterLootChanges[i][1][1]
+	local Items = PirateFreighterLootChanges[i][2]
+	
+	for j=1, #Items do
+		OldItemID = Items[j][1]
+		NewItemID = Items[j][2]
+		AmountMin = Items[j][3]
+		AmountMax = Items[j][4]
+		Chance = Items[j][5]
+		
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	Chance},
+					{"ID",	NewItemID},
+					{"AmountMin",	AmountMin},
+					{"AmountMax",	AmountMax}
 				}
 			}
 	end

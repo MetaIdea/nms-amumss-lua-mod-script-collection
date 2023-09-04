@@ -2,7 +2,7 @@ Author = "Gumsk"			-- Edited by Xen0nex
 ModName = "gExos Challenge"
 ModNameSub = "RealityX"
 BaseDescription = "Increases suit upgrade prices, changes initial suit & ship slots"
-GameVersion = "422"
+GameVersion = "441"
 ModVersion = "a"
 
 --Planning to go from 24 slots to 40 slots
