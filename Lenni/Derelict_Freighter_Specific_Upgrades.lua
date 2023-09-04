@@ -1,12 +1,12 @@
 POSSIBLE_UPGRADES =
 {
-"FreighterTechHyp",
-"FreighterTechFuel",
--- "FreighterTechSpeed",
--- "FreighterTechTrade",
--- "FreighterTechCombat",
--- "FreighterTechMine",
--- "FreighterTechExp",
+	"FreighterTechHyp",
+	"FreighterTechFuel",
+	-- "FreighterTechSpeed",
+	-- "FreighterTechTrade",
+	-- "FreighterTechCombat",
+	-- "FreighterTechMine",
+	-- "FreighterTechExp",
 }
 
 OVERWRITE_LOOT =
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]		= "Derelict_Freighter_Specific_Upgrades.pak",
     ["MOD_DESCRIPTION"]		= "Limits derelict freighter loot to hyperdrive and fuel modules",
     ["MOD_AUTHOR"]			= "Lenni",
-    ["NMS_VERSION"]			= "3.91", 
+    ["NMS_VERSION"]			= "4.43", 
     ["MODIFICATIONS"]		=
     {
         {
@@ -35,6 +35,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = 
                     {
+						{
+							["SKW"] = {"Id", "R_FREI_TECH"},
+							["PKW"] = "GcRewardTableItem.xml",
+							["SEC_SAVE_TO"] = "REWARD_ITEM"
+						},
                     }
                 }
             }
@@ -42,59 +47,6 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
--- This function will create a single Rewartable item, the name is provide through parameter
-function GetUpgrade(Upgrade)
-    return [[
-        <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="100" />
-        <Property name="Reward" value="GcRewardProceduralProduct.xml">
-            <Property name="Type" value="GcProceduralProductCategory.xml">
-            <Property name="ProceduralProductCategory" value="]]..Upgrade..[[" />
-          </Property>
-            <Property name="OSDMessage" value="" />
-            <Property name="SubIfPlayerAlreadyHasOne" value="False" />
-            <Property name="OverrideRarity" value="False" />
-            <Property name="Rarity" value="GcRarity.xml">
-			  <Property name="Rarity" value="Common" />
-            </Property>
-        </Property>
-        <Property name="LabelID" value="" />
-        </Property>
-    ]]
-end
-
---in this function we're looping all the POSSIBLE_UPGRADES list
-function GetUpgrades()
-    UPGRADES_ADDING_ALL = {}
-    for i=1,#POSSIBLE_UPGRADES,1 do
-        -- in this loop we're filling UPGRADES_ADDING_ALL with a single rewartable item
-        table.insert(UPGRADES_ADDING_ALL,GetUpgrade(POSSIBLE_UPGRADES[i]))
-    end
-
-    --As for return we're crearting string of a list property
-    --The content of said list is the list we just made we're using table.concat to quickly turn the list we made into a giant string, this will be used a the "body"
-    return [[<Property name="List">
-        ]]..table.concat(UPGRADES_ADDING_ALL)..[[
-        </Property>]]
-end
-
--- this variable ==
--- NMS_MOD_DEFINITION_CONTAINER = 
--- {
---     ["MOD_FILENAME"]		= "Derelict_Freighter_Specific_Upgrades.pak",
---     ["MOD_DESCRIPTION"]		= "Limits derelict freighter loot to hyperdrive and fuel modules",
---     ["MOD_AUTHOR"]			= "Lenni",
---     ["NMS_VERSION"]			= "3.91", 
---     ["MODIFICATIONS"]		=
---     {
---         {
---             ["MBIN_CHANGE_TABLE"] = 
---             { 
---                 {
---                     ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
---                     ["EXML_CHANGE_TABLE"] = 
---                     {
---                     }...
 local ChangesToRewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 -- now we're looping OVERWRITE_LOOT
 for i=1,#OVERWRITE_LOOT,1 do
@@ -104,8 +56,9 @@ for i=1,#OVERWRITE_LOOT,1 do
     --for each change we want to do we are creating adding a new item to the ChangesToRewardTable
     ChangesToRewardTable[#ChangesToRewardTable + 1] = 
     {
-        ["SPECIAL_KEY_WORDS"]   = {"Id", Loot, "List","GcRewardTableItemList.xml",},
-        ["PRECEDING_KEY_WORDS"] = {"List",},
+        ["SPECIAL_KEY_WORDS"]   = {"Id", Loot},
+        ["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
+		["REPLACE_TYPE"] = "ALL",
         ["REMOVE"] = "SECTION"
     }
     
@@ -117,10 +70,23 @@ for i=1,#OVERWRITE_LOOT,1 do
             {"RewardChoice", "SelectAlways"},
         }
     }
-    ChangesToRewardTable[#ChangesToRewardTable + 1] = 
-    {
-        ["SPECIAL_KEY_WORDS"] = {"Id", Loot ,"UseInventoryChoiceOverride","IGNORE",},
-        ["ADD_OPTION"]        = "ADDafterLINE",
-        ["ADD"]               = GetUpgrades(),
-    }
+	
+	for i = 1,#POSSIBLE_UPGRADES,1 do
+		Upgrade = POSSIBLE_UPGRADES[i]
+	
+		ChangesToRewardTable[#ChangesToRewardTable + 1] = 
+		{
+			["SEC_EDIT"]	= "REWARD_ITEM",
+			["VCT"] = {
+				{"ProceduralProductCategory", Upgrade},
+			},
+		}
+
+		ChangesToRewardTable[#ChangesToRewardTable + 1] = 
+		{
+			["SPECIAL_KEY_WORDS"] = {"Id", Loot},
+			["PKW"] = {"List", "List"},
+			["SEC_ADD_NAMED"]	= "REWARD_ITEM",
+		}
+	end
 end
