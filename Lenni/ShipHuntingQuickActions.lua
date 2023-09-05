@@ -4,6 +4,7 @@ QUICK_ACTION_LIST =
 	"R_SHOW_HIVEONLY",
 	"R_SCANSENTCRASH",
 	"R_CHART_ROBOT",
+	"R_KVX_MONOLITH",
 	"R_BIOSHIPL",
 	"CRASHEDSHIP",
 	"SEC_SCN_OUTPOST",
@@ -16,53 +17,60 @@ QUICK_ACTION_MENU =
 {
 	["R_SHOW_HIVEONLY"] = 
 	{
-		["TITLE"] 			= "Find Sentinel Pillar",
-		["ICON"] 			= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS",
-		["ANIM"] 			= "R_SHOW_HIVEONLY",
-		["TYPE"]			= "REWARD"
+		["TITLE"]	= "Find Sentinel Pillar",
+		["ICON"]	= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS",
+		["ANIM"]	= "R_SHOW_HIVEONLY",
+		["TYPE"]	= "REWARD"
 },	
 	["SEC_SCN_OUTPOST"] = 
 	{
-		["TITLE"] = "Locate Trading Post",
-		["ICON"]  = "TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\BUILDINGS.OUTPOST.DDS",
-		["ANIM"]  = "SEC_SCN_OUTPOST",
-		["TYPE"]  = "REWARD",
+		["TITLE"]	= "Locate Trading Post",
+		["ICON"]	= "TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\BUILDINGS.OUTPOST.DDS",
+		["ANIM"]	= "SEC_SCN_OUTPOST",
+		["TYPE"]	= "REWARD",
 	},
 	["R_SCANSENTCRASH"] = 
 	{
-		["TITLE"] = "Locate Sentinel Ship",
-		["ICON"]  = "TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.SENTINELCRASH.DDS",
-		["ANIM"]  = "R_SCANSENTCRASH",
-		["TYPE"]  = "REWARD",
+		["TITLE"]	= "Locate Sentinel Ship",
+		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.SENTINELCRASH.DDS",
+		["ANIM"]	= "R_SCANSENTCRASH",
+		["TYPE"]	= "REWARD",
 	},
 	["R_CHART_ROBOT"] = 
 	{
-		["TITLE"] = "Locate Sentinel Multi-Tool",
-		["ICON"]  = "TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.ROBOTHEAD.DDS",
-		["ANIM"]  = "R_CHART_ROBOT",
-		["TYPE"]  = "REWARD",
+		["TITLE"]	= "Locate Sentinel Multi-Tool",
+		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.ROBOTHEAD.DDS",
+		["ANIM"]	= "R_CHART_ROBOT",
+		["TYPE"]	= "REWARD",
 	},
+	["R_KVX_MONOLITH"] = 
+	{
+		["TITLE"]	= "Locate Monolith",
+		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.RUNE.DDS",
+		["ANIM"]	= "R_MONOLITH",
+		["TYPE"]	= "REWARD",
+    },
 	["R_BIOSHIPL"] = 
 	{
-		["TITLE"] = "Locate Living Ship",
-		["ICON"]  = "TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.FIEND.DDS",
-		["ANIM"]  = "R_BIOSHIPL",
-		["TYPE"]  = "REWARD",
+		["TITLE"]	= "Locate Living Ship",
+		["ICON"]	= "TEXTURES\UI\FRONTEND\ICONS\MISSIONS\MISSION.FIEND.ON.DDS",
+		["ANIM"]	= "R_BIOSHIPL",
+		["TYPE"]	= "REWARD",
 	},
 	["REVEAL_PORTAL"] = 
 	{
-		["TITLE"] = "Find Portal",
-		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.PORTAL.DDS",
-		["ANIM"]  = "REVEAL_PORTAL",
-		["TYPE"]  = "REWARD",
+		["TITLE"]	= "Find Portal",
+		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.PORTAL.DDS",
+		["ANIM"]	= "REVEAL_PORTAL",
+		["TYPE"]	= "REWARD",
 	},
 	["MTSHOP"] = 
 	{
-		["TITLE"] 			= "Find Minor Settlement",
-		["ICON"] 			= "TEXTURES/UI/HUD/MENUS/RENDER.GUN.DDS",
-		["ANIM"] 			= "MTSHOP",
-		["TYPE"]			= "REWARD",
-		["REWARDTABLE"] 	= 
+		["TITLE"]	= "Find Minor Settlement",
+		["ICON"]	= "TEXTURES/UI/HUD/MENUS/RENDER.GUN.DDS",
+		["ANIM"]	= "MTSHOP",
+		["TYPE"]	= "REWARD",
+		["REWARDTABLE"]	= 
 	[[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="MTSHOP" />
@@ -88,11 +96,11 @@ QUICK_ACTION_MENU =
 	
 	["CRASHEDSHIP"] = 
 	{
-		["TITLE"] = "Locate Crashed Ship",
-		["ICON"]  = "TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.DISTRESS.DDS",
-		["ANIM"]  = "CRASHEDSHIP",
-		["TYPE"]  = "REWARD",
-		["REWARDTABLE"] 	= 
+		["TITLE"]	= "Locate Crashed Ship",
+		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.DISTRESSSIGNAL.DDS",
+		["ANIM"]	= "CRASHEDSHIP",
+		["TYPE"]	= "REWARD",
+		["REWARDTABLE"]	= 
 	[[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="CRASHEDSHIP" />
@@ -275,8 +283,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "ShipHuntingQuickActions.pak",
 ["MOD_AUTHOR"]				= "Lenni",
 ["LUA_AUTHOR"]				= "Lenni, Babscoole",
-["MOD_DESCRIPTION"]			= "Quick Action to find Minor Settlements and Sentinel Pillars",
-["NMS_VERSION"]				= "3.89",
+["MOD_DESCRIPTION"]			= "Quick Action to find various POIs for ship hunters",
+["NMS_VERSION"]				= "4.43",
 ["MODIFICATIONS"] 			= 
 	{
 		{
