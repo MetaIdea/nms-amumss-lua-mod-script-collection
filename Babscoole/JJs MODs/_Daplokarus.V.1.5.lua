@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Daplokarus.V.1.4.pak",
+["MOD_FILENAME"]  = "_Daplokarus.V.1.5.pak",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.21",
+["NMS_VERSION"]   = "4.43",
 ["MODIFICATIONS"] =
     {
         {
@@ -28,18 +28,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","ROBO_PET"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID","HOVER_PET"},
                             ["ADD_OPTION"]        = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="GcCreatureFilename.xml">
       <Property name="ID" value="DIPLO" />
-      <Property name="Filename" value="MODELS/PLANETS/BIOMES/RAINFOREST/LARGECREATURE/DIPLODOCUS/DIPLODOCUS.SCENE.MBIN" />
+      <Property name="Filename" value="MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\DIPLODOCUS\DIPLODOCUS.SCENE.MBIN" />
       <Property name="ExtraFilename" value="" />
     </Property>
     <Property value="GcCreatureFilename.xml">
       <Property name="ID" value="DIPLOALIEN" />
-      <Property name="Filename" value="MODELS/PLANETS/BIOMES/RAINFOREST/LARGECREATURE/DIPLODOCUS/DIPLODOCUSALIEN.SCENE.MBIN" />
+      <Property name="Filename" value="MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\DIPLODOCUS\DIPLODOCUSALIEN.SCENE.MBIN" />
       <Property name="ExtraFilename" value="" />
     </Property>
 ]],
