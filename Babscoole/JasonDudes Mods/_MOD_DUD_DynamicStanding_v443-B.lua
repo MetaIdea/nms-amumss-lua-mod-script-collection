@@ -64,7 +64,7 @@ ER_STAND =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v443-A.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v443-B.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.43",
@@ -549,14 +549,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = ER_STAND
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_MINE_EASY_1","Reward","GcRewardStanding.xml"},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PercentageChance", "20",},
-                            }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","R_MINE_EASY_2","ID","ALLOY6"},
