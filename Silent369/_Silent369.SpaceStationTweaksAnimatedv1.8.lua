@@ -2,7 +2,7 @@ local modfilename = "SpaceStationTweaks"
 local lua_author  = "Silent"
 local lua_version = "v1.8"
 local mod_author  = "Silent369"
-local nms_version = "4.42"
+local nms_version = "4.43"
 local maintenance = mod_author
 local description = [[
 
@@ -17,26 +17,37 @@ Also includes subtle animations to some of the pad glowing textures.
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN
 
 --Modifies:
---MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN
---MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\ANIMS\LANDINGPAD_CLOSE.ANIM.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\ANIMS\LANDINGPAD_OPEN.ANIM.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\LEFTSECTIONTRIGGER.ENTITY.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\RIGHTSECTIONTRIGGER.ENTITY.MBIN
+--MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN
+--MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN
+--MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\WALL_SECTION\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN
 
 --Modifies
+--TEXTURES\SPACE\SPACESTATION\INTERIOR\INTERIORMETALPATTERN.DDS
+--TEXTURES\SPACE\SPACESTATION\INTERIOR\METALHORIZONTALPATTERN.DDS
+--TEXTURES\SPACE\SPACESTATION\PIRATES\PANNINGCIRCUIT2.DDS
 --TEXTURES\SPACE\SPACESTATION\SSRFLOOR.MASKS.DDS
 --TEXTURES\SPACE\SPACESTATION\STATIONLANES.DDS
 --TEXTURES\SPACE\SPACESTATION\STATIONLANESABAN.DDS
---TEXTURES\SPACE\SPACESTATION\INTERIOR\METALHORIZONTALPATTERN.DDS
+--TEXTURES\SPACE\SPACESTATION\STATIONLINES.DDS
 
 _LightIntensitySpt = "35000.000000"
 _LightVolumetricSp = "0.000000"
-_LightScalesMulti  = 0.6  --Pad Light Spot Width
-_LightHeightMulti  = 1.8  --Pad Light Spot Height
-_PadsAdjustAnimate = 0.6  --Pad Animation Height
-_LocatorAdjPirates = 0.7  --Pad Locator Adjust (Must be +1 increment more than _PadsAdjustAnimate value)
-_LocatorAdjStation = 0.7  --Pad Locator Adjust (Must be +1 increment more than _PadsAdjustAnimate value)
+_LightScalesMulti  = 0.7 --Pad Light Spot Width
+_LightHeightMulti  = 1.8 --Pad Light Spot Height
+
+_PadsAdjustAnimate = 0.7 --Pad Animation Height
+_LocatorAdjPirates = 0.8 --Pad Locator Adjust (Must be .1 increment more than _PadsAdjustAnimate value)
+_LocatorAdjStation = 0.8 --Pad Locator Adjust (Must be .1 increment more than _PadsAdjustAnimate value)
+
+_StationPadsScaleX = 1.021214
+_StationPadsScaleY = 2.202529
+_StationPadsScaleZ = 1.021214
+
+_StationPadsTransY = "-"..(_StationPadsScaleY / 1.75)
 
 _RedS = 0.8
 _GrnS = 0.2
@@ -175,14 +186,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] =
                     {
                         {
-                            "MATERIALS/LIGHT.MATERIAL.MBIN",
-                            "MATERIALS/PAD_LIGHT.MATERIAL.MBIN",
+                            [[MATERIALS/LIGHT.MATERIAL.MBIN]],
+                            [[MATERIALS/PAD_LIGHT.MATERIAL.MBIN]],
                             "REMOVE"
                         }
                     }
                 },
                 {   --Edit Light Material
-                    ["MBIN_FILE_SOURCE"]    = {"MATERIALS\PAD_LIGHT.MATERIAL.MBIN"},
+                    ["MBIN_FILE_SOURCE"]    = [[MATERIALS\PAD_LIGHT.MATERIAL.MBIN]],
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
@@ -204,8 +215,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {   --Insert Light Material
                     ["MBIN_FILE_SOURCE"]    =
                     {
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN",
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN"
+                        [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN]],
+                        [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"]   =
                     {
@@ -236,14 +247,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] =
                     {
                         {
-                            "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\GLOW_MAT.MATERIAL.MBIN",
-                            "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\GLOW_ORA_MAT.MATERIAL.MBIN",
+                            [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\GLOW_MAT.MATERIAL.MBIN]],
+                            [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\GLOW_ORA_MAT.MATERIAL.MBIN]],
                             "REMOVE"
                         },
                     }
                 },
                 {   --Edit Orange Glow Material
-                    ["MBIN_FILE_SOURCE"]    = {"MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\GLOW_ORA_MAT.MATERIAL.MBIN"},
+                    ["MBIN_FILE_SOURCE"]    = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\GLOW_ORA_MAT.MATERIAL.MBIN]],
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
@@ -261,10 +272,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"x",               _RedS}, --R
-                                {"y",               _GrnS}, --G
-                                {"z",               _BluS}, --B
-                                {"t",               _AlpS}, --A
+                                {"x",               _RedS},
+                                {"y",               _GrnS},
+                                {"z",               _BluS},
+                                {"t",               _AlpS},
                             }
                         },
                         {
@@ -285,33 +296,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {   --Insert Orange Glow Material
-                    ["MBIN_FILE_SOURCE"]    =
-                    {
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN",
-                    },
+                    ["MBIN_FILE_SOURCE"]    = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN]],
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Markings1_DUP1", "Transform", "TkTransformData.xml"},
-                            ["INTEGER_TO_FLOAT"]   = "FORCE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ScaleX",         "0.97"},
-                                {"ScaleY",         "0.97"},
-                                {"ScaleZ",         "0.97"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "SUB1SSR1pad", "Name", "MATERIAL"},
-                            ["REPLACE_TYPE"]       = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\GLOW_ORA_MAT.MATERIAL.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "SUB1SSR0pad", "Name", "MATERIAL"},
-                            ["REPLACE_TYPE"]       = "ALL",
+                            ["FOREACH_SKW_GROUP"]  = {
+                                {"Name", "SUB1SSR1pad", "Name", "MATERIAL"},
+                                {"Name", "SUB1SSR0pad", "Name", "MATERIAL"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\GLOW_ORA_MAT.MATERIAL.MBIN"},
@@ -319,35 +311,90 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-                {   --Landing Pad Material
-                    ["MBIN_FILE_SOURCE"]  =
+                {   --Modify Pad Markings Material
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN]],
+                    ["EXML_CHANGE_TABLE"] =
                     {
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN",
-                    },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Markings1_DUP1", "Name", "MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\PHONG160.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Markings1_DUP1", "NameHash", "2440466378"},
+                            ["INTEGER_TO_FLOAT"]   = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ScaleX",         _StationPadsScaleX},
+                                {"ScaleZ",         _StationPadsScaleZ},
+                            },
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\WALL_SECTION\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"Name", "Wall_Section_FloorTile_Glow_Mat1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Class",           "Opaque"}, --Original "Glow"
+                                {"Class",          "Opaque"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"MaterialFlag", "_F34_GLOW"},
                             ["REMOVE"]             = "SECTION"
                         },
-                        --{
-                        --    ["SPECIAL_KEY_WORDS"]  = {"Name", "gMaterialColourVec4"},
-                        --    ["INTEGER_TO_FLOAT"]   = "FORCE",
-                        --    ["VALUE_CHANGE_TABLE"] =
-                        --    {
-                        --        {"x",              "0.09"},
-                        --        {"y",              "0.09"},
-                        --        {"z",              "0.09"},
-                        --        {"t",              "0.09"},
-                        --    }
-                        --},
+                    }
+                },
+
+                    --|----------------------------------------------------------------------------------------
+                    --| Landing Pad Modifications
+                    --|----------------------------------------------------------------------------------------
+
+                {   --Modify Landing Pad
+                    ["MBIN_FILE_SOURCE"]    = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN]],
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD", "NameHash", "1463625839"},
+                            ["INTEGER_TO_FLOAT"]   = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ScaleX",         _StationPadsScaleX},
+                                {"ScaleY",         _StationPadsScaleY},
+                                {"ScaleZ",         _StationPadsScaleZ},
+                                {"TransY",         _StationPadsTransY},
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Pad", "NameHash", "183479770"},
+                            ["INTEGER_TO_FLOAT"]   = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ScaleX",         _StationPadsScaleX},
+                                {"ScaleY",         _StationPadsScaleY},
+                                {"ScaleZ",         _StationPadsScaleZ},
+                            },
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] = {
+                                {"Name", "OpenShotFX",  "NameHash",  "655726895"},
+                                {"Name", "OpenAmbFX",   "NameHash", "2843731028"},
+                                {"Name", "CloseShotFX", "NameHash", "2026563127"},
+                                {"Name", "CloseAmbFX",  "NameHash", "2984885761"},
+                            },
+                            ["INTEGER_TO_FLOAT"]   = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ScaleX",         _StationPadsScaleX},
+                                {"ScaleY",         _StationPadsScaleY},
+                                {"ScaleZ",         _StationPadsScaleZ},
+                            }
+                        },
                     }
                 },
 
@@ -356,10 +403,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --|----------------------------------------------------------------------------------------
 
                 {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN"
-                    },
+                    ["MBIN_FILE_SOURCE"] = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -444,14 +488,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] =
                     {
                         {
-                            "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_MAT.MATERIAL.MBIN",
-                            "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN",
+                            [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_MAT.MATERIAL.MBIN]],
+                            [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN]],
                             "REMOVE"
                         }
                     }
                 },
                 {   --Edit Red Glow Material
-                    ["MBIN_FILE_SOURCE"]    = {"MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN",},
+                    ["MBIN_FILE_SOURCE"]    = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN]],
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
@@ -499,60 +543,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {   --Insert Red Glow Material
-                    ["MBIN_FILE_SOURCE"]    =
-                    {
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN",
-                    },
+                    ["MBIN_FILE_SOURCE"]    = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN]],
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Markings", "Transform", "TkTransformData.xml"},
-                            ["INTEGER_TO_FLOAT"]   = "FORCE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ScaleX",         "0.97"},
-                                {"ScaleY",         "0.97"},
-                                {"ScaleZ",         "0.97"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Markings1_DUP", "Transform", "TkTransformData.xml"},
-                            ["INTEGER_TO_FLOAT"]   = "FORCE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ScaleX",         "0.97"},
-                                {"ScaleY",         "0.97"},
-                                {"ScaleZ",         "0.97"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "SUB1SSR1pad", "Name", "MATERIAL"},
-                            ["REPLACE_TYPE"]       = "ALL",
+                            ["FOREACH_SKW_GROUP"] = {
+                                {"Name", "SUB1SSR1pad", "Name", "MATERIAL"},
+                                {"Name", "SUB1SSR0pad", "Name", "MATERIAL"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "SUB1SSR0pad", "Name", "MATERIAL"},
-                            ["REPLACE_TYPE"]       = "ALL",
+                            ["FOREACH_SKW_GROUP"] = {
+                                {"Name", "Markings",      "Name", "MATERIAL"},
+                                {"Name", "Markings1_DUP", "Name", "MATERIAL"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Markings", "Name", "MATERIAL"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN"}, --Original "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\FLOORTILE_GLOW_MAT.MATERIAL.MBIN"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Markings1_DUP", "Name", "MATERIAL"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN"}, --Original "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\FLOORTILE_GLOW_MAT.MATERIAL.MBIN"
+                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN"},
                             }
                         },
                     }
@@ -561,10 +572,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --| Modify Landing Pads (Pirate Station)
                     --|----------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN"
-                    },
+                    ["MBIN_FILE_SOURCE"] = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -638,25 +646,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --|----------------------------------------------------------------------------------------
 
                 {
-                  ["MBIN_FILE_SOURCE"]    =
-                  {
-                      "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\ANIMS\LANDINGPAD_OPEN.ANIM.MBIN",
-                      "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\ANIMS\LANDINGPAD_CLOSE.ANIM.MBIN"
-                  },
-                  ["EXML_CHANGE_TABLE"]   =
-                  {
-                      {
-                          ["PRECEDING_KEY_WORDS"] = {"TkAnimNodeFrameData.xml", "Translations", "Vector3f.xml"},
-                          ["MATH_OPERATION"]      = "*",
-                          ["REPLACE_TYPE"]        = "ALL",
-                          ["VALUE_CHANGE_TABLE"]  =
-                          {
-                              {"x",               _PadsAdjustAnimate},
-                              {"y",               _PadsAdjustAnimate},
-                              {"z",               _PadsAdjustAnimate},
-                          }
-                      },
-                  }
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\ANIMS\LANDINGPAD_OPEN.ANIM.MBIN]],
+                        [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\ANIMS\LANDINGPAD_CLOSE.ANIM.MBIN]]
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TkAnimNodeFrameData.xml", "Translations", "Vector3f.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"x",               _PadsAdjustAnimate},
+                                {"y",               _PadsAdjustAnimate},
+                                {"z",               _PadsAdjustAnimate},
+                            }
+                        },
+                    }
                 },
 
                     --|----------------------------------------------------------------------------------------
@@ -668,7 +677,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\LEFTSECTIONTRIGGER.ENTITY.MBIN",
+                        [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\LEFTSECTIONTRIGGER.ENTITY.MBIN]],
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -694,7 +703,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\RIGHTSECTIONTRIGGER.ENTITY.MBIN",
+                        [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\RIGHTSECTIONTRIGGER.ENTITY.MBIN]],
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
