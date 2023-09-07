@@ -1,6 +1,6 @@
 local modfilename = "SpaceStationTweaks"
 local lua_author  = "Silent"
-local lua_version = "v1.8"
+local lua_version = "v1.9"
 local mod_author  = "Silent369"
 local nms_version = "4.43"
 local maintenance = mod_author
@@ -543,11 +543,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {   --Insert Red Glow Material
-                    ["MBIN_FILE_SOURCE"]    = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN]],
-                    ["EXML_CHANGE_TABLE"]   =
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN]],
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] = {
+                            ["FOREACH_SKW_GROUP"]  = {
                                 {"Name", "SUB1SSR1pad", "Name", "MATERIAL"},
                                 {"Name", "SUB1SSR0pad", "Name", "MATERIAL"},
                             },
@@ -556,15 +556,33 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN"},
                             }
                         },
+                    }
+                },
+                {   --Modify Pad Markings Material
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN]],
+                    ["EXML_CHANGE_TABLE"] =
+                    {
                         {
-                            ["FOREACH_SKW_GROUP"] = {
+                            ["FOREACH_SKW_GROUP"]  = {
                                 {"Name", "Markings",      "Name", "MATERIAL"},
                                 {"Name", "Markings1_DUP", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD\WALL_SECTION_FLOORTILE_GLOW_MAT1.MATERIAL.MBIN"},
+                                {"Value",          "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\PHONG160.MATERIAL.MBIN"},
                             }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"]  = {
+                                {"Name",      "Markings", "Transform", "TkTransformData.xml"},
+                                {"Name", "Markings1_DUP", "Transform", "TkTransformData.xml"},
+                            },
+                            ["INTEGER_TO_FLOAT"]   = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ScaleX",         _StationPadsScaleX},
+                                {"ScaleZ",         _StationPadsScaleZ},
+                            },
                         },
                     }
                 },

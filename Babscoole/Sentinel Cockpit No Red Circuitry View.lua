@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Sentinel Cockpit No Lattice.pak",
+["MOD_FILENAME"]  = "Sentinel Cockpit No Red Circuitry View.pak",
 ["MOD_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.44",
 ["MODIFICATIONS"] =
