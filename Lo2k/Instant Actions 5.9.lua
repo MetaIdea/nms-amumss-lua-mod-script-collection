@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Fast Actions 5.8.pak", 
+["MOD_FILENAME"] 			= "Instant Actions 5.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.42",
-["MOD_DESCRIPTION"]			= "This mods reduces clicks and keys press duration",
+["NMS_VERSION"]				= "4.44",
+["MOD_DESCRIPTION"]			= "This mods makes clicks and keys press instant",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -18,9 +18,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"RefinerPadStartTime",	"0.5"}, --"E" press time to process material
+								{"RefinerPadStartTime",	"0.01"}, --"E" time to process material
 								{"FrontendConfirmTimeMouseMultiplier",	"1.0"},
-								{"FrontendConfirmTime",	"0.35"},
+								{"FrontendConfirmTime",	"0.02"},
 								{"FrontendConfirmTimeSlow",	"0.7"}  --salvage time
 							}
 						}

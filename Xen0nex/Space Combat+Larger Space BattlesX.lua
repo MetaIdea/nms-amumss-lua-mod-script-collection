@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "441"
+GameVersion = "443"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships (individual ships have additonal multipliers applied)
@@ -1899,6 +1899,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},]]
 	
 	--Engines
+		--Applying the same PowerSettingEngineMul multiplier from "PTSd Power Settings.lua" to BoostSpeed, to compensate how diverting power to engines makes it easier to escape pirates
 	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SPACE_EASY"},
 	["PRECEDING_FIRST"] = "True",
@@ -1906,7 +1907,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--10
 		{"MaxSpeed", 140},									--60		(200)
-		{"BoostSpeed", 1067},								--900		NOTE: Often you can still outrun enemy ships even if your ship's "CombatEngine" 's "BoostMaxSpeed" is only ~75% of this value, presumably due to how the enemy ships occassionally stop boosting when pursuing the player
+		{"BoostSpeed", 1067*1.3},								--900		NOTE: Often you can still outrun enemy ships even if your ship's "CombatEngine" 's "BoostMaxSpeed" is only ~75% of this value, presumably due to how the enemy ships occassionally stop boosting when pursuing the player
 		{"TurnMin", 0.6},									--0.6
 		{"DirectionBrake", 4},								--5
 		{"Roll", 2},										--1
@@ -1920,7 +1921,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--20
 		{"MaxSpeed", 200},									--90		(250)
-		{"BoostSpeed", 1600},								--1200		(e.g. a value of 1600 means in practice you can generally outrun them with ~1200u/s space combat speed)
+		{"BoostSpeed", 1600*1.3},								--1200		(e.g. a value of 1600 means in practice you can generally outrun them with ~1200u/s space combat speed)
 		{"TurnMin", 0.7},									--0.7
 		{"DirectionBrake", 2.5},							--3
 		{"Roll", 1.2},										--0.6
@@ -1934,7 +1935,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--50
 		{"MaxSpeed", 100},									--80
-		{"BoostSpeed", 120},								--180
+		{"BoostSpeed", 120*1.3},								--180
 		{"TurnMin", 0.6},									--0.4
 		{"DirectionBrake", 2.5},							--3
 		{"Roll", 2},										--1
@@ -1948,7 +1949,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 15},									--60
 		{"MaxSpeed", 160},									--130
-		{"BoostSpeed", 180},								--180
+		{"BoostSpeed", 180*1.3},								--180
 		{"TurnMin", 1.2},									--0.8
 		{"DirectionBrake", 1},								--1.2
 		{"Roll", 2},										--1
@@ -1962,7 +1963,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--10
 		{"MaxSpeed", 60},									--60
-		{"BoostSpeed", 120},								--120
+		{"BoostSpeed", 120*1.3},								--120
 		{"TurnMin", 1},										--1
 		{"DirectionBrake", 20},								--20
 		{"Roll", 1},										--1

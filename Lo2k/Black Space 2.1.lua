@@ -92,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_FILENAME"]	= "Black Space 2.1.pak",
 	["MOD_AUTHOR"]		= "Lo2k",
 	["MOD_DESCRIPTION"]	= "This mod makes space black",
-	["NMS_VERSION"]		= "3.89",	
+	["NMS_VERSION"]		= "4.44",	
 	["MODIFICATIONS"]	= 
 	{
 	},
