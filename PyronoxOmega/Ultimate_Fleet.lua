@@ -1,12 +1,12 @@
 Author = "PyronoxOmega"
-ModName = "Ultimate_Fleet_S_Instant_Time"
-GameVersion = "4.30"
-ModVersion = "1.3"
+ModName = "Ultimate_Fleet_S_Normal_Time"
+GameVersion = "4.4"
+ModVersion = "1.5"
 Description = "Mostly S-class with high Stats based on RNG "
 FileSource1 = "METADATA/REALITY/TABLES/FRIGATETRAITTABLE.MBIN"
 FileSource2 ="GCFLEETGLOBALS.GLOBAL.MBIN"
-TimeExpEZ = "0" --time for easy expedition 900
-TimeExpEV = "0" --time for expedition event 5400
+TimeExpEZ = "900" --time for easy expedition 900
+TimeExpEV = "5400" --time for expedition event 5400
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName..""..GameVersion..-ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= Description,
@@ -29,6 +29,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
+						
 					},
 				},
 				{
@@ -41,6 +44,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -53,6 +58,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -65,6 +72,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -77,6 +86,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -89,6 +100,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -101,6 +114,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -113,6 +128,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -125,6 +142,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -137,6 +156,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -149,6 +170,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -161,6 +184,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -173,6 +198,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -185,6 +212,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -197,6 +226,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -209,6 +240,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -221,6 +254,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -233,6 +268,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -245,6 +282,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -257,6 +296,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -269,6 +310,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -281,6 +324,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -293,6 +338,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -305,6 +352,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 				{
@@ -317,6 +366,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Exploration", 0},					--5
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
+						{"Support", 0},						--5
+						{"Pirate", 0},						--5
 					},
 				},
 			},
@@ -668,6 +719,59 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 4},
+								{"Maximum", 4},
+							},
+						},
+						--Pirate
+						{
+							["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 5},
+								
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},		
+							["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 2},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 4},
+								
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 2},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 12},
+								{"Maximum", 12},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},	
 							["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
 							["VALUE_CHANGE_TABLE"] =
 							{

@@ -1,8 +1,8 @@
 local modfilename = "AutoScannerPlus"
 local lua_author  = "Silent"
-local lua_version = "v1.7"
+local lua_version = "v1.8"
 local mod_author  = "Silent369"
-local nms_version = "4.42"
+local nms_version = "4.43"
 local maintenance = mod_author
 local description = [[
 
