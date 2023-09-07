@@ -4,7 +4,8 @@ QUICK_ACTION_LIST =
 	"R_SHOW_HIVEONLY",
 	"R_SCANSENTCRASH",
 	"R_CHART_ROBOT",
-	"R_KVX_MONOLITH",
+	"R_MONOLITH",
+	"R_CHART_BUILDER",
 	"R_BIOSHIPL",
 	"CRASHEDSHIP",
 	"SEC_SCN_OUTPOST",
@@ -17,7 +18,7 @@ QUICK_ACTION_MENU =
 {
 	["R_SHOW_HIVEONLY"] = 
 	{
-		["TITLE"]	= "Find Sentinel Pillar",
+		["TITLE"]	= "Locate Sentinel Pillar",
 		["ICON"]	= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS",
 		["ANIM"]	= "R_SHOW_HIVEONLY",
 		["TYPE"]	= "REWARD"
@@ -39,15 +40,22 @@ QUICK_ACTION_MENU =
 	["R_CHART_ROBOT"] = 
 	{
 		["TITLE"]	= "Locate Sentinel Multi-Tool",
-		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.ROBOTHEAD.DDS",
+		["ICON"]	= "TEXTURES\UI\FRONTEND\ICONS\MISSIONS\MISSION.ROBOTHEAD.OFF.DDS",
 		["ANIM"]	= "R_CHART_ROBOT",
 		["TYPE"]	= "REWARD",
 	},
-	["R_KVX_MONOLITH"] = 
+	["R_MONOLITH"] = 
 	{
 		["TITLE"]	= "Locate Monolith",
 		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.RUNE.DDS",
 		["ANIM"]	= "R_MONOLITH",
+		["TYPE"]	= "REWARD",
+    },
+	["R_CHART_BUILDER"] = 
+	{
+		["TITLE"]	= "Locate Autophage Camp",
+		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.ROBOTHEAD.DDS",
+		["ANIM"]	= "R_CHART_BUILDER",
 		["TYPE"]	= "REWARD",
     },
 	["R_BIOSHIPL"] = 
@@ -59,14 +67,14 @@ QUICK_ACTION_MENU =
 	},
 	["REVEAL_PORTAL"] = 
 	{
-		["TITLE"]	= "Find Portal",
+		["TITLE"]	= "Locate Portal",
 		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.PORTAL.DDS",
 		["ANIM"]	= "REVEAL_PORTAL",
 		["TYPE"]	= "REWARD",
 	},
 	["MTSHOP"] = 
 	{
-		["TITLE"]	= "Find Minor Settlement",
+		["TITLE"]	= "Locate Minor Settlement",
 		["ICON"]	= "TEXTURES/UI/HUD/MENUS/RENDER.GUN.DDS",
 		["ANIM"]	= "MTSHOP",
 		["TYPE"]	= "REWARD",
@@ -327,6 +335,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Id", "R_SHOW_HIVEONLY"},
 								{"Id", "R_SCANSENTCRASH"},
 								{"Id", "R_CHART_ROBOT"},
+								{"Id", "R_CHART_BUILDER"},
 							},
 							["VALUE_CHANGE_TABLE"]	=
 								{

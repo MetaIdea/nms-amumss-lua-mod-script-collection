@@ -307,7 +307,7 @@ SHIELD_SCENE =
     <Property name="ScaleX" value="1" />
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
-    </Property>
+  </Property>
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -321,7 +321,7 @@ SHIELD_SCENE =
     </Property>
   </Property>
   <Property name="Children">
-   <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="BubbleShield" />
       <Property name="NameHash" value="2175858882" />
       <Property name="Type" value="MESH" />
@@ -842,7 +842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "ProtectionShield.pak",
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.42",
+["NMS_VERSION"]     = "4.44",
 ["DESCRIPTION"]     = "Protective shield against hazards, bullets ...",
 ["MODIFICATIONS"]   =
     {
@@ -1057,7 +1057,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_A.ENTITY.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1093,6 +1093,8 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property value="GcShootableComponentData.xml">
       <Property name="Health" value="3000" />
+      <Property name="LevelledExtraHealth" value="0" />
+      <Property name="UseSpaceLevelForExtraHealth" value="False" />
       <Property name="AutoAimTarget" value="False" />
       <Property name="PlayerOnly" value="False" />
       <Property name="IgnorePlayer" value="False" />
@@ -1102,6 +1104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Impact" value="Default" />
       </Property>
       <Property name="IncreaseWanted" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="IncreaseWantedThresholdTime" value="0.5" />
       <Property name="FiendCrimeType" value="GcFiendCrime.xml">
         <Property name="FiendCrime" value="None" />
@@ -1130,9 +1133,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="VehicleDestroyEffect" value="VEHICLECRASH" />
       <Property name="TriggerAction" value="IDLE" />
       <Property name="IncreaseWanted" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="IncreaseFiendWanted" value="False" />
       <Property name="IncreaseFiendWantedChance" value="1" />
       <Property name="NotifyEncounter" value="False" />
+      <Property name="DamagesParentWhenDestroyed" value="False" />
       <Property name="LootReward" value="" />
       <Property name="LootRewardAmountMin" value="0" />
       <Property name="LootRewardAmountMax" value="0" />
@@ -1142,8 +1147,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="StatEnum" value="None" />
       </Property>
       <Property name="GivesReward" value="" />
+      <Property name="OverrideChipAmount" value="-1" />
       <Property name="PirateSystemAltReward" value="" />
       <Property name="RewardIfDestroyedByOther" value="False" />
+      <Property name="NoConsequencesDuringPirateBattle" value="False" />
       <Property name="HideReward" value="False" />
       <Property name="OverrideRewardLoc" value="" />
       <Property name="RewardOverrideTable" />
@@ -1193,6 +1200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ShowInteract" value="True" />
       <Property name="HideInteractWhenAllArmourDestroyed" value="False" />
       <Property name="ShowInteractRange" value="20" />
+      <Property name="HideInteractWhenShielded" value="False" />
       <Property name="GrenadeSingleHit" value="True" />
       <Property name="LootItems" />
     </Property>
@@ -1209,7 +1217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_B.ENTITY.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1225,10 +1233,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Gravity" value="20" />
       </Property>
       <Property name="TriggerVolumeType" value="TkVolumeTriggerType.xml">
-        <Property name="VolumeTriggerType" value="]] .. SHIELD_VOLUME_TRIGGER_TYPE .. [[" />
+        <Property name="VolumeTriggerType" value="HazardProtection" />
       </Property>
       <Property name="SurfaceProperties" value="None" />
-      <Property name="TriggerVolume" value="True" />
+      <Property name="TriggerVolume" value="False" />
       <Property name="Climbable" value="False" />
       <Property name="Floor" value="False" />
       <Property name="IgnoreModelOwner" value="True" />
@@ -1245,6 +1253,8 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property value="GcShootableComponentData.xml">
       <Property name="Health" value="3000" />
+      <Property name="LevelledExtraHealth" value="0" />
+      <Property name="UseSpaceLevelForExtraHealth" value="False" />
       <Property name="AutoAimTarget" value="False" />
       <Property name="PlayerOnly" value="False" />
       <Property name="IgnorePlayer" value="False" />
@@ -1254,6 +1264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Impact" value="Default" />
       </Property>
       <Property name="IncreaseWanted" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="IncreaseWantedThresholdTime" value="0.5" />
       <Property name="FiendCrimeType" value="GcFiendCrime.xml">
         <Property name="FiendCrime" value="None" />
@@ -1282,9 +1293,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="VehicleDestroyEffect" value="VEHICLECRASH" />
       <Property name="TriggerAction" value="IDLE" />
       <Property name="IncreaseWanted" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="IncreaseFiendWanted" value="False" />
       <Property name="IncreaseFiendWantedChance" value="1" />
       <Property name="NotifyEncounter" value="False" />
+      <Property name="DamagesParentWhenDestroyed" value="False" />
       <Property name="LootReward" value="" />
       <Property name="LootRewardAmountMin" value="0" />
       <Property name="LootRewardAmountMax" value="0" />
@@ -1294,8 +1307,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="StatEnum" value="None" />
       </Property>
       <Property name="GivesReward" value="" />
+      <Property name="OverrideChipAmount" value="-1" />
       <Property name="PirateSystemAltReward" value="" />
       <Property name="RewardIfDestroyedByOther" value="False" />
+      <Property name="NoConsequencesDuringPirateBattle" value="False" />
       <Property name="HideReward" value="False" />
       <Property name="OverrideRewardLoc" value="" />
       <Property name="RewardOverrideTable" />
@@ -1345,6 +1360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ShowInteract" value="True" />
       <Property name="HideInteractWhenAllArmourDestroyed" value="False" />
       <Property name="ShowInteractRange" value="20" />
+      <Property name="HideInteractWhenShielded" value="False" />
       <Property name="GrenadeSingleHit" value="True" />
       <Property name="LootItems" />
     </Property>
@@ -1361,7 +1377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">

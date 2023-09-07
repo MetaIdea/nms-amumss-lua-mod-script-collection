@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Stop The Clocks 2.7.pak", 
+["MOD_FILENAME"] 			= "No Auto Saves 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.30",
-["MOD_DESCRIPTION"]			= "This mods makes sun still",
+["NMS_VERSION"]				= "4.44",
+["MOD_DESCRIPTION"]			= "This mods restores the old save system",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -18,8 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"EnableDayNightCycle", "False"},   -- original : True
-								{"ForceSunAngle", "0"},   -- Changes sun angle / Time : the unit is 4 minutes, so 90 = +6 hours
+								{"DisableContinuousSaving", "True"}
 							}
 						}
 					}
