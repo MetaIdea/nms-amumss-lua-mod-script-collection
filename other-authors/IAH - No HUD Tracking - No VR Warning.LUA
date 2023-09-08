@@ -8,14 +8,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
+			["MBIN_CHANGE_TABLE"] 	=
+			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCUIGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"HUDPlayerTrackArrowSize", "0"},	-- this section removes HUD HMD tracking markers
 								{"HUDPlayerTrackArrowSizeMin", "0"},
@@ -43,23 +43,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ShowOnscreenPredatorMarkers", "False"}	-- this removes the predator markers (showing you that a animal is stalking you)						
 							}
 						}
-					},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "GCUIGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	=
 					{
-							["PRECEDING_KEY_WORDS"] = {"HazardHeightmaps", "NMSString0x80"},
-							["VALUE_CHANGE_TABLE"]     = 
-								{
+						{
+							["PRECEDING_KEY_WORDS"] = "HazardHeightmaps",
+							["VALUE_CHANGE_TABLE"]     =
+							{
 									{"Value", ""}, -- untested, but this section *should* remove all HMD HUD hazard graphics, however Im not sure if I built this part of the .LUA right
 									{"Value", ""},
 									{"Value", ""},
 									{"Value", ""},
 									{"Value", ""},
-									{"Value", ""}									
-								}
+									{"Value", ""}
 							}
 						}
 					}
-				}	
+				}
 			}
 		}
-	}	
+	}
 }
