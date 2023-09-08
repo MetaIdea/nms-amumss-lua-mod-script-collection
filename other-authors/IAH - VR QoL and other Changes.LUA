@@ -22,6 +22,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						}
 					},
+				},
+				{
 					--
 					-- The following changes are for the new VR Inventory Screen.
 					--
