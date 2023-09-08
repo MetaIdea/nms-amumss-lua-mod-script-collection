@@ -17,16 +17,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"TorchFoV", "60"}
-								{"TorchDimFoV", "45"}
-								{"InteractionTorchFoV", "60"}
-								{"UndergroundTorchFoV", "50"}
+								{"TorchFoV", "60"},
+								{"TorchDimFoV", "45"},
+								{"InteractionTorchFoV", "60"},
+								{"UndergroundTorchFoV", "50"},
 								{"UndergroundTorchFoVFar", "75"}
 							}
 						}
 					}
-				}	
+				}
 			}
 		}
-	}	
+	}
 }
