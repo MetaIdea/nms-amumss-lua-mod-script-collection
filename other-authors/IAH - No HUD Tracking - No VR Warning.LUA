@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"HazardHeightmaps", "NMSString0x80"},
+							["PRECEDING_KEY_WORDS"] = "HazardHeightmaps",
 							["VALUE_CHANGE_TABLE"]     =
 							{
 									{"Value", ""}, -- untested, but this section *should* remove all HMD HUD hazard graphics, however Im not sure if I built this part of the .LUA right
