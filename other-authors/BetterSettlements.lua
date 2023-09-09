@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PolicyJudgementSelector",		"0.57"}, 	-- Original 0.57
 								{"RequestJudgementSelector",		"0.78"}, 	-- Original 0.78
 								{"ConflictJudgementSelector",		"1"}, 	-- Original 1
-								{"MaxPerksCount",					"6"}, 	-- Original 6
+								{"MaxPerksCount",					"6"}, 	-- Original 6  -- Any higher value will crash the game!!!
 								{"MinInitialPositivePerksCount",		"1"}, 	-- Original 1
 								{"MaxInitialPositivePerksCount",		"3"}, 	-- Original 1
 								{"MinInitialNegativePerksCount",		"0"}, 	-- Original 4

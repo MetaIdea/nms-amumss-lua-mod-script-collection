@@ -409,9 +409,9 @@
  
     			<Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
-        <Property name="Type" value="Single" />
+        <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-         <Property name="Filename" value="MODELS\RGO\MEDIUMBUSH01.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
