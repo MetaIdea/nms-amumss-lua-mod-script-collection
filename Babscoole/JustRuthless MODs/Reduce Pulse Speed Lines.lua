@@ -1,18 +1,34 @@
 -- Pulse Jump 1 -- (Holding Shift and Space)
-PJ1_Particles = "600" -- 2000
-PJ1_Radius    = "1100" -- 14500
-PJ1_Length    = "1700" -- 13000
-PJ1_Width     = "10" -- 750
+PJ1_Particles = "600" -- 1000
+PJ1_Radius    = "1100" -- 7000
+PJ1_Length    = "1700" -- 10000
+PJ1_Width     = "10" -- 500
 PJ1_Alpha     = "0.5" -- 0.5
-PJ1_RemoveCylinderRadius = "200" -- 5000
+PJ1_RemoveCylinderRadius = "200" -- 2000
 
 -- Pulse Jump 2 --
-PJ2_Particles = "800" -- 4000
-PJ2_Radius    = "2000" -- 15000
-PJ2_Length    = "1300" -- 10000
-PJ2_Width     = "25" -- 750
-PJ2_Alpha     = "0.4" -- 0.5
-PJ2_RemoveCylinderRadius = "250" -- 2000
+PJ2_Particles = "800" -- 2000
+PJ2_Radius    = "2000" -- 20000
+PJ2_Length    = "1300" -- 20000
+PJ2_Width     = "25" -- 120
+PJ2_Alpha     = "0.4" -- 1
+PJ2_RemoveCylinderRadius = "250" -- 1000
+
+-- Pulse Jump 3 --
+PJ3_Particles = "800" -- 2000
+PJ3_Radius    = "2000" -- 20000
+PJ3_Length    = "1000" -- 10000
+PJ3_Width     = "15" -- 370
+PJ3_Alpha     = "0.4" -- 1
+PJ3_RemoveCylinderRadius = "250" -- 2000
+
+-- Pulse Jump 4 --
+PJ4_Particles = "300" -- 300
+PJ4_Radius    = "1000" -- 1000
+PJ4_Length    = "50" -- 50
+PJ4_Width     = "20" -- 20
+PJ4_Alpha     = "1" -- 1
+PJ4_RemoveCylinderRadius = "250" -- 2
 
 -- Cruise 1 -- (Holding Shift)
 C1_Particles = "1000" -- 5000
@@ -38,29 +54,22 @@ CB_Width     = "4" -- 4
 CB_Alpha     = "0.5" -- 0.5
 CB_RemoveCylinderRadius = "15" -- 10
 
--- File Settings --
-FileName    = "Reduce Pulse Speed Lines.pak"
-ModAuthor   = "JustRuthless"
-LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
-NMS_Version = "4.44"
-
 -- File Sources --
 FileSource1 = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES.SPEEDLINE.MBIN"
 FileSource2 = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES2.SPEEDLINE.MBIN"
-FileSource3 = "MODELS\EFFECTS\SPEEDLINES\SPACE.SPEEDLINE.MBIN"
-FileSource4 = "MODELS\EFFECTS\SPEEDLINES\SPACE2.SPEEDLINE.MBIN"
-FileSource5 = "MODELS\EFFECTS\SPEEDLINES\SPACEBIG.SPEEDLINE.MBIN"
+FileSource3 = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES3.SPEEDLINE.MBIN"
+FileSource4 = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES4.SPEEDLINE.MBIN"
+FileSource5 = "MODELS\EFFECTS\SPEEDLINES\SPACE.SPEEDLINE.MBIN"
+FileSource6 = "MODELS\EFFECTS\SPEEDLINES\SPACE2.SPEEDLINE.MBIN"
+FileSource7 = "MODELS\EFFECTS\SPEEDLINES\SPACEBIG.SPEEDLINE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]  = FileName,
-    ["MOD_AUTHOR"]    = ModAuthor,
-    ["LUA_AUTHOR"]    = LuaAuthor,
-    ["MOD_MAINTENANCE"] = ModMaintenance,
-    ["MOD_DESCRIPTION"] = "",
-    ["NMS_VERSION"]   = NMS_Version,
-    ["MODIFICATIONS"] =
+    ["MOD_FILENAME"]    = "Reduce Pulse Speed Lines.pak",
+    ["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+    ["MOD_DESCRIPTION"] = "Reduce Speed Lines",
+    ["NMS_VERSION"]     = "4.44",
+    ["MODIFICATIONS"]   =
         {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -105,6 +114,42 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumberOfParticles", PJ3_Particles},
+                                {"Radius", PJ3_Radius},
+                                {"Length", PJ3_Length},
+                                {"Width", PJ3_Width},
+                                {"Alpha", PJ3_Alpha},
+                                {"RemoveCylinderRadius", PJ3_RemoveCylinderRadius},
+                            },
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = FileSource4,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumberOfParticles", PJ4_Particles},
+                                {"Radius", PJ4_Radius},
+                                {"Length", PJ4_Length},
+                                {"Width", PJ4_Width},
+                                {"Alpha", PJ4_Alpha},
+                                {"RemoveCylinderRadius", PJ4_RemoveCylinderRadius},
+                            },
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = FileSource5,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumberOfParticles", C1_Particles},
@@ -118,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = FileSource4,
+                    ["MBIN_FILE_SOURCE"]  = FileSource6,
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -135,7 +180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = FileSource5,
+                    ["MBIN_FILE_SOURCE"]  = FileSource7,
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
