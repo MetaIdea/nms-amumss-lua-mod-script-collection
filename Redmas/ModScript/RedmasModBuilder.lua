@@ -36,7 +36,7 @@ INIT_PRESET ={
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
         ["HELLO_GAMES_SPASH_SCREEN"] = "E3-SHIPS",  --"HG-E3-1"  or another img name
         ["ENGINE_SPASH_SCREEN"] = "LARGEBACKDROP", --"E-E3-1"   or another img name
-        ["NMS_TITLE"] = "TITLE-ATLAS", --"TITLE-WAYPOINT"   or another img name
+        ["NMS_TITLE"] = "TITLE-ECHOES", --"TITLE-WAYPOINT"   or another img name
         ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE1", --"E3-RUINS"   or another img name
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
@@ -13923,6 +13923,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				}
 			},
 			-- Balancing
+			--[=[ Decompiling issue on NMS 4.44
 			{
 				["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
 				["EXML_CHANGE_TABLE"] =
@@ -14113,6 +14114,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 
 				}
 			},
+			--]=]
 			{
 				["MBIN_FILE_SOURCE"]  = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
 				["EXML_CHANGE_TABLE"] =
@@ -39218,7 +39220,7 @@ NEW_CONTENT =
 						}
 					}
 				},
-
+				
 				{
 					["MBIN_FILE_SOURCE"]  = [[METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN]],
 					["EXML_CHANGE_TABLE"] =
@@ -39231,8 +39233,7 @@ NEW_CONTENT =
 
 					}
 				},
-
-
+				
 								
 				
 
@@ -41463,7 +41464,7 @@ if CHARACTERS_SKINS_FEATURE == "ON" then
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 
-		copyEXML("ON",[[CHARPRESETS\realistic.EXML]],[[METADATA\GAMESTATE\PLAYERDATA\CUSTOMISATIONCOLOURPALETTES.EXML]])	
+		--copyEXML("ON",[[CHARPRESETS\realistic.EXML]],[[METADATA\GAMESTATE\PLAYERDATA\CUSTOMISATIONCOLOURPALETTES.EXML]])	
 			
 	end
 	if CHAR_PRESETS_SKINS == "THE-WATCHER" then
