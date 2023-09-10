@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "___MOD_BETTER_BIOME_REPARTITION.pak",
 ["MOD_AUTHOR"]    = "WoodyMontana",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.25",
+["NMS_VERSION"]   = "4.44",
 ["MODIFICATIONS"] = 
 	{
 		{

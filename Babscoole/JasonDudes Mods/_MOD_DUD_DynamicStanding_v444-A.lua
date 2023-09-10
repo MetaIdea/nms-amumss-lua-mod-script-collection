@@ -64,10 +64,10 @@ ER_STAND =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v443-B.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v444-A.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.43",
+["NMS_VERSION"]     = "4.44",
 ["MODIFICATIONS"]   =
     {
         {
@@ -295,7 +295,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["FOREACH_SKW_GROUP"] =
                             {
                                 {"Id", "RS_S1_S2M6",},
-                                -- {"Id", "RS_S2_S4M3",},
                                 {"Id", "RS_S2_S4M5"},
                                 {"Id", "RS_S3_S4M5"},
                             },
@@ -319,9 +318,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["FOREACH_SKW_GROUP"] =
                             {
                                 {"Id", "RS_S6_PARTY1"},
-                                -- {"Id", "RS_S6_PARTY2"},
-                                -- {"Id", "RS_S6_PARTY3"},
-                                -- {"Id", "RS_S6_PARTY4"},
                                 {"Id", "RS_S6_PARTY5"},
                                 {"Id", "RS_S6_S3M3"},
                             },
@@ -337,9 +333,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Id", "RS_S2_S4M1",},
                                 {"Id", "RS_S5_S1M3",},
-                                -- {"Id", "RS_S9_S1M3"},
-                                -- {"Id", "RS_S10_S1M3"},
-                                -- {"Id", "RS_S11_S1M3"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -347,34 +340,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AmountMin", "1",},
                                 {"AmountMax", "3",},
                             }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MULTITOOL_ATLAS",},
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_BUI_PARTS",},
-                            ["PRECEDING_KEY_WORDS"] = {"FallbackList"},
-                            ["WHERE_IN_SUBSECTION"] =
-                            {
-                                {"Value", "STAFF_CORE1",},
-                                {"Value", "STAFF_CORE2",},
-                                {"Value", "STAFF_CORE4",},
-                                {"Value", "STAFF_CORE5",},
-                                {"Value", "STAFF_CORE6",},
-                                {"Value", "STAFF_HEAD1",},
-                                {"Value", "STAFF_HEAD2",},
-                                {"Value", "STAFF_HEAD4A",},
-                                {"Value", "STAFF_HEAD4B",},
-                                {"Value", "STAFF_HEAD5",},
-                                {"Value", "STAFF_HEAD6",},
-                                {"Value", "STAFF_POLE1",},
-                                {"Value", "STAFF_POLE2",},
-                                {"Value", "STAFF_POLE4",},
-                                {"Value", "STAFF_POLE5",},
-                                {"Value", "STAFF_POLE6",},
-                            },
-                            ["REMOVE"] = "SECTION"
                         },
                     }
                 },
@@ -592,24 +557,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\RECURRINGMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"MissionID", "DM_OVERSEER",},
-                                {"MissionID", "DM_SCIENCE",},
-                                {"MissionID", "DM_WEAPONS"},
-                                {"MissionID", "DM_EXOCRAFT",},
-                                {"MissionID", "DM_FARMER",},
-                                {"MissionID", "D_SCIENCE_1"},
-                                {"MissionID", "D_SCIENCE_2",},
-                                {"MissionID", "D_SCIENCE_3",},
-                                {"MissionID", "D_SCIENCE_4"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MissionClass", "Secondary",},
-                            }
-                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","R_AF_DAILY_SET",},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},

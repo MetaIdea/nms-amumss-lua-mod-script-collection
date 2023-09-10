@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AsteroidEffects_v443-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_AsteroidEffects_v444-A.pak",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.43",
+["NMS_VERSION"]             = "4.44",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -19,7 +19,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",               "1.5",},
-                                -- {"Scale",              "30",},
                                 {"CamShake",           "True",},
                                 {"CamShakeSpaceScale", "True",},
                             }
@@ -29,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"] = 40,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Scale",              "30",},
+                                {"Scale", "30",},
                             }
                         },
                         {
@@ -103,7 +102,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",               "3",},
-                                -- {"Scale",              "30",},
                                 {"CamShake",           "True",},
                                 {"CamShakeSpaceScale", "True",},
                             }
@@ -165,7 +163,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",               "3",},
-                                -- {"Scale",              "30",},
                                 {"CamShake",           "True",},
                                 {"CamShakeSpaceScale", "True",},
                             }
@@ -175,7 +172,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"] = 80,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Scale",              "30",},
+                                {"Scale", "30",},
                             }
                         },
                         {
@@ -234,15 +231,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]]
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Id", "PIRATEWARP"},
-                                {"Id", "PIRATEWARPBUILD"},
-                                {"Id", "PIRATEWARPRESID"},
-                            },
-                            ["REMOVE"] = "SECTION"
                         },
                     }
                 },

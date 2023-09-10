@@ -3,13 +3,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "__MOD_ALIEN_TERRAIN.pak",
 ["MOD_AUTHOR"]    = "WoodyMontana",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.25",
+["NMS_VERSION"]   = "4.44",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCTERRAINGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"HeightBlend",         "0"},
+                                {"SmoothStepBelow",     "0"},
+                                {"SmoothStepAbove",     "0"},
+                                {"SmoothStepStrength",  "0"},
+                                {"TileBlendMultiplier", "0"},
+                            }
+                        },
+                    }
+                },
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
