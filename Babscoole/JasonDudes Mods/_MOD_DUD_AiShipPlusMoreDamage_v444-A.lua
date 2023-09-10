@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v443-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v444-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.43",
+["NMS_VERSION"]             = "4.44",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -29,10 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"DockWaitMaxTime",                "120"},
                                 {"LandingManuevreTime",            "2"},
                                 {"LandingManeuvreAlignTime",       "2"},
-                                --{"CircleApproachDistance",         "300"},
                                 {"GroundCircleHeight",             "90"},
-                                --{"AtmosphereEffectMin",          "0"},
-                                --{"AtmosphereEffectMax",          "0"},
                             },
                         },
                         {
@@ -76,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "25000"},
-                                {"LevelledExtraHealth",    "50000"},
+                                {"LevelledExtraHealth", "50000"},
                             },
                         },
                         {
@@ -86,7 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "40000"},
-                                {"LevelledExtraHealth",    "80000"},
+                                {"LevelledExtraHealth", "80000"},
                             },
                         },
                         {
@@ -96,7 +93,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "40000"},
-                                {"LevelledExtraHealth",    "80000"},
+                                {"LevelledExtraHealth", "80000"},
                             },
                         },
                         {
@@ -106,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "21000"},
-                                {"LevelledExtraHealth",    "42000"},
+                                {"LevelledExtraHealth", "42000"},
                             },
                         },
                         {
@@ -116,7 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "40000"},
-                                {"LevelledExtraHealth",    "80000"},
+                                {"LevelledExtraHealth", "80000"},
                             },
                         },
                         {
@@ -126,7 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "24000"},
-                                {"LevelledExtraHealth",    "48000"},
+                                {"LevelledExtraHealth", "48000"},
                             },
                         },
                         {
@@ -136,7 +133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "24000"},
-                                {"LevelledExtraHealth",    "48000"},
+                                {"LevelledExtraHealth", "48000"},
                             },
                         },
                         {
@@ -146,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "21000"},
-                                {"LevelledExtraHealth",    "42000"},
+                                {"LevelledExtraHealth", "42000"},
                             },
                         },
                         {
@@ -156,7 +153,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "7500"},
-                                {"LevelledExtraHealth",    "15000"},
+                                {"LevelledExtraHealth", "15000"},
                             },
                         },
                         {
@@ -166,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "10000"},
-                                {"LevelledExtraHealth",    "20000"},
+                                {"LevelledExtraHealth", "20000"},
                             },
                         },
                         {
@@ -176,7 +173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "12500"},
-                                {"LevelledExtraHealth",    "25000"},
+                                {"LevelledExtraHealth", "25000"},
                             },
                         },
                         {
@@ -186,7 +183,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "15000"},
-                                {"LevelledExtraHealth",    "30000"},
+                                {"LevelledExtraHealth", "30000"},
+                            },
+                        },
+                        {
+                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id","POLICEFREIGHTER"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Shield",               ""},
+                                {"UsesShieldGenerators", "False"},
                             },
                         },
                         {
@@ -202,37 +209,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AttackShootTimeMax",           "3"},
                                 {"AttackReadyTime",              "0.1"},
                                 {"AttackMaxTime",                "4"},
-                                --{"AttackApproachOffset",       "200"},
                                 {"AttackApproachMinRange",       "150"},
                                 {"AttackApproachMaxRange",       "250"},
                                 {"AttackTooCloseRange",          "50"},
                                 {"AttackBoostTimeToRange",       "3"},
-                                --{"AttackBoostRange",           "3"},
-                                --{"AttackBoostAngle",           "40"},
-                                --{"AttackMaxPlanetHeight",      "1000"},
-                                --{"AttackTurnMultiplierMax",    "0.75"},
-                                --{"AttackTurnMaxMinTime",       "1"},
-                                --{"AttackTurnMaxTimeRange",     "5"},
                                 {"NumHitsBeforeBail",            "6000"},
                                 {"NumHitsBeforeReposition",      "5000"},
-                                --{"FleeBrake",                  "1"},
                                 {"FleeBoost",                    "80"},
-                               -- {"FleeBrakeTime",              "5"},
-                               -- {"FleeRepositionTime",         "5"},
                                 {"FleeRepositionAngleMin",       "45"},
                                 {"FleeRepositionAngleMax",       "180"},
-                               -- {"FleeUrgentBrake",            "0.8"},
                                 {"FleeUrgentBoost",              "1.5"},
-                               -- {"FleeUrgentBrakeTime",        "0.4"},
-                               -- {"FleeRepositionUrgentTime",   "2"},
                                 {"FleeRepositionUrgentAngleMin", "90"},
                                 {"FleeRepositionUrgentAngleMax", "180"},
-                               -- {"FleeRange",                  "400"},
                                 {"FleeMinTime",                  "2"},
-                               -- {"FleeMaxTime",                "10"},
                                 {"FleeUrgentRange",              "100"},
-                               -- {"AttackTargetMaxRange",       "800"},
-                               -- {"AttackTargetOffsetMin",      "100"},
                             },
                         },
                         {
@@ -241,45 +231,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","SPACE",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GunDispersionAngle",             "4"},
-                                {"AttackWeaponRange",              "2000"},
-                                --{"AttackShootWaitTime",          "0.1"},
-                                {"AttackShootTimeMin",             "2"},
-                                --{"AttackShootTimeMax",           "4"},
-                                {"AttackReadyTime",                "0.1"},
-                                {"AttackMaxTime",                  "4"},
-                                {"AttackApproachOffset",           "150"},
-                                {"AttackApproachMinRange",         "150"},
-                                {"AttackApproachMaxRange",         "250"},
-                                {"AttackTooCloseRange",            "50"},
-                                {"AttackFlybyOffset",              "150"},
-                                {"AttackBoostTimeToRange",         "3"},
-                                --{"AttackBoostRange",             "550"},
-                                --{"AttackBoostAngle",             "40"},
-                                --{"AttackMaxPlanetHeight",        "1000"},
-                                --{"AttackTurnMultiplierMax",      "0.75"},
-                                --{"AttackTurnMaxMinTime",         "1"},
-                                --{"AttackTurnMaxTimeRange",       "5"},
-                                {"NumHitsBeforeBail",              "6000"},
-                                {"NumHitsBeforeReposition",        "5000"},
-                                --{"FleeBrake",                    "1"},
-                                {"FleeBoost",                      "100"},
-                               -- {"FleeBrakeTime",                "5"},
-                               -- {"FleeRepositionTime",           "5"},
-                                {"FleeRepositionAngleMin",         "45"},
-                               -- {"FleeRepositionAngleMax",       "180"},
-                               -- {"FleeUrgentBrake",              "0.8"},
-                                {"FleeUrgentBoost",                "1.5"},
-                               -- {"FleeUrgentBrakeTime",          "0.4"},
-                               -- {"FleeRepositionUrgentTime",     "2"},
-                                {"FleeRepositionUrgentAngleMin",   "90"},
-                               -- {"FleeRepositionUrgentAngleMax", "180"},
-                               -- {"FleeRange",                    "400"},
-                                {"FleeMinTime",                    "1.5"},
-                               -- {"FleeMaxTime",                  "10"},
-                               -- {"FleeUrgentRange",              "100"},
-                               -- {"AttackTargetMaxRange",         "800"},
-                               -- {"AttackTargetOffsetMin",        "100"},
+                                {"GunDispersionAngle",           "4"},
+                                {"AttackWeaponRange",            "2000"},
+                                {"AttackShootTimeMin",           "2"},
+                                {"AttackReadyTime",              "0.1"},
+                                {"AttackMaxTime",                "4"},
+                                {"AttackApproachOffset",         "150"},
+                                {"AttackApproachMinRange",       "150"},
+                                {"AttackApproachMaxRange",       "250"},
+                                {"AttackTooCloseRange",          "50"},
+                                {"AttackFlybyOffset",            "150"},
+                                {"AttackBoostTimeToRange",       "3"},
+                                {"NumHitsBeforeBail",            "6000"},
+                                {"NumHitsBeforeReposition",      "5000"},
+                                {"FleeBoost",                    "100"},
+                                {"FleeRepositionAngleMin",       "45"},
+                                {"FleeUrgentBoost",              "1.5"},
+                                {"FleeRepositionUrgentAngleMin", "90"},
+                                {"FleeMinTime",                  "1.5"},
                             },
                         },
                         {
@@ -295,38 +264,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AttackShootTimeMax",           "3"},
                                 {"AttackReadyTime",              "0.1"},
                                 {"AttackMaxTime",                "4"},
-                                --{"AttackApproachOffset",       "200"},
                                 {"AttackApproachMinRange",       "150"},
                                 {"AttackApproachMaxRange",       "250"},
                                 {"AttackTooCloseRange",          "50"},
-                                --{"AttackFlybyOffset",          "150"},
                                 {"AttackBoostTimeToRange",       "3"},
-                                --{"AttackBoostRange",           "550"},
-                                --{"AttackBoostAngle",           "40"},
-                                --{"AttackMaxPlanetHeight",      "1000"},
-                                --{"AttackTurnMultiplierMax",    "0.75"},
-                                --{"AttackTurnMaxMinTime",       "1"},
-                                --{"AttackTurnMaxTimeRange",     "5"},
                                 {"NumHitsBeforeBail",            "6000"},
                                 {"NumHitsBeforeReposition",      "5000"},
-                                --{"FleeBrake",                  "1"},
                                 {"FleeBoost",                    "80"},
-                               -- {"FleeBrakeTime",              "5"},
-                               -- {"FleeRepositionTime",         "5"},
                                 {"FleeRepositionAngleMin",       "45"},
                                 {"FleeRepositionAngleMax",       "90"},
-                               -- {"FleeUrgentBrake",            "0.8"},
                                 {"FleeUrgentBoost",              "1.5"},
-                               -- {"FleeUrgentBrakeTime",        "0.4"},
-                               -- {"FleeRepositionUrgentTime",   "2"},
                                 {"FleeRepositionUrgentAngleMin", "90"},
                                 {"FleeRepositionUrgentAngleMax", "180"},
-                               -- {"FleeRange",                  "400"},
                                 {"FleeMinTime",                  "2"},
-                               -- {"FleeMaxTime",                "2"},
                                 {"FleeUrgentRange",              "100"},
-                               -- {"AttackTargetMaxRange",       "800"},
-                               -- {"AttackTargetOffsetMin",      "100"},
                             },
                         },
                         {
@@ -335,46 +286,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_WEAK",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GunDispersionAngle",             "4"},
-                                {"GunFireRate",                    "0.2"},
-                                {"AttackWeaponRange",              "2000"},
-                                {"AttackShootWaitTime",            "1"},
-                                --{"AttackShootTimeMin",           "0.5"},
-                                {"AttackShootTimeMax",             "3"},
-                                {"AttackReadyTime",                "0.1"},
-                                {"AttackMaxTime",                  "4"},
-                                --{"AttackApproachOffset",         "200"},
-                                {"AttackApproachMinRange",         "150"},
-                                {"AttackApproachMaxRange",         "250"},
-                                {"AttackTooCloseRange",            "50"},
-                                --{"AttackFlybyOffset",            "150"},
-                                {"AttackBoostTimeToRange",         "3"},
-                                --{"AttackBoostRange",             "550"},
-                                --{"AttackBoostAngle",             "40"},
-                                --{"AttackMaxPlanetHeight",        "1000"},
-                                --{"AttackTurnMultiplierMax",      "0.75"},
-                                --{"AttackTurnMaxMinTime",         "1"},
-                                --{"AttackTurnMaxTimeRange",       "5"},
-                                {"NumHitsBeforeBail",              "4000"},
-                                {"NumHitsBeforeReposition",        "3000"},
-                                --{"FleeBrake",                    "1"},
-                                {"FleeBoost",                      "40"},
-                               -- {"FleeBrakeTime",                "5"},
-                               -- {"FleeRepositionTime",           "5"},
-                                {"FleeRepositionAngleMin",         "45"},
-                                {"FleeRepositionAngleMax",         "90"},
-                               -- {"FleeUrgentBrake",              "0.8"},
-                                {"FleeUrgentBoost",                "1.5"},
-                               -- {"FleeUrgentBrakeTime",          "0.4"},
-                               -- {"FleeRepositionUrgentTime",     "2"},
-                                {"FleeRepositionUrgentAngleMin",   "90"},
-                               -- {"FleeRepositionUrgentAngleMax", "180"},
-                               -- {"FleeRange",                    "400"},
-                               -- {"FleeMinTime",                  "0.5"},
-                               -- {"FleeMaxTime",                  "10"},
-                               -- {"FleeUrgentRange",              "100"},
-                               -- {"AttackTargetMaxRange",         "800"},
-                               -- {"AttackTargetOffsetMin",        "100"},
+                                {"GunDispersionAngle",           "4"},
+                                {"GunFireRate",                  "0.2"},
+                                {"AttackWeaponRange",            "2000"},
+                                {"AttackShootWaitTime",          "1"},
+                                {"AttackShootTimeMax",           "3"},
+                                {"AttackReadyTime",              "0.1"},
+                                {"AttackMaxTime",                "4"},
+                                {"AttackApproachMinRange",       "150"},
+                                {"AttackApproachMaxRange",       "250"},
+                                {"AttackTooCloseRange",          "50"},
+                                {"AttackBoostTimeToRange",       "3"},
+                                {"NumHitsBeforeBail",            "4000"},
+                                {"NumHitsBeforeReposition",      "3000"},
+                                {"FleeBoost",                    "40"},
+                                {"FleeRepositionAngleMin",       "45"},
+                                {"FleeRepositionAngleMax",       "90"},
+                                {"FleeUrgentBoost",              "1.5"},
+                                {"FleeRepositionUrgentAngleMin", "90"},
                             },
                         },
                         {
@@ -383,47 +312,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_STRONG",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GunDispersionAngle",             "3"},
-                                {"GunFireRate",                    "0.15"},
-                                {"AttackWeaponRange",              "2000"},
-                                {"AttackAngle",                    "40"},
-                                {"AttackShootWaitTime",            "1"},
-                                --{"AttackShootTimeMin",           "2"},
-                                --{"AttackShootTimeMax",           "3"},
-                                {"AttackReadyTime",                "0.1"},
-                                {"AttackMaxTime",                  "4"},
-                                --{"AttackApproachOffset",         "200"},
-                                {"AttackApproachMinRange",         "150"},
-                                {"AttackApproachMaxRange",         "250"},
-                                {"AttackTooCloseRange",            "50"},
-                                --{"AttackFlybyOffset",            "150"},
-                                {"AttackBoostTimeToRange",         "3"},
-                                {"AttackBoostRange",               "2000"},
-                                --{"AttackBoostAngle",             "40"},
-                                --{"AttackMaxPlanetHeight",        "1000"},
-                                --{"AttackTurnMultiplierMax",      "0.75"},
-                                --{"AttackTurnMaxMinTime",         "1"},
-                                --{"AttackTurnMaxTimeRange",       "5"},
-                                {"NumHitsBeforeBail",              "6000"},
-                                {"NumHitsBeforeReposition",        "5000"},
-                                --{"FleeBrake",                    "1"},
-                                {"FleeBoost",                      "80"},
-                               -- {"FleeBrakeTime",                "5"},
-                               -- {"FleeRepositionTime",           "5"},
-                                {"FleeRepositionAngleMin",         "45"},
-                                {"FleeRepositionAngleMax",         "90"},
-                               -- {"FleeUrgentBrake",              "0.8"},
-                                {"FleeUrgentBoost",                "1.5"},
-                               -- {"FleeUrgentBrakeTime",          "0.4"},
-                               -- {"FleeRepositionUrgentTime",     "2"},
-                                {"FleeRepositionUrgentAngleMin",   "90"},
-                               -- {"FleeRepositionUrgentAngleMax", "180"},
-                               -- {"FleeRange",                    "400"},
-                                {"FleeMinTime",                    "1.5"},
-                               -- {"FleeMaxTime",                  "10"},
-                               -- {"FleeUrgentRange",              "100"},
-                               -- {"AttackTargetMaxRange",         "800"},
-                               -- {"AttackTargetOffsetMin",        "100"},
+                                {"GunDispersionAngle",           "3"},
+                                {"GunFireRate",                  "0.15"},
+                                {"AttackWeaponRange",            "2000"},
+                                {"AttackAngle",                  "40"},
+                                {"AttackShootWaitTime",          "1"},
+                                {"AttackReadyTime",              "0.1"},
+                                {"AttackMaxTime",                "4"},
+                                {"AttackApproachMinRange",       "150"},
+                                {"AttackApproachMaxRange",       "250"},
+                                {"AttackTooCloseRange",          "50"},
+                                {"AttackBoostTimeToRange",       "3"},
+                                {"AttackBoostRange",             "2000"},
+                                {"NumHitsBeforeBail",            "6000"},
+                                {"NumHitsBeforeReposition",      "5000"},
+                                {"FleeBoost",                    "80"},
+                                {"FleeRepositionAngleMin",       "45"},
+                                {"FleeRepositionAngleMax",       "90"},
+                                {"FleeUrgentBoost",              "1.5"},
+                                {"FleeRepositionUrgentAngleMin", "90"},
+                                {"FleeMinTime",                  "1.5"},
                             },
                         },
                         {
@@ -454,8 +362,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_EASY",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                --{"MinSpeed", "100"},
-                                --{"MaxSpeed", "105"},
                                 {"TurnMax", "1.5"},
                             },
                         },
@@ -477,8 +383,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "40"},
-                                --{"MaxSpeed", "105"},
-                                --{"TurnMax", "1.5"},
                             }
                         },
                         {
@@ -487,9 +391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_SLOW",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                --{"MinSpeed", "40"},
                                 {"MaxSpeed", "160"},
-                                --{"TurnMax", "1.5"},
                             }
                         },
                         {
@@ -498,7 +400,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_FAST",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                --{"MinSpeed", "40"},
                                 {"MaxSpeed", "180"},
                                 {"TurnMax",  "1.5"},
                             }
@@ -509,8 +410,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id","WEAK",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Health",              "4000"},
-                                {"RechargeDelayTime",   "4"},
+                                {"Health",            "4000"},
+                                {"RechargeDelayTime", "4"},
                             }
                         },
                         {
@@ -546,7 +447,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Health",              "4000"},
                                 {"LevelledExtraHealth", "12000"},
                                 {"RechargeTime",        "4"},
-                                --{"RechargeDelayTime", "2"},
                             }
                         },
                         {
@@ -656,13 +556,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 { "Damage", "4" },
                             }
                         },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGRENADEDMG",},
-                            -- ["VALUE_CHANGE_TABLE"]     =
-                            -- {
-                                -- { "HardModeMultiplier", "2" }
-                            -- }
-                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTBIGGUN",},
                             ["VALUE_CHANGE_TABLE"]     =
@@ -691,34 +584,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 { "Damage", "35" },
                             }
                         },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN",},
-                            -- ["VALUE_CHANGE_TABLE"]     =
-                            -- {
-                                -- --{ "Damage", "15" },
-                            -- }
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER",},
-                            -- ["VALUE_CHANGE_TABLE"]     =
-                            -- {
-                                -- { "Damage", "10" },
-                            -- }
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1",},
-                            -- ["VALUE_CHANGE_TABLE"]     =
-                            -- {
-                                -- { "HardModeMultiplier", "1.5" }
-                            -- }
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2",},
-                            -- ["VALUE_CHANGE_TABLE"]     =
-                            -- {
-                                -- { "Damage", "18" },
-                            -- }
-                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -726,29 +591,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 { "Damage", "17" },
                             }
                         },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1",},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- { "Damage", "15" },
-                            -- }
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3",},
-                            -- ["SECTION_ACTIVE"] = {1,},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- { "Damage", "20" },
-                            -- }
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3",},
-                            -- ["SECTION_ACTIVE"] = {2,},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- { "Damage", "30" },
-                            -- }
-                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","WALKERLASER",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -756,20 +598,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 { "Damage", "6" },
                             }
                         },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN",},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- { "Damage", "6" },
-                            -- }
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER",},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- { "Damage", "16" },
-                            -- }
-                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -826,13 +654,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 { "Damage", "35" },
                             }
                         },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","BARRELEXPLODE",},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- { "HardModeMultiplier", "2" }
-                            -- }
-                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLERSPITDMG",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -840,27 +661,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 { "Damage", "15" },
                             }
                         },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","BASETURRETPDMG",},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- { "HardModeMultiplier", "2" }
-                            -- }
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","LIGHTNING",},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- { "Damage", "150" },
-                            -- }
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id","METEOR",},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- { "Damage", "150" },
-                            -- }
-                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","TORNADO",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -887,6 +687,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TurretMaxDownAngle",    "-5"},
                                 {"TurretDispersionAngle", "0"},
                                 {"Health",                "6000"},
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Explosion","TURRETEXPL",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"BlockDestructionIfRewardFails", "True"},
+                                {"OverrideChipAmount",            "0"},
                             },
                         },
                     }
