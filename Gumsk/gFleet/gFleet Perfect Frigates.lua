@@ -82,6 +82,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"Maximum",50},
 							},
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStatRange.xml"},
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] = {
+								{"Minimum",50},
+								{"Maximum",50},
+							},
+						},
 					},
 				},
 
@@ -101,6 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"Normandy",0},
 								{"DeepSpace",0},
 								{"DeepSpaceCommon",0},
+                                {"Pirate",0},
 							},
 						},
 						{
@@ -116,6 +125,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"Normandy",0},
 								{"DeepSpace",0},
 								{"DeepSpaceCommon",0},
+                                {"Pirate",0},
 							},
 						},
 						{
@@ -131,6 +141,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"Normandy",0},
 								{"DeepSpace",0},
 								{"DeepSpaceCommon",0},
+                                {"Pirate",0},
 							},
 						},
 					},
