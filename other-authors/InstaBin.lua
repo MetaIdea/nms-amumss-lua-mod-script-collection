@@ -20,6 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BinocMinScanTime",	"0.5"},
 								{"BinocScanTime",	"0.5"},
 								{"BinocCreatureScanTime",	"0.5"},
+								{"WaypointScanTime",	"0.5"},
 								{"SurveyMaxDistance",	"800"},
 							}	
 						},
