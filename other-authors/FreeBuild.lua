@@ -1,6 +1,6 @@
 ModName = "_FreeBuilding.pak"
 Author = "Striker0420"
-Version = "3.97"
+Version = "4.44"
 
 BaseBuildingObjectsTable = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 DebugGlobals = "GCDEBUGOPTIONS.GLOBAL.MBIN"
@@ -8,7 +8,7 @@ PlayerGlobals = "GCPLAYERGLOBALS.GLOBAL.MBIN"
 BuildingGlobals = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 
 ScaleMax = 3000
-ScaleMin = 0.00025
+ScaleMin = 0.0000025
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -33,13 +33,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BuildableOnSpaceBase", 		 "True"},
 								{"BuildableOnFreighter", 		 "True"},
 								{"BuildableOnPlanet", 		 	 "True"},
-								{"BuildableOnPlanetWithProduct", "True"},							
+								{"BuildableOnPlanetWithProduct", "True"},
+								{"BuildableUnderwater", 		 "True"},
+								{"BuildableAboveWater", 		 "True"},								
 								{"GlobalLimit", 					"0"},			
 								{"SystemLimit", 					"0"},
 								{"PlanetLimit", 					"0"},
 								{"RegionLimit", 					"0"},
 								{"PlanetBaseLimit", 				"0"},
 								{"FreighterBaseLimit", 				"0"},
+								{"CheckPlaceholderCollision",   "False"},
+								{"CanPlaceOnItself",   			"True"},
+								{"CanRotate3D",   				"True"},
 								{"CanScale",   					"True"},					
 							}
 						}
@@ -52,6 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"DisableLimits",					"True"},
 								{"DisableBaseBuildingLimits",		"True"},
 								{"BaseBuildingPartsRequirePower",	"False"},		
 								{"BaseDownloadTimeout",				"120"},	--ORIGINAL 40
@@ -61,6 +67,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AlwaysAllowFreighterInventoryAccess",	"True"},
 								{"IgnoreFreighterSpawnWarpRequirement",	"True"},
 								{"EverythingIsFree",	"True"},	
+								{"EverythingIsKnown",	"True"},	
+								{"EverythingIsStar",	"True"},		
 								
 							}
 						}
@@ -86,8 +94,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"BuildingPlacementScaleMinMax", "Vector2f.xml"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",  ScaleMin},-- makes it so you can scale bigger or smaller
-								{"y", ScaleMax}
+								{"x",  0.00025},-- makes it so you can scale bigger or smaller
+								{"y", 3000}
 							}
 						}
 					}
