@@ -1,1 +1,1 @@
-All of the mods in this directory require additional files, in a folder called TEXTURES to be placed into ModExtraFilesToInclude in AMUMSS (or MEFTI if using CustomFolders).  These will need to be acquired by downloading the .pak for the mod from the NexusMod page and extracting.
+All of the mods in this directory require additional files, in a folder called TEXTURES to be placed into ModScript\GlobalMEFTI in AMUMSS (or MEFTI if using CustomFolders).  These will need to be acquired by downloading the .pak for the mod from the NexusMod page and extracting.
