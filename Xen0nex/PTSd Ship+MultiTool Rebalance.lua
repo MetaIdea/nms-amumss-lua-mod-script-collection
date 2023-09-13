@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_41"
+GameVersion = "4_44"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -509,18 +509,18 @@ CostChanges	=
 			{"Pistol",				0.08,		0.4*2.5,	6,			20},		--Vanilla values are 0.08 mil,		0.28 mil,		10,	30		Catalogued at 0.0455 mil	~	1.165 mil	(0.388 mil)		5	~	10	tech slots initially
 			{"Rifle",				0.635,		3*1.25,		10,			20},		--Vanilla values are 1.5 mil,		4 mil,			17,	30		Catalogued at 0.635 mil		~	3.7 mil		(2.96 mil)		11	~	24	tech slots initially
 			{"Pristine",			0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			11,	30		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
-			{"Royal",				1.5,		7.5*1.25,	10,			20},		--Vanilla values are 1 mil,			7 mil,			13,	30		Catalogued at 5.15 mil		~	??? mil		(??? mil)		11	~	???	tech slots initially	(Only offered as C Class from Pillars?)
+			{"Royal",				1.5*0.33,	7.5*0.4125,	10,			20},		--Vanilla values are 1 mil,			7 mil,			13,	30		Catalogued at 5.15 mil		~	??? mil		(??? mil)		11	~	???	tech slots initially	(Only offered as C Class from Pillars?)
 			{"Alien",				0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			11,	30		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
 			{"Robot",				1,			5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		6 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
-			{"Atlas",				1,			5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
-			{"AtlasYellow",			1,			5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
-			{"AtlasBlue",			1,			5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
+			{"Atlas",				2.5,		5,			6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
+			{"AtlasYellow",			2.5,		5,			6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
+			{"AtlasBlue",			2.5,		5,			6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
 			{"Staff",				1,			4*1.25,		6,			20}			--Vanilla values are 0.5 mil,		4 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
 		}
 	},
 }
 
---Replacers for the TradeInMultiplier (vanilla value of 70), which sets the % of the value of your ship/tool that you get when trading it for another ship/tool, possibly for scrapping it? Setting this to 1 will retain the vanilla trade inb value of 70%
+--Replacers for the TradeInMultiplier (vanilla value of 70), which sets the % of the value of your ship/tool that you get when trading it for another ship/tool or for scrapping it. Setting this to 1 will retain the vanilla trade in/scrap value of 70%
 	--Lower this to offset the increased value for scrapping crashed A or S class ships		(not necessary in NMS v3.82 as now only Shuttles or Exotics will spawn as crashed ships with A or S class?)
 		--Supposedly NMS v3.85+ has re-enabled all shiptypes to spawn as S-Class at crashsites?
 ShipTradeInMultiplier = 40												--70				Applies to both trading in to buy a differnt ship or scrapping it at a space station ship salvage terminal
@@ -545,7 +545,7 @@ CostClassModifierChanges =	--Replaces vanilla cost bonus at different Classes
 			{"Royal",					0,		0,		0,		400},				--Vanilla values are +		0,		0,		0,		0	%
 			{"Alien",					0,		0,		0,		300},				--Vanilla values are +		0,		0,		0,		0	%
 			{"Sail",					0,		50,		150,	400},				--Vanilla values are +		0,		10,		25,		50	%
-			{"Robot",					0,		10,		25,		50},				--Vanilla values are +		0,		10,		25,		50	%
+			{"Robot",					0,		25,		75,		150},				--Vanilla values are +		0,		10,		25,		50	%
 			{"Freighter",				0,		50,		150,	400},				--Vanilla values are +		0,		40,		60,		100	%
 			{"PlayerFreighter",			0,		50,		150,	400},				--Vanilla values are +		0,		40,		60,		100	%
 		}

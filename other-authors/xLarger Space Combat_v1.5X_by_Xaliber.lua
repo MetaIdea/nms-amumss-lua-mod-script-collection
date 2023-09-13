@@ -3,8 +3,8 @@ AuthorLua = "Xen0nex"
 ModName = "Larger Space Combat"
 ModNameType = "Tweak"
 BaseDescription = "Larger Space Combat - separate from Reworked Space Combat for modularity"
-GameVersion = "4.41"
-ModVersion = "1.3X"
+GameVersion = "4.44"
+ModVersion = "1.5X"
 
 --Adds additional Squadrons to appear at each Wanted Level, for all multiplayer group sizes
 AddedSquadrons =
@@ -23,6 +23,7 @@ WantedSquadron3 =		1								--1 Interceptor per Squadron
 WantedSquadron4 =		2								--1 Interceptor per Squadron
 WantedSquadron5 =		2								--1 Sentinel Freighter per Squadron (Each Freighter comes with it's own set of 2 Squadrons of 2 Interceptors each, so 4 Interceptors per Freighter)
 
+--"Spread" sets how far apart the ships are when they spawn, "Count" sets the minimum & maxmum number of ships which spawn.
 --Currently missing 4 sets of changes to Spread and Count (Seems to just be for Freighters though), as I haven't found a way to target the sections they are in
 	--Similarly, this mod doesn't change the Scale on line 975 from 1.2 > 1.4
 LargerBattleChanges = 

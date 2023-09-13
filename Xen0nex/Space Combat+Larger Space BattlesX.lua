@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "443"
+GameVersion = "444"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships (individual ships have additonal multipliers applied)
@@ -31,6 +31,7 @@ WantedSquadron3 =		1								--1 Interceptor per Squadron
 WantedSquadron4 =		1								--1 Interceptor per Squadron
 WantedSquadron5 =		1								--1 Sentinel Freighter per Squadron (Each Freighter comes with it's own set of 2 Squadrons of 2 Interceptors each, so 4 Interceptors per Freighter)
 
+--"Spread" sets how far apart the ships are when they spawn, "Count" sets the minimum & maxmum number of ships which spawn.
 --Currently missing 4 sets of changes to Spread and Count (Seems to just be for Freighters though), as I haven't found a way to target the sections they are in
 	--Similarly, this mod doesn't change the Scale on line 975 from 1.2 > 1.4
 LargerBattleChanges = 
@@ -2081,8 +2082,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*25000*0.75)},								--25000
-		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*120000*0.75)},					--120000
+		{"Health", math.floor(1*25000*1)},								--25000
+		{"LevelledExtraHealth", math.floor(1*120000*1)},					--120000
 		{"RechargeTime", 0},										--0
 		{"RechargeDelayTime", 0},									--0
 		}},
@@ -2091,8 +2092,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*5000000*0.75)},								--5000000
-		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*19000*0.75)},					--19000
+		{"Health", math.floor(1*5000000*1)},								--5000000
+		{"LevelledExtraHealth", math.floor(1*19000*1)},					--19000
 		{"RechargeTime", 0},										--0
 		{"RechargeDelayTime", 0},									--0
 		}},
@@ -2101,8 +2102,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*10000000*0.75)},								--10000000
-		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*0*0.75)},					--0
+		{"Health", math.floor(1*10000000*1)},								--10000000
+		{"LevelledExtraHealth", math.floor(1*0*1)},					--0
 		{"RechargeTime", 0},										--0
 		{"RechargeDelayTime", 0},									--0
 		}},

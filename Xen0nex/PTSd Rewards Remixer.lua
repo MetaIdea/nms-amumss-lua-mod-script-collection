@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "4_41"
+GameVersion = "4_44"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
@@ -7,12 +7,12 @@ TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pelle
 --Changes the Class & inventory size when redeeming the two unique expedition reward ships: Golden Vector and Utopia Speeder
 ExpShipClass = 							"C"						--"S"
 ExpShipCargoSlots = 					8						--36				The game adds 1 to whatever value is entered here
-ExpShipSize = 							"FgtSmall"				--"FgtLarge"		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN (Seems to pick exactly between the Min & Max range)
+ExpShipSize = 							"FgtSmall"				--"FgtLarge"		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
 
 --If set to "true", makes all starships & multitools rewarded from Expeditions & Twitch streams come as C Class
 AllTwitchExpRewardsC =					false					--false
-AllTwitchExpRewardsCargo =				8						--Varies	Only used if AllTwitchExpRewardsC = true
-AllTwitchExpRewardsShipSize =			"FgtSmall"				--Varies	Only used if AllTwitchExpRewardsC = true
+AllTwitchExpRewardsCargo =				8						--Varies	Only used if AllTwitchExpRewardsC = true		The game adds 1 to whatever value is entered here
+AllTwitchExpRewardsShipSize =			"FgtSmall"				--Varies	Only used if AllTwitchExpRewardsC = true		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range, or sometimes uses the Max value?)
 AllTwitchExpRewardsToolSize =			8						--Varies	Only used if AllTwitchExpRewardsC = true
 
 --This controls what the COST (not reward) is certain dialogue choices with Travellers, such as asking directions to a grave

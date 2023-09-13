@@ -2,8 +2,8 @@ Author = "Xaliber"
 LuaAuthor = "DeathWrench and Babscoole, updated by Xen0nex"
 ModName = "Reworked Space Combat"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "4.41"
-ModVersion = "1.3X"
+GameVersion = "4.44"
+ModVersion = "1.5X"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships (individual ships have additonal multipliers applied)
 	--Note that "SpaceCombatDifficultyMultipliers" values in GCGAMEPLAYGLOBALS.GLOBAL.MBIN control additional (or subtract) Hull & Shields for enemy starships depending on Space Combat difficulty setting
@@ -1037,7 +1037,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--10
 		{"MaxSpeed", 140},									--60
-		{"BoostSpeed", 1067},								--900		NOTE: Often you can still outrun enemy ships even if your ship's "CombatEngine" 's "BoostMaxSpeed" is only ~75% of this value, presumably due to how the enemy ships occassionally stop boosting when pursuing the player
+		{"BoostSpeed", 1067*1.33},							--900		NOTE: Often you can still outrun enemy ships even if your ship's "CombatEngine" 's "BoostMaxSpeed" is only ~75% of this value, presumably due to how the enemy ships occassionally stop boosting when pursuing the player
 		{"TurnMin", 0.6},									--0.6
 		{"DirectionBrake", 4},								--5
 		{"Roll", 2},										--1
@@ -1051,7 +1051,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--20
 		{"MaxSpeed", 200},									--90
-		{"BoostSpeed", 1400},								--1200		(e.g. a value of 1600 means in practice you can generally outrun them with ~1200u/s space combat speed)
+		{"BoostSpeed", 1400*1.33},							--1200		(e.g. a value of 1600 means in practice you can generally outrun them with ~1200u/s space combat speed)
 		{"TurnMin", 0.7},									--0.7
 		{"DirectionBrake", 2.5},							--3
 		{"Roll", 1.2},										--0.6
@@ -1065,7 +1065,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--50
 		{"MaxSpeed", 100},									--80
-		{"BoostSpeed", 120},								--180
+		{"BoostSpeed", 120*1.33},							--180		NOTE: All enemy engine BoostSpeed is multiplied by 1.33x to compensate for how the player can now divert power to engines, increasing Boosting Speed by 1.33x
 		{"TurnMin", 0.6},									--0.4
 		{"DirectionBrake", 2.5},							--3
 		{"Roll", 2},										--1
@@ -1079,7 +1079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 15},									--60
 		{"MaxSpeed", 160},									--130
-		{"BoostSpeed", 180},								--180
+		{"BoostSpeed", 180*1.33},							--180
 		{"TurnMin", 1.2},									--0.8
 		{"DirectionBrake", 1},								--1.2
 		{"Roll", 2},										--1
@@ -1093,7 +1093,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--10
 		{"MaxSpeed", 60},									--60
-		{"BoostSpeed", 120},								--120
+		{"BoostSpeed", 120*1.33},								--120
 		{"TurnMin", 1},										--1
 		{"DirectionBrake", 20},								--20
 		{"Roll", 2},										--1
@@ -1211,8 +1211,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*25000*0.75)},								--25000
-		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*120000*0.75)},					--120000
+		{"Health", math.floor(1*25000*1)},								--25000
+		{"LevelledExtraHealth", math.floor(1*120000*1)},					--120000
 		{"RechargeTime", 0},										--0
 		{"RechargeDelayTime", 0},									--0
 		}},
@@ -1221,8 +1221,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*5000000*0.75)},								--5000000
-		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*19000*0.75)},					--19000
+		{"Health", math.floor(1*5000000*1)},								--5000000
+		{"LevelledExtraHealth", math.floor(1*19000*1)},					--19000
 		{"RechargeTime", 0},										--0
 		{"RechargeDelayTime", 0},									--0
 		}},
@@ -1231,8 +1231,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*10000000*0.75)},								--10000000
-		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*0*0.75)},					--0
+		{"Health", math.floor(1*10000000*1)},								--10000000
+		{"LevelledExtraHealth", math.floor(1*0*1)},					--0
 		{"RechargeTime", 0},										--0
 		{"RechargeDelayTime", 0},									--0
 		}},

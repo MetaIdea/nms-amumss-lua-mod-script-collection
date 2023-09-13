@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_41"
+GameVersion = "4_44"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -104,31 +104,32 @@ ProductSaleChanges =
 	
 	{"UI_SALVAGE_TECH_6_NAME",	10.0},				--12,000		Salvaged Trade item		(Based on the pattern of the other items in this series I suspect a typo missed a 0 in this price)
 	
-	--Different versions of the Staff Pole for Voltaic Staves, bought with Void Motes
-	{"UI_STAFF_PART_A_NAME",	1.0},				--333		Void Motes
-	{"UI_STAFF_POLE1_NAME",		1.0},				--333		Void Motes
-	{"UI_STAFF_POLE2_NAME",		1.0},				--333		Void Motes
-	{"UI_STAFF_POLE3_NAME",		1.0},				--333		Void Motes
-	{"UI_STAFF_POLE4_NAME",		1.0},				--333		Void Motes
-	{"UI_STAFF_POLE5_NAME",		1.0},				--333		Void Motes
-	{"UI_STAFF_POLE6_NAME",		1.0},				--333		Void Motes
-	--Different versions of the Staff Core for Voltaic Staves, bought with Void Motes
-	{"UI_STAFF_PART_B_NAME",	1.0},				--646		Void Motes
-	{"UI_STAFF_CORE1_NAME",		1.0},				--646		Void Motes
-	{"UI_STAFF_CORE2_NAME",		1.0},				--646		Void Motes
-	{"UI_STAFF_CORE3_NAME",		1.0},				--646		Void Motes
-	{"UI_STAFF_CORE4_NAME",		1.0},				--646		Void Motes
-	{"UI_STAFF_CORE5_NAME",		1.0},				--646		Void Motes
-	{"UI_STAFF_CORE6_NAME",		1.0},				--646		Void Motes
-	--Different versions of the Staff Head for Voltaic Staves, bought with Void Motes
-	{"UI_STAFF_PART_C_NAME",	1.0},				--999		Void Motes
-	{"UI_STAFF_HEAD1_NAME",		1.0},				--999		Void Motes
-	{"UI_STAFF_HEAD2_NAME",		1.0},				--999		Void Motes
-	{"UI_STAFF_HEAD3_NAME",		1.0},				--999		Void Motes
-	{"UI_STAFF_HEAD4A_NAME",	1.0},				--999		Void Motes
-	{"UI_STAFF_HEAD4B_NAME",	1.0},				--999		Void Motes
-	{"UI_STAFF_HEAD5_NAME",		1.0},				--999		Void Motes
-	{"UI_STAFF_HEAD6_NAME",		1.0},				--999		Void Motes
+	{"UP_ROBOSUIT_NAME",		2.5},				--313			Rebuilt Exosuit Module (Bought with Void Motes)
+	--Different versions of the Staff Pole for Voltaic Staves
+	{"UI_STAFF_PART_A_NAME",	1.0},				--333	(Bought with Void Motes)
+	{"UI_STAFF_POLE1_NAME",		1.0},				--333	(Bought with Void Motes)
+	{"UI_STAFF_POLE2_NAME",		1.0},				--333	(Bought with Void Motes)
+	{"UI_STAFF_POLE3_NAME",		1.0},				--333	(Bought with Void Motes)
+	{"UI_STAFF_POLE4_NAME",		1.0},				--333	(Bought with Void Motes)
+	{"UI_STAFF_POLE5_NAME",		1.0},				--333	(Bought with Void Motes)
+	{"UI_STAFF_POLE6_NAME",		1.0},				--333	(Bought with Void Motes)
+	--Different versions of the Staff Core for Voltaic Staves
+	{"UI_STAFF_PART_B_NAME",	1.0},				--646	(Bought with Void Motes)
+	{"UI_STAFF_CORE1_NAME",		1.0},				--646	(Bought with Void Motes)
+	{"UI_STAFF_CORE2_NAME",		1.0},				--646	(Bought with Void Motes)
+	{"UI_STAFF_CORE3_NAME",		1.0},				--646	(Bought with Void Motes)
+	{"UI_STAFF_CORE4_NAME",		1.0},				--646	(Bought with Void Motes)
+	{"UI_STAFF_CORE5_NAME",		1.0},				--646	(Bought with Void Motes)
+	{"UI_STAFF_CORE6_NAME",		1.0},				--646	(Bought with Void Motes)
+	--Different versions of the Staff Head for Voltaic Staves
+	{"UI_STAFF_PART_C_NAME",	1.0},				--999	(Bought with Void Motes)
+	{"UI_STAFF_HEAD1_NAME",		1.0},				--999	(Bought with Void Motes)
+	{"UI_STAFF_HEAD2_NAME",		1.0},				--999	(Bought with Void Motes)
+	{"UI_STAFF_HEAD3_NAME",		1.0},				--999	(Bought with Void Motes)
+	{"UI_STAFF_HEAD4A_NAME",	1.0},				--999	(Bought with Void Motes)
+	{"UI_STAFF_HEAD4B_NAME",	1.0},				--999	(Bought with Void Motes)
+	{"UI_STAFF_HEAD5_NAME",		1.0},				--999	(Bought with Void Motes)
+	{"UI_STAFF_HEAD6_NAME",		1.0},				--999	(Bought with Void Motes)
 }
 
 --These various "geode" style items are given values equal to 1.33x the expected value of opening & selling their contents on average (3x value for Tritium Hypercluster & Crystal Shard due to the difficulty in getting Tritium/Di-Hydrogen)
@@ -214,7 +215,7 @@ ProductStackChanges =
 	{"UI_ILLEGAL_PROD8_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
 }
 
---Adjusts the amount of components required for certain techs
+--Adjusts the amount of components required for certain objects
 AdjustItems =
 {		--Tech ID				Item ID			# of Items
 	{	--Battery 				Mag. Ferrite
@@ -226,8 +227,14 @@ AdjustItems =
 	{	--Biological Room		Oxygen
 		"FRE_ROOM_BIO",			"OXYGEN",			60,			--30
 	},
+	{	--Atlantideum Chamber	Radiant Shard
+		"STAFF_PART_B",			"DRONE_SHARD",		8,			--1
+	},
+	{	--Atlantideum Chamber	Wiring Loom
+		"STAFF_PART_B",			"TECH_COMP",		4,			--1
+	},
 }
---Adds various items as new components for certain techs
+--Adds various items as new components for certain objects
 AddItems =
 {		--Tech ID				Item ID			# of Items	Item Type
 	{	--Crate Fabricator
@@ -245,10 +252,13 @@ AddItems =
 	{	--Biological Room		Condensed Carbon
 		"FRE_ROOM_BIO",			"FUEL2",			30,		"Substance",
 	},
+	{	--Concentric Transducer	Recycled Circuitry
+		"STAFF_PART_C",			"SALVAGE_TECH7",	3,		"Product",
+	},
 }
---Replaces an existing component for certain techs with various items instead
+--Replaces an existing component for certain objects with various items instead
 ReplaceItems =
-{		--Tech ID				Item ID			# of Items	Item Type		Replaced Item
+{		--Tech ID				New Item ID		# of Items	New Item Type	Replaced Item
 	{	--Roamer Geobay 
 		"GARAGE_M",				"RED2",				50,		"Substance",	"POWERCELL",
 	},
@@ -290,6 +300,15 @@ ReplaceItems =
 	},
 	{	--Orbital Exocraft Materialiser (Deprecated)
 		"GARAGE_FREIGHT",		"BLUE2",			50,		"Substance",	"CAVE2",
+	},
+	{	--Fibreglass Grip
+		"STAFF_PART_A",			"FARMPROD8",		4,		"Product",		"FARMPROD3",
+	},
+	{	--Fibreglass Grip
+		"STAFF_PART_A",			"SALVAGE_TECH7",	3,		"Product",		"LAND2",
+	},
+	{	--Atlantideum Chamber
+		"STAFF_PART_B",			"SALVAGE_TECH7",	3,		"Product",		"MICROCHIP",
 	},
 }
 
