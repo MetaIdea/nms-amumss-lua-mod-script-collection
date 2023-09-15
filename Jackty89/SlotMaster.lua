@@ -382,47 +382,40 @@ function SaveDataSpecialSlots()
         end
     end
 
-    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"] = {}
-    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"][#ChangesToDefaultSaveData + 1] =
+    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"] = 
     {
-        ["PRECEDING_KEY_WORDS"] = {"Inventory_TechOnly", "SpecialSlots"},
-        ["ADD"]	= table.concat(specialTechEntries)
-    }
-
-    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"][#ChangesToDefaultSaveData + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Buggy", "Inventory_TechOnly", "SpecialSlots"},
-        ["ADD"]	= table.concat(specialTechEntries)
-    }
-    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"][#ChangesToDefaultSaveData + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Bike", "Inventory_TechOnly", "SpecialSlots"},
-        ["ADD"]	= table.concat(specialTechEntries)
-    }
-    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"][#ChangesToDefaultSaveData + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Truck", "Inventory_TechOnly", "SpecialSlots"},
-        ["ADD"]	= table.concat(specialTechEntries)
-    }
-    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"][#ChangesToDefaultSaveData + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"WheeledBike", "Inventory_TechOnly", "SpecialSlots"},
-        ["ADD"]	= table.concat(specialTechEntries)
-    }
-    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"][#ChangesToDefaultSaveData + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Hovercraft", "Inventory_TechOnly", "SpecialSlots"},
-        ["ADD"]	= table.concat(specialTechEntries)
-    }
-    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"][#ChangesToDefaultSaveData + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Submarine", "Inventory_TechOnly", "SpecialSlots"},
-        ["ADD"]	= table.concat(specialTechEntries)
-    }
-    ChangesToDefaultSaveData["EXML_CHANGE_TABLE"][#ChangesToDefaultSaveData + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Mech", "Inventory_TechOnly", "SpecialSlots"},
-        ["ADD"]	= table.concat(specialTechEntries)
+        {
+            ["PRECEDING_KEY_WORDS"] = {"Inventory_TechOnly", "SpecialSlots"},
+            ["ADD"]	= table.concat(specialTechEntries)
+        },
+        {
+            ["PRECEDING_KEY_WORDS"] = {"Buggy", "Inventory_TechOnly", "SpecialSlots"},
+            ["ADD"]	= table.concat(specialTechEntries)
+        },
+        {
+            ["PRECEDING_KEY_WORDS"] = {"Bike", "Inventory_TechOnly", "SpecialSlots"},
+            ["ADD"]	= table.concat(specialTechEntries)
+        },
+        {
+            ["PRECEDING_KEY_WORDS"] = {"Truck", "Inventory_TechOnly", "SpecialSlots"},
+            ["ADD"]	= table.concat(specialTechEntries)
+        },
+        {
+            ["PRECEDING_KEY_WORDS"] = {"WheeledBike", "Inventory_TechOnly", "SpecialSlots"},
+            ["ADD"]	= table.concat(specialTechEntries)
+        },
+        {
+            ["PRECEDING_KEY_WORDS"] = {"Hovercraft", "Inventory_TechOnly", "SpecialSlots"},
+            ["ADD"]	= table.concat(specialTechEntries)
+        },
+        {
+            ["PRECEDING_KEY_WORDS"] = {"Submarine", "Inventory_TechOnly", "SpecialSlots"},
+            ["ADD"]	= table.concat(specialTechEntries)
+        },
+        {
+            ["PRECEDING_KEY_WORDS"] = {"Mech", "Inventory_TechOnly", "SpecialSlots"},
+            ["ADD"]	= table.concat(specialTechEntries)
+        }
     }
 end
 
