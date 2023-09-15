@@ -3,7 +3,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_CSO v3.60 [No Pulsating Plasma].pak",
+	["MOD_FILENAME"]	= "_CSO v4.44 [No Pulsating Plasma].pak",
 	["MOD_DESCRIPTION"]	= "No more pulsating plasma in space.",
 	["MOD_AUTHOR"]		= "NeptuneX3",
 	["NMS_VERSION"]		= "2.61.1",		-- NMS version when first scripted

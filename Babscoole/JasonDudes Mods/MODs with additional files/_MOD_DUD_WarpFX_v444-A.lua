@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_WarpFX_v443-A.pak",
+["MOD_FILENAME"]            = "MOD_DUD_WarpFX_v444-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.43",
+["NMS_VERSION"]             = "4.44",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDENGGLOWCAPMAT.MATERIAL.MBIN" />
+          <Property name="Value" value="MODELS\EFFECTS\WARP\WARPTUNNEL\DUDENDGLOWCAPMAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -13153,13 +13153,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]],
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNEL\DUDENGGLOWCAPMAT.MATERIAL.EXML",
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNEL\DUDENDGLOWCAPMAT.MATERIAL.EXML",
             ["FILE_CONTENT"]     =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
 <Data template="TkMaterialData">
-  <Property name="Name" value="EngGLowCapMat" />
+  <Property name="Name" value="DUDENDGLOWCAPMAT" />
   <Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnel/Materials/EngGLowCapMat.metamaterial.mXml" />
   <Property name="Class" value="Glow" />
   <Property name="TransparencyLayerID" value="0" />
@@ -13326,7 +13326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Name" value="gCustomParams01Vec4" />
       <Property name="Values" value="Vector4f.xml">
         <Property name="x" value="1" />
-        <Property name="y" value="0.5" />
+        <Property name="y" value="1.3" />
         <Property name="z" value="0" />
         <Property name="t" value="0.04" />
       </Property>
@@ -13347,7 +13347,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Anisotropy" value="0" />
     </Property>
   </Property>
-  <Property name="ShaderMillDataHash" value="-3617986119054334785" />
+  <Property name="ShaderMillDataHash" value="4956210674814484702" />
 </Data>
 ]],
         },
@@ -13804,7 +13804,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Name" value="gCustomParams01Vec4" />
       <Property name="Values" value="Vector4f.xml">
         <Property name="x" value="1" />
-        <Property name="y" value="0.5" />
+        <Property name="y" value="0.7" />
         <Property name="z" value="0" />
         <Property name="t" value="0.04" />
       </Property>
@@ -13825,7 +13825,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Anisotropy" value="0" />
     </Property>
   </Property>
-  <Property name="ShaderMillDataHash" value="-22589930996254546" />
+  <Property name="ShaderMillDataHash" value="-5854357074279440703" />
 </Data>
 ]],
         },

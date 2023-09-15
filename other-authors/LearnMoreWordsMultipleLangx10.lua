@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]    = "LearnMoreWordsMultiLangx10.pak",
     ["MOD_AUTHOR"]      = "TheJollyDuck with help from AMUMSS and Nexus lua scripts",
     ["MOD_DESCRIPTION"] = "Increases the number of words learned from different sources",
-    ["NMS_VERSION"]     = "4.30",
+    ["NMS_VERSION"]     = "Echoes",
 
     -- This contains all the stuff to append
     ["MODIFICATIONS"] = {{      

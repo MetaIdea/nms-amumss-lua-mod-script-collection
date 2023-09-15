@@ -12,7 +12,7 @@ SPACE_SKY_COLOR_INTENSITY 			= 0.4		-- Vanilla = 1 // Mod default = 0.4 // Multi
 PLANET_NIGHT_SKY_COLOR_INTENSITY 	= 0.4		-- Vanilla = 1 // Mod default = 0.4 // Multiplies the color intensity of the sky on planets at night by this amount
 SPACE_CLOUDS_COLOR_INTENSITY 		= 0.5		-- Vanilla = 1 // Mod default = 0.6 // Multiplies the color intensity of "space clouds" (around nebulas) by this amount
 STAR_LIGHT_COLOR_INTENSITY 			= 1			-- Vanilla = 1 // Mod default = 1 // Multiplies the color intensity of the light of the star by this amount
-NEBULA_COLOR_INTENSITY 				= 0.6		-- Vanilla = 1 // Mod default = 0.7 // Multiplies the color intensity of nebulas by this amount
+NEBULA_COLOR_INTENSITY 				= 0.6		-- Vanilla = 1 // Mod default = 0.6 // Multiplies the color intensity of nebulas by this amount
 SPACE_FOG_COLOR_INTENSITY 			= 1			-- Vanilla = 1 // Mod default = 1 // Multiplies the color intensity of space fog by this amount
 
 ---------------------------------------------
@@ -40,7 +40,7 @@ COLOR_MODIFICATIONS_TABLE =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_CSO v3.60 [Darker Space].pak", 
+	["MOD_FILENAME"]	= "_CSO v4.44 [Darker Space].pak", 
 	["MOD_AUTHOR"]		= "NeptuneX3",
 	["NMS_VERSION"]		= "3.03",		-- NMS version when first scripted
 	["MOD_DESCRIPTION"]	= "This mod keeps the original space color palette but makes it darker.",
@@ -72,7 +72,7 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
 
 for i = 1, #COLOR_MODIFICATIONS_TABLE do
 
-	if ( COLOR_MODIFICATIONS_TABLE[i][1] >= 0 and COLOR_MODIFICATIONS_TABLE[i][1] < 1 ) then
+	if COLOR_MODIFICATIONS_TABLE[i][1] >= 0 and COLOR_MODIFICATIONS_TABLE[i][1] < 1 then
 
 		for j = 1, #COLOR_MODIFICATIONS_TABLE[i][2] do
 		
