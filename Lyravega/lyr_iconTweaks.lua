@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Icon Tweaks 1.6]]
-local gameVersion = "4.07"
+local modDescription = [[Lyravega's Icon Tweaks 1.7]]
+local gameVersion = "4.21"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder

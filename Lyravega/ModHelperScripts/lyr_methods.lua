@@ -11,29 +11,47 @@ lyr = {
 	OR = "or"
 }
 
+function lyr:checkFile(filePath, justCheck)
+	local _, file = pcall(io.open, filePath, "rb")
+
+	if file then
+		if justCheck then file:close(); return true
+		else return file end
+	end
+	return false
+end
+
 function lyr:checkTweakOverrides()
 	if not tweakStates then return end
 
-	local _, tweakOverrides = pcall(io.open, "../ModScript/ModHelperScripts/lyr_tweakOverrides.txt", "rb")
+	local tweakOverrides = self:checkFile("../ModScript/ModHelperScripts/lyr_tweakOverrides.txt")
 
 	if tweakOverrides then
 		local booleans = {["true"] = true, ["false"] = false}
 
 		for line in tweakOverrides:lines("l") do if line:find("##OVERRIDES##", 1, true) then break end end
 		for line in tweakOverrides:lines("l") do
-			local tweakName, tweakState = line:match([[([%w]+)[%W]+([%w%.]+)]])
+			local isDisabled, tweakName, tweakState = line:match([[%s*(%-?%-?)%s*([%w]+)%s*=%s*([%w%.]+)]])
 
 			if tweakName ~= nil and tweakState ~= nil then
-				if booleans[tweakState:lower()] ~= nil then tweakState = booleans[tweakState:lower()]
-				elseif tonumber(tweakState) ~= nil then tweakState = tonumber(tweakState) end
+				if isDisabled == "--" then
+					self.tweakStates[tweakName] = false
+				else
+					if booleans[tweakState:lower()] ~= nil then tweakState = booleans[tweakState:lower()]
+					elseif tonumber(tweakState) ~= nil then tweakState = tonumber(tweakState) end
 
-				self.tweakStates[tweakName] = tweakState
+					self.tweakStates[tweakName] = tweakState
+				end
 			end
 		end
 
 		tweakOverrides:close()
 	end
 end; lyr:checkTweakOverrides()
+
+function lyr:checkSavedSection(savedSectionName)
+	return self:checkFile("../SavedSections/"..savedSectionName..".xml", true)
+end
 
 ---@param tweakName string
 ---@return boolean 
@@ -48,13 +66,6 @@ function lyr:checkTweak(tweakName)
 		else return tweakValue end
 	elseif type(tweakValue) == "string" then return tweakValue
 	else return false end
-end
-
-function lyr:checkSavedSection(savedSectionName)
-	local _, savedSection = pcall(io.open, "../SavedSections/"..savedSectionName..".xml", "rb")
-
-	if savedSection then savedSection:close(); return true end
-	return false
 end
 
 ---@param tweakName string
@@ -390,6 +401,8 @@ lyr.vanamumss = {
 		WISS = true,
 		WISUBSEC_LOP = true,
 		WISUBSEC_OPTION = true,
+		CUSTOM_ORDER = true,
+		CO = true,
 	}
 }
 
@@ -626,6 +639,16 @@ end
 --#endregion
 -- END OF CUSTOM ECT
 
+function lyr:replaceEXML(mbinPaths)
+	if type(mbinPaths) == "string" then return mbinPaths:gsub("%.EXML", ".MBIN") end
+	if type(mbinPaths) == "table" then for k, v in next, mbinPaths do
+		if type(v) == "string" then mbinPaths[k] = v:gsub("%.EXML", ".MBIN")
+		elseif type(v) == "table" then self:replaceEXML(v) end
+	end end
+
+	return mbinPaths
+end
+
 ---@return table|nil
 function lyr:processTweakTables()
 	if not next(self.tweakTables) then return nil end
@@ -642,7 +665,7 @@ function lyr:processTweakTables()
 
 		for mbinPath, changeTables in pairs(tweakTable) do if changeTables then
 			local mbinChangeTable = {
-				MBIN_FS = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
+				MBIN_FS = type(mbinPath)=="string" and self:replaceEXML(mbinPath) or self:replaceEXML(changeTables.mbinPaths),
 				MBIN_FS_DISCARD = changeTables.discardMbin and "TRUE" or nil,
 				REGEXBEFORE = changeTables.regexBefore or nil,
 				REGEXAFTER  = changeTables.regexAfter or nil,

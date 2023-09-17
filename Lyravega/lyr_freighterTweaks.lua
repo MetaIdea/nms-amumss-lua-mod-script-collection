@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Freighter Tweaks 1.6]]
-local gameVersion = "4.07"
+local modDescription = [[Lyravega's Freighter Tweaks 1.7]]
+local gameVersion = "4.21"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -28,6 +28,7 @@ local tweakStates = {
 --	unifiedPlantGrowthTime = 4,				-- unifies the plant growth times, value is in hours (setting to 4 will make every plant grow in 4 hours)
 	freighterBridgeScanner = true,			-- adds the freighter planetary scan interaction to the bridge terminal
 	hangarSalvageTerminal = true,			-- adds salvage terminals to the freighter hangar, below stairs
+	nexusSalvageTerminal = true,			-- adds a salvage terminal to the nexus, at the middle section between the benches
 	systemWideTelepads = true,				-- adds two way freighter <-> station telepads which also work as regular transporters and can be used to call ship
 --	interstellarTerminus = true,			-- changes the regular transporter function of the added telepads to nexus one
 --	useSolidRunwayTexture = true,			-- changes the runway texture(s) to the old one (WARNING: very bright but also very noticable)
@@ -42,6 +43,7 @@ local tweakStates = {
 	hangarDockingOptimizations = true,		-- speeds up hangar door animation and removes its sound, removes pitch correction, reduces approach angle and adjusts range 
 --	noHangarPadRotation = true,				-- hangar pad rotation is disabled; may eject as soon as pad is touched
 --	noExteriorPlatformLight = true,			-- removes the light spot in the middle of the exterior platforms (might look better if you are using a lot of these)
+--	noHangarCranes = true,					-- removes the crane gantries from the freighter hangar
 	extendedFreighterBase = true,			-- extends the buildable volume on the freighters (WARNING: game WILL crash if you try to sneak buildables into the hangar)
 	extendedFreighterConstruction = true,	-- most things that can be built on a planetary base can also be built on freighters
 }
@@ -219,6 +221,44 @@ local hangarSalvageTerminal = function()
 
 	return tweak
 end; lyr.tweakTables.hangarSalvageTerminal = hangarSalvageTerminal
+
+local nexusSalvageTerminal = function()
+	if not lyr:checkTweak("nexusSalvageTerminal") then return false end
+
+	local tweak = {
+		lyr:createNodeTemplate(),
+		{
+			mbinPaths = [[MODELS\SPACE\NEXUS\PARTS\LANDINGBAYS\LANDINGBAYS.SCENE.EXML]],
+			{
+				skw = {lyr:parsePair([[<Property name="Name" value="FRONTPathway" />]])},
+				pkw = "Children",
+				pasteSection = lyr.nodeTemplate.section
+			},
+			{
+				skw = {"Name", lyr.nodeTemplate.nodeName},
+				fields = {
+					Name = "lyr_nexusSalvageTerminal",
+					-- NameHash = lyr:generateJenkinsHash("lyr_nexusSalvageTerminal"),
+					Type = "REFERENCE",
+					TransY = 2.3,
+					TransZ = -25,
+					RotY = 180
+				}
+			},
+			{
+				skw = {"Name", "lyr_nexusSalvageTerminal"},
+				pkw = "Attributes",
+				fields = {
+					Name = "SCENEGRAPH",
+					Value = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SHIPSALVAGETERMINAL.SCENE.MBIN"
+				},
+				replaceAll = true
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.nexusSalvageTerminal = nexusSalvageTerminal
 
 local systemWideTelepads = function()
 	if not lyr:checkTweak("systemWideTelepads") then return false end
@@ -866,6 +906,26 @@ local noExteriorPlatformLight = function()
 
 	return tweak
 end; lyr.tweakTables.noExteriorPlatformLight = noExteriorPlatformLight
+
+local noHangarCranes = function()
+	if not lyr:checkTweak("noHangarCranes") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR.SCENE.MBIN]],
+			{
+				skw = {
+					{lyr:parsePair([[<Property name="Name" value="RefHangarCrane" />]])},
+					{lyr:parsePair([[<Property name="Name" value="RefHangarCrane1" />]])},
+					{lyr:parsePair([[<Property name="Name" value="RefHangarCrane2" />]])}
+				},
+				removeSection = true
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.noHangarCranes = noHangarCranes
 
 local extendedFreighterBase = function()
 	if not lyr:checkTweak("extendedFreighterBase") then return false end

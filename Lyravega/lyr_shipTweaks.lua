@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Ship Tweaks 1.6]]
-local gameVersion = "4.07"
+local modDescription = [[Lyravega's Ship Tweaks 1.7]]
+local gameVersion = "4.21"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -29,6 +29,7 @@ local tweakStates = {
 	clearRadar = true,						-- removes the grain (dithering) effect from the space map, and makes the halos around it less obvious
 	bioshipCleanCanopy = true,				-- removes the green hazy hue from sides of the bioship canopies
 	bioshipNoSmoke = true,					-- the bioship nostrils (that puff a smoke inside the cockpit from time to time) are removed
+	sentinelshipNoBigWires = true,			-- the massive cable duo in the sentinel ship cockpits are removed
 	noShipMuzzleFlashes = true,				-- removes muzzle flashes from ship weapons
 	spaceDustCleaner = true,				-- reduces the amount and the visibility of the particle effects generated during boosting / using pulse drive
 	noSpeedTunnel = true,					-- removes the speed tunnel effect from ships, pairs nicely with 'spaceDustCleaner'
@@ -327,6 +328,26 @@ local bioshipNoSmoke = function()
 	return tweak
 end; lyr.tweakTables.bioshipNoSmoke = bioshipNoSmoke
 
+local sentinelshipNoBigWires = function()
+	if not lyr:checkTweak("sentinelshipNoBigWires") then return false end
+
+	local tweak = {
+		["MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT.SCENE.EXML"] = {
+			{
+				specialKeyWords = {
+					{lyr:parsePair([[<Property name="Name" value="SentinelCableL" />]])},
+					{lyr:parsePair([[<Property name="Name" value="SentinelCableR" />]])},
+					{lyr:parsePair([[<Property name="Name" value="CableSpinnerL" />]])},
+					{lyr:parsePair([[<Property name="Name" value="CableSpinnerR" />]])},
+				},
+				removeSection = true
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.sentinelshipNoBigWires = sentinelshipNoBigWires
+
 local noShipMuzzleFlashes = function()
 	if not lyr:checkTweak("noShipMuzzleFlashes") then return false end
 
@@ -471,11 +492,17 @@ local improvedShipScannerPulse = function()
 				}
 			}
 		},
-		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
+		["METADATA/SIMULATION/SCANNING/SCANDATATABLE.MBIN"] = {
 			{
-				precedingKeyWords = {"ShipScan"},
+				skw = {"ID", "SHIP", "ScanType", "Ship"},
+				thisLine = true,
 				fields = {
 					ScanType = {default = "Ship", altered = lyr.tweakStates.superShipScannerPulse and "DebugPlanet" or "Ship"},
+				}
+			},
+			{
+				skw = {lyr:parsePair([[<Property name="ID" value="SHIP" />]])},
+				fields = {
 					PulseRange = {default = 10000, altered = 25000},
 					PulseTime = {default = 3, altered = 2},
 					PlayAudioOnMarkers = {default = true, altered = true},
