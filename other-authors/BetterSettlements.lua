@@ -45,17 +45,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 								
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = { "Population", "200" }, -- StatsMaxValues
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Happiness",				"100"}, 	-- Original 100
-								{"Production",				"1000000"}, 	-- Original 1000000
-								{"Upkeep",				"10000"}, 	-- Original 1000000
-								{"Sentinels",				"100"}, 	-- Original 100
-								{"Debt",				"5000000"}, 	-- Original 10000000
-							}
-						},
+						--{
+						--	["SPECIAL_KEY_WORDS"] = { "Population", "200" }, -- StatsMaxValues
+						--	["VALUE_CHANGE_TABLE"] 	= 
+						--	{
+						--		{"Happiness",				"100"}, 	-- Original 100
+						--		{"Production",				"1000000"}, 	-- Original 1000000
+						--		{"Upkeep",				"10000"}, 	-- Original 1000000
+						--		{"Sentinels",				"100"}, 	-- Original 100
+						--		{"Debt",				"5000000"}, 	-- Original 10000000
+						--	}
+						--},
 						{
 							["SPECIAL_KEY_WORDS"] = { "Population", "20" }, --InitialStatsMinValues
 							["VALUE_CHANGE_TABLE"] 	= 

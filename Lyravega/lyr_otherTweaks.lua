@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Other Tweaks 1.6]]
-local gameVersion = "4.07"
+local modDescription = [[Lyravega's Other Tweaks 1.7]]
+local gameVersion = "4.21"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -352,11 +352,17 @@ local rapidToolScanner = function()
 	if not lyr:checkTweak("rapidToolScanner") then return false end
 
 	local tweak = {
-		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
+		["METADATA/SIMULATION/SCANNING/SCANDATATABLE.MBIN"] = {
 			{
-				precedingKeyWords = {"ToolScan"},
+				skw = {"ID", "SHIP", "ScanType", "Tool"},
+				thisLine = true,
 				fields = {
 					ScanType = {default = "Tool", altered = "Tool"},
+				}
+			},
+			{
+				skw = {lyr:parsePair([[<Property name="ID" value="TOOL" />]])},
+				fields = {
 					PulseRange = {default = 200, altered = 250},
 					PulseTime = {default = 1, altered = 2},
 					PlayAudioOnMarkers = {default = true, altered = true},

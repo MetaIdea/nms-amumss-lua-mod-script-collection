@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Vehicle Tweaks 1.6]]
-local gameVersion = "4.07"
+local modDescription = [[Lyravega's Vehicle Tweaks 1.7]]
+local gameVersion = "4.21"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -50,11 +50,17 @@ local improvedVehicleScannerPulse = function()
 	if not lyr:checkTweak("improvedVehicleScannerPulse") then return false end
 
 	local tweak = {
-		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
+		["METADATA/SIMULATION/SCANNING/SCANDATATABLE.MBIN"] = {
 			{
-				precedingKeyWords = {"VehicleScan"},
+				skw = {"ID", "VEHICLE", "ScanType", "Ship"},
+				thisLine = true,
 				fields = {
 					ScanType = {default = "Ship", altered = "Ship"},
+				}
+			},
+			{
+				skw = {lyr:parsePair([[<Property name="ID" value="VEHICLE_LOCAL" />]])},
+				fields = {
 					PulseRange = {default = 1500, altered = 2500},
 					PulseTime = {default = 1, altered = 2},
 					PlayAudioOnMarkers = {default = true, altered = true},
@@ -62,10 +68,16 @@ local improvedVehicleScannerPulse = function()
 				}
 			},
 			{
-				precedingKeyWords = {"VehicleLocalScan"},
+				skw = {"ID", "VEHICLE_LOCAL", "ScanType", "Tool"},
+				thisLine = true,
 				fields = {
 					ScanType = {default = "Tool", altered = "Tool"},
-					PulseRange = {default = 600, altered = 2500},
+				}
+			},
+			{
+				skw = {lyr:parsePair([[<Property name="ID" value="VEHICLE_LOCAL" />]])},
+				fields = {
+					PulseRange = {default = 600, altered = 1250},
 					PulseTime = {default = 1, altered = 2},
 					PlayAudioOnMarkers = {default = true, altered = true},
 					ChargeTime = {default = 15, altered = 10}
