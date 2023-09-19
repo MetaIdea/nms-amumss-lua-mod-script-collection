@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "440"
+METADATA_NMS_VERSION    = "442"
 METADATA_LOCALIZATION   = "LOC3"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game. Module for localization file 3."
 
