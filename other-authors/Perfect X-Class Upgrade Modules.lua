@@ -3,7 +3,7 @@ LuaAuthor = "Pekerson"
 ModName = "Perfect X-Class Upgrade Modules"
 BaseDescription = "Changes the weight of X-Class Upgrade Modules"
 GameVersion = "4.44"
-ModVersion = "v1.0"
+ModVersion = "v1.1"
 --[[Files Modified:METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -461,9 +461,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["SPECIAL_KEY_WORDS"] = {
 								"ID","UP_CANNX",
 								"ValueMin","5",
+								"ValueMax","15",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","15"},
+								{"ValueMin","18"},
+								{"ValueMax","18"},
 							},
 						},
 						{	
@@ -471,9 +473,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["SPECIAL_KEY_WORDS"] = {
 								"ID","UP_CANNX",
 								"ValueMin","1",
+								"ValueMax","1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"ValueMin","1"},
+								{"ValueMax","1"},
 							},
 						},
 						{	
@@ -481,19 +485,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["SPECIAL_KEY_WORDS"] = {
 								"ID","UP_CANNX",
 								"ValueMin","5",
+								"ValueMax","25",
 							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"ValueMin","25"},
+								{"ValueMax","25"},
 							},
 						},
 						{	
 							COMMENT = [[UP_CANNX Weapon_ChargedProjectile_ChargeTime]],
 							["SPECIAL_KEY_WORDS"] = {
 								"ID","UP_CANNX",
+								"ValueMin","0.7",
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.7"},
+								{"ValueMin","0.5"},
+								{"ValueMax","0.5"},
 							},
 						},
 

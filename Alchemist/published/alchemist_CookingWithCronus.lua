@@ -5,7 +5,7 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-43"
+GameVersion = "4-45"
 ModVersion = "1-3-1"
 
 --
@@ -1243,6 +1243,7 @@ MODIFICATIONS = {{
                   <Property name="Time" value="2" />
                   <Property name="DoAerialScan" value="False" />
                   <Property name="AllowOtherPlayersBase" value="False" />
+                  <Property name="IgnoreIfAlreadyActive" value="False" />
                   <Property name="DebugText" value="" />
                 </Property>
               </Property>
@@ -2193,6 +2194,7 @@ MODIFICATIONS = {{
             <Property name="Time" value="2" />
             <Property name="DoAerialScan" value="False" />
             <Property name="AllowOtherPlayersBase" value="False" />
+            <Property name="IgnoreIfAlreadyActive" value="False" />
             <Property name="DebugText" value="" />
           </Property>
         </Property>
@@ -3642,6 +3644,7 @@ MODIFICATIONS = {{
                   <Property name="Time" value="2" />
                   <Property name="DoAerialScan" value="False" />
                   <Property name="AllowOtherPlayersBase" value="False" />
+                  <Property name="IgnoreIfAlreadyActive" value="False" />
                   <Property name="DebugText" value="" />
                 </Property>
               </Property>
@@ -33047,6 +33050,7 @@ MODIFICATIONS = {{
                         <Property name="Time" value="2" />
                         <Property name="DoAerialScan" value="False" />
                         <Property name="AllowOtherPlayersBase" value="False" />
+                        <Property name="IgnoreIfAlreadyActive" value="False" />
                         <Property name="DebugText" value="" />
                       </Property>
                     </Property>
@@ -33253,6 +33257,7 @@ MODIFICATIONS = {{
                         <Property name="Time" value="2" />
                         <Property name="DoAerialScan" value="False" />
                         <Property name="AllowOtherPlayersBase" value="False" />
+                        <Property name="IgnoreIfAlreadyActive" value="False" />
                         <Property name="DebugText" value="" />
                       </Property>
                     </Property>
