@@ -3,7 +3,7 @@ ModName = "gShip"
 ModNameSub = "Add Missing Ship Trails"
 BaseDescription = "Adds ship trails to all engines"
 GameVersion = "445"
-ModVersion = "a"
+ModVersion = "b"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -35,9 +35,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="0.769806" />
         <Property name="TransY" value="-0.790548" />
         <Property name="TransZ" value="-0.82485" />
-        <Property name="RotX" value="49.999992" />
+        <Property name="RotX" value="50" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -53,9 +53,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="0.769806" />
         <Property name="TransY" value="-0.359014" />
         <Property name="TransZ" value="-2.342611" />
-        <Property name="RotX" value="49.999992" />
+        <Property name="RotX" value="50" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -98,9 +98,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.769806" />
         <Property name="TransY" value="-0.790548" />
         <Property name="TransZ" value="-0.82485" />
-        <Property name="RotX" value="49.999992" />
+        <Property name="RotX" value="50" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -116,9 +116,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.769806" />
         <Property name="TransY" value="-0.359014" />
         <Property name="TransZ" value="-2.342611" />
-        <Property name="RotX" value="49.999992" />
+        <Property name="RotX" value="50" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -161,9 +161,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="0.703125" />
         <Property name="TransY" value="0.579102" />
         <Property name="TransZ" value="-1.306641" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -179,9 +179,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="0.703125" />
         <Property name="TransY" value="-0.661621" />
         <Property name="TransZ" value="-1.199219" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -198,7 +198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1,2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.000015"},
+                                {"RotX", "90"},
                             }
                         },
                         {
@@ -230,9 +230,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.703125" />
         <Property name="TransY" value="0.579102" />
         <Property name="TransZ" value="-1.306641" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -248,9 +248,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.703125" />
         <Property name="TransY" value="-0.661621" />
         <Property name="TransZ" value="-1.199219" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -267,7 +267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1,2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.000015"},
+                                {"RotX", "90"},
                             }
                         },
                         {
@@ -299,9 +299,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="0.678153" />
         <Property name="TransY" value="0.515339" />
         <Property name="TransZ" value="-1.04004" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -317,9 +317,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="0.678153" />
         <Property name="TransY" value="-0.440524" />
         <Property name="TransZ" value="-0.717285" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -348,9 +348,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.678153" />
         <Property name="TransY" value="0.515339" />
         <Property name="TransZ" value="-1.04004" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -366,9 +366,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.678153" />
         <Property name="TransY" value="-0.440524" />
         <Property name="TransZ" value="-0.717285" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="1.9E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -397,9 +397,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="1.326172" />
             <Property name="TransY" value="0.020706" />
             <Property name="TransZ" value="-1.702148" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="1.9E-05" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -416,7 +416,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.000015"},
+                                {"RotX", "90"},
                             }
                         },
                         {
@@ -462,22 +462,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "31.008146"},
-                                {"RotY", "-89.99999"},
+                                {"RotY", "-90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","EndGlow"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Glow"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-89.99999"},
-                                {"RotZ", "179.99998"},
+                                {"RotX", "-90"},
+                                {"RotZ", "180"},
                             }
                         },
                     }
@@ -499,9 +499,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="-1.32617" />
             <Property name="TransY" value="0.020706" />
             <Property name="TransZ" value="-1.702148" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="1.9E-05" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -518,7 +518,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.000015"},
+                                {"RotX", "90"},
                             }
                         },
                         {
@@ -564,15 +564,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EndGlow"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Glow"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-89.99999"},
-                                {"RotZ", "179.99998"},
+                                {"RotX", "-90"},
+                                {"RotZ", "180"},
                             }
                         },
                     }
@@ -594,9 +594,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="2.275391" />
         <Property name="TransY" value="2.613282" />
         <Property name="TransZ" value="-2.287109" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -612,9 +612,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="2.275391" />
         <Property name="TransY" value="2.074708" />
         <Property name="TransZ" value="-2.199774" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="5E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -628,7 +628,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","Trail"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -652,7 +652,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-2.287109" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-5E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -668,9 +668,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-2.273438" />
         <Property name="TransY" value="2.074708" />
         <Property name="TransZ" value="-2.199846" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="5E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -684,7 +684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","Trail"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -1012,9 +1012,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="2.509766" />
         <Property name="TransY" value="1.334147" />
         <Property name="TransZ" value="-0.597534" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="-0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="5E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -1030,9 +1030,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-2.50977" />
         <Property name="TransY" value="1.334147" />
         <Property name="TransZ" value="-0.597534" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="5E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -1046,14 +1046,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","SubWings_E"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "90.00001"},
+                                {"RotZ", "90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Turbine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-90.00001"},
+                                {"RotZ", "-90"},
                             }
                         },
                         {
@@ -1113,28 +1113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Stage1"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "Stage1.002"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Stage2"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "Stage2.002"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MirrorMerged_X34"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "MirrorMerged_X34.001"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -1254,9 +1233,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="-3.240234" />
             <Property name="TransY" value="1.298828" />
             <Property name="TransZ" value="0.972168" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -1272,9 +1251,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="3.24023" />
             <Property name="TransY" value="1.298828" />
             <Property name="TransZ" value="0.972168" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -1298,7 +1277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-89.99999"},
+                                {"RotY", "-90"},
                             }
                         },
                         {
@@ -1319,7 +1298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -1350,9 +1329,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="-1.59375" />
             <Property name="TransY" value="1.298828" />
             <Property name="TransZ" value="0.996094" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -1368,9 +1347,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="1.59375" />
             <Property name="TransY" value="1.298828" />
             <Property name="TransZ" value="0.996094" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -1385,7 +1364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "59.149002"},
-                                {"RotY", "89.99999"},
+                                {"RotY", "90"},
                                 {"RotZ", "0"},
                             }
                         },
@@ -1406,7 +1385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","SubWings_C1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.000015"},
+                                {"RotX", "90"},
                             }
                         },
                         {
@@ -1417,7 +1396,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                     }
@@ -1442,7 +1421,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransZ" value="-5.028202" />
                 <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1468,7 +1447,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransZ" value="-9.757812" />
                 <Property name="RotX" value="0" />
                 <Property name="RotY" value="-178.84076" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1494,7 +1473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransZ" value="-5.027817" />
                 <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1520,7 +1499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransZ" value="-5.027817" />
                 <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1544,9 +1523,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransX" value="3.2002" />
                 <Property name="TransY" value="1.295898" />
                 <Property name="TransZ" value="0.35083" />
-                <Property name="RotX" value="-7E-06" />
+                <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1562,9 +1541,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransX" value="3.27734" />
                 <Property name="TransY" value="2.203125" />
                 <Property name="TransZ" value="0.338379" />
-                <Property name="RotX" value="-7E-06" />
+                <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1582,7 +1561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransZ" value="-5.028101" />
                 <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1608,7 +1587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransZ" value="-5.027817" />
                 <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1624,9 +1603,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransX" value="-3.200195" />
                 <Property name="TransY" value="1.295898" />
                 <Property name="TransZ" value="0.35083" />
-                <Property name="RotX" value="-7E-06" />
+                <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1642,9 +1621,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransX" value="-3.277344" />
                 <Property name="TransY" value="2.203125" />
                 <Property name="TransZ" value="0.338379" />
-                <Property name="RotX" value="-7E-06" />
+                <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1670,7 +1649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransZ" value="-5.027817" />
                 <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1696,7 +1675,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransZ" value="-5.027817" />
                 <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -1725,9 +1704,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.005784" />
         <Property name="TransY" value="3.324401" />
         <Property name="TransZ" value="-5.577473" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -1741,14 +1720,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","_logo1_A"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "89.99999"},
+                                {"RotY", "90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","_logo2_A"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-89.99999"},
+                                {"RotY", "-90"},
                             }
                         },
                         {
@@ -1770,7 +1749,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "38.172863"},
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -1807,7 +1786,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-3.195312" />
             <Property name="RotX" value="-37.50001" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -1825,7 +1804,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-1.339915" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -1843,7 +1822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-1.339915" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -1858,7 +1837,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "30.782652"},
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -1866,7 +1845,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "30.782652"},
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -1874,7 +1853,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                         {
@@ -1898,7 +1877,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-90.00001"},
+                                {"RotZ", "-90"},
                             }
                         },
                         {
@@ -1913,21 +1892,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","RefLandingGear"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Gun1Ref3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Gun1Ref4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                     }
@@ -1952,7 +1931,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-0.554895" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -1966,7 +1945,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }
@@ -1991,7 +1970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-0.554895" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2005,7 +1984,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }
@@ -2030,7 +2009,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="0.069092" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2062,7 +2041,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="0.069092" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2094,7 +2073,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-1.011719" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2112,7 +2091,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-0.291752" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2127,7 +2106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.000015"},
+                                {"RotX", "90"},
                             }
                         },
                         {
@@ -2142,14 +2121,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -2174,7 +2153,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-1.011719" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2192,7 +2171,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-0.221114" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2222,14 +2201,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }
@@ -2253,7 +2232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-3.521484" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2271,7 +2250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-3.521484" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2289,7 +2268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-3.521484" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2306,7 +2285,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TransX", "4.476562"},
                                 {"TransY", "-0.867432"},
                                 {"TransZ", "-3.521484"},
-                                {"RotY",   "-179.99998"},
+                                {"RotY",   "-180"},
                             }
                         },
                         {
@@ -2325,7 +2304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-3.990234" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2343,7 +2322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-3.990234" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2361,7 +2340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-3.990234" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2379,7 +2358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-3.990234" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2410,7 +2389,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-3.521484" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2428,7 +2407,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-3.521484" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2446,7 +2425,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-3.521484" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2463,7 +2442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TransX", "-4.476562"},
                                 {"TransY", "-0.867432"},
                                 {"TransZ", "-3.521484"},
-                                {"RotY",   "-179.99998"},
+                                {"RotY",   "-180"},
                             }
                         },
                         {
@@ -2482,7 +2461,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-3.990234" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2500,7 +2479,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-3.990234" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2518,7 +2497,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-3.990234" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2536,7 +2515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransZ" value="-3.990234" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -2567,7 +2546,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-2.78599" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2585,7 +2564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-1.089823" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2608,7 +2587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "1.145515"},
-                                {"RotY", "-89.99999"},
+                                {"RotY", "-90"},
                                 {"RotZ", "0"},
                             }
                         },
@@ -2624,7 +2603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -2648,7 +2627,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-2.78599" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2666,7 +2645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-1.089823" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2697,7 +2676,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -2721,7 +2700,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.92627" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2739,7 +2718,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.532227" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2753,14 +2732,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","_logo_A1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-89.99999"},
+                                {"RotY", "-90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -2784,7 +2763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.92627" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2802,7 +2781,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.532227" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2816,14 +2795,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","_logo_A1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "89.99999"},
+                                {"RotY", "90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -2847,7 +2826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.991211" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2865,7 +2844,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.991211" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2883,7 +2862,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.991211" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2901,7 +2880,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.293213" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2916,7 +2895,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "-3.810077"},
-                                {"RotY", "89.99999"},
+                                {"RotY", "90"},
                                 {"RotZ", "0"},
                             }
                         },
@@ -2927,7 +2906,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TransX", "2.363281"},
                                 {"TransY", "-0.927734"},
                                 {"TransZ", "-0.991211"},
-                                {"RotY",   "-179.99998"},
+                                {"RotY",   "-180"},
                             }
                         },
                     }
@@ -2951,7 +2930,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.991211" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2969,7 +2948,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.991211" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -2987,7 +2966,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.991211" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3005,7 +2984,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-0.293213" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3027,7 +3006,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-89.99999"},
+                                {"RotY", "-90"},
                             }
                         },
                         {
@@ -3037,7 +3016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TransX", "-2.363281"},
                                 {"TransY", "-0.927734"},
                                 {"TransZ", "-0.991211"},
-                                {"RotY",   "-179.99998"},
+                                {"RotY",   "-180"},
                             }
                         },
                     }
@@ -3061,7 +3040,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-2.232291" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3075,9 +3054,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","_Rectangle_A1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "3E-06"},
                                 {"RotY", "-78.13243"},
-                                {"RotZ", "90.00001"},
+                                {"RotZ", "90"},
                             }
                         },
                         {
@@ -3089,14 +3067,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","_Subwing1_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "40.000008"},
+                                {"RotZ", "40"},
                             }
                         },
                     }
@@ -3120,7 +3098,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-2.232291" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3134,9 +3112,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","_Rectangle_A1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "2.2E-05"},
                                 {"RotY", "-112.13716"},
-                                {"RotZ", "89.999954"},
+                                {"RotZ", "90"},
                             }
                         },
                         {
@@ -3148,7 +3125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }
@@ -3172,7 +3149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-1.873047" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3186,11 +3163,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="6.051735" />
-        <Property name="TransY" value="-0.009939" />
+        <Property name="TransY" value="-0.01" />
         <Property name="TransZ" value="-2.63443" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3204,7 +3181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.00001"},
+                                {"RotX", "90"},
                             }
                         },
                         {
@@ -3216,7 +3193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }
@@ -3240,7 +3217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-1.873047" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3258,7 +3235,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransZ" value="-2.634185" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3272,7 +3249,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.00001"},
+                                {"RotX", "90"},
                             }
                         },
                         {
@@ -3284,7 +3261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }
@@ -3306,9 +3283,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="1.570312" />
         <Property name="TransY" value="-0.371338" />
         <Property name="TransZ" value="-0.215698" />
-        <Property name="RotX" value="60.000004" />
+        <Property name="RotX" value="60" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3322,7 +3299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Type","COLLISION"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-90.00001"},
+                                {"RotZ", "-90"},
                             }
                         },
                         {
@@ -3337,7 +3314,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "30.000004"},
+                                {"RotX", "30"},
                             }
                         },
                         {
@@ -3367,9 +3344,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-1.538086" />
         <Property name="TransY" value="-0.371338" />
         <Property name="TransZ" value="-0.215698" />
-        <Property name="RotX" value="60.000004" />
+        <Property name="RotX" value="60" />
         <Property name="RotY" value="-180" />
-        <Property name="RotZ" value="-9E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3383,7 +3360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Type","COLLISION"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "30.000004"},
+                                {"RotX", "30"},
                             }
                         },
                         {
@@ -3398,7 +3375,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-90.00001"},
+                                {"RotZ", "-90"},
                             }
                         },
                         {
@@ -3429,9 +3406,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="0" />
             <Property name="TransY" value="4.890625" />
             <Property name="TransZ" value="-10.773438" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -3461,9 +3438,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="0" />
             <Property name="TransY" value="8.554688" />
             <Property name="TransZ" value="-6.742188" />
-            <Property name="RotX" value="1.5E-05" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="0.1" />
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
@@ -3482,28 +3459,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-89.99999"},
+                                {"RotY", "-90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Decal2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "89.99999"},
+                                {"RotY", "90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SpinFront"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.00001"},
+                                {"RotX", "90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -3526,9 +3503,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="0" />
             <Property name="TransY" value="6.566406" />
             <Property name="TransZ" value="-2.039062" />
-            <Property name="RotX" value="1.5E-05" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="0.1" />
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
@@ -3542,7 +3519,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","Spin"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90.00001"},
+                                {"RotX", "90"},
                             }
                         },
                         {
@@ -3554,14 +3531,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-89.99999"},
+                                {"RotY", "-90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Decal4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "89.99999"},
+                                {"RotY", "90"},
                             }
                         },
                         {
@@ -3586,7 +3563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","Contrail"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -3605,10 +3582,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX",   "-179.99998"},
+                                {"RotX",   "-180"},
                                 {"RotY",   "11.474125"},
-                                {"RotZ",   "5E-06"},
-                                {"ScaleZ", "10.000001"},
+                                {"RotZ",   "0"},
+                                {"ScaleZ", "10"},
                             }
                         },
                         {
@@ -3629,11 +3606,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","spotLight2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX",   "179.99998"},
+                                {"RotX",   "180"},
                                 {"RotY",   "-11.474003"},
-                                {"RotZ",   "5E-06"},
-                                {"ScaleX", "9.999999"},
-                                {"ScaleY", "10.000001"},
+                                {"RotZ",   "0"},
+                                {"ScaleX", "10"},
+                                {"ScaleY", "10"},
                             }
                         },
                         {
@@ -3670,9 +3647,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="1.393933" />
             <Property name="TransY" value="1.658415" />
             <Property name="TransZ" value="-2.526716" />
-            <Property name="RotX" value="1.5E-05" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="0.1" />
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
@@ -3688,9 +3665,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="-1.395612" />
             <Property name="TransY" value="1.658415" />
             <Property name="TransZ" value="-2.526716" />
-            <Property name="RotX" value="1.5E-05" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="-9E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="0.1" />
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
@@ -3720,9 +3697,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.08496" />
                     <Property name="TransY" value="-0.716582" />
                     <Property name="TransZ" value="-4.930026" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -3737,8 +3714,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -3755,9 +3730,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.084961" />
                     <Property name="TransY" value="0.716582" />
                     <Property name="TransZ" value="4.930026" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
-                    <Property name="RotZ" value="179.99998" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
+                    <Property name="RotZ" value="180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -3787,9 +3762,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.08496" />
                     <Property name="TransY" value="0.715547" />
                     <Property name="TransZ" value="-4.930027" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -3804,8 +3779,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -3822,9 +3795,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.084961" />
                     <Property name="TransY" value="-0.715547" />
                     <Property name="TransZ" value="4.930026" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
-                    <Property name="RotZ" value="179.99998" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
+                    <Property name="RotZ" value="180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -3854,9 +3827,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-3.93359" />
                     <Property name="TransY" value="-0.517851" />
                     <Property name="TransZ" value="-2.346217" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -3871,8 +3844,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -3889,8 +3860,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="3.933593" />
                     <Property name="TransY" value="0.517851" />
                     <Property name="TransZ" value="2.346217" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -3920,9 +3891,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-1.44629" />
         <Property name="TransY" value="0.84668" />
         <Property name="TransZ" value="-3.882812" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="5E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3938,9 +3909,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="1.446289" />
         <Property name="TransY" value="0.84668" />
         <Property name="TransZ" value="-3.882812" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="3.2E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3969,9 +3940,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.827637" />
         <Property name="TransY" value="0.84668" />
         <Property name="TransZ" value="-3.882812" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="5E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -3987,9 +3958,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="0.827637" />
         <Property name="TransY" value="0.84668" />
         <Property name="TransZ" value="-3.882812" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="3.2E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -4018,9 +3989,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="0.827637" />
         <Property name="TransY" value="3.183594" />
         <Property name="TransZ" value="-3.882812" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="3.2E-05" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -4036,9 +4007,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.827637" />
         <Property name="TransY" value="3.183594" />
         <Property name="TransZ" value="-3.882812" />
-        <Property name="RotX" value="-7E-06" />
+        <Property name="RotX" value="0" />
         <Property name="RotY" value="180" />
-        <Property name="RotZ" value="5E-06" />
+        <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
@@ -4068,9 +4039,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.434006" />
                     <Property name="TransY" value="-0.144961" />
                     <Property name="TransZ" value="-4.558932" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4085,8 +4056,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -4103,9 +4072,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.437824" />
                     <Property name="TransY" value="0.144961" />
                     <Property name="TransZ" value="4.558933" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
-                    <Property name="RotZ" value="179.99998" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
+                    <Property name="RotZ" value="180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4135,9 +4104,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-1.00391" />
                     <Property name="TransY" value="-0.160429" />
                     <Property name="TransZ" value="-2.799342" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4153,9 +4122,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.46631" />
                     <Property name="TransY" value="-0.160429" />
                     <Property name="TransZ" value="-2.71243" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4171,9 +4140,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.23047" />
                     <Property name="TransY" value="-0.161406" />
                     <Property name="TransZ" value="-2.547389" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4187,7 +4156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -4195,8 +4164,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -4213,8 +4180,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="1.003906" />
                     <Property name="TransY" value="0.160429" />
                     <Property name="TransZ" value="2.799342" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4231,8 +4198,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.466308" />
                     <Property name="TransY" value="0.160429" />
                     <Property name="TransZ" value="2.71243" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4249,8 +4216,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.230469" />
                     <Property name="TransY" value="0.161406" />
                     <Property name="TransZ" value="2.547389" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4265,7 +4232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                         {
@@ -4274,18 +4241,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
-                                {"RotY",   "-5E-06"},
-                                {"RotZ",   "5E-06"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight5"},
-                            ["VALUE_MATCH"] = "pointLight5",
-                            ["VALUE_MATCH_OPTIONS"] = "=",                            
-                            ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "pointLight5.001"},
                             }
                         },
                     }
@@ -4308,9 +4263,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.46631" />
                     <Property name="TransY" value="-0.160429" />
                     <Property name="TransZ" value="-2.71243" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4326,9 +4281,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.23047" />
                     <Property name="TransY" value="-0.161406" />
                     <Property name="TransZ" value="-2.547389" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4342,7 +4297,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -4350,8 +4305,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -4368,8 +4321,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.466308" />
                     <Property name="TransY" value="0.160429" />
                     <Property name="TransZ" value="2.71243" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4386,8 +4339,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.230469" />
                     <Property name="TransY" value="0.161406" />
                     <Property name="TransZ" value="2.547389" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4402,7 +4355,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                         {
@@ -4411,18 +4364,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
-                                {"RotY",   "-5E-06"},
-                                {"RotZ",   "5E-06"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight5"},
-                            ["VALUE_MATCH"] = "pointLight5",
-                            ["VALUE_MATCH_OPTIONS"] = "=",                            
-                            ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "pointLight5.001"},
                             }
                         },
                     }
@@ -4445,9 +4386,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.23047" />
                     <Property name="TransY" value="-0.161406" />
                     <Property name="TransZ" value="-2.547389" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4461,7 +4402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -4469,8 +4410,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -4487,8 +4426,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.230469" />
                     <Property name="TransY" value="0.161406" />
                     <Property name="TransZ" value="2.547389" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4503,7 +4442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                         {
@@ -4512,18 +4451,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
-                                {"RotY",   "-5E-06"},
-                                {"RotZ",   "5E-06"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight5"},
-                            ["VALUE_MATCH"] = "pointLight5",
-                            ["VALUE_MATCH_OPTIONS"] = "=",                            
-                            ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "pointLight5.001"},
                             }
                         },
                     }
@@ -4546,9 +4473,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-1.00391" />
                     <Property name="TransY" value="-0.160429" />
                     <Property name="TransZ" value="-2.799342" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4564,9 +4491,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.23047" />
                     <Property name="TransY" value="-0.161406" />
                     <Property name="TransZ" value="-2.547389" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4580,7 +4507,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -4588,8 +4515,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -4606,8 +4531,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="1.003906" />
                     <Property name="TransY" value="0.160429" />
                     <Property name="TransZ" value="2.799342" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4624,8 +4549,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.230469" />
                     <Property name="TransY" value="0.161406" />
                     <Property name="TransZ" value="2.547389" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4640,7 +4565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                         {
@@ -4649,18 +4574,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
-                                {"RotY",   "-5E-06"},
-                                {"RotZ",   "5E-06"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight5"},
-                            ["VALUE_MATCH"] = "pointLight5",
-                            ["VALUE_MATCH_OPTIONS"] = "=",                            
-                            ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "pointLight5.001"},
                             }
                         },
                     }
@@ -4683,9 +4596,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-1.00391" />
                     <Property name="TransY" value="-0.160429" />
                     <Property name="TransZ" value="-2.799342" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4701,9 +4614,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.46631" />
                     <Property name="TransY" value="-0.160429" />
                     <Property name="TransZ" value="-2.71243" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4717,7 +4630,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -4725,8 +4638,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -4743,8 +4654,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="1.003906" />
                     <Property name="TransY" value="0.160429" />
                     <Property name="TransZ" value="2.799342" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4761,8 +4672,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.466308" />
                     <Property name="TransY" value="0.160429" />
                     <Property name="TransZ" value="2.71243" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4777,7 +4688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                         {
@@ -4786,18 +4697,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
-                                {"RotY",   "-5E-06"},
-                                {"RotZ",   "5E-06"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight5"},
-                            ["VALUE_MATCH"] = "pointLight5",
-                            ["VALUE_MATCH_OPTIONS"] = "=",                            
-                            ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "pointLight5.001"},
                             }
                         },
                     }
@@ -4820,9 +4719,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-1.00391" />
                     <Property name="TransY" value="-0.160429" />
                     <Property name="TransZ" value="-2.799342" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4836,7 +4735,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -4844,8 +4743,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -4862,8 +4759,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="1.003906" />
                     <Property name="TransY" value="0.160429" />
                     <Property name="TransZ" value="2.799342" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4878,7 +4775,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                         {
@@ -4887,18 +4784,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
-                                {"RotY",   "-5E-06"},
-                                {"RotZ",   "5E-06"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight5"},
-                            ["VALUE_MATCH"] = "pointLight5",
-                            ["VALUE_MATCH_OPTIONS"] = "=",                            
-                            ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "pointLight5.001"},
                             }
                         },
                     }
@@ -4921,9 +4806,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="-0.46631" />
                     <Property name="TransY" value="-0.160429" />
                     <Property name="TransZ" value="-2.71243" />
-                    <Property name="RotX" value="-7E-06" />
+                    <Property name="RotX" value="0" />
                     <Property name="RotY" value="180" />
-                    <Property name="RotZ" value="5E-06" />
+                    <Property name="RotZ" value="0" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
@@ -4937,7 +4822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -4945,8 +4830,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "180"},
-                                {"RotY", "-5E-06"},
-                                {"RotZ", "5E-06"},
                             }
                         },
                         {
@@ -4963,8 +4846,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="TransX" value="0.466308" />
                     <Property name="TransY" value="0.160429" />
                     <Property name="TransZ" value="2.71243" />
-                    <Property name="RotX" value="-7E-06" />
-                    <Property name="RotY" value="5E-06" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
                     <Property name="RotZ" value="-180" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
@@ -4979,7 +4862,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotZ", "-179.99998"},
+                                {"RotZ", "-180"},
                             }
                         },
                         {
@@ -4988,18 +4871,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
-                                {"RotY",   "-5E-06"},
-                                {"RotZ",   "5E-06"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight5"},
-                            ["VALUE_MATCH"] = "pointLight5",
-                            ["VALUE_MATCH_OPTIONS"] = "=",                            
-                            ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "pointLight5.001"},
                             }
                         },
                     }
@@ -5014,21 +4885,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"RotX", "180"},
                                 {"RotY", "8.155582"},
-                                {"RotZ", "5E-06"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LBackClaw2JNT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotY", "-1E-06"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LBackClaw3JNT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotY", "-1E-06"},
                             }
                         },
                         {
@@ -5042,12 +4898,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property name="NameHash" value="4145976455" />
                           <Property name="Type" value="LOCATOR" />
                           <Property name="Transform" value="TkTransformData.xml">
-                            <Property name="TransX" value="0.823026" />
+                            <Property name="TransX" value="0.030973" />
                             <Property name="TransY" value="-0.140324" />
                             <Property name="TransZ" value="1.258279" />
-                            <Property name="RotX" value="1E-06" />
-                            <Property name="RotY" value="-15.655581" />
-                            <Property name="RotZ" value="179.99998" />
+                            <Property name="RotX" value="0" />
+                            <Property name="RotY" value="0" />
+                            <Property name="RotZ" value="180" />
                             <Property name="ScaleX" value="1" />
                             <Property name="ScaleY" value="1" />
                             <Property name="ScaleZ" value="1" />
@@ -5071,9 +4927,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             <Property name="TransX" value="-0.030973" />
                             <Property name="TransY" value="0.140325" />
                             <Property name="TransZ" value="-1.316105" />
-                            <Property name="RotX" value="-7E-06" />
-                            <Property name="RotY" value="179.34444" />
-                            <Property name="RotZ" value="6E-06" />
+                            <Property name="RotX" value="0" />
+                            <Property name="RotY" value="180" />
+                            <Property name="RotZ" value="0" />
                             <Property name="ScaleX" value="1" />
                             <Property name="ScaleY" value="1" />
                             <Property name="ScaleZ" value="1" />
@@ -5098,7 +4954,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                     }
@@ -5111,7 +4967,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","EngineGlow"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                         {
@@ -5128,9 +4984,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="0.529562" />
             <Property name="TransY" value="0.743365" />
             <Property name="TransZ" value="-1.356251" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5146,9 +5002,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="-0.529562" />
             <Property name="TransY" value="0.743365" />
             <Property name="TransZ" value="-1.356251" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5178,7 +5034,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","_AA_3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
@@ -5219,7 +5075,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                         {
@@ -5236,9 +5092,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="TransX" value="-0.001343" />
                 <Property name="TransY" value="0.476443" />
                 <Property name="TransZ" value="-0.882019" />
-                <Property name="RotX" value="-7E-06" />
+                <Property name="RotX" value="0" />
                 <Property name="RotY" value="180" />
-                <Property name="RotZ" value="5E-06" />
+                <Property name="RotZ" value="0" />
                 <Property name="ScaleX" value="1" />
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
@@ -5258,7 +5114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                         {
@@ -5275,9 +5131,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0.417725" />
             <Property name="TransZ" value="-1.410156" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5296,7 +5152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "89.99999"},
+                                {"RotY", "90"},
                             }
                         },
                     }
@@ -5319,9 +5175,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0.694824" />
             <Property name="TransZ" value="-3.760742" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5345,7 +5201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                         {
@@ -5362,9 +5218,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="0.960907" />
             <Property name="TransY" value="0.439915" />
             <Property name="TransZ" value="-2.751792" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5380,9 +5236,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="-0.960907" />
             <Property name="TransY" value="0.439915" />
             <Property name="TransZ" value="-2.751792" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5420,9 +5276,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="1.817383" />
             <Property name="TransY" value="0.474609" />
             <Property name="TransZ" value="-2.46875" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5436,7 +5292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }
@@ -5459,9 +5315,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="-1.81738" />
             <Property name="TransY" value="0.474609" />
             <Property name="TransZ" value="-2.46875" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5476,14 +5332,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }
@@ -5506,9 +5362,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="2.396484" />
             <Property name="TransY" value="0.766846" />
             <Property name="TransZ" value="-4.738281" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5523,14 +5379,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }
@@ -5553,9 +5409,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="TransX" value="-2.39648" />
             <Property name="TransY" value="0.766846" />
             <Property name="TransZ" value="-4.738281" />
-            <Property name="RotX" value="-7E-06" />
+            <Property name="RotX" value="0" />
             <Property name="RotY" value="180" />
-            <Property name="RotZ" value="5E-06" />
+            <Property name="RotZ" value="0" />
             <Property name="ScaleX" value="1" />
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
@@ -5570,14 +5426,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotY", "-179.99998"},
+                                {"RotY", "-180"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-90.00001"},
+                                {"RotX", "-90"},
                             }
                         },
                     }

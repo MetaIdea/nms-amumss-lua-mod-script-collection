@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "z-SavegameByHotkey-New.pak",
-["NMS_VERSION"]     = "4.44",
+["NMS_VERSION"]     = "4.45",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
 ["MODIFICATIONS"]   =
@@ -107,6 +107,37 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ChatUsesPrefix" value="False" />
       <Property name="EmoteID" value="SAVEGAME" />
       <Property name="AnimationName" value="SAVEGAME" />
+      <Property name="PropData" value="GcPlayerEmotePropData.xml">
+        <Property name="Model" value="" />
+        <Property name="Scale" value="0" />
+        <Property name="Hand" value="GcHand.xml">
+          <Property name="Hand" value="Right" />
+        </Property>
+        <Property name="IsHologram" value="False" />
+        <Property name="ScanEffectNodeName" value="" />
+        <Property name="ScanEffect" value="GcScanEffectData.xml">
+          <Property name="Id" value="" />
+          <Property name="ScanEffectType" value="Building" />
+          <Property name="Colour" value="Colour.xml">
+            <Property name="R" value="0.823" />
+            <Property name="G" value="0.475" />
+            <Property name="B" value="0.432" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="BasecolourIntensity" value="0.2" />
+          <Property name="ScanlinesSeparation" value="0.1" />
+          <Property name="FresnelIntensity" value="3" />
+          <Property name="GlowIntensity" value="0" />
+          <Property name="WaveOffset" value="0" />
+          <Property name="WaveActive" value="True" />
+          <Property name="FixedUpAxis" value="False" />
+          <Property name="Transparent" value="False" />
+          <Property name="ModelFade" value="False" />
+          <Property name="FadeInTime" value="0.2" />
+          <Property name="FadeOutTime" value="0.2" />
+        </Property>
+        <Property name="DelayTime" value="0" />
+      </Property>
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
         <Property name="ResHandle" value="GcResource.xml">
@@ -117,7 +148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="NeverShowInMenu" value="False" />
       <Property name="LoopAnimUntilMove" value="" />
       <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="False" />
+      <Property name="MoveToCancel" value="True" />
       <Property name="GekAnimationName" value="" />
       <Property name="GekLoopAnimUntilMove" value="" />
       <Property name="AvailableUnderwater" value="False" />
@@ -137,6 +168,37 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ChatUsesPrefix" value="False" />
       <Property name="EmoteID" value="SAVEGAME" />
       <Property name="AnimationName" value="SAVEGAME" />
+      <Property name="PropData" value="GcPlayerEmotePropData.xml">
+        <Property name="Model" value="" />
+        <Property name="Scale" value="0" />
+        <Property name="Hand" value="GcHand.xml">
+          <Property name="Hand" value="Right" />
+        </Property>
+        <Property name="IsHologram" value="False" />
+        <Property name="ScanEffectNodeName" value="" />
+        <Property name="ScanEffect" value="GcScanEffectData.xml">
+          <Property name="Id" value="" />
+          <Property name="ScanEffectType" value="Building" />
+          <Property name="Colour" value="Colour.xml">
+            <Property name="R" value="0.823" />
+            <Property name="G" value="0.475" />
+            <Property name="B" value="0.432" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="BasecolourIntensity" value="0.2" />
+          <Property name="ScanlinesSeparation" value="0.1" />
+          <Property name="FresnelIntensity" value="3" />
+          <Property name="GlowIntensity" value="0" />
+          <Property name="WaveOffset" value="0" />
+          <Property name="WaveActive" value="True" />
+          <Property name="FixedUpAxis" value="False" />
+          <Property name="Transparent" value="False" />
+          <Property name="ModelFade" value="False" />
+          <Property name="FadeInTime" value="0.2" />
+          <Property name="FadeOutTime" value="0.2" />
+        </Property>
+        <Property name="DelayTime" value="0" />
+      </Property>
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
         <Property name="ResHandle" value="GcResource.xml">
@@ -147,7 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="NeverShowInMenu" value="False" />
       <Property name="LoopAnimUntilMove" value="" />
       <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="False" />
+      <Property name="MoveToCancel" value="True" />
       <Property name="GekAnimationName" value="" />
       <Property name="GekLoopAnimUntilMove" value="" />
       <Property name="AvailableUnderwater" value="True" />

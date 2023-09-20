@@ -211,11 +211,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Damage", 500*Other}}},	--default 40, HardModeMultiplier 1.5
 
-	{["SPECIAL_KEY_WORDS"] = {"Id","LANDING"},				--Added Xen0nex
+	{["SPECIAL_KEY_WORDS"] = {"Id","LANDING"},				--This should be player fall damage		Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {
 		{"Damage", 320*Other}}},	--default 80, HardModeMultiplier 4
 	
-	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},			--The following 3 entries should be for colliding with things while in the starship
 	["VALUE_CHANGE_TABLE"] = {
 		{"Damage", 800*Other}}},	--default 10
 	

@@ -372,8 +372,8 @@ CookRoomSilver = 60									--60 Silver
 CookRoomPureFerrite = 20							--40 Pure Ferrite
 --New recipe for installing Refiner Room in freighter
 RefinerRoomMicrochips = 8							--how many Microprocessors required		(replaces 2 Di-Hydrogen Jelly in vanilla)
-RefinerRoomSilver = 50								--60 Silver
-RefinerRoomGold = 30								--45 Gold
+RefinerRoomSilver = 60								--60 Silver
+RefinerRoomGold = 45								--45 Gold
 --New recipe for installing Cultivation Chamber in freighter
 CultivationChamberSilver = 80						--50 Silver
 CultivationChamberPlates = 6						--how many Metal Plates required	(replaces 25 Oxygen in vanilla)
