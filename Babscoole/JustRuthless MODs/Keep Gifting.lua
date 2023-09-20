@@ -1,9 +1,9 @@
--- Custom Gift Option Settings --
+-- Custom Gift Option Settings --------------------------------------------------------
 Option_Cost   = "5"    -- amount of gifts needed
 Option_Reward = "5"    -- amount of rep rewarded
 Remove_Option = "True" -- True / False - removes option if cant afford
 Keep_Open     = "True" -- True / False - keeps the dialogue open after selecting the option
----------------------------------
+---------------------------------------------------------------------------------------
 
 CostChanges =
 {
@@ -84,169 +84,79 @@ OptionChanges =
     }
   },
 }
---------------------------------------------------------------------------------
 
--- Cost Function --
-local function Costs(id, cost, amount, removeoption)
-return
-[[
-    <Property value="GcCostTableEntry.xml">
-      <Property name="Id" value="]]..id..[[" />
-      <Property name="DisplayCost" value="True" />
-      <Property name="DontCharge" value="False" />
-      <Property name="HideOptionAndDisplayCostOnly" value="False" />
-      <Property name="DisplayOnlyCostIfCantAfford" value="False" />
-      <Property name="HideCostStringIfCanAfford" value="False" />
-      <Property name="RemoveOptionIfCantAfford" value="]]..removeoption..[[" />
-      <Property name="MustAffordInCreative" value="False" />
-      <Property name="CannotAffordOSDMsg" value="" />
-      <Property name="MissionMessageWhenCharged" value="" />
-      <Property name="Cost" value="GcCostProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-          <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="Id" value="]]..cost..[[" />
-        <Property name="Amount" value="]]..amount..[[" />
-      </Property>
-    </Property>
-]]
-end
--- Reward Function --
-local function Rewards(id, race, amount)
-return
-[[
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="]]..id..[[" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardStanding.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="]]..race..[[" />
-              </Property>
-              <Property name="AmountMin" value="]]..amount..[[" />
-              <Property name="AmountMax" value="]]..amount..[[" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-]]
-end
--- Option Function --
-local function Options(cost, reward, keepopen)
-return
-[[
-        <Property value="GcAlienPuzzleOption.xml">
-          <Property name="Name" value="ALL_REQUEST_STD_LOW" />
-          <Property name="Text" value="ALL_REPLY_STANDING" />
-          <Property name="IsAlien" value="False" />
-          <Property name="Cost" value="]]..cost..[[" />
-          <Property name="Rewards">
-            <Property value="NMSString0x10.xml">
-              <Property name="Value" value="]]..reward..[[" />
-            </Property>
-          </Property>
-          <Property name="Mood" value="GcAlienMood.xml">
-            <Property name="Mood" value="Positive" />
-          </Property>
-          <Property name="Prop" value="GcNPCPropType.xml">
-            <Property name="NPCProp" value="DontCare" />
-          </Property>
-          <Property name="OverrideWithAlienWord" value="False" />
-          <Property name="ReseedInteractionOnUse" value="False" />
-          <Property name="KeepOpen" value="]]..keepopen..[[" />
-          <Property name="DisplayCost" value="True" />
-          <Property name="TruncateCost" value="False" />
-          <Property name="MarkInteractionComplete" value="True" />
-          <Property name="NextInteraction" value="" />
-          <Property name="SelectedOnBackOut" value="False" />
-          <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-            <Property name="AkEvent" value="INVALID_EVENT" />
-          </Property>
-          <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-            <Property name="ConditionTest" value="AnyFalse" />
-          </Property>
-          <Property name="EnablingConditions" />
-          <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="wordcategorytableEnum" value="MISC" />
-          </Property>
-        </Property>
-]]
-end
 ---------------------------------------------------------------------------------------
-
--- File Settings --
-FileName    = "Keep Gifting.pak"
-ModAuthor   = "JustRuthless"
-LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
-Description = ""
-NMS_Version = "4.44"
-
--- File Sources --
-FileSource1 = "METADATA\REALITY\TABLES\COSTTABLE.MBIN"
-FileSource2 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
-FileSource3 = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = FileName,
-  ["MOD_AUTHOR"]      = ModAuthor,
-  ["LUA_AUTHOR"]      = LuaAuthor,
-  ["MOD_MAINTENANCE"] = ModMaintenance,
-  ["MOD_DESCRIPTION"] = Description,
-  ["NMS_VERSION"]     = NMS_Version,
-  ["MODIFICATIONS"]   =
-  {
+["MOD_FILENAME"]    = "Keep Gifting.pak",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"] = "Makes the npcs gifting dialogue stay open when gifting items to increase faction rep and also adds a gifting option for 5x",
+["NMS_VERSION"]     = "4.45",
+["MODIFICATIONS"]   =
     {
-      ["MBIN_CHANGE_TABLE"] =
-      {
         {
-          ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            -- CostTable
-          }
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\COSTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id","C_REP_TOKEN"},
+                            ["SEC_SAVE_TO"] = "ADD_COST",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_COST",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "COST_ADD"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id","PIRATE_BATTLE"},
+                            ["SEC_SAVE_TO"] = "ADD_REWARD",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_REWARD",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "REWARD_ADD"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name","ALL_REQUEST_STD_LOW"},
+                            ["SEC_SAVE_TO"] = "ADD_PUZZLE",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_PUZZLE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "PUZZLE_ADD"},
+                            }
+                        },
+                    }
+                },
+            }
         },
-      }
-    },
-    {
-      ["MBIN_CHANGE_TABLE"] =
-      {
-        {
-          ["MBIN_FILE_SOURCE"]  = FileSource2,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            -- RewardTable
-          }
-        },
-      }
-    },
-    {
-      ["MBIN_CHANGE_TABLE"] =
-      {
-        {
-          ["MBIN_FILE_SOURCE"]  = FileSource3,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            -- AlienPuzzleTable
-          }
-        },
-      }
-    },
-  }
+    }
 }
 
 local CostTable        = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-local RewardTable      = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][2]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][3]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local RewardTable      = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 
 -- CostTable --
 for i = 1, #CostChanges do
@@ -263,7 +173,27 @@ for i = 1, #CostChanges do
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", OldID},
       ["ADD_OPTION"] = "ADDafterSECTION",
-      ["ADD"] = Costs(NewID, CostID, Amount, Remove),
+      ["SEC_ADD_NAMED"] = "ADD_COST",
+    }
+
+    CostTable[#CostTable+1] =
+    {
+      ["SPECIAL_KEY_WORDS"] = {"Id", "COST_ADD", "Cost" ,"GcCostProduct.xml"},
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"Id",     CostID},
+         {"Amount", Amount},
+      }
+    }
+    
+    CostTable[#CostTable+1] =
+    {
+      ["SPECIAL_KEY_WORDS"] = {"Id", "COST_ADD"},
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"Id",                       NewID},
+         {"RemoveOptionIfCantAfford", Remove},
+      }
     }
   end
 end
@@ -282,7 +212,19 @@ for i = 1, #RewardChanges do
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", OldID},
       ["ADD_OPTION"] = "ADDafterSECTION",
-      ["ADD"] = Rewards(NewID, Race, Amount),
+      ["SEC_ADD_NAMED"] = "ADD_REWARD",
+    }
+
+    RewardTable[#RewardTable+1] =
+    {
+      ["SPECIAL_KEY_WORDS"] = {"Id", "REWARD_ADD"},
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"Id",        NewID},
+         {"AlienRace", Race},
+         {"AmountMin", Amount},
+         {"AmountMax", Amount},
+      }
     }
   end
 end
@@ -297,32 +239,36 @@ for i = 1, #OptionChanges do
     NewCost  = Change[j][2]
     Reward   = Change[j][3]
     KeepOpen = Change[j][4]
-
-    AlienPuzzleTable[#AlienPuzzleTable+1] =
-    {
-      ["SPECIAL_KEY_WORDS"] = {"Id", OldID, "Cost", OldCost},
-      ["REPLACE_TYPE"] = "ALL",
-      ["ADD_OPTION"] = "ADDafterSECTION",
-      ["ADD"] = Options(NewCost, Reward, KeepOpen),
-    }
-  end
-end
-
-for i = 1, #OptionChanges do
-  local OldID  = OptionChanges[i][1][1]
-  local Change = OptionChanges[i][2]
-
-  for j = 1, #Change do
-    OldCost = Change[j][1]
-
+    
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", OldID, "Cost", OldCost},
       ["REPLACE_TYPE"] = "ALL",
       ["VALUE_CHANGE_TABLE"] =
       {
-        {"KeepOpen", "True"},
+        {"KeepOpen", KeepOpen},
       },
+    }
+
+    AlienPuzzleTable[#AlienPuzzleTable+1] =
+    {
+      ["SPECIAL_KEY_WORDS"] = {"Id", OldID, "Cost", OldCost},
+      ["REPLACE_TYPE"] = "ALL",
+      ["ADD_OPTION"] = "ADDafterSECTION",
+      ["SEC_ADD_NAMED"] = "ADD_PUZZLE"
+    }
+    
+    AlienPuzzleTable[#AlienPuzzleTable+1] =
+    {
+      ["SPECIAL_KEY_WORDS"] = {"Name", "PUZZLE_ADD"},
+      ["REPLACE_TYPE"] = "ALL",
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"Name",     "ALL_REQUEST_STD_LOW"},
+         {"Cost",     NewCost},
+         {"Value",    Reward},
+         {"KeepOpen", KeepOpen},
+      }
     }
   end
 end

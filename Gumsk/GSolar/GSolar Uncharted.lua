@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSolar"
 ModNameSub = "Uncharted"
 BaseDescription = "Most systems are uncharted"
-GameVersion = "4412"
+GameVersion = "445"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 

@@ -767,7 +767,7 @@ end
 FileName    = "More Words.pak"
 ModAuthor   = "JustRuthless & Babscoole"
 Description = ""
-NMS_Version = "4.44"
+NMS_Version = "4.45"
 
 -- File Sources --
 FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"

@@ -6,13 +6,13 @@ BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
 GameVersion = "444"
 ModVersion = "a"
 
---Multipliers to apply to the hull & shields of all AI-controlled starships (individual ships have additonal multipliers applied)
+--Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
 	--Note that "SpaceCombatDifficultyMultipliers" values in GCGAMEPLAYGLOBALS.GLOBAL.MBIN control additional (or subtract) Hull & Shields for enemy starships depending on Space Combat difficulty setting
 	--Multiplied by 1.15 to partially account for how additional supercharged weapon upgrades can increase DPS by up to 1.25~1.3x each time
-ShipHull =				2.5*1.15						--Starting AI Hull health
-ShipHullPerLevel =		2.5*1.15						--Additional AI Hull health added per level
-ShipShield =			2.5*1.15						--Starting AI Shield health
-ShipShieldPerLevel =	2.5*1.15						--Additional AI Shield health added per level
+ShipHull =				2.5*1.15						--Starting AI Hull health for all starships & freighters (except for CIV_LEADER )
+ShipHullPerLevel =		2.5*1.15						--Additional AI Hull health added per level for all starships & freighters (except for CIV_LEADER )
+ShipShield =			2.5*1.15						--Starting AI Shield health for all starships, not freighters
+ShipShieldPerLevel =	2.5*1.15						--Additional AI Shield health added per level for all starships, not freighters
 
 --Adds additional Squadrons to appear at each Wanted Level, for all multiplayer group sizes
 AddedSquadrons =
@@ -368,7 +368,7 @@ LargerBattleChanges =
 					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
 				},
 				{
-					{"Spread",	3200,		2500},	--3200,		2500
+					{"Spread",	1800,		1800},	--1800,		1800
 					{"Count",	3,			5}		--3,		5
 				}
 			},
@@ -973,6 +973,8 @@ function AddShield (ShieldID)
       <Property name="LevelledExtraHealth" value="19000" />
       <Property name="RechargeTime" value="5" />
       <Property name="RechargeDelayTime" value="6" />
+	  <Property name="StartDepletedWhenEnabled" value="False" />
+      <Property name="DamageMulOverride" value="" />
     </Property>]]
 end
 
@@ -1345,9 +1347,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""
-		{"Health", math.floor(ShipHull*105000)},					--default 105000
-		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*995000)},	--default 995000
-		{"Shield", "STRONG"},				--default "STANDARD"
+		{"Health", math.floor(ShipHull*66000)},					--default 66000
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*605000)},	--default 605000
+		{"Shield", "PIRATE_FREIGHT"},			--default "PIRATE_FREIGHT"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
 	--The following were added in NMS v4.4:
@@ -1454,6 +1456,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"Health", math.floor(ShipHull*13125)},					--default 13125
 		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*124375)},	--default 124375
 		{"Shield", ""},				--default ""
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","CIV_LEADER"},					--Civilian freighter fighting pirate freighter?
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_EASY"},		--default "SPACE_EASY"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""
+		{"Health", math.floor(1*5000000)},					--default 5000000
+		{"LevelledExtraHealth", math.floor(1*0)},	--default 0
+		{"Shield", "CIVLEAD_SHIELD"},				--default "CIVLEAD_SHIELD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
 	--[[	Deprecated as of NMS v3.85
