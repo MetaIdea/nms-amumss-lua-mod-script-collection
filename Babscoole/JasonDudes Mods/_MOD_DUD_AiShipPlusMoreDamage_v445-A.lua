@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v444-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v445-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.44",
+["NMS_VERSION"]             = "4.45",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -17,19 +17,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinimumCircleTimeBeforeLanding", "20"},
-                                {"FillUpOutposts",                 "False"},
-                                {"TradingPostTraderRequestTime",   "60"},
-                                {"TurretOriginOffset",             "0"},
-                                {"SpaceStationTraderRequestTime",  "30"},
-                                {"DockingLandingTime",             "2"},
-                                {"DockingLandingTimeDirectional",  "2"},
-                                {"DisableTradeRoutes",             "True"},
-                                {"DockWaitMinTime",                "60"},
-                                {"DockWaitMaxTime",                "120"},
-                                {"LandingManuevreTime",            "2"},
-                                {"LandingManeuvreAlignTime",       "2"},
-                                {"GroundCircleHeight",             "90"},
+                                {"MinimumCircleTimeBeforeLanding",     "20"},
+                                {"FillUpOutposts",                     "False"},
+                                {"TradingPostTraderRequestTime",       "60"},
+                                {"TurretOriginOffset",                 "0"},
+                                {"SpaceStationTraderRequestTime",      "30"},
+                                {"DockingLandingTime",                 "2"},
+                                {"DockingLandingTimeDirectional",      "2"},
+                                {"DisableTradeRoutes",                 "True"},
+                                {"DockWaitMinTime",                    "60"},
+                                {"DockWaitMaxTime",                    "120"},
+                                {"LandingManuevreTime",                "2"},
+                                {"LandingManeuvreAlignTime",           "2"},
+                                {"GroundCircleHeight",                 "90"},
+                                {"MaxDifficultySpaceCombatTurnExtra",  "0"},
+                                {"MaxDifficultySpaceCombatSpeedExtra", "0"},
+                                {"TurretOriginOffset",                 "15"},
                             },
                         },
                         {
@@ -184,16 +187,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Health",              "15000"},
                                 {"LevelledExtraHealth", "30000"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","POLICEFREIGHTER"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Shield",               ""},
-                                {"UsesShieldGenerators", "False"},
                             },
                         },
                         {
@@ -512,6 +505,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PI_FRE_SMAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"DefaultDamage", "100"}
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADGUN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -677,24 +677,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TurretRange",           "3000"},
-                                {"TurretLaserShootTime",  "2"},
-                                {"TurretLaserMoveSpeed",  "5"},
-                                {"TurretLaserActiveTime", "1"},
-                                {"TurretShootPauseTime",  "2"},
-                                {"TurretBurstCount",      "20"},
-                                {"TurretBurstTime",       "0.2"},
-                                {"TurretMaxDownAngle",    "-5"},
-                                {"TurretDispersionAngle", "0"},
-                                {"Health",                "6000"},
+                                {"TurretRange",                      "2000"},
+                                {"TurretLaserShootTime",             "3"},
+                                {"TurretLaserMoveSpeed",             "50"},
+                                {"TurretLaserActiveTime",            "2"},
+                                {"TurretShootPauseTime",             "2"},
+                                {"TurretBurstCount",                 "20"},
+                                {"TurretBurstTime",                  "0.2"},
+                                {"TurretMaxDownAngle",               "10"},
+                                {"TurretMaxYawTurnSpeedDegPerSec",   "180"},
+                                {"TurretMaxPitchTurnSpeedDegPerSec", "90"},
+                                {"TurretAngle",                      "360"},
+                                {"TurretDispersionAngle",            "0"},
+                                {"Health",                           "3000"},
                             },
                         },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA_POLICE\ENTITIES\TURRETPOLICE.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Explosion","TURRETEXPL",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BlockDestructionIfRewardFails", "True"},
-                                {"OverrideChipAmount",            "0"},
+                                {"TurretRange",                      "2000"},
+                                {"TurretLaserActiveTime",            "2"},
+                                {"TurretLaserChargeTime",            "0"},
+                                {"TurretLaserShootTime",             "2"},
+                                {"TurretLaserMoveSpeed",             "5"},
+                                {"TurretShootPauseTime",             "2"},
+                                {"TurretBurstTime",                  "0.15"},
+                                {"TurretMaxDownAngle",               "10"},
+                                {"TurretMaxYawTurnSpeedDegPerSec",   "180"},
+                                {"TurretMaxPitchTurnSpeedDegPerSec", "90"},
+                                {"TurretAngle",                      "360"},
+                                {"TurretDispersionAngle",            "0"},
+                                {"Health",                           "3000"},
                             },
                         },
                     }
