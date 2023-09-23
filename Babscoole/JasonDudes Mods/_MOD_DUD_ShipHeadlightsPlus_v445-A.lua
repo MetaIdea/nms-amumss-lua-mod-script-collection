@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v443-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v445-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.43",
+["NMS_VERSION"]             = "4.45",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -829,16 +829,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TransZ", "-2.01901"},
                                 {"RotX",   "0"},
                             },
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSG\WINGGLEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Glow",},
-                            ["REMOVE"] = "SECTION"
                         },
                     }
                 },
