@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gShip Trail"
 ModNameSub = Color
 BaseDescription = "Changes color of stealth/dark ship trail to "..Color
-GameVersion = "398"
+GameVersion = "445"
 ModVersion = "a"
 FileSource = "MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\HOTGREENTRAIL.MATERIAL.MBIN"
 
@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["ADD_FILES"] = {
 		{
 			["FILE_DESTINATION"] 		= "TEXTURES/EFFECTS/TRAILS/HOT/GUMSKSHIP"..Color..".DDS",
-			["EXTERNAL_FILE_SOURCE"] 	= "GUMSKSHIP"..Color..".DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "DDS\GUMSKSHIP"..Color..".DDS",
 		},
 	},
 	["MODIFICATIONS"]	= {
