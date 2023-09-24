@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gShip Trail"
 ModNameSub = Color
 BaseDescription = "Changes color of stealth/dark ship trail to "..Color
-GameVersion = "398"
+GameVersion = "445"
 ModVersion = "a"
 FileSource = "MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\HOTGREENTRAIL.MATERIAL.MBIN"
 
