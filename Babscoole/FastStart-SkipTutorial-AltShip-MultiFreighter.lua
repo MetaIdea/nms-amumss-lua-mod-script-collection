@@ -17,6 +17,7 @@ SKIPTUT =
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="MissionDescSwitchOverride" value="" />
       <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
@@ -33,14 +34,24 @@ SKIPTUT =
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="UseScanEventDetailsInLogInfo" value="False" />
       <Property name="MissionIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="MissionIconSelected" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="MissionIconNotSelected" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="MissionPriority" value="-5" />
       <Property name="MissionCategory" value="GcMissionCategory.xml">
@@ -64,6 +75,9 @@ SKIPTUT =
         <Property name="SecondarySubstances" />
         <Property name="PrimaryProducts" />
         <Property name="SecondaryProducts" />
+        <Property name="AmountMin" value="0" />
+        <Property name="AmountMax" value="0" />
+        <Property name="AmountShouldBeRoundNumber" value="False" />
       </Property>
       <Property name="PrefixTitle" value="True" />
       <Property name="NextMissionHint" value="" />
@@ -90,10 +104,12 @@ SKIPTUT =
         <Property name="DefaultItemTypeForInitialWarp" value="None" />
         <Property name="BasePartBlueprints" />
       </Property>
-      <Property name="AutoStart" value="NotCreative" />
+      <Property name="AutoStart" value="AllModes" />
       <Property name="RestartOnCompletion" value="False" />
       <Property name="CancelSetsComplete" value="False" />
-      <Property name="Dialog" value=""/>
+      <Property name="Dialog" value="GcAlienPuzzleTable.xml">
+        <Property name="Table" />
+      </Property>
       <Property name="ScanEvents" />
       <Property name="Rewards">
         <Property value="GcGenericRewardTableEntry.xml">
@@ -101,13 +117,14 @@ SKIPTUT =
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardNexus.xml">
                   <Property name="Allow" value="True" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -117,9 +134,11 @@ SKIPTUT =
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMultiSpecificTechRecipes.xml">
                   <Property name="TechIds">
                     <Property value="NMSString0x10.xml">
@@ -130,10 +149,9 @@ SKIPTUT =
                     </Property>
                   </Property>
                   <Property name="DisplayTechId" value="" />
-                  <Property name="Setname" value="" />
+                  <Property name="SetName" value="" />
                   <Property name="Silent" value="True" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -143,9 +161,11 @@ SKIPTUT =
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMultiSpecificProductRecipes.xml">
                   <Property name="ProductIds">
                     <Property value="NMSString0x10.xml">
@@ -167,19 +187,25 @@ SKIPTUT =
                       <Property name="Value" value="BP_ANALYSER" />
                     </Property>
                     <Property value="NMSString0x10.xml">
-                      <Property name="Value" value="W_DOOR" />
+                      <Property name="Value" value="T_DOOR1" />
                     </Property>
                     <Property value="NMSString0x10.xml">
-                      <Property name="Value" value="W_WALL" />
+                      <Property name="Value" value="T_WALL" />
+                    </Property>
+                    <Property value="NMSString0x10.xml">
+                      <Property name="Value" value="T_CHEV_WIN0" />
                     </Property>
                     <Property value="NMSString0x10.xml">
                       <Property name="Value" value="PLANTPOT3" />
                     </Property>
                     <Property value="NMSString0x10.xml">
-                      <Property name="Value" value="W_FLOOR" />
+                      <Property name="Value" value="T_FLOOR" />
                     </Property>
                     <Property value="NMSString0x10.xml">
-                      <Property name="Value" value="W_ROOF" />
+                      <Property name="Value" value="T_ROOF6" />
+                    </Property>
+                    <Property value="NMSString0x10.xml">
+                      <Property name="Value" value="T_ROOF7" />
                     </Property>
                     <Property value="NMSString0x10.xml">
                       <Property name="Value" value="FLAG1" />
@@ -192,7 +218,6 @@ SKIPTUT =
                   <Property name="SetName" value="" />
                   <Property name="Silent" value="True" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -202,9 +227,11 @@ SKIPTUT =
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardCompleteMultiMission.xml">
                   <Property name="Missions">
                     <Property value="NMSString0x10.xml">
@@ -254,16 +281,15 @@ SKIPTUT =
                     </Property>
                   </Property>
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMission.xml">
                   <Property name="Mission" value="TUT_TRANSITION" />
                   <Property name="SetAsSelected" value="True" />
                   <Property name="FailRewardIfMissionActive" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -273,6 +299,7 @@ SKIPTUT =
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
             <Property name="List" />
           </Property>
         </Property>
@@ -281,29 +308,30 @@ SKIPTUT =
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardHazard.xml">
                   <Property name="AmountMin" value="100" />
                   <Property name="AmountMax" value="100" />
-                  <Property name="Silent" value="False" />
+                  <Property name="Silent" value="True" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardRepairWholeInventory.xml">
                   <Property name="InventoryToRepair" value="Weapon" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardRepairWholeInventory.xml">
                   <Property name="InventoryToRepair" value="Ship" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -313,33 +341,37 @@ SKIPTUT =
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardInstallTech.xml">
                   <Property name="TechId" value="SCANBINOC1" />
                   <Property name="InventoryToInstallIn" value="Weapon" />
                   <Property name="Silent" value="True" />
+                  <Property name="InstallBroken" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardInstallTech.xml">
                   <Property name="TechId" value="TERRAINEDITOR" />
                   <Property name="InventoryToInstallIn" value="Weapon" />
                   <Property name="Silent" value="True" />
+                  <Property name="InstallBroken" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardInstallTech.xml">
                   <Property name="TechId" value="HYPERDRIVE" />
                   <Property name="InventoryToInstallIn" value="Ship" />
                   <Property name="Silent" value="True" />
+                  <Property name="InstallBroken" value="False" />
                 </Property>
-                <Property name="LabelID" value="" />
               </Property>
             </Property>
           </Property>
@@ -365,15 +397,17 @@ SKIPTUT =
         <Property value="GcGenericMissionStage.xml">
           <Property name="Versions">
             <Property value="GcGenericMissionVersionProgress.xml">
-              <Property name="Version" value="13" />
+              <Property name="Version" value="15" />
               <Property name="Progress" value="0" />
             </Property>
           </Property>
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="" />
             <Property name="Reward" value="R_SKIP_NEXUS" />
-            <Property name="CanOverride" value="False" />
-            <Property name="DebugText" value="enable the nexus" />
+            <Property name="DoMissionBoardOverride" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="RewardInventoryOverride" value="None" />
+            <Property name="DebugText" value="enable nexus" />
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
@@ -386,7 +420,9 @@ SKIPTUT =
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="" />
             <Property name="Reward" value="R_SKIP_TECH" />
-            <Property name="CanOverride" value="False" />
+            <Property name="DoMissionBoardOverride" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="RewardInventoryOverride" value="None" />
             <Property name="DebugText" value="award techs" />
           </Property>
         </Property>
@@ -400,7 +436,9 @@ SKIPTUT =
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="" />
             <Property name="Reward" value="R_SKIP_PRODS" />
-            <Property name="CanOverride" value="False" />
+            <Property name="DoMissionBoardOverride" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="RewardInventoryOverride" value="None" />
             <Property name="DebugText" value="award prods" />
           </Property>
         </Property>
@@ -414,7 +452,9 @@ SKIPTUT =
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="" />
             <Property name="Reward" value="R_SKIP_MISS" />
-            <Property name="CanOverride" value="False" />
+            <Property name="DoMissionBoardOverride" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="RewardInventoryOverride" value="None" />
             <Property name="DebugText" value="shut down missions" />
           </Property>
         </Property>
@@ -428,7 +468,9 @@ SKIPTUT =
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="" />
             <Property name="Reward" value="R_SKIP_WIKI" />
-            <Property name="CanOverride" value="False" />
+            <Property name="DoMissionBoardOverride" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="RewardInventoryOverride" value="None" />
             <Property name="DebugText" value="setup the guide" />
           </Property>
         </Property>
@@ -442,7 +484,9 @@ SKIPTUT =
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="" />
             <Property name="Reward" value="R_SKIP_FIX" />
-            <Property name="CanOverride" value="False" />
+            <Property name="DoMissionBoardOverride" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="RewardInventoryOverride" value="None" />
             <Property name="DebugText" value="fix the inventories" />
           </Property>
         </Property>
@@ -456,7 +500,9 @@ SKIPTUT =
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="" />
             <Property name="Reward" value="R_SKIP_INSTALL" />
-            <Property name="CanOverride" value="False" />
+            <Property name="DoMissionBoardOverride" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="RewardInventoryOverride" value="None" />
             <Property name="DebugText" value="setup the inventories with the right tech" />
           </Property>
         </Property>
@@ -473,32 +519,16 @@ SKIPTUT =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]       = "FastStart-SkipTutorial-AltShip-MultiFreighter.pak",
+["MOD_FILENAME"]       = "FastStart-SkipTutorial-AltShip.pak",
 ["MOD_DESCRIPTION"]    = "Skip Intro and Tutorial and Multiple Freighters and Alt Ship",
 ["MOD_AUTHOR"]         = "HauntedKobra",
 ["LUA Fix and Update"] = "Babscoole",
-["NMS_VERSION"]        = "3.53",
+["NMS_VERSION"]        = "4.45",
 ["MODIFICATIONS"]      =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
-                {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\UI\BOOTLOGOPC.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "Textures",
-                            ["REMOVE"] = "SECTION",
-                        }
-                    },
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "DisplayTime",
-                            ["REMOVE"] = "SECTION",
-                        },
-                    },
-                },
                 {
                     ["MBIN_FILE_SOURCE"]  = "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
@@ -507,12 +537,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SkipIntro",                         "True"},  -- Original "False"
-                                {"BootMusic",                         "False"}, -- Original "True"
-                                {"DisableSaveSlotSorting",            "True"},  -- Original "False"
                                 {"ForceInitialShip",                  "False"}, -- Original "True"
                                 {"ForceInitialWeapon",                "False"}, -- Original "True"
                                 {"ForceLoadAllWeather",               "True"},  -- Original "False"
-                                {"MultiplePlayerFreightersInASystem", "True"},  -- Original "False"
                             }
                         },
                     }
