@@ -224,77 +224,64 @@ return
 ]]
 end
 
--- File Settings --
-FileName    = "Cheaper Multitool and Ship Slot Upgrades.pak"
-ModAuthor   = "JustRuthless"
-LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
-Description = ""
-NMS_Version = "4.45"
-
--- File Sources --
-FileSource1 = "METADATA\REALITY\TABLES\COSTTABLE.MBIN"
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = FileName,
-  ["MOD_AUTHOR"]      = ModAuthor,
-  ["LUA_AUTHOR"]      = LuaAuthor,
-  ["MOD_MAINTENANCE"] = ModMaintenance,
-  ["MOD_DESCRIPTION"] = Description,
-  ["NMS_VERSION"]     = NMS_Version,
-  ["MODIFICATIONS"]   =
-  {
+["MOD_FILENAME"]    = "Cheaper Multitool and Ship Slot Upgrades.pak",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"] = "Changes the unit prices for each storage slot in multitool and ship upgrade terminals",
+["NMS_VERSION"]     = "4.46",
+["MODIFICATIONS"]   =
     {
-      ["MBIN_CHANGE_TABLE"] =
-      {
         {
-          ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            { -- remove original multitool dialogue option display price
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_WEAP_C"},
-              ["PRECEDING_KEY_WORDS"] = {"Costs"},
-              ["REMOVE"] = "SECTION",
-            },
-            { -- remove original multitool menu prices
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_WEAP_CR"},
-              ["PRECEDING_KEY_WORDS"] = {"Costs"},
-              ["REMOVE"] = "SECTION",
-            },
-            { -- remove original ship dialogue option display price
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_SAL_CASH"},
-              ["PRECEDING_KEY_WORDS"] = {"Costs"},
-              ["REMOVE"] = "SECTION",
-            },
-            { -- remove original ship menu prices
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_SAL_CASHR"},
-              ["PRECEDING_KEY_WORDS"] = {"Costs"},
-              ["REMOVE"] = "SECTION",
-            },
-            { -- add new multitool dialogue option display price
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_WEAP_C"},
-              ["PRECEDING_KEY_WORDS"] = {"Cost"},
-              ["ADD"] = MultitoolCosts(MultitoolSlotPrices),
-            },
-            { -- add new multitool menu prices
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_WEAP_CR"},
-              ["PRECEDING_KEY_WORDS"] = {"Cost"},
-              ["ADD"] = MultitoolCosts(MultitoolSlotPrices),
-            },
-            { -- add new ship dialogue option display price
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_SAL_CASH"},
-              ["PRECEDING_KEY_WORDS"] = {"Cost"},
-              ["ADD"] = ShipCosts(ShipSlotPrices),
-            },
-            { -- add new ship menu prices
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_SAL_CASHR"},
-              ["PRECEDING_KEY_WORDS"] = {"Cost"},
-              ["ADD"] = ShipCosts(ShipSlotPrices),
-            },
-          }
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\COSTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        { -- remove original multitool dialogue option display price
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_WEAP_C"},
+                            ["PRECEDING_KEY_WORDS"] = {"Costs"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        { -- remove original multitool menu prices
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_WEAP_CR"},
+                            ["PRECEDING_KEY_WORDS"] = {"Costs"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        { -- remove original ship dialogue option display price
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_SAL_CASH"},
+                            ["PRECEDING_KEY_WORDS"] = {"Costs"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        { -- remove original ship menu prices
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_SAL_CASHR"},
+                            ["PRECEDING_KEY_WORDS"] = {"Costs"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        { -- add new multitool dialogue option display price
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_WEAP_C"},
+                            ["PRECEDING_KEY_WORDS"] = {"Cost"},
+                            ["ADD"] = MultitoolCosts(MultitoolSlotPrices),
+                        },
+                        { -- add new multitool menu prices
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_WEAP_CR"},
+                            ["PRECEDING_KEY_WORDS"] = {"Cost"},
+                            ["ADD"] = MultitoolCosts(MultitoolSlotPrices),
+                        },
+                        { -- add new ship dialogue option display price
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_SAL_CASH"},
+                            ["PRECEDING_KEY_WORDS"] = {"Cost"},
+                            ["ADD"] = ShipCosts(ShipSlotPrices),
+                        },
+                        { -- add new ship menu prices
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_SAL_CASHR"},
+                            ["PRECEDING_KEY_WORDS"] = {"Cost"},
+                            ["ADD"] = ShipCosts(ShipSlotPrices),
+                        },
+                    }
+                },
+            }
         },
-      }
-    },
-  }
+    }
 }

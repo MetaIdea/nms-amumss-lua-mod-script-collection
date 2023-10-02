@@ -42,6 +42,7 @@ JetpackFillRate = 0.2										--0.5			Was 0.2 in the Deprecated "HardMode" vers
 
 --Gravity storms seem to be possible on True Exotic Planets based on videos, but for some reason never randomly occur, only the scripted storms as part of certain missions...
 	--Also seems like the lowered gravity may just be the normal effect of the storm, not a special event like tornados
+	--As of NMS v4.x, garvity storms now occur on Dissonant planets
 
  --"weird" weathertype points to GRAVITYSTORMWEATHER.MBIN, so all these changes to WEIRDWEATHER.MBIN may be pointless as no weather seems to point to it...
 

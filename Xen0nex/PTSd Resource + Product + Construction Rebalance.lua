@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_44"
+GameVersion = "4_45"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -497,112 +497,112 @@ ProductBuyMarkupModChanges =
 
 SubstanceCostChanges =
 {
-	{"FUEL1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Carbon		BaseValue = 12
-	{"FUEL2",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"OXYGEN",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"LAUNCHSUB",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},		--Di-Hydrogen,	BaseValue = 34
-	{"LAUNCHSUB2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"ROCKETSUB",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Tritium,		BaseValue = 6
-	{"LAND1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Ferrite Dust	BaseValue = 14
-	{"LAND2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Pure Ferrite	BaseValue = 28
-	{"LAND3",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Mag. Ferrite	BaseValue = 82
-	{"SAND1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"CATALYST1",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"CATALYST2",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"CAVE1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Cobalt		BaseValue = 76	(198 in 3.99)
-	{"CAVE2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Ion. Cobalt	BaseValue = 162 (401 in 3.99)
-	{"WATER1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Salt			BaseValue = 101 (299 in 3.99)
-	{"WATER2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Chlorine		BaseValue = 205 (602 in 3.99)
-	{"WATERPLANT",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"YELLOW2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Copper		BaseValue = 41	(121 in 3.99)
-	{"RED2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Cadmium		BaseValue = 83	(234 in 3.99)
-	{"GREEN2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Emeril		BaseValue = 114	(348 in 3.99)
-	{"BLUE2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Indium		BaseValue = 132	(464 in 3.99)
-	{"STELLAR2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Chromatic Metal	BaseValue = 88	(245 in 3.99)
-	{"LUSH1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"DUSTY1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"TOXIC1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"RADIO1",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup,	SubstanceBuyMarkupMod},		--Uranium,		BaseValue = 62
-	{"COLD1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"HOT1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"LAVA1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"CREATURE1",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"ROBOT1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"ASTEROID1",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Silver			BaseValue = 186
-	{"ASTEROID2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Gold				BaseValue = 353
-	{"ASTEROID3",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Platinum			BaseValue = 505
-	{"GAS1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"GAS2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"GAS3",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"EX_YELLOW",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Activated Copper		BaseValue = 75
-	{"EX_RED",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"EX_GREEN",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"EX_BLUE",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--BaseValue = 949
-	{"PLANT_TOXIC",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"PLANT_SNOW",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Frost Crystal		BaseValue = 12
-	{"PLANT_RADIO",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Gamma Weed
-	{"PLANT_DUST",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Cactus Flesh		BaseValue = 28
-	{"PLANT_HOT",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Solarium			BaseValue = 70
-	{"PLANT_LUSH",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"PLANT_CAVE",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"PLANT_WATER",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"PLANT_POOP",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"SPACEGUNK1",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"SPACEGUNK2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"SPACEGUNK3",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"SPACEGUNK4",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
-	{"SPACEGUNK5",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod}
-	--{"AF_METAL",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Tainted Metal?
-	--{"SPECIAL_POOP",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},		--Hexite?
+	{"FUEL1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Carbon		BaseValue = 12
+	{"FUEL2",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},
+	{"OXYGEN",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},
+	{"LAUNCHSUB",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},			--Di-Hydrogen,	BaseValue = 34
+	{"LAUNCHSUB2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"ROCKETSUB",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Tritium,		BaseValue = 6
+	{"LAND1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Ferrite Dust	BaseValue = 14
+	{"LAND2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Pure Ferrite	BaseValue = 28
+	{"LAND3",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Mag. Ferrite	BaseValue = 82
+	{"SAND1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"CATALYST1",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},
+	{"CATALYST2",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},
+	{"CAVE1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Cobalt		BaseValue = 76	(198 in 3.99)
+	{"CAVE2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Ion. Cobalt	BaseValue = 162 (401 in 3.99)
+	{"WATER1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Salt			BaseValue = 101 (299 in 3.99)
+	{"WATER2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Chlorine		BaseValue = 205 (602 in 3.99)
+	{"WATERPLANT",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"YELLOW2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Copper		BaseValue = 41	(121 in 3.99)
+	{"RED2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Cadmium		BaseValue = 83	(234 in 3.99)
+	{"GREEN2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Emeril		BaseValue = 114	(348 in 3.99)
+	{"BLUE2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Indium		BaseValue = 132	(464 in 3.99)
+	{"STELLAR2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Chromatic Metal	BaseValue = 88	(245 in 3.99)
+	{"LUSH1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"DUSTY1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"TOXIC1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"RADIO1",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},			--Uranium,		BaseValue = 62
+	{"COLD1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"HOT1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"LAVA1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"CREATURE1",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"ROBOT1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"ASTEROID1",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Silver			BaseValue = 186
+	{"ASTEROID2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Gold				BaseValue = 353
+	{"ASTEROID3",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Platinum			BaseValue = 505
+	{"GAS1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"GAS2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"GAS3",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"EX_YELLOW",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Activated Copper		BaseValue = 75
+	{"EX_RED",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"EX_GREEN",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"EX_BLUE",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--BaseValue = 949
+	{"PLANT_TOXIC",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"PLANT_SNOW",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Frost Crystal		BaseValue = 12
+	{"PLANT_RADIO",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Gamma Weed
+	{"PLANT_DUST",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Cactus Flesh		BaseValue = 28
+	{"PLANT_HOT",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Solarium			BaseValue = 70
+	{"PLANT_LUSH",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"PLANT_CAVE",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"PLANT_WATER",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"PLANT_POOP",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"SPACEGUNK1",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"SPACEGUNK2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"SPACEGUNK3",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"SPACEGUNK4",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
+	{"SPACEGUNK5",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup}
+	--{"AF_METAL",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Tainted Metal?
+	--{"SPECIAL_POOP",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},		--Hexite?
 }
 
 ProductCostChanges =
 {	--Cheap Consumables, all are BaseMarkup = 0.2
-	{"FUELGEL3_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup,	CheapConsumableBuyMarkupMod},	--Life Support Gel			BaseValue = 200
-	{"POWERCELL_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup,	CheapConsumableBuyMarkupMod},	--Ion Battery				BaseValue = 200
-	{"FUEL_JELLY_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup,	CheapConsumableBuyMarkupMod},	--Di-Hydrogen Jelly			BaseValue = 200
-	{"AMMO_PROD_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup,	CheapConsumableBuyMarkupMod},	--Projectile Ammo			BaseValue = 1
+	{"FUELGEL3_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup},		--Life Support Gel			BaseValue = 200
+	{"POWERCELL_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup},		--Ion Battery				BaseValue = 200
+	{"FUEL_JELLY_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup},		--Di-Hydrogen Jelly			BaseValue = 200
+	{"AMMO_PROD_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup},		--Projectile Ammo			BaseValue = 1
 	--Consumables, all are BaseMarkup = 0.2 unless otherwise noted
-	{"UI_SHIPCHARGE_NAME",			ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup,	ConsumableBuyMarkupMod},				--Starshield Battery		BaseValue = 500
-	{"GRENFUEL1_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup,	ConsumableBuyMarkupMod},				--Unstable Plasma			BaseValue = 5750
-	{"HYPERFUEL1_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup,	ConsumableBuyMarkupMod},				--Warp Cell					BaseValue = 46750
-	{"HYPERFUEL2_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup,	ConsumableBuyMarkupMod},				--Warp Hypercore			BaseValue = 46750
-	{"AM_HOUSING_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup,	ConsumableBuyMarkupMod},				--Antimatter Housing, 		BaseValue = 6500	BaseMarkup = 2
-	{"COMMODITY6_NAME",				ConsumableSpaceStationMarkup,	AntimatterBuyBaseMarkup,	AntimatterAndFrigateFuelBuyMarkupMod},	--Antimatter  	BaseValue = 5233	BaseMarkup = 5, SpaceStationMarkup = 0.5, BuyMarkupMod = 1.5,
-	{"UI_FREIGHTER_FUEL_1_NAME",	ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup,	AntimatterAndFrigateFuelBuyMarkupMod},	--Frigate Fuel 50 tonnes	BaseValue = 20000	BaseMarkup = 0.2, BuyMarkupMod = 1.5, 
-	{"UI_FREIGHTER_FUEL_2_NAME",	ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup,	AntimatterAndFrigateFuelBuyMarkupMod},	--BaseMarkup = 0.2, BuyMarkupMod = 1.5
-	{"UI_FREIGHTER_FUEL_3_NAME",	ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup,	AntimatterAndFrigateFuelBuyMarkupMod},	--BaseMarkup = 0.2, BuyMarkupMod = 1.5
-	{"UI_NAV_DATA_NAME",			NavDataSpaceStationMarkup,		NavDataBuyBaseMarkup,		ConsumableBuyMarkupMod},				--Navigation Data			BaseValue = 1000	BaseMarkup = 0.2, SpaceStationMarkup = 0.5
-	{"UI_NAV_DROPPOD_NAME",			DropPodDataSpaceStationMarkup,	DropPodDataBuyBaseMarkup,	ConsumableBuyMarkupMod},				--Drop Pod Coordinates		BaseValue = 85000	BaseMarkup = 0.2, SpaceStationMarkup = 0.5
+	{"UI_SHIPCHARGE_NAME",			ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Starshield Battery		BaseValue = 500
+	{"GRENFUEL1_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Unstable Plasma			BaseValue = 5750
+	{"HYPERFUEL1_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Warp Cell					BaseValue = 46750
+	{"HYPERFUEL2_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Warp Hypercore			BaseValue = 46750
+	{"AM_HOUSING_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Antimatter Housing, 		BaseValue = 6500	BaseMarkup = 2
+	{"COMMODITY6_NAME",				ConsumableSpaceStationMarkup,	AntimatterBuyBaseMarkup},				--Antimatter  	BaseValue = 5233	BaseMarkup = 5, SpaceStationMarkup = 0.5, BuyMarkupMod = 1.5,
+	{"UI_FREIGHTER_FUEL_1_NAME",	ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Frigate Fuel 50 tonnes	BaseValue = 20000	BaseMarkup = 0.2, BuyMarkupMod = 1.5, 
+	{"UI_FREIGHTER_FUEL_2_NAME",	ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--BaseMarkup = 0.2, BuyMarkupMod = 1.5
+	{"UI_FREIGHTER_FUEL_3_NAME",	ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--BaseMarkup = 0.2, BuyMarkupMod = 1.5
+	{"UI_NAV_DATA_NAME",			NavDataSpaceStationMarkup,		NavDataBuyBaseMarkup},					--Navigation Data			BaseValue = 1000	BaseMarkup = 0.2, SpaceStationMarkup = 0.5
+	{"UI_NAV_DROPPOD_NAME",			DropPodDataSpaceStationMarkup,	DropPodDataBuyBaseMarkup},				--Drop Pod Coordinates		BaseValue = 85000	BaseMarkup = 0.2, SpaceStationMarkup = 0.5
 	
-	{"LAUNCHFUEL_NAME",				ConsumableSpaceStationMarkup,	LaunchAndSubFuelBuyBaseMarkup,	ConsumableBuyMarkupMod},			--BaseMarkup = 98,			BaseValue = 450
-	{"UI_SUBFUEL_NAME",				ConsumableSpaceStationMarkup,	LaunchAndSubFuelBuyBaseMarkup,	ConsumableBuyMarkupMod},			--BaseMarkup = 98,			BaseValue = 7200
+	{"LAUNCHFUEL_NAME",				ConsumableSpaceStationMarkup,	LaunchAndSubFuelBuyBaseMarkup},			--BaseMarkup = 98,			BaseValue = 450
+	{"UI_SUBFUEL_NAME",				ConsumableSpaceStationMarkup,	LaunchAndSubFuelBuyBaseMarkup},			--BaseMarkup = 98,			BaseValue = 7200
 	--Cheap Components, all are BaseMarkup = 0.2
-	{"CASING_NAME",					CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup,	CheapComponentBuyMarkupMod},	--Metal Plating				BaseValue = 800
-	{"NANOTUBES_NAME",				CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup,	CheapComponentBuyMarkupMod},	--BaseValue = 500
-	{"CARBON_SEAL_NAME",			CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup,	CheapComponentBuyMarkupMod},	--BaseValue = 800
+	{"CASING_NAME",					CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup},		--Metal Plating				BaseValue = 800
+	{"NANOTUBES_NAME",				CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup},		--BaseValue = 500
+	{"CARBON_SEAL_NAME",			CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup},		--BaseValue = 800
 	
 	--Components, all are BaseMarkup = 1.2 except Microchip
-	{"MICROCHIP_NAME",				ComponentSpaceStationMarkup,	MicrochipBuyBaseMarkup,	ComponentBuyMarkupMod},						--BaseValue = 2000		BaseMarkup = 8.5	
-	{"UI_COMPUTER_NAME",			ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup,	ComponentBuyMarkupMod},						--BaseValue = 4200
-	{"UI_HYDRALIC_NAME",			ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup,	ComponentBuyMarkupMod},						--BaseValue = 3600
-	{"UI_MAGNET_NAME",				ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup,	ComponentBuyMarkupMod},						--BaseValue = 6150
-	{"UI_MIRROR_NAME",				ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup,	ComponentBuyMarkupMod},						--BaseValue = 6150
-	{"UI_BIO_NAME",					ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup,	ComponentBuyMarkupMod},						--BaseValue = 12300
+	{"MICROCHIP_NAME",				ComponentSpaceStationMarkup,	MicrochipBuyBaseMarkup},				--BaseValue = 2000		BaseMarkup = 8.5	
+	{"UI_COMPUTER_NAME",			ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup},				--BaseValue = 4200
+	{"UI_HYDRALIC_NAME",			ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup},				--BaseValue = 3600
+	{"UI_MAGNET_NAME",				ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup},				--BaseValue = 6150
+	{"UI_MIRROR_NAME",				ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup},				--BaseValue = 6150
+	{"UI_BIO_NAME",					ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup},				--BaseValue = 12300
 	
-	{"UI_TECHMOD_NAME",				LoomSpaceStationMarkup,	LoomBuyBaseMarkup,	LoomBuyMarkupMod},										--Wiring Loom?	BaseMarkup = 0.2,	BuyMarkupMod = 2,	BaseValue = 25000
+	{"UI_TECHMOD_NAME",				LoomSpaceStationMarkup,	LoomBuyBaseMarkup},								--Wiring Loom?	BaseMarkup = 0.2,	BuyMarkupMod = 2,	BaseValue = 25000
 	--Misc
-	{"UI_SUSPECT_GOODS_NAME",		SusGoodsSpaceStationMarkup,	SusGoodsBaseMarkup,	ConsumableBuyMarkupMod},							--BaseValue = 150
-	{"UI_SUSPECT_TECH_NAME",		SusTechSpaceStationMarkup,	SusTechBaseMarkup,	ConsumableBuyMarkupMod},							--BaseValue = 200
-	{"UI_SUSPECT_WEAP_NAME",		SusWeapSpaceStationMarkup,	SusWeapBaseMarkup,	ConsumableBuyMarkupMod},							--BaseValue = 350
-	{"UI_REPAIR_KIT_NAME",			RepairKitSpaceStationMarkup,	RepairKitBaseMarkup,	ComponentBuyMarkupMod},						--BaseValue = 450
-	{"UI_FIENDCORE_NAME",			LarvalCoreSpaceStationMarkup,	LarvalCoreBaseMarkup,	ComponentBuyMarkupMod},
-	{"UI_FISHCORE_NAME",			HadalCoreSpaceStationMarkup,	HadalCoreBaseMarkup,	ComponentBuyMarkupMod},
-	{"PROD_NIP_NAME",				NipNipSpaceStationMarkup,	NipNipBaseMarkup,	ComponentBuyMarkupMod},
+	{"UI_SUSPECT_GOODS_NAME",		SusGoodsSpaceStationMarkup,	SusGoodsBaseMarkup},						--BaseValue = 150
+	{"UI_SUSPECT_TECH_NAME",		SusTechSpaceStationMarkup,	SusTechBaseMarkup},							--BaseValue = 200
+	{"UI_SUSPECT_WEAP_NAME",		SusWeapSpaceStationMarkup,	SusWeapBaseMarkup},							--BaseValue = 350
+	{"UI_REPAIR_KIT_NAME",			RepairKitSpaceStationMarkup,	RepairKitBaseMarkup},					--BaseValue = 450
+	{"UI_FIENDCORE_NAME",			LarvalCoreSpaceStationMarkup,	LarvalCoreBaseMarkup},
+	{"UI_FISHCORE_NAME",			HadalCoreSpaceStationMarkup,	HadalCoreBaseMarkup},
+	{"PROD_NIP_NAME",				NipNipSpaceStationMarkup,	NipNipBaseMarkup},
 	
-	{"UI_SALVAGE_TECH_6_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},											--Spool of Nano-Cables	BaseValue = 12000	(x10 in PTSd)
-	{"UI_SALVAGE_TECH_7_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},											--Recycled Circuitry	BaseValue = 520000
-	{"UI_SALVAGE_TECH_10_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},											--Starship AI Valves	BaseValue = 12000000
+	{"UI_SALVAGE_TECH_6_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},				--Spool of Nano-Cables	BaseValue = 12000	(x10 in PTSd)
+	{"UI_SALVAGE_TECH_7_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},				--Recycled Circuitry	BaseValue = 520000
+	{"UI_SALVAGE_TECH_10_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},				--Starship AI Valves	BaseValue = 12000000
 	
 	{"BLD_SPOOKY_PLANT_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
 	{"BLD_SLIME_MED_NAME",			0,	ScrapDealerDecorativeBaseMarkup,	0},

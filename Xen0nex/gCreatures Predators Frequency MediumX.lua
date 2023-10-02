@@ -1,6 +1,6 @@
 Author = "Gumsk"				--Edited by Xen0nex
-ModName = "gPredators Frequency"
-ModNameSub = "MediumX"
+ModName = "gCreatures Predators"
+ModNameSub = "Frequency MediumX"
 BaseDescription = "More dense predators; edited to tone down the effect to keep species sync with vanilla players"
 GameVersion = "441"
 ModVersion = "a"

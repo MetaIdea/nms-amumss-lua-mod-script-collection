@@ -979,7 +979,7 @@ function AddShield (ShieldID)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["LUA_AUTHOR"]		= LuaAuthor,

@@ -54,28 +54,19 @@ CB_Width     = "4" -- 4
 CB_Alpha     = "0.5" -- 0.5
 CB_RemoveCylinderRadius = "15" -- 10
 
--- File Sources --
-FileSource1 = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES.SPEEDLINE.MBIN"
-FileSource2 = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES2.SPEEDLINE.MBIN"
-FileSource3 = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES3.SPEEDLINE.MBIN"
-FileSource4 = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES4.SPEEDLINE.MBIN"
-FileSource5 = "MODELS\EFFECTS\SPEEDLINES\SPACE.SPEEDLINE.MBIN"
-FileSource6 = "MODELS\EFFECTS\SPEEDLINES\SPACE2.SPEEDLINE.MBIN"
-FileSource7 = "MODELS\EFFECTS\SPEEDLINES\SPACEBIG.SPEEDLINE.MBIN"
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = "Reduce Pulse Speed Lines.pak",
-    ["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
-    ["MOD_DESCRIPTION"] = "Reduce Speed Lines",
-    ["NMS_VERSION"]     = "4.45",
-    ["MODIFICATIONS"]   =
-        {
+["MOD_FILENAME"]    = "Reduce Pulse Speed Lines.pak",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"] = "Reduce Speed Lines",
+["NMS_VERSION"]     = "4.46",
+["MODIFICATIONS"]   =
+    {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = FileSource1,
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES.SPEEDLINE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -92,7 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = FileSource2,
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES2.SPEEDLINE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -110,7 +101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = FileSource3,
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES3.SPEEDLINE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -128,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = FileSource4,
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES4.SPEEDLINE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -146,7 +137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = FileSource5,
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPEEDLINES\SPACE.SPEEDLINE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -163,7 +154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = FileSource6,
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPEEDLINES\SPACE2.SPEEDLINE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -180,7 +171,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = FileSource7,
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPEEDLINES\SPACEBIG.SPEEDLINE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "4_44"
+GameVersion = "4_45"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
@@ -17,6 +17,10 @@ AllTwitchExpRewardsToolSize =			8						--Varies	Only used if AllTwitchExpRewards
 
 --This controls what the COST (not reward) is certain dialogue choices with Travellers, such as asking directions to a grave
 TravellerNaniteCost =					"TECHFRAG_TRAV"			--"TECHFRAG_MD" 100 Nanites		"PTSd Expensive Pilots + Broadcast Receivers.lua" changes the value of TECHFRAG_MD and adds TECHFRAG_TRAV as a new entry costing 800 Nanites
+
+--These multipleirs control the new reward for giving Travellers 15 nanites (vanilla gives 5,000-70,000 units before PTSd multipliers)
+TravRewardDiHydrMult =					1						--20 - 40 Di-Hydrogen
+TravRewardTritMult =					1						--20 - 40 Tritium
 
 TravTechChance =						100						--200	Relative chance weight to receive tech memory fragment from certain traveller dialogue rewards instead of inventory memory fragment or products (Vanilla total chance weight pool is 500)
 MemFragInvBulkChance =					20						--0		Relative chance weight to receive Freighter Bulkhead from Inventory Memory Fragments (Vanilla total chance weight pool is 100)
@@ -707,6 +711,12 @@ ExoClassCChance =						0						--55
 ExoClassBChance =						60						--25
 ExoClassAChance =						30						--15
 ExoClassSChance =						10						--5
+
+--Multipliers to the quality chance % (C, B, A, S Class) for random various upgrade modules rarely found (~12% of the time) in Damaged Machinery on planets
+DmgMachClassCChance =					1						--55 (0 for hazard & life support upgrades)
+DmgMachClassBChance =					1						--25 (60 for hazard and 65 for life support upgrades)
+DmgMachClassAChance =					1						--15 (30 for hazard & life support upgrades)
+DmgMachClassSChance =					1						--5 (10 for hazard & life support upgrades)
 
 --Multipliers to apply to the various kinds of rewards from Frigate Expedition missions
 ExpeditionUnitsMultiplier =				0.8
@@ -1718,6 +1728,52 @@ AddedExocraftNPCMoneyID =
                     <Property name="Value" value="R_D_EXOTUT_MONEY" />
                   </Property>]]
 
+NewTravReward =
+[[<Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="TRAV_PACKAGE" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
+              <Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
+                <Property name="DefaultSubstanceType" value="None" />
+              </Property>
+              <Property name="ID" value="LAUNCHSUB" />
+              <Property name="AmountMin" value="]]..math.floor(20*TravRewardDiHydrMult)..[[" />
+              <Property name="AmountMax" value="]]..math.floor(40*TravRewardDiHydrMult)..[[" />
+              <Property name="DisableMultiplier" value="False" />
+              <Property name="RewardAsBlobs" value="False" />
+              <Property name="UseFuelMultiplier" value="False" />
+              <Property name="Silent" value="False" />
+              <Property name="UseMissionBoardDifficultyScale" value="False" />
+            </Property>
+          </Property>
+		  <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
+              <Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
+                <Property name="DefaultSubstanceType" value="None" />
+              </Property>
+              <Property name="ID" value="ROCKETSUB" />
+              <Property name="AmountMin" value="]]..math.floor(20*TravRewardTritMult)..[[" />
+              <Property name="AmountMax" value="]]..math.floor(40*TravRewardTritMult)..[[" />
+              <Property name="DisableMultiplier" value="False" />
+              <Property name="RewardAsBlobs" value="False" />
+              <Property name="UseFuelMultiplier" value="False" />
+              <Property name="Silent" value="False" />
+              <Property name="UseMissionBoardDifficultyScale" value="False" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>]]
+
 function AddUpgrade(UpgradeGroup, NormalChance, RareChance, EpicChance, LegendChance)
     return
 	[[<Property value="GcRewardTableItem.xml">
@@ -2589,6 +2645,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"ID",	BreakTechBlue}
 				}
 			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","TECHDEBRIS"},
+				["REPLACE_TYPE"] 		= "ALL",
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"WeightedChanceNormal",	DmgMachClassCChance},
+					{"WeightedChanceRare",	DmgMachClassBChance},
+					{"WeightedChanceEpic",	DmgMachClassAChance},
+					{"WeightedChanceLegendary",	DmgMachClassSChance},
+				}
+			},
 		}
 	},
 	{
@@ -2611,6 +2680,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Cost",	TravellerNaniteCost}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Name", "ALL_OFFER_NANITES"},
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Value",	"TRAV_PACKAGE"}			--"SEC_MONEY"
 				}
 			},
 			{
@@ -3057,6 +3135,13 @@ end
 			{
 				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
 				["ADD"] = NewNaniteReward,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			}
+			
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["ADD"] = NewTravReward,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			}
 

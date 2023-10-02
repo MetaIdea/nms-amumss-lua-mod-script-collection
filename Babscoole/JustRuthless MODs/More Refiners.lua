@@ -3,31 +3,19 @@ REFINER_SMALL  = "0" -- 0 - Original values on the right
 REFINER_MEDIUM = "0" -- 3 - Unlimited = 0
 REFINER_LARGE  = "0" -- 2
 ---------------------
-
--- File Settings --
-FileName    = "More Refiners.pak"
-ModAuthor   = "JustRuthless"
-LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
-NMS_Version = "4.45"
-
--- File Sources --
-FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]  = FileName,
-    ["MOD_AUTHOR"]    = ModAuthor,
-    ["LUA_AUTHOR"]    = LuaAuthor,
-    ["MOD_MAINTENANCE"] = ModMaintenance,
-    ["NMS_VERSION"]   = NMS_Version,
-    ["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "More Refiners.pak",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"] = "Removes the refiners building limits",
+["NMS_VERSION"]     = "4.46",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FileSource1,
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

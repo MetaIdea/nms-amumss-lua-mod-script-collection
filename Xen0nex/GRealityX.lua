@@ -1,6 +1,6 @@
 Author = "Gumsk"			-- Edited by Xen0nex
 ModName = "gExos Challenge"
-ModNameSub = "RealityX"
+ModNameSub = "GRealityX"
 BaseDescription = "Increases suit upgrade prices, changes initial suit & ship slots"
 GameVersion = "441"
 ModVersion = "a"
@@ -119,7 +119,7 @@ SuitCargoPrices = [[ <Property name="SuitCargoUpgradePrices">
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

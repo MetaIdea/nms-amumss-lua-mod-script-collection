@@ -1,124 +1,65 @@
 -- Quicksilver Reward Settings --
 Quicksilver =
-{
-  { -- ListID
-    {"R_MB_LOW"}, -- Mission Board Low
-    { -- Currency,   Min,   Max, Chance,     Original
-      {"Specials",    50,    50,    10}, -- 50, 50, 10
-    }
-  },
-  {
-    {"R_MB_MED"}, -- Mission Board Med
-    {
-      {"Specials",   100,   100,    10}, -- 100, 100, 10
-    }
-  },
-  {
-    {"R_MB_HIGH"}, -- Mission Board High
-    {
-      {"Specials",   150,   150,    10}, -- 150, 150, 10
-    }
-  },
-  {
-    {"R_MB_MEGA"}, -- Mission Board Mega
-    {
-      {"Specials",   200,   200,    10}, -- 200, 200, 10
-    }
-  },
-  {
-    {"R_NEXUS_MED_C"}, -- Nexus Mission Med
-    {
-      {"Specials",   150,   150,    20}, -- 150, 150, 20
-    }
-  },
-  {
-    {"R_NEXUS_MEGA_C"}, -- Nexus Mission Mega
-    {
-      {"Specials",   250,   250,    20}, -- 250, 250, 20
-    }
-  },
-  {
-    {"R_PIRATEBOARD_B"}, -- Outlaw Bounty Master
-    {
-      {"Specials",   100,   100,    10}, -- 100, 100, 10
-    }
-  },
+{  --ListID,          Min,Max,Chance
+    {"R_MB_LOW",       50,50,10},   -- Mission Board Low
+    {"R_MB_MED",       100,100,10}, -- Mission Board Med
+    {"R_MB_HIGH",      150,150,10}, -- Mission Board High
+    {"R_MB_MEGA",      200,200,10}, -- Mission Board Mega
+    {"R_NEXUS_MED_C",  150,150,20}, -- Nexus Mission Med
+    {"R_NEXUS_MEGA_C", 250,250,20}, -- Nexus Mission Mega
+    {"R_PIRATEBOARD_B",100,100,10}, -- Outlaw Bounty Master
 }
 -----------------------------------------------------------------
-
--- Currency Reward Function --
-local function CurrencyReward(currency, min, max, chance)
-return
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="]]..chance..[[" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..min..[[" />
-              <Property name="AmountMax" value="]]..max..[[" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="]]..currency..[[" />
-              </Property>
-            </Property>
-          </Property>
-]]
-end
------------------------------------------------------------------
-
--- File Settings --
-FileName    = "QS Missions.pak"
-ModAuthor   = "JustRuthless"
-LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
-Description = ""
-NMS_Version = "4.45"
-
--- File Sources --
-FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = FileName,
-  ["MOD_AUTHOR"]      = ModAuthor,
-  ["LUA_AUTHOR"]      = LuaAuthor,
-  ["MOD_MAINTENANCE"] = ModMaintenance,
-  ["MOD_DESCRIPTION"] = Description,
-  ["NMS_VERSION"]     = NMS_Version,
-  ["MODIFICATIONS"]   =
-  {
+["MOD_FILENAME"]    = "QS Missions.pak",
+["MOD_DESCRIPTION"] = "Adds quicksilver rewards to normal missions at the nexus, space station mission boards, and outlaw bounty masters",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["NMS_VERSION"]     = "4.46",
+["MODIFICATIONS"]   =
     {
-      ["MBIN_CHANGE_TABLE"] =
-      {
         {
-          ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            -- RewardTable
-          }
-        },
-      }
-    },
-  }
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id","RS_QUICKSILV_S","Reward","GcRewardMoney.xml"},
+                            ["SECTION_UP"] = 1,
+                            ["SEC_SAVE_TO"] = "ADD_CurrencyReward",
+                        },
+                    },
+                },
+            }
+        }
+    }
 }
 
 local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
 for i = 1, #Quicksilver do
-  local ListID = Quicksilver[i][1][1]
-  local Items  = Quicksilver[i][2]
-
-  for j = 1, #Items do
-    Currency = Items[j][1]
-    Min      = Items[j][2]
-    Max      = Items[j][3]
-    Chance   = Items[j][4]
+  local ListID = Quicksilver[i][1]
+  local Min    = Quicksilver[i][2]
+  local Max    = Quicksilver[i][3]
+  local Chance = Quicksilver[i][4]
 
     RewardTable[#RewardTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", ListID},
       ["PRECEDING_KEY_WORDS"] = {"List", "List"},
-      ["ADD"] = CurrencyReward(Currency, Min, Max, Chance),
+      ["SEC_ADD_NAMED"] = "ADD_CurrencyReward",
     }
-  end
+    RewardTable[#RewardTable+1] =
+    {
+      ["SPECIAL_KEY_WORDS"] = {"Id", ListID},
+      ["PRECEDING_KEY_WORDS"] = {"List", "List"},
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+        {"PercentageChance", Chance},
+        {"AmountMin"       , Min},
+        {"AmountMax"       , Max},
+      }
+    }
 end
