@@ -1,6 +1,6 @@
 Author = "Gumsk"		--Edited by Xenonex
 ModName = "gCreatures Predators"
-ModNameSub = "DangerousX"
+ModNameSub = "Danger DangerousX"
 BaseDescription = "More aggressive and dangerous predators"
 GameVersion = "441"
 ModVersion = "a"

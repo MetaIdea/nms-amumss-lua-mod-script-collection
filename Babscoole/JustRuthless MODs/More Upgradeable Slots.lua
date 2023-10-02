@@ -96,60 +96,51 @@ VehicleMaxUpgradeChanges =
     }
   },
 }
-
--- File Settings --
-FileName    = "More Upgradeable Slots.pak"
-ModAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
-NMS_Version = "4.45"
-
--- File Sources --
-FileSource1 = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"
-
+-----------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = FileName,
-  ["MOD_AUTHOR"]      = ModAuthor,
-  ["MOD_MAINTENANCE"] = ModMaintenance,
-  ["NMS_VERSION"]     = NMS_Version,
-  ["MODIFICATIONS"]   =
-  {
+["MOD_FILENAME"]    = "More Upgradeable Slots.pak",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"] = "Adds more upgradeable inventory, technology, and cargo slots to exocrafts, multitools, ships, and freighters",
+["NMS_VERSION"]     = "4.46",
+["MODIFICATIONS"]   =
     {
-      ["MBIN_CHANGE_TABLE"] =
-      {
         {
-          ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] =
-          {
+            ["MBIN_CHANGE_TABLE"] =
             {
-              ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"MinSlots",     120},
-                {"MaxSlots",     120},
-                {"MinTechSlots", 60},
-                {"MaxTechSlots", 60}
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
-	      ["PRECEDING_KEY_WORDS"] = {"Bounds"},
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"MaxWidthSmall",     10},
-                {"MaxHeightSmall",    12},
-                {"MaxWidthStandard",  10},
-                {"MaxHeightStandard", 12}
-              }
-            },
-          }
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinSlots",     120},
+                                {"MaxSlots",     120},
+                                {"MinTechSlots", 60},
+                                {"MaxTechSlots", 60}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Bounds"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MaxWidthSmall",     10},
+                                {"MaxHeightSmall",    12},
+                                {"MaxWidthStandard",  10},
+                                {"MaxHeightStandard", 12}
+                            }
+                        },
+                    }
+                },
+            }
         },
-      }
-    },
-  }
+    }
 }
 
-local InventoryTable           = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local InventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
 -- Ship Max Upgrade Table --
 for i = 1, #ShipMaxUpgradeChanges do

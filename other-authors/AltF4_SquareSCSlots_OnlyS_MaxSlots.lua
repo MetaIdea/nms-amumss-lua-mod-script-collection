@@ -26,11 +26,11 @@ CClassMaxInventorySize = 120
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] = "AltF4_OnlyS_MaxSlots.pak",
+    ["MOD_FILENAME"] = "AltF4_SquareSCSlots_OnlyS_MaxSlots.pak",
     ["MOD_AUTHOR"] = "AltF4",
 	["LUA_AUTHOR"] = "AltF4",
     ["NMS_VERSION"] = "4.45",
-    ["MOD_DESCRIPTION"] = "Make the generated ships, multitools, freighters and frigates only have S class with max slots. Make frigates have max stats.",
+    ["MOD_DESCRIPTION"] = "Make the generated ships, multitools, freighters and frigates only have S class with max slots and square super charged slots. Make frigates have max stats.",
     ["MODIFICATIONS"] = 
     {
         {
@@ -41,6 +41,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
+                            ["PRECEDING_KEY_WORDS"] = "SpecialTechSlotMaxIndex",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] = "", 
+                            ["VALUE_CHANGE_TABLE"] = 
+                            {
+                                {"X", "1"},
+								{"Y", "1"},
+                            }
+                        },
+						{
                             ["PRECEDING_KEY_WORDS"] = "SciSmall",
                             ["VALUE_CHANGE_TABLE"] = 
                             {

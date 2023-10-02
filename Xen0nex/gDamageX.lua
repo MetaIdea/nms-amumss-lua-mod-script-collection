@@ -20,7 +20,7 @@ StarshipTech =				0.5				--Tech Damage chance from enemy starships / freighters
 --For below items, values are set to what they would have been in Survival Mode. Hardmodemultiplier pre-4.0 is 1 unless otherwise specified.
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

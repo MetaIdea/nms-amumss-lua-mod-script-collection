@@ -1,78 +1,49 @@
 -- Quicksilver Reward Settings --
-Quicksilver =
-{
-  { -- ListID
-    {"R_NEXUS_QS"}, -- Nexus Daily Mission
-    { -- Currency,   Min,   Max,     Original
-      {"Specials",   2,   2}, -- 400, 400
-    }
-  },
-  {
-    {"R_NEXUS_QS_PQ"}, -- Nexus Weekly Mission
+Multiplier = 2
+
+DailyReward =
     {
-      {"Specials",  2,  2}, -- 1800, 1800
+        {"R_NEXUS_QS"}, -- Nexus Daily Mission
+        {"R_NEXUS_QS_PQ"}, -- Nexus Weekly Mission
     }
-  },
-}
 ---------------------------------
-
--- File Settings --
-FileName    = "QS Daily Mission Reward 2x.pak"
-ModAuthor   = "JustRuthless"
-LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
-Description = ""
-NMS_Version = "4.45"
-
--- File Sources --
-FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = FileName,
-  ["MOD_AUTHOR"]      = ModAuthor,
-  ["LUA_AUTHOR"]      = LuaAuthor,
-  ["MOD_MAINTENANCE"] = ModMaintenance,
-  ["MOD_DESCRIPTION"] = Description,
-  ["NMS_VERSION"]     = NMS_Version,
-  ["MODIFICATIONS"]   =
-  {
+["MOD_FILENAME"]    = "QS Daily Mission Reward "..Multiplier.."x.pak",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"] = "Multiples the quicksilver reward from daily and weekly nexus missions",
+["NMS_VERSION"]     = "4.46",
+["MODIFICATIONS"]   =
     {
-      ["MBIN_CHANGE_TABLE"] =
-      {
         {
-          ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            -- RewardTable
-          }
-        },
-      }
-    },
-  }
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        -- RewardTable
+                    },
+                },
+            }
+        }
+    }
 }
 
 local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
-for i = 1, #Quicksilver do
-  local ListID = Quicksilver[i][1][1]
-  local Items  = Quicksilver[i][2]
-
-  for j = 1, #Items do
-    Currency = Items[j][1]
-    Min      = Items[j][2]
-    Max      = Items[j][3]
+for i = 1, #DailyReward do
+  local ListID = DailyReward[i][1]
 
     RewardTable[#RewardTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"]  = {"Id", ListID, "Currency", Currency},
+      ["SPECIAL_KEY_WORDS"]  = {"Id", ListID, "Currency", "Specials"},
       ["SECTION_UP_SPECIAL"] = 1,
       ["MATH_OPERATION"]  = "*",
       ["VALUE_CHANGE_TABLE"] =
       {
-        {"AmountMin", Min},
-        {"AmountMax", Max},
+        {"AmountMin", Multiplier},
+        {"AmountMax", Multiplier},
       },
     }
-  end
 end

@@ -1,5 +1,5 @@
 Author = "Gumsk,Devilin Pixy,Jasondude"		--Edited by Xen0nex
-ModName = "GMech"
+ModName = "GMechX"
 ModNameSub = "+ReducedFuelX"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
 GameVersion = "441"
@@ -45,7 +45,7 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

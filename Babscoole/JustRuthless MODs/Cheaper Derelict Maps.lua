@@ -37,47 +37,34 @@ return
 ]]
 end
 
--- File Settings --
-FileName    = "Cheaper Derelict Maps.pak"
-ModAuthor   = "JustRuthless"
-LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
-Description = ""
-NMS_Version = "4.45"
-
--- File Sources --
-FileSource1 = "METADATA\REALITY\TABLES\COSTTABLE.MBIN"
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = FileName,
-  ["MOD_AUTHOR"]      = ModAuthor,
-  ["LUA_AUTHOR"]      = LuaAuthor,
-  ["MOD_MAINTENANCE"] = ModMaintenance,
-  ["MOD_DESCRIPTION"] = Description,
-  ["NMS_VERSION"]     = NMS_Version,
-  ["MODIFICATIONS"]   =
-  {
+["MOD_FILENAME"]    = "Cheaper Derelict Maps.pak",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"] = "Changes the unit prices for each derelict map at scrap dealer shops",
+["NMS_VERSION"]     = "4.46",
+["MODIFICATIONS"]   =
     {
-      ["MBIN_CHANGE_TABLE"] =
-      {
         {
-          ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            { -- removes original derelict map prices
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_ABAND_START"},
-              ["PRECEDING_KEY_WORDS"] = {"Costs"},
-              ["REMOVE"] = "SECTION",
-            },
-            { -- adds new derelict map prices
-              ["SPECIAL_KEY_WORDS"]   = {"Id", "C_ABAND_START"},
-              ["PRECEDING_KEY_WORDS"] = {"Cost"},
-              ["ADD"] = DerelictCosts(DerelictPrices),
-            },
-          }
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\COSTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        { -- removes original derelict map prices
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_ABAND_START"},
+                            ["PRECEDING_KEY_WORDS"] = {"Costs"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        { -- adds new derelict map prices
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_ABAND_START"},
+                            ["PRECEDING_KEY_WORDS"] = {"Cost"},
+                            ["ADD"] = DerelictCosts(DerelictPrices),
+                        },
+                    }
+                },
+            }
         },
-      }
-    },
-  }
+    }
 }

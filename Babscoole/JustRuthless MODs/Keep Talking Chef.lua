@@ -1,27 +1,16 @@
--- File Settings --
-FileName = "Keep Talking Chef.pak" -- can be changed to the name you want the mod but make sure to keep .pak at the end
-ModAuthor = "JustRuthless" -- only for reference
-LuaAuthor = "JustRuthless" -- only for reference
-ModMaintenance = "Babscoole"
-NMS_Version = "4.45" -- only for reference
-
--- File Sources --
-FileSource1 = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = FileName,
-  ["MOD_AUTHOR"]      = ModAuthor,
-  ["LUA_AUTHOR"]      = LuaAuthor,
-  ["MOD_MAINTENANCE"] = ModMaintenance,
-  ["NMS_VERSION"]     = NMS_Version,
-  ["MODIFICATIONS"]   =
+["MOD_FILENAME"]    = "Keep Talking Chef.pak",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"] = "Makes NPC Cronus dialogue stay open when trading food for nanites",
+["NMS_VERSION"]     = "4.46",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FileSource1,
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

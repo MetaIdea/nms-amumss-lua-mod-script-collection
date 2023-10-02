@@ -762,111 +762,77 @@ return
 ]]
 end
 --------------------------------------------------
-
--- File Settings --
-FileName    = "More Words.pak"
-ModAuthor   = "JustRuthless & Babscoole"
-Description = ""
-NMS_Version = "4.45"
-
--- File Sources --
-FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
-FileSource2 = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
-FileSource3 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN"
-FileSource4 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\WORDSTATION\ENTITIES\WORDSTATION.ENTITY.MBIN"
-FileSource5 = "MODELS\SPACE\ATLASSTATION\MODULARPARTS\INTERIOR\PATHORB\PATHORB\ENTITIES\ORBSTONE_1.ENTITY.MBIN"
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = FileName,
-  ["MOD_AUTHOR"]      = ModAuthor,
-  ["MOD_DESCRIPTION"] = Description,
-  ["NMS_VERSION"]     = NMS_Version,
-  ["MODIFICATIONS"]   =
-  {
+["MOD_FILENAME"]    = "More Words.pak",
+["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"] = "Increases the amount of words learn from NPCs, Knowledge Stones, Encyclopedias, Monoliths, and Atlas Orbs",
+["NMS_VERSION"]     = "4.46",
+["MODIFICATIONS"]   =
     {
-      ["MBIN_CHANGE_TABLE"] =
-      {
         {
-          ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            -- RewardTable
-          }
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        -- RewardTable
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        -- AlienPuzzleTable
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        { -- replaces the reward for Knowledge Stones to a newly added reward
+                            ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Reward", "WORD_STONE_R"},
+                            },
+                        }, -- to separate Knowledge Stone reward so it can be changed without affecting others that used WORD reward
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\WORDSTATION\ENTITIES\WORDSTATION.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        { -- replaces the reward for Word Stations / Encyclopedias to a newly added reward
+                            ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Reward", "WORD_STATION_R"},
+                            },
+                        }, -- to separate Encyclopedia rewards so it can be changed without affecting others that used WORD reward
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\ATLASSTATION\MODULARPARTS\INTERIOR\PATHORB\PATHORB\ENTITIES\ORBSTONE_1.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        { -- replaces the reward for Atlas Orbs to a newly added reward
+                            ["SPECIAL_KEY_WORDS"] = {"Reward", "TEACHWORD_ATLAS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Reward", "WORD_ATLAS_ORB"},
+                            },
+                        }, -- to separate Atlas Orbs reward so it can be changed without affecting others that used TEACHWORD_ATLAS reward
+                    }
+                },
+            }
         },
-      }
-    },
-    {
-      ["MBIN_CHANGE_TABLE"] =
-      {
-        {
-          ["MBIN_FILE_SOURCE"]  = FileSource2,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            -- AlienPuzzleTable
-          }
-        },
-      }
-    },
-    {
-      ["MBIN_CHANGE_TABLE"] =
-      {
-        {
-          ["MBIN_FILE_SOURCE"]  = FileSource3,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            { -- replaces the reward for Knowledge Stones to a newly added reward
-              ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Reward", "WORD_STONE_R"},
-              },
-            }, -- to separate Knowledge Stone reward so it can be changed without affecting others that used WORD reward
-          }
-        },
-      }
-    },
-    {
-      ["MBIN_CHANGE_TABLE"] =
-      {
-        {
-          ["MBIN_FILE_SOURCE"]  = FileSource4,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            { -- replaces the reward for Word Stations / Encyclopedias to a newly added reward
-              ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Reward", "WORD_STATION_R"},
-              },
-            }, -- to separate Encyclopedia rewards so it can be changed without affecting others that used WORD reward
-          }
-        },
-      }
-    },
-    {
-      ["MBIN_CHANGE_TABLE"] =
-      {
-        {
-          ["MBIN_FILE_SOURCE"]  = FileSource5,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            { -- replaces the reward for Atlas Orbs to a newly added reward
-              ["SPECIAL_KEY_WORDS"] = {"Reward", "TEACHWORD_ATLAS"},
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Reward", "WORD_ATLAS_ORB"},
-              },
-            }, -- to separate Atlas Orbs reward so it can be changed without affecting others that used TEACHWORD_ATLAS reward
-          }
-        },
-      }
-    },
     }
 }
 
-local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][2]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local RewardTable      = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
 -- Reward Table Changes --
 for i = 1, #WordChanges do

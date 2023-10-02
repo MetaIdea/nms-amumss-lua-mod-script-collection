@@ -1,6 +1,6 @@
 Author = "Gumsk"	--Edited by Xen0nex
-ModName = "gBase+FarwalkX"
-ModNameSub = "Boundary 2k"
+ModName = "gBase"
+ModNameSub = "Boundary 2k+FarwalkX"
 BaseDescription = "Base boundary and wire length extensions, increases distance for initial walk to starship"
 GameVersion = "441"
 ModVersion = "a"
