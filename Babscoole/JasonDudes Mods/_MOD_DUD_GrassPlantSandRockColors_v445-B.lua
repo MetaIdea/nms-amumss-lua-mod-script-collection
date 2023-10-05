@@ -1,5 +1,3 @@
---Must get the TEXTURES folder from the orignal .pak and place into ModScript\GlobalMEFTI
-
 DataTable =
 {
     {
@@ -694,22 +692,22 @@ DataTable =
             { ["R"]="0.584",["G"]="0.65",["B"]="0.641",["A"]="1" },
             { ["R"]="0.52",["G"]="0.503",["B"]="0.483",["A"]="1" },
             { ["R"]="0.677",["G"]="0.676",["B"]="0.627",["A"]="1" },
-            { ["R"]="0.593",["G"]="0.32",["B"]="0.32",["A"]="1" },
-            { ["R"]="0.707",["G"]="0.484",["B"]="0.261",["A"]="1" },
-            { ["R"]="0.7",["G"]="0.55",["B"]="0.232",["A"]="1" },
-            { ["R"]="0.553",["G"]="0.667",["B"]="0.462",["A"]="1" },
-            { ["R"]="0.538",["G"]="0.757",["B"]="0.617",["A"]="1" },
-            { ["R"]="0.543",["G"]="0.475",["B"]="0.314",["A"]="1" },
-            { ["R"]="0.314",["G"]="0.56",["B"]="0.607",["A"]="1" },
-            { ["R"]="0.451",["G"]="0.622",["B"]="0.67",["A"]="1" },
-            { ["R"]="0.567",["G"]="0.503",["B"]="0.593",["A"]="1" },
-            { ["R"]="0.352",["G"]="0.398",["B"]="0.497",["A"]="1" },
-            { ["R"]="0.162",["G"]="0.183",["B"]="0.187",["A"]="1" },
-            { ["R"]="0.285",["G"]="0.359",["B"]="0.363",["A"]="1" },
-            { ["R"]="0.773",["G"]="0.626",["B"]="0.52",["A"]="1" },
-            { ["R"]="0.587",["G"]="0.425",["B"]="0.219",["A"]="1" },
-            { ["R"]="0.474",["G"]="0.553",["B"]="0.61",["A"]="1" },
-            { ["R"]="0.739",["G"]="0.922",["B"]="1",["A"]="1" },
+            { ["R"]="0.576",["G"]="0.357",["B"]="0.384",["A"]="1" },
+            { ["R"]="0.659",["G"]="0.478",["B"]="0.369",["A"]="1" },
+            { ["R"]="0.655",["G"]="0.549",["B"]="0.376",["A"]="1" },
+            { ["R"]="0.596",["G"]="0.627",["B"]="0.514",["A"]="1" },
+            { ["R"]="0.631",["G"]="0.729",["B"]="0.624",["A"]="1" },
+            { ["R"]="0.357",["G"]="0.62",["B"]="0.51",["A"]="1" },
+            { ["R"]="0.396",["G"]="0.498",["B"]="0.38",["A"]="1" },
+            { ["R"]="0.769",["G"]="0.675",["B"]="0.78",["A"]="1" },
+            { ["R"]="0.6",["G"]="0.533",["B"]="0.565",["A"]="1" },
+            { ["R"]="0.565",["G"]="0.733",["B"]="0.773",["A"]="1" },
+            { ["R"]="0.31",["G"]="0.251",["B"]="0.31",["A"]="1" },
+            { ["R"]="0.561",["G"]="0.384",["B"]="0.463",["A"]="1" },
+            { ["R"]="0.745",["G"]="0.639",["B"]="0.573",["A"]="1" },
+            { ["R"]="0.373",["G"]="0.576",["B"]="0.667",["A"]="1" },
+            { ["R"]="0.275",["G"]="0.478",["B"]="0.471",["A"]="1" },
+            { ["R"]="0.416",["G"]="0.694",["B"]="0.765",["A"]="1" },
         }
     },
     {
@@ -787,10 +785,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_GrassPlantSandRockColors_v443-A.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_GrassPlantSandRockColors_v445-B.pak",
 ["MOD_AUTHOR"]      = "jasondude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.43",
+["NMS_VERSION"]     = "4.45",
 ["MODIFICATIONS"]   =
     {
         {
@@ -827,7 +825,78 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                     }
-                }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = 
+                    {
+                        "TEXTURES\PLANETS\BIOMES\BARREN\PLANTS\SCRUBGRASS.TEXTURE.MBIN",
+                        "TEXTURES\PLANETS\BIOMES\BARREN\PLANTS\SCRUBGRASS2.TEXTURE.MBIN",
+                        "TEXTURES\PLANETS\BIOMES\BARREN\PLANTS\SCRUBGRASS3.TEXTURE.MBIN",
+                        "TEXTURES\PLANETS\BIOMES\BARREN\PLANTS\SCRUBGRASS4.TEXTURE.MBIN",
+                        "TEXTURES\PLANETS\BIOMES\BARREN\PLANTS\SCRUBGRASS5.TEXTURE.MBIN",
+                        "TEXTURES\PLANETS\BIOMES\BARREN\PLANTS\SCRUBGRASS6.TEXTURE.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ColourAlt", "Alternative1"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = 
+                    {
+                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS1.TEXTURE.EXML",
+                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS4.TEXTURE.EXML",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ColourAlt", "Alternative1"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture.xml"},
+                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Grass"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = 
+                    {
+                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS2.TEXTURE.EXML",
+                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS3.TEXTURE.EXML",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ColourAlt", "Primary"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture.xml"},
+                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Grass"}
+                            }
+                        },
+                    }
+                },
             }
         }
     }

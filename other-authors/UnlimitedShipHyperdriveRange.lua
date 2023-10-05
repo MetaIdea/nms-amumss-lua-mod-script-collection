@@ -14,8 +14,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE",},
-							["PRECEDING_KEY_WORDS"] = {"StatBonuses",},
-							["LINE_OFFSET"]     = "+7",
+							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",	"1000000"}, 	-- Original "100"
@@ -23,8 +23,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
                         {
 							["SPECIAL_KEY_WORDS"] = {"ID","WARP_ALIEN",},
-							["PRECEDING_KEY_WORDS"] = {"StatBonuses",},
-							["LINE_OFFSET"]     = "+7",
+							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",	"1000000"}, 	-- Original "100"
@@ -32,7 +32,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","T_BOBBLE_ATLAS",},
-							["PRECEDING_KEY_WORDS"] = {"StatBonuses",},
+							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",	"1000000"}, 	-- Original "50"
@@ -40,8 +41,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE_SPEC",},
-							["PRECEDING_KEY_WORDS"] = {"StatBonuses",},
-							["LINE_OFFSET"]     = "+7",
+							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",	"1000000"}, 	-- Original "600"
@@ -49,8 +50,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE_ROBO",},
-							["PRECEDING_KEY_WORDS"] = {"StatBonuses",},
-							["LINE_OFFSET"]     = "+7",
+							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",	"1000000"}, 	-- Original "600"
