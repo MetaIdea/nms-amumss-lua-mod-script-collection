@@ -71,8 +71,8 @@ for i=1,#OVERWRITE_LOOT,1 do
         }
     }
 	
-	for i = 1,#POSSIBLE_UPGRADES,1 do
-		Upgrade = POSSIBLE_UPGRADES[i]
+	for j = 1,#POSSIBLE_UPGRADES,1 do
+		Upgrade = POSSIBLE_UPGRADES[j]
 	
 		ChangesToRewardTable[#ChangesToRewardTable + 1] = 
 		{

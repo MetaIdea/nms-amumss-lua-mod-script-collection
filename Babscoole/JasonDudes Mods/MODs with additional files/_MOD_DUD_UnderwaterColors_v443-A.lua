@@ -117,6 +117,449 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
             }
+        }
+    },
+["ADD_FILES"] =
+    {
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GLOWTEXTURE.TEXTURE.EXML",
+            ["FILE_CONTENT"]     =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="BASE.1" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Crystal" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/GLOWTEXTURE.BASE.1.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/GLOWTEXTURE.BASE.1.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/GLOWTEXTURE.BASE.1.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LAMPORB.TEXTURE.EXML",
+            ["FILE_CONTENT"]     =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="BASE" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Crystal" />
+            <Property name="ColourAlt" value="Primary" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LAMPORB.BASE.DDS" />
+          <Property name="Normal" value="" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LAMPORB.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LARGESHAPE.TEXTURE.EXML",
+            ["FILE_CONTENT"]     =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="BASE" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Sand" />
+            <Property name="ColourAlt" value="Alternative2" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LARGESHAPE.BASE.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LARGESHAPE.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LARGESHAPE.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LEAVESTEXTURE.TEXTURE.EXML",
+            ["FILE_CONTENT"]     =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="1.BASE" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Leaf" />
+            <Property name="ColourAlt" value="Alternative2" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LEAVESTEXTURE.1.BASE.DDS" />
+          <Property name="Normal" value="" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LEAVESTEXTURE.1.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\OCEAN\SHRUBS\TALLPLANTDUD1.TEXTURE.EXML",
+            ["FILE_CONTENT"]     =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="BASE" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Plant" />
+            <Property name="ColourAlt" value="Alternative3" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/OCEAN/SHRUBS/TALLPLANTDUD1.BASE.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/OCEAN/SHRUBS/TALLPLANTDUD1.BASE.NORMAL.DDS" />
+          <Property name="Mask" value="" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
         },
     },
 }

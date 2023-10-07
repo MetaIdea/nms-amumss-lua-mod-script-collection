@@ -713,10 +713,10 @@ ExoClassAChance =						30						--15
 ExoClassSChance =						10						--5
 
 --Multipliers to the quality chance % (C, B, A, S Class) for random various upgrade modules rarely found (~12% of the time) in Damaged Machinery on planets
-DmgMachClassCChance =					1						--55 (0 for hazard & life support upgrades)
-DmgMachClassBChance =					1						--25 (60 for hazard and 65 for life support upgrades)
-DmgMachClassAChance =					1						--15 (30 for hazard & life support upgrades)
-DmgMachClassSChance =					1						--5 (10 for hazard & life support upgrades)
+DmgMachClassCChanceMult =				1						--55 (0 for hazard & life support upgrades)
+DmgMachClassBChanceMult =				1						--25 (60 for hazard and 65 for life support upgrades)
+DmgMachClassAChanceMult =				1						--15 (30 for hazard & life support upgrades)
+DmgMachClassSChanceMult =				1						--5 (10 for hazard & life support upgrades)
 
 --Multipliers to apply to the various kinds of rewards from Frigate Expedition missions
 ExpeditionUnitsMultiplier =				0.8
@@ -2652,10 +2652,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"WeightedChanceNormal",	DmgMachClassCChance},
-					{"WeightedChanceRare",	DmgMachClassBChance},
-					{"WeightedChanceEpic",	DmgMachClassAChance},
-					{"WeightedChanceLegendary",	DmgMachClassSChance},
+					{"WeightedChanceNormal",	DmgMachClassCChanceMult},
+					{"WeightedChanceRare",	DmgMachClassBChanceMult},
+					{"WeightedChanceEpic",	DmgMachClassAChanceMult},
+					{"WeightedChanceLegendary",	DmgMachClassSChanceMult},
 				}
 			},
 		}
