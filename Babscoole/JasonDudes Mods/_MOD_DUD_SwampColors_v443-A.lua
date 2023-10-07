@@ -1,5 +1,3 @@
---Must get the TEXTURES folder from the orignal .pak and place into ModScript\GlobalMEFTI
-
 LushDataTable =
 {
     {
@@ -628,6 +626,57 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumColours", "_4"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "TEXTURES\PLANETS\BIOMES\LUSHROOM\MEDSHROOM.TEXTURE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","VARIANT"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ColourAlt", "Alternative1"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","VARIANT","Palette","TkPaletteTexture.xml"},
+                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "SkyNight"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","BASE","Name","VARIANTA"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ColourAlt", "Alternative2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","BASE","Name","VARIANTA","Palette","TkPaletteTexture.xml"},
+                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "SkyNight"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","VARIANT","Name","VARIANTB"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ColourAlt", "Alternative3"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","VARIANT",,"Name","VARIANTB","Palette","TkPaletteTexture.xml"},
+                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "SkyNight"}
                             }
                         },
                     }

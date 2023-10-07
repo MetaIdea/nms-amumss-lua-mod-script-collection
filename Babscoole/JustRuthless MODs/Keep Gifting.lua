@@ -106,13 +106,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]  = {"Id","C_REP_TOKEN"},
                             ["SEC_SAVE_TO"] = "ADD_COST",
                         },
-                        {
-                            ["SEC_EDIT"] = "ADD_COST",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Id", "COST_ADD"},
-                            }
-                        },
                     }
                 },
                 {
@@ -123,13 +116,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]  = {"Id","PIRATE_BATTLE"},
                             ["SEC_SAVE_TO"] = "ADD_REWARD",
                         },
-                        {
-                            ["SEC_EDIT"] = "ADD_REWARD",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Id", "REWARD_ADD"},
-                            }
-                        },
                     }
                 },
                 {
@@ -139,13 +125,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"Name","ALL_REQUEST_STD_LOW"},
                             ["SEC_SAVE_TO"] = "ADD_PUZZLE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PUZZLE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "PUZZLE_ADD"},
-                            }
                         },
                     }
                 },
@@ -171,14 +150,8 @@ for i = 1, #CostChanges do
 
     CostTable[#CostTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"] = {"Id", OldID},
-      ["ADD_OPTION"] = "ADDafterSECTION",
-      ["SEC_ADD_NAMED"] = "ADD_COST",
-    }
-
-    CostTable[#CostTable+1] =
-    {
-      ["SPECIAL_KEY_WORDS"] = {"Id", "COST_ADD", "Cost" ,"GcCostProduct.xml"},
+      ["SEC_EDIT"] = "ADD_COST",
+      ["SPECIAL_KEY_WORDS"] = {"Cost" ,"GcCostProduct.xml"},
       ["VALUE_CHANGE_TABLE"]  =
       {
          {"Id",     CostID},
@@ -188,12 +161,19 @@ for i = 1, #CostChanges do
     
     CostTable[#CostTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"] = {"Id", "COST_ADD"},
+      ["SEC_EDIT"] = "ADD_COST",
       ["VALUE_CHANGE_TABLE"]  =
       {
          {"Id",                       NewID},
          {"RemoveOptionIfCantAfford", Remove},
       }
+    }
+
+    CostTable[#CostTable+1] =
+    {
+      ["SPECIAL_KEY_WORDS"] = {"Id", OldID},
+      ["ADD_OPTION"] = "ADDafterSECTION",
+      ["SEC_ADD_NAMED"] = "ADD_COST",
     }
   end
 end
@@ -207,17 +187,10 @@ for i = 1, #RewardChanges do
     NewID  = Change[j][1]
     Race   = Change[j][2]
     Amount = Change[j][3]
-
+    
     RewardTable[#RewardTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"] = {"Id", OldID},
-      ["ADD_OPTION"] = "ADDafterSECTION",
-      ["SEC_ADD_NAMED"] = "ADD_REWARD",
-    }
-
-    RewardTable[#RewardTable+1] =
-    {
-      ["SPECIAL_KEY_WORDS"] = {"Id", "REWARD_ADD"},
+      ["SEC_EDIT"] = "ADD_REWARD",
       ["VALUE_CHANGE_TABLE"]  =
       {
          {"Id",        NewID},
@@ -226,6 +199,14 @@ for i = 1, #RewardChanges do
          {"AmountMax", Amount},
       }
     }
+
+    RewardTable[#RewardTable+1] =
+    {
+      ["SPECIAL_KEY_WORDS"] = {"Id", OldID},
+      ["ADD_OPTION"] = "ADDafterSECTION",
+      ["SEC_ADD_NAMED"] = "ADD_REWARD",
+    }
+
   end
 end
 
@@ -249,6 +230,17 @@ for i = 1, #OptionChanges do
         {"KeepOpen", KeepOpen},
       },
     }
+    
+    AlienPuzzleTable[#AlienPuzzleTable+1] =
+    {
+      ["SEC_EDIT"] = "ADD_PUZZLE",
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"Cost",     NewCost},
+         {"Value",    Reward},
+         {"KeepOpen", KeepOpen},
+      }
+    }
 
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
@@ -256,19 +248,6 @@ for i = 1, #OptionChanges do
       ["REPLACE_TYPE"] = "ALL",
       ["ADD_OPTION"] = "ADDafterSECTION",
       ["SEC_ADD_NAMED"] = "ADD_PUZZLE"
-    }
-    
-    AlienPuzzleTable[#AlienPuzzleTable+1] =
-    {
-      ["SPECIAL_KEY_WORDS"] = {"Name", "PUZZLE_ADD"},
-      ["REPLACE_TYPE"] = "ALL",
-      ["VALUE_CHANGE_TABLE"]  =
-      {
-         {"Name",     "ALL_REQUEST_STD_LOW"},
-         {"Cost",     NewCost},
-         {"Value",    Reward},
-         {"KeepOpen", KeepOpen},
-      }
     }
   end
 end

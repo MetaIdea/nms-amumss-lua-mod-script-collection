@@ -839,7 +839,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name","OVERLAY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ColourAlt", "Alternative1"}
@@ -850,20 +850,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  = 
                     {
-                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS1.TEXTURE.EXML",
-                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS4.TEXTURE.EXML",
+                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS1.TEXTURE.MBIN",
+                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS4.TEXTURE.MBIN",
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name","OVERLAY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ColourAlt", "Alternative1"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name","OVERLAY","Palette","TkPaletteTexture.xml"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -875,20 +875,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  = 
                     {
-                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS2.TEXTURE.EXML",
-                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS3.TEXTURE.EXML",
+                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS2.TEXTURE.MBIN",
+                        "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS3.TEXTURE.MBIN",
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name","OVERLAY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ColourAlt", "Primary"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name","OVERLAY","Palette","TkPaletteTexture.xml"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {

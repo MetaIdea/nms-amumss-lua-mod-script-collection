@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_02.Pods.FreedomofFlight.6.19.23.pak",
+["MOD_FILENAME"]    = "_02.FreedomOfFlight4.44.01.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "PodcastPrimate",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.36",
+["NMS_VERSION"]     = "4.45",
 ["MODIFICATIONS"]   =
 	{
 		{
