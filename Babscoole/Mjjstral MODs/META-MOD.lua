@@ -937,7 +937,7 @@ return [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="]] .. ANIM .. [[" />
           <Property name="AdditiveBaseAnim" value="" />
-          <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
+          <Property name="Filename" value="MODELS/TESTS/EFFECTTEST.ANIM.MBIN" />
           <Property name="StartNode" value="" />
           <Property name="ExtraStartNodes" />
           <Property name="GameData" value="TkAnimationGameData.xml">
@@ -1278,32 +1278,32 @@ EMOTE_GENERIC_ICON_ANGRY = "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/NEGATIVE
 EMOTE_GENERIC_ICON_GREET = "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/WAVE.DDS"
 NEW_EMOTE_TABLE =
 {
-    { ["TITLE"]="Fake Death", ["ANIM"]="0H_DEATH", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/COMBATHEADER.DDS" },
-    { ["TITLE"]="PANIC!", ["ANIM"]="0H_FALL_PANIC", ["ICON"]=EMOTE_GENERIC_ICON },
-    { ["TITLE"]="Happy 1", ["ANIM"]="0H_HAPPY_01", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 2", ["ANIM"]="0H_HAPPY_02", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 3", ["ANIM"]="0H_HAPPY_03", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 4", ["ANIM"]="0H_HAPPY_04", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 5", ["ANIM"]="0H_HAPPY_05", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 6", ["ANIM"]="0H_HAPPY_06", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 7", ["ANIM"]="0H_HAPPY_07", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 8", ["ANIM"]="0H_HAPPY_08", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Angry 1", ["ANIM"]="0H_ANGRY_01", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
-    { ["TITLE"]="Angry 2", ["ANIM"]="0H_ANGRY_02", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
-    { ["TITLE"]="Angry 3", ["ANIM"]="0H_ANGRY_03", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
-    { ["TITLE"]="Angry 4", ["ANIM"]="0H_ANGRY_04", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
-    { ["TITLE"]="Greet 1", ["ANIM"]="0H_GREET_01", ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 2", ["ANIM"]="0H_GREET_02", ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 3", ["ANIM"]="0H_GREET_03", ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 4", ["ANIM"]="0H_GREET_04", ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 5", ["ANIM"]="0H_GREET_05", ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 6", ["ANIM"]="0H_GREET_06", ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 7", ["ANIM"]="0H_GREET_07", ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Slide", ["ANIM"]="0H_SLIDE_F", ["ICON"]=EMOTE_GENERIC_ICON },
-    { ["TITLE"]="Land Float", ["ANIM"]="0H_SWIM_IDLE", ["ICON"]=EMOTE_GENERIC_ICON },
-    { ["TITLE"]="Land Swim", ["ANIM"]="0H_SWIM_F", ["ICON"]=EMOTE_GENERIC_ICON },
+    { ["TITLE"]="Fake Death",            ["ANIM"]="0H_DEATH",       ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/COMBATHEADER.DDS" },
+    { ["TITLE"]="PANIC!",                ["ANIM"]="0H_FALL_PANIC",  ["ICON"]=EMOTE_GENERIC_ICON },
+    { ["TITLE"]="Happy 1",               ["ANIM"]="0H_HAPPY_01",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
+    { ["TITLE"]="Happy 2",               ["ANIM"]="0H_HAPPY_02",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
+    { ["TITLE"]="Happy 3",               ["ANIM"]="0H_HAPPY_03",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
+    { ["TITLE"]="Happy 4",               ["ANIM"]="0H_HAPPY_04",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
+    { ["TITLE"]="Happy 5",               ["ANIM"]="0H_HAPPY_05",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
+    { ["TITLE"]="Happy 6",               ["ANIM"]="0H_HAPPY_06",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
+    { ["TITLE"]="Happy 7",               ["ANIM"]="0H_HAPPY_07",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
+    { ["TITLE"]="Happy 8",               ["ANIM"]="0H_HAPPY_08",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
+    { ["TITLE"]="Angry 1",               ["ANIM"]="0H_ANGRY_01",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
+    { ["TITLE"]="Angry 2",               ["ANIM"]="0H_ANGRY_02",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
+    { ["TITLE"]="Angry 3",               ["ANIM"]="0H_ANGRY_03",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
+    { ["TITLE"]="Angry 4",               ["ANIM"]="0H_ANGRY_04",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
+    { ["TITLE"]="Greet 1",               ["ANIM"]="0H_GREET_01",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
+    { ["TITLE"]="Greet 2",               ["ANIM"]="0H_GREET_02",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
+    { ["TITLE"]="Greet 3",               ["ANIM"]="0H_GREET_03",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
+    { ["TITLE"]="Greet 4",               ["ANIM"]="0H_GREET_04",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
+    { ["TITLE"]="Greet 5",               ["ANIM"]="0H_GREET_05",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
+    { ["TITLE"]="Greet 6",               ["ANIM"]="0H_GREET_06",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
+    { ["TITLE"]="Greet 7",               ["ANIM"]="0H_GREET_07",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
+    { ["TITLE"]="Slide",                 ["ANIM"]="0H_SLIDE_F",     ["ICON"]=EMOTE_GENERIC_ICON },
+    { ["TITLE"]="Land Float",            ["ANIM"]="0H_SWIM_IDLE",   ["ICON"]=EMOTE_GENERIC_ICON },
+    { ["TITLE"]="Land Swim",             ["ANIM"]="0H_SWIM_F",      ["ICON"]=EMOTE_GENERIC_ICON },
     { ["TITLE"]="Interact With Console", ["ANIM"]="0H_INT_CNSL_IN", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/POINT.DDS" },
-    { ["TITLE"]="Gather", ["ANIM"]="0H_INT_GATH_IN", ["ICON"]=EMOTE_GENERIC_ICON },
+    { ["TITLE"]="Gather",                ["ANIM"]="0H_INT_GATH_IN", ["ICON"]=EMOTE_GENERIC_ICON },
 }
 for i=1,#NEW_EMOTE_TABLE,1 do
     NEW_EMOTES_ALL = NEW_EMOTES_ALL .. GetQuickAction(NEW_EMOTE_TABLE[i]["TITLE"], NEW_EMOTE_TABLE[i]["ANIM"], NEW_EMOTE_TABLE[i]["ICON"], "True")
@@ -1332,27 +1332,27 @@ for i=1,#QUICK_ACTION_LIST,1 do
     end
     if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]] then
         if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"] then
-            COMPONENTS = COMPONENTS         .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"]
+            COMPONENTS = COMPONENTS .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"]
         end
         if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TYPE"] == "REWARD" and not QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"] then
             ACTIONCOMPONENTS = ACTIONCOMPONENTS .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
         else
             ACTIONCOMPONENTS = ACTIONCOMPONENTS .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"]
         end
-        EMOTEMENU             = EMOTEMENU         .. GetQuickAction(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"], "True")
-        EMOTEMENU             = EMOTEMENU         .. GetQuickAction(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"], "False")
-        ANIMS                 = ANIMS             .. GetTriggerAnim(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"])
+        EMOTEMENU = EMOTEMENU .. GetQuickAction(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"], "True")
+        EMOTEMENU = EMOTEMENU .. GetQuickAction(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"], "False")
+        ANIMS     = ANIMS     .. GetTriggerAnim(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"])
         if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"] then
-            REWARDTABLE         = REWARDTABLE         .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"]
+            REWARDTABLE = REWARDTABLE .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"]
         end
         if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["SCANEVENTTABLE"] then
             SCANEVENTTABLE = SCANEVENTTABLE .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["SCANEVENTTABLE"]
         end
     else --pure reward
-        ACTIONCOMPONENTS     = ACTIONCOMPONENTS     .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
-        EMOTEMENU             = EMOTEMENU         .. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON, "True")
-        EMOTEMENU             = EMOTEMENU         .. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON, "False")
-        ANIMS                 = ANIMS             .. GetTriggerAnim(QUICK_ACTION_LIST[i])
+        ACTIONCOMPONENTS = ACTIONCOMPONENTS .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
+        EMOTEMENU        = EMOTEMENU        .. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON, "True")
+        EMOTEMENU        = EMOTEMENU        .. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON, "False")
+        ANIMS            = ANIMS            .. GetTriggerAnim(QUICK_ACTION_LIST[i])
     end
     ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
 end
@@ -1372,20 +1372,20 @@ if #USER_SEED_LIST > 0 then
         end
         local REWARD_ID = ""
         if USER_SEED_LIST[i][1] == "MULTITOOL" then
-            REWARD_ID             = USER_SEED_LIST[i][1] .. "-" .. MULTITOOLCOUNTER
-            MULTITOOLCOUNTER     = MULTITOOLCOUNTER + 1
-            REWARDTABLE         = REWARDTABLE         .. GetMultitoolRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
-            EMOTEMENU             = EMOTEMENU         .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.GUN.DDS", "True")
-            EMOTEMENU             = EMOTEMENU         .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.GUN.DDS", "False")
+            REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. MULTITOOLCOUNTER
+            MULTITOOLCOUNTER = MULTITOOLCOUNTER + 1
+            REWARDTABLE      = REWARDTABLE .. GetMultitoolRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.GUN.DDS", "True")
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.GUN.DDS", "False")
         else
-            REWARD_ID             = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
-            SHIPCOUNTER         = SHIPCOUNTER + 1
-            REWARDTABLE         = REWARDTABLE         .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
-            EMOTEMENU             = EMOTEMENU         .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS", "True")
-            EMOTEMENU             = EMOTEMENU         .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS", "False")
+            REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
+            SHIPCOUNTER      = SHIPCOUNTER + 1
+            REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS", "True")
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS", "False")
         end
-        ACTIONCOMPONENTS     = ACTIONCOMPONENTS     .. GetRewardAction(REWARD_ID, REWARD_ID)
-        ANIMS                 = ANIMS             .. GetTriggerAnim(REWARD_ID)
+        ACTIONCOMPONENTS       = ACTIONCOMPONENTS .. GetRewardAction(REWARD_ID, REWARD_ID)
+        ANIMS                  = ANIMS            .. GetTriggerAnim(REWARD_ID)
         ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
     end
 end
@@ -1401,7 +1401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "4.45",
+["NMS_VERSION"]     = "4.46",
 ["MODIFICATIONS"]   =
     {
         {
@@ -1458,8 +1458,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]     = "METADATA\SIMULATION\SCANNING\SCANEVENTTABLETUTORIAL.MBIN",
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCANNING\SCANEVENTTABLETUTORIAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Events"},
@@ -1512,30 +1512,6 @@ NMS_MOD_DEFINITION_CONTAINER =
     },
 ["ADD_FILES"] =
     {
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML",
-            ["FILE_CONTENT"] =
-[[
-<?xml version="1.0" encoding="utf-8"?>
-<Data template="TkAnimMetadata">
-  <Property name="FrameCount" value="10" />
-  <Property name="NodeCount" value="0" />
-  <Property name="NodeData" />
-  <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />
-    <Property name="Translations" />
-    <Property name="Scales" />
-    </Property>
-  </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />
-    <Property name="Translations" />
-    <Property name="Scales" />
- </Property>
-</Data>
-]]
-        },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.EXML",
             ["FILE_CONTENT"] =

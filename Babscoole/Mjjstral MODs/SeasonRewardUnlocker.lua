@@ -441,39 +441,6 @@ QUICK_ACTION_MENU =
     },
 }
 
-function GetAnim(ANIM)
-return [[
-        <Property value="TkAnimationData.xml">
-          <Property name="Anim" value="]] .. ANIM .. [[" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
-          <Property name="StartNode" value="" />
-          <Property name="ExtraStartNodes" />
-          <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
-            <Property name="BlockPlayerMovement" value="False" />
-            <Property name="BlockPlayerWeapon" value="Unblocked" />
-          </Property>
-          <Property name="FrameStart" value="0" />
-          <Property name="FrameEnd" value="0" />
-          <Property name="Priority" value="0" />
-          <Property name="OffsetMin" value="0" />
-          <Property name="OffsetMax" value="0" />
-          <Property name="Delay" value="0" />
-          <Property name="Speed" value="1" />
-          <Property name="ActionStartFrame" value="0" />
-          <Property name="ActionFrame" value="-1" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="AnimType" value="OneShot" />
-          <Property name="CreatureSize" value="AllSizes" />
-          <Property name="Additive" value="False" />
-          <Property name="Mirrored" value="False" />
-          <Property name="Active" value="True" />
-          <Property name="Has30HzFrames" value="False" />
-        </Property>
-]]
-end
-
 function GetTrigger(ANIM, REWARD_ACTIONS)
 return [[
     <Property value="GcTriggerActionComponentData.xml">
@@ -504,87 +471,21 @@ return [[
 ]]
 end
 
-function GetEmote(TITLE, ANIM, ICON)
-return [[
-    <Property value="GcPlayerEmote.xml">
-      <Property name="Title" value="]] .. TITLE .. [[" />
-      <Property name="ChatText" value="" />
-      <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM .. [[" />
-      <Property name="AnimationName" value="]] .. ANIM .. [[" />
-      <Property name="PropData" value="GcPlayerEmotePropData.xml">
-        <Property name="Model" value="" />
-        <Property name="Scale" value="0" />
-        <Property name="Hand" value="GcHand.xml">
-          <Property name="Hand" value="Right" />
-        </Property>
-        <Property name="IsHologram" value="False" />
-        <Property name="ScanEffectNodeName" value="" />
-        <Property name="ScanEffect" value="GcScanEffectData.xml">
-          <Property name="Id" value="" />
-          <Property name="ScanEffectType" value="Building" />
-          <Property name="Colour" value="Colour.xml">
-            <Property name="R" value="0.823" />
-            <Property name="G" value="0.475" />
-            <Property name="B" value="0.432" />
-            <Property name="A" value="1" />
-          </Property>
-          <Property name="BasecolourIntensity" value="0.2" />
-          <Property name="ScanlinesSeparation" value="0.1" />
-          <Property name="FresnelIntensity" value="3" />
-          <Property name="GlowIntensity" value="0" />
-          <Property name="WaveOffset" value="0" />
-          <Property name="WaveActive" value="True" />
-          <Property name="FixedUpAxis" value="False" />
-          <Property name="Transparent" value="False" />
-          <Property name="ModelFade" value="False" />
-          <Property name="FadeInTime" value="0.2" />
-          <Property name="FadeOutTime" value="0.2" />
-        </Property>
-        <Property name="DelayTime" value="0" />
-      </Property>
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="]] .. ICON .. [[" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="LinkedSpecialID" value="" />
-      <Property name="NeverShowInMenu" value="False" />
-      <Property name="LoopAnimUntilMove" value="" />
-      <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="True" />
-      <Property name="GekAnimationName" value="" />
-      <Property name="GekLoopAnimUntilMove" value="" />
-      <Property name="AvailableUnderwater" value="False" />
-      <Property name="RidingAnimationName" value="]] .. ANIM .. [[" />
-      <Property name="IsPetCommand" value="False" />
-      <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-    </Property>
-]]
-end
-ANIMS = ""
 TRIGGERS = ""
 REWARD_ACTIONS = ""
-EMOTEMENU = ""
 
 for i=1,#QUICK_ACTION_LIST,1 do
-    ANIMS = ANIMS .. GetAnim(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"])
     for j=1,#QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARD"],1 do
-        REWARD_ACTIONS = REWARD_ACTIONS..[[                <Property value="GcRewardAction.xml">
-]]..[[                  <Property name="Reward" value="]]..QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARD"][j]..[[" />
-]]..[[                </Property>
+        REWARD_ACTIONS = REWARD_ACTIONS..
+[[
+                <Property value="GcRewardAction.xml">
+                  <Property name="Reward" value="]]..QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARD"][j]..[[" />
+                </Property>
 ]]
     end
+
     TRIGGERS = TRIGGERS .. GetTrigger(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], REWARD_ACTIONS)
     REWARD_ACTIONS = ""
-    EMOTEMENU = EMOTEMENU .. GetEmote(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"])
 end
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -592,7 +493,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "4.45",
+["NMS_VERSION"]     = "4.46",
 ["MODIFICATIONS"]   =
     {
         {
@@ -603,10 +504,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"]    = {2,},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
-                            ["ADD"]               = ANIMS
+                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_TURN_L"},
+                            ["SEC_SAVE_TO"] = "ADD_ANIM",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
@@ -620,9 +519,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD"]                 = EMOTEMENU
-                        }
+                            ["SPECIAL_KEY_WORDS"] = {"Title","EMOTE_WAVE"},
+                            ["SEC_SAVE_TO"] = "ADD_EMOTE",
+                        },
                     }
                 },
                 {
@@ -633,38 +532,65 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]   = {"Id","RS_S1_PHASE2"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml"},
                             ["REMOVE"]              = "SECTION",
-                        }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"MultiItemRewardType","InventorySlot"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["REMOVE"]              = "SECTION",
+                        },
                     }
                 }
             }
         }
-    },
-["ADD_FILES"] =
-    {
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML",
-            ["FILE_CONTENT"]      =
-[[
-<?xml version="1.0" encoding="utf-8"?>
-<Data template="TkAnimMetadata">
-  <Property name="FrameCount" value="10" />
-  <Property name="NodeCount" value="0" />
-  <Property name="NodeData" />
-  <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />
-    <Property name="Translations" />
-    <Property name="Scales" />
-    </Property>
-  </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />
-    <Property name="Translations" />
-    <Property name="Scales" />
- </Property>
-</Data>
-]]
-        }
     }
 }
 
+local AnimTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local EmoteTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+
+  for i=#QUICK_ACTION_LIST, 1, -1 do
+
+    local TITLE = QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"]
+    local ANIM  = QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"]
+    local ICON  = QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"]
+
+    EmoteTable[#EmoteTable+1] =
+      {
+          ["SEC_EDIT"] = "ADD_EMOTE",
+          ["VALUE_CHANGE_TABLE"] =
+          {
+              {"Title",               TITLE},
+              {"ChatText",            ""},
+              {"ChatUsesPrefix",      "False"},
+              {"EmoteID",             ANIM},
+              {"AnimationName",       ANIM},
+              {"Filename",            ICON},
+              {"MoveToCancel",        "True"},
+              {"RidingAnimationName", ANIM},
+          }
+      }
+    EmoteTable[#EmoteTable+1] =
+      {
+          ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+          ["ADD_OPTION"]  = "ADDafterLINE",
+          ["SEC_ADD_NAMED"] = "ADD_EMOTE",
+      }
+
+    AnimTable[#AnimTable+1] =
+      {
+          ["SEC_EDIT"] = "ADD_ANIM",
+          ["VALUE_CHANGE_TABLE"] =
+          {
+              {"Anim",     ANIM},
+              {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
+              {"AnimType", "OneShot"},
+          }
+      }
+    AnimTable[#AnimTable+1] =
+      {
+          ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
+          ["SECTION_ACTIVE"]    = {2,},
+          ["ADD_OPTION"]        = "ADDafterSECTION",
+          ["SEC_ADD_NAMED"] = "ADD_ANIM",
+      }
+end

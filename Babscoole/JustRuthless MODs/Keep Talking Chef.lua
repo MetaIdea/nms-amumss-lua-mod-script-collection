@@ -14,27 +14,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF1"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_MATCH"] = "False",
-                            ["VALUE_MATCH_TYPE"] = "STRING",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["FOREACH_SKW_GROUP"] =
                             {
-                                {"KeepOpen", "True",},
+                                {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF1"},
+                                {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF2"},
+                                {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF3"},
                             },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF2"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_MATCH"] = "False",
-                            ["VALUE_MATCH_TYPE"] = "STRING",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"KeepOpen", "True",},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF3"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_MATCH"] = "False",
                             ["VALUE_MATCH_TYPE"] = "STRING",
