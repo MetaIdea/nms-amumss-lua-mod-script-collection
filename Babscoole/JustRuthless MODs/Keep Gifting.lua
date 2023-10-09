@@ -206,7 +206,6 @@ for i = 1, #RewardChanges do
       ["ADD_OPTION"] = "ADDafterSECTION",
       ["SEC_ADD_NAMED"] = "ADD_REWARD",
     }
-
   end
 end
 

@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "___PortalOnSpacestationV2.pak",
 ["MOD_AUTHOR"]              = "Mjjstral and Babscoole",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -94,34 +94,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-                -- {
-                    -- ["MBIN_FILE_SOURCE"] =
-                    -- {
-                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
-                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSA.ENTITY.MBIN",
-                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSB.ENTITY.MBIN",
-                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALPILLARS\ENTITIES\PORTALPILLARS.ENTITY.MBIN",
-                        -- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALTERMINAL\ENTITIES\PORTALTERMINAL.ENTITY.MBIN",
-                    -- },
-                    -- ["EXML_CHANGE_TABLE"] =
-                    -- {
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Distance", "10"},
-                            -- ["VCT"] =
-                            -- {
-                                -- {"Distance", "300"},
-                            -- }
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Distance", "15"},
-                            -- ["REPLACE_TYPE"] = "ALL",
-                            -- ["VCT"] =
-                            -- {
-                                -- {"Distance", "450"},
-                            -- }
-                        -- },
-                    -- }
-                -- },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =

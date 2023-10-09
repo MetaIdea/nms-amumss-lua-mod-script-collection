@@ -189,32 +189,6 @@ AddLoot =
   },
 }
 -----------------------------------------------------------
-
--- New Loot Function --
-local function NewLoot(id, min, max, chance)
-return
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="]]..chance..[[" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="]]..id..[[" />
-              <Property name="AmountMin" value="]]..min..[[" />
-              <Property name="AmountMax" value="]]..max..[[" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
-            </Property>
-          </Property>
-]]
-end
------------------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "More Storage Expansion Modules.pak",
@@ -230,7 +204,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        -- RewardTable
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id","WEAP_TOKEN"},
+                            ["PRECEDING_KEY_WORDS"]  = {"GcRewardTableItem.xml"},
+                            ["SEC_SAVE_TO"] = "ADD_NewLoot",
+                        },-- RewardTable
                     }
                 },
             }
@@ -276,9 +254,22 @@ for i = 1, #AddLoot do
 
     RewardTable[#RewardTable+1] =
     {
+      ["SEC_EDIT"] = "ADD_NewLoot",
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"PercentageChance", Chance},
+         {"ID",               LootID},
+         {"AmountMin",        Min},
+         {"AmountMax",        Max},
+      }
+    }
+
+    RewardTable[#RewardTable+1] =
+    {
       ["SPECIAL_KEY_WORDS"] = {"Id", ListID},
       ["PRECEDING_KEY_WORDS"] = {"List", "List"},
-      ["ADD"] = NewLoot(LootID, Min, Max, Chance),
+      ["ADD_OPTION"] = "ADDafterLINE",
+      ["SEC_ADD_NAMED"] = "ADD_NewLoot",
     }
   end
 end

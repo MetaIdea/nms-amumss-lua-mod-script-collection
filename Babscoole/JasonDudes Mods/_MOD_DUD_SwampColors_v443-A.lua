@@ -665,14 +665,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","VARIANT","Name","VARIANTB"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name","BASE","Name","VARIANTB"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ColourAlt", "Alternative3"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","VARIANT",,"Name","VARIANTB","Palette","TkPaletteTexture.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name","BASE","Name","VARIANTB","Palette","TkPaletteTexture.xml"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
