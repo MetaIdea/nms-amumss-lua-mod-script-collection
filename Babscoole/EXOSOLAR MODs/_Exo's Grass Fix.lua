@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exo's Grass Fix.pak",
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -41,16 +41,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -64,9 +64,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -77,9 +77,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -91,9 +91,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -101,9 +101,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -111,9 +111,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -121,9 +121,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -131,9 +131,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -148,9 +148,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -158,9 +158,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -168,9 +168,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -178,9 +178,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -188,11 +188,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
+                            ["PRECEDING_KEY_WORDS"] = {"SelectableObjects"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+                            ["PRECEDING_KEY_WORDS"] = {"Objects", "DetailObjects"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = [[    <Property name="SelectableObjects" />]],
                         },
@@ -307,15 +307,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
+                            ["PRECEDING_KEY_WORDS"] = {"SelectableObjects"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData.xml"},
                             ["LINE_OFFSET"] = "+4",
                             ["ADD"] =
 [[
@@ -330,15 +330,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
+                            ["PRECEDING_KEY_WORDS"] = {"SelectableObjects"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData.xml"},
                             ["LINE_OFFSET"] = "+4",
                             ["ADD"] =
 [[
@@ -371,7 +371,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Seed", "1"},
@@ -379,16 +379,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            -- ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             -- ["REMOVE"] = "SECTION"
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             -- ["ADD"] = [[            <Property name="Samplers" />]],
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP"] = 1,
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -402,9 +402,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",          "0.21"},
@@ -415,9 +415,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",          "0.21"},
@@ -429,9 +429,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+3",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -439,9 +439,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+4",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -449,9 +449,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+5",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -459,9 +459,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","GcObjectSpawnDataVariant.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "GcObjectSpawnDataVariant.xml"},
                             -- ["ADD_OPTION"]  = "ADDafterSECTION",
                             -- ["ADD"] =
 -- [[
@@ -487,11 +487,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 -- ]]
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"SelectableObjects"},
                             -- ["REMOVE"] = "SECTION"
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Objects", "DetailObjects"},
                             -- ["ADD_OPTION"]  = "ADDafterSECTION",
                             -- ["ADD"] = [[    <Property name="SelectableObjects" />]],
                         -- },
@@ -520,7 +520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Seed",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "Seed"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Seed", "1"},
@@ -528,15 +528,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Samplers",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "Samplers"},
                             -- ["REMOVE"] = "SECTION"
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","ProceduralTexture",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "ProceduralTexture"},
                             -- ["ADD"] = [[            <Property name="Samplers" />]],
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Placement",           "GRASS"},
@@ -553,7 +553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariantData",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariantData"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",          "0.21"},
@@ -564,7 +564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",              "0.21"},
@@ -579,7 +579,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+2",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -587,7 +587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+3",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -595,7 +595,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+4",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -603,7 +603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+5",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -611,7 +611,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",              "0.21"},
@@ -626,7 +626,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+2",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -634,7 +634,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+3",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -642,7 +642,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+4",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -650,7 +650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+5",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -658,7 +658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP"] = 1,
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -673,9 +673,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",          "0.185"},
@@ -686,9 +686,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",          "0.185"},
@@ -700,9 +700,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+3",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -710,9 +710,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+4",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -720,9 +720,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+5",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -730,9 +730,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",              "0.185"},
@@ -747,9 +747,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+3",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -757,9 +757,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+4",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -767,9 +767,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             -- ["LINE_OFFSET"] = "+5",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -801,16 +801,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed", "1"},
@@ -818,7 +818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -833,9 +833,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -846,9 +846,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -860,9 +860,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -870,9 +870,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -887,9 +887,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -897,9 +897,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -907,9 +907,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -917,9 +917,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -951,16 +951,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -975,9 +975,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -988,9 +988,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -998,9 +998,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1008,9 +1008,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1018,9 +1018,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1028,9 +1028,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",             "0.21"},
@@ -1044,9 +1044,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1054,9 +1054,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1064,9 +1064,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1074,9 +1074,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1084,9 +1084,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1101,9 +1101,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1111,9 +1111,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1121,9 +1121,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1131,9 +1131,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1165,16 +1165,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1188,9 +1188,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1201,9 +1201,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1215,9 +1215,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1225,9 +1225,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1242,9 +1242,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1252,9 +1252,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1262,9 +1262,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1272,9 +1272,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1306,16 +1306,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1329,9 +1329,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1342,9 +1342,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1356,9 +1356,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1366,9 +1366,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1383,9 +1383,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1393,9 +1393,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1403,9 +1403,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1413,9 +1413,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1447,16 +1447,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1471,9 +1471,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1484,9 +1484,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1498,9 +1498,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1508,9 +1508,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1525,9 +1525,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1535,9 +1535,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1545,9 +1545,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1555,9 +1555,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1589,7 +1589,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed", "1"},
@@ -1597,16 +1597,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1620,9 +1620,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1633,9 +1633,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1647,9 +1647,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1657,9 +1657,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1674,9 +1674,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1684,9 +1684,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1694,9 +1694,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1704,9 +1704,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1738,15 +1738,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Samplers",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","ProceduralTexture",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "ProceduralTexture"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Placement",           "GRASS"},
@@ -1763,7 +1763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1774,7 +1774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1789,7 +1789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["LINE_OFFSET"] = "+10",
                             ["ADD_OPTION"]  = "ADDafterline",
                             ["ADD"] =
@@ -1816,7 +1816,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1824,7 +1824,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1832,7 +1832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1840,7 +1840,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1848,7 +1848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed",         "1"},
@@ -1856,14 +1856,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},1,
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OptionName", "6"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1877,9 +1877,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.185"},
@@ -1890,9 +1890,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.185"},
@@ -1904,9 +1904,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1914,9 +1914,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1924,9 +1924,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1934,9 +1934,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "GcObjectSpawnDataVariant.xml"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1986,7 +1986,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed",         "1"},
@@ -1994,16 +1994,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2016,9 +2016,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -2029,9 +2029,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -2043,9 +2043,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2053,9 +2053,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2063,9 +2063,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2073,9 +2073,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "GcObjectSpawnDataVariant.xml"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -2125,7 +2125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed",         "1"},
@@ -2133,7 +2133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2152,9 +2152,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -2165,9 +2165,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2175,9 +2175,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2185,9 +2185,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2195,9 +2195,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2205,9 +2205,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -2222,9 +2222,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2232,9 +2232,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2242,9 +2242,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2252,9 +2252,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2262,9 +2262,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -2278,9 +2278,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2288,9 +2288,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2298,9 +2298,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2332,7 +2332,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed",         "1"},
@@ -2340,7 +2340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2359,9 +2359,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -2372,9 +2372,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2382,9 +2382,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2392,9 +2392,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2402,9 +2402,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2412,9 +2412,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -2429,9 +2429,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2439,9 +2439,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2449,9 +2449,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2459,9 +2459,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2469,9 +2469,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -2485,9 +2485,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2495,9 +2495,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2505,9 +2505,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2539,16 +2539,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2563,9 +2563,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -2576,9 +2576,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -2590,9 +2590,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2600,9 +2600,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -2617,9 +2617,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2627,9 +2627,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2637,9 +2637,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2647,9 +2647,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2681,16 +2681,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN", "ProceduralTexture", "TkProceduralTextureChosenOptionList.xml"},
                             ["ADD"] = [[            <Property name="Samplers" />]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2706,9 +2706,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -2719,9 +2719,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -2733,9 +2733,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2743,9 +2743,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -2760,9 +2760,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2770,9 +2770,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2780,9 +2780,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2790,9 +2790,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
                             {

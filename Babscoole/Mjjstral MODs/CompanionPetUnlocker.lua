@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "CompanionPetUnlocker.pak",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
 ["CONTRIBUTORS"]            = "Silent369 and Corvus",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["DESCRIPTION"]             = "Enables more creatures to become companion pets",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InteractionAction","PressButton",},
+                            ["SPECIAL_KEY_WORDS"] = {"InteractionAction","PressButton"},
                             ["REMOVE"] = "SECTION"
                         },
                     }

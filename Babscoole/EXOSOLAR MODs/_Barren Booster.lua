@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Barren Booster.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["MODIFICATIONS"] =
     {
         {
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Barren", "1000001" },
+                                {"Barren", "1000001"},
                             }
                         }
                     }

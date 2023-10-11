@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's Dead Wreckoning.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["MODIFICATIONS"] =
     {
         {
@@ -14,14 +14,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Shelter",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Shelter"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead", "3"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Beacon",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Beacon"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead",  "7"},
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Depot",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Depot"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead",  "4"},
@@ -37,35 +37,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Factory",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Factory"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GivesShelter", "True"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Harvester",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Harvester"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GivesShelter", "True"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Plaque",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Plaque"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Monolith",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Monolith"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead", "3"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Debris",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Debris"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead",  "3"},
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "DamagedMachine",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "DamagedMachine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead",  "4"},
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "DistressSignal",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "DistressSignal"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead",            "2"},
@@ -90,7 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Base",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "Base"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WaterPlacement", "Underwater"},
@@ -99,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "CrashedFreighter",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "CrashedFreighter"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead",  "2"},
@@ -107,7 +107,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "GraveInCave",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "GraveInCave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead",  "1"},
@@ -115,28 +115,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "TreasureRuins",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "TreasureRuins"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Weird", "0"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "NPCDebris",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "NPCDebris"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead", "1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "SentinelDistressSignal",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "SentinelDistressSignal"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead", "1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "AbandonedRobotCamp",},
+                            ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "AbandonedRobotCamp"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Dead", "1"},

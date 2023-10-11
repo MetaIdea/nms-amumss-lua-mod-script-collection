@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["MOD_DESCRIPTION"]         = "Makes powered wires invisible",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -23,11 +23,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Map",    ""},
-                                {"Shader",    ""},
-                                {"Class", "Transparent"},
+                                {"Shader", ""},
+                                {"Class",  "Transparent"},
                             }
                         },
                     },
@@ -44,11 +44,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Map",    ""},
-                                {"Shader",    ""},
-                                {"Class", "Transparent"},
+                                {"Shader", ""},
+                                {"Class",  "Transparent"},
                             }
                         },
                     },
@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Class", "Transparent"},
                                 -- {"Shader",    ""},

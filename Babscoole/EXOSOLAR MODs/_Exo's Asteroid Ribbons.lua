@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's Asteroid Ribbons.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["MODIFICATIONS"] =
     {
         {
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeSomeRares", "Vector2f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeSomeRares", "Vector2f.xml"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -136,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeLotsOfRares", "Vector2f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeLotsOfRares", "Vector2f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.498"},

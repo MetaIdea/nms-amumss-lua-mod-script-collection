@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's FTL.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["MODIFICATIONS"] =
     {
         {
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 { "MiniWarpLinesNum",                           "1" },          --Original "4"
                                 { "MiniWarpLinesSpacing",                       "30000" },      --Original "3000"

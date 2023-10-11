@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "Storm Cutter.pak",
 ["MOD_AUTHOR"]              = "Zurls",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -18,18 +18,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinTimeBetweenStormsLow","2400"},
-                                {"MaxTimeBetweenStormsLow","9000"},
-                                {"MinTimeBetweenStormsHigh","5000"},
-                                {"MaxTimeBetweenStormsHigh","11000"},
-                                {"MinTimeBetweenStormsExtremeFallback","5000"},
-                                {"MaxTimeBetweenStormsExtremeFallback","11000"},
-                                {"MinStormLengthLow","50"},
-                                {"MaxStormLengthLow","60"},
-                                {"MinStormLengthHigh","70"},
-                                {"MaxStormLengthHigh","75"},
-                                {"ExtremeAudioLevel","0.1"},
-                                {"StormAudioLevel","0.3"},
+                                {"MinTimeBetweenStormsLow",             "2400"},
+                                {"MaxTimeBetweenStormsLow",             "9000"},
+                                {"MinTimeBetweenStormsHigh",            "5000"},
+                                {"MaxTimeBetweenStormsHigh",            "11000"},
+                                {"MinTimeBetweenStormsExtremeFallback", "5000"},
+                                {"MaxTimeBetweenStormsExtremeFallback", "11000"},
+                                {"MinStormLengthLow",                   "50"},
+                                {"MaxStormLengthLow",                   "60"},
+                                {"MinStormLengthHigh",                  "70"},
+                                {"MaxStormLengthHigh",                  "75"},
+                                {"ExtremeAudioLevel",                   "0.1"},
+                                {"StormAudioLevel",                     "0.3"},
                             }
                         },
                     }
@@ -39,60 +39,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","8",},
+                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FogStrength","0.1"},
-                                {"FogColourStrength","5"},
+                                {"FogStrength",       "0.1"},
+                                {"FogColourStrength", "5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.8",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.2"},
+                                {"LowStormsChance",      "0.2"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.2"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-10"},
-                                {"Extreme","-50"},
+                                {"Normal",  "-10"},
+                                {"Extreme", "-50"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","-30"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "-30"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","-10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "-10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-50"},
-                                {"Extreme","-70"},
+                                {"Normal",  "-50"},
+                                {"Extreme", "-70"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Normal","-20"},
-                                {"Extreme","-40"},
+                                {"Normal",  "-20"},
+                                {"Extreme", "-40"},
                             }
                         },
                     }
@@ -102,156 +102,156 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","5",},
+                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","5"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HeightFogStrength","0.3"},
+                                {"HeightFogStrength", "0.3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Speed","0.2",},
+                            ["SPECIAL_KEY_WORDS"] = {"Speed","0.2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Thickness","0.5"},
+                                {"Thickness", "0.5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alpha2","0.7",},
+                            ["SPECIAL_KEY_WORDS"] = {"Alpha2","0.7"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Alpha1","0.5"},
-                                {"Alpha2","0.5"},
+                                {"Alpha1", "0.5"},
+                                {"Alpha2", "0.5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldDistance","2000",},
+                            ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldDistance","2000"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CloudRatio","0.3"},
+                                {"CloudRatio", "0.3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Weighting","1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Weighting","1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Weighting","0"},
+                                {"Weighting", "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","0.8",},
+                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength","0.8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FogStrength","3"},
-                                {"FogColourStrength","0.5"},
+                                {"FogStrength",       "3"},
+                                {"FogColourStrength", "0.5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldFade","500",},
+                            ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldFade","500"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"DepthOfFieldDistance","500"},
-                                {"DepthOfFieldFade","1000"},
+                                {"DepthOfFieldDistance", "500"},
+                                {"DepthOfFieldFade",     "1000"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","0"},
-                                {"Extreme","10"},
+                                {"Normal",  "0"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","0"},
+                                {"Normal", "0"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","0"},
-                                {"Extreme","5"},
+                                {"Normal",  "0"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","0"},
-                                {"Extreme","-5"},
+                                {"Normal",  "0"},
+                                {"Extreme", "-5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","6"},
+                                {"Extreme", "6"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","6"},
+                                {"Extreme", "6"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                     }
@@ -261,121 +261,121 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.1"},
+                                {"LowStormsChance",      "0.2"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","3"},
-                                {"Extreme","20"},
+                                {"Normal", "3"},
+                                {"Extreme", "20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-1"},
-                                {"Extreme","4"},
+                                {"Normal",  "-1"},
+                                {"Extreme", "4"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","4"},
+                                {"Extreme", "4"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","15"},
-                                {"Extreme","40"},
+                                {"Normal",  "15"},
+                                {"Extreme", "40"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-8"},
-                                {"Extreme","-20"},
+                                {"Normal",  "-8"},
+                                {"Extreme", "-20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","2"},
+                                {"Extreme", "2"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","3"},
+                                {"Extreme", "3"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                     }
@@ -385,120 +385,120 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.1"},
+                                {"LowStormsChance",      "0.2"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","20"},
+                                {"Extreme", "20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","20"},
-                                {"Extreme","40"},
+                                {"Normal",  "20"},
+                                {"Extreme", "40"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","30"},
+                                {"Normal",  "10"},
+                                {"Extreme", "30"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","15"},
-                                {"Extreme","50"},
+                                {"Normal",  "15"},
+                                {"Extreme", "50"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","30"},
+                                {"Normal",  "10"},
+                                {"Extreme", "30"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","1"},
-                                {"Extreme","4"},
+                                {"Normal",  "1"},
+                                {"Extreme", "4"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","3"},
-                                {"Extreme","20"},
+                                {"Normal",  "3"},
+                                {"Extreme", "20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","3"},
+                                {"Extreme", "3"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","1"},
-                                {"Extreme","4"},
+                                {"Normal",  "1"},
+                                {"Extreme", "4"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","2"},
+                                {"Extreme", "2"},
                             }
                         },
                     }
@@ -508,117 +508,117 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.3",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.1"},
+                                {"LowStormsChance",      "0.2"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","4"},
-                                {"Extreme","10"},
+                                {"Normal",  "4"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","1"},
-                                {"Extreme","5"},
+                                {"Normal",  "1"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","2"},
-                                {"Extreme","6"},
+                                {"Normal",  "2"},
+                                {"Extreme", "6"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","20"},
-                                {"Extreme","40"},
+                                {"Normal",  "20"},
+                                {"Extreme", "40"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","2"},
-                                {"Extreme","6"},
+                                {"Normal",  "2"},
+                                {"Extreme", "6"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","4"},
+                                {"Extreme", "4"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","2"},
-                                {"Extreme","8"},
+                                {"Normal",  "2"},
+                                {"Extreme", "8"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","20"},
-                                {"Extreme","40"},
+                                {"Normal",  "20"},
+                                {"Extreme", "40"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                     }
@@ -628,126 +628,126 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.1"},
+                                {"LowStormsChance",      "0.2"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-7"},
-                                {"Extreme","4"},
+                                {"Normal",  "-7"},
+                                {"Extreme", "4"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","2"},
-                                {"Extreme","7"},
+                                {"Normal",  "2"},
+                                {"Extreme", "7"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","20"},
+                                {"Normal",  "10"},
+                                {"Extreme", "20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","30"},
+                                {"Normal",  "10"},
+                                {"Extreme", "30"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","6"},
+                                {"Extreme", "6"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","20"},
-                                {"Extreme","60"},
+                                {"Normal",  "20"},
+                                {"Extreme", "60"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","30"},
+                                {"Normal",  "10"},
+                                {"Extreme", "30"},
                             }
                         },
                     }
@@ -757,184 +757,184 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog",},
-                            ["SECTION_ACTIVE"] = {"1",},
+                            ["PRECEDING_KEY_WORDS"] = {"Fog"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FogColourStrength","1"},
-                                {"HeightFogStrength","0.5"},
+                                {"FogColourStrength", "1"},
+                                {"HeightFogStrength", "0.5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","Settings","GcHeavyAirSettingValues.xml",},
-                            ["SECTION_ACTIVE"] = {"1",},
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","Settings","GcHeavyAirSettingValues.xml"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Speed","0.5"},
+                                {"Speed", "0.5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","Settings","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml",},
-                            ["SECTION_ACTIVE"] = {"1",},
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","Settings","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Speed","0.5"},
+                                {"Speed", "0.5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog",},
-                            ["SECTION_ACTIVE"] = {"1",},
+                            ["PRECEDING_KEY_WORDS"] = {"Fog"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"DepthOfFieldFade","5000"},
+                                {"DepthOfFieldFade", "5000"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"FlightFog",},
+                            ["PRECEDING_KEY_WORDS"] = {"FlightFog"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"DepthOfFieldFade","5000"},
+                                {"DepthOfFieldFade", "5000"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog",},
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FogStrength","0.5"},
-                                {"DepthOfFieldFade","5000"},
+                                {"FogStrength",      "0.5"},
+                                {"DepthOfFieldFade", "5000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Weighting","1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Weighting","1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Weighting","0.5"},
+                                {"Weighting", "0.5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FogStrength","2",},
+                            ["SPECIAL_KEY_WORDS"] = {"FogStrength","2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FogStrength","1"},
+                                {"FogStrength", "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.4"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.1"},
+                                {"LowStormsChance",      "0.4"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-10"},
-                                {"Extreme","-15"},
+                                {"Normal",  "-10"},
+                                {"Extreme", "-15"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-9"},
-                                {"Extreme","-15"},
+                                {"Normal",  "-9"},
+                                {"Extreme", "-15"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","2"},
-                                {"Extreme","7"},
+                                {"Normal",  "2"},
+                                {"Extreme", "7"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                     }
@@ -944,92 +944,92 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.8",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.1"},
+                                {"LowStormsChance",      "0.2"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","20"},
-                                {"Extreme","40"},
+                                {"Normal",  "20"},
+                                {"Extreme", "40"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","9"},
-                                {"Extreme","20"},
+                                {"Normal",  "9"},
+                                {"Extreme", "20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","5"},
-                                {"Extreme","10"},
+                                {"Normal",  "5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","30"},
-                                {"Extreme","55"},
+                                {"Normal",  "30"},
+                                {"Extreme", "55"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","12"},
-                                {"Extreme","30"},
+                                {"Normal",  "12"},
+                                {"Extreme", "30"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","4"},
-                                {"Extreme","10"},
+                                {"Normal",  "4"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","1"},
-                                {"Extreme","9"},
+                                {"Normal",  "1"},
+                                {"Extreme", "9"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","4"},
-                                {"Extreme","22"},
+                                {"Normal",  "4"},
+                                {"Extreme", "22"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","2"},
-                                {"Extreme","6"},
+                                {"Normal",  "2"},
+                                {"Extreme", "6"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","1"},
-                                {"Extreme","10"},
+                                {"Normal",  "1"},
+                                {"Extreme", "10"},
                             }
                         },
                     }
@@ -1039,52 +1039,52 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.1"},
+                                {"LowStormsChance",      "0.2"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","20"},
+                                {"Normal",  "10"},
+                                {"Extreme", "20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","2"},
-                                {"Extreme","9"},
+                                {"Normal",  "2"},
+                                {"Extreme", "9"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","1"},
-                                {"Extreme","10"},
+                                {"Normal",  "1"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","20"},
-                                {"Extreme","40"},
+                                {"Normal",  "20"},
+                                {"Extreme", "40"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","20"},
+                                {"Normal",  "10"},
+                                {"Extreme", "20"},
                             }
                         },
                     }
@@ -1094,52 +1094,52 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.1"},
+                                {"LowStormsChance",      "0.2"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-10"},
-                                {"Extreme","-20"},
+                                {"Normal",  "-10"},
+                                {"Extreme", "-20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-10"},
-                                {"Extreme","-20"},
+                                {"Normal",  "-10"},
+                                {"Extreme", "-20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-4"},
-                                {"Extreme","-10"},
+                                {"Normal",  "-4"},
+                                {"Extreme", "-10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-20"},
-                                {"Extreme","-40"},
+                                {"Normal",  "-20"},
+                                {"Extreme", "-40"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-10"},
-                                {"Extreme","-20"},
+                                {"Normal",  "-10"},
+                                {"Extreme", "-20"},
                             }
                         },
                     }
@@ -1149,118 +1149,118 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4",},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance","0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LowStormsChance","0.2"},
-                                {"HighStormsChance","0.1"},
-                                {"ExtremeWeatherChance","0.1"},
+                                {"LowStormsChance",      "0.2"},
+                                {"HighStormsChance",     "0.1"},
+                                {"ExtremeWeatherChance", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","10"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","-5"},
-                                {"Extreme","5"},
+                                {"Normal",  "-5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","20"},
+                                {"Normal",  "10"},
+                                {"Extreme", "20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","20"},
+                                {"Normal",  "10"},
+                                {"Extreme", "20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","5"},
+                                {"Extreme", "5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","20"},
-                                {"Extreme","30"},
+                                {"Normal",  "20"},
+                                {"Extreme", "30"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night",},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal","10"},
-                                {"Extreme","20"},
+                                {"Normal",  "10"},
+                                {"Extreme", "20"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm",},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Extreme","10"},
+                                {"Extreme", "10"},
                             }
                         },
                     }
@@ -1270,45 +1270,45 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Table","Dust",},
+                            ["PRECEDING_KEY_WORDS"] = {"Table","Dust"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value","METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
+                                {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
                             }
                         },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Table","Humid",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Table","Humid"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"Value","METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
+                                -- {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
                             -- }
                         -- },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Table","Snow",},
+                            ["PRECEDING_KEY_WORDS"] = {"Table","Snow"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value","METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
+                                {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Table","Toxic",},
+                            ["PRECEDING_KEY_WORDS"] = {"Table","Toxic"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value","METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
+                                {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Table","Scorched",},
+                            ["PRECEDING_KEY_WORDS"] = {"Table","Scorched"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value","METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
+                                {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Table","Radioactive",},
+                            ["PRECEDING_KEY_WORDS"] = {"Table","Radioactive"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value","METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
+                                {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
                             }
                         },
                     }

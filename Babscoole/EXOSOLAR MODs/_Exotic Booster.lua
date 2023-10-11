@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exotic Booster.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["MODIFICATIONS"] =
     {
         {
@@ -15,23 +15,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = "Green",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Green", "1000000" },
+                                {"Green", "1000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "Blue",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Blue", "1000000" },
+                                {"Blue", "1000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "Red",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Red", "1000000" },
+                                {"Red", "1000000"},
                             }
                         },
                     }

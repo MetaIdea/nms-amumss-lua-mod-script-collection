@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "AbandonedBuildingFinder.pak",
 ["MOD_DESCRIPTION"] = "Planetary Chart B (Emergency Cartographic Data) will only show abandoned buildings",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.45",
+["NMS_VERSION"]     = "4.46",
 ["MODIFICATIONS"]   =
     {
         {
@@ -14,40 +14,40 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_B","List","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "GcRewardTableItem.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "100"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_B","List","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "0"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_B","List","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "0"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_B","List","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "0"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_B","List","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "0"},

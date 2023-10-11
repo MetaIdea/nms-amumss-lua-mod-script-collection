@@ -696,71 +696,6 @@ MonolithChanges =
     }
   },
 }
-
---------------------------------------------------
--- New Reward Function --
-local function NewReward(id, race)
-return
-[[
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="]]..id..[[" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="]]..race..[[" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-]]
-end
-
--- Add Word Function --
-local function AddWord(race, category, usecategory)
-return
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="]]..race..[[" />
-              </Property>
-              <Property name="UseCategory" value="]]..usecategory..[[" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="]]..category..[[" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-            </Property>
-          </Property>
-]]
-end
-
--- Add Reward Function --
-local function AddReward(id)
-return
-[[
-            <Property value="NMSString0x10.xml">
-              <Property name="Value" value="]]..id..[[" />
-            </Property>
-]]
-end
 --------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -777,15 +712,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        -- RewardTable
-                    }
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id", "WORD"},
+                            ["SEC_SAVE_TO"] = "ADD_NewReward",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id", "WORD"},
+                            ["PRECEDING_KEY_WORDS"]  = {"GcRewardTableItem.xml"},
+                            ["SEC_SAVE_TO"] = "ADD_AddWord",
+                        },
+                    }-- RewardTable
                 },
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        -- AlienPuzzleTable
-                    }
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Value", "GIVE_HYPERDRIVE"},
+                            ["SEC_SAVE_TO"] = "ADD_AddReward",
+                        },
+                    }-- AlienPuzzleTable
                 },
                 {
                     ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN",
@@ -837,6 +783,7 @@ local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_
 -- Reward Table Changes --
 for i = 1, #WordChanges do
   local WordID = WordChanges[i][1][1]
+  local Change = WordChanges[i][2]
 
   RewardTable[#RewardTable+1] =
   {
@@ -846,10 +793,6 @@ for i = 1, #WordChanges do
       {"RewardChoice", "GiveAll"},
     },
   }
-end
-
-for i = 1, #WordChanges do
-  local WordID = WordChanges[i][1][1]
 
   RewardTable[#RewardTable+1] =
   {
@@ -857,24 +800,32 @@ for i = 1, #WordChanges do
     ["SECTION_UP_SPECIAL"] = 1,
     ["REMOVE"] = "SECTION",
   }
-end
-
-for i = 1, #WordChanges do
-  local WordID = WordChanges[i][1][1]
-  local Change = WordChanges[i][2]
 
   for j = 1, #Change do
     Race        = Change[j][1]
     Category    = Change[j][2]
     UseCategory = Change[j][3]
     Amount      = Change[j][4]
-
+    
     RewardTable[#RewardTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"] = {"Id", WordID, "PercentageChance", "IGNORE"},
-      ["ADD_OPTION"] = "ADDafterSECTION",
-      ["ADD"] = string.rep(AddWord(Race, Category, UseCategory), Amount - 1),
+      ["SEC_EDIT"] = "ADD_AddWord",
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"AlienRace",             Race},
+         {"UseCategory",           UseCategory},
+         {"wordcategorytableEnum", Category},
+      }
     }
+
+    for _k = 1, Amount - 1 do
+      RewardTable[#RewardTable+1] =
+      {
+        ["SPECIAL_KEY_WORDS"] = {"Id", WordID, "PercentageChance", "IGNORE"},
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] = "ADD_AddWord"
+      }
+    end
   end
 end
 
@@ -883,37 +834,50 @@ for i = 1, #NewWordChanges do
   local Change    = NewWordChanges[i][2]
 
   for j = 1, #Change do
-    Race = Change[j][1]
+    Race        = Change[j][1]
+    Category    = Change[j][2]
+    UseCategory = Change[j][3]
+    Amount      = Change[j][4]
+    
+    RewardTable[#RewardTable+1] =
+    {
+      ["SEC_EDIT"] = "ADD_NewReward",
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"Id",        NewWordID},
+         {"AlienRace", Race},
+      }
+    }
 
     RewardTable[#RewardTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
       ["ADD_OPTION"] = "ADDafterSECTION",
-      ["ADD"] = NewReward(NewWordID, Race),
+      ["SEC_ADD_NAMED"] = "ADD_NewReward",
     }
-  end
-end
-
-for i = 1, #NewWordChanges do
-  local NewWordID = NewWordChanges[i][1][1]
-  local Change    = NewWordChanges[i][2]
-
-  for j = 1, #Change do
-    Race        = Change[j][1]
-    Category    = Change[j][2]
-    UseCategory = Change[j][3]
-    Amount      = Change[j][4]
 
     RewardTable[#RewardTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"] = {"Id", NewWordID, "PercentageChance", "IGNORE"},
-      ["ADD_OPTION"] = "ADDafterSECTION",
-      ["ADD"] = string.rep(AddWord(Race, Category, UseCategory), Amount - 1),
+      ["SEC_EDIT"] = "ADD_AddWord",
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"AlienRace",             Race},
+         {"UseCategory",           UseCategory},
+         {"wordcategorytableEnum", Category},
+      }
     }
+
+    for _k = 1, Amount - 1 do
+      RewardTable[#RewardTable+1] =
+      {
+        ["SPECIAL_KEY_WORDS"] = {"Id", NewWordID, "PercentageChance", "IGNORE"},
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] = "ADD_AddWord"
+      }
+    end
   end
 end
 -------------------------------------------------------------------------------
-
 -- Alien Puzzle Table Changes --
 for i = 1, #PlaqueChanges do
   local OptionName = PlaqueChanges[i][1][1]
@@ -922,14 +886,26 @@ for i = 1, #PlaqueChanges do
   for j = 1, #Change do
     WordID = Change[j][1]
     Amount = Change[j][2]
-
+    
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"] = {"Name", OptionName},
-      ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-      ["REPLACE_TYPE"] = "ALL",
-      ["ADD"] = string.rep(AddReward(WordID), Amount - 1),
+      ["SEC_EDIT"] = "ADD_AddReward",
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"Value", WordID},
+      }
     }
+
+    for _k = 1, Amount - 1 do
+      AlienPuzzleTable[#AlienPuzzleTable+1] =
+      {
+        ["SPECIAL_KEY_WORDS"] = {"Name", OptionName},
+        ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+        ["REPLACE_TYPE"] = "ALL",
+        ["ADD_OPTION"] = "ADDafterLINE",
+        ["SEC_ADD_NAMED"] = "ADD_AddReward"
+      }
+    end
   end
 end
 
@@ -941,12 +917,24 @@ for i = 1, #MonolithChanges do
     OptionName = Change[j][1]
     WordID     = Change[j][2]
     Amount     = Change[j][3]
-
+    
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"] = {"Id", MonolithID, "Name", OptionName},
-      ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-      ["ADD"] = string.rep(AddReward(WordID), Amount - 1),
+      ["SEC_EDIT"] = "ADD_AddReward",
+      ["VALUE_CHANGE_TABLE"]  =
+      {
+         {"Value", WordID},
+      }
     }
+
+    for _k = 1, Amount - 1 do
+      AlienPuzzleTable[#AlienPuzzleTable+1] =
+      {
+        ["SPECIAL_KEY_WORDS"] = {"Id", MonolithID, "Name", OptionName},
+        ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+        ["ADD_OPTION"] = "ADDafterLINE",
+        ["SEC_ADD_NAMED"] = "ADD_AddReward"
+      }
+    end
   end
 end

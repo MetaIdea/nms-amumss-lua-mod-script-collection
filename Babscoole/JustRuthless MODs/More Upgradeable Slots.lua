@@ -199,8 +199,8 @@ for i = 1, #VehicleMaxUpgradeChanges do
   local Change      = VehicleMaxUpgradeChanges[i][2]
 
   for j = 1, #Change do
-    local Min = Change[j][1]
-    local Max = Change[j][2]
+    local Min     = Change[j][1]
+    local Max     = Change[j][2]
     local techMin = Change[j][3]
     local techMax = Change[j][4]
 
@@ -209,8 +209,8 @@ for i = 1, #VehicleMaxUpgradeChanges do
       ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", VehicleType},
       ["VALUE_CHANGE_TABLE"]  =
       {
-        {"MinSlots", Min},
-        {"MaxSlots", Max},
+        {"MinSlots",     Min},
+        {"MaxSlots",     Max},
         {"MinTechSlots", techMin},
         {"MaxTechSlots", techMax},
       },

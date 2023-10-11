@@ -56,11 +56,12 @@ CB_RemoveCylinderRadius = "15" -- 10
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Reduce Pulse Speed Lines.pak",
-["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
-["MOD_DESCRIPTION"] = "Reduce Speed Lines",
-["NMS_VERSION"]     = "4.46",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "Reduce Pulse Speed Lines.pak",
+["MOD_AUTHOR"]              = "JustRuthless & Babscoole",
+["MOD_DESCRIPTION"]         = "Reduce Speed Lines",
+["NMS_VERSION"]             = "4.46",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -87,7 +88,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumberOfParticles", PJ2_Particles},
@@ -105,7 +105,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumberOfParticles", PJ3_Particles},
@@ -123,7 +122,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumberOfParticles", PJ4_Particles},
