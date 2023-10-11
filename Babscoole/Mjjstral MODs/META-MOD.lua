@@ -1412,7 +1412,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
                             ["SECTION_ACTIVE"]    = {2,},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = ANIMS
@@ -1440,7 +1440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Title", "Toggle Backpack"},
                             ["REPLACE_TYPE"]  = "ALL",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RidingAnimationName", ""},
                             }
@@ -1483,7 +1483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","PoliceShip",},
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "PoliceShip",},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1495,14 +1495,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","PoliceShip","Name","ATTACHMENT"},
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", ""},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","AttackPointLight","Name","FALLOFF_RATE"},
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
                             ["REMOVE"] = "SECTION",
                         },
                     }

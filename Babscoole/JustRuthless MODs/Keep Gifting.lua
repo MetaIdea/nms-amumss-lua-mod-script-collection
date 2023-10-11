@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id","C_REP_TOKEN"},
+                            ["SPECIAL_KEY_WORDS"]  = {"Id", "C_REP_TOKEN"},
                             ["SEC_SAVE_TO"] = "ADD_COST",
                         },
                     }
@@ -113,7 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id","PIRATE_BATTLE"},
+                            ["SPECIAL_KEY_WORDS"]  = {"Id", "PIRATE_BATTLE"},
                             ["SEC_SAVE_TO"] = "ADD_REWARD",
                         },
                     }
@@ -123,7 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","ALL_REQUEST_STD_LOW"},
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "ALL_REQUEST_STD_LOW"},
                             ["SEC_SAVE_TO"] = "ADD_PUZZLE",
                         },
                     }

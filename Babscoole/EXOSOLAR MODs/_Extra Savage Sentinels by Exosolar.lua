@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Extra Savage Sentinels by Exosolar.pak",
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Babscoole & Xen0nex",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -450,7 +450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_MATCH"] = "120",
-                            ["VALUE_MATCH_OPTIONS"]    = "~=",
+                            ["VALUE_MATCH_OPTIONS"] = "~=",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Range", 2}

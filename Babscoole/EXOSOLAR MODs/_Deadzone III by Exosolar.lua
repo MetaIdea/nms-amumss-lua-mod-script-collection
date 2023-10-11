@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Deadzone III by Exosolar.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["MODIFICATIONS"] =
     {
         {
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ScreenFilter", "Weird4",},
+                            ["SPECIAL_KEY_WORDS"] = {"ScreenFilter", "Weird4"},
                             ["LINE_OFFSET"] = "+3",
                             ["ADD"] =
 [[
@@ -274,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "True",
-                            ["PRECEDING_KEY_WORDS"] = {"Objects","Objects",},
+                            ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -426,8 +426,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects",},
+                            ["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[

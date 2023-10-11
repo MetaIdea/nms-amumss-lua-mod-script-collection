@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exosolar's Starmap Upgrade For Expeditions.pak",
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Makto & Updated by Babscoole",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Visited","GcGalaxyMarkerSettings.xml","IconSize","Vector2f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Visited", "GcGalaxyMarkerSettings.xml", "IconSize", "Vector2f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "45"},
@@ -110,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--1
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--2
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -132,7 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--3
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -143,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--4
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -154,7 +154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--5
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -165,7 +165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--6
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -176,7 +176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--7
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -187,7 +187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--8
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -198,7 +198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--9
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -209,7 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--10
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -220,7 +220,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--1
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -231,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--2
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -242,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--3
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -253,7 +253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--4
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -264,7 +264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--5
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -275,7 +275,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--6
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -286,7 +286,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--7
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -297,7 +297,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--8
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -308,7 +308,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--9
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -319,7 +319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--10
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
+                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -559,16 +559,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"SolarSystemParameters", "PlanetRadii"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Large",     "11"},
-                                {"Medium",     "8.5"}
+                                {"Large",  "11"},
+                                {"Medium", "8.5"}
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SolarSystemParameters"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SystemTilt",     "12"},
-                                {"NonVisitedPlanetAlpha",     "0.555"}
+                                {"SystemTilt",            "12"},
+                                {"NonVisitedPlanetAlpha", "0.555"}
                             }
                         },
                     }
@@ -577,4 +577,3 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
-

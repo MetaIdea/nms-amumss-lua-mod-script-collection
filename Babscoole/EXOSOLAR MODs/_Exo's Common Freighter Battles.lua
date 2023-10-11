@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's Common Freighter Battles.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["MODIFICATIONS"] =
     {
         {
@@ -29,9 +29,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["EXML_CHANGE_TABLE"] = 
+                    {
                         {
-                            ["VALUE_CHANGE_TABLE"] = {
+                            ["VALUE_CHANGE_TABLE"] = 
+                            {
                                 {"FreighterSpawnRate", SPAWNRATE}
                             }
                         }

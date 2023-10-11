@@ -67,11 +67,11 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "CockpitCloak+ShipCloak.pak",
-["MOD_AUTHOR"]      = "Original mod and toggle idea by Mjjstral, original concept Gmr_Leon, Current author Babscoole",
-["NMS_VERSION"]     = "4.45",
-["DESCRIPTION"]     = "Makes the cockpit interior and ship invisible when flying",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]  = "CockpitCloak+ShipCloak.pak",
+["MOD_AUTHOR"]    = "Original mod and toggle idea by Mjjstral, original concept Gmr_Leon, Current author Babscoole",
+["NMS_VERSION"]   = "4.46",
+["DESCRIPTION"]   = "Makes the cockpit interior and ship invisible when flying",
+["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -92,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Components" },
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Components" },
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -368,7 +368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","Spacemap",},
+                            ["SPECIAL_KEY_WORDS"]  = {"Name","Spacemap"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransZ", "-3"},

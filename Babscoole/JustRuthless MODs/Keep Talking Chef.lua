@@ -16,9 +16,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF1"},
-                                {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF2"},
-                                {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF3"},
+                                {"Id", "EXOTIC_CHEF", "Cost", "C_NEXUSCHEF1"},
+                                {"Id", "EXOTIC_CHEF", "Cost", "C_NEXUSCHEF2"},
+                                {"Id", "EXOTIC_CHEF", "Cost", "C_NEXUSCHEF3"},
                             },
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_MATCH"] = "False",

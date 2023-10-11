@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Anti-Arachnophobia.pak",
 ["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["MODIFICATIONS"] =
     {
         {
@@ -35,12 +35,12 @@ for i=1,#DelCreature do
     local value = DelCreature[i]
     DelCreatureTable[#DelCreatureTable +1 ] =
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id",value},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", value},
                             ["REMOVE"] = "SECTION"
                         }
     DelCreatureTable2[#DelCreatureTable2 +1 ] =
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID",value},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", value},
                             ["REMOVE"] = "SECTION"
                         }
 end

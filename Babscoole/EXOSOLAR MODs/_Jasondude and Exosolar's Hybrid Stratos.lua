@@ -4404,7 +4404,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]              = "Exosolar and Jasondude",
 ["LUA_AUTHOR"]              = "Jackty89, WinderTP, and Babscoole",
 ["MOD_MAINTENANCE"]         = "Babscoole",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -4428,37 +4428,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties", "LightShaftColourBottom"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R",    "0.281"},
-                                {"G",    "0.276"},
-                                {"B",    "0.266"},
+                                {"R", "0.281"},
+                                {"G", "0.276"},
+                                {"B", "0.266"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties", "LightShaftColourTop"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R",    "0.251"},
-                                {"G",    "0.246"},
-                                {"B",    "0.236"},
+                                {"R", "0.251"},
+                                {"G", "0.246"},
+                                {"B", "0.236"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"StormLightShaftProperties", "LightShaftColourBottom"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R",    "0.401"},
-                                {"G",    "0.391"},
-                                {"B",    "0.375"},
-                                {"A",    "0.25"},
+                                {"R", "0.401"},
+                                {"G", "0.391"},
+                                {"B", "0.375"},
+                                {"A", "0.25"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"StormLightShaftProperties", "LightShaftColourTop"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R",    "0.251"},
-                                {"G",    "0.246"},
-                                {"B",    "0.236"},
+                                {"R", "0.251"},
+                                {"G", "0.246"},
+                                {"B", "0.236"},
                             }
                         },
                     }

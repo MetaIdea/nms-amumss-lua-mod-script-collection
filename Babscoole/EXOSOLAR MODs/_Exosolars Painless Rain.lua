@@ -4,7 +4,7 @@ Maintainer = "Babscoole"
 ModName = "_Exosolars Painless Rain"
 --ModNameSub = ""
 BaseDescription = "Makes lush storms harmless"
-GameVersion = "4.45"
+GameVersion = "4.46"
 --ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\HUMIDWEATHER.MBIN"
 
@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         ["EXML_CHANGE_TABLE"] = {
             {
                 ["VALUE_CHANGE_TABLE"] = {
-                    {"OverrideTemperature","False"},
+                    {"OverrideTemperature", "False"},
                 },
             },
         }

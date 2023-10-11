@@ -186,7 +186,7 @@ function HexToDec(number)
     end
 end
 
-GENERIC_ANIMATION_FILE = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN"
+GENERIC_ANIMATION_FILE = "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"
 
 ANIM_TEMPLATE_ALL = ""
 QUICK_ACTION_BUTTON_ALL = ""
@@ -569,7 +569,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.45",
+["NMS_VERSION"]     = "4.46",
 ["MODIFICATIONS"]   =
     {
         {
@@ -613,33 +613,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 }
             }
-        }
-    },
-["ADD_FILES"] =
-    {
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML",
-            ["FILE_CONTENT"] =
-[[
-<?xml version="1.0" encoding="utf-8"?>
-<Data template="TkAnimMetadata">
-  <Property name="FrameCount" value="10" />
-  <Property name="NodeCount" value="0" />
-  <Property name="NodeData" />
-  <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />
-    <Property name="Translations" />
-    <Property name="Scales" />
-    </Property>
-  </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />
-    <Property name="Translations" />
-    <Property name="Scales" />
- </Property>
-</Data>
-]]
         }
     }
 }

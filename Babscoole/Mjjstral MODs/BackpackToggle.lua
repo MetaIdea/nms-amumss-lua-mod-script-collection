@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_TURN_L"},
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
                             ["SEC_SAVE_TO"] = "ADD_ANIM",
                         },
                         {
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
                             ["SECTION_ACTIVE"] = {2,},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Title","EMOTE_WAVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
                             ["SEC_SAVE_TO"] = "ADD_EMOTE",
                         },
                         {

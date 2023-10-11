@@ -205,7 +205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id","WEAP_TOKEN"},
+                            ["SPECIAL_KEY_WORDS"]  = {"Id", "WEAP_TOKEN"},
                             ["PRECEDING_KEY_WORDS"]  = {"GcRewardTableItem.xml"},
                             ["SEC_SAVE_TO"] = "ADD_NewLoot",
                         },-- RewardTable
@@ -234,8 +234,8 @@ for i = 1, #RewardChanges do
       ["SECTION_UP_SPECIAL"] = 1,
       ["VALUE_CHANGE_TABLE"] =
       {
-        {"AmountMin", Min},
-        {"AmountMax", Max},
+        {"AmountMin",        Min},
+        {"AmountMax",        Max},
         {"PercentageChance", Chance},
       },
     }
