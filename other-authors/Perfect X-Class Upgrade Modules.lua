@@ -2,8 +2,8 @@ ModAuthor = "Pekerson"
 LuaAuthor = "Pekerson"
 ModName = "Perfect X-Class Upgrade Modules"
 BaseDescription = "Changes the weight of X-Class Upgrade Modules"
-GameVersion = "4.44"
-ModVersion = "v1.1"
+GameVersion = "4.45"
+ModVersion = "v1.2"
 --[[Files Modified:METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.75"},
+								{"ValueMax","0.7"},
 							},
 						},
 						{	
