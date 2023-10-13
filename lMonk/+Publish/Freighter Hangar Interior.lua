@@ -163,21 +163,22 @@ function HangarChanges()
 	local T = {}
 	for _,node in ipairs({
 		{k='NPC_01',			tx=-9.507,	ty=-3.355,	tz=-28.34},
-		{k='NPC_02',			tx=-54.1,	ty=-7.3,	tz=63.7,	ry=200},
+		{k='NPC_02',			tx=-50,		ty=-7.3,	tz=66.5,	ry=120},
 		{k='NPC_03',			tx=-8.337,	ty=-3.355,	tz=-28.03},
 		{k='NPC_04',			tx=39.3,	ty=-7.75,	tz=65.4,	ry=135},
 		{k='NPC_06',			tx=-21.92,	ty=-4.2,	tz=5.5},
 		{k='NPC_07',			tx=-57.8,	ty=8.1,		tz=57.14,	ry=270},
 		{k='RefHangarCrane2',	tx=41.88,				tz=61.2},
-		{k='RefHangarCrane',	tx=-3.43,				tz=60.7},
+		{k='RefHangarCrane',	tx=-3.43,				tz=59.5},
 		{k='RefHangarCrane1',	tx=-41.96,				tz=60.9},
-		{k='Container',			tx=-53.5,	ty=-7.4,	tz=67.25,	rx=0,	ry=7,	rz=0,	sx=1.2,	sy=1.14,	sz=1.1},
-		{k='RefPallet15',		tx=-51.95,	ty=-7.48,	tz=66.7,	rx=0,	ry=0,	rz=0,	sx=2,	sy=1,		sz=2.6},
-		{k='RefPallet30',		tx=7.79,	ty=-5.72,	tz=66.7,	rx=0,	ry=0,	rz=-58.5,sx=2.6,sy=2.4,		sz=2.8},
-		{k='RefLargeCrate23',	tx=6.8,		ty=-7.4,	tz=65.5,	rx=0,	ry=180,	rz=0,	sx=1.8,	sy=1.8,		sz=1.8},
-		{k='RefLargeCrate28',	tx=6.8,		ty=-7.4,	tz=67.7,	rx=0,	ry=0,	rz=0,	sx=1.8,	sy=1.8,		sz=1.8},
-		{k='RefLargeCrate103',	tx=4.85,	ty=-7.4,	tz=65.8,	rx=0,	ry=0,	rz=0,	sx=1.8,	sy=1.8,		sz=1.8},
-		{k='RefFuelTank2',		tx=35.53,	ty=-7.34,	tz=72.55,			ry=180},
+		{k='Container',			tx=-53.5,	ty=-7.4,	tz=67.25,	ry=7,		sx=1.2,	sy=1.14,	sz=1.1},
+		{k='RefPallet54',		tx=-51.95,	ty=-7.48,	tz=66.7,				sx=2,	sy=1,		sz=2.6},
+		{k='RefPallet30',		tx=7.79,	ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,		sz=2.8},
+		{k='RefLargeCrate23',	tx=6.8,		ty=-7.4,	tz=65.5,	ry=180,		sx=1.8,	sy=1.8,		sz=1.8},
+		{k='RefLargeCrate26',	tx=6.8,		ty=-7.4,	tz=67.7,				sx=1.8,	sy=1.8,		sz=1.8},
+		{k='RefLargeCrate96',	tx=5.25,	ty=-7.33,	tz=68.25,	ry=3},
+		{k='RefLargeCrate103',	tx=5.25,	ty=-7.33,	tz=67.05,	ry=87},
+		{k='RefFuelTank2',		tx=35.53,	ty=-7.34,	tz=72.55,	ry=180},
 	}) do
 		T[#T+1] = {
 			SPECIAL_KEY_WORDS	= {'Name', node.k},
@@ -197,31 +198,31 @@ function HangarChanges()
 	T[#T+1] = {
 		PRECEDING_KEY_WORDS = 'Children',
 		ADD					= ToExml({
-			[1] = ScNode('RefCrossing1B1', 'REFERENCE', {
+			[1] = ScNode('1RefCrossingB1', 'REFERENCE', {
 				ScTransform({tx=-45.35, ty=-7.341775, tz=66.73, ry=180}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'}
 				})
 			}),
-			[2] = ScNode('RefCrossing1B2', 'REFERENCE', {
+			[2] = ScNode('1RefCrossingB2', 'REFERENCE', {
 				ScTransform({tx=0, ty=-7.341775, tz=66.73}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'}
 				})
 			}),
-			[3] = ScNode('RefCrossing1B3', 'REFERENCE', {
+			[3] = ScNode('1RefCrossingB3', 'REFERENCE', {
 				ScTransform({tx=45.35, ty=-7.341775, tz=66.73, ry=180}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONB.SCENE.MBIN'}
 				})
 			}),
-			[4] = ScNode('RefMonitorShip1', 'REFERENCE', {
+			[4] = ScNode('1RefMonitorShip1', 'REFERENCE', {
 				ScTransform({tx=20.2, ty=-4, tz=16.2, rx=0, ry=-42, rz=180, sx=0.55, sy=0.55, sz=0.55}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'}
 				})
 			}),
-			[5] = ScNode('LocMonitorShip1', 'LOCATOR', {
+			[5] = ScNode('1LocMonitorShip1', 'LOCATOR', {
 				ScTransform({tx=20.2, ty=-2.8, tz=16.2}),
 				ScAttributes({
 					{'ATTACHMENT', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/ENTITIES/SHIP_SALVAGE.ENTITY.MBIN'}
@@ -236,13 +237,13 @@ function HangarChanges()
 					})
 				})
 			}),
-			[6] = ScNode('RefMonitorShip2', 'REFERENCE', {
+			[6] = ScNode('1RefMonitorShip2', 'REFERENCE', {
 				ScTransform({tx=-20.2, ty=-4, tz=16.2, rx=0, ry=42, rz=180, sx=0.55, sy=0.55, sz=0.55}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'}
 				})
 			}),
-			[7] = ScNode('LocMonitorShip2', 'LOCATOR', {
+			[7] = ScNode('1LocMonitorShip2', 'LOCATOR', {
 				ScTransform({tx=-20.2, ty=-2.8, tz=16.2}),
 				ScAttributes({
 					{'ATTACHMENT', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/ENTITIES/SHIP_SALVAGE.ENTITY.MBIN'}
@@ -255,6 +256,18 @@ function HangarChanges()
 							{'RADIUS',	0.2}
 						})
 					})
+				})
+			}),
+			[8] = ScNode('1RefScreenContainer', 'REFERENCE', {
+				ScTransform({tx=-51.58, ty=-5.4, tz=67.05, ry=-83, rz=180}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/WALLMONITORS/WALLMONITORA.SCENE.MBIN'}
+				})
+			}),
+			[9] = ScNode('1RefCrateMilk', 'REFERENCE', {
+				ScTransform({tx=5.15, ty=-7.33, tz=65.54, ry=86, sx=2.7, sy=1.8, sz=2.7}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/MILKCRATE.SCENE.MBIN'}
 				})
 			})
 		})
