@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "IGNORE"},
-							["REPLACE_TYPE"] = "ALL",
+                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "0"},
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien","IGNORE"},
-							["REPLACE_TYPE"] = "ALL",
+                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alien", "1000"},

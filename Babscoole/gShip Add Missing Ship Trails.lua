@@ -7,11 +7,11 @@ ModVersion = "b"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["LUA_AUTHOR"]		= "Babscoole",
-["NMS_VERSION"]		= GameVersion,
+["MOD_FILENAME"]    = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+["MOD_DESCRIPTION"] = BaseDescription,
+["MOD_AUTHOR"]      = Author,
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = GameVersion,
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

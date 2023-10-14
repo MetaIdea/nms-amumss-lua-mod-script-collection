@@ -87,7 +87,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
-							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "11"},
@@ -98,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
-							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Radius", "30"},
@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
-							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "3"},
@@ -118,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
-							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","Filename"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","Filename"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
-							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Radius", "40"},
@@ -212,7 +212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
-							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","Filename"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","Filename"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -221,7 +221,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
-							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "8"},
@@ -231,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
-							["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "8"},

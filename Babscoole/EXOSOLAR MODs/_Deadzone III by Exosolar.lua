@@ -82,7 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DistantObjects"},	
+                            ["PRECEDING_KEY_WORDS"] = {"DistantObjects"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[

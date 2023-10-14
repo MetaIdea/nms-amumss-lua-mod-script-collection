@@ -414,7 +414,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinSpeedScale", "0.3"},
                                 {"MoveRange",     "150"},
                             }
-						},
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","COW",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -504,7 +504,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AnimSpeed",     "0.5"},
                                 {"MinSpeedScale", "0.3"},
                             }
-                        },                       
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","TREX",},
                             ["VALUE_CHANGE_TABLE"] =
@@ -527,7 +527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AnimSpeed",     "0.5"},
                                 {"MinSpeedScale", "0.3"},
                             }
-                        }, 
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","TREX","HerbivoreProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["REPLACE_TYPE"] = "ALL",
@@ -601,7 +601,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AnimSpeed",     "0.5"},
                                 {"MinSpeedScale", "0.3"},
                             }
-                        }, 
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","GRUNT",},
                             ["VALUE_CHANGE_TABLE"] =

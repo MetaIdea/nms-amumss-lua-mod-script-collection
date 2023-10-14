@@ -72,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[

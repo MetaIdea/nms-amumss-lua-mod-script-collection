@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"InventoryStackLimitsOptionData",},
-							["REPLACE_TYPE"] = "ALL",
+                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SubstanceStackLimit", "9999999"},

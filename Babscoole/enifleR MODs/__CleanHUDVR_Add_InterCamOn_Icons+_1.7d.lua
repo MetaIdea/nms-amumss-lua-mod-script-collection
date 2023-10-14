@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"QuickMenuEnableSwipe","True"},
                                 {"QuickMenuSwipeHeightMin","50"},
                                 {"BuildMenuItemNextNavAnimTime","0.3"},
-                                {"BuildMenuItemNextNavAnimWait","0.2"},                           
+                                {"BuildMenuItemNextNavAnimWait","0.2"},
                                 {"HandControlPointMargin","45"},
                                 {"HandControlPointActiveMargin","170"},
                                 {"CrosshairScaleHmd","1.5"},

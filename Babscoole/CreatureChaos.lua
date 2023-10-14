@@ -373,7 +373,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"MaxScale",                    "3"},
                                 {"FurLengthModifierAtMinScale", "0.1"},
-								{"FurLengthModifierAtMaxScale", "1.9"},
+                                {"FurLengthModifierAtMaxScale", "1.9"},
                             }
                         },
                         {
@@ -383,7 +383,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinScale",                    "0.25"},
                                 {"MaxScale",                    "3"},
                                 {"FurLengthModifierAtMinScale", "0.1"},
-								{"FurLengthModifierAtMaxScale", "1.9"},
+                                {"FurLengthModifierAtMaxScale", "1.9"},
                             }
                         },
                         {
@@ -392,7 +392,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"MaxScale",                    "3"},
                                 {"FurLengthModifierAtMinScale", "0.1"},
-								{"FurLengthModifierAtMaxScale", "1.9"},
+                                {"FurLengthModifierAtMaxScale", "1.9"},
                             }
                         },
                         {
@@ -477,8 +477,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FurLengthModifierAtMinScale", "0.2"},
                                 {"FurLengthModifierAtMaxScale", "9"},
                             }
-						},
-						{
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id","MOLE", "PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -571,14 +571,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FurLengthModifierAtMinScale", "0.3"},
                             }
                         },
-						{
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id","GRUNT", "PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "Low"},
                             }
                         },
-						{
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id","BLOB", "PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -590,7 +590,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
-								{"MaxScale",                    "12"},
+                                {"MaxScale",                    "12"},
                                 {"FurLengthModifierAtMinScale", "0.3"},
                                 {"FurLengthModifierAtMaxScale", "10.6"},
                             }
@@ -606,7 +606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER",},
-                            ["PRECEDING_KEY_WORDS"] = {"Tags"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Tags"}, 
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[

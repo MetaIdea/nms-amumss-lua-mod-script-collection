@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"JetpackUnderwaterDrainRate",            "0.1"}, 
+                                {"JetpackUnderwaterDrainRate",            "0.1"},
                                 {"JetpackUnderwaterFillRate",             "4"},
                                 {"UnderwaterMaxJetpackSpeed",             "32"},
                                 {"UnderwaterJetpackForce",                "64"},
@@ -59,8 +59,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SpaceJetpackMaxSpeed",                  "64"},
                                 {"SpaceJetpackDrainRate",                 "0.1"},
                                 {"MaxFallSpeed",                          "26"},
-								{"GroundWalkSpeed",	"2.2",},
-								{"GroundRunSpeed","10",}
+                                {"GroundWalkSpeed", "2.2",},
+                                {"GroundRunSpeed","10",}
                             }
                         },
                         {

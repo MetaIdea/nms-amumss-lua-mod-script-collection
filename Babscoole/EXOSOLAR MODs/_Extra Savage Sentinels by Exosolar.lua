@@ -250,9 +250,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RepairThreshold",        95},
                             }
                         },
-                        {						
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED.SCENE.MBIN"},
-                            ["VALUE_CHANGE_TABLE"] 	= 
+                            ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"BaseHealth",             12000},
                                 {"HealthIncreasePerLevel", 25000},
@@ -260,9 +260,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RepairThreshold",        50},
                             }
                         },
-                        {						
-                            ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD.SCENE.MBIN"},	
-                            ["VALUE_CHANGE_TABLE"] 	= 
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD.SCENE.MBIN"},
+                            ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"BaseHealth",             15000},
                                 {"HealthIncreasePerLevel", 4500},
@@ -270,11 +270,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RepairThreshold",        95},
                             }
                         },
-                        {						
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONESHIELD.SCENE.MBIN"},
-                            ["VALUE_CHANGE_TABLE"] 	= 
+                            ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"BaseHealth",	           30000},
+                                {"BaseHealth",             30000},
                                 {"HealthIncreasePerLevel", 4000},
                                 {"RepairTime",             7},
                                 {"RepairThreshold",        95},
@@ -404,7 +404,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTSHOTGUN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NumProjectiles",   12},	
+                                {"NumProjectiles",   12},
                                 {"ProjectileSpread", 0.07},
                                 {"FireRate",         0.18},
                                 {"FireTimeMin",      5},
