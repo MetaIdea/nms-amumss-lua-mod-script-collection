@@ -510,7 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scorched","GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"Settings"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -518,7 +518,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Frozen","GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"Settings"},	
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[

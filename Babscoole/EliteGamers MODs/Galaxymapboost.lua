@@ -59,11 +59,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"ID", "DUMMY_SCAN"},
-							["REMOVE"] = "SECTION"
+                            ["REMOVE"] = "SECTION"
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID","MIRROR",},
-							["SECTION_ACTIVE"] = 1,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ID", "MAGNET"},
@@ -71,8 +71,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"StatsType","Ship_Hyperdrive_JumpDistance",},
-							["SECTION_ACTIVE"] = {1,2},
-							["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = {1,2},
+                            ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Bonus", "1000000"},
@@ -80,8 +80,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"StatsType","Freighter_Hyperdrive_JumpDistance",},
-							["SECTION_ACTIVE"] = 1,
-							["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 1,
+                            ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Bonus", "1000000"},

@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxSpeed",         "99999"}, 
                                 {"MinSpeed",         "0"},  
                                 {"MinSpeedForce",    "5"},
-                                {"BoostThrustForce", "500"},								
+                                {"BoostThrustForce", "500"},                                
                                 {"BoostMaxSpeed",    "99999"},
                             }
                         },
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxSpeed",         "99999"}, 
                                 {"MinSpeed",         "0"},  
                                 {"MinSpeedForce",    "5"},
-                                {"BoostThrustForce", "500"},								
+                                {"BoostThrustForce", "500"},                                
                                 {"BoostMaxSpeed",    "99999"},
                             }
                         },
@@ -163,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxSpeed",         "99999"}, 
                                 {"MinSpeed",         "0"},  
                                 {"MinSpeedForce",    "5"},
-                                {"BoostThrustForce", "500"},								
+                                {"BoostThrustForce", "500"},                                
                                 {"BoostMaxSpeed",    "99999"},
                             }
                         },

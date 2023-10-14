@@ -329,7 +329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"ChainEnds"},	
+                            ["PRECEDING_KEY_WORDS"] = {"ChainEnds"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -356,7 +356,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-                            ["PRECEDING_KEY_WORDS"] = {"ReplacementImpacts"},	
+                            ["PRECEDING_KEY_WORDS"] = {"ReplacementImpacts"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[

@@ -28,10 +28,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"] = 
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FreighterSpawnRate", SPAWNRATE}
                             }

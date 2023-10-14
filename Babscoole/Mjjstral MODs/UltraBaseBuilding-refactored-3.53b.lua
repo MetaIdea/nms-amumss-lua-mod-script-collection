@@ -3,38 +3,38 @@ CATEGORY = {"NPC", "CREATURES", "VEHICLE", "SPACE", "BUILDINGS1", "BUILDINGS2", 
 ENABLE_PHYSICS_EXTENDER = false
 
 CATEGORY_ICON = {
-	["NPC"]="TEXTURES/UI/HUD/ICONS/TIPSCREENSHOTS/NPCS.DDS", 
-	["CREATURES"]="TEXTURES/UI/HUD/EYE.CREATURE.DDS", 
-	["VEHICLE"]="TEXTURES/UI/HUD/MENUS/ICON.SHIP.DDS",
-	["SPACE"]="TEXTURES/UI/HUD/ICONS/TIPSCREENSHOTS/SPACESTATION.DDS", 
-	["BUILDINGS1"]="TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.PORTAL.DDS", 
-	["BUILDINGS2"]="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.BUILDING.DDS",
-	["COOKING"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.COOKING.ON.DDS",
-	["CRYSTAL+ROCK"]="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.ELEMENT.CRYSTAL1.DDS",
-	["ROCKS+LAVA"]="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.FUELPROD.DDS",
-	["PLANTS"]="TEXTURES/UI/HUD/ICONS/MISSIONS/TREESCAN.DDS",
-	["EXTRA"]="TEXTURES/UI/FRONTEND/ICONS/GAMEMODE/STAR.DDS",
-	["SEASTUFF"]="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.WATER.ON.DDS",
-	["WEIRD"]="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.MISSINGPERSON.ON.DDS"
+    ["NPC"]="TEXTURES/UI/HUD/ICONS/TIPSCREENSHOTS/NPCS.DDS",
+    ["CREATURES"]="TEXTURES/UI/HUD/EYE.CREATURE.DDS",
+    ["VEHICLE"]="TEXTURES/UI/HUD/MENUS/ICON.SHIP.DDS",
+    ["SPACE"]="TEXTURES/UI/HUD/ICONS/TIPSCREENSHOTS/SPACESTATION.DDS",
+    ["BUILDINGS1"]="TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.PORTAL.DDS",
+    ["BUILDINGS2"]="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.BUILDING.DDS",
+    ["COOKING"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.COOKING.ON.DDS",
+    ["CRYSTAL+ROCK"]="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.ELEMENT.CRYSTAL1.DDS",
+    ["ROCKS+LAVA"]="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.FUELPROD.DDS",
+    ["PLANTS"]="TEXTURES/UI/HUD/ICONS/MISSIONS/TREESCAN.DDS",
+    ["EXTRA"]="TEXTURES/UI/FRONTEND/ICONS/GAMEMODE/STAR.DDS",
+    ["SEASTUFF"]="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.WATER.ON.DDS",
+    ["WEIRD"]="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.MISSINGPERSON.ON.DDS"
 }
 
 CATEGORY_OFFSET = {
-	["NPC"]="0", 
-	["CREATURES"]="0.5", 
-	["VEHICLE"]="0",
-	["SPACE"]="400", 
-	["BUILDINGS1"]="0",
-	["BUILDINGS2"]="0",
-	["COOKING"]="0",
-	["CRYSTAL+ROCK"]="0",
-	["ROCKS+LAVA"]="0",
-	["PLANTS"]="0",
-	["EXTRA"]="0",
-	["SEASTUFF"]="0",
-	["WEIRD"]="0"
+    ["NPC"]="0",
+    ["CREATURES"]="0.5",
+    ["VEHICLE"]="0",
+    ["SPACE"]="400",
+    ["BUILDINGS1"]="0",
+    ["BUILDINGS2"]="0",
+    ["COOKING"]="0",
+    ["CRYSTAL+ROCK"]="0",
+    ["ROCKS+LAVA"]="0",
+    ["PLANTS"]="0",
+    ["EXTRA"]="0",
+    ["SEASTUFF"]="0",
+    ["WEIRD"]="0"
 }
 
-BUILDABLE_OBJECT_TABLE = 
+BUILDABLE_OBJECT_TABLE =
 {
 ["NPC"] =
 {
@@ -1015,10 +1015,10 @@ BUILDABLE_OBJECT_ = BUILDABLE_OBJECT
 BUILDABLE_OBJECT_EXTENDER = [[MODELS/CUSTOM/]] .. ID_NAME_ .. ".SCENE.MBIN"
 if ENABLE_PHYSICS_EXTENDER then BUILDABLE_OBJECT = BUILDABLE_OBJECT_EXTENDER end
 
-BASEBUILDINGTABLE_ADDING = 
+BASEBUILDINGTABLE_ADDING =
 [[
     <Property value="GcBaseBuildingEntry.xml">
-	  <Property name="ID" value="]] .. ID_NAME .. [[" />
+      <Property name="ID" value="]] .. ID_NAME .. [[" />
       <Property name="HasProduct" value="True" />
       <Property name="IsTemporary" value="False" />
       <Property name="IsFromModFolder" value="True" />
@@ -1026,10 +1026,10 @@ BASEBUILDINGTABLE_ADDING =
         <Property name="Filename" value="" />
       </Property>
       <Property name="Model" value="TkModelResource.xml">
-		<Property name="Filename" value="]] .. BUILDABLE_OBJECT .. [[" />
+        <Property name="Filename" value="]] .. BUILDABLE_OBJECT .. [[" />
       </Property>
       <Property name="InactiveModel" value="TkModelResource.xml">
-		<Property name="Filename" value="]] .. BUILDABLE_OBJECT .. [[" />
+        <Property name="Filename" value="]] .. BUILDABLE_OBJECT .. [[" />
       </Property>
       <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
         <Property name="BaseBuildingDecorationType" value="Normal" />
@@ -1100,10 +1100,10 @@ BASEBUILDINGTABLE_ADDING =
     </Property>
 ]]
 
-PRODUCT = 
+PRODUCT =
 [[
     <Property value="GcProductData.xml">
-	  <Property name="Id" value="]] .. ID_NAME .. [[" />
+      <Property name="Id" value="]] .. ID_NAME .. [[" />
       <Property name="Name" value="]] .. ID_NAME_ .. [[" />
       <Property name="NameLower" value="]] .. ID_NAME_ .. [[" />
       <Property name="Subtitle" value="VariableSizeString.xml">
@@ -1181,16 +1181,16 @@ PRODUCT =
       <Property name="PinObjectiveTip" value="" />
       <Property name="CookingIngredient" value="False" />
       <Property name="CookingValue" value="0" />
-      <Property name="GoodForSelling" value="False" />	  
+      <Property name="GoodForSelling" value="False" />
       <Property name="GiveRewardOnSpecialPurchase" value="" />
-	  <Property name="EggModifierIngredient" value="True" />
-    </Property>	
+      <Property name="EggModifierIngredient" value="True" />
+    </Property>
 ]]
 
 DEFAULTSAVEDATA_KNOWNPRODUCT =
 [[
       <Property value="NMSString0x10.xml">
-		<Property name="Value" value="]] .. ID_NAME .. [[" />
+        <Property name="Value" value="]] .. ID_NAME .. [[" />
       </Property>
 ]]
 
@@ -1244,7 +1244,7 @@ PHYICS_ENTITY =
     <Property value="150" />
     <Property value="500" />
   </Property>
-</Data>	
+</Data>
 ]]
 
 PHYSICS_EXTENDER_SCENE =
@@ -1346,33 +1346,33 @@ PHYSICS_EXTENDER_SCENE =
             <Property name="ScaleZ" value="1" />
           </Property>
           <Property name="Attributes">
-			<Property value="TkSceneNodeAttributeData.xml">
-			  <Property name="Name" value="SCENEGRAPH" />
-			  <Property name="AltID" value="" />
-			  <Property name="Value" value="]] .. string.gsub(BUILDABLE_OBJECT_, [[/]], string.char(92)) .. [[" />
-			</Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="]] .. string.gsub(BUILDABLE_OBJECT_, [[/]], string.char(92)) .. [[" />
+            </Property>
           </Property>
           <Property name="Children" />
-        </Property>		
+        </Property>
       </Property>
     </Property>
-  </Property>  
-</Data>	
+  </Property>
+</Data>
 ]]
 
 PHYSICS_EXTENDER_SCENE = string.gsub(PHYSICS_EXTENDER_SCENE, [[//]], string.char(92))
 
 PHYSICS_EXTENDER_SCENE_REF =
 {
-	["FILE_DESTINATION"] = [[MODELS\CUSTOM\]] .. ID_NAME_ .. [[.SCENE.EXML]],
-	["FILE_CONTENT"] 	 = PHYSICS_EXTENDER_SCENE
-}	
+    ["FILE_DESTINATION"] = [[MODELS\CUSTOM\]] .. ID_NAME_ .. [[.SCENE.EXML]],
+    ["FILE_CONTENT"]     = PHYSICS_EXTENDER_SCENE
+}
 if ENABLE_PHYSICS_EXTENDER then table.insert(ADD_FILES_TABLE, PHYSICS_EXTENDER_SCENE_REF) end
 end
 
 function GetObjectID(SCENEPATH)
-	--return string.gsub(string.match(string.match(SCENEPATH, "^.+/(.+)$"), "(.+)%.(.+)"), ".SCENE", "") .. "_" .. math.random(9999)
-	return string.gsub(string.match(string.match(SCENEPATH, "^.+/(.+)$"), "(.+)%.(.+)"), ".SCENE", "")
+    --return string.gsub(string.match(string.match(SCENEPATH, "^.+/(.+)$"), "(.+)%.(.+)"), ".SCENE", "") .. "_" .. math.random(9999)
+    return string.gsub(string.match(string.match(SCENEPATH, "^.+/(.+)$"), "(.+)%.(.+)"), ".SCENE", "")
 end
 
 GROUPS_ALL = ""
@@ -1390,7 +1390,7 @@ GROUP =
         <Property name="Filename" value="]] .. ICON .. [[" />
       </Property>
       <Property name="DefaultColourIdx" value="0" />
-	  <Property name="DefaultItem" value="]] .. DEFAULT_ITEM .. [[" />
+      <Property name="DefaultItem" value="]] .. DEFAULT_ITEM .. [[" />
     </Property>
 ]]
 GROUPS_ALL = GROUPS_ALL .. GROUP
@@ -1404,112 +1404,112 @@ PRODUCT_ALL = ""
 OFFSET = "0"
 
 for i=1,#CATEGORY,1 do
-	AddGroup(CATEGORY[i], BUILDABLE_OBJECT_TABLE[CATEGORY[i]][1], "MOD", CATEGORY_ICON[CATEGORY[i]])
-	if CATEGORY_OFFSET[CATEGORY[i]] == nil or CATEGORY_OFFSET[CATEGORY[i]] == "" then
-		OFFSET = "0"
-	else
-		OFFSET = CATEGORY_OFFSET[CATEGORY[i]]	
-	end
-	for j=1,#BUILDABLE_OBJECT_TABLE[CATEGORY[i]],1 do
-		AddToBuildmenu(BUILDABLE_OBJECT_TABLE[CATEGORY[i]][j], CATEGORY[i])
-		BASEBUILDINGTABLE_ADDING_ALL = BASEBUILDINGTABLE_ADDING_ALL .. BASEBUILDINGTABLE_ADDING
-		DEFAULTSAVEDATA_KNOWNPRODUCT_ALL = DEFAULTSAVEDATA_KNOWNPRODUCT_ALL .. DEFAULTSAVEDATA_KNOWNPRODUCT
-		PRODUCT_ALL = PRODUCT_ALL .. PRODUCT
-	end
+    AddGroup(CATEGORY[i], BUILDABLE_OBJECT_TABLE[CATEGORY[i]][1], "MOD", CATEGORY_ICON[CATEGORY[i]])
+    if CATEGORY_OFFSET[CATEGORY[i]] == nil or CATEGORY_OFFSET[CATEGORY[i]] == "" then
+        OFFSET = "0"
+    else
+        OFFSET = CATEGORY_OFFSET[CATEGORY[i]]
+    end
+    for j=1,#BUILDABLE_OBJECT_TABLE[CATEGORY[i]],1 do
+        AddToBuildmenu(BUILDABLE_OBJECT_TABLE[CATEGORY[i]][j], CATEGORY[i])
+        BASEBUILDINGTABLE_ADDING_ALL = BASEBUILDINGTABLE_ADDING_ALL .. BASEBUILDINGTABLE_ADDING
+        DEFAULTSAVEDATA_KNOWNPRODUCT_ALL = DEFAULTSAVEDATA_KNOWNPRODUCT_ALL .. DEFAULTSAVEDATA_KNOWNPRODUCT
+        PRODUCT_ALL = PRODUCT_ALL .. PRODUCT
+    end
 end
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "0-UltraBaseBuilding.pak", 
-["MOD_AUTHOR"]				= "Mjjstral",
-["Maintainer"]				= "Babscoole",
-["Contributor"]				= "GhostRick",
-["NMS_VERSION"]				= "3.53b",
-["MODIFICATIONS"] 			= 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{				
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects"},
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= BASEBUILDINGTABLE_ADDING_ALL
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"},
-							["LINE_OFFSET"] 		= "-1",
-							["ADD"] 				= GROUPS_ALL
-						},
-						{--Naming Collision Patch
-							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKTRADER_PARTS/SHACK.SCENE.MBIN"},
-							["SECTION_UP"] 		= 1,
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ID", "SHACK_TRADER",}
-							},
-						},
-												{
-							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKSCIENTIFIC_PARTS/SHACK.SCENE.MBIN"},
-							["SECTION_UP"] 		= 1,
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ID", "SHACK_SCIENTIFIC",}
-							},
-						},
-												{
-							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKWARRIOR_PARTS/SHACK.SCENE.MBIN"},
-							["SECTION_UP"] 		= 1,
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ID", "SHACK_WARRIOR",}
-							}
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Table"}, --"GcProductTable"
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= PRODUCT_ALL
-						}
-					}
-				}
-			}
-		},
-		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\DEFAULTSAVEDATACREATIVE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= DEFAULTSAVEDATA_KNOWNPRODUCT_ALL
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= DEFAULTSAVEDATA_KNOWNPRODUCT_ALL
-						}
-					}
-				}
-			}
-		},		
-	},
+["MOD_FILENAME"]            = "0-UltraBaseBuilding.pak",
+["MOD_AUTHOR"]              = "Mjjstral",
+["Maintainer"]              = "Babscoole",
+["Contributor"]             = "GhostRick",
+["NMS_VERSION"]             = "3.53b",
+["MODIFICATIONS"]           =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"]   =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]    = "METADATA\REALITY\TABLES\BASEBUILDINGTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Objects"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = BASEBUILDINGTABLE_ADDING_ALL
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"},
+                            ["LINE_OFFSET"]         = "-1",
+                            ["ADD"]                 = GROUPS_ALL
+                        },
+                        {--Naming Collision Patch
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKTRADER_PARTS/SHACK.SCENE.MBIN"},
+                            ["SECTION_UP"]      = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ID", "SHACK_TRADER",}
+                            },
+                        },
+                                                {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKSCIENTIFIC_PARTS/SHACK.SCENE.MBIN"},
+                            ["SECTION_UP"]      = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ID", "SHACK_SCIENTIFIC",}
+                            },
+                        },
+                                                {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKWARRIOR_PARTS/SHACK.SCENE.MBIN"},
+                            ["SECTION_UP"]      = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ID", "SHACK_WARRIOR",}
+                            }
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]    = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Table"}, --"GcProductTable"
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = PRODUCT_ALL
+                        }
+                    }
+                }
+            }
+        },
+        {
+            ["MBIN_CHANGE_TABLE"]   =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]    = "METADATA\GAMESTATE\DEFAULTSAVEDATACREATIVE.MBIN",
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = DEFAULTSAVEDATA_KNOWNPRODUCT_ALL
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]    = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = DEFAULTSAVEDATA_KNOWNPRODUCT_ALL
+                        }
+                    }
+                }
+            }
+        },
+    },
 ["ADD_FILES"] = ADD_FILES_TABLE
 }

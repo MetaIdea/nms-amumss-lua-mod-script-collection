@@ -2,7 +2,7 @@ QUICK_ACTION_LIST =
 {
     "SAVE",
     "GALACTICMAP",
-    "PLANETARYSCANNER", 
+    "PLANETARYSCANNER",
     "TOGGLE_BACKPACK",
     "REVEAL_PORTAL",
     "HEALTH_SUIT",
@@ -3662,8 +3662,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
-              </Property>		  
+                <Property name="UseMissionClock" value="False" />
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_PSCAN" />
@@ -3671,7 +3671,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
                     <Property name="BroadcastLevel" value="Local" />
                   </Property>
-                </Property>			
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -3683,7 +3683,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
+                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcFireSimpleInteractionAction.xml" />
@@ -3693,7 +3693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
                     <Property name="BroadcastLevel" value="Local" />
                   </Property>
-                </Property>				
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -3706,7 +3706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Anim" value="PLANETARYSCANNER" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>			  
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="PLANETARYSCANNER" />
@@ -3714,9 +3714,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
                     <Property name="BroadcastLevel" value="Local" />
                   </Property>
-                </Property>			
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
       </Property>
