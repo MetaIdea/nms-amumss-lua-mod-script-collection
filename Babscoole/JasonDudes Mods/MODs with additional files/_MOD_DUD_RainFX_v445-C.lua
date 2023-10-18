@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_RainFX_v445-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_RainFX_v445-C.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.45",
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "-1"},
+                                {"x", "-0.2"},
                                 {"y", "-2"},
                             }
                         },
@@ -46,7 +46,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "1"},
+                                {"x", "0.2"},
                                 {"y", "0"},
                             }
                         },
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "-1"},
+                                {"x", "-0.2"},
                                 {"y", "-2"},
                             }
                         },
@@ -96,7 +96,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "1"},
+                                {"x", "0.2"},
                                 {"y", "0"},
                             }
                         },
@@ -138,7 +138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "-1"},
+                                {"x", "-0.2"},
                                 {"y", "-2"},
                             }
                         },
@@ -146,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "1"},
+                                {"x", "0.2"},
                                 {"y", "0"},
                             }
                         },
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "-1"},
+                                {"x", "-0.2"},
                                 {"y", "-2"},
                             }
                         },
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "1"},
+                                {"x", "0.2"},
                                 {"y", "0"},
                             }
                         },
