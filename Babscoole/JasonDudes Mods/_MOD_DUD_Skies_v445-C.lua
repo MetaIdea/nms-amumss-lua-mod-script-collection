@@ -481,7 +481,7 @@ BiomeDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_Skies_v445-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_Skies_v445-C.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.45",
@@ -560,7 +560,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.2"},
                                 {"MultiplySaturation", "1"},
@@ -569,14 +569,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation",   "-0.1"},
                                 {"OffsetValue",        "-0.1"},
@@ -585,7 +585,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -593,7 +593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MultiplySaturation", "1"},
                                 {"MultiplyValue",      "1"},
@@ -601,7 +601,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.1"},
                                 {"MultiplySaturation", "1"},
@@ -615,7 +615,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax",               "0.95"},
                                 {"FogColourMax",         "1"},
@@ -626,7 +626,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",          "0.0035"},
                                 {"FogMax",               "0.95"},
@@ -640,7 +640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",          "0.25"},
                                 {"FogMax",               "0.95"},
@@ -654,7 +654,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.15"},
                                 {"FogMax",                   "0.95"},
@@ -670,7 +670,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.2"},
                                 {"MultiplySaturation", "1"},
@@ -679,14 +679,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.1"},
                                 {"MultiplySaturation", "1"},
@@ -695,14 +695,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MultiplyValue", "1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -710,14 +710,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MultiplyValue", "1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",   "-0.1"},
                                 {"MultiplyValue", "1"},
@@ -731,7 +731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed",  "0.5"},
                                 {"Alpha1", "0.5"},
@@ -740,7 +740,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","Colour1"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
                                 {"ColourAlt", "Primary"},
@@ -748,7 +748,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","Colour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
                                 {"ColourAlt", "Primary"},
@@ -756,7 +756,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "1"},
                                 {"Speed",     "0.5"},
@@ -766,7 +766,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour1"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
                                 {"ColourAlt", "Primary"},
@@ -774,7 +774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
                                 {"ColourAlt", "Primary"},
@@ -782,7 +782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alpha1", "0"},
                                 {"Alpha2", "0"},
@@ -790,7 +790,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alpha1", "0"},
                                 {"Alpha2", "0"},
@@ -798,7 +798,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alpha1", "0"},
                                 {"Alpha2", "0"},
@@ -806,7 +806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Value","MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN",},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDCLEARCOLD.SCENE.MBIN"},
                             }
@@ -819,7 +819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed",  "0.3"},
                                 {"Alpha1", "0.02"},
@@ -828,7 +828,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alpha1", "0"},
                                 {"Alpha2", "0"},
@@ -836,7 +836,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Sand"},
                                 {"ColourAlt", "Alternative3"},
@@ -850,7 +850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.3"},
                                 {"MultiplySaturation", "1"},
@@ -859,14 +859,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.3"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.2"},
                                 {"MultiplySaturation", "1"},
@@ -875,14 +875,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.25"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "-0.2"},
                                 {"MultiplyValue",    "1"},
@@ -890,14 +890,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeightFogColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation","-0.1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -905,14 +905,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MultiplyValue", "1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",   "-0.1"},
                                 {"MultiplyValue", "1"},
@@ -926,7 +926,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogHeight",            "192"},
                                 {"DepthOfFieldDistance", "10"},
@@ -934,7 +934,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogHeight",            "192"},
                                 {"DepthOfFieldDistance", "10"},
@@ -943,7 +943,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogHeight",            "192"},
                                 {"DepthOfFieldDistance", "10"},
@@ -952,7 +952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogHeight",            "192"},
                                 {"DepthOfFieldDistance", "10"},
@@ -960,7 +960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.8"},
                                 {"Alpha2",    "0.4"},
@@ -968,7 +968,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Storms","Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.8"},
                                 {"Alpha1",    "0.2"},
@@ -977,7 +977,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                                 {"OffsetValue", "-0.2"},
@@ -985,14 +985,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour","ForceColourTo"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.68"},
                                 {"G", "0.303"},
@@ -1001,21 +1001,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                                 {"OffsetValue", "-0.1"},
@@ -1023,7 +1023,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DuskHorizonMultiplier",  "0.35665"},
                                 {"NightHorizonMultiplier", "0.180624"},
@@ -1037,7 +1037,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogHeight",            "192"},
                                 {"DepthOfFieldDistance", "10"},
@@ -1045,7 +1045,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogHeight",            "192"},
                                 {"DepthOfFieldDistance", "10"},
@@ -1054,7 +1054,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.25"},
                                 {"FogMax",                   "0.95"},
@@ -1070,7 +1070,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.15"},
                                 {"FogMax",                   "0.95"},
@@ -1104,7 +1104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour",      "False"},
                                 {"OffsetSaturation", "0.1"},
@@ -1113,7 +1113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.1"},
                                 {"OffsetValue",      "-0.2"},
@@ -1121,7 +1121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour",      "False"},
                                 {"OffsetSaturation", "0.1"},
@@ -1130,7 +1130,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour",      "False"},
                                 {"OffsetSaturation", "0.4"},
@@ -1139,21 +1139,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeightFogColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour",      "False"},
                                 {"OffsetSaturation", "0.2"},
@@ -1162,14 +1162,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                                 {"OffsetValue", "-0.1"},
@@ -1177,7 +1177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HorizonMultiplier",      "0.180624"},
                                 {"DuskHorizonMultiplier",  "0.35665"},
@@ -1192,35 +1192,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.35"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -1228,14 +1228,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeavyAirColour","GcColourModifier.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
@@ -1248,14 +1248,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0"},
                                 {"OffsetValue",      "-0.2"},
@@ -1263,21 +1263,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -1285,7 +1285,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeavyAirColour","GcColourModifier.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "0"},
                             }
@@ -1298,7 +1298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax",                   "0.95"},
                                 {"HeightFogStrength",        "0.1"},
@@ -1309,7 +1309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.04"},
                                 {"FogMax",                   "0.95"},
@@ -1324,7 +1324,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.25"},
                                 {"FogMax",                   "0.95"},
@@ -1339,7 +1339,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.15"},
                                 {"FogMax",                   "0.95"},
@@ -1353,14 +1353,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MultiplyValue", "1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -1368,14 +1368,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.1"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DuskHorizonMultiplier",  "0.35665"},
                                 {"NightHorizonMultiplier", "0.180624"},
@@ -1389,7 +1389,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.2"},
                                 {"MultiplySaturation", "1"},
@@ -1398,14 +1398,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",   "-0.1"},
                                 {"MultiplyValue", "1"},
@@ -1413,21 +1413,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.4"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MultiplyValue", "1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -1435,7 +1435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.1"},
                             }
@@ -1448,7 +1448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.2"},
                                 {"MultiplySaturation", "1"},
@@ -1457,14 +1457,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",   "-0.1"},
                                 {"MultiplyValue", "1"},
@@ -1472,14 +1472,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MultiplyValue", "1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -1487,7 +1487,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.1"},
                             }
@@ -1499,8 +1499,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette",   "Snow"},
+                                {"ColourAlt", "Primary"},
+                            }
+                        },
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.6"},
                                 {"Alpha1",    "0.92"},
@@ -1508,8 +1517,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed",  "0.5"},
+                                {"Alpha1", "0.9"},
+                                {"Alpha2", "0.9"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed",  "0.5"},
+                                {"Alpha1", "0.8"},
+                                {"Alpha2", "0.8"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed",  "0.2"},
+                                {"Alpha1", "0.2"},
+                                {"Alpha2", "0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette",   "Snow"},
+                                {"ColourAlt", "Primary"},
+                            }
+                        },
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed",  "1.5"},
                                 {"Alpha1", "0.92"},
@@ -1517,15 +1578,91 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed",  "0.7"},
+                                {"Alpha1", "0.9"},
+                                {"Alpha2", "0.9"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette",   "Snow"},
+                                {"ColourAlt", "Primary"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed",  "0.7"},
+                                {"Alpha1", "0.8"},
+                                {"Alpha2", "0.8"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette",   "Snow"},
+                                {"ColourAlt", "Primary"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette",   "Snow"},
+                                {"ColourAlt", "Alternative2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette",   "Snow"},
+                                {"ColourAlt", "Alternative3"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Alpha1", "0.9"},
+                                {"Alpha2", "0.9"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Alpha1", "0.8"},
+                                {"Alpha2", "0.8"},
+                            }
+                        },
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                                 {"OffsetValue", "-0.2"},
@@ -1533,7 +1670,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.1"},
                                 {"MultiplySaturation", "1"},
@@ -1541,14 +1678,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -1556,7 +1693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ForceColour", "False"},
                                 {"OffsetValue", "-0.1"},
@@ -1569,8 +1706,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed",  "0.6"},
+                                {"Alpha1", "0.7"},
+                                {"Alpha2", "0.7"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed", "1.25"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Cloud"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed",  "1.5"},
+                                {"Alpha1", "1"},
+                                {"Alpha2", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Cloud"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.04"},
                                 {"FogMax",                   "0.95"},
@@ -1586,7 +1764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.04"},
                                 {"FogMax",                   "0.95"},
@@ -1601,7 +1779,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.25"},
                                 {"FogMax",                   "0.95"},
@@ -1615,7 +1793,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.15"},
                                 {"FogMax",                   "0.95"},
@@ -1631,7 +1809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Storms","Fog"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.25"},
                                 {"FogMax",                   "0.95"},
@@ -1646,28 +1824,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue",        "-0.1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
@@ -1675,14 +1853,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetValue", "-0.1"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HorizonMultiplier",      "0.6"},
                                 {"DuskHorizonMultiplier",  "1"},
@@ -1697,7 +1875,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CloudProperties"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimationScale",       "15"},
                                 {"CloudDistortionScale", "2"},
@@ -1706,7 +1884,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CloudProperties","WindOffset"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.65"},
                                 {"y", "0.65"},
@@ -1714,7 +1892,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"EnvironmentProperties"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlightFogHeight",    "1000"},
                                 {"FlightFogBlend",     "1300"},
@@ -1727,7 +1905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"EnvironmentPrimeProperties"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlightFogHeight",    "1500"},
                                 {"FlightFogBlend",     "2500"},
@@ -1744,7 +1922,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SafeSkyMaxIndex",                "342"},
                                 {"FrozenSkyMaxIndex",              "342"},
@@ -1787,7 +1965,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetFog"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax",                   "0.95"},
                                 {"HeightFogStrength",        "0.1"},
@@ -1798,7 +1976,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetExtremeFog"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.15"},
                                 {"FogMax",                   "0.95"},
@@ -1812,7 +1990,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetStormFog"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.25"},
                                 {"FogColourStrength",        "10"},
@@ -1826,7 +2004,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetFlightFog"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax",                   "0.95"},
                                 {"HeightFogStrength",        "0.1"},
@@ -1837,7 +2015,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetSky"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SunSize",         "0.4"},
                                 {"SunSurroundSize", "12"},
@@ -1845,7 +2023,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetFog"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.04"},
                                 {"FogMax",                   "0.95"},
@@ -1859,7 +2037,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetExtremeFog"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.1"},
                                 {"FogMax",                   "0.95"},
@@ -1873,7 +2051,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetStormFog"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.2"},
                                 {"FogColourStrength",        "10"},
@@ -1887,7 +2065,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetFlightFog"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax",                   "0.95"},
                                 {"HeightFogStrength",        "0.3"},
@@ -1899,7 +2077,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SpaceSkyMin"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SunStrength",          "0.4"},
                                 {"SunSize",              "0.002"},
@@ -1909,7 +2087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SpaceSkyMax"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SunStrength",              "0.8"},
                                 {"SpaceFogMax",              "0.9"},
@@ -2017,7 +2195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="MinVisibleSpeed" value="0" />
   <Property name="SpeedFadeOutTime" value="1.5" />
   <Property name="MaxVisibleSpeed" value="1.5" />
-  <Property name="SoftFadeStrength" value="0.1" />
+  <Property name="SoftFadeStrength" value="5" />
   <Property name="SpawnRotationRange" value="5" />
   <Property name="MajorDirection" value="Vector3f.xml">
     <Property name="x" value="0.1" />
@@ -2083,7 +2261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="MinVisibleSpeed" value="0" />
   <Property name="SpeedFadeOutTime" value="1.5" />
   <Property name="MaxVisibleSpeed" value="1.5" />
-  <Property name="SoftFadeStrength" value="0.1" />
+  <Property name="SoftFadeStrength" value="5" />
   <Property name="SpawnRotationRange" value="5" />
   <Property name="MajorDirection" value="Vector3f.xml">
     <Property name="x" value="0.1" />
