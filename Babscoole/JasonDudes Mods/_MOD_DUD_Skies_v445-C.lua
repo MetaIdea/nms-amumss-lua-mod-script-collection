@@ -2309,7 +2309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 </Data>
 ]]
         },
-                {
+        {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\MATERIALS\DUDFOGCLEARCOLD.MATERIAL.EXML",
             ["FILE_CONTENT"] =
 [[
@@ -2415,6 +2415,427 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="ShaderMillDataHash" value="0" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\FOGSWAMP\DUDFOGSWAMP.HEAVYAIR.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkHeavyAirData">
+  <Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/FOGSWAMP/MATERIALS/DUDFOGSWAMPMAT.MATERIAL.MBIN" />
+  <Property name="NumberOfParticles" value="1500" />
+  <Property name="Radius" value="40" />
+  <Property name="RadiusY" value="0" />
+  <Property name="MinParticleLifetime" value="2" />
+  <Property name="MaxParticleLifetime" value="4" />
+  <Property name="FadeTime" value="1" />
+  <Property name="SpeedFadeInTime" value="0" />
+  <Property name="MinVisibleSpeed" value="0" />
+  <Property name="SpeedFadeOutTime" value="3" />
+  <Property name="MaxVisibleSpeed" value="3" />
+  <Property name="SoftFadeStrength" value="0.1" />
+  <Property name="SpawnRotationRange" value="5" />
+  <Property name="MajorDirection" value="Vector3f.xml">
+    <Property name="x" value="0.2" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0.05" />
+  </Property>
+  <Property name="ScaleRange" value="Vector3f.xml">
+    <Property name="x" value="3" />
+    <Property name="y" value="6" />
+    <Property name="z" value="2" />
+  </Property>
+  <Property name="RotationSpeedRange" value="Vector3f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0.05" />
+    <Property name="z" value="0.05" />
+  </Property>
+  <Property name="TwinkleRange" value="Vector3f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0" />
+  </Property>
+  <Property name="AmplitudeMin" value="Vector3f.xml">
+    <Property name="x" value="-0.2" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0" />
+  </Property>
+  <Property name="AmplitudeMax" value="Vector3f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0.05" />
+    <Property name="z" value="0.05" />
+  </Property>
+  <Property name="Colour1" value="Colour.xml">
+    <Property name="R" value="0.904451" />
+    <Property name="G" value="0.817432" />
+    <Property name="B" value="0.819549" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="Colour2" value="Colour.xml">
+    <Property name="R" value="0.904451" />
+    <Property name="G" value="0.817432" />
+    <Property name="B" value="0.819549" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="EmitterShape" value="BottomHalfSphere" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\FOGSWAMP\FOGSWAMP.SCENE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkSceneNodeData">
+  <Property name="Name" value="MODELS\EFFECTS\HEAVYAIR\FOGSWAMP\FOGSWAMP.SCENE.MXML" />
+  <Property name="NameHash" value="0" />
+  <Property name="Type" value="GROUP" />
+  <Property name="Transform" value="TkTransformData.xml">
+    <Property name="TransX" value="0" />
+    <Property name="TransY" value="0" />
+    <Property name="TransZ" value="0" />
+    <Property name="RotX" value="0" />
+    <Property name="RotY" value="0" />
+    <Property name="RotZ" value="0" />
+    <Property name="ScaleX" value="1" />
+    <Property name="ScaleY" value="1" />
+    <Property name="ScaleZ" value="1" />
+  </Property>
+  <Property name="Attributes" />
+  <Property name="Children">
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="DUDFOGSWAMPHEAVYAIR" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="HEAVYAIR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="DATA" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/FOGSWAMP/DUDFOGSWAMP.HEAVYAIR.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="FogSwampHeavyAirNode" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="HEAVYAIR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="DATA" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/FOGSWAMP/FOGSWAMP.HEAVYAIR.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="RainNode1" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="HEAVYAIR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="DATA" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/ALPINE/ALPINE.HEAVYAIR.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="RainNode2" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="HEAVYAIR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="DATA" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/ALPINE/ALPINE2.HEAVYAIR.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="RainNode3" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="HEAVYAIR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="DATA" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/ALPINE/ALPINE3.HEAVYAIR.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+  </Property>
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\FOGSWAMP\MATERIALS\DUDFOGSWAMPMAT.MATERIAL.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkMaterialData">
+  <Property name="Name" value="FogSwampMat" />
+  <Property name="Metamaterial" value="Models/Effects/Fog/SwampFog/Materials/FogSwampMat.metamaterial.mXml" />
+  <Property name="Class" value="Translucent" />
+  <Property name="TransparencyLayerID" value="0" />
+  <Property name="CastShadow" value="True" />
+  <Property name="DisableZTest" value="False" />
+  <Property name="CreateFur" value="False" />
+  <Property name="Link" value="" />
+  <Property name="Shader" value="SHADERS/PARTICLE.SHADER.BIN" />
+  <Property name="Flags">
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F07_UNLIT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F09_TRANSPARENT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F13_UVANIMATION" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F14_UVSCROLL" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F23_TRANSLUCENT" />
+    </Property>
+  </Property>
+  <Property name="Uniforms">
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gMaterialColourVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="1" />
+        <Property name="y" value="1" />
+        <Property name="z" value="1" />
+        <Property name="t" value="1" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gMaterialParamsVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="1" />
+        <Property name="y" value="1" />
+        <Property name="z" value="0" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gMaterialSFXVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gMaterialSFXColVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gUVScrollStepVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="1" />
+        <Property name="y" value="0.125" />
+        <Property name="z" value="1.5" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+  </Property>
+  <Property name="Samplers">
+    <Property value="TkMaterialSampler.xml">
+      <Property name="Name" value="gDiffuseMap" />
+      <Property name="Map" value="TEXTURES/EFFECTS/FOG/SWAMPFOGANIM.DDS" />
+      <Property name="IsCube" value="False" />
+      <Property name="UseCompression" value="True" />
+      <Property name="UseMipMaps" value="True" />
+      <Property name="IsSRGB" value="True" />
+      <Property name="MaterialAlternativeId" value="" />
+      <Property name="TextureAddressMode" value="Wrap" />
+      <Property name="TextureFilterMode" value="Trilinear" />
+      <Property name="Anisotropy" value="0" />
+    </Property>
+  </Property>
+  <Property name="ShaderMillDataHash" value="0" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\SNOW\SNOWAIR.SCENE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkSceneNodeData">
+  <Property name="Name" value="\MODELS\EFFECTS\HEAVYAIR\SNOW\SNOWAIR.SCENE.MXML" />
+  <Property name="NameHash" value="0" />
+  <Property name="Type" value="GROUP" />
+  <Property name="Transform" value="TkTransformData.xml">
+    <Property name="TransX" value="0" />
+    <Property name="TransY" value="0" />
+    <Property name="TransZ" value="0" />
+    <Property name="RotX" value="0" />
+    <Property name="RotY" value="0" />
+    <Property name="RotZ" value="0" />
+    <Property name="ScaleX" value="1" />
+    <Property name="ScaleY" value="1" />
+    <Property name="ScaleZ" value="1" />
+  </Property>
+  <Property name="Attributes" />
+  <Property name="Children">
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="SnowHeavyAir2" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="HEAVYAIR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="DATA" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/SNOW/SNOW2.HEAVYAIR.MXML" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="SnowHeavyAir" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="HEAVYAIR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="DATA" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/SNOW/SNOW1.HEAVYAIR.MXML" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="FogSwamp05HeavyAir" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="HEAVYAIR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="DATA" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/FOGSWAMP/DUDFOGSWAMP.HEAVYAIR.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+  </Property>
 </Data>
 ]]
         },
