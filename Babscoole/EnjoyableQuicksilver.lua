@@ -163,7 +163,7 @@ REWARD_ENTRIES = [[
         </Property>
       </Property>
     </Property>
-	<Property value="GcGenericRewardTableEntry.xml">
+    <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="RS_QUICKSILV_ML" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />

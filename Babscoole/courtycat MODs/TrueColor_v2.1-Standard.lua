@@ -555,7 +555,7 @@ CustomDataTable =
     -- {
         -- ["PALETTE"] = "Vehicle_Truck",
         -- ["NUMCOLOURS"] = "All",
-	-- },
+    -- },
     -- {
         -- ["PALETTE"] = "Vehicle_WheeledBike",
         -- ["NUMCOLOURS"] = "All",
@@ -638,8 +638,8 @@ end
 local BaseColourPalettesTable2  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 for i = 1, #CustomDataTable do
     local Palette = CustomDataTable[i]["PALETTE"]
-	local PaletteNumColours = CustomDataTable[i]["NUMCOLOURS"]
-	for j = 1, #CustomColors do
+    local PaletteNumColours = CustomDataTable[i]["NUMCOLOURS"]
+    for j = 1, #CustomColors do
     local PaletteColours = CustomColors[j]["COLOURS"]
 
 
@@ -655,5 +655,5 @@ for i = 1, #CustomDataTable do
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
-	end
+    end
 end
