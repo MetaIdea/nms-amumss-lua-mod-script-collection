@@ -2323,7 +2323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     {
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB\PARTS\DUDENGINEBTHRUSTER.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3092,7 +3092,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\DROPHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3179,7 +3179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\ENTITIES\DROPHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3302,7 +3302,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTCGOLDHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3389,7 +3389,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3476,7 +3476,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\VRSPEEDERHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3563,7 +3563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\FIGHTCGOLDHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3686,7 +3686,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\FIGHTHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3809,7 +3809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\VRSPEEDERHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3932,7 +3932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\SAILHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4019,7 +4019,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\ENTITIES\SAILHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4142,7 +4142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\SCIHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4229,7 +4229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\ENTITIES\SCIHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4352,7 +4352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\BIOHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4439,7 +4439,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\BIOHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4562,7 +4562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ROYALHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4649,7 +4649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\ROYALHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4772,7 +4772,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\SQUIDHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4859,7 +4859,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\SQUIDHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4982,7 +4982,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\SENTINELSHIPHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5069,7 +5069,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\SHUTHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5156,7 +5156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\ENTITIES\SENTINELSHIPHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5279,7 +5279,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\ENTITIES\SHUTHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 

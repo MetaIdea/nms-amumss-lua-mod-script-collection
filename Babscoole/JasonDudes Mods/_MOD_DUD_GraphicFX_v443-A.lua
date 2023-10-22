@@ -17,9 +17,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LUTDistanceFlightMultiplier",        "1"}, -- Original "0"
-                                {"SunLightIntensity",                "4.8"}, -- Original "3"
-                                {"DOFFarStrengthWater",                "0.6"}, -- Original "0"
+                                {"LUTDistanceFlightMultiplier", "1"}, -- Original "0"
+                                {"SunLightIntensity",           "4.8"}, -- Original "3"
+                                {"DOFFarStrengthWater",         "0.6"}, -- Original "0"
                             }
                         },
                     }

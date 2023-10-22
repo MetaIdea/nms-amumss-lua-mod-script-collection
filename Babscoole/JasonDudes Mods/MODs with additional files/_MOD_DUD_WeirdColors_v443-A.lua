@@ -600,7 +600,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     {
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDBEAMPARTICLES_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -715,7 +715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDLIGHTBEAM_MAT3.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -824,7 +824,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDSCROLLING_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -939,7 +939,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDBEAMPARTICLES_MAT1.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1054,7 +1054,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDLIGHTBEAM_MAT3.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1163,7 +1163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDSCROLLING_MAT2.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1278,7 +1278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HUGEBEAM\DUDHUGEBEAM_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1466,7 +1466,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOUR1MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1586,7 +1586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOUR2MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1706,7 +1706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOURDARKCREEP.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1899,7 +1899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR1MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2016,7 +2016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR2MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2133,7 +2133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR3MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2250,7 +2250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR1MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2367,7 +2367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR2MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2484,7 +2484,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR3MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2601,7 +2601,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOUR3MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2721,7 +2721,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARK.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2904,7 +2904,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARKCREEP.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3097,7 +3097,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARKRIBBED.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3280,7 +3280,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURLIGHTCREEP.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3473,7 +3473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURORBMAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3656,7 +3656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURRIBBEDCREEP.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3849,7 +3849,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\FRACTALCUBE\SHAPE1FLOAT\DUDPULSEFLARE_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3964,7 +3964,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC\DUDLIGHTMATERIAL_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4086,7 +4086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC\DUDSMALLVINES_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4198,7 +4198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT\DUDSMALLVINES_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4310,7 +4310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT\DUDVINES_MAT12.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4495,7 +4495,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\MEDGEOMETRIC\DUDLIGHTMATERIAL_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4617,7 +4617,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\FLOATJOINT\DUDFLOAT_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4800,7 +4800,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE\DUDMSTRUCTURE_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4917,7 +4917,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SINGLEJOINT\DUDMSTRUCTURE_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5034,7 +5034,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SMALLJOINT\DUDMSTRUCTURE_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5151,7 +5151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARD\DUDSHARD_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5347,7 +5347,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARDALT\DUDSHARD_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5543,7 +5543,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SINGLESHARD\DUDSHARD_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5673,7 +5673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\TALLSHARD\DUDSHARD_MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 

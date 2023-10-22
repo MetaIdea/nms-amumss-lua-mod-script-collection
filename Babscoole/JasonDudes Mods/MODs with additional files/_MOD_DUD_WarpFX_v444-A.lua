@@ -104,7 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     {
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -390,7 +390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPLARGEPORTAL.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -4482,7 +4482,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPPORTAL.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -8698,7 +8698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -12666,7 +12666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARS2MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -12788,7 +12788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARSMAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -12910,7 +12910,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARS2MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -13032,7 +13032,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARSMAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -13154,7 +13154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNEL\DUDENDGLOWCAPMAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -13241,7 +13241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPLIGHTARMSREDMAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -13353,7 +13353,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARS2MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -13475,7 +13475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARSMAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -13597,7 +13597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPTUNNELMAT1.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -13719,7 +13719,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHLIGHTARMSMAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -13831,7 +13831,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARS2MAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -13953,7 +13953,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARSMAT.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
@@ -14075,7 +14075,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHTUNNELMAT1.MATERIAL.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
