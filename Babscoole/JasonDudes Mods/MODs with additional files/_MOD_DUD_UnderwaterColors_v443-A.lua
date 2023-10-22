@@ -123,7 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     {
         {
             ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GLOWTEXTURE.TEXTURE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -211,7 +211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LAMPORB.TEXTURE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -299,7 +299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LARGESHAPE.TEXTURE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -387,7 +387,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LEAVESTEXTURE.TEXTURE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -475,7 +475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "TEXTURES\PLANETS\OCEAN\SHRUBS\TALLPLANTDUD1.TEXTURE.EXML",
-            ["FILE_CONTENT"]     =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 

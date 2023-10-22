@@ -16,13 +16,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GroundWalkSpeed",           "16"},
-                                {"GroundRunSpeed",            "32"},
-                                {"UnderwaterMaxSpeed",        "16"},
-                                {"UnderwaterMaxJetpackSpeed", "32"},
+                                {"GroundWalkSpeed",           "10"},
+                                {"GroundRunSpeed",            "25"},
+                                {"UnderwaterMaxSpeed",        "15"},
+                                {"UnderwaterForce",           "30"},
+                                {"UnderwaterMaxJetpackSpeed", "40"},
                                 {"UnderwaterJetpackForce",    "50"},
-                                {"JetpackMaxSpeed",           "16"},
-                                {"SpaceJetpackMaxSpeed",      "30"},
+                                {"JetpackMaxSpeed",           "50"},
+                                {"SpaceJetpackMaxSpeed",      "50"},
                             }
                         },
                     }
