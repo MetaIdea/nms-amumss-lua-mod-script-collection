@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "AurframSpeed.pak",
+["MOD_FILENAME"]  = "Aurfram's FMS normalWalk.pak",
 ["MOD_AUTHOR"]    = "Aurfram",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.45",
@@ -16,11 +16,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GroundWalkSpeed",           "15"},
-                                {"GroundRunSpeed",            "30"},
-                                {"UnderwaterMaxSpeed",        "15"},
-                                {"UnderwaterMaxJetpackSpeed", "30"},
-                                {"JetpackMaxSpeed",           "30"},
+                                {"GroundWalkSpeed",           "5"},
+                                {"GroundRunSpeed",            "32"},
+                                {"UnderwaterMaxSpeed",        "16"},
+                                {"UnderwaterMaxJetpackSpeed", "32"},
+                                {"UnderwaterJetpackForce",    "50"},
+                                {"JetpackMaxSpeed",           "16"},
                                 {"SpaceJetpackMaxSpeed",      "30"},
                             }
                         },
