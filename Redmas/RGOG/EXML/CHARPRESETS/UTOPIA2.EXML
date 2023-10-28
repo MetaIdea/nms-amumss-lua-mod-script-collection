@@ -2030,19 +2030,19 @@
             <Property name="Value" value="ASTRONAUT_BASE" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="HEAD_ASTBOT1" />
+            <Property name="Value" value="REG_HEAD_S2" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LEGS_BUILDERS" />
+            <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="ARMOUR_VANILLA" />
@@ -2318,7 +2318,7 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -2326,7 +2326,7 @@
             <Property name="TextureOptionName" value="BACKPACK_3" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="TORSO_3" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -2334,7 +2334,7 @@
             <Property name="TextureOptionName" value="LEGS_4" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="HEAD_ASTBOT1" />
+            <Property name="TextureOptionGroupName" value="REG_HEAD_S2" />
             <Property name="TextureOptionName" value="3" />
           </Property>
         </Property>
@@ -3049,7 +3049,7 @@
             <Property name="Value" value="GLOVES_ASTRO" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="BOOTS_VANILLA" />
@@ -3322,7 +3322,7 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -4368,19 +4368,19 @@
             <Property name="Value" value="ASTRONAUT_BASE" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="HEAD_ASTBOT1" />
+            <Property name="Value" value="REG_HEAD_S2" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LEGS_BUILDERS" />
+            <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="ARMOUR_VANILLA" />
@@ -4656,7 +4656,7 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -4664,7 +4664,7 @@
             <Property name="TextureOptionName" value="BACKPACK_3" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="TORSO_3" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -4672,7 +4672,7 @@
             <Property name="TextureOptionName" value="LEGS_4" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="HEAD_ASTBOT1" />
+            <Property name="TextureOptionGroupName" value="REG_HEAD_S2" />
             <Property name="TextureOptionName" value="3" />
           </Property>
         </Property>
@@ -4711,16 +4711,16 @@
             <Property name="Value" value="ARMOUR_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LEGS_BUILDERS" />
+            <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="BACKPACK_CAPE" />
@@ -4989,19 +4989,19 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="GLOVES_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="GLOVES_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="3" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="LEGS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="LEGS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -7346,16 +7346,16 @@
             <Property name="Value" value="KORVAX_HEAD_7" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LEGS_BUILDERS" />
+            <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="ARMOUR_VANILLA" />
@@ -7620,7 +7620,7 @@
         </Property>
         <Property name="TextureOptions">
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="GLOVES__BUILDERS" />
+            <Property name="TextureOptionGroupName" value="GLOVES__VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -7632,15 +7632,15 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS__BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS__VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO__BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO__VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="LEGS__BUILDERS" />
+            <Property name="TextureOptionGroupName" value="LEGS__VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -7676,16 +7676,16 @@
             <Property name="Value" value="KORVAX_HEAD_7" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LEGS_BUILDERS" />
+            <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="ARMOUR_VANILLA" />
@@ -7950,7 +7950,7 @@
         </Property>
         <Property name="TextureOptions">
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="GLOVES_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="GLOVES_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -7962,11 +7962,11 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -8006,16 +8006,16 @@
             <Property name="Value" value="KORVAX_HEAD_3" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LEGS_BUILDERS" />
+            <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="BACKPACK_EXPD1" />
@@ -8280,19 +8280,19 @@
         </Property>
         <Property name="TextureOptions">
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="GLOVES_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="GLOVES_VYK" />
             <Property name="TextureOptionName" value="GLOVES_2" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="TORSO_5" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="ARMOUR_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="ARMOUR_VYK" />
             <Property name="TextureOptionName" value="CHESTARMOUR_2" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS_VYK" />
             <Property name="TextureOptionName" value="BOOTS_1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -8300,7 +8300,7 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="LEGS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="LEGS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -11434,13 +11434,13 @@
             <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="ARMOUR_VANILLA" />
@@ -11716,7 +11716,7 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -11724,7 +11724,7 @@
             <Property name="TextureOptionName" value="BACKPACK_3" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="TORSO_3" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -11732,7 +11732,7 @@
             <Property name="TextureOptionName" value="LEGS_4" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="HEAD_ASTBOT1" />
+            <Property name="TextureOptionGroupName" value="REG_HEAD_S2" />
             <Property name="TextureOptionName" value="3" />
           </Property>
         </Property>
@@ -13129,7 +13129,7 @@
             <Property name="Value" value="ARMOUR_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="LEGS_VANILLA" />
@@ -13397,7 +13397,7 @@
         </Property>
         <Property name="TextureOptions">
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="GLOVES_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="GLOVES_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -13798,16 +13798,16 @@
             <Property name="Value" value="VYKEEN_HEAD_7" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LEGS_BUILDERS" />
+            <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="ARMOUR_VANILLA" />
@@ -14083,7 +14083,7 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -14091,7 +14091,7 @@
             <Property name="TextureOptionName" value="BACKPACK_3" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="TORSO_3" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -14099,7 +14099,7 @@
             <Property name="TextureOptionName" value="LEGS_4" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="HEAD_ASTBOT1" />
+            <Property name="TextureOptionGroupName" value="REG_HEAD_S2" />
             <Property name="TextureOptionName" value="3" />
           </Property>
         </Property>
@@ -15821,16 +15821,16 @@
             <Property name="Value" value="FOURTH_HEAD_2" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LEGS_BUILDERS" />
+            <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="ARMOUR_VANILLA" />
@@ -16106,7 +16106,7 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -16114,7 +16114,7 @@
             <Property name="TextureOptionName" value="BACKPACK_3" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="TORSO_3" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -16122,7 +16122,7 @@
             <Property name="TextureOptionName" value="LEGS_4" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="HEAD_ASTBOT1" />
+            <Property name="TextureOptionGroupName" value="REG_HEAD_S2" />
             <Property name="TextureOptionName" value="3" />
           </Property>
         </Property>
@@ -17810,16 +17810,16 @@
             <Property name="Value" value="FOURTH_HEAD_3" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="TORSO_BUILDERS" />
+            <Property name="Value" value="TORSO_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="GLOVES_BUILDERS" />
+            <Property name="Value" value="GLOVES_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LEGS_BUILDERS" />
+            <Property name="Value" value="LEGS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
-            <Property name="Value" value="BOOTS_BUILDERS" />
+            <Property name="Value" value="BOOTS_VYK" />
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="ARMOUR_VANILLA" />
@@ -18095,7 +18095,7 @@
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="BOOTS_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="BOOTS_VYK" />
             <Property name="TextureOptionName" value="1" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -18103,7 +18103,7 @@
             <Property name="TextureOptionName" value="BACKPACK_3" />
           </Property>
           <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionGroupName" value="TORSO_VYK" />
             <Property name="TextureOptionName" value="TORSO_3" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
@@ -18111,7 +18111,7 @@
             <Property name="TextureOptionName" value="LEGS_4" />
           </Property>
 		            <Property value="GcCharacterCustomisationTextureOptionData.xml">
-            <Property name="TextureOptionGroupName" value="HEAD_ASTBOT1" />
+            <Property name="TextureOptionGroupName" value="REG_HEAD_S2" />
             <Property name="TextureOptionName" value="3" />
           </Property>
         </Property>

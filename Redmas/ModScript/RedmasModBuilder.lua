@@ -165,8 +165,8 @@ INIT_PRESET ={
 		["DRONE_PET_SKIN"] = "E3",
         -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
         -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
-        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
-        ["CHAR_PRESETS_SKINS"] = "UTOPIA2"
+        -- VY-KEEN    /or/   ANOMALY      /or/      GEK        /or/      UTOPIA2
+        ["CHAR_PRESETS_SKINS"] = "UTOPIA"
     },
     ["NEWGAME_BONUS_FEATURES"] ={
          ["NEWGAME_BONUSES"] = "OFF",
@@ -17178,7 +17178,7 @@ addFeature(
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"TextureFile",[[METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/HEXAGON.MBIN]]},
+								{"TextureFile",[[METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/FROZEN.MBIN]]},
 								{"ColourPaletteFile",[[METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENCOLOURPALETTES.MBIN]]},
 							}
 						},
@@ -18949,7 +18949,7 @@ addFeature(
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},								{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.01"
@@ -18959,7 +18959,7 @@ addFeature(
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
@@ -29189,7 +29189,7 @@ LUSHGRASSLIST =
 		FANTASY_COLOURS = readTemplate(COLORS_GENERATION_REWORK) -- "FANTASY_COLOURS" or "SCIFI_COLOURS" -- ( temporary way to change the colors style )
 		FANTASY_FROZEN_COLOURS = readTemplate("FANTASY_FROZEN_COLOURS")
 		-- tiles rework
-		if E3_FANTASY_PLANETS_COLORS_FEATURE == "ON" then
+		if GENERATION_OVERHAUL == "ON" then
 			NEW_TILES_TABLE =
 			{
 				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASETILETYPES.EXML]],
