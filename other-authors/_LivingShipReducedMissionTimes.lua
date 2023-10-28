@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] 			= "_LivingShipReducedMissionTimes.pak",
   ["MOD_DESCRIPTION"]		= "Reduces the real time wait on the Living ship missions",
   ["MOD_AUTHOR"]			= "Zay", --username: wizardFu
-  ["NMS_VERSION"]			= "3.91", -- updated for Outlaws
+  ["NMS_VERSION"]			= "3.97+", -- updated for Endurance
   ["MODIFICATIONS"] 		=
 	{
 		{
