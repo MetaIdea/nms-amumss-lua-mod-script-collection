@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						    ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" ,},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxCapactiy",           EXTRACTOR_STORAGE},
+								{"MaxCapacity",           EXTRACTOR_STORAGE},
 								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
 								{"Id", PRODUCT_YELLOWSTAR},
 							},
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxCapactiy",           EXTRACTOR_STORAGE},
+								{"MaxCapacity",           EXTRACTOR_STORAGE},
 								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
 								{"Id", PRODUCT_REDSTAR},
 							},
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxCapactiy",           EXTRACTOR_STORAGE},
+								{"MaxCapacity",           EXTRACTOR_STORAGE},
 								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
 								{"Id", PRODUCT_GREENSTAR},
 							},
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxCapactiy",           EXTRACTOR_STORAGE},
+								{"MaxCapacity",           EXTRACTOR_STORAGE},
 								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
 								{"Id", PRODUCT_BLUESTAR},
 							},

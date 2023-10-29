@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["EXML_CHANGE_TABLE"] = {
     {
       ["REPLACE_TYPE"]       = "ALL",                  -- make all 16 buttons no-cost
-      ["VALUE_CHANGE_TABLE"] = {{"MaxCapactiy", "0"}}  -- -1, 0 makes button  no-cost
+      ["VALUE_CHANGE_TABLE"] = {{"MaxCapacity", "0"}}  -- -1, 0 makes button  no-cost
     }}
   }}  -- MBIN_CHANGE_TABLE
 }}  -- MODIFICATIONS
