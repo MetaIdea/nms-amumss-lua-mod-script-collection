@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcCameraAerialViewDataTableEntry.xml",},
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time",                      "0"},
                                 {"TimeBack",                  "0"},

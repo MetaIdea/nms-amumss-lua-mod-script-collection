@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "_Bodie420.GCCameraGlobals.12.0.pak",
 ["MOD_AUTHOR"]      = "Bodie420",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "2.0",
+["MOD_VERSION"]     = "2.0",
 ["MODIFICATIONS"]   =
     {
         {
