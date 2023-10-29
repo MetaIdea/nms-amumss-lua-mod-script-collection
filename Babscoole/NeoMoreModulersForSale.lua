@@ -17,9 +17,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"ShipTechSpecialist", "GcTradeData.xml",},
-                                {"SuitTechSpecialist", "GcTradeData.xml",},
-                                {"WeapTechSpecialist", "GcTradeData.xml",},
+                                {"ShipTechSpecialist",  "GcTradeData.xml",},
+                                {"SuitTechSpecialist",  "GcTradeData.xml",},
+                                {"WeapTechSpecialist",  "GcTradeData.xml",},
                                 {"NexusTechSpecialist", "GcTradeData.xml",},
                             },
                             ["SPECIAL_KEY_WORDS"] = {"ShipTechSpecialist","GcTradeData.xml",},
