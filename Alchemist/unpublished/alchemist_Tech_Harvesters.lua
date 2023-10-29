@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     },
     ["VALUE_CHANGE_TABLE"] = {
       -- mbin typo
-      {"MaxCapactiy", tostring(HARVESTER_AMOUNT)},
+      {"MaxCapacity", tostring(HARVESTER_AMOUNT)},
       {"AmountEmptyTimePeriod", tostring(HARVESTER_TIME * -1)},
     }},
 
@@ -76,7 +76,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     },
     ["VALUE_CHANGE_TABLE"] = {
       -- mbin typo
-      {"MaxCapactiy", tostring(HARVESTER_AMOUNT)},
+      {"MaxCapacity", tostring(HARVESTER_AMOUNT)},
       {"AmountEmptyTimePeriod", tostring(HARVESTER_TIME * -1)},
     }},
 
