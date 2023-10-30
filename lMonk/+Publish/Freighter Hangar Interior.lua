@@ -40,8 +40,7 @@ function ToExml(class)
 				else
 					-- add normal property
 					if type(cls) == 'table' then
-						-- because you can't read an unknown key directly
-						for k,v in pairs(cls) do key = k; cls = v end
+						key, cls = next(cls)
 					end
 					if key == 'name' or key == 'value' then
 						exml:add({key, '="', bool(cls), '"/>'})
@@ -163,22 +162,18 @@ function HangarChanges()
 	local T = {}
 	for _,node in ipairs({
 		{k='NPC_01',			tx=-9.507,	ty=-3.355,	tz=-28.34},
-		{k='NPC_02',			tx=-50,		ty=-7.3,	tz=66.5,	ry=120},
+		{k='NPC_02',			tx=-56,		ty=-7.35,	tz=62.5,	ry=-150},
 		{k='NPC_03',			tx=-8.337,	ty=-3.355,	tz=-28.03},
-		{k='NPC_04',			tx=39.3,	ty=-7.75,	tz=65.4,	ry=135},
+		{k='NPC_04',			tx=38.4,	ty=-7.34,	tz=69.2,	ry=35},
 		{k='NPC_06',			tx=-21.92,	ty=-4.2,	tz=5.5},
 		{k='NPC_07',			tx=-57.8,	ty=8.1,		tz=57.14,	ry=270},
 		{k='RefHangarCrane2',	tx=41.88,				tz=61.2},
 		{k='RefHangarCrane',	tx=-3.43,				tz=59.5},
 		{k='RefHangarCrane1',	tx=-41.96,				tz=60.9},
-		{k='Container',			tx=-53.5,	ty=-7.4,	tz=67.25,	ry=7,		sx=1.2,	sy=1.14,	sz=1.1},
-		{k='RefPallet54',		tx=-51.95,	ty=-7.48,	tz=66.7,				sx=2,	sy=1,		sz=2.6},
-		{k='RefPallet30',		tx=7.79,	ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,		sz=2.8},
-		{k='RefLargeCrate23',	tx=6.8,		ty=-7.4,	tz=65.5,	ry=180,		sx=1.8,	sy=1.8,		sz=1.8},
-		{k='RefLargeCrate26',	tx=6.8,		ty=-7.4,	tz=67.7,				sx=1.8,	sy=1.8,		sz=1.8},
-		{k='RefLargeCrate96',	tx=5.25,	ty=-7.33,	tz=68.25,	ry=3},
-		{k='RefLargeCrate103',	tx=5.25,	ty=-7.33,	tz=67.05,	ry=87},
+		{k='RefPallet54',		tx=-52.35,	ty=-7.48,	tz=66.7,				sx=2.6,	sy=1,		sz=2.6},
+		{k='MonitorDesk',		tx=-55.5,	ty=-7.35,	tz=63.2,	ry=305},
 		{k='RefFuelTank2',		tx=35.53,	ty=-7.34,	tz=72.55,	ry=180},
+		{k='RefPallet30',		tx=7.79,	ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,		sz=2.8},
 	}) do
 		T[#T+1] = {
 			SPECIAL_KEY_WORDS	= {'Name', node.k},
@@ -198,31 +193,31 @@ function HangarChanges()
 	T[#T+1] = {
 		PRECEDING_KEY_WORDS = 'Children',
 		ADD					= ToExml({
-			[1] = ScNode('1RefCrossingB1', 'REFERENCE', {
+			ScNode('1RefCrossingB1',	'REFERENCE', {
 				ScTransform({tx=-45.35, ty=-7.341775, tz=66.73, ry=180}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'}
 				})
 			}),
-			[2] = ScNode('1RefCrossingB2', 'REFERENCE', {
+			ScNode('1RefCrossingB2',	'REFERENCE', {
 				ScTransform({tx=0, ty=-7.341775, tz=66.73}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'}
 				})
 			}),
-			[3] = ScNode('1RefCrossingB3', 'REFERENCE', {
+			ScNode('1RefCrossingB3',	'REFERENCE', {
 				ScTransform({tx=45.35, ty=-7.341775, tz=66.73, ry=180}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONB.SCENE.MBIN'}
 				})
 			}),
-			[4] = ScNode('1RefMonitorShip1', 'REFERENCE', {
+			ScNode('1RefMonitorShip1',	'REFERENCE', {
 				ScTransform({tx=20.2, ty=-4, tz=16.2, rx=0, ry=-42, rz=180, sx=0.55, sy=0.55, sz=0.55}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'}
 				})
 			}),
-			[5] = ScNode('1LocMonitorShip1', 'LOCATOR', {
+			ScNode('1LocMonitorShip1',	'LOCATOR', {
 				ScTransform({tx=20.2, ty=-2.8, tz=16.2}),
 				ScAttributes({
 					{'ATTACHMENT', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/ENTITIES/SHIP_SALVAGE.ENTITY.MBIN'}
@@ -237,13 +232,13 @@ function HangarChanges()
 					})
 				})
 			}),
-			[6] = ScNode('1RefMonitorShip2', 'REFERENCE', {
+			ScNode('1RefMonitorShip2',	'REFERENCE', {
 				ScTransform({tx=-20.2, ty=-4, tz=16.2, rx=0, ry=42, rz=180, sx=0.55, sy=0.55, sz=0.55}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'}
 				})
 			}),
-			[7] = ScNode('1LocMonitorShip2', 'LOCATOR', {
+			ScNode('1LocMonitorShip2',	'LOCATOR', {
 				ScTransform({tx=-20.2, ty=-2.8, tz=16.2}),
 				ScAttributes({
 					{'ATTACHMENT', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/ENTITIES/SHIP_SALVAGE.ENTITY.MBIN'}
@@ -258,16 +253,64 @@ function HangarChanges()
 					})
 				})
 			}),
-			[8] = ScNode('1RefScreenContainer', 'REFERENCE', {
-				ScTransform({tx=-51.58, ty=-5.4, tz=67.05, ry=-83, rz=180}),
+			ScNode('1RefCrateMilk01',	'REFERENCE', {
+				ScTransform({tx=5.1, ty=-7.33, tz=65.54, ry=86, sx=2.7, sy=1.8, sz=2.7}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/MILKCRATE.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefCrateNexus1',	'REFERENCE', {
+				ScTransform({tx=6.8, ty=-7.4, tz=65.5, ry=90, sx=1.4, sy=1.4, sz=1.4}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/SPACE/NEXUS/PARTS/PROPS/CRATE.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefCrateNexus2',	'REFERENCE', {
+				ScTransform({tx=6.8, ty=-7.4, tz=67.8, sx=1.4, sy=1.4, sz=1.4}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/SPACE/NEXUS/PARTS/PROPS/CRATE.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefCrateNexus3',	'REFERENCE', {
+				ScTransform({tx=5.05, ty=-7.33, tz=67.15, ry=3, sx=0.8, sy=0.8, sz=0.8}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/SPACE/NEXUS/PARTS/PROPS/CRATE.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefCrateNexus4',	'REFERENCE', {
+				ScTransform({tx=5.05, ty=-7.33, tz=68.5, ry=87, sx=0.8, sy=0.8, sz=0.8}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/SPACE/NEXUS/PARTS/PROPS/CRATE.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefCrateNexus5',	'REFERENCE', {
+				ScTransform({tx=-53.8, ty=-7.33, tz=64.2, ry=13, sx=0.9, sy=0.9, sz=0.9}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/SPACE/NEXUS/PARTS/PROPS/CRATE.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefScreenSilo',	'REFERENCE', {
+				ScTransform({tx=-55.32, ty=-5.82, tz=63.46, ry=35.1, sx=0.36, sy=0.6, sz=0.4}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/WALLMONITORS/WALLMONITORA.SCENE.MBIN'}
 				})
 			}),
-			[9] = ScNode('1RefCrateMilk', 'REFERENCE', {
-				ScTransform({tx=5.15, ty=-7.33, tz=65.54, ry=86, sx=2.7, sy=1.8, sz=2.7}),
+			ScNode('1RefCoveredSilos',	'REFERENCE', {
+				ScTransform({tx=-54, ty=-7.33, tz=66.8, ry=-90, sx=0.75, sy=0.75, sz=0.75}),
 				ScAttributes({
-					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/MILKCRATE.SCENE.MBIN'}
+					{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/COVEREDSILOS.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefCrateMould01',	'REFERENCE', {
+				ScTransform({tx=-52.8, ty=-3.65, tz=65.65, rx=10, ry=-85, rz=180, sx=1.4}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CRATE1.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefCrateMould02',	'REFERENCE', {
+				ScTransform({tx=-52.7, ty=-3.6, tz=67.7, rx=-10, ry=85, rz=175, sx=1.4}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CRATE1.SCENE.MBIN'}
 				})
 			})
 		})
@@ -333,7 +376,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				REMOVE				= 'Section'
 			}
 		}
-	}	
+	}
 }}},
 	ADD_FILES	= {
 		{
