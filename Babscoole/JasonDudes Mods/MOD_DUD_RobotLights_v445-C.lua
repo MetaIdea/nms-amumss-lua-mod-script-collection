@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_RobotLights_v445-B.pak",
+["MOD_FILENAME"]            = "MOD_DUD_RobotLights_v445-C.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.45",
@@ -250,6 +250,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name", "Attack"},
+                                {"Name", "Investigate"},
+                            },
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name", "PatrolSpotLight",  "Name", "COL_R"},
+                                {"Name", "PatrolSpotLight",  "Name", "COL_B"},
+                                {"Name", "PatrolSpotLight",  "Name", "COL_G"},
+                                {"Name", "PatrolPointLight", "Name", "COL_R"},
+                                {"Name", "PatrolPointLight", "Name", "COL_B"},
+                                {"Name", "PatrolPointLight", "Name", "COL_G"},
+                                {"Name", "spotLight2",       "Name", "COL_R"},
+                                {"Name", "spotLight2",       "Name", "COL_B"},
+                                {"Name", "spotLight2",       "Name", "COL_G"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.95"}
+                            },
+                        }, 
+                    }
+                },
+                {
                     ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\ROBOTS\HOVERPET.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -371,6 +403,32 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.500000"}
+                            },
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name", "Attack"},
+                                {"Name", "Investigate"},
+                            },
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name", "PatrolSpotLight",  "Name", "COL_R"},
+                                {"Name", "PatrolSpotLight",  "Name", "COL_B"},
+                                {"Name", "PatrolSpotLight",  "Name", "COL_G"},
+                                {"Name", "PatrolPointLight", "Name", "COL_R"},
+                                {"Name", "PatrolPointLight", "Name", "COL_B"},
+                                {"Name", "PatrolPointLight", "Name", "COL_G"},
+                                {"Name", "spotLight4",       "Name", "COL_R"},
+                                {"Name", "spotLight4",       "Name", "COL_B"},
+                                {"Name", "spotLight4",       "Name", "COL_G"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.95"}
                             },
                         },
                     }
@@ -503,6 +561,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Value", "0.500000"}
                             },
                         },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\ROBOTS\QUADRUPEDPET.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name", "Attack"},
+                                {"Name", "Investigate"},
+                            },
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name", "PatrolSpotLight",  "Name", "COL_R"},
+                                {"Name", "PatrolSpotLight",  "Name", "COL_B"},
+                                {"Name", "PatrolSpotLight",  "Name", "COL_G"},
+                                {"Name", "PatrolPointLight", "Name", "COL_R"},
+                                {"Name", "PatrolPointLight", "Name", "COL_B"},
+                                {"Name", "PatrolPointLight", "Name", "COL_G"},
+                                {"Name", "spotLight2",       "Name", "COL_R"},
+                                {"Name", "spotLight2",       "Name", "COL_B"},
+                                {"Name", "spotLight2",       "Name", "COL_G"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.95"}
+                            },
+                        }, 
                     }
                 },
                 {
