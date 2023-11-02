@@ -165,8 +165,8 @@ INIT_PRESET ={
 		["DRONE_PET_SKIN"] = "E3",
         -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
         -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
-        -- VY-KEEN    /or/   ANOMALY      /or/      GEK        /or/      UTOPIA2
-        ["CHAR_PRESETS_SKINS"] = "UTOPIA"
+        -- VY-KEEN    /or/   ANOMALY      /or/      GEK        /or/      UTOPIA
+        ["CHAR_PRESETS_SKINS"] = "UTOPIA2"
     },
     ["NEWGAME_BONUS_FEATURES"] ={
          ["NEWGAME_BONUSES"] = "OFF",
@@ -476,10 +476,10 @@ OFTEN_SPAWN_R2 =----------------------------------------------------------------
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="120" />
-            <Property value="610" />
-            <Property value="1150" />
-            <Property value="1500" />
+            <Property value="1120" />
+            <Property value="1610" />
+            <Property value="2150" />
+            <Property value="2500" />
             </Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -513,10 +513,10 @@ OFTEN_SPAWN_R =-----------------------------------------------------------------
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="120" />
-            <Property value="610" />
-            <Property value="1150" />
-            <Property value="1500" />
+            <Property value="1120" />
+            <Property value="1610" />
+            <Property value="2150" />
+            <Property value="2500" />
             </Property>
 						</Property>
 						<Property name="QualityVariants">
@@ -5491,7 +5491,7 @@ SPACESHIPS_SPACE_THRUSTFORCE_S = tostring(SPACESHIPS_SPACE_THRUSTFORCE * SPACESH
 SPACESHIPS_SPACE_MAXPSEED_S = tostring(SPACESHIPS_SPACE_MAXPSEED * SPACESHIPS_SMALL_SPEED_MULTIPLIER)---------------------------------------------------------------------------------
 SPACESHIPS_SPACE_BOOST_FORCE_S = tostring(SPACESHIPS_SPACE_BOOST_FORCE * SPACESHIPS_SMALL_SPEED_MULTIPLIER)---------------------------------------------------------------------------------
 SPACESHIPS_SPACE_BOOST_MAX_S = tostring(SPACESHIPS_SPACE_BOOST_MAX * SPACESHIPS_SMALL_SPEED_MULTIPLIER)---------------------------------------------------------------------------------
-SPACESHIPS_SPACE_FALLOFF_S = tostring(SPACESHIPS_SPACE_FALLOFF)---------------------------------------------------------------------------------
+--SPACESHIPS_SPACE_FALLOFF_S = tostring(SPACESHIPS_SPACE_FALLOFF)---------------------------------------------------------------------------------
 SPACESHIPS_PLANET_THRUSTFORCE_S = tostring(SPACESHIPS_PLANET_THRUSTFORCE * SPACESHIPS_SMALL_SPEED_MULTIPLIER)---------------------------------------------------------------------------------
 SPACESHIPS_PLANET_MAXPSEED_S = tostring(SPACESHIPS_PLANET_MAXPSEED * SPACESHIPS_SMALL_SPEED_MULTIPLIER)---------------------------------------------------------------------------------
 SPACESHIPS_PLANET_BOOST_FORCE_S = tostring(SPACESHIPS_PLANET_BOOST_FORCE * SPACESHIPS_SMALL_SPEED_MULTIPLIER)---------------------------------------------------------------------------------
@@ -5630,7 +5630,7 @@ RESIZABLESENTINELMECH = [[
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
-        <Property name="TransY" value="]]..MECHS_SIZE_MULTIPLIER..[[" />
+        <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
@@ -5646,51 +5646,15 @@ RESIZABLESENTINELMECH = [[
           <Property name="Value" value="MODELS\COMMON\ROBOTS\MECH\ENTITIES\SENTINELMECH.ENTITY.MBIN" />
         </Property>
       </Property>
-      <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="EXPLODE" />
-          <Property name="NameHash" value="2977219630" />
-          <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0.393137" />
-            <Property name="TransZ" value="-0.171723" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="0" />
-            <Property name="ScaleX" value="]]..MECHS_SIZE_MULTIPLIER..[[" />
-            <Property name="ScaleY" value="]]..MECHS_SIZE_MULTIPLIER..[[" />
-            <Property name="ScaleZ" value="]]..MECHS_SIZE_MULTIPLIER..[[" />
-          </Property>
-          <Property name="Attributes" />
-          <Property name="Children" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="pCube1" />
-      <Property name="NameHash" value="2488506156" />
-      <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
-        <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="]]..MECHS_SIZE_MULTIPLIER..[[" />
-        <Property name="ScaleY" value="]]..MECHS_SIZE_MULTIPLIER..[[" />
-        <Property name="ScaleZ" value="]]..MECHS_SIZE_MULTIPLIER..[[" />
-      </Property>
-      <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
-          <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\RGO\SENTINEL_MECH.SCENE.MBIN" />
-        </Property>
-      </Property>
-      <Property name="Children" />
-    </Property>
+    		<Property name="Attributes">
+			<Property value="TkSceneNodeAttributeData.xml">
+			<Property name="Name" value="SCENEGRAPH" />
+			<Property name="AltID" value="" />
+			<Property name="Value" value="MODELS\RGO\SENTMECH_SUIT_PRES.SCENE.MBIN" />
+			</Property>
+		</Property>
+		<Property name="Children" />
+		</Property>
 ]]
 
 local replaceIMG = function (IMGNAME,DESTINATION)
@@ -13355,6 +13319,9 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				{
 					{
 						[[MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT.SCENE.MBIN]],[[MODELS\RGO\MECH_SUIT_PRES.SCENE.MBIN]]
+					},
+					{
+						[[MODELS\COMMON\ROBOTS\SENTINELMECH.SCENE.MBIN]],[[MODELS\RGO\SENTMECH_SUIT_PRES.SCENE.MBIN]]
 					}
 				}
 			},
@@ -13421,6 +13388,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["SPECIAL_KEY_WORDS"] = {"Name","mech_mesh"},
 						["REMOVE"] = "SECTION",
 					},
+
 					{
 						["PRECEDING_KEY_WORDS"] = "Children",
 						["SECTION_ACTIVE"] = {1,2},
@@ -14228,31 +14196,32 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["EXML_CHANGE_TABLE"] =
 				{
-					{
+				--[=[{
+						
 						["VALUE_CHANGE_TABLE"] =
 						{
-							{"WalkerAttackRange","160"},
-							{"WalkerGuardAlertRange","120"},
-							{"WalkerAttackRate","5"},
-							{"WalkerLaserOvershootStart","5"},
-							{"WalkerLaserOvershootStart","-2"},
-							{"WalkerGunShootTime","40"},
-							{"WalkerGunRate","0.01"},
-							{"QuadAlertRange","16"},
-							{"QuadAttackRange","200"},
-							{"QuadAttackMinRange","1"},
-							{"QuadAttackAngle","380"},
-							{"QuadJumpBackRange","100"},
-							{"QuadJumpBackCheckRange","120"},
-							{"QuadJumpBackHeightRange","20"},
-							{"QuadJumpBackJumpDistance","150"},
-							{"QuadJumpBackJumpMinLength","35"},
-							{"QuadPounceRange","180"},
-							{"QuadFireTime","0.2"},
-							{"QuadChargeTargetLockPercent","0.8"},
-							{"QuadAttackRate","1"},
-							{"QuadMoveSpeed","80"},
-							{"QuadLaserIntensity","5"},
+							--{"WalkerAttackRange","160"},
+							--{"WalkerGuardAlertRange","120"},
+							--{"WalkerAttackRate","5"},
+							--{"WalkerLaserOvershootStart","5"},
+							--{"WalkerLaserOvershootStart","-2"},
+							--{"WalkerGunShootTime","40"},
+							--{"WalkerGunRate","0.01"},
+							--{"QuadAlertRange","16"},
+							--{"QuadAttackRange","200"},
+							--{"QuadAttackMinRange","1"},
+							--{"QuadAttackAngle","380"},
+							--{"QuadJumpBackRange","100"},
+							--{"QuadJumpBackCheckRange","120"},
+							--{"QuadJumpBackHeightRange","20"},
+							--{"QuadJumpBackJumpDistance","150"},
+							--{"QuadJumpBackJumpMinLength","35"},
+							--{"QuadPounceRange","180"},
+							--{"QuadFireTime","0.2"},
+							--{"QuadChargeTargetLockPercent","0.8"},
+							--{"QuadAttackRate","1"},
+							--{"QuadMoveSpeed","80"},
+							--{"QuadLaserIntensity","5"},
 						}
 					},
 					{
@@ -14261,12 +14230,12 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["INTEGER_TO_FLOAT"] = "FORCE",
 						["VALUE_CHANGE_TABLE"] =
 						{
-							{"LaserSpringTime","3"},
-							{"LaserMiningDamage","30000000"},
-							{"LaserChargeTime","2.8"},
-							{"LaserTime","0.2"},
-							{"LaserLightChargeSize","20"},
-							{"LaserLightAttackSize","40"},
+						--	{"LaserSpringTime","3"},
+							--{"LaserMiningDamage","30000000"},
+						--	{"LaserChargeTime","2.8"},
+						--	{"LaserTime","0.2"},
+						--	{"LaserLightChargeSize","20"},
+						--	{"LaserLightAttackSize","40"},
 						}
 					},
 					{
@@ -14275,12 +14244,12 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["INTEGER_TO_FLOAT"] = "FORCE",
 						["VALUE_CHANGE_TABLE"] =
 						{
-							{"LaserMiningDamage","300"},
-							{"LaserChargeTime","2.8"},
-							{"LaserTime","0.08"},
-							{"LaserLightChargeSize","5"},
+						--	{"LaserMiningDamage","300"},
+						--	{"LaserChargeTime","2.8"},
+						--	{"LaserTime","0.08"},
+						--	{"LaserLightChargeSize","5"},
 						}
-					},
+					},--]=]
 					{
 						["SECTION_ACTIVE"] = {1,2,3},
 						["PRECEDING_KEY_WORDS"] = {"DroneControl","Patrol"},
@@ -14412,11 +14381,11 @@ if GAMEPLAY_OVERHAUL == "ON" then
 	)
 
 	-- INERACTIVE OBJECTS
-	copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVETABLE.SCENE.EXML]],[[MODELS\RGO\SAVETABLE.SCENE.EXML]])
-	copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVEPOINT.ENTITY.EXML]],[[MODELS\RGO\ENTITIES\SAVEPOINT.ENTITY.EXML]])
+	--copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVETABLE.SCENE.EXML]],[[MODELS\RGO\SAVETABLE.SCENE.EXML]])
+	--copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVEPOINT.ENTITY.EXML]],[[MODELS\RGO\ENTITIES\SAVEPOINT.ENTITY.EXML]])
 
 
- 	copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVETABLE.SCENE.EXML]],[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.EXML]])
+ 	--copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVETABLE.SCENE.EXML]],[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.EXML]])
 	
 	addFeature
 	(
@@ -15292,7 +15261,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				},
 				------------- 
 				-------------
-				
+				--[=[
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.MBIN]],
 					["EXML_CHANGE_TABLE"] =
@@ -15303,7 +15272,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							["ADD"] 	= BTN_SAVE					
 						},
 					}					
-				},
+				},--]=]
 				-------------
 								{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BED.SCENE.MBIN]],
@@ -17740,7 +17709,7 @@ addFeature(
 			},
 
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE40.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE40.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
@@ -18867,184 +18836,184 @@ addFeature(
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},								{
 				["PATH"] = [[MODELS\RGO\LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.01"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 
 			{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.01"
 			},
 
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
@@ -19057,211 +19026,211 @@ addFeature(
 			},
 			
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE04.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE05.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE7.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE8.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE9.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE10.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 							["PATH"] = [[MODELS\RGO\MEDIUMTREE11.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 							["PATH"] = [[MODELS\RGO\MEDIUMTREE12.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE13.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE14.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 							["PATH"] = [[MODELS\RGO\MEDIUMTREE15.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE16.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 							["PATH"] = [[MODELS\RGO\MEDIUMTREE17.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE06.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE07.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE08.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE12.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE13.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE14.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE15.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE16.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE17.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE18.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE19.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+						{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
@@ -19307,19 +19276,19 @@ addFeature(
 		{	
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
@@ -19332,79 +19301,79 @@ addFeature(
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
-				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
@@ -19416,73 +19385,73 @@ addFeature(
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
@@ -19495,176 +19464,176 @@ addFeature(
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.01"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props2
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
@@ -19707,43 +19676,43 @@ addFeature(
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE6.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE7.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE8.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE9.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
@@ -19757,157 +19726,157 @@ addFeature(
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "7"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "7"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "7"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
@@ -19920,207 +19889,207 @@ addFeature(
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE10.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE11.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE12.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE13.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.01"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "7"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "7"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "7"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "1"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
@@ -20133,43 +20102,43 @@ addFeature(
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE14.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE15.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
@@ -20195,7 +20164,7 @@ addFeature(
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
@@ -20249,121 +20218,121 @@ addFeature(
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE20.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE21.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE22.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE23.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE24.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE25.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE26.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE27.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE28.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE29.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE30.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE31.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE32.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE33.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE34.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE35.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE36.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE37.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE38.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE39.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -20553,73 +20522,73 @@ addFeature(
 			
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
@@ -21125,7 +21094,7 @@ addFeature(
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "22"
@@ -21338,7 +21307,7 @@ addFeature(
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "22"
@@ -21350,7 +21319,7 @@ addFeature(
 				["MAXSIZE"] = "24"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
@@ -21362,7 +21331,7 @@ addFeature(
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -21551,7 +21520,7 @@ addFeature(
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -21563,7 +21532,7 @@ addFeature(
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
@@ -21575,7 +21544,7 @@ addFeature(
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -21764,7 +21733,7 @@ addFeature(
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "22"
@@ -21776,7 +21745,7 @@ addFeature(
 				["MAXSIZE"] = "24"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
@@ -21788,7 +21757,7 @@ addFeature(
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -21977,7 +21946,7 @@ addFeature(
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -21989,7 +21958,7 @@ addFeature(
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
@@ -22190,7 +22159,7 @@ addFeature(
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "12"
@@ -22202,7 +22171,7 @@ addFeature(
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
@@ -22214,7 +22183,7 @@ addFeature(
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -22427,7 +22396,7 @@ addFeature(
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -22829,7 +22798,7 @@ addFeature(
 				["MAXSIZE"] = "12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "22"
@@ -22841,7 +22810,7 @@ addFeature(
 				["MAXSIZE"] = "24"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
@@ -22853,7 +22822,7 @@ addFeature(
 				["MAXSIZE"] = "14"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "13"
@@ -23287,43 +23256,43 @@ addFeature(
 			--},
 
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE67.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE66.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE65.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE63.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE62.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE61.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
@@ -23706,7 +23675,7 @@ addFeature(
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
 				["ROTATION"] = "2",
 				["MAXSIZE"] = "4"
 			},
@@ -23718,7 +23687,7 @@ addFeature(
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
 				["ROTATION"] = "2",
 				["MAXSIZE"] = "10"
 			},
@@ -24484,7 +24453,7 @@ addFeature(
 				["MAXSIZE"] = "0.12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.2"
@@ -24542,121 +24511,121 @@ addFeature(
 				["MAXSIZE"] = "20.6"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE60.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_rare_props
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE59.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE58.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE57.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE56.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE55.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE54.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE53.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE52.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE51.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE50.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE49.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.2"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE48.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE47.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE46.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.56"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE45.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.55"
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE44.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE43.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_rare_props
 			},
 						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE42.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = max_rare_props
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE41.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.52"
@@ -29541,6 +29510,7 @@ LUSHGRASSLIST =
 		)
 
 		-- EPIC FANTASY Core ASSETS
+
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\ALIENRING.SCENE.EXML]],
@@ -29721,14 +29691,14 @@ LUSHGRASSLIST =
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE1.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R\MEDIUMTREE1.DESCRIPTOR.EXML]]
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMOAK1.DESCRIPTOR.EXML]] -- intentional
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE1.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R\MEDIUMTREE1.SCENE.EXML]]
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMOAK1.SCENE.EXML]] -- intentional
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 --
@@ -30779,7 +30749,7 @@ LUSHGRASSLIST =
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 
-				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE02.SCENE.EXML]],
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE02.SCENE.EXML]]
@@ -31080,6 +31050,972 @@ LUSHGRASSLIST =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\TOP_GROVE.SCENE.EXML]],
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\TOP_GROVE.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE01.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE01.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE01.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE01.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE02.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE02.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE02.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE02.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE03.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE03.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE03.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE03.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE04.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE04.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE04.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE04.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE05.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE05.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE05.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE05.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE06.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE06.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE06.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE06.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE07.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE07.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE07.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE07.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE08.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE08.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE08.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE08.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE09.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE09.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE09.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE09.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE10.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE10.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE10.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE10.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE11.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE11.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE11.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE11.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE12.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE12.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE12.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE12.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE13.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE13.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE13.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE13.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE14.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE14.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE14.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE14.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE15.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE15.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE15.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE15.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE16.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE16.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE16.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE16.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE17.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE17.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE17.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE17.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE18.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE18.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE18.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE18.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE19.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE19.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE19.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE19.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE20.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE20.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE20.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE20.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE21.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE21.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE21.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE21.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE22.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE22.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE22.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE22.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE23.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE23.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE23.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE23.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE24.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE24.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE24.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE24.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE25.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE25.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE25.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE25.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE26.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE26.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE26.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE26.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE27.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE27.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE27.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE27.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE28.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE28.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE28.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE28.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE29.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE29.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE29.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE29.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE30.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE30.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE30.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE30.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE31.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE31.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE31.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE31.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE32.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE32.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE32.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE32.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE33.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE33.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE33.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE33.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE34.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE34.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE34.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE34.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE35.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE35.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE35.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE35.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE36.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE36.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE36.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE36.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE37.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE37.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE37.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE37.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE38.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE38.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE38.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE38.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE39.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE39.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE39.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE39.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE40.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE40.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE41.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE41.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE42.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE42.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE42.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE42.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE43.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE43.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE43.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE43.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE44.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE44.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE44.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE44.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE45.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE45.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE45.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE45.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE46.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE46.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE46.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE46.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE47.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE47.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE47.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE47.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE48.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE48.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE48.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE48.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE49.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE49.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE49.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE49.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE50.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE50.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE50.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE50.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE51.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE51.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE51.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE51.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE52.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE52.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE52.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE52.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE53.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE53.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE53.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE53.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE54.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE54.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE54.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE54.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE55.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE55.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE55.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE55.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE56.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE56.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE56.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE56.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE57.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE57.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE57.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE57.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+						EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE58.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE58.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE58.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE58.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE59.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE59.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE59.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE59.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE60.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE60.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE60.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE60.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE61.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE61.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE61.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE61.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE62.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE62.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE62.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE62.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE63.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE63.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE63.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE63.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE64.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE64.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE64.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE64.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE65.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE65.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE65.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE65.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE66.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE66.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE66.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE66.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE67.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE67.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE67.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE67.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE68.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE68.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE68.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE68.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE69.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE69.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE69.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE69.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE70.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE70.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE70.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE70.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE71.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE71.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE71.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE71.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE72.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE72.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE72.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE72.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE73.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE73.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE73.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE73.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE74.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE74.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE74.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE74.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE75.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE75.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE75.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REDMASGROVE\PARTS\HQTREE75.SCENE.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 

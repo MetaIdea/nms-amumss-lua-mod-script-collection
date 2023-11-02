@@ -76,10 +76,10 @@
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="20" />
-            <Property value="60" />
-            <Property value="150" />
-            <Property value="500" />
+            <Property value="1120" />
+            <Property value="1610" />
+            <Property value="2150" />
+            <Property value="2500" />
           </Property>
         </Property>
         <Property name="QualityVariants" />
