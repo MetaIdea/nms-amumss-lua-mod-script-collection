@@ -1,5 +1,5 @@
 Author = "Exosolar"			--Edited by Xen0nex
-ModName = "gExos Challenge"
+--ModName = "gExos Challenge"
 ModNameSub = "Market StabilityX"
 BaseDescription = "Removes market crashing by narrowing the range in which prices can fluctuate, reduces the effect of player selling."
 GameVersion = "441"

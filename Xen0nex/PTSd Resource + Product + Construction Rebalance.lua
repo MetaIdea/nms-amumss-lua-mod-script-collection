@@ -67,17 +67,21 @@ ProductSaleChanges =
 	{"UI_STORMCRYSTAL_NAME",	0.6},				--206,000		Storm Crystal	(0.8x 126,000 in 3.99)
 	{"UI_SHIPCHARGE_NAME",	18.0},					--500			Starshield Battery
 	
-	{"PROD_NIP_NAME",	1.5},						--17,776		Nip Nip Buds		(4hr grow time)
-	{"NEWPROD12_NAME",	2.0},						--64,000		Sac Venom			(3hr 20 min grow time)
-	{"NEWPROD14_NAME",	3.0},						--11,200		Albumen Pearl		(2 hr grow time)
+	{"PROD_NIP_NAME",	0.841},						--17,776		Nip Nip Buds		(4hr grow time)
+	{"NEWPROD12_NAME",	2.0/2},						--64,000		Sac Venom			(3hr 20 min grow time)
+	{"NEWPROD14_NAME",	2.7/2},						--11,200		Albumen Pearl		(2 hr grow time)
 	{"NEWPROD11_NAME",	4.0},						--5,800			Vortex Cube
-	{"NEWPROD13_NAME",	0.40379},					--42,130		Gravitino Ball		(2 hr grow time)		(In game price is 40024? some kind of global multiplier of 0.95 on item sell / value prices?)
+	{"NEWPROD13_NAME",	0.40379/2},					--42,130		Gravitino Ball		(2 hr grow time)		(In game price is 40024? some kind of global multiplier of 0.95 on item sell / value prices?)
 	{"UI_CLAMPEARL_NAME",	9.0},					--5,050			Living Pearl		(Refines to 100 Gold = 35,300u vanilla)
 	{"UI_VENTGEM_NAME",	5.0},						--7,800			Crystal Sulphide
+	
 	{"UI_EYEBALL_NAME",	2.5},						--60,000		Hypnotic Eye
+	{"FOOD_R_EYEBALLS_NAME",	1.796},				--90,000		Horrifying Mush
+	{"FOOD_R_EYESTEW_NAME",	2},						--90,000		Abyssal Stew
+	{"FOOD_R_EYEICE_NAME",	2},						--90,000		Iced Screams
 	{"FOOD_W_CASE_NAME",	8},						--8,000			New worm food made from Flesh Rope stage 1
 	{"FOOD_W_MEAT_NAME",	10},					--16,000		New worm food made from Flesh Rope stage 2
-	{"FOOD_W_SWEETM_NAME",	11.25},					--32,000		New worm food made from Flesh Rope stage 3
+	{"FOOD_W_SWEETM_NAME",	11.875},				--32,000		New worm food made from Flesh Rope stage 3
 	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
 	{"NEWPROD2_NAME",	10.0},						--11,688		VYKEENDAGGER
@@ -161,9 +165,9 @@ IllTradeMult = 					0.2					--These Illegal Trade items also have a default Stac
 --Multipliers to apply to the item's Product Stack multiplier (vanilla total stack size, not multiplier, is listed in the -- comments below), and to their BuyBaseMarkup (how much extra you always have to pay about base value)
 ProductStackChanges =
 {					--			StackMultMult		BuyBaseMarkupMult
-	{"NEWPROD12_NAME",			1,					1},				--5		Sac Venom
-	{"NEWPROD13_NAME",			1,					1},				--5		Gravitino Ball
-	{"NEWPROD14_NAME",			2,					1},				--5		Albumen Pearl
+	{"NEWPROD12_NAME",			2,					1},				--5		Sac Venom
+	{"NEWPROD13_NAME",			2,					1},				--5		Gravitino Ball
+	{"NEWPROD14_NAME",			4,					1},				--5		Albumen Pearl
 	{"NEWPROD11_NAME",			3,					1},				--5		Vortex Cube
 	{"UI_CLAMPEARL_NAME",		1,					1},				--15	Living Pearl
 	{"UI_VENTGEM_NAME",			2,					1},				--5		Crystal Sulphide
