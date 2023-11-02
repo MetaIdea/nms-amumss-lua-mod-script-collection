@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "4_41"
+GameVersion = "4_45"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -616,14 +616,14 @@ NewRecipe1 =
           <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
-          <Property name="Amount" value="1" />
+          <Property name="Amount" value="2" />
         </Property>
 		<Property value="GcRefinerRecipeElement.xml">
           <Property name="Id" value="SACVENOM" />
           <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
-          <Property name="Amount" value="1" />
+          <Property name="Amount" value="2" />
         </Property>
       </Property>
     </Property>]]
@@ -648,14 +648,14 @@ NewRecipe2 =
           <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
-          <Property name="Amount" value="1" />
+          <Property name="Amount" value="2" />
         </Property>
 		<Property value="GcRefinerRecipeElement.xml">
           <Property name="Id" value="ALBUMENPEARL" />
           <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
-          <Property name="Amount" value="2" />
+          <Property name="Amount" value="4" />
         </Property>
       </Property>
     </Property>]]

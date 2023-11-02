@@ -1,5 +1,5 @@
 Author = "Gumsk"			-- Edited by Xen0nex
-ModName = "gExos Challenge"
+--ModName = "gExos Challenge"
 ModNameSub = "GRealityX"
 BaseDescription = "Increases suit upgrade prices, changes initial suit & ship slots"
 GameVersion = "441"

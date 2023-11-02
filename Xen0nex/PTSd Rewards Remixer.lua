@@ -1,4 +1,4 @@
-ModName = "PTSd Rewards Remixer"
+ModName = "PTSd Rewards Remixer test"
 GameVersion = "4_45"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
@@ -833,38 +833,38 @@ CuriousDepositMould		=	0.6			--300 - 500
 	--Note: in practice, The following seem to only yield around half of these values
 OrganicRockChlorine		=	4			--25 - 60	
 OrganicRockMordite		=	0.4			--250 - 500			Unlike all the other rare resource nodes, this is unaffected by your Multi-Tool's Mining yield bonus
-MetalFingerGold			=	0.6			--100 - 200
+MetalFingerGold			=	0.6			--                                                                                        100 - 200
 MetalFingerUranium		=	0.4			--200 - 250
 MetalFingerUraniumChance=	0.5			--100	(Relative % Chance a Metal Finger will yield Uranium instead of Gold)
 
 GassyPods				=	0.5			--20 - 30		The 3 red "Gassy Pods" you can harvest from the common Gas Exploding plant hazardous flora on most planets
 
---Changes how many crops are gathered from certain plants, and what the chance is to receive nanites instead of (for farmed versions) or in addition to (for wild Gravitino) the normal yield
+--Changes how many crops are gathered from certain plants, and what the chance is to receive nanites in addition to the normal yield
 	--WIP: P_GRAVBALL doesn't control wild Gravitino balls, haven't tested P_ALBUMENPEARL or DE_URCHIN
 CropYieldChanges =
 {	--PlantID					% Chance	Amount
-	{"PLANT_PEARL",				50,			1},				--100,	1		Albumen Pearl (farm crop)
-	{"RARE_OBJECT",				100,		1},				--100,	1		Gravitino Ball (wild)
-	{"PLANT_GRAV",				50,			1},				--100,	1		Gravitino Ball (farm crop)
-	{"DE_URCHIN",				100,		1},				--100,	1		Sac Venom (wild)				UNTESTED
-	{"PLANT_SACVENOM",			50,			1},				--100,	1		Sac Venom (farm crop)
+	{"PLANT_PEARL",				100,		1},				--100,	1		Albumen Pearl (farm crop)
+	{"RARE_OBJECT",				100,		2},				--100,	1		Gravitino Ball (wild)
+	{"PLANT_GRAV",				100,		1},				--100,	1		Gravitino Ball (farm crop)
+	{"DE_URCHIN",				100,		2},				--100,	1		Sac Venom (wild)				UNTESTED
+	{"PLANT_SACVENOM",			100,		1},				--100,	1		Sac Venom (farm crop)
 	{"PLANT_NIP",				100,		1}				--100,	1		NipNip Buds (farm crop)
 }
 AlbumenPearlWildChance	=		100							--100			From Humming Sacs or Sentient Plants
-AlbumenPearlWildAmount	=					1				--1				From Humming Sacs or Sentient Plants
+AlbumenPearlWildAmount	=					2				--1				From Humming Sacs or Sentient Plants
 
-AlbumenPearlFarmNanitesChance =	50							--0			% Chance to receive Nanites from an Albumen Pearl (farm crop) INSTEAD OF crop
-AlbumenPearlFarmNanitesAmount =				3				--0
-GravitinoFarmNanitesChance	=	50							--0			% Chance to receive Nanites from a Gravitino Ball (farm crop) INSTEAD OF crop
-GravitinoFarmNanitesAmount	=				16				--0
-SacVenomFarmNanitesChance	=	50							--0			% Chance to receive Nanites from a Sac Venom (farm crop) INSTEAD OF crop
-SacVenomFarmNanitesAmount	=				24				--0
+AlbumenPearlFarmNanitesChance =	100							--0			% Chance to receive Nanites from an Albumen Pearl (farm crop) in addition to crop
+AlbumenPearlFarmNanitesAmount =				1				--0
+GravitinoFarmNanitesChance	=	100							--0			% Chance to receive Nanites from a Gravitino Ball (farm crop) in addition to crop
+GravitinoFarmNanitesAmount	=				8				--0
+SacVenomFarmNanitesChance	=	100							--0			% Chance to receive Nanites from a Sac Venom (farm crop) in addition to crop
+SacVenomFarmNanitesAmount	=				12				--0
 
-GravitinoWildNanitesChance	=	33							--0			% Chance to receive Nanites from a Gravitino Ball (wild) in ADDITION TO Gravitino Ball(s)
+GravitinoWildNanitesChance	=	33							--0			% Chance to receive Nanites from a Gravitino Ball (wild) in addition to Gravitino Ball(s)
 GravitinoWildNanitesAmount	=				16				--0
-VortexCubeNanitesChance	=		66							--0			% Chance to receive Nanites from a Vortex Cube in ADDITION TO a Vortex Cube
+VortexCubeNanitesChance	=		66							--0			% Chance to receive Nanites from a Vortex Cube in addition to a Vortex Cube
 VortexCubeNanitesAmount	=					4				--0
-StormCrystalNanitesChance	=	50							--0			% Chance to receive Nanites from a Storm Crystal in ADDITION TO a Vortex Cube
+StormCrystalNanitesChance	=	50							--0			% Chance to receive Nanites from a Storm Crystal in addition to a Storm Crystal
 StormCrystalNanitesAmount	=				8				--0
 
 --Multipliers to reduce certain plant yields. This is mainly to nerf farming slightly in relation to wild gathering
@@ -3331,7 +3331,7 @@ for i = 1, #CropYieldChanges do
 				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"RewardChoice",	"SelectAlways"},
+					--{"RewardChoice",	"SelectAlways"},
 					{"PercentageChance",	Chance},
 					{"AmountMin",	Amount},
 					{"AmountMax",	Amount}
