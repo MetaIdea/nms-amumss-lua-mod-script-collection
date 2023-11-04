@@ -1,9 +1,8 @@
 ModName                                  = "InventoryUnbalance"
 
 GCGAMEPLAYGLOBALS                        = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
--- INVENTORYTABLE                        = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
 
-SubstanceAndProcductSizeLimit            = 9999999
+SubstanceAndProductSizeLimit             = 9999999
 
 SubstanceInventorySizeAll                = 50000
 SubstanceCargoSizeAll                    = 100000
@@ -41,8 +40,8 @@ function EditStackSizes(currentType)
         ["SPECIAL_KEY_WORDS"] = {currentType, "GcDifficultyInventoryStackSizeOptionData.xml"},
         ["VALUE_CHANGE_TABLE"]  =
         {
-            {"SubstanceStackLimit", SubstanceAndProcductSizeLimit},
-            {"ProductStackLimit",   SubstanceAndProcductSizeLimit},
+            {"SubstanceStackLimit", SubstanceAndProductSizeLimit},
+            {"ProductStackLimit",   SubstanceAndProductSizeLimit},
         }
     }
     GamePlayGlobalsTable[#GamePlayGlobalsTable + 1] =

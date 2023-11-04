@@ -5624,10 +5624,11 @@ RESIZABLEMECH =
 		</Property>
 ]]
 RESIZABLESENTINELMECH = [[
+ 
 	      <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="Mech" />
+      <Property name="Name" value="RESIZEDSENTINELMECH" />
       <Property name="NameHash" value="1952019589" />
-      <Property name="Type" value="LOCATOR" />
+      <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
@@ -5639,14 +5640,8 @@ RESIZABLESENTINELMECH = [[
         <Property name="ScaleY" value="]]..MECHS_SIZE_MULTIPLIER..[[" />
         <Property name="ScaleZ" value="]]..MECHS_SIZE_MULTIPLIER..[[" />
       </Property>
-      <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
-          <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\COMMON\ROBOTS\MECH\ENTITIES\SENTINELMECH.ENTITY.MBIN" />
-        </Property>
-      </Property>
-    		<Property name="Attributes">
+
+    <Property name="Attributes">
 			<Property value="TkSceneNodeAttributeData.xml">
 			<Property name="Name" value="SCENEGRAPH" />
 			<Property name="AltID" value="" />
@@ -13366,37 +13361,25 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				["EXML_CHANGE_TABLE"] =
 				{
 					{
-						["SPECIAL_KEY_WORDS"] = {"Name","Mech"},
-						["REMOVE"] = "SECTION",
-					},
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\ROBOTS\SENTINELMECH.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
 						["SPECIAL_KEY_WORDS"] = {"Name","TrajectorySHJnt"},
-						["REMOVE"] = "SECTION",
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","RootLocator"},
 						["REMOVE"] = "SECTION",
 					},
 					{
 						["SPECIAL_KEY_WORDS"] = {"Name","mech_mesh"},
 						["REMOVE"] = "SECTION",
 					},
-
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","mech"},
+						["REMOVE"] = "SECTION",
+					},
 					{
 						["PRECEDING_KEY_WORDS"] = "Children",
 						["SECTION_ACTIVE"] = {1,2},
 						["ADD"] = RESIZABLESENTINELMECH
 					}
-
 				}
 			},
+
 			{
 				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN]],
 				["EXML_CHANGE_TABLE"] =
@@ -13406,7 +13389,23 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["INTEGER_TO_FLOAT"] = "FORCE",
 						["VALUE_CHANGE_TABLE"] =
 						{
-							{"Speed",MECH_ANIM_SPEED}
+							{"Speed",MECH_ANIM_SPEED},
+							
+						}
+					},
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\ROBOTS\MECH\ENTITIES\SENTINELMECH.ENTITY.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["REPLACE_TYPE"] = "ALL",
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"Speed",MECH_ANIM_SPEED},
+							{"Health","10"}
 						}
 					},
 				}
@@ -13420,7 +13419,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"MechLandBrake",                   "1"},
-							{"MechAIResummonTriggerDistance",             "10000"},
+							{"MechAIResummonTriggerDistance",             "2000"},
 							{"MechAIResummonMinSpawnDistance",             "1000"},
 							{"MechTitanFallCameraShakeDist",    "1800"},
 						}
@@ -14284,18 +14283,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 							--{"MaxHeight","15"},
 						}
 					},
-					{
-						["SECTION_ACTIVE"] = {1,2,3},
-						["PRECEDING_KEY_WORDS"] = {"DroneControl","Repair"},
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"MaxSpeed","50"},
-							{"Strength","2"},
-							{"MinHeight","6.5"},
-							--{"MaxHeight","8"},
-						}
-					},
+					
 					{
 						["SECTION_ACTIVE"] = {1,2,3},
 						["PRECEDING_KEY_WORDS"] = {"DroneControl","Summon"},
@@ -14303,7 +14291,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"MaxSpeed","50"},
-							{"Strength","1000"},
+							--{"Strength","1000"},
 							{"MinHeight","8"},
 							--{"MaxHeight","8"},
 						}
@@ -14315,7 +14303,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"MaxSpeed","50"},
-							{"Strength","2"},
+							--{"Strength","2"},
 							{"MinHeight","0.5"},
 							--{"MaxHeight","1"},
 						}
@@ -14327,7 +14315,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"MaxSpeed","5"},
-							{"Strength","2"},
+							--{"Strength","2"},
 							{"MinHeight","1"},
 							{"MaxHeight","2"},
 						}
@@ -17047,11 +17035,11 @@ if CREATURES_OVERHAUL == "ON" then
 									{"CreatureHugeMinSize", "20" },
 									{"PetWalkAtHeelChanceDevoted", "0.0001" },
 									{"PetWalkAtHeelChanceIndependent", "0.9" },
-									{"PetWalkAtHeelDistMin", "0.5" },
-									{"PetWalkAtHeelDistMax", "8" },
-									{"PetRunAtHeelDistMin", "5" },
-									{"PetRunAtHeelDistMax", "10" },
-									{"PetFollowRunPlayerDistance", "1" },
+									{"PetWalkAtHeelDistMin", "1.5" },
+									{"PetWalkAtHeelDistMax", "18" },
+									{"PetRunAtHeelDistMin", "15" },
+									{"PetRunAtHeelDistMax", "100" },
+									{"PetFollowRunPlayerDistance", "100" },
 									{"PetIncubationTime", TIMER_VALUE },
 									{"PetTrustChangeInterval", TIMER_VALUE },
 									{"PetEggFirstEggDelay", TIMER_VALUE }

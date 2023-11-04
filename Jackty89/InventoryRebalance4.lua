@@ -1,9 +1,8 @@
 ModName                                  = "InventoryRebalance"
 
 GCGAMEPLAYGLOBALS                        = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
--- INVENTORYTABLE                           = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
 
-SubstanceAndProcductSizeLimit            = 9999999
+SubstanceAndProductSizeLimit            = 9999999
 
 -- Standard == NORMAL
 SubstanceInventorySizeStandard           = 50000
@@ -12,7 +11,6 @@ ProductInventorySizeStandard             = 50
 ProductCargoSizeStandard                 = 100
 
 -- Restricted == Survival/Perma
--- SubstanceInventorySizeRestricted          = 500
 SubstanceCargoSizeRestricted              = 1000
 SubstanceShipInventorySizeRestricted      = 2000
 SubstanceShipCargoSizeRestricted          = 2000
@@ -21,8 +19,6 @@ SubstanceFreighterCargoSizeRestricted     = 5000
 SubstanceVehicleInventorySizeRestricted   = 2000
 SubstanceChestAndCapSizeRestricted        = 5000
 
--- ProductInventorySizeRestricted           = 5
--- ProductCargoSizeRestricted               = 10
 ProductShipInventorySizeRestricted       = 10
 ProductShipCargoSizeRestricted           = 10
 ProductFreighterInventorySizeRestricted  = 25
@@ -49,8 +45,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"SubstanceStackLimit", SubstanceAndProcductSizeLimit},
-                                {"ProductStackLimit",   SubstanceAndProcductSizeLimit},
+                                {"SubstanceStackLimit", SubstanceAndProductSizeLimit},
+                                {"ProductStackLimit",   SubstanceAndProductSizeLimit},
                             }
                         },
                         {
@@ -96,8 +92,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]  = {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SubstanceStackLimit", SubstanceAndProcductSizeLimit},
-                                {"ProductStackLimit",   SubstanceAndProcductSizeLimit},
+                                {"SubstanceStackLimit", SubstanceAndProductSizeLimit},
+                                {"ProductStackLimit",   SubstanceAndProductSizeLimit},
                             }
                         },
                         {
@@ -105,8 +101,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                -- {"Inventory",         SubstanceInventorySizeRestricted},
-                                -- {"Personal",          SubstanceInventorySizeRestricted},
                                 {"PersonalCargo",     SubstanceCargoSizeRestricted},
                                 {"Ship",              SubstanceShipInventorySizeRestricted},
                                 {"ShipCargo",         SubstanceShipCargoSizeRestricted},
@@ -115,8 +109,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Vehicle",           SubstanceVehicleInventorySizeRestricted},
                                 {"Chest",             SubstanceChestAndCapSizeRestricted},
                                 {"BaseCapsule",       SubstanceChestAndCapSizeRestricted},
-                                -- {"MaintenanceObject", SubstanceInventorySizeRestricted},
-                                -- {"UIPopup",           SubstanceInventorySizeRestricted},
                             }
                         },
                         {
@@ -124,9 +116,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                -- {"Inventory",         ProductInventorySizeRestricted},
-                                -- {"Personal",          ProductInventorySizeRestricted},
-                                -- {"PersonalCargo",     ProductCargoSizeRestricted},
                                 {"Ship",              ProductShipInventorySizeRestricted},
                                 {"ShipCargo",         ProductShipCargoSizeRestricted},
                                 {"Freighter",         ProductFreighterInventorySizeRestricted},
@@ -134,63 +123,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Vehicle",           ProductVehicleInventorySizeRestricted},
                                 {"Chest",             ProductChestAndCapSizeRestricted},
                                 {"BaseCapsule",       ProductChestAndCapSizeRestricted},
-                                -- {"MaintenanceObject", ProductInventorySizeRestricted},
-                                -- {"UIPopup",           ProductInventorySizeRestricted},
                             }
                         }
-                    },
-                    -- {
-                    --     {
-                    --         ["VALUE_CHANGE_TABLE"]  =
-                    --         {
-                    --             {"PersonalInventoryMinWidthMax",      10},
-                    --             {"PersonalInventoryMinHeightMax",     15},
-                    --             {"PersonalTechInventoryMinWidthMax",  10},
-                    --             {"PersonalTechInventoryMinHeightMax", 10},
-                    --             {"ShipInventoryMinWidthMax",          10},
-                    --             {"ShipInventoryMinHeightMax",         12},
-                    --             {"ShipTechInventoryMinWidthMax",      10},
-                    --             {"ShipTechInventoryMinHeightMax",     6},
-                    --             {"VehicleInventoryMinWidthMax",       10},
-                    --             {"VehicleInventoryMinHeightMax",      12},
-                    --             {"WeaponInventoryMinWidthMax",        10},
-                    --             {"WeaponInventoryMinHeightMax",       5}
-                    --         }
-                    --     }
-                    -- }
-                },
-                -- {
-                --     ["MBIN_FILE_SOURCE"]    = INVENTORYTABLE,
-                --     ["EXML_CHANGE_TABLE"]   =
-                --     {
-                --         {
-                --             ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
-                --             ["PRECEDING_KEY_WORDS"] = {"Bounds"},
-                --             ["VALUE_CHANGE_TABLE"]  =
-                --             {
-                --                 {"MaxWidthSmall",     7},
-                --                 {"MaxHeightSmall",    5},
-                --                 {"MaxWidthStandard",  10},
-                --                 {"MaxHeightStandard", 5},
-                --                 {"MaxWidthLarge",     10},
-                --                 {"MaxHeightLarge",    15}
-                --             }
-                --         },
-                --         {
-                --             ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
-                --             ["PRECEDING_KEY_WORDS"] = {"TechBounds"},
-                --             ["VALUE_CHANGE_TABLE"]  =
-                --             {
-                --                 {"MaxWidthSmall",     6},
-                --                 {"MaxHeightSmall",    3},
-                --                 {"MaxWidthStandard",  10},
-                --                 {"MaxHeightStandard", 3},
-                --                 {"MaxWidthLarge",     10},
-                --                 {"MaxHeightLarge",    10}
-                --             }
-                --         }
-                --     }
-                -- }
+                    }
+                }
             }
         }
     }
