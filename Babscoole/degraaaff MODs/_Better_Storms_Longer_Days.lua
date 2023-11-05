@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Better_Storms_Longer_Days.pak",
 ["MOD_AUTHOR"]    = "degraaaff",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.89",
+["NMS_VERSION"]   = "4.45",
 ["MODIFICATIONS"] =
     {
         {
@@ -18,24 +18,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DayLength",                           "3600"},
-                                {"MinTimeBetweenStormsLow",             "1350"},
-                                {"MaxTimeBetweenStormsLow",             "3600"},
-                                {"MinTimeBetweenStormsHigh",            "180"},
-                                {"MaxTimeBetweenStormsHigh",            "930"},
-                                {"MinTimeBetweenStormsExtremeFallback", "360"},
-                                {"MaxTimeBetweenStormsExtremeFallback", "930"},
-                                {"MinStormLengthLow",                   "180"},
-                                {"MaxStormLengthLow",                   "270"},
-                                {"MinStormLengthHigh",                  "225"},
-                                {"MaxStormLengthHigh",                  "480"},
-                                {"StormWarningTime",                    "80"},
-                                {"StormTransitionTime",                 "80"},
+                                {"MinTimeBetweenStormsLow",             "3240"},
+                                {"MaxTimeBetweenStormsLow",             "7200"},
+                                {"MinTimeBetweenStormsHigh",            "1080"},
+                                {"MaxTimeBetweenStormsHigh",            "3240"},
+                                {"MinTimeBetweenStormsExtremeFallback", "1800"},
+                                {"MaxTimeBetweenStormsExtremeFallback", "3240"},
+                                {"MinStormLengthLow",                   "480"},
+                                {"MaxStormLengthLow",                   "1440"},
+                                {"MinStormLengthHigh",                  "960"},
+                                {"MaxStormLengthHigh",                  "2880"},
+                                {"StormWarningTime",                    "180"},
+                                {"StormTransitionTime",                 "180"},
                                 {"MaxCloudCover",                       "1"},
                                 {"MaxStormCloudCover",                  "1"},
                                 {"StormAudioLevel",                     "0.4"},
-                                {"CloudCoverSmoothTime",                "80"},
-                                {"CloudRatioSmoothTime",                "28"},
-                                {"StormCloudSmoothTime",                "5.6"},
+                                {"CloudCoverSmoothTime",                "180"},
+                                {"CloudRatioSmoothTime",                "72"},
+                                {"StormCloudSmoothTime",                "14.4"},
                             }
                         },
                     }
