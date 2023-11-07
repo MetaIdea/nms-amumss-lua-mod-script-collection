@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "NoMonochromeLUTs.pak",
-  ["MOD_DESCRIPTION"]		= "Removes all monochromatic screen filters from planets.",
-  ["MOD_AUTHOR"]				= "Ignacio",
-  ["NMS_VERSION"]				= "",
-  ["MODIFICATIONS"] 		=
+  ["MOD_FILENAME"] = "NoMonochromeLUTs.pak",
+  ["MOD_DESCRIPTION"] = "Removes all monochromatic screen filters from planets.",
+  ["MOD_AUTHOR"] = "CodenameAwesome",
+  ["MODIFICATIONS"] =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] = 
