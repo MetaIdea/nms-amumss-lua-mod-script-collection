@@ -1,5 +1,12 @@
 # NoMansSkyLuaMods
 
+Better Star Colors
+
+![](BetterStarColors.gif)
+
+Less Patchy Snow
+
+![](LessPatchySnow.jpg)
 ## Better Star Colors
 
 ![](_images/BetterStarColors.gif)
