@@ -164,7 +164,7 @@ function HangarChanges()
 		{k='NPC_01',			tx=-9.507,	ty=-3.355,	tz=-28.34},
 		{k='NPC_02',			tx=-56,		ty=-7.35,	tz=62.5,	ry=-150},
 		{k='NPC_03',			tx=-8.337,	ty=-3.355,	tz=-28.03},
-		{k='NPC_04',			tx=38.4,	ty=-7.34,	tz=69.2,	ry=35},
+		{k='NPC_04',			tx=38.4,	ty=-7.34,	tz=69.35,	ry=35},
 		{k='NPC_06',			tx=-21.92,	ty=-4.2,	tz=5.5},
 		{k='NPC_07',			tx=-57.8,	ty=8.1,		tz=57.14,	ry=270},
 		{k='RefHangarCrane2',	tx=41.88,				tz=61.2},
@@ -174,6 +174,7 @@ function HangarChanges()
 		{k='MonitorDesk',		tx=-55.5,	ty=-7.35,	tz=63.2,	ry=305},
 		{k='RefFuelTank2',		tx=35.53,	ty=-7.34,	tz=72.55,	ry=180},
 		{k='RefPallet30',		tx=7.79,	ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,		sz=2.8},
+		{k='MidCeiling201',								tz=33.2,									sz=1.25},
 	}) do
 		T[#T+1] = {
 			SPECIAL_KEY_WORDS	= {'Name', node.k},
@@ -215,19 +216,21 @@ function HangarChanges()
 				ScTransform({tx=20.2, ty=-4, tz=16.2, rx=0, ry=-42, rz=180, sx=0.55, sy=0.55, sz=0.55}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'}
-				})
-			}),
-			ScNode('1LocMonitorShip1',	'LOCATOR', {
-				ScTransform({tx=20.2, ty=-2.8, tz=16.2}),
-				ScAttributes({
-					{'ATTACHMENT', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/ENTITIES/SHIP_SALVAGE.ENTITY.MBIN'}
 				}),
 				ScChildren({
 					ScNode('ColShipSalvage1', 'COLLISION', {
-						ScTransform(),
+						ScTransform({ty=-3}),
 						ScAttributes({
 							{'TYPE',	'Sphere'},
 							{'RADIUS',	0.2}
+						}),
+						ScChildren({
+							ScNode('LocShipSalvage1', 'LOCATOR', {
+								ScTransform(),
+								ScAttributes({
+									{'ATTACHMENT', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/ENTITIES/SHIP_SALVAGE.ENTITY.MBIN'}
+								})
+							})
 						})
 					})
 				})
@@ -236,19 +239,21 @@ function HangarChanges()
 				ScTransform({tx=-20.2, ty=-4, tz=16.2, rx=0, ry=42, rz=180, sx=0.55, sy=0.55, sz=0.55}),
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'}
-				})
-			}),
-			ScNode('1LocMonitorShip2',	'LOCATOR', {
-				ScTransform({tx=-20.2, ty=-2.8, tz=16.2}),
-				ScAttributes({
-					{'ATTACHMENT', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/ENTITIES/SHIP_SALVAGE.ENTITY.MBIN'}
 				}),
 				ScChildren({
 					ScNode('ColShipSalvage2', 'COLLISION', {
-						ScTransform(),
+						ScTransform({ty=-3}),
 						ScAttributes({
 							{'TYPE',	'Sphere'},
 							{'RADIUS',	0.2}
+						}),
+						ScChildren({
+							ScNode('LocShipSalvage2', 'LOCATOR', {
+								ScTransform(),
+								ScAttributes({
+									{'ATTACHMENT', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/ENTITIES/SHIP_SALVAGE.ENTITY.MBIN'}
+								})
+							})
 						})
 					})
 				})
@@ -312,6 +317,36 @@ function HangarChanges()
 				ScAttributes({
 					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CRATE1.SCENE.MBIN'}
 				})
+			}),
+			ScNode('1RefBuilderHand',	'REFERENCE', {
+				ScTransform({tx=-39.85, ty=-7.64, tz=-22.3, rx=-2, ry=-65, rz=180, sx=1.4, sy=1.4, sz=1.4}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/COMMON/ROBOTS/ROBOTHAND.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefBuilderHead',	'REFERENCE', {
+				ScTransform({tx=-39.8, ty=-7.64, tz=-21.6, rx=50, ry=160, rz=0, sx=1.1, sy=1.1, sz=1.1}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BUILDERHEAD.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefGeometPlant01',	'REFERENCE', {
+				ScTransform({tx=37, ty=-7.72, tz=68.3, ry=-20, rz=20, sx=0.24, sy=0.24, sz=0.24}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEO_NONE.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefMetalStruct01',	'REFERENCE', {
+				ScTransform({tx=11.8, ty=9.5, tz=22.7, sx=0.3, sy=0.3, sz=0.3}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1FLOAT.SCENE.MBIN'}
+				})
+			}),
+			ScNode('1RefWirecell01',	'REFERENCE', {
+				ScTransform({tx=-67, ty=14, tz=-18.2, sx=0.6, sy=0.6, sz=0.6}),
+				ScAttributes({
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN'}
+				})
 			})
 		})
 	}
@@ -374,6 +409,44 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'Name', 'SUB3HangarFloorSectionA'}
 				},
 				REMOVE				= 'Section'
+			}
+		}
+	},
+	{--	geometric plant
+		MBIN_FILE_SOURCE	= {
+			{
+				'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEOMETRIC.SCENE.MBIN',
+				'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEO_NONE.SCENE.MBIN',
+				'REMOVE'
+			}
+		}
+	},
+	{--	inactive geometric plant
+		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEO_NONE.SCENE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS 	= {'Name', 'ATTACHMENT'},
+				REMOVE				= 'Section'
+			}
+		}
+	},
+	{--	wirecell cube
+		MBIN_FILE_SOURCE	= {
+			{
+				'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WEIRDCUBE.SCENE.MBIN',
+				'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN',
+				'REMOVE'
+			}
+		}
+	},
+	{--	inactive wirecell cube
+		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS 	= {'Name', 'ATTACHMENT'},
+				VALUE_CHANGE_TABLE	= {
+					{'value', 'MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1FLOAT/ENTITIES/SHAPE1FLOAT.ENTITY.MBIN'}
+				}
 			}
 		}
 	}

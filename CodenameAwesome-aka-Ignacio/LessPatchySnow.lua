@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] = "LessPatchySnow.pak",
-  ["MOD_DESCRIPTION"] = "Re-colors mud patches on snowy worlds to look like snow.",
-  ["MOD_AUTHOR"] = "CodenameAwesome",
-  ["MODIFICATIONS"] =
+  ["MOD_FILENAME"] 			= "LessPatchySnow.pak",
+  ["MOD_DESCRIPTION"]		= "",
+  ["MOD_AUTHOR"]				= "Ignacio",
+  ["NMS_VERSION"]				= "",
+  ["MODIFICATIONS"] 		=
 	{
 		{
 			["MBIN_CHANGE_TABLE"] = {
