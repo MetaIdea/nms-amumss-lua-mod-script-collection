@@ -18469,6 +18469,3421 @@
     </Property>
 
 
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_DEFAULT" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BOOTS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="HEAD_ASTBOT1" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_BUI4" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUI_HCLOTH_3" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BACKPACK_VANILL" />
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="0.52" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_BUI2" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="EYES_BUILDER" />
+            <Property name="TextureOptionName" value="8" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_RUST_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.3" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_0" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_GEK" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_GEK" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_BUI3" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_VANILLA" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BHEAD_6" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BACKPACK_VANILL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_VANILLA" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="HEAD_VTOP" />
+            <Property name="TextureOptionName" value="6" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BOOTS_GEK" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="LEGS_GEK" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_2" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.9" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_1" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BOOTS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_BUI3" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BACKPACK_RETRO" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUI_HCLOTH_2" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BHEAD_11" />
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="LEGS_BUI" />
+            <Property name="TextureOptionName" value="3" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_BUI2" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="EYES_BUILDER" />
+            <Property name="TextureOptionName" value="5" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="CLOTH_HEAD_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="CLOTH_WORN_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_RUST_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.3" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_2" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BHEAD_12" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_VANILLA" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_ASTRO" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_VANILLA" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BOOTS_VANILLA" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+					 
+											
+															
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.436" />
+              <Property name="B" value="0.44" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.56" />
+              <Property name="G" value="0.333" />
+              <Property name="B" value="0.424" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.367" />
+              <Property name="G" value="0.28" />
+              <Property name="B" value="0.44" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.56" />
+              <Property name="G" value="0.333" />
+              <Property name="B" value="0.424" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.56" />
+              <Property name="G" value="0.333" />
+              <Property name="B" value="0.424" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.897" />
+              <Property name="G" value="0.518" />
+              <Property name="B" value="0.76" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.897" />
+              <Property name="G" value="0.518" />
+              <Property name="B" value="0.76" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.897" />
+              <Property name="G" value="0.518" />
+              <Property name="B" value="0.76" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.56" />
+              <Property name="G" value="0.333" />
+              <Property name="B" value="0.424" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.56" />
+              <Property name="G" value="0.333" />
+              <Property name="B" value="0.424" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.56" />
+              <Property name="G" value="0.333" />
+              <Property name="B" value="0.424" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+	 
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_VANILLA" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_ASTRO" />
+            <Property name="TextureOptionName" value="CHESTARMOUR_2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="LEGS_VANILLA" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="HEAD_VTOP" />
+            <Property name="TextureOptionName" value="6" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="TORSO_GEK" />
+            <Property name="TextureOptionName" value="3" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_2" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.8" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_3" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BOOTS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUI_HCLOTH_3" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_BUI2" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BHEAD_1" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BACKPACK_VANILL" />
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.236" />
+              <Property name="G" value="0.566" />
+              <Property name="B" value="0.87" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.236" />
+              <Property name="G" value="0.566" />
+              <Property name="B" value="0.87" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.236" />
+              <Property name="G" value="0.566" />
+              <Property name="B" value="0.87" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.236" />
+              <Property name="G" value="0.566" />
+              <Property name="B" value="0.87" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="LEGS_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BOOTS_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_BUI2" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="EYES_BUILDER" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="CLOTH_HEAD_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BOOTS_RUST_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_RUST_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.3" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_4" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BOOTS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_BUI1" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BHEAD_9" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUI_HCLOTH_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BACKPACK_RETRO" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.87" />
+              <Property name="G" value="0.404" />
+              <Property name="B" value="0.404" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.95" />
+              <Property name="G" value="0.817" />
+              <Property name="B" value="0.395" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.87" />
+              <Property name="G" value="0.404" />
+              <Property name="B" value="0.404" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0" />
+              <Property name="G" value="0" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.667" />
+              <Property name="G" value="0.667" />
+              <Property name="B" value="0.667" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+	 
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="LEGS_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BOOTS_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_BUI1" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="EYES_BUILDER" />
+            <Property name="TextureOptionName" value="5" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="LEGS_RUST_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="CLOTH_HEAD_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BOOTS_RUST_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_RUST_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_RUST_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.3" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_5" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUI_HCLOTH_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BHEAD_17" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BOOTS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BACKPACK_EXPD1" />
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="0.52" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="HEAD_BUI" />
+            <Property name="TextureOptionName" value="HELMET_3" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="LEGS_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_3" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BOOTS_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_BUI" />
+            <Property name="TextureOptionName" value="4" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="EYES_BUILDER" />
+            <Property name="TextureOptionName" value="3" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="CLOTH_HEAD_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_RUST_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.3" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_6" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BOOTS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUI_HCLOTH_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_VYK" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BACKPACK_RETRO" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BHEAD_13" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_GEK" />
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.367" />
+              <Property name="G" value="0.28" />
+              <Property name="B" value="0.44" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="0.52" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="0.52" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.367" />
+              <Property name="G" value="0.28" />
+              <Property name="B" value="0.44" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.87" />
+              <Property name="G" value="0.404" />
+              <Property name="B" value="0.404" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.233" />
+              <Property name="G" value="0.291" />
+              <Property name="B" value="0.403" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.367" />
+              <Property name="G" value="0.28" />
+              <Property name="B" value="0.44" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.367" />
+              <Property name="G" value="0.28" />
+              <Property name="B" value="0.44" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.367" />
+              <Property name="G" value="0.28" />
+              <Property name="B" value="0.44" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+	 
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_3" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="LEGS_GEK" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BOOTS_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_VYK" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="EYES_BUILDER" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="CLOTH_HEAD_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BOOTS_RUST_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_RUST_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.3" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+
+
+
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_7" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUI_HCLOTH_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BHEAD_10" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_BUI1" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BOOTS_FOURTH" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BACKPACK_EXPD1" />
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="0.52" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.503" />
+              <Property name="G" value="0.225" />
+              <Property name="B" value="0.225" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.753" />
+              <Property name="G" value="0.616" />
+              <Property name="B" value="0.441" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="LEGS_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_3" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_BUI1" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BOOTS_FOURTH" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="EYES_BUILDER" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="CLOTH_HEAD_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_RUST_BUI" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.3" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+   
+
+    <Property value="GcCustomisationPreset.xml">
+      <Property name="Name" value="BUI_8" />
+      <Property name="Data" value="GcCharacterCustomisationData.xml">
+        <Property name="DescriptorGroups">
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUILDERS_BASE" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="GLOVES_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="LEGS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BOOTS_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="TORSO_BUILDERS" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="ARMOUR_BUI3" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BUI_HCLOTH_3" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BHEAD_5" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="CAPE_NULL" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="BACKPACK_RETRO" />
+          </Property>
+        </Property>
+        <Property name="Colours">
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Head" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.87" />
+              <Property name="G" value="0.404" />
+              <Property name="B" value="0.404" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="0.52" />
+              <Property name="B" value="0" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Torso" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Chest_Armour" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Backpack" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Hands" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Legs" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Primary" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.243" />
+              <Property name="G" value="0.48" />
+              <Property name="B" value="0.342" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative1" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+          <Property value="GcCharacterCustomisationColourData.xml">
+            <Property name="Palette" value="TkPaletteTexture.xml">
+              <Property name="Palette" value="Custom_Feet" />
+              <Property name="ColourAlt" value="Alternative2" />
+            </Property>
+            <Property name="Colour" value="Colour.xml">
+              <Property name="R" value="0.54" />
+              <Property name="G" value="0.368" />
+              <Property name="B" value="0.279" />
+              <Property name="A" value="1" />
+            </Property>
+          </Property>
+        </Property>
+        <Property name="TextureOptions">
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="BACKPACK" />
+            <Property name="TextureOptionName" value="BACKPACK_1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="ARMOUR_BUI2" />
+            <Property name="TextureOptionName" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="EYES_BUILDER" />
+            <Property name="TextureOptionName" value="5" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="HEAD_BUI_ALT" />
+            <Property name="TextureOptionName" value="HELMET_4" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="CLOTH_HEAD_BUI" />
+            <Property name="TextureOptionName" value="2" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="TORSO_BUILDERS" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+          <Property value="GcCharacterCustomisationTextureOptionData.xml">
+            <Property name="TextureOptionGroupName" value="GLOVES_RUST_BUI" />
+            <Property name="TextureOptionName" value="1" />
+          </Property>
+        </Property>
+        <Property name="BoneScales">
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="GEKBODY" />
+            <Property name="Scale" value="0" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="HEADPOSE" />
+            <Property name="Scale" value="0.3" />
+          </Property>
+          <Property value="GcCharacterCustomisationBoneScaleData.xml">
+            <Property name="BoneName" value="BODYSHAPE" />
+            <Property name="Scale" value="0" />
+          </Property>
+        </Property>
+        <Property name="Scale" value="1" />
+      </Property>
+    </Property>
+
+
 
 
 
