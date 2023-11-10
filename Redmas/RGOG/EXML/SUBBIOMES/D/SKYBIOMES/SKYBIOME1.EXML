@@ -40,7 +40,7 @@
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
         <Property name="MinScale" value="1" />
-        <Property name="MaxScale" value="22" />
+        <Property name="MaxScale" value="2" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
@@ -58,7 +58,7 @@
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.8" />
+          <Property name="Coverage" value="0.3" />
           <Property name="FlatDensity" value="0.001" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="1" />
