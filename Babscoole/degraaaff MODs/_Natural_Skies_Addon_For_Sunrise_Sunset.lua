@@ -4,7 +4,7 @@ DataTable =
         ["PALETTE"] = "Dusk",
         ["COLOURS"] =
         {
-            {"0.652","0.583","0.558","1","0.575","0.63","0.748","1","1","0.656","0.53","1","0.85","0.617","0.53","1","0.995","0.191","0.038","1","0.35","0.322","0.191","1","0.987","0.767","0.681","1","2","1","1","0.922","0.666","0.522","1","0.99","0.767","0.606","1","0.13","0.284","0.376","1"},
+            {"0.652","0.583","0.49","1","0.395","0.473","0.561","1","1","0.7","0.42","1","0.85","0.49","0.36","1","0.995","0.191","0.038","1","0.35","0.322","0.24","1","0.987","0.767","0.681","1","2","1","1","0.922","0.73","0.48","1","1","0.8","0.53","1","0.13","0.284","0.39","1"},
         }
     },
 }
@@ -14,13 +14,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Natural_Skies_Addon_For_Sunrise_Sunset.pak",
 ["MOD_AUTHOR"]    = "degraaaff",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.89",
+["NMS_VERSION"]   = "4.45",
 ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
-
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DUSKSKYCOLOURS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcPlanetWeatherColourData.xml"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
             }
         }
     }
