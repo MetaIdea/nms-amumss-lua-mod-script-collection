@@ -12,6 +12,7 @@ SETTINGS = {
 			["MULTIPLIERS"] = {
 				["MinScale"] = 1.25,
 				["MaxScale"] = 1.25,
+				["LodDistances"] = 1.5,
 			}
 		},
 	}

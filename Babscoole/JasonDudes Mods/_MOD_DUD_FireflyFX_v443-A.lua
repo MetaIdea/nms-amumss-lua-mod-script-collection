@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.005"
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "-0.04"}, -- Original "-0.05"
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.04"}, -- Original "0.05"
@@ -59,14 +59,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.02"}, -- Original "0.04"
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.01"
@@ -88,14 +88,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.02"}, -- Original "0.03"
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.01"
@@ -104,14 +104,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "-0.02"}, -- Original "-0.01"
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.03"}, -- Original "0.05"
@@ -132,14 +132,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.02"}, -- Original "0.04"
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.01"
@@ -161,21 +161,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.005"}, -- Original "0.01"
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.02"}, -- Original "0.03"
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.01"
@@ -183,14 +183,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "-0.02"}, -- Original "-0.01"
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.03"}, -- Original "0.05"
@@ -211,7 +211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"TwinkleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.005"
@@ -219,7 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "-0.03"}, -- Original "-0.05"
@@ -228,7 +228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.03"}, -- Original "0.05"

@@ -35,40 +35,6 @@
   <Property name="Children">
 
     <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="MODELS\RGO\SMALLOAK1" />
-      <Property name="NameHash" value="439665974" />
-      <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="-0.0328" />
-        <Property name="TransY" value="3.253379" />
-        <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1" />
-        <Property name="ScaleY" value="1" />
-        <Property name="ScaleZ" value="1" />
-      </Property>
-      <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
-          <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
-          <Property name="Value" value="Capsule" />
-        </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
-          <Property name="Name" value="RADIUS" />
-          <Property name="AltID" value="" />
-          <Property name="Value" value="0.468170" />
-        </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
-          <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
-          <Property name="Value" value="7.336339" />
-        </Property>
-      </Property>
-      <Property name="Children" />
-    </Property>
-    <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="_TRUNK_A" />
       <Property name="NameHash" value="702941971" />
       <Property name="Type" value="MESH" />
@@ -184,9 +150,13 @@
           <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\MEDIUMOAK1\BARKMAT.MATERIAL.MBIN" />
         </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="ATTACHMENT" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\MEDIUMOAK1\ENTITIES\_TRUNK_A.ENTITY.MBIN" />
+        </Property>
       </Property>
       <Property name="Children">
-
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="_BRANCH_C" />
           <Property name="NameHash" value="4101173544" />
@@ -1033,5 +1003,7 @@
         </Property>
       </Property>
     </Property>
+
+ 
   </Property>
 </Data>

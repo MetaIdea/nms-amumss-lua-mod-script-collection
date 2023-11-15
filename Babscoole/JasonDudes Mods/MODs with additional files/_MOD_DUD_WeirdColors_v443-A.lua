@@ -16,28 +16,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat10","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Beammat10", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDBEAMPARTICLES_MAT.MATERIAL.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat9","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Beammat9", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDBEAMPARTICLES_MAT.MATERIAL.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat12","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Beammat12", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDSCROLLING_MAT.MATERIAL.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat13","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Beammat13", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDLIGHTBEAM_MAT3.MATERIAL.MBIN"},
@@ -50,28 +50,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat10","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Beammat10", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDBEAMPARTICLES_MAT1.MATERIAL.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat9","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Beammat9", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDBEAMPARTICLES_MAT1.MATERIAL.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat12","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Beammat12", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDSCROLLING_MAT2.MATERIAL.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat13","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Beammat13", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDLIGHTBEAM_MAT3.MATERIAL.MBIN"},
@@ -84,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","HugeBeamLOD0","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "HugeBeamLOD0", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HUGEBEAM\DUDHUGEBEAM_MAT.MATERIAL.MBIN"},
@@ -99,9 +99,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","_podEgg_GrowthLOD0","Name","MATERIAL"},
-                                {"Name","_podEgg_GrowthLOD1","Name","MATERIAL"},
-                                {"Name","_podEgg_GrowthLOD2","Name","MATERIAL"},
+                                {"Name", "_podEgg_GrowthLOD0", "Name", "MATERIAL"},
+                                {"Name", "_podEgg_GrowthLOD1", "Name", "MATERIAL"},
+                                {"Name", "_podEgg_GrowthLOD2", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -111,9 +111,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB2_podEgg_GrowthLOD0","Name","MATERIAL"},
-                                {"Name","SUB2_podEgg_GrowthLOD1","Name","MATERIAL"},
-                                {"Name","SUB2_podEgg_GrowthLOD2","Name","MATERIAL"},
+                                {"Name", "SUB2_podEgg_GrowthLOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB2_podEgg_GrowthLOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB2_podEgg_GrowthLOD2", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -123,12 +123,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB3_podEgg_GrowthLOD0","Name","MATERIAL"},
-                                {"Name","SUB3_podEgg_GrowthLOD1","Name","MATERIAL"},
-                                {"Name","SUB3_podEgg_GrowthLOD2","Name","MATERIAL"},
-                                {"Name","_podEgg_NogrowthLOD0","Name","MATERIAL"},
-                                {"Name","_podEgg_NogrowthLOD1","Name","MATERIAL"},
-                                {"Name","_podEgg_NogrowthLOD2","Name","MATERIAL"},
+                                {"Name", "SUB3_podEgg_GrowthLOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB3_podEgg_GrowthLOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB3_podEgg_GrowthLOD2", "Name", "MATERIAL"},
+                                {"Name", "_podEgg_NogrowthLOD0",   "Name", "MATERIAL"},
+                                {"Name", "_podEgg_NogrowthLOD1",   "Name", "MATERIAL"},
+                                {"Name", "_podEgg_NogrowthLOD2",   "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -144,10 +144,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","Body_LOD0","Name","MATERIAL"},
-                                {"Name","Body_LOD1","Name","MATERIAL"},
-                                {"Name","Body_LOD2","Name","MATERIAL"},
-                                {"Name","Body_LOD3","Name","MATERIAL"},
+                                {"Name", "Body_LOD0", "Name", "MATERIAL"},
+                                {"Name", "Body_LOD1", "Name", "MATERIAL"},
+                                {"Name", "Body_LOD2", "Name", "MATERIAL"},
+                                {"Name", "Body_LOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -157,14 +157,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB2_detail_hatchLOD0","Name","MATERIAL"},
-                                {"Name","_detail_PipesLOD0","Name","MATERIAL"},
-                                {"Name","SUB2_detail_hatchLOD1","Name","MATERIAL"},
-                                {"Name","_detail_PipesLOD1","Name","MATERIAL"},
-                                {"Name","SUB2_detail_hatchLOD2","Name","MATERIAL"},
-                                {"Name","_detail_PipesLOD2","Name","MATERIAL"},
-                                {"Name","SUB2_detail_hatchLOD3","Name","MATERIAL"},
-                                {"Name","_detail_PipesLOD3","Name","MATERIAL"},
+                                {"Name", "SUB2_detail_hatchLOD0", "Name", "MATERIAL"},
+                                {"Name", "_detail_PipesLOD0",     "Name", "MATERIAL"},
+                                {"Name", "SUB2_detail_hatchLOD1", "Name", "MATERIAL"},
+                                {"Name", "_detail_PipesLOD1",     "Name", "MATERIAL"},
+                                {"Name", "SUB2_detail_hatchLOD2", "Name", "MATERIAL"},
+                                {"Name", "_detail_PipesLOD2",     "Name", "MATERIAL"},
+                                {"Name", "SUB2_detail_hatchLOD3", "Name", "MATERIAL"},
+                                {"Name", "_detail_PipesLOD3",     "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -174,10 +174,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB1_detail_hatchLOD0","Name","MATERIAL"},
-                                {"Name","SUB1_detail_hatchLOD1","Name","MATERIAL"},
-                                {"Name","SUB1_detail_hatchLOD2","Name","MATERIAL"},
-                                {"Name","SUB1_detail_hatchLOD3","Name","MATERIAL"},
+                                {"Name", "SUB1_detail_hatchLOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB1_detail_hatchLOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB1_detail_hatchLOD2", "Name", "MATERIAL"},
+                                {"Name", "SUB1_detail_hatchLOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -193,9 +193,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","Pod_LOD0","Name","MATERIAL"},
-                                {"Name","Pod_LOD1","Name","MATERIAL"},
-                                {"Name","Pod_LOD2","Name","MATERIAL"},
+                                {"Name", "Pod_LOD0", "Name", "MATERIAL"},
+                                {"Name", "Pod_LOD1", "Name", "MATERIAL"},
+                                {"Name", "Pod_LOD2", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -205,12 +205,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB1Pod_LOD0","Name","MATERIAL"},
-                                {"Name","Mesh_LOD0","Name","MATERIAL"},
-                                {"Name","SUB1Pod_LOD1","Name","MATERIAL"},
-                                {"Name","_Pipes_PipesLOD1","Name","MATERIAL"},
-                                {"Name","SUB1Pod_LOD2","Name","MATERIAL"},
-                                {"Name","Mesh_LOD2","Name","MATERIAL"},
+                                {"Name", "SUB1Pod_LOD0",     "Name", "MATERIAL"},
+                                {"Name", "Mesh_LOD0",        "Name", "MATERIAL"},
+                                {"Name", "SUB1Pod_LOD1",     "Name", "MATERIAL"},
+                                {"Name", "_Pipes_PipesLOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB1Pod_LOD2",     "Name", "MATERIAL"},
+                                {"Name", "Mesh_LOD2",        "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -220,12 +220,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB2Pod_LOD0","Name","MATERIAL"},
-                                {"Name","SUB1Mesh_LOD0","Name","MATERIAL"},
-                                {"Name","SUB2Pod_LOD1","Name","MATERIAL"},
-                                {"Name","SUB1Mesh_LOD1","Name","MATERIAL"},
-                                {"Name","SUB2Pod_LOD2","Name","MATERIAL"},
-                                {"Name","SUB1Mesh_LOD2","Name","MATERIAL"},
+                                {"Name", "SUB2Pod_LOD0",  "Name", "MATERIAL"},
+                                {"Name", "SUB1Mesh_LOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB2Pod_LOD1",  "Name", "MATERIAL"},
+                                {"Name", "SUB1Mesh_LOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB2Pod_LOD2",  "Name", "MATERIAL"},
+                                {"Name", "SUB1Mesh_LOD2", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -241,10 +241,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","ContourTower_LOD0","Name","MATERIAL"},
-                                {"Name","ContourTower_LOD1","Name","MATERIAL"},
-                                {"Name","ContourTower_LOD2","Name","MATERIAL"},
-                                {"Name","ContourTower_LOD3","Name","MATERIAL"},
+                                {"Name", "ContourTower_LOD0", "Name", "MATERIAL"},
+                                {"Name", "ContourTower_LOD1", "Name", "MATERIAL"},
+                                {"Name", "ContourTower_LOD2", "Name", "MATERIAL"},
+                                {"Name", "ContourTower_LOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -254,10 +254,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB1ContourTower_LOD0","Name","MATERIAL"},
-                                {"Name","SUB1ContourTower_LOD1","Name","MATERIAL"},
-                                {"Name","SUB1ContourTower_LOD2","Name","MATERIAL"},
-                                {"Name","SUB1ContourTower_LOD3","Name","MATERIAL"},
+                                {"Name", "SUB1ContourTower_LOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB1ContourTower_LOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB1ContourTower_LOD2", "Name", "MATERIAL"},
+                                {"Name", "SUB1ContourTower_LOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -267,10 +267,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB2ContourTower_LOD0","Name","MATERIAL"},
-                                {"Name","SUB2ContourTower_LOD1","Name","MATERIAL"},
-                                {"Name","SUB2ContourTower_LOD2","Name","MATERIAL"},
-                                {"Name","SUB2ContourTower_LOD3","Name","MATERIAL"},
+                                {"Name", "SUB2ContourTower_LOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB2ContourTower_LOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB2ContourTower_LOD2", "Name", "MATERIAL"},
+                                {"Name", "SUB2ContourTower_LOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -280,10 +280,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB4ContourTower_LOD0","Name","MATERIAL"},
-                                {"Name","SUB4ContourTower_LOD1","Name","MATERIAL"},
-                                {"Name","SUB4ContourTower_LOD2","Name","MATERIAL"},
-                                {"Name","SUB4ContourTower_LOD3","Name","MATERIAL"},
+                                {"Name", "SUB4ContourTower_LOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB4ContourTower_LOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB4ContourTower_LOD2", "Name", "MATERIAL"},
+                                {"Name", "SUB4ContourTower_LOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -293,10 +293,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB5ContourTower_LOD0","Name","MATERIAL"},
-                                {"Name","SUB5ContourTower_LOD1","Name","MATERIAL"},
-                                {"Name","SUB5ContourTower_LOD2","Name","MATERIAL"},
-                                {"Name","SUB5ContourTower_LOD3","Name","MATERIAL"},
+                                {"Name", "SUB5ContourTower_LOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB5ContourTower_LOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB5ContourTower_LOD2", "Name", "MATERIAL"},
+                                {"Name", "SUB5ContourTower_LOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -306,10 +306,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB6ContourTower_LOD0","Name","MATERIAL"},
-                                {"Name","SUB6ContourTower_LOD1","Name","MATERIAL"},
-                                {"Name","SUB6ContourTower_LOD2","Name","MATERIAL"},
-                                {"Name","SUB6ContourTower_LOD3","Name","MATERIAL"},
+                                {"Name", "SUB6ContourTower_LOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB6ContourTower_LOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB6ContourTower_LOD2", "Name", "MATERIAL"},
+                                {"Name", "SUB6ContourTower_LOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -319,10 +319,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB7ContourTower_LOD0","Name","MATERIAL"},
-                                {"Name","SUB7ContourTower_LOD1","Name","MATERIAL"},
-                                {"Name","SUB7ContourTower_LOD2","Name","MATERIAL"},
-                                {"Name","SUB7ContourTower_LOD3","Name","MATERIAL"},
+                                {"Name", "SUB7ContourTower_LOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB7ContourTower_LOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB7ContourTower_LOD2", "Name", "MATERIAL"},
+                                {"Name", "SUB7ContourTower_LOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -338,10 +338,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SUB2Shape1FloatLOD0","Name","MATERIAL"},
-                                {"Name","SUB2Shape1FloatLOD1","Name","MATERIAL"},
-                                {"Name","SUB2Shape1FloatLOD2","Name","MATERIAL"},
-                                {"Name","SUB2Shape1FloatLOD3","Name","MATERIAL"},
+                                {"Name", "SUB2Shape1FloatLOD0", "Name", "MATERIAL"},
+                                {"Name", "SUB2Shape1FloatLOD1", "Name", "MATERIAL"},
+                                {"Name", "SUB2Shape1FloatLOD2", "Name", "MATERIAL"},
+                                {"Name", "SUB2Shape1FloatLOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -357,9 +357,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","BaseLOD0","Name","MATERIAL"},
-                                {"Name","BaseLOD1","Name","MATERIAL"},
-                                {"Name","BaseLOD2","Name","MATERIAL"},
+                                {"Name", "BaseLOD0", "Name", "MATERIAL"},
+                                {"Name", "BaseLOD1", "Name", "MATERIAL"},
+                                {"Name", "BaseLOD2", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -369,9 +369,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SmallVinesLOD0","Name","MATERIAL"},
-                                {"Name","SmallVinesLOD1","Name","MATERIAL"},
-                                {"Name","SmallVinesLOD2","Name","MATERIAL"},
+                                {"Name", "SmallVinesLOD0", "Name", "MATERIAL"},
+                                {"Name", "SmallVinesLOD1", "Name", "MATERIAL"},
+                                {"Name", "SmallVinesLOD2", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -387,18 +387,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","Vines_mat","Name","MATERIAL"},
-                                {"Name","Vines_mat2","Name","MATERIAL"},
-                                {"Name","Vines_mat3","Name","MATERIAL"},
-                                {"Name","Vines_mat4","Name","MATERIAL"},
-                                {"Name","Vines_mat5","Name","MATERIAL"},
-                                {"Name","Vines_mat6","Name","MATERIAL"},
-                                {"Name","Vines_mat7","Name","MATERIAL"},
-                                {"Name","Vines_mat8","Name","MATERIAL"},
-                                {"Name","Vines_mat9","Name","MATERIAL"},
-                                {"Name","Vines_mat10","Name","MATERIAL"},
-                                {"Name","Vines_mat11","Name","MATERIAL"},
-                                {"Name","Vines_mat1","Name","MATERIAL"},
+                                {"Name", "Vines_mat",   "Name", "MATERIAL"},
+                                {"Name", "Vines_mat2",  "Name", "MATERIAL"},
+                                {"Name", "Vines_mat3",  "Name", "MATERIAL"},
+                                {"Name", "Vines_mat4",  "Name", "MATERIAL"},
+                                {"Name", "Vines_mat5",  "Name", "MATERIAL"},
+                                {"Name", "Vines_mat6",  "Name", "MATERIAL"},
+                                {"Name", "Vines_mat7",  "Name", "MATERIAL"},
+                                {"Name", "Vines_mat8",  "Name", "MATERIAL"},
+                                {"Name", "Vines_mat9",  "Name", "MATERIAL"},
+                                {"Name", "Vines_mat10", "Name", "MATERIAL"},
+                                {"Name", "Vines_mat11", "Name", "MATERIAL"},
+                                {"Name", "Vines_mat1",  "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -406,7 +406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SmallVines13","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SmallVines13", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT\DUDSMALLVINES_MAT.MATERIAL.MBIN"}
@@ -421,9 +421,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","MedGeometricLOD0","Name","MATERIAL"},
-                                {"Name","MedGeometricLOD1","Name","MATERIAL"},
-                                {"Name","MedGeometricLOD2","Name","MATERIAL"},
+                                {"Name", "MedGeometricLOD0", "Name", "MATERIAL"},
+                                {"Name", "MedGeometricLOD1", "Name", "MATERIAL"},
+                                {"Name", "MedGeometricLOD2", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -439,10 +439,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","FloatJointLOD0","Name","MATERIAL"},
-                                {"Name","FloatJointLOD1","Name","MATERIAL"},
-                                {"Name","FloatJointLOD2","Name","MATERIAL"},
-                                {"Name","FloatJointLOD3","Name","MATERIAL"},
+                                {"Name", "FloatJointLOD0", "Name", "MATERIAL"},
+                                {"Name", "FloatJointLOD1", "Name", "MATERIAL"},
+                                {"Name", "FloatJointLOD2", "Name", "MATERIAL"},
+                                {"Name", "FloatJointLOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -450,21 +450,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FloatJoint_imposter","Name","AABBMINX"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "FloatJoint_imposter", "Name", "AABBMINX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-10.025988"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FloatJoint_imposter","Name","AABBMAXX"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "FloatJoint_imposter", "Name", "AABBMAXX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "10.025989"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FloatJoint_imposter","Name","AABBMAXY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "FloatJoint_imposter", "Name", "AABBMAXY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "51.429756"}
@@ -479,10 +479,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","MStructureLOD0","Name","MATERIAL"},
-                                {"Name","MStructureLOD1","Name","MATERIAL"},
-                                {"Name","MStructureLOD2","Name","MATERIAL"},
-                                {"Name","MStructureLOD3","Name","MATERIAL"},
+                                {"Name", "MStructureLOD0", "Name", "MATERIAL"},
+                                {"Name", "MStructureLOD1", "Name", "MATERIAL"},
+                                {"Name", "MStructureLOD2", "Name", "MATERIAL"},
+                                {"Name", "MStructureLOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -498,10 +498,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SingleJointLOD0","Name","MATERIAL"},
-                                {"Name","SingleJointLOD1","Name","MATERIAL"},
-                                {"Name","SingleJointLOD2","Name","MATERIAL"},
-                                {"Name","SingleJointLOD3","Name","MATERIAL"},
+                                {"Name", "SingleJointLOD0", "Name", "MATERIAL"},
+                                {"Name", "SingleJointLOD1", "Name", "MATERIAL"},
+                                {"Name", "SingleJointLOD2", "Name", "MATERIAL"},
+                                {"Name", "SingleJointLOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -517,10 +517,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","SmallJointLOD0","Name","MATERIAL"},
-                                {"Name","SmallJointLOD1","Name","MATERIAL"},
-                                {"Name","SmallJointLOD2","Name","MATERIAL"},
-                                {"Name","SmallJointLOD3","Name","MATERIAL"},
+                                {"Name", "SmallJointLOD0", "Name", "MATERIAL"},
+                                {"Name", "SmallJointLOD1", "Name", "MATERIAL"},
+                                {"Name", "SmallJointLOD2", "Name", "MATERIAL"},
+                                {"Name", "SmallJointLOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -536,10 +536,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","LargeLOD0","Name","MATERIAL"},
-                                {"Name","LargeLOD1","Name","MATERIAL"},
-                                {"Name","LargeLOD2","Name","MATERIAL"},
-                                {"Name","LargeLOD3","Name","MATERIAL"},
+                                {"Name", "LargeLOD0", "Name", "MATERIAL"},
+                                {"Name", "LargeLOD1", "Name", "MATERIAL"},
+                                {"Name", "LargeLOD2", "Name", "MATERIAL"},
+                                {"Name", "LargeLOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -553,7 +553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","ShardAlt","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "ShardAlt", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARDALT\DUDSHARD_MAT.MATERIAL.MBIN"}
@@ -566,7 +566,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SingleShard","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SingleShard", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SINGLESHARD\DUDSHARD_MAT.MATERIAL.MBIN"}
@@ -581,10 +581,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","TallShard2LOD0","Name","MATERIAL"},
-                                {"Name","TallShard2LOD1","Name","MATERIAL"},
-                                {"Name","TallShard2LOD2","Name","MATERIAL"},
-                                {"Name","TallShard2LOD3","Name","MATERIAL"},
+                                {"Name", "TallShard2LOD0", "Name", "MATERIAL"},
+                                {"Name", "TallShard2LOD1", "Name", "MATERIAL"},
+                                {"Name", "TallShard2LOD2", "Name", "MATERIAL"},
+                                {"Name", "TallShard2LOD3", "Name", "MATERIAL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -5864,6 +5864,1238 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="ShaderMillDataHash" value="0" />
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\BEAMSTONE\DUDBEAMGRADIENT.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Crystal" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/BEAMSTONE/DUDBEAMGRADIENT.DDS" />
+          <Property name="Normal" value="" />
+          <Property name="Mask" value="" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\BEAMSTONE\DUDBEAMPARTICLES.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Crystal" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/BEAMSTONE/DUDBEAMPARTICLES.DDS" />
+          <Property name="Normal" value="" />
+          <Property name="Mask" value="" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\BEAMSTONE\DUDSCROLLINGCLOUD.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Crystal" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/BEAMSTONE/DUDSCROLLINGCLOUD.DDS" />
+          <Property name="Normal" value="" />
+          <Property name="Mask" value="" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\CONTOUR\DUDCONTOURPOD.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Trader" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPOD.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPOD.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPOD.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\CONTOUR\DUDCONTOURPODCREEP.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Trader" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODCREEP.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODCREEP.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODCREEP.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\CONTOUR\DUDCONTOURPODSET2.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Trader" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODSET2.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODSET2.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODSET2.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\CONTOUR\DUDCONTOURPODSET3.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Trader" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODSET3.DDS" />
+          <Property name="Normal" value="" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODSET3.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\CONTOUR\DUDCONTOURPODTILE.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Trader" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODTILE.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODTILE.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/WEIRD/CONTOUR/DUDCONTOURPODTILE.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\FRACTALCUBE\DUDPULSEFLARE.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Crystal" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/FRACTALCUBE/DUDPULSEFLARE.DDS" />
+          <Property name="Normal" value="" />
+          <Property name="Mask" value="" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\HEXAGON\DUDSCROLLINGENERGY.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Plant" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/HEXAGON/DUDSCROLLINGENERGY.DDS" />
+          <Property name="Normal" value="" />
+          <Property name="Mask" value="" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\HEXAGON\DUDSMALLVINES.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Plant" />
+            <Property name="ColourAlt" value="Alternative1" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/HEXAGON/DUDSMALLVINES.DDS" />
+          <Property name="Normal" value="" />
+          <Property name="Mask" value="" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\MSTRUCTURES\DUDFLOATJOINT.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Warrior" />
+            <Property name="ColourAlt" value="Primary" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/MSTRUCTURES/DUDFLOATJOINT.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/WEIRD/MSTRUCTURES/DUDFLOATJOINT.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/WEIRD/MSTRUCTURES/DUDFLOATJOINT.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\MSTRUCTURES\DUDJOINT.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="WarriorAlt" />
+            <Property name="ColourAlt" value="Primary" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/MSTRUCTURES/DUDJOINT.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/WEIRD/MSTRUCTURES/DUDJOINT.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/WEIRD/MSTRUCTURES/DUDJOINT.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\WEIRD\SHARDS\DUDSHARDSCROLL.TEXTURE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="SHARD" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Scientific" />
+            <Property name="ColourAlt" value="Alternative2" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/WEIRD/SHARDS/SHARDSCROLL.SHARD.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/WEIRD/SHARDS/SHARDSCROLL.SHARD.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/WEIRD/SHARDS/SHARDSCROLL.SHARD.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
 </Data>
 ]],
         },

@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ANTELOPE","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ANTELOPE", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTANTELOPE", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TRICERATOPS","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRICERATOPS", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -69,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RODENT","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RODENT", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -77,7 +77,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","COW","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "COW", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","CAT","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CAT", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -93,7 +93,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BONECAT","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BONECAT", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -101,7 +101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STRIDER","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STRIDER", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TREX","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TREX", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -117,7 +117,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TWOLEGANTELOPE","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TWOLEGANTELOPE", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -125,7 +125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCOW", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -133,7 +133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCAT", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -141,7 +141,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","GRUNT","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRUNT", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -149,7 +149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -157,7 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER","Anim","TROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLOATSPIDER", "Anim", "TROT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
@@ -173,9 +173,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"FindResource","GcPetBehaviourData.xml",},
-                                {"FindBuilding","GcPetBehaviourData.xml",},
-                                {"Explore","GcPetBehaviourData.xml",},
+                                {"FindResource", "GcPetBehaviourData.xml"},
+                                {"FindBuilding", "GcPetBehaviourData.xml"},
+                                {"Explore",      "GcPetBehaviourData.xml"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -185,9 +185,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"FindHazards","GcPetBehaviourData.xml",},
-                                {"AttackHazard","GcPetBehaviourData.xml",},
-                                {"Attack","GcPetBehaviourData.xml",},
+                                {"FindHazards",  "GcPetBehaviourData.xml"},
+                                {"AttackHazard", "GcPetBehaviourData.xml"},
+                                {"Attack",       "GcPetBehaviourData.xml"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -195,7 +195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TeleportToPlayer","GcPetBehaviourData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"TeleportToPlayer", "GcPetBehaviourData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CooldownTime", "2"},

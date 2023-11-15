@@ -28,14 +28,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "-2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "-0.2"},
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.2"},
@@ -51,14 +51,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour1","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour1", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour2","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour2", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.8"},
@@ -78,14 +78,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "-2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "-0.2"},
@@ -93,7 +93,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.2"},
@@ -101,14 +101,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour1","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour1", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour2","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour2", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.8"},
@@ -128,14 +128,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "-2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "-0.2"},
@@ -143,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.2"},
@@ -151,14 +151,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour1","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour1", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour2","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour2", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.6"},
@@ -178,14 +178,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "-2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "-0.2"},
@@ -193,7 +193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.2"},
@@ -201,14 +201,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour1","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour1", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.7"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour2","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour2", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.7"},

@@ -8987,300 +8987,300 @@ function GetColours(R,G,B,A)
 end
 
 function CreateColoursProperty(PaletteColours)
-    local PropertiesString = ""
+    local PropertiesString = {}
 
     for j = 1, #PaletteColours do
         local R = PaletteColours[j]["R"]
         local G = PaletteColours[j]["G"]
         local B = PaletteColours[j]["B"]
         local A = PaletteColours[j]["A"]
-        PropertiesString = PropertiesString..GetColours(R, G, B, A)
+        table.insert(PropertiesString,GetColours(R, G, B, A))
     end
     local PropertyColoursString =
     [[      <Property name="Colours">
-    ]]..PropertiesString..[[
+    ]]..table.concat(PropertiesString)..[[
   </Property>]]
 
     -- print(PropertyColoursString)
     return PropertyColoursString
 end
 
-local BarrenBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local BarrenBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 for i = 1, #BarrenDataTable do
     local Palette = BarrenDataTable[i]["PALETTE"]
     local PaletteColours = BarrenDataTable[i]["COLOURS"]
     local PaletteNumColours = BarrenDataTable[i]["NUMCOLOURS"]
 
-    BarrenBaseColourPalettesTable[#BarrenBaseColourPalettesTable +1 ] =
+    BarrenBaseColourPalettesTable[#BarrenBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    BarrenBaseColourPalettesTable[#BarrenBaseColourPalettesTable +1 ] =
+    BarrenBaseColourPalettesTable[#BarrenBaseColourPalettesTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local DeadBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local DeadBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 for i = 1, #DeadDataTable do
     local Palette = DeadDataTable[i]["PALETTE"]
     local PaletteColours = DeadDataTable[i]["COLOURS"]
     local PaletteNumColours = DeadDataTable[i]["NUMCOLOURS"]
 
-    DeadBaseColourPalettesTable[#DeadBaseColourPalettesTable +1 ] =
+    DeadBaseColourPalettesTable[#DeadBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    DeadBaseColourPalettesTable[#DeadBaseColourPalettesTable +1 ] =
+    DeadBaseColourPalettesTable[#DeadBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local FrozenBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local FrozenBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 for i = 1, #FrozenDataTable do
     local Palette = FrozenDataTable[i]["PALETTE"]
     local PaletteColours = FrozenDataTable[i]["COLOURS"]
     local PaletteNumColours = FrozenDataTable[i]["NUMCOLOURS"]
 
-    FrozenBaseColourPalettesTable[#FrozenBaseColourPalettesTable +1 ] =
+    FrozenBaseColourPalettesTable[#FrozenBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    FrozenBaseColourPalettesTable[#FrozenBaseColourPalettesTable +1 ] =
+    FrozenBaseColourPalettesTable[#FrozenBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local LavaBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+local LavaBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
 for i = 1, #LavaDataTable do
     local Palette = LavaDataTable[i]["PALETTE"]
     local PaletteColours = LavaDataTable[i]["COLOURS"]
     local PaletteNumColours = LavaDataTable[i]["NUMCOLOURS"]
 
-    LavaBaseColourPalettesTable[#LavaBaseColourPalettesTable +1 ] =
+    LavaBaseColourPalettesTable[#LavaBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    LavaBaseColourPalettesTable[#LavaBaseColourPalettesTable +1 ] =
+    LavaBaseColourPalettesTable[#LavaBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local LushBubblesBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+local LushBubblesBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
 for i = 1, #LushBubblesDataTable do
     local Palette = LushBubblesDataTable[i]["PALETTE"]
     local PaletteColours = LushBubblesDataTable[i]["COLOURS"]
     local PaletteNumColours = LushBubblesDataTable[i]["NUMCOLOURS"]
 
-    LushBubblesBaseColourPalettesTable[#LushBubblesBaseColourPalettesTable +1 ] =
+    LushBubblesBaseColourPalettesTable[#LushBubblesBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    LushBubblesBaseColourPalettesTable[#LushBubblesBaseColourPalettesTable +1 ] =
+    LushBubblesBaseColourPalettesTable[#LushBubblesBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local LushBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
+local LushBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
 for i = 1, #LushDataTable do
     local Palette = LushDataTable[i]["PALETTE"]
     local PaletteColours = LushDataTable[i]["COLOURS"]
     local PaletteNumColours = LushDataTable[i]["NUMCOLOURS"]
 
-    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1 ] =
+    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1 ] =
+    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local LushroomBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
+local LushroomBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
 for i = 1, #LushroomDataTable do
     local Palette = LushroomDataTable[i]["PALETTE"]
     local PaletteColours = LushroomDataTable[i]["COLOURS"]
     local PaletteNumColours = LushroomDataTable[i]["NUMCOLOURS"]
 
-    LushroomBaseColourPalettesTable[#LushroomBaseColourPalettesTable +1 ] =
+    LushroomBaseColourPalettesTable[#LushroomBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    LushroomBaseColourPalettesTable[#LushroomBaseColourPalettesTable +1 ] =
+    LushroomBaseColourPalettesTable[#LushroomBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local RadioBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][8]["EXML_CHANGE_TABLE"]
+local RadioBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][8]["EXML_CHANGE_TABLE"]
 for i = 1, #RadioDataTable do
     local Palette = RadioDataTable[i]["PALETTE"]
     local PaletteColours = RadioDataTable[i]["COLOURS"]
     local PaletteNumColours = RadioDataTable[i]["NUMCOLOURS"]
 
-    RadioBaseColourPalettesTable[#RadioBaseColourPalettesTable +1 ] =
+    RadioBaseColourPalettesTable[#RadioBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    RadioBaseColourPalettesTable[#RadioBaseColourPalettesTable +1 ] =
+    RadioBaseColourPalettesTable[#RadioBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local ScorchBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][9]["EXML_CHANGE_TABLE"]
+local ScorchBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][9]["EXML_CHANGE_TABLE"]
 for i = 1, #ScorchDataTable do
     local Palette = ScorchDataTable[i]["PALETTE"]
     local PaletteColours = ScorchDataTable[i]["COLOURS"]
     local PaletteNumColours = ScorchDataTable[i]["NUMCOLOURS"]
 
-    ScorchBaseColourPalettesTable[#ScorchBaseColourPalettesTable +1 ] =
+    ScorchBaseColourPalettesTable[#ScorchBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    ScorchBaseColourPalettesTable[#ScorchBaseColourPalettesTable +1 ] =
+    ScorchBaseColourPalettesTable[#ScorchBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local SwampBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][10]["EXML_CHANGE_TABLE"]
+local SwampBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][10]["EXML_CHANGE_TABLE"]
 for i = 1, #SwampDataTable do
     local Palette = SwampDataTable[i]["PALETTE"]
     local PaletteColours = SwampDataTable[i]["COLOURS"]
     local PaletteNumColours = SwampDataTable[i]["NUMCOLOURS"]
 
-    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1 ] =
+    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1 ] =
+    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local ToxicBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][11]["EXML_CHANGE_TABLE"]
+local ToxicBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][11]["EXML_CHANGE_TABLE"]
 for i = 1, #ToxicDataTable do
     local Palette = ToxicDataTable[i]["PALETTE"]
     local PaletteColours = ToxicDataTable[i]["COLOURS"]
     local PaletteNumColours = ToxicDataTable[i]["NUMCOLOURS"]
 
-    ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1 ] =
+    ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1 ] =
+    ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local ToxicEggsBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][12]["EXML_CHANGE_TABLE"]
+local ToxicEggsBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][12]["EXML_CHANGE_TABLE"]
 for i = 1, #ToxicEggsDataTable do
     local Palette = ToxicEggsDataTable[i]["PALETTE"]
     local PaletteColours = ToxicEggsDataTable[i]["COLOURS"]
     local PaletteNumColours = ToxicEggsDataTable[i]["NUMCOLOURS"]
 
-    ToxicEggsBaseColourPalettesTable[#ToxicEggsBaseColourPalettesTable +1 ] =
+    ToxicEggsBaseColourPalettesTable[#ToxicEggsBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    ToxicEggsBaseColourPalettesTable[#ToxicEggsBaseColourPalettesTable +1 ] =
+    ToxicEggsBaseColourPalettesTable[#ToxicEggsBaseColourPalettesTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local ToxicSporesBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][13]["EXML_CHANGE_TABLE"]
+local ToxicSporesBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][13]["EXML_CHANGE_TABLE"]
 for i = 1, #ToxicSporesDataTable do
     local Palette = ToxicSporesDataTable[i]["PALETTE"]
     local PaletteColours = ToxicSporesDataTable[i]["COLOURS"]
     local PaletteNumColours = ToxicSporesDataTable[i]["NUMCOLOURS"]
 
-    ToxicSporesBaseColourPalettesTable[#ToxicSporesBaseColourPalettesTable +1 ] =
+    ToxicSporesBaseColourPalettesTable[#ToxicSporesBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    ToxicSporesBaseColourPalettesTable[#ToxicSporesBaseColourPalettesTable +1 ] =
+    ToxicSporesBaseColourPalettesTable[#ToxicSporesBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local BaseBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][14]["EXML_CHANGE_TABLE"]
+local BaseBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][14]["EXML_CHANGE_TABLE"]
 for i = 1, #BaseDataTable do
     local Palette = BaseDataTable[i]["PALETTE"]
     local PaletteColours = BaseDataTable[i]["COLOURS"]
     local PaletteNumColours = BaseDataTable[i]["NUMCOLOURS"]
 
-    BaseBaseColourPalettesTable[#BaseBaseColourPalettesTable +1 ] =
+    BaseBaseColourPalettesTable[#BaseBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    BaseBaseColourPalettesTable[#BaseBaseColourPalettesTable +1 ] =
+    BaseBaseColourPalettesTable[#BaseBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end

@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Control", "SpaceEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"Control", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "20"},
@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Control", "PlanetEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"Control", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "13"},
@@ -78,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Control", "CombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"Control", "CombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "20"},
@@ -99,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Control", "AtmosCombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"Control", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "13"},
@@ -118,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlLight", "SpaceEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlLight", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "40"},
@@ -137,7 +137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlLight", "PlanetEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlLight", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "20"},
@@ -156,7 +156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlLight", "CombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlLight", "CombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "40"},
@@ -176,7 +176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlLight", "AtmosCombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlLight", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "20"},
@@ -194,7 +194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "SpaceEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "20"},
@@ -213,7 +213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "PlanetEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "8"},
@@ -233,7 +233,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "CombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "CombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "20"},
@@ -254,7 +254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "AtmosCombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "8"},
@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHover", "SpaceEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHover", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "20"},
@@ -294,7 +294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHover", "PlanetEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHover", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",        "13"},
@@ -319,7 +319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHover", "CombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHover", "CombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "20"},
@@ -341,7 +341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHover", "AtmosCombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHover", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce",       "13"},
@@ -360,7 +360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlBonusC" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlBonusC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForceMax", "10"},
@@ -370,7 +370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlBonusB" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlBonusB"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForceMax", "20"},
@@ -379,7 +379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlBonusA" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlBonusA"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForceMax", "30"},
@@ -388,7 +388,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlBonusS" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlBonusS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForceMax", "40"},

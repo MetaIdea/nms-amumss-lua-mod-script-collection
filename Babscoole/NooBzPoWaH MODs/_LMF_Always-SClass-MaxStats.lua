@@ -252,7 +252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Minimum", 1}, -- Original 0
                                 {"Maximum", 2}, -- Original 0
                             },
-                        }, 
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats.xml",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
@@ -288,7 +288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Minimum", 3}, -- Original 8
                                 {"Maximum", 3}, -- Original 8
                             },
-                        }, 
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
@@ -397,8 +397,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =  
-                            {  
+                            ["FOREACH_SKW_GROUP"] =
+                            {
                                 {"ID","FUEL_BAD_1",},
                                 {"ID","FUEL_BAD_2",},
                                 {"ID","FUEL_BAD_3",},
