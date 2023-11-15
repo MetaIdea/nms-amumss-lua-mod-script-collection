@@ -13,14 +13,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","BASE"},
+							["SPECIAL_KEY_WORDS"] = {"Name","PAINT"},
 							["PRECEDING_KEY_WORDS"] = {"TkProceduralTexture.xml"},
-							["SEC_SAVE_TO"] = "BASE_TEX",
+							["SEC_SAVE_TO"] = "PAINT_TEX",
 							["SEC_KEEP"] = "TRUE"	
 						},
 						{
-							["SEC_EDIT"] = {"BASE_TEX"},
-							["SPECIAL_KEY_WORDS"] = {"Palette", "Rock"},
+							["SEC_EDIT"] = {"PAINT_TEX"},
+							["SPECIAL_KEY_WORDS"] = {"Palette", "Metal"},
 							["VALUE_MATCH"]     = "TkPaletteTexture.xml",
 							["VALUE_MATCH_OPTIONS"] = "~=",
 							["VALUE_CHANGE_TABLE"] = {
@@ -28,10 +28,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ColourAlt","Alternative1"},
 							}
 						},
+						
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","BASE"},
+							["SPECIAL_KEY_WORDS"] = {"Name","PAINT"},
 							["PRECEDING_KEY_WORDS"] = {"Textures"},
-							["SEC_ADD_NAMED"] = "BASE_TEX"
+							["SEC_ADD_NAMED"] = "PAINT_TEX"
 						}
 					}
 				},

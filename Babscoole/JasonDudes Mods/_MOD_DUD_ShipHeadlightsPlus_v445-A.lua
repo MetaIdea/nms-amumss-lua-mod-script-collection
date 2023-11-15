@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Cockpit_H"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Cockpit_H"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -82,7 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
                             ["REMOVE"] = "SECTION",
                         },
                     }
@@ -94,8 +94,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","RefEngineB4",},
-                                {"Name","RefEngineB5",},
+                                {"Name", "RefEngineB4"},
+                                {"Name", "RefEngineB5"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TypeId","_COCKPIT_"},
+                            ["SPECIAL_KEY_WORDS"] = {"TypeId", "_COCKPIT_"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -138,7 +138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Wings_K"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Wings_K"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -175,7 +175,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TypeId","_COCKPIT_"},
+                            ["SPECIAL_KEY_WORDS"] = {"TypeId", "_COCKPIT_"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -204,7 +204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Wings_A"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Wings_A"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -241,7 +241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","REFLamp_4"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "REFLamp_4"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -280,8 +280,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","StandingLight1",},
-                                {"Name","spotLight1",},
+                                {"Name", "StandingLight1"},
+                                {"Name", "spotLight1"},
                             },
                             ["REMOVE"] = "SECTION",
                         },
@@ -292,7 +292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","StandingLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "StandingLight1"},
                             ["REMOVE"] = "SECTION",
                         },
                     }
@@ -302,91 +302,91 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","BATCHSTARTPHYSI",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "BATCHSTARTPHYSI"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "37668"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","VERTRSTARTPHYSI",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "VERTRSTARTPHYSI"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "21866"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","VERTRENDPHYSICS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "VERTRENDPHYSICS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "24589"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","BATCHCOUNT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "BATCHCOUNT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "4068"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","VERTRENDGRAPHIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "VERTRENDGRAPHIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "2723"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","BOUNDHULLST",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "BOUNDHULLST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "212"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","BOUNDHULLED",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "BOUNDHULLED"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "248"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMINX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "AABBMINX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-2.891207"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMINY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "AABBMINY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.836564"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMINZ",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "AABBMINZ"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-1.380045"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMAXY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "AABBMAXY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.770870"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMAXZ",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "AABBMAXZ"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.631633"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","HASH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "HASH"},
                             ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -394,14 +394,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","MESHLINK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "MESHLINK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "WingsK_ALODShape1"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0"},
                             ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -410,84 +410,84 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","BATCHSTARTPHYSI",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "BATCHSTARTPHYSI"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "41736"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","VERTRSTARTPHYSI",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "VERTRSTARTPHYSI"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "24590"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","VERTRENDPHYSICS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "VERTRENDPHYSICS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "29311"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","BATCHCOUNT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "BATCHCOUNT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "7890"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","VERTRENDGRAPHIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "VERTRENDGRAPHIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "4721"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","BOUNDHULLST",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "BOUNDHULLST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "248"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","BOUNDHULLED",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "BOUNDHULLED"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "292"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","AABBMINX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "AABBMINX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-3.749691"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","AABBMINZ",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "AABBMINZ"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-2.157869"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","AABBMAXX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "AABBMAXX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "3.749691"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","AABBMAXZ",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "AABBMAXZ"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.163431"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","HASH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "HASH"},
                             ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -495,14 +495,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","MESHLINK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "MESHLINK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "WingsK_ALODShape1"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0"},
                             ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -511,98 +511,98 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","BATCHSTARTPHYSI",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "BATCHSTARTPHYSI"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "53247"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","VERTRSTARTPHYSI",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "VERTRSTARTPHYSI"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "31380"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","VERTRENDPHYSICS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "VERTRENDPHYSICS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "33122"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","BATCHCOUNT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "BATCHCOUNT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "2856"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","VERTRENDGRAPHIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "VERTRENDGRAPHIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1742"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","BOUNDHULLST",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "BOUNDHULLST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "328"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","BOUNDHULLED",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "BOUNDHULLED"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "352"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMINX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "AABBMINX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-3.733948"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMINY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "AABBMINY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.712383"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMINZ",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "AABBMINZ"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-2.149216"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMAXX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "AABBMAXX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "3.733998"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMAXY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "AABBMAXY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.885870"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMAXZ",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "AABBMAXZ"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.729330"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","HASH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "HASH"},
                             ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -610,14 +610,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","MESHLINK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "MESHLINK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "WingsK_ALODShape1"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0"},
                             ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -632,7 +632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TypeId","_SAILS_"},
+                            ["SPECIAL_KEY_WORDS"] = {"TypeId", "_SAILS_"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -661,7 +661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Sails_C"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_C"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -698,7 +698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TypeId","_COCKPIT_"},
+                            ["SPECIAL_KEY_WORDS"] = {"TypeId", "_COCKPIT_"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -727,7 +727,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Cockpit_DRoot"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Cockpit_DRoot"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -766,8 +766,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","StandingLight2",},
-                                {"Name","spotLight1",},
+                                {"Name", "StandingLight2"},
+                                {"Name", "spotLight1"},
                             },
                             ["REMOVE"] = "SECTION",
                         },
@@ -778,7 +778,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Trail",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Trail"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "1.03424"},
@@ -787,7 +787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Trail1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Trail1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "-1.034242"},
@@ -796,7 +796,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Canopy_B",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Canopy_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "2.435838"},
@@ -813,7 +813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Trail1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Trail1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.869246"},
@@ -822,7 +822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Trail",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Trail"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.869246"},
@@ -837,7 +837,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TypeId","_TOPWING_"},
+                            ["SPECIAL_KEY_WORDS"] = {"TypeId", "_TOPWING_"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -863,7 +863,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]  = {"Id", "_SCLASSSHIP_SQU"},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
-                                {"Children","IGNORE"},
+                                {"Children", "IGNORE"},
                             },
                             ["ADD_OPTION"] = "REPLACEatLINE",
                             ["ADD"] =
@@ -899,7 +899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Inventory_Medium"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Inventory_Medium"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -930,7 +930,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Inventory_Medium1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Inventory_Medium1"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -967,7 +967,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TypeId","_WINGS_"},
+                            ["SPECIAL_KEY_WORDS"] = {"TypeId", "_WINGS_"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -996,7 +996,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_engine_bREF"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_engine_bREF"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1033,7 +1033,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TypeId","_SKIRT_"},
+                            ["SPECIAL_KEY_WORDS"] = {"TypeId", "_SKIRT_"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1062,7 +1062,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Wings_B"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Wings_B"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1099,7 +1099,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TypeId","_SHUTTLE_"},
+                            ["SPECIAL_KEY_WORDS"] = {"TypeId", "_SHUTTLE_"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1130,21 +1130,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","_Wings0_K5",},
-                                {"Name","_Wings0_L5",},
-                                {"Name","_Wings0_K6",},
-                                {"Name","_Wings0_L6",},
-                                {"Name","_UWing_AxRARE1",},
-                                {"Name","_Wings0_K3",},
-                                {"Name","_Wings0_L3",},
-                                {"Name","_UWing_AxRARE",},
-                                {"Name","_Wings0_K4",},
-                                {"Name","_Wings0_L4",},
+                                {"Name", "_Wings0_K5"},
+                                {"Name", "_Wings0_L5"},
+                                {"Name", "_Wings0_K6"},
+                                {"Name", "_Wings0_L6"},
+                                {"Name", "_UWing_AxRARE1"},
+                                {"Name", "_Wings0_K3"},
+                                {"Name", "_Wings0_L3"},
+                                {"Name", "_UWing_AxRARE"},
+                                {"Name", "_Wings0_K4"},
+                                {"Name", "_Wings0_L4"},
                             },
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Wings0_F3"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Wings0_F3"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1381,7 +1381,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Wings0_F4"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Wings0_F4"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1733,7 +1733,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Wings0_F1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Wings0_F1"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -2085,7 +2085,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Wings0_F2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Wings0_F2"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -2274,7 +2274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Shuttle_Single"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Shuttle_Single"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -2311,7 +2311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","StandingLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "StandingLight1"},
                             ["REMOVE"] = "SECTION",
                         },
                     }
@@ -2323,7 +2323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     {
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB\PARTS\DUDENGINEBTHRUSTER.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3092,7 +3092,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\DROPHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3179,7 +3179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\HEADLIGHTS\ENTITIES\DROPHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3302,7 +3302,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTCGOLDHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3389,7 +3389,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\FIGHTHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3476,7 +3476,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\VRSPEEDERHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3563,7 +3563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\FIGHTCGOLDHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3686,7 +3686,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\FIGHTHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3809,7 +3809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\VRSPEEDERHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3932,7 +3932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\SAILHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4019,7 +4019,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\ENTITIES\SAILHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4142,7 +4142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\SCIHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4229,7 +4229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\HEADLIGHTS\ENTITIES\SCIHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4352,7 +4352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\BIOHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4439,7 +4439,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\BIOHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4562,7 +4562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ROYALHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4649,7 +4649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\ROYALHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4772,7 +4772,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\SQUIDHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4859,7 +4859,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\HEADLIGHTS\ENTITIES\SQUIDHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4982,7 +4982,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\SENTINELSHIPHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5069,7 +5069,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\SHUTHEADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5156,7 +5156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\HEADLIGHTS\ENTITIES\SENTINELSHIPHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5279,7 +5279,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SHUTTLE\HEADLIGHTS\ENTITIES\SHUTHEADLIGHTS.ENTITY.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 

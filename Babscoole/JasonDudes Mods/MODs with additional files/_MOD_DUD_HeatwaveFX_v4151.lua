@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"},
@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"},
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "5"},
@@ -56,14 +56,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RotationSpeedRange","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"RotationSpeedRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "-0.02"},
@@ -72,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.02"},
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour1","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour1", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0"},
@@ -91,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour2","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Colour2", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0"},
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     {
         {
             ["FILE_DESTINATION"] = "MODELS\EFFECTS\COMMON\MATERIALS\DUDHEATWAVE.MATERIAL.EXML",
-            ["FILE_CONTENT"] =
+             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 

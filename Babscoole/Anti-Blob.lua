@@ -33,12 +33,12 @@ local DelCreatureTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_
 local DelCreatureTable2 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 for i=1,#DelCreature do
     local value = DelCreature[i]
-    DelCreatureTable[#DelCreatureTable +1 ] =
+    DelCreatureTable[#DelCreatureTable +1] =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",value},
                             ["REMOVE"] = "SECTION"
                         }
-    DelCreatureTable2[#DelCreatureTable2 +1 ] =
+    DelCreatureTable2[#DelCreatureTable2 +1] =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID",value},
                             ["REMOVE"] = "SECTION"

@@ -227,7 +227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\RADIOACTIVE\\RADIOCOLOURPALETTES.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOCOLOURPALETTES.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -241,7 +241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["FOREACH_SKW_GROUP"] =
                             {
                                 {"RockSaturated", "GcPaletteData.xml"},
-                                {"RockDark", "GcPaletteData.xml"},
+                                {"RockDark",      "GcPaletteData.xml"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -268,40 +268,40 @@ function GetColours(R,G,B,A)
 end
 
 function CreateColoursProperty(PaletteColours)
-    local PropertiesString = ""
+    local PropertiesString = {}
 
     for j = 1, #PaletteColours do
         local R = PaletteColours[j]["R"]
         local G = PaletteColours[j]["G"]
         local B = PaletteColours[j]["B"]
         local A = PaletteColours[j]["A"]
-        PropertiesString = PropertiesString..GetColours(R, G, B, A)
+        table.insert(PropertiesString,GetColours(R, G, B, A))
     end
     local PropertyColoursString =
     [[      <Property name="Colours">
-    ]]..PropertiesString..[[
+    ]]..table.concat(PropertiesString)..[[
   </Property>]]
 
     -- print(PropertyColoursString)
     return PropertyColoursString
 end
 
-local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local Palette = DataTable[i]["PALETTE"]
     local PaletteColours = DataTable[i]["COLOURS"]
     local PaletteNumColours = DataTable[i]["NUMCOLOURS"]
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end

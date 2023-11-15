@@ -17,11 +17,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SpaceSpeedReadoutMultiplier",    "1"},
+                                {"SpaceSpeedReadoutMultiplier", "1"},
                                 {"TorchFoV",                    "50"},
-                                {"TorchStrength",                "8"},
-                                {"TorchDimFoV",                    "25"},
-                                {"UndergroundTorchFoV",            "50"},
+                                {"TorchStrength",               "8"},
+                                {"TorchDimFoV",                 "25"},
+                                {"UndergroundTorchFoV",         "50"},
                                 {"UndergroundTorchStrength",    "8"},
                             }
                         },

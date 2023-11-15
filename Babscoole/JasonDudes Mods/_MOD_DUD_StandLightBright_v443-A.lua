@@ -14,21 +14,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "150.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "30000.000000"},
@@ -41,21 +41,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "150.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "30000.000000"},
@@ -68,14 +68,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "20000.000000"},
@@ -88,35 +88,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "-3.1797523"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "90.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "25000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -126,21 +126,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "150.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "12000.000000"},

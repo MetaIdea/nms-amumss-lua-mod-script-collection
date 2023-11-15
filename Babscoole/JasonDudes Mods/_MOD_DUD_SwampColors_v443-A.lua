@@ -588,13 +588,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\LUSH\\LUSHROOMACOLOURPALETTE.MBIN",
-                        "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\LUSH\\LUSHROOMBCOLOURPALETTE.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMACOLOURPALETTE.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBCOLOURPALETTE.MBIN",
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "SkyNight", "GcPaletteData.xml"  },
+                            ["SPECIAL_KEY_WORDS"]  = {"SkyNight", "GcPaletteData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumColours", "All"}
@@ -603,17 +603,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\SWAMP\\SWAMPCOLOURPALETTES.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPCOLOURPALETTES.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Grass", "GcPaletteData.xml"},
-                                {"Plant", "GcPaletteData.xml"},
-                                {"Leaf", "GcPaletteData.xml"},
+                                {"Grass",    "GcPaletteData.xml"},
+                                {"Plant",    "GcPaletteData.xml"},
+                                {"Leaf",     "GcPaletteData.xml"},
                                 {"SkyNight", "GcPaletteData.xml"},
-                                {"Cave", "GcPaletteData.xml"},
+                                {"Cave",     "GcPaletteData.xml"},
                                 {"GrassAlt", "GcPaletteData.xml"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
@@ -622,7 +622,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Wood", "GcPaletteData.xml"  },
+                            ["SPECIAL_KEY_WORDS"]  = {"Wood", "GcPaletteData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumColours", "_4"}
@@ -635,14 +635,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","VARIANT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "VARIANT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ColourAlt", "Alternative1"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","VARIANT","Palette","TkPaletteTexture.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "VARIANT", "Palette", "TkPaletteTexture.xml"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -650,14 +650,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","BASE","Name","VARIANTA"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Name", "VARIANTA"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ColourAlt", "Alternative2"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","BASE","Name","VARIANTA","Palette","TkPaletteTexture.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Name", "VARIANTA", "Palette", "TkPaletteTexture.xml"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -665,14 +665,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","BASE","Name","VARIANTB"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Name", "VARIANTB"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ColourAlt", "Alternative3"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","BASE","Name","VARIANTB","Palette","TkPaletteTexture.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Name", "VARIANTB", "Palette", "TkPaletteTexture.xml"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -699,60 +699,60 @@ function GetColours(R,G,B,A)
 end
 
 function CreateColoursProperty(PaletteColours)
-    local PropertiesString = ""
+    local PropertiesString = {}
 
     for j = 1, #PaletteColours do
         local R = PaletteColours[j]["R"]
         local G = PaletteColours[j]["G"]
         local B = PaletteColours[j]["B"]
         local A = PaletteColours[j]["A"]
-        PropertiesString = PropertiesString..GetColours(R, G, B, A)
+        table.insert(PropertiesString,GetColours(R, G, B, A))
     end
     local PropertyColoursString =
     [[      <Property name="Colours">
-    ]]..PropertiesString..[[
+    ]]..table.concat(PropertiesString)..[[
   </Property>]]
 
     -- print(PropertyColoursString)
     return PropertyColoursString
 end
 
-local LushBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local LushBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 for i = 1, #LushDataTable do
     local Palette = LushDataTable[i]["PALETTE"]
     local PaletteColours = LushDataTable[i]["COLOURS"]
     local PaletteNumColours = LushDataTable[i]["NUMCOLOURS"]
 
-    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1 ] =
+    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1 ] =
+    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local SwampBaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local SwampBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 for i = 1, #SwampDataTable do
     local Palette = SwampDataTable[i]["PALETTE"]
     local PaletteColours = SwampDataTable[i]["COLOURS"]
     local PaletteNumColours = SwampDataTable[i]["NUMCOLOURS"]
 
-    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1 ] =
+    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1 ] =
+    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end

@@ -14,50 +14,50 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","GlowPlane"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "GlowPlane"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "10000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_R"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.009000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.656000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_B"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","GlowAuraEmitter"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "GlowAuraEmitter"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -133,7 +133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","JellyfishCap"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "JellyfishCap"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[

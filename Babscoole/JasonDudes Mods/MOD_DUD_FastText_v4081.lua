@@ -1,11 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_FastText_v4081.pak",
-["MOD_AUTHOR"]    = "jasondude7116",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
+["MOD_FILENAME"]            = "MOD_DUD_FastText_v4081.pak",
+["MOD_AUTHOR"]              = "jasondude7116",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.08",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
-["MODIFICATIONS"] =
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Punctuation","{}"},
+                            ["SPECIAL_KEY_WORDS"] = {"Punctuation", "{}"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {

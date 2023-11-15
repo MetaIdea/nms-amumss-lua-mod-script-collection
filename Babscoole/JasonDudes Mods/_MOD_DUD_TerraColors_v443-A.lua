@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="GcTileTypeSet.xml">
@@ -240,7 +240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="GcTileTypeSet.xml">
@@ -359,12 +359,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
-                            ["REPLACE_TYPE"]  = "ALL",
+                            ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TileTypeSets"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="GcTileTypeSet.xml">
@@ -537,7 +537,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
                             ["SECTION_ACTIVE"] = 2,
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="GcTileTypeSet.xml">
@@ -710,7 +710,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
                             ["SECTION_ACTIVE"] = 2,
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="GcTileTypeSet.xml">

@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Colour.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour.xml"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -51,8 +51,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_NOSHIELD"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_NOSHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "15000"},
@@ -61,8 +61,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_EASY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "21000"},
@@ -71,8 +71,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PIRATE",},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "25000"},
@@ -81,8 +81,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_HARD"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_HARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "40000"},
@@ -91,8 +91,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","POLICE",},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "POLICE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "40000"},
@@ -101,8 +101,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TRADER"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "21000"},
@@ -111,8 +111,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TRADER_ESCORT"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_ESCORT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "40000"},
@@ -121,8 +121,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RAID_BUILDING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "24000"},
@@ -131,8 +131,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RAID_DOGFIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "24000"},
@@ -141,8 +141,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET_FLYBY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "21000"},
@@ -151,8 +151,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_C"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_C"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "7500"},
@@ -161,8 +161,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_B"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "10000"},
@@ -171,8 +171,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_A"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_A"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "12500"},
@@ -181,8 +181,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Definitions",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_S"},
+                            ["PRECEDING_KEY_WORDS"] = {"Definitions"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_S"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "15000"},
@@ -191,8 +191,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLANET",},
+                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",           "4"},
@@ -220,8 +220,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPACE",},
+                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPACE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",           "4"},
@@ -246,8 +246,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING",},
+                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RAID_BUILDING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",           "4"},
@@ -275,8 +275,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_WEAK",},
+                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_WEAK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",           "4"},
@@ -301,8 +301,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_STRONG",},
+                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",           "3"},
@@ -329,8 +329,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPACE_EASY",},
+                            ["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPACE_EASY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "50"},
@@ -340,8 +340,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPACE_HARD",},
+                            ["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPACE_HARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "50"},
@@ -351,8 +351,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_EASY",},
+                            ["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET_EASY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TurnMax", "1.5"},
@@ -360,8 +360,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_HARD",},
+                            ["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET_HARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "50"},
@@ -371,8 +371,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING",},
+                            ["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RAID_BUILDING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "40"},
@@ -380,8 +380,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_SLOW",},
+                            ["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_SLOW"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed", "160"},
@@ -389,8 +389,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_FAST",},
+                            ["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_FAST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed", "180"},
@@ -399,8 +399,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEAK",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",            "4000"},
@@ -409,8 +409,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STANDARD",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STANDARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "8000"},
@@ -421,8 +421,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STRONG",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "12000"},
@@ -433,8 +433,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FAST",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FAST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "4000"},
@@ -444,8 +444,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FAST_STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "12000"},
@@ -543,129 +543,129 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTGUNDMG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "3" },
+                                {"Damage", "3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG_MED",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTGUNDMG_MED"},
+                            ["VALUE_CHANGE_TABLE"]=
                             {
-                                { "Damage", "4" },
+                                {"Damage", "4" },
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTBIGGUN",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTBIGGUN"},
+                            ["VALUE_CHANGE_TABLE"]=
                             {
-                                { "Damage", "7" },
+                                {"Damage", "7"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","LASERDAMAGE",},
-                            ["VALUE_CHANGE_TABLE"]     =
-                            {
-                                { "Damage", "3.5" },
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FIENDSPIT_DMG",},
-                            ["VALUE_CHANGE_TABLE"]     =
-                            {
-                                { "Damage", "4" },
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLANTDMG",},
-                            ["VALUE_CHANGE_TABLE"]     =
-                            {
-                                { "Damage", "35" },
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "LASERDAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "17" },
+                                {"Damage", "3.5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WALKERLASER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDSPIT_DMG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "6" },
+                                {"Damage", "4"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLANTDMG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "30" }
+                                {"Damage", "35"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MEDIUMASTEROID",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BOUNTYGUN3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "40" }
+                                {"Damage", "17"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","LARGEASTEROID",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WALKERLASER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "60" }
+                                {"Damage", "6"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERGUN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SMALLASTEROID"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "30" },
+                                {"Damage", "30"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLASER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MEDIUMASTEROID"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "30" },
+                                {"Damage", "40"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "LARGEASTEROID"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "35" },
+                                {"Damage", "60"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","GRABPLANT_DMG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTERGUN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "35" },
+                                {"Damage", "30"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","VENUSFLY_DMG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTERLASER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "35" },
+                                {"Damage", "30"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLERSPITDMG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GASPLANT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "15" },
+                                {"Damage", "35"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TORNADO",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRABPLANT_DMG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Damage", "45" }
+                                {"Damage", "35"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "VENUSFLY_DMG"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Damage", "35"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SCUTTLERSPITDMG"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Damage", "15"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORNADO"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Damage", "45"}
                             }
                         },
                     }

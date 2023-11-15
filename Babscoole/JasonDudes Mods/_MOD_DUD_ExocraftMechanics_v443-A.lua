@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"VehicleCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"VehicleCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance",     "1"},
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MechFirstPersonCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"MechFirstPersonCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",             "0.5"},
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",            "2"},
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamMedium","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamMedium", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",            "2"},
@@ -63,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamLarge","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamLarge", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",            "2"},
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamHuge","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamHuge", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",            "2"},
@@ -87,92 +87,92 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"BuggyFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"BuggyFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY", "2.25"},
+                                {"OffsetY",         "2.25"},
                                 {"BackMinDistance", "17"},
-                                {"UpMinDistance", "1"},
-                                {"UpMaxDistance", "1"},
-                                {"PanFar", "-3"},
+                                {"UpMinDistance",   "1"},
+                                {"UpMaxDistance",   "1"},
+                                {"PanFar",          "-3"},
                                 {"VertRotationMin", "-50"},
                                 {"VertRotationMax", "50"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SubmarineFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SubmarineFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinSpeed", "10"},
-                                {"SpeedRange", "15"},
-                                {"OffsetY", "3.35"},
-                                {"OffsetYAlt", "5"},
+                                {"MinSpeed",        "10"},
+                                {"SpeedRange",      "15"},
+                                {"OffsetY",         "3.35"},
+                                {"OffsetYAlt",      "5"},
                                 {"BackMinDistance", "15"},
                                 {"BackMaxDistance", "17"},
-                                {"UpMinDistance", "0.3"},
-                                {"UpMaxDistance", "0.3"},
+                                {"UpMinDistance",   "0.3"},
+                                {"UpMaxDistance",   "0.3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"BikeFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"BikeFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY", "0.35"},
-                                {"OffsetYAlt", "3"},
+                                {"OffsetY",         "0.35"},
+                                {"OffsetYAlt",      "3"},
                                 {"BackMinDistance", "16"},
-                                {"UpMinDistance", "2"},
-                                {"UpMaxDistance", "2"},
+                                {"UpMinDistance",   "2"},
+                                {"UpMaxDistance",   "2"},
                                 {"VertRotationMin", "-50"},
                                 {"VertRotationMax", "50"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WheeledBikeFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"WheeledBikeFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY", "-0.75"},
-                                {"OffsetYAlt", "2.5"},
+                                {"OffsetY",         "-0.75"},
+                                {"OffsetYAlt",      "2.5"},
                                 {"BackMinDistance", "18"},
                                 {"BackMaxDistance", "22"},
-                                {"UpMinDistance", "2"},
-                                {"UpMaxDistance", "2"},
-                                {"PanNear", "-1.5"},
+                                {"UpMinDistance",   "2"},
+                                {"UpMaxDistance",   "2"},
+                                {"PanNear",         "-1.5"},
                                 {"VertRotationMin", "-50"},
                                 {"VertRotationMax", "50"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TruckFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"TruckFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "22"},
-                                {"UpMinDistance", "1"},
-                                {"UpMaxDistance", "1"},
+                                {"UpMinDistance",   "1"},
+                                {"UpMaxDistance",   "1"},
                                 {"VertRotationMin", "-50"},
                                 {"VertRotationMax", "50"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MechFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"MechFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY", "0.2"},
+                                {"OffsetY",         "0.2"},
                                 {"BackMinDistance", "11"},
-                                {"UpMinDistance", "0"},
+                                {"UpMinDistance",   "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MechCombatCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"MechCombatCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "11"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MechJetpackCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"MechJetpackCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY", "0"},
+                                {"OffsetY",         "0"},
                                 {"BackMinDistance", "11"},
                             }
                         },
@@ -198,128 +198,128 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MechFirstPersonTurretThrottleLookThreshold", "8"},
-                                {"UnderwaterFlattenMinDepth", "1"},
-                                {"VehicleAltControlScheme", "False"},
-                                {"VehicleFuelRate", "0.35"},
+                                {"UnderwaterFlattenMinDepth",                  "1"},
+                                {"VehicleAltControlScheme",                    "False"},
+                                {"VehicleFuelRate",                            "0.35"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","BIKE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "BIKE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"WheelSuspensionForce", "12"},
-                                {"TopSpeedForward", "15"},
-                                {"TopSpeedReverse", "4"},
-                                {"WheelMaxAccelForceForward", "2.75"},
-                                {"WheelMaxAccelForceReverse", "2.75"},
+                                {"WheelSuspensionForce",         "12"},
+                                {"TopSpeedForward",              "15"},
+                                {"TopSpeedReverse",              "4"},
+                                {"WheelMaxAccelForceForward",    "2.75"},
+                                {"WheelMaxAccelForceReverse",    "2.75"},
                                 {"WheelMaxDecelForceNonBraking", "0.5"},
-                                {"WheelMaxDecelForceBraking", "2"},
-                                {"HardStopSpeedThreshold", "0.025"},
-                                {"WheelFrontFrictionDynamic", "3.2"},
-                                {"WheelFrontFrictionStatic", "3.2"},
-                                {"WheelSideFrictionDynamic", "2.25"},
-                                {"WheelSideFrictionStatic", "2.25"},
-                                {"VehicleBoostMaxSpeed", "28"},
-                                {"VehicleBoostRechargeTime", "9"},
-                                {"VehicleLinearDampingGround", "0.25"},
-                                {"VehicleLinearDampingWater", "0.25"},
+                                {"WheelMaxDecelForceBraking",    "2"},
+                                {"HardStopSpeedThreshold",       "0.025"},
+                                {"WheelFrontFrictionDynamic",    "3.2"},
+                                {"WheelFrontFrictionStatic",     "3.2"},
+                                {"WheelSideFrictionDynamic",     "2.25"},
+                                {"WheelSideFrictionStatic",      "2.25"},
+                                {"VehicleBoostMaxSpeed",         "28"},
+                                {"VehicleBoostRechargeTime",     "9"},
+                                {"VehicleLinearDampingGround",   "0.25"},
+                                {"VehicleLinearDampingWater",    "0.25"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MED_BUGGY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MED_BUGGY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"WheelSuspensionForce", "12"},
-                                {"WheelSuspensionDamping", "0"},
-                                {"TopSpeedForward", "14"},
-                                {"TopSpeedReverse", "4"},
-                                {"WheelMaxAccelForceForward", "2.75"},
-                                {"WheelMaxAccelForceReverse", "2.75"},
+                                {"WheelSuspensionForce",         "12"},
+                                {"WheelSuspensionDamping",       "0"},
+                                {"TopSpeedForward",              "14"},
+                                {"TopSpeedReverse",              "4"},
+                                {"WheelMaxAccelForceForward",    "2.75"},
+                                {"WheelMaxAccelForceReverse",    "2.75"},
                                 {"WheelMaxDecelForceNonBraking", "1.15"},
-                                {"WheelMaxDecelForceBraking", "25"},
-                                {"HardStopSpeedThreshold", "0.025"},
-                                {"WheelFrontFrictionDynamic", "3.4"},
-                                {"WheelFrontFrictionStatic", "3.4"},
-                                {"WheelSideFrictionDynamic", "3.4"},
-                                {"WheelSideFrictionStatic", "3.4"},
-                                {"VehicleBoostMaxSpeed", "24"},
-                                {"VehicleBoostRechargeTime", "9"},
-                                {"VehicleLinearDampingWater", "2.25"},
+                                {"WheelMaxDecelForceBraking",    "25"},
+                                {"HardStopSpeedThreshold",       "0.025"},
+                                {"WheelFrontFrictionDynamic",    "3.4"},
+                                {"WheelFrontFrictionStatic",     "3.4"},
+                                {"WheelSideFrictionDynamic",     "3.4"},
+                                {"WheelSideFrictionStatic",      "3.4"},
+                                {"VehicleBoostMaxSpeed",         "24"},
+                                {"VehicleBoostRechargeTime",     "9"},
+                                {"VehicleLinearDampingWater",    "2.25"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","TRUCK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "TRUCK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"WheelSuspensionForce", "12"},
-                                {"WheelSuspensionDamping", "0"},
-                                {"TopSpeedReverse", "3"},
+                                {"WheelSuspensionForce",      "12"},
+                                {"WheelSuspensionDamping",    "0"},
+                                {"TopSpeedReverse",           "3"},
                                 {"WheelMaxAccelForceForward", "2.25"},
                                 {"WheelMaxAccelForceReverse", "2.25"},
                                 {"WheelMaxDecelForceBraking", "2.5"},
-                                {"HardStopSpeedThreshold", "0.025"},
+                                {"HardStopSpeedThreshold",    "0.025"},
                                 {"WheelFrontFrictionDynamic", "1.8"},
-                                {"WheelFrontFrictionStatic", "1.9"},
-                                {"WheelSideFrictionDynamic", "1.8"},
-                                {"WheelSideFrictionStatic", "1.9"},
-                                {"VehicleBoostMaxSpeed", "16"},
-                                {"VehicleBoostRechargeTime", "9"},
+                                {"WheelFrontFrictionStatic",  "1.9"},
+                                {"WheelSideFrictionDynamic",  "1.8"},
+                                {"WheelSideFrictionStatic",   "1.9"},
+                                {"VehicleBoostMaxSpeed",      "16"},
+                                {"VehicleBoostRechargeTime",  "9"},
                                 {"VehicleLinearDampingWater", "2.25"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WHEELEDBIKE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WHEELEDBIKE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"WheelSuspensionForce", "9"},
-                                {"WheelSuspensionDamping", "0"},
-                                {"TopSpeedForward", "16"},
-                                {"TopSpeedReverse", "4"},
-                                {"WheelMaxAccelForceForward", "2.75"},
-                                {"WheelMaxAccelForceReverse", "2.75"},
+                                {"WheelSuspensionForce",         "9"},
+                                {"WheelSuspensionDamping",       "0"},
+                                {"TopSpeedForward",              "16"},
+                                {"TopSpeedReverse",              "4"},
+                                {"WheelMaxAccelForceForward",    "2.75"},
+                                {"WheelMaxAccelForceReverse",    "2.75"},
                                 {"WheelMaxDecelForceNonBraking", "1.15"},
-                                {"WheelMaxDecelForceBraking", "10"},
-                                {"HardStopSpeedThreshold", "0.025"},
-                                {"WheelFrontFrictionDynamic", "3.2"},
-                                {"WheelFrontFrictionStatic", "3.2"},
-                                {"WheelSideFrictionDynamic", "3.25"},
-                                {"WheelSideFrictionStatic", "3.25"},
-                                {"VehicleBoostForce", "400"},
-                                {"VehicleBoostMaxSpeed", "30"},
-                                {"VehicleBoostRechargeTime", "9"},
-                                {"VehicleLinearDampingWater", "2.25"},
+                                {"WheelMaxDecelForceBraking",    "10"},
+                                {"HardStopSpeedThreshold",       "0.025"},
+                                {"WheelFrontFrictionDynamic",    "3.2"},
+                                {"WheelFrontFrictionStatic",     "3.2"},
+                                {"WheelSideFrictionDynamic",     "3.25"},
+                                {"WheelSideFrictionStatic",      "3.25"},
+                                {"VehicleBoostForce",            "400"},
+                                {"VehicleBoostMaxSpeed",         "30"},
+                                {"VehicleBoostRechargeTime",     "9"},
+                                {"VehicleLinearDampingWater",    "2.25"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUBMARINE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUBMARINE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"UnderwaterEnginePower", "3"},
+                                {"UnderwaterEnginePower",    "3"},
                                 {"UnderwaterEngineMaxSpeed", "12"},
-                                {"TopSpeedForward", "12"},
-                                {"TopSpeedReverse", "5"},
-                                {"VehicleBoostMaxSpeed", "20"},
+                                {"TopSpeedForward",          "12"},
+                                {"TopSpeedReverse",          "5"},
+                                {"VehicleBoostMaxSpeed",     "20"},
                                 {"VehicleBoostRechargeTime", "9"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MECH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HeadlightIntensity", "6"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MECH",},
-                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames","NMSString0x100.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
+                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames", "NMSString0x100.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "cockpitSpotLight1s"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MECH",},
-                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames","NMSString0x100.xml","NMSString0x100.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
+                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames", "NMSString0x100.xml", "NMSString0x100.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "cockpitSpotLight2s"},
@@ -328,43 +328,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]     = "MODELS\COMMON\VEHICLES\BIKE\BIKEPRES.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\VEHICLES\BIKE\BIKEPRES.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","spotLight4",},
-                                {"Name","spotLight5",},
+                                {"Name", "spotLight4"},
+                                {"Name", "spotLight5"},
                             },
-                            ["REMOVE"]  = "SECTION",
+                            ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight1"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight1"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX",    "-20.62733"},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight1", "Name","FOV",},
-                            ["VALUE_CHANGE_TABLE"]     =
-                            {
-                                {"Value",    "75.275394"},
+                                {"RotX", "-20.62733"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight1", "Name","INTENSITY",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight1", "Name", "FOV"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "45000.000000"},
+                                {"Value", "75.275394"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight1"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight1", "Name", "INTENSITY"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Children","IGNORE"},
+                                {"Value", "45000.000000"},
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Children", "IGNORE"},
                             },
                             ["ADD_OPTION"] = "REPLACEatLINE",
                             ["ADD"] =
@@ -443,31 +443,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight2"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight2"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX",    "-20.62733"},
+                                {"RotX", "-20.62733"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight2", "Name","FOV",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight2", "Name", "FOV"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "75.275394"},
+                                {"Value", "75.275394"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight2", "Name","INTENSITY",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight2", "Name", "INTENSITY"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "45000.000000"},
+                                {"Value", "45000.000000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight2"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight2"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Children","IGNORE"},
+                                {"Children", "IGNORE"},
                             },
                             ["ADD_OPTION"] = "REPLACEatLINE",
                             ["ADD"] =
@@ -548,21 +548,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]     = "MODELS\COMMON\VEHICLES\BUGGY\BUGGYPRES.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\VEHICLES\BUGGY\BUGGYPRES.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","spotLight1",},
-                                {"Name","spotLight2",},
-                                {"Name","spotLight3",},
-                                {"Name","spotLight4",},
+                                {"Name", "spotLight1"},
+                                {"Name", "spotLight2"},
+                                {"Name", "spotLight3"},
+                                {"Name", "spotLight4"},
                             },
-                            ["REMOVE"]  = "SECTION",
+                            ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "RearLight"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RearLight"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -849,28 +849,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight2", "Name","FOV",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2", "Name", "FOV"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "75.275394"},
+                                {"Value", "75.275394"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight2", "Name","INTENSITY",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2", "Name", "INTENSITY"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "45000.000000"},
+                                {"Value", "45000.000000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight2"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Children","IGNORE"},
+                                {"Children", "IGNORE"},
                             },
                             ["ADD_OPTION"] = "REPLACEatLINE",
                             ["ADD"] =
@@ -949,31 +949,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight3"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TransZ",    "0.426958"},
+                                {"TransZ", "0.426958"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight3", "Name","FOV",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3", "Name", "FOV"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "75.275394"},
+                                {"Value", "75.275394"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight3", "Name","INTENSITY",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3", "Name", "INTENSITY"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "45000.000000"},
+                                {"Value", "45000.000000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight3"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Children","IGNORE"},
+                                {"Children", "IGNORE"},
                             },
                             ["ADD_OPTION"] = "REPLACEatLINE",
                             ["ADD"] =
@@ -1054,21 +1054,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT_COCKPIT.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT_COCKPIT.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","cockpitSpotLight1s",},
-                                {"Name","cockpitSpotLight2s",},
-                                {"Name","cockpitSpotLight1",},
-                                {"Name","cockpitSpotLight2",},
+                                {"Name", "cockpitSpotLight1s"},
+                                {"Name", "cockpitSpotLight2s"},
+                                {"Name", "cockpitSpotLight1"},
+                                {"Name", "cockpitSpotLight2"},
                             },
-                            ["REMOVE"]  = "SECTION",
+                            ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Mesh",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Mesh"},
                             ["SECTION_ACTIVE"] = 2,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
@@ -1356,11 +1356,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\VEHICLES\ROVER\ROVERCOCKPIT.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\VEHICLES\ROVER\ROVERCOCKPIT.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SideMonitor1_R_Ref",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SideMonitor1_R_Ref"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1647,43 +1647,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]     = "MODELS\COMMON\VEHICLES\ROVER\ROVERPRES.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\VEHICLES\ROVER\ROVERPRES.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","spotLight3",},
-                                {"Name","spotLight4",},
-                                {"Name","spotLight5",},
+                                {"Name", "spotLight3"},
+                                {"Name", "spotLight4"},
+                                {"Name", "spotLight5"},
 
                             },
-                            ["REMOVE"]  = "SECTION",
+                            ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX",    "-20.62733"},
+                                {"RotX", "-20.62733"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1", "Name","FOV",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "FOV"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "90.275394"},
+                                {"Value", "90.275394"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1", "Name","INTENSITY",},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "INTENSITY"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "45000.000000"},
+                                {"Value", "45000.000000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1"},
-                            ["PRECEDING_KEY_WORDS"] = {"Attributes",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
+                            ["PRECEDING_KEY_WORDS"] = {"Attributes"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1901,7 +1901,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight4"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight4"},
                             ["LINE_OFFSET"] = "-2",
                             ["ADD"] =
 [[
@@ -1909,17 +1909,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight5", "Value", "MATERIALS/LIGHT.MATERIAL.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight5", "Value", "MATERIALS/LIGHT.MATERIAL.MBIN"},
                             ["LINE_OFFSET"] = "+10",
                             ["REMOVE"] = "LINE",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight5", "Value", "MATERIALS/LIGHT.MATERIAL.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight5", "Value", "MATERIALS/LIGHT.MATERIAL.MBIN"},
                             ["LINE_OFFSET"] = "+9",
                             ["REMOVE"] = "LINE",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight5", "Value", "MATERIALS/LIGHT.MATERIAL.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight5", "Value", "MATERIALS/LIGHT.MATERIAL.MBIN"},
                             ["LINE_OFFSET"] = "+8",
                             ["REMOVE"] = "LINE",
                         },
@@ -1932,14 +1932,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name","spotLight2",},
-                                {"Name","spotLight3",},
+                                {"Name", "spotLight2"},
+                                {"Name", "spotLight3"},
 
                             },
-                            ["REMOVE"]  = "SECTION",
+                            ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight5"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight5"},
                             ["LINE_OFFSET"] = "-2",
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =

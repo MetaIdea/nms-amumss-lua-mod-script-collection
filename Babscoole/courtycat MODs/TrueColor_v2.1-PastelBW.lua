@@ -1,27 +1,27 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "TrueColor_v2.1-PastelBW.pak",
-    ["MOD_AUTHOR"]              = "courtykat",
-    ["LUA_AUTHOR"]              = "Babscoole, and courtykat",
-    ["NMS_VERSION"]             = "4.08",
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"]  = "TrueColor_v2.1-PastelBW.pak",
+    ["MOD_AUTHOR"]    = "courtykat",
+    ["LUA_AUTHOR"]    = "Babscoole, and courtykat",
+    ["NMS_VERSION"]   = "4.08",
+    ["MODIFICATIONS"] =
     {
         {
-            ["MBIN_CHANGE_TABLE"]     =
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = { "BioShip_Cockpit", "GcPaletteData.xml"  },
+                            ["SPECIAL_KEY_WORDS"] = {"BioShip_Cockpit", "GcPaletteData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumColours", "_8"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = { "BioShip_Body", "GcPaletteData.xml"  },
+                            ["SPECIAL_KEY_WORDS"] = {"BioShip_Body", "GcPaletteData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumColours", "All"}
@@ -30,8 +30,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\\GAMESTATE\\PLAYERDATA\\CUSTOMISATIONCOLOURPALETTES.MBIN",
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\PLAYERDATA\CUSTOMISATIONCOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
 
                     }
@@ -604,17 +604,17 @@ end
 
 
 function CreateColoursProperty(PaletteColours)
-    local PropertiesString = ""
+    local PropertiesString = {}
 
     for j = 1, #PaletteColours do
         local R = PaletteColours[j]["R"]
         local G = PaletteColours[j]["G"]
         local B = PaletteColours[j]["B"]
-        PropertiesString = PropertiesString..GetColours(R, G, B)
+        table.insert(PropertiesString,GetColours(R, G, B))
     end
     local PropertyColoursString =
     [[      <Property name="Colours">
-    ]]..PropertiesString..[[
+    ]]..table.concat(PropertiesString)..[[
   </Property>]]
 
     -- print(PropertyColoursString)
@@ -622,27 +622,27 @@ function CreateColoursProperty(PaletteColours)
 end
 
 
-local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 for i = 1, #BaseDataTable do
     local Palette = BaseDataTable[i]["PALETTE"]
     local PaletteColours = BaseDataTable[i]["COLOURS"]
     local PaletteNumColours = BaseDataTable[i]["NUMCOLOURS"]
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local BaseColourPalettesTable2  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local BaseColourPalettesTable2 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 for i = 1, #CustomDataTable do
     local Palette = CustomDataTable[i]["PALETTE"]
     local PaletteNumColours = CustomDataTable[i]["NUMCOLOURS"]
@@ -650,16 +650,16 @@ for i = 1, #CustomDataTable do
     local PaletteColours = CustomColors[j]["COLOURS"]
 
 
-    BaseColourPalettesTable2[#BaseColourPalettesTable2 +1 ] =
+    BaseColourPalettesTable2[#BaseColourPalettesTable2 +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    BaseColourPalettesTable2[#BaseColourPalettesTable2 +1 ] =
+    BaseColourPalettesTable2[#BaseColourPalettesTable2 +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
     end

@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize","TkEmitterFloatProperty.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkEmitterFloatProperty.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CurveStartValue",    "0"},
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ColourMiddle", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize","TkEmitterFloatProperty.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkEmitterFloatProperty.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CurveStartValue",    "0"},
@@ -48,14 +48,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ColourStart", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ColourMiddle", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.5"},
@@ -68,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize","TkEmitterFloatProperty.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkEmitterFloatProperty.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CurveStartValue",    "0"},
@@ -77,14 +77,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ColourStart", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ColourMiddle", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "1"},

@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CreatureUndiscovered","GcScannerIcon.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"CreatureUndiscovered", "GcScannerIcon.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Filename", "TEXTURES/UI/HUD/DUDCREATURE.RED.DDS"},

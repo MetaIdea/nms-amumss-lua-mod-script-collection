@@ -17,15 +17,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FOREST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PatchSize",    "120"},
-                                {"RegionScale",    "8"},
+                                {"PatchSize",   "120"},
+                                {"RegionScale", "8"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "BARRENROCKCLUMP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PatchSize",    "35"},
+                                {"PatchSize", "35"},
                             }
                         }
                     }

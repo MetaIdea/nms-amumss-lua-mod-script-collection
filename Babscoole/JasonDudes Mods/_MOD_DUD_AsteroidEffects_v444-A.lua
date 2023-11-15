@@ -18,9 +18,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life",               "1.5",},
-                                {"CamShake",           "True",},
-                                {"CamShakeSpaceScale", "True",},
+                                {"Life",               "1.5"},
+                                {"CamShake",           "True"},
+                                {"CamShakeSpaceScale", "True"},
                             }
                         },
                         {
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"] = 40,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Scale", "30",},
+                                {"Scale", "30"},
                             }
                         },
                         {
@@ -36,11 +36,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number",        "2",},
-                                {"Radius",        "15",},
-                                {"Scale",         "0.01",},
-                                {"Speed",         "700",},
-                                {"AnglularSpeed", "6",},
+                                {"Number",        "2"},
+                                {"Radius",        "15"},
+                                {"Scale",         "0.01"},
+                                {"Speed",         "700"},
+                                {"AnglularSpeed", "6"},
                             }
                         },
                         {
@@ -80,38 +80,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_M_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"Number",        "2",},
-                                {"Radius",        "15",},
-                                {"Scale",         "0.04",},
-                                {"Speed",         "700",},
-                                {"AnglularSpeed", "4",},
+                                {"Number",        "2"},
+                                {"Radius",        "15"},
+                                {"Scale",         "0.04"},
+                                {"Speed",         "700"},
+                                {"AnglularSpeed", "4"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_M_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris", "GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris", "GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"Number",        "4",},
-                                {"Radius",        "15",},
-                                {"Scale",         "0.02",},
-                                {"AnglularSpeed", "8",},
+                                {"Number",        "4"},
+                                {"Radius",        "15"},
+                                {"Scale",         "0.02"},
+                                {"AnglularSpeed", "8"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life",               "3",},
-                                {"CamShake",           "True",},
-                                {"CamShakeSpaceScale", "True",},
+                                {"Life",               "3"},
+                                {"CamShake",           "True"},
+                                {"CamShakeSpaceScale", "True"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number", "3",},
+                                {"Number", "3"},
                             }
                         },
                         {
@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"] = 80,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Scale", "30",},
+                                {"Scale", "30"},
                             }
                         },
                         {
@@ -127,10 +127,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number",        "2",},
-                                {"Radius",        "15",},
-                                {"Speed",         "700",},
-                                {"AnglularSpeed", "8",},
+                                {"Number",        "2"},
+                                {"Radius",        "15"},
+                                {"Speed",         "700"},
+                                {"AnglularSpeed", "8"},
                             }
                         },
                         {
@@ -162,9 +162,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_S_EXP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life",               "3",},
-                                {"CamShake",           "True",},
-                                {"CamShakeSpaceScale", "True",},
+                                {"Life",               "3"},
+                                {"CamShake",           "True"},
+                                {"CamShakeSpaceScale", "True"},
                             }
                         },
                         {
@@ -172,25 +172,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"] = 80,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Scale", "30",},
+                                {"Scale", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_L_EXP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Scale",              "20",},
-                                {"CamShake",           "True",},
-                                {"CamShakeSpaceScale", "True",},
+                                {"Scale",              "20"},
+                                {"CamShake",           "True"},
+                                {"CamShakeSpaceScale", "True"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_L_EXP"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_L_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["REMOVE"] = "LINE",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_L_EXP", "AkEvent","EXPLOSION_RESOURCE_GATHER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_L_EXP", "AkEvent", "EXPLOSION_RESOURCE_GATHER"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[

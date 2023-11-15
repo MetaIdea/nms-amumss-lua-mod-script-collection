@@ -37,38 +37,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pCube7",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pCube7"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "RotZ", "-20.321157" },
+                                {"RotZ", "-20.321157"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pCube8",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pCube8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "RotZ", "20.132433" },
+                                {"RotZ", "20.132433"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","C3",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "C3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "TransX", "0.32" },
-                                { "TransZ", "0.15" },
-                                { "ScaleX", "0.765" },
-                                { "ScaleY", "0.765" },
+                                {"TransX", "0.32"},
+                                {"TransZ", "0.15"},
+                                {"ScaleX", "0.765"},
+                                {"ScaleY", "0.765"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder12",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pCylinder12"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "TransX", "-0.13" },
-                                { "TransZ", "-0.77" },
-                                { "ScaleX", "1.1" },
-                                { "ScaleY", "1.1" },
-                                { "ScaleZ", "0.59" },
+                                {"TransX", "-0.13"},
+                                {"TransZ", "-0.77"},
+                                {"ScaleX", "1.1"},
+                                {"ScaleY", "1.1"},
+                                {"ScaleZ", "0.59"},
                             }
                         },
                     }
@@ -223,7 +223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     {
         {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB\PARTS\DUDENGINEBTHRUSTER.SCENE.EXML",
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkSceneNodeData">

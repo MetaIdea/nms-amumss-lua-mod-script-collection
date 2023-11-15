@@ -15,9 +15,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",     "0.5"},
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -43,9 +43,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",     "0.6"},
@@ -60,25 +60,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/UNDERGROUNDPROP.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/UNDERGROUNDPROP.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"GcTerrainTileType.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcTerrainTileType.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileType", "Mountain"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/UNDERGROUNDPROP.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/UNDERGROUNDPROP.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"GcTerrainTileType.xml","GcTerrainTileType.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcTerrainTileType.xml", "GcTerrainTileType.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileType", "Rock"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -89,9 +89,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.5"},
@@ -101,7 +101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -110,9 +110,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",     "1"},
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -131,9 +131,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.6"},

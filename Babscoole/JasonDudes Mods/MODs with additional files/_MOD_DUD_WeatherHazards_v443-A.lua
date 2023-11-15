@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","METEOR_EFFECT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "METEOR_EFFECT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpawnScale", "0.5"},
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SINGLE_METEOR"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SINGLE_METEOR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpawnScale", "0.5"},
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","METEOR"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "METEOR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpawnScale", "0.5"},
@@ -49,14 +49,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","LIGHTNING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "LIGHTNING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DamageRadius",  "10"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TORNADO"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORNADO"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpawnScale",      "1.5"},

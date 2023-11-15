@@ -59,17 +59,6 @@ for _, biomepath in ipairs(biomelist) do
 					["OPTIONS"] = {},
 				}
 				for _, objectsfile in ipairs(getObjectsFileList(biomepath,sectionname)) do
-					table.insert(MBIN_CHANGE_TABLE,{
-						["MBIN_FILE_SOURCE"] = {objectsfile},
-						["EXML_CHANGE_TABLE"] = {
-							{
-								["REPLACE_TYPE"] = "ALL",
-								["VALUE_CHANGE_TABLE"] = {
-									{"PlacementPriority","High"}
-								}
-							}
-						},
-					})
 					if objectsFileHasLayer(objectsfile,layer) then
 						newobjectsfile = objectsfile:gsub("(.*)/", "%1/"..string.upper(layer).."/")
 						table.insert(NEW_BIOME_STRUCTURE[biomepath][newsectionname]["OPTIONS"],newobjectsfile)

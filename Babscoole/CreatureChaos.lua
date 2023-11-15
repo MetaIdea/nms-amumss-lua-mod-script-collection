@@ -228,25 +228,25 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Fur", "GcPaletteData.xml"  },
+                            ["SPECIAL_KEY_WORDS"] = {"Fur", "GcPaletteData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumColours", "All"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Scale", "GcPaletteData.xml"  },
+                            ["SPECIAL_KEY_WORDS"] = {"Scale", "GcPaletteData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumColours", "All"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Underbelly", "GcPaletteData.xml"  },
+                            ["SPECIAL_KEY_WORDS"] = {"Underbelly", "GcPaletteData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumColours", "All"}
@@ -259,7 +259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FISH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FISH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -269,7 +269,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FISHFLOCK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FISHFLOCK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",                    "1.5"},
@@ -278,7 +278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SWIMCOW",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SWIMCOW"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -288,7 +288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SWIMRODENT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SWIMRODENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -298,7 +298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","JELLYFISH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "JELLYFISH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -308,7 +308,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","CRAB",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRAB"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -318,7 +318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SEASNAKE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SEASNAKE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -328,7 +328,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SHARK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHARK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -338,7 +338,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BIRD",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BIRD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -348,7 +348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLYINGSNAKE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLYINGSNAKE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -358,7 +358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLYINGLIZARD",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLYINGLIZARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -368,7 +368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BUTTERFLY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",                    "3"},
@@ -377,7 +377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SMALLBIRD",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SMALLBIRD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.25"},
@@ -387,7 +387,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLOCK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BUTTERFLOCK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",                    "3"},
@@ -396,7 +396,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","LARGEBUTTERFLY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "LARGEBUTTERFLY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -406,7 +406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLYINGBEETLE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLYINGBEETLE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -416,7 +416,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ANTELOPE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ANTELOPE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -425,7 +425,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTANTELOPE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OnlySpawnWhenIdIsForced",     "False"},
@@ -436,21 +436,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE","RarityOverride","GcCreatureRarity.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTANTELOPE", "RarityOverride", "GcCreatureRarity.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRarity", "SuperRare"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE","Rarity","GcCreatureRarity.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTANTELOPE", "Rarity", "GcCreatureRarity.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRarity", "SuperRare"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TRICERATOPS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRICERATOPS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -459,7 +459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RODENT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RODENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -469,7 +469,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MOLE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MOLE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -479,14 +479,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MOLE", "PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MOLE", "PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "Low"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","COW",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "COW"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -495,7 +495,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","CAT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -504,7 +504,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BONECAT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BONECAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -514,7 +514,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STRIDER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STRIDER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -524,7 +524,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TREX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TREX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -534,7 +534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TWOLEGANTELOPE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TWOLEGANTELOPE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -544,7 +544,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCOW"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -554,7 +554,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -564,7 +564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","GRUNT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRUNT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -572,21 +572,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","GRUNT", "PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRUNT", "PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "Low"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB", "PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB", "PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "Low"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPIDER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPIDER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -596,7 +596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLOATSPIDER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -605,7 +605,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLOATSPIDER"},
                             ["PRECEDING_KEY_WORDS"] = {"Tags"}, 
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -619,7 +619,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOROLLER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOROLLER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -629,7 +629,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.3"},
@@ -639,7 +639,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTODIGGER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTODIGGER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -649,7 +649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLOUGH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLOUGH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -659,7 +659,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","DRILL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRILL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -669,7 +669,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDROLL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEIRDROLL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -679,7 +679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDFLOAT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEIRDFLOAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -689,7 +689,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDCRYSTAL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEIRDCRYSTAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -699,7 +699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDBUTTERFLY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEIRDBUTTERFLY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",                    "0.2"},
@@ -709,7 +709,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FIEND",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIEND"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.8"},
@@ -717,7 +717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SLUG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SLUG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.8"},
@@ -725,7 +725,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MINIFIEND",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MINIFIEND"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.8"},
@@ -733,21 +733,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FIENDFISHSMALL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDFISHSMALL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLOATER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLOATER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MINIDRONE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.2"},
@@ -755,7 +755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROCKCREATURE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROCKCREATURE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.8"},
@@ -763,7 +763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SANDWORM"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "35"},
@@ -790,40 +790,40 @@ function GetColours(R,G,B,A)
 end
 
 function CreateColoursProperty(PaletteColours)
-    local PropertiesString = ""
+    local PropertiesString = {}
 
     for j = 1, #PaletteColours do
         local R = PaletteColours[j]["R"]
         local G = PaletteColours[j]["G"]
         local B = PaletteColours[j]["B"]
         local A = PaletteColours[j]["A"]
-        PropertiesString = PropertiesString..GetColours(R, G, B, A)
+        table.insert(PropertiesString,GetColours(R, G, B, A))
     end
     local PropertyColoursString =
     [[      <Property name="Colours">
-    ]]..PropertiesString..[[
+    ]]..table.concat(PropertiesString)..[[
   </Property>]]
 
     -- print(PropertyColoursString)
     return PropertyColoursString
 end
 
-local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local Palette = DataTable[i]["PALETTE"]
     local PaletteColours = DataTable[i]["COLOURS"]
     local PaletteNumColours = DataTable[i]["NUMCOLOURS"]
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
-        ["PRECEDING_KEY_WORDS"] = { "Colours" },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
