@@ -30,8 +30,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "2.1474836E+09"},
-                                {"y", "2.1474836E+09"},
+                                {"x", "-1"},
+                                {"y", "-1"},
                             }
                         },
                         {
