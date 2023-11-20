@@ -167,12 +167,12 @@ INIT_PRESET ={
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF", -- "ON"/"OFF" -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
-                ["SKY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- floating things in the skies
+                ["SKY_BIOMES_FEATURE"] = "OFF", -- "ON"/"OFF"-- floating things in the skies
                 ["STORM_BIOMES_FEATURES"] = "OFF", -- this var is not used anymore 
-                ["GIANTS_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
+                ["GIANTS_BIOMES_FEATURE"] = "OFF", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- swamp biomes ( trees and constructs on water) & flora / rocks on beaches
-                ["MONTAINS_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- more diversity on montains
-                ["CAVE_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF"-- more diversity on caves
+                ["MONTAINS_BIOMES_FEATURE"] = "OFF",-- "ON"/"OFF" -- more diversity on montains
+                ["CAVE_BIOMES_FEATURE"] = "OFF",-- "ON"/"OFF"-- more diversity on caves
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] = -- world generation features, by models replacement
             { 
@@ -32640,17 +32640,57 @@ LUSHGRASSLIST =
 
 		-- E3 BUILDINGS BEACONS
 		if E3_FANTASY_BEACONS_ASSETS_FEATURE == "ON" then
-			--
-			NEW_CONTENT =
+
+		BEACON = [[
+      <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="RefPortal" />
+      <Property name="NameHash" value="1182013967" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="60" />
+        <Property name="TransY" value="-5" />
+        <Property name="TransZ" value="20" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1.62" />
+        <Property name="ScaleY" value="1.62" />
+        <Property name="ScaleZ" value="1.62" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\RGO\CONSTRUCT01.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+		]]
+
+		addFeature
+		(
+			E3_FANTASY_BEACONS_ASSETS_FEATURE,
 			{
 
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BEACONS\BEACON.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\BEACONS\BEACON.SCENE.EXML]]
 
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BEACONS\BEACON.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["ADD"] 	= BEACON
+						},			
+
+					}
+				}
 			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
+
+		)
+
+
 		end
 
 		-- E3 RUINS
