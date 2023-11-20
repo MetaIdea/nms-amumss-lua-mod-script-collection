@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Tardigrades Mode -Aurfram.pak",
+["MOD_FILENAME"]  = "Water Bear Mode(No Hazard)-Aurfram.pak",
 ["MOD_AUTHOR"]    = "Aurfram",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.45",
@@ -30,8 +30,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "-1"},
-                                {"y", "-1"},
+                                {"x", "9999999"},
+                                {"y", "9999999"},
                             }
                         },
                         {
