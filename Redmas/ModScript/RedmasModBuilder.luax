@@ -13,6 +13,10 @@
 --            If you are a confirmed modder and you are wanting to add or to update the features do a 
 --                               			CTRL+F **FEATURES**
 --                                              to edit them
+----------------------------------------------------------------------------
+-- THIS LUA SCRIPT REQUIRES RGOG FRAMEWORK THAT YOU CAN DOWNLOAD AT https://www.nexusmods.com/nomanssky/mods/2791
+-- https://discord.gg/KtY5kguX6p
+----------------------------------------------------------------------------
 INIT_PRESET ={
 ["MODNAME"] = "UNTITLED_MOD_EXAMPLE",--> change the mod name here
 ----------------------------------------------------------------------------
@@ -166,12 +170,12 @@ INIT_PRESET ={
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF", -- "ON"/"OFF" -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
-                ["SKY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- floating things in the skies
+                ["SKY_BIOMES_FEATURE"] = "OFF", -- "ON"/"OFF"-- floating things in the skies
                 ["STORM_BIOMES_FEATURES"] = "OFF", -- this var is not used anymore 
-                ["GIANTS_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
+                ["GIANTS_BIOMES_FEATURE"] = "OFF", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- swamp biomes ( trees and constructs on water) & flora / rocks on beaches
-                ["MONTAINS_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- more diversity on montains
-                ["CAVE_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF"-- more diversity on caves
+                ["MONTAINS_BIOMES_FEATURE"] = "OFF",-- "ON"/"OFF" -- more diversity on montains
+                ["CAVE_BIOMES_FEATURE"] = "OFF",-- "ON"/"OFF"-- more diversity on caves
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] = -- world generation features, by models replacement
             { 
@@ -256,6 +260,8 @@ INIT_PRESET ={
         ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000, --> increase all hyperdrive ranges -- notice that this param requires a integer, not a string
     }
 }
+---------------------------------------------------------------------------------------------------------------------------
+ASTEROIDS_REWORK = "ON" -- turn this value off if you don't want to aplie any changes to the asteroids file ( GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN )
 --------------------------------------------------------------------------------------------------------------
 HQ_SPACESTATIONS = "ON" -- "ON"/"OFF" enables the unreleased space stations models ( at the time i write )
 --------------------------------------------------------------------------------------------------------------
@@ -271,7 +277,23 @@ COLORS_GENERATION_REWORK = "FANTASY_COLOURS" -- "FANTASY_COLOURS" or "SCIFI_COLO
 -- color generation used for planets, creatures, materials, etc
 -- FANTASY COLOURS Are 90% PathFinder colors ( its the classical Utopia revamp mod look and old NMS fantasy look )
 -- SCIFI_COLOURS is new original colors
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+FIX_FOR_VANILLA_TREES = "ON" -- turn this value to "ON" to fix vanilla trees imposter - turn it "OFF" if it has no purpose for your mod
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+REDMAS_CAPE_FIX = "ON" -- turn this value to "ON" to improve capes movements - turn it "OFF" if it has no purpose for your mod (PLAYERCHARACTER.ENTITY.MBIN)
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+BUSY_SPACE_TRAFFIC = "ON" -- turn that feature "OFF" if you want to do **share spaceships systems locations to others players**
+-- Increases numbers of spaceships in systems
+-- makes Sail spaceships roaming
+-- makes sentinel spaceships roaming
+-- increases chances of seeing Royal spaceships
+-- turn this value "OFF" if want to keep compatibility with others mods using
+-- GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN
+-- AISPACESHIPMANAGER.MBIN
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- **ADVANCED PARAMS**
 ---------------------------
 DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
@@ -5758,7 +5780,8 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --vanilla Debug 
-
+if REDMAS_CAPE_FIX == "ON"
+then
 addFeature
 (
 	ONFOOT_CONTROLS_REVISON_FEATURE,
@@ -5783,9 +5806,10 @@ addFeature
 
 	}
 )
+end
 
-
-
+if HQ_SPACESTATIONS == "ON"
+then
 	copyEXML(
 		HQ_SPACESTATIONS,
 		[[SPACESTATIONTYPEB.DESCRIPTOR.EXML]],
@@ -7421,13 +7445,14 @@ addFeature
 		[[STATION\TEXTURES\TYPEB\TRIM1.PARALLAX.DDS]],
 		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.PARALLAX.DDS]]
 	)
-
+end
 
 
 
 
 -- CAMERA OVERHAUL
-
+if CENTERED_CAMERA_FEATURE == "ON"
+then
 addFeature
 (
 	CENTERED_CAMERA_FEATURE,
@@ -7458,10 +7483,12 @@ addFeature
 		}
 	}
 )
-
+end
 
 
 -- **CAMERA_OVERHAUL_FEATURES**
+if CAMERA_OVERHAUL_FEATURE == "ON"
+then
 addFeature
 (
 	CAMERA_OVERHAUL_FEATURE,
@@ -7722,7 +7749,10 @@ addFeature
 		}
 	}
 )
+end
 -- CAMERA NO SHAKE
+if	CAMERA_NO_SHAKE_FEATURE == "ON"
+then
 addFeature
 (
 	CAMERA_NO_SHAKE_FEATURE,
@@ -7781,98 +7811,13 @@ addFeature
 		}
 	}
 )
+end
 -- END CAMERA OVERHAUL
 -- VISUAL OVERHAUL
-if VISUAL_OVERHAUL == "ON"
-then
-	addFeature
-	(
-		VISUAL_OVERHAUL,
-		{
-			{
-				-- asteroids rework
-					["MBIN_FILE_SOURCE"]  = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						-- Small ones
-						{
-							["PRECEDING_KEY_WORDS"] = "CommonAsteroidData",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Spacing", ASTEROID_SPACING_MULTIPLIER},
-								{"Scale", ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData","ScaleVariance"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", ASTEROID_SCALE_MULTIPLIER},
-								{"y", ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						-- BIG  ones
-						{
-							["PRECEDING_KEY_WORDS"] = "LargeAsteroidData",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Spacing", LARGE_ASTEROID_SPACING_MULTIPLIER},
-								{"Scale", LARGE_ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData","ScaleVariance"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", LARGE_ASTEROID_SCALE_MULTIPLIER},
-								{"y", LARGE_ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						-- rare ones
-						{
-							["PRECEDING_KEY_WORDS"] = "LargeAsteroidData",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Spacing", RARE_ASTEROID_SPACING_MULTIPLIER},
-								{"Scale", RARE_ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData","ScaleVariance"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", RARE_ASTEROID_SCALE_MULTIPLIER},
-								{"y", RARE_ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
 
-					}
-				}
 
-		},
-		DAY_ONE_MODE
-	)
-
-	
-	----------------------------------------------------------------------
-	if SPACE_BLUR_FEATURE == "ON" then
-	SPACEBLURVALUE = "0.5"
-	else
-		SPACEBLURVALUE ="0"
-	end
-	----------------------------------------------------------------------
+if GENERATION_OVERHAUL == "ON" then
+		----------------------------------------------------------------------
 	if ULTRA_DIVERSE_SPACE_COLOURS == "ON" then
 		ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW = ""
 		ULTRA_DIVERSE_SPACE_COLOURS_EXML = ""
@@ -8002,6 +7947,100 @@ then
 		addContent(ULTRA_DIVERSE_SPACE_COLOURS_CHANGE_TABLE)
 
 	end
+end
+
+if VISUAL_OVERHAUL == "ON"
+then
+	if ASTEROIDS_REWORK == "ON"
+	then
+	addFeature
+	(
+		ASTEROIDS_REWORK,
+		{
+			{
+				-- asteroids rework
+					["MBIN_FILE_SOURCE"]  = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] =
+					{
+						-- Small ones
+						{
+							["PRECEDING_KEY_WORDS"] = "CommonAsteroidData",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Spacing", ASTEROID_SPACING_MULTIPLIER},
+								{"Scale", ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData","ScaleVariance"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"x", ASTEROID_SCALE_MULTIPLIER},
+								{"y", ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						-- BIG  ones
+						{
+							["PRECEDING_KEY_WORDS"] = "LargeAsteroidData",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Spacing", LARGE_ASTEROID_SPACING_MULTIPLIER},
+								{"Scale", LARGE_ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData","ScaleVariance"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"x", LARGE_ASTEROID_SCALE_MULTIPLIER},
+								{"y", LARGE_ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						-- rare ones
+						{
+							["PRECEDING_KEY_WORDS"] = "LargeAsteroidData",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Spacing", RARE_ASTEROID_SPACING_MULTIPLIER},
+								{"Scale", RARE_ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData","ScaleVariance"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"x", RARE_ASTEROID_SCALE_MULTIPLIER},
+								{"y", RARE_ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+
+					}
+				}
+
+		},
+		DAY_ONE_MODE
+	)
+	end
+	
+	----------------------------------------------------------------------
+	if SPACE_BLUR_FEATURE == "ON" then
+	SPACEBLURVALUE = "0.5"
+	else
+		SPACEBLURVALUE ="0"
+	end
+
 	----------------------------------------------------------------------
 	if SPACE_COLOURS_TYPE == "REALISTIC" then
 		SPACE_COLOURS_CHANGE_TABLE =
@@ -8264,6 +8303,8 @@ then
 
 	----------------------------------------------------------------------
 	-- WATER REWORK
+	if REDMAS_WATER_REFLECTIONS == "ON"
+	then
 	addFeature
 	(
 		REDMAS_WATER_REFLECTIONS,
@@ -8291,8 +8332,11 @@ then
 			}
 		}
 	)
+	end
 	----------------------------------------------------------------------
 	-- BLUR IN THE DISTANCE AND OTHER SKY EFFECTS
+	if SPACE_BLUR_FEATURE == "ON"
+	then
 	addFeature
 	(
 		SPACE_BLUR_FEATURE,
@@ -8379,6 +8423,7 @@ then
 			}
 		}
 	)
+	end
 
 	-----------------------------------------------------------------------
 	-- CONTRAILS REMOVER
@@ -8464,11 +8509,10 @@ then
 	-----------------------------------------------------------------------------------------------------------------------------------
 	------------------------------------------------------------------------------------------------------------------------------------
 	
-	if FIGHTERS_SPACESHIPS_REPAINT ~= "OFF" then
-	
+
 	addFeature
 	(
-		"ON",
+		"FIGHTERS_SPACESHIPS_REPAINT",
 		{
 
 				{
@@ -9144,7 +9188,7 @@ then
 
 		}
 	)
-	end
+	
 	addFeature
 	(
 		DROPSHIPS_SPACESHIPS_REPAINT,
@@ -11284,6 +11328,7 @@ then
 	end
 	-- fix for weird vanilla artefacts
 	--
+	if FIX_FOR_VANILLA_TREES == "ON" then
 	NEW_CONTENT =
 		{
 
@@ -11293,6 +11338,7 @@ then
 		}
 		table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 	--
+	end
 	-- FILTERS REWORK
 	if FILTERS_SWAP_FEATURE == "ON" then
 		FILTERS_CONTENT1 = {}
@@ -32639,17 +32685,57 @@ LUSHGRASSLIST =
 
 		-- E3 BUILDINGS BEACONS
 		if E3_FANTASY_BEACONS_ASSETS_FEATURE == "ON" then
-			--
-			NEW_CONTENT =
+
+		BEACON = [[
+      <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="RefPortal" />
+      <Property name="NameHash" value="1182013967" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="60" />
+        <Property name="TransY" value="-5" />
+        <Property name="TransZ" value="20" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1.62" />
+        <Property name="ScaleY" value="1.62" />
+        <Property name="ScaleZ" value="1.62" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\RGO\CONSTRUCT01.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+		]]
+
+		addFeature
+		(
+			E3_FANTASY_BEACONS_ASSETS_FEATURE,
 			{
 
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BEACONS\BEACON.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\BEACONS\BEACON.SCENE.EXML]]
 
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BEACONS\BEACON.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["ADD"] 	= BEACON
+						},			
+
+					}
+				}
 			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
+
+		)
+
+
 		end
 
 		-- E3 RUINS
@@ -40277,7 +40363,7 @@ NEW_CONTENT =
 	--------------------------------------------------------------------------
 	addFeature
 	(
-		REDMAS_SPACE_GENERATION,
+		BUSY_SPACE_TRAFFIC,
 		{
 
 				{
