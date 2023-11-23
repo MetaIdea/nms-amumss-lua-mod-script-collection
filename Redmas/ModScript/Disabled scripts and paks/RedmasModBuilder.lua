@@ -14,261 +14,192 @@
 --            If you are a confirmed modder and you are wanting to add or to update the features do a 
 --                               			CTRL+F **FEATURES**
 --                                              to edit them
-----------------------------------------------------------------------------
--- THIS LUA SCRIPT REQUIRES RGOG FRAMEWORK THAT YOU CAN DOWNLOAD AT https://www.nexusmods.com/nomanssky/mods/2791
--- https://discord.gg/KtY5kguX6p
-----------------------------------------------------------------------------
 INIT_PRESET ={
-["MODNAME"] = "UNTITLED_MOD_EXAMPLE",--> change the mod name here
-----------------------------------------------------------------------------
--- Don't forget to build again your mod after each vanilla updates ( it's better to wait 2 days before doing it in order to have all features updated)
--- Check for new version of that script after a vanilla update at https://www.nexusmods.com/nomanssky/mods/2791
--- When you change the mod name, don't forget to remove the previously named one inside the No Man's Sky "MODS" folder ( [NMSGAMEFOLDER] / GAMEDATA / PCBANKS / MODS )
--- I ve put alternative values in comments inside ""
-----------------------------------------------------------------------------
+	["MODNAME"] = "___REDMAS___EUPHORIA_WORLDS_GENERATION_extension_v6.5",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
-        ["VISUAL_OVERHAUL"] = "ON", -- > this var {"OFF"} will disable all features under that node 
-        --
-        ["REDMAS_WATER_REFLECTIONS"] = "ON", -- {"OFF"} / redmas water mod -- Creates foam , waves and reflections on water --> it makes it look more realistic       
-        ["SPACE_BLUR_FEATURE"] = "ON", -- {"OFF"} This value will create a blur effect while in space -- /!\ with this var on you have to activate DepthOfField in photomode   -- Ctrl+F "SPACE_BLUR_FEATURE" to edit it   
-        ["FILTERS_SWAP_FEATURE"] = "ON", -- {"OFF"} with this value on, default filter are replaced with brighter ones 
-        -- BINOCULARS_TYPE SUN value will replace the binoclar filter with a vintage filter,
-        -- BINOCULARS_TYPE Clear will remove the visual filter when using binoculars  -- Ctrl+F "FILTERS_SWAP_FEATURE" to edit it   
-        ["BINOCULARS_TYPE"] = "CLEAR", -- {"SUN"} / {"CLEAR"}  
-        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON", -- {"OFF"} / This will reduce the speed lines while using the pulse warp in solar systems
-        -- SPACESHIPS_TRAILS_TYPE REALISTIC : No visible trails for player and AI spaceships - Enemies and allies trails are visible during spaceships combat
-        -- SPACESHIPS_TRAILS_TYPE E3 : restore the previous spaceship trails of NMS ( Pre-NEXT update)
-        ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- ( {"REALISTIC"} / {"VANILLA"} / {"E3"} )
-        -- REALISTIC SPACE_COLOURS_TYPE Make space much darker( but not always full black) - it can be combined with ULTRA_DIVERSE_SPACE_COLOURS option ON
-        -- SPACE_COLOURS_TYPE ON is vanilla unless you use the ULTRA_DIVERSE_SPACE_COLOURS option ON 
-        -- FANTASY SPACE_COLOURS_TYPE Make all space darker ( but still colorful) - it can be combined with ULTRA_DIVERSE_SPACE_COLOURS option ON
-        ["SPACE_COLOURS_TYPE"] = "FANTASY", -- ({"REALISTIC"} / {"ON"} / {"FANTASY"} )
-        -- REALISTIC ASTEROIDS_FIELDS_TYPE this meant to make astroid fields more natural ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
-        -- FANTASY ASTEROIDS_FIELDS_TYPE this meant to make astroid easier to flight around ( very spaced and smaller) ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
-        -- GLUED ASTEROIDS_FIELDS_TYPE this will make asteroids packed, like they are in vanilla, but with more spacing ( this can be adjusted if you ctrl+F **ASTEROIDS_FIELDS_SPACING_PRESETS** to edit the spacing)
-        ["ASTEROIDS_FIELDS_TYPE"] = "FANTASY", -- ({"FANTASY"}  / {"REALISTIC"} / {"GLUED"})
-        -- FIGHTERS_SPACESHIPS_REPAINT ON for Dirty looking metal spaceships ( allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
-        -- FIGHTERS_SPACESHIPS_REPAINT FULL for full metal spaceships ( do not allows to see fighters base colors) CTRL + F **SPACESHIPS_REPAINT** to edit it 
-        ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",  -- {"ON"} / {"FULL"} / {"OFF"} ( METALIC SPACESHIP MOD )
-        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON", -- {"ON"} / {"OFF"} -- ( METALIC SPACESHIP MOD ) CTRL + F **SPACESHIPS_REPAINT** to edit it 
-        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON", -- {"ON"} / {"OFF"} ( METALIC SPACESHIP MOD ) CTRL + F **SPACESHIPS_REPAINT** to edit it 
-        --
+        ["VISUAL_OVERHAUL"] = "OFF",
+        ["REDMAS_WATER_REFLECTIONS"] = "OFF",
+        ["SPACE_BLUR_FEATURE"] = "OFF",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
+        ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
+        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "OFF",
+        ["SPACESHIPS_TRAILS_TYPE"] = "VANILLA",  -- (REALISTIC / VANILLA / E3 )
+        ["SPACE_COLOURS_TYPE"] = "VANILLA", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "OFF",
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "OFF",
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "OFF",
     },
-    -----------------------------------------------------------------------------------------------------------
-
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        -- Edit them with paintdotnet tool for example 
-        -- You can download a background at https://wall.alphacoders.com/by_sub_category.php?id=226189&name=No+Man%27s+Sky+Wallpapers
-        ---------------------------------------------------------------------------------------------------------------------------
-        -- Trick for creating your own image:
-        -- 1 open with paintdotnet _TEMPLATE.DDS in ../RGOG/IMAGES/
-        -- 2 open with paintdotnet the image that you want to add ( + edit it if you want )
-        -- 3 Edit > select all + Edit>copy on the image that you want to add
-        -- 4 go to the template image .dds already open in paintdotnet ( you did it in step 1)
-        -- 5 Edit > Paste in a new layer ( dont adjust the image area when asked to )
-        -- 6 save as a new .DDS inside ../RGOG/IMAGES/
-        ---------------------------------------------------------------------------------------------------------------------------
-        -- Copy paste the dds images names from ../RGOG/IMAGES/ and paste them here
-        ["HELLO_GAMES_SPASH_SCREEN"] = "SCIFIPAINT",  -- "","HG-E3-1"  or another img name from ../RGOG/IMAGES
-        -- This is the first loading Screen
-        ["ENGINE_SPASH_SCREEN"] = "E3-SHIPS", --  "" , "E-E3-1"   or another img name from ../RGOG/IMAGES
-        -- This is the seconf loading Screen
-        ["NMS_TITLE"] = "TITLE-ATLAS", --  "" , "TITLE-WAYPOINT"   or another img name from ../RGOG/IMAGES
-        -- this will replace the title loading screen
-        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE4", --  "" , "E3-RUINS"   or another img name from ../RGOG/IMAGES
-        -- this will replace the Menus Screens
-        ["TRANSPARENT_OPTIONS_MENU"] = "OFF", -- -- this var is not used anymore because it was impossibe to read the menus in some situations
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS" or another img name
+        ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
     {
-	    ["CAMERA_OVERHAUL_FEATURE"] = "ON", -- "ON"/"OFF" this value enable the camera changes
-        -- ( larger FOV , exocrafts cam improvements for mining from exocrafts, camera is more far during system warp)
-        -- CTRL+F **CAMERA_OVERHAUL_FEATURES** to edit the changes
-	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
-        -- this is different from the game menu no shake : this changes will remove shaking for everything exept getting hit, sandworms , and volcanos.
-        -- it can be combine with the vanilla camera shakes adjustement
-        -- I suggest to use it, in order to have a feeling of danger and to be in rare situations
-	    ["CENTERED_CAMERA_FEATURE"] = "OFF", -- this var is not used anymore -- had a cam auto move bug / felt unconfortable to use
+	    ["CAMERA_OVERHAUL_FEATURE"] = "OFF",
+	    ["CAMERA_NO_SHAKE_FEATURE"] = "OFF",
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
     },
     ["GAMEPLAY_FEATURES"] =
     {
-        ["GAMEPLAY_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
+        ["GAMEPLAY_OVERHAUL"] = "OFF",
         ["QOL_FEATURES"] =
         {
-            -- Quality of Life features
-            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON", -- "ON"/"OFF"  more character shape customisations -- vanilla have 5 body types, this mod will add 20 in between body shapes
-            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod) -- adjust the mining speed. it works by reducing all props lifebar / health
-            ["NEW_INTERACTIONS_FEATURE"] = "ON", -- "ON"/"OFF"  ( New Gameplay Mechanics ) -- add new interactions to decorations - add useful stuff in hangars - reworks freighters bridge
-            ["ADVANCED_BUILDS_FEATURE"] = "ON", --  "ON"/"OFF"  ( more buildable objects on freighter planets and settlements )
-            ["FREE_POWER_ON_EM_GENERATORS"] = "ON", -- "ON"/"OFF"   ( electro magnetic generator always give power with that value on )
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "OFF",
+            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
+            ["NEW_INTERACTIONS_FEATURE"] = "OFF",
+            ["ADVANCED_BUILDS_FEATURE"] = "OFF",
+            ["FREE_POWER_ON_EM_GENERATORS"] = "OFF",
         },
         ["ONFOOT_GAMEPLAY_FEATURES"] =
         {
-            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",  -- > this var off will disable all features under that node
-            -- Character movements polishing -- since NMS 4.25 it also improve the capes movements
-            ["LONGER_STEALTH_FEATURE"] = "OFF", -- "ON"/"OFF" 
-            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON", -- "ON"/"OFF" 
-            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF", -- "ON"/"OFF" 
-            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "ON", -- "ON"/"OFF" 
-            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "ON", -- "ON"/"OFF" 
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "OFF",
+            ["LONGER_STEALTH_FEATURE"] = "OFF",
+            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "OFF",
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
+            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "OFF",
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
         },
         ["SPACESHIPS_GAMEPLAY_FEATURES"] =
         {
-          ["HOVER_MODE"] = "ON", -- "ON"/"OFF" HOVERMODE FOR ALL SPACESHIPS
-          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON", -- -- "ON"/"OFF"  player and AI spaceships controls rework 
+          ["HOVER_MODE"] = "OFF",
+          ["SANKUKAI_SPACESHIPS_COMBAT"] = "OFF",
         },
         ["VEHICLES_FEATURES"] =
         {
-            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON", -- "ON"/"OFF"  player and AI spaceships controls rework CTRL+F **VEHICULE_HANDLINGS** for editing it
-            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON", -- "ON"/"OFF" this will add dragonfly unused exocraft with a custom model that can be summoned & customised at trading posts
-            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF", -- "ON"/"OFF" this value ON will enable the custom model that i did for the nomad ( ball exocraft ) i am planing to add more models ( the hoverbike for example)
-            ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON", -- "ON"/"OFF" this value ON will enable the custom model that i did for the pilgrim: REDMASPOD v3 ( a KANEDA BIKE INSPIRED SKIN )
-            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "ON"/"OFF" "MAKO-A" ( "Mass Effect" Inspired custom model" for the colossus
-            ["CUSTOM_ROAMER_EXOCRAFT"] = "ON", -- "ON"/"OFF" this value ON will enable the custom model that i did for the roamer : a more aggressive / sport car looking version of the vanilla roamer
-            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- "ON"/"OFF" this value on will add LARGER BEHIND WHEELS on the custom model for the roamer
-            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON", -- "ON"/"OFF" this value on will add additional lamps on the custom model for the roamer ( i had to disable their light they were too strong )
-            ["GIANT_MECHS_BETA_FEATURE"] = "ON", -- "ON"/"OFF" this value on will rescale both mechs ( player and sentinel ( because they are the same one for the game ))
-            ["MECHS_SIZE_MULTIPLIER"] = 2,  -- ( "2" to "10" -- adviced size : 2 ) notice that this param requires a integer, not a string
+            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "OFF",
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "OFF",
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF",
+            ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF",
+            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "OFF",
+            ["CUSTOM_ROAMER_EXOCRAFT"] = "OFF",
+            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF",
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "OFF",
+            ["GIANT_MECHS_BETA_FEATURE"] = "OFF",
+            ["MECHS_SIZE_MULTIPLIER"] = 1,  -- ( 2 to 10 -- adviced size : 3 )
         },
     },
     ["CREATURES_FEATURES"] =
     {
-        ["CREATURES_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
-        --
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON", -- "ON"/"OFF" This will increase the birds, fishs and butterflies, but will make everything else sparse for balancing the performance
-        ["MAX_CREATURES_NUMBER"] = 20, -- "10" < - > "20"  max number of the birds, fishs and butterflies when CREATURES_HIGH_DENSITY_FEATURE is ON. notice that this param requires a integer, not a string
+        ["CREATURES_OVERHAUL"] = "OFF", -- dont put it on
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
+        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
-        ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
-        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps )
-        ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF", -- this var is not used anymore 
+        ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="OFF",
+        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF",
         ["GIANTS_CREATURES_FEATURE"] = "ON",
-        ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 94 (very huge.)) -- recommanded 54
+        ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
     ["GENERATION_FEATURES"] =
     {
-        ["GENERATION_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
-        --
+        ["GENERATION_OVERHAUL"] = "ON",
         ["COLORS_AUTO_GENERATION_FEATURES"] =
         {
-			-- The script will procedurally generate new colours possibilties // they will be diferent at each generation of the pak
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "OFF",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
         },
         ["PLANETS_GENERATION_FEATURES"] =
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                -- Mods for the voxel generation
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "EPIC_FANTASY" , "SCI_FI_FANTASY" or "ON" or "OFF" 
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- inverts the ressources deposits ( making them out of the ground )
-                ["TERRAIN_HEIGHT_MAX"] = "10", -- "-40" to "40" higher values can make the game unstable
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF",
+                ["TERRAIN_HEIGHT_MAX"] = "222",
             },
-            ["BIOMES_FEATURES"] = -- world generation features
+            ["BIOMES_FEATURES"] =
             {
-                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF", -- "ON"/"OFF" -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "ON", -- "ON"/"OFF"-- put "off" to have the utopia revamp world generation // "on" is euphoria world generation
-                ["SKY_BIOMES_FEATURE"] = "OFF", -- "ON"/"OFF"-- floating things in the skies
-                ["STORM_BIOMES_FEATURES"] = "OFF", -- this var is not used anymore 
-                ["GIANTS_BIOMES_FEATURE"] = "OFF", -- "ON"/"OFF"-- Put "OFF" to have my old biomes generation ( before Euphoria  / post NMS FANTASY )
-                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",-- "ON"/"OFF" -- swamp biomes ( trees and constructs on water) & flora / rocks on beaches
-                ["MONTAINS_BIOMES_FEATURE"] = "OFF",-- "ON"/"OFF" -- more diversity on montains
-                ["CAVE_BIOMES_FEATURE"] = "OFF",-- "ON"/"OFF"-- more diversity on caves
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["FANTASY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["SKY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["STORM_BIOMES_FEATURES"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["GIANTS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["MONTAINS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["CAVE_BIOMES_FEATURE"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
             },
-            ["ASSETS_REPLACEMENTS_FEATURES"] = -- world generation features, by models replacement
-            { 
-
-                ["E3_FANTASY_ASSETS_FEATURES"] = "ON", -- > this var off will disable all features under that node -- "ON"/"OFF"
-                --
-                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- modded wordstones models
-                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- E3 building aside planets beacons
-                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",-- "ON"/"OFF" -- portals model replacements with e3 ones
-                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- Rings buildings aside planet deposits
-                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",-- "ON"/"OFF" -- E3 Crystals instead of vanilla crystals ( heridium / carbon, titan ones )
-                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON", -- "ON"/"OFF"-- Planets colours and tiles rework -- ( 90% "Pathfinder" colors )
-                ["REDMAS_RUINS_FEATURES"] = "OFF", -- "ON"/"OFF"-- very Large ruins
-                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON", -- "ON"/"OFF"-- put archeologic buildings aside trading posts 
+            ["ASSETS_REPLACEMENTS_FEATURES"] =
+            {
+                ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
+                ["REDMAS_RUINS_FEATURES"] = "ON",
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON",
             },
         },
         ["SPACE_GENERATION_FEATURES"] =
         {
-            ["REDMAS_SPACE_GENERATION"] = "ON",-- > this var off will disable all features under that node
-            --
-            ["TRADING_ROUTES"] = "OFF", -- vanilla value is "on"
-            ["MASSIVE_FLEET"] = "ON", -- ADD frigates aside freighters and redesign freighters - that change can be ressource heavy
-            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON", -- this will enable the custom models that i did for the derelic mission crash sites
+            ["REDMAS_SPACE_GENERATION"] = "OFF",
+            ["TRADING_ROUTES"] = "OFF",
+            ["MASSIVE_FLEET"] = "OFF",
+            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "OFF",
         },
         ["SPACESHIPS_GENERATION_FEATURES"] =
         {
-            -- Redmas Spaceships Generation Mod
-            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",  -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
         },
     },
     ["SKINS"] =
     {
-        ["CHARACTERS_SKINS_FEATURE"] = "ON",   -- > this var off will disable all features under that node  -- "ON"/"OFF" 
-        --    
-        ["DRONE_PET_SKIN_FEATURE"] = "ON",
-		["DRONE_PET_SKIN"] = "E3-DAMAGED",-- ("E3-DAMAGED" or "E3") replacement with custom models for flare ( the friendly sentinel drone ) ( i will add more ones)
-        ["CHAR_PRESETS_SKINS"] = "UTOPIA2"
-        -- this will replace the default character customisations by more advanced looking skins ( which are characters from my youtube mini series NMS FANTASY )
-        -- they are visible by vanilla players as soon as you rdit and save them in a character customisation slot
-        -- "THE-WATCHER"  /or/   "SPACE-PIRATE" /or/     "GIRLY"       /or/
-        -- "KORVAX"      /or/   "OUTLAWS"      /or/     "TRAVELLER"   /or/
-        -- "VY-KEEN"    /or/   "ANOMALY"      /or/      "GEK"        /or/
-        -- "UTOPIA"    /or/    "UTOPIA2"     /or/      "SCIFI"
+        ["CHARACTERS_SKINS_FEATURE"] = "OFF",
+        -- (E3-DAMAGED or E3)
+		["DRONE_PET_SKIN_FEATURE"] = "ON",
+        ["DRONE_PET_SKIN"] = "E3-DAMAGED",
+        -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
+        -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
+        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
+        ["CHAR_PRESETS_SKINS"] = "THE-WATCHER"
     },
     ["NEWGAME_BONUS_FEATURES"] ={
-
-        ["NEWGAME_BONUSES"] = "OFF",-- > this var off will disable all features under that node
-        --
-        -- I recommend to always wait 1 or 2 week(s) after a vanilla base game update before activating that section
-        -- ( the gamefiles it changes is always updated last )
+        ["NEWGAME_BONUSES"] = "OFF",
+		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
+		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
+		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
         ["STARTING_SHIP"] = "ALPHA_VECTOR",
-        -- "OUTLAW1" / "OUTLAW2" / "ALPHA_VECTOR" /
-		-- "PLANETEXPLO2" / "PLANETEXPLO3" / "PLANETEXPLO4" / "PLANETEXPLO5" / "PLANETEXPLO6" / "PLANETEXPLO7" /
-		-- "SPACEEXPLO1" / "SPACEEXPLO2" / "SPACEEXPLO3" / "SPACEEXPLO4" / "SPACEEXPLO5" / "SPACEEXPLO6" / "SPACEEXPLO7"
-		-- "BOUNTYHUNTER1" / "BOUNTYHUNTER2" / "BOUNTYHUNTER3" / "BOUNTYHUNTER4" / "BOUNTYHUNTER5"
-        ["STARTING_MULTITOOL"] = "OUTLAW1",
-        -- "OUTLAW1" / "OUTLAW2" / "EXPLO1" / "SPACE" /
-		-- "EXPLO2" / "EXPLO3" / "EXPLO4" / "EXPLO5" / "EXPLO6" / "EXPLO7" /
-		-- "BOUNTYHUNTER1" / "BOUNTYHUNTER2" / "BOUNTYHUNTER3" / "BOUNTYHUNTER4" / "BOUNTYHUNTER5"
+		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
+		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_MULTITOOL"] = "EXPLO1",
     },
     ["CHALLENGE_FEATURES"] =
     {
-        ["CHALLENGE_MODE"] = "OFF", -- > this var off will disable all features under that node
-        --
-		["STRONG_CREATURES_FEATURE"] = "OFF", -- note the base game already does it since NMS v 4.0
-        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6 -- this param is related to STRONG_CREATURES_FEATURE = ON
-        ["DARK_UNDERWATER"] = "OFF", -- This will make vision harder under water
-        ["STRONG_PIRATES_FEATURE"] = "OFF", -- note the base game already does it since NMS v 4.0
+        ["CHALLENGE_MODE"] = "OFF",
+		["STRONG_CREATURES_FEATURE"] = "OFF",
+        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
+        ["DARK_UNDERWATER"] = "OFF",
+        ["STRONG_PIRATES_FEATURE"] = "OFF",
     },
     ["EASY_MODE_FEATURES"] =
     {
-        -- this section is for the cheats of the Game overhaul ( there are few as you can see )
-        ["EASY_MODE"] = "ON", -- "ON"/"OFF" -- > this var off will disable all features under that node
-        --
-        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 2 , -- ( "1" < - > "4" ( too much will be glitchy when entering planets' atmosphere)) -- notice that this param requires a integer, not a string
-        ["LAUNCH_COST_REDUCTION"] = 5 , -- In % ( take off reduce ) note the base game already does it since NMS v 4.0 -- notice that this param requires a integer, not a string
-        ["WARPCELL_USAGE_MULTIPLIER"] = 5, --> increase the number of usages of normal warpcells -- notice that this param requires a integer, not a string
-        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000, --> increase all hyperdrive ranges -- notice that this param requires a integer, not a string
+        ["EASY_MODE"] = "OFF",
+        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 2 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
+        ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
+        ["WARPCELL_USAGE_MULTIPLIER"] = 5,
+        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
     }
 }
----------------------------------------------------------------------------------------------------------------------------
-ASTEROIDS_REWORK = "ON" -- turn this value off if you don't want to aplie any changes to the asteroids file ( GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN )
 --------------------------------------------------------------------------------------------------------------
-HQ_SPACESTATIONS = "ON" -- "ON"/"OFF" enables the unreleased space stations models ( at the time i write )
+HQ_SPACESTATIONS = "OFF" -- "ON"/"OFF" enables the unreleased space station ( at the time i write )
 --------------------------------------------------------------------------------------------------------------
 PROCEDURALMAX = 1000  -- 10 to 1000 --This is the number of procedural generated new params for this script
 -- change this var to increase the number of autogenerated colors, if they are enabled ( for skies, seas & space)
--- increasing that var will increase the rendering time
+-- increasing that var will increase the rendering 
 --------------------------------------------------------------------------------------------------------------
 COLORS_GENERATION_REWORK = "FANTASY_COLOURS" -- "FANTASY_COLOURS" or "SCIFI_COLOURS"
 -- must have the following vars ON to be applied :
@@ -278,23 +209,7 @@ COLORS_GENERATION_REWORK = "FANTASY_COLOURS" -- "FANTASY_COLOURS" or "SCIFI_COLO
 -- color generation used for planets, creatures, materials, etc
 -- FANTASY COLOURS Are 90% PathFinder colors ( its the classical Utopia revamp mod look and old NMS fantasy look )
 -- SCIFI_COLOURS is new original colors
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-FIX_FOR_VANILLA_TREES = "ON" -- turn this value to "ON" to fix vanilla trees imposter - turn it "OFF" if it has no purpose for your mod
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-REDMAS_CAPE_FIX = "ON" -- turn this value to "ON" to improve capes movements - turn it "OFF" if it has no purpose for your mod (PLAYERCHARACTER.ENTITY.MBIN)
---------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------
-BUSY_SPACE_TRAFFIC = "ON" -- turn that feature "OFF" if you want to do **share spaceships systems locations to others players**
--- Increases numbers of spaceships in systems
--- makes Sail spaceships roaming
--- makes sentinel spaceships roaming
--- increases chances of seeing Royal spaceships
--- turn this value "OFF" if want to keep compatibility with others mods using
--- GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN
--- AISPACESHIPMANAGER.MBIN
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- **ADVANCED PARAMS**
 ---------------------------
 DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
@@ -5781,8 +5696,7 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --vanilla Debug 
-if REDMAS_CAPE_FIX == "ON"
-then
+
 addFeature
 (
 	ONFOOT_CONTROLS_REVISON_FEATURE,
@@ -5807,10 +5721,9 @@ addFeature
 
 	}
 )
-end
 
-if HQ_SPACESTATIONS == "ON"
-then
+
+
 	copyEXML(
 		HQ_SPACESTATIONS,
 		[[SPACESTATIONTYPEB.DESCRIPTOR.EXML]],
@@ -7446,14 +7359,13 @@ then
 		[[STATION\TEXTURES\TYPEB\TRIM1.PARALLAX.DDS]],
 		[[TEXTURES\SPACE\SPACESTATION\TYPEB\TRIM1.PARALLAX.DDS]]
 	)
-end
+
 
 
 
 
 -- CAMERA OVERHAUL
-if CENTERED_CAMERA_FEATURE == "ON"
-then
+
 addFeature
 (
 	CENTERED_CAMERA_FEATURE,
@@ -7484,12 +7396,10 @@ addFeature
 		}
 	}
 )
-end
+
 
 
 -- **CAMERA_OVERHAUL_FEATURES**
-if CAMERA_OVERHAUL_FEATURE == "ON"
-then
 addFeature
 (
 	CAMERA_OVERHAUL_FEATURE,
@@ -7750,10 +7660,7 @@ addFeature
 		}
 	}
 )
-end
 -- CAMERA NO SHAKE
-if	CAMERA_NO_SHAKE_FEATURE == "ON"
-then
 addFeature
 (
 	CAMERA_NO_SHAKE_FEATURE,
@@ -7812,13 +7719,98 @@ addFeature
 		}
 	}
 )
-end
 -- END CAMERA OVERHAUL
 -- VISUAL OVERHAUL
+if VISUAL_OVERHAUL == "ON"
+then
+	addFeature
+	(
+		VISUAL_OVERHAUL,
+		{
+			{
+				-- asteroids rework
+					["MBIN_FILE_SOURCE"]  = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] =
+					{
+						-- Small ones
+						{
+							["PRECEDING_KEY_WORDS"] = "CommonAsteroidData",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Spacing", ASTEROID_SPACING_MULTIPLIER},
+								{"Scale", ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData","ScaleVariance"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"x", ASTEROID_SCALE_MULTIPLIER},
+								{"y", ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						-- BIG  ones
+						{
+							["PRECEDING_KEY_WORDS"] = "LargeAsteroidData",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Spacing", LARGE_ASTEROID_SPACING_MULTIPLIER},
+								{"Scale", LARGE_ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData","ScaleVariance"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"x", LARGE_ASTEROID_SCALE_MULTIPLIER},
+								{"y", LARGE_ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						-- rare ones
+						{
+							["PRECEDING_KEY_WORDS"] = "LargeAsteroidData",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Spacing", RARE_ASTEROID_SPACING_MULTIPLIER},
+								{"Scale", RARE_ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData","ScaleVariance"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"x", RARE_ASTEROID_SCALE_MULTIPLIER},
+								{"y", RARE_ASTEROID_SCALE_MULTIPLIER},
+							}
+						},
 
+					}
+				}
 
-if GENERATION_OVERHAUL == "ON" then
-		----------------------------------------------------------------------
+		},
+		DAY_ONE_MODE
+	)
+
+	
+	----------------------------------------------------------------------
+	if SPACE_BLUR_FEATURE == "ON" then
+	SPACEBLURVALUE = "0.5"
+	else
+		SPACEBLURVALUE ="0"
+	end
+	----------------------------------------------------------------------
 	if ULTRA_DIVERSE_SPACE_COLOURS == "ON" then
 		ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW = ""
 		ULTRA_DIVERSE_SPACE_COLOURS_EXML = ""
@@ -7948,100 +7940,6 @@ if GENERATION_OVERHAUL == "ON" then
 		addContent(ULTRA_DIVERSE_SPACE_COLOURS_CHANGE_TABLE)
 
 	end
-end
-
-if VISUAL_OVERHAUL == "ON"
-then
-	if ASTEROIDS_REWORK == "ON"
-	then
-	addFeature
-	(
-		ASTEROIDS_REWORK,
-		{
-			{
-				-- asteroids rework
-					["MBIN_FILE_SOURCE"]  = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						-- Small ones
-						{
-							["PRECEDING_KEY_WORDS"] = "CommonAsteroidData",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Spacing", ASTEROID_SPACING_MULTIPLIER},
-								{"Scale", ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData","ScaleVariance"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", ASTEROID_SCALE_MULTIPLIER},
-								{"y", ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						-- BIG  ones
-						{
-							["PRECEDING_KEY_WORDS"] = "LargeAsteroidData",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Spacing", LARGE_ASTEROID_SPACING_MULTIPLIER},
-								{"Scale", LARGE_ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData","ScaleVariance"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", LARGE_ASTEROID_SCALE_MULTIPLIER},
-								{"y", LARGE_ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						-- rare ones
-						{
-							["PRECEDING_KEY_WORDS"] = "LargeAsteroidData",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Spacing", RARE_ASTEROID_SPACING_MULTIPLIER},
-								{"Scale", RARE_ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData","ScaleVariance"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", RARE_ASTEROID_SCALE_MULTIPLIER},
-								{"y", RARE_ASTEROID_SCALE_MULTIPLIER},
-							}
-						},
-
-					}
-				}
-
-		},
-		DAY_ONE_MODE
-	)
-	end
-	
-	----------------------------------------------------------------------
-	if SPACE_BLUR_FEATURE == "ON" then
-	SPACEBLURVALUE = "0.5"
-	else
-		SPACEBLURVALUE ="0"
-	end
-
 	----------------------------------------------------------------------
 	if SPACE_COLOURS_TYPE == "REALISTIC" then
 		SPACE_COLOURS_CHANGE_TABLE =
@@ -8304,8 +8202,6 @@ then
 
 	----------------------------------------------------------------------
 	-- WATER REWORK
-	if REDMAS_WATER_REFLECTIONS == "ON"
-	then
 	addFeature
 	(
 		REDMAS_WATER_REFLECTIONS,
@@ -8333,11 +8229,8 @@ then
 			}
 		}
 	)
-	end
 	----------------------------------------------------------------------
 	-- BLUR IN THE DISTANCE AND OTHER SKY EFFECTS
-	if SPACE_BLUR_FEATURE == "ON"
-	then
 	addFeature
 	(
 		SPACE_BLUR_FEATURE,
@@ -8424,7 +8317,6 @@ then
 			}
 		}
 	)
-	end
 
 	-----------------------------------------------------------------------
 	-- CONTRAILS REMOVER
@@ -8510,10 +8402,11 @@ then
 	-----------------------------------------------------------------------------------------------------------------------------------
 	------------------------------------------------------------------------------------------------------------------------------------
 	
-
+	if FIGHTERS_SPACESHIPS_REPAINT ~= "OFF" then
+	
 	addFeature
 	(
-		"FIGHTERS_SPACESHIPS_REPAINT",
+		"ON",
 		{
 
 				{
@@ -9189,7 +9082,7 @@ then
 
 		}
 	)
-	
+	end
 	addFeature
 	(
 		DROPSHIPS_SPACESHIPS_REPAINT,
@@ -11329,7 +11222,6 @@ then
 	end
 	-- fix for weird vanilla artefacts
 	--
-	if FIX_FOR_VANILLA_TREES == "ON" then
 	NEW_CONTENT =
 		{
 
@@ -11339,7 +11231,6 @@ then
 		}
 		table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 	--
-	end
 	-- FILTERS REWORK
 	if FILTERS_SWAP_FEATURE == "ON" then
 		FILTERS_CONTENT1 = {}
@@ -40364,7 +40255,7 @@ NEW_CONTENT =
 	--------------------------------------------------------------------------
 	addFeature
 	(
-		BUSY_SPACE_TRAFFIC,
+		REDMAS_SPACE_GENERATION,
 		{
 
 				{
