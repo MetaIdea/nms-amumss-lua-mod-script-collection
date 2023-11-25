@@ -165,7 +165,7 @@ INIT_PRESET ={
                 -- Mods for the voxel generation
                 ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "EPIC_FANTASY" , "SCI_FI_FANTASY" or "ON" or "OFF" 
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- inverts the ressources deposits ( making them out of the ground )
-                ["TERRAIN_HEIGHT_MAX"] = "10", -- "-40" to "40" higher values can make the game unstable
+                ["TERRAIN_HEIGHT_MAX"] = "10", -- "-40" to "40"
             },
             ["BIOMES_FEATURES"] = -- world generation features
             {
@@ -294,7 +294,10 @@ BUSY_SPACE_TRAFFIC = "ON" -- turn that feature "OFF" if you want to do **share s
 -- turn this value "OFF" if want to keep compatibility with others mods using
 -- GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN
 -- AISPACESHIPMANAGER.MBIN
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+ADD_RGO_CUSTOM_ASSETS = "ON" -- Turn this "OFF" to remove the custom models if your wanted-pak doesn't require them
+-- this var doens't include custom exocrafts, custom spaceships parts, HQ spacestations, or Constructs mod
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- **ADVANCED PARAMS**
 ---------------------------
 DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
@@ -503,11 +506,11 @@ LARGE_BUILDINGS_TRADINGPOSTS_FEATURE =  ""
 CONSTRUCTS_BY_MSSP_SPAWNER =  ""
 SKY_BIOMES_FEATURE =  ""
 FANTASY_BIOMES_FEATURE =  ""
-STORM_BIOMES_FEATURES =  ""
+--STORM_BIOMES_FEATURES =  "" -- disabled
 GIANTS_BIOMES_FEATURE =  ""
 LOWWATER_AND_BEACH_BIOMES_FEATURE =  ""
-MONTAINS_BIOMES_FEATURE =  ""
-CAVE_BIOMES_FEATURE =  ""
+-- MONTAINS_BIOMES_FEATURE =  "" -- disabled
+ CAVE_BIOMES_FEATURE =  "" -- disabled
 -- End Biomes param
 -- SPACE PARAMS ----------------------------------------------------------------------------------------------
 REDMAS_SPACE_GENERATION =  ""
@@ -783,10 +786,10 @@ LARGE_BUILDINGS_TRADINGPOSTS_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_G
 CONSTRUCTS_BY_MSSP_SPAWNER = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.CONSTRUCTS_BY_MSSP_SPAWNER
 SKY_BIOMES_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.SKY_BIOMES_FEATURE
 FANTASY_BIOMES_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.FANTASY_BIOMES_FEATURE
-STORM_BIOMES_FEATURES = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.STORM_BIOMES_FEATURES
+--STORM_BIOMES_FEATURES = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.STORM_BIOMES_FEATURES
 GIANTS_BIOMES_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.GIANTS_BIOMES_FEATURE
 LOWWATER_AND_BEACH_BIOMES_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.LOWWATER_AND_BEACH_BIOMES_FEATURE
-MONTAINS_BIOMES_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.MONTAINS_BIOMES_FEATURE
+--MONTAINS_BIOMES_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.MONTAINS_BIOMES_FEATURE
 CAVE_BIOMES_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.CAVE_BIOMES_FEATURE
 -- End Biomes param
 -- SPACE PARAMS ----------------------------------------------------------------------------------------------
@@ -7823,7 +7826,7 @@ if GENERATION_OVERHAUL == "ON" then
 		ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW = ""
 		ULTRA_DIVERSE_SPACE_COLOURS_EXML = ""
 
-		for loop = 0 , 1000 do
+		for loop = 0 , 2000 do
 			print("------ ADDED NEW SPACE COLOUR " .. loop)
 			R_VALUE_REF = math.random(0,6)*0.1+math.random(0,9)*0.01+math.random(0,9)*0.001
 			B_VALUE_REF = math.random(0,6)*0.1+math.random(0,9)*0.01+math.random(0,9)*0.001
@@ -8132,7 +8135,7 @@ then
 						["VALUE_CHANGE_TABLE"] 	=
 						{
 							{"R", "0.1"},
-							{"B", "0.1"},
+							{"B", "0.3"},
 							{"G", "0.1"},
 						}
 					},
@@ -8198,9 +8201,9 @@ then
 		}
 		addContent(SPACE_COLOURS_CHANGE_TABLE)
 	end
-		if SPACE_COLOURS_TYPE == "FANTASY" then
-		SPACE_COLOURS_CHANGE_TABLE =
-		{
+	if SPACE_COLOURS_TYPE == "FANTASY" then
+	SPACE_COLOURS_CHANGE_TABLE =
+	{
 			{
 				["MBIN_FILE_SOURCE"]  = {
 					[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],
@@ -8279,18 +8282,37 @@ then
 							{"G", "0.0001"},
 						}
 					},----------------------------------------------------------------
-					{
-						["SPECIAL_KEY_WORDS"] = {"TopColour","Colour.xml"},
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["REPLACE_TYPE"] = "ALL",
-						["MATH_OPERATION"] 	= "*",
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"R", "0.1"},
-							{"B", "0.1"},
-							{"G", "0.1"},
-						}
-					},
+
+												{
+								["SPECIAL_KEY_WORDS"] = {"NebulaColour1","Colour.xml"},
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["REPLACE_TYPE"] = "ALL",
+								["MATH_OPERATION"] 	= "*",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"A", "0.2"}
+								}
+							},
+							{
+								["SPECIAL_KEY_WORDS"] = {"NebulaColour2","Colour.xml"},
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["REPLACE_TYPE"] = "ALL",
+								["MATH_OPERATION"] 	= "*",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"A", "0.85"}
+								}
+							},
+							{
+								["SPECIAL_KEY_WORDS"] = {"NebulaColour3","Colour.xml"},
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["REPLACE_TYPE"] = "ALL",
+								["MATH_OPERATION"] 	= "*",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"A", "0.89"}
+								}
+							}
 
 											
 				
@@ -8361,7 +8383,7 @@ then
 						["VALUE_CHANGE_TABLE"] 	=
 						{
 							{"AtmosphereThickness", "0.63"},
-							{"DepthOfField", "0.5"},
+							{"DepthOfField", SPACEBLURVALUE},
 							{"FogMax", "0.73"},
 							{"FogStrength", "0.06"},
 							{"FogColourStrength", "20"},
@@ -29101,14 +29123,14 @@ LUSHGRASSLIST =
 	-- E3 fantasy assets
 
 
+		if ADD_RGO_CUSTOM_ASSETS == "ON" then
 			NEW_TILES_TABLE =
 			{
 				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\COLOURS\DESERTTILETYPES.EXML]],
 				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DESERTTILETYPES.EXML]]
 			}
 			table.insert(CUSTOM_CONTENT, NEW_TILES_TABLE)
-
-
+		end
 
 
 	if E3_FANTASY_ASSETS_FEATURES == "ON" then
@@ -29235,6 +29257,11 @@ LUSHGRASSLIST =
 		FANTASY_FROZEN_COLOURS = readTemplate("FANTASY_FROZEN_COLOURS")
 		-- tiles rework
 		if GENERATION_OVERHAUL == "ON" then
+
+
+
+
+
 			NEW_TILES_TABLE =
 			{
 				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASETILETYPES.EXML]],
@@ -29586,6 +29613,7 @@ LUSHGRASSLIST =
 		)
 
 		-- EPIC FANTASY Core ASSETS
+		if ADD_RGO_CUSTOM_ASSETS == "ON" then
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
@@ -32150,28 +32178,31 @@ LUSHGRASSLIST =
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMPLANT02.SCENE.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+		NEW_CONTENT =
+		{
+
+			["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE.SCENE.EXML]],
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\LARGE\CRYSTAL_LARGE.SCENE.EXML]]
+
+		}
+		table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+		--
+		--
+		NEW_CONTENT =
+		{
+
+			["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE_MOUNTAIN.SCENE.EXML]],
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\LARGE\CRYSTAL_LARGE_MOUNTAIN.SCENE.EXML]]
+
+		}
+		table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+		--
+	end
 
 		-- E3 CRYSTALS Assets
 		if E3_FANTASY_CRYSTALS_ASSETS_FEATURE == "ON" then
-			NEW_CONTENT =
-			{
 
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\LARGE\CRYSTAL_LARGE.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE_MOUNTAIN.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\LARGE\CRYSTAL_LARGE_MOUNTAIN.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
 			--
 			NEW_CONTENT =
 			{
@@ -32880,15 +32911,15 @@ LUSHGRASSLIST =
 	)
 
 end
+
+
+	if ADD_RGO_CUSTOM_ASSETS == "ON" then
 		copyEXML
 		(
 			"ON",
 			"R2/STATUE_SPAWNER.SCENE.EXML",
 			"MODELS/RGO/STATUE_SPAWNER.SCENE.EXML"
-		)
-
-
-		
+		)		
 		copyEXML
 		(
 			"ON",
@@ -33442,7 +33473,7 @@ end
 			"LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.EXML",
 			"MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.EXML"
 		)
-				copyEXML
+		copyEXML
 		(
 			"ON",
 			"LIVINGSHIP/SMALL/SMALLPLANT.SCENE.EXML",
@@ -33550,7 +33581,7 @@ end
 					},
 				}
 			)
-	
+		end
 			
 		-- UNDERWATER BIOMES
 		if LOWWATER_AND_BEACH_BIOMES_FEATURE == "ON" then
@@ -33952,7 +33983,7 @@ end
 
 		
 		-- cave biomes
-		SUBBIOMES_C = ""
+		--SUBBIOMES_C = ""
 		
 		if CAVE_BIOMES_FEATURE == "ACTIVATED" then
 
@@ -34026,209 +34057,7 @@ end
 			end
 
 
---]=]
-			--
-			NEW_CONTENT =
-			{
 
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\C\CAVEBIOMEDEAD.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMEDEAD.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-						--
-			SUBBIOMES_C = SUBBIOMES_C..
-			[[
-				<Property value="NMSString0x80.xml">
-					<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/SUBBIOMES/C/CAVEBIOMEDEAD.MBIN" />
-					</Property>
-			]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\C\CAVEBIOMEEMPTY.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMEEMPTY.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-						--
-			SUBBIOMES_C = SUBBIOMES_C..
-			[[
-				<Property value="NMSString0x80.xml">
-					<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/SUBBIOMES/C/CAVEBIOMEEMPTY.MBIN" />
-					</Property>
-			]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\C\CAVEBIOMEFULL.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMEFULL.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-						--
-			SUBBIOMES_C = SUBBIOMES_C..
-			[[
-				<Property value="NMSString0x80.xml">
-					<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/SUBBIOMES/C/CAVEBIOMEFULL.MBIN" />
-					</Property>
-			]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\C\CAVEBIOMEGRASSBUSHES.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMEGRASSBUSHES.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-						--
-			SUBBIOMES_C = SUBBIOMES_C..
-			[[
-				<Property value="NMSString0x80.xml">
-					<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/SUBBIOMES/C/CAVEBIOMEGRASSBUSHES.MBIN" />
-					</Property>
-			]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\C\CAVEBIOMEMID.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMEMID.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-						--
-			SUBBIOMES_C = SUBBIOMES_C..
-			[[
-				<Property value="NMSString0x80.xml">
-					<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/SUBBIOMES/C/CAVEBIOMEMID.MBIN" />
-					</Property>
-			]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\C\CAVEBIOMESPARSETOXIC.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEBIOMESPARSETOXIC.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-						--
-			SUBBIOMES_C = SUBBIOMES_C..
-			[[
-				<Property value="NMSString0x80.xml">
-					<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/SUBBIOMES/C/CAVEBIOMESPARSETOXIC.MBIN" />
-					</Property>
-			]]
-
-
-		addFeature
-			(
-				CAVE_BIOMES_FEATURE,
-				{
-					{
-						["MBIN_FILE_SOURCE"] = [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMEFILENAMES.MBIN]],
-
-						["EXML_CHANGE_TABLE"] =
-						{
-							
-							{
-								["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
-								["SECTION_ACTIVE"] = {1,2},
-								["REMOVE"] = "SECTION"
-							},
-							
-							{
-								["PRECEDING_KEY_WORDS"] = "CommonExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-									   <Property value="GcExternalObjectListOptions.xml">
-											<Property name="Name" value="UNDERGROUND" />
-											<Property name="ResourceHint" value="" />
-											<Property name="ResourceHintIcon" value="" />
-											<Property name="Probability" value="1" />
-											<Property name="SeasonalProbabilityOverride" value="1" />
-											<Property name="TileType" value="GcTerrainTileType.xml">
-												<Property name="TileType" value="Cave" />
-											</Property>
-											<Property name="AllowLimiting" value="True" />
-											<Property name="ChooseUsingLifeLevel" value="False" />
-											<Property name="Options">]]..SUBBIOMES_C..[[
-												<Property value="NMSString0x80.xml">
-												<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/CAVEBIOMEFULL.MBIN" />
-												</Property>
-												<Property value="NMSString0x80.xml">
-												<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/CAVEBIOMEGRASSBUSHES.MBIN" />
-												</Property>
-												<Property value="NMSString0x80.xml">
-												<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/CAVEBIOMESPARSETOXIC.MBIN" />
-												</Property>
-											</Property>
-											</Property>
-								]]
-							}
-
-
-						}
-					}
-				}
-			)
-		end
-		--
-		-- end cave biomes
-		
-        -- Mountains BIOMES
-		if MONTAINS_BIOMES_FEATURE == "ACTIVATED" then
-			SUBBIOMES_M = ""
-			--
-			--
-		SUBBIOMES_MR = ""
-		--[=[
-		for count=1, tablelength(TABLE_FERRITE_DUST_RESSOURCES) do
-			GENERATED_BIOME_PATH = [[METADATA/SIMULATION/SOLARSYSTEM\BIOMES/OBJECTS/MOUNTAINS/MR]]..count
-			generateMountainBiomes
-			(
-				GENERATED_BIOME_PATH,
-				TABLE_FERRITE_DUST_RESSOURCES[count].TYPE,TABLE_FERRITE_DUST_RESSOURCES[count].PATH)
-			SUBBIOMES_MR = SUBBIOMES_MR..
-			[[
-				<Property value="NMSString0x80.xml">
-					<Property name="Value" value="]]..GENERATED_BIOME_PATH..[[.MBIN" />
-					</Property>
-			]]
-		end
-		--]=]
-		
-		SUBBIOMES_M = SUBBIOMES_M..SUBBIOMES_MR
-		--
-
-			NEW_CONTENT = 
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\M\FULL.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\MOUNTAINS\FULL.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-						--
-			SUBBIOMES_M = SUBBIOMES_M..
-			[[
-
-				<Property value="NMSString0x80.xml">
-					<Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/SUBBIOMES/M/FULL.MBIN" />
-					</Property>
-			]]
-			--
---
 			--
 			NEW_CONTENT =
 			{
@@ -34442,7 +34271,8 @@ end
 		end
 
 		-- end storm BIOMES
-				--
+
+		if ADD_RGO_CUSTOM_ASSETS == "ON" then
 			NEW_CONTENT =
 			{
 
@@ -34492,7 +34322,7 @@ end
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 
-
+			end
 
 			
 
@@ -40405,6 +40235,17 @@ NEW_CONTENT =
 		},
 		DAY_ONE_MODE
 	)
+
+	if MASSIVE_FLEET == "ON" then
+	-- New parts for Freighters
+	copyEXML
+	(
+		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
+		[[INDUSTRIAL\GANTRYBCAPBRIDGEA.SCENE.EXML]],
+		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGEA.SCENE.EXML]]
+	)
+	end
+
 		copyEXML
 		(
 			MASSIVE_FLEET,
@@ -41917,7 +41758,7 @@ NEW_CONTENT =
 		},
 		MULTIPLAYER_MODE
 	)
-
+	
 		copyEXML
 		(
 			ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS,
@@ -42150,14 +41991,7 @@ NEW_CONTENT =
 		},
 		MULTIPLAYER_MODE
 	)
-	-- New parts for Freighters
 
-	copyEXML
-	(
-		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
-		[[INDUSTRIAL\GANTRYBCAPBRIDGEA.SCENE.EXML]],
-		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGEA.SCENE.EXML]]
-	)
 	
 --[=[	copyEXML
 	(
