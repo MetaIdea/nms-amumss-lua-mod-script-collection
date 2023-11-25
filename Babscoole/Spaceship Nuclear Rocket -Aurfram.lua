@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Bonus", "100"},
+                                {"Bonus", "25"},
                             }
                         },
                         {
