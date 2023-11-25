@@ -1,1 +1,2 @@
+*.7z filter=lfs diff=lfs merge=lfs -text
 .7z !text !filter !merge !diff
