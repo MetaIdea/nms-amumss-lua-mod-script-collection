@@ -1,0 +1,1 @@
+Extract the lua script and GlobalMEFTI folder into AMUMSS\ModScript.  Run in Lean mode.
