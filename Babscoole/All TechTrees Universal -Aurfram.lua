@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "All TechTree and RobotTech-Aurfram.pak",
+["MOD_FILENAME"]    = "All TechTrees Universal -Aurfram.pak",
 ["MOD_AUTHOR"]      = "Aurfram",
 ["NMS_VERSION"]     = "4.45",
 ["MODIFICATIONS"]   =
@@ -76,7 +76,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="Children">
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="SHIPJUMP_SPEC" />
-                            <Property name="Children" />
+                            <Property name="Children">
+                              <Property value="GcUnlockableItemTreeNode.xml">
+                                <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
+                                <Property name="Children" />
+                              </Property>
+                            </Property>
                           </Property>
                         </Property>
                       </Property>
@@ -125,7 +130,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="Children">
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="HYPERDRIVE_SPEC" />
-                            <Property name="Children" />
+                            <Property name="Children">
+                              <Property value="GcUnlockableItemTreeNode.xml">
+                                <Property name="Unlockable" value="WARP_ALIEN" />
+                                <Property name="Children" />
+                              </Property>
+                            </Property>
                           </Property>
                         </Property>
                       </Property>
@@ -142,7 +152,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="Children">
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="LAUNCHER_SPEC" />
-                            <Property name="Children" />
+                            <Property name="Children">
+                              <Property value="GcUnlockableItemTreeNode.xml">
+                                <Property name="Unlockable" value="LAUNCHER_ALIEN" />
+                                <Property name="Children" />
+                              </Property>
+                            </Property>
                           </Property>
                         </Property>
                       </Property>
@@ -160,7 +175,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="Children">
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="SHIPSHIELD_ROBO" />
-                            <Property name="Children" />
+                            <Property name="Children">
+                              <Property value="GcUnlockableItemTreeNode.xml">
+                                <Property name="Unlockable" value="SHIELD_ALIEN" />
+                                <Property name="Children" />
+                              </Property>
+                            </Property>
                           </Property>
                         </Property>
                       </Property>
@@ -374,7 +394,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="Children">
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="SHIPJUMP_SPEC" />
-                            <Property name="Children" />
+                            <Property name="Children">
+                              <Property value="GcUnlockableItemTreeNode.xml">
+                                <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
+                                <Property name="Children" />
+                              </Property>
+                            </Property>
                           </Property>
                         </Property>
                       </Property>
@@ -412,10 +437,36 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["FOREACH_SKW_GROUP"] =
                             {
                                 {"ID", "SHIPJUMP1"},
+                                {"ID", "UT_PULSEFUEL"},
+                                {"ID", "UT_PULSESPEED"},
+                                {"ID", "UT_SHIPDRIFT"},
+                                {"ID", "PHOTONIX_CORE"},
                                 {"ID", "LAUNCHER"},
+                                {"ID", "UT_LAUNCHER"},
+                                {"ID", "UT_LAUNCHCHARGE"},
+                                {"ID", "SHIP_TELEPORT"},
                                 {"ID", "HYPERDRIVE"},
+                                {"ID", "HDRIVEBOOST1"},
+                                {"ID", "HDRIVEBOOST2"},
+                                {"ID", "HDRIVEBOOST3"},
+                                {"ID", "UT_QUICKWARP"},
+                                {"ID", "CARGOSHIELD"},
                                 {"ID", "SHIPSHIELD"},
+                                {"ID", "UT_SHIPSHIELD"},
+                                {"ID", "SHIPROCKETS"},
+                                {"ID", "UT_ROCKETS"},
                                 {"ID", "SHIPGUN1"},
+                                {"ID", "UT_SHIPGUN"},
+                                {"ID", "SHIPSCAN_ECON"},
+                                {"ID", "SHIPSCAN_COMBAT"},
+                                {"ID", "SHIPLAS1"},
+                                {"ID", "UT_SHIPLAS"},
+                                {"ID", "SHIPSHOTGUN"},
+                                {"ID", "UT_SHIPSHOT"},
+                                {"ID", "SHIPMINIGUN"},
+                                {"ID", "UT_SHIPMINI"},
+                                {"ID", "SHIPPLASMA"},
+                                {"ID", "UT_SHIPBLOB"},
                                 {"ID", "SHIPSLOT_DMG1"},
                                 {"ID", "SHIPSLOT_DMG2"},
                                 {"ID", "SHIPSLOT_DMG3"},
@@ -440,10 +491,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "SHIPSHIELD_ROBO"},
                                 {"ID", "SHIPGUN_ROBO"},
                                 {"ID", "LIFESUP_ROBO"},
+                                {"ID", "T_SHIPJUMP"},
+                                {"ID", "T_LAUNCHER"},
+                                {"ID", "T_HDRIVE"},
+                                {"ID", "T_SHIPSHLD"},
+                                {"ID", "T_SHIPGUN"},
+                                {"ID", "T_SHIPLAS"},
+                                {"ID", "T_SHIPSHOT"},
+                                {"ID", "T_SHIPMINI"},
+                                {"ID", "T_SHIPBLOB"},
+                                {"ID", "SHIPJUMP_ALIEN"},
+                                {"ID", "LAUNCHER_ALIEN"},
+                                {"ID", "WARP_ALIEN"},
+                                {"ID", "SHIELD_ALIEN"},
+                                {"ID", "SHIPGUN_ALIEN"},
+                                {"ID", "SHIPLAS_ALIEN"},
+                                {"ID", "CARGO_S_ALIEN"},
+                                {"ID", "CHARGER_ALIEN"},
+                                {"ID", "SHIPSCAN_ALIEN"},
+                                {"ID", "A_SHIPJUMP"},
+                                {"ID", "A_LAUNCH"},
+                                {"ID", "A_HDRIVE"},
+                                {"ID", "A_SHIPSHLD"},
+                                {"ID", "A_SHIPGUN"},
+                                {"ID", "A_SHIPLAS"},
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TechnologyCategory", "AllShipsExceptAlien"},
+                                {"TechnologyCategory", "AllShips"},
                             }
                         },
                     }
