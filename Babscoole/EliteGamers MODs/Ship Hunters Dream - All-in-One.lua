@@ -16,8 +16,11 @@ InputSHIPCHOICE = {SHIPCHOICE,
 while SHIPCHOICE do
   SHIPCHOICE = GUIF(InputSHIPCHOICE,20)
 
-  if SHIPCHOICE ~= 1 and SHIPCHOICE ~= 2 and SHIPCHOICE ~= 3 and SHIPCHOICE ~= 4 and SHIPCHOICE ~= 5 and SHIPCHOICE ~=  6 and SHIPCHOICE ~= 7 then
-    print("         >>> ["..SHIPCHOICE.."] is NOT a valid choice.  Must be a number between 1-7.  Please retry! <<<")
+  local minChoice = 1
+  local maxChoice = 7
+
+  if SHIPCHOICE < minChoice or SHIPCHOICE > maxChoice then
+    print("         >>> ["..SHIPCHOICE.."] is NOT a valid choice.  Must be a number between "..minChoice.."-"..maxChoice..".  Please retry! <<<")
   else
     break
   end
