@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "All starship.pak",
-["MOD_AUTHOR"]    = "Salt1971",
+["MOD_AUTHOR"]    = "Tuz1971",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.45",
 ["MODIFICATIONS"] =
