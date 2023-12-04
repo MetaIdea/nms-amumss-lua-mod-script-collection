@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "UltraLow Effects Hi-FPS -Aurfram.pak",
 ["MOD_DESCRIPTION"]         = "",
 ["MOD_AUTHOR"]              = "Aurfram",
+["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.45",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -227,17 +228,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ShadowLengthFreighterAbandoned",                "0"},
                                 {"ShadowLengthCameraView",                        "0"},
                                 {"ShadowQuantized",                               "False"},
-                                {"FoliageValueMin",                               "0.1"},
-                                {"FoliageValueMax",                               "0.1"},
+                                {"FoliageValueMin",                               "0.01"},
+                                {"FoliageValueMax",                               "0.01"},
                                 {"GrassValueMin",                                 "0.01"},
                                 {"GrassValueMax",                                 "0.01"},
-                                {"SkyValueMin",                                   "0.1"},
-                                {"SkyValueMax",                                   "0.1"},
+                                {"SkyValueMin",                                   "0.01"},
+                                {"SkyValueMax",                                   "0.01"},
                                 {"MaxSpaceFogStrength",                           "0"},
                                 {"ReflectionStrength",                            "0"},
-                                {"WaterValue",                                    "0.1"},
-                                {"MaxParticleRenderRange",                        "1"},
-                                {"MaxParticleRenderRangeSpace",                   "1"},
+                                {"AlphaCutoutMin",                                "0"},
+                                {"AlphaCutoutMax",                                "10"},
+                                {"WaterValue",                                    "0.01"},
+                                {"MaxParticleRenderRange",                        "0"},
+                                {"MaxParticleRenderRangeSpace",                   "0"},
                                 {"TerrainAnisoLow",                               "0"},
                                 {"TerrainAnisoMed",                               "0"},
                                 {"TerrainAnisoHi",                                "0"},
@@ -246,8 +249,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinPixelSizeOfObjectsInShadowsSpace",           "0"},
                                 {"MinPixelSizeOfObjectsInShadowsPlanet",          "0"},
                                 {"MinPixelSizeOfObjectsInShadowsCockpitOnPlanet", "0"},
-                                {"ForceStreamAllTextures",                        "True"},
-                                {"EnableSSR",                                     "False"},
+                                {"TargetTextureMemUsageMB",                       "64"},
                             },
                         },
                     }
@@ -360,7 +362,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {[[    <Stage id="NewBloomResolve" enabled="true">]], [[    <Stage id="NewBloomResolve" enabled="false">]]},
                                 {[[    <Stage id="NewBloomExposure" enabled="true">]], [[    <Stage id="NewBloomExposure" enabled="false">]]},
                                 {[[    <Stage id="NoBloom" enabled="false">]], [[    <Stage id="NoBloom" enabled="true">]]},
-                                {[[    <Stage id="FXAA" enabled="false">]], [[    <Stage id="FXAA" enabled="true">]]},
                             }
                         },
                     }
@@ -2923,7 +2924,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <EndTarget flushCB="true" flushDB="false" />
     </Stage>
 
-    <Stage id="FXAA" enabled="true">
+    <Stage id="FXAA" enabled="false">
       <BeginTarget target="RED8_BUF_0" />
       <DiscardTargetContents colBuf0="true" />
       <ColourMask channels="RGBA"/>
