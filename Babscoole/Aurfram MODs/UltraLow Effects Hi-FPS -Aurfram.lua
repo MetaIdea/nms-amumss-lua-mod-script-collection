@@ -347,8 +347,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {[[    <Stage id="Shadow_0_Clear" enabled="false">]], [[    <Stage id="Shadow_0_Clear" enabled="true">]]},
                                 {[[    <Stage id="Shadow_1_Clear" enabled="false">]], [[    <Stage id="Shadow_1_Clear" enabled="true">]]},
                                 {[[    <Stage id="Shadow_2_Clear" enabled="false">]], [[    <Stage id="Shadow_2_Clear" enabled="true">]]},
-                                {[[    <Stage id="Combine_NoFXAA_Async"  enabled="false">]], [[    <Stage id="Combine_NoFXAA_Async"  enabled="true">]]},
-                                {[[    <Stage id="Combine_NoFXAA_HDR_Async"  enabled="false">]], [[    <Stage id="Combine_NoFXAA_HDR_Async"  enabled="true">]]},
                                 {[[    <Stage id="SkyClear" enabled="false">]], [[    <Stage id="SkyClear" enabled="true">]]},
                                 {[[    <Stage id="SpotlightsTiled" enabled="false">]], [[    <Stage id="SpotlightsTiled" enabled="True">]]},
                                 {[[    <Stage id="RefractionsCleanup" enabled="false">]], [[    <Stage id="RefractionsCleanup" enabled="true">]]},
@@ -362,8 +360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {[[    <Stage id="NewBloomResolve" enabled="true">]], [[    <Stage id="NewBloomResolve" enabled="false">]]},
                                 {[[    <Stage id="NewBloomExposure" enabled="true">]], [[    <Stage id="NewBloomExposure" enabled="false">]]},
                                 {[[    <Stage id="NoBloom" enabled="false">]], [[    <Stage id="NoBloom" enabled="true">]]},
-                                {[[    <Stage id="Combine_NoFXAA"  enabled="false">]], [[    <Stage id="Combine_NoFXAA"  enabled="true">]]},
-                                {[[    <Stage id="Combine_NoFXAA_HDR"  enabled="false">]], [[    <Stage id="Combine_NoFXAA_HDR"  enabled="true">]]},
+                                {[[    <Stage id="FXAA" enabled="false">]], [[    <Stage id="FXAA" enabled="true">]]},
                             }
                         },
                     }
@@ -583,7 +580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <SetContext fsrMode="distort" zwrite="true" colourWrite="false" cullMode="none" blendMode="replace" depthTest="always" stencilMode="maskWrite" stencilRef="128" />
       <ColourMask channels="RGBA"/>
       <DrawHiddenAreaMesh />
-
+                  
       <BindBuffer sampler="gShadowMap"   sourceRT="SHADOWBUF"  bufIndex="32" />      
       <BindBuffer sampler="gCloudShadowMap"  sourceRT="CLOUDSHADOWS"    bufIndex="0" addressMode="wrap" />
 
@@ -2845,13 +2842,13 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Stage id="ScreenEffect_Upscaled" enabled="false">
     </Stage>
 
-    <Stage id="Combine_NoFXAA_HDR"  enabled="true">
+    <Stage id="Combine_NoFXAA_HDR"  enabled="false">
     </Stage>
 
-    <Stage id="Combine_NoFXAA_Async"  enabled="true">
+    <Stage id="Combine_NoFXAA_Async"  enabled="false">
     </Stage>
 
-    <Stage id="Combine_NoFXAA_HDR_Async"  enabled="true">
+    <Stage id="Combine_NoFXAA_HDR_Async"  enabled="false">
     </Stage>
 
     <Stage id="Combine_Upscaled"  enabled="false">
@@ -2903,7 +2900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <EndTarget flushCB="false" flushDB="false" />
     </Stage>
 
-    <Stage id="Combine_NoFXAA"  enabled="true">
+    <Stage id="Combine_NoFXAA"  enabled="false">
       <ColourMask channels="RGBA"/>
       <BeginTarget target="" depthTarget="DEPTH" readOnlyDepth="true" />
       <DiscardTargetContents colBuf0="true" />
@@ -2926,7 +2923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <EndTarget flushCB="true" flushDB="false" />
     </Stage>
 
-    <Stage id="FXAA" enabled="false">
+    <Stage id="FXAA" enabled="true">
       <BeginTarget target="RED8_BUF_0" />
       <DiscardTargetContents colBuf0="true" />
       <ColourMask channels="RGBA"/>
