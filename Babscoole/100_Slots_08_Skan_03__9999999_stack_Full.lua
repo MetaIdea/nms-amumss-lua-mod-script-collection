@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "100_Slots_08_Skan_03__9999999_stack_Full.pak",
 ["MOD_AUTHOR"]              = "Tuz1971",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.15",
+["NMS_VERSION"]             = "4.45",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -14,30 +14,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultySettingsData.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"InventoriesAlwaysInRange",       "True"},
-                                {"AllSlotsUnlocked",               "True"},
-                                {"WarpDriveRequirements",          "False"},
-                                {"CraftingIsFree",                 "True"},
-                                {"TutorialEnabled",                "False"},
-                                {"StartWithAllItemsKnown",         "True"},
-                                {"BaseAutoPower",                  "True"},
-                                {"DeathConsequencesDifficulty",    "None"},
-                                {"HazardDrainDifficulty",          "Slow"},
-                                {"EnergyDrainDifficulty",          "Slow"},
-                                {"SubstanceCollectionDifficulty",  "High"},
-                                {"ChargingRequirementsDifficulty", "None"},
-                                {"FuelUseDifficulty",              "Free"},
-                                {"LaunchFuelCostDifficulty",       "Free"},
-                                {"ItemShopAvailabilityDifficulty", "High"},
-                                {"ScannerRechargeDifficulty",      "Fast"},
-                                {"ReputationGainDifficulty",       "Fast"},
-                                {"SprintingCostDifficulty",        "Free"},
-                            }
-                        },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"InventoryStackLimitsOptionData",},
                             ["REPLACE_TYPE"] = "ALL",
@@ -63,22 +39,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"BreakTechOnDamageMultipliers",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"High", "2"},
+                                {"High", "2.5"},
                             }
                         },
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxNumSameGroupTech",        "100"},
-                                {"BinocMinScanTime",           "0.8"},
-                                {"BinocScanTime",              "0.8"},
-                                {"BinocCreatureScanTime",      "0.8"},
+                                {"BinocMinScanTime",           "0.5"},
+                                {"BinocScanTime",              "0.5"},
+                                {"BinocCreatureScanTime",      "0.5"},
                                 {"MaxResourceCrystalBlobSize", "300"},
                                 {"WaypointScanTime",           "0.1"},
                                 {"RareSubstanceEffectiveness", "2000"},
-                                {"CommonProductEffectiveness", "200"},
+                                {"CommonProductEffectiveness", "2000"},
                                 {"RareProductEffectiveness",   "5000"},
-                                {"ResourceMinAmount",          "100"},
+                                {"ResourceMinAmount",          "1000"},
                                 {"ResourceMaxAmount",          "2000"},
                                 {"ResourceCommonMinAmount",    "1000"},
                                 {"ResourceCommonMaxAmount",    "8000"},
@@ -89,28 +65,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ScannerTuningA",             "0.01"},
                                 {"ScannerTuningB",             "0.01"},
                                 {"ScannerTuningC",             "0.01"},
+                                {"TorchStrength",              "5"},
+                                {"PulseEncounterStopSpeed",    "50"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "ToolScan",
+                            ["PRECEDING_KEY_WORDS"] = "ScannerRechargeMultipliers",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ChargeTime", "2"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "WaypointScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PulseTime",  "1"},
-                                {"ChargeTime", "0.1"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "VisualScan",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeTime", "0.1"}, 
+                                {"VeryFast", "100"},
+                                {"Fast",     "50"},
+                                {"Normal",   "10.66"},
+                                {"Slow",     "10"},
                             }
                         },
                     }
