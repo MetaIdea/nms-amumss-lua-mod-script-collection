@@ -239,7 +239,7 @@ Rewards = {{
     ["IDS"] = {"PIRATE_BOUNTY3", "PROC_PROD_CHEST", "R_SEACHEST", "R_SALVAGE", "R_CRASHSITE_FLY"}
 }, {
     ["REWARD"] = REWARD_XL,
-    ["IDS"] = {"R_ABAND_END", "R_NEXUS_MEGA_C"}
+    ["IDS"] = {"R_ABAND_END", "R_NEXUS_MEGA_C", "FREIGHTER_SAVED"}
 }}
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -247,7 +247,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_DESCRIPTION"] = "Allows the player to grind Quicksilver through a wide variety of different ways",
     ["MOD_AUTHOR"] = "ArtisticMisfit",
     ["LUA_AUTHOR"] = "Leonard, TheLich, Babscoole, ArtisticMisfit",
-    ["NMS_VERSION"] = "4.45",
+    ["NMS_VERSION"] = "4.50",
     ["MODIFICATIONS"] = {{
         ["MBIN_CHANGE_TABLE"] = {{
             ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",

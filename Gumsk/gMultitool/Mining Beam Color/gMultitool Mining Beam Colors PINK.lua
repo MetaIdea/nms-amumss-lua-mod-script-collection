@@ -1,13 +1,13 @@
-ColorName		= "WHITE"
-RedAmount		= 1.0
-GreenAmount		= 1.0
-BlueAmount		= 1.0
+ColorName		= "PINK"
+RedAmount		= 0.85882
+GreenAmount		= 0.24313
+BlueAmount		= 0.69411
 
 Author			= "Gumsk"
-ModName 		= "gMultitool Mining Beam"
+ModName 		= "gMultitool Mining Beam Colors"
 ModNameSub		= ColorName
 BaseDescription = "Changes the neutron cannon projectile color to "..ColorName
-GameVersion 	= "407"
+GameVersion = "446"
 ModVersion		= "a"
 
 FileSource1 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
