@@ -496,17 +496,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GenericSettings", "Settings"},
+                            ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcPlanetWeatherColourData.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GenericSettings"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
-[[
-    <Property name="Settings">
-    </Property>
-]]
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scorched", "GcWeatherColourSettingList.xml"},
@@ -526,31 +519,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Swamp", "GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Swamp", "GcWeatherColourSettingList.xml"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
-[[
-      <Property name="Settings">
-      </Property>
-]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Lava", "GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcPlanetWeatherColourData.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Lava", "GcWeatherColourSettingList.xml"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
-[[
-      <Property name="Settings">
-      </Property>
-]]
+                            ["PRECEDING_KEY_WORDS"] = {"GcPlanetWeatherColourData.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["REMOVE"] = "SECTION",
                         },
                     }
                 },

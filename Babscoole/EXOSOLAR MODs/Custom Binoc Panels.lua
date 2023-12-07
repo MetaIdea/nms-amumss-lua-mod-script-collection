@@ -41,9 +41,27 @@ local G = colorTable[COLORCHOICE].G
 local B = colorTable[COLORCHOICE].B
 local A = colorTable[COLORCHOICE].A
 
+COLORNAME = ""
+  if COLORCHOICE == 1 then 
+      COLORNAME = "BLACK"
+  elseif COLORCHOICE == 2 then 
+      COLORNAME = "BLUE"
+  elseif COLORCHOICE == 3 then 
+      COLORNAME = "GREEN"
+  elseif COLORCHOICE == 4 then 
+      COLORNAME = "RED"
+  elseif COLORCHOICE == 5 then 
+      COLORNAME = "PINK"
+  elseif COLORCHOICE == 6 then 
+      COLORNAME = "YELLOW"
+  elseif COLORCHOICE == 7 then 
+      COLORNAME = "ORANGE"
+  end
+
+
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Custom Binoc Panels.pak",
+["MOD_FILENAME"]            = "Custom Binoc Panels-"..COLORNAME..".pak",
 ["MOD_AUTHOR"]              = "Babscoole & Exosolar",
 ["NMS_VERSION"]             = "4.45",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
