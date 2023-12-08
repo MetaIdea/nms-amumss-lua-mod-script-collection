@@ -318,20 +318,20 @@ ACTION_TRIGGER_ENTRY =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="]] .. ANIM_ID .. [["/>
+                <Property name="Anim" value="]] .. ANIM_ID .. [[" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="REWARD"/>
+                  <Property name="State" value="REWARD" />
                 </Property>
               </Property>
             </Property>
           </Property>
         </Property>
         <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="REWARD"/>
+          <Property name="StateID" value="REWARD" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
@@ -341,10 +341,10 @@ ACTION_TRIGGER_ENTRY =
               </Property>
               <Property name="Action">
                 <Property value="GcRewardAction.xml">
-                  <Property name="Reward" value="]] .. REWARD .. [["/>
+                  <Property name="Reward" value="]] .. REWARD .. [[" />
                 </Property>
                 <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="BOOT"/>
+                  <Property name="State" value="BOOT" />
                 </Property>
               </Property>
             </Property>
@@ -581,7 +581,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"]    = {2,},
+                            ["SECTION_ACTIVE"]    = {2},
                             ["ADD_OPTION"]        = "ADDafterSECTION",
                             ["ADD"]               = ANIM_TEMPLATE_ALL
                         },

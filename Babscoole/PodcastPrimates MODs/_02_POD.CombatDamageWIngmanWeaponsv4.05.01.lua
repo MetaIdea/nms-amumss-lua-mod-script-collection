@@ -632,7 +632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns","ChildSpawns", "Spread"},
+                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns", "ChildSpawns", "Spread"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "750"},
@@ -640,14 +640,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns","ChildSpawns", "Count"},
+                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns", "ChildSpawns", "Count"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns","ChildSpawns", "GcAIShipSpawnData.xml", "Spread", "Spread"},
+                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns", "ChildSpawns", "GcAIShipSpawnData.xml", "Spread", "Spread"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "750"},
@@ -655,7 +655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns","ChildSpawns", "ChildSpawns", "Spread"},
+                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns", "ChildSpawns", "ChildSpawns", "Spread"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "350"},
@@ -666,8 +666,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns"},
                             ["WHERE_IN_SUBSECTION"] =
                             {
-                                {"x", "3000",},
-                                {"y", "3000",},
+                                {"x", "3000"},
+                                {"y", "3000"},
                             },
                             ["WISUBSEC_LOP"] = "AND",
                             ["VALUE_CHANGE_TABLE"] =
@@ -680,8 +680,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns"},
                             ["WHERE_IN_SUBSECTION"] =
                             {
-                                {"x", "400",},
-                                {"y", "600",},
+                                {"x", "400"},
+                                {"y", "600"},
                             },
                             ["WISUBSEC_LOP"] = "AND",
                             ["VALUE_CHANGE_TABLE"] =
@@ -700,13 +700,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Id","BLACK_HOLE",},
-                                {"Id","ATLAS_BEACON1",},
-                                {"Id","ATLAS_BEACON2",},
-                                {"Id","WEIRD_METAL",},
-                                {"Id","SPINNER",},
-                                {"Id","CRYSTAL",},
-                                {"Id","LINE_GEO",},
+                                {"Id", "BLACK_HOLE"},
+                                {"Id", "ATLAS_BEACON1"},
+                                {"Id", "ATLAS_BEACON2"},
+                                {"Id", "WEIRD_METAL"},
+                                {"Id", "SPINNER"},
+                                {"Id", "CRYSTAL"},
+                                {"Id", "LINE_GEO"},
 
                             },
                             ["VALUE_CHANGE_TABLE"] =
@@ -717,13 +717,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Id","NEURON",},
-                                {"Id","GAS_BRAIN",},
-                                {"Id","HORROR",},
-                                {"Id","JELLYFISH",},
-                                {"Id","BONES",},
-                                {"Id","EYE",},
-                                {"Id","TRADER_HAIL",},
+                                {"Id", "NEURON"},
+                                {"Id", "GAS_BRAIN"},
+                                {"Id", "HORROR"},
+                                {"Id", "JELLYFISH"},
+                                {"Id", "BONES"},
+                                {"Id", "EYE"},
+                                {"Id", "TRADER_HAIL"},
 
                             },
                             ["VALUE_CHANGE_TABLE"] =
@@ -732,21 +732,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RELIC_HAIL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RELIC_HAIL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SpawnChance", "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","REPAIR_HAIL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "REPAIR_HAIL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SpawnChance", "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ABAND_FREIGHTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_FREIGHTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SpawnChance",   "0.5"},
@@ -754,21 +754,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ALIEN_SHIP_LOOP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ALIEN_SHIP_LOOP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AllowedInEmptySystem", "False"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ALIEN_PIRATES",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ALIEN_PIRATES"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumberOfShips", "2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","DRONE_SET_MED","SentinelType","SummonerDrone",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRONE_SET_MED", "SentinelType", "SummonerDrone"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -778,12 +778,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Id","DRONE_SET_LRG_A","SentinelType","MedicDrone",},
-                                {"Id","QUAD_SET","SentinelType","MedicDrone",},
-                                {"Id","QUAD_SET_HARD","SentinelType","MedicDrone",},
-                                {"Id","MECH_SET","SentinelType","MedicDrone",},
-                                {"Id","MECH_SET_HARD","SentinelType","MedicDrone",},
-                                {"Id","WALKER_SET","SentinelType","MedicDrone",},
+                                {"Id", "DRONE_SET_LRG_A", "SentinelType", "MedicDrone"},
+                                {"Id", "QUAD_SET",        "SentinelType", "MedicDrone"},
+                                {"Id", "QUAD_SET_HARD",   "SentinelType", "MedicDrone"},
+                                {"Id", "MECH_SET",        "SentinelType", "MedicDrone"},
+                                {"Id", "MECH_SET_HARD",   "SentinelType", "MedicDrone"},
+                                {"Id", "WALKER_SET",      "SentinelType", "MedicDrone"},
                             },
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
@@ -794,13 +794,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Id","QUAD_SET","SentinelType","SummonerDrone",},
-                                {"Id","QUAD_SET_HARD","SentinelType","SummonerDrone",},
-                                {"Id","QUAD_SET_HARD","SentinelType","Quad",},
-                                {"Id","MECH_SET","SentinelType","SummonerDrone",},
-                                {"Id","MECH_SET_HARD","SentinelType","Mech",},
-                                {"Id","WALKER_SET","SentinelType","SummonerDrone",},
-                                {"Id","WALKER_SET_HARD","SentinelType","Walker",},
+                                {"Id", "QUAD_SET",        "SentinelType", "SummonerDrone"},
+                                {"Id", "QUAD_SET_HARD",   "SentinelType", "SummonerDrone"},
+                                {"Id", "QUAD_SET_HARD",   "SentinelType", "Quad"},
+                                {"Id", "MECH_SET",        "SentinelType", "SummonerDrone"},
+                                {"Id", "MECH_SET_HARD",   "SentinelType", "Mech"},
+                                {"Id", "WALKER_SET",      "SentinelType", "SummonerDrone"},
+                                {"Id", "WALKER_SET_HARD", "SentinelType", "Walker"},
 
                             },
                             ["SECTION_UP"] = 1,
@@ -810,7 +810,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","DRONE_SET_LRG_A","SentinelType","SummonerDrone",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRONE_SET_LRG_A", "SentinelType", "SummonerDrone"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -819,7 +819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","DRONE_SET_LRG_B","SentinelType","CombatDrone",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRONE_SET_LRG_B", "SentinelType", "CombatDrone"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -827,7 +827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MECH_SET","SentinelType","Mech",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MECH_SET", "SentinelType", "Mech"},
                             ["SECTION_UP"] = 1,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
@@ -842,7 +842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MECH_SET_HARD","SentinelType","CombatDrone",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MECH_SET_HARD", "SentinelType", "CombatDrone"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -851,7 +851,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WALKER_SET_HARD","SentinelType","MedicDrone",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WALKER_SET_HARD", "SentinelType", "MedicDrone"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -860,7 +860,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WALKER_SET_HARD","SentinelType","MedicDrone",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WALKER_SET_HARD", "SentinelType", "MedicDrone"},
                             ["SECTION_UP"] = 1,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
@@ -888,7 +888,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_EASY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "8000"},
@@ -896,7 +896,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PIRATE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RewardCount",         "2"},
@@ -905,7 +905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_HARD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_HARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RewardCount",         "3"},
@@ -913,49 +913,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","POLICE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "POLICE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TRADER"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TRADER_ESCORT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_ESCORT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RAID_BUILDING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RAID_DOGFIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET_FLYBY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "75000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_C"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_C"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "35000"},
@@ -963,7 +963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_B"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Behaviour",           "SQUADRON_STRONG"},
@@ -974,7 +974,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_A"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_A"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Behaviour",           "SQUADRON_WEAK"},
@@ -984,7 +984,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_S"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_S"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PlanetBehaviour",     "SQUADRON_STRONG"},
@@ -995,7 +995,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ALIEN_HOSTILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ALIEN_HOSTILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",              "40000"},
@@ -1003,7 +1003,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLANET",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",           "4"},
@@ -1029,7 +1029,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPACE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPACE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",      "4"},
@@ -1052,8 +1052,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING",},
+                            ["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RAID_BUILDING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle", "4"},
@@ -1063,7 +1063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_WEAK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_WEAK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",      "0.1"},
@@ -1080,7 +1080,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_STRONG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",    "0"},
@@ -1093,7 +1093,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPACE_EASY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPACE_EASY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "50"},
@@ -1103,7 +1103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPACE_HARD",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPACE_HARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed",       "50"},
@@ -1115,7 +1115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_EASY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET_EASY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed",       "90"},
@@ -1127,7 +1127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_HARD",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET_HARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed",       "90"},
@@ -1140,8 +1140,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING",},
+                            ["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RAID_BUILDING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed",   "70"},
@@ -1151,7 +1151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_SLOW",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_SLOW"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed",       "160"},
@@ -1160,7 +1160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_FAST",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_FAST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed",       "180"},
@@ -1171,7 +1171,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STANDARD",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STANDARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "25000"},
@@ -1179,7 +1179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STRONG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "41000"},
@@ -1187,7 +1187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FAST",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FAST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "16000"},
@@ -1195,7 +1195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FAST_STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LevelledExtraHealth", "31000"},

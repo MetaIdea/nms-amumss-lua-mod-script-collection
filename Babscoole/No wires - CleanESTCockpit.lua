@@ -16,19 +16,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"Name", "SUB1Cards5",},
-                                {"Name", "MonFrontCables",},
-                                {"Name", "CableSpinnerL",},
-                                {"Name", "CableSpinnerR",},
-                                {"Name", "SentinelCableL",},
-                                {"Name", "SentinelCableR",},
-                                {"Name", "HijackCables",},
-                                {"Name", "FloorCables",},
-                                {"Name", "FloorCablesL",},
-                                {"Name", "FloorCablesR",},
-                                {"Name", "SideCable",},
-                                {"Name", "SkinnedCablesL",},
-                                {"Name", "SkinnedCablesR",},
+                                {"Name", "SUB1Cards5"},
+                                {"Name", "MonFrontCables"},
+                                {"Name", "CableSpinnerL"},
+                                {"Name", "CableSpinnerR"},
+                                {"Name", "SentinelCableL"},
+                                {"Name", "SentinelCableR"},
+                                {"Name", "HijackCables"},
+                                {"Name", "FloorCables"},
+                                {"Name", "FloorCablesL"},
+                                {"Name", "FloorCablesR"},
+                                {"Name", "SideCable"},
+                                {"Name", "SkinnedCablesL"},
+                                {"Name", "SkinnedCablesR"},
                             },
                             ["REMOVE"] = "SECTION",
                         },
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CT"] =
                     {
                         {
-                            ["SKW"] = {"Name", "dables2",},
+                            ["SKW"] = {"Name", "dables2"},
                             ["REMOVE"] = "SECTION",
                         },
                     }

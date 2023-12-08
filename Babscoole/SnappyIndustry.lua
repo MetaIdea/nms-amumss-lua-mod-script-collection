@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "SnappyIndustry.pak",
 ["MOD_AUTHOR"]    = "Ethreon",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["DESCRIPTION"]   = "Add snapping points to commonly used industry buildings",
 ["MODIFICATIONS"] =
     {
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene6",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene6"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -376,7 +376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapPoint_N",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapPoint_N"},
                             ["SECTION_ACTIVE"] = {2},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
@@ -864,11 +864,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapPoint_Floor",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapPoint_Floor"},
                             ["REMOVE"]  = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapPoint_StairsTop1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapPoint_StairsTop1"},
                             ["SECTION_ACTIVE"] = {4},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
@@ -1065,7 +1065,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -1426,7 +1426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -1842,7 +1842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene5",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene5"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -2203,7 +2203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -2619,7 +2619,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -3035,7 +3035,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefTechSnapPoint",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefTechSnapPoint"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -3451,7 +3451,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefTechSnapPoint",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefTechSnapPoint"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -3812,7 +3812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene7",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene7"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -4520,7 +4520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene9",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene9"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -4936,7 +4936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Pipeline_Connection288288",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Pipeline_Connection288288"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -5352,7 +5352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene7",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene7"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -5768,7 +5768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Pipeline_Connection",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Pipeline_Connection"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -6184,7 +6184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefPipelineConnection3",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefPipelineConnection3"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -6600,7 +6600,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene5",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene5"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
@@ -7308,7 +7308,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapSceneData",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapSceneData"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =

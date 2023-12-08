@@ -1,243 +1,3 @@
-NMSVersion = "4.45"
-
-function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
-return
-[[
-    <Property value="GcScanEventData.xml">
-      <Property name="Name" value="]]..NAME..[["/>
-      <Property name="ForceInteraction" value="" />
-      <Property name="ForceInteractionType" value="GcInteractionType.xml">
-        <Property name="InteractionType" value="None" />
-      </Property>
-      <Property name="RequireInteractionRace" value="GcAlienRace.xml">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="ForceBroken" value="False" />
-      <Property name="ForceFixed" value="False" />
-      <Property name="ForceOverridesAll" value="True" />
-      <Property name="ForceOverrideEncounter" value="" />
-      <Property name="IsCommunityPortalOverride" value="False" />
-      <Property name="ClearForcedInteractionOnCompletion" value="False" />
-      <Property name="BuildingPreventionRadius" value="0" />
-      <Property name="UseMissionTradingDataOverride" value="False" />
-      <Property name="AlwaysShow" value="False" />
-      <Property name="NeverShow" value="False" />
-      <Property name="ShowOnlyIfSequenceTarget" value="False" />
-      <Property name="PlanetLabelText" value="" />
-      <Property name="SurveyDistance" value="0" />
-      <Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD" />
-      <Property name="EventStartType" value="ObjectScan" />
-      <Property name="EventEndType" value="Proximity" />
-      <Property name="EventPriority" value="Regular" />
-      <Property name="CanEndFromOutsideMission" value="False" />
-      <Property name="DisableMultiplayerSync" value="True" />
-      <Property name="BlockStartedOnUseEvents" value="False" />
-      <Property name="ReplaceEventIfAlreadyActive" value="True"/>
-      <Property name="BuildingLocation" value="]]..BUILDINGLOCATION..[[" />
-      <Property name="BuildingType" value="]]..BUILDINGTYPE..[[" />
-      <Property name="BuildingClass" value="GcBuildingClassification.xml">
-        <Property name="BuildingClass" value="]]..BUILDINGCLASS..[["/>
-      </Property>
-      <Property name="AllowFriendsBases" value="False" />
-      <Property name="ForceWideRandom" value="]]..FORCEWIDERANDOM..[["/>
-      <Property name="MustFindSystem" value="False" />
-      <Property name="AllowOverriddenBuildings" value="]]..ALLOWOVERRIDDENBUILDINGS..[["/>
-      <Property name="TargetMustMatchMissionSeed" value="False" />
-      <Property name="SolarSystemLocation" value="]]..SOLARSYSTEMLOCATION..[[" />
-      <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
-        <Property name="UseStarType" value="False" />
-        <Property name="UseWealth" value="False" />
-        <Property name="UseTrading" value="False" />
-        <Property name="UseRace" value="GcAlienRace.xml">
-          <Property name="AlienRace" value="None" />
-        </Property>
-        <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
-          <Property name="GalaxyStarAnomaly" value="None" />
-        </Property>
-        <Property name="UseConflict" value="GcPlayerConflictData.xml">
-          <Property name="ConflictLevel" value="Default" />
-        </Property>
-        <Property name="StarType" value="GcGalaxyStarTypes.xml">
-          <Property name="GalaxyStarType" value="Yellow" />
-        </Property>
-        <Property name="TradingData" value="GcPlanetTradingData.xml">
-          <Property name="WealthClass" value="GcWealthClass.xml">
-            <Property name="WealthClass" value="Average" />
-          </Property>
-          <Property name="TradingClass" value="GcTradingClass.xml">
-            <Property name="TradingClass" value="Mining" />
-          </Property>
-        </Property>
-        <Property name="AllowUnsafeMatches" value="False" />
-        <Property name="NeverAllowEmpty" value="False" />
-        <Property name="NeverAllowAbandoned" value="False" />
-        <Property name="RequireUndiscovered" value="False" />
-        <Property name="NeedsWaterPlanet" value="False" />
-        <Property name="NeedsPrimePlanet" value="False" />
-        <Property name="NeedsSentinels" value="False" />
-        <Property name="NeedsCorruptSentinelPlanet" value="False" />
-        <Property name="NeedsExtremeSentinelPlanet" value="False" />
-        <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
-        <Property name="NeedsExtremeWeatherPlanet" value="False" />
-        <Property name="NeedsExtremeHazardPlanet" value="False" />
-        <Property name="AnyBiomeNotWeirdOrDead" value="False" />
-        <Property name="AnyRGBBiome" value="False" />
-        <Property name="AnyInfestedBiome" value="False" />
-        <Property name="NeedsBiome" value="False" />
-        <Property name="NeedsBiomeType" value="GcBiomeType.xml">
-          <Property name="Biome" value="Lush" />
-        </Property>
-        <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-          <Property name="BiomeSubType" value="None" />
-        </Property>
-        <Property name="NeedsEmptySystem" value="False" />
-        <Property name="NeedsAbandonedSystem" value="False" />
-        <Property name="NeedsResourceHint" value="" />
-        <Property name="SuitableForCreatureDiscovery" value="False" />
-        <Property name="SuitableForCreatureTaming" value="False" />
-        <Property name="SamePlanetAsEvent" value="" />
-        <Property name="SamePlanetAsSeasonParty" value="0" />
-      </Property>
-      <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
-        <Property name="UseStarType" value="False" />
-        <Property name="UseWealth" value="False" />
-        <Property name="UseTrading" value="False" />
-        <Property name="UseRace" value="GcAlienRace.xml">
-          <Property name="AlienRace" value="None" />
-        </Property>
-        <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
-          <Property name="GalaxyStarAnomaly" value="None" />
-        </Property>
-        <Property name="UseConflict" value="GcPlayerConflictData.xml">
-          <Property name="ConflictLevel" value="Default" />
-        </Property>
-        <Property name="StarType" value="GcGalaxyStarTypes.xml">
-          <Property name="GalaxyStarType" value="Yellow" />
-        </Property>
-        <Property name="TradingData" value="GcPlanetTradingData.xml">
-          <Property name="WealthClass" value="GcWealthClass.xml">
-            <Property name="WealthClass" value="Average" />
-          </Property>
-          <Property name="TradingClass" value="GcTradingClass.xml">
-            <Property name="TradingClass" value="Mining" />
-          </Property>
-        </Property>
-        <Property name="AllowUnsafeMatches" value="False" />
-        <Property name="NeverAllowEmpty" value="False" />
-        <Property name="NeverAllowAbandoned" value="False" />
-        <Property name="RequireUndiscovered" value="False" />
-        <Property name="NeedsWaterPlanet" value="False" />
-        <Property name="NeedsPrimePlanet" value="False" />
-        <Property name="NeedsSentinels" value="False" />
-        <Property name="NeedsCorruptSentinelPlanet" value="False" />
-        <Property name="NeedsExtremeSentinelPlanet" value="False" />
-        <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
-        <Property name="NeedsExtremeWeatherPlanet" value="False" />
-        <Property name="NeedsExtremeHazardPlanet" value="False" />
-        <Property name="AnyBiomeNotWeirdOrDead" value="False" />
-        <Property name="AnyRGBBiome" value="False" />
-        <Property name="AnyInfestedBiome" value="False" />
-        <Property name="NeedsBiome" value="False" />
-        <Property name="NeedsBiomeType" value="GcBiomeType.xml">
-          <Property name="Biome" value="Lush" />
-        </Property>
-        <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-          <Property name="BiomeSubType" value="None" />
-        </Property>
-        <Property name="NeedsEmptySystem" value="False" />
-        <Property name="NeedsAbandonedSystem" value="False" />
-        <Property name="NeedsResourceHint" value="" />
-        <Property name="SuitableForCreatureDiscovery" value="False" />
-        <Property name="SuitableForCreatureTaming" value="False" />
-        <Property name="SamePlanetAsEvent" value="" />
-        <Property name="SamePlanetAsSeasonParty" value="0" />
-      </Property>
-      <Property name="ForceRestartInteraction" value="True" />
-      <Property name="HasReward" value="" />
-      <Property name="NextOption" value="" />
-      <Property name="TriggerActions" value="GcScanEventTriggers.xml">
-        <Property name="Range" value="100" />
-        <Property name="Triggers" />
-        <Property name="AllowRetrigger" value="False" />
-      </Property>
-      <Property name="UAsList" />
-      <Property name="TechShopType" value="GcTechnologyCategory.xml">
-        <Property name="TechnologyCategory" value="All" />
-      </Property>
-      <Property name="OSDMessage" value="]]..OSDMESSAGE..[["/>
-      <Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM" />
-      <Property name="MarkerLabel" value="]]..MARKERLABEL..[["/>
-      <Property name="MarkerIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="]]..FILENAME..[[" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
-        <Property name="ScannerIconHighlightType" value="Diamond" />
-      </Property>
-      <Property name="StartTime" value="0" />
-      <Property name="MessageTime" value="0" />
-      <Property name="MessageDisplayTime" value="4" />
-      <Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="INVALID_EVENT" />
-      </Property>
-      <Property name="IconTime" value="4" />
-      <Property name="TooltipTime" value="10" />
-      <Property name="TooltipRepeats" value="False" />
-      <Property name="ShowEndTooltip" value="True" />
-      <Property name="TooltipMessage" value="]]..TOOLTIP..[["/>
-      <Property name="ResourceOverride" value="GcResourceElement.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="AltId" value="" />
-        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-          <Property name="Samplers" />
-        </Property>
-      </Property>
-    </Property>
-]]
-end
-
-function GetReward(ID, EVENT)
-return
-[[
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="]]..ID..[[" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectAlways" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False"/>
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardScanEvent.xml">
-              <Property name="Event" value="]]..EVENT..[[" />
-              <Property name="ScanEventTable" value="Planet" />
-              <Property name="DoAerialScan" value="False" />
-              <Property name="UseMissionSeedForEvent" value="False" />
-              <Property name="StartDelay" value="6" />
-              <Property name="UseStartDelayWhenNoAerialScan" value="False" />
-              <Property name="ForceSilentFailure" value="False" />
-              <Property name="FailureOSD" value="" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-]]
-end
-
 function GetPuzzleOption(NAME, ACTION)
 return
 [[
@@ -331,7 +91,7 @@ return
       <Property name="CustomFreighterTextIndex" value="-1" />
       <Property name="RadialInteraction" value="False" />
       <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="INVALID_EVENT"/>
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
     </Property>
     <Property value="GcAlienPuzzleEntry.xml">
@@ -359,71 +119,39 @@ return
 ]]
  end
 
--- All_Request_Leave =
--- [[
-        -- <Property value="GcAlienPuzzleOption.xml">
-          -- <Property name="Name" value="ALL_REQUEST_LEAVE" />
-          -- <Property name="Text" value="" />
-          -- <Property name="IsAlien" value="False" />
-          -- <Property name="Cost" value="" />
-          -- <Property name="Rewards" />
-          -- <Property name="Mood" value="GcAlienMood.xml">
-            -- <Property name="Mood" value="Neutral" />
-          -- </Property>
-          -- <Property name="Prop" value="GcNPCPropType.xml">
-            -- <Property name="NPCProp" value="DontCare" />
-          -- </Property>
-          -- <Property name="OverrideWithAlienWord" value="False" />
-          -- <Property name="ReseedInteractionOnUse" value="False" />
-          -- <Property name="KeepOpen" value="False" />
-          -- <Property name="DisplayCost" value="True" />
-          -- <Property name="TruncateCost" value="False" />
-          -- <Property name="MarkInteractionComplete" value="True" />
-          -- <Property name="NextInteraction" value="" />
-          -- <Property name="SelectedOnBackOut" value="False" />
-          -- <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-            -- <Property name="AkEvent" value="INVALID_EVENT" />
-          -- </Property>
-          -- <Property name="TitleOverride" value="" />
-          -- <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-            -- <Property name="ConditionTest" value="AnyFalse" />
-          -- </Property>
-          -- <Property name="EnablingConditions" />
-          -- <Property name="EnablingConditionId" value="" />
-          -- <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            -- <Property name="wordcategorytableEnum" value="MISC" />
-          -- </Property>
-        -- </Property>
-      -- </Property>
--- ]]
+--Additions to SCANEVENTTABLEPLANET
+EventAdds =
+{--  NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP
+    {"SE_BASE", "Nearest", "BuildingClass", "Base", "False", "False", "Local", "UI_RECOVER_BASE_OSD", "UI_RECOVER_BASE_MARKER", "", "UI_RECOVER_BASE_MARKER"}, --Base_Scan_Event
+    {"SE_GLITCH", "Nearest", "BuildingClass", "StoryGlitch", "False", "False", "Local", "NPC_COMM_WEEK_04_GLITCH_OSD", "BUILDING_GLITCHYSTORYBOX", "", "BUILDING_GLITCHYSTORYBOX"}, --Glitch_Scan_Event
+}
 
-Base_Scan_Event = GetCustomScanEvent("SE_BASE", "Nearest", "BuildingClass", "Base", "False", "False", "Local", "UI_RECOVER_BASE_OSD", "UI_RECOVER_BASE_MARKER", "", "UI_RECOVER_BASE_MARKER")
-Glitch_Scan_Event = GetCustomScanEvent("SE_GLITCH", "Nearest", "BuildingClass", "StoryGlitch", "False", "False", "Local", "NPC_COMM_WEEK_04_GLITCH_OSD", "BUILDING_GLITCHYSTORYBOX", "", "BUILDING_GLITCHYSTORYBOX")
+--Additions to REWARDTABLE
+RewardAdds =
+{--  ID                 EVENT
+    {"R_ABANDONED",     "ABANDONED"},
+    {"R_GLITCH",        "SE_GLITCH"},
+    {"R_BASE",          "SE_BASE"},
+    {"R_HIVE",          "DRONE_HIVE_DISABLED"},
+    {"PLANET_ARCHIVES", "LIBRARY"},
+    {"TOOL_LOCATION",   "SHOP"},
+    {"CRASHED_SHIP",    "DISTRESS"},
+}
 
---Changes for the Rewards table (ID, EVENT)
-REWARD1 = GetReward ("CRASHED_SHIP", "DISTRESS")
-REWARD2 = GetReward ("TOOL_LOCATION", "SHOP")
-REWARD3 = GetReward ("PLANET_ARCHIVES", "LIBRARY")
-REWARD4 = GetReward ("R_HIVE", "DRONE_HIVE_DISABLED")
-REWARD5 = GetReward ("R_BASE", "SE_BASE")
-REWARD6 = GetReward ("R_GLITCH", "SE_GLITCH")
-REWARD7 = GetReward ("R_ABANDONED", "ABANDONED")
-
-REWARDSET = REWARD1..REWARD2..REWARD3..REWARD4..REWARD5..REWARD6..REWARD7
-
---PuzzleOptions (NAME, ACTION)
 --The first set of Options may only have 2 scan events, allothers may have 3
 --First set of options
+--               PuzzleOptions (NAME, ACTION)
 Menu1_Option2 = GetPuzzleOption("UI_PORTAL_OPT", "REVEAL_PORTAL")  -- Portal
 Menu1_Option3 = GetPuzzleOption("BUILDING_DISTRESSSIGNAL_L", "CRASHED_SHIP") -- Crashed Starship
 --Generate a new Puzzle option that points to the next dialog set
+--               MorePuzzleOptions (NEXTACTION)
 More_Options1 = GetMorePuzzleOption("?POWER_SCANNER")
 --Put the options together with a more options closer
 Menu1_Options = Menu1_Option2..Menu1_Option3..More_Options1
 
 --Second set of options
-Menu2_Option1 = GetPuzzleOption("NPC_TECHSHOP_CATEGORY_WEAP","TOOL_LOCATION")  -- Multi-tool Location
-Menu2_Option2 = GetPuzzleOption("BUILDING_FACTORY_L","SEC_SCN_FACT")  -- Manufacturing Facility
+Menu2_Option1 = GetPuzzleOption("NPC_TECHSHOP_CATEGORY_WEAP", "TOOL_LOCATION")  -- Multi-tool Location
+Menu2_Option2 = GetPuzzleOption("BUILDING_FACTORY_L", "SEC_SCN_FACT")  -- Manufacturing Facility
 Menu2_Option3 = GetPuzzleOption("UI_NAV_DROPPOD_NAME_L", "SCAN_1")  -- ExoSuit DropPod
 More_Options2 = GetMorePuzzleOption("?ATOMIC_SCANNER")
 Menu2_Options = Menu2_Option1..Menu2_Option2..Menu2_Option3..More_Options2
@@ -456,7 +184,6 @@ Menu6_Option2 = GetPuzzleOption("UI_POLICE_SHIP_NAME", "R_SCANSENTCRASH")  -- Cr
 Menu6_Options = Menu6_Option1..Menu6_Option2 
 
 --Put all the options together.
---ALL_PUZZLE_UPDATES = [[      <Property name="Options">]]
 ALL_PUZZLE_UPDATES = Menu1_Options..Menu2_Options..Menu3_Options..Menu4_Options..Menu5_Options..Menu6_Options
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -465,41 +192,20 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie",
   ["MOD_MAINTENANCE"] = "Babscoole",
-  ["NMS_VERSION"]     = NMSVersion,
+  ["NMS_VERSION"]     = "4.46",
   ["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
-                -- {
-                    -- ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-                    -- ["EXML_CHANGE_TABLE"] =
-                    -- {
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER","Name","ALL_REQUEST_LEAVE",},
-                            -- -- ["PRECEDING_KEY_WORDS"] = {"Options"},
-                            -- -- ["LINE_OFFSET"]         = "1",
-                            -- ["REMOVE"] = "SECTION",  --Remove original options section
-                        -- },
-                    -- },
-                -- },
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER"},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                        --    {
-                        --        {"TextAlien",     ""} --org UI_SIGNAL_SCANNER_DESC_ALT},
-                        --    },
-                        -- },
                         {
-                            -- ["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER","Name","UI_SIGNAL_NEAREST_OPT"},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
-                            -- ["PRECEDING_KEY_WORDS"] = {"RequiresScanEvent"},
-                            ["ADD"]                 = ALL_PUZZLE_UPDATES,
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER", "Name", "UI_SIGNAL_NEAREST_OPT"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = ALL_PUZZLE_UPDATES,
                         },
                     },
                 },
@@ -508,12 +214,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "SEC_CRASHEDSHIP"},
-                            ["ADD_OPTION"]         = "ADDafterSECTION",
-                            ["ADD"] = REWARDSET,
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MONOLITH"},
+                            ["SEC_SAVE_TO"] = "GetReward",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "R_SHOW_HIVEONLY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_SHOW_HIVEONLY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DoAerialScan", "False"},
@@ -526,27 +231,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                          {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","DRONE_HIVE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "DRONE_HIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ReplaceEventIfAlreadyActive",    "True"},
-                                {"InterstellarOSDMessage", "SCANEVENT_ANOTHER_SYSTEM"},
+                                {"ReplaceEventIfAlreadyActive", "True"},
+                                {"InterstellarOSDMessage",      "SCANEVENT_ANOTHER_SYSTEM"},
                             }
                         },
                          {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","FACTORY_R",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "FACTORY_R"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ReplaceEventIfAlreadyActive",    "True"},
+                                {"ReplaceEventIfAlreadyActive", "True"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Events"},
-                            ["ADD"] = Base_Scan_Event
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Events"},
-                            ["ADD"] = Glitch_Scan_Event
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SENT_CRASH_CORRUPT"},
+                            ["SEC_SAVE_TO"] = "GetCustomScanEvent",
                         },
                     },
                 },
@@ -554,3 +255,81 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
+
+--local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local RewardTable      = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ScanTable        = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+
+
+  
+for i=1, #EventAdds, 1 do
+  local NAME                     = EventAdds[i][1]
+  local BUILDINGLOCATION         = EventAdds[i][2]
+  local BUILDINGTYPE             = EventAdds[i][3]
+  local BUILDINGCLASS            = EventAdds[i][4]
+  local FORCEWIDERANDOM          = EventAdds[i][5]
+  local ALLOWOVERRIDDENBUILDINGS = EventAdds[i][6]
+  local SOLARSYSTEMLOCATION      = EventAdds[i][7]
+  local OSDMESSAGE               = EventAdds[i][8]
+  local MARKERLABEL              = EventAdds[i][9]
+  local FILENAME                 = EventAdds[i][10]
+  local TOOLTIP                  = EventAdds[i][11]
+
+  ScanTable[#ScanTable+1] =
+    {
+        ["SEC_EDIT"] = "GetCustomScanEvent",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Name",                     NAME},
+            {"BuildingLocation",         BUILDINGLOCATION},
+            {"BuildingType",             BUILDINGTYPE},
+            {"ForceWideRandom",          FORCEWIDERANDOM},
+            {"AllowOverriddenBuildings", ALLOWOVERRIDDENBUILDINGS},
+            {"SolarSystemLocation",      SOLARSYSTEMLOCATION},
+            {"OSDMessage",               OSDMESSAGE},
+            {"InterstellarOSDMessage",   "SCANEVENT_ANOTHER_SYSTEM"},
+            {"MarkerLabel",              MARKERLABEL},
+            {"Filename",                 FILENAME},
+            {"TooltipMessage",           TOOLTIP},
+        }
+    }
+  ScanTable[#ScanTable+1] =
+    {
+        ["SEC_EDIT"] = "GetCustomScanEvent",
+        ["SPECIAL_KEY_WORDS"] = {"BuildingClass", "GcBuildingClassification.xml"},
+        ["LINE_OFFSET"] = "+1",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"BuildingClass", BUILDINGCLASS},
+        }
+    }
+  ScanTable[#ScanTable+1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Events"},
+        ["ADD_OPTION"]  = "ADDafterLINE",
+        ["SEC_ADD_NAMED"] = "GetCustomScanEvent",
+    }
+end
+
+for i=1, #RewardAdds, 1 do
+  local ID    = RewardAdds[i][1]
+  local EVENT = RewardAdds[i][2]
+
+  RewardTable[#RewardTable+1] =
+    {
+        ["SEC_EDIT"] = "GetReward",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Id",           ID},
+            {"RewardChoice", "SelectAlways"},
+            {"LabelID",      ""},
+            {"Event",        EVENT},
+        }
+    }
+  RewardTable[#RewardTable+1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Id", "SEC_CRASHEDSHIP"},
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] = "GetReward",
+    }
+end

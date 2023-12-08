@@ -17,21 +17,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"EditPlaneMaxAdditiveOffsetFactor", "1"},
+                                {"EditPlaneMaxAdditiveOffsetFactor",    "1"},
                                 {"EditPlaneMaxSubtractiveOffsetFactor", "1E+10"},
                                 {"EditPlaneMinSubtractiveOffsetFactor", "-1E+10"},
-                                {"TerrainEditBeamMaxRange", "1E+10"},
-                                {"TerrainEditBeamSpherecastRadius", "1.2"},
+                                {"TerrainEditBeamMaxRange",             "1E+10"},
+                                {"TerrainEditBeamSpherecastRadius",     "1.2"},
                                 {"TerrainBlocksSearchRadiusMultiplier", "1000.5"},
-                                {"RegionMapSearchRadiusMultiplier", "1E+15"},
-                                {"RegionEditAreaMultiplier", "20000"},
-                                {"DensityBlendDistanceMultiplier", "100000.4"},
-                                {"TerrainEditBaseDistanceTolerance", "1E+10"},
-                                {"EditEffectScale", "50"},
+                                {"RegionMapSearchRadiusMultiplier",     "1E+15"},
+                                {"RegionEditAreaMultiplier",            "20000"},
+                                {"DensityBlendDistanceMultiplier",      "100000.4"},
+                                {"TerrainEditBaseDistanceTolerance",    "1E+10"},
+                                {"EditEffectScale",                     "50"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"EditSizes",},
+                            ["PRECEDING_KEY_WORDS"] = {"EditSizes"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -46,7 +46,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"SubtractSizes",},
+                            ["PRECEDING_KEY_WORDS"] = {"SubtractSizes"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -56,7 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"UndoEditSizes",},
+                            ["PRECEDING_KEY_WORDS"] = {"UndoEditSizes"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {

@@ -185,6 +185,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
+                {-- remove pulse drive vertical lines
+                    ["MBIN_FILE_SOURCE"] = "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MiniWarpLinesNum", "0" },
+                            }
+                        },
+                    }
+                },
             }
         },
     }

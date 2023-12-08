@@ -161,31 +161,31 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Width", "1300"},
-                                {"HitWidth", "85"},
+                                {"Width",          "1300"},
+                                {"HitWidth",       "85"},
                                 {"PulseFrequency", "32"},
                                 {"PulseAmplitude", "0.8"},
-                                {"DefaultDamage", "150"},
-                                {"HitRate", "0.06"},
-                                {"HasLight", "True"},
+                                {"DefaultDamage",  "150"},
+                                {"HitRate",        "0.06"},
+                                {"HasLight",       "True"},
                                 {"LightIntensity", "2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","LightColour","Colour.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER", "LightColour", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                  {"R", "0.498"},
-                                  {"G", "1"},
-                                  {"B", "0.831"},
+                                {"R", "0.498"},
+                                {"G", "1"},
+                                {"B", "0.831"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","Colour","Colour.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER", "Colour", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                  {"R", "0.498"},
-                                  {"G", "1"},
+                                {"R", "0.498"},
+                                {"G", "1"},
                                 {"B", "0.831"},
                             }
                         },
@@ -198,21 +198,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ProjectileId", "FREIGHTPLASMAGUN"},
-                                {"TurretRange", "17000"},
-                                {"TurretLaserShootTime", "2"},
-                                {"TurretLaserLength", "200"},
-                                {"TurretLaserMoveSpeed", "20"},
-                                {"TurretLaserActiveTime", "5"},
+                                {"ProjectileId",             "FREIGHTPLASMAGUN"},
+                                {"TurretRange",              "17000"},
+                                {"TurretLaserShootTime",     "2"},
+                                {"TurretLaserLength",        "200"},
+                                {"TurretLaserMoveSpeed",     "20"},
+                                {"TurretLaserActiveTime",    "5"},
                                 {"TurretLaserAbortDistance", "18000"},
-                                {"TurretShootPauseTime", "1.5"},
-                                {"TurretBurstCount", "27"},
-                                {"TurretBurstTime", "0.05"},
+                                {"TurretShootPauseTime",     "1.5"},
+                                {"TurretBurstCount",         "27"},
+                                {"TurretBurstTime",          "0.05"},
                                 {"TurretMissileLaunchSpeed", "300"},
-                                {"TurretProjectileRange", "17000"},
-                                {"TurretMissileRange", "8000"},
-                                {"TurretDispersionAngle", "0"},
-                                {"Health", "6000"},
+                                {"TurretProjectileRange",    "17000"},
+                                {"TurretMissileRange",       "8000"},
+                                {"TurretDispersionAngle",    "0"},
+                                {"Health",                   "6000"},
                             }
                         },
                     }

@@ -1,8 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShip.pak",
-["MOD_AUTHOR"]              = "Mjjstral",
-["MOD_MAINTENANCE"]         = "Babscoole",
+["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
 ["NMS_VERSION"]             = "4.46",
 ["DESCRIPTION"]             = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
@@ -14,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN","MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN","REMOVE"},
+                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN", "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN", "REMOVE"},
                     },
                 },
                 {
@@ -22,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "PoliceShip"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.4"},
@@ -33,14 +32,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", ""},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
                             ["REMOVE"] = "SECTION",
                         },
                     }
@@ -64,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },
@@ -82,20 +81,20 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="POLICE"/>
+                <Property name="Anim" value="POLICE" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="REWARD"/>
+                  <Property name="State" value="REWARD" />
                 </Property>
               </Property>
             </Property>
           </Property>
         </Property>
         <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="REWARD"/>
+          <Property name="StateID" value="REWARD" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
@@ -105,10 +104,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="Action">
                 <Property value="GcRewardAction.xml">
-                  <Property name="Reward" value="POLICE"/>
+                  <Property name="Reward" value="POLICE" />
                 </Property>
                 <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="BOOT"/>
+                  <Property name="State" value="BOOT" />
                 </Property>
               </Property>
             </Property>

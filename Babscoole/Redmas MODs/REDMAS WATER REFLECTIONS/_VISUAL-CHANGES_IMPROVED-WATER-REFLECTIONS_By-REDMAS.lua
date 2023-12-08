@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WaterDataDay","GcPlanetWaterData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"WaterDataDay", "GcPlanetWaterData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FoamFadeHeight", "0"},
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WaterDataDay","GcPlanetWaterData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"WaterDataDay", "GcPlanetWaterData.xml"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WaterColourNight","GcPlanetWaterColourData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"WaterColourNight", "GcPlanetWaterColourData.xml"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {

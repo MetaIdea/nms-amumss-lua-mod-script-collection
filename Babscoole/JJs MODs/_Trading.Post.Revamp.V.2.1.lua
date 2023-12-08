@@ -14,28 +14,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "250.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST2",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "500.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST3",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "750.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST4",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1000.000000"},
@@ -48,28 +48,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "100.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST2",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "200.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST3",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "400.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","NUMLODS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "NUMLODS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "4"},
@@ -82,7 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","NUMLODS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "NUMLODS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1"},
@@ -95,28 +95,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "200.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST2",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "200.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST3",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "200.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","NUMLODS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "NUMLODS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "4"},
@@ -129,10 +129,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTS\LARGEPLANT\ENTITIES\PLANTTRIGGER.ENTITY.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTS\LARGEPLANT\ENTITIES\PLANTTRIGGER.ENTITY.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value","ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTS\LARGEPLANT\ENTITIES\PLANTTRIGGER.ENTITY.MBIN",},
+                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTS\LARGEPLANT\ENTITIES\PLANTTRIGGER.ENTITY.MBIN"},
                             }
                         },
                     }
@@ -142,17 +142,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value","MODELS\TRADINGPOST\TRADER\TRADINGPOST_COMMON.SCENE.MBIN",},
+                                {"Value", "MODELS\TRADINGPOST\TRADER\TRADINGPOST_COMMON.SCENE.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\SCIENTIFIC_BUILDING.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\SCIENTIFIC_BUILDING.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value","MODELS\TRADINGPOST\TRADER\SCIENTIFIC_BUILDING.SCENE.MBIN",},
+                                {"Value", "MODELS\TRADINGPOST\TRADER\SCIENTIFIC_BUILDING.SCENE.MBIN"},
                             }
                         },
                     }

@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"MaxTotalCapacityOfNPCTypes",},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxTotalCapacityOfNPCTypes"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FrigateCaptain", "0"},

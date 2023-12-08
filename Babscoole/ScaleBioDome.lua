@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BIOROOM",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BIOROOM"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CanScale", "True"},

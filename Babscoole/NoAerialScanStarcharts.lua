@@ -16,10 +16,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Id","R_STARCHART_A","List","GcRewardTableItemList.xml",},
-                                {"Id","R_STARCHART_B","List","GcRewardTableItemList.xml",},
-                                {"Id","R_STARCHART_C","List","GcRewardTableItemList.xml",},
-                                {"Id","R_STARCHART_D","List","GcRewardTableItemList.xml",},
+                                {"Id", "R_STARCHART_A", "List", "GcRewardTableItemList.xml"},
+                                {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
+                                {"Id", "R_STARCHART_C", "List", "GcRewardTableItemList.xml"},
+                                {"Id", "R_STARCHART_D", "List", "GcRewardTableItemList.xml"},
                             },
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =

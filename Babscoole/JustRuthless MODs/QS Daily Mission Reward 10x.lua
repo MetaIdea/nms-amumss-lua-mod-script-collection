@@ -37,7 +37,7 @@ for i = 1, #DailyReward do
 
     RewardTable[#RewardTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"]  = {"Id", ListID, "Currency", "Specials"},
+      ["SPECIAL_KEY_WORDS"] = {"Id", ListID, "Currency", "Specials"},
       ["SECTION_UP_SPECIAL"] = 1,
       ["MATH_OPERATION"]  = "*",
       ["VALUE_CHANGE_TABLE"] =

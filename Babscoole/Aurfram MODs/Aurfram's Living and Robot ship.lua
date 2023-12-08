@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/INDUSTRIAL/PIRATECRUISER.SCENE.MBIN",},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/PIRATECRUISER.SCENE.MBIN"},
                             ["SECTION_ACTIVE"] = {2,3},
                             ["ADD_OPTION"]  = "ADDafterSECTION", 
                             ["ADD"] =

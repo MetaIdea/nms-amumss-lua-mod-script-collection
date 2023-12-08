@@ -205,8 +205,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "WEAP_TOKEN"},
-                            ["PRECEDING_KEY_WORDS"]  = {"GcRewardTableItem.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAP_TOKEN"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SEC_SAVE_TO"] = "ADD_NewLoot",
                         },-- RewardTable
                     }

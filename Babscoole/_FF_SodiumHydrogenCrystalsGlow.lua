@@ -92,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value",    "30000.000000"},
+                                {"Value", "30000.000000"},
                             }
                         },
                     }

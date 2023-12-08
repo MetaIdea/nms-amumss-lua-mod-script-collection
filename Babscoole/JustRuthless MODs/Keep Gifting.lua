@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "C_REP_TOKEN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_REP_TOKEN"},
                             ["SEC_SAVE_TO"] = "ADD_COST",
                         },
                     }
@@ -113,7 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "PIRATE_BATTLE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BATTLE"},
                             ["SEC_SAVE_TO"] = "ADD_REWARD",
                         },
                     }
@@ -123,7 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "ALL_REQUEST_STD_LOW"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "ALL_REQUEST_STD_LOW"},
                             ["SEC_SAVE_TO"] = "ADD_PUZZLE",
                         },
                     }
@@ -158,7 +158,7 @@ for i = 1, #CostChanges do
          {"Amount", Amount},
       }
     }
-    
+
     CostTable[#CostTable+1] =
     {
       ["SEC_EDIT"] = "ADD_COST",
@@ -187,7 +187,7 @@ for i = 1, #RewardChanges do
     NewID  = Change[j][1]
     Race   = Change[j][2]
     Amount = Change[j][3]
-    
+
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_REWARD",
@@ -219,7 +219,7 @@ for i = 1, #OptionChanges do
     NewCost  = Change[j][2]
     Reward   = Change[j][3]
     KeepOpen = Change[j][4]
-    
+
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", OldID, "Cost", OldCost},
@@ -229,7 +229,7 @@ for i = 1, #OptionChanges do
         {"KeepOpen", KeepOpen},
       },
     }
-    
+
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SEC_EDIT"] = "ADD_PUZZLE",

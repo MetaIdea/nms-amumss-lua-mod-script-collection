@@ -17,27 +17,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Settings", "GcPlanetWaterColourData.xml", "WaterFogColourNear"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R",    "0.237"},
-                                {"G",    "0.342"},
-                                {"B",    "0.465"},
+                                {"R", "0.237"},
+                                {"G", "0.342"},
+                                {"B", "0.465"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Settings", "GcPlanetWaterColourData.xml", "WaterFogColourFar"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R",    "0.316"},
-                                {"G",    "0.456"},
-                                {"B",    "0.62"},
+                                {"R", "0.316"},
+                                {"G", "0.456"},
+                                {"B", "0.62"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Settings", "GcPlanetWaterColourData.xml", "WaterColourBase"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R",    "0.079"},
-                                {"G",    "0.114"},
-                                {"B",    "0.155"},
+                                {"R", "0.079"},
+                                {"G", "0.114"},
+                                {"B", "0.155"},
                             }
                         },
                         {
@@ -45,9 +45,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R",    "0.359"},
-                                {"G",    "0.42"},
-                                {"B",    "1"},
+                                {"R", "0.359"},
+                                {"G", "0.42"},
+                                {"B", "1"},
                             }
                         },
                     }

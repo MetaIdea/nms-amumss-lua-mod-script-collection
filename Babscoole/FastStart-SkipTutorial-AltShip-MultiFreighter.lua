@@ -536,10 +536,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                               ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SkipIntro",                         "True"},  -- Original "False"
-                                {"ForceInitialShip",                  "False"}, -- Original "True"
-                                {"ForceInitialWeapon",                "False"}, -- Original "True"
-                                {"ForceLoadAllWeather",               "True"},  -- Original "False"
+                                {"SkipIntro",           "True"},  -- Original "False"
+                                {"ForceInitialShip",    "False"}, -- Original "True"
+                                {"ForceInitialWeapon",  "False"}, -- Original "True"
+                                {"ForceLoadAllWeather", "True"},  -- Original "False"
                             }
                         },
                     }
@@ -549,7 +549,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Missions",},
+                            ["PRECEDING_KEY_WORDS"] = {"Missions"},
                             ["ADD"] = SKIPTUT
                         },
                     }

@@ -10,6 +10,48 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\POI\GATE_POI\ENTITIES\GATEPOI.ENTITY.MBIN",
+                    ["MBIN_FS_DISCARD"] = "TRUE",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"WarpType", "SpacePOI"},
+                            ["SEC_SAVE_TO"] = "ADD_REWARDACTION",
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED\ENTITIES\SPIDERQUAD.ENTITY.MBIN",
+                    ["MBIN_FS_DISCARD"] = "TRUE",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcTriggerActionComponentData.xml"},
+                            ["SEC_SAVE_TO"] = "ADD_TRIGGER",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_TRIGGER",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"StateID",    "BOOT"},
+                                {"Anim",       "RELIC_GATE_WARP"},
+                                {"FrameStart", "0"},
+                            }
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_TRIGGER",
+                            ["PRECEDING_KEY_WORDS"] = {"GcCameraShakeAction.xml"},
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_TRIGGER",
+                            ["PRECEDING_KEY_WORDS"] = {"Action"},
+                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["SEC_ADD_NAMED"] = "ADD_REWARDACTION"
+                        },
+                    }
+                },
+                {
                     ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -28,43 +70,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
-[[
-    <Property value="GcTriggerActionComponentData.xml">
-      <Property name="HideModel" value="False" />
-      <Property name="StartInactive" value="False" />
-      <Property name="States">
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="BOOT" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="RELIC_GATE_WARP" />
-                <Property name="FrameStart" value="0" />
-                <Property name="StartFromEnd" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcWarpAction.xml">
-                  <Property name="WarpType" value="SpacePOI" />
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property name="Persistent" value="False" />
-      <Property name="PersistentState" value="" />
-      <Property name="ResetShotTimeOnStateChange" value="False" />
-      <Property name="LinkStateToBaseGrid" value="False" />
-    </Property>
-]]
+                            ["SEC_ADD_NAMED"] = "ADD_TRIGGER",
                         }
                     }
                 },

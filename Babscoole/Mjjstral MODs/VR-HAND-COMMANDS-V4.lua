@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "VR-HAND-COMMANDS.pak",
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.45",
+["NMS_VERSION"]     = "4.46",
 ["MOD_DESCRIPTION"] = "Adds trigger-action hand combos, savegame: left-right-left, teleport to base: right-left-right",
 ["MODIFICATIONS"]   =
     {
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Components" },
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
@@ -43,7 +43,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="BASESTATE" />
           <Property name="Triggers">
@@ -77,7 +76,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_S_TRANS" />
           <Property name="Triggers">
@@ -125,7 +123,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_S_TRANS_" />
           <Property name="Triggers">
@@ -173,7 +170,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_S" />
           <Property name="Triggers">
@@ -207,7 +203,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_S_TRANS" />
           <Property name="Triggers">
@@ -255,7 +250,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_S_TRANS_" />
           <Property name="Triggers">
@@ -303,7 +297,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_S" />
           <Property name="Triggers">
@@ -337,7 +330,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_T_TRANS" />
           <Property name="Triggers">
@@ -385,7 +377,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_T_TRANS_" />
           <Property name="Triggers">
@@ -433,7 +424,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_T" />
           <Property name="Triggers">
@@ -467,7 +457,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_T_TRANS" />
           <Property name="Triggers">
@@ -515,7 +504,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_T_TRANS_" />
           <Property name="Triggers">
@@ -563,7 +551,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_T" />
           <Property name="Triggers">
@@ -597,7 +584,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="SAVE" />
           <Property name="Triggers">
@@ -618,7 +604,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="TELEPORT_BASE" />
           <Property name="Triggers">
@@ -641,7 +626,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="TRANS_STATE" />
           <Property name="Triggers">
@@ -661,14 +645,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
       </Property>
       <Property name="Persistent" value="False" />
       <Property name="PersistentState" value="" />
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
     </Property>
-
     <Property value="GcSimpleInteractionComponentData.xml">
       <Property name="SimpleInteractionType" value="Save" />
       <Property name="InteractDistance" value="0" />

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShipBase.pak",
 ["MOD_AUTHOR"]              = "Mjjstral",
 ["MOD_MAINTENANCE"]         = "Babscoole",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["DESCRIPTION"]             = "This is just in case you already own the ship and don't need the menu interaction to get the ship anymore",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN","MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN","REMOVE"},
+                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN", "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN", "REMOVE"},
                     },
                 },
                 {
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","PoliceShip",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.4"},
@@ -33,14 +33,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","PoliceShip","Name","ATTACHMENT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", ""},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","AttackPointLight","Name","FALLOFF_RATE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
                             ["REMOVE"] = "SECTION",
                         },
                     }

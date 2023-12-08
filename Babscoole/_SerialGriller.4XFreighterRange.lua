@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UP_FRHYP1"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UP_FRHYP1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ValueMin", "200"},
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UP_FRHYP2"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UP_FRHYP2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ValueMin", "400"},
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UP_FRHYP3"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UP_FRHYP3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ValueMin", "600"},
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UP_FRHYP4"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UP_FRHYP4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ValueMin", "800"},
@@ -52,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HYPERDRIVE"},
                             ["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HDRIVEBOOST1"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HDRIVEBOOST1"},
                             ["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HDRIVEBOOST2"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HDRIVEBOOST2"},
                             ["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HDRIVEBOOST3"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HDRIVEBOOST3"},
                             ["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS1"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HACCESS1"},
                             ["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS2"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HACCESS2"},
                             ["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
@@ -106,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS3"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HACCESS3"},
                             ["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =

@@ -18,13 +18,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HoverTakeoffHeight", "590"},
-                                {"HoverMinSpeed", "0.1"},
-                                {"CameraPostWarpFov", "120"},
-                                {"MiniWarpLinesNum", "0"},
-                                {"MiniWarpSpeed", "60000"},
+                                {"HoverTakeoffHeight",    "590"},
+                                {"HoverMinSpeed",         "0.1"},
+                                {"CameraPostWarpFov",     "120"},
+                                {"MiniWarpLinesNum",      "0"},
+                                {"MiniWarpSpeed",         "60000"},
                                 {"LandGroundTakeOffTime", "0.2"},
-                                {"ShakePowerScaler", "0.07"},
+                                {"ShakePowerScaler",      "0.07"},
                             }
                         },
                         {

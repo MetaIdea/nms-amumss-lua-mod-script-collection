@@ -53,12 +53,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         { -- removes original derelict map prices
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_ABAND_START"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_ABAND_START"},
                             ["PRECEDING_KEY_WORDS"] = {"Costs"},
                             ["REMOVE"] = "SECTION",
                         },
                         { -- adds new derelict map prices
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_ABAND_START"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_ABAND_START"},
                             ["PRECEDING_KEY_WORDS"] = {"Cost"},
                             ["ADD"] = DerelictCosts(DerelictPrices),
                         },

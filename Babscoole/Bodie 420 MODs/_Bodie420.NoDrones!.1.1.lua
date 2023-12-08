@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DroneSearchPickNearbyTime",               "999999"}, -- Original  6
                                 {"DroneSearchPickNearbyAngleMin",           "0"},      -- Original  5

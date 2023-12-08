@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "RS_QUICKSILV_S", "Reward", "GcRewardMoney.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_QUICKSILV_S", "Reward", "GcRewardMoney.xml"},
                             ["SECTION_UP"] = 1,
                             ["SEC_SAVE_TO"] = "ADD_CurrencyReward",
                         },
@@ -78,7 +78,7 @@ for i = 1, #DailyReward do
 
     RewardTable[#RewardTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"]  = {"Id", ListID, "Currency", "Specials"},
+      ["SPECIAL_KEY_WORDS"] = {"Id", ListID, "Currency", "Specials"},
       ["SECTION_UP_SPECIAL"] = 1,
       ["MATH_OPERATION"]  = "*",
       ["VALUE_CHANGE_TABLE"] =

@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["REPLACE_TYPE"]        = "RAW",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {
                                     [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN]],

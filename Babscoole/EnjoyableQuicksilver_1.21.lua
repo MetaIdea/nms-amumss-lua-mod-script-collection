@@ -309,7 +309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]     =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Message","UI_RETURN_MISSION_OBJ1_MSG"},
+                            ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MISSION_OBJ1_MSG"},
                             ["SECTION_UP"] = 2,
                             ["REPLACE_TYPE"] = "ALL",
                             ["ADD_OPTION"] = "ADDafterSECTION",
@@ -323,7 +323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]     =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Message","UI_RETURN_PIRATE_MSG"},
+                            ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_PIRATE_MSG"},
                             ["SECTION_UP"] = 2,
                             ["REPLACE_TYPE"] = "ALL",
                             ["ADD_OPTION"] = "ADDafterSECTION",
@@ -337,7 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]     =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Message","UI_RETURN_MPMISSION_OBJ1_MSG"},
+                            ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MPMISSION_OBJ1_MSG"},
                             ["SECTION_UP"] = 2,
                             ["REPLACE_TYPE"] = "ALL",
                             ["ADD_OPTION"] = "ADDafterSECTION",

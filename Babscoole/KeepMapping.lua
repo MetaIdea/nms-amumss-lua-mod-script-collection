@@ -13,13 +13,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","NPC_MAPSHOP_OPT_C",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "NPC_MAPSHOP_OPT_C"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_MATCH"] = "False",
                             ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen", "True",},
+                                {"KeepOpen", "True"},
                             },
                         },
                     }

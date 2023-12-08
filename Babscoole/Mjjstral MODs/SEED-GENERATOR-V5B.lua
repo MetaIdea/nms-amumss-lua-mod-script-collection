@@ -900,7 +900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
+							["SPECIAL_KEY_WORDS"]   = {"Anim", "JETPACK_CLOSE"}, 
 							["LINE_OFFSET"] 		= "+0",
 							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
 							["ADD"] 				= ANIM_TEMPLATE_ALL

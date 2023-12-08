@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {"MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIPPARTS\SAILSHIPAIRVENT.SCENE.MBIN","MODELS\LANDINGFIX.SCENE.MBIN","REMOVE"},
+                        {"MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIPPARTS\SAILSHIPAIRVENT.SCENE.MBIN", "MODELS\LANDINGFIX.SCENE.MBIN", "REMOVE"},
                     },
                 },
                 {

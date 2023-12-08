@@ -15,125 +15,125 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "16",}
+                                {"MaxScale", "16",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "30",}
+                                {"MaxScale", "30",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.8",}
+                                {"MaxScale", "5.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.7",}
+                                {"MaxScale", "4.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.8",}
+                                {"MaxScale", "4.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.4",}
+                                {"MaxScale", "4.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.2",}
+                                {"MaxScale", "4.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.5",}
+                                {"MaxScale", "5.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8, 10, 11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",}
+                                {"MaxScale", "3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5",}
+                                {"MaxScale", "5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {15,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1",}
+                                {"MinScale", "1",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1.2",},
-                                {"MaxScale",    "3.6",}
+                                {"MinScale", "1.2"},
+                                {"MaxScale", "3.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14, 18,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.3",}
+                                {"MinScale", "0.3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13, 19,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.9",}
+                                {"MinScale", "0.9",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {20,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1",},
-                                {"MaxScale",    "3.6",}
+                                {"MinScale", "1"},
+                                {"MaxScale", "3.6",}
                             },
                         },
                     }
@@ -143,92 +143,92 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {1,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "16",}
+                                -- {"MaxScale", "16",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {2,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "30",}
+                                -- {"MaxScale", "30",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {3,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5.8",}
+                                -- {"MaxScale", "5.8",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {4,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.7",}
+                                -- {"MaxScale", "4.7",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {5,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.8",}
+                                -- {"MaxScale", "4.8",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {6,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.4",},
-                                -- {"Coverage",    "0.325",},
+                                -- {"MaxScale", "4.4"},
+                                -- {"Coverage", "0.325"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {7,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.2",}
+                                -- {"MaxScale", "4.2",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {9,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5.5",}
+                                -- {"MaxScale", "5.5",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {8, 10, 11,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3",}
+                                -- {"MaxScale", "3",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {11,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"Coverage",    "0.24",},
+                                -- {"Coverage", "0.24"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {12,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5",}
+                                -- {"MaxScale", "5",}
                             -- },
                         -- },
                     -- }
@@ -238,62 +238,62 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5",}
+                                {"MaxScale", "5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.5",}
+                                {"MaxScale", "5.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {28,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",}
+                                {"MaxScale", "2.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {35,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.5",}
+                                {"MaxScale", "3.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {36,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4",},
+                                {"MaxScale", "4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {45,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1",},
-                                {"MaxScale",    "4",},
-                                {"SlopeScaling",    "1",},
-                                {"PatchEdgeScaling",    "1",},
+                                {"MinScale",         "1"},
+                                {"MaxScale",         "4"},
+                                {"SlopeScaling",     "1"},
+                                {"PatchEdgeScaling", "1"},
                             },
                         },
                     }
@@ -303,11 +303,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.9",}
+                                {"MaxScale", "2.9",}
                             },
                         },
                     }
@@ -317,51 +317,51 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.4",}
+                                {"MaxScale", "5.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.6",}
+                                {"MaxScale", "5.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.5",}
+                                {"MaxScale", "5.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {22, 29},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.5",}
+                                {"MinScale", "0.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {26,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.6",},
+                                {"MinScale", "0.6"},
                             },
                         },
                     }
@@ -371,43 +371,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.6",}
+                                {"MaxScale", "5.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.4",}
+                                {"MaxScale", "5.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",}
+                                {"MaxScale", "2.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5",}
+                                {"MaxScale", "5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {24,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                     }
@@ -417,43 +417,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.7",}
+                                {"MaxScale", "4.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2, 4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5",}
+                                {"MaxScale", "5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.4",}
+                                {"MaxScale", "5.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5, 7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.1",}
+                                {"MaxScale", "2.1",}
                             },
                         },
                     }
@@ -463,75 +463,75 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "16",}
+                                {"MaxScale", "16",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "30",}
+                                {"MaxScale", "30",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.8",}
+                                {"MaxScale", "5.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.7",}
+                                {"MaxScale", "4.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.8",}
+                                {"MaxScale", "4.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.4",}
+                                {"MaxScale", "4.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.2",}
+                                {"MaxScale", "4.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8, 10, 11, 12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4",}
+                                {"MaxScale", "4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.5",}
+                                {"MaxScale", "5.5",}
                             },
                         },
                     }
@@ -541,84 +541,84 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {1,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "16",}
+                                -- {"MaxScale", "16",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {2,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "30",}
+                                -- {"MaxScale", "30",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {3,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5.8",}
+                                -- {"MaxScale", "5.8",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {4,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.7",}
+                                -- {"MaxScale", "4.7",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {5,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.8",}
+                                -- {"MaxScale", "4.8",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {6,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.4",},
-                                -- {"Coverage",    "0.325",}
+                                -- {"MaxScale", "4.4"},
+                                -- {"Coverage", "0.325",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {7,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.2",}
+                                -- {"MaxScale", "4.2",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {8, 10, 11, 12,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4",}
+                                -- {"MaxScale", "4",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {9,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5.5",}
+                                -- {"MaxScale", "5.5",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {11,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"Coverage",    "0.24",}
+                                -- {"Coverage", "0.24",}
                             -- },
                         -- },
                     -- }
@@ -628,163 +628,163 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.5",},
-                                {"MaxScale",    "4.4",},
+                                {"MinScale", "0.5"},
+                                {"MaxScale", "4.4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.5",},
-                                {"MaxScale",    "3.4",},
+                                {"MinScale", "0.5"},
+                                {"MaxScale", "3.4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.08625",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.08625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.08625",},
+                                {"Coverage", "0.08625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.13125",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.13125"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.13125",},
+                                {"Coverage", "0.13125"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8.2",},
-                                {"Coverage",    "0.135",},
+                                {"MaxScale", "8.2"},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.135",},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
+                                {"MaxScale", "8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.1875",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.1875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1875",},
+                                {"Coverage", "0.1875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.4",},
+                                {"MaxScale", "2.4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2",}
+                                {"MaxScale", "2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.1",},
-                                {"Coverage",    "0.35",},
+                                {"MaxScale", "2.1"},
+                                {"Coverage", "0.35"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.35",},
+                                {"Coverage", "0.35"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.35",},
+                                {"Coverage", "0.35"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {15,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.6",},
-                                {"MaxScale",    "2.8",},
+                                {"MinScale", "0.6"},
+                                {"MaxScale", "2.8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {19,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",}
+                                {"MaxScale", "2.8",}
                             },
                         },
                     }
@@ -794,59 +794,59 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.5",}
+                                {"MaxScale", "3.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",}
+                                {"MaxScale", "3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.4",}
+                                {"MaxScale", "5.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4, 5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",}
+                                {"MaxScale", "2.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",}
+                                {"MaxScale", "2.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.8",}
+                                {"MaxScale", "1.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.9",}
+                                {"MaxScale", "2.9",}
                             },
                         },
                     }
@@ -856,159 +856,159 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.37875",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.37875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.37875",},
+                                {"Coverage", "0.37875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.37875",},
+                                {"Coverage", "0.37875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.2",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.2"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.39",},
+                                {"Coverage", "0.39"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.39",},
+                                {"Coverage", "0.39"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1.4",},
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.39",},
+                                {"MinScale", "1.4"},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.39"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.39",},
+                                {"Coverage", "0.39"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.39",},
+                                {"Coverage", "0.39"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",}
+                                {"MaxScale", "2.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.5",}
+                                {"MaxScale", "3.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",}
+                                {"MaxScale", "2.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.7",}
+                                {"MaxScale", "3.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13, 14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.8",}
+                                {"MaxScale", "4.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {19, 27,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",}
+                                {"MaxScale", "3.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {20,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {22,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.9",}
+                                {"MaxScale", "2.9",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {26,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.7",}
+                                {"MaxScale", "2.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {28,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                     }
@@ -1018,102 +1018,102 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",},
+                                {"MaxScale", "3"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.0825",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.0825"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.0825",},
+                                {"Coverage", "0.0825"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.0975",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.0975"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.0975",},
+                                {"Coverage", "0.0975"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11, 17,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",}
+                                {"MaxScale", "2.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",},
-                                {"Coverage",    "0.03",},
+                                {"MaxScale", "3.8"},
+                                {"Coverage", "0.03"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {18,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {21,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.9",}
+                                {"MaxScale", "2.9",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {25,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.7",}
+                                {"MaxScale", "2.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {26,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",}
+                                {"MaxScale", "3.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {27,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                     }
@@ -1123,168 +1123,168 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",},
+                                {"MaxScale", "3.4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",},
+                                {"MaxScale", "3"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.08625",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.08625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.08625",},
+                                {"Coverage", "0.08625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.13125",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.13125"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.13125",},
+                                {"Coverage", "0.13125"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.135",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.135",},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.09",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.09"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.09",},
+                                {"Coverage", "0.09"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
-                                {"Coverage",    "0.1875",},
+                                {"MaxScale", "8"},
+                                {"Coverage", "0.1875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1875",},
+                                {"Coverage", "0.1875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8, 9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2",}
+                                {"MaxScale", "2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13, 14, 18,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",},
+                                {"MaxScale", "2.8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {19,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {21,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",}
+                                {"MaxScale", "2.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {22,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.9",}
+                                {"MaxScale", "2.9",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {26,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.7",}
+                                {"MaxScale", "2.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {27,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",}
+                                {"MaxScale", "3.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {28,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                     }
@@ -1294,103 +1294,103 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "16",},
-                                {"Coverage",    "0.265",},
+                                {"MaxScale", "16"},
+                                {"Coverage", "0.265"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2, 3, 5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "18",}
+                                {"MaxScale", "18",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "20",}
+                                {"MaxScale", "20",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.7",}
+                                {"MaxScale", "4.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",}
+                                {"MaxScale", "3.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.1",},
-                                {"MaxScale",    "5",}
+                                {"MinScale", "0.1"},
+                                {"MaxScale", "5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.1",},
-                                {"MaxScale",    "5.5",}
+                                {"MinScale", "0.1"},
+                                {"MaxScale", "5.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.2",}
+                                {"MaxScale", "4.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.1",},
-                                {"MaxScale",    "5.15",}
+                                {"MinScale", "0.1"},
+                                {"MaxScale", "5.15",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13, 14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.6",}
+                                {"MaxScale", "3.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {18, 22,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                     }
@@ -1400,85 +1400,85 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "7.2",},
+                                {"MaxScale", "7.2"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1",},
-                                {"MaxScale",    "7",}
+                                {"MinScale", "1"},
+                                {"MaxScale", "7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1.6",},
-                                {"MaxScale",    "7",}
+                                {"MinScale", "1.6"},
+                                {"MaxScale", "7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "2.5",}
+                                {"MinScale", "2.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.8",}
+                                {"MaxScale", "5.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",}
+                                {"MaxScale", "2.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.7",}
+                                {"MinScale", "0.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16, 17,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.8",},
+                                {"MinScale", "0.8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {18,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",}
+                                {"MaxScale", "2.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {20, 22,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.1",}
+                                {"MaxScale", "4.1",}
                             },
                         },
                     }
@@ -1488,27 +1488,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10, 14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",},
+                                {"MaxScale", "3.8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4",}
+                                {"MaxScale", "4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.9",}
+                                {"MaxScale", "3.9",}
                             },
                         },
                     }
@@ -1518,91 +1518,91 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1, 2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8.2",},
+                                {"MaxScale", "8.2"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8.4",}
+                                {"MaxScale", "8.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8.8",}
+                                {"MaxScale", "8.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.7",},
+                                {"MaxScale", "2.7"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.4",}
+                                {"MaxScale", "5.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.2",}
+                                {"MaxScale", "5.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12, 13},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",}
+                                {"MaxScale", "2.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.5",}
+                                {"MaxScale", "3.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {17, 21,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.2",}
+                                {"MaxScale", "4.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {20,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                     }
@@ -1612,91 +1612,91 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8.3",},
+                                {"MaxScale", "8.3"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.7",}
+                                {"MaxScale", "2.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.6",}
+                                {"MaxScale", "5.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.4",},
+                                {"MaxScale", "5.4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",}
+                                {"MaxScale", "2.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.5",}
+                                {"MaxScale", "3.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",}
+                                {"MaxScale", "3.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.8",}
+                                {"MaxScale", "4.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {17,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {18,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.2",}
+                                {"MaxScale", "4.2",}
                             },
                         },
                     }
@@ -1706,67 +1706,67 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8.7",},
+                                {"MaxScale", "8.7"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8.2",}
+                                {"MaxScale", "8.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.7",}
+                                {"MaxScale", "2.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.4",},
+                                {"MaxScale", "2.4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.2",}
+                                {"MaxScale", "5.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.6",}
+                                {"MaxScale", "5.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13, 15, 19,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.6",}
+                                {"MaxScale", "3.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16, 20,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.6",}
+                                {"MaxScale", "4.6",}
                             },
                         },
                     }
@@ -1776,91 +1776,91 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1, 3, 4, 5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8",},
+                                {"MaxScale", "8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.5",}
+                                {"MaxScale", "4.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.6",}
+                                {"MaxScale", "4.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",},
+                                {"MaxScale", "3"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.6",}
+                                {"MaxScale", "3.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.5",}
+                                {"MaxScale", "3.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4",}
+                                {"MaxScale", "4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",}
+                                {"MaxScale", "2.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.5",}
+                                {"MaxScale", "2.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {15,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {17,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5",}
+                                {"MaxScale", "5",}
                             },
                         },
                     }
@@ -1870,118 +1870,118 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {1,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "8",},
+                                -- {"MaxScale", "8"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {3,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "8",},
-                                -- {"Coverage",    "0.3",},
+                                -- {"MaxScale", "8"},
+                                -- {"Coverage", "0.3"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {4,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "8",},
-                                -- {"Coverage",    "0.3",},
+                                -- {"MaxScale", "8"},
+                                -- {"Coverage", "0.3"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {5,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "8",}
+                                -- {"MaxScale", "8",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {6,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.5",}
+                                -- {"MaxScale", "4.5",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {8,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.6",},
-                            -- {"Coverage",    "0.3",},
+                                -- {"MaxScale", "4.6"},
+                            -- {"Coverage", "0.3"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {9,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3",}
+                                -- {"MaxScale", "3",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {10,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.6",}
+                                -- {"MaxScale", "3.6",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {11,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.5",}
+                                -- {"MaxScale", "3.5",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {12,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4",}
+                                -- {"MaxScale", "4",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {13,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "2.2",}
+                                -- {"MaxScale", "2.2",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {14,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "2.5",}
+                                -- {"MaxScale", "2.5",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {15,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.2",}
+                                -- {"MaxScale", "3.2",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {17,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5",}
+                                -- {"MaxScale", "5",}
                             -- },
                         -- },
                     -- }
@@ -1991,152 +1991,152 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.2",},
-                                {"Coverage",    "0.09",},
+                                {"MaxScale", "10.2"},
+                                {"Coverage", "0.09"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.09",},
+                                {"Coverage", "0.09"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.1",},
-                                {"Coverage",    "0.12",},
+                                {"MaxScale", "3.1"},
+                                {"Coverage", "0.12"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.135",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.135",},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.1425",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.1425"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1425",},
+                                {"Coverage", "0.1425"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.3",}
+                                {"MaxScale", "2.3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7, 13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",},
+                                {"MaxScale", "2.2"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8, 12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.8",}
+                                {"MaxScale", "1.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",}
+                                {"MaxScale", "2.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10, 15,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2",}
+                                {"MaxScale", "2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.5",}
+                                {"MaxScale", "3.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.4",}
+                                {"MaxScale", "2.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {19,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.5",}
+                                {"MaxScale", "2.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {23,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.075",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.075"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {23,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.075",},
+                                {"Coverage", "0.075"},
                             },
                         },
                     }
@@ -2146,110 +2146,110 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.135",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.135",},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.135",},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.1425",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.1425"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1425",},
+                                {"Coverage", "0.1425"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1425",},
+                                {"Coverage", "0.1425"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.3",}
+                                {"MaxScale", "2.3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",},
+                                {"MaxScale", "2.2"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.8",}
+                                {"MaxScale", "1.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.6",}
+                                {"MaxScale", "1.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2",}
+                                {"MaxScale", "2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {21,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.1",},
-                                {"Coverage",    "0.075",},
+                                {"MaxScale", "10.1"},
+                                {"Coverage", "0.075"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {21,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.075",},
+                                {"Coverage", "0.075"},
                             },
                         },
                     }
@@ -2259,100 +2259,100 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.0675",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.0675"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.0675",},
+                                {"Coverage", "0.0675"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.1",}
+                                {"MaxScale", "3.1",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7, 16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.8",},
+                                {"MaxScale", "1.8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8, 20, 21,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2",}
+                                {"MaxScale", "2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.6",}
+                                {"MaxScale", "1.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.3",}
+                                {"MaxScale", "2.3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11, 19,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.5",},
+                                {"MaxScale", "2.5"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",},
+                                {"MaxScale", "2.6"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.6",},
+                                {"MaxScale", "3.6"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {15,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.4",},
+                                {"MaxScale", "1.4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {17, 18,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",},
+                                {"MaxScale", "2.2"},
                             },
                         },
                     }
@@ -2362,93 +2362,93 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",}
+                                {"MaxScale", "3.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.7",},
-                                {"Coverage",    "0.13125",},
+                                {"MaxScale", "10.7"},
+                                {"Coverage", "0.13125"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.13125",},
+                                {"Coverage", "0.13125"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.6",}
+                                {"MaxScale", "4.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",},
+                                {"MaxScale", "2.2"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.1875",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.1875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1875",},
+                                {"Coverage", "0.1875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.8",}
+                                {"MaxScale", "1.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9, 13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",}
+                                {"MaxScale", "2.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",}
+                                {"MaxScale", "2.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {15,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",},
+                                {"MaxScale", "3.2"},
                             },
                         },
                     }
@@ -2458,133 +2458,133 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "16",}
+                                {"MaxScale", "16",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3, 5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",}
+                                {"MaxScale", "3.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1.3",},
-                                {"MaxScale",    "3.7",}
+                                {"MinScale", "1.3"},
+                                {"MaxScale", "3.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.11",},
+                                {"Coverage", "0.11"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.11",},
+                                {"Coverage", "0.11"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.2",},
+                                {"MaxScale", "4.2"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.6",},
-                                {"MaxScale",    "4",}
+                                {"MinScale", "0.6"},
+                                {"MaxScale", "4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.14",},
+                                {"Coverage", "0.14"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.14",},
+                                {"Coverage", "0.14"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.5",},
+                                {"MaxScale", "5.5"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10, 11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",}
+                                {"MaxScale", "3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4",}
+                                {"MaxScale", "4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14, 18,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.3",}
+                                {"MinScale", "0.3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1.2",}
+                                {"MinScale", "1.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {20,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1",}
+                                {"MinScale", "1",}
                             },
                         },
                     }
@@ -2594,90 +2594,90 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {1,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "16",}
+                                -- {"MaxScale", "16",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {3,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.8",},
-                                -- {"Coverage",    "0.18",},
+                                -- {"MaxScale", "3.8"},
+                                -- {"Coverage", "0.18"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {4,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.7",},
-                                -- {"Coverage",    "0.11",},
+                                -- {"MaxScale", "3.7"},
+                                -- {"Coverage", "0.11"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {5,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.8",},
-                                -- {"Coverage",    "0.18",},
+                                -- {"MaxScale", "3.8"},
+                                -- {"Coverage", "0.18"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {6,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.4",},
-                                -- {"Coverage",    "0.325",},
+                                -- {"MaxScale", "3.4"},
+                                -- {"Coverage", "0.325"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {7,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.2",},
-                                -- {"Coverage",    "0.14",},
+                                -- {"MaxScale", "4.2"},
+                                -- {"Coverage", "0.14"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {8,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4",},
-                                -- {"Coverage",    "0.14",},
+                                -- {"MaxScale", "4"},
+                                -- {"Coverage", "0.14"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {9,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5.5",}
+                                -- {"MaxScale", "5.5",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {10, 11,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3",},
+                                -- {"MaxScale", "3"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {12,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4",},
-                                -- {"Coverage",    "0.09",},
+                                -- {"MaxScale", "4"},
+                                -- {"Coverage", "0.09"},
                             -- },
                         -- },
                     -- }
@@ -2687,133 +2687,133 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "20",}
+                                {"MaxScale", "20",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "30",}
+                                {"MaxScale", "30",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3, 13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5",}
+                                {"MaxScale", "5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4, 6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",}
+                                {"MaxScale", "3.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.7",}
+                                {"MaxScale", "3.7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.2",}
+                                {"MaxScale", "4.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4",},
+                                {"MaxScale", "4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.5",}
+                                {"MaxScale", "4.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11, 12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",},
+                                {"MaxScale", "3"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.9",}
+                                {"MinScale", "0.9",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {15,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.2",}
+                                {"MinScale", "0.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1",}
+                                {"MinScale", "1",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {17,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1.2",},
-                                {"MaxScale",    "3.6",}
+                                {"MinScale", "1.2"},
+                                {"MaxScale", "3.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {19,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.2",}
+                                {"MinScale", "0.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {21,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1",},
-                                {"MaxScale",    "3.6",}
+                                {"MinScale", "1"},
+                                {"MaxScale", "3.6",}
                             },
                         },
                     }
@@ -2823,102 +2823,102 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {1,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "20",}
+                                -- {"MaxScale", "20",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {2,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "30",},
-                                -- {"Coverage",    "0.13",},
+                                -- {"MaxScale", "30"},
+                                -- {"Coverage", "0.13"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {3,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5",},
-                                -- {"Coverage",    "0.115",},
+                                -- {"MaxScale", "5"},
+                                -- {"Coverage", "0.115"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {4, 6,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.8",}
+                                -- {"MaxScale", "3.8",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {5,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.7",},
-                                -- {"Coverage",    "0.11",},
+                                -- {"MaxScale", "3.7"},
+                                -- {"Coverage", "0.11"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {7,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.4",}
+                                -- {"MaxScale", "3.4",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {8,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.2",}
+                                -- {"MaxScale", "4.2",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {9,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4",},
+                                -- {"MaxScale", "4"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {10,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.5",}
+                                -- {"MaxScale", "4.5",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {11, 12,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3",},
+                                -- {"MaxScale", "3"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {13,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5",}
+                                -- {"MaxScale", "5",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {17, 21,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.6",}
+                                -- {"MaxScale", "3.6",}
                             -- },
                         -- },
                     -- }
@@ -2928,45 +2928,45 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.5",},
-                                {"Coverage",    "0.05625",},
+                                {"MaxScale", "3.5"},
+                                {"Coverage", "0.05625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.05625",},
+                                {"Coverage", "0.05625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",},
-                                {"Coverage",    "0.05",},
+                                {"MaxScale", "2.2"},
+                                {"Coverage", "0.05"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",}
+                                {"MaxScale", "2.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4, 13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.8",}
+                                {"MaxScale", "1.8",}
                             },
                         },
                     }
@@ -2976,151 +2976,151 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.7",},
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.0375",},
+                                {"MinScale", "0.7"},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.0375"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.0375",},
+                                {"Coverage", "0.0375"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.0375",},
+                                {"Coverage", "0.0375"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.7",},
-                                {"MaxScale",    "9.5",},
+                                {"MinScale", "0.7"},
+                                {"MaxScale", "9.5"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.12",},
+                                {"Coverage", "0.12"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.12",},
+                                {"Coverage", "0.12"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5",},
-                                {"Coverage",    "0.165",},
+                                {"MaxScale", "5"},
+                                {"Coverage", "0.165"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.165",},
+                                {"Coverage", "0.165"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.165",},
+                                {"Coverage", "0.165"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.9",},
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.15",},
+                                {"MinScale", "0.9"},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.15"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.15",},
+                                {"Coverage", "0.15"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.15",},
+                                {"Coverage", "0.15"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.5",}
+                                {"MaxScale", "2.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",}
+                                {"MaxScale", "2.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.6",}
+                                {"MaxScale", "3.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9, 10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.3",}
+                                {"MaxScale", "3.3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12, 17, 23,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace",}
                             },
@@ -3132,110 +3132,110 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.5",},
-                                {"MaxScale",    "10.5",},
+                                {"MinScale", "0.5"},
+                                {"MaxScale", "10.5"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.06",},
+                                {"Coverage", "0.06"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.7",},
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.0975",},
+                                {"MinScale", "0.7"},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.0975"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.0975",},
+                                {"Coverage", "0.0975"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.3",},
+                                {"MaxScale", "5.3"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.06",},
+                                {"Coverage", "0.06"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4, 6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",}
+                                {"MaxScale", "2.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.9",}
+                                {"MaxScale", "2.9",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.6",}
+                                {"MaxScale", "3.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.5",}
+                                {"MaxScale", "2.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",}
+                                {"MaxScale", "3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.3",}
+                                {"MaxScale", "3.3",}
                             },
                         },
                     }
@@ -3245,137 +3245,137 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.8",},
-                                {"Coverage",    "0.08625",},
+                                {"MaxScale", "5.8"},
+                                {"Coverage", "0.08625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.08625",},
+                                {"Coverage", "0.08625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.5",},
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.13125",},
+                                {"MinScale", "0.5"},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.13125"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.13125",},
+                                {"Coverage", "0.13125"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.2",},
-                                {"Coverage",    "0.135",},
+                                {"MaxScale", "5.2"},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.135",},
+                                {"Coverage", "0.135"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.5",},
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.09",},
+                                {"MinScale", "0.5"},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.09"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.09",},
+                                {"Coverage", "0.09"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.8",},
+                                {"MaxScale", "1.8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.4",},
+                                {"MaxScale", "5.4"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.18",},
+                                {"Coverage", "0.18"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",}
+                                {"MaxScale", "2.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",}
+                                {"MaxScale", "3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",}
+                                {"MaxScale", "2.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                     }
@@ -3385,96 +3385,96 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",},
+                                {"MaxScale", "3.8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1.3",},
-                                {"MaxScale",    "3.7",},
+                                {"MinScale", "1.3"},
+                                {"MaxScale", "3.7"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",},
+                                {"MaxScale", "3.8"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.4",}
+                                {"MaxScale", "3.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.5",},
-                                {"MaxScale",    "4.2",}
+                                {"MinScale", "0.5"},
+                                {"MaxScale", "4.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "0.6",},
-                                {"MaxScale",    "4",}
+                                {"MinScale", "0.6"},
+                                {"MaxScale", "4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.5",}
+                                {"MaxScale", "5.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10, 11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",}
+                                {"MaxScale", "3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4",}
+                                {"MaxScale", "4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1.2",},
-                                {"MaxScale",    "3.6",}
+                                {"MinScale", "1.2"},
+                                {"MaxScale", "3.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {20,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "1",},
-                                {"MaxScale",    "3.6",}
+                                {"MinScale", "1"},
+                                {"MaxScale", "3.6",}
                             },
                         },
                     }
@@ -3484,81 +3484,81 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {3,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.8",},
-                                -- {"Coverage",    "0.18",},
+                                -- {"MaxScale", "3.8"},
+                                -- {"Coverage", "0.18"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {4,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.7",},
-                                -- {"Coverage",    "0.11",},
+                                -- {"MaxScale", "3.7"},
+                                -- {"Coverage", "0.11"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {5,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.8",},
-                                -- {"Coverage",    "0.18",},
+                                -- {"MaxScale", "3.8"},
+                                -- {"Coverage", "0.18"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {6,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3.4",},
-                                -- {"Coverage",    "0.325",},
+                                -- {"MaxScale", "3.4"},
+                                -- {"Coverage", "0.325"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {7,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4.2",},
-                                -- {"Coverage",    "0.14",},
+                                -- {"MaxScale", "4.2"},
+                                -- {"Coverage", "0.14"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {8,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4",},
-                                -- {"Coverage",    "0.14",},
+                                -- {"MaxScale", "4"},
+                                -- {"Coverage", "0.14"},
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {9,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "5.5",}
+                                -- {"MaxScale", "5.5",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {10, 11,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "3",}
+                                -- {"MaxScale", "3",}
                             -- },
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             -- ["SECTION_ACTIVE"] = {12,},
-                            -- ["VALUE_CHANGE_TABLE"]     =
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",    "4",}
+                                -- {"MaxScale", "4",}
                             -- },
                         -- },
                     -- }
@@ -3568,35 +3568,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1, 4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",}
+                                {"MaxScale", "3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.1",}
+                                {"MaxScale", "3.1",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.8",}
+                                {"MaxScale", "3.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5, 6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                     }
@@ -3606,223 +3606,223 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "15.6",},
-                                {"Coverage",    "0.1275",},
+                                {"MaxScale", "15.6"},
+                                {"Coverage", "0.1275"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1275",},
+                                {"Coverage", "0.1275"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1275",},
+                                {"Coverage", "0.1275"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.1",},
-                                {"Coverage",    "0.075",},
+                                {"MaxScale", "10.1"},
+                                {"Coverage", "0.075"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.075",},
+                                {"Coverage", "0.075"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.075",},
+                                {"Coverage", "0.075"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10",},
-                                {"Coverage",    "0.1575",},
+                                {"MaxScale", "10"},
+                                {"Coverage", "0.1575"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1575",},
+                                {"Coverage", "0.1575"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1575",},
+                                {"Coverage", "0.1575"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.43",}
+                                {"MaxScale", "2.43",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.7",},
-                                {"Coverage",    "0.1725",},
+                                {"MaxScale", "10.7"},
+                                {"Coverage", "0.1725"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1725",},
+                                {"Coverage", "0.1725"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1725",},
+                                {"Coverage", "0.1725"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.2",}
+                                {"MaxScale", "3.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.9",}
+                                {"MaxScale", "4.9",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.1",}
+                                {"MaxScale", "3.1",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9, 11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.8",}
+                                {"MaxScale", "4.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.1",}
+                                {"MaxScale", "4.1",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.5",}
+                                {"MaxScale", "1.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4",}
+                                {"MaxScale", "4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14, 15,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.2",}
+                                {"MaxScale", "4.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {16,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.4",}
+                                {"MaxScale", "4.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {17,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",}
+                                {"MaxScale", "3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {18,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.6",}
+                                {"MaxScale", "3.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {19,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.6",}
+                                {"MaxScale", "4.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {20,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "7.6",}
+                                {"MaxScale", "7.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {37,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.4",}
+                                {"MaxScale", "2.4",}
                             },
                         },
                     }
@@ -3832,144 +3832,144 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.1",},
-                                {"Coverage",    "0.0825",},
+                                {"MaxScale", "10.1"},
+                                {"Coverage", "0.0825"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.0825",},
+                                {"Coverage", "0.0825"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.075",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.075"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.075",},
+                                {"Coverage", "0.075"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.4",},
-                                {"Coverage",    "0.105",},
+                                {"MaxScale", "10.4"},
+                                {"Coverage", "0.105"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.105",},
+                                {"Coverage", "0.105"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.4",},
-                                {"Coverage",    "0.0975",},
+                                {"MaxScale", "10.4"},
+                                {"Coverage", "0.0975"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.0975",},
+                                {"Coverage", "0.0975"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5, 6,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.4",}
+                                {"MaxScale", "2.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7, 11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",}
+                                {"MaxScale", "2.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.9",}
+                                {"MaxScale", "2.9",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2",}
+                                {"MaxScale", "2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {12, 14},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.1",}
+                                {"MaxScale", "3.1",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13, 15,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",}
+                                {"MaxScale", "2.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {17,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.8",},
-                                {"Coverage",    "0.105",},
+                                {"MaxScale", "10.8"},
+                                {"Coverage", "0.105"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {17,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.105",},
+                                {"Coverage", "0.105"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {18,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.7",}
+                                {"MaxScale", "3.7",}
                             },
                         },
                     }
@@ -3979,94 +3979,94 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.14625",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.14625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.14625",},
+                                {"Coverage", "0.14625"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.09",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.09"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.09",},
+                                {"Coverage", "0.09"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "10.5",},
-                                {"Coverage",    "0.1875",},
+                                {"MaxScale", "10.5"},
+                                {"Coverage", "0.1875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Coverage",    "0.1875",},
+                                {"Coverage", "0.1875"},
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6, 12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.6",}
+                                {"MaxScale", "2.6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.8",}
+                                {"MaxScale", "2.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9, 10, 13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "1.8",}
+                                {"MaxScale", "1.8",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.2",}
+                                {"MaxScale", "2.2",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {14,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "2.4",}
+                                {"MaxScale", "2.4",}
                             },
                         },
                     }
@@ -4076,51 +4076,51 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1, 2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "8.5",}
+                                {"MaxScale", "8.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "6",}
+                                {"MaxScale", "6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "6.5",}
+                                {"MaxScale", "6.5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5.4",}
+                                {"MaxScale", "5.4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6, 8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5",}
+                                {"MaxScale", "5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3.3",}
+                                {"MaxScale", "3.3",}
                             },
                         },
                     }
@@ -4134,68 +4134,68 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {1, 2,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    "15",},
-                                {"MaxScale",    "30",}
+                                {"MinScale", "15"},
+                                {"MaxScale", "30",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "7.3",}
+                                {"MaxScale", "7.3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {6, 10,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4",}
+                                {"MaxScale", "4",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {7, 12,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "5",}
+                                {"MaxScale", "5",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {8,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "6",}
+                                {"MaxScale", "6",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {9,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "7",}
+                                {"MaxScale", "7",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {11,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "3",}
+                                {"MaxScale", "3",}
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
                             ["SECTION_ACTIVE"] = {13,},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale",    "4.5",}
+                                {"MaxScale", "4.5",}
                             },
                         },
                     }

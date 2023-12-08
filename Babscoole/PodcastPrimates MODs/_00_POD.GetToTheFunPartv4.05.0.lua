@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","LAUNCHER",},
+                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory", "GcInventoryContainer.xml", "Id", "LAUNCHER"},
                             ["SECTION_ACTIVE"] = 1,
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","SHIPJUMP1",},
+                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory", "GcInventoryContainer.xml", "Id", "SHIPJUMP1"},
                             ["SECTION_ACTIVE"] = 1,
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","SHIPGUN1",},
+                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory", "GcInventoryContainer.xml", "Id", "SHIPGUN1"},
                             ["SECTION_ACTIVE"] = {1,2,},
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -56,7 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","SHIPROCKETS",},
+                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory", "GcInventoryContainer.xml", "Id", "SHIPROCKETS"},
                             ["SECTION_ACTIVE"] = 1,
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                               ["ADD"] =
@@ -78,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory","GcInventoryContainer.xml","Id","SCAN1",},
+                            ["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory", "GcInventoryContainer.xml", "Id", "SCAN1"},
                             ["SECTION_ACTIVE"] = {1,2,},
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -86,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory","GcInventoryContainer.xml","Id","SCAN1",},
+                            ["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory", "GcInventoryContainer.xml", "Id", "SCAN1"},
                             ["SECTION_ACTIVE"] = 1,
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
@@ -122,15 +122,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData","GcDifficultyStartWithAllItemsKnownOptionData.xml","InitialKnownThings","GcKnownThingsPreset.xml","Value","SHIP_TELEPORT",},
+                            ["SPECIAL_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData", "GcDifficultyStartWithAllItemsKnownOptionData.xml", "InitialKnownThings", "GcKnownThingsPreset.xml", "Value", "SHIP_TELEPORT"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData","GcDifficultyStartWithAllItemsKnownOptionData.xml","InitialKnownThings","GcKnownThingsPreset.xml","Value","STUN_GREN",},
+                            ["SPECIAL_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData", "GcDifficultyStartWithAllItemsKnownOptionData.xml", "InitialKnownThings", "GcKnownThingsPreset.xml", "Value", "STUN_GREN"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","SHIPROCKETS",},
+                            ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory", "GcInventoryContainer.xml", "Id", "SHIPROCKETS"},
                             ["SECTION_ACTIVE"] = 2,
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -139,7 +139,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory","GcInventoryContainer.xml","Id","SCANBINOC1",},
+                            ["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory", "GcInventoryContainer.xml", "Id", "SCANBINOC1"},
                             ["SECTION_ACTIVE"] = 2,
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -147,35 +147,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ShipSummoningFuelCostMultipliers",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShipSummoningFuelCostMultipliers"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"High", "2"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ReputationGainMultipliers",},
+                            ["PRECEDING_KEY_WORDS"] = {"ReputationGainMultipliers"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Slow", "0.5"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"SpaceCombatMultipliers",},
+                            ["PRECEDING_KEY_WORDS"] = {"SpaceCombatMultipliers"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Fast", "0.33"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GroundCombatMultipliers",},
+                            ["PRECEDING_KEY_WORDS"] = {"GroundCombatMultipliers"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Fast", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BreakTechOnDamageMultipliers",},
+                            ["PRECEDING_KEY_WORDS"] = {"BreakTechOnDamageMultipliers"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"High", "1"},
@@ -198,7 +198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevels",},
+                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevels"},
                             ["LINE_OFFSET"] = "+1",
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -206,7 +206,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevels",},
+                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevels"},
                             ["LINE_OFFSET"] = "+2",
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -214,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevels",},
+                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevels"},
                             ["LINE_OFFSET"] = "+3",
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -222,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevelsSurvival",},
+                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevelsSurvival"},
                             ["LINE_OFFSET"] = "+1",
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -230,7 +230,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevelsSurvival",},
+                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevelsSurvival"},
                             ["LINE_OFFSET"] = "+2",
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -238,7 +238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevelsSurvival",},
+                            ["PRECEDING_KEY_WORDS"] = {"PirateInterestLevelsSurvival"},
                             ["LINE_OFFSET"] = "+3",
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -246,7 +246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SentinelTimersLow","GcExperienceTimers.xml","Low","Vector2f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SentinelTimersLow", "GcExperienceTimers.xml", "Low", "Vector2f.xml"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "360"},
@@ -254,14 +254,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SentinelTimersNormal","GcExperienceTimers.xml","Normal","Vector2f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SentinelTimersNormal", "GcExperienceTimers.xml", "Normal", "Vector2f.xml"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "60"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SentinelTimersNormal","GcExperienceTimers.xml","Low","Vector2f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SentinelTimersNormal", "GcExperienceTimers.xml", "Low", "Vector2f.xml"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "180"},
@@ -269,7 +269,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpacePirateTimers","GcExperienceTimers.xml","Low","Vector2f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpacePirateTimers", "GcExperienceTimers.xml", "Low", "Vector2f.xml"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "800"},
@@ -277,7 +277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateFlybyTimer","Vector2f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"FrigateFlybyTimer", "Vector2f.xml"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "9999"},
@@ -291,7 +291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Settings","GcDifficultySettingsData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Settings", "GcDifficultySettingsData.xml"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DeathConsequencesDifficulty",    "DestroyItems"},
@@ -306,7 +306,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROCKETSUB",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROCKETSUB"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                               ["ADD"] =
 [[
@@ -425,7 +425,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value","MECH_PROT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "MECH_PROT"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                               ["ADD"] =
 [[
@@ -438,7 +438,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value","AMMO",},
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "AMMO"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                               ["ADD"] =
 [[
@@ -460,7 +460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value","LAUNCHFUEL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "LAUNCHFUEL"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                               ["ADD"] =
 [[
@@ -473,7 +473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"SquadronUnlockedPilotSlots",},
+                            ["PRECEDING_KEY_WORDS"] = {"SquadronUnlockedPilotSlots"},
                             ["LINE_OFFSET"] = "+1",
                               ["VALUE_CHANGE_TABLE"] =
                             {
@@ -491,7 +491,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DifficultySettings","GcDifficultySettingsData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"DifficultySettings", "GcDifficultySettingsData.xml"},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AllSlotsUnlocked",      "True"},

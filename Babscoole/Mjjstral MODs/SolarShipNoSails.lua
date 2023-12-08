@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "SolarShipNoSails.pak",
 ["MOD_AUTHOR"]    = "Mjstral and JJHookah and Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["MODIFICATIONS"] =
     {
         {
@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Anim","LOWALTITUDE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "LOWALTITUDE"},
                             ["VALUE_CHANGE_TABLE"] = {{"Filename", ""},}
                         },
                     }
@@ -23,15 +23,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Sails_A"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_A"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Sails_B"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_B"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Sails_C"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_C"},
                             ["REMOVE"] = "SECTION",
                         },
                     }

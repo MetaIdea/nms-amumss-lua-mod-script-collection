@@ -860,8 +860,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "_SCLASSSHIP_SQU"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "_SCLASSSHIP_SQU"},
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Children", "IGNORE"},
                             },

@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Laser","GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Laser", "GcShipWeaponData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle",       "3"},
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Projectile","GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Projectile", "GcShipWeaponData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle",       "4"},
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shotgun","GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shotgun", "GcShipWeaponData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle",       "4"},
@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Minigun","GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Minigun", "GcShipWeaponData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle",       "5"},
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Plasma","GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Plasma", "GcShipWeaponData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle",       "5"},
@@ -59,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Missile","GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Missile", "GcShipWeaponData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle",       "3"},
@@ -68,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rocket","GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rocket", "GcShipWeaponData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimExtraAngle",  "20"},

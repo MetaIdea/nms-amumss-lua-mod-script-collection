@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "S3_SALVAGE", "ID","BP_SALVAGE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "S3_SALVAGE", "ID", "BP_SALVAGE"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -94,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "S3_SALVAGE", "ID","BP_SALVAGE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "S3_SALVAGE", "ID", "BP_SALVAGE"},
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -183,7 +183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -191,8 +191,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -200,8 +200,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {4,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -271,8 +271,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {7,},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
@@ -379,8 +379,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {16,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -388,8 +388,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -397,7 +397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Common","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml", "ID", "AMMO"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Common", "GcRewardTableCategory.xml", "Large", "GcRewardTableItemList.xml", "ID", "AMMO"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "1"},
@@ -406,7 +406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml", "ID", "AMMO"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml", "ID", "AMMO"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "1"},
@@ -415,7 +415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml", "ID", "PRODFUEL2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml", "ID", "PRODFUEL2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "2"},
@@ -423,15 +423,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml", "ID", "MICROCHIP"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml", "ID", "MICROCHIP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMax", "5"},
                             }
                         },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             -- ["SECTION_ACTIVE"] = {4,},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -439,8 +439,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml", },
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml", },
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {3,},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
@@ -574,8 +574,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml", },
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml", },
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             -- ["SECTION_ACTIVE"] = {11,},
                             -- ["ADD_OPTION"] = "ADDafterSECTION",
                             -- ["ADD"] =
@@ -584,8 +584,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 -- ]]
                         -- },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {11,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -595,8 +595,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {12,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -606,8 +606,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {13,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -616,12 +616,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"List",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Large", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml", "UseInventoryChoiceOverride","False",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Large", "GcRewardTableItemList.xml", "UseInventoryChoiceOverride", "False"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -882,8 +882,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -892,8 +892,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -902,8 +902,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -912,13 +912,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Rare","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"List",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Rare", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
                             --["SECTION_ACTIVE"] = {1,},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Rare","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml", "UseInventoryChoiceOverride","False",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Rare", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml", "UseInventoryChoiceOverride", "False"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1053,13 +1053,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Common","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"List",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Common", "GcRewardTableCategory.xml", "Large", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
                             --["SECTION_ACTIVE"] = {1,},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Common","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml", "UseInventoryChoiceOverride","False",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Common", "GcRewardTableCategory.xml", "Large", "GcRewardTableItemList.xml", "UseInventoryChoiceOverride", "False"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1230,13 +1230,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Rare","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"List",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Rare", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
                             --["SECTION_ACTIVE"] = {1,},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Rare","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml", "UseInventoryChoiceOverride","False",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Rare", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml", "UseInventoryChoiceOverride", "False"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1317,8 +1317,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Rare","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Rare", "GcRewardTableCategory.xml", "Large", "GcRewardTableItemList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ID", "TRA_ALLOY1"},
@@ -1492,7 +1492,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "CRYSTAL"},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["SECTION_ACTIVE"] = {3, 4,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1501,7 +1501,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "FUELCRYSTAL"},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1515,7 +1515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","WORDSTONE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "WORDSTONE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -1525,8 +1525,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","WORDSTONE",},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "WORDSTONE"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -1537,7 +1537,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","CRATES",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "CRATES"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.02"},
@@ -1547,8 +1547,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","CRATES",},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "CRATES"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -1565,7 +1565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1576,8 +1576,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1589,7 +1589,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1600,8 +1600,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1632,7 +1632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "BIOMEPLANT"},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "10"},
@@ -1791,7 +1791,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml"},
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1799,7 +1799,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml"},
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1837,7 +1837,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml"},
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1918,7 +1918,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.267228"},
@@ -1927,7 +1927,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "1"},
@@ -1940,7 +1940,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"y", "1"},
@@ -1953,7 +1953,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "0.2"},
@@ -1966,7 +1966,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "0.1"},
@@ -1984,7 +1984,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"},

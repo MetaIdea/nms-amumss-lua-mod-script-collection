@@ -19,8 +19,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Control", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "360"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "360"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "2400"},
                             }
@@ -29,8 +29,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Control", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "250"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "250"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "310"},
                             }
@@ -39,8 +39,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Control", "CombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "160"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",   "160"},
+                                {"MinSpeed",   "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "2400"},
                             }
@@ -49,8 +49,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Control", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "160"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "160"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "310"},
                             }
@@ -59,8 +59,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "360"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "360"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "2600"},
                             }
@@ -69,8 +69,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "250"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "250"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "310"},
                             }
@@ -79,8 +79,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "CombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "160"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "160"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "2700"},
                             }
@@ -89,8 +89,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "160"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "160"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "310"},
                             }
@@ -99,8 +99,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "350"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "350"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "2200"},
                             }
@@ -109,8 +109,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "260"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "260"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "320"},
                             }
@@ -119,8 +119,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "CombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "160"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "160"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "2200"},
                             }
@@ -129,8 +129,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed", "160"},
-                                {"MinSpeed", "0"},
+                                {"MaxSpeed",      "160"},
+                                {"MinSpeed",      "0"},
                                 {"MinSpeedForce", "0"},
                                 {"BoostMaxSpeed", "240"},
                             }

@@ -87,7 +87,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"JetpackTankTimes",},
+                            ["PRECEDING_KEY_WORDS"] = {"JetpackTankTimes"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {

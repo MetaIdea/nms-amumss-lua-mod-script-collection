@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceFriendlyShipLineColour","Colour.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceFriendlyShipLineColour", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"G", "1"},
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceEnemyShipLineColour","Colour.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceEnemyShipLineColour", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"G", "0"},
@@ -39,25 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapAttackColour","Colour.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"R", "1"},
-                                {"G", "0"},
-                                {"B", "0"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapOtherPlayerColour","Colour.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"R", "1"},
-                                {"G", "1"},
-                                {"B", "1"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapThreatColour","Colour.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapAttackColour", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -66,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapNeutralColour","Colour.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapOtherPlayerColour", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -75,7 +57,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapSquadronColour","Colour.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapThreatColour", "Colour.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1"},
+                                {"G", "0"},
+                                {"B", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapNeutralColour", "Colour.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1"},
+                                {"G", "1"},
+                                {"B", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapSquadronColour", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -84,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapDeathPointColour","Colour.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapDeathPointColour", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -93,7 +93,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapMarkerData","GcSpaceMapObjectData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapMarkerData", "GcSpaceMapObjectData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -102,7 +102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapPlanetData","GcSpaceMapObjectData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapPlanetData", "GcSpaceMapObjectData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -111,26 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapStationData","GcSpaceMapObjectData.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"R", "1"},
-                                {"G", "1"},
-                                {"B", "1"},
-                                {"A", "0.8"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapNexusData","GcSpaceMapObjectData.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"R", "1"},
-                                {"G", "1"},
-                                {"B", "1"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapAtlasData","GcSpaceMapObjectData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapStationData", "GcSpaceMapObjectData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -140,7 +121,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapBlackHoleData","GcSpaceMapObjectData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapNexusData", "GcSpaceMapObjectData.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1"},
+                                {"G", "1"},
+                                {"B", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapAtlasData", "GcSpaceMapObjectData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -150,16 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapShipData","GcSpaceMapObjectData.xml",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"G", "1"},
-                                {"B", "1"},
-                                {"A", "0.8"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapFreighterData","GcSpaceMapObjectData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapBlackHoleData", "GcSpaceMapObjectData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -169,7 +150,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapPulseEncounterData","GcSpaceMapObjectData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapShipData", "GcSpaceMapObjectData.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"G", "1"},
+                                {"B", "1"},
+                                {"A", "0.8"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapFreighterData", "GcSpaceMapObjectData.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1"},
+                                {"G", "1"},
+                                {"B", "1"},
+                                {"A", "0.8"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceMapPulseEncounterData", "GcSpaceMapObjectData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},

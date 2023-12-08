@@ -14,7 +14,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = "",
                             ["VALUE_MATCH"] = "300",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -28,8 +27,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","HOVER_PET"},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "HOVER_PET"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="GcCreatureFilename.xml">
@@ -51,8 +50,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SEASNAKE"},
-                            ["LINE_OFFSET"]        = "-2",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SEASNAKE"},
+                            ["LINE_OFFSET"] = "-2",
                             ["ADD"] =
 [[
     <Property value="GcCreatureData.xml">

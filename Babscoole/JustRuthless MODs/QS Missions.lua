@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "RS_QUICKSILV_S", "Reward", "GcRewardMoney.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_QUICKSILV_S", "Reward", "GcRewardMoney.xml"},
                             ["SECTION_UP"] = 1,
                             ["SEC_SAVE_TO"] = "ADD_CurrencyReward",
                         },

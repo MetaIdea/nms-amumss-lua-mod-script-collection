@@ -124,15 +124,15 @@ function CreateColoursProperty(PaletteColours)
     local PropertiesString = ", "
 
     for j = 1, #PaletteColours do
-        local R1 = PaletteColours[j][1 ]
-        local G1 = PaletteColours[j][2 ]
-        local B1 = PaletteColours[j][3 ]
-        local A1 = PaletteColours[j][4 ]
-        local R2 = PaletteColours[j][5 ]
-        local G2 = PaletteColours[j][6 ]
-        local B2 = PaletteColours[j][7 ]
-        local A2 = PaletteColours[j][8 ]
-        local R3 = PaletteColours[j][9 ]
+        local R1 = PaletteColours[j][1]
+        local G1 = PaletteColours[j][2]
+        local B1 = PaletteColours[j][3]
+        local A1 = PaletteColours[j][4]
+        local R2 = PaletteColours[j][5]
+        local G2 = PaletteColours[j][6]
+        local B2 = PaletteColours[j][7]
+        local A2 = PaletteColours[j][8]
+        local R3 = PaletteColours[j][9]
         local G3 = PaletteColours[j][10]
         local B3 = PaletteColours[j][11]
         local A3 = PaletteColours[j][12]
@@ -181,11 +181,11 @@ function CreateColoursProperty(PaletteColours)
 return PropertiesString
 end
 
-local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local PaletteColours = DataTable[i]["COLOURS"]
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
         ["MBIN_FILE_SOURCE"] =
         {
@@ -195,7 +195,7 @@ for i = 1, #DataTable do
         ["EXML_CHANGE_TABLE"] =
         {
             {
-                ["PRECEDING_KEY_WORDS"] = { "Settings" },
+                ["PRECEDING_KEY_WORDS"] = {"Settings"},
                 ["ADD"] = CreateColoursProperty(PaletteColours)
             }
         }

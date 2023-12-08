@@ -14,19 +14,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
         MBIN_FILE_SOURCE  = 'METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',
         EXML_CHANGE_TABLE = {
             {
-                SPECIAL_KEY_WORDS    = {'ID', 'HYPERDRIVE'},
-                PRECEDING_KEY_WORDS    = {'Ship_Hyperdrive_JumpDistance'},
+                SPECIAL_KEY_WORDS = {'ID', 'HYPERDRIVE'},
+                PRECEDING_KEY_WORDS = {'Ship_Hyperdrive_JumpDistance'},
                 SECTION_UP = 1,
-                VALUE_CHANGE_TABLE     = {
-                    {'Bonus',    '700000'}  -- Original "100"
+                VALUE_CHANGE_TABLE = {
+                    {'Bonus', '700000'}  -- Original "100"
                 }
             },
             {
-                SPECIAL_KEY_WORDS    = {'ID', 'WARP_ALIEN'},
-                PRECEDING_KEY_WORDS    = {'Ship_Hyperdrive_JumpDistance'},
+                SPECIAL_KEY_WORDS = {'ID', 'WARP_ALIEN'},
+                PRECEDING_KEY_WORDS = {'Ship_Hyperdrive_JumpDistance'},
                 SECTION_UP = 1,
-                VALUE_CHANGE_TABLE     = {
-                    {'Bonus',    '700000'}  -- Original "100"
+                VALUE_CHANGE_TABLE = {
+                    {'Bonus', '700000'}  -- Original "100"
                 }
             },
         }
@@ -35,9 +35,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
         MBIN_FILE_SOURCE  = 'GCGALAXYGLOBALS.GLOBAL.MBIN',
         EXML_CHANGE_TABLE = {
             {
-                PRECEDING_KEY_WORDS        = '',
-                VALUE_CHANGE_TABLE     = {
-                    {'FreePanSpeedTurbo',        '275'},    --  Original 2.75
+                PRECEDING_KEY_WORDS = '',
+                VALUE_CHANGE_TABLE = {
+                    {'FreePanSpeedTurbo', '275'},    --  Original 2.75
                 }
             }
         }

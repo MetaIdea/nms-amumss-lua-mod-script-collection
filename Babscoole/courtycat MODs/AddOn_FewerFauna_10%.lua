@@ -14,14 +14,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"EmptySystemSpecific","GcCreatureGenerationOptionalWeightedList.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"EmptySystemSpecific", "GcCreatureGenerationOptionalWeightedList.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Probability", "0.2" },
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GroundGroupsPerKm",},
+                            ["PRECEDING_KEY_WORDS"] = {"GroundGroupsPerKm"},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"WaterGroupsGroupsPerKm",},
+                            ["PRECEDING_KEY_WORDS"] = {"WaterGroupsGroupsPerKm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Sparse",    "3" },
@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"AirGroupsGroupsPerKm",},
+                            ["PRECEDING_KEY_WORDS"] = {"AirGroupsGroupsPerKm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Sparse",    "1" },

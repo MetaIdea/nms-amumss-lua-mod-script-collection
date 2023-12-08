@@ -96,7 +96,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","TOOL"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "TOOL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "300"}, -- Original "200"
@@ -104,7 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","TOOL_HARD"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "TOOL_HARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "225"}, -- Original "150"
@@ -112,7 +112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","WAYPOINT"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "WAYPOINT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "7500"}, -- Original "5000"
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BEACON"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BEACON"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "7500"}, -- Original "5000"
@@ -130,7 +130,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","RADIO_TOWER"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "RADIO_TOWER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "150000"}, -- Original "100000"
@@ -139,7 +139,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                             },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","OBSERVATORY"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "OBSERVATORY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "150000"}, -- Original "100000"
@@ -148,7 +148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","DISTRESS_SIGNAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "DISTRESS_SIGNAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "150000"}, -- Original "100000"
@@ -157,7 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","DEBUG_PLANET"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "DEBUG_PLANET"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "1500000"}, -- Original "100000"
@@ -166,7 +166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","DEBUG_SPACE"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "DEBUG_SPACE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "1500000"}, -- Original "100000"
@@ -175,7 +175,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                             },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SHIP"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "15000"}, -- Original "10000"
@@ -184,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","VISUAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "VISUAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "15000"}, -- Original "10000"

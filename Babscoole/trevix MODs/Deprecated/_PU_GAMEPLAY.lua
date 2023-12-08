@@ -201,7 +201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"HandControllerDeadZone","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"HandControllerDeadZone", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"x", "0.1"},
@@ -210,7 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"StickData","GcPlayerStickData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"StickData", "GcPlayerStickData.xml"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"TurnFast", "1.8"},
@@ -272,7 +272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SHOTGUN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AkEvent","WPN_SHIP_CYCLOTRON_FIRE"},
+                                {"AkEvent", "WPN_SHIP_CYCLOTRON_FIRE"},
                                 {"PhysicsPush",        "8"},
                                 {"DefaultDamage",      "2"},
                                 {"BulletLength",       "0.2"},
@@ -767,7 +767,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLAYER", "LightColour","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLAYER", "LightColour", "Colour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.96"},
@@ -1085,7 +1085,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SHIP_TELEPORT"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIP_TELEPORT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TechnologyCategory", "Ship"},
@@ -1104,15 +1104,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","LAUNCHER_ROBO"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml","GcTechnologyRequirement.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER_ROBO"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml", "GcTechnologyRequirement.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ID", "QUAD_PROD"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE_ROBO"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "HYPERDRIVE_ROBO"},
                             ["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1120,11 +1120,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UT_S10_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UT_S10_SCAN"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BOLT","StatsType","Weapon_Projectile_Damage",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BOLT", "StatsType", "Weapon_Projectile_Damage"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1132,7 +1132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BOLT","StatsType","Weapon_Projectile_Range",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BOLT", "StatsType", "Weapon_Projectile_Range"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1140,7 +1140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BOLT","StatsType","Weapon_Projectile_Rate",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BOLT", "StatsType", "Weapon_Projectile_Rate"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1148,7 +1148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BOLT","StatsType","Weapon_Projectile_ClipSize",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BOLT", "StatsType", "Weapon_Projectile_ClipSize"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1156,7 +1156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BOLT","StatsType","Weapon_Projectile_Recoil",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BOLT", "StatsType", "Weapon_Projectile_Recoil"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1164,7 +1164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BOLT","StatsType","Weapon_Projectile_Dispersion",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BOLT", "StatsType", "Weapon_Projectile_Dispersion"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1172,7 +1172,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BOLT","StatsType","Weapon_Projectile_BurstCap",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BOLT", "StatsType", "Weapon_Projectile_BurstCap"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1180,7 +1180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UT_BOLT","StatsType","Weapon_Projectile_Recoil",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UT_BOLT", "StatsType", "Weapon_Projectile_Recoil"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1188,7 +1188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UT_BOLT","StatsType","Weapon_Projectile_BurstCap",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UT_BOLT", "StatsType", "Weapon_Projectile_BurstCap"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1196,7 +1196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SHOTGUN","StatsType","Weapon_Projectile_Dispersion",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHOTGUN", "StatsType", "Weapon_Projectile_Dispersion"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1204,7 +1204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SHOTGUN","StatsType","Weapon_Projectile_Recoil",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHOTGUN", "StatsType", "Weapon_Projectile_Recoil"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1212,7 +1212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SHOTGUN","StatsType","Weapon_Projectile_BurstCap",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHOTGUN", "StatsType", "Weapon_Projectile_BurstCap"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1220,7 +1220,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SMG","StatsType","Weapon_Projectile_Dispersion",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SMG", "StatsType", "Weapon_Projectile_Dispersion"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1228,7 +1228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SMG","StatsType","Weapon_Projectile_Recoil",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SMG", "StatsType", "Weapon_Projectile_Recoil"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1236,7 +1236,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SMG","StatsType","Weapon_Projectile_BurstCap",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SMG", "StatsType", "Weapon_Projectile_BurstCap"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1244,7 +1244,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","FLAME","StatsType","Weapon_Projectile_Dispersion",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "FLAME", "StatsType", "Weapon_Projectile_Dispersion"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1252,7 +1252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","FLAME","StatsType","Weapon_Projectile_Recoil",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "FLAME", "StatsType", "Weapon_Projectile_Recoil"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1260,7 +1260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","FLAME","StatsType","Weapon_Projectile_BurstCap",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "FLAME", "StatsType", "Weapon_Projectile_BurstCap"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1268,7 +1268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","CANNON","StatsType","Weapon_Projectile_Damage",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "CANNON", "StatsType", "Weapon_Projectile_Damage"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1276,7 +1276,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","CANNON","StatsType","Weapon_Projectile_Recoil",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "CANNON", "StatsType", "Weapon_Projectile_Recoil"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1284,7 +1284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","CANNON","StatsType","Weapon_Projectile_Dispersion",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "CANNON", "StatsType", "Weapon_Projectile_Dispersion"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1292,7 +1292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UT_CANNON","StatsType","Weapon_ChargedProjectile_ExtraSpeed",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UT_CANNON", "StatsType", "Weapon_ChargedProjectile_ExtraSpeed"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1300,19 +1300,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UT_CANNON","StatsType","Weapon_ChargedProjectile_ChargeTime",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UT_CANNON", "StatsType", "Weapon_ChargedProjectile_ChargeTime"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","MAINT_MONONUB1"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "MAINT_MONONUB1"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","MAINT_MONONUB2"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "MAINT_MONONUB2"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","MAINT_MONONUB3"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "MAINT_MONONUB3"},
                             ["REMOVE"] = "SECTION",
                         },
                     }
@@ -1323,8 +1323,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STANDARD",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STANDARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",            "1600"},
@@ -1333,8 +1333,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STRONG",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",            "3000"},
@@ -1343,8 +1343,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FAST",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FAST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",            "400"},
@@ -1353,8 +1353,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FAST_STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Health",            "1600"},
@@ -1363,8 +1363,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable",},
-                            ["SPECIAL_KEY_WORDS"] = {"Id","NULL",},
+                            ["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "NULL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RechargeDelayTime", "6"},

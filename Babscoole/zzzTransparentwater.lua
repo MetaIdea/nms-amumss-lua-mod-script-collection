@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WaterDataDay","GcPlanetWaterData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"WaterDataDay", "GcPlanetWaterData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WaterStrength",         "0.005"},

@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HeightBlend",                   "0"},     -- Original  "0.5"
                                 {"SmoothStepBelow",               "0"},     -- Original  "0.2"

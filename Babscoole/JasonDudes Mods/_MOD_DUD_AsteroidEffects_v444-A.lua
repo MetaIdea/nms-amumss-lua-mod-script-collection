@@ -69,17 +69,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_HIT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_HIT"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
-                            ["VALUE_CHANGE_TABLE"] = {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
                                 {"Life",  "0.3"},
                                 {"Scale", "5"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_M_EXP"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris", "GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
                                 {"Number",        "2"},
                                 {"Radius",        "15"},
                                 {"Scale",         "0.04"},
@@ -88,9 +90,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_M_EXP"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris", "GcDebrisData.xml", "GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
                                 {"Number",        "4"},
                                 {"Radius",        "15"},
                                 {"Scale",         "0.02"},

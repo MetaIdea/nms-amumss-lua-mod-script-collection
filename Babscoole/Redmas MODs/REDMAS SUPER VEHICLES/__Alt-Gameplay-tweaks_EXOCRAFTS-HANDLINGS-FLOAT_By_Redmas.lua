@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"VehicleLocalScan","GcScanData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"VehicleLocalScan", "GcScanData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "200"},
@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","BIKE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "BIKE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",         "20"},
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MED_BUGGY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MED_BUGGY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionlength",        "0.7"},
@@ -102,7 +102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","TRUCK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "TRUCK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",         "40"},
@@ -120,7 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WHEELEDBIKE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "WHEELEDBIKE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",           "12"},
@@ -152,7 +152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","HOVERCRAFT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "HOVERCRAFT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",           "20"},
@@ -187,7 +187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUBMARINE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUBMARINE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"UnderwaterEnginePower",                  "32.2"},
@@ -207,7 +207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MECH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",        "0"},

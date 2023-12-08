@@ -138,7 +138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceStation","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceStation", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -146,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceStation","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceStation", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -157,7 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceStation","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceStation", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -168,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shop","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shop", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -177,7 +177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shop","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shop", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shop","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shop", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -199,7 +199,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TechShop","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"TechShop", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "16"},
@@ -207,7 +207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ShipTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ShipTechSpecialist", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "36"},
@@ -215,7 +215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ShipTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ShipTechSpecialist", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -226,7 +226,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ShipTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ShipTechSpecialist", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -237,7 +237,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SuitTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SuitTechSpecialist", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "26"},
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SuitTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SuitTechSpecialist", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -256,7 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SuitTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SuitTechSpecialist", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -267,7 +267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WeapTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"WeapTechSpecialist", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "36"},
@@ -275,7 +275,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WeapTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"WeapTechSpecialist", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -286,7 +286,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WeapTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"WeapTechSpecialist", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -297,7 +297,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"VehicleTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"VehicleTechSpecialist", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "33"},
@@ -305,7 +305,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"VehicleTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"VehicleTechSpecialist", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -316,7 +316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"VehicleTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"VehicleTechSpecialist", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -327,7 +327,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"NexusTechSpecialist","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"NexusTechSpecialist", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "39"},
@@ -335,7 +335,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Ship","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Ship", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Ship","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Ship", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -357,7 +357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Ship","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Ship", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -368,7 +368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Ship","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Ship", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -379,7 +379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExpShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExpShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -390,7 +390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExpShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExpShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -401,7 +401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExpShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExpShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -412,7 +412,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExpShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExpShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -423,7 +423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TraShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"TraShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -434,7 +434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TraShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"TraShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -445,7 +445,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TraShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"TraShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -456,7 +456,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TraShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"TraShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -467,7 +467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WarShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"WarShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -478,7 +478,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WarShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"WarShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -489,7 +489,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WarShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"WarShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -500,7 +500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WarShip","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"WarShip", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -511,7 +511,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneExp","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneExp", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -522,7 +522,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneExp","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneExp", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -533,7 +533,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneExp","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneExp", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -544,7 +544,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneExp","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneExp", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -555,7 +555,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneTra","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneTra", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -566,7 +566,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneTra","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneTra", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -577,7 +577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneTra","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneTra", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -588,7 +588,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneTra","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneTra", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -599,7 +599,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneWar","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneWar", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -610,7 +610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneWar","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneWar", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -621,7 +621,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneWar","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneWar", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -632,7 +632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LoneWar","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"LoneWar", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -643,7 +643,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "23"},
@@ -651,7 +651,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -662,7 +662,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -673,7 +673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -684,7 +684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -695,7 +695,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scrap","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scrap", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -706,7 +706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scrap","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scrap", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -717,7 +717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -728,7 +728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -739,7 +739,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -750,7 +750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -761,7 +761,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateTech","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"PirateTech", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "22"},
@@ -769,7 +769,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateTech","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"PirateTech", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -780,7 +780,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateTech","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"PirateTech", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -791,7 +791,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -802,7 +802,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -813,7 +813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -824,7 +824,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor","GcTradeData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor", "GcTradeData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -938,7 +938,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryCostDataEntry.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryCostDataEntry.xml"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"C", "0"},
@@ -948,7 +948,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryCostDataEntry.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryCostDataEntry.xml"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"MinSlots", "15"},
@@ -962,7 +962,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData","Poor"},
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Poor"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"C", "40"},
@@ -972,7 +972,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData","Average"},
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Average"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"C", "30"},
@@ -982,7 +982,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData","Wealthy"},
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Wealthy"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"C", "10"},
@@ -992,7 +992,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1000,7 +1000,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1008,7 +1008,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1016,7 +1016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "20"},
@@ -1024,7 +1024,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1032,7 +1032,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1040,7 +1040,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1048,7 +1048,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "30"},
@@ -1056,7 +1056,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1064,7 +1064,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1072,7 +1072,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1080,7 +1080,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "40"},
@@ -1088,7 +1088,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1096,7 +1096,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1104,7 +1104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1112,7 +1112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Dropship","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "50"},
@@ -1120,7 +1120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1128,7 +1128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1136,7 +1136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1144,7 +1144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "20"},
@@ -1152,7 +1152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1160,7 +1160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1168,7 +1168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1176,7 +1176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "30"},
@@ -1184,7 +1184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1192,7 +1192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1200,7 +1200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1208,7 +1208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "40"},
@@ -1216,7 +1216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1224,7 +1224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1232,7 +1232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1240,7 +1240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fighter","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "50"},
@@ -1248,7 +1248,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1256,7 +1256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1264,7 +1264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1272,7 +1272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "20"},
@@ -1280,7 +1280,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1288,7 +1288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1296,7 +1296,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1304,7 +1304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "30"},
@@ -1312,7 +1312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1320,7 +1320,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1328,7 +1328,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1336,7 +1336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "40"},
@@ -1344,7 +1344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1352,7 +1352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1360,7 +1360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1368,7 +1368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scientific","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "50"},
@@ -1376,7 +1376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1384,7 +1384,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1392,7 +1392,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1400,7 +1400,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "20"},
@@ -1408,7 +1408,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1416,7 +1416,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1424,7 +1424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1432,7 +1432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "30"},
@@ -1440,7 +1440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1448,7 +1448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1456,7 +1456,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1464,7 +1464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "40"},
@@ -1472,7 +1472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1480,7 +1480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1488,7 +1488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1496,7 +1496,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Shuttle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "50"},
@@ -1504,7 +1504,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1512,7 +1512,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1520,7 +1520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1528,7 +1528,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1536,7 +1536,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1544,7 +1544,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1552,7 +1552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1560,7 +1560,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1568,7 +1568,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1576,7 +1576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1584,7 +1584,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1592,7 +1592,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1600,7 +1600,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "50"},
@@ -1608,7 +1608,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1616,7 +1616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1624,7 +1624,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1632,7 +1632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "50"},
@@ -1640,7 +1640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1648,7 +1648,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1656,7 +1656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1664,7 +1664,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "20"},
@@ -1672,7 +1672,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1680,7 +1680,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1688,7 +1688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1696,7 +1696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "30"},
@@ -1704,7 +1704,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1712,7 +1712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1720,7 +1720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1728,7 +1728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "40"},
@@ -1736,7 +1736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1744,7 +1744,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1752,7 +1752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1760,7 +1760,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sail","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "50"},
@@ -1768,7 +1768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1776,7 +1776,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1784,7 +1784,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1792,7 +1792,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "20"},
@@ -1800,7 +1800,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1808,7 +1808,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1816,7 +1816,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1824,7 +1824,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "30"},
@@ -1832,7 +1832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1840,7 +1840,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1848,7 +1848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1856,7 +1856,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "40"},
@@ -1864,7 +1864,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1872,7 +1872,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_SHIELD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1880,7 +1880,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1888,7 +1888,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","SHIP_AGILE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "50"},
@@ -1896,7 +1896,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1904,7 +1904,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1912,7 +1912,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -1920,7 +1920,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1928,7 +1928,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1936,7 +1936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -1944,7 +1944,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1952,7 +1952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1960,7 +1960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -1968,7 +1968,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1976,7 +1976,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1984,7 +1984,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pistol","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -1992,7 +1992,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2000,7 +2000,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2008,7 +2008,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2016,7 +2016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2024,7 +2024,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2032,7 +2032,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2040,7 +2040,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2048,7 +2048,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2056,7 +2056,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2064,7 +2064,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2072,7 +2072,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2080,7 +2080,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2088,7 +2088,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2096,7 +2096,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2104,7 +2104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2112,7 +2112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2120,7 +2120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2128,7 +2128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2136,7 +2136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2144,7 +2144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2152,7 +2152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2160,7 +2160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2168,7 +2168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2176,7 +2176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pristine","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2184,7 +2184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2192,7 +2192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2200,7 +2200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2208,7 +2208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2216,7 +2216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2224,7 +2224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2232,7 +2232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2240,7 +2240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2248,7 +2248,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2256,7 +2256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2264,7 +2264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2272,7 +2272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2280,7 +2280,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2288,7 +2288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2296,7 +2296,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2304,7 +2304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2312,7 +2312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2320,7 +2320,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2328,7 +2328,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2336,7 +2336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2344,7 +2344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2352,7 +2352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2360,7 +2360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2368,7 +2368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Royal","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2376,7 +2376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2384,7 +2384,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2392,7 +2392,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "70"},
@@ -2400,7 +2400,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2408,7 +2408,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2416,7 +2416,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "80"},
@@ -2424,7 +2424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2432,7 +2432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2440,7 +2440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "90"},
@@ -2448,7 +2448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2456,7 +2456,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},
@@ -2464,7 +2464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Robot","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Min", "100"},

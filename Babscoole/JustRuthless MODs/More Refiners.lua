@@ -19,21 +19,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"ID", "BUILD_REFINER1"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BUILD_REFINER1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RegionLimit", REFINER_SMALL},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"ID", "BUILD_REFINER2"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BUILD_REFINER2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RegionLimit", REFINER_MEDIUM},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"ID", "BUILD_REFINER3"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BUILD_REFINER3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RegionLimit", REFINER_LARGE},

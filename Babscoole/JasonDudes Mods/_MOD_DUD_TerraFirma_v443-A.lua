@@ -1750,13 +1750,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",              "5"},
-                                {"AmplifyFeatures",      "0.15"},
-                                {"PerturbFeatures",      "0.15"},
-                                {"RidgeErosion",         "0.01"},
-                                {"Height",               "48"},
-                                {"RegionRatio",          "0.2"},
-                                {"RegionScale",          "8"},
+                                {"Octaves",         "5"},
+                                {"AmplifyFeatures", "0.15"},
+                                {"PerturbFeatures", "0.15"},
+                                {"RidgeErosion",    "0.01"},
+                                {"Height",          "48"},
+                                {"RegionRatio",     "0.2"},
+                                {"RegionScale",     "8"},
                             }
                         },
                         {
@@ -1877,8 +1877,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Mountain"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RegionRatio",       "0.1"},
-                                {"RegionGain",        "1"},
+                                {"RegionRatio", "0.1"},
+                                {"RegionGain",  "1"},
                             }
                         },
                         {
@@ -2034,7 +2034,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HeightOffset", "-20"},
-                                {"RegionScale", "8"},
+                                {"RegionScale",  "8"},
                             }
                         },
                         {
@@ -2136,9 +2136,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RidgeErosion",         "0.01"},
-                                {"Height",               "1500"},
-                                {"RegionScale",          "2"},
+                                {"RidgeErosion", "0.01"},
+                                {"Height",       "1500"},
+                                {"RegionScale",  "2"},
                             }
                         },
                         {
@@ -2224,14 +2224,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -2546,14 +2546,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -2720,10 +2720,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Blobs"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Width",                   "70"},
-                                {"Height",                  "60"},
-                                {"RegionSize",              "800"},
-                                {"HeightOffset",            "90"},
+                                {"Width",        "70"},
+                                {"Height",       "60"},
+                                {"RegionSize",   "800"},
+                                {"HeightOffset", "90"},
                             }
                         },
                         {
@@ -2767,17 +2767,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SlopeGain",            "0.5"},
-                                {"AmplifyFeatures",      "0"},
-                                {"AltitudeErosion",      "0.5"},
-                                {"RidgeErosion",         "0"},
-                                {"Height",               "32"},
-                                {"RegionRatio",          "0.3"},
-                                {"RegionScale",          "2"},
-                                {"RegionGain",           "0"},
-                                {"PlateauStratas",       "1"},
-                                {"PlateauSharpness",     "6"},
-                                {"PlateauRegionSize",    "300"},
+                                {"SlopeGain",         "0.5"},
+                                {"AmplifyFeatures",   "0"},
+                                {"AltitudeErosion",   "0.5"},
+                                {"RidgeErosion",      "0"},
+                                {"Height",            "32"},
+                                {"RegionRatio",       "0.3"},
+                                {"RegionScale",       "2"},
+                                {"RegionGain",        "0"},
+                                {"PlateauStratas",    "1"},
+                                {"PlateauSharpness",  "6"},
+                                {"PlateauRegionSize", "300"},
                             }
                         },
                         {
@@ -2934,14 +2934,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -3120,17 +3120,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SlopeGain",            "0.5"},
-                                {"AmplifyFeatures",      "0"},
-                                {"AltitudeErosion",      "0.5"},
-                                {"RidgeErosion",         "0"},
-                                {"Height",               "32"},
-                                {"RegionRatio",          "0.3"},
-                                {"RegionScale",          "2"},
-                                {"RegionGain",           "0"},
-                                {"PlateauStratas",       "1"},
-                                {"PlateauSharpness",     "6"},
-                                {"PlateauRegionSize",    "300"},
+                                {"SlopeGain",         "0.5"},
+                                {"AmplifyFeatures",   "0"},
+                                {"AltitudeErosion",   "0.5"},
+                                {"RidgeErosion",      "0"},
+                                {"Height",            "32"},
+                                {"RegionRatio",       "0.3"},
+                                {"RegionScale",       "2"},
+                                {"RegionGain",        "0"},
+                                {"PlateauStratas",    "1"},
+                                {"PlateauSharpness",  "6"},
+                                {"PlateauRegionSize", "300"},
                             }
                         },
                         {
@@ -3297,14 +3297,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -3486,27 +3486,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",              "7"},
-                                {"RidgeErosion",         "0.01"},
-                                {"Height",               "32"},
-                                {"RegionRatio",          "0.3"},
-                                {"RegionGain",           "0"},
+                                {"Octaves",      "7"},
+                                {"RidgeErosion", "0.01"},
+                                {"Height",       "32"},
+                                {"RegionRatio",  "0.3"},
+                                {"RegionGain",   "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Mountain"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",           "8"},
-                                {"SlopeErosion",      "0"},
-                                {"RegionRatio",       "0.1"},
+                                {"Octaves",      "8"},
+                                {"SlopeErosion", "0"},
+                                {"RegionRatio",  "0.1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RidgeErosion",         "0.01"},
+                                {"RidgeErosion", "0.01"},
                             }
                         },
                         {
@@ -3616,14 +3616,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -4163,8 +4163,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RidgeErosion",         "0.11"},
-                                {"RegionRatio",          "0.2"},
+                                {"RidgeErosion", "0.11"},
+                                {"RegionRatio",  "0.2"},
                             }
                         },
                         {
@@ -4184,10 +4184,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Width",                "4000"},
-                                {"RegionRatio",          "0.8"},
-                                {"RegionScale",          "3"},
-                                {"RegionGain",           "0"},
+                                {"Width",       "4000"},
+                                {"RegionRatio", "0.8"},
+                                {"RegionScale", "3"},
+                                {"RegionGain",  "0"},
                             }
                         },
                         {
@@ -4273,14 +4273,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -4499,7 +4499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RidgeErosion",         "0.31"},
+                                {"RidgeErosion", "0.31"},
                             }
                         },
                         {
@@ -5249,14 +5249,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -5895,14 +5895,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -6157,10 +6157,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",              "4"},
-                                {"RegionRatio",          "0.5"},
-                                {"RegionScale",          "4"},
-                                {"RegionGain",           "0"},
+                                {"Octaves",     "4"},
+                                {"RegionRatio", "0.5"},
+                                {"RegionScale", "4"},
+                                {"RegionGain",  "0"},
                             }
                         },
                         {
@@ -6453,7 +6453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RidgeErosion",         "0.99"},
+                                {"RidgeErosion", "0.99"},
                             }
                         },
                         {
@@ -6568,14 +6568,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -6846,14 +6846,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -7319,9 +7319,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",              "4"},
-                                {"AltitudeErosion",      "0.5"},
-                                {"Width",                "5000"},
+                                {"Octaves",         "4"},
+                                {"AltitudeErosion", "0.5"},
+                                {"Width",           "5000"},
                             }
                         },
                         {
@@ -7414,14 +7414,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -8050,14 +8050,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -8278,13 +8278,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",              "5"},
-                                {"AmplifyFeatures",      "0.15"},
-                                {"PerturbFeatures",      "0.15"},
-                                {"RidgeErosion",         "0.01"},
-                                {"Height",               "48"},
-                                {"RegionRatio",          "0.2"},
-                                {"RegionScale",          "8"},
+                                {"Octaves",         "5"},
+                                {"AmplifyFeatures", "0.15"},
+                                {"PerturbFeatures", "0.15"},
+                                {"RidgeErosion",    "0.01"},
+                                {"Height",          "48"},
+                                {"RegionRatio",     "0.2"},
+                                {"RegionScale",     "8"},
                             }
                         },
                         {
@@ -8410,14 +8410,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Copper"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"MinWidth",      "25"},
-                                {"MaxWidth",      "25"},
-                                {"MinHeight",     "25"},
-                                {"MaxHeight",     "25"},
-                                {"HeightOffset",  "-12"},
-                                {"RegionRatio",   "0.00025"},
-                                {"RegionScale",   "1"},
+                                {"MaximumLOD",   "1"},
+                                {"MinWidth",     "25"},
+                                {"MaxWidth",     "25"},
+                                {"MinHeight",    "25"},
+                                {"MaxHeight",    "25"},
+                                {"HeightOffset", "-12"},
+                                {"RegionRatio",  "0.00025"},
+                                {"RegionScale",  "1"},
                             }
                         },
                         {

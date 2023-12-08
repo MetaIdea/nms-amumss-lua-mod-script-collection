@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TECH_COMP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TECH_COMP"},
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -23,8 +23,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TECH_COMP",},
-                            ["PRECEDING_KEY_WORDS"] = {"Requirements",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TECH_COMP"},
+                            ["PRECEDING_KEY_WORDS"] = {"Requirements"},
                             ["SECTION_ACTIVE"] = {1,},
                             ["ADD"] =
 [[
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TECH_COMP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TECH_COMP"},
                             ["SECTION_ACTIVE"] = {1,},
                             ["REPLACE_TYPE"] = "RAW",
                             ["VALUE_CHANGE_TABLE"] =
@@ -71,12 +71,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Unlockable","COMPUTER",},
-                            ["PRECEDING_KEY_WORDS"] = {"Children",},
-                            ["REMOVE"]     = "LINE",
+                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "COMPUTER"},
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            ["REMOVE"] = "LINE",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Unlockable","COMPUTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "COMPUTER"},
                             ["ADD"] =
 [[
                         <Property name="Children">

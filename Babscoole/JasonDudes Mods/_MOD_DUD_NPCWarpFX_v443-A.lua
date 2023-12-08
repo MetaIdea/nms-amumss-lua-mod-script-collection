@@ -71,9 +71,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkEmitterFloatProperty.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CurveStartValue",    "0"},
-                                {"CurveMidValue",      "0"},
-                                {"CurveEndValue",      "0"},
+                                {"CurveStartValue", "0"},
+                                {"CurveMidValue",   "0"},
+                                {"CurveEndValue",   "0"},
                             }
                         },
                         {

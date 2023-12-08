@@ -10,16 +10,16 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  =    "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMALBUMEN\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMALBUMEN\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"TriggerAction", "STEP1_ENTER",},
-                                {"TriggerAction", "STEP1",},
-                                {"TriggerAction", "STEP2_ENTER",},
-                                {"TriggerAction", "STEP2",},
+                                {"TriggerAction", "STEP1_ENTER"},
+                                {"TriggerAction", "STEP1"},
+                                {"TriggerAction", "STEP2_ENTER"},
+                                {"TriggerAction", "STEP2"},
                             },
                             ["VCT"] =
                             {
@@ -39,10 +39,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"TriggerAction", "STEP1_ENTER",},
-                                {"TriggerAction", "STEP1",},
-                                {"TriggerAction", "STEP2_ENTER",},
-                                {"TriggerAction", "STEP2",},
+                                {"TriggerAction", "STEP1_ENTER"},
+                                {"TriggerAction", "STEP1"},
+                                {"TriggerAction", "STEP2_ENTER"},
+                                {"TriggerAction", "STEP2"},
                             },
                             ["VCT"] =
                             {
@@ -63,10 +63,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"TriggerAction", "STEP1_ENTER",},
-                                {"TriggerAction", "STEP1",},
-                                {"TriggerAction", "STEP2_ENTER",},
-                                {"TriggerAction", "STEP2",},
+                                {"TriggerAction", "STEP1_ENTER"},
+                                {"TriggerAction", "STEP1"},
+                                {"TriggerAction", "STEP2_ENTER"},
+                                {"TriggerAction", "STEP2"},
                             },
                             ["VCT"] =
                             {
@@ -90,10 +90,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"TriggerAction", "STEP1_ENTER",},
-                                {"TriggerAction", "STEP1",},
-                                {"TriggerAction", "STEP2_ENTER",},
-                                {"TriggerAction", "STEP2",},
+                                {"TriggerAction", "STEP1_ENTER"},
+                                {"TriggerAction", "STEP1"},
+                                {"TriggerAction", "STEP2_ENTER"},
+                                {"TriggerAction", "STEP2"},
                             },
                             ["VCT"] =
                             {

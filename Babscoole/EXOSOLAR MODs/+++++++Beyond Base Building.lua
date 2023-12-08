@@ -185,7 +185,7 @@ MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BY
 -- Plant in any biome
 FARM_IN_ANY_BIOME_ID_TABLE = {"RADIOPLANT", "TOXICPLANT", "SNOWPLANT", "SACVENOMPLANT", "SCORCHEDPLANT", "POOPPLANT", "GRAVPLANT", "CREATUREPLANT", "BARRENPLANT", "LUSHPLANT", "PEARLPLANT", "NIPPLANT"}
 
--- Exceptions to {"CanScale","True"}
+-- Exceptions to {"CanScale", "True"}
 NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG", "BUILDLANDINGPAD", "S_LANDINGZONE"}
 -- Notes : vehicles and prefab parts are excluded in the dedicated part at the bottom of the script.
 
@@ -237,6 +237,8 @@ CUSTOM_BUILDCOUNT_LIMITS =
         {"BUILDSAVE",         0,                6,                0,                    0},        -- Save Point
         {"MESSAGE",           0,                3,                0,                    0},        -- Communications Station
         {"BLD_DATASIGN",      0,                0,                0,                    0},        -- Data Display Unit
+        {"BLD_FIREPIT",       0,                6,                0,                    0},        -- Flaming Barrel
+        {"SPAWNER_BALL",      0,                0,                0,                    0},        -- Sphere Creator
         --{"DECALPATH",        0,                0,                0,                    0}        -- ?
 
 }
@@ -280,7 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "4.45",
+    ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] =
     {
         {
@@ -296,9 +298,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"] = "False",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CanRotate3D", "True"},
-                                {"CanScale", "True"},
-                                {"CanChangeColour", "True"},
+                                {"CanRotate3D",       "True"},
+                                {"CanScale",          "True"},
+                                {"CanChangeColour",   "True"},
                                 {"CanChangeMaterial", "True"},
                             },
                         },
@@ -307,7 +309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"] = "True",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsDecoration", "False"},
+                                {"IsDecoration",              "False"},
                                 {"CheckPlaceholderCollision", "False"},
                                 {"RemovesAttachedDecoration", "False"},
                             },
@@ -320,8 +322,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsDecoration", "True"},
-                                {"PlanetBaseLimit", 0},
+                                {"IsDecoration",       "True"},
+                                {"PlanetBaseLimit",    0},
                                 {"FreighterBaseLimit", 0},
                             },
                         },
@@ -380,7 +382,7 @@ else
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", DISABLE_TERRAINEDIT_ID_TABLE[i]},
                 ["VALUE_MATCH"] = "True",
-                ["VALUE_CHANGE_TABLE"]    =
+                ["VALUE_CHANGE_TABLE"] =
                 {
                     {"EditsTerrain", "False"},
                 },
@@ -397,7 +399,7 @@ else
                 ["SECTION_UP"] = 2,
                 ["REPLACE_TYPE"] = "ALL",
                 ["VALUE_MATCH"] = "True",
-                ["VALUE_CHANGE_TABLE"]    =
+                ["VALUE_CHANGE_TABLE"] =
                 {
                     {"EditsTerrain", "False"},
                 },
@@ -429,7 +431,7 @@ if ALL_PARTS_ABOVE_WATER then
 
         local temp_table_marinefalse =
         {
-            ["SPECIAL_KEY_WORDS"] = {"ID","WATERBUBBLE"},
+            ["SPECIAL_KEY_WORDS"] = {"ID", "WATERBUBBLE"},
             ["VALUE_CHANGE_TABLE"] =
             {
                 {"BuildableAboveWater", "False"},
@@ -443,9 +445,9 @@ if ALL_PARTS_ABOVE_WATER then
 
         local temp_table_notabovewater =
         {
-            ["SPECIAL_KEY_WORDS"]    = {"ID", NOT_ABOVE_WATER_BUILDPART_ID_TABLE[i]},
+            ["SPECIAL_KEY_WORDS"] = {"ID", NOT_ABOVE_WATER_BUILDPART_ID_TABLE[i]},
             ["VALUE_MATCH"] = "True",
-            ["VALUE_CHANGE_TABLE"]    =
+            ["VALUE_CHANGE_TABLE"] =
             {
                 {"BuildableAboveWater", "False"},
             },
@@ -510,9 +512,9 @@ if ALL_PARTS_ON_FREIGHTER then
 
             local temp_table_geofreighter =
             {
-                ["SPECIAL_KEY_WORDS"]    = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
+                ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
                 ["VALUE_MATCH"] = "False",
-                ["VALUE_CHANGE_TABLE"]    =
+                ["VALUE_CHANGE_TABLE"] =
                 {
                     {"BuildableOnFreighter", "True"},
                 },
@@ -568,9 +570,9 @@ end
 
         local temp_table_notfreighter =
         {
-            ["SPECIAL_KEY_WORDS"]    = {"ID", NOT_FREIGHTER_BUILDPART_ID_TABLE[i]},
+            ["SPECIAL_KEY_WORDS"] = {"ID", NOT_FREIGHTER_BUILDPART_ID_TABLE[i]},
             ["VALUE_MATCH"] = "True",
-            ["VALUE_CHANGE_TABLE"]    =
+            ["VALUE_CHANGE_TABLE"] =
             {
                 {"BuildableOnFreighter", "False"},
             },
@@ -604,8 +606,8 @@ if ALL_PARTS_ON_PLANETBASE then
 
         local temp_table_matnotplanet =
         {
-            ["SPECIAL_KEY_WORDS"]    = {"ID", "GARAGE_FREIGHT"},
-            ["VALUE_CHANGE_TABLE"]    =
+            ["SPECIAL_KEY_WORDS"] = {"ID", "GARAGE_FREIGHT"},
+            ["VALUE_CHANGE_TABLE"] =
             {
                 {"BuildableOnPlanetBase", "False"},
             },
@@ -618,8 +620,8 @@ if ALL_PARTS_ON_PLANETBASE then
 
         local temp_table_exceptnotplanet =
         {
-            ["SPECIAL_KEY_WORDS"]    = {"ID", NOT_PLANETBASE_BUILDPART_ID_TABLE[i]},
-            ["VALUE_CHANGE_TABLE"]    =
+            ["SPECIAL_KEY_WORDS"] = {"ID", NOT_PLANETBASE_BUILDPART_ID_TABLE[i]},
+            ["VALUE_CHANGE_TABLE"] =
             {
                 {"BuildableOnPlanetBase", "False"},
             },
@@ -640,11 +642,11 @@ if CAN_SCALE_PREFAB_PARTS == false then
 
         local temp_table_prefabnotscale =
         {
-            ["SPECIAL_KEY_WORDS"]    = {"Group", PREFAB_KEYWORDS_TABLE[i]},
+            ["SPECIAL_KEY_WORDS"] = {"Group", PREFAB_KEYWORDS_TABLE[i]},
             ["SECTION_UP"] = 2,
             ["VALUE_MATCH"] = "True",
             ["REPLACE_TYPE"] = "ALL",
-            ["VALUE_CHANGE_TABLE"]    =
+            ["VALUE_CHANGE_TABLE"] =
             {
                 {"CanScale", "False"},
             },
@@ -660,7 +662,7 @@ if CAN_SCALE_PREFAB_PARTS == false then
             ["SPECIAL_KEY_WORDS"]    = {"ID", FREIGHTER_CONTAINERS_ID_TABLE[i]},
             -- ["VALUE_MATCH"] = "True",
             ["REPLACE_TYPE"] = "ALL",
-            ["VALUE_CHANGE_TABLE"]    =
+            ["VALUE_CHANGE_TABLE"] =
             {
                 {"CanScale", "False"},
             },
@@ -688,8 +690,8 @@ for i = 1,#SCALEABLE_VEHICLESPART_ID_TABLE do
 
     local temp_table_vehiclescale =
     {
-        ["SPECIAL_KEY_WORDS"]    = {"ID", SCALEABLE_VEHICLESPART_ID_TABLE[i]},
-        ["VALUE_CHANGE_TABLE"]    =
+        ["SPECIAL_KEY_WORDS"] = {"ID", SCALEABLE_VEHICLESPART_ID_TABLE[i]},
+        ["VALUE_CHANGE_TABLE"] =
         {
             {"CanScale", "True"},
         },
@@ -702,8 +704,8 @@ for i = 1,#NOT_SCALEABLE_BUILDPART_ID_TABLE do
 
     local temp_table =
     {
-        ["SPECIAL_KEY_WORDS"]    = {"ID", NOT_SCALEABLE_BUILDPART_ID_TABLE[i]},
-        ["VALUE_CHANGE_TABLE"]    =
+        ["SPECIAL_KEY_WORDS"] = {"ID", NOT_SCALEABLE_BUILDPART_ID_TABLE[i]},
+        ["VALUE_CHANGE_TABLE"] =
         {
             {"CanScale", "False"},
         },
@@ -726,9 +728,9 @@ if NO_BUILDCOUNT_LIMIT then
             ["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"PlanetLimit", 0},
-                {"RegionLimit", 0},
-                {"PlanetBaseLimit", 0},
+                {"PlanetLimit",        0},
+                {"RegionLimit",        0},
+                {"PlanetBaseLimit",    0},
                 {"FreighterBaseLimit", 0},
             },
         }
@@ -746,7 +748,7 @@ else
         ["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
         ["VALUE_CHANGE_TABLE"] =
         {
-                {"PlanetBaseLimit", 0},
+                {"PlanetBaseLimit",    0},
                 {"FreighterBaseLimit", 0},
         },
     }
@@ -757,15 +759,15 @@ else
 
         local temp_table_nofarmnotbuildlimit =
         {
-            ["SPECIAL_KEY_WORDS"]    = {"ID", UNLIMITED_BUILPART_ID_TABLE[i]},
+            ["SPECIAL_KEY_WORDS"] = {"ID", UNLIMITED_BUILPART_ID_TABLE[i]},
             -- ["VALUE_MATCH"] = 0,
             -- ["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
             ["NOTICE_OFF"] = "True",
-            ["VALUE_CHANGE_TABLE"]    =
+            ["VALUE_CHANGE_TABLE"] =
             {
-                {"PlanetLimit", 0},
-                {"RegionLimit", 0},
-                {"PlanetBaseLimit", 0},
+                {"PlanetLimit",        0},
+                {"RegionLimit",        0},
+                {"PlanetBaseLimit",    0},
                 {"FreighterBaseLimit", 0},
             },
         }
@@ -778,11 +780,11 @@ for i = 1,#CUSTOM_BUILDCOUNT_LIMITS do
 
     local temp_table_custombuildlimit =
     {
-        ["SPECIAL_KEY_WORDS"]    = {"ID", CUSTOM_BUILDCOUNT_LIMITS[i][1]},
-        ["VALUE_CHANGE_TABLE"]    =
+        ["SPECIAL_KEY_WORDS"] = {"ID", CUSTOM_BUILDCOUNT_LIMITS[i][1]},
+        ["VALUE_CHANGE_TABLE"] =
         {
-            {"PlanetLimit",    tostring(CUSTOM_BUILDCOUNT_LIMITS[i][2])},
-            {"RegionLimit",    tostring(CUSTOM_BUILDCOUNT_LIMITS[i][3])},
+            {"PlanetLimit",        tostring(CUSTOM_BUILDCOUNT_LIMITS[i][2])},
+            {"RegionLimit",        tostring(CUSTOM_BUILDCOUNT_LIMITS[i][3])},
             {"PlanetBaseLimit",    tostring(CUSTOM_BUILDCOUNT_LIMITS[i][4])},
             {"FreighterBaseLimit", tostring(CUSTOM_BUILDCOUNT_LIMITS[i][5])},
         },
@@ -803,18 +805,19 @@ if FARM_IN_ANY_BIOME then
         ["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"BaseBuildingDecorationType","Normal"},
+            {"BaseBuildingDecorationType", "Normal"},
+            {"BuildableOnPlanet",          "False"},
         },
     }
     Change_Table_Array[#Change_Table_Array + 1] = temp_table_farmanydeco
 
     local temp_table_farmanybiome =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID",FARM_IN_ANY_BIOME_ID_TABLE[i],"Biome","GcBiomeType.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i], "Biome", "GcBiomeType.xml"},
         ["LINE_OFFSET"] = "+1",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Biome","All"}
+            {"Biome", "All"}
         }
     }
     Change_Table_Array[#Change_Table_Array + 1] = temp_table_farmanybiome
@@ -825,7 +828,7 @@ if FARM_IN_ANY_BIOME then
         ["PRECEDING_KEY_WORDS"] = {"DependentConnections"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"ConnectionDistance",100}
+            {"ConnectionDistance", 100}
         }
     }
     Change_Table_Array[#Change_Table_Array + 1] = temp_table_farmanypower
@@ -840,8 +843,8 @@ if METAL_PARTS_OUTSIDE_BASE then
 
         local temp_table_metal =
         {
-            ["SPECIAL_KEY_WORDS"]    = {"ID", METAL_OUTSIDE_BASE_ID_TABLE[i]},
-            ["VALUE_CHANGE_TABLE"]    =
+            ["SPECIAL_KEY_WORDS"] = {"ID", METAL_OUTSIDE_BASE_ID_TABLE[i]},
+            ["VALUE_CHANGE_TABLE"] =
             {
                 {"BuildableOnPlanet", "True"}
             }
@@ -856,7 +859,7 @@ for i = 1,#ANYTERRAIN_BUILDPART_ID_TABLE do
 
     local temp_table_notbare =
     {
-        ["SPECIAL_KEY_WORDS"]    = {"ID", ANYTERRAIN_BUILDPART_ID_TABLE[i]},
+        ["SPECIAL_KEY_WORDS"] = {"ID", ANYTERRAIN_BUILDPART_ID_TABLE[i]},
         ["REPLACE_TYPE"] = "ALL",
         ["VALUE_MATCH"] = "Terrain",
         ["VALUE_CHANGE_TABLE"] =

@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLEE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLEE"},
                             ["REMOVE"] = "SECTION",
                         },
                     }
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sound","CREATURE_STEP_BLOB"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sound", "CREATURE_STEP_BLOB"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sound","Creature_Step_Blob_Walk"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sound", "Creature_Step_Blob_Walk"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {

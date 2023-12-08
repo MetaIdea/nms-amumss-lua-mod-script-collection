@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData","Poor"},
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Poor"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"C", "0"},
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData","Average"},
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Average"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"C", "0"},
@@ -63,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData","Wealthy"},
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Wealthy"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"C", "0"},
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData","Pirate"},
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Pirate"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"C", "0"},

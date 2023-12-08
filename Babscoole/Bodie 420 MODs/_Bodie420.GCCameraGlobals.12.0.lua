@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Cameras","GcCameraFollowSettings.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Cameras", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed",   "0"},

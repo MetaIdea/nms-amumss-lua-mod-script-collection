@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPLOSION",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPLOSION"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -86,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -97,8 +97,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Radius", "30"},
@@ -107,8 +107,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "3"},
@@ -117,8 +117,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","Filename"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "Filename"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -126,8 +126,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Radius", "40"},
@@ -145,14 +145,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TURRETEXPL"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "6"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SENTHIVEEXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SENTHIVEEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -211,8 +211,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","Filename"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "Filename"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -220,7 +220,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -230,8 +230,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "8"},
@@ -242,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "8"},
@@ -251,7 +251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "8"},
@@ -259,7 +259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
                             ["VALUE_MATCH"] = "2.5",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -267,7 +267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",             "120"},
@@ -282,7 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEREXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEREXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -413,7 +413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEXPLSML",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEXPLSML"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -499,7 +499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFRIGATEEX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFRIGATEEX"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -535,7 +535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEXPLLRG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTEXPLLRG"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -622,7 +622,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFREIGHTEX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFREIGHTEX"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -719,7 +719,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBULDEXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBULDEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -771,7 +771,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFRBUILDEX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFRBUILDEX"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -806,7 +806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PRTEFRIGATEBUEX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PRTEFRIGATEBUEX"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -842,7 +842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBLDEXPLL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTBLDEXPLL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -901,7 +901,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORPTPILLEXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORPTPILLEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -926,7 +926,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SENTCRYSTALEXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SENTCRYSTALEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -968,7 +968,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SENTCRYSEXPLSML",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SENTCRYSEXPLSML"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1010,7 +1010,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPDRONEEXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPDRONEEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1120,7 +1120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPARMOUREXP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPARMOUREXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1230,7 +1230,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTQUADEXP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTQUADEXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1340,7 +1340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTSELFDEST",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CORRUPTSELFDEST"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1457,7 +1457,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "NEWSPBLDPOIEXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "NEWSPBLDPOIEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1507,7 +1507,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOSUCCESS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOSUCCESS"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1543,7 +1543,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOFAILED",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOFAILED"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1578,7 +1578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATETURRETEXP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATETURRETEXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1631,7 +1631,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATETUREXPLGE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATETUREXPLGE"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1684,7 +1684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEENGINEEXP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEENGINEEXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1795,7 +1795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLUEEXPLODE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLUEEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -1979,7 +1979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEEXPLODE"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "4"},
@@ -1987,7 +1987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEEXPLODE"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "4"},
@@ -1995,7 +1995,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEEXPLODE"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "3"},
@@ -2012,7 +2012,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WALKEREXPLODE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WALKEREXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2250,7 +2250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDCRYSTAL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEIRDCRYSTAL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2289,7 +2289,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","REDEXPLODE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "REDEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2314,7 +2314,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","GREENEXPLODE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GREENEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2339,7 +2339,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","YELLOWEXPLODE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "YELLOWEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2364,7 +2364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SENTINELARMOUR",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SENTINELARMOUR"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2474,7 +2474,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","DRONEWALKEREXPL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEWALKEREXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2758,7 +2758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ASTEROID_HIT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_HIT"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2831,7 +2831,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ASTEROID_L_EXP"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_L_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2949,7 +2949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPEXPLODE"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml","GcDebrisData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml"},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {

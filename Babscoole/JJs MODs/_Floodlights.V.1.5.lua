@@ -14,21 +14,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1","Name","FOV"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1","Name","INTENSITY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "100000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
@@ -46,21 +46,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight2","Name","FOV"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight2","Name","FALLOFF"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight2","Name","INTENSITY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "40000.000000"},

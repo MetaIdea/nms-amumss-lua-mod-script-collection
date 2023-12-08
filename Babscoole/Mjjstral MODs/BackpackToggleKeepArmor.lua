@@ -66,7 +66,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },

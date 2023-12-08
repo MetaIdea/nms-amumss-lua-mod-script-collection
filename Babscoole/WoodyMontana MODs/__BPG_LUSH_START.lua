@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Lush","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Lush", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -117,7 +117,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxic","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxic", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -145,7 +145,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Scorched","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Scorched", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -173,7 +173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radioactive","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Radioactive", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -201,11 +201,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVERUINSBIOME.MXML"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVERUINSBIOME.MXML"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Frozen","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Frozen", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -233,7 +233,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Barren","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Barren", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -261,7 +261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Dead","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Dead", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -296,7 +296,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Red","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Red", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -359,7 +359,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Green","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Green", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -422,7 +422,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Blue","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Blue", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -485,7 +485,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Swamp","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Swamp", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -499,7 +499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPBIOME.MXML"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPBIOME.MXML"},
                             ["SECTION_ACTIVE"] = 2,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
@@ -521,7 +521,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Lava","FileOptions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Lava", "FileOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -535,7 +535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LAVA/LAVABIOME.MXML"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LAVA/LAVABIOME.MXML"},
                             ["SECTION_ACTIVE"] = 2,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
@@ -576,7 +576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "UNDERGROUND"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeasonalProbabilityOverride", "0"},
@@ -584,12 +584,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "UNDERGROUND"},
                             ["PRECEDING_KEY_WORDS"] = {"Options"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND","ChooseUsingLifeLevel","False",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "UNDERGROUND", "ChooseUsingLifeLevel", "False"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -826,7 +826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "UNDERWATER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeasonalProbabilityOverride", "0"},
@@ -834,12 +834,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "UNDERWATER"},
                             ["PRECEDING_KEY_WORDS"] = {"Options"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER","ChooseUsingLifeLevel","False",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "UNDERWATER", "ChooseUsingLifeLevel", "False"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1411,7 +1411,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOUNTAIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeasonalProbabilityOverride", "0"},
@@ -1419,7 +1419,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOUNTAIN"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1446,19 +1446,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "CRYSTALSCAVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeasonalProbabilityOverride", "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "CRYSTALSCAVE"},
                             ["PRECEDING_KEY_WORDS"] = {"Options"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE","ChooseUsingLifeLevel","False",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "CRYSTALSCAVE", "ChooseUsingLifeLevel", "False"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1568,7 +1568,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- },
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Name","WILDWEIRD"},
+                            -- ["SPECIAL_KEY_WORDS"] = {"Name", "WILDWEIRD"},
                             -- ["REPLACE_TYPE"] = "ALL",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {

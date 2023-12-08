@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"OrderedToPos","FollowUpBehaviours","GcPetFollowUpBehaviour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"OrderedToPos", "FollowUpBehaviours", "GcPetFollowUpBehaviour.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PetBehaviour", "None"},

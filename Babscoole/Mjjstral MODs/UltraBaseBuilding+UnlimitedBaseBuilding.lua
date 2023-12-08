@@ -1387,7 +1387,7 @@ function GetEntityAddFile(PATH, P_NAME, ID_NAME)
 ADD_PLACEMENTDATA_FILE =
 {
     ["FILE_DESTINATION"] = PATH .. P_NAME ..  [[_PLACEMENTDATA.ENTITY.EXML]],
-    ["FILE_CONTENT"]      = GetPlaceDataEntity(ID_NAME)
+    ["FILE_CONTENT"] = GetPlaceDataEntity(ID_NAME)
 }
 
 return ADD_PLACEMENTDATA_FILE
@@ -1397,7 +1397,7 @@ function GetSceneAddFile(PATH, P_NAME)
 ADD_PLACEMENTSCENE_FILE =
 {
     ["FILE_DESTINATION"] = PATH .. P_NAME .. [[_PLACEMENT.SCENE.EXML]],
-    ["FILE_CONTENT"]      = GetPlaceScene(PATH, P_NAME)
+    ["FILE_CONTENT"] = GetPlaceScene(PATH, P_NAME)
 }
 return ADD_PLACEMENTSCENE_FILE
 end
@@ -1560,7 +1560,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "0-UltraBaseBuilding+UnlimitedBaseBuilding.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
     {
@@ -1613,7 +1613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"]                 = table.concat(BASEBUILDINGOBJECTSTABLE_ADDING_ALL)
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","PLANET_TECH",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "PLANET_TECH"},
                             ["LINE_OFFSET"]       = "-2",
                             ["ADD"]               = GROUP
                         },
@@ -1681,7 +1681,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","TERRAINEDITBOX"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "TERRAINEDITBOX"},
                             ["REMOVE"]            = "SECTION"
                         },
                     }
@@ -1691,7 +1691,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","THERA_VOL_BB"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "THERA_VOL_BB"},
                             ["REMOVE"]            = "SECTION"
                         },
                     }
