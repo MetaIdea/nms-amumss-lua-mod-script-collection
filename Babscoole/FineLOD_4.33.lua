@@ -14,14 +14,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value","TEXTURES/UI/LOADING/MIDDLEWAREPAIR.DDS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "TEXTURES/UI/LOADING/MIDDLEWAREPAIR.DDS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", ""} -- Original "TEXTURES/UI/LOADING/MIDDLEWAREPAIR.DDS"
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime",},
+                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime",},
+                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime",},
+                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime",},
+                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust",},
+                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
                             ["SECTION_ACTIVE"] = {4,},
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust",},
+                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
                             ["SECTION_ACTIVE"] = {4,},
                             ["LINE_OFFSET"] = "+2",
                             ["VALUE_CHANGE_TABLE"] =
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust",},
+                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
                             ["SECTION_ACTIVE"] = {4,},
                             ["LINE_OFFSET"] = "+3",
                             ["VALUE_CHANGE_TABLE"] =
@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust",},
+                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
                             ["SECTION_ACTIVE"] = {4,},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
@@ -106,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust",},
+                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
                             ["SECTION_ACTIVE"] = {4,},
                             ["LINE_OFFSET"] = "+5",
                             ["VALUE_CHANGE_TABLE"] =
@@ -115,7 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"EnvironmentProperties",},
+                            ["PRECEDING_KEY_WORDS"] = {"EnvironmentProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PlanetObjectSwitch",        "2100"},  -- Original "700"
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"EnvironmentPrimeProperties",},
+                            ["PRECEDING_KEY_WORDS"] = {"EnvironmentPrimeProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PlanetObjectSwitch",        "6000"},  -- Original "2000"

@@ -96,11 +96,11 @@ BiomeDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_NightSkyColors_v443-A.pak",
-["MOD_AUTHOR"]      = "jasondude7116",
-["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.43",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]  = "_MOD_DUD_NightSkyColors_v443-A.pak",
+["MOD_AUTHOR"]    = "jasondude7116",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "4.43",
+["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

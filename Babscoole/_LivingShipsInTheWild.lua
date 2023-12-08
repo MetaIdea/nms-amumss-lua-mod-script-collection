@@ -15,11 +15,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"SpaceshipWeightings",},
+                            ["PRECEDING_KEY_WORDS"] = {"SpaceshipWeightings"},
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Alien","50"},
+                                {"Alien", "50"},
                             },
                         },
                     }

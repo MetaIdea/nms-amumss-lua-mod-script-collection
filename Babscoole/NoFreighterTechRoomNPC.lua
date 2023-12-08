@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_TECH",},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_TECH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "0"},

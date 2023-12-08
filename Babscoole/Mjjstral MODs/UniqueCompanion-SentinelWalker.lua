@@ -65,7 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureComponentData.xml"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Id",     "TREX"},
                             }

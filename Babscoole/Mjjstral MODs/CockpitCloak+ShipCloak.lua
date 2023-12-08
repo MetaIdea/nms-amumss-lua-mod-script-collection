@@ -221,12 +221,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
 ]]                        }
                     }
-                }
-            }
-        },
-        {
-            ["MBIN_CHANGE_TABLE"] =
-            {
+                },
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
@@ -347,12 +342,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
 ]]                        }
                     }
-                }
-            }
-        },
-        {
-            ["MBIN_CHANGE_TABLE"] =
-            {
+                },
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
@@ -368,7 +358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name","Spacemap"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Spacemap"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransZ", "-3"},
@@ -379,33 +369,4 @@ NMS_MOD_DEFINITION_CONTAINER =
             }
         }
     },
--- ["ADD_FILES"] =
-    -- {
-        -- {
-            -- ["FILE_DESTINATION"] = "MODELS\HUD\SPACEMAP.SCENE.EXML",
-            -- ["FILE_CONTENT"]      =
--- [[
--- <?xml version="1.0" encoding="utf-8"?>
-
--- <Data template="TkSceneNodeData">
-  -- <Property name="Name" value="MODELS\HUD\SPACEMAP" />
-  -- <Property name="NameHash" value="1377357408" />
-  -- <Property name="Type" value="MODEL" />
-  -- <Property name="Transform" value="TkTransformData.xml">
-    -- <Property name="TransX" value="0" />
-    -- <Property name="TransY" value="0" />
-    -- <Property name="TransZ" value="0" />
-    -- <Property name="RotX" value="0" />
-    -- <Property name="RotY" value="0" />
-    -- <Property name="RotZ" value="0" />
-    -- <Property name="ScaleX" value="1" />
-    -- <Property name="ScaleY" value="1" />
-    -- <Property name="ScaleZ" value="1" />
-  -- </Property>
-  -- <Property name="Attributes" />
-  -- <Property name="Children" />
--- </Data>
--- ]]
-        -- }
-    -- }
 }

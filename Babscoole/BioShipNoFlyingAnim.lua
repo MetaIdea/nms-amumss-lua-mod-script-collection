@@ -13,11 +13,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","FLYINGIDLE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "FLYINGIDLE"},
                             ["VALUE_CHANGE_TABLE"] = {{"Filename", ""},}
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","IDLE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE"},
                             ["VALUE_CHANGE_TABLE"] = {{"Filename", ""},}
                         },
                     }
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","FLYINGIDLE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "FLYINGIDLE"},
                             ["VALUE_CHANGE_TABLE"] = {{"Filename", ""},}
                         },
                     }

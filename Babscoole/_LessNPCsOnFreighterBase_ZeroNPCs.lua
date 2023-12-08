@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"MaxTotalCapacityOfNPCTypes",},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxTotalCapacityOfNPCTypes"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "0"},
@@ -35,11 +35,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"SquadronPilot",  "GcFreighterNPCSpawnPriority.xml",},
-                                {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml",},
-                                {"WorkerBio",      "GcFreighterNPCSpawnPriority.xml",},
-                                {"WorkerTech",     "GcFreighterNPCSpawnPriority.xml",},
-                                {"WorkerIndustry", "GcFreighterNPCSpawnPriority.xml",},
+                                {"SquadronPilot",  "GcFreighterNPCSpawnPriority.xml"},
+                                {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
+                                {"WorkerBio",      "GcFreighterNPCSpawnPriority.xml"},
+                                {"WorkerTech",     "GcFreighterNPCSpawnPriority.xml"},
+                                {"WorkerIndustry", "GcFreighterNPCSpawnPriority.xml"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
                             ["LINE_OFFSET"] = "+1",
@@ -51,11 +51,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"SquadronPilot",  "GcFreighterNPCSpawnPriority.xml",},
-                                {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml",},
-                                {"WorkerBio",      "GcFreighterNPCSpawnPriority.xml",},
-                                {"WorkerTech",     "GcFreighterNPCSpawnPriority.xml",},
-                                {"WorkerIndustry", "GcFreighterNPCSpawnPriority.xml",},
+                                {"SquadronPilot",  "GcFreighterNPCSpawnPriority.xml"},
+                                {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
+                                {"WorkerBio",      "GcFreighterNPCSpawnPriority.xml"},
+                                {"WorkerTech",     "GcFreighterNPCSpawnPriority.xml"},
+                                {"WorkerIndustry", "GcFreighterNPCSpawnPriority.xml"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
                             ["LINE_OFFSET"] = "+2",
@@ -67,11 +67,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"SquadronPilot",  "GcFreighterNPCSpawnPriority.xml",},
-                                {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml",},
-                                {"WorkerBio",      "GcFreighterNPCSpawnPriority.xml",},
-                                {"WorkerTech",     "GcFreighterNPCSpawnPriority.xml",},
-                                {"WorkerIndustry", "GcFreighterNPCSpawnPriority.xml",},
+                                {"SquadronPilot",  "GcFreighterNPCSpawnPriority.xml"},
+                                {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
+                                {"WorkerBio",      "GcFreighterNPCSpawnPriority.xml"},
+                                {"WorkerTech",     "GcFreighterNPCSpawnPriority.xml"},
+                                {"WorkerIndustry", "GcFreighterNPCSpawnPriority.xml"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
                             ["LINE_OFFSET"] = "+3",
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
                             ["LINE_OFFSET"] = "+4",
                             ["VALUE_CHANGE_TABLE"] =
@@ -92,13 +92,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_BIO",},
-                                {"RoomID", "FRE_ROOM_PLANT0",},
-                                {"RoomID", "FRE_ROOM_PLANT1",},
-                                {"RoomID", "FRE_ROOM_NPCFAR",},
-                                {"RoomID", "FRE_ROOM_COOK",},
+                                {"RoomID", "FRE_ROOM_BIO"},
+                                {"RoomID", "FRE_ROOM_PLANT0"},
+                                {"RoomID", "FRE_ROOM_PLANT1"},
+                                {"RoomID", "FRE_ROOM_NPCFAR"},
+                                {"RoomID", "FRE_ROOM_COOK"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity",},
+                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "1"},
@@ -109,13 +109,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_BIO",},
-                                {"RoomID", "FRE_ROOM_PLANT0",},
-                                {"RoomID", "FRE_ROOM_PLANT1",},
-                                {"RoomID", "FRE_ROOM_NPCFAR",},
-                                {"RoomID", "FRE_ROOM_COOK",},
+                                {"RoomID", "FRE_ROOM_BIO"},
+                                {"RoomID", "FRE_ROOM_PLANT0"},
+                                {"RoomID", "FRE_ROOM_PLANT1"},
+                                {"RoomID", "FRE_ROOM_NPCFAR"},
+                                {"RoomID", "FRE_ROOM_COOK"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight",},
+                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "1"},
@@ -126,12 +126,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_TECH",},
-                                {"RoomID", "FRE_ROOM_NPCSCI",},
-                                {"RoomID", "FRE_ROOM_NPCBUI",},
-                                {"RoomID", "FRE_ROOM_DRESS",},
+                                {"RoomID", "FRE_ROOM_TECH"},
+                                {"RoomID", "FRE_ROOM_NPCSCI"},
+                                {"RoomID", "FRE_ROOM_NPCBUI"},
+                                {"RoomID", "FRE_ROOM_DRESS"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity",},
+                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "1"},
@@ -142,12 +142,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_TECH",},
-                                {"RoomID", "FRE_ROOM_NPCSCI",},
-                                {"RoomID", "FRE_ROOM_NPCBUI",},
-                                {"RoomID", "FRE_ROOM_DRESS",},
+                                {"RoomID", "FRE_ROOM_TECH"},
+                                {"RoomID", "FRE_ROOM_NPCSCI"},
+                                {"RoomID", "FRE_ROOM_NPCBUI"},
+                                {"RoomID", "FRE_ROOM_DRESS"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight",},
+                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "1"},
@@ -158,10 +158,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_SCAN",},
-                                {"RoomID", "FRE_ROOM_TELEPO",},
+                                {"RoomID", "FRE_ROOM_SCAN"},
+                                {"RoomID", "FRE_ROOM_TELEPO"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity",},
+                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerTech", "0"},
@@ -170,18 +170,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_SCAN",},
-                                {"RoomID", "FRE_ROOM_TELEPO",},
+                                {"RoomID", "FRE_ROOM_SCAN"},
+                                {"RoomID", "FRE_ROOM_TELEPO"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight",},
+                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerTech", "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_FLEET",},
-                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity",},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_FLEET"},
+                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "0"},
@@ -189,8 +189,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_FLEET",},
-                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight",},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_FLEET"},
+                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "0"},
@@ -199,8 +199,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_SHOP",},
-                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity",},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_SHOP"},
+                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "1"},
@@ -209,8 +209,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_SHOP",},
-                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight",},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_SHOP"},
+                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "1"},
@@ -220,14 +220,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_IND",},
-                                {"RoomID", "FRE_ROOM_REFINE",},
-                                {"RoomID", "FRE_ROOM_EXTR",},
-                                {"RoomID", "FRE_ROOM_NPCWEA",},
-                                {"RoomID", "FRE_ROOM_NPCVEH",},
-                                {"RoomID", "FRE_ROOM_VEHICL",},
+                                {"RoomID", "FRE_ROOM_IND"},
+                                {"RoomID", "FRE_ROOM_REFINE"},
+                                {"RoomID", "FRE_ROOM_EXTR"},
+                                {"RoomID", "FRE_ROOM_NPCWEA"},
+                                {"RoomID", "FRE_ROOM_NPCVEH"},
+                                {"RoomID", "FRE_ROOM_VEHICL"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity",},
+                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "1"},
@@ -238,14 +238,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_IND",},
-                                {"RoomID", "FRE_ROOM_REFINE",},
-                                {"RoomID", "FRE_ROOM_EXTR",},
-                                {"RoomID", "FRE_ROOM_NPCWEA",},
-                                {"RoomID", "FRE_ROOM_NPCVEH",},
-                                {"RoomID", "FRE_ROOM_VEHICL",},
+                                {"RoomID", "FRE_ROOM_IND"},
+                                {"RoomID", "FRE_ROOM_REFINE"},
+                                {"RoomID", "FRE_ROOM_EXTR"},
+                                {"RoomID", "FRE_ROOM_NPCWEA"},
+                                {"RoomID", "FRE_ROOM_NPCVEH"},
+                                {"RoomID", "FRE_ROOM_VEHICL"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight",},
+                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "1"},
@@ -256,15 +256,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_STORE0",},
-                                {"RoomID", "FRE_ROOM_STORE1",},
-                                {"RoomID", "FRE_ROOM_STORE2",},
-                                {"RoomID", "FRE_ROOM_STORE3",},
-                                {"RoomID", "FRE_ROOM_STORE4",},
-                                {"RoomID", "FRE_ROOM_STORE5",},
-                                {"RoomID", "FRE_ROOM_STORE6",},
+                                {"RoomID", "FRE_ROOM_STORE0"},
+                                {"RoomID", "FRE_ROOM_STORE1"},
+                                {"RoomID", "FRE_ROOM_STORE2"},
+                                {"RoomID", "FRE_ROOM_STORE3"},
+                                {"RoomID", "FRE_ROOM_STORE4"},
+                                {"RoomID", "FRE_ROOM_STORE5"},
+                                {"RoomID", "FRE_ROOM_STORE6"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity",},
+                            ["PRECEDING_KEY_WORDS"] = {"SpawnCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "1"},
@@ -275,15 +275,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_STORE0",},
-                                {"RoomID", "FRE_ROOM_STORE1",},
-                                {"RoomID", "FRE_ROOM_STORE2",},
-                                {"RoomID", "FRE_ROOM_STORE3",},
-                                {"RoomID", "FRE_ROOM_STORE4",},
-                                {"RoomID", "FRE_ROOM_STORE5",},
-                                {"RoomID", "FRE_ROOM_STORE6",},
+                                {"RoomID", "FRE_ROOM_STORE0"},
+                                {"RoomID", "FRE_ROOM_STORE1"},
+                                {"RoomID", "FRE_ROOM_STORE2"},
+                                {"RoomID", "FRE_ROOM_STORE3"},
+                                {"RoomID", "FRE_ROOM_STORE4"},
+                                {"RoomID", "FRE_ROOM_STORE5"},
+                                {"RoomID", "FRE_ROOM_STORE6"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight",},
+                            ["PRECEDING_KEY_WORDS"] = {"POISelectionWeight"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerIndustry", "0"},

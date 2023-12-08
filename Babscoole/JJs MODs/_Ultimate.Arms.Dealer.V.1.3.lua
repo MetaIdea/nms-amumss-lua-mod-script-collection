@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"File","MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"File", "MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinDraw", "100"},
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"File","MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMULTITOOL.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"File", "MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMULTITOOL.SCENE.MBIN"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {"MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN","MODELS/PHONG15.MATERIAL.MBIN","REMOVE"},
+                        {"MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN", "MODELS/PHONG15.MATERIAL.MBIN", "REMOVE"},
                     },
                 },
                 {
@@ -66,7 +66,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","gMaterialColourVec4"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "0"},
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","gCustomParams01Vec4"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "0"},
@@ -86,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN","MODELS/CRATE_WEAPON.SCENE.MBIN","REMOVE"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN", "MODELS/CRATE_WEAPON.SCENE.MBIN", "REMOVE"},
                     },
                 },
                 {
@@ -94,28 +94,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUB1Crate_Large1_DUP","Name","MATERIAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1Crate_Large1_DUP", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\PHONG15.MATERIAL.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Hatch"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Hatch"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Type", ""},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Screens"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Screens"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Type", ""},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight5","Name","INTENSITY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight5", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0000.000000"},

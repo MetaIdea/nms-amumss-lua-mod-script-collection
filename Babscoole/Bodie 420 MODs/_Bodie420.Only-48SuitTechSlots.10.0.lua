@@ -20,8 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PlayerPersonalInventoryTechWidth",      "8"},
-                                {"PlayerPersonalInventoryTechHeight",     "6"},
+                                {"PlayerPersonalInventoryTechWidth",  "8"},
+                                {"PlayerPersonalInventoryTechHeight", "6"},
                             }
                         }
                     }

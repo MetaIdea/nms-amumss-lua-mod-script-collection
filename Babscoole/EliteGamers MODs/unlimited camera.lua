@@ -14,9 +14,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"BuildingOutdoorsCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"BuildingOutdoorsCam", "GcCameraFollowSettings.xml"},
                             ["NOTICE_OFF"] = "TRUE",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SpeedRange",      "50"},
                                 {"UpMinDistance",   "1E+15"},

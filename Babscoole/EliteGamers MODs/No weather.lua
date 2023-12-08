@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Storm"},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "20"},
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation","Ambient"},
+                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "92"},
@@ -144,7 +144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","LIGHTNING_FAR"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "LIGHTNING_FAR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PatchMaxSpawns", "10"},

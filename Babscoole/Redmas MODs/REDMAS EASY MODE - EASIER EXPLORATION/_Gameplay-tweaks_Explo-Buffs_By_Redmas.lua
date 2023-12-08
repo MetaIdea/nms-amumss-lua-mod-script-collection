@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "JET1", "StatsType", "Suit_Jetpack_Tank",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "JET1", "StatsType", "Suit_Jetpack_Tank"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UT_JET","StatsType","Suit_Jetpack_Tank",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UT_JET", "StatsType", "Suit_Jetpack_Tank"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","LAUNCHER","StatsType","Ship_Launcher_TakeOffCost",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER", "StatsType", "Ship_Launcher_TakeOffCost"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE","StatsType","Ship_Hyperdrive_JumpDistance",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "HYPERDRIVE", "StatsType", "Ship_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -47,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE","StatsType","Ship_Hyperdrive_JumpsPerCell",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "HYPERDRIVE", "StatsType", "Ship_Hyperdrive_JumpsPerCell"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HYPERDRIVE","StatsType","Freighter_Hyperdrive_JumpsPerCell",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HYPERDRIVE", "StatsType", "Freighter_Hyperdrive_JumpsPerCell"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -63,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HDRIVEBOOST1","StatsType","Freighter_Hyperdrive_JumpDistance",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HDRIVEBOOST1", "StatsType", "Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HDRIVEBOOST2","StatsType","Freighter_Hyperdrive_JumpDistance",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HDRIVEBOOST2", "StatsType", "Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HDRIVEBOOST3","StatsType","Freighter_Hyperdrive_JumpDistance",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HDRIVEBOOST3", "StatsType", "Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -87,7 +87,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS1","StatsType","Freighter_Hyperdrive_JumpDistance",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HACCESS1", "StatsType", "Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -95,7 +95,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS2","StatsType","Freighter_Hyperdrive_JumpDistance",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "F_HACCESS2", "StatsType", "Freighter_Hyperdrive_JumpDistance"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","LAUNCHER_ALIEN","StatsType","Ship_Launcher_TakeOffCost",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER_ALIEN", "StatsType", "Ship_Launcher_TakeOffCost"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -111,7 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","LAUNCHER_SPEC","StatsType","Ship_Launcher_TakeOffCost",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER_SPEC", "StatsType", "Ship_Launcher_TakeOffCost"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -119,14 +119,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCANBINOC1",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCANBINOC1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "15"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCANBINOC1","StatsType","Weapon_Scan_Binoculars",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCANBINOC1", "StatsType", "Weapon_Scan_Binoculars"},
                             ["SECTION_UP"] = 1,
                             ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
@@ -135,7 +135,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCANBINOC1","StatsType","Weapon_Scan_Discovery_Creature",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCANBINOC1", "StatsType", "Weapon_Scan_Discovery_Creature"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -143,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCANBINOC1","StatsType","Weapon_Scan_Discovery_Flora",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCANBINOC1", "StatsType", "Weapon_Scan_Discovery_Flora"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -151,7 +151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCANBINOC1","StatsType","Weapon_Scan_Secondary",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCANBINOC1", "StatsType", "Weapon_Scan_Secondary"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -159,7 +159,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCAN1","StatsType","Weapon_Scan",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCAN1", "StatsType", "Weapon_Scan"},
                             ["SECTION_UP"] = 1,
                             ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
@@ -168,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCAN1","StatsType","Weapon_Scan_Radius",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCAN1", "StatsType", "Weapon_Scan_Radius"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -176,7 +176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCAN1","StatsType","Weapon_Scan_Terrain_Resource",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCAN1", "StatsType", "Weapon_Scan_Terrain_Resource"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -184,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCAN1","StatsType","Weapon_Scan_Discovery_Creature",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCAN1", "StatsType", "Weapon_Scan_Discovery_Creature"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -192,7 +192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCAN1","StatsType","Weapon_Scan_Discovery_Flora",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCAN1", "StatsType", "Weapon_Scan_Discovery_Flora"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -200,7 +200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SCAN1","StatsType","Weapon_Scan_Recharge_Time",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SCAN1", "StatsType", "Weapon_Scan_Recharge_Time"},
                             ["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
@@ -209,7 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","UT_SCAN","StatsType","Weapon_Scan_Recharge_Time",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "UT_SCAN", "StatsType", "Weapon_Scan_Recharge_Time"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {

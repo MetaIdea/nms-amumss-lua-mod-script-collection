@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SANDWORM"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",            "80"},     -- Original "50"
@@ -31,16 +31,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-                            ["PRECEDING_KEY_WORDS"] = {"PredatorProbabilityModifier",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SANDWORM"},
+                            ["PRECEDING_KEY_WORDS"] = {"PredatorProbabilityModifier"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "Never"}, -- Original "Normal"
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-                            ["PRECEDING_KEY_WORDS"] = {"HerbivoreProbabilityModifier",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SANDWORM"},
+                            ["PRECEDING_KEY_WORDS"] = {"HerbivoreProbabilityModifier"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "High"}, -- Original "Normal"
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SandWormChangeDirectionTime", "0.001"},  -- Original "1"
                                 {"SandWormSteerAdjustTime",     "0.2"},    -- Original "2"
@@ -76,7 +76,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkCreatureTailComponentData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"TkCreatureTailComponentData.xml"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -311,7 +311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","Data",},
+                            ["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml", "Data"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Mass",           "3"},   -- Original "1"
@@ -321,14 +321,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},
+                            ["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml", "RagdollData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Gravity", "90"}, -- Original "20"
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"RagdollData", "TkRagdollData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"ChainEnds"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -348,14 +348,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SANDWORM"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DeathEffect", "FIENDDEATH"}, -- Original ""
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SANDWORM"},
                             ["PRECEDING_KEY_WORDS"] = {"ReplacementImpacts"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -371,7 +371,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components",},
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[

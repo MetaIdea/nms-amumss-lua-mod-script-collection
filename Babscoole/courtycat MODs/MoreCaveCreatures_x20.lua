@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"CaveGroupsPerKm",},
+                            ["PRECEDING_KEY_WORDS"] = {"CaveGroupsPerKm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Sparse",    "1000" },

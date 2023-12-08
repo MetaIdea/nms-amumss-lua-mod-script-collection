@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "S3_SALVAGE", "Id","BP_SALVAGE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "S3_SALVAGE", "Id", "BP_SALVAGE"},
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -295,18 +295,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants",},
+                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "20"},
@@ -327,7 +327,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","WORDSTONE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "WORDSTONE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -337,8 +337,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","WORDSTONE",},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "WORDSTONE"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -349,7 +349,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","CRATES",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "CRATES"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.02"},
@@ -359,8 +359,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","CRATES",},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "CRATES"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -377,7 +377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -388,8 +388,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -401,7 +401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -412,8 +412,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
+                            ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"] =
                             {

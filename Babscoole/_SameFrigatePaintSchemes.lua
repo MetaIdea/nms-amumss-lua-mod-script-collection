@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","OVERLAY4"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ColourAlt", "Alternative2"},

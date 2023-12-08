@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BASE_TERRARIUM"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BASE_TERRARIUM"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PlanetBaseLimit",    "0"},
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Body_Blob","Name","ATTACHMENT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Body_Blob", "Name", "ATTACHMENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS/PLANETS/CREATURES/BLOBRIG/BLOB/ENTITIES/_BODY_BLOB.ENTITY.MBIN"},

@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterUnarmedCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterUnarmedCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "4.2"},
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRunCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRunCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "3.5"},
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterAirborneCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterAirborneCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "3.5"},
@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterMeleeBoostCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterMeleeBoostCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "8.5"},
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRocketBootsCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRocketBootsCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "8.5"},
@@ -56,7 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRocketBootsChargeCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRocketBootsChargeCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "8.5"},
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterSpaceCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterSpaceCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "2"},
@@ -72,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterGrabbedCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterGrabbedCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "1.5"},
@@ -80,82 +80,82 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"BuggyFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"BuggyFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinSpeed",                "10"},
-                                {"SpeedRange",              "15"},
-                                {"OffsetY",                 "3.8"},
-                                {"BackMinDistance",         "3"},
-                                {"BackMaxDistance",         "5"},
-                                {"UpMinDistance",           "0"},
-                                {"UpMaxDistance",           "1"},
+                                {"MinSpeed",        "10"},
+                                {"SpeedRange",      "15"},
+                                {"OffsetY",         "3.8"},
+                                {"BackMinDistance", "3"},
+                                {"BackMaxDistance", "5"},
+                                {"UpMinDistance",   "0"},
+                                {"UpMaxDistance",   "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"HovercraftFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"HovercraftFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinSpeed",                "10"},
-                                {"OffsetY",                 "3.8"},
-                                {"OffsetYAlt",              "5"},
-                                {"PanNear",                 "-1"},
+                                {"MinSpeed",   "10"},
+                                {"OffsetY",    "3.8"},
+                                {"OffsetYAlt", "5"},
+                                {"PanNear",    "-1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SubmarineFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SubmarineFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinSpeed",                "10"},
-                                {"SpeedRange",              "15"},
-                                {"OffsetY",                 "3.8"},
-                                {"OffsetZFlat",             "-2.5"},
-                                {"BackMinDistance",         "8"},
-                                {"BackMaxDistance",         "18.75"},
+                                {"MinSpeed",        "10"},
+                                {"SpeedRange",      "15"},
+                                {"OffsetY",         "3.8"},
+                                {"OffsetZFlat",     "-2.5"},
+                                {"BackMinDistance", "8"},
+                                {"BackMaxDistance", "18.75"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"BikeFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"BikeFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinSpeed",                "10"},
-                                {"SpeedRange",              "15"},
-                                {"OffsetY",                 "3.8"},
-                                {"OffsetYAlt",              "3.8"},
-                                {"OffsetZFlat",             "0.5"},
-                                {"BackMinDistance",         "8"},
-                                {"BackMaxDistance",         "18"},
-                                {"UpMinDistance",           "0"},
-                                {"UpMaxDistance",           "0"},
+                                {"MinSpeed",        "10"},
+                                {"SpeedRange",      "15"},
+                                {"OffsetY",         "3.8"},
+                                {"OffsetYAlt",      "3.8"},
+                                {"OffsetZFlat",     "0.5"},
+                                {"BackMinDistance", "8"},
+                                {"BackMaxDistance", "18"},
+                                {"UpMinDistance",   "0"},
+                                {"UpMaxDistance",   "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WheeledBikeFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"WheeledBikeFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinSpeed",                "10"},
-                                {"SpeedRange",              "15"},
-                                {"OffsetY",                 "0.9"},
-                                {"BackMinDistance",         "5"},
-                                {"BackMaxDistance",         "13"},
+                                {"MinSpeed",        "10"},
+                                {"SpeedRange",      "15"},
+                                {"OffsetY",         "0.9"},
+                                {"BackMinDistance", "5"},
+                                {"BackMaxDistance", "13"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TruckFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"TruckFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinSpeed",                "10"},
-                                {"SpeedRange",              "15"},
-                                {"OffsetY",                 "3.8"},
-                                {"OffsetZFlat",             "1.5"},
-                                {"BackMinDistance",         "2"},
-                                {"BackMaxDistance",         "8"},
-                                {"UpMinDistance",           "0"},
-                                {"UpMaxDistance",           "0"},
+                                {"MinSpeed",        "10"},
+                                {"SpeedRange",      "15"},
+                                {"OffsetY",         "3.8"},
+                                {"OffsetZFlat",     "1.5"},
+                                {"BackMinDistance", "2"},
+                                {"BackMaxDistance", "8"},
+                                {"UpMinDistance",   "0"},
+                                {"UpMaxDistance",   "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceshipFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceshipFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance",            "0"},
@@ -170,7 +170,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DropshipFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"DropshipFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance",            "8"},
@@ -185,7 +185,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ShuttleFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"ShuttleFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance",            "2"},
@@ -200,7 +200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoyalShipFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"RoyalShipFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance",            "0"},
@@ -215,7 +215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SailShipFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SailShipFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance",            "0"},
@@ -230,7 +230,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ScienceShipFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"ScienceShipFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance",            "5"},
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AlienShipFollowCam","GcCameraFollowSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"AlienShipFollowCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance",            "2"},
@@ -267,7 +267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WarpSettings","GcCameraWarpSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"WarpSettings", "GcCameraWarpSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FocusPointDist",   "1E+09"},
@@ -275,18 +275,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FreighterWarpSettings","GcCameraWarpSettings.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"FreighterWarpSettings", "GcCameraWarpSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetZFrequency_1", "1.1"},
                                 {"OffsetZFrequency_2", "0.9"},
-                                {"OffsetZStartBias", "10"},
-                                {"OffsetZBias", "-7"},
+                                {"OffsetZStartBias",   "10"},
+                                {"OffsetZBias",        "-7"},
                                 {"OffsetYFrequency_1", "1.1"},
                                 {"OffsetYFrequency_2", "0.9"},
-                                {"OffsetXFrequency", "0.25"},
-                                {"RollRange", "1"},
-                                {"YawRange", "600"},
+                                {"OffsetXFrequency",   "0.25"},
+                                {"RollRange",          "1"},
+                                {"YawRange",           "600"},
                             }
                         },
                     }

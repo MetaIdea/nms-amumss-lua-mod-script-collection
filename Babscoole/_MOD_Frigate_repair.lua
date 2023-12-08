@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MAINT_FRIG8"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MAINT_FRIG8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DamageStatus", "Repaired"},
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MAINT_FRIG7"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MAINT_FRIG7"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DamageStatus",          "Repaired"},
@@ -41,10 +41,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MAINT_FRIG7"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MAINT_FRIG7"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"DamageStatus",          "Repaired"},
+                                {"DamageStatus", "Repaired"},
                             }
                         },
                     }
@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MAINT_FRIG7"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MAINT_FRIG7"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DamageStatus",          "Repaired"},

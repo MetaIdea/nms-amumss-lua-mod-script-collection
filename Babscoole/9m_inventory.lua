@@ -14,24 +14,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"InventoryStackLimitsOptionData",},
+                            ["PRECEDING_KEY_WORDS"] = {"InventoryStackLimitsOptionData"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SubstanceStackLimit", "9999999"},
-                                {"ProductStackLimit", "9999999"},
-                                {"Default", "9999999"},
-                                {"Personal", "9999999"},
-                                {"PersonalCargo", "9999999"},
-                                {"Ship", "9999999"},
-                                {"ShipCargo", "9999999"},
-                                {"Freighter", "9999999"},
-                                {"FreighterCargo", "9999999"},
-                                {"Vehicle", "9999999"},
-                                {"Chest", "9999999"},
-                                {"BaseCapsule", "9999999"},
-                                {"MaintenanceObject", "9999999"},
-                                {"UIPopup", "9999999"},
+                                {"ProductStackLimit",   "9999999"},
+                                {"Default",             "9999999"},
+                                {"Personal",            "9999999"},
+                                {"PersonalCargo",       "9999999"},
+                                {"Ship",                "9999999"},
+                                {"ShipCargo",           "9999999"},
+                                {"Freighter",           "9999999"},
+                                {"FreighterCargo",      "9999999"},
+                                {"Vehicle",             "9999999"},
+                                {"Chest",               "9999999"},
+                                {"BaseCapsule",         "9999999"},
+                                {"MaintenanceObject",   "9999999"},
+                                {"UIPopup",             "9999999"},
                             }
                         },
                     }

@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen", "True",},
+                                {"KeepOpen", "True"},
                             },
                         },
                     }
@@ -34,5 +34,3 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
     }
 }
-
-

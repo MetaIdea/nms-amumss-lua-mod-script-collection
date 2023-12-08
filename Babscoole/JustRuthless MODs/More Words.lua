@@ -713,12 +713,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "WORD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
                             ["SEC_SAVE_TO"] = "ADD_NewReward",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id", "WORD"},
-                            ["PRECEDING_KEY_WORDS"]  = {"GcRewardTableItem.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SEC_SAVE_TO"] = "ADD_AddWord",
                         },
                     }-- RewardTable
@@ -728,7 +728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Value", "GIVE_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "GIVE_HYPERDRIVE"},
                             ["SEC_SAVE_TO"] = "ADD_AddReward",
                         },
                     }-- AlienPuzzleTable
@@ -806,7 +806,7 @@ for i = 1, #WordChanges do
     Category    = Change[j][2]
     UseCategory = Change[j][3]
     Amount      = Change[j][4]
-    
+
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_AddWord",
@@ -838,7 +838,7 @@ for i = 1, #NewWordChanges do
     Category    = Change[j][2]
     UseCategory = Change[j][3]
     Amount      = Change[j][4]
-    
+
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_NewReward",
@@ -886,7 +886,7 @@ for i = 1, #PlaqueChanges do
   for j = 1, #Change do
     WordID = Change[j][1]
     Amount = Change[j][2]
-    
+
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SEC_EDIT"] = "ADD_AddReward",
@@ -917,7 +917,7 @@ for i = 1, #MonolithChanges do
     OptionName = Change[j][1]
     WordID     = Change[j][2]
     Amount     = Change[j][3]
-    
+
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SEC_EDIT"] = "ADD_AddReward",

@@ -26,15 +26,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Sails_A"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_A"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Sails_B"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_B"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Sails_C"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_C"},
                             ["REMOVE"] = "SECTION",
                         },
                     }

@@ -17,40 +17,40 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BuildingUpgradeTimeInSeconds", "0"},
-                                {"BuildingFreeUpgradeTimeInSeconds", "0"},
-                                {"JudgementWaitTimeMin", "5"},
-                                {"JudgementWaitTimeMax", "30"},
-                                {"BuildingJudgementPriorityChance", "1"},
-                                {"VisitorJudgementSelector", "0.5"},
-                                {"PolicyJudgementSelector", "0.5"},
-                                {"RequestJudgementSelector", "0.5"},
-                                {"ConflictJudgementSelector", "0.01"},
-                                {"MaxNPCPopulation", "10000"},
+                                {"BuildingUpgradeTimeInSeconds",          "0"},
+                                {"BuildingFreeUpgradeTimeInSeconds",      "0"},
+                                {"JudgementWaitTimeMin",                  "5"},
+                                {"JudgementWaitTimeMax",                  "30"},
+                                {"BuildingJudgementPriorityChance",       "1"},
+                                {"VisitorJudgementSelector",              "0.5"},
+                                {"PolicyJudgementSelector",               "0.5"},
+                                {"RequestJudgementSelector",              "0.5"},
+                                {"ConflictJudgementSelector",             "0.01"},
+                                {"MaxNPCPopulation",                      "10000"},
                                 {"SettlementMiniExpeditionSuccessChance", "1"},
-                                {"InitialBuildingCountMin", "50"},
-                                {"InitialBuildingCountMax", "500"},
-                                {"MaxProductionSlotUnits", "100000"},
-                                {"ProductUnitsPerCycleRateModifier", "750"},
-                                {"SubstanceUnitsPerCycleRateModifier", "5000"},
+                                {"InitialBuildingCountMin",               "50"},
+                                {"InitialBuildingCountMax",               "500"},
+                                {"MaxProductionSlotUnits",                "100000"},
+                                {"ProductUnitsPerCycleRateModifier",      "750"},
+                                {"SubstanceUnitsPerCycleRateModifier",    "5000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SettlementBuildingTimes"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Settlement_LandingZone", "0"},
-                                {"Settlement_Bar", "0"},
-                                {"Settlement_Tower", "0"},
-                                {"Settlement_Market", "0"},
-                                {"Settlement_Small", "0"},
+                                {"Settlement_LandingZone",     "0"},
+                                {"Settlement_Bar",             "0"},
+                                {"Settlement_Tower",           "0"},
+                                {"Settlement_Market",          "0"},
+                                {"Settlement_Small",           "0"},
                                 {"Settlement_SmallIndustrial", "0"},
-                                {"Settlement_Medium", "0"},
-                                {"Settlement_Large", "0"},
-                                {"Settlement_SheriffsOffice", "0"},
-                                {"Settlement_Double", "0"},
-                                {"Settlement_Farm", "0"},
-                                {"Settlement_Factory", "0"},
+                                {"Settlement_Medium",          "0"},
+                                {"Settlement_Large",           "0"},
+                                {"Settlement_SheriffsOffice",  "0"},
+                                {"Settlement_Double",          "0"},
+                                {"Settlement_Farm",            "0"},
+                                {"Settlement_Factory",         "0"},
                             }
                         },
                         {
@@ -58,9 +58,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Population", "100"},
-                                {"Happiness", "30"},
+                                {"Happiness",  "30"},
                                 {"Production", "500000"},
-                                {"Sentinels", "10"},
+                                {"Sentinels",  "10"},
                             }
                         },
                         {
@@ -69,8 +69,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Population", "1000"},
                                 {"Production", "100000000"},
-                                {"Upkeep", "100000"},
-                                {"Debt", "1000"},
+                                {"Upkeep",     "100000"},
+                                {"Debt",       "1000"},
                             }
                         },
                         {
@@ -78,11 +78,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Population", "50"},
-                                {"Happiness", "30"},
+                                {"Happiness",  "30"},
                                 {"Production", "1500000"},
-                                {"Upkeep", "0"},
-                                {"Sentinels", "10"},
-                                {"Alert", "0"},
+                                {"Upkeep",     "0"},
+                                {"Sentinels",  "10"},
+                                {"Alert",      "0"},
                             }
                         },
                         {
@@ -90,9 +90,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Population", "100"},
-                                {"Happiness", "50"},
-                                {"Upkeep", "3000"},
-                                {"Alert", "0"},
+                                {"Happiness",  "50"},
+                                {"Upkeep",     "3000"},
+                                {"Alert",      "0"},
                             }
                         },
                         {
@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Population","PositiveWide"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Population", "PositiveWide"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "100"},
@@ -111,7 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Population","PositiveLarge"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Population", "PositiveLarge"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "30"},
@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Population","PositiveMedium"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Population", "PositiveMedium"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "20"},
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Population","PositiveSmall"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Population", "PositiveSmall"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "10"},
@@ -135,14 +135,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Population","NegativeSmall"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Population", "NegativeSmall"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMax", "-10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Population","NegativeMedium"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Population", "NegativeMedium"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-30"},
@@ -150,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Population","NegativeLarge"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Population", "NegativeLarge"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-50"},
@@ -158,7 +158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Happiness","PositiveWide"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Happiness", "PositiveWide"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "8"},
@@ -166,7 +166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Happiness","PositiveLarge"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Happiness", "PositiveLarge"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "6"},
@@ -174,7 +174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Happiness","PositiveMedium"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Happiness", "PositiveMedium"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "5"},
@@ -182,7 +182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Happiness","PositiveSmall"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Happiness", "PositiveSmall"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "4"},
@@ -190,7 +190,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Production","PositiveWide"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Production", "PositiveWide"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "200000"},
@@ -198,7 +198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Production","PositiveLarge"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Production", "PositiveLarge"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "500000"},
@@ -206,7 +206,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Production","PositiveMedium"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Production", "PositiveMedium"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "300000"},
@@ -214,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Production","PositiveSmall"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Production", "PositiveSmall"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "100000"},
@@ -222,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Upkeep","PositiveWide"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Upkeep", "PositiveWide"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-1000000"},
@@ -230,7 +230,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Upkeep","PositiveLarge"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Upkeep", "PositiveLarge"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-1000000"},
@@ -238,7 +238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Upkeep","PositiveMedium"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Upkeep", "PositiveMedium"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-500000"},
@@ -246,7 +246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Upkeep","PositiveSmall"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Upkeep", "PositiveSmall"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-300000"},
@@ -254,7 +254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Debt","PositiveWide"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Debt", "PositiveWide"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-1000000"},
@@ -262,7 +262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Debt","PositiveLarge"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Debt", "PositiveLarge"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-1000000"},
@@ -270,7 +270,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Debt","PositiveMedium"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Debt", "PositiveMedium"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-500000"},
@@ -278,7 +278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Debt","PositiveSmall"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Debt", "PositiveSmall"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "-100000"},
@@ -286,7 +286,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Debt","NegativeSmall"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Debt", "NegativeSmall"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "500"},
@@ -294,7 +294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Debt","NegativeMedium"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Debt", "NegativeMedium"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "1000"},
@@ -302,7 +302,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Debt","NegativeLarge"},
+                            ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues", "Debt", "NegativeLarge"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "5000"},

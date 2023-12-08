@@ -87,9 +87,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         ["PRECEDING_KEY_WORDS"] = { "ControlLight", "SpaceEngine" },
                         ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed",         "99999"},
-                                {"MinSpeed",         "0"}, 
-                                {"BoostMaxSpeed",    "99999"},
+                                {"MaxSpeed",      "99999"},
+                                {"MinSpeed",      "0"}, 
+                                {"BoostMaxSpeed", "99999"},
                             }
                         },
                         {
@@ -129,9 +129,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         ["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "SpaceEngine" },
                         ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed",         "99999"},
-                                {"MinSpeed",         "0"}, 
-                                {"BoostMaxSpeed",    "99999"},
+                                {"MaxSpeed",      "99999"},
+                                {"MinSpeed",      "0"}, 
+                                {"BoostMaxSpeed", "99999"},
                             }
                         },
                         {

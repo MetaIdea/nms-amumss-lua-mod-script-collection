@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "VR-SHIP-HEADLIGHTS-TOGGLEABLE.pak",
 ["MOD_AUTHOR"]    = "Mjjstral",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.46",
 ["DESCRIPTION"]   = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
 ["MODIFICATIONS"] =
     {
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = { "Name", "_PlayerCharacter_Mesh" },
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_PlayerCharacter_Mesh"},
                             ["ADD_OPTION"]        = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -79,25 +79,19 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>]]
                         }
                     }
-                }
-            }
-        },
-        {
-            ["MBIN_CHANGE_TABLE"] =
-            {
+                },
                 {
                     ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Components" },
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
       <Property name="StartInactive" value="False" />
       <Property name="States">
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
@@ -119,7 +113,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="BASE_STATE" />
           <Property name="Triggers">
@@ -173,7 +166,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="HND_CTRL_CPIT_R" />
           <Property name="Triggers">
@@ -211,7 +203,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="DISABLE_LIGHT" />
           <Property name="Triggers">
@@ -245,7 +236,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="ENABLE_LIGHT" />
           <Property name="Triggers">
@@ -279,7 +269,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-
       </Property>
       <Property name="Persistent" value="False" />
       <Property name="PersistentState" value="" />

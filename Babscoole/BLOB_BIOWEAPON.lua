@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OnlySpawnWhenIdIsForced", "True"},
@@ -22,14 +22,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB","Rarity","GcCreatureRarity.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB", "Rarity", "GcCreatureRarity.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRarity", "SuperRare"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB","HerbivoreProbabilityModifier","GcCreatureRoleFrequencyModifier.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB", "HerbivoreProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "Never"},

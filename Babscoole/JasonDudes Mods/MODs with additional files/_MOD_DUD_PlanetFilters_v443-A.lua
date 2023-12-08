@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Weird7", "GcScreenFilterData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Weird7", "GcScreenFilterData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FadeDistance", "600"}

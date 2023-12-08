@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BP_SALVAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseValue",       "1000"}, -- Original 50000
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE_ONLY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BP_SALVAGE_ONLY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "100"}, -- Original 2

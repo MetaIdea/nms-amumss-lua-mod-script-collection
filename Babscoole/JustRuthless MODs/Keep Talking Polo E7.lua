@@ -21,61 +21,61 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] = 
             { 
                 {
-                    ["MBIN_FILE_SOURCE"]     = {FileSource1},
+                    ["MBIN_FILE_SOURCE"] = {FileSource1},
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "D_ROGUE_REPEAT_2", "Cost", "C_ROGUE_M1"},
-                            ["VALUE_MATCH"]     = "False",
-                            ["VALUE_MATCH_TYPE"]     = "STRING",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "D_ROGUE_REPEAT_2", "Cost", "C_ROGUE_M1"},
+                            ["VALUE_MATCH"] = "False",
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen",    "True",},
+                                {"KeepOpen", "True"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "D_ROGUE_REPEAT_2", "Cost", "C_ROGUE_M2"},
-                            ["VALUE_MATCH"]     = "False",
-                            ["VALUE_MATCH_TYPE"]     = "STRING",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "D_ROGUE_REPEAT_2", "Cost", "C_ROGUE_M2"},
+                            ["VALUE_MATCH"] = "False",
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen",    "True",},
+                                {"KeepOpen", "True"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "D_ROGUE_REPEAT_2", "Cost", "C_ROGUE_M3"},
-                            ["VALUE_MATCH"]     = "False",
-                            ["VALUE_MATCH_TYPE"]     = "STRING",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "D_ROGUE_REPEAT_2", "Cost", "C_ROGUE_M3"},
+                            ["VALUE_MATCH"] = "False",
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen",    "True",},
+                                {"KeepOpen", "True"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "D_ROGUE_INTRO_3", "Cost", "C_ROGUE_M1"},
-                            ["VALUE_MATCH"]     = "False",
-                            ["VALUE_MATCH_TYPE"]     = "STRING",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "D_ROGUE_INTRO_3", "Cost", "C_ROGUE_M1"},
+                            ["VALUE_MATCH"] = "False",
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen",    "True",},
+                                {"KeepOpen", "True"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "D_ROGUE_INTRO_3", "Cost", "C_ROGUE_M2"},
-                            ["VALUE_MATCH"]     = "False",
-                            ["VALUE_MATCH_TYPE"]     = "STRING",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "D_ROGUE_INTRO_3", "Cost", "C_ROGUE_M2"},
+                            ["VALUE_MATCH"] = "False",
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen",    "True",},
+                                {"KeepOpen", "True"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Id", "D_ROGUE_INTRO_3", "Cost", "C_ROGUE_M3"},
-                            ["VALUE_MATCH"]     = "False",
-                            ["VALUE_MATCH_TYPE"]     = "STRING",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "D_ROGUE_INTRO_3", "Cost", "C_ROGUE_M3"},
+                            ["VALUE_MATCH"] = "False",
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen",    "True",},
+                                {"KeepOpen", "True"},
                             },
                         },
                     },

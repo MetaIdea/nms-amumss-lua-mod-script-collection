@@ -251,7 +251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"BaseHealth",             12000},
@@ -261,7 +261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"BaseHealth",             15000},
@@ -271,7 +271,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONESHIELD.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONESHIELD.SCENE.MBIN"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"BaseHealth",             30000},
@@ -428,7 +428,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Attack","GcDroneControlData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Attack", "GcDroneControlData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed",       8},
@@ -437,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Search","GcDroneControlData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Search", "GcDroneControlData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed",       12},

@@ -17,11 +17,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"Shop",               "GcTradeData.xml",},
-                                {"TechShop",           "GcTradeData.xml",},
-                                {"ShipTechSpecialist", "GcTradeData.xml",},
-                                {"SuitTechSpecialist", "GcTradeData.xml",},
-                                {"WeapTechSpecialist", "GcTradeData.xml",},
+                                {"Shop",               "GcTradeData.xml"},
+                                {"TechShop",           "GcTradeData.xml"},
+                                {"ShipTechSpecialist", "GcTradeData.xml"},
+                                {"SuitTechSpecialist", "GcTradeData.xml"},
+                                {"WeapTechSpecialist", "GcTradeData.xml"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -32,9 +32,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"SpaceStation", "GcTradeData.xml",},
-                                {"Scrap",        "GcTradeData.xml",},
-                                {"PirateTech",   "GcTradeData.xml",},
+                                {"SpaceStation", "GcTradeData.xml"},
+                                {"Scrap",        "GcTradeData.xml"},
+                                {"PirateTech",   "GcTradeData.xml"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"VehicleTechSpecialist","GcTradeData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"VehicleTechSpecialist", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxItemsForSale", "30"},
@@ -51,15 +51,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FSKWG"] =
                             {
-                                {"Ship",          "GcTradeData.xml",},
-                                {"ExpShip",       "GcTradeData.xml",},
-                                {"TraShip",       "GcTradeData.xml",},
-                                {"WarShip",       "GcTradeData.xml",},
-                                {"LoneExp",       "GcTradeData.xml",},
-                                {"LoneTra",       "GcTradeData.xml",},
-                                {"LoneWar",       "GcTradeData.xml",},
-                                {"MapShop",       "GcTradeData.xml",},
-                                {"PirateVisitor", "GcTradeData.xml",},
+                                {"Ship",          "GcTradeData.xml"},
+                                {"ExpShip",       "GcTradeData.xml"},
+                                {"TraShip",       "GcTradeData.xml"},
+                                {"WarShip",       "GcTradeData.xml"},
+                                {"LoneExp",       "GcTradeData.xml"},
+                                {"LoneTra",       "GcTradeData.xml"},
+                                {"LoneWar",       "GcTradeData.xml"},
+                                {"MapShop",       "GcTradeData.xml"},
+                                {"PirateVisitor", "GcTradeData.xml"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -67,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds","GcTradeData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"IllegalProds", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "12"},
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation","GcTradeData.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxItemsForSale", "28"},

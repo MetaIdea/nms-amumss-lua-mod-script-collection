@@ -94,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exo's Lumen.pak",
 ["MOD_AUTHOR"]              = "Exosolar and Babscoole",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.46",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -106,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.25"},
@@ -115,21 +115,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "27500.000000"},
@@ -142,7 +142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.05"},
@@ -150,35 +150,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "80.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "21000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_R"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.500000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.850000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = LABLAMP
                         },
@@ -189,7 +189,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.7"},
@@ -197,42 +197,42 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "13000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_R"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.500000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.8500000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = LIGHTTABLE
                         },
@@ -243,7 +243,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0"},
@@ -252,28 +252,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "10000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_R",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_R"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.880000"},
@@ -286,7 +286,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "0.32"},
@@ -296,35 +296,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "75.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "36000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","VOLUMETRIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "VOLUMETRIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.010000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = STANDINGLIGHT1
                         },
@@ -335,7 +335,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "0.32"},
@@ -345,35 +345,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "110.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "30000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","VOLUMETRIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "VOLUMETRIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.010000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = STANDINGLIGHT2
                         },
@@ -384,28 +384,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight2",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "0.05"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight2","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight2","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "35000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight2","Name","VOLUMETRIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2", "Name", "VOLUMETRIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.025000"},
@@ -418,7 +418,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.1"},
@@ -426,49 +426,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "30000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.530000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "VOLUMETRIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.050000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = WALLLIGHT_BLUE
                         },
@@ -479,7 +479,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.1"},
@@ -488,49 +488,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "25000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.270000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "VOLUMETRIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.050000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = WALLLIGHT_GREEN
                         },
@@ -541,7 +541,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.1"},
@@ -550,49 +550,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "25000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_R",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_R"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.730000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "VOLUMETRIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.050000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = WALLLIGHT_PINK
                         },
@@ -603,7 +603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.1"},
@@ -612,49 +612,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "25000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.220000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.200000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "VOLUMETRIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.050000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = WALLLIGHT_RED
                         },
@@ -665,7 +665,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.1"},
@@ -674,35 +674,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "17000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "VOLUMETRIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.075000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = WALLLIGHT_WHITE
                         },
@@ -713,7 +713,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.1"},
@@ -722,56 +722,56 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "180.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "25000.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_R",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_R"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.900000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.100000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "VOLUMETRIC"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.050000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = WALLLIGHT_YELLOW
                         },
@@ -782,7 +782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Datax"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Datax"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = HANGLAMP0
                         },
@@ -793,35 +793,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "17500.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.98000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_B",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.95000"},
@@ -834,35 +834,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "22500.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.98000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_B",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.95000"},
@@ -875,42 +875,42 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","FALLOFF",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "linear"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","INTENSITY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "4800.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_G",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.98000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_B",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.95000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = HANGLAMP3
                         },

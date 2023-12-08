@@ -16,21 +16,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","PLANET",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "PLANET"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PositionX", "40"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","DISCOVER",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "DISCOVER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PositionY", "131"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","DISTANCE",},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "DISTANCE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PositionY", "80"},

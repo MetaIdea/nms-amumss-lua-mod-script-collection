@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Red2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Red2"},
                             ["REMOVE"] = "SECTION"
                         },
                     }

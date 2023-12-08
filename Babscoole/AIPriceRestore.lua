@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","UI_EX_BLUE_NAME"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "UI_EX_BLUE_NAME"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseValue", "949"},

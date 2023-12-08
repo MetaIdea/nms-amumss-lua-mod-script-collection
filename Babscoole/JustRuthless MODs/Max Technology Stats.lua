@@ -1629,7 +1629,7 @@ for i = 1, #TechUpgradeChanges do
     -- Number of Tech Stats --
   ProceduralTechnologyTable[#ProceduralTechnologyTable+1] =
   {
-    ["SPECIAL_KEY_WORDS"]  = {"ID", TechID},
+    ["SPECIAL_KEY_WORDS"] = {"ID", TechID},
     ["VALUE_CHANGE_TABLE"] = 
     {
       {"NumStatsMin", NumMin},
@@ -1638,13 +1638,13 @@ for i = 1, #TechUpgradeChanges do
   }
   ProceduralTechnologyTable[#ProceduralTechnologyTable+1] =
   {
-    ["SPECIAL_KEY_WORDS"]   = {"ID", TechID},
+    ["SPECIAL_KEY_WORDS"] = {"ID", TechID},
     ["PRECEDING_KEY_WORDS"] = {"WeightingCurve"},
-    ["SECTION_ACTIVE"]      = 1,
-    ["VALUE_MATCH"]         = "GcWeightingCurve.xml",
+    ["SECTION_ACTIVE"] = 1,
+    ["VALUE_MATCH"] = "GcWeightingCurve.xml",
     ["VALUE_MATCH_OPTIONS"] = "~=",
-    ["VALUE_MATCH_TYPE"]    = "STRING",
-    ["VALUE_CHANGE_TABLE"]  = 
+    ["VALUE_MATCH_TYPE"] = "STRING",
+    ["VALUE_CHANGE_TABLE"] = 
     {
       {"WeightingCurve", NumCurve},
     },
@@ -1661,9 +1661,9 @@ for i = 1, #TechUpgradeChanges do
     -- Tech Stats --
     ProceduralTechnologyTable[#ProceduralTechnologyTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"]  = {"ID", TechID, "StatsType", StatsType},
+      ["SPECIAL_KEY_WORDS"] = {"ID", TechID, "StatsType", StatsType},
       ["SECTION_UP_SPECIAL"] = 1,
-      ["INTEGER_TO_FLOAT"]   = "FORCE",
+      ["INTEGER_TO_FLOAT"] = "FORCE",
       ["VALUE_CHANGE_TABLE"] = 
       {
         {"ValueMin", Min},
@@ -1672,13 +1672,13 @@ for i = 1, #TechUpgradeChanges do
     }
     ProceduralTechnologyTable[#ProceduralTechnologyTable+1] =
     {
-      ["SPECIAL_KEY_WORDS"]   = {"ID", TechID, "StatsType", StatsType},
-      ["SECTION_UP_SPECIAL"]  = 1,
+      ["SPECIAL_KEY_WORDS"] = {"ID", TechID, "StatsType", StatsType},
+      ["SECTION_UP_SPECIAL"] = 1,
       ["PRECEDING_KEY_WORDS"] = {"WeightingCurve"},
-      ["VALUE_MATCH"]         = "GcWeightingCurve.xml",
+      ["VALUE_MATCH"] = "GcWeightingCurve.xml",
       ["VALUE_MATCH_OPTIONS"] = "~=",
-      ["VALUE_MATCH_TYPE"]    = "STRING",
-      ["VALUE_CHANGE_TABLE"]  = 
+      ["VALUE_MATCH_TYPE"] = "STRING",
+      ["VALUE_CHANGE_TABLE"] = 
       {
         {"WeightingCurve", Curve},
       },

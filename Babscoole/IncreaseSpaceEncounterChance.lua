@@ -123,7 +123,7 @@ for i = 1, #ENCOUNTER_DATA_TABLE do
 
             ChangesToEncounters[#ChangesToEncounters+1] =
             {
-                ["SPECIAL_KEY_WORDS"]   = {"Id", Id},
+                ["SPECIAL_KEY_WORDS"] = {"Id", Id},
                 ["VALUE_CHANGE_TABLE"] = {
                     {"StandardEncounter", SE},
                     {"SpawnChance", SC},

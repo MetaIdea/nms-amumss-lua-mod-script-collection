@@ -72,11 +72,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-            }
-        },
-        {
-            ["MBIN_CHANGE_TABLE"] =
-            {
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD.MBIN",
                     ["EXML_CHANGE_TABLE"] =
@@ -274,7 +269,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "True",
-                            ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+                            ["PRECEDING_KEY_WORDS"] = {"Objects", "Objects"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -426,7 +421,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =

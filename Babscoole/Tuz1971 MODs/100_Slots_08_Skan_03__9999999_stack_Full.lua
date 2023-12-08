@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"InventoryStackLimitsOptionData",},
+                            ["PRECEDING_KEY_WORDS"] = {"InventoryStackLimitsOptionData"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"BreakTechOnDamageMultipliers",},
+                            ["PRECEDING_KEY_WORDS"] = {"BreakTechOnDamageMultipliers"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"High", "2.5"},

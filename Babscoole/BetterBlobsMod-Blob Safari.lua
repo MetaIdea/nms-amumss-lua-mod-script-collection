@@ -14,14 +14,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB","Rarity","GcCreatureRarity.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB", "Rarity", "GcCreatureRarity.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRarity", "Common"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB","HerbivoreProbabilityModifier","GcCreatureRoleFrequencyModifier.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB", "HerbivoreProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "High"},

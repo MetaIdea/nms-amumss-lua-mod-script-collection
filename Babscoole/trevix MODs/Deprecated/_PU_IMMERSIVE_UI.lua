@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Layout","GcNGuiLayoutData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Layout", "GcNGuiLayoutData.xml"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {

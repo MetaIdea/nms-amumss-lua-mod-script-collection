@@ -35,7 +35,6 @@ ProducedItemChanges =
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "BNS-Production 3.91.pak",
-["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "ThatBomberBoi",
 ["NMS_VERSION"]     = "3.91",
 ["MODIFICATIONS"]   =

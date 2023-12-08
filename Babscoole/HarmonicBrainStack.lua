@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SHIPBRAIN_CLEAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPBRAIN_CLEAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"StackMultiplier", "5"}

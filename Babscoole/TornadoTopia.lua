@@ -105,7 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds","NMSString0x10.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds", "NMSString0x10.xml"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds","NMSString0x10.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds", "NMSString0x10.xml"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
@@ -163,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds","NMSString0x10.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds", "NMSString0x10.xml"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
@@ -199,7 +199,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds","NMSString0x10.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds", "NMSString0x10.xml"},
                             ["REMOVE"] = "SECTION"
                         },
                         {

@@ -10,32 +10,32 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  =    "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMALBUMEN\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMALBUMEN\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP1_ENTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "1200"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP1",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "1200"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP2_ENTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "1200"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP2",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "1200"}
@@ -52,28 +52,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP1_ENTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "1800"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP1",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "1800"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP2_ENTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "1800"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP2",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "1800"}
@@ -91,28 +91,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP1_ENTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "900"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP1",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "900"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP2_ENTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "900"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP2",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "900"}
@@ -133,28 +133,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP1_ENTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "600"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP1",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "600"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP2_ENTER",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "600"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"TriggerAction","STEP2",},
+                            ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "600"}

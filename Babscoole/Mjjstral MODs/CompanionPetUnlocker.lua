@@ -45,7 +45,7 @@ CREATURE_JOINT_DATA_TABLE =
 
 ROBOT_JOINT_DATA_TABLE =
     {
-        {"WALKER","Root"},
+        {"WALKER", "Root"},
     }
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"InteractionAction","PressButton"},
+                            ["SPECIAL_KEY_WORDS"] = {"InteractionAction", "PressButton"},
                             ["REMOVE"] = "SECTION"
                         },
                     }
@@ -197,7 +197,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id","LARGEBUTTERFLY"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "LARGEBUTTERFLY"},
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureRidingData.xml"},
                             ["SEC_SAVE_TO"] = "ADD_RIDE",
                         },
@@ -217,7 +217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "ADD_RIDE",
-                            ["SPECIAL_KEY_WORDS"]  = {"Offset","Vector3f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Offset", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "0.25"},
@@ -231,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id","QUAD"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "QUAD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LegSpread",                "True"},
@@ -330,7 +330,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Id","R_PETEGGLOOT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_PETEGGLOOT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"InteractDistance", EGG_INTERACT_DISTANCE}, --Original "0"
@@ -352,16 +352,16 @@ for i = 1, #CREATURE_JOINT_DATA_TABLE do
 
             ChangesToCDTJoints[#ChangesToCDTJoints+1] =
             {
-                ["SPECIAL_KEY_WORDS"]   = {"Id", Id},
+                ["SPECIAL_KEY_WORDS"] = {"Id", Id},
                 ["PRECEDING_KEY_WORDS"] = {"Data"},
-                ["SEC_ADD_NAMED"]       = "ADD_RIDE",
+                ["SEC_ADD_NAMED"] = "ADD_RIDE",
             }
 
             ChangesToCDTJoints[#ChangesToCDTJoints+1] =
             {
-                ["SPECIAL_KEY_WORDS"]   = {"Id", Id},
+                ["SPECIAL_KEY_WORDS"] = {"Id", Id},
                 ["PRECEDING_KEY_WORDS"] = {"GcCreatureRidingData.xml"},
-                ["VALUE_CHANGE_TABLE"]  =
+                ["VALUE_CHANGE_TABLE"] =
                 {
                    {"JointName", JointName},
                 }
@@ -377,16 +377,16 @@ for i = 1, #ROBOT_JOINT_DATA_TABLE do
 
             ChangesToRDTJoints[#ChangesToRDTJoints+1] =
             {
-                ["SPECIAL_KEY_WORDS"]   = {"Id", Id},
+                ["SPECIAL_KEY_WORDS"] = {"Id", Id},
                 ["PRECEDING_KEY_WORDS"] = {"Data"},
-                ["SEC_ADD_NAMED"]       = "ADD_RIDE",
+                ["SEC_ADD_NAMED"] = "ADD_RIDE",
             }
 
             ChangesToRDTJoints[#ChangesToRDTJoints+1] =
             {
-                ["SPECIAL_KEY_WORDS"]   = {"Id", Id},
+                ["SPECIAL_KEY_WORDS"] = {"Id", Id},
                 ["PRECEDING_KEY_WORDS"] = {"GcCreatureRidingData.xml"},
-                ["VALUE_CHANGE_TABLE"]  =
+                ["VALUE_CHANGE_TABLE"] =
                 {
                    {"JointName", JointName},
                 }

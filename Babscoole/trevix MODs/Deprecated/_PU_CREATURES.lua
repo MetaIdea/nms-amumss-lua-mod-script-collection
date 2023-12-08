@@ -77,7 +77,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FISH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FISH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "150"},
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FISHFLOCK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FISHFLOCK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SwarmMovementRadius",    "10"},
@@ -110,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SWIMCOW",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SWIMCOW"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "150"},
@@ -122,7 +122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SWIMRODENT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SWIMRODENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "150"},
@@ -134,7 +134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","JELLYFISH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "JELLYFISH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",            "4"},
@@ -146,14 +146,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","CRAB",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRAB"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SEASNAKE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SEASNAKE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",            "14"},
@@ -165,7 +165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SHARK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHARK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",            "14"},
@@ -177,7 +177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BIRD",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BIRD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "225"},
@@ -189,7 +189,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLYINGSNAKE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLYINGSNAKE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",            "18"},
@@ -207,7 +207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLYINGLIZARD",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLYINGLIZARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",            "30"},
@@ -229,7 +229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BUTTERFLY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "15"},
@@ -237,7 +237,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BUTTERFLY"},
                             ["PRECEDING_KEY_WORDS"] ={"GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -248,8 +248,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLY",},
-                            ["PRECEDING_KEY_WORDS"] ={"GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BUTTERFLY"},
+                            ["PRECEDING_KEY_WORDS"] ={"GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",          "40"},
@@ -259,7 +259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SMALLBIRD",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SMALLBIRD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",       "0.5"},
@@ -271,7 +271,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLOCK",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BUTTERFLOCK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SwarmMovementRadius", "10"},
@@ -290,7 +290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","LARGEBUTTERFLY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "LARGEBUTTERFLY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",            "5"},
@@ -303,7 +303,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLYINGBEETLE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLYINGBEETLE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",            "9"},
@@ -316,7 +316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ANTELOPE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ANTELOPE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",  "4"},
@@ -324,7 +324,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ANTELOPE","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ANTELOPE", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -332,14 +332,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ANTELOPE","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ANTELOPE", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTANTELOPE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",  "4"},
@@ -347,7 +347,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTANTELOPE", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -355,14 +355,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTANTELOPE", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TRICERATOPS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRICERATOPS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",  "16"},
@@ -370,7 +370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TRICERATOPS","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRICERATOPS", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -378,21 +378,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TRICERATOPS","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRICERATOPS", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RODENT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RODENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RODENT","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RODENT", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -400,14 +400,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RODENT","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RODENT", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MOLE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MOLE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -416,14 +416,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","COW",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "COW"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","COW","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "COW", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -431,28 +431,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","COW","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "COW", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","CAT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","CAT","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CAT", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","CAT","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CAT", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -460,7 +460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BONECAT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BONECAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",  "8"},
@@ -468,14 +468,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BONECAT","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BONECAT", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BONECAT","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BONECAT", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -483,7 +483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STRIDER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STRIDER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",  "20"},
@@ -491,14 +491,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STRIDER","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STRIDER", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","STRIDER","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STRIDER", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -506,7 +506,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TREX",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TREX"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",  "12"},
@@ -514,14 +514,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TREX","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TREX", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TREX","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TREX", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -529,7 +529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TREX","HerbivoreProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TREX", "HerbivoreProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -537,14 +537,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TWOLEGANTELOPE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TWOLEGANTELOPE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "15"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TWOLEGANTELOPE","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TWOLEGANTELOPE", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -552,21 +552,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TWOLEGANTELOPE","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TWOLEGANTELOPE", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCOW"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCOW", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -574,28 +574,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCOW", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCAT", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCAT", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -603,14 +603,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","GRUNT",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRUNT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "15"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","GRUNT","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRUNT", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -618,21 +618,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","GRUNT","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRUNT", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -640,14 +640,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","BLOB","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPIDER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPIDER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",  "16"},
@@ -655,7 +655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPIDER","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPIDER", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -663,14 +663,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SPIDER","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPIDER", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLOATSPIDER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",  "16"},
@@ -678,7 +678,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLOATSPIDER", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -686,21 +686,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER","Anim","SLOWWALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLOATSPIDER", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOROLLER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOROLLER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOROLLER","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOROLLER", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -708,7 +708,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "150"},
@@ -716,7 +716,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -727,8 +727,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",          "20"},
@@ -738,8 +738,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",          "40"},
@@ -749,8 +749,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",          "12"},
@@ -760,8 +760,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",  "40"},
@@ -770,8 +770,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",          "30"},
@@ -781,8 +781,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",          "30"},
@@ -792,8 +792,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                          {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER",},
-                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml","GcCreatureSwarmDataParams.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTOFLYER"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml", "GcCreatureSwarmDataParams.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Range",    "8"},
@@ -801,14 +801,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTODIGGER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTODIGGER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",     "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTODIGGER","Anim","WALK"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTODIGGER", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.01"},
@@ -816,14 +816,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PROTODIGGER","Anim","RUN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PROTODIGGER", "Anim", "RUN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed", "0.01"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLOUGH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLOUGH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",            "4"},
@@ -843,7 +843,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLOUGH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLOUGH"},
                             ["PRECEDING_KEY_WORDS"] = {"ANIMS"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
@@ -853,7 +853,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","PLOUGH",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PLOUGH"},
                             ["PRECEDING_KEY_WORDS"] = {"TintableEffects"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
@@ -862,7 +862,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","DRILL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRILL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "150"},
@@ -873,7 +873,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDROLL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEIRDROLL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -882,17 +882,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDFLOAT",},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MaxScale",      "4"},
-                                {"AnimSpeed",     "0.5"},
-                                {"MinSpeedScale", "0.3"},
-                                {"MoveRange",     "150"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDCRYSTAL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEIRDFLOAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale",      "4"},
@@ -902,7 +892,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","WEIRDBUTTERFLY",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEIRDCRYSTAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MaxScale",      "4"},
+                                {"AnimSpeed",     "0.5"},
+                                {"MinSpeedScale", "0.3"},
+                                {"MoveRange",     "150"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEIRDBUTTERFLY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "90"},
@@ -914,7 +914,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SCUTTLER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",           "0.5"},
@@ -927,7 +927,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SLUG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SLUG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -936,7 +936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MINIFIEND",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MINIFIEND"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -945,7 +945,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FIENDFISHSMALL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDFISHSMALL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "150"},
@@ -956,7 +956,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FLOATER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLOATER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "150"},
@@ -967,7 +967,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MINIDRONE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",             "0.75"},
@@ -992,7 +992,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","FIENDFISHBIG",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDFISHBIG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "225"},
@@ -1003,7 +1003,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","ROCKCREATURE",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROCKCREATURE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AnimSpeed",     "0.5"},
@@ -1012,7 +1012,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SANDWORM"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MoveRange",           "150"},

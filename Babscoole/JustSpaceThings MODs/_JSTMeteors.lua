@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","METEOR_EFFECT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "METEOR_EFFECT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpawnScale", "3"},
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","SINGLE_METEOR"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SINGLE_METEOR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpawnScale", "3"},
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","METEOR"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "METEOR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxHazardsOfThisTypeActive", "2"},

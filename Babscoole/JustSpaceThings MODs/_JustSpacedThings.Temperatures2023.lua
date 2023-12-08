@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-150"},
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-150"},
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Cave"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Cave"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-20"},
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-150"},
@@ -46,7 +46,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-150"},
@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"HazardModifiers","Temperature"},
+                            ["PRECEDING_KEY_WORDS"] = {"HazardModifiers", "Temperature"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "30"},
@@ -74,21 +74,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "70"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "120"},
@@ -101,7 +101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"HazardModifiers","Temperature"},
+                            ["PRECEDING_KEY_WORDS"] = {"HazardModifiers", "Temperature"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "30"},
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "300"},
@@ -122,7 +122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "50"},
@@ -130,14 +130,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "340"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
+                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "201"},
@@ -150,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"HazardModifiers","Temperature"},
+                            ["PRECEDING_KEY_WORDS"] = {"HazardModifiers", "Temperature"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "30"},
@@ -158,7 +158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "100"},
@@ -166,7 +166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "200"},
@@ -180,7 +180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "110"},
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "110"},
@@ -202,42 +202,42 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Extreme", "60"},
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Temperature", "Water"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Extreme", "60"},
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Extreme", "90"},
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity","Ambient"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Ambient"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Extreme", "50"},
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Water"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Extreme", "50"},
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Storm"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Extreme", "70"},
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"HazardModifiers","Temperature"},
+                            ["PRECEDING_KEY_WORDS"] = {"HazardModifiers", "Temperature"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "-70"},
@@ -258,7 +258,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Ambient"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-80"},
@@ -266,7 +266,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Water"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Water"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-60"},
@@ -274,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Storm"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-92"},
@@ -282,7 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature","Night"},
+                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-52"},
@@ -296,21 +296,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity","Water"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Water"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Extreme", "110"},
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity","Storm"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Storm"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Extreme", "150"},
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity","Night"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Night"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Extreme", "120"},
@@ -323,7 +323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","TORNADO"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORNADO"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpawnScale", "5"},

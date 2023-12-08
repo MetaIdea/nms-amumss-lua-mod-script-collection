@@ -53,55 +53,55 @@ QUICK_ACTION_LIST =
 
 USER_SEED_LIST =
 {
-    { "POLICESHIP", "0x1" },
-    { "FIGHTER", "0x8E8E2193DD4A9EDA" }, --ALPHA VECTOR
-    { "FIGHTER", "0xC4C9C1AABCA59FE6" }, --HORIZON OMEGA
-    { "FIGHTER", "0xA547AB958C97E439" }, --RASAMAMA S36
-    { "MULTITOOL", "0x55907B79D95B675B" }, --STARTER WEAPON
+    {"POLICESHIP", "0x1"},
+    {"FIGHTER",    "0x8E8E2193DD4A9EDA"}, --ALPHA VECTOR
+    {"FIGHTER",    "0xC4C9C1AABCA59FE6"}, --HORIZON OMEGA
+    {"FIGHTER",    "0xA547AB958C97E439"}, --RASAMAMA S36
+    {"MULTITOOL",  "0x55907B79D95B675B"}, --STARTER WEAPON
 
-    -- { "FIGHTER", "0x2ed0b7e8773e6959" },
-    -- { "FIGHTER", "0x0469079B58527FAC", true },
-    -- { "FIGHTER", "0xc82dbd4a5f1f4191" },
-    -- { "FIGHTER", "0x646abde861bb4790" },
-    -- { "FIGHTER", "0x8B368967CED50C9C" },
+    -- {"FIGHTER", "0x2ed0b7e8773e6959"},
+    -- {"FIGHTER", "0x0469079B58527FAC", true},
+    -- {"FIGHTER", "0xc82dbd4a5f1f4191"},
+    -- {"FIGHTER", "0x646abde861bb4790"},
+    -- {"FIGHTER", "0x8B368967CED50C9C"},
 
-    -- { "DROPSHIP", "0x100A66565DECB1C5" },
-    -- { "DROPSHIP", "0xCA26E52B0D24DC37" },
-    -- { "DROPSHIP", "0xC25A946003305CF0", true },
-    -- { "DROPSHIP", "0xA4687FDB844DA5DC" },
-    -- { "DROPSHIP", "0x71876903D4317C8D" },
-    -- { "DROPSHIP", "0x2EB67DD98452B24D", true },
-    -- { "DROPSHIP", "0xE71E296D1CAD582E" },
+    -- {"DROPSHIP", "0x100A66565DECB1C5"},
+    -- {"DROPSHIP", "0xCA26E52B0D24DC37"},
+    -- {"DROPSHIP", "0xC25A946003305CF0", true},
+    -- {"DROPSHIP", "0xA4687FDB844DA5DC"},
+    -- {"DROPSHIP", "0x71876903D4317C8D"},
+    -- {"DROPSHIP", "0x2EB67DD98452B24D", true},
+    -- {"DROPSHIP", "0xE71E296D1CAD582E"},
 
-    -- { "DROPSHIP", "0x2179DE9A6801F57C" },
-    -- { "DROPSHIP", "0x46031B34A85DB726" },
-    -- { "DROPSHIP", "0x1D30478CA881BE29" },
-    -- { "DROPSHIP", "0x2C1CEC12E7120CA9" },
-    -- { "DROPSHIP", "0x5E61694BFAA3C741" },
-    -- { "DROPSHIP", "0x2D4777FBBF2AA61D" },
-    -- { "DROPSHIP", "0x24B6531B41368A80" },
-    -- { "DROPSHIP", "0xF4042806234A385D" },
+    -- {"DROPSHIP", "0x2179DE9A6801F57C"},
+    -- {"DROPSHIP", "0x46031B34A85DB726"},
+    -- {"DROPSHIP", "0x1D30478CA881BE29"},
+    -- {"DROPSHIP", "0x2C1CEC12E7120CA9"},
+    -- {"DROPSHIP", "0x5E61694BFAA3C741"},
+    -- {"DROPSHIP", "0x2D4777FBBF2AA61D"},
+    -- {"DROPSHIP", "0x24B6531B41368A80"},
+    -- {"DROPSHIP", "0xF4042806234A385D"},
 
-    -- { "DROPSHIP", "0x2D4777FBBF2AA61D" },
-    -- { "DROPSHIP", "0x521F5EA090A8D435" },
-    -- { "DROPSHIP", "0xE6A73D8B66BB11F5" },
-    -- { "DROPSHIP", "0x24B6531B41368A80" },
-    -- { "DROPSHIP", "0x96959C617F3F741C" },
-    -- { "DROPSHIP", "0xBBF7FE10647AD6BD" },
+    -- {"DROPSHIP", "0x2D4777FBBF2AA61D"},
+    -- {"DROPSHIP", "0x521F5EA090A8D435"},
+    -- {"DROPSHIP", "0xE6A73D8B66BB11F5"},
+    -- {"DROPSHIP", "0x24B6531B41368A80"},
+    -- {"DROPSHIP", "0x96959C617F3F741C"},
+    -- {"DROPSHIP", "0xBBF7FE10647AD6BD"},
 
-    -- { "DROPSHIP", "0x014E18C048F92588" },
-    -- { "DROPSHIP", "0x39ABFE3E3E4BBD39" },
-    -- { "DROPSHIP", "0xD6818C49606930E9" },
-    -- { "DROPSHIP", "0x3AF32591A1C3DD0E" },
-    -- { "DROPSHIP", "0x5AC70EC519EBE79D" },
-    -- { "DROPSHIP", "0x5B510F514629D3C9" },
-    -- { "DROPSHIP", "0x003242B4681A0027" },
+    -- {"DROPSHIP", "0x014E18C048F92588"},
+    -- {"DROPSHIP", "0x39ABFE3E3E4BBD39"},
+    -- {"DROPSHIP", "0xD6818C49606930E9"},
+    -- {"DROPSHIP", "0x3AF32591A1C3DD0E"},
+    -- {"DROPSHIP", "0x5AC70EC519EBE79D"},
+    -- {"DROPSHIP", "0x5B510F514629D3C9"},
+    -- {"DROPSHIP", "0x003242B4681A0027"},
 
-    -- { "SCIENTIFIC", "0x74C41D521491C48B" },
-    -- { "SCIENTIFIC", "0xE088DFDC904C8A54" },
+    -- {"SCIENTIFIC", "0x74C41D521491C48B"},
+    -- {"SCIENTIFIC", "0xE088DFDC904C8A54"},
 
-    -- { "EXOTIC", "0x66c2ba46dcfbf4c3" },
-    -- { "EXOTIC", "0xc688372a1012811b" },
+    -- {"EXOTIC", "0x66c2ba46dcfbf4c3"},
+    -- {"EXOTIC", "0xc688372a1012811b"},
 }
 
 PacksList =
@@ -465,7 +465,7 @@ QUICK_ACTION_MENU =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -532,7 +532,7 @@ QUICK_ACTION_MENU =
           <Property name="TargetMustMatchMissionSeed" value="False" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
-            <Property name="UseStarType" value="False"/>
+            <Property name="UseStarType" value="False" />
             <Property name="UseWealth" value="False" />
             <Property name="UseTrading" value="False" />
             <Property name="UseRace" value="GcAlienRace.xml">
@@ -559,8 +559,8 @@ QUICK_ACTION_MENU =
             <Property name="NeverAllowEmpty" value="False" />
             <Property name="NeverAllowAbandoned" value="False" />
             <Property name="RequireUndiscovered" value="False" />
-            <Property name="NeedsWaterPlanet" value="False"/>
-            <Property name="NeedsPrimePlanet" value="False"/>
+            <Property name="NeedsWaterPlanet" value="False" />
+            <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
             <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
@@ -569,7 +569,7 @@ QUICK_ACTION_MENU =
             <Property name="NeedsExtremeHazardPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
-            <Property name="AnyInfestedBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False" />
             <Property name="NeedsBiome" value="True" />
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush" />
@@ -614,7 +614,7 @@ QUICK_ACTION_MENU =
             <Property name="NeverAllowAbandoned" value="False" />
             <Property name="RequireUndiscovered" value="False" />
             <Property name="NeedsWaterPlanet" value="False" />
-            <Property name="NeedsPrimePlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False" />
             <Property name="NeedsSentinels" value="False" />
             <Property name="NeedsCorruptSentinelPlanet" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
@@ -623,8 +623,8 @@ QUICK_ACTION_MENU =
             <Property name="NeedsExtremeHazardPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
-            <Property name="AnyInfestedBiome" value="False"/>
-            <Property name="NeedsBiome" value="True"/>
+            <Property name="AnyInfestedBiome" value="False" />
+            <Property name="NeedsBiome" value="True" />
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush" />
             </Property>
@@ -655,7 +655,7 @@ QUICK_ACTION_MENU =
           <Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM" />
           <Property name="MarkerLabel" value="Lush Planet" />
           <Property name="MarkerIcon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS"/>
+            <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
             </Property>
@@ -667,7 +667,7 @@ QUICK_ACTION_MENU =
           <Property name="MessageTime" value="0" />
           <Property name="MessageDisplayTime" value="4" />
           <Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
-            <Property name="AkEvent" value="VO_TUT_COORDSRECEIVED"/>
+            <Property name="AkEvent" value="VO_TUT_COORDSRECEIVED" />
           </Property>
           <Property name="IconTime" value="4" />
           <Property name="TooltipTime" value="10" />
@@ -701,7 +701,7 @@ QUICK_ACTION_MENU =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
          <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -729,7 +729,7 @@ QUICK_ACTION_MENU =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -752,7 +752,7 @@ QUICK_ACTION_MENU =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -772,7 +772,7 @@ QUICK_ACTION_MENU =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -792,7 +792,7 @@ QUICK_ACTION_MENU =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1413,7 +1413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"]    = {2,},
+                            ["SECTION_ACTIVE"]    = {2},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = ANIMS
                         },
@@ -1466,16 +1466,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] = SCANEVENTTABLE
                         }
                     }
-                }
-            }
-        },
-        {
-            ["MBIN_CHANGE_TABLE"] =
-            {
+                },
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN","MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN","REMOVE"},
+                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN", "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN", "REMOVE"},
                     },
                 },
                 {
@@ -1483,8 +1478,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "PoliceShip",},
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.4"},
@@ -1495,14 +1490,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", ""},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
                             ["REMOVE"] = "SECTION",
                         },
                     }

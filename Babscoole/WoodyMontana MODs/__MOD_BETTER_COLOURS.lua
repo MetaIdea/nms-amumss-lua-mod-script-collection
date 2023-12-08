@@ -8644,7 +8644,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Underbelly", "GcPaletteData.xml"},
                                 {"Undercoat",  "GcPaletteData.xml"},
                                 {"Snow",       "GcPaletteData.xml"},
-                                {"PirateBase",    "GcPaletteData.xml"},
+                                {"PirateBase", "GcPaletteData.xml"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -8709,7 +8709,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Undercoat",  "GcPaletteData.xml"},
                                 {"Snow",       "GcPaletteData.xml"},
                                 {"RockLight",  "GcPaletteData.xml"},
-                                {"PirateBase",    "GcPaletteData.xml"},
+                                {"PirateBase", "GcPaletteData.xml"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {

@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien","IGNORE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "IGNORE"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {

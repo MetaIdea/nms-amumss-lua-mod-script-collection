@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","NEWCROSSGRASS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "NEWCROSSGRASS"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -114,26 +114,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Type","MODEL",},
+                            ["SPECIAL_KEY_WORDS"] = {"Type", "MODEL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NameHash", "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","NUMLODS",},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "NUMLODS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children",},
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SECTION_ACTIVE"] = {1,},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Attributes",},
+                            ["PRECEDING_KEY_WORDS"] = {"Attributes"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -172,7 +172,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkSceneNodeData.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"TkSceneNodeData.xml"},
                             ["SECTION_ACTIVE"] = {4,},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
@@ -216,25 +216,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Logo14"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Logo14"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "72.04727"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Logo15"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Logo15"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "72.04727"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MiddleEffect"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MiddleEffect"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","REFBridgeFloorMistVFX"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "REFBridgeFloorMistVFX"},
                             ["REMOVE"] = "SECTION"
                         },
                     }
@@ -256,21 +256,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "40.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "80.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST3"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "80.000000"},
@@ -295,21 +295,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "30.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "50.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LODDIST3"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "90.000000"},
