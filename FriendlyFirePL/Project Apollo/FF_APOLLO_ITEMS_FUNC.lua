@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "BETA1"
+METADATA_NMS_VERSION    = "BETA11"
 METADATA_MOD_DESC       = "ITEMS+FUNC"
 
 
@@ -105,6 +105,93 @@ function BuildItemProperty(name,legality,stack,crafting,tokens,craftable) return
 end
 
 CRAFTING_NONE = [[<Property name="Requirements" />]]
+
+
+----------------------------------------------------------------------------------------------------
+-- UPDATE: quest start item
+----------------------------------------------------------------------------------------------------
+
+PROPERTY_ITEM_QUESTSTART = BuildItemProperty("QUESTSTART","Legal",0,CRAFTING_NONE,0,"False")
+
+PROPERTY_REWARD_QUESTSTART =
+[[
+<Property value="GcGenericRewardTableEntry.xml">
+  <Property name="Id" value="R_QUESTSTART" />
+  <Property name="List" value="GcRewardTableItemList.xml">
+    <Property name="RewardChoice" value="GiveAll" />
+    <Property name="OverrideZeroSeed" value="False" />
+    <Property name="UseInventoryChoiceOverride" value="False" />
+    <Property name="List">
+      <Property value="GcRewardTableItem.xml">
+        <Property name="PercentageChance" value="100" />
+        <Property name="LabelID" value="" />
+        <Property name="Reward" value="GcRewardOSDMessage.xml">
+          <Property name="Time" value="0" />
+          <Property name="Message" value="TEXT_QUESTSTART_O" />
+          <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+            <Property name="AkEvent" value="INVALID_EVENT" />
+          </Property>
+          <Property name="Icon" value="TkTextureResource.xml">
+            <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="MessageColour" value="Colour.xml">
+            <Property name="R" value="0.314" />
+            <Property name="G" value="0.196" />
+            <Property name="B" value="0.804" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="UseTimedMessage" value="False" />
+        </Property>
+      </Property>
+      <Property value="GcRewardTableItem.xml">
+        <Property name="PercentageChance" value="100" />
+        <Property name="LabelID" value="StartMission" />
+        <Property name="Reward" value="GcRewardMissionSeeded.xml">
+          <Property name="Mission" value="M_ADVANCED" />
+          <Property name="MissionNoGroundCombat" value="" />
+          <Property name="MissionNoSpaceCombat" value="" />
+          <Property name="InheritActiveMultiplayerMissionSeed" value="False" />
+          <Property name="SelectMissionAsLocalMissionBoard" value="False" />
+          <Property name="ForceUseConversationSeed" value="False" />
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Property>
+]]
+
+PROPERTY_CONS_QUESTSTART =
+[[
+<Property value="GcConsumableItem.xml">
+  <Property name="ID" value="ITEM_QUESTSTART" />
+  <Property name="RewardID" value="R_QUESTSTART" />
+  <Property name="TutorialRewardID" value="" />
+  <Property name="ButtonLocID" value="TEXT_QUESTSTART_B" />
+  <Property name="ButtonSubLocID" value="TEXT_QUESTSTART_U" />
+  <Property name="CloseInventoryWhenUsed" value="True" />
+  <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
+    <Property name="AkEvent" value="INVALID_EVENT" />
+  </Property>
+  <Property name="RewardFailedLocID" value="" />
+  <Property name="DestroyItemWhenConsumed" value="True" />
+  <Property name="AddCommunityTierClassIcon" value="False" />
+  <Property name="SuppressResourceMessage" value="False" />
+  <Property name="CustomOSD" value="" />
+  <Property name="RequiresMissionActive" value="" />
+</Property>
+]]
+
+PROPERTY_SHOP_QUESTSTART =
+[[
+<Property value="NMSString0x10.xml">
+    <Property name="Value" value="ITEM_QUESTSTART" />
+</Property>
+]]
+
+
 
 ----------------------------------------------------------------------------------------------------
 -- story items
@@ -905,6 +992,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PKW"] = "Table",
                             ["ADD"] =
                             {
+                                PROPERTY_ITEM_QUESTSTART,
+
                                 PROPERTY_ITEM_TOKEN,
                                 PROPERTY_ITEM_PLATING,
                                 PROPERTY_ITEM_FRAGMENT,
@@ -927,6 +1016,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PKW"] = "GenericTable",
                             ["ADD"] =
                             {
+                                PROPERTY_REWARD_QUESTSTART,
+
                                 PROPERTY_REWARD_NEWTREE,
                                 PROPERTY_REWARD_SCANNER,
                                 PROPERTY_REWARD_COMPUTER,
@@ -986,6 +1077,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PKW"] = "Table",
                             ["ADD"] = 
                             {
+                                PROPERTY_CONS_QUESTSTART,
+
                                 PROPERTY_CONS_SCANNER,
                                 PROPERTY_CONS_COMPUTER,
                                 PROPERTY_CONS_LOCATOR,
@@ -1005,6 +1098,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PKW"] = "MissionDetailIcons",
                             ["ADD"] = PROPERTY_BANNER_TECH,
+                        },
+
+                        {
+                            ["SKW"] = {"SmugglerStation","GcTradeData.xml",},
+                            ["PKW"] = "AlwaysPresentProducts",
+                            ["ADD"] = PROPERTY_SHOP_QUESTSTART,
                         },
                     },
                 }

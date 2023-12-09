@@ -17,6 +17,38 @@ BONUS_LIST = [[
     <Property name="Reward" value="GcRewardSystemSpecificProductFromList.xml">
         <Property name="ProductList">
             <Property value="NMSString0x10.xml">
+                <Property name="Value" value="TRA_ALLOY4" />
+            </Property>
+            <Property value="NMSString0x10.xml">
+                <Property name="Value" value="TRA_COMMODITY4" />
+            </Property>
+            <Property value="NMSString0x10.xml">
+                <Property name="Value" value="TRA_COMPONENT4" />
+            </Property>
+            <Property value="NMSString0x10.xml">
+                <Property name="Value" value="TRA_ENERGY4" />
+            </Property>
+            <Property value="NMSString0x10.xml">
+                <Property name="Value" value="TRA_EXOTICS4" />
+            </Property>
+            <Property value="NMSString0x10.xml">
+                <Property name="Value" value="TRA_MINERALS4" />
+            </Property>
+            <Property value="NMSString0x10.xml">
+                <Property name="Value" value="TRA_TECH4" />
+            </Property>
+        </Property>
+        <Property name="AmountMin" value="10" />
+        <Property name="AmountMax" value="10" />
+        <Property name="ForceSpecialMessage" value="False" />
+    </Property>
+</Property>
+<Property value="GcRewardTableItem.xml">
+    <Property name="PercentageChance" value="50" />
+    <Property name="LabelID" value="" />
+    <Property name="Reward" value="GcRewardSystemSpecificProductFromList.xml">
+        <Property name="ProductList">
+            <Property value="NMSString0x10.xml">
                 <Property name="Value" value="TRA_ALLOY5" />
             </Property>
             <Property value="NMSString0x10.xml">
@@ -37,6 +69,17 @@ BONUS_LIST = [[
             <Property value="NMSString0x10.xml">
                 <Property name="Value" value="TRA_TECH5" />
             </Property>
+        </Property>
+        <Property name="AmountMin" value="5" />
+        <Property name="AmountMax" value="5" />
+        <Property name="ForceSpecialMessage" value="False" />
+    </Property>
+</Property>
+<Property value="GcRewardTableItem.xml">
+    <Property name="PercentageChance" value="25" />
+    <Property name="LabelID" value="" />
+    <Property name="Reward" value="GcRewardSystemSpecificProductFromList.xml">
+        <Property name="ProductList">
             <Property value="NMSString0x10.xml">
                 <Property name="Value" value="GEODE_LAND" />
             </Property>
@@ -56,8 +99,8 @@ BONUS_LIST = [[
                 <Property name="Value" value="GEODE_CRYSTAL" />
             </Property>
         </Property>
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="10" />
+        <Property name="AmountMin" value="25" />
+        <Property name="AmountMax" value="25" />
         <Property name="ForceSpecialMessage" value="False" />
     </Property>
 </Property>
@@ -67,7 +110,7 @@ BONUS_LIST = [[
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsFreighterSaved.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
+    ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -136,7 +179,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SECTION_UP"]        = 1,
                             ["REMOVE"]            = "SECTION",
                         },
-                        -- add our product list
+                        -- our bonus
                         {
                             ["SPECIAL_KEY_WORDS"]   = { "Id", "FREIGHTER_SAVED", "List", "GcRewardTableItemList.xml" },
                             ["PRECEDING_KEY_WORDS"] = { "List" },

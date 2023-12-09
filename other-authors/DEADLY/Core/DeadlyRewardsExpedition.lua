@@ -17,12 +17,12 @@ SUBSTANCE_50_MAX = 50
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsExpedition.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
+    ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 --
-                -- METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN
+                -- METADATA/REALITY/TABLES/EXPEDITIONREWARDTABLE.MBIN
                 --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/EXPEDITIONREWARDTABLE.MBIN",

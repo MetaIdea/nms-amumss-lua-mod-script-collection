@@ -1,12 +1,22 @@
+-- Ground test information on Permadeath.
+-- AISHIPGUN_DAMAGE: 500. Oneshot.
+-- AISHIPGUN_DAMAGE: 300. Maxed shield: destroyed. Maxed HP: -5 (or -4 ?) points.
+-- AISHIPGUN_DAMAGE: 250. Maxed shield: destroyed. Maxed HP: -2 points.
+AISHIPGUN_DAMAGE = 300
+TRADERGUN_DAMAGE = 250
+AISHIP_DAMAGE = 250
+SQUADGUN_DAMAGE = 1000
+
+
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyDamage.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
+    ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 --
-                -- METADATA\REALITY\TABLES\DAMAGETABLE.MBIN
+                -- METADATA/REALITY/TABLES/DAMAGETABLE.MBIN
                 --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/DAMAGETABLE.MBIN",
@@ -56,6 +66,42 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                     }
+                },
+                --
+                -- METADATA/PROJECTILES/PROJECTILETABLE.MBIN
+                --
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA/PROJECTILES/PROJECTILETABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["FOREACH_SKW_GROUP"]  = {
+                                { "Id", "AISHIPGUN" },
+                                { "Id", "POLICEGUN" },
+                                { "Id", "PIRATERAIDGUN" },
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "DefaultDamage", AISHIPGUN_DAMAGE }, -- 15
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "TRADERGUN" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "DefaultDamage", TRADERGUN_DAMAGE }, -- 40
+                            },
+                        },
+                        { -- laser
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "AI_SHIP" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "DefaultDamage", AISHIP_DAMAGE }, -- 9
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "SQUADGUN" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "DefaultDamage", SQUADGUN_DAMAGE }, -- 40
+                            },
+                        },
+                    },
                 },
             }
         }

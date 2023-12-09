@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]  = "NoNavDataInShops.pak",
-    ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
-    ["MODIFICATIONS"] = {
+    ["MOD_FILENAME"]    = "NoNavDataInShops.pak",
+    ["MOD_AUTHOR"]      = "gh0stwizard",
+    ["MOD_DESCRIPTION"] = "Removes Navigation Data and Exosuit Upgrade Charts from shops.",
+    ["NMS_VERSION"]     = "4.46",
+    ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {
