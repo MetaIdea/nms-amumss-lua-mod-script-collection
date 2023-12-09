@@ -2,7 +2,7 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "441"
+GameVersion = "446"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
@@ -48,6 +48,10 @@ StandPlanterFreighter = "False"	--"True"		Override for setting if Standing Plant
 CropsFreighter = "False"		--"False"		Override for setting if Hydroponic Trays, Large Hydroponic Trays, and Biodomes can be built on freighters or not
 RefinersFreighter = "False"		--"False"		Override for setting if Nutrient Processors, Medium/Large Refiners can be built on freighters or not
 OtherFreighter = "False"		--"False"		Override for setting if regular Galactic Trade Terminals, Appearance Modifiers, Storage Containers can be built on freighters or not
+
+--Controls whether any "decorative" freighter rooms / doors / walkways / storage rooms / etc. are buildable on planets or not
+FreighterRoomsPlanetside = "True"	--"False"	Override for setting if various Freighter rooms/doors/walkways/storage rooms/etc. without special functions can be built on planets or not.
+PossibleFreighterRooms = {"FRE_ROOM_IND", "FRE_ROOM_IND1", "FRE_ROOM_LADDER", "FRE_ROOM_STORE0", "FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9", "FRE_CORR_A", "FRE_CORR_A_GLAS", "FRE_CORR_A_L", "FRE_CORR_A_STR", "FRE_CORR_A_T", "FRE_CORR_GLA_L", "FRE_CORR_GLA_ST", "FRE_CORR_GLA_T", "FRE_CORR_G_STA", "FRE_EXT_PLATFOR", "FRE_EXT_WALKWAY", "FRE_EXT_W_STA", "FRE_FACE_DOOR_A", "FRE_FACE_WALL", "FRE_FACE_WINDOW", "FRE_ROOM_LADDER", "FRE_CORR_STA", }
 
 --Changes to base values for extractor rates & storage in RegionHotspotsTable, to allow higher effective storage / extraction rates without disabling base uploading
 	-- <Storage or Rate values above> / AmountCost * SubstanceYeild => in-game storage amount or rate
@@ -290,6 +294,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_EXTR"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanetBase", "False"},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_NPCVEH"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanetBase", "False"},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_NPCWEA"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanetBase", "False"},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_REFINE"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanetBase", "False"},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_VEHICL"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanetBase", "False"},
+		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"ConnectionDistance",ParagonDistance},
@@ -378,3 +407,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}
 	}
 },}}}
+
+
+local ChangesToBaseTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+
+for i = 1, #PossibleFreighterRooms do
+	local FreID = PossibleFreighterRooms[i]
+		
+			ChangesToBaseTable[#ChangesToBaseTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID",FreID},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BuildableOnPlanet", FreighterRoomsPlanetside},
+					{"BuildableOnPlanetBase", FreighterRoomsPlanetside},
+				}
+			}
+end

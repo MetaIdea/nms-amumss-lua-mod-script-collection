@@ -1,6 +1,6 @@
 Author = "Xaliber"					--Edited by Xen0nex
 LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
-ModName = "gExos Challenge"
+--ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
 GameVersion = "444"

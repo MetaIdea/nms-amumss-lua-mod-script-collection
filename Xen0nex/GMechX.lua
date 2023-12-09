@@ -1,6 +1,6 @@
 Author = "Gumsk,Devilin Pixy,Jasondude"		--Edited by Xen0nex
 ModName = "GMechX"
-ModNameSub = "+ReducedFuelX"
+--ModNameSub = "+ReducedFuelX"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
 GameVersion = "441"
 ModVersion = "a"

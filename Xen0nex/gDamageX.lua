@@ -1,5 +1,5 @@
 Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
-ModName = "GExos Challenge"
+--ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage & Tech Damage adjustments"
 GameVersion = "441"
