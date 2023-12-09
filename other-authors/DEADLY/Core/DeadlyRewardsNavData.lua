@@ -1,9 +1,6 @@
 NAVDATA_NANITES_MIN_MULTI = 1
 NAVDATA_NANITES_MAX_MULTI = 10
 
-R_MB_NAV_DATA_MIN_MULTI = 1
-R_MB_NAV_DATA_MAX_MULTI = 5
-
 DEBRIS_CHANCE_LOW = 5
 DEBRIS_CHANCE_HIGH = 10
 
@@ -11,45 +8,82 @@ DEBRIS_CHANCE_HIGH = 10
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsNavData.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
+    ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 --
-                -- METADATA\REALITY\TABLES\REWARDTABLE.MBIN
+                -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
                 --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         -- EXOSUIT UPGRADE CHART
                         {
-                            ["FOREACH_SKW_GROUP"]  = {
-                                { "Id", "R_MB_LOW",        "ID", "NAV_DATA_DROP" },
-                                { "Id", "R_MB_MED",        "ID", "NAV_DATA_DROP" },
-                                { "Id", "R_MB_HIGH",       "ID", "NAV_DATA_DROP" },
-                                { "Id", "R_MB_MEGA",       "ID", "NAV_DATA_DROP" },
-                                --{ "Id", "R_NEXUS_MED",     "ID", "NAV_DATA_DROP" },
-                                { "Id", "R_PIRATEBOARD_A", "ID", "NAV_DATA_DROP" },
-                            },
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_LOW", "ID", "NAV_DATA_DROP" },
                             ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", 1 }, -- 1
+                                { "AmountMax", 1 }, -- 1
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_MED", "ID", "NAV_DATA_DROP" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", 2 }, -- 2
+                                { "AmountMax", 3 }, -- 4
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_HIGH", "ID", "NAV_DATA_DROP" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", 2 }, -- 1
+                                { "AmountMax", 4 }, -- 1
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_MEGA", "ID", "NAV_DATA_DROP" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", 3 }, -- 1
                                 { "AmountMax", 5 }, -- 1
                             }
                         },
-                        -- mission board navdata rewards
                         {
-                            ["FOREACH_SKW_GROUP"]  = {
-                                { "Id", "R_MB_LOW",  "ID", "NAV_DATA" },
-                                { "Id", "R_MB_MED",  "ID", "NAV_DATA" },
-                                { "Id", "R_MB_HIGH", "ID", "NAV_DATA" },
-                                { "Id", "R_MB_MEGA", "ID", "NAV_DATA" },
-                            },
-                            ["MATH_OPERATION"]     = "*",
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_PIRATEBOARD_A", "ID", "NAV_DATA_DROP" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", R_MB_NAV_DATA_MIN_MULTI }, -- 2/2/3/5
-                                { "AmountMax", R_MB_NAV_DATA_MAX_MULTI }, -- 2/4/5/5
+                                { "AmountMin", 1 }, -- 1
+                                { "AmountMax", 5 }, -- 1
                             }
                         },
-                        -- remove both navdata item + 10 nanites
+                        -- Navigation Data
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_LOW", "ID", "NAV_DATA" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", 10 },  -- 2
+                                { "AmountMax", 10 }, -- 2
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_MED", "ID", "NAV_DATA" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", 15 }, -- 2
+                                { "AmountMax", 15 }, -- 4
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_HIGH", "ID", "NAV_DATA" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", 20 }, -- 3
+                                { "AmountMax", 20 }, -- 5
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_MEGA", "ID", "NAV_DATA" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", 30 }, -- 5
+                                { "AmountMax", 30 }, -- 5
+                            }
+                        },
+                        -- WAYPOINT: remove both navdata item + 10 nanites
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "R_WAYPOINT" },
                             ["REPLACE_TYPE"]       = "ALL",
@@ -58,15 +92,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "PercentageChance", 0 },               -- 100
                             }
                         },
-                        -- remove navdata given by placed item on space stations
+                        -- SPACE STATION ITEMS: remove navdata given by placed items at space stations
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "NAVDATA", "ID", "NAV_DATA" },
                             ["SECTION_UP"]         = 1,
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "PercentageChance", 0 }, -- 100
-                            }
+                            ["REMOVE"]             = "SECTION",
                         },
-                        -- nanites given by placed item on space stations
+                        -- SPACE STATION ITEMS: nanites given by placed items at space stations
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "NAVDATA", "Currency", "Nanites" },
                             ["SECTION_UP"]         = 1,
@@ -77,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "AmountMax", NAVDATA_NANITES_MAX_MULTI }, -- 15
                             }
                         },
-                        -- navdata in debris Common -> Large
+                        -- DEBRIS: navdata in debris Common -> Large
                         {
                             ["SPECIAL_KEY_WORDS"]  = {
                                 "Id", "DEBRIS",
@@ -101,7 +133,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "AmountMax", 1 }, -- 3
                             }
                         },
-                        -- navdata in debris Rare -> Medium
+                        -- DEBRIS: navdata in debris Rare -> Medium
                         {
                             ["FOREACH_SKW_GROUP"]  = {
                                 {
@@ -133,7 +165,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "AmountMax", 1 }, -- 3
                             }
                         },
-                        -- navdata in debris Rare -> Large
+                        -- DEBRIS: navdata in debris Rare -> Large
                         {
                             ["SPECIAL_KEY_WORDS"]  = {
                                 "Id", "DEBRIS",

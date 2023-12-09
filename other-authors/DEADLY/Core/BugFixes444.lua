@@ -1,12 +1,13 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]  = "BugFixes444.pak",
-    ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
-    ["MODIFICATIONS"] = {
+    ["MOD_FILENAME"]    = "BugFixes444.pak",
+    ["MOD_AUTHOR"]      = "gh0stwizard",
+    ["MOD_DESCRIPTION"] = "Still there as of 4.46",
+    ["NMS_VERSION"]     = "4.44",
+    ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 --
-                -- METADATA\SIMULATION\MISSIONS\NPCMISSIONTABLE.MBIN
+                -- METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN
                 --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN",
@@ -20,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     }
                 },
                 --
-                -- METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENSPEECHTABLE.MBIN
+                -- METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENSPEECHTABLE.MBIN
                 --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENSPEECHTABLE.MBIN",

@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "BETA1"
+METADATA_NMS_VERSION    = "BETA11"
 METADATA_MOD_DESC       = "MISSIONS"
 
 
@@ -3387,11 +3387,7 @@ PROPERTY_MISSION_ADVANCED =
     <Property name="ConditionTest" value="AnyFalse" />
   </Property>
   <Property name="StartIsCancel" value="False" />
-  <Property name="StartingConditions">
-    <Property value="GcMissionConditionLocation.xml">
-      <Property name="MissionPlayerLocation" value="InNexus" />
-    </Property>
-  </Property>
+  <Property name="StartingConditions" />
   <Property name="CancelingConditions" />
   <Property name="FinalStageVersions" />
   <Property name="Stages">
@@ -5784,7 +5780,8 @@ PROPERTY_MISSION_PLATING =
       <Property name="RemoveOptionIfCantAfford" value="False" />
       <Property name="InvertCanAffordOutcome" value="False" />
       <Property name="MustAffordInCreative" value="False" />
-      <Property name="UseCommunityContributionCap" value="False" />
+      <Property name="CommunityContributionValue" value="0" />
+      <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
       <Property name="CannotAffordOSDMsg" value="" />
       <Property name="MissionMessageWhenCharged" value="" />
       <Property name="Cost" value="GcCostMoney.xml">
@@ -6892,7 +6889,8 @@ PROPERTY_MISSION_FRAGMENT =
       <Property name="RemoveOptionIfCantAfford" value="False" />
       <Property name="InvertCanAffordOutcome" value="False" />
       <Property name="MustAffordInCreative" value="False" />
-      <Property name="UseCommunityContributionCap" value="False" />
+      <Property name="CommunityContributionValue" value="0" />
+      <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
       <Property name="CannotAffordOSDMsg" value="" />
       <Property name="MissionMessageWhenCharged" value="" />
       <Property name="Cost" value="GcCostProduct.xml">
@@ -8198,7 +8196,8 @@ PROPERTY_MISSION_CIRCUIT =
       <Property name="RemoveOptionIfCantAfford" value="False" />
       <Property name="InvertCanAffordOutcome" value="False" />
       <Property name="MustAffordInCreative" value="False" />
-      <Property name="UseCommunityContributionCap" value="False" />
+      <Property name="CommunityContributionValue" value="0" />
+      <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
       <Property name="CannotAffordOSDMsg" value="" />
       <Property name="MissionMessageWhenCharged" value="" />
       <Property name="Cost" value="GcCostProduct.xml">
@@ -9996,8 +9995,6 @@ PROPERTY_MISSION_SCANNER =
 FILE_TUTORIALMISSIONS =     "METADATA\\SIMULATION\\MISSIONS\\TUTORIALMISSIONTABLE.MBIN"
 FILE_STARTEDONUSEMISSION =  "METADATA\\SIMULATION\\MISSIONS\\STARTEDONUSEMISSIONTABLE.MBIN"
 
-FILE_SPIDERMAN =            "MODELS\\COMMON\\PLAYER\\PLAYERCHARACTER\\NPCROBOT_SPIDER\\ENTITIES\\NPCROBOT_SPIDER.ENTITY.MBIN"
-
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -10049,16 +10046,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
 
-                -- testing spiderman as mission giver
-                {
-                    ["MBIN_FILE_SOURCE"] = FILE_SPIDERMAN,
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VCT"] = {{"StartMissionOnUse","M_ADVANCED",},},
-                        },
-                    },
-                }
             }
         }
     }

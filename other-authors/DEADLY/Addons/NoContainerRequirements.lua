@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_AUTHOR"]      = "Democrity",
     ["LUA_AUTHOR"]      = "Babscoole, gh0stwizard",
     ["MOD_DESCRIPTION"] = "Based on Improved Containers mod, but with hidden contents.",
-    ["NMS_VERSION"]     = "4.44",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {

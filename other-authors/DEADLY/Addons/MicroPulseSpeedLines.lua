@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]            = "MicroPulseSpeedLines.pak",
     ["MOD_AUTHOR"]              = "gh0stwizard",
     ["MOD_DESCRIPTION"]         = "Micro Speed Lines",
-    ["NMS_VERSION"]             = "4.44",
+    ["NMS_VERSION"]             = "4.46",
     ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
     ["MODIFICATIONS"]           = {
         {

@@ -11879,10 +11879,10 @@ then
 	-- Metal Spaceships
 
 	-- you can edit the textures that i ve chosen for the repaint here , in that block
-	FRESH_PAINT = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\HULL\HULL_A\FREIGHTERPROC_MAT.MATERIAL.MBIN]]
+	--FRESH_PAINT = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\HULL\HULL_A\FREIGHTERPROC_MAT.MATERIAL.MBIN]]
 	METAL_PAINT = [[MODELS\SPACE\NEXUS\NEXUSEXTERIOR\METALSHINY_MAT.MATERIAL.MBIN]]
 	GOLD_PAINT = [[MODELS\SPACE\NEXUS\NEXUSEXTERIOR\GOLDMETAL_MAT.MATERIAL.MBIN]]
-	OLD_PAINT = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\CRASHEDFREIGHTER\CRASHEDFREIGHTER_MAT.MATERIAL.MBIN]]
+	--OLD_PAINT = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\CRASHEDFREIGHTER\CRASHEDFREIGHTER_MAT.MATERIAL.MBIN]]
 	PLASTIC_PAINT = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\CANOPY\CANOPYB\CANOPYB\SCIENTIFIC_MAT.MATERIAL.MBIN]]
 	--
 	--
@@ -20864,23 +20864,6 @@ end
 	end
 	--- end sky colors
 
-
-
--- GENERATION OVERHAUL
-if GENERATION_OVERHAUL == "ON"
-then
-
-
-
-
- --copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Fantasy_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
-   copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Vanilla_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
-
-
-
-
-
-
 	val_TERRAIN_HEIGHT_MIN = tonumber(TERRAIN_HEIGHT_MAX) - 50
 	TERRAIN_HEIGHT_MIN = tostring (val_TERRAIN_HEIGHT_MIN)
 	if MODDED_TERRAIN_SHAPES_FEATURE == "EPIC_FANTASY" then
@@ -21024,129 +21007,19 @@ then
 	end
 
 
+-- GENERATION OVERHAUL
+if GENERATION_OVERHAUL == "ON"
+then
 
 
 
 
+ --copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Fantasy_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
+   copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Vanilla_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
 
 
 
 
-		--[=[
-		TABLE_BROKEN_TREES =
-		{
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "10",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-
-			{
-				["PATH"] = [[MODELS\RGO\REDMASGROVE\PARTS\HQTREE40.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEICEROCK_1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCKSTACK_1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCK_1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\MEDIUMPROPS\MEDIUMROCKS.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\HEROPINE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\SKINNYPINE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\TALLPINE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-		}
---]=]
 
 
 
@@ -22656,7 +22529,7 @@ then
 		max_rare_props = "55"
 		GIANTLUSHTREES =
 		{	
-						{
+		   {
 				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
@@ -26562,7 +26435,7 @@ then
 				["MAXSIZE"] = "20"
 			},
 			{
-		["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
+	     	["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"

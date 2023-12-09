@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "BETA1"
+METADATA_NMS_VERSION    = "BETA11"
 METADATA_MOD_DESC       = "LANG"
 
 
@@ -303,7 +303,7 @@ TEXT_SHOTGUN_S = "Advanced Stabilization Platform"
 TEXT_SHOTGUN_D = "An exotic modification for the &lt;VAL_ON&gt;Positron Ejector&lt;&gt; weapon system.&#xA;&#xA;A highly-advanced control system equipped with non-linear compensation matrix. This module uses a series of &lt;TECHNOLOGY&gt;precisly tuned hydraulic manipulators&lt;&gt; to actively compensate for internal recoil forces. As a result, this weapon system benefits from &lt;STELLAR&gt;highly improved accuracy&lt;&gt;. In addition, the faster recoil recovery allows user to fire at an &lt;STELLAR&gt;increased rate&lt;&gt;."
 
 TEXT_ROCKET_N = "TYPHOON LAUNCHER"
-TEXT_ROCKET_L = "Typhoon Lancher"
+TEXT_ROCKET_L = "Typhoon Launcher"
 TEXT_ROCKET_S = "Unlicensed Warhead Delivery System"
 TEXT_ROCKET_D = "An exotic modification for the &lt;VAL_ON&gt;Rocket Launcher&lt;&gt; weapon system.&#xA;&#xA;A total rework of the conventional launcher unit, this technology features &lt;TECHNOLOGY&gt;reinforced multi-ejector tubes&lt;&gt; capable of firing a volley of smaller missiles. Whereas the individual projectiles deal less damage compared to standard rockets, the directed barrage has &lt;STELLAR&gt;higher damage potential&lt;&gt;.&#xA;&#xA;User is advised that the &lt;PET5&gt;reduced blast radius&lt;&gt; of each missile warrants application of proper targeting techniques to achieve full capabilities of this system."
 
@@ -550,6 +550,32 @@ TEXT_TITLE_OWNED_2 = "Extracted blueprint data from 10 crashed starships"
 TEXT_TITLE_OWNED_3 = "Extracted blueprint data from 15 crashed starships"
 TEXT_TITLE_OWNED_4 = "Extracted blueprint data from 20 crashed starships"
 TEXT_TITLE_OWNED_5 = "Extracted blueprint data from 30 crashed starships"
+
+
+
+----------------------------------------------------------------------------------------------------
+-- UPDATE: quest start item
+----------------------------------------------------------------------------------------------------
+
+TEXT_QUESTSTART_N = "START QUEST: LOST IN TIME"
+TEXT_QUESTSTART_L = "Start Quest: Lost in Time"
+TEXT_QUESTSTART_S = "[Mod] Project Apollo BETA version"
+TEXT_QUESTSTART_D = 
+[[
+Special item to start the &lt;VAL_ON&gt;Lost in Time&lt;&gt; quest added with &lt;SPECIAL&gt;Project Apollo mod&lt;&gt;.&#xA;&#xA;
+1. Interact with this item in your cargo inventory.&#xA;
+2. Get in a ship, launch into space.&#xA;
+3. Activate pulse drive, pulse for 10 seconds.&#xA;
+4. Wait for starship communicator scene to play out.&#xA;&#xA;
+Warning: use only when for whatever reason the &lt;TECHNOLOGY&gt;Construct NPC&lt;&gt; in Space Anomaly is not available for you! Do not use when the mission is already in progress!
+]]
+
+TEXT_QUESTSTART_B = "START QUEST"
+TEXT_QUESTSTART_U = "Read the steps in description first!"
+TEXT_QUESTSTART_O = "PROJECT APOLLO MOD &lt;IMG&gt;SLASH&lt;&gt; QUEST START ITEM USED"
+
+
+
 
 
 
@@ -1082,6 +1108,17 @@ function ModifyEXML(exml)
         BuildTextProperty("TEXT_TITLE_OWNED_3",TEXT_TITLE_OWNED_3),
         BuildTextProperty("TEXT_TITLE_OWNED_4",TEXT_TITLE_OWNED_4),
         BuildTextProperty("TEXT_TITLE_OWNED_5",TEXT_TITLE_OWNED_5),
+
+        -------------------------------------------------------------------
+
+        BuildTextProperty("TEXT_QUESTSTART_N",TEXT_QUESTSTART_N),
+        BuildTextProperty("TEXT_QUESTSTART_L",TEXT_QUESTSTART_L),
+        BuildTextProperty("TEXT_QUESTSTART_S",TEXT_QUESTSTART_S),
+        BuildTextProperty("TEXT_QUESTSTART_D",TEXT_QUESTSTART_D),
+        BuildTextProperty("TEXT_QUESTSTART_B",TEXT_QUESTSTART_B),
+        BuildTextProperty("TEXT_QUESTSTART_U",TEXT_QUESTSTART_U),
+        BuildTextProperty("TEXT_QUESTSTART_O",TEXT_QUESTSTART_O),
+
     },
   }
 

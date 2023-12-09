@@ -19,21 +19,22 @@ AI_FLEE_RANGE_MULTI = 8
 AI_SPACE_THRUST_FORCE_MULTI = 4
 AI_SPACE_MAX_SPEED_MULTI = 4
 
-AI_SPACE_FLEE_BOOST = 200
-AI_SPACE_FLEE_URGENT_BOOST = 300
+AI_SPACE_FLEE_BOOST = 180
+AI_SPACE_FLEE_URGENT_BOOST = 280
 
 AI_PLANET_THRUST_FORCE_MULTI = 5
 AI_PLANET_MAX_SPEED_MULTI = 2
-AI_PLANET_FLEE_BOOST = 150
-AI_PLANET_FLEE_URGENT_BOOST = 200
+AI_PLANET_FLEE_BOOST = 130
+AI_PLANET_FLEE_URGENT_BOOST = 180
 
-SQUADGUN_DAMAGE = 500
+SQUADRON_WEAK_LASER_HEALTH_POINT = 0
+SQUADRON_STRONG_LASER_HEALTH_POINT = 1000
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyCombat.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
+    ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -60,15 +61,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Bonus", PLAYER_WEAPON_RANGE_MULTI },
                             }
                         },
-                        -- Cyclotron Ballista: a workaround of sound issue of fast firing :-(
-                        -- {
-                        --     ["SPECIAL_KEY_WORDS"]  = { "ID", "SHIPPLASMA", "StatsType", "Ship_Weapons_Guns_Rate" },
-                        --     ["SECTION_UP"]         = 1,
-                        --     ["INTEGER_TO_FLOAT"]   = "FORCE",
-                        --     ["VALUE_CHANGE_TABLE"] = {
-                        --         { "Bonus", 1 }, -- 3
-                        --     },
-                        -- },
                     }
                 },
                 --
@@ -77,10 +69,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 {
                     ["MBIN_FILE_SOURCE"]  = "GCPLAYERGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
-                        { -- boost player's weapon range
+                        -- boost player's laser range
+                        {
                             ["MATH_OPERATION"]     = "*",
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "LaserShipRange", PLAYER_WEAPON_RANGE_MULTI },
+                            }
+                        },
+                        {
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "PirateRaidMinTime", 180 }, -- 90
+                                { "PirateRaidMaxTime", 360 }, -- 180
                             }
                         },
                     }
@@ -93,12 +92,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PiratePlayerAttackRange", 3000 }, -- 1500
-                                { "MissileRange",            8000 }, -- 2000
-                                { "PoliceNumPerTarget",      5 },    -- 3
-                                { "CollisionRayLengthMax",   5000 }, -- 2000
-                                --{ "MaxDifficultySpaceCombatTurnExtra",  2 },    -- 1.6
-                                --{ "MaxDifficultySpaceCombatSpeedExtra", 100 },  -- 55
+                                { "FreighterAttackDisengageDistance",        10000 }, -- 3000
+                                { "PiratePlayerAttackRange",                 3000 },  -- 1500
+                                { "MissileRange",                            8000 },  -- 2000
+                                { "PoliceNumPerTarget",                      5 },     -- 3
+                                { "CollisionRayLengthMax",                   5000 },  -- 2000
+                                { "PlanetaryPirateRaidTradersEngageTime",    300 },   -- 30
+                                { "PlanetaryPirateRaidMaxTradersJoinCombat", 8 },     -- 4
+                                -- { "MaxDifficultySpaceCombatTurnExtra",  0 },     -- 1.6
+                                -- { "MaxDifficultySpaceCombatSpeedExtra", 0 },     -- 55
                             }
                         }
                     }
@@ -111,7 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "WingmanAttackRange", 2000 }, -- 14000
+                                { "WingmanAttackRange", 2000 }, -- 1400
                             }
                         },
                     }
@@ -163,7 +165,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             },
                             ["MATH_OPERATION"]     = "*",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "LaserHealthPoint", AI_LASER_HEALTH_POINT_MULTI },
+                                { "LaserHealthPoint", AI_LASER_HEALTH_POINT_MULTI }, -- 50
                             },
                         },
                         -- space flying
@@ -186,6 +188,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         {
                             ["FOREACH_SKW_GROUP"]  = {
+                                { "BehaviourTable", "IGNORE", "Id", "SPACE" },
+                                { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
+                                { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "FleeBoost",       AI_SPACE_FLEE_BOOST },
+                                { "FleeUrgentBoost", AI_SPACE_FLEE_URGENT_BOOST },
+                            },
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"]  = {
                                 { "EngineTable", "IGNORE", "Id", "SPACE_EASY" },
                                 { "EngineTable", "IGNORE", "Id", "SPACE_HARD" },
                                 { "EngineTable", "IGNORE", "Id", "SQUADRON_SLOW" },
@@ -195,17 +208,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "Force",    AI_SPACE_THRUST_FORCE_MULTI }, -- 100
                                 { "MaxSpeed", AI_SPACE_MAX_SPEED_MULTI },
-                            },
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"]  = {
-                                { "BehaviourTable", "IGNORE", "Id", "SPACE" },
-                                { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
-                                { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
-                            },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "FleeBoost",       AI_SPACE_FLEE_BOOST },
-                                { "FleeUrgentBoost", AI_SPACE_FLEE_URGENT_BOOST },
                             },
                         },
                         -- planetary flying
@@ -225,6 +227,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         {
                             ["FOREACH_SKW_GROUP"]  = {
+                                { "BehaviourTable", "IGNORE", "Id", "PLANET" },
+                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "FleeBoost",       AI_PLANET_FLEE_BOOST },
+                                { "FleeUrgentBoost", AI_PLANET_FLEE_URGENT_BOOST },
+                            },
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"]  = {
                                 { "EngineTable", "IGNORE", "Id", "PLANET_EASY" },
                                 { "EngineTable", "IGNORE", "Id", "PLANET_HARD" },
                                 { "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
@@ -235,130 +247,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "MaxSpeed", AI_PLANET_MAX_SPEED_MULTI },
                             },
                         },
+                        -- squadron combat
                         {
-                            ["FOREACH_SKW_GROUP"]  = {
-                                { "BehaviourTable", "IGNORE", "Id", "PLANET" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
-                            },
+                            ["SPECIAL_KEY_WORDS"]  = { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "FleeBoost",       AI_PLANET_FLEE_BOOST },
-                                { "FleeUrgentBoost", AI_PLANET_FLEE_URGENT_BOOST },
+                                { "GunDispersionAngle", 3 },    -- 6
+                                { "GunFireRate",        0.15 }, -- 0.3
                             },
                         },
-                    }
-                },
-                --
-                -- METADATA\PROJECTILES\PROJECTILETABLE.MBIN
-                --
-                {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA/PROJECTILES/PROJECTILETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "GunDispersionAngle", 1 },   -- 2
+                                { "GunFireRate",        0.1 }, -- 0.1
+                            },
+                        },
                         {
                             ["FOREACH_SKW_GROUP"]  = {
-                                { "Id", "AISHIPGUN" },
-                                { "Id", "PIRATERAIDGUN" },
-                                { "Id", "POLICEGUN" },
+                                { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "DefaultDamage", 500 }, -- 15 (14)
+                                { "LaserHealthPoint", SQUADRON_WEAK_LASER_HEALTH_POINT }, -- 0
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "TRADERGUN" },
+                            ["FOREACH_SKW_GROUP"]  = {
+                                { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
+                            },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "DefaultDamage", 350 }, -- 40 (14)
-                            },
-                        },
-                        { -- ??? unused with TurretsDoDamage
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "FREIGHTGUN" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "DefaultDamage", 150 }, -- 15 (20)
-                            },
-                        },
-                        { -- laser
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "AI_SHIP" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "DefaultDamage", 250 }, -- 9 (15)
-                            },
-                        },
-                        { -- ??? laser; not tested yet
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "COP_FREIGHTER" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "DefaultDamage", 150 }, -- 15
-                            },
-                        },
-                        { -- laser; same damage as in TurretsDoDamage
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "AI_FREIGHTER" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "DefaultDamage", 1000 }, -- 15
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "SQUADGUN" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "DefaultDamage", SQUADGUN_DAMAGE }, -- 40
-                            },
-                        },
-                    },
-                },
-                --
-                -- METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN
-                --
-                {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/SCENE/EXPERIENCESPAWNTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = { "PirateSpawns", "Count" },
-                            ["VALUE_CHANGE_TABLE"]  = {
-                                { "x", 1 },
-                                { "y", 3 },
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = { "PirateSpawns", "Count", "Count" },
-                            ["VALUE_CHANGE_TABLE"]  = {
-                                { "x", 1 },
-                                { "y", 3 },
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = { "PlanetaryPirateFlybySpawns", "Count" },
-                            ["VALUE_CHANGE_TABLE"]  = {
-                                { "x", 1 }, -- 1
-                                { "y", 5 }, -- 3
-                            },
-                        },
-                    }
-                },
-                --
-                -- METADATA\SIMULATION\MISSIONS\NPCMISSIONTABLE.MBIN
-                --
-                {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        -- spawn all pirate once, without reinforcement spawns
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "AttackDefinition", "PIRATE" },
-                            ["VALUE_MATCH"]        = "3",
-                            ["REPLACE_TYPE"]       = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "NumSquads", 1 },
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "TargetStat", "MISSION_PIRATES" },
-                            ["VALUE_MATCH"]        = "6",
-                            ["REPLACE_TYPE"]       = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountPastTarget", 1 },
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "TargetStat", "MISSION_PIRATES" },
-                            ["VALUE_MATCH"]        = "9",
-                            ["REPLACE_TYPE"]       = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountPastTarget", 1 },
+                                { "LaserHealthPoint", SQUADRON_STRONG_LASER_HEALTH_POINT }, -- 0
                             },
                         },
                     }

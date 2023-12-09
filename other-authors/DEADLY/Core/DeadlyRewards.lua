@@ -74,12 +74,12 @@ TRITIUM_CLUSTER_MULTI_MAX = 5
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewards.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
+    ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 --
-                -- METADATA\REALITY\TABLES\REWARDTABLE.MBIN
+                -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
                 --
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",

@@ -172,12 +172,12 @@ R_SCRAP_GOODS_BONUS = [[
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsPirate.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
+    ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 --
-                -- METADATA\REALITY\TABLES\REWARDTABLE.MBIN
+                -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
                 --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
@@ -187,7 +187,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "PIRATELOOT" },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "RewardChoice",     "SelectSilent" }, -- SelectAlways
-                                --{ "OverrideZeroSeed", "False" },        -- True
                             }
                         },
                         -- disable race reputation for killing pirates
@@ -355,7 +354,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     }
                 },
                 --
-                -- METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN
+                -- METADATA/SIMULATION/SPACE/AISPACESHIPATTACKDATATABLE.MBIN
                 --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SPACE/AISPACESHIPATTACKDATATABLE.MBIN",

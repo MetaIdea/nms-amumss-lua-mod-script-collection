@@ -3,13 +3,10 @@ DELAY_SECONDS = 7200
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "DelayTutorialMessages.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.44",
+    ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA\SIMULATION\MISSIONS\TUTORIALMISSIONTABLE.MBIN
-                --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
