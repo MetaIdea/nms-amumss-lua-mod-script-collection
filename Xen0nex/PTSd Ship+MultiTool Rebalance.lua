@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_44"
+GameVersion = "4_46"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -726,14 +726,14 @@ ToolBounds =
 			{
 				{"Bounds"},		--Cargo	X	Y			Cargo	X	Y		Unclear if Cargo slots have any effect
 				{						7,	3},				--	8,	3		Small
-				{						8,	3},				--	10,	3		Standard
-				{						8,	3},				--	10,	6		Large
+				{						10,	3},				--	10,	3		Standard	("WeaponLarge" is unused by default in PTSd, but needs to have at least 30 slots on Standard & Large sizes to avoid a crash if it is enabled)
+				{						10,	3},				--	10,	6		Large
 			},
 			{
 				{"TechBounds"},--Tech	X	Y			Tech	X	Y
 				{						7,	3},				--	8,	3		Small
-				{						8,	3},				--	10,	3		Standard
-				{						8,	3},				--	10,	6		Large
+				{						10,	3},				--	10,	3		Standard
+				{						10,	3},				--	10,	6		Large
 			},
 		},
 	},
@@ -749,6 +749,7 @@ ToolSizeChanges =
 }
 
 --Changes the "SizeType" of Rifles and Sentinel Multi-Tools. Normally Pistols are WeaponSmall, Rifles are WeaponLarge, and all others are WeaponMedium
+	--Changing this value appears to also change what type of grip animation the game uses when holding the multi-tool, from pistol style grip for WeaponSmall & WeaponMedium, to a rifle style grip for WeaponLarge
 RifleSize =				"WeaponMedium"				--"WeaponLarge"			Changed away from WeaponLarge so the game won't try to spawn multi-tools with more than 24 slots which crashes the game with PTSd's smaller Multi-Tool TechBounds size
 AtlasSize =				"WeaponMedium"				--"WeaponLarge"
 StaffSize =				"WeaponMedium"				--"WeaponLarge"

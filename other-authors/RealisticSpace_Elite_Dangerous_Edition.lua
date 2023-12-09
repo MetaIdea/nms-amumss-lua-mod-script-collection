@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= "___ChristianWidjaya_RealisticSpace_Cruise.pak",
-["MOD_DESCRIPTION"]		= "Realistic Space Combat, NPC and players deal same damage",
-["MOD_AUTHOR"]			= "ChristianWidjaya",
+["MOD_FILENAME"]		= "___ChristianWidjaya_RealisticSpace_ED.pak",
+["MOD_DESCRIPTION"]		= "Realistic Space Combat, Elite Dangerous Edition, integrated cruise mode, combined with Gumsk's AlienTech",
+["MOD_AUTHOR"]			= "ChristianWidjaya","Gumsk","1800PETMEDS",
 ["NMS_VERSION"]			= "3.87+",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
@@ -17,7 +17,59 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","StatsType","Ship_Weapons_Guns_CoolTime"},
 			["SECTION_UP"] = 1,
 			["VALUE_CHANGE_TABLE"] = {
-			{"Bonus","5"}}},		
+			{"Bonus","5"}}},
+        { --Add Rocket Launcher
+        ["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","Category","GcTechnologyCategory.xml"},
+            ["VALUE_CHANGE_TABLE"] = {
+            {"TechnologyCategory","AllShips"}}},
+		{ --Add Economy Scanner
+		["SPECIAL_KEY_WORDS"] = {"ID","SHIPSCAN_ECON","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Conflict Scanner
+		["SPECIAL_KEY_WORDS"] = {"ID","SHIPSCAN_COMBAT","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Emergency Warp
+		["SPECIAL_KEY_WORDS"] = {"ID","UT_QUICKWARP","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Teleport Receiver
+		["SPECIAL_KEY_WORDS"] = {"ID","SHIP_TELEPORT","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Rockets Upgrade
+		["SPECIAL_KEY_WORDS"] = {"ID","UT_ROCKETS","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Photonix Core
+		["SPECIAL_KEY_WORDS"] = {"ID","PHOTONIX_CORE","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Ship Shotgun
+		["SPECIAL_KEY_WORDS"] = {"ID","SHIPSHOTGUN","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Ship Shotgun Upgrade
+		["SPECIAL_KEY_WORDS"] = {"ID","T_SHIPSHOT","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Ship Shotgun Upgrade
+		["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPSHOT","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Ship Minigun
+		["SPECIAL_KEY_WORDS"] = {"ID","SHIPMINIGUN","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Ship Minigun Upgrade
+		["SPECIAL_KEY_WORDS"] = {"ID","T_SHIPMINI","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Ship Minigun Upgrade
+		["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPMINI","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Ship Infra-Knife
+		["SPECIAL_KEY_WORDS"] = {"ID","SHIPPLASMA","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Ship Infra-Knife Upgrade
+		["SPECIAL_KEY_WORDS"] = {"ID","T_SHIPBLOB","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Ship Infra-Knife Upgrade
+		["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPBLOB","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+		{ --Exocraft combined hazard protection
+		["SPECIAL_KEY_WORDS"] = {"ID","MECH_PROT","Category","GcTechnologyCategory.xml"},
+			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllVehicles"}}},		
 	}},
 
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN",
@@ -25,23 +77,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --SHIPLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","15"}}},
+			{"Damage","3"}}},
 		{ --BOUNTYLASER1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","15"}}},
+			{"Damage","3"}}},
 		-- { --BOUNTYLASER2
 		-- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
 			-- ["VALUE_CHANGE_TABLE"] = {
-			-- {"Damage","15"}}},
+			-- {"Damage","3"}}},
 		{ --BOUNTYLASER3
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","15"}}},
+			{"Damage","3"}}},
 		{ --POLICELASER
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","15"}}},
+			{"Damage","3"}}},
 		{ --SMALLASTEROID
 		["SPECIAL_KEY_WOR	DS"] = {"Id","SMALLASTEROID"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -57,11 +109,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --FREIGHTERGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERGUN"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","150"}}},
+			{"Damage","50"}}},
 		{ --FREIGHTERLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLASER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","75"}}},
+			{"Damage","30"}}},
 		{ --IMPACTGROUND
 		["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -70,10 +122,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["SPECIAL_KEY_WORDS"] = {"Id","IMPACTINSTANCE"},
 			["VALUE_CHANGE_TABLE"] = {
 			{"Damage","150"}}},
-		{ --MPSHIPROCKET (rocket from other players, double damage now)
+		{ --MPSHIPROCKET
 		["SPECIAL_KEY_WORDS"] = {"Id","MPSHIPROCKET"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","500"}}},
+			{"Damage","100"}}},
 	}},
 	
 	{["MBIN_FILE_SOURCE"]	= "GCVEHICLEGLOBALS.GLOBAL.MBIN",
@@ -88,7 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --Nerf Player Ship's Regeneration, Tweaks Spawning, forces avoidance to 0
 		["VALUE_CHANGE_TABLE"] = {
 			{"ShieldRechargeMinHitTime","10"},
-			{"ShieldRechargeRate","5"},
+			{"ShieldRechargeRate","1"},
 			{"WarpNexusRotation","0"},
 			{"WarpNexusPitch","0"},
 			{"BoostNoAsteroidRadius","0"},
@@ -222,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 
 	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
-		["EXML_CHANGE_TABLE"]	= {
+	["EXML_CHANGE_TABLE"]	= {
 		--OUTLAW and later: uses this MBIN instead of GCAISPACESHIPGLOBALS.MBIN
 		{--Balances NPC ships speed to match player
         ["VALUE_CHANGE_TABLE"] = {
@@ -234,33 +286,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{--STANDARD SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","STANDARD"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","20000"},
-			{"LevelledExtraHealth","20000"},
-			{"RechargeTime","20"},
+			{"Health","100000"},
+			{"LevelledExtraHealth","100000"},
+			{"RechargeTime","100"},
 			{"RechargeDelayTime","10"}},
 		},
 		{--STRONG SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","STRONG"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","20000"},
-			{"LevelledExtraHealth","20000"},
-			{"RechargeTime","20"},
+			{"Health","100000"},
+			{"LevelledExtraHealth","100000"},
+			{"RechargeTime","100"},
 			{"RechargeDelayTime","10"}},
 		},
 		{--FAST SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","FAST"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","20000"},
-			{"LevelledExtraHealth","20000"},
-			{"RechargeTime","20"},
+			{"Health","100000"},
+			{"LevelledExtraHealth","100000"},
+			{"RechargeTime","100"},
 			{"RechargeDelayTime","10"}},
 		},
 		{--FAST_STRONG SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","20000"},
-			{"LevelledExtraHealth","20000"},
-			{"RechargeTime","20"},
+			{"Health","100000"},
+			{"LevelledExtraHealth","100000"},
+			{"RechargeTime","100"},
 			{"RechargeDelayTime","10"}},
 		},
 		{ --Buffs Photon Cannon RPM to 0.14
@@ -293,7 +345,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"AttackBoostRange","800"},
 			{"AttackBoostTimeToRange","0"},
 			{"FleeBoost","250"},
-			{"FleeUrgentBoost","350"},
+			{"FleeUrgentBoost","250"},
 			{"FleeBrakeTime","1"},
 			{"FleeUrgentBrakeTime","1"},
 			{"FleeRepositionTime","3"},
@@ -430,7 +482,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PLANET_FLYBY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},

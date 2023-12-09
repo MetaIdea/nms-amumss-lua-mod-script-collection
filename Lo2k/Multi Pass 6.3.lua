@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Multi Pass 6.2.pak", 
+["MOD_FILENAME"] 			= "Multi Pass 6.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.45",
+["NMS_VERSION"]				= "4.46",
 ["MOD_DESCRIPTION"]			= "This mods makes gold/silver/bronze atlas passes",
 ["MODIFICATIONS"] 			= 
 	{

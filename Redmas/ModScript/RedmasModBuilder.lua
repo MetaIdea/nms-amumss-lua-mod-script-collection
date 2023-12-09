@@ -94,7 +94,7 @@ INIT_PRESET ={
     },
     ["GAMEPLAY_FEATURES"] =
     {
-        ["GAMEPLAY_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
+        ["GAMEPLAY_OVERHAUL"] = "ON",   
         ["QOL_FEATURES"] =
         {
             -- Quality of Life features
@@ -106,7 +106,7 @@ INIT_PRESET ={
         },
         ["ONFOOT_GAMEPLAY_FEATURES"] =
         {
-            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",  -- > this var off will disable all features under that node
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",    
             -- Character movements polishing -- since NMS 4.25 it also improve the capes movements
             ["LONGER_STEALTH_FEATURE"] = "OFF", -- "ON"/"OFF" 
             ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON", -- "ON"/"OFF" 
@@ -135,7 +135,7 @@ INIT_PRESET ={
     },
     ["CREATURES_FEATURES"] =
     {
-        ["CREATURES_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
+        ["CREATURES_OVERHAUL"] = "ON",   
         --
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON", -- "ON"/"OFF" This will increase the birds, fishs and butterflies, but will make everything else sparse for balancing the performance
         ["MAX_CREATURES_NUMBER"] = 20, -- "10" < - > "20"  max number of the birds, fishs and butterflies when CREATURES_HIGH_DENSITY_FEATURE is ON. notice that this param requires a integer, not a string
@@ -147,17 +147,21 @@ INIT_PRESET ={
         ["GIANTS_CREATURES_FEATURE"] = "ON",
         ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 94 (very huge.)) -- recommanded 54
     },
-    ["GENERATION_FEATURES"] =
+    ["COLORS_GENERATION"]=
     {
-        ["GENERATION_OVERHAUL"] = "ON", -- > this var off will disable all features under that node
-        --
         ["COLORS_AUTO_GENERATION_FEATURES"] =
         {
 			-- The script will procedurally generate new colours possibilties // they will be diferent at each generation of the pak
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON", -- "ON"/"OFF" 
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" 
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON", -- "ON"/"OFF" 
         },
+    },
+    ["GENERATION_FEATURES"] =
+    {
+        ["GENERATION_OVERHAUL"] = "ON",   
+        --
+
         ["PLANETS_GENERATION_FEATURES"] =
         {
             ["TERRAIN_SHAPES_FEATURES"] =
@@ -181,7 +185,7 @@ INIT_PRESET ={
             ["ASSETS_REPLACEMENTS_FEATURES"] = -- world generation features, by models replacement
             { 
 
-                ["E3_FANTASY_ASSETS_FEATURES"] = "ON", -- > this var off will disable all features under that node -- "ON"/"OFF"
+                ["E3_FANTASY_ASSETS_FEATURES"] = "ON",    -- "ON"/"OFF"
                 --
                 ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- modded wordstones models
                 ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON", -- "ON"/"OFF"-- E3 building aside planets beacons
@@ -195,7 +199,7 @@ INIT_PRESET ={
         },
         ["SPACE_GENERATION_FEATURES"] =
         {
-            ["REDMAS_SPACE_GENERATION"] = "ON",-- > this var off will disable all features under that node
+            ["REDMAS_SPACE_GENERATION"] = "ON",  
             --
             ["TRADING_ROUTES"] = "OFF", -- vanilla value is "on"
             ["MASSIVE_FLEET"] = "ON", -- ADD frigates aside freighters and redesign freighters - that change can be ressource heavy
@@ -204,16 +208,16 @@ INIT_PRESET ={
         ["SPACESHIPS_GENERATION_FEATURES"] =
         {
             -- Redmas Spaceships Generation Mod
-            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",  -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
-            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON", -- "ON"/"OFF" note that this value requires ["GENERATION_OVERHAUL"] = "ON"
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON", -- "ON"/"OFF" 
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",  -- "ON"/"OFF" 
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON", -- "ON"/"OFF" 
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON", -- "ON"/"OFF" 
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON", -- "ON"/"OFF" 
         },
     },
     ["SKINS"] =
     {
-        ["CHARACTERS_SKINS_FEATURE"] = "ON",   -- > this var off will disable all features under that node  -- "ON"/"OFF" 
+        ["CHARACTERS_SKINS_FEATURE"] = "ON",       -- "ON"/"OFF" 
         --    
         ["DRONE_PET_SKIN_FEATURE"] = "ON",
 		["DRONE_PET_SKIN"] = "E3-DAMAGED",-- ("E3-DAMAGED" or "E3") replacement with custom models for flare ( the friendly sentinel drone ) ( i will add more ones)
@@ -227,7 +231,7 @@ INIT_PRESET ={
     },
     ["NEWGAME_BONUS_FEATURES"] ={
 
-        ["NEWGAME_BONUSES"] = "OFF",-- > this var off will disable all features under that node
+        ["NEWGAME_BONUSES"] = "OFF",  
         --
         -- I recommend to always wait 1 or 2 week(s) after a vanilla base game update before activating that section
         -- ( the gamefiles it changes is always updated last )
@@ -243,7 +247,7 @@ INIT_PRESET ={
     },
     ["CHALLENGE_FEATURES"] =
     {
-        ["CHALLENGE_MODE"] = "OFF", -- > this var off will disable all features under that node
+        ["CHALLENGE_MODE"] = "OFF",   
         --
 		["STRONG_CREATURES_FEATURE"] = "OFF", -- note the base game already does it since NMS v 4.0
         ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6 -- this param is related to STRONG_CREATURES_FEATURE = ON
@@ -253,7 +257,7 @@ INIT_PRESET ={
     ["EASY_MODE_FEATURES"] =
     {
         -- this section is for the cheats of the Game overhaul ( there are few as you can see )
-        ["EASY_MODE"] = "ON", -- "ON"/"OFF" -- > this var off will disable all features under that node
+        ["EASY_MODE"] = "ON", -- "ON"/"OFF"   
         --
         ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 2 , -- ( "1" < - > "4" ( too much will be glitchy when entering planets' atmosphere)) -- notice that this param requires a integer, not a string
         ["LAUNCH_COST_REDUCTION"] = 5 , -- In % ( take off reduce ) note the base game already does it since NMS v 4.0 -- notice that this param requires a integer, not a string
@@ -271,10 +275,6 @@ PROCEDURALMAX = 1000  -- 10 to 1000 --This is the number of procedural generated
 -- increasing that var will increase the rendering time
 --------------------------------------------------------------------------------------------------------------
 COLORS_GENERATION_REWORK = "FANTASY_COLOURS" -- "FANTASY_COLOURS" or "SCIFI_COLOURS"
--- must have the following vars ON to be applied :
--- ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON",
--- ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
--- ["GENERATION_OVERHAUL"] = "ON",
 -- color generation used for planets, creatures, materials, etc
 -- FANTASY COLOURS Are 90% PathFinder colors ( its the classical Utopia revamp mod look and old NMS fantasy look )
 -- SCIFI_COLOURS is new original colors
@@ -297,7 +297,10 @@ BUSY_SPACE_TRAFFIC = "ON" -- turn that feature "OFF" if you want to do **share s
 -------------------------------------------------------------------------------------------------------------------------------
 ADD_RGO_CUSTOM_ASSETS = "ON" -- Turn this "OFF" to remove the custom models if your wanted-pak doesn't require them
 -- this var doens't include custom exocrafts, custom spaceships parts, HQ spacestations, or Constructs mod
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+FREIGHTER_BRIDGE_REWORK = "ON" -- Turn this on to enable the tweaks inside freighter's bridges. ( less drapes - more convinient warp console position)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- **ADVANCED PARAMS**
 ---------------------------
 DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
@@ -513,7 +516,7 @@ LOWWATER_AND_BEACH_BIOMES_FEATURE =  ""
  CAVE_BIOMES_FEATURE =  "" -- disabled
 -- End Biomes param
 -- SPACE PARAMS ----------------------------------------------------------------------------------------------
-REDMAS_SPACE_GENERATION =  ""
+--REDMAS_SPACE_GENERATION =  ""
 TRADING_ROUTES =  ""
 MASSIVE_FLEET =  ""
 PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION =  ""
@@ -712,7 +715,7 @@ BINOCULARS_TYPE = INIT_PRESET.VISUAL_OVERHAUL_FEATURES.BINOCULARS_TYPE
 SPEED_EFFECTS_REDUCER_FEATURE = INIT_PRESET.VISUAL_OVERHAUL_FEATURES.SPEED_EFFECTS_REDUCER_FEATURE
 SPACESHIPS_TRAILS_TYPE = INIT_PRESET.VISUAL_OVERHAUL_FEATURES.SPACESHIPS_TRAILS_TYPE
 SPACE_COLOURS_TYPE = INIT_PRESET.VISUAL_OVERHAUL_FEATURES.SPACE_COLOURS_TYPE
-ULTRA_DIVERSE_SPACE_COLOURS = INIT_PRESET.GENERATION_FEATURES.COLORS_AUTO_GENERATION_FEATURES.ULTRA_DIVERSE_SPACE_COLOURS
+ULTRA_DIVERSE_SPACE_COLOURS = INIT_PRESET.COLORS_GENERATION .COLORS_AUTO_GENERATION_FEATURES.ULTRA_DIVERSE_SPACE_COLOURS
 ASTEROIDS_FIELDS_TYPE = INIT_PRESET.VISUAL_OVERHAUL_FEATURES.ASTEROIDS_FIELDS_TYPE
 FIGHTERS_SPACESHIPS_REPAINT = INIT_PRESET.VISUAL_OVERHAUL_FEATURES.FIGHTERS_SPACESHIPS_REPAINT
 DROPSHIPS_SPACESHIPS_REPAINT = INIT_PRESET.VISUAL_OVERHAUL_FEATURES.DROPSHIPS_SPACESHIPS_REPAINT
@@ -779,8 +782,8 @@ E3_FANTASY_CRYSTALS_ASSETS_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GEN
 E3_FANTASY_PLANETS_COLORS_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.ASSETS_REPLACEMENTS_FEATURES.E3_FANTASY_PLANETS_COLORS_FEATURE
 REDMAS_RUINS_FEATURES = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.ASSETS_REPLACEMENTS_FEATURES.REDMAS_RUINS_FEATURES
 -- End Assets Rework params
-HUGE_WATER_COLORS_DIVERSITY_FEATURE = INIT_PRESET.GENERATION_FEATURES.COLORS_AUTO_GENERATION_FEATURES.HUGE_WATER_COLORS_DIVERSITY_FEATURE
-PLANETSKY_COLORS_DIVERSITY_FEATURE = INIT_PRESET.GENERATION_FEATURES.COLORS_AUTO_GENERATION_FEATURES.PLANETSKY_COLORS_DIVERSITY_FEATURE
+HUGE_WATER_COLORS_DIVERSITY_FEATURE = INIT_PRESET.COLORS_GENERATION.COLORS_AUTO_GENERATION_FEATURES.HUGE_WATER_COLORS_DIVERSITY_FEATURE
+PLANETSKY_COLORS_DIVERSITY_FEATURE = INIT_PRESET.COLORS_GENERATION.COLORS_AUTO_GENERATION_FEATURES.PLANETSKY_COLORS_DIVERSITY_FEATURE
 LARGE_BUILDINGS_TRADINGPOSTS_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.ASSETS_REPLACEMENTS_FEATURES.LARGE_BUILDINGS_TRADINGPOSTS_FEATURE
 -- Biomes param
 CONSTRUCTS_BY_MSSP_SPAWNER = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.CONSTRUCTS_BY_MSSP_SPAWNER
@@ -793,7 +796,7 @@ LOWWATER_AND_BEACH_BIOMES_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENE
 CAVE_BIOMES_FEATURE = INIT_PRESET.GENERATION_FEATURES.PLANETS_GENERATION_FEATURES.BIOMES_FEATURES.CAVE_BIOMES_FEATURE
 -- End Biomes param
 -- SPACE PARAMS ----------------------------------------------------------------------------------------------
-REDMAS_SPACE_GENERATION = INIT_PRESET.GENERATION_FEATURES.SPACE_GENERATION_FEATURES.REDMAS_SPACE_GENERATION
+--REDMAS_SPACE_GENERATION = INIT_PRESET.GENERATION_FEATURES.SPACE_GENERATION_FEATURES.REDMAS_SPACE_GENERATION
 TRADING_ROUTES = INIT_PRESET.GENERATION_FEATURES.SPACE_GENERATION_FEATURES.TRADING_ROUTES
 MASSIVE_FLEET = INIT_PRESET.GENERATION_FEATURES.SPACE_GENERATION_FEATURES.MASSIVE_FLEET
 PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION = INIT_PRESET.GENERATION_FEATURES.SPACE_GENERATION_FEATURES.PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION
@@ -5748,6 +5751,47 @@ local replaceIMG = function (IMGNAME,DESTINATION)
 table.insert(CUSTOM_CONTENT, IMG_CONTENT_TABLE)
 end
 
+local tileRework = function ()
+	-- tiles rework
+		if GENERATION_OVERHAUL == "ON" then
+
+
+
+
+
+			NEW_TILES_TABLE =
+			{
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASETILETYPES.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\BASETILETYPES.EXML]]
+			}
+			table.insert(CUSTOM_CONTENT, NEW_TILES_TABLE)
+
+
+
+			NEW_TILES_TABLE =
+			{
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASETILETYPES_LAVA.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\BASETILETYPES_LAVA.EXML]]
+			}
+			table.insert(CUSTOM_CONTENT, NEW_TILES_TABLE)
+
+			NEW_TILES_TABLE =
+			{
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHTILETYPES.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\LUSHTILETYPES.EXML]]
+			}
+			table.insert(CUSTOM_CONTENT, NEW_TILES_TABLE)
+
+			NEW_TILES_TABLE =
+			{
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENTILETYPES.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\FROZENTILETYPES.EXML]]
+			}
+			table.insert(CUSTOM_CONTENT, NEW_TILES_TABLE)
+		end
+
+end	
+
 if MENU_SPLASH_SCREEN ~= "OFF" and MENU_SPLASH_SCREEN ~= "" then
 	replaceIMG (MENU_SPLASH_SCREEN,[[TEXTURES\UI\FRONTEND\BACKGROUNDS\STARTBG.DDS]])
 end
@@ -5782,6 +5826,3472 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ---------------------------------------------------------------- **FEATURES** -------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	if ULTRA_DIVERSE_SPACE_COLOURS == "ON" then
+		ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW = ""
+		ULTRA_DIVERSE_SPACE_COLOURS_EXML = ""
+
+		for loop = 0 , 2000 do
+			print("------ ADDED NEW SPACE COLOUR " .. loop)
+			R_VALUE_REF = math.random(0,6)*0.1+math.random(0,9)*0.01+math.random(0,9)*0.001
+			B_VALUE_REF = math.random(0,6)*0.1+math.random(0,9)*0.01+math.random(0,9)*0.001
+			G_VALUE_REF = math.random(0,6)*0.1+math.random(0,9)*0.01+math.random(0,9)*0.001
+			G_MID = G_VALUE_REF+math.random(1,3)*0.01
+			R_MID = R_VALUE_REF+math.random(1,3)*0.01
+			B_MID = B_VALUE_REF+math.random(1,3)*0.01
+			G_BOT = G_MID+math.random(1,3)*0.11
+			R_BOT = R_MID+math.random(1,3)*0.11
+			B_BOT = B_MID+math.random(1,3)*0.11
+			G_NEB1 = G_BOT+math.random(1,3)*0.021
+			R_NEB1 = R_BOT+math.random(1,3)*0.021
+			B_NEB1 = B_BOT+math.random(1,3)*0.021
+			G_NEB2 = R_NEB1+math.random(1,3)*0.031
+			R_NEB2 = B_NEB1+math.random(1,3)*0.031
+			B_NEB2 = G_NEB2+math.random(1,3)*0.031
+			G_NEB3 = R_NEB1-math.random(1,3)*0.041
+			R_NEB3 = B_NEB1-math.random(1,3)*0.041
+			B_NEB3 = G_NEB2-math.random(1,3)*0.041
+			ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW =
+			[[
+				<Property value="GcSolarSystemSkyColourData.xml">
+				<Property name="TopColour" value="Colour.xml">
+				  <Property name="R" value="]]..R_VALUE_REF..[[" />
+				  <Property name="G" value="]]..G_VALUE_REF..[[" />
+				  <Property name="B" value="]]..B_VALUE_REF..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="MidColour" value="Colour.xml">
+				  <Property name="R" value="]]..G_MID..[[" />
+				  <Property name="G" value="]]..R_MID..[[" />
+				  <Property name="B" value="]]..B_MID..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="BottomColour" value="Colour.xml">
+				  <Property name="R" value="]]..G_BOT..[[" />
+				  <Property name="G" value="]]..G_BOT..[[" />
+				  <Property name="B" value="]]..G_BOT..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="TopColourPlanet" value="Colour.xml">
+				  <Property name="R" value="]]..R_VALUE_REF..[[" />
+				  <Property name="G" value="]]..G_VALUE_REF..[[" />
+				  <Property name="B" value="]]..B_VALUE_REF..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="MidColourPlanet" value="Colour.xml">
+				  <Property name="R" value="]]..R_VALUE_REF..[[" />
+				  <Property name="G" value="]]..G_VALUE_REF..[[" />
+				  <Property name="B" value="]]..B_VALUE_REF..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="BottomColourPlanet" value="Colour.xml">
+				  <Property name="R" value="]]..R_VALUE_REF..[[" />
+				  <Property name="G" value="]]..G_VALUE_REF..[[" />
+				  <Property name="B" value="]]..B_VALUE_REF..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="CloudColour" value="Colour.xml">
+				  <Property name="R" value="]]..R_VALUE_REF..[[" />
+				  <Property name="G" value="]]..G_VALUE_REF..[[" />
+				  <Property name="B" value="]]..B_VALUE_REF..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="LightColour" value="Colour.xml">
+				  <Property name="R" value="]]..R_NEB1..[[" />
+				  <Property name="G" value="]]..G_NEB1..[[" />
+				  <Property name="B" value="]]..B_NEB1..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="NebulaColour1" value="Colour.xml">
+				  <Property name="R" value="]]..R_NEB1..[[" />
+				  <Property name="G" value="]]..G_NEB1..[[" />
+				  <Property name="B" value="]]..B_NEB1..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="NebulaColour2" value="Colour.xml">
+				  <Property name="R" value="]]..R_NEB2..[[" />
+				  <Property name="G" value="]]..G_NEB2..[[" />
+				  <Property name="B" value="]]..B_NEB2..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="NebulaColour3" value="Colour.xml">
+				  <Property name="R" value="]]..R_NEB3..[[" />
+				  <Property name="G" value="]]..G_NEB3..[[" />
+				  <Property name="B" value="]]..B_NEB3..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="FogColour" value="Colour.xml">
+				  <Property name="R" value="]]..R_VALUE_REF..[[" />
+				  <Property name="G" value="]]..G_VALUE_REF..[[" />
+				  <Property name="B" value="]]..B_VALUE_REF..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+				<Property name="FogColour2" value="Colour.xml">
+				  <Property name="R" value="]]..R_VALUE_REF..[[" />
+				  <Property name="G" value="]]..G_VALUE_REF..[[" />
+				  <Property name="B" value="]]..B_VALUE_REF..[[" />
+				  <Property name="A" value="1" />
+				</Property>
+			  </Property>
+
+			]]
+			ULTRA_DIVERSE_SPACE_COLOURS_EXML = ULTRA_DIVERSE_SPACE_COLOURS_EXML .. ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW
+		end
+
+		ULTRA_DIVERSE_SPACE_COLOURS_CHANGE_TABLE =
+		{
+			{
+				["MBIN_FILE_SOURCE"]  = {
+					[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],
+					[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN]]
+				},
+				["EXML_CHANGE_TABLE"] 	={
+					{
+						["PRECEDING_KEY_WORDS"] = {"Settings"},
+						["ADD"] 	= ULTRA_DIVERSE_SPACE_COLOURS_EXML
+					}
+				}
+			}
+		}
+		addContent(ULTRA_DIVERSE_SPACE_COLOURS_CHANGE_TABLE)
+
+	end
+
+
+
+	--------------------------------------------------------------------------
+	-- BUSY SPACE TRAFFIC
+	--------------------------------------------------------------------------
+	addFeature
+	(
+		BUSY_SPACE_TRAFFIC,
+		{
+
+				{
+					["MBIN_FILE_SOURCE"]  = [[GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["MATH_OPERATION"] = "+",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Freighter","100"},
+								{"Royal","100"},
+								{"Alien","100"},
+								{"Sail","100"},
+							}
+						}
+					}
+				},
+				
+				{
+					["MBIN_FILE_SOURCE"]  = [[METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "Spaceships",
+							["SECTION_ACTIVE"] = {1,2,3},
+							["ADD"] = SENT_CIVIL
+						}
+
+					}
+				},
+				
+								
+				
+
+
+		},
+		DAY_ONE_MODE
+	)
+
+	if MASSIVE_FLEET == "ON" then
+	-- New parts for Freighters
+	copyEXML
+	(
+		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
+		[[INDUSTRIAL\GANTRYBCAPBRIDGEA.SCENE.EXML]],
+		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGEA.SCENE.EXML]]
+	)
+	
+
+		copyEXML
+		(
+			MASSIVE_FLEET,
+			[[FREIGHTER_A.SCENE.EXML]],
+			[[MODELS\RGO\FREIGHTER_A.SCENE.EXML]]
+		)	
+		copyEXML
+		(
+			MASSIVE_FLEET,
+			[[FREIGHTSHIP01.SCENE.EXML]],
+			[[MODELS\RGO\FREIGHTSHIP01.SCENE.EXML]]
+		)
+
+	addFeature
+	(
+		MASSIVE_FLEET,
+		{
+			{
+				["MBIN_FILE_SOURCE"]  = {
+					{
+					"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
+					"MODELS\RGO\_FREIGHTERTINY_PROC.SCENE.MBIN"
+					}
+				}
+			},
+			{
+
+				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTSHIP01.SCENE.MBIN",
+				["EXML_CHANGE_TABLE"] 	=
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"NameHash","2027018462"},
+						["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERSMALL_PROC\ENTITIES\SMALLFREIGHTER.ENTITY.MBIN]]},
+						}
+					}
+				}
+
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = {
+					{
+					"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
+					"MODELS\RGO\_FREIGHTERTINY_PROC.SCENE.MBIN"
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["PRECEDING_KEY_WORDS"] = "Children",
+						["SECTION_ACTIVE"] = {1},
+						["ADD"] = CONTENT_FREIGHTERS_SPAWNER
+					}
+				}
+
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.DESCRIPTOR.MBIN",
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["PRECEDING_KEY_WORDS"] = "List",
+						["SECTION_ACTIVE"] = {1},
+						["ADD"] = FREIGHTER_DESCRIPTOR
+					},
+				}
+
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\POI\ATLASBEACON.SCENE.MBIN",
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["PRECEDING_KEY_WORDS"] = "Children",
+						["SECTION_ACTIVE"] = {1},
+						["ADD"] = LARGE_FREIGHTERS
+					}
+				}
+
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\POI\ATLASBEACON.DESCRIPTOR.MBIN",
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["PRECEDING_KEY_WORDS"] = "List",
+						["SECTION_ACTIVE"] = {1},
+						["ADD"] = FREIGHTER_DESCRIPTOR
+					},
+				}
+
+			},
+		}
+		
+	)
+	end
+
+	-- PROCEDURAL CRASH SITES MISSIONS
+	if PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION == "ON" then
+		
+	
+	DERELIC_CRASHSITE = readTemplate("DERELIC_CRASHSITE")
+	addFeature
+	(
+		PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION,
+		{
+			{
+				["MBIN_FILE_SOURCE"] = [[MODELS\SPACE\POI\DUNGEON.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["PRECEDING_KEY_WORDS"] = "Children",
+						["SECTION_ACTIVE"] = {1},
+						["ADD"] = DERELIC_CRASHSITE
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  =
+				{
+					{
+						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\CRASHEDFREIGHTER.DESCRIPTOR.MBIN]],
+						[[MODELS\SPACE\POI\DUNGEON.DESCRIPTOR.MBIN]]
+					}
+				},
+			}
+		}
+	)
+	end
+	--------------------------------------------------------------------
+	-- REDMAS SPACESHIPS GENERATION
+
+
+	-- fighters new PARTS
+	addFeature
+	(
+		ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS,
+		{
+			--[=====[
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"]=
+					{
+						{
+							["SECTION_ACTIVE"] = {1},
+							["SPECIAL_KEY_WORDS"] = {"Name","Ship","Name","MATERIAL"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Value",[[MODELS\COMMON\SPACECRAFT\DROPSHIPS\HULL\HULLB\DROPSHIP_MAT.MATERIAL.MBIN]]}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","Ship","Name","ATTACHMENT"},
+							["REMOVE"] = "SECTION"
+						},
+
+					}
+				},
+
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP.SCENE.MBIN]],
+							[[MODELS\RGO\WINGSE3.SCENE.MBIN]],
+							"REMOVE"
+						}
+					}
+				},
+				--]=====]
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","SpinEngine1"},
+							["VALUE_CHANGE_TABLE"] = {
+								--{"TransX","0"},
+								--{"TransY","1.642135"},
+								--{"TransZ","-2.26289"},
+								--{"RotX","0"},
+								--{"RotY","0"},
+								--{"RotZ","0"},
+								--{"ScaleX","1"},
+								--{"ScaleY","1"},
+								{"ScaleZ","1.5"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","EngineParts"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								--{"TransX","0"},
+								--{"TransY","0"},
+								--{"TransZ","0"},
+								--{"RotX","0"},
+								--{"RotY","0"},
+								--{"RotZ","0"},
+								--{"ScaleX","1"},
+								--{"ScaleY","1"},
+								{"ScaleZ","1.5"},
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","Stage2"},
+							["VALUE_CHANGE_TABLE"] = {
+								--{"TransX","0"},
+								--{"TransY","1.641415"},
+								--{"TransZ","-2.419677"},
+								--{"RotX","0"},
+								--{"RotY","180"},
+								--{"RotZ","0"},
+								{"ScaleX","1.82"},
+								{"ScaleY","1.82"},
+								{"ScaleZ","2"},
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","Stage2","Name","C1"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"ScaleX","1.314815"},
+								{"ScaleY","1.314815"},
+								{"ScaleZ","1.314815"},
+							}
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN]],
+							[[MODELS\RGO\ENGINEC.SCENE.MBIN]],
+						}
+					}
+				},
+								{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEA.DESCRIPTOR.MBIN]],
+							[[MODELS\RGO\COCKPITANOSEAW.DESCRIPTOR.MBIN]],
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEA.SCENE.MBIN]],
+							[[MODELS\RGO\COCKPITANOSEAW.SCENE.MBIN]],
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\COCKPITANOSEAW.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {1,2},
+							["ADD"] = MOUSTACHE,
+						}
+					}
+				},
+
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
+							[[MODELS\RGO\_TURBINEAA.SCENE.MBIN]],
+
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {1},
+							["ADD"] = TURBINEAAF,
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
+							[[MODELS\RGO\TURBINEAAFR.SCENE.MBIN]],
+
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					 {
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_None"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"RotZ","90"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_ABIG"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"RotZ","90"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_ASMALL"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"RotZ","90"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_ASMALL2"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"RotZ","90"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_AWINDY"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"RotZ","90"}
+							}
+						}
+
+
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
+							[[MODELS\RGO\TURBINEAAFL.SCENE.MBIN]],
+							"REMOVE"
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
+							[[MODELS\RGO\_ACCA.SCENE.MBIN]]
+						}
+					}
+				},
+				-- SMALL
+				{
+					["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","Contrail1"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.2"},
+								{"TransZ", "-0.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.2"},
+								{"TransZ", "-0.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.2"},
+								{"TransZ", "-0.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.2"},
+								{"TransZ", "-0.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
+							[[MODELS\RGO\ACCASMALL.SCENE.MBIN]]
+						}
+					}
+				},
+				-- BIG
+				{
+					["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.51"},
+								{"TransZ", "-0.5"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "1.5"},
+								{"ScaleZ", "1"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.51"},
+								{"TransZ", "-0.5"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "1.5"},
+								{"ScaleZ", "1"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.51"},
+								{"TransZ", "-0.5"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "1.5"},
+								{"ScaleZ", "1"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.51"},
+								{"TransZ", "-0.5"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "1.5"},
+								{"ScaleZ", "1"}
+							}
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
+							[[MODELS\RGO\ACCABIG.SCENE.MBIN]]
+						}
+					}
+				},
+				-- WINDY
+				{
+					["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] = {
+
+
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.5"},
+								{"TransZ", "-0.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.5"},
+								{"TransZ", "-0.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.5"},
+								{"TransZ", "-0.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "0"},
+								{"TransY", "-0.5"},
+								{"TransZ", "-0.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "0"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
+							[[MODELS\RGO\ACCAWINDY.SCENE.MBIN]],
+							"REMOVE"
+						}
+					}
+				},
+				--  2x
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\RGO\_ACCA.SCENE.MBIN]],
+							[[MODELS\RGO\ACCAx2.SCENE.MBIN]],
+						}
+					},
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
+								["SECTION_ACTIVE"] = {1},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "-0.51"},
+								{"TransY", "-0.2"},
+								{"TransZ", "-1.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "50"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
+								["SECTION_ACTIVE"] = {1},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "-0.51"},
+								{"TransY", "-0.2"},
+								{"TransZ", "-1.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "50"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
+								["SECTION_ACTIVE"] = {1},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "-0.51"},
+								{"TransY", "-0.2"},
+								{"TransZ", "-1.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "50"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
+								["SECTION_ACTIVE"] = {1},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "-0.51"},
+								{"TransY", "-0.2"},
+								{"TransZ", "-1.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "50"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {1},
+							["ADD"] = ACCAx2,
+						}
+					}
+				},
+				-- small 2x
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\RGO\_ACCA.SCENE.MBIN]],
+							[[MODELS\RGO\ACCASMALLx2.SCENE.MBIN]],
+
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] = [[MODELS\RGO\ACCASMALLx2.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] = {
+												{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+								["SECTION_ACTIVE"] = {1},
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "-0.51"},
+								{"TransY", "-0.5"},
+								{"TransZ", "-1.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "50"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+								["SECTION_ACTIVE"] = {1},
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "-0.51"},
+								{"TransY", "-0.5"},
+								{"TransZ", "-1.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "50"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+								["SECTION_ACTIVE"] = {1},
+							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "-0.51"},
+								{"TransY", "-0.5"},
+								{"TransZ", "-1.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "50"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+								["SECTION_ACTIVE"] = {1},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransX", "-0.51"},
+								{"TransY", "-0.5"},
+								{"TransZ", "-1.51"},
+								{"RotX", "0"},
+								{"RotY", "0"},
+								{"RotZ", "50"},
+								{"ScaleX", "1"},
+								{"ScaleY", "0.5"},
+								{"ScaleZ", "2"}
+							}
+						},
+
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {1},
+							["ADD"] = ACCASMALLx2,
+						}
+
+
+					}
+				},
+				-- windy 2x
+				 {
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							[[MODELS\RGO\_ACCA.SCENE.MBIN]],
+							[[MODELS\RGO\ACCAWINDYx2.SCENE.MBIN]],
+
+						},
+						["EXML_CHANGE_TABLE"] =
+						{
+							{
+								["INTEGER_TO_FLOAT"] = "FORCE",
+									["SECTION_ACTIVE"] = {1},
+								["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
+								["VALUE_CHANGE_TABLE"] =
+								{
+									{"TransX", "-0.51"},
+									{"TransY", "-0.5"},
+									{"TransZ", "-0.81"},
+									{"RotX", "0"},
+									{"RotY", "0"},
+									{"RotZ", "50"},
+									{"ScaleX", "1"},
+									{"ScaleY", "0.5"},
+									{"ScaleZ", "2"}
+								}
+							},
+							{
+								["INTEGER_TO_FLOAT"] = "FORCE",
+									["SECTION_ACTIVE"] = {1},
+								["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
+								["VALUE_CHANGE_TABLE"] =
+								{
+									{"TransX", "-0.51"},
+									{"TransY", "-0.5"},
+									{"TransZ", "-0.81"},
+									{"RotX", "0"},
+									{"RotY", "0"},
+									{"RotZ", "50"},
+									{"ScaleX", "1"},
+									{"ScaleY", "0.5"},
+									{"ScaleZ", "2"}
+								}
+							},
+							{
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
+									["SECTION_ACTIVE"] = {1},
+								["VALUE_CHANGE_TABLE"] =
+								{
+									{"TransX", "-0.51"},
+									{"TransY", "-0.5"},
+									{"TransZ", "-0.81"},
+									{"RotX", "0"},
+									{"RotY", "0"},
+									{"RotZ", "50"},
+									{"ScaleX", "1"},
+									{"ScaleY", "0.5"},
+									{"ScaleZ", "2"}
+								}
+							},
+							{
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
+								["SECTION_ACTIVE"] = {1},
+								["VALUE_CHANGE_TABLE"] =
+								{
+									{"TransX", "-0.51"},
+									{"TransY", "-0.5"},
+									{"TransZ", "-0.81"},
+									{"RotX", "0"},
+									{"RotY", "0"},
+									{"RotZ", "50"},
+									{"ScaleX", "1"},
+									{"ScaleY", "0.5"},
+									{"ScaleZ", "2"}
+								}
+							},
+
+							{
+								["PRECEDING_KEY_WORDS"] = "Children",
+								["SECTION_ACTIVE"] = {1},
+								["ADD"] = ACCAWINDYx2,
+							}
+
+						}
+					}
+				},
+				-- SAILSHIPS
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.SCENE.MBIN]],
+							[[MODELS\RGO\SAIL_COCKPIT.SCENE.MBIN]],
+
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.DESCRIPTOR.MBIN]],
+							[[MODELS\RGO\SAIL_COCKPIT.DESCRIPTOR.MBIN]],
+
+						 }
+					}
+				},
+
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\SAIL_COCKPIT.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","WingsShared"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_A"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_B"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_C"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_D"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_E"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_F"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_A"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_B"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_C"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_D"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_E"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Sails_A"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Sails_B"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","_Sails_C"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {1},
+							["ADD"] = TURBINESAIL,
+						}
+					}
+				},
+
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\SAIL_COCKPIT.DESCRIPTOR.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"TypeId","_TIPS_"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"TypeId","_WINGS_"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"TypeId","_SAILS_"},
+							["REMOVE"] = "SECTION"
+
+						}
+					}
+				},
+
+
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						{
+							[[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\CANOPY\CANOPYA\CANOPYA.SCENE.MBIN]],
+							[[MODELS\RGO\_CANOPYA.SCENE.MBIN]],
+
+						 }
+					}
+				},
+
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						{
+							[[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\CANOPY\CANOPYA\CANOPYA.SCENE.MBIN]],
+							[[MODELS\RGO\BALL_COCKPIT.SCENE.MBIN]],
+
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\_CANOPYA.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","CanopyA","Name","CockpitPos"},
+							["VALUE_CHANGE_TABLE"] = {{"TransY","0.5"}}
+						}
+					}
+				},
+
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\BALL_COCKPIT.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","CanopyA"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = CANOPYA
+						}
+					}
+				},
+
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_F\WINGS_F.SCENE.MBIN]],
+							[[MODELS\RGO\_WINGS_F.SCENE.MBIN]],
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_F\WINGS_F.SCENE.MBIN]],
+							[[MODELS\RGO\WINGS_FX.SCENE.MBIN]],
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_F\WINGS_F.SCENE.MBIN]],
+							[[MODELS\RGO\WINGS_X.SCENE.MBIN]],
+						}
+					}
+				},
+
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\_WINGS_F.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_C","Name","SubWings_C"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_C","Name","SubWingsCRight"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_D","Name","SubWings_D"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_D","Name","SubWingsDRight"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"ScaleZ", "2"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_E","Name","SubWings_E","Name","SCENEGRAPH"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Value", "MODELS\RGO\TURBINEAAFR.SCENE.MBIN"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_E","Name","Turbine","Name","SCENEGRAPH"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Value", "MODELS\RGO\TURBINEAAFL.SCENE.MBIN"}
+							}
+						},
+					}
+				},
+				--[=====[
+				--]=====]
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_FX.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Type",[[COLLISION]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD0]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD1]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD2]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD3]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD0]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD1]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD2]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD3]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[_SubWings_E]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[Stage1]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[Stage2]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[Gun1Ref]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[Gun1Ref1]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_C"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_D"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = WINGSFX
+						}
+
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_X.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Type",[[COLLISION]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD0]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD1]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD2]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD3]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD0]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD1]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD2]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD3]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[_SubWings_E]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[Stage1]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[Stage2]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[Gun1Ref]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name",[[Gun1Ref1]]},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_C"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_D"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = WINGSX
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_A\COCKPITA.SCENE.MBIN]],
+							[[MODELS\RGO\COCKPITA.SCENE.MBIN]],
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITA.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","Inventory"},
+							["REMOVE"] = "SECTION"
+						},
+												{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = COCKPIT_A_DATA
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_A\COCKPITA.DESCRIPTOR.MBIN]],
+							[[MODELS\RGO\COCKPITA.DESCRIPTOR.MBIN]],
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB.SCENE.MBIN]],
+							[[MODELS\RGO\COCKPITB.SCENE.MBIN]],
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITB.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = COCKPIT_B_DATA
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB.DESCRIPTOR.MBIN]],
+							[[MODELS\RGO\COCKPITB.DESCRIPTOR.MBIN]],
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_D\COCKPITD.SCENE.MBIN]],
+							[[MODELS\RGO\COCKPITD.SCENE.MBIN]],
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITD.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
+							["REMOVE"] = "SECTION"
+						},
+												{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = COCKPIT_D_DATA
+						}
+					}
+
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_D\COCKPITD.DESCRIPTOR.MBIN]],
+							[[MODELS\RGO\COCKPITD.DESCRIPTOR.MBIN]],
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_E\COCKPIT_E.SCENE.MBIN]],
+							[[MODELS\RGO\COCKPITE.SCENE.MBIN]],
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITE.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = COCKPIT_E_DATA
+						}
+					}
+
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_E\COCKPIT_E.DESCRIPTOR.MBIN]],
+							[[MODELS\RGO\COCKPITE.DESCRIPTOR.MBIN]],
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {
+						{
+							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_F\COCKPTF.SCENE.MBIN]],
+							[[MODELS\RGO\COCKPITF.SCENE.MBIN]],
+						 }
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITF.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
+							["REMOVE"] = "SECTION"
+						},
+												{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = COCKPIT_F_DATA
+						}
+					}
+
+				},
+
+--[=[
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = SAILCOCKPIT_PROC
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.DESCRIPTOR.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"TypeId","_BODY_"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "List",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = SAILCOCKPIT_DESC
+						}
+					}
+				},
+
+--]=]
+		},
+		MULTIPLAYER_MODE
+	)
+
+
+
+
+	-- fighters & sailships proc gen
+	addFeature
+	(
+		ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS,
+		{
+
+						{
+							["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTER_PROC.SCENE.MBIN]],
+							["EXML_CHANGE_TABLE"] =
+							{
+								{
+									["REPLACE_TYPE"] = "ALL",
+									["SPECIAL_KEY_WORDS"] = {"Name","ProcRoot_StarShip"},
+									["REMOVE"] = "SECTION"
+
+								},
+								{
+									["PRECEDING_KEY_WORDS"] = "Children",
+									["SECTION_ACTIVE"] = {0,1},
+									["ADD"] = FIGHTER_PROC
+								}
+							}
+						},
+					
+						
+		},
+		MULTIPLAYER_MODE
+	)
+	
+		copyEXML
+		(
+			ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS,
+			[[FIGHTER_PROC.DESCRIPTOR.EXML]],
+			[[MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTER_PROC.DESCRIPTOR.EXML]]
+		)
+	-- new shuttle design
+	addFeature
+	(
+		-- design tweaks
+		ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS,
+		{
+			{
+				["MBIN_FILE_SOURCE"]  =
+				{
+					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITADOUBLE.SCENE.MBIN]],
+					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITASINGLE.SCENE.MBIN]]
+				},
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["SPECIAL_KEY_WORDS"] = {"Name","CanopyA"},
+						["VALUE_CHANGE_TABLE"] = {
+							{"ScaleX","0.7"},
+							{"ScaleY","0.7"},
+							{"ScaleZ","0.7"},
+							{"TransZ","-0.7"}
+						}
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = {
+					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBDOUBLEBOX.SCENE.MBIN]],
+					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBDOUBLECYLINDER.SCENE.MBIN]],
+					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBSINGLEBOX.SCENE.MBIN]]
+				},
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["SPECIAL_KEY_WORDS"] = {"Name","Canopy"},
+						["VALUE_CHANGE_TABLE"] = {
+							{"ScaleX","0.7"},
+							{"ScaleY","0.7"},
+							{"ScaleZ","0.7"},
+							{"TransZ","-0.7"}
+						}
+					}
+
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = {
+					"MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBSINGLE.SCENE.MBIN",
+				},
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["SPECIAL_KEY_WORDS"] = {"Name","polySurface2"},
+						["VALUE_CHANGE_TABLE"] = {
+							{"ScaleX","0.87"},
+							{"ScaleY","0.87"},
+							{"ScaleZ","0.87"},
+							{"TransZ","-0.87"}
+						}
+					}
+
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = {
+					"MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBSINGLECYLINDER.SCENE.MBIN",
+				},
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["SPECIAL_KEY_WORDS"] = {"Name","CanopyB"},
+						["VALUE_CHANGE_TABLE"] = {
+							{"ScaleX","0.7"},
+							{"ScaleY","0.7"},
+							{"ScaleZ","0.7"},
+							{"TransZ","-0.7"}
+						}
+					}
+
+				}
+			}
+		},
+		MULTIPLAYER_MODE
+	)
+	-- new shuttle generation
+	addFeature
+	(
+		ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS,
+		{
+
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","ProcRoot_StarShip"},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = SHUTTLE_PROC
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC.DESCRIPTOR.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"TypeId","_SHUTTLE_",},
+							["REMOVE"] = "SECTION"
+
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "List",
+							["SECTION_ACTIVE"] = {0,1},
+							["ADD"] = SHUTTLE_DESC
+						}
+					}
+				}
+
+		},
+		MULTIPLAYER_MODE
+	)
+	-- New design for scientifics ships
+	addFeature
+	(
+		ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS,
+		{
+			{
+				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["SPECIAL_KEY_WORDS"]={"Name","WingBRight"},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleZ","2"},
+						}
+					},
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBLEFT.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["SPECIAL_KEY_WORDS"]={"Name","WingBLeft"},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleZ","2"},
+						}
+					},
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSE\WINGERIGHT.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["SPECIAL_KEY_WORDS"]={"Name","WingERight"},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"RotX","-90"},
+							{"ScaleX","2"},
+							{"ScaleY","2"},
+						}
+					},
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSE\WINGELEFT.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["SPECIAL_KEY_WORDS"]={"Name","WingsELeft"},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"RotX","-90"},
+							{"ScaleX","2"},
+							{"ScaleY","2"},
+						}
+					},
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHT.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["SPECIAL_KEY_WORDS"]={"Name","WingDRight"},
+						["INTEGER_TO_FLOAT"] = "Force",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY","1.5"},
+							{"ScaleZ","1.5"},
+						}
+					},
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDLEFT.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["SPECIAL_KEY_WORDS"]={"Name","WingDLeft"},
+						["INTEGER_TO_FLOAT"] = "Force",
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY","1.5"},
+							{"ScaleZ","1.5"},
+						}
+					},
+				}
+			}
+		},
+		MULTIPLAYER_MODE
+	)
+
+	
+--[=[	copyEXML
+	(
+		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
+		[[INDUSTRIAL\GANTRYBCAPBRIDGEC.SCENE.EXML]],
+		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGEC.SCENE.EXML]]
+	)
+	copyEXML
+	(
+		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
+		[[INDUSTRIAL\GANTRYBCAPBRIDGED.SCENE.EXML]],
+		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGED.SCENE.EXML]]
+	)
+	copyEXML
+	(
+		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
+		[[INDUSTRIAL\GANTRYBCAPSPHERE.SCENE.EXML]],
+		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPSPHERE.SCENE.EXML]]
+	)
+	copyEXML
+	(
+		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
+		[[INDUSTRIAL\GANTRYBJOINTRING.SCENE.EXML]],
+		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBJOINTRING.SCENE.EXML]]
+	)
+	copyEXML
+	(
+		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
+		[[INDUSTRIAL\LARGEGANTRYCAPB.SCENE.EXML]],
+		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\LARGEGANTRYCAPB.SCENE.EXML]]
+	)--]=]
+
+	addFeature
+	(
+		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
+		{
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\ANTENAHUGE_A.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name", "AntenaHuge_A"},
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["SECTION_ACTIVE"] = {1,2},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY", "0.51"},
+							{"ScaleZ", "2"},
+						}
+					},
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\SAIL1.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name", "SailLOD0"},
+						["SECTION_ACTIVE"] = {1,2},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY", "2"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name", "SailLOD1"},
+						["SECTION_ACTIVE"] = {1,2},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY", "2"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name", "SailLOD2"},
+						["SECTION_ACTIVE"] = {1,2},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY", "2"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name", "SailLOD3"},
+						["SECTION_ACTIVE"] = {1,2},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY", "2"},
+						}
+					},
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\VERTICALFIN.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name", "VerticalFinLOD0"},
+						["SECTION_ACTIVE"] = {1,2},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY", "2"},
+							{"ScaleZ", "2"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name", "VerticalFinLOD1"},
+						["SECTION_ACTIVE"] = {1,2},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY", "2"},
+							{"ScaleZ", "2"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name", "VerticalFinLOD2"},
+						["SECTION_ACTIVE"] = {1,2},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY", "2"},
+							{"ScaleZ", "2"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name", "VerticalFinLOD3"},
+						["SECTION_ACTIVE"] = {1,2},
+						["VALUE_CHANGE_TABLE"] =
+						{
+							{"ScaleY", "2"},
+							{"ScaleZ", "2"},
+						}
+					},
+				}
+			}
+		},
+		MULTIPLAYER_MODE
+	)
+	-- additional parts & generation for royal sclass
+	SCLASS_PROC = readTemplate("SCLASS_PROC")
+	SCLASS_DESC = readTemplate("SCLASS_DESC")
+	addFeature
+	(
+		ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS,
+		{
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\S-CLASS\S-CLASS_PROC.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["REPLACE_TYPE"] = "ALL",
+						["SPECIAL_KEY_WORDS"] = {"Name","ProcRoot_StarShip"},
+						["REMOVE"] = "SECTION"
+
+					},
+					{
+						["PRECEDING_KEY_WORDS"] = "Children",
+						["SECTION_ACTIVE"] = {0,1},
+						["ADD"] = SCLASS_PROC
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\S-CLASS\S-CLASS_PROC.DESCRIPTOR.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["REPLACE_TYPE"] = "ALL",
+						["SPECIAL_KEY_WORDS"] = {"TypeId","_SCLASSSHIP_"},
+						["REMOVE"] = "SECTION"
+
+					},
+					{
+						["PRECEDING_KEY_WORDS"] = "List",
+						["SECTION_ACTIVE"] = {0,1},
+						["ADD"] = SCLASS_DESC
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	=
+				{
+					{
+						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A\ENTITIES\WINGS_A.ENTITY.MBIN]],
+						[[MODELS\RGO\ENTITIES\WINGS_A2.ENTITY.MBIN]],
+
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	=
+				{
+					{
+						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A\ENTITIES\WINGS_A.ENTITY.MBIN]],
+						[[MODELS\RGO\ENTITIES\WINGS_A3.ENTITY.MBIN]],
+
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	=
+				{
+					{
+						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A\ENTITIES\WINGS_A.ENTITY.MBIN]],
+						[[MODELS\RGO\ENTITIES\WINGS_A4.ENTITY.MBIN]],
+
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	= "MODELS\RGO\ENTITIES\WINGS_A2.ENTITY.MBIN",
+				["EXML_CHANGE_TABLE"] 	=
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"FrameEnd",	"145"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"FrameStart",	"36"},
+						}
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	= "MODELS\RGO\ENTITIES\WINGS_A3.ENTITY.MBIN",
+				["EXML_CHANGE_TABLE"] 	=
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"FrameEnd",	"161"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"FrameStart",	"20"},
+						}
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	= "MODELS\RGO\ENTITIES\WINGS_A4.ENTITY.MBIN",
+				["EXML_CHANGE_TABLE"] 	=
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"FrameEnd",	"131"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"FrameStart",	"50"},
+						}
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	=
+				{
+					{
+						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A.SCENE.MBIN]],
+						[[MODELS\RGO\WINGS_A2.SCENE.MBIN]],
+
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_A2.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] 	=
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\RGO\ENTITIES\WINGS_A2.ENTITY.MBIN]]},
+						}
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	=
+				{
+					{
+						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A.SCENE.MBIN]],
+						[[MODELS\RGO\WINGS_A3.SCENE.MBIN]],
+
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_A3.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] 	=
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\RGO\ENTITIES\WINGS_A3.ENTITY.MBIN]]},
+						}
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	=
+				{
+					{
+						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A.SCENE.MBIN]],
+						[[MODELS\RGO\WINGS_A4.SCENE.MBIN]],
+
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_A4.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] 	=
+				{
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\RGO\ENTITIES\WINGS_A4.ENTITY.MBIN]]},
+						}
+					}
+				}
+			},
+		},
+		MULTIPLAYER_MODE
+	)
+	----------------------------------------------------------------------------------------------
+
+
+
+if E3_FANTASY_PLANETS_COLORS_FEATURE == "ON" then
+
+		-- planets fantasy colors
+		FANTASY_COLOURS = readTemplate(COLORS_GENERATION_REWORK) -- "FANTASY_COLOURS" or "SCIFI_COLOURS" -- ( temporary way to change the colors style )
+		FANTASY_FROZEN_COLOURS = readTemplate("FANTASY_FROZEN_COLOURS")
+		
+		tileRework()
+
+		addFeature
+		(
+			E3_FANTASY_PLANETS_COLORS_FEATURE,
+			{
+				{
+					["MBIN_FILE_SOURCE"] = {
+						[[METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN]],
+						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHCOLOURPALETTES.MBIN]],
+						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQCOLOURPALETTE.MBIN]],
+						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMACOLOURPALETTE.MBIN]],
+						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBCOLOURPALETTE.MBIN]]
+					},
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Grass","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Plant","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Leaf","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Wood","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Rock","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Stone","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Crystal","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Sand","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Dirt","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Metal","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Paint","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Plastic","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Fur","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Scale","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Feather","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Water","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Cloud","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Sky","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Space","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Underbelly","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Undercoat","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Snow","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"SkyHorizon","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+												{
+							["PRECEDING_KEY_WORDS"] = "Palettes",
+							["SECTION_ACTIVE"] = {1,2},
+							["ADD"] = FANTASY_COLOURS
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] = {
+						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENCOLOURPALETTES.MBIN]],
+						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQCOLOURPALETTES.MBIN]]
+					},
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Grass","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Plant","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Leaf","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Wood","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Rock","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Stone","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Crystal","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Sand","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Dirt","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Metal","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Paint","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Plastic","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Fur","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Scale","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Feather","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Water","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Cloud","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Sky","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Space","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Underbelly","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Undercoat","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Snow","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"SkyHorizon","GcPaletteData.xml"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "Palettes",
+							["SECTION_ACTIVE"] = {1,2},
+							["ADD"] = FANTASY_FROZEN_COLOURS
+						},
+					}
+				}
+			}
+		)
+end
+
+		-- E3 CRYSTALS Assets
+		if E3_FANTASY_CRYSTALS_ASSETS_FEATURE == "ON" then
+
+			
+
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			--[=[-
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_UNDERWATER.DESCRIPTOR]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_UNDERWATER.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_UNDERWATER.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_UNDERWATER.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			-]=]
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_UNDERWATER.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_UNDERWATER.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_UNDERWATER.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_UNDERWATER.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_MEDIUM.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_MEDIUM.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_MOUNTAIN.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_MOUNTAIN.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_MOUNTAIN.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_MOUNTAIN.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_UNDERWATER.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_UNDERWATER.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_UNDERWATER.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_UNDERWATER.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\BARREN.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\BARREN.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\SCORCHED.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\SCORCHED.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\RADIOACTIVE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\RADIOACTIVE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\LUSH.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\LUSH.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\FULL.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FROZEN.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\FROZEN.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\DEAD.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\DEAD.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\CAVEFULL.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\CAVEFULL.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\TOXIC.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\TOXIC.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+
+		end
+
+
+		-- E3 DEPOSITS ASSETS
+		if E3_FANTASY_DEPOTS_ASSETS_FEATURE == "ON" then
+
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\CONSTRUCT01.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\CONSTRUCT01.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\ALIENRING.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\ALIENRING.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\BAT.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\BAT.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\BAT.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\BAT.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\CONSTRUCT01.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\CONSTRUCT01.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTSCIENTIFIC.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTSCIENTIFIC.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTTRADER.DESCRIPTOR.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTTRADER.DESCRIPTOR.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTTRADER.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTTRADER.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTWARRIOR.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTWARRIOR.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\MONOLITH.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\MONOLITH.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+
+		end
+
+		-- E3 BUILDINGS BEACONS
+		if E3_FANTASY_BEACONS_ASSETS_FEATURE == "ON" then
+		
+		NEW_CONTENT =
+		{
+
+			["FILE_DESTINATION"] 		= [[MODELS\RGO\CONSTRUCT02.SCENE.EXML]],
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\CONSTRUCT01.SCENE.EXML]]
+
+		}
+		table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+
+		BEACON = [[
+      <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="RefPortal" />
+      <Property name="NameHash" value="1182013967" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="60" />
+        <Property name="TransY" value="-5" />
+        <Property name="TransZ" value="20" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1.62" />
+        <Property name="ScaleY" value="1.62" />
+        <Property name="ScaleZ" value="1.62" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\RGO\CONSTRUCT02.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+		]]
+
+		addFeature
+		(
+			E3_FANTASY_BEACONS_ASSETS_FEATURE,
+			{
+
+
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BEACONS\BEACON.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["ADD"] 	= BEACON
+						},			
+
+					}
+				}
+			}
+
+		)
+
+
+		end
+
+		-- E3 RUINS
+		if REDMAS_RUINS_FEATURES == "ON" then
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\__FAKEPROCRUINS.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\RUINS\__FAKEPROCRUINS.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\_PROCRUINS.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\RUINS\_PROCRUINS.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PROCRUINS.SCENE.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\RUINS\PROCRUINS.SCENE.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+			--
+		end
+
+
+
+
+	if E3_FANTASY_PORTALS_ASSETS_FEATURE == "ON" then
+		-- portals assets
+	PORTAL = readTemplate("PORTAL")
+	COLLISION_STARGATE = readTemplate("COLLISION_STARGATE")
+	addFeature
+	(
+		E3_FANTASY_PORTALS_ASSETS_FEATURE,
+		{
+			{
+				["MBIN_FILE_SOURCE"] =
+				{
+					{
+						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN]],
+						[[MODELS\RGO\_PORTAL.SCENE.MBIN]],
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] =
+				{
+					{
+						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATEMAIN.SCENE.MBIN]],
+						[[MODELS\RGO\_STARGATEMAIN.SCENE.MBIN]],"REMOVE"
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] =
+				{
+					{
+						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATETEMPLE.SCENE.MBIN]],
+						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN]],"REMOVE"
+					}
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["REPLACE_TYPE"] = "ALL",
+						["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
+						["REMOVE"] = "SECTION"
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"NameHash","3621565930"},
+						["PRECEDING_KEY_WORDS"] = {"SCENEGRAPH"},
+						["SECTION_ACTIVE"] = {0,1,2,3},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Value",	[[MODELS\RGO\_STARGATEMAIN.SCENE.MBIN]]},
+						}
+					},
+
+				}
+			},
+			{
+				["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\_STARGATEMAIN.SCENE.MBIN]],
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["REPLACE_TYPE"] = "ALL",
+						["PRECEDING_KEY_WORDS"] = "Children",
+						["ADD"] 	= PORTAL
+					},
+					{
+						["REPLACE_TYPE"] = "ALL",
+						["PRECEDING_KEY_WORDS"] = "Children",
+						["ADD"] 	= COLLISION_STARGATE
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","gate46"},
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"TransX","5.8"},
+							{"TransY","5"},
+							{"RotY","180"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","gate264"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"TransX","-5.8"},
+							{"TransY","5"},
+							{"RotY","0"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name","MainMono"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"TransY","-5"},
+						}
+					},
+
+				}
+			}
+		}
+	)
+	end
+	
+	if E3_FANTASY_WORSTONES_ASSETS_FEATURE == "ON" then
+		-- wordstones
+		WORDSTONES_SPAWNER =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULL.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\LEVELONEOBJECTS\FULL.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, WORDSTONES_SPAWNER)
+		WORDSTONES_SPAWNER =
+		{
+	   		 ["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULLSAFE.EXML]],
+       		 ["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\LEVELONEOBJECTS\FULLSAFE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, WORDSTONES_SPAWNER)
+		addFeature
+		(
+			E3_FANTASY_WORSTONES_ASSETS_FEATURE,
+			{
+				{
+					["MBIN_FILE_SOURCE"] =
+					{
+						{
+							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\STANDINGSTONE\STANDINGSTONEWARRIOR_RARE.SCENE.MBIN]],
+							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE.SCENE.MBIN]],"REMOVE"
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","1959231336"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN]]},
+							}
+						}
+					}
+
+				},
+				{
+					["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"UseInteractCamera",	"False"},
+								{"RepeatInteraction",	"True"},
+							}
+						},
+					}
+				},
+				-- plaques
+				{
+					["MBIN_FILE_SOURCE"] =
+					{
+						{
+							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONOLITH\MONOLITH.SCENE.MBIN]],
+							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE.SCENE.MBIN]]
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE.SCENE.MBIN]],
+					["REPLACE_TYPE"] = "ALL",
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","2969419012"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE\ENTITIES\PLAQUE.ENTITY.MBIN]]},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","362111922"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE\ENTITIES\PLAQUE.ENTITY.MBIN]]},
+							}
+						}
+					}
+					
+				},
+			}
+		)
+
+	end
+
+
+
+
+
+-- LARGE BUILDINGS TRADING POSTS
+	addFeature
+	(
+		LARGE_BUILDINGS_TRADINGPOSTS_FEATURE,
+		{
+
+
+				{
+					-- SCIENTIFIC
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							BUILDINGS_PATH..[[LARGEBUILDINGS\LARGEBUILDING_PROC.DESCRIPTOR.MBIN]],
+							BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTSCIENTIFIC.DESCRIPTOR.MBIN]]
+						}
+					},
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_BUILDING_KOR"},
+							["REPLACE_TYPE"] = "ALL",
+							["REMOVE"] 	= "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_LAYOUT_KOR"},
+							["REPLACE_TYPE"] = "ALL",
+							["REMOVE"] 	= "SECTION"
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTSCIENTIFIC.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["SECTION_ACTIVE"] = 1,
+							["ADD"] 	= VYK_TOWER
+						}
+					}
+				},
+				-- TRADER
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							BUILDINGS_PATH..[[LARGEBUILDINGS\LARGEBUILDING_PROC.DESCRIPTOR.MBIN]],
+							BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTTRADER.DESCRIPTOR.MBIN]]
+						}
+					},
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_BUILDING_VYK"},
+							["REPLACE_TYPE"] = "ALL",
+							["REMOVE"] 	= "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_LAYOUT_VYK"},
+							["REPLACE_TYPE"] = "ALL",
+							["REMOVE"] 	= "SECTION"
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTTRADER.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["SECTION_ACTIVE"] = 1,
+							["ADD"] 	= KORVAX_TOWER
+						}
+					}
+				},
+				-- WARRIOR
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+							BUILDINGS_PATH..[[LARGEBUILDINGS\LARGEBUILDING_PROC.DESCRIPTOR.MBIN]],
+							BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTWARRIOR.DESCRIPTOR.MBIN]],
+							"REMOVE"
+						}
+					},
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_BUILDING_VYK"},
+							["REPLACE_TYPE"] = "ALL",
+							["REMOVE"] 	= "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_LAYOUT_VYK"},
+							["REPLACE_TYPE"] = "ALL",
+							["REMOVE"] 	= "SECTION"
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTWARRIOR.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["SECTION_ACTIVE"] = 1,
+							["ADD"] 	= KORVAX_TOWER
+						}
+					}
+				},
+
+		}
+	)
+	
+-- freighter bridge rework
+
+if FREIGHTER_BRIDGE_REWORK == "ON" then
+	copyEXML
+	(
+		'ON',
+		[[BRIDGE.SCENE.EXML]],
+		[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.EXML]]
+	)
+end
 
 --vanilla Debug 
 if REDMAS_CAPE_FIX == "ON"
@@ -7822,135 +11332,7 @@ end
 
 if GENERATION_OVERHAUL == "ON" then
 		----------------------------------------------------------------------
-	if ULTRA_DIVERSE_SPACE_COLOURS == "ON" then
-		ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW = ""
-		ULTRA_DIVERSE_SPACE_COLOURS_EXML = ""
 
-		for loop = 0 , 2000 do
-			print("------ ADDED NEW SPACE COLOUR " .. loop)
-			R_VALUE_REF = math.random(0,6)*0.1+math.random(0,9)*0.01+math.random(0,9)*0.001
-			B_VALUE_REF = math.random(0,6)*0.1+math.random(0,9)*0.01+math.random(0,9)*0.001
-			G_VALUE_REF = math.random(0,6)*0.1+math.random(0,9)*0.01+math.random(0,9)*0.001
-			G_MID = G_VALUE_REF+math.random(1,3)*0.01
-			R_MID = R_VALUE_REF+math.random(1,3)*0.01
-			B_MID = B_VALUE_REF+math.random(1,3)*0.01
-			G_BOT = G_MID+math.random(1,3)*0.11
-			R_BOT = R_MID+math.random(1,3)*0.11
-			B_BOT = B_MID+math.random(1,3)*0.11
-			G_NEB1 = G_BOT+math.random(1,3)*0.021
-			R_NEB1 = R_BOT+math.random(1,3)*0.021
-			B_NEB1 = B_BOT+math.random(1,3)*0.021
-			G_NEB2 = R_NEB1+math.random(1,3)*0.031
-			R_NEB2 = B_NEB1+math.random(1,3)*0.031
-			B_NEB2 = G_NEB2+math.random(1,3)*0.031
-			G_NEB3 = R_NEB1-math.random(1,3)*0.041
-			R_NEB3 = B_NEB1-math.random(1,3)*0.041
-			B_NEB3 = G_NEB2-math.random(1,3)*0.041
-			ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW =
-			[[
-				<Property value="GcSolarSystemSkyColourData.xml">
-				<Property name="TopColour" value="Colour.xml">
-				  <Property name="R" value="]]..R_VALUE_REF..[[" />
-				  <Property name="G" value="]]..G_VALUE_REF..[[" />
-				  <Property name="B" value="]]..B_VALUE_REF..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="MidColour" value="Colour.xml">
-				  <Property name="R" value="]]..G_MID..[[" />
-				  <Property name="G" value="]]..R_MID..[[" />
-				  <Property name="B" value="]]..B_MID..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="BottomColour" value="Colour.xml">
-				  <Property name="R" value="]]..G_BOT..[[" />
-				  <Property name="G" value="]]..G_BOT..[[" />
-				  <Property name="B" value="]]..G_BOT..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="TopColourPlanet" value="Colour.xml">
-				  <Property name="R" value="]]..R_VALUE_REF..[[" />
-				  <Property name="G" value="]]..G_VALUE_REF..[[" />
-				  <Property name="B" value="]]..B_VALUE_REF..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="MidColourPlanet" value="Colour.xml">
-				  <Property name="R" value="]]..R_VALUE_REF..[[" />
-				  <Property name="G" value="]]..G_VALUE_REF..[[" />
-				  <Property name="B" value="]]..B_VALUE_REF..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="BottomColourPlanet" value="Colour.xml">
-				  <Property name="R" value="]]..R_VALUE_REF..[[" />
-				  <Property name="G" value="]]..G_VALUE_REF..[[" />
-				  <Property name="B" value="]]..B_VALUE_REF..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="CloudColour" value="Colour.xml">
-				  <Property name="R" value="]]..R_VALUE_REF..[[" />
-				  <Property name="G" value="]]..G_VALUE_REF..[[" />
-				  <Property name="B" value="]]..B_VALUE_REF..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="LightColour" value="Colour.xml">
-				  <Property name="R" value="]]..R_NEB1..[[" />
-				  <Property name="G" value="]]..G_NEB1..[[" />
-				  <Property name="B" value="]]..B_NEB1..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="NebulaColour1" value="Colour.xml">
-				  <Property name="R" value="]]..R_NEB1..[[" />
-				  <Property name="G" value="]]..G_NEB1..[[" />
-				  <Property name="B" value="]]..B_NEB1..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="NebulaColour2" value="Colour.xml">
-				  <Property name="R" value="]]..R_NEB2..[[" />
-				  <Property name="G" value="]]..G_NEB2..[[" />
-				  <Property name="B" value="]]..B_NEB2..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="NebulaColour3" value="Colour.xml">
-				  <Property name="R" value="]]..R_NEB3..[[" />
-				  <Property name="G" value="]]..G_NEB3..[[" />
-				  <Property name="B" value="]]..B_NEB3..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="FogColour" value="Colour.xml">
-				  <Property name="R" value="]]..R_VALUE_REF..[[" />
-				  <Property name="G" value="]]..G_VALUE_REF..[[" />
-				  <Property name="B" value="]]..B_VALUE_REF..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-				<Property name="FogColour2" value="Colour.xml">
-				  <Property name="R" value="]]..R_VALUE_REF..[[" />
-				  <Property name="G" value="]]..G_VALUE_REF..[[" />
-				  <Property name="B" value="]]..B_VALUE_REF..[[" />
-				  <Property name="A" value="1" />
-				</Property>
-			  </Property>
-
-			]]
-			ULTRA_DIVERSE_SPACE_COLOURS_EXML = ULTRA_DIVERSE_SPACE_COLOURS_EXML .. ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW
-		end
-
-		ULTRA_DIVERSE_SPACE_COLOURS_CHANGE_TABLE =
-		{
-			{
-				["MBIN_FILE_SOURCE"]  = {
-					[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],
-					[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN]]
-				},
-				["EXML_CHANGE_TABLE"] 	={
-					{
-						["PRECEDING_KEY_WORDS"] = {"Settings"},
-						["ADD"] 	= ULTRA_DIVERSE_SPACE_COLOURS_EXML
-					}
-				}
-			}
-		}
-		addContent(ULTRA_DIVERSE_SPACE_COLOURS_CHANGE_TABLE)
-
-	end
 end
 
 if VISUAL_OVERHAUL == "ON"
@@ -8127,7 +11509,7 @@ then
 							{"G", "0.0001"},
 						}
 					},----------------------------------------------------------------
-					{
+{
 						["SPECIAL_KEY_WORDS"] = {"TopColour","Colour.xml"},
 						["INTEGER_TO_FLOAT"] = "FORCE",
 						["REPLACE_TYPE"] = "ALL",
@@ -8135,7 +11517,7 @@ then
 						["VALUE_CHANGE_TABLE"] 	=
 						{
 							{"R", "0.1"},
-							{"B", "0.3"},
+							{"B", "0.2"},
 							{"G", "0.1"},
 						}
 					},
@@ -8147,7 +11529,7 @@ then
 						["VALUE_CHANGE_TABLE"] 	=
 						{
 							{"R", "0.09"},
-							{"B", "0.09"},
+							{"B", "0.18"},
 							{"G", "0.09"},
 						}
 					},
@@ -8159,7 +11541,7 @@ then
 						["VALUE_CHANGE_TABLE"] 	=
 						{
 							{"R", "0.08"},
-							{"B", "0.08"},
+							{"B", "0.16"},
 							{"G", "0.08"},
 						}
 					},
@@ -8193,7 +11575,6 @@ then
 									{"A", "0.89"}
 								}
 							}
-				
 				}
 
 
@@ -8290,7 +11671,7 @@ then
 								["MATH_OPERATION"] 	= "*",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"A", "0.2"}
+									{"A", "0.02"}
 								}
 							},
 							{
@@ -8300,7 +11681,7 @@ then
 								["MATH_OPERATION"] 	= "*",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"A", "0.85"}
+									{"A", "0.5"}
 								}
 							},
 							{
@@ -8310,7 +11691,7 @@ then
 								["MATH_OPERATION"] 	= "*",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"A", "0.89"}
+									{"A", "0.9"}
 								}
 							}
 
@@ -8348,6 +11729,7 @@ then
 							{"Foam1Speed", "2E-05"},
 							{"Foam2Scale", "5E-09"},
 							{"Foam2Speed", "0.0004"},
+							{"WaterStrength", "0.004"},
 							{"A", "0"},
 						}
 					}
@@ -8511,9 +11893,9 @@ then
 
 	--dirty metal
 	FIGHTERS_PAINT1 = METAL_PAINT -- "FRESH_PAINT"/ "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
-	FIGHTERS_PAINT2 = FRESH_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
-	FIGHTERS_PAINT3 = GOLD_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
-	FIGHTERS_PAINT4 = OLD_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	FIGHTERS_PAINT2 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	FIGHTERS_PAINT3 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	FIGHTERS_PAINT4 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
 
 	if FIGHTERS_SPACESHIPS_REPAINT == "FULL" then
 	-- Full Metal
@@ -8524,7 +11906,7 @@ then
 	end
 	-- Change those values for DROPSHIP ("Hauler") spaceships
 	DROPSHIP_PAINT1 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
-	DROPSHIP_PAINT2 = OLD_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
+	DROPSHIP_PAINT2 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
 	DROPSHIP_PAINT3 = GOLD_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
 	DROPSHIP_PAINT4 = METAL_PAINT -- "FRESH_PAINT" / "GOLD_PAINT" / "METAL_PAINT" / "OLD_PAINT" options
 	-- Change those values for Shuttle spaceships
@@ -12342,6 +15724,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 		DAY_ONE_MODE
 	)
 	-- CUSTOM EXOCRAFTS
+
 	addFeature
 	(
 		CUSTOM_ROAMER_EXOCRAFT,
@@ -12355,17 +15738,25 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					},
 				}
 			},
+
+		}
+	)
+	addFeature
+	(
+		CUSTOM_NOMAD_EXOCRAFT ,
+		{
 			{
 				["MBIN_FILE_SOURCE"] 	=
 				{
 					{
-						[[MODELS\COMMON\VEHICLES\BIKE\BIKEPRES.SCENE.MBIN]],
-						[[MODELS\RGO\_BIKEPRES.SCENE.MBIN]],
+						[[MODELS\COMMON\VEHICLES\BUGGY\BUGGYPRES.SCENE.MBIN]],
+						[[MODELS\RGO\_BUGGYPRES.SCENE.MBIN]],
 					},
-				}
-			},
+				},
+			}
 		}
 	)
+
 	addFeature
 	(
 		CUSTOM_ROAMER_EXOCRAFT,
@@ -12946,7 +16337,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				["MBIN_FILE_SOURCE"] 	=
 				{
 					{
-						[[MODELS\RGO\_BIKEPRES.SCENE.MBIN]],
+						[[MODELS\COMMON\VEHICLES\BIKE\BIKEPRES.SCENE.MBIN]],
 						[[MODELS\RGO\KANEDA_COCKPIT.SCENE.MBIN]],
 					},
 				}
@@ -13223,10 +16614,11 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					{
 						[[MODELS\COMMON\VEHICLES\BIKE\BIKEPRES.SCENE.MBIN]],
 						[[MODELS\RGO\BIKEPRES1.SCENE.MBIN]],
-						"REMOVE"
+						
 					}
 				},
 			},
+
 			{
 				["MBIN_FILE_SOURCE"]  =
 				{
@@ -14460,12 +17852,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 		},
 		DAY_ONE_MODE
 	)
-	copyEXML
-	(
-		'ON',
-		[[BRIDGE.SCENE.EXML]],
-		[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.EXML]]
-	)
+
 
 	-- INERACTIVE OBJECTS
 	--copyEXML(NEW_INTERACTIONS_FEATURE,[[SAVETABLE.SCENE.EXML]],[[MODELS\RGO\SAVETABLE.SCENE.EXML]])
@@ -17162,167 +20549,6 @@ if CREATURES_OVERHAUL == "ON" then
 	)
 end
 -- END CREATURES GENERATION
--- GENERATION OVERHAUL
-if GENERATION_OVERHAUL == "ON"
-then
-
-
-
-
- --copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Fantasy_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
-   copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Vanilla_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
-
-
-
-
-
-
-	val_TERRAIN_HEIGHT_MIN = tonumber(TERRAIN_HEIGHT_MAX) - 50
-	TERRAIN_HEIGHT_MIN = tostring (val_TERRAIN_HEIGHT_MIN)
-	if MODDED_TERRAIN_SHAPES_FEATURE == "EPIC_FANTASY" then
-		addFeature
-		(
-			"ON",
-			{
-				{
-					["MBIN_FILE_SOURCE"] = [[METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Active","True"},
-							}
-						},
-
-
-					}
-				}
-			}
-		)
-	end
-
-	if MODDED_TERRAIN_SHAPES_FEATURE ~= "OFF" then
-		addFeature
-		(
-			"ON",
-			{
-				{
-					["MBIN_FILE_SOURCE"] = [[METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight",TERRAIN_HEIGHT_MIN},
-								{"MaxHeight",TERRAIN_HEIGHT_MAX},
-								--{"Active","True"},
-							}
-						},
-
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Large",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","130"},
-								{"MaxHeight","250"},
-								{"NoiseGridType","SuperFormula_08"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Small",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								--{"SwapZY","True"},
-								{"MinHeight","50"},
-								{"MaxHeight","150"},
-								{"NoiseGridType","Sphere"},
-							}
-						},
-																		{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Resources_Aluminium",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","10"},
-								{"MaxHeight","50"},
-								{"NoiseGridType","SuperPrimitiveRandom"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Resources_Gold",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","10"},
-								{"MaxHeight","50"},
-								{"NoiseGridType","Torus"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Resources_Emeril",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","10"},
-								{"MaxHeight","50"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Resources_Nickel",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","10"},
-								{"MaxHeight","50"},
-								{"NoiseGridType","SuperPrimitiveRandom"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Resources_Iridium",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","10"},
-								{"MaxHeight","50"},
-								{"NoiseGridType","SuperPrimitiveRandom"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Resources_Heridium",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","10"},
-								{"MaxHeight","50"},
-								{"NoiseGridType","SuperFormula_03"},
-							}
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Resources_Copper",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinHeight","10"},
-								{"MaxHeight","50"},
-								{"NoiseGridType","SuperFormula_08"},
-							}
-						},
-
-					}
-				}
-			}
-		)
-	end
-
-
-
-
-
 
 	-- voxels
 	if E3_STYLE_RESSOURCES_DEPOSITS == "ON" then
@@ -17637,6 +20863,171 @@ then
 
 	end
 	--- end sky colors
+
+
+
+-- GENERATION OVERHAUL
+if GENERATION_OVERHAUL == "ON"
+then
+
+
+
+
+ --copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Fantasy_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
+   copyEXML(FANTASY_BIOMES_FEATURE,[[SENT\Vanilla_EXTREMESENTINELPROPS.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\EXTREMESENTINELPROPS.EXML]])
+
+
+
+
+
+
+	val_TERRAIN_HEIGHT_MIN = tonumber(TERRAIN_HEIGHT_MAX) - 50
+	TERRAIN_HEIGHT_MIN = tostring (val_TERRAIN_HEIGHT_MIN)
+	if MODDED_TERRAIN_SHAPES_FEATURE == "EPIC_FANTASY" then
+		addFeature
+		(
+			"ON",
+			{
+				{
+					["MBIN_FILE_SOURCE"] = [[METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Active","True"},
+							}
+						},
+
+
+					}
+				}
+			}
+		)
+	end
+
+	if MODDED_TERRAIN_SHAPES_FEATURE == "ON" then
+		addFeature
+		(
+			"ON",
+			{
+				{
+					["MBIN_FILE_SOURCE"] = [[METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight",TERRAIN_HEIGHT_MIN},
+								{"MaxHeight",TERRAIN_HEIGHT_MAX},
+								--{"Active","True"},
+							}
+						},
+
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Large",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight","130"},
+								{"MaxHeight","250"},
+								{"NoiseGridType","SuperFormula_08"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Small",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								--{"SwapZY","True"},
+								{"MinHeight","50"},
+								{"MaxHeight","150"},
+								{"NoiseGridType","Sphere"},
+							}
+						},
+																		{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Resources_Aluminium",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight","10"},
+								{"MaxHeight","50"},
+								{"NoiseGridType","SuperPrimitiveRandom"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Resources_Gold",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight","10"},
+								{"MaxHeight","50"},
+								{"NoiseGridType","Torus"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Resources_Emeril",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight","10"},
+								{"MaxHeight","50"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Resources_Nickel",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight","10"},
+								{"MaxHeight","50"},
+								{"NoiseGridType","SuperPrimitiveRandom"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Resources_Iridium",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight","10"},
+								{"MaxHeight","50"},
+								{"NoiseGridType","SuperPrimitiveRandom"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Resources_Heridium",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight","10"},
+								{"MaxHeight","50"},
+								{"NoiseGridType","SuperFormula_03"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Resources_Copper",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinHeight","10"},
+								{"MaxHeight","50"},
+								{"NoiseGridType","SuperFormula_08"},
+							}
+						},
+
+					}
+				}
+			}
+		)
+	end
+
+
+
+
+
+
 
 
 
@@ -29252,365 +32643,6 @@ LUSHGRASSLIST =
 		table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 
 
-		-- planets fantasy colors
-		FANTASY_COLOURS = readTemplate(COLORS_GENERATION_REWORK) -- "FANTASY_COLOURS" or "SCIFI_COLOURS" -- ( temporary way to change the colors style )
-		FANTASY_FROZEN_COLOURS = readTemplate("FANTASY_FROZEN_COLOURS")
-		-- tiles rework
-		if GENERATION_OVERHAUL == "ON" then
-
-
-
-
-
-			NEW_TILES_TABLE =
-			{
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASETILETYPES.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\BASETILETYPES.EXML]]
-			}
-			table.insert(CUSTOM_CONTENT, NEW_TILES_TABLE)
-
-
-
-			NEW_TILES_TABLE =
-			{
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASETILETYPES_LAVA.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\BASETILETYPES_LAVA.EXML]]
-			}
-			table.insert(CUSTOM_CONTENT, NEW_TILES_TABLE)
-
-			NEW_TILES_TABLE =
-			{
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHTILETYPES.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\LUSHTILETYPES.EXML]]
-			}
-			table.insert(CUSTOM_CONTENT, NEW_TILES_TABLE)
-
-			NEW_TILES_TABLE =
-			{
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENTILETYPES.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\FROZENTILETYPES.EXML]]
-			}
-			table.insert(CUSTOM_CONTENT, NEW_TILES_TABLE)
-		end
-
-
-		addFeature
-		(
-			E3_FANTASY_PLANETS_COLORS_FEATURE,
-			{
-				{
-					["MBIN_FILE_SOURCE"] = {
-						[[METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHCOLOURPALETTES.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQCOLOURPALETTE.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMACOLOURPALETTE.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBCOLOURPALETTE.MBIN]]
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Grass","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Plant","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Leaf","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Wood","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Rock","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Stone","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Crystal","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Sand","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Dirt","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Metal","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Paint","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Plastic","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Fur","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Scale","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Feather","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Water","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Cloud","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Sky","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Space","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Underbelly","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Undercoat","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Snow","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"SkyHorizon","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-												{
-							["PRECEDING_KEY_WORDS"] = "Palettes",
-							["SECTION_ACTIVE"] = {1,2},
-							["ADD"] = FANTASY_COLOURS
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = {
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENCOLOURPALETTES.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQCOLOURPALETTES.MBIN]]
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Grass","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Plant","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Leaf","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Wood","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Rock","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Stone","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Crystal","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Sand","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Dirt","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Metal","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Paint","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Plastic","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Fur","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Scale","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Feather","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Water","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Cloud","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Sky","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Space","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Underbelly","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Undercoat","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Snow","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"SkyHorizon","GcPaletteData.xml"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Palettes",
-							["SECTION_ACTIVE"] = {1,2},
-							["ADD"] = FANTASY_FROZEN_COLOURS
-						},
-					}
-				}
-			}
-		)
-
-
-		-- wordstones
-		WORDSTONES_SPAWNER =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULL.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\LEVELONEOBJECTS\FULL.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, WORDSTONES_SPAWNER)
-		WORDSTONES_SPAWNER =
-		{
-	   		 ["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULLSAFE.EXML]],
-       		 ["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\LEVELONEOBJECTS\FULLSAFE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, WORDSTONES_SPAWNER)
-		addFeature
-		(
-			E3_FANTASY_WORSTONES_ASSETS_FEATURE,
-			{
-				{
-					["MBIN_FILE_SOURCE"] =
-					{
-						{
-							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\STANDINGSTONE\STANDINGSTONEWARRIOR_RARE.SCENE.MBIN]],
-							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE.SCENE.MBIN]],"REMOVE"
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"NameHash","1959231336"},
-							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
-							["SECTION_ACTIVE"] = {0,1,2,3},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Value",	[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN]]},
-							}
-						}
-					}
-
-				},
-				{
-					["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SECTION_ACTIVE"] = {0,1,2,3},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"UseInteractCamera",	"False"},
-								{"RepeatInteraction",	"True"},
-							}
-						},
-					}
-				},
-				-- plaques
-				{
-					["MBIN_FILE_SOURCE"] =
-					{
-						{
-							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONOLITH\MONOLITH.SCENE.MBIN]],
-							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE.SCENE.MBIN]]
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE.SCENE.MBIN]],
-					["REPLACE_TYPE"] = "ALL",
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"NameHash","2969419012"},
-							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
-							["SECTION_ACTIVE"] = {0,1,2,3},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Value",	[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE\ENTITIES\PLAQUE.ENTITY.MBIN]]},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"NameHash","362111922"},
-							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
-							["SECTION_ACTIVE"] = {0,1,2,3},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Value",	[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\PLAQUE\ENTITIES\PLAQUE.ENTITY.MBIN]]},
-							}
-						}
-					}
-					
-				},
-			}
-		)
 
 		-- EPIC FANTASY Core ASSETS
 		if ADD_RGO_CUSTOM_ASSETS == "ON" then
@@ -32200,715 +35232,6 @@ LUSHGRASSLIST =
 		--
 	end
 
-		-- E3 CRYSTALS Assets
-		if E3_FANTASY_CRYSTALS_ASSETS_FEATURE == "ON" then
-
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			--[=[-
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_UNDERWATER.DESCRIPTOR]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_UNDERWATER.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_UNDERWATER.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_UNDERWATER.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			-]=]
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_UNDERWATER.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_UNDERWATER.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_UNDERWATER.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_UNDERWATER.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_FRAGMENT.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_MEDIUM.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_MEDIUM.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_MOUNTAIN.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_MOUNTAIN.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_MOUNTAIN.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_MOUNTAIN.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_UNDERWATER.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_UNDERWATER.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_UNDERWATER.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\CRYSTALS\SMALL\CRYSTAL_SMALL_UNDERWATER.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\BARREN.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\BARREN.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\SCORCHED.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\SCORCHED.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\RADIOACTIVE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\RADIOACTIVE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\LUSH.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\LUSH.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\FULL.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FROZEN.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\FROZEN.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\DEAD.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\DEAD.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\CAVEFULL.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\CAVEFULL.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\TOXIC.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CRYSTALS\TOXIC.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-
-		end
-
-
-
-
-		-- E3 DEPOSITS ASSETS
-		if E3_FANTASY_DEPOTS_ASSETS_FEATURE == "ON" then
-
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\ALIENRING.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\ALIENRING.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\BAT.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\BAT.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\BAT.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\BAT.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\CONSTRUCT01.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\CONSTRUCT01.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTSCIENTIFIC.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTSCIENTIFIC.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTTRADER.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTTRADER.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTTRADER.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTTRADER.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTWARRIOR.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTWARRIOR.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\MONOLITH.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\MONOLITH.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-
-		end
-
-		-- E3 BUILDINGS BEACONS
-		if E3_FANTASY_BEACONS_ASSETS_FEATURE == "ON" then
-
-		BEACON = [[
-      <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="RefPortal" />
-      <Property name="NameHash" value="1182013967" />
-      <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="60" />
-        <Property name="TransY" value="-5" />
-        <Property name="TransZ" value="20" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1.62" />
-        <Property name="ScaleY" value="1.62" />
-        <Property name="ScaleZ" value="1.62" />
-      </Property>
-      <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
-          <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\RGO\CONSTRUCT01.SCENE.MBIN" />
-        </Property>
-      </Property>
-      <Property name="Children" />
-    </Property>
-		]]
-
-		addFeature
-		(
-			E3_FANTASY_BEACONS_ASSETS_FEATURE,
-			{
-
-
-				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BEACONS\BEACON.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["ADD"] 	= BEACON
-						},			
-
-					}
-				}
-			}
-
-		)
-
-
-		end
-
-		-- E3 RUINS
-		if REDMAS_RUINS_FEATURES == "ON" then
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\__FAKEPROCRUINS.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\RUINS\__FAKEPROCRUINS.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\_PROCRUINS.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\RUINS\_PROCRUINS.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PROCRUINS.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\RUINS\PROCRUINS.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-		end
-
-
-
-
-
-		-- portals assets
-	PORTAL = readTemplate("PORTAL")
-	COLLISION_STARGATE = readTemplate("COLLISION_STARGATE")
-	addFeature
-	(
-		E3_FANTASY_PORTALS_ASSETS_FEATURE,
-		{
-			{
-				["MBIN_FILE_SOURCE"] =
-				{
-					{
-						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN]],
-						[[MODELS\RGO\_PORTAL.SCENE.MBIN]],
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] =
-				{
-					{
-						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATEMAIN.SCENE.MBIN]],
-						[[MODELS\RGO\_STARGATEMAIN.SCENE.MBIN]],"REMOVE"
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] =
-				{
-					{
-						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATETEMPLE.SCENE.MBIN]],
-						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN]],"REMOVE"
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["REPLACE_TYPE"] = "ALL",
-						["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
-						["REMOVE"] = "SECTION"
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"NameHash","3621565930"},
-						["PRECEDING_KEY_WORDS"] = {"SCENEGRAPH"},
-						["SECTION_ACTIVE"] = {0,1,2,3},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"Value",	[[MODELS\RGO\_STARGATEMAIN.SCENE.MBIN]]},
-						}
-					},
-
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\_STARGATEMAIN.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["REPLACE_TYPE"] = "ALL",
-						["PRECEDING_KEY_WORDS"] = "Children",
-						["ADD"] 	= PORTAL
-					},
-					{
-						["REPLACE_TYPE"] = "ALL",
-						["PRECEDING_KEY_WORDS"] = "Children",
-						["ADD"] 	= COLLISION_STARGATE
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","gate46"},
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"TransX","5.8"},
-							{"TransY","5"},
-							{"RotY","180"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","gate264"},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"TransX","-5.8"},
-							{"TransY","5"},
-							{"RotY","0"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","MainMono"},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"TransY","-5"},
-						}
-					},
-
-				}
-			}
-		}
-	)
 
 end
 
@@ -34330,121 +36653,10 @@ end
 		-- Fantasy biomes
 		if FANTASY_BIOMES_FEATURE == "ON" then
 
-
-			addFeature(
-		GENERATION_OVERHAUL,
-		{
-			
-			{
-				["MBIN_FILE_SOURCE"] =
-					{
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSBIOME.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSBIOME.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOURBIOME.MBIN]],						
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TextureFile",[[METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/BARREN.MBIN]]},
-								{"TileTypesFile",[[METADATA/SIMULATION/SOLARSYSTEM/COLOURS/DESERTTILETYPES.MBIN]]},
-								{"ColourPaletteFile",[[METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENCOLOURPALETTES.MBIN]]},
-							}
-						},
-					},
-			},
-			--
-			{
-				["MBIN_FILE_SOURCE"] =
-					{
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSBIOME.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENBIOME.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSBIOME.MBIN]],	
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEBIOME.MBIN]],		
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEBIOME.MBIN]],							
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TextureFile",[[METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/LUSH.MBIN]]},
-								{"ColourPaletteFile",[[METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHCOLOURPALETTES.MBIN]]},
-								{"TileTypesFile",[[METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHTILETYPES.MBIN]]},
-							}
-						},
-					},
-			},
-			--
-			{
-				["MBIN_FILE_SOURCE"] =
-					{
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTBIOME.MBIN]],
-					
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TextureFile",[[METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/FROZEN.MBIN]]},
-								{"ColourPaletteFile",[[METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENCOLOURPALETTES.MBIN]]},
-							}
-						},
-					},
-			},
-			{
-				["MBIN_FILE_SOURCE"] =
-					{
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONBIOME.MBIN]],					
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TextureFile",[[METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/FROZEN.MBIN]]},
-								{"ColourPaletteFile",[[METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENCOLOURPALETTES.MBIN]]},
-							}
-						},
-					},
-			},
-						{
-				["MBIN_FILE_SOURCE"] =
-					{
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWBIOME.MBIN]],					
-						[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSBIOME.MBIN]],			
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TextureFile",[[METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/MOON.MBIN]]},
-								{"ColourPaletteFile",[[METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBCOLOURPALETTE.MBIN]]},
-								{"TileTypesFile",[[METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHTILETYPES.MBIN]]},
-							}
-						},
-					},
-			},
-			
-		}
-	
-)
-
-
+			tileRework()
 			--
 			copyEXML("ON","GRASS\NONE.EXML","METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHULTRAOBJECTS.EXML")
 			copyEXML("ON","GRASS\NONE.EXML","METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\ULTRAEXTERNALOBJECTS.EXML")
-
-
-
 
 			SUBBIOMES_TF = ""
 
@@ -40076,2265 +42288,7 @@ NEW_CONTENT =
 			end -- end skybiomes
 
 	--------------------------------------------------------------------------
-	-- LARGE BUILDINGS TRADING POSTS
-	addFeature
-	(
-		LARGE_BUILDINGS_TRADINGPOSTS_FEATURE,
-		{
-
-
-				{
-					-- SCIENTIFIC
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							BUILDINGS_PATH..[[LARGEBUILDINGS\LARGEBUILDING_PROC.DESCRIPTOR.MBIN]],
-							BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTSCIENTIFIC.DESCRIPTOR.MBIN]]
-						}
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","_BUILDING_KOR"},
-							["REPLACE_TYPE"] = "ALL",
-							["REMOVE"] 	= "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","_LAYOUT_KOR"},
-							["REPLACE_TYPE"] = "ALL",
-							["REMOVE"] 	= "SECTION"
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTSCIENTIFIC.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Children"},
-							["SECTION_ACTIVE"] = 1,
-							["ADD"] 	= VYK_TOWER
-						}
-					}
-				},
-				-- TRADER
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							BUILDINGS_PATH..[[LARGEBUILDINGS\LARGEBUILDING_PROC.DESCRIPTOR.MBIN]],
-							BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTTRADER.DESCRIPTOR.MBIN]]
-						}
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","_BUILDING_VYK"},
-							["REPLACE_TYPE"] = "ALL",
-							["REMOVE"] 	= "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","_LAYOUT_VYK"},
-							["REPLACE_TYPE"] = "ALL",
-							["REMOVE"] 	= "SECTION"
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTTRADER.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Children"},
-							["SECTION_ACTIVE"] = 1,
-							["ADD"] 	= KORVAX_TOWER
-						}
-					}
-				},
-				-- WARRIOR
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							BUILDINGS_PATH..[[LARGEBUILDINGS\LARGEBUILDING_PROC.DESCRIPTOR.MBIN]],
-							BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTWARRIOR.DESCRIPTOR.MBIN]],
-							"REMOVE"
-						}
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","_BUILDING_VYK"},
-							["REPLACE_TYPE"] = "ALL",
-							["REMOVE"] 	= "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","_LAYOUT_VYK"},
-							["REPLACE_TYPE"] = "ALL",
-							["REMOVE"] 	= "SECTION"
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = BUILDINGS_PATH..[[TRADINGPOST\TRADINGPOSTWARRIOR.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Children"},
-							["SECTION_ACTIVE"] = 1,
-							["ADD"] 	= KORVAX_TOWER
-						}
-					}
-				},
-
-		}
-	)
-
-	if REDMAS_SPACE_GENERATION == "ON" then
-
-	--------------------------------------------------------------------------
-	-- BUSY SPACE TRAFFIC
-	--------------------------------------------------------------------------
-	addFeature
-	(
-		BUSY_SPACE_TRAFFIC,
-		{
-
-				{
-					["MBIN_FILE_SOURCE"]  = [[GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["MATH_OPERATION"] = "+",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Freighter","100"},
-								{"Royal","100"},
-								{"Alien","100"},
-								{"Sail","100"},
-							}
-						}
-					}
-				},
-				
-				{
-					["MBIN_FILE_SOURCE"]  = [[METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "Spaceships",
-							["SECTION_ACTIVE"] = {1,2,3},
-							["ADD"] = SENT_CIVIL
-						}
-
-					}
-				},
-				
-								
-				
-
-
-		},
-		DAY_ONE_MODE
-	)
-
-	if MASSIVE_FLEET == "ON" then
-	-- New parts for Freighters
-	copyEXML
-	(
-		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
-		[[INDUSTRIAL\GANTRYBCAPBRIDGEA.SCENE.EXML]],
-		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGEA.SCENE.EXML]]
-	)
-	end
-
-		copyEXML
-		(
-			MASSIVE_FLEET,
-			[[FREIGHTER_A.SCENE.EXML]],
-			[[MODELS\RGO\FREIGHTER_A.SCENE.EXML]]
-		)	
-		copyEXML
-		(
-			MASSIVE_FLEET,
-			[[FREIGHTSHIP01.SCENE.EXML]],
-			[[MODELS\RGO\FREIGHTSHIP01.SCENE.EXML]]
-		)
-
-	addFeature
-	(
-		MASSIVE_FLEET,
-		{
-			{
-				["MBIN_FILE_SOURCE"]  = {
-					{
-					"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
-					"MODELS\RGO\_FREIGHTERTINY_PROC.SCENE.MBIN"
-					}
-				}
-			},
-			{
-
-				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTSHIP01.SCENE.MBIN",
-				["EXML_CHANGE_TABLE"] 	=
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"NameHash","2027018462"},
-						["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
-						["SECTION_ACTIVE"] = {0,1,2,3},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"Value",	[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERSMALL_PROC\ENTITIES\SMALLFREIGHTER.ENTITY.MBIN]]},
-						}
-					}
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = {
-					{
-					"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
-					"MODELS\RGO\_FREIGHTERTINY_PROC.SCENE.MBIN"
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["PRECEDING_KEY_WORDS"] = "Children",
-						["SECTION_ACTIVE"] = {1},
-						["ADD"] = CONTENT_FREIGHTERS_SPAWNER
-					}
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.DESCRIPTOR.MBIN",
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["PRECEDING_KEY_WORDS"] = "List",
-						["SECTION_ACTIVE"] = {1},
-						["ADD"] = FREIGHTER_DESCRIPTOR
-					},
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\POI\ATLASBEACON.SCENE.MBIN",
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["PRECEDING_KEY_WORDS"] = "Children",
-						["SECTION_ACTIVE"] = {1},
-						["ADD"] = LARGE_FREIGHTERS
-					}
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\POI\ATLASBEACON.DESCRIPTOR.MBIN",
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["PRECEDING_KEY_WORDS"] = "List",
-						["SECTION_ACTIVE"] = {1},
-						["ADD"] = FREIGHTER_DESCRIPTOR
-					},
-				}
-
-			},
-		}
-		
-	)
-
-
-
-	-- PROCEDURAL CRASH SITES MISSIONS
-	DERELIC_CRASHSITE = readTemplate("DERELIC_CRASHSITE")
-	addFeature
-	(
-		PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION,
-		{
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\SPACE\POI\DUNGEON.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["PRECEDING_KEY_WORDS"] = "Children",
-						["SECTION_ACTIVE"] = {1},
-						["ADD"] = DERELIC_CRASHSITE
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  =
-				{
-					{
-						[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\CRASHEDFREIGHTER.DESCRIPTOR.MBIN]],
-						[[MODELS\SPACE\POI\DUNGEON.DESCRIPTOR.MBIN]]
-					}
-				},
-			}
-		}
-	)
-	end
-	--------------------------------------------------------------------
-	-- REDMAS SPACESHIPS GENERATION
-
-
-	-- fighters new PARTS
-	addFeature
-	(
-		ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS,
-		{
-			--[=====[
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"]=
-					{
-						{
-							["SECTION_ACTIVE"] = {1},
-							["SPECIAL_KEY_WORDS"] = {"Name","Ship","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value",[[MODELS\COMMON\SPACECRAFT\DROPSHIPS\HULL\HULLB\DROPSHIP_MAT.MATERIAL.MBIN]]}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Ship","Name","ATTACHMENT"},
-							["REMOVE"] = "SECTION"
-						},
-
-					}
-				},
-
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP.SCENE.MBIN]],
-							[[MODELS\RGO\WINGSE3.SCENE.MBIN]],
-							"REMOVE"
-						}
-					}
-				},
-				--]=====]
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","SpinEngine1"},
-							["VALUE_CHANGE_TABLE"] = {
-								--{"TransX","0"},
-								--{"TransY","1.642135"},
-								--{"TransZ","-2.26289"},
-								--{"RotX","0"},
-								--{"RotY","0"},
-								--{"RotZ","0"},
-								--{"ScaleX","1"},
-								--{"ScaleY","1"},
-								{"ScaleZ","1.5"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","EngineParts"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = {
-								--{"TransX","0"},
-								--{"TransY","0"},
-								--{"TransZ","0"},
-								--{"RotX","0"},
-								--{"RotY","0"},
-								--{"RotZ","0"},
-								--{"ScaleX","1"},
-								--{"ScaleY","1"},
-								{"ScaleZ","1.5"},
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","Stage2"},
-							["VALUE_CHANGE_TABLE"] = {
-								--{"TransX","0"},
-								--{"TransY","1.641415"},
-								--{"TransZ","-2.419677"},
-								--{"RotX","0"},
-								--{"RotY","180"},
-								--{"RotZ","0"},
-								{"ScaleX","1.82"},
-								{"ScaleY","1.82"},
-								{"ScaleZ","2"},
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","Stage2","Name","C1"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ScaleX","1.314815"},
-								{"ScaleY","1.314815"},
-								{"ScaleZ","1.314815"},
-							}
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN]],
-							[[MODELS\RGO\ENGINEC.SCENE.MBIN]],
-						}
-					}
-				},
-								{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEA.DESCRIPTOR.MBIN]],
-							[[MODELS\RGO\COCKPITANOSEAW.DESCRIPTOR.MBIN]],
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEA.SCENE.MBIN]],
-							[[MODELS\RGO\COCKPITANOSEAW.SCENE.MBIN]],
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\COCKPITANOSEAW.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {1,2},
-							["ADD"] = MOUSTACHE,
-						}
-					}
-				},
-
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
-							[[MODELS\RGO\_TURBINEAA.SCENE.MBIN]],
-
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {1},
-							["ADD"] = TURBINEAAF,
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
-							[[MODELS\RGO\TURBINEAAFR.SCENE.MBIN]],
-
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					 {
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_None"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"RotZ","90"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_ABIG"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"RotZ","90"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_ASMALL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"RotZ","90"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_ASMALL2"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"RotZ","90"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_Acc_AWINDY"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"RotZ","90"}
-							}
-						}
-
-
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\TURBINEAA.SCENE.MBIN]],
-							[[MODELS\RGO\TURBINEAAFL.SCENE.MBIN]],
-							"REMOVE"
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
-							[[MODELS\RGO\_ACCA.SCENE.MBIN]]
-						}
-					}
-				},
-				-- SMALL
-				{
-					["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Contrail1"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.2"},
-								{"TransZ", "-0.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.2"},
-								{"TransZ", "-0.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.2"},
-								{"TransZ", "-0.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.2"},
-								{"TransZ", "-0.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
-							[[MODELS\RGO\ACCASMALL.SCENE.MBIN]]
-						}
-					}
-				},
-				-- BIG
-				{
-					["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.51"},
-								{"TransZ", "-0.5"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "1.5"},
-								{"ScaleZ", "1"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.51"},
-								{"TransZ", "-0.5"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "1.5"},
-								{"ScaleZ", "1"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.51"},
-								{"TransZ", "-0.5"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "1.5"},
-								{"ScaleZ", "1"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.51"},
-								{"TransZ", "-0.5"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "1.5"},
-								{"ScaleZ", "1"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
-							[[MODELS\RGO\ACCABIG.SCENE.MBIN]]
-						}
-					}
-				},
-				-- WINDY
-				{
-					["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] = {
-
-
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.5"},
-								{"TransZ", "-0.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.5"},
-								{"TransZ", "-0.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.5"},
-								{"TransZ", "-0.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0"},
-								{"TransY", "-0.5"},
-								{"TransZ", "-0.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "0"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN]],
-							[[MODELS\RGO\ACCAWINDY.SCENE.MBIN]],
-							"REMOVE"
-						}
-					}
-				},
-				--  2x
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\RGO\_ACCA.SCENE.MBIN]],
-							[[MODELS\RGO\ACCAx2.SCENE.MBIN]],
-						}
-					},
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
-								["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "-0.51"},
-								{"TransY", "-0.2"},
-								{"TransZ", "-1.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "50"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
-								["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "-0.51"},
-								{"TransY", "-0.2"},
-								{"TransZ", "-1.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "50"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
-								["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "-0.51"},
-								{"TransY", "-0.2"},
-								{"TransZ", "-1.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "50"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
-								["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "-0.51"},
-								{"TransY", "-0.2"},
-								{"TransZ", "-1.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "50"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {1},
-							["ADD"] = ACCAx2,
-						}
-					}
-				},
-				-- small 2x
-				{
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\RGO\_ACCA.SCENE.MBIN]],
-							[[MODELS\RGO\ACCASMALLx2.SCENE.MBIN]],
-
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = [[MODELS\RGO\ACCASMALLx2.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] = {
-												{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-								["SECTION_ACTIVE"] = {1},
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "-0.51"},
-								{"TransY", "-0.5"},
-								{"TransZ", "-1.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "50"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-								["SECTION_ACTIVE"] = {1},
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "-0.51"},
-								{"TransY", "-0.5"},
-								{"TransZ", "-1.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "50"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-								["SECTION_ACTIVE"] = {1},
-							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "-0.51"},
-								{"TransY", "-0.5"},
-								{"TransZ", "-1.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "50"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-								["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "-0.51"},
-								{"TransY", "-0.5"},
-								{"TransZ", "-1.51"},
-								{"RotX", "0"},
-								{"RotY", "0"},
-								{"RotZ", "50"},
-								{"ScaleX", "1"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "2"}
-							}
-						},
-
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {1},
-							["ADD"] = ACCASMALLx2,
-						}
-
-
-					}
-				},
-				-- windy 2x
-				 {
-					["MBIN_FILE_SOURCE"]  = {
-						{
-							[[MODELS\RGO\_ACCA.SCENE.MBIN]],
-							[[MODELS\RGO\ACCAWINDYx2.SCENE.MBIN]],
-
-						},
-						["EXML_CHANGE_TABLE"] =
-						{
-							{
-								["INTEGER_TO_FLOAT"] = "FORCE",
-									["SECTION_ACTIVE"] = {1},
-								["SPECIAL_KEY_WORDS"] = {"Name","AccALOD0"},
-								["VALUE_CHANGE_TABLE"] =
-								{
-									{"TransX", "-0.51"},
-									{"TransY", "-0.5"},
-									{"TransZ", "-0.81"},
-									{"RotX", "0"},
-									{"RotY", "0"},
-									{"RotZ", "50"},
-									{"ScaleX", "1"},
-									{"ScaleY", "0.5"},
-									{"ScaleZ", "2"}
-								}
-							},
-							{
-								["INTEGER_TO_FLOAT"] = "FORCE",
-									["SECTION_ACTIVE"] = {1},
-								["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
-								["VALUE_CHANGE_TABLE"] =
-								{
-									{"TransX", "-0.51"},
-									{"TransY", "-0.5"},
-									{"TransZ", "-0.81"},
-									{"RotX", "0"},
-									{"RotY", "0"},
-									{"RotZ", "50"},
-									{"ScaleX", "1"},
-									{"ScaleY", "0.5"},
-									{"ScaleZ", "2"}
-								}
-							},
-							{
-								["INTEGER_TO_FLOAT"] = "FORCE",
-								["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
-									["SECTION_ACTIVE"] = {1},
-								["VALUE_CHANGE_TABLE"] =
-								{
-									{"TransX", "-0.51"},
-									{"TransY", "-0.5"},
-									{"TransZ", "-0.81"},
-									{"RotX", "0"},
-									{"RotY", "0"},
-									{"RotZ", "50"},
-									{"ScaleX", "1"},
-									{"ScaleY", "0.5"},
-									{"ScaleZ", "2"}
-								}
-							},
-							{
-								["INTEGER_TO_FLOAT"] = "FORCE",
-								["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
-								["SECTION_ACTIVE"] = {1},
-								["VALUE_CHANGE_TABLE"] =
-								{
-									{"TransX", "-0.51"},
-									{"TransY", "-0.5"},
-									{"TransZ", "-0.81"},
-									{"RotX", "0"},
-									{"RotY", "0"},
-									{"RotZ", "50"},
-									{"ScaleX", "1"},
-									{"ScaleY", "0.5"},
-									{"ScaleZ", "2"}
-								}
-							},
-
-							{
-								["PRECEDING_KEY_WORDS"] = "Children",
-								["SECTION_ACTIVE"] = {1},
-								["ADD"] = ACCAWINDYx2,
-							}
-
-						}
-					}
-				},
-				-- SAILSHIPS
-				
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.SCENE.MBIN]],
-							[[MODELS\RGO\SAIL_COCKPIT.SCENE.MBIN]],
-
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.DESCRIPTOR.MBIN]],
-							[[MODELS\RGO\SAIL_COCKPIT.DESCRIPTOR.MBIN]],
-
-						 }
-					}
-				},
-
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\SAIL_COCKPIT.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","WingsShared"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_A"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_B"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_C"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_D"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_E"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Wings_F"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_A"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_B"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_C"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_D"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Tips_E"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Sails_A"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Sails_B"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","_Sails_C"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {1},
-							["ADD"] = TURBINESAIL,
-						}
-					}
-				},
-
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\SAIL_COCKPIT.DESCRIPTOR.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"TypeId","_TIPS_"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"TypeId","_WINGS_"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"TypeId","_SAILS_"},
-							["REMOVE"] = "SECTION"
-
-						}
-					}
-				},
-
-
-				{
-					["MBIN_FILE_SOURCE"] 	=
-					{
-						{
-							[[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\CANOPY\CANOPYA\CANOPYA.SCENE.MBIN]],
-							[[MODELS\RGO\_CANOPYA.SCENE.MBIN]],
-
-						 }
-					}
-				},
-
-				{
-					["MBIN_FILE_SOURCE"] 	=
-					{
-						{
-							[[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\CANOPY\CANOPYA\CANOPYA.SCENE.MBIN]],
-							[[MODELS\RGO\BALL_COCKPIT.SCENE.MBIN]],
-
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\_CANOPYA.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","CanopyA","Name","CockpitPos"},
-							["VALUE_CHANGE_TABLE"] = {{"TransY","0.5"}}
-						}
-					}
-				},
-
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\BALL_COCKPIT.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","CanopyA"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = CANOPYA
-						}
-					}
-				},
-
-				{
-					["MBIN_FILE_SOURCE"] 	=
-					{
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_F\WINGS_F.SCENE.MBIN]],
-							[[MODELS\RGO\_WINGS_F.SCENE.MBIN]],
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	=
-					{
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_F\WINGS_F.SCENE.MBIN]],
-							[[MODELS\RGO\WINGS_FX.SCENE.MBIN]],
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	=
-					{
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_F\WINGS_F.SCENE.MBIN]],
-							[[MODELS\RGO\WINGS_X.SCENE.MBIN]],
-						}
-					}
-				},
-
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\_WINGS_F.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_C","Name","SubWings_C"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_C","Name","SubWingsCRight"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_D","Name","SubWings_D"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_D","Name","SubWingsDRight"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ScaleZ", "2"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_E","Name","SubWings_E","Name","SCENEGRAPH"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\RGO\TURBINEAAFR.SCENE.MBIN"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_E","Name","Turbine","Name","SCENEGRAPH"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\RGO\TURBINEAAFL.SCENE.MBIN"}
-							}
-						},
-					}
-				},
-				--[=====[
-				--]=====]
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_FX.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Type",[[COLLISION]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD0]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD1]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD2]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD3]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD0]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD1]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD2]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD3]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[_SubWings_E]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[Stage1]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[Stage2]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[Gun1Ref]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[Gun1Ref1]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_C"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_D"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = WINGSFX
-						}
-
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_X.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Type",[[COLLISION]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD0]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD1]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD2]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsFLOD3]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD0]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD1]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD2]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[WingsF2LOD3]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[_SubWings_E]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[Stage1]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[Stage2]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[Gun1Ref]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name",[[Gun1Ref1]]},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_C"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","_SubWings_D"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = WINGSX
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_A\COCKPITA.SCENE.MBIN]],
-							[[MODELS\RGO\COCKPITA.SCENE.MBIN]],
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITA.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Inventory"},
-							["REMOVE"] = "SECTION"
-						},
-												{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = COCKPIT_A_DATA
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_A\COCKPITA.DESCRIPTOR.MBIN]],
-							[[MODELS\RGO\COCKPITA.DESCRIPTOR.MBIN]],
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB.SCENE.MBIN]],
-							[[MODELS\RGO\COCKPITB.SCENE.MBIN]],
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITB.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = COCKPIT_B_DATA
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB.DESCRIPTOR.MBIN]],
-							[[MODELS\RGO\COCKPITB.DESCRIPTOR.MBIN]],
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_D\COCKPITD.SCENE.MBIN]],
-							[[MODELS\RGO\COCKPITD.SCENE.MBIN]],
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITD.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
-							["REMOVE"] = "SECTION"
-						},
-												{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = COCKPIT_D_DATA
-						}
-					}
-
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_D\COCKPITD.DESCRIPTOR.MBIN]],
-							[[MODELS\RGO\COCKPITD.DESCRIPTOR.MBIN]],
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_E\COCKPIT_E.SCENE.MBIN]],
-							[[MODELS\RGO\COCKPITE.SCENE.MBIN]],
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITE.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = COCKPIT_E_DATA
-						}
-					}
-
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_E\COCKPIT_E.DESCRIPTOR.MBIN]],
-							[[MODELS\RGO\COCKPITE.DESCRIPTOR.MBIN]],
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_F\COCKPTF.SCENE.MBIN]],
-							[[MODELS\RGO\COCKPITF.SCENE.MBIN]],
-						 }
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\RGO\COCKPITF.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Data"},
-							["REMOVE"] = "SECTION"
-						},
-												{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = COCKPIT_F_DATA
-						}
-					}
-
-				},
-
---[=[
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = SAILCOCKPIT_PROC
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.DESCRIPTOR.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"TypeId","_BODY_"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "List",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = SAILCOCKPIT_DESC
-						}
-					}
-				},
-
---]=]
-		},
-		MULTIPLAYER_MODE
-	)
-
-
-
-
-	-- fighters & sailships proc gen
-	addFeature
-	(
-		ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS,
-		{
-
-						{
-							["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTER_PROC.SCENE.MBIN]],
-							["EXML_CHANGE_TABLE"] =
-							{
-								{
-									["REPLACE_TYPE"] = "ALL",
-									["SPECIAL_KEY_WORDS"] = {"Name","ProcRoot_StarShip"},
-									["REMOVE"] = "SECTION"
-
-								},
-								{
-									["PRECEDING_KEY_WORDS"] = "Children",
-									["SECTION_ACTIVE"] = {0,1},
-									["ADD"] = FIGHTER_PROC
-								}
-							}
-						},
-					
-						
-		},
-		MULTIPLAYER_MODE
-	)
 	
-		copyEXML
-		(
-			ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS,
-			[[FIGHTER_PROC.DESCRIPTOR.EXML]],
-			[[MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTER_PROC.DESCRIPTOR.EXML]]
-		)
-	-- new shuttle design
-	addFeature
-	(
-		-- design tweaks
-		ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS,
-		{
-			{
-				["MBIN_FILE_SOURCE"]  =
-				{
-					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITADOUBLE.SCENE.MBIN]],
-					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITASINGLE.SCENE.MBIN]]
-				},
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["SPECIAL_KEY_WORDS"] = {"Name","CanopyA"},
-						["VALUE_CHANGE_TABLE"] = {
-							{"ScaleX","0.7"},
-							{"ScaleY","0.7"},
-							{"ScaleZ","0.7"},
-							{"TransZ","-0.7"}
-						}
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = {
-					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBDOUBLEBOX.SCENE.MBIN]],
-					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBDOUBLECYLINDER.SCENE.MBIN]],
-					[[MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBSINGLEBOX.SCENE.MBIN]]
-				},
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["SPECIAL_KEY_WORDS"] = {"Name","Canopy"},
-						["VALUE_CHANGE_TABLE"] = {
-							{"ScaleX","0.7"},
-							{"ScaleY","0.7"},
-							{"ScaleZ","0.7"},
-							{"TransZ","-0.7"}
-						}
-					}
-
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = {
-					"MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBSINGLE.SCENE.MBIN",
-				},
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["SPECIAL_KEY_WORDS"] = {"Name","polySurface2"},
-						["VALUE_CHANGE_TABLE"] = {
-							{"ScaleX","0.87"},
-							{"ScaleY","0.87"},
-							{"ScaleZ","0.87"},
-							{"TransZ","-0.87"}
-						}
-					}
-
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = {
-					"MODELS\COMMON\SPACECRAFT\SHUTTLE\COCKPIT\COCKPITBSINGLECYLINDER.SCENE.MBIN",
-				},
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["SPECIAL_KEY_WORDS"] = {"Name","CanopyB"},
-						["VALUE_CHANGE_TABLE"] = {
-							{"ScaleX","0.7"},
-							{"ScaleY","0.7"},
-							{"ScaleZ","0.7"},
-							{"TransZ","-0.7"}
-						}
-					}
-
-				}
-			}
-		},
-		MULTIPLAYER_MODE
-	)
-	-- new shuttle generation
-	addFeature
-	(
-		ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS,
-		{
-
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"Name","ProcRoot_StarShip"},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Children",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = SHUTTLE_PROC
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC.DESCRIPTOR.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["SPECIAL_KEY_WORDS"] = {"TypeId","_SHUTTLE_",},
-							["REMOVE"] = "SECTION"
-
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "List",
-							["SECTION_ACTIVE"] = {0,1},
-							["ADD"] = SHUTTLE_DESC
-						}
-					}
-				}
-
-		},
-		MULTIPLAYER_MODE
-	)
-	-- New design for scientifics ships
-	addFeature
-	(
-		ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS,
-		{
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["SPECIAL_KEY_WORDS"]={"Name","WingBRight"},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleZ","2"},
-						}
-					},
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBLEFT.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["SPECIAL_KEY_WORDS"]={"Name","WingBLeft"},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleZ","2"},
-						}
-					},
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSE\WINGERIGHT.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["SPECIAL_KEY_WORDS"]={"Name","WingERight"},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"RotX","-90"},
-							{"ScaleX","2"},
-							{"ScaleY","2"},
-						}
-					},
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSE\WINGELEFT.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["SPECIAL_KEY_WORDS"]={"Name","WingsELeft"},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"RotX","-90"},
-							{"ScaleX","2"},
-							{"ScaleY","2"},
-						}
-					},
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHT.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["SPECIAL_KEY_WORDS"]={"Name","WingDRight"},
-						["INTEGER_TO_FLOAT"] = "Force",
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY","1.5"},
-							{"ScaleZ","1.5"},
-						}
-					},
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDLEFT.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["SPECIAL_KEY_WORDS"]={"Name","WingDLeft"},
-						["INTEGER_TO_FLOAT"] = "Force",
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY","1.5"},
-							{"ScaleZ","1.5"},
-						}
-					},
-				}
-			}
-		},
-		MULTIPLAYER_MODE
-	)
-
-	
---[=[	copyEXML
-	(
-		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
-		[[INDUSTRIAL\GANTRYBCAPBRIDGEC.SCENE.EXML]],
-		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGEC.SCENE.EXML]]
-	)
-	copyEXML
-	(
-		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
-		[[INDUSTRIAL\GANTRYBCAPBRIDGED.SCENE.EXML]],
-		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGED.SCENE.EXML]]
-	)
-	copyEXML
-	(
-		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
-		[[INDUSTRIAL\GANTRYBCAPSPHERE.SCENE.EXML]],
-		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPSPHERE.SCENE.EXML]]
-	)
-	copyEXML
-	(
-		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
-		[[INDUSTRIAL\GANTRYBJOINTRING.SCENE.EXML]],
-		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBJOINTRING.SCENE.EXML]]
-	)
-	copyEXML
-	(
-		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
-		[[INDUSTRIAL\LARGEGANTRYCAPB.SCENE.EXML]],
-		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\LARGEGANTRYCAPB.SCENE.EXML]]
-	)--]=]
-
-	addFeature
-	(
-		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
-		{
-			{
-				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\ANTENAHUGE_A.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "AntenaHuge_A"},
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["SECTION_ACTIVE"] = {1,2},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY", "0.51"},
-							{"ScaleZ", "2"},
-						}
-					},
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\SAIL1.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "SailLOD0"},
-						["SECTION_ACTIVE"] = {1,2},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY", "2"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "SailLOD1"},
-						["SECTION_ACTIVE"] = {1,2},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY", "2"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "SailLOD2"},
-						["SECTION_ACTIVE"] = {1,2},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY", "2"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "SailLOD3"},
-						["SECTION_ACTIVE"] = {1,2},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY", "2"},
-						}
-					},
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\VERTICALFIN.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "VerticalFinLOD0"},
-						["SECTION_ACTIVE"] = {1,2},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY", "2"},
-							{"ScaleZ", "2"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "VerticalFinLOD1"},
-						["SECTION_ACTIVE"] = {1,2},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY", "2"},
-							{"ScaleZ", "2"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "VerticalFinLOD2"},
-						["SECTION_ACTIVE"] = {1,2},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY", "2"},
-							{"ScaleZ", "2"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "VerticalFinLOD3"},
-						["SECTION_ACTIVE"] = {1,2},
-						["VALUE_CHANGE_TABLE"] =
-						{
-							{"ScaleY", "2"},
-							{"ScaleZ", "2"},
-						}
-					},
-				}
-			}
-		},
-		MULTIPLAYER_MODE
-	)
-	-- additional parts & generation for royal sclass
-	SCLASS_PROC = readTemplate("SCLASS_PROC")
-	SCLASS_DESC = readTemplate("SCLASS_DESC")
-	addFeature
-	(
-		ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS,
-		{
-			{
-				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\S-CLASS\S-CLASS_PROC.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["REPLACE_TYPE"] = "ALL",
-						["SPECIAL_KEY_WORDS"] = {"Name","ProcRoot_StarShip"},
-						["REMOVE"] = "SECTION"
-
-					},
-					{
-						["PRECEDING_KEY_WORDS"] = "Children",
-						["SECTION_ACTIVE"] = {0,1},
-						["ADD"] = SCLASS_PROC
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\S-CLASS\S-CLASS_PROC.DESCRIPTOR.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["REPLACE_TYPE"] = "ALL",
-						["SPECIAL_KEY_WORDS"] = {"TypeId","_SCLASSSHIP_"},
-						["REMOVE"] = "SECTION"
-
-					},
-					{
-						["PRECEDING_KEY_WORDS"] = "List",
-						["SECTION_ACTIVE"] = {0,1},
-						["ADD"] = SCLASS_DESC
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	=
-				{
-					{
-						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A\ENTITIES\WINGS_A.ENTITY.MBIN]],
-						[[MODELS\RGO\ENTITIES\WINGS_A2.ENTITY.MBIN]],
-
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	=
-				{
-					{
-						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A\ENTITIES\WINGS_A.ENTITY.MBIN]],
-						[[MODELS\RGO\ENTITIES\WINGS_A3.ENTITY.MBIN]],
-
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	=
-				{
-					{
-						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A\ENTITIES\WINGS_A.ENTITY.MBIN]],
-						[[MODELS\RGO\ENTITIES\WINGS_A4.ENTITY.MBIN]],
-
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	= "MODELS\RGO\ENTITIES\WINGS_A2.ENTITY.MBIN",
-				["EXML_CHANGE_TABLE"] 	=
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"FrameEnd",	"145"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"FrameStart",	"36"},
-						}
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	= "MODELS\RGO\ENTITIES\WINGS_A3.ENTITY.MBIN",
-				["EXML_CHANGE_TABLE"] 	=
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"FrameEnd",	"161"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"FrameStart",	"20"},
-						}
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	= "MODELS\RGO\ENTITIES\WINGS_A4.ENTITY.MBIN",
-				["EXML_CHANGE_TABLE"] 	=
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"Anim","TAKEOFF",},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"FrameEnd",	"131"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Anim","LANDING",},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"FrameStart",	"50"},
-						}
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	=
-				{
-					{
-						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A.SCENE.MBIN]],
-						[[MODELS\RGO\WINGS_A2.SCENE.MBIN]],
-
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_A2.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] 	=
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-						["SECTION_ACTIVE"] = {0,1,2,3},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"Value",	[[MODELS\RGO\ENTITIES\WINGS_A2.ENTITY.MBIN]]},
-						}
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	=
-				{
-					{
-						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A.SCENE.MBIN]],
-						[[MODELS\RGO\WINGS_A3.SCENE.MBIN]],
-
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_A3.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] 	=
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-						["SECTION_ACTIVE"] = {0,1,2,3},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"Value",	[[MODELS\RGO\ENTITIES\WINGS_A3.ENTITY.MBIN]]},
-						}
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] 	=
-				{
-					{
-						[[MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_A.SCENE.MBIN]],
-						[[MODELS\RGO\WINGS_A4.SCENE.MBIN]],
-
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\WINGS_A4.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] 	=
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-						["SECTION_ACTIVE"] = {0,1,2,3},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"Value",	[[MODELS\RGO\ENTITIES\WINGS_A4.ENTITY.MBIN]]},
-						}
-					}
-				}
-			},
-		},
-		MULTIPLAYER_MODE
-	)
-	----------------------------------------------------------------------------------------------
-
 end
 -- END GENERATION OVERHAUL
 
@@ -42418,7 +42372,9 @@ if CHALLENGE_MODE == "ON" then
 					{
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"WaterStrength", "0.004"}
+							{"WaterStrength", "0.051"},
+							{"WaterColourStrength", "5.8"},
+							
 						}
 					}
 				}
