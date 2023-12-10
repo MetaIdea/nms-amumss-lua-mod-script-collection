@@ -97,15 +97,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --SMALLASTEROID
 		["SPECIAL_KEY_WOR	DS"] = {"Id","SMALLASTEROID"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","100"}}},
+			{"Damage","50"}}},
 		{ --MEDIUMASTEROID
 		["SPECIAL_KEY_WORDS"] = {"Id","MEDIUMASTEROID"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","200"}}},
+			{"Damage","100"}}},
 		{ --LARGEASTEROID
 		["SPECIAL_KEY_WORDS"] = {"Id","LARGEASTEROID"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","300"}}},
+			{"Damage","150"}}},
 		{ --FREIGHTERGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERGUN"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -117,11 +117,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --IMPACTGROUND
 		["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","300"}}},
+			{"Damage","150"}}},
 		{ --IMPACTINSTANCE
 		["SPECIAL_KEY_WORDS"] = {"Id","IMPACTINSTANCE"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","300"}}},
+			{"Damage","150"}}},
 		{ --MPSHIPROCKET (rocket from other players, double damage now)
 		["SPECIAL_KEY_WORDS"] = {"Id","MPSHIPROCKET"},
 			["VALUE_CHANGE_TABLE"] = {

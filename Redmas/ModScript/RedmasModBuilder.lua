@@ -5826,7 +5826,111 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ---------------------------------------------------------------- **FEATURES** -------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	if MASSIVE_FLEET == "ON" then
+		
 
+		addFeature
+		(
+			MASSIVE_FLEET,
+			{
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+						"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
+						"MODELS\RGO\_FREIGHTERTINY_PROC.SCENE.MBIN"
+						}
+					}
+				},
+				{
+
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTSHIP01.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"NameHash","2027018462"},
+							["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
+							["SECTION_ACTIVE"] = {0,1,2,3},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERSMALL_PROC\ENTITIES\SMALLFREIGHTER.ENTITY.MBIN]]},
+							}
+						}
+					}
+
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {
+						{
+						"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
+						"MODELS\RGO\_FREIGHTERTINY_PROC.SCENE.MBIN"
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {1},
+							["ADD"] = CONTENT_FREIGHTERS_SPAWNER
+						}
+					}
+
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.DESCRIPTOR.MBIN",
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "List",
+							["SECTION_ACTIVE"] = {1},
+							["ADD"] = FREIGHTER_DESCRIPTOR
+						},
+					}
+
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\POI\ATLASBEACON.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {1},
+							["ADD"] = LARGE_FREIGHTERS
+						}
+					}
+
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\POI\ATLASBEACON.DESCRIPTOR.MBIN",
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "List",
+							["SECTION_ACTIVE"] = {1},
+							["ADD"] = FREIGHTER_DESCRIPTOR
+						},
+					}
+
+				},
+			}
+			
+		)
+		copyEXML
+		(
+			MASSIVE_FLEET,
+			[[FREIGHTER_A.SCENE.EXML]],
+			[[MODELS\RGO\FREIGHTER_A.SCENE.EXML]]
+		)	
+		copyEXML
+		(
+			MASSIVE_FLEET,
+			[[FREIGHTSHIP01.SCENE.EXML]],
+			[[MODELS\RGO\FREIGHTSHIP01.SCENE.EXML]]
+		)
+	end
+	--
 	if ULTRA_DIVERSE_SPACE_COLOURS == "ON" then
 		ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW = ""
 		ULTRA_DIVERSE_SPACE_COLOURS_EXML = ""
@@ -6006,118 +6110,7 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 		DAY_ONE_MODE
 	)
 
-	if MASSIVE_FLEET == "ON" then
-	-- New parts for Freighters
-	copyEXML
-	(
-		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
-		[[INDUSTRIAL\GANTRYBCAPBRIDGEA.SCENE.EXML]],
-		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGEA.SCENE.EXML]]
-	)
-	
 
-		copyEXML
-		(
-			MASSIVE_FLEET,
-			[[FREIGHTER_A.SCENE.EXML]],
-			[[MODELS\RGO\FREIGHTER_A.SCENE.EXML]]
-		)	
-		copyEXML
-		(
-			MASSIVE_FLEET,
-			[[FREIGHTSHIP01.SCENE.EXML]],
-			[[MODELS\RGO\FREIGHTSHIP01.SCENE.EXML]]
-		)
-
-	addFeature
-	(
-		MASSIVE_FLEET,
-		{
-			{
-				["MBIN_FILE_SOURCE"]  = {
-					{
-					"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
-					"MODELS\RGO\_FREIGHTERTINY_PROC.SCENE.MBIN"
-					}
-				}
-			},
-			{
-
-				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTSHIP01.SCENE.MBIN",
-				["EXML_CHANGE_TABLE"] 	=
-				{
-					{
-						["SPECIAL_KEY_WORDS"] = {"NameHash","2027018462"},
-						["PRECEDING_KEY_WORDS"] = {"ATTACHMENT"},
-						["SECTION_ACTIVE"] = {0,1,2,3},
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"Value",	[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERSMALL_PROC\ENTITIES\SMALLFREIGHTER.ENTITY.MBIN]]},
-						}
-					}
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = {
-					{
-					"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
-					"MODELS\RGO\_FREIGHTERTINY_PROC.SCENE.MBIN"
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.SCENE.MBIN",
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["PRECEDING_KEY_WORDS"] = "Children",
-						["SECTION_ACTIVE"] = {1},
-						["ADD"] = CONTENT_FREIGHTERS_SPAWNER
-					}
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERTINY_PROC.DESCRIPTOR.MBIN",
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["PRECEDING_KEY_WORDS"] = "List",
-						["SECTION_ACTIVE"] = {1},
-						["ADD"] = FREIGHTER_DESCRIPTOR
-					},
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\POI\ATLASBEACON.SCENE.MBIN",
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["PRECEDING_KEY_WORDS"] = "Children",
-						["SECTION_ACTIVE"] = {1},
-						["ADD"] = LARGE_FREIGHTERS
-					}
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\POI\ATLASBEACON.DESCRIPTOR.MBIN",
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["PRECEDING_KEY_WORDS"] = "List",
-						["SECTION_ACTIVE"] = {1},
-						["ADD"] = FREIGHTER_DESCRIPTOR
-					},
-				}
-
-			},
-		}
-		
-	)
-	end
 
 	-- PROCEDURAL CRASH SITES MISSIONS
 	if PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION == "ON" then
@@ -7764,7 +7757,15 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 		MULTIPLAYER_MODE
 	)
 
-	
+	if ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS == "ON" then
+		
+-- New parts for Freighters
+	copyEXML
+	(
+		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
+		[[INDUSTRIAL\GANTRYBCAPBRIDGEA.SCENE.EXML]],
+		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\GANTRYBCAPBRIDGEA.SCENE.EXML]]
+	)	
 --[=[	copyEXML
 	(
 		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
@@ -7899,6 +7900,7 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 		},
 		MULTIPLAYER_MODE
 	)
+	end
 	-- additional parts & generation for royal sclass
 	SCLASS_PROC = readTemplate("SCLASS_PROC")
 	SCLASS_DESC = readTemplate("SCLASS_DESC")
@@ -42387,7 +42389,11 @@ if CHARACTERS_SKINS_FEATURE == "ON" then
 	end
 
 
-	if DRONE_PET_SKIN == "E3-DAMAGED" then
+
+
+end
+-- END CHARACTERS SKINS	
+if DRONE_PET_SKIN == "E3-DAMAGED" then
 	copyEXML
 	(
 		DRONE_PET_SKIN_FEATURE,
@@ -42403,9 +42409,6 @@ if CHARACTERS_SKINS_FEATURE == "ON" then
 		[[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.EXML]]
 	)
 	end
-
-end
--- END CHARACTERS SKINS
 -- EASY MODE
 	addFeature
 	(
