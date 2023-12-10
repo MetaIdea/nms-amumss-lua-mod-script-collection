@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Shuttle","4"}, -- Greatly decreasing shuttles
+                                {"Shuttle","1"}, -- Greatly decreasing shuttles
                                                  -- If you want normal spawnrate of shuttles, change 4 to 1 -- Don't change to 0, unless you wish to completely disable shuttles.
                             },
                         },

@@ -10,8 +10,7 @@ RecipeAdd =
 [[    
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_GEXO_YELLOW" />
-      <Property name="RecipeType" value="RECIPE_STELLAR_FROM_LAND" />		  
-      <Property name="RecipeName" value="RECIPE_STELLAR_FROM_LAND" />
+      <Property name="Name" value="RECIPE_STELLAR_FROM_LAND" />
       <Property name="TimeToMake" value="10" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -41,8 +40,7 @@ RecipeAdd =
     
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_GEXO_GREEN" />
-      <Property name="RecipeType" value="RECIPE_STELLAR_FROM_LAND" />		  
-      <Property name="RecipeName" value="RECIPE_STELLAR_FROM_LAND" />
+      <Property name="Name" value="RECIPE_STELLAR_FROM_LAND" />
       <Property name="TimeToMake" value="10" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -72,8 +70,7 @@ RecipeAdd =
     
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_GEXO_RED" />
-      <Property name="RecipeType" value="RECIPE_STELLAR_FROM_LAND" />	  
-      <Property name="RecipeName" value="RECIPE_STELLAR_FROM_LAND" />
+      <Property name="Name" value="RECIPE_STELLAR_FROM_LAND" />
       <Property name="TimeToMake" value="10" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -103,8 +100,7 @@ RecipeAdd =
     
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_GEXO_BLUE" />
-      <Property name="RecipeType" value="RECIPE_STELLAR_FROM_LAND" />		  
-      <Property name="RecipeName" value="RECIPE_STELLAR_FROM_LAND" />
+      <Property name="Name" value="RECIPE_STELLAR_FROM_LAND" />
       <Property name="TimeToMake" value="10" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -134,8 +130,7 @@ RecipeAdd =
     
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_CB745_RESIDUALGOOP" />
-      <Property name="RecipeType" value="RECIPE_SPACEGUNK1" />		  
-      <Property name="RecipeName" value="RECIPE_SPACEGUNK1" />
+      <Property name="Name" value="RECIPE_SPACEGUNK1" />
       <Property name="TimeToMake" value="10" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -175,8 +170,8 @@ RecipeAdd =
 NMS_MOD_DEFINITION_CONTAINER = 
 {
     ["MOD_FILENAME"]    = "Activated_Metal_Recipes.pak",
-    ["MOD_AUTHOR"]      = "Exosolar+Gumsk+Babscoole", -- Expanded upon by Copper
-    ["NMS_VERSION"]     = "3.84",
+    ["MOD_AUTHOR"]      = "Exosolar+Gumsk", -- Expanded upon by Copper
+    ["NMS_VERSION"]     = "3.75",
     ["MODIFICATIONS"]   = 
     {
         {
