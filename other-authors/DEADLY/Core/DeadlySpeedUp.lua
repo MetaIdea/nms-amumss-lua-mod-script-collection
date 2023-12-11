@@ -16,13 +16,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "BinocTimeBeforeScan",    0 },   -- 0.5
-                                { "BinocMinScanTime",       0.2 }, -- 2.2
-                                { "BinocScanTime",          0.2 }, -- 2.2
-                                { "BinocCreatureScanTime",  0.1 }, -- 1.9
-                                { "MissionSurveyScanSpeed", 0.5 }, -- 0.2
-                                { "SurveyScanMinSpeed",     1 },   -- 0.75
-                                { "SurveyScanMaxSpeed",     1 },   -- 0.75
+                                { "BinocTimeBeforeScan",    0 },    -- 0.5
+                                { "BinocMinScanTime",       0.01 }, -- 2.2
+                                { "BinocScanTime",          0.01 }, -- 2.2
+                                { "BinocCreatureScanTime",  0.01 }, -- 1.9
+                                { "MissionSurveyScanSpeed", 0.5 },  -- 0.2
+                                { "SurveyScanMinSpeed",     1 },    -- 0.75
+                                { "SurveyScanMaxSpeed",     1 },    -- 0.75
                             }
                         },
                     }
