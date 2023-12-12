@@ -1,4 +1,3 @@
-
 -- 0.5 = faster*2
 -- 2 = would take two times to produce same result
 -- don't use 0, refiner won't work
