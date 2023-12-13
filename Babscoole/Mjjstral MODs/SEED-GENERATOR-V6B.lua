@@ -751,7 +751,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"]                 = CUSTOM_GENERICREWARD_ALL
                         }
                     }
-                }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\TESTS\EFFECTTEST.ANIM.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FrameCount", "10"},
+                                {"NodeCount",  "0"},
+                            }
+                        },
+                    }
+                },
             }
         }
     }

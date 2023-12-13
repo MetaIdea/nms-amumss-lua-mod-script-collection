@@ -1502,6 +1502,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\TESTS\EFFECTTEST.ANIM.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FrameCount", "10"},
+                                {"NodeCount",  "0"},
+                            }
+                        },
+                    }
+                },
             }
         }
     },
