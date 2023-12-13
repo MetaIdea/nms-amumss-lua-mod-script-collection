@@ -30,9 +30,9 @@ AutoLandTime = 1    --2
   
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    = "Other_Player_Settings.pak",
+    ["MOD_FILENAME"]    = "A_Other_Player_Settings.pak",
     ["MOD_AUTHOR"]      = "Gumsk",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

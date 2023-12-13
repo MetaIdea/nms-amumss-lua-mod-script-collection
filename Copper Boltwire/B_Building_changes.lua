@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "B_Building_changes.pak",
     ["MOD_AUTHOR"]      = "Gumsk",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

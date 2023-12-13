@@ -11,24 +11,24 @@ TEXT_TO_ADD1 =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="77" />
+            <Property name="LabelID" value="PortalRune" />
             <Property name="Reward" value="GcRewardDiscoverRune.xml">
               <Property name="AllRunes" value="False" />
             </Property>
-            <Property name="LabelID" value="PortalRune" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="44" />
+            <Property name="LabelID" value="PortalRune" />
             <Property name="Reward" value="GcRewardDiscoverRune.xml">
               <Property name="AllRunes" value="False" />
             </Property>
-            <Property name="LabelID" value="PortalRune" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="15" />
+            <Property name="LabelID" value="PortalRune" />
             <Property name="Reward" value="GcRewardDiscoverRune.xml">
               <Property name="AllRunes" value="False" />
             </Property>
-            <Property name="LabelID" value="PortalRune" />
           </Property>
 ]]
 
@@ -36,24 +36,24 @@ TEXT_TO_ADD2 =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="77" />
+            <Property name="LabelID" value="PortalRune" />
             <Property name="Reward" value="GcRewardDiscoverRune.xml">
               <Property name="AllRunes" value="True" />
             </Property>
-            <Property name="LabelID" value="PortalRune" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="44" />
+            <Property name="LabelID" value="PortalRune" />
             <Property name="Reward" value="GcRewardDiscoverRune.xml">
               <Property name="AllRunes" value="True" />
             </Property>
-            <Property name="LabelID" value="PortalRune" />
           </Property>
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="15" />
+            <Property name="LabelID" value="PortalRune" />
             <Property name="Reward" value="GcRewardDiscoverRune.xml">
               <Property name="AllRunes" value="True" />
             </Property>
-            <Property name="LabelID" value="PortalRune" />
           </Property>
 ]]
 
@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "I_More_Glyphs.pak",
     ["MOD_AUTHOR"]      = "Copper Boltwire",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   =
     {
         {

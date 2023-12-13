@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "B_Colorful_Starfield.pak", -- v2.2
     ["MOD_AUTHOR"]      = "Lo2k",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MOD_DESCRIPTION"] = "This mod enhances star colors",
     ["MODIFICATIONS"]   = 
     {

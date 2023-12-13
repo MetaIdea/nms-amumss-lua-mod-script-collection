@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "B_Terrain_Manipulator_Gain_Booster.pak",
     ["MOD_AUTHOR"]      = "Makto",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

@@ -20,9 +20,9 @@ StartShelterMax = 1000  -- Original value "1000"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    = "Base_Boundary_Extender.pak",
+    ["MOD_FILENAME"]    = "B_Base_Boundary_Extender.pak",
     ["MOD_AUTHOR"]      = "Gumsk",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

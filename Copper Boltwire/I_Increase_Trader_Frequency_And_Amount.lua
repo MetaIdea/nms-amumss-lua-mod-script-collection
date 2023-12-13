@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]    = "I_Increase_Trader_Frequency_And_Amount.pak",
     ["MOD_DESCRIPTION"] = "More traders at stations and trade outposts",
     ["MOD_AUTHOR"]      = "Gumsk",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   =
     {
         {

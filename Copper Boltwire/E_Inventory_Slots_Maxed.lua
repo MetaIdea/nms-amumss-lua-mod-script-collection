@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "E_Inventory_Slots_Maxed.pak",
     ["MOD_AUTHOR"]      = "Copper Boltwire",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   =
     {
         {
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]         = "+4",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"IGNORE", 48}, --21
+                                {"IGNORE", 100}, --21
                             }
                         },
                         --              Haulers ships
@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]         = "+4",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"IGNORE", 48}, --21
+                                {"IGNORE", 100}, --21
                             }
                         },
                         --              Fighter ships
@@ -130,7 +130,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]         = "+4",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"IGNORE", 48}, --21
+                                {"IGNORE", 100}, --21
                             } 
                         },
                         --              Explorererereerrrrrreeeerree ships
@@ -163,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]         = "+4",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"IGNORE", 48}, --21
+                                {"IGNORE", 100}, --21
                             } 
                         },
                         --              Shuttle ships
@@ -196,12 +196,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]         = "+4",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"IGNORE", 48}, --21
+                                {"IGNORE", 100}, --21
                             } 
                         },
-                        --              Exotic ships
+                        --              Sail
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Royal","MaxTechInventoryCapacity"},
+                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Sail","MaxTechInventoryCapacity"},
                             ["LINE_OFFSET"]         = "+1",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -209,7 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Royal","MaxTechInventoryCapacity"},
+                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Sail","MaxTechInventoryCapacity"},
                             ["LINE_OFFSET"]         = "+2",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -217,7 +217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Royal","MaxTechInventoryCapacity"},
+                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Sail","MaxTechInventoryCapacity"},
                             ["LINE_OFFSET"]         = "+3",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -225,11 +225,53 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Sail","MaxTechInventoryCapacity"},
+                            ["LINE_OFFSET"]         = "+4",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"IGNORE", 100}, --21
+                            } 
+                        },
+                        --              Robot
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Robot","MaxTechInventoryCapacity"},
+                            ["LINE_OFFSET"]         = "+1",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"IGNORE", 24}, --0    ...
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Robot","MaxTechInventoryCapacity"},
+                            ["LINE_OFFSET"]         = "+2",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"IGNORE", 32}, --7
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Robot","MaxTechInventoryCapacity"},
+                            ["LINE_OFFSET"]         = "+3",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"IGNORE", 40}, --14
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Robot","MaxTechInventoryCapacity"},
+                            ["LINE_OFFSET"]         = "+4",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"IGNORE", 100}, --21
+                            } 
+                        },
+                        --              Exotic ships
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Royal","MaxTechInventoryCapacity"},
                             ["LINE_OFFSET"]         = "+4",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"IGNORE", 48}, --21
+                                {"IGNORE", 100}, --21
                             } 
                         },
                         --              Living ships -- they apparently only come in S class tier ships...
@@ -238,7 +280,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]         = "+4",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"IGNORE", 48}, --35
+                                {"IGNORE", 100}, --35
                             }
                         },
                         
@@ -270,10 +312,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"PlayerPersonalInventoryTechWidth", "8"}, -- 8x6 = 48, in case you didn't want to do that kind of math :D
-                                {"PlayerPersonalInventoryTechHeight", "6"},
-                                {"PlayerPersonalInventoryCargoWidth", "8"},
-                                {"PlayerPersonalInventoryCargoHeight", "6"}
+                                {"PlayerPersonalInventoryTechWidth", "10"}, -- 8x6 = 48, in case you didn't want to do that kind of math :D
+                                {"PlayerPersonalInventoryTechHeight", "10"},
+                                {"PlayerPersonalInventoryCargoWidth", "10"},
+                                {"PlayerPersonalInventoryCargoHeight", "10"}
                             }
                         }
                     }

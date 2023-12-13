@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "Ha1_Reward_Percentage_100_RT.pak", 
     ["MOD_AUTHOR"]      = "Mjjstral+Gumsk",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   =
     {
         {

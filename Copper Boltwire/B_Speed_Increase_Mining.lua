@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "B_Speed_Increase_Mining.pak",
     ["MOD_AUTHOR"]      = "TheVoidKnight",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

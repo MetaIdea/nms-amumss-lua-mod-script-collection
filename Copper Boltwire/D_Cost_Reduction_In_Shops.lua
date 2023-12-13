@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "D_Cost_Reduction_In_Shops.pak", 
     ["MOD_AUTHOR"]      = "Mjjstral",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "Hb3_Better_Rewards_Misc_ERT.pak",
     ["MOD_AUTHOR"]      = "MrTrack and Copper B.",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   =
     {
         {

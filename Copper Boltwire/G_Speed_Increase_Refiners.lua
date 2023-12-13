@@ -12,9 +12,9 @@ REFINER_TIME_FACTOR = 0.1
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = "Speed_Increase_Refiners.pak",
+    ["MOD_FILENAME"]    = "G_Speed_Increase_Refiners.pak",
     ["MOD_AUTHOR"]      = "Mjjstral",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   =
     {
         {

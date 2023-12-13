@@ -8,9 +8,9 @@ Now it only takes 2-thirds of a second. HUGE improvement!
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    = "Speed_Increase_Analysis.pak",
+    ["MOD_FILENAME"]    = "B_Speed_Increase_Analysis.pak",
     ["MOD_AUTHOR"]      = "Mjjstral", -- At least I THINK it was Mjjstral who wrote this mod...
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

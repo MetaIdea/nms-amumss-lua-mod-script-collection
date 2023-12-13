@@ -9,9 +9,9 @@ Yeah yeah yeah... I added a mod I wasn't fully aware of what does... Bite me!
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    = "Ship_Range_Increase.pak",
+    ["MOD_FILENAME"]    = "B_Ship_Range_Increase.pak",
     ["MOD_AUTHOR"]      = "Mjjstral",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

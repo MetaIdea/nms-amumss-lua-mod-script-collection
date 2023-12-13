@@ -14,9 +14,9 @@ Stack_Sizze2 = 100 -- Please do not alter this one...
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = "Stack_Multiplier.pak",   -- for adaptive modname use: "StackMultiplierX" .. STACK_MULTIPLIER .. ".pak", 
+    ["MOD_FILENAME"]    = "F_Stack_Multiplier.pak",   -- for adaptive modname use: "StackMultiplierX" .. STACK_MULTIPLIER .. ".pak", 
     ["MOD_AUTHOR"]      = "Mjjstral",               -- mod author, only mentioned for documentaion
-    ["NMS_VERSION"]     = "3.75",                   -- NMS version on first mod release, only mentioned for documentaion
+    ["NMS_VERSION"]     = "4.46",                   -- NMS version on first mod release, only mentioned for documentaion
     ["MODIFICATIONS"]   =
     {
         {

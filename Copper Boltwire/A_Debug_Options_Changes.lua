@@ -70,9 +70,9 @@ AlwaysAllowFreighterInventoryAccess = "True" --False
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    = "Debug_Options_Changes.pak",
+    ["MOD_FILENAME"]    = "A_Debug_Options_Changes.pak",
     ["MOD_AUTHOR"]      = "Gumsk",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

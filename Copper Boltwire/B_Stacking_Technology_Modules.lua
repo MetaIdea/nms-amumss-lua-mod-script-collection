@@ -10,9 +10,9 @@ TechnologyStackingSize = 99 --original "3", change for new value
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    = "StackingTechnologyModules.pak",
+    ["MOD_FILENAME"]    = "B_Stacking_Technology_Modules.pak",
     ["MOD_AUTHOR"]      = "Wbertro", --suggested by Seekker
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

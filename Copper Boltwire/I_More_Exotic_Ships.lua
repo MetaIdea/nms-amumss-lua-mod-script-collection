@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]    = "I_More_Exotic_Ships.pak",
     ["MOD_DESCRIPTION"] = "Changes frequency of ships spawning in the wild",
     ["MOD_AUTHOR"]      = "Gumsk and Copper B.",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   =
     {
         {
@@ -31,8 +31,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Royal","25"},
-                                --{"Alien","5"}, -- Alien ships are CRAP, and until HG fixes them, i will not support them in my mod either...
+                                {"Royal","15"}, -- Squid/exotic ships
+                                {"Alien","1"}, -- Living ships
+                                {"Sail","25"}, -- The ship with the Solar sails
+                                {"Robot","5"}, -- No clue, possibly called Interceptors
                             },
                         },
                         {
@@ -41,8 +43,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Shuttle","1"}, -- Greatly decreasing shuttles
-                                                 -- If you want normal spawnrate of shuttles, change 4 to 1 -- Don't change to 0, unless you wish to completely disable shuttles.
+                                {"Shuttle","2"}, -- Greatly decreasing shuttles
+                                                 -- If you want normal spawnrate of shuttles, change 2 to 1 -- Don't change to 0, unless you wish to completely disable shuttles.
                             },
                         },
                     }

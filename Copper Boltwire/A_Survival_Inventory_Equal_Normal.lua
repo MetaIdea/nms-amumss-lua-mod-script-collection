@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "A_Survival_Inventory_Equal_Normal.pak",
     ["MOD_AUTHOR"]      = "Copper Boltwire",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

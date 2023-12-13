@@ -11,49 +11,64 @@ Copper B. - Decreasing grinding since 1997 -- Seriously, i started to seriously 
 TEXT_TO_ADD =
 [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="66" />
+            <Property name="PercentageChance" value="80" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="None" />
               </Property>
               <Property name="UseCategory" value="False" />
               <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
+                <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="33" />
+            <Property name="PercentageChance" value="60" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="None" />
               </Property>
               <Property name="UseCategory" value="False" />
               <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
+                <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
-            <Property name="LabelID" value="" />
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="5" />
+            <Property name="PercentageChance" value="40" />
+            <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="None" />
               </Property>
               <Property name="UseCategory" value="False" />
               <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
+                <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
             </Property>
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="20" />
             <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardTeachWord.xml">
+              <Property name="Race" value="GcAlienRace.xml">
+                <Property name="AlienRace" value="None" />
+              </Property>
+              <Property name="UseCategory" value="False" />
+              <Property name="Category" value="GcWordCategoryTableEnum.xml">
+                <Property name="wordcategorytableEnum" value="MISC" />
+              </Property>
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+            </Property>
           </Property>
 ]]
 
@@ -63,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "I_More_Words.pak",
     ["MOD_AUTHOR"]      = "ChoseSauvage converted by Mjjstral", -- Altered by Copper...
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   =
     {
         {

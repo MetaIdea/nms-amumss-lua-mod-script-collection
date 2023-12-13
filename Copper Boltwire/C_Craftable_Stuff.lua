@@ -3,13 +3,13 @@
 
 Allows you to make the following in your inventory:
             Cost                Result
-4x Ferrite Dust + 1x Carbon = Salvaged Data
-4x Ferrite Dust + 1x Carbon = Cargo Bulkhead
-4x Ferrite Dust + 1x Carbon = Navigation Data
-4x Ferrite Dust + 1x Carbon = Storage Augmentation
-4x Ferrite Dust + 1x Carbon = Drop Pod Coordinate Data
-4x Ferrite Dust + 1x Carbon = Multi-Tool Expansion Slot
-4x Ferrite Dust + 1x Carbon = Exosuit Inventory Extension module
+4x CHROMATIC METAL + 1x CARBON NANOTUBES = Salvaged Data
+4x CHROMATIC METAL + 1x CARBON NANOTUBES = Cargo Bulkhead
+4x CHROMATIC METAL + 1x CARBON NANOTUBES = Navigation Data
+4x CHROMATIC METAL + 1x CARBON NANOTUBES = Storage Augmentation
+4x CHROMATIC METAL + 1x CARBON NANOTUBES = Drop Pod Coordinate Data
+4x CHROMATIC METAL + 1x CARBON NANOTUBES = Multi-Tool Expansion Slot
+4x CHROMATIC METAL + 1x CARBON NANOTUBES = Exosuit Inventory Extension module
 
     "This is cheaty! - So? This is Bountiful Easy Mode mod..."
 ]]--
@@ -18,15 +18,15 @@ CraftyAdd1 =
 [[
       <Property name="Requirements">
         <Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="LAND1" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="ID" value="STELLAR2" />
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Substance" />
           </Property>
           <Property name="Amount" value="4" />
         </Property>
         <Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="FUEL1" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="ID" value="NANOTUBES" />
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Substance" />
           </Property>
           <Property name="Amount" value="1" />
@@ -82,7 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "C_Craftable_Stuff.pak",
     ["MOD_AUTHOR"]      = "Makto", -- Copper Boltwire had the idea, Makto made it real. "Thank you Makto!!!"
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = 
     {
         {

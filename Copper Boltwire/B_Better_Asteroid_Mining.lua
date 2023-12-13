@@ -6,9 +6,9 @@ Now you can sit back and enjoy the life of being utterly rich in mere minutes.
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    = "Better_Asteroid_Mining.pak",
+    ["MOD_FILENAME"]    = "B_Better_Asteroid_Mining.pak",
     ["MOD_AUTHOR"]      = "Gumsk and Copper B.",
-    ["NMS_VERSION"]     = "3.75",
+    ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = 
