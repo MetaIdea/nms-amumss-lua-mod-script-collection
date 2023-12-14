@@ -1,37 +1,38 @@
 NexusModName = "CraftableUpgradeModsAIO"
 Author = "jackty89"
 
-UnlockableItemTreesPath = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN"
-GCProductTablePath = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN"
-GCProcTechnologyPath = "METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
+Unlockable_Item_Trees_Path = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN"
+Product_Table_Path = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN"
+Procedural_Table_Technology_Path = "METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
-CostTypeFactory = "FACTORY"
-CostTypeNanite = "NANITES"
+Cost_Type_Factory = "FACTORY"
+Cost_Type_Nanite = "NANITES"
+Ship_Tree = "UI_SHIP_TECH_TREE"
+Item_Trees_Ship = "ShipTech"
+Suit_Tree = "UI_SUIT_TECH_TREE"
+Item_Trees_Suit = "SuitTech"
+Weapon_Tree = "UI_WEAP_TECH_TREE"
+Item_Trees_Weapon = "WeapTech"
+Exocraft_Tree = "UI_EXOCRAFT_TECH_TREE"
+Item_Trees_Exocraft = "ExocraftTech"
+Freighter_Tree = "UI_FREIGHTER_TREE"
+Item_Trees_Freighter = "FreighterTech"
+Factory_Tree = "UI_PRODUCT_TREE"
+Item_Trees_Factory = "CraftProducts"
+Tech_Tree_Sub = "UI_TECH_TREE_SUB"
+Tech_Tree_Sub_Factory = "UI_PRODUCT_TREE_FARM"
+Ship_Root_Tech = "SHIPJUMP1"
+Suit_Root_Tech = "ENERGY"
+Weapon_Root_Tech = "LASER"
+Exo_Root_Tech = "VEHICLE_ENGINE"
+Freighter_Root_Tech = "FRIGATE_FUEL_1"
+Factory_Tree_Tech = "PRODFUEL2"
+Crafted_Freighter_Mod_Descr_Id = "UP_FR_CRAFTED_DESC"
+Custom_Language_Tag = "CustomFrModsDesc"
 
-ShipTree = "UI_SHIP_TECH_TREE"
-SuitTree = "UI_SUIT_TECH_TREE"
-WeaponTree = "UI_WEAP_TECH_TREE"
-ExoCraftTree = "UI_EXOCRAFT_TECH_TREE"
-FreighterTree = "UI_FREIGHTER_TREE"
-FactoryTree = "UI_PRODUCT_TREE"
+Is_Craftable_To_True = "True"
 
-TechTreeSub = "UI_TECH_TREE_SUB"
-TechTreeSubFactory = "UI_PRODUCT_TREE_FARM"
-
-ShipRootTech = "SHIPJUMP1"
-SuitRootTech = "ENERGY"
-WeaponRootTech = "LASER"
-ExoRootTech = "VEHICLE_ENGINE"
-FreighterRootTech = "FRIGATE_FUEL_1"
-FactoryTreeTech = "PRODFUEL2"
-
-CraftedFreighterModDescrId = "UP_FR_CRAFTED_DESC"
-CustomLanguageTag = "CustomFrModsDesc"
-
-IsCraftableToTrue = "True"
-
-IdArray = {}
-SubList = {}
+Mods_Requirement_Data = {}
 
 Languages =
 {
@@ -53,318 +54,342 @@ Languages =
     ["JA"] = "Japanese",
     ["US"] = "USEnglish"
 }
-AddNewLanguatext =
+
+Add_New_Language_Text =
 {
-    {Languages["EN"], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
-    {Languages["FR"], "Une amélioration de cargo fabriqué.&#xA;&#xA;Peut être redéployée dans votre propre vaisseau amiral pour améliorer sa &lt;TECHNOLOGY&gt;Technologie&lt;&gt;."},
-    {Languages["IT"], "Un miglioramento per il mercantile.&#xA;&#xA;Può essere utilizzato sulla propria ammiraglia per migliorarne l'&lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
-    {Languages["DE"], "Ein einsetzbares Frachter-Upgrade.&#xA;&#xA;Kann in dein eigenes Hauptschiff wiedereingebaut werden, um dessen &lt;TECHNOLOGY&gt;Technologie&lt;&gt; zu verbessern."},
-    {Languages["ES"], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
-    {Languages["RU"], "Модернизация грузового корабля.&#xA;&#xA;Может быть переоборудована в ваш собственный капитальный корабль для улучшения его &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
-    {Languages["PL"], "Rozmieszczalne ulepszenie frachtowca. MoÅ¼na ponownie zainstalowaÄ na wÅasnym statku gÅównym, aby ulepszyÄ jego &lt;TECHNOLOGY&gt;technologie&lt;&gt;."},
-    {Languages["NL"], "Een upgrade gemaakt voor een vlaggenschip.&#xA;&#xA;Kan worden geïnstalleerd in je eigen vlaggenschip om de &lt;TECHNOLOGY&gt;Technologie&lt;&gt; te verbeteren."},
-    {Languages["PT"], "Uma atualização do cargueiro implementável.&#xA;&#xA;Pode ser reimplementada na sua própria nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
-    {Languages["LA"], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
-    {Languages["BR"], "Uma atualização implantável de nave cargueira.&#xA;&#xA;Pode ser reimplantada na sua nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt; dela."},
-    {Languages["Z1"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
-    {Languages["ZH"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
-    {Languages["Z2"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
-    {Languages["KO"], ""},
-    {Languages["JA"], ""},
-    {Languages["US"], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."}
+    {
+        ["LANGUAGE_ID"] = "UP_FR_CRAFTED_DESC",
+        ["LANGUAGE_ENTRIES"] =
+        {
+            [Languages["EN"]] = "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve it's &lt;TECHNOLOGY&gt;Technology&lt;&gt;.",
+            [Languages["FR"]] = "Une amélioration de cargo fabriqué.&#xA;&#xA;Peut être redéployée dans votre propre vaisseau amiral pour améliorer sa &lt;TECHNOLOGY&gt;Technologie&lt;&gt;.",
+            [Languages["IT"]] = "Un miglioramento per il mercantile.&#xA;&#xA;Può essere utilizzato sulla propria ammiraglia per migliorarne l'&lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;.",
+            [Languages["DE"]] = "Ein einsetzbares Frachter-Upgrade.&#xA;&#xA;Kann in dein eigenes Hauptschiff wiedereingebaut werden, um dessen &lt;TECHNOLOGY&gt;Technologie&lt;&gt; zu verbessern.",
+            [Languages["ES"]] = "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;.",
+            [Languages["RU"]] = "Модернизация грузового корабля.&#xA;&#xA;Может быть переоборудована в ваш собственный капитальный корабль для улучшения его &lt;TECHNOLOGY&gt;Technology&lt;&gt;.",
+            [Languages["PL"]] = "Rozmieszczalne ulepszenie frachtowca. MoÅ¼na ponownie zainstalowaÄ na wÅasnym statku gÅównym, aby ulepszyÄ jego &lt;TECHNOLOGY&gt;technologie&lt;&gt;.",
+            [Languages["NL"]] = "Een upgrade gemaakt voor een vlaggenschip.&#xA;&#xA;Kan worden geïnstalleerd in je eigen vlaggenschip om de &lt;TECHNOLOGY&gt;Technologie&lt;&gt; te verbeteren.",
+            [Languages["PT"]] = "Uma atualização do cargueiro implementável.&#xA;&#xA;Pode ser reimplementada na sua própria nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;.",
+            [Languages["LA"]] = "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;.",
+            [Languages["BR"]] = "Uma atualização implantável de nave cargueira.&#xA;&#xA;Pode ser reimplantada na sua nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt; dela.",
+            [Languages["Z1"]] = "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。",
+            [Languages["ZH"]] = "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。",
+            [Languages["Z2"]] = "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。",
+            [Languages["KO"]] = "Please provide translation in the comments. A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve it's &lt;TECHNOLOGY&gt;Technology&lt;&gt;.",
+            [Languages["JA"]] = "Please provide translation in the comments. A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve it's &lt;TECHNOLOGY&gt;Technology&lt;&gt;.",
+            [Languages["US"]] = "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."
+        }
+    }
 }
 
-GeneralUpgradeMods =
+General_Upgrade_Mods =
 {
     --ShipMods
     {
+        ["ITEMTREE_DATA"] =
         {
-            ShipTree,
-            ShipRootTech,
-            CostTypeNanite
+            ["MAINTREE"] = Ship_Tree,
+            ["TREE_ROOT"] = Ship_Root_Tech,
+            ["COST_TYPE"] = Cost_Type_Nanite,
+            ["ITEM_TREE"] = Item_Trees_Ship,
+            ["TECH_SUB"] = Tech_Tree_Sub
         },
+        ["UPGRADE_DATA"] =
         {
-            {"U_LAUNCH", "4", "1"},
-            {"U_HYPER", "4", "1"},
-            {"U_SHIPSHIELD", "4", "1"},
-            {"U_PULSE", "4", "1"},
-            {"U_SHIPSHOT", "4", "1"},
-            {"U_SHIPMINI", "4", "1"},
-            {"U_SHIPBLOB", "4", "1"},
-            {"U_SHIPGUN", "4", "1"},
-            {"U_SHIPLAS", "4", "1"}
+            {["ID_BASE"] = "U_LAUNCH", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_HYPER", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SHIPSHIELD", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_PULSE", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SHIPSHOT", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SHIPMINI", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SHIPBLOB", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SHIPGUN", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SHIPLAS", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"}
         }
     },
     --SuitMods
     {
+        ["ITEMTREE_DATA"] =
         {
-            SuitTree,
-            SuitRootTech,
-            CostTypeNanite
+            ["MAINTREE"] = Suit_Tree,
+            ["TREE_ROOT"] = Suit_Root_Tech,
+            ["COST_TYPE"] = Cost_Type_Nanite,
+            ["ITEM_TREE"] = Item_Trees_Suit,
+            ["TECH_SUB"] = Tech_Tree_Sub
         },
+        ["UPGRADE_DATA"] =
         {
-            {"U_UNW", "3", "1"},
-            {"U_TOX", "3", "1"},
-            {"U_COLDPROT", "3", "1"},
-            {"U_HOTPROT", "3", "1"},
-            {"U_RAD", "3", "1"},
-            {"U_ENERGY", "3", "1"},
-            {"U_SHIELDBOOST", "4", "1"},
-            {"U_JETBOOST", "4", "1"}
+            {["ID_BASE"] = "U_UNW", ["NO_OF_UPGRADES"] = "3", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_TOX", ["NO_OF_UPGRADES"] = "3", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_COLDPROT", ["NO_OF_UPGRADES"] = "3", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_HOTPROT", ["NO_OF_UPGRADES"] = "3", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_RAD", ["NO_OF_UPGRADES"] = "3", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_ENERGY", ["NO_OF_UPGRADES"] = "3", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SHIELDBOOST", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_JETBOOST", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"}
         }
     },
     --WeaponMods
     {
+        ["ITEMTREE_DATA"] =
         {
-            WeaponTree,
-            WeaponRootTech,
-            CostTypeNanite
+            ["MAINTREE"] = Weapon_Tree,
+            ["TREE_ROOT"] = Weapon_Root_Tech,
+            ["COST_TYPE"] = Cost_Type_Nanite,
+            ["ITEM_TREE"] = Item_Trees_Weapon,
+            ["TECH_SUB"] = Tech_Tree_Sub
         },
+        ["UPGRADE_DATA"] =
         {
-            {"U_RAIL", "4", "1"},
-            {"U_BOLT", "4", "1"},
-            {"U_TGRENADE", "4", "1"},
-            {"U_LASER", "4", "1"},
-            {"U_SCANNER", "4", "1"},
-            {"U_GRENADE", "4", "1"},
-            {"U_SHOTGUN", "4", "1"},
-            {"U_SMG", "4", "1"},
-            {"U_CANNON", "4", "1"}
+            {["ID_BASE"] = "U_RAIL", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_BOLT", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_TGRENADE", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_LASER", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SCANNER", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_GRENADE", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SHOTGUN", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_SMG", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_CANNON", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"}
         }
     },
     --ExoCraftMods
     {
+        ["ITEMTREE_DATA"] =
         {
-            ExoCraftTree,
-            ExoRootTech,
-            CostTypeNanite
+            ["MAINTREE"] = Exocraft_Tree,
+            ["TREE_ROOT"] = Exo_Root_Tech,
+            ["COST_TYPE"] = Cost_Type_Nanite,
+            ["ITEM_TREE"] = Item_Trees_Exocraft,
+            ["TECH_SUB"] = Tech_Tree_Sub
         },
+        ["UPGRADE_DATA"] =
         {
-            {"U_EXOBOOST", "4", "1"},
-            {"U_EXOGUN", "4", "1"},
-            {"U_EXO_ENG", "4", "1"},
-            {"U_EXOLAS", "4", "1"},
-            {"U_EXO_SUB", "4", "1"},
-            {"U_EXO_SUBGUN", "4", "1"},
-            {"U_MECHGUN", "4", "2"},
-            {"U_MECH_ENG", "4", "2"},
-            {"U_MECHLAS", "4", "2"}
+            {["ID_BASE"] = "U_EXOBOOST", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_EXOGUN", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_EXO_ENG", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_EXOLAS", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_EXO_SUB", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_EXO_SUBGUN", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "U_MECHGUN", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "2"},
+            {["ID_BASE"] = "U_MECH_ENG", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "2"},
+            {["ID_BASE"] = "U_MECHLAS", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "2"}
         }
     }
 
 }
 
-BioShipMods =
-{
-    --BioShipMods
-    {
-        {
-            ShipTree,
-            ShipRootTech,
-            CostTypeNanite
-        },
-        {
-            {"AP_SHIPLAS", "4", "1"},
-            {"AP_LAUNCH", "4", "1"},
-            {"AP_PULSE", "4", "1"},
-            {"AP_SHIPSHIELD", "4", "1"},
-            {"AP_HYPER", "4", "1"},
-            {"AP_SHIPGUN", "4", "1"}
-        }
-    }
-}
-
-XClassMods =
+Bio_Ship_Mods =
 {
     {
+        ["ITEMTREE_DATA"] =
         {
-            FactoryTree,
-            FactoryTreeTech,
-            CostTypeFactory
+            ["MAINTREE"] = Ship_Tree,
+            ["TREE_ROOT"] = Ship_Root_Tech,
+            ["COST_TYPE"] = Cost_Type_Nanite,
+            ["ITEM_TREE"] = Item_Trees_Ship,
+            ["TECH_SUB"] = Tech_Tree_Sub
         },
+        ["UPGRADE_DATA"] =
         {
-            {"U_HAZARDX", "", "", "1"},
-            {"U_JETBOOSTX", "", "", "1"},
-            {"U_SHIELDBOOSTX", "", "", "1"},
-            {"U_ENERGYX", "", "", "1"},
-
-            {"U_HYPERX", "", "", "2"},
-            {"U_SHIPSHIELDX", "", "", "2"},
-            {"U_PULSEX", "", "", "2"},
-            {"U_LAUNCHX", "", "", "2"},
-
-            {"U_SHIPGUNX", "", "", "3"},
-            {"U_SHIPMINIX", "", "", "3"},
-            {"U_SHIPSHOTX", "", "", "3"},
-            {"U_SHIPLASX", "", "", "3"},
-            {"U_SHIPBLOBX", "", "", "3"},
-
-            {"U_LASERX", "", "", "4"},
-            {"U_SCANNERX", "", "", "4"},
-            {"U_SHOTGUNX", "", "", "4"},
-            {"U_SMGX", "", "", "4"},
-
-            {"U_RAILX", "", "", "5"},
-            {"U_BOLTX", "", "", "5"},
-            {"U_TGRENADEX", "", "", "5"},
-            {"U_GRENADEX", "", "", "5"},
-            {"U_CANNONX", "", "", "5"},
-
-            {"U_SENTGUN", "", "", "6"},
-            {"U_SENTSUIT", "", "", "6"},
-            {"ROGUE_SGUNBOX", "", "", "6"},
-            {"ROGUE_SMARTBOX", "", "", "6"},
-            {"ROGUE_GUNBOX", "", "", "6"},
-
-            {"ROGUE_TECHBOX", "", "", "7"},
-            {"ROGUE_CLASSBOX", "", "", "7"},
-            {"ROGUE_CARBOX", "", "", "7"},
-            {"ROGUE_HAZBOX", "", "", "7"},
-            {"ROGUE_STARTBOX", "", "", "7"}
+            {["ID_BASE"] = "AP_SHIPLAS", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "AP_LAUNCH", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "AP_PULSE", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "AP_SHIPSHIELD", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "AP_HYPER", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"},
+            {["ID_BASE"] = "AP_SHIPGUN", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1"}
         }
     }
 }
 
-CustomFreighterModData =
+Special_Mods =
 {
     {
+        ["ITEMTREE_DATA"] =
         {
-            FreighterTree,
-            FreighterRootTech,
-            CostTypeNanite
+            ["MAINTREE"] = Factory_Tree,
+            ["TREE_ROOT"] = Factory_Tree_Tech,
+            ["COST_TYPE"] = Cost_Type_Factory,
+            ["ITEM_TREE"] = Item_Trees_Factory,
+            ["TECH_SUB"] = Tech_Tree_Sub_Factory
         },
+        ["UPGRADE_DATA"] =
         {
-            --id, noUpgrades, startNo, TemplateBase/NameBase, PRODUCCOPY, PROCCOPY
-            {"U_FREIG_SPE", "4", "1", "SPEED", "U_FR_SPE", "UP_FRSPE"},
-            {"U_FREIG_COM", "4", "1", "COM", "U_FR_COM", "UP_FRCOM"},
-            {"U_FREIG_EXP", "4", "1", "EXP", "U_FR_EXP", "UP_FREXP"},
-            {"U_FREIG_FUEL", "4", "1", "FUEL", "U_FR_FUEL", "UP_FRFUE"},
-            {"U_FREIG_MINE", "4", "1", "MINE", "U_FR_MINE", "UP_FRMIN"},
-            {"U_FREIG_TRA", "4", "1", "TRADE", "U_FR_TRA", "UP_FRTRA"},
-            {"U_FREIG_HYP", "4", "1", "HYP", "U_FR_HYP", "UP_FRHYP"}
+            {["ID_BASE"] = "U_HAZARDX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_JETBOOSTX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SHIELDBOOSTX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_ENERGYX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_HYPERX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SHIPSHIELDX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_PULSEX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_LAUNCHX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SHIPGUNX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SHIPMINIX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SHIPSHOTX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SHIPLASX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SHIPBLOBX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_LASERX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SCANNERX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SHOTGUNX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SMGX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_RAILX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_BOLTX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_TGRENADEX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_GRENADEX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_CANNONX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SENTGUN", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "U_SENTSUIT", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "ROGUE_SGUNBOX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "ROGUE_SMARTBOX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "ROGUE_GUNBOX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "ROGUE_TECHBOX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "ROGUE_CLASSBOX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "ROGUE_CARBOX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "ROGUE_HAZBOX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""},
+            {["ID_BASE"] = "ROGUE_STARTBOX", ["NO_OF_UPGRADES"] = "", ["START_NO"] = ""}
         }
     }
 }
 
-SubOrProd = {"Substance", "Product"}
+Custom_Freighter_Mod_Data =
+{
+    {
+        ["ITEMTREE_DATA"] =
+        {
+            ["MAINTREE"] = Freighter_Tree,
+            ["TREE_ROOT"] = Freighter_Root_Tech,
+            ["COST_TYPE"] = Cost_Type_Nanite,
+            ["ITEM_TREE"] = Item_Trees_Freighter,
+            ["TECH_SUB"] = Tech_Tree_Sub
+        },
+        ["UPGRADE_DATA"] =
+        {
+            {["ID_BASE"] = "U_FREIG_SPE", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1", ["NAME_BASE"] = "SPEED", ["PRODUCT_COPY"] = "U_FR_SPE", ["PROCTECH_COPY"] = "UP_FRSPE"},
+            {["ID_BASE"] = "U_FREIG_COM", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1", ["NAME_BASE"] = "COM", ["PRODUCT_COPY"] = "U_FR_COM", ["PROCTECH_COPY"] = "UP_FRCOM"},
+            {["ID_BASE"] = "U_FREIG_EXP", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1", ["NAME_BASE"] = "EXP", ["PRODUCT_COPY"] = "U_FR_EXP", ["PROCTECH_COPY"] = "UP_FREXP"},
+            {["ID_BASE"] = "U_FREIG_FUEL", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1", ["NAME_BASE"] = "FUEL", ["PRODUCT_COPY"] = "U_FR_FUEL", ["PROCTECH_COPY"] = "UP_FRFUE"},
+            {["ID_BASE"] = "U_FREIG_MINE", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1", ["NAME_BASE"] = "MINE", ["PRODUCT_COPY"] = "U_FR_MINE", ["PROCTECH_COPY"] = "UP_FRMIN"},
+            {["ID_BASE"] = "U_FREIG_TRA", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1", ["NAME_BASE"] = "TRADE", ["PRODUCT_COPY"] = "U_FR_TRA", ["PROCTECH_COPY"] = "UP_FRTRA"},
+            {["ID_BASE"] = "U_FREIG_HYP", ["NO_OF_UPGRADES"] = "4", ["START_NO"] = "1", ["NAME_BASE"] = "HYP", ["PRODUCT_COPY"] = "U_FR_HYP", ["PROCTECH_COPY"] = "UP_FRHYP"}
+        }
+    }
+}
+
+Invetory_Type = {["Substance"] = "Substance", ["Product"] = "Product"}
 
 Requirements =
 {
     {
+        ["SECTION_NAME"] = "REQUIREMENT_C",
+        ["REQUIREMENT_ELEMENTS"] =
         {
-            --C Requirement
-            {"EX_YELLOW", "100", SubOrProd[1]},
-            {"TECH_COMP", "1", SubOrProd[2]},
-            {"STELLAR2", "500", SubOrProd[1]},
+            {"EX_YELLOW", "100", Invetory_Type["Substance"]},
+            {"TECH_COMP", "1", Invetory_Type["Product"]},
+            {"STELLAR2", "500", Invetory_Type["Substance"]},
         },
-        {
-            "1000"
-        }
+        ["REQUIREMENT_COST"] = "1000"
     },
     {
+        ["SECTION_NAME"] = "REQUIREMENT_B",
+        ["REQUIREMENT_ELEMENTS"] =
         {
-            --B Requirement
-            {"EX_RED", "200", SubOrProd[1]},
-            {"TECH_COMP", "2", SubOrProd[2]},
-            {"STELLAR2", "500", SubOrProd[1]},
+            {"EX_RED", "200", Invetory_Type["Substance"]},
+            {"TECH_COMP", "2", Invetory_Type["Product"]},
+            {"STELLAR2", "500", Invetory_Type["Substance"]},
         },
-        {
-            "2500"
-        }
+        ["REQUIREMENT_COST"] = "2500"
     },
     {
-        {
+        ["SECTION_NAME"] = "REQUIREMENT_A",
+        ["REQUIREMENT_ELEMENTS"] = {
             --A Requirement
-            {"EX_GREEN", "300", SubOrProd[1]},
-            {"TECH_COMP", "3", SubOrProd[2]},
-            {"STELLAR2", "500", SubOrProd[1]},
+            {"EX_GREEN", "300", Invetory_Type["Substance"]},
+            {"TECH_COMP", "3", Invetory_Type["Product"]},
+            {"STELLAR2", "500", Invetory_Type["Substance"]},
         },
-        {
-            "5000"
-        }
+        ["REQUIREMENT_COST"] = "5000"
     },
     {
+        ["SECTION_NAME"] = "REQUIREMENT_S",
+        ["REQUIREMENT_ELEMENTS"] =
         {
             --S Requirement
-            {"EX_BLUE", "500", SubOrProd[1]},
-            {"TECH_COMP", "5", SubOrProd[2]},
-            {"STELLAR2", "500", SubOrProd[1]},
+            {"EX_BLUE", "500", Invetory_Type["Substance"]},
+            {"TECH_COMP", "5", Invetory_Type["Product"]},
+            {"STELLAR2", "500", Invetory_Type["Substance"]},
         },
-        {
-            "10000"
-        }
+        ["REQUIREMENT_COST"] = "10000"
     },
     {
+        ["SECTION_NAME"] = "REQUIREMENT_X",
+        ["REQUIREMENT_ELEMENTS"] =
         {
             --X Requirement
-            {"EX_RED", "300", SubOrProd[1]},
-            {"EX_BLUE", "300", SubOrProd[1]},
-            {"TECH_COMP", "5", SubOrProd[2]},
+            {"EX_RED", "300", Invetory_Type["Substance"]},
+            {"EX_BLUE", "300", Invetory_Type["Substance"]},
+            {"TECH_COMP", "5", Invetory_Type["Product"]},
         },
-        {
-            --Factory/Synthesis station uses a multiplier of X250 so 20*250=5000
-            "20"
-        }
+        --Factory/Synthesis station uses a multiplier of X250 so 20*250=5000
+        ["REQUIREMENT_COST"] = "20"
     }
 }
 
-ClassChoice = 1
-InputClassChoice =
+Class_Choice = 4
+Input_Class_Choice =
 {
-    ClassChoice,
+    Class_Choice,
     [[
         What class range do you wish?
         * 1 = C -> S
         * 2 = B -> S
         * 3 = A -> S
         * 4 = S
-        Default = 4 | Current = >> ]] .. ClassChoice .. [[ <<
+        Default = 4 | Current = >> ]] .. Class_Choice .. [[ <<
     ]]
 }
-ClassChoice = GUIF(InputClassChoice, 10)
+Class_Choice = GUIF(Input_Class_Choice, 10)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]             = NexusModName..".pak",
-    ["MOD_DESCRIPTION"]            = "",
-    ["MOD_AUTHOR"]                = Author,
-    ["ADD_FILES"]                 =
+    ["MOD_FILENAME"] = NexusModName..".pak",
+    ["MOD_DESCRIPTION"] = "",
+    ["MOD_AUTHOR"] = Author,
+    ["ADD_FILES"] =
     {
     },
-    ["MODIFICATIONS"]             =
+    ["MODIFICATIONS"] =
     {
         {
-            ["MBIN_CHANGE_TABLE"]     =
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]     = GCProductTablePath,
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MBIN_FILE_SOURCE"] = Product_Table_Path,
+                    ["EXML_CHANGE_TABLE"] =
                     {
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]     = GCProcTechnologyPath,
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MBIN_FILE_SOURCE"] = Procedural_Table_Technology_Path,
+                    ["EXML_CHANGE_TABLE"] =
                     {
                     }
                 },
                 {
                     -- Add recipes to the Tree
-                    ["MBIN_FILE_SOURCE"]     = UnlockableItemTreesPath,
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MBIN_FILE_SOURCE"] = Unlockable_Item_Trees_Path,
+                    ["EXML_CHANGE_TABLE"] =
                     {
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]     = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LocTableList"},
-                            ["ADD"]     =
+                            ["ADD"] =
                             [[
                                 <Property value="NMSString0x20.xml">
-                                    <Property name="Value" value="NMS_]]..CustomLanguageTag..[[" />
+                                    <Property name="Value" value="NMS_]]..Custom_Language_Tag..[[" />
                                 </Property>
                             ]]
                         }
@@ -375,7 +400,12 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-function NewDescriptionText(newDescId)
+local Add_Custom_Language_Files = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
+local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Changes_To_Procedural_Technology_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local Changes_To_Unlockable_Item_Trees = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+
+function New_Language_File_Entry(newDescId)
     local result =
     [[
     <Property value="TkLocalisationEntry.xml">
@@ -437,69 +467,43 @@ function NewDescriptionText(newDescId)
     return result
 end
 
-function CreateModTabpageTree(RootTech, Children, CostTypeID)
-    return
-    [[
-        <Property value="GcUnlockableItemTree.xml">
-            <Property name="Title" value="]]..TechTreeSub..[[" />
-            <Property name="CostTypeID" value="]]..CostTypeID..[[" />
-            <Property name="Root" value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="]]..RootTech..[[" />
-                <Property name="Children">
-                ]]..Children..[[
-                </Property>
-            </Property>
-        </Property>
-    ]]
-end
-
-function CreateTabPageChildren(ModName, PrevChildMod)
-    local result = ""
-    if PrevChildMod=="" then
-        result =
-        [[
-            <Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="]]..ModName..[[" />
-                <Property name="Children" />
-            </Property>
-        ]]
-    else
-        result =
-        [[
-            <Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="]]..ModName..[[" />
-                <Property name="Children">
-                ]]..PrevChildMod..[[
-                </Property>
-            </Property>
-        ]]
-    end
-
-    return result
-end
-
-function GetAllIDs(ModArray)
-    for i = 1, #ModArray do
-        local ModIdList = ModArray[i][2]
-        for j = 1, #ModIdList do
-            local UpgradeMod = ModIdList[j][1]
-            local NumberOfUpgrades = ModIdList[j][2]
-            local StartingNumberUpgrade = ModIdList[j][3]
-            if NumberOfUpgrades == "" or StartingNumberUpgrade == "" then
-                IdArray[#IdArray +1] = {UpgradeMod , Requirements[5]}
+function Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Mod_Data)
+    for i = 1, #Mod_Data do
+        local Mod_Upgrade_Data = Mod_Data[i]["UPGRADE_DATA"]
+        for j = 1, #Mod_Upgrade_Data do
+            local Upgrade_Mod = Mod_Upgrade_Data[j]["ID_BASE"]
+            local Number_Of_Upgrades = Mod_Upgrade_Data[j]["NO_OF_UPGRADES"]
+            local Starting_Number_Upgrade = Mod_Upgrade_Data[j]["START_NO"]
+            if Number_Of_Upgrades == "" or Starting_Number_Upgrade == "" then
+                Mods_Requirement_Data[#Mods_Requirement_Data +1] =
+                {
+                    ["MOD_ID"] = Upgrade_Mod ,
+                    ["REQUIREMENT_SEC_ID"] = Requirements[#Requirements]["SECTION_NAME"],
+                    ["REQUIREMENT_COST"] = Requirements[#Requirements]["REQUIREMENT_COST"],
+                }
             else
-                if tonumber(StartingNumberUpgrade) < ClassChoice then
-                    StartingNumberUpgrade = ""..ClassChoice
+                if tonumber(Starting_Number_Upgrade) < Class_Choice then
+                    Starting_Number_Upgrade = ""..Class_Choice
                 end
-                if tonumber(NumberOfUpgrades) < ClassChoice then
-                    StartingNumberUpgrade = ""..NumberOfUpgrades
+                if tonumber(Number_Of_Upgrades) < Class_Choice then
+                    Starting_Number_Upgrade = ""..Number_Of_Upgrades
                 end
 
-                for l = StartingNumberUpgrade, NumberOfUpgrades do
-                    if NumberOfUpgrades ~= "4" then
-                        IdArray[#IdArray +1] = {UpgradeMod..math.floor(l) , Requirements[l + 1]}
+                for l = Starting_Number_Upgrade, Number_Of_Upgrades do
+                    if Number_Of_Upgrades ~= "4" then
+                        Mods_Requirement_Data[#Mods_Requirement_Data +1] =
+                        {
+                            ["MOD_ID"] = Upgrade_Mod..math.floor(l) ,
+                            ["REQUIREMENT_SEC_ID"] = Requirements[l +1]["SECTION_NAME"],
+                            ["REQUIREMENT_COST"] = Requirements[l +1]["REQUIREMENT_COST"],
+                        }
                     else
-                        IdArray[#IdArray +1] = {UpgradeMod..math.floor(l) , Requirements[l]}
+                        Mods_Requirement_Data[#Mods_Requirement_Data +1] =
+                        {
+                            ["MOD_ID"] = Upgrade_Mod..math.floor(l) ,
+                            ["REQUIREMENT_SEC_ID"] = Requirements[l]["SECTION_NAME"],
+                            ["REQUIREMENT_COST"] = Requirements[l]["REQUIREMENT_COST"],
+                        }
                     end
                 end
             end
@@ -507,49 +511,58 @@ function GetAllIDs(ModArray)
     end
 end
 
-function CreateSubList(ModlistNumberOld,ModlistNumber, ModId)
-    if ModlistNumberOld == ModlistNumber then
-        SubList[#SubList+1] = ModId
-    else
-        SubList = {}
-        SubList[#SubList+1] = ModId
-    end
-end
-
-function CreateRequirement(Requirement)
-
+function Create_Requirement(Requirement)
     local RequirementID = Requirement[1]
     local RequirementAmount = Requirement[2]
     local RequirementInventoryType = Requirement[3]
 
-    return
-    [[
-        <Property value="GcTechnologyRequirement.xml">
-            <Property name="ID" value="]]..RequirementID..[[" />
-            <Property name="Type" value="GcInventoryType.xml">
-                <Property name="InventoryType" value="]]..RequirementInventoryType..[[" />
-            </Property>
-            <Property name="Amount" value="]]..RequirementAmount..[[" />
-        </Property>
-    ]]
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "CASING"},
+        ["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+        ["SEC_SAVE_TO"] = "SINGLE_REQ",
+    }
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SEC_EDIT"] = "SINGLE_REQ",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"ID", RequirementID},
+            {"InventoryType", RequirementInventoryType},
+            {"Amount", RequirementAmount}
+        }
+    }
 end
 
-function CreateRequirementsString(RequirementsArray)
-    local RequirementsString ={}
+function Create_Requirement_Sections()
+    for i = 1, #Requirements do
+        Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
+            ["SEC_SAVE_TO"] = Requirements[i]["SECTION_NAME"],
+        }
 
-    for i = 1, #RequirementsArray do
-        table.insert(RequirementsString, CreateRequirement(RequirementsArray[i]))
+        RequirementsArray = Requirements[i]["REQUIREMENT_ELEMENTS"]
+        for j = 1, #RequirementsArray do
+            Create_Requirement(RequirementsArray[j])
+            Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+            {
+                ["SEC_EDIT"] = Requirements[i]["SECTION_NAME"],
+                ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
+                ["ADD_OPTION"] = "ADDafterSECTION",
+                ["SEC_ADD_NAMED"] = "SINGLE_REQ"
+            }
+        end
+        Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+        {
+            ["SEC_EDIT"] = Requirements[i]["SECTION_NAME"],
+            ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
+            ["REMOVE"] = "SECTION",
+        }
     end
-
-    return
-    [[
-        <Property name="Requirements">
-        ]]..table.concat(RequirementsString)..[[
-        </Property>
-    ]]
 end
 
-function NewLanguagueFile(DescriptionEntries)
+function New_Languague_File(DescriptionEntries)
     return
     [[<?xml version="1.0" encoding="utf-8"?>
         <Data template="TkLocalisationTable">
@@ -561,54 +574,51 @@ function NewLanguagueFile(DescriptionEntries)
     ]]
 end
 
-function NewLanguageEntry(Language, NewDescription)
+function New_Language_Entry(Language, Language_Text)
     return
     [[
         <Property name="]]..Language..[[" value="VariableSizeString.xml">
-            <Property name="Value" value="]]..NewDescription..[[" />
+            <Property name="Value" value="]]..Language_Text..[[" />
         </Property>
     ]]
 end
 
-function NewDescriptionText(newDescId, LanguageEntries)
+function New_Language_File_Entry(Language_ID, Language_Entries)
     return
     [[
         <Property value="TkLocalisationEntry.xml">
-            <Property name="Id" value="]]..newDescId..[[" />
-            ]]..LanguageEntries..[[
+            <Property name="Id" value="]]..Language_ID..[[" />
+            ]]..Language_Entries..[[
         </Property>
     ]]
 end
 
-function FillCustomlangFile()
-    local DescriptionEntries = {}
-    local NewDescriptionID = CraftedFreighterModDescrId
-    local LanguageEntries = {}
-
-    for i = 1, #AddNewLanguatext do
-        local Language = AddNewLanguatext[i][1]
-        local NewDescription = AddNewLanguatext[i][2]
-        table.insert(LanguageEntries, NewLanguageEntry(Language, NewDescription))
+function Fill_Custom_Language_File(Language)
+    local Language_Entries = {}
+    local Language_File_Entries = {}
+    local Language_ID = ""
+    for i = 1, #Add_New_Language_Text do
+        Language_ID = Add_New_Language_Text[i]["LANGUAGE_ID"]
+        local Language_Text_Entries = Add_New_Language_Text[i]["LANGUAGE_ENTRIES"]
+        local Language_Text = Language_Text_Entries[Language]
+        table.insert(Language_Entries, New_Language_Entry(Language, Language_Text))
     end
-    table.insert(DescriptionEntries, NewDescriptionText(NewDescriptionID, table.concat(LanguageEntries)))
+    table.insert(Language_File_Entries, New_Language_File_Entry(Language_ID, table.concat(Language_Entries)))
 
-    return NewLanguagueFile(table.concat(DescriptionEntries))
+    return New_Languague_File(table.concat(Language_File_Entries))
 end
 
-local AddCsutomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
-for _Key , Language in pairs(Languages) do
-    AddCsutomLanguageFiles[#AddCsutomLanguageFiles +1] =
-    {
-        ["FILE_DESTINATION"] = "LANGUAGE/NMS_"..CustomLanguageTag.."_"..Language..".EXML",
-        ["FILE_CONTENT"] = FillCustomlangFile()
-    }
+function Language_File_Creation()
+    for _Key , Language in pairs(Languages) do
+        Add_Custom_Language_Files[#Add_Custom_Language_Files +1] =
+        {
+            ["FILE_DESTINATION"] = "LANGUAGE/NMS_"..Custom_Language_Tag.."_"..Language..".EXML",
+            ["FILE_CONTENT"] = Fill_Custom_Language_File(Language)
+        }
+    end
 end
 
-local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-local ChangesToProceduralTechnology = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
-local ChangesToUnlockableItemTrees = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
-
-function ClassStrings(UpgradeNumber)
+function Class_Strings(UpgradeNumber)
     --Deployfront, deployend, basevalue, normalisOnOff, iconBase, quality, weightingcurve
     if UpgradeNumber == 4 then
         --S-Class
@@ -625,35 +635,37 @@ function ClassStrings(UpgradeNumber)
     end
 end
 
-function CreateNewCustomModDeploys(CopyDeployID, ModDeployID)
-    ChangesToProceduralTechnology[#ChangesToProceduralTechnology + 1] =
+function Create_New_Custom_Mod_Deploys(Copy_Deploy_ID, ModDeployID)
+    Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", CopyDeployID},
+        ["SPECIAL_KEY_WORDS"] = {"ID", Copy_Deploy_ID},
         ["SEC_SAVE_TO"] = ModDeployID.."PROCSEC",
     }
-    ChangesToProceduralTechnology[#ChangesToProceduralTechnology + 1] =
+    Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
         ["SEC_EDIT"] = ModDeployID.."PROCSEC",
         ["VALUE_CHANGE_TABLE"] =
         {
             {"ID", ModDeployID},
-            {"Description", CraftedFreighterModDescrId}
+            {"Description", Crafted_Freighter_Mod_Descr_Id}
         }
     }
-    ChangesToProceduralTechnology[#ChangesToProceduralTechnology + 1] =
+    Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
-        ["PRECEDING_KEY_WORDS"] = {"Table"},
+        ["SEC_EDIT"] = "PROC_SEC_MASTER",
+        ["SPECIAL_KEY_WORDS"] = {"ID", "UP_LASER1"},
+        ["ADD_OPTION"] = "ADDafterSECTION",
         ["SEC_ADD_NAMED"] = ModDeployID.."PROCSEC",
     }
 end
 
-function CreateNewCustomMod(CopyModID, ModID, ModName, ModNameL, ModDeploysInto)
-    ChangesToProductTable[#ChangesToProductTable + 1] =
+function Create_New_Custom_Mod(Copy_Mod_ID, ModID, ModName, ModNameL,ModDeploysInto)
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", CopyModID},
+        ["SPECIAL_KEY_WORDS"] = {"ID", Copy_Mod_ID},
         ["SEC_SAVE_TO"] = ModID.."PRODSEC",
     }
-    ChangesToProductTable[#ChangesToProductTable + 1] =
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = ModID.."PRODSEC",
         ["VALUE_CHANGE_TABLE"] =
@@ -664,235 +676,318 @@ function CreateNewCustomMod(CopyModID, ModID, ModName, ModNameL, ModDeploysInto)
             {"DeploysInto", ModDeploysInto},
         }
     }
-    ChangesToProductTable[#ChangesToProductTable + 1] =
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"Description", "VariableSizeString.xml"},
         ["SEC_EDIT"] = ModID.."PRODSEC",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Value", CraftedFreighterModDescrId},
+            {"Value", Crafted_Freighter_Mod_Descr_Id},
         }
     }
-    ChangesToProductTable[#ChangesToProductTable + 1] =
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
-        ["PRECEDING_KEY_WORDS"] = {"Table"},
+        ["SEC_EDIT"] = "PRODUCT_SEC_MASTER",
+        ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
+        ["ADD_OPTION"] = "ADDafterSECTION",
         ["SEC_ADD_NAMED"] = ModID.."PRODSEC",
     }
 end
 
-for i = 1, #CustomFreighterModData do
-    local FrTree = CustomFreighterModData[i][1][1]
-    local FrRootTech = CustomFreighterModData[i][1][2]
-    local FrCostType= CustomFreighterModData[i][1][3]
-    local CustomFreighterMods = CustomFreighterModData[i][2]
-
-    local Tree = ""
-    local Children = {}
-
-    for l = 1, #CustomFreighterMods do
-        local UpgradeMod = CustomFreighterMods[l]
-
-        local NumberOfUpgrades = UpgradeMod[2]
-        local StartingNumberUpgrade = UpgradeMod[3]
-        if tonumber(StartingNumberUpgrade) < ClassChoice then
-            StartingNumberUpgrade = ""..ClassChoice
-        end
-        if tonumber(NumberOfUpgrades) < ClassChoice then
-            StartingNumberUpgrade = ""..NumberOfUpgrades
-        end
-
-
-        local StringBase = UpgradeMod[4]
-        local DeployBase = string.lower(string.gsub(UpgradeMod[1], "U_FREIG_",""))
-
-        local ModNameID = "UP_FR_"..StringBase.."_NAME"
-        local ModNameLID = "UP_FR_"..StringBase.."_NAME_L"
-        local ModTree = ""
-
-        for j = NumberOfUpgrades,  StartingNumberUpgrade, -1 do
-            local ClassNumber = math.floor(j)
-            local UpgradeModID = UpgradeMod[1]..ClassNumber
-            local CopyModID = UpgradeMod[5]..ClassNumber
-            local CopyDeployID = UpgradeMod[6]..ClassNumber
-
-            local ModClassDataAndStrings = ClassStrings(ClassNumber)
-            local DeploysInto = ModClassDataAndStrings[1]..string.upper(DeployBase).."DEPLOY"..ModClassDataAndStrings[2]
-            CreateNewCustomMod(CopyModID, UpgradeModID, ModNameID, ModNameLID, DeploysInto)
-            CreateNewCustomModDeploys(CopyDeployID, DeploysInto)
-            ModTree = CreateTabPageChildren(UpgradeModID, ModTree)
-        end
-        table.insert(Children, ModTree)
-    end
-    Tree = CreateModTabpageTree(FrRootTech, table.concat(Children), FrCostType)
-
-    local ChangesToUnlockableItemTrees_temp =
+function Create_Custom_Freighter_Mods()
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Title", FrTree, "Title", TechTreeSub},
-        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"] = Tree
+        ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
+        ["SEC_SAVE_TO"] = "PRODUCT_SEC_MASTER",
     }
-    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees + 1] = ChangesToUnlockableItemTrees_temp
+
+    Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "UP_LASER1"},
+        ["SEC_SAVE_TO"] = "PROC_SEC_MASTER",
+    }
+
+    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    -- {
+    --     ["SEC_EMPTY"] = "PRODUCT_SEC_MASTER",
+    -- }
+
+    -- Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
+    -- {
+    --     ["SEC_EMPTY"] = "PROC_SEC_MASTER",
+    -- }
+    for i = 1, #Custom_Freighter_Mod_Data do
+        local Custom_Freighter_Upgrade_Data = Custom_Freighter_Mod_Data[i]["UPGRADE_DATA"]
+        for l = 1, #Custom_Freighter_Upgrade_Data do
+            local Upgrade_Data = Custom_Freighter_Upgrade_Data[l]
+
+            local Number_Of_Upgrades = Upgrade_Data["NO_OF_UPGRADES"]
+            local Starting_Number_Upgrade = Upgrade_Data["START_NO"]
+            if tonumber(Starting_Number_Upgrade) < Class_Choice then
+                Starting_Number_Upgrade = ""..Class_Choice
+            end
+            if tonumber(Number_Of_Upgrades) < Class_Choice then
+                Starting_Number_Upgrade = ""..Number_Of_Upgrades
+            end
+            local Name_Base = Upgrade_Data["NAME_BASE"]
+            local Deploy_Base = string.lower(string.gsub(Upgrade_Data["ID_BASE"], "U_FREIG_",""))
+            local Mod_Name_ID = "UP_FR_"..Name_Base.."_NAME"
+            local Mod_Name_LID = "UP_FR_"..Name_Base.."_NAME_L"
+            for j = Number_Of_Upgrades,  Starting_Number_Upgrade, -1 do
+                local Class_Number = math.floor(j)
+                local Upgrade_Mod_ID = Upgrade_Data["ID_BASE"]..Class_Number
+                local Copy_Mod_ID = Upgrade_Data["PRODUCT_COPY"]..Class_Number
+                local Copy_Deploy_ID = Upgrade_Data["PROCTECH_COPY"]..Class_Number
+
+                local Mod_Class_Data_And_Strings = Class_Strings(Class_Number)
+                local Deploys_Into = Mod_Class_Data_And_Strings[1]..string.upper(Deploy_Base).."DEPLOY"..Mod_Class_Data_And_Strings[2]
+
+                Create_New_Custom_Mod(Copy_Mod_ID, Upgrade_Mod_ID, Mod_Name_ID, Mod_Name_LID, Deploys_Into)
+                Create_New_Custom_Mod_Deploys(Copy_Deploy_ID, Deploys_Into)
+            end
+        end
+    end
+
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SEC_EDIT"] = "PRODUCT_SEC_MASTER",
+        ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
+        ["REMOVE"] = "SECTION",
+    }
+    Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
+    {
+        ["SEC_EDIT"] = "PROC_SEC_MASTER",
+        ["SPECIAL_KEY_WORDS"] = {"ID", "UP_LASER1"},
+        ["REMOVE"] = "SECTION",
+    }
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Table"},
+        ["SEC_ADD_NAMED"] = "PRODUCT_SEC_MASTER",
+    }
+    Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Table"},
+        ["SEC_ADD_NAMED"] = "PROC_SEC_MASTER",
+    }
 end
 
-for i = 1, #GeneralUpgradeMods do
-    local TechTree = GeneralUpgradeMods[i][1][1]
-    local RootTech = GeneralUpgradeMods[i][1][2]
-    local CostType = GeneralUpgradeMods[i][1][3]
-    local UpgradeMods = GeneralUpgradeMods[i][2]
-
-    local Tree = ""
-    local Children = {}
-
-    for j = 1, #UpgradeMods do
-        local ModTree = ""
-        local UpgradeMod = UpgradeMods[j]
-        local NumberOfUpgrades = UpgradeMod[2]
-        local StartingNumberUpgrade = UpgradeMod[3]
-
-        if tonumber(StartingNumberUpgrade) < ClassChoice then
-            StartingNumberUpgrade = ""..ClassChoice
-        end
-        if tonumber(NumberOfUpgrades) < ClassChoice then
-            StartingNumberUpgrade = ""..NumberOfUpgrades
-        end
-
-        for l = NumberOfUpgrades, StartingNumberUpgrade, -1 do
-            local ModID = UpgradeMod[1] .. math.floor(l)
-            ModTree = CreateTabPageChildren(ModID, ModTree)
-        end
-        table.insert(Children, ModTree)
+function Create_Master_table_Upgrades()
+    local Upgrade_master_table = {}
+    for i = 1, #General_Upgrade_Mods do
+        table.insert(Upgrade_master_table, General_Upgrade_Mods[i])
     end
-
-    Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
-
-    local UnlockableItemTree =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSub},
-        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]    = Tree
-    }
-    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
+    for i = 1, #Bio_Ship_Mods do
+        table.insert(Upgrade_master_table, Bio_Ship_Mods[i])
+    end
+    for i = 1, #Custom_Freighter_Mod_Data do
+        table.insert(Upgrade_master_table, Custom_Freighter_Mod_Data[i])
+    end
+    return Upgrade_master_table
 end
 
-for i = 1, #BioShipMods do
-    local TechTree = BioShipMods[i][1][1]
-    local RootTech = BioShipMods[i][1][2]
-    local CostType = BioShipMods[i][1][3]
-    local UpgradeMods = BioShipMods[i][2]
-    local Tree = ""
-    local Children = {}
-
-    for j = 1, #UpgradeMods do
-        local ModTree = ""
-        local UpgradeMod = UpgradeMods[j]
-        local NumberOfUpgrades = UpgradeMod[2]
-        local StartingNumberUpgrade = UpgradeMod[3]
-
-        if tonumber(StartingNumberUpgrade) < ClassChoice then
-            StartingNumberUpgrade = ""..ClassChoice
-        elseif tonumber(NumberOfUpgrades) < ClassChoice then
-            StartingNumberUpgrade = ""..NumberOfUpgrades
-        end
-
-        for l = NumberOfUpgrades, StartingNumberUpgrade, -1 do
-            local ModID = UpgradeMod[1] .. math.floor(l)
-            ModTree = CreateTabPageChildren(ModID, ModTree)
-        end
-        table.insert(Children, "\n"..ModTree)
-    end
-
-    Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
-
-    local UnlockableItemTree =
+function Create_New_Tree_Root(Main_Tree, Item_Tree, Tree_Root, Cost_Type)
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSub},
-        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]    = Tree
+        ["SPECIAL_KEY_WORDS"] = {Item_Tree, "GcUnlockableItemTrees.xml"},
+        ["PRECEDING_KEY_WORDS"] = {"Trees", "GcUnlockableItemTree.xml"},
+        ["SEC_SAVE_TO"] = Main_Tree.."_ROOT_SEC"
     }
-    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
-
-end
-
-for i = 1, #XClassMods do
-    local TechTree = XClassMods[i][1][1]
-    local RootTech = XClassMods[i][1][2]
-    local CostType = XClassMods[i][1][3]
-
-    local UpgradeMods = XClassMods[i][2]
-    local ModSubsLists = {}
-
-    local Tree = ""
-    local Children = {}
-
-    local OldModListNumber = ""
-
-    for j = 1, #UpgradeMods do
-        local UpgradeMod = UpgradeMods[j]
-        local ModID = UpgradeMod[1]
-        local ModlistNumber = UpgradeMod[4]
-
-        CreateSubList(OldModListNumber,ModlistNumber, ModID)
-
-        if OldModListNumber~=ModlistNumber then
-            ModSubsLists[#ModSubsLists+1] = SubList
-        else
-            ModSubsLists[#ModSubsLists] = SubList
-        end
-        OldModListNumber = ModlistNumber
-    end
-
-    for k = 1, #ModSubsLists do
-        local ModSubList = ModSubsLists[k]
-        local ModTree = ""
-        for l = #ModSubList, 1, -1  do
-            ModTree = CreateTabPageChildren(ModSubList[l], ModTree)
-        end
-        table.insert(Children, ModTree)
-    end
-
-    Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
-
-    local UnlockableItemTree =
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSubFactory},
-        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]    = Tree
+        ["SEC_EDIT"] = Main_Tree.."_ROOT_SEC",
+        ["PRECEDING_KEY_WORDS"] = { "GcUnlockableItemTreeNode.xml"},
+        ["REPLACE_TYPE"] = "ALL",
+        ["REMOVE"] = "SECTION"
     }
-    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
-end
-
-GetAllIDs(XClassMods)
-GetAllIDs(CustomFreighterModData)
-GetAllIDs(GeneralUpgradeMods)
-GetAllIDs(BioShipMods)
-
-for i = 1, #IdArray do
-    local ProdModID = IdArray[i][1]
-    local RequirementsArray = IdArray[i][2][1]
-    local RecipeCost = IdArray[i][2][2][1]
-
-    local RequirementsString = CreateRequirementsString(RequirementsArray)
-
-    ChangesToProductTable[#ChangesToProductTable +1] =
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", ProdModID,"CraftAmountMultiplier","1"},
-        ["LINE_OFFSET"] = "+1",
-        ["REMOVE"] = "LINE"
-    }
-
-    ChangesToProductTable[#ChangesToProductTable +1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"ID", ProdModID,"CraftAmountMultiplier","1"},
-        ["ADD"] = RequirementsString
-    }
-
-    ChangesToProductTable[#ChangesToProductTable +1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"ID", ProdModID},
+        ["SEC_EDIT"] = Main_Tree.."_ROOT_SEC",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"IsCraftable", IsCraftableToTrue},
-            {"RecipeCost", RecipeCost}
+            {"CostTypeID", Cost_Type},
+        }
+    }
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+    {
+        ["SEC_EDIT"] = Main_Tree.."_ROOT_SEC",
+        ["PRECEDING_KEY_WORDS"] = {"Root"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Unlockable", Tree_Root},
         }
     }
 end
+
+function Create_Item_Tree_Node(Item_Id)
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"BaseParts", "GcUnlockableItemTrees.xml", "Unlockable", "MAINROOMFRAME"},
+        ["SEC_SAVE_TO"] = "ITEM_TREE_NODE"
+    }
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+    {
+        ["SEC_EDIT"] = "ITEM_TREE_NODE",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Unlockable", Item_Id},
+        }
+    }
+end
+
+function Item_Trees_Standard_Upgrades(Main_Tree, Mod_Id_Base,Mod_No_Upgrades, Mod_Start_No)
+    local Elements_in_branch = 0
+    if tonumber(Mod_Start_No) < Class_Choice then
+        Mod_Start_No = ""..Class_Choice
+    end
+    if tonumber(Mod_No_Upgrades) < Class_Choice then
+        Mod_Start_No = ""..Mod_No_Upgrades
+    end
+
+    for i = Mod_Start_No, Mod_No_Upgrades do
+        local Mod_ID = Mod_Id_Base .. math.floor(i)
+        local Old_Mod_ID = ""
+        Elements_in_branch = Elements_in_branch +1
+        Create_Item_Tree_Node(Mod_ID)
+        if Elements_in_branch == 1 then
+            Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+            {
+                ["SEC_EDIT"] = Main_Tree.."_ROOT_SEC",
+                ["PRECEDING_KEY_WORDS"] = {"Children"},
+                ["CREATE_HOS"] = "TRUE",
+                ["SEC_ADD_NAMED"] = "ITEM_TREE_NODE"
+            }
+        elseif Elements_in_branch > 1 then
+            Old_Mod_ID = Mod_Id_Base .. math.floor(i -1)
+            Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+            {
+                ["SEC_EDIT"] = Main_Tree.."_ROOT_SEC",
+                ["SPECIAL_KEY_WORDS"] = {"Unlockable", Old_Mod_ID},
+                ["PRECEDING_KEY_WORDS"] = {"Children"},
+                ["CREATE_HOS"] = "TRUE",
+                ["SEC_ADD_NAMED"] = "ITEM_TREE_NODE"
+            }
+        end
+        if Elements_in_branch == Mod_No_Upgrades then
+            Elements_in_branch = 0
+        end
+    end
+end
+
+function Item_Trees_Special_Upgrades()
+    local Main_Tree = ""
+    local Tech_Sub = ""
+    local Root_Sec_Sub = "SPECIAL_CLASS"
+
+    for j = 1, #Special_Mods do
+        local Elements_in_branch = 0
+        Main_Tree = Special_Mods[j]["ITEMTREE_DATA"]["MAINTREE"]
+        local Tree_Root = Special_Mods[j]["ITEMTREE_DATA"]["TREE_ROOT"]
+        local Item_Tree = Special_Mods[j]["ITEMTREE_DATA"]["ITEM_TREE"]
+        local Cost_Type = Special_Mods[j]["ITEMTREE_DATA"]["COST_TYPE"]
+        Tech_Sub = Special_Mods[j]["ITEMTREE_DATA"]["TECH_SUB"]
+
+        local Upgrades = Special_Mods[j]["UPGRADE_DATA"]
+        Create_New_Tree_Root(Root_Sec_Sub, Item_Tree, Tree_Root, Cost_Type)
+        for i = 1, #Upgrades do
+            Mod_Id_Base = Upgrades[i]["ID_BASE"]
+            Old_Mod_Id_Base = ""
+            Elements_in_branch = Elements_in_branch +1
+            Create_Item_Tree_Node(Mod_Id_Base)
+            if Elements_in_branch == 1 then
+                Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+                {
+                    ["SEC_EDIT"] = Root_Sec_Sub.."_ROOT_SEC",
+                    ["PRECEDING_KEY_WORDS"] = {"Children"},
+                    ["CREATE_HOS"] = "TRUE",
+                    ["SEC_ADD_NAMED"] = "ITEM_TREE_NODE"
+                }
+            elseif Elements_in_branch > 1 then
+                Old_Mod_Id_Base = Upgrades[i -1]["ID_BASE"]
+                Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+                {
+                    ["SEC_EDIT"] = Root_Sec_Sub.."_ROOT_SEC",
+                    ["SPECIAL_KEY_WORDS"] = {"Unlockable", Old_Mod_Id_Base},
+                    ["PRECEDING_KEY_WORDS"] = {"Children"},
+                    ["CREATE_HOS"] = "TRUE",
+                    ["SEC_ADD_NAMED"] = "ITEM_TREE_NODE"
+                }
+            end
+            if Elements_in_branch == 4 then
+                Elements_in_branch = 0
+            end
+        end
+    end
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Title", Main_Tree, "Title", Tech_Sub},
+        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+        ["SEC_ADD_NAMED"] = Root_Sec_Sub.."_ROOT_SEC"
+    }
+end
+
+function Create_New_Item_Trees()
+    local Upgrade_master_table = Create_Master_table_Upgrades()
+    for j = 1, #Upgrade_master_table do
+        local Main_Tree = Upgrade_master_table[j]["ITEMTREE_DATA"]["MAINTREE"]
+        local Tree_Root = Upgrade_master_table[j]["ITEMTREE_DATA"]["TREE_ROOT"]
+        local Item_Tree = Upgrade_master_table[j]["ITEMTREE_DATA"]["ITEM_TREE"]
+        local Cost_Type = Upgrade_master_table[j]["ITEMTREE_DATA"]["COST_TYPE"]
+        local Tech_Sub = Upgrade_master_table[j]["ITEMTREE_DATA"]["TECH_SUB"]
+
+        Upgrades = Upgrade_master_table[j]["UPGRADE_DATA"]
+        Create_New_Tree_Root(Main_Tree, Item_Tree, Tree_Root, Cost_Type)
+        for k = 1, #Upgrades do
+            local Mod_Id_Base = Upgrades[k]["ID_BASE"]
+            local Mod_No_Upgrades = Upgrades[k]["NO_OF_UPGRADES"]
+            local Mod_Start_No = Upgrades[k]["START_NO"]
+            Item_Trees_Standard_Upgrades(Main_Tree, Mod_Id_Base,Mod_No_Upgrades, Mod_Start_No)
+        end
+
+        Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees +1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Title", Main_Tree, "Title", Tech_Sub},
+            ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+            ["SEC_ADD_NAMED"] = Main_Tree.."_ROOT_SEC"
+        }
+    end
+    Item_Trees_Special_Upgrades()
+end
+
+function Add_Requirements_And_Enable_Craftable_To_All_Mods()
+    for i = 1, #Mods_Requirement_Data do
+        local ProdModID = Mods_Requirement_Data[i]["MOD_ID"]
+        local RequirementSectionName = Mods_Requirement_Data[i]["REQUIREMENT_SEC_ID"]
+        local RecipeCost = Mods_Requirement_Data[i]["REQUIREMENT_COST"]
+
+        Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"ID", ProdModID, "CraftAmountMultiplier", "1"},
+            ["PRECEDING_KEY_WORDS"] = {"Requirements"},
+            ["CREATE_HOS"] = "TRUE",
+            ["SEC_ADD_NAMED"] = RequirementSectionName
+        }
+
+        Changes_To_Product_Table[#Changes_To_Product_Table +1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"ID", ProdModID},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"IsCraftable", Is_Craftable_To_True},
+                {"RecipeCost", RecipeCost}
+            }
+        }
+    end
+end
+
+Language_File_Creation()
+Create_Custom_Freighter_Mods()
+Create_Requirement_Sections()
+
+Create_New_Item_Trees()
+Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Special_Mods)
+Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Custom_Freighter_Mod_Data)
+Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(General_Upgrade_Mods)
+Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Bio_Ship_Mods)
+
+Add_Requirements_And_Enable_Craftable_To_All_Mods()

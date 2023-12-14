@@ -27,7 +27,7 @@ CraftyAdd1 =
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="NANOTUBES" />
           <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Substance" />
+            <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
         </Property>

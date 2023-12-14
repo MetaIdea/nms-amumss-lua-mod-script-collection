@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "BetterRewards.pak",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "4.03",
+["NMS_VERSION"]		= "4.46",
 ["MODIFICATIONS"] 	=
 	{
 		{

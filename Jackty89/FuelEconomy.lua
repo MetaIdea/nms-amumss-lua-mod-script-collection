@@ -4,177 +4,146 @@ Author = "Jackty89"
 GcRecipeTable = "METADATA/REALITY/TABLES/NMS_REALITY_GCRECIPETABLE.MBIN"
 GcProductTable = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN"
 
-SubstanceOrProduct = {"Substance", "Product"}
-            -- Tritium,     Deutrium   , Di-Hydrogen
-SubstanceIds = {"ROCKETSUB", "LAUNCHSUB2", "LAUNCHSUB"}
-            -- Requested Operation: Di-hydrogen Capture,  Loosen Bonds
-RecipeTypes = {"RECIPE_3INPUT_LAUNCHFUEL_1", "RECIPE_GAS1_LAND"}
--- recipeType == name (no idea what the diff between the values is)
-FrigateFuelIds = {"FRIGATE_FUEL_1", "FRIGATE_FUEL_2", "FRIGATE_FUEL_3"}
+Substance = "Substance"
+-- Product = "Product"
 
-ExistingRecipes =
+Core_Substance_Ids =
+{
+    ["Tritium"] = "ROCKETSUB",
+    ["Deutrium"] = "LAUNCHSUB2",
+    ["DiHydrogen"] = "LAUNCHSUB"
+}
+        -- Requested Operation: Di-hydrogen Capture,  Loosen Bonds
+Text_String_Types = {["CAPTURE"] = "RECIPE_3INPUT_LAUNCHFUEL_1", ["BONDS"] = "RECIPE_GAS1_LAND"}
+-- recipeType == name (no idea what the diff between the values is)
+Frigate_Fuel_Ids = {"FRIGATE_FUEL_1", "FRIGATE_FUEL_2", "FRIGATE_FUEL_3"}
+
+Existing_Recipes =
 {
     {
-        "REFINERECIPE_56", --Di-Hydro
-        "7", --timetomake
-        "3", -- amount
+        ["RECIPE_ID"] = "REFINERECIPE_56", --Di-Hydro
+        ["TIME_TO_MAKE"] = "7",
+        ["AMOUNT"] = "3",
+        ["INGREDIENTS"] =
         {
-            {SubstanceIds[1], "1", SubstanceOrProduct[1]}
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Tritium"], ["AMOUNT"] = "1", ["TYPE"] = Substance}
         }
     },
     {
-        "REFINERECIPE_92",
-        "5",
-        "1",
+        ["RECIPE_ID"] = "REFINERECIPE_92", --Di-Hydro
+        ["TIME_TO_MAKE"] = "5",
+        ["AMOUNT"] = "1",
+        ["INGREDIENTS"] =
         {
-            {SubstanceIds[3], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[3], "1", SubstanceOrProduct[1]}
+            {["INGREDIENT_ID"] = Core_Substance_Ids["DiHydrogen"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["DiHydrogen"], ["AMOUNT"] = "1", ["TYPE"] = Substance}
         }
     }
 }
 
--- This is for creating recipe for Exisiting items
--- NewRecipes structure
-    -- RecipeID,
-    -- ResultId
-    -- Ingredients{{ingredient1, amount,type},{ingredient2, amount,type},{ingredient3, amount, type}},  (max 3 ingredients)
-    -- RecipeCookingTime, (time in seconds)
-    -- RecipeCookingAmount, (how many will get produced per cycle)
-    -- RecipeTypes[X], (UI string)
--- end structure
-NewRecipes =
+New_Recipes =
 {
     {
         -- D + H => 1T
-        "Trit_D_H",
-        SubstanceIds[1],
+        ["RECIPE_ID"] = "Trit_D_H",
+        ["RESULT_ID"] = Core_Substance_Ids["Tritium"],
+        ["INGREDIENTS"] =
         {
-            {SubstanceIds[2], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[3], "1", SubstanceOrProduct[1]}
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Deutrium"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["DiHydrogen"], ["AMOUNT"] = "1", ["TYPE"] = Substance}
         },
-        "5", --ResultTimeToMake
-        "1", -- Resultamount
-        RecipeTypes[1],
-        SubstanceOrProduct[1]
+        ["TIME_TO_MAKE"] = "5",
+        ["RESULT_AMOUNT"] = "1",
+        ["TEXST_STRING"] = Text_String_Types["CAPTURE"],
+        ["RECIPE_RESULT_TYPE"] = Substance
     },
     {
         -- H + H + H => 1T
-        "Trit_3H",
-        SubstanceIds[1],
+        ["RECIPE_ID"] = "Trit_3H",
+        ["RESULT_ID"] = Core_Substance_Ids["Tritium"],
+        ["INGREDIENTS"] =
         {
-            {SubstanceIds[3], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[3], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[3], "1", SubstanceOrProduct[1]}
+            {["INGREDIENT_ID"] = Core_Substance_Ids["DiHydrogen"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["DiHydrogen"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["DiHydrogen"], ["AMOUNT"] = "1", ["TYPE"] = Substance}
         },
-        "5", --ResultTimeToMake
-        "1", -- Resultamount
-        RecipeTypes[1],
-        SubstanceOrProduct[1]
+        ["TIME_TO_MAKE"] = "5",
+        ["RESULT_AMOUNT"] = "1",
+        ["TEXST_STRING"] = Text_String_Types["CAPTURE"],
+        ["RECIPE_RESULT_TYPE"] = Substance
     },
     {
         -- D + D => 2T
-        "Trit_2D",
-        SubstanceIds[1],
+        ["RECIPE_ID"] = "Trit_2D",
+        ["RESULT_ID"] = Core_Substance_Ids["Tritium"],
+        ["INGREDIENTS"] =
         {
-            {SubstanceIds[2], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[2], "1", SubstanceOrProduct[1]}
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Deutrium"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Deutrium"], ["AMOUNT"] = "1", ["TYPE"] = Substance}
         },
-        "5", --ResultTimeToMake
-        "2", -- Resultamount
-        RecipeTypes[1],
-        SubstanceOrProduct[1]
+        ["TIME_TO_MAKE"] = "5",
+        ["RESULT_AMOUNT"] = "2",
+        ["TEXST_STRING"] = Text_String_Types["CAPTURE"],
+        ["RECIPE_RESULT_TYPE"] = Substance
     },
     {
         -- H + H + T => 2T
-        "Trit_2H_T",
-        SubstanceIds[1],
+        ["RECIPE_ID"] = "Trit_2H_T",
+        ["RESULT_ID"] = Core_Substance_Ids["Tritium"],
+        ["INGREDIENTS"] =
         {
-            {SubstanceIds[3], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[3], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[1], "1", SubstanceOrProduct[1]}
+            {["INGREDIENT_ID"] = Core_Substance_Ids["DiHydrogen"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["DiHydrogen"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Tritium"], ["AMOUNT"] = "1", ["TYPE"] = Substance}
         },
-        "5", --ResultTimeToMake
-        "2", -- Resultamount
-        RecipeTypes[1],
-        SubstanceOrProduct[1]
+        ["TIME_TO_MAKE"] = "5",
+        ["RESULT_AMOUNT"] = "2",
+        ["TEXST_STRING"] = Text_String_Types["CAPTURE"],
+        ["RECIPE_RESULT_TYPE"] = Substance
     },
     {
         -- D + D + D => 3T
-        "Trit_3D",
-        SubstanceIds[1],
+        ["RECIPE_ID"] = "Trit_3D",
+        ["RESULT_ID"] = Core_Substance_Ids["Tritium"],
+        ["INGREDIENTS"] =
         {
-            {SubstanceIds[2], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[2], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[2], "1", SubstanceOrProduct[1]}
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Deutrium"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Deutrium"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Deutrium"], ["AMOUNT"] = "1", ["TYPE"] = Substance}
         },
-        "5", --ResultTimeToMake
-        "3", -- Resultamount
-        RecipeTypes[1],
-        SubstanceOrProduct[1]
+        ["TIME_TO_MAKE"] = "5",
+        ["RESULT_AMOUNT"] = "3",
+        ["TEXST_STRING"] = Text_String_Types["CAPTURE"],
+        ["RECIPE_RESULT_TYPE"] = Substance
     },
     {
         -- T + H => 3D
-        "Deut_T_H",
-        SubstanceIds[2],
+        ["RECIPE_ID"] = "Deut_T_H",
+        ["RESULT_ID"] = Core_Substance_Ids["Deutrium"],
+        ["INGREDIENTS"] =
         {
-            {SubstanceIds[1], "1", SubstanceOrProduct[1]},
-            {SubstanceIds[3], "1", SubstanceOrProduct[1]}
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Tritium"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
+            {["INGREDIENT_ID"] = Core_Substance_Ids["DiHydrogen"], ["AMOUNT"] = "1", ["TYPE"] = Substance}
         },
-        "5", --ResultTimeToMake
-        "3", -- Resultamount
-        RecipeTypes[1],
-        SubstanceOrProduct[1]
+        ["TIME_TO_MAKE"] = "5",
+        ["RESULT_AMOUNT"] = "3",
+        ["TEXST_STRING"] = Text_String_Types["BONDS"],
+        ["RECIPE_RESULT_TYPE"] = Substance
     },
     {
         -- D => 2H
-        "DeutRecycling",
-        SubstanceIds[3],
+        ["RECIPE_ID"] = "DeutRecycling",
+        ["RESULT_ID"] = Core_Substance_Ids["DiHydrogen"],
+        ["INGREDIENTS"] =
         {
-            {SubstanceIds[2], "1", SubstanceOrProduct[1]}
+            {["INGREDIENT_ID"] = Core_Substance_Ids["Deutrium"], ["AMOUNT"] = "1", ["TYPE"] = Substance},
         },
-        "5", --ResultTimeToMake
-        "2", -- Resultamount
-        RecipeTypes[2],
-        SubstanceOrProduct[1]
+        ["TIME_TO_MAKE"] = "5",
+        ["RESULT_AMOUNT"] = "2",
+        ["TEXST_STRING"] = Text_String_Types["BONDS"],
+        ["RECIPE_RESULT_TYPE"] = Substance
     }
 }
-
-function CreateRecipeTemplate (RecipeId, RecipeType, RecipeName, ResultTimeToMake, ResultId, ResultType, ResultAmount, Ingredients )
-    return
-    [[
-        <Property value="GcRefinerRecipe.xml">
-            <Property name="Id" value="]]..RecipeId..[[" />
-            <Property name="RecipeType" value="]]..RecipeType..[[" />
-            <Property name="RecipeName" value="]]..RecipeName..[[" />
-            <Property name="TimeToMake" value="]]..ResultTimeToMake..[[" />
-            <Property name="Cooking" value="False" />
-            <Property name="Result" value="GcRefinerRecipeElement.xml">
-                <Property name="Id" value="]]..ResultId..[[" />
-                <Property name="Type" value="GcInventoryType.xml">
-                    <Property name="InventoryType" value="]]..ResultType..[[" />
-                </Property>
-                <Property name="Amount" value="]]..ResultAmount..[[" />
-            </Property>
-            <Property name="Ingredients">
-                ]]..Ingredients..[[
-            </Property>
-        </Property>
-    ]]
-end
-
-function CreateNewIngredient(IngedientID, IngredientType, IngredientAmount)
-    return
-    [[
-        <Property value="GcRefinerRecipeElement.xml">
-            <Property name="Id" value="]]..IngedientID..[[" />
-            <Property name="Type" value="GcInventoryType.xml">
-                <Property name="InventoryType" value="]]..IngredientType..[[" />
-            </Property>
-            <Property name="Amount" value="]]..IngredientAmount..[[" />
-        </Property>
-    ]]
-end
-
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -203,116 +172,237 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
-for i = 1, #FrigateFuelIds do
-    FrigateFuelId = FrigateFuelIds[i]
 
-    ChangesToProductTable[#ChangesToProductTable + 1] =
+local Changes_To_Recipe_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+
+function Create_New_Recipe (Recipe_Id, Recipe_Type, Recipe_Name, Recipe_Time_To_Make, Result_Id, Result_Type, Result_Amount, Recipe_Ingredients)
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", FrigateFuelId, "ID", SubstanceIds[1] },
-        ["MATH_OPERATION"] = "*",
+        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["SEC_SAVE_TO"] = Recipe_Id.."NEW_INGREDIENTS_MASER"
+    }
+    for j = 1, #Recipe_Ingredients do
+        Ingedient_ID = Recipe_Ingredients[j]["INGREDIENT_ID"]
+        Ingredient_Amount = Recipe_Ingredients[j]["AMOUNT"]
+        Ingredient_Type = Recipe_Ingredients[j]["TYPE"]
+        Create_New_Ingredient(Ingedient_ID, Ingredient_Type, Ingredient_Amount)
+        Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+        {
+            ["SEC_EDIT"] = Recipe_Id.."NEW_INGREDIENTS_MASER",
+            ["ADD_OPTION"] = "ADDafterSECTION",
+            ["SEC_ADD_NAMED"] = Ingedient_ID.."_SEC"
+        }
+    end
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+    {
+        ["SEC_EDIT"] = Recipe_Id.."NEW_INGREDIENTS_MASER",
+        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["REMOVE"] = "SECTION"
+    }
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["SEC_SAVE_TO"] = Recipe_Id.."_SEC"
+    }
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+    {
+        ["SEC_EDIT"] = Recipe_Id.."_SEC",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Amount", "2"}
+            {"Id", Recipe_Id},
+            {"RecipeType", Recipe_Type},
+            {"RecipeName", Recipe_Name},
+            {"TimeToMake", Recipe_Time_To_Make}
         }
     }
-
-    ChangesToProductTable[#ChangesToProductTable + 1] =
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", FrigateFuelId, "ID", SubstanceIds[3] },
+        ["SEC_EDIT"] = Recipe_Id.."_SEC",
+        ["SPECIAL_KEY_WORDS"] = {"Result", "GcRefinerRecipeElement.xml"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"ID", "OXYGEN"}
+            {"Id", Result_Id},
+            {"InventoryType", Result_Type},
+            {"Amount", Result_Amount}
         }
     }
-
-    ChangesToProductTable[#ChangesToProductTable + 1] =
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", FrigateFuelId, "ID", "OXYGEN" },
-        ["MATH_OPERATION"] = "*",
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"Amount", "2"}
-        }
+        ["SEC_EDIT"] = Recipe_Id.."_SEC",
+        ["SPECIAL_KEY_WORDS"] = {"Id", Recipe_Id },
+        ["PRECEDING_KEY_WORDS"] = { "GcRefinerRecipeElement.xml"},
+        ["REPLACE_TYPE"] = "ALL",
+        ["REMOVE"] = "SECTION"
     }
-
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+    {
+        ["SEC_EDIT"] = Recipe_Id.."_SEC",
+        ["SPECIAL_KEY_WORDS"] = {"Id", Recipe_Id },
+        ["PRECEDING_KEY_WORDS"] = { "Ingredients",},
+        ["SEC_ADD_NAMED"] =  Recipe_Id.."NEW_INGREDIENTS_MASER"
+    }
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+    {
+        ["SEC_EDIT"] = "NEW_RECIPES_MASER",
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] =  Recipe_Id.."_SEC"
+    }
 end
 
-local ChangesToRecipeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-for i =1, #ExistingRecipes do
-
-    local RecipeId = ExistingRecipes[i][1]
-    local RecipeTimeToMake = ExistingRecipes[i][2]
-    local RecipeAmount = ExistingRecipes[i][3]
-    local RecipeIngredients = ExistingRecipes[i][4]
-    local IngredientsString = ""
-
-    for j = 1, #RecipeIngredients do
-        IngedientID = RecipeIngredients[j][1]
-        IngredientAmount = RecipeIngredients[j][2]
-        IngredientType = RecipeIngredients[j][3]
-
-        IngredientsString = IngredientsString..CreateNewIngredient(IngedientID, IngredientType, IngredientAmount)
-    end
-
-    ChangesToRecipeTable[#ChangesToRecipeTable + 1] =
+function Create_New_Ingredient(Ingedient_ID, Ingredient_Type, Ingredient_Amount)
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", RecipeId },
+        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
+        ["SEC_SAVE_TO"] = Ingedient_ID.."_SEC"
+    }
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+    {
+        ["SEC_EDIT"] = Ingedient_ID.."_SEC",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"TimeToMake", RecipeTimeToMake},
-            {"Amount", RecipeAmount} --should be the first hit
+            {"Id", Ingedient_ID},
+            {"InventoryType", Ingredient_Type},
+            {"Amount", Ingredient_Amount},
         }
     }
+end
 
-    ChangesToRecipeTable[#ChangesToRecipeTable + 1] =
+function Change_Frigate_Fuel_Compositions()
+    for i = 1, #Frigate_Fuel_Ids do
+        Frigate_Fuel_Id = Frigate_Fuel_Ids[i]
+
+        Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"ID", Frigate_Fuel_Id, "ID", Core_Substance_Ids["Tritium"] },
+            ["MATH_OPERATION"] = "*",
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"Amount", "2"}
+            }
+        }
+
+        Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"ID", Frigate_Fuel_Id, "ID", Core_Substance_Ids["DiHydrogen"] },
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"ID", "OXYGEN"}
+            }
+        }
+
+        Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"ID", Frigate_Fuel_Id, "ID", "OXYGEN" },
+            ["MATH_OPERATION"] = "*",
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"Amount", "2"}
+            }
+        }
+
+    end
+end
+
+function Edit_Existing_Recipes()
+    for i =1, #Existing_Recipes do
+        local Recipe_Id = Existing_Recipes[i]["RECIPE_ID"]
+        local Recipe_Time_To_Make = Existing_Recipes[i]["TIME_TO_MAKE"]
+        local Recipe_Amount = Existing_Recipes[i]["AMOUNT"]
+        local Recipe_Ingredients = Existing_Recipes[i]["INGREDIENTS"]
+
+        Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+            ["SEC_SAVE_TO"] = Recipe_Id.."EDIT_INGREDIENTS_MASER"
+        }
+        for j = 1, #Recipe_Ingredients do
+            Ingedient_ID = Recipe_Ingredients[j]["INGREDIENT_ID"]
+            Ingredient_Amount = Recipe_Ingredients[j]["AMOUNT"]
+            Ingredient_Type = Recipe_Ingredients[j]["TYPE"]
+
+            Create_New_Ingredient(Ingedient_ID, Ingredient_Type, Ingredient_Amount)
+            Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+            {
+                ["SEC_EDIT"] = Recipe_Id.."EDIT_INGREDIENTS_MASER",
+                ["ADD_OPTION"] = "ADDafterSECTION",
+                ["SEC_ADD_NAMED"] = Ingedient_ID.."_SEC"
+            }
+        end
+        Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+        {
+            ["SEC_EDIT"] = Recipe_Id.."EDIT_INGREDIENTS_MASER",
+            ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+            ["REMOVE"] = "SECTION"
+        }
+
+        Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", Recipe_Id },
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"TimeToMake", Recipe_Time_To_Make}
+            }
+        }
+        Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", Recipe_Id, "Result", "GcRefinerRecipeElement.xml"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"Amount", Recipe_Amount}
+            }
+        }
+
+        Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", Recipe_Id },
+            ["PRECEDING_KEY_WORDS"] = { "GcRefinerRecipeElement.xml"},
+            ["REPLACE_TYPE"] = "ALL",
+            ["REMOVE"] = "SECTION"
+        }
+        Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", Recipe_Id },
+            ["PRECEDING_KEY_WORDS"] = { "Ingredients",},
+            ["SEC_ADD_NAMED"] =  Recipe_Id.."EDIT_INGREDIENTS_MASER"
+        }
+    end
+end
+
+function Add_New_Recipes()
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", RecipeId },
-        ["PRECEDING_KEY_WORDS"] = { "Ingredients" },
+        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["SEC_SAVE_TO"] = "NEW_RECIPES_MASER"
+    }
+    for i = 1, #New_Recipes, 1 do
+        local Recipe_Id = New_Recipes[i]["RECIPE_ID"]
+        local Result_Id = New_Recipes[i]["RESULT_ID"]
+        local Recipe_Ingredients = New_Recipes[i]["INGREDIENTS"]
+        local Recipe_Time_To_Make = New_Recipes[i]["TIME_TO_MAKE"]
+        local Result_Amount = New_Recipes[i]["RESULT_AMOUNT"]
+        local Recipe_Type = New_Recipes[i]["TEXST_STRING"]
+        local Recipe_Name = New_Recipes[i]["TEXST_STRING"]
+        local Result_Type = New_Recipes[i]["RECIPE_RESULT_TYPE"]
+
+        Create_New_Recipe(Recipe_Id, Recipe_Type, Recipe_Name, Recipe_Time_To_Make, Result_Id, Result_Type, Result_Amount, Recipe_Ingredients)
+    end
+
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
+    {
+        ["SEC_EDIT"] = "NEW_RECIPES_MASER",
+        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
         ["REMOVE"] = "SECTION"
     }
 
-    ChangesToRecipeTable[#ChangesToRecipeTable + 1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"Id", RecipeId , "Result", "GcRefinerRecipeElement.xml"},
-        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"] = [[<Property name="Ingredients">]]..IngredientsString..[[</Property>]]
-    }
-end
-
--- LAYOUT REMINDER
---     "DeutRecycling", --RecipedId
---     SubstanceIds[3], --ResultID
---     {
---         {SubstanceIds[2], "1", SubstanceOrProduct[1]}
---     },
---     "5", --ResultTimeToMake
---     "2", -- Resultamount
---     RecipeTypes[2], --Recipetype/name
--- }
-for i = 1, #NewRecipes, 1 do
-    local RecipeId = NewRecipes[i][1]
-    local ResultId = NewRecipes[i][2]
-    local RecipeIngredients = NewRecipes[i][3]
-    local ResultTimeToMake = NewRecipes[i][4]
-    local ResultAmount = NewRecipes[i][5]
-    local RecipeType = NewRecipes[i][6]
-    local RecipeName = RecipeType
-    local ResultType = NewRecipes[i][7]
-
-    local IngredientsString = ""
-
-    for j = 1, #RecipeIngredients do
-        IngedientID = RecipeIngredients[j][1]
-        IngredientAmount = RecipeIngredients[j][2]
-        IngredientType = RecipeIngredients[j][3]
-
-        IngredientsString = IngredientsString..CreateNewIngredient(IngedientID, IngredientType, IngredientAmount)
-    end
-
-    ChangesToRecipeTable[#ChangesToRecipeTable + 1] =
+    Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateRecipeTemplate(RecipeId, RecipeType, RecipeName, ResultTimeToMake, ResultId, ResultType, ResultAmount, IngredientsString)
+        ["SEC_ADD_NAMED"] = "NEW_RECIPES_MASER"
     }
 end
+
+Change_Frigate_Fuel_Compositions()
+Edit_Existing_Recipes()
+Add_New_Recipes()

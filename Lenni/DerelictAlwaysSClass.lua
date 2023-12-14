@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "DerelictAlwaysSClass - max stats.pak",
+["MOD_FILENAME"] 			= "DerelictAlwaysSClass.pak",
 ["MOD_AUTHOR"]				= "Lenni",
 ["NMS_VERSION"]				= "4.43",
-["MOD_DESCRIPTION"]			= "Makes derelicts always drop max stat S class upgrades",
+["MOD_DESCRIPTION"]			= "Makes derelicts always drop S class upgrades",
 ["MODIFICATIONS"] 			= 
 	{
 		{

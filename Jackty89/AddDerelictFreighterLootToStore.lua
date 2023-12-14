@@ -8,14 +8,13 @@ MAINTREE = "UI_PURCHASABLE_BASEPARTS_TREE"
 ROOT = "SLIME_MED"
 TECHSUB = "UI_DECORATION_TREE"
 COSTTYPE = "SALVAGE"
-SubList = {}
-ListOfIds =
+
+List_Of_Ids =
 {
     "MEDTUBE",
     "HEATER",
     "FOORLIGHT",
     "PLANTTUBE",
-    "LOCKER2",
     "ABAND_SHELF",
     "ABAND_CRATE_M",
     "ABAND_CRATE_L",
@@ -24,41 +23,9 @@ ListOfIds =
     "FOOTLOCKER",
     "ABAND_BENCH",
     "PALLET",
+    "LOCKER2",
     "ABAND_BARREL"
 }
-
-ListOfIdsSplitForTree =
-{
-    {
-        {"MEDTUBE", "1"},
-        {"HEATER", "1"},
-        {"FOORLIGHT", "1"},
-        {"PLANTTUBE", "1"},
-
-        {"ABAND_SHELF", "2"},
-        {"ABAND_CRATE_M", "2"},
-        {"ABAND_CRATE_L", "2"},
-        {"ABAND_CRATE_XL", "2"},
-
-        {"ABAND_CASE", "3"},
-        {"FOOTLOCKER", "3"},
-        {"ABAND_BENCH", "3"},
-        {"PALLET", "3"},
-
-        {"LOCKER2", "4"},
-        {"ABAND_BARREL", "4"}
-    }
-}
-
-function CreateMapShopEntry(NewId)
-    return [[
-        <Property value="NMSString0x10.xml">
-            <Property name="Value" value="]]..NewId..[[" />
-        </Property>
-    ]]
-end
-
-StarMapShopEntry = ""
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -79,139 +46,145 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "+",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinItemsForSale", #ListOfIds},
-                                {"MaxItemsForSale", #ListOfIds}
+                                {"MinItemsForSale", #List_Of_Ids},
+                                {"MaxItemsForSale", #List_Of_Ids}
                             }
                         }
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = UnlockableItemTreesPath,
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                    }
+                    ["EXML_CHANGE_TABLE"] = {}
                 }
             }
         }
     }
 }
 
-local ChangesToDefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Changes_To_Default_Reality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Changes_To_Unlockable_Item_Trees = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
-for i = 1, #ListOfIds do
-    StarMapShopEntry = StarMapShopEntry .. CreateMapShopEntry(ListOfIds[i])
-    ChangesToDefaultReality[#ChangesToDefaultReality + 1] =
+function Create_Mapshop_Entry(Mapshop_Entry_Id)
+    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Value", ListOfIds[i]},
+        ["SPECIAL_KEY_WORDS"] = {"Value", Mapshop_Entry_Id},
         ["REMOVE"] = "SECTION"
     }
-    if i == #ListOfIds then
-        ChangesToDefaultReality[#ChangesToDefaultReality + 1] =
-        {
-            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "Scrap", "AlwaysPresentProducts"},
-            ["ADD"] = StarMapShopEntry
-        }
-    end
-end
-
--- create itemtree
-function CreateModTabpageTree(RootTech, Children, CostTypeID)
-    return
-    [[
-        <Property value="GcUnlockableItemTree.xml">
-            <Property name="Title" value="]]..TECHSUB..[[" />
-            <Property name="CostTypeID" value="]]..CostTypeID..[[" />
-            <Property name="Root" value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="]]..RootTech..[[" />
-                <Property name="Children">
-                ]]..Children..[[
-                </Property>
-            </Property>
-        </Property>
-    ]]
-end
-
-function CreateTabPageChildren(ItemName, PrevChildMod)
-    local result = ""
-    if PrevChildMod == "" then
-        result =
-        [[
-            <Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="]]..ItemName..[[" />
-                <Property name="Children" />
-            </Property>
-        ]]
-    else
-        result =
-        [[
-            <Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="]]..ItemName..[[" />
-                <Property name="Children">
-                ]]..PrevChildMod..[[
-                </Property>
-            </Property>
-        ]]
-    end
-
-    return result
-end
-
-function CreateSubList(ModlistNumberOld,ModlistNumber, ModId)
-    if ModlistNumberOld == ModlistNumber then
-        SubList[#SubList+1] = ModId
-    else
-        SubList = {}
-        SubList[#SubList+1] = ModId
-    end
-end
-
-
-local ChangesToUnlockableItemTrees = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
-
-for i = 1, #ListOfIdsSplitForTree do
-    local TechTree = MAINTREE
-    local RootTech = ROOT
-    local CostType = COSTTYPE
-
-    local Items = ListOfIdsSplitForTree[i]
-    local ItemSubsLists = {}
-
-    local Tree = ""
-    local Children = {}
-
-    local OldItemListNumber = ""
-
-    for j = 1, #Items do
-        local Item = Items[j]
-        local ItemID = Item[1]
-        local ItemlistNumber = Item[2]
-
-        CreateSubList(OldItemListNumber, ItemlistNumber, ItemID)
-
-        if OldItemListNumber~=ItemlistNumber then
-            ItemSubsLists[#ItemSubsLists+1] = SubList
-        else
-            ItemSubsLists[#ItemSubsLists] = SubList
-        end
-        OldItemListNumber = ItemlistNumber
-    end
-
-    for k = 1, #ItemSubsLists do
-        local ItemSubList = ItemSubsLists[k]
-        local ModTree = ""
-        for l = #ItemSubList, 1, -1  do
-            ModTree = CreateTabPageChildren(ItemSubList[l], ModTree)
-        end
-        table.insert(Children, ModTree)
-    end
-
-    Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
-
-    local UnlockableItemTree =
+    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TECHSUB},
-        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]    = Tree
+        ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "Scrap", "AlwaysPresentProducts", "NMSString0x10.xml"},
+        ["SEC_SAVE_TO"] = "MAPSHOP_ENTRY"
     }
-    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
+    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    {
+        ["SEC_EDIT"] = "MAPSHOP_ENTRY",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Value", Mapshop_Entry_Id}
+        }
+    }
+    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Value", "DECAL_HAZARD"},
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] = "MAPSHOP_ENTRY"
+    }
 end
+
+function Edit_Store_Entries()
+    for i = 1, #List_Of_Ids do
+        Create_Mapshop_Entry(List_Of_Ids[i])
+    end
+end
+
+function Create_New_Tree_Root()
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"BaseParts", "GcUnlockableItemTrees.xml"},
+        ["PRECEDING_KEY_WORDS"] = {"Trees", "GcUnlockableItemTree.xml"},
+        ["SEC_SAVE_TO"] = "NEW_BASE_BUILDING_ROOT_SEC"
+    }
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+    {
+        ["SEC_EDIT"] = "NEW_BASE_BUILDING_ROOT_SEC",
+        ["PRECEDING_KEY_WORDS"] = { "GcUnlockableItemTreeNode.xml"},
+        ["REPLACE_TYPE"] = "ALL",
+        ["REMOVE"] = "SECTION"
+    }
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+    {
+        ["SEC_EDIT"] = "NEW_BASE_BUILDING_ROOT_SEC",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"CostTypeID", COSTTYPE},
+        }
+    }
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+    {
+        ["SEC_EDIT"] = "NEW_BASE_BUILDING_ROOT_SEC",
+        ["PRECEDING_KEY_WORDS"] = {"Root"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Unlockable", ROOT},
+        }
+    }
+end
+
+function Create_Item_Tree_Node(Item_Id)
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"BaseParts", "GcUnlockableItemTrees.xml", "Unlockable", "MAINROOMFRAME"},
+        ["SEC_SAVE_TO"] = "ITEM_TREE_NODE"
+    }
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+    {
+        ["SEC_EDIT"] = "ITEM_TREE_NODE",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Unlockable", Item_Id},
+        }
+    }
+end
+
+function Create_New_Item_Trees()
+    Create_New_Tree_Root()
+    Elements_in_branch = 0
+    for i = 1, #List_Of_Ids do
+        Item_Id = List_Of_Ids[i]
+        Old_id = ""
+        Elements_in_branch = Elements_in_branch +1
+        Create_Item_Tree_Node(Item_Id)
+        if Elements_in_branch == 1 then
+            Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+            {
+                ["SEC_EDIT"] = "NEW_BASE_BUILDING_ROOT_SEC",
+                ["PRECEDING_KEY_WORDS"] = {"Children"},
+                ["CREATE_HOS"] = "TRUE",
+                ["SEC_ADD_NAMED"] = "ITEM_TREE_NODE"
+            }
+        elseif Elements_in_branch > 1 then
+            Old_id = List_Of_Ids[i -1]
+            Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
+            {
+                ["SEC_EDIT"] = "NEW_BASE_BUILDING_ROOT_SEC",
+                ["SPECIAL_KEY_WORDS"] = {"Unlockable", Old_id},
+                ["PRECEDING_KEY_WORDS"] = {"Children"},
+                ["CREATE_HOS"] = "TRUE",
+                ["SEC_ADD_NAMED"] = "ITEM_TREE_NODE"
+            }
+        end
+        if Elements_in_branch == 4 then
+            Elements_in_branch = 0
+        end
+    end
+
+    Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Title", MAINTREE, "Title", TECHSUB},
+        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+        ["SEC_ADD_NAMED"] = "NEW_BASE_BUILDING_ROOT_SEC"
+    }
+end
+
+Edit_Store_Entries()
+Create_New_Item_Trees()

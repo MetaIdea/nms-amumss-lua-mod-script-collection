@@ -1,5 +1,5 @@
 ModName = "PTSd More Expensive Pilots + Receivers + Ship&Tool slots etc"
-GameVersion = "4_41"
+GameVersion = "4_46"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
 --This is the price paid in Nanites during certain dialog choices rarely used in certain alien NPC interactions
@@ -229,7 +229,10 @@ NewTravellerCost=
       <Property name="DisplayOnlyCostIfCantAfford" value="False" />
       <Property name="HideCostStringIfCanAfford" value="False" />
       <Property name="RemoveOptionIfCantAfford" value="False" />
+      <Property name="InvertCanAffordOutcome" value="False" />
       <Property name="MustAffordInCreative" value="False" />
+      <Property name="CommunityContributionValue" value="0" />
+      <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
       <Property name="CannotAffordOSDMsg" value="" />
       <Property name="MissionMessageWhenCharged" value="" />
       <Property name="Cost" value="GcCostMoney.xml">

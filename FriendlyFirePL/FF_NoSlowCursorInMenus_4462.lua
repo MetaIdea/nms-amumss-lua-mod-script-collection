@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "NoSlowCursorInMenus"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "Babscoole, FriendlyFirePL"
-METADATA_NMS_VERSION    = "440"
+METADATA_NMS_VERSION    = "4462"
 METADATA_MOD_DESC       = "This mod removes the cursor slow down effect present in menus when using analog sticks for input"
 
 
@@ -13,7 +13,7 @@ METADATA_MOD_DESC       = "This mod removes the cursor slow down effect present 
 -- mod data
 ----------------------------------------------------------------------------------------------------
 
--- list of files in UI directory that use the slow down effect (version 4.40)
+-- list of files in UI directory that use the slow down effect (version 4.46.2)
 FILES_UI = 
 {
     "UI\\BUYSCREEN.MBIN",
@@ -58,6 +58,7 @@ FILES_UI =
     "UI\\BYTEBEAT\\BYTEBEATTOGGLE.MBIN",
     "UI\\BYTEBEAT\\BYTEBEATTOGGLE2.MBIN",
     "UI\\COMPONENTS\\ACCEPTDECLINEDIALOG.MBIN",
+    "UI\\COMPONENTS\\ACCEPTDECLINEDIALOG3.MBIN",
     "UI\\COMPONENTS\\ARROWBOXSCROLL.MBIN",
     "UI\\COMPONENTS\\BASETHUMBBUTTON.MBIN",
     "UI\\COMPONENTS\\BUTTONACCEPT.MBIN",

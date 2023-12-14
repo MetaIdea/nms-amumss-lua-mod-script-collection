@@ -1,166 +1,14 @@
-ModName = "MoreAndCheaperStarMaps"
+ModName = "MoreAndCheaperStarmaps"
 Author = "Jackty89"
 
-ProductTablePath = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN"
-RewardTablePath = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
-ConsumeableItemTablePath = "METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN"
-DefaultRealityPath = "METADATA/REALITY/DEFAULTREALITY.MBIN"
+Product_Table_Path = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN"
+Reward_Table_Path = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
+Consumeable_Item_Table_Path = "METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN"
+Default_Reality_Path = "METADATA/REALITY/DEFAULTREALITY.MBIN"
 
-StarMapCrashedShipId = "MAP_CRASHSHIP"
-HiveMapId = "CHART_HIVE"
+Starmap_Crashed_Ship_Id = "MAP_CRASHSHIP"
+HiveMap_Id = "CHART_HIVE"
 
-function CreateStarMap(NewId)
-    return [[
-        <Property value="GcProductData.xml">
-            <Property name="ID" value="]]..NewId ..[[" />
-            <Property name="Name" value="UI_STARCHART_NAME" />
-            <Property name="NameLower" value="UI_STARCHART_NAME_L" />
-            <Property name="Subtitle" value="VariableSizeString.xml">
-                <Property name="Value" value="UI_STARCHART_SUB_DISTRESS" />
-            </Property>
-            <Property name="Description" value="VariableSizeString.xml">
-                <Property name="Value" value="UI_STARCHART_DESC_DISTRESS" />
-            </Property>
-            <Property name="Hint" value="" />
-            <Property name="GroupID" value="" />
-            <Property name="DebrisFile" value="TkModelResource.xml">
-                <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-                <Property name="ResHandle" value="GcResource.xml">
-                    <Property name="ResourceID" value="0" />
-                </Property>
-            </Property>
-            <Property name="BaseValue" value="3200" />
-            <Property name="Level" value="0" />
-            <Property name="Icon" value="TkTextureResource.xml">
-                <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STARCHART.CRASHEDSHIP.dds" />
-                <Property name="ResHandle" value="GcResource.xml">
-                    <Property name="ResourceID" value="0" />
-                </Property>
-            </Property>
-            <Property name="HeroIcon" value="TkTextureResource.xml">
-                <Property name="Filename" value="" />
-                <Property name="ResHandle" value="GcResource.xml">
-                    <Property name="ResourceID" value="0" />
-                </Property>
-            </Property>
-            <Property name="Colour" value="Colour.xml">
-                <Property name="R" value="0.101960786" />
-                <Property name="G" value="0.152941182" />
-                <Property name="B" value="0.2" />
-                <Property name="A" value="1" />
-            </Property>
-            <Property name="Category" value="GcRealitySubstanceCategory.xml">
-                <Property name="SubstanceCategory" value="Special" />
-            </Property>
-            <Property name="Type" value="GcProductCategory.xml">
-                <Property name="ProductCategory" value="Curiosity" />
-            </Property>
-            <Property name="Rarity" value="GcRarity.xml">
-                <Property name="Rarity" value="Rare" />
-            </Property>
-            <Property name="Legality" value="GcLegality.xml">
-                <Property name="Legality" value="Legal" />
-            </Property>
-            <Property name="Consumable" value="True" />
-            <Property name="ChargeValue" value="0" />
-            <Property name="StackMultiplier" value="4" />
-            <Property name="DefaultCraftAmount" value="1" />
-            <Property name="CraftAmountStepSize" value="1" />
-            <Property name="CraftAmountMultiplier" value="1" />
-            <Property name="Requirements" />
-            <Property name="AltRequirements" />
-            <Property name="Cost" value="GcItemPriceModifiers.xml">
-                <Property name="SpaceStationMarkup" value="0" />
-                <Property name="LowPriceMod" value="0" />
-                <Property name="HighPriceMod" value="0" />
-                <Property name="BuyBaseMarkup" value="0" />
-                <Property name="BuyMarkupMod" value="0" />
-            </Property>
-            <Property name="RecipeCost" value="1" />
-            <Property name="SpecificChargeOnly" value="False" />
-            <Property name="NormalisedValueOnWorld" value="0.008278528" />
-            <Property name="NormalisedValueOffWorld" value="0.008278528" />
-            <Property name="TradeCategory" value="GcTradeCategory.xml">
-                <Property name="TradeCategory" value="None" />
-            </Property>
-            <Property name="WikiCategory" value="NotEnabled" />
-            <Property name="IsCraftable" value="False" />
-            <Property name="DeploysInto" value="" />
-            <Property name="EconomyInfluenceMultiplier" value="0" />
-            <Property name="PinObjective" value="UI_FIND_OBJ" />
-            <Property name="PinObjectiveTip" value="" />
-            <Property name="CookingIngredient" value="False" />
-            <Property name="CookingValue" value="0" />
-            <Property name="GoodForSelling" value="False" />
-            <Property name="GiveRewardOnSpecialPurchase" value="" />
-            <Property name="EggModifierIngredient" value="False" />
-            <Property name="IsTechbox" value="False" />
-        </Property>
-    ]]
-end
-
-function CreateStarMapReward(NewId)
-    return [[
-        <Property value="GcGenericRewardTableEntry.xml">
-            <Property name="Id" value="]] ..
-        NewId ..
-            [[" />
-            <Property name="List" value="GcRewardTableItemList.xml">
-                <Property name="RewardChoice" value="SelectAlwaysSilent" />
-                <Property name="OverrideZeroSeed" value="False" />
-                <Property name="List">
-                    <Property value="GcRewardTableItem.xml">
-                        <Property name="PercentageChance" value="100" />
-                        <Property name="Reward" value="GcRewardScanEvent.xml">
-                            <Property name="Event" value="DISTRESS" />
-                            <Property name="ScanEventTable" value="Planet" />
-                            <Property name="DoAerialScan" value="True" />
-                            <Property name="UseMissionSeedForEvent" value="False" />
-                        </Property>
-                        <Property name="LabelID" value="Distress" />
-                    </Property>
-                </Property>
-            </Property>
-        </Property>
-    ]]
-end
-
-function CreateStarMapConsumable(NewId, NewRewardId)
-    return [[
-        <Property value="GcConsumableItem.xml">
-            <Property name="ID" value="]] ..
-        NewId ..
-            [[" />
-            <Property name="RewardID" value="]] ..
-                NewRewardId ..
-                    [[" />
-            <Property name="TutorialRewardID" value="" />
-            <Property name="ButtonLocID" value="UI_CHART_LABEL" />
-            <Property name="ButtonSubLocID" value="UI_CHART_SUB" />
-            <Property name="CloseInventoryWhenUsed" value="True" />
-            <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
-                <Property name="AkEvent" value="INVALID_EVENT" />
-            </Property>
-            <Property name="RewardFailedLocID" value="" />
-            <Property name="DestroyItemWhenConsumed" value="True" />
-        </Property>
-    ]]
-end
-
-function CreateMapShopEntry(NewId)
-    return [[
-        <Property value="NMSString0x10.xml">
-            <Property name="Value" value="]] ..
-        NewId .. [[" />
-        </Property>
-    ]]
-end
-
-StarMapProduct = CreateStarMap(StarMapCrashedShipId)
-StarMapReward = CreateStarMapReward("R_" .. StarMapCrashedShipId)
-StarMapConsumable = CreateStarMapConsumable(StarMapCrashedShipId, "R_" .. StarMapCrashedShipId)
-StarMapShopEntry = CreateMapShopEntry(StarMapCrashedShipId)
-StarMapShopEntry2 = CreateMapShopEntry(HiveMapId)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -172,13 +20,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {
-                    ["MBIN_FILE_SOURCE"] = ProductTablePath,
+                    ["MBIN_FILE_SOURCE"] = Product_Table_Path,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Table"},
-                            ["ADD"] = StarMapProduct
-                        },
                         {
                             -- This reduces the cost of settlement maps to 1
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CHART_SETTLE"},
@@ -190,28 +34,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = RewardTablePath,
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SpecialRewardTable"},
-                            ["ADD"] = StarMapReward
-                        }
-                    }
+                    ["MBIN_FILE_SOURCE"] = Reward_Table_Path,
+                    ["EXML_CHANGE_TABLE"] = {}
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = ConsumeableItemTablePath,
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Table"},
-                            ["ADD"] = StarMapConsumable
-                        }
-                    }
+                    ["MBIN_FILE_SOURCE"] = Consumeable_Item_Table_Path,
+                    ["EXML_CHANGE_TABLE"] = {}
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = DefaultRealityPath,
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MBIN_FILE_SOURCE"] = Default_Reality_Path,
+                    ["EXML_CHANGE_TABLE"] = 
+                    {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "MapShop"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -219,12 +52,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinItemsForSale", "7"},
                                 {"MaxItemsForSale", "7"}
                             }
-                        },
-                        {
-                            -- , "AlwaysPresentProducts"
-                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "MapShop"},
-                            ["LINE_OFFSET"] = "+1",
-                            ["ADD"] = StarMapShopEntry .. StarMapShopEntry2
                         }
                     }
                 }
@@ -232,3 +59,162 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
+local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Changes_To_Reward_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local Changes_To_Consumable_Item_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local Changes_To_Default_Reality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+
+function Create_New_Starmap(New_Id)
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "CHART_TREASURE"},
+        ["SEC_SAVE_TO"] = "STARCHART_COPY"
+    }
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SEC_EDIT"] = "STARCHART_COPY",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"ID", New_Id},
+            {"Name", "BUILDING_DISTRESSSIGNAL"},
+            {"NameLower", "BUILDING_DISTRESSSIGNAL_L"},
+        }
+    }
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SEC_EDIT"] = "STARCHART_COPY",
+        ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Value", "UI_CORE_TUTORIAL1_MSG1C"}
+        }
+    }
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SEC_EDIT"] = "STARCHART_COPY",
+        ["PRECEDING_KEY_WORDS"] = {"Description"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Value", "UI_STARCHART_DESC_DISTRESS"}
+        }
+    }
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SEC_EDIT"] = "STARCHART_COPY",
+        ["SPECIAL_KEY_WORDS"] = {"Icon", "TkTextureResource.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Filename", "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STARCHART.CRASHEDSHIP.DDS"}
+        }
+    }
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Table"},
+        ["SEC_ADD_NAMED"] = "STARCHART_COPY"
+    }
+end
+
+function Create_Starmap_Reward(Reward_Id)
+    Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_A"},
+        ["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
+        ["SEC_SAVE_TO"] = "STARCHART_REWARD_ITEM_COPY"
+    }
+    Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
+    {
+        ["SEC_EDIT"] = "STARCHART_REWARD_ITEM_COPY",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"PercentageChance", "100"},
+            {"Event", "DISTRESS"},
+            {"LabelID", "Distress"}
+        }
+    }
+
+    Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_A"},
+        ["SEC_SAVE_TO"] = "STARCHART_REWARD_COPY"
+    }
+    Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
+    {
+        ["SEC_EDIT"] = "STARCHART_REWARD_COPY",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Id", Reward_Id},
+            {"RewardChoice", "GiveAll"}
+        }
+    }
+    Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
+    {
+        ["SEC_EDIT"] = "STARCHART_REWARD_COPY",
+        ["PRECEDING_KEY_WORDS"] = { "GcRewardTableItem.xml"},
+        ["REPLACE_TYPE"] = "ALL",
+        ["REMOVE"] = "SECTION"
+    }
+    Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
+    {
+        ["SEC_EDIT"] = "STARCHART_REWARD_COPY",
+        ["SPECIAL_KEY_WORDS"] = {"Id", Reward_Id},
+        ["PRECEDING_KEY_WORDS"] = {"List","List"},
+        ["SEC_ADD_NAMED"] =  "STARCHART_REWARD_ITEM_COPY"
+    }
+
+    Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"SpecialRewardTable"},
+        ["SEC_ADD_NAMED"] = "STARCHART_REWARD_COPY"
+    }
+end
+
+function Create_Starmap_Consumable(Consumable_Id, New_Reward_Id)
+    Changes_To_Consumable_Item_Table[#Changes_To_Consumable_Item_Table + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "STARCHART_A"},
+        ["SEC_SAVE_TO"] = "STARCHART_CONSUMABLE_COPY"
+    }
+    Changes_To_Consumable_Item_Table[#Changes_To_Consumable_Item_Table + 1] =
+    {
+        ["SEC_EDIT"] = "STARCHART_CONSUMABLE_COPY",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"ID", Consumable_Id},
+            {"RewardID", New_Reward_Id},
+
+        }
+    }
+    Changes_To_Consumable_Item_Table[#Changes_To_Consumable_Item_Table + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Table"},
+        ["SEC_ADD_NAMED"] = "STARCHART_CONSUMABLE_COPY"
+    }
+end
+
+function Create_Mapshop_Entry(Mapshop_Entry_Id)
+    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "MapShop", "AlwaysPresentProducts", "NMSString0x10.xml"},
+        ["SEC_SAVE_TO"] = "MAPSHOP_ENTRY"
+    }
+    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    {
+        ["SEC_EDIT"] = "MAPSHOP_ENTRY",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Value", Mapshop_Entry_Id}
+        }
+    }
+    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "MapShop", "AlwaysPresentProducts"},
+        ["SEC_ADD_NAMED"] = "MAPSHOP_ENTRY"
+    }
+end
+
+Create_New_Starmap(Starmap_Crashed_Ship_Id)
+Create_Starmap_Reward("R_" .. Starmap_Crashed_Ship_Id)
+Create_Starmap_Consumable(Starmap_Crashed_Ship_Id, "R_" .. Starmap_Crashed_Ship_Id)
+
+Create_Mapshop_Entry(Starmap_Crashed_Ship_Id)
+Create_Mapshop_Entry(HiveMap_Id)
