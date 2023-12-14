@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items 10x"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "445"
+GameVersion = "4462"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
@@ -108,6 +108,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","T_DOOR1"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"BuildableOnPlanet", "False"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","T_ARCH"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"BuildableOnPlanet", "False"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","T_ROOF_C"},
 							["VALUE_CHANGE_TABLE"] = {
 								{"BuildableOnPlanet", "False"},
 							}

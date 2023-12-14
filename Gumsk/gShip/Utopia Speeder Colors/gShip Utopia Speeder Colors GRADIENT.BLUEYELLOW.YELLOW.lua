@@ -3,7 +3,7 @@ StripeColor = "YELLOW"
 
 ModName = "gShip Utopia Speeder Colors"
 ModNameSub = "GRADIENT."..BodyColor.."."..StripeColor
-GameVersion = "415"
+GameVersion = "4462"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["NMS_VERSION"]		= GameVersion,
 	["ADD_FILES"] = {
 		{
-			["FILE_DESTINATION"] 		= "TEXTURES\\COMMON\\SPACECRAFT\\FIGHTERS\\VRSPEEDER.BASE.1.DDS",
+			["FILE_DESTINATION"] 		= "TEXTURES\COMMON\SPACECRAFT\FIGHTERS\VRSPEEDER.BASE.1.DDS",
 			["EXTERNAL_FILE_SOURCE"] 	= "VRSPEEDER.GRADIENT."..BodyColor.."."..StripeColor..".DDS",
 		},
 	},

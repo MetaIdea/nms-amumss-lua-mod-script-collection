@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gWeather"
 ModNameSub = "Safe Buildings"
 BaseDescription = "Basic floor pieces have hazard protection"
-GameVersion = "445"
+GameVersion = "4462"
 ModVersion = "a"
 
 HeaterAdd = [[		<Property value="TkSceneNodeData.xml">

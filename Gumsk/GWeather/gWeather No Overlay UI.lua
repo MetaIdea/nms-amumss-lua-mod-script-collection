@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gWeather No Overlay"
 ModNameSub = "UI"
 BaseDescription = "Removes hazard screen overlay"
-GameVersion = "445"
+GameVersion = "4462"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

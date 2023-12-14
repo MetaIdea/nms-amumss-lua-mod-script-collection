@@ -702,7 +702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "More Words.pak",
 ["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
 ["MOD_DESCRIPTION"] = "Increases the amount of words learn from NPCs, Knowledge Stones, Encyclopedias, Monoliths, and Atlas Orbs",
-["NMS_VERSION"]     = "4.46",
+["NMS_VERSION"]     = "4.47",
 ["MODIFICATIONS"]   =
     {
         {

@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]     = "4.46",
+["NMS_VERSION"]     = "4.47",
 ["MODIFICATIONS"]   =
     {
         {

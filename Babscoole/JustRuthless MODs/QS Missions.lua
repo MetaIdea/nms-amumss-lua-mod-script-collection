@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "QS Missions.pak",
 ["MOD_DESCRIPTION"] = "Adds quicksilver rewards to normal missions at the nexus, space station mission boards, and outlaw bounty masters",
 ["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
-["NMS_VERSION"]     = "4.46",
+["NMS_VERSION"]     = "4.47",
 ["MODIFICATIONS"]   =
     {
         {

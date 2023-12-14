@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "VR_NO_GLOW.pak",
 ["MOD_AUTHOR"]      = "Mjjstral, hubbabubba1211, and Babscoole",
-["NMS_VERSION"]     = "4.46",
+["NMS_VERSION"]     = "4.47",
 ["MOD_DESCRIPTION"] = "Remove white glow around objects when focusing it (especially for VR immersion)",
 ["MODIFICATIONS"]   =
     {

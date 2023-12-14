@@ -5,7 +5,7 @@ Author = "Gumsk"
 ModName = "gCharacter Jetpack Trails EZ"
 ModNameSub = "Red Orange Yellow Gold"
 BaseDescription = "Adds new jetpack trails."
-GameVersion = "445"
+GameVersion = "4462"
 ModVersion = "a"
 
 TrailInfo = {

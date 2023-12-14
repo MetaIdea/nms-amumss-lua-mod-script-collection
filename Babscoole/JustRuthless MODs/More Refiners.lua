@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "More Refiners.pak",
 ["MOD_AUTHOR"]      = "JustRuthless & Babscoole",
 ["MOD_DESCRIPTION"] = "Removes the refiners building limits",
-["NMS_VERSION"]     = "4.46",
+["NMS_VERSION"]     = "4.47",
 ["MODIFICATIONS"]   =
     {
         {

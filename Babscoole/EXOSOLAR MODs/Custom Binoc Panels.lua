@@ -63,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Custom Binoc Panels-"..COLORNAME..".pak",
 ["MOD_AUTHOR"]              = "Babscoole & Exosolar",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.47",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's Guaranteed Freighter Battles.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.46",
+["NMS_VERSION"]   = "4.47",
 ["MODIFICATIONS"] =
     {
         {
