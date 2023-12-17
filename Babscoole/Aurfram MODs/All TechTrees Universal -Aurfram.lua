@@ -58,7 +58,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="Children">
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="CHARGER_ALIEN" />
-                            <Property name="Children" />
+                            <Property name="Children">
+							  <Property value="GcUnlockableItemTreeNode.xml">
+                                <Property name="Unlockable" value="PHOTONIX_CORE" />
+                                <Property name="Children" />
+                              </Property>
+							</Property>
                           </Property>
                         </Property>
                       </Property>
@@ -77,10 +82,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="SHIPJUMP_SPEC" />
                             <Property name="Children">
-                              <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
-                                <Property name="Children" />
-                              </Property>
+           	             <Property value="GcUnlockableItemTreeNode.xml">
+             	              <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
+            	              <Property name="Children" />
+            	             </Property>
                             </Property>
                           </Property>
                         </Property>
@@ -106,19 +111,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "CARGOSHIELD"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
-[[
-                          <Property value="GcUnlockableItemTreeNode.xml">
-                            <Property name="Unlockable" value="LIFESUP_ROBO" />
-                            <Property name="Children" />
-                          </Property>
-]]
-                        },
-                        {
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_QUICKWARP"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
@@ -131,10 +123,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="HYPERDRIVE_SPEC" />
                             <Property name="Children">
-                              <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="WARP_ALIEN" />
-                                <Property name="Children" />
-                              </Property>
+                             <Property value="GcUnlockableItemTreeNode.xml">
+                               <Property name="Unlockable" value="WARP_ALIEN" />
+                               <Property name="Children" />
+                             </Property>
                             </Property>
                           </Property>
                         </Property>
@@ -153,10 +145,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="LAUNCHER_SPEC" />
                             <Property name="Children">
-                              <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="LAUNCHER_ALIEN" />
-                                <Property name="Children" />
-                              </Property>
+                             <Property value="GcUnlockableItemTreeNode.xml">
+                              <Property name="Unlockable" value="LAUNCHER_ALIEN" />
+                              <Property name="Children" />
+                             </Property>
                             </Property>
                           </Property>
                         </Property>
@@ -170,20 +162,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
-                      <Property value="GcUnlockableItemTreeNode.xml">
-                        <Property name="Unlockable" value="SHIP_LIFESUP" />
-                        <Property name="Children">
+
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="SHIPSHIELD_ROBO" />
                             <Property name="Children">
-                              <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="SHIELD_ALIEN" />
-                                <Property name="Children" />
-                              </Property>
-                            </Property>
+                             <Property value="GcUnlockableItemTreeNode.xml">
+                               <Property name="Unlockable" value="SHIELD_ALIEN" />
+                               <Property name="Children" />
+                             </Property>
+                           </Property>
                           </Property>
-                        </Property>
-                      </Property>
 ]]
                         },
                         {
@@ -395,10 +383,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="SHIPJUMP_SPEC" />
                             <Property name="Children">
-                              <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
-                                <Property name="Children" />
-                              </Property>
+           	             <Property value="GcUnlockableItemTreeNode.xml">
+             	              <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
+            	              <Property name="Children" />
+            	             </Property>
                             </Property>
                           </Property>
                         </Property>
@@ -437,36 +425,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["FOREACH_SKW_GROUP"] =
                             {
                                 {"ID", "SHIPJUMP1"},
-                                {"ID", "UT_PULSEFUEL"},
-                                {"ID", "UT_PULSESPEED"},
-                                {"ID", "UT_SHIPDRIFT"},
-                                {"ID", "PHOTONIX_CORE"},
                                 {"ID", "LAUNCHER"},
-                                {"ID", "UT_LAUNCHER"},
-                                {"ID", "UT_LAUNCHCHARGE"},
-                                {"ID", "SHIP_TELEPORT"},
                                 {"ID", "HYPERDRIVE"},
-                                {"ID", "HDRIVEBOOST1"},
-                                {"ID", "HDRIVEBOOST2"},
-                                {"ID", "HDRIVEBOOST3"},
-                                {"ID", "UT_QUICKWARP"},
-                                {"ID", "CARGOSHIELD"},
                                 {"ID", "SHIPSHIELD"},
-                                {"ID", "UT_SHIPSHIELD"},
-                                {"ID", "SHIPROCKETS"},
-                                {"ID", "UT_ROCKETS"},
                                 {"ID", "SHIPGUN1"},
-                                {"ID", "UT_SHIPGUN"},
-                                {"ID", "SHIPSCAN_ECON"},
-                                {"ID", "SHIPSCAN_COMBAT"},
-                                {"ID", "SHIPLAS1"},
-                                {"ID", "UT_SHIPLAS"},
-                                {"ID", "SHIPSHOTGUN"},
-                                {"ID", "UT_SHIPSHOT"},
-                                {"ID", "SHIPMINIGUN"},
-                                {"ID", "UT_SHIPMINI"},
-                                {"ID", "SHIPPLASMA"},
-                                {"ID", "UT_SHIPBLOB"},
                                 {"ID", "SHIPSLOT_DMG1"},
                                 {"ID", "SHIPSLOT_DMG2"},
                                 {"ID", "SHIPSLOT_DMG3"},
@@ -491,15 +453,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "SHIPSHIELD_ROBO"},
                                 {"ID", "SHIPGUN_ROBO"},
                                 {"ID", "LIFESUP_ROBO"},
-                                {"ID", "T_SHIPJUMP"},
-                                {"ID", "T_LAUNCHER"},
-                                {"ID", "T_HDRIVE"},
-                                {"ID", "T_SHIPSHLD"},
-                                {"ID", "T_SHIPGUN"},
-                                {"ID", "T_SHIPLAS"},
-                                {"ID", "T_SHIPSHOT"},
-                                {"ID", "T_SHIPMINI"},
-                                {"ID", "T_SHIPBLOB"},
                                 {"ID", "SHIPJUMP_ALIEN"},
                                 {"ID", "LAUNCHER_ALIEN"},
                                 {"ID", "WARP_ALIEN"},
@@ -515,7 +468,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "A_SHIPSHLD"},
                                 {"ID", "A_SHIPGUN"},
                                 {"ID", "A_SHIPLAS"},
+								{"ID", "SHIPLAS1"},
+								{"ID", "UT_SHIPMINI"},
+								{"ID", "UT_PULSEFUEL"},
+								{"ID", "UT_PULSESPEED"},
+								{"ID", "SHIP_TELEPORT"},
+								{"ID", "UT_SHIPLAS"},
+								{"ID", "PHOTONIX_CORE"},
+								{"ID", "SHIPSCAN_COMBAT"},
+								{"ID", "UT_LAUNCHCHARGE"},
+								{"ID", "SHIPPLASMA"},
+								{"ID", "UT_ROCKETS"},
+								{"ID", "UT_SHIPBLOB"},
+								{"ID", "SHIPSHOTGUN"},
+								{"ID", "SHIPROCKETS"},
+								{"ID", "UT_SHIPSHIELD"},
+								{"ID", "UT_SHIPSHOT"},
+								{"ID", "UT_QUICKWARP"},
+								{"ID", "SHIPMINIGUN"},
+								{"ID", "SHIPSCAN_ECON"},
+								{"ID", "HDRIVEBOOST2"},
+								{"ID", "CARGOSHIELD"},
+								{"ID", "UT_SHIPDRIFT"},
+								{"ID", "HDRIVEBOOST3"},
+								{"ID", "HDRIVEBOOST1"},
+								{"ID", "UT_SHIPGUN"},
+								{"ID", "UT_LAUNCHER"},
+								{"ID", "T_SHIPJUMP"},
+								{"ID", "T_LAUNCHER"},
+								{"ID", "T_HDRIVE"},
+								{"ID", "T_SHIPSHLD"},
+								{"ID", "T_SHIPGUN"},
+								{"ID", "T_SHIPLAS"},
+								{"ID", "T_SHIPSHOT"},
+								{"ID", "T_SHIPMINI"},
+								{"ID", "T_SHIPBLOB"},
 
+								
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {

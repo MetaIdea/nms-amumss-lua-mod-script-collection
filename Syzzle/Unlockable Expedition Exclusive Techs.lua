@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Unlockable Expedition Exclusive Techs"
-GameVersion = "4.46"
+GameVersion = "4.47"
 --ModVersion = "v1.4"
 Description = "Add the Expedition exclusive Ship Techs, Exosuit Techs, Freighter Tech and unavailable Multitool Tech to the Anomaly list to be unlocked."
 
@@ -80,6 +80,35 @@ UNLOCKABLEITEMTREES_BYPASS  = [[
     <Property value="GcUnlockableItemTreeNode.xml">
       <Property name="Unlockable" value="WORMREADER" />
       <Property name="Children" />
+    </Property>
+  </Property>
+]]
+
+-- BASE PARTS BLUEPRINTS
+UNLOCKABLEITEMTREES_PORTABLE  = [[
+    <Property value="GcUnlockableItemTree.xml">
+    <Property name="Title" value="UI_S9_BASEPARTS_TREE" />
+    <Property name="CostTypeID" value="SALVAGE" />
+    <Property name="Root" value="GcUnlockableItemTreeNode.xml">
+      <Property name="Unlockable" value="S9_BUILDERTREE" />
+      <Property name="Children">
+        <Property value="GcUnlockableItemTreeNode.xml">
+          <Property name="Unlockable" value="S9_EXOCRAFTTREE" />
+          <Property name="Children" />
+        </Property>
+        <Property value="GcUnlockableItemTreeNode.xml">
+          <Property name="Unlockable" value="S9_WEAPONTREE" />
+          <Property name="Children" />
+        </Property>
+        <Property value="GcUnlockableItemTreeNode.xml">
+          <Property name="Unlockable" value="S9_SUITTREE" />
+          <Property name="Children" />
+        </Property>
+        <Property value="GcUnlockableItemTreeNode.xml">
+          <Property name="Unlockable" value="S9_SHIPTREE" />
+          <Property name="Children" />
+        </Property>
+      </Property>
     </Property>
   </Property>
 ]]
@@ -183,6 +212,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_TRANSLATE3"},
               ["ADD"]	=	UNLOCKABLEITEMTREES_BYPASS,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"BaseParts","GcUnlockableItemTrees.xml"},
+              ["PRECEDING_KEY_WORDS"] = {"Trees"},
+              ["ADD"]	=	UNLOCKABLEITEMTREES_PORTABLE,
             },
           }
         },
@@ -411,6 +445,27 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"FragmentCost",600},
                 --{"WikiEnabled","True"},
+              }
+            },
+          }
+        },
+        -- CHANGE PORTABLE STATIONS TREE
+        {
+          ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
+          ["EXML_CHANGE_TABLE"] 	= 
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"UnlockableItemTree","S9ShipTech"},
+              ["VALUE_CHANGE_TABLE"]  =
+              {
+                {"UnlockableItemTree","ShipTech"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"UnlockableItemTree","S9ExoTech"},
+              ["VALUE_CHANGE_TABLE"]  =
+              {
+                {"UnlockableItemTree","ExocraftTech"},
               }
             },
           }
