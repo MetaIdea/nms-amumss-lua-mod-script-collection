@@ -6,12 +6,12 @@ Deadly
 DeadlyCombat
 DeadlyDamage
 DeadlyFlying
-DeadlyFrigates
 DeadlyPolice
 DeadlyTurrets
 HideDockingCircles
 HidePulseDriveVerticalLines
 HideTradeRouteLines
+ReduceFrigateChatDistance
 
 
 ---------------------

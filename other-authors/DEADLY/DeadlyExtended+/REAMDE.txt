@@ -5,24 +5,27 @@ List of Files
 BugFixes444
 Deadly
 DeadlyAsteroids
-DeadlyCargoScanDeflector
 DeadlyCombat
 DeadlyDamage
 DeadlyFlying
-DeadlyFrigates
-DeadlyLessFreighters
 DeadlyPolice
 DeadlyRewardsAsteroid
 DeadlyRewardsPirate
 DeadlySpawnChances
-DeadlySpawnCount
 DeadlySpeedUp
 DeadlyTurrets
 HideDockingCircles
 HidePulseDriveVerticalLines
 HideTradeRouteLines
+ImprovedCargoScanDeflector
+LessFreighters
+MoreEarlyPirates
+MorePirates
+MorePiratesCivilFleet
 NoPlanetaryPirateRaids
 NoRobots
+PirateMissionRedux
+ReduceFrigateChatDistance
 
 
 ---------------------
@@ -33,6 +36,7 @@ Changes
   * Damage
   * Flying
   * Freighter Turrets
+  * Less Freighters
   * Hide Docking Circles
   * Hide Pulse Drive Vertical Lines
   * Hide Trade Routes

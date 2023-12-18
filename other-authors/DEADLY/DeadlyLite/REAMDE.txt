@@ -6,14 +6,14 @@ Deadly
 DeadlyCombat
 DeadlyDamage
 DeadlyFlying
-DeadlyFrigates
-DeadlyLessFreighters
 DeadlyPolice
 DeadlySpawnChances
 DeadlyTurrets
 HideDockingCircles
 HidePulseDriveVerticalLines
 HideTradeRouteLines
+LessFreighters
+ReduceFrigateChatDistance
 
 
 ---------------------
@@ -24,6 +24,7 @@ Changes
   * Damage
   * Flying
   * Freighter Turrets
+  * Less Freighters
   * Hide Docking Circles
   * Hide Pulse Drive Vertical Lines
   * Hide Trade Routes
