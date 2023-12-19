@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v443-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v447-A.pak",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole and Wbertro",
-["NMS_VERSION"]             = "4.43",
+["NMS_VERSION"]             = "4.47",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
