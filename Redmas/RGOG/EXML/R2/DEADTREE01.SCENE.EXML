@@ -41,7 +41,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
+        <Property name="TransY" value="-0.5" />
         <Property name="TransZ" value="0" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
@@ -149,7 +149,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1\BARK_MAT.MATERIAL.MBIN" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE50\BARK1.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -200,7 +200,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-2.785954" />
-        <Property name="TransY" value="8.638536" />
+        <Property name="TransY" value="8.138536" />
         <Property name="TransZ" value="5.605759" />
         <Property name="RotX" value="35.67218" />
         <Property name="RotY" value="-110.40176" />
@@ -324,7 +324,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="2.548897" />
-        <Property name="TransY" value="11.506932" />
+        <Property name="TransY" value="11.006932" />
         <Property name="TransZ" value="6.616403" />
         <Property name="RotX" value="-9.235042" />
         <Property name="RotY" value="-49.03019" />
@@ -448,7 +448,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="7.545263" />
-        <Property name="TransY" value="10.694647" />
+        <Property name="TransY" value="10.194647" />
         <Property name="TransZ" value="2.05039" />
         <Property name="RotX" value="-44.81257" />
         <Property name="RotY" value="-69.34906" />
@@ -572,7 +572,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="4.531349" />
-        <Property name="TransY" value="13.126462" />
+        <Property name="TransY" value="12.626462" />
         <Property name="TransZ" value="1.044846" />
         <Property name="RotX" value="13.35189" />
         <Property name="RotY" value="95.95093" />
@@ -696,7 +696,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-2.604725" />
-        <Property name="TransY" value="8.862431" />
+        <Property name="TransY" value="8.362431" />
         <Property name="TransZ" value="-7.54107" />
         <Property name="RotX" value="57.66382" />
         <Property name="RotY" value="-131.56686" />
@@ -820,7 +820,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-9.595622" />
-        <Property name="TransY" value="8.39464" />
+        <Property name="TransY" value="7.89464" />
         <Property name="TransZ" value="-3.07249" />
         <Property name="RotX" value="47.093407" />
         <Property name="RotY" value="-160.19481" />
@@ -944,7 +944,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-4.444846" />
-        <Property name="TransY" value="12.39847" />
+        <Property name="TransY" value="14.89847" />
         <Property name="TransZ" value="-4.042537" />
         <Property name="RotX" value="-46.93359" />
         <Property name="RotY" value="34.4344" />
@@ -1068,7 +1068,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-0.936346" />
-        <Property name="TransY" value="14.192457" />
+        <Property name="TransY" value="13.692457" />
         <Property name="TransZ" value="-3.927836" />
         <Property name="RotX" value="9.775293" />
         <Property name="RotY" value="-103.10341" />
@@ -1192,7 +1192,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-2.785954" />
-        <Property name="TransY" value="8.638536" />
+        <Property name="TransY" value="8.138536" />
         <Property name="TransZ" value="5.605759" />
         <Property name="RotX" value="35.67218" />
         <Property name="RotY" value="-110.40176" />
@@ -1316,7 +1316,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="2.548897" />
-        <Property name="TransY" value="11.506932" />
+        <Property name="TransY" value="11.006932" />
         <Property name="TransZ" value="6.616403" />
         <Property name="RotX" value="-9.235042" />
         <Property name="RotY" value="-49.03019" />
@@ -1440,7 +1440,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="7.545263" />
-        <Property name="TransY" value="10.694647" />
+        <Property name="TransY" value="10.194647" />
         <Property name="TransZ" value="2.05039" />
         <Property name="RotX" value="-44.81257" />
         <Property name="RotY" value="-69.34906" />
@@ -1564,7 +1564,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="4.531349" />
-        <Property name="TransY" value="13.126462" />
+        <Property name="TransY" value="12.626462" />
         <Property name="TransZ" value="1.044846" />
         <Property name="RotX" value="13.35189" />
         <Property name="RotY" value="95.95093" />
@@ -1688,7 +1688,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-2.604725" />
-        <Property name="TransY" value="8.862431" />
+        <Property name="TransY" value="8.362431" />
         <Property name="TransZ" value="-7.54107" />
         <Property name="RotX" value="57.66382" />
         <Property name="RotY" value="-131.56686" />
@@ -1812,7 +1812,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-9.595622" />
-        <Property name="TransY" value="8.39464" />
+        <Property name="TransY" value="7.89464" />
         <Property name="TransZ" value="-3.07249" />
         <Property name="RotX" value="47.093407" />
         <Property name="RotY" value="-160.19481" />
@@ -1936,7 +1936,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-4.444846" />
-        <Property name="TransY" value="12.39847" />
+        <Property name="TransY" value="11.89847" />
         <Property name="TransZ" value="-4.042537" />
         <Property name="RotX" value="-46.93359" />
         <Property name="RotY" value="34.4344" />
@@ -2060,7 +2060,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="-0.936346" />
-        <Property name="TransY" value="14.192457" />
+        <Property name="TransY" value="13.692457" />
         <Property name="TransZ" value="-3.927836" />
         <Property name="RotX" value="9.775293" />
         <Property name="RotY" value="-103.10341" />

@@ -66,7 +66,7 @@
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0.000195" />
-        <Property name="TransY" value="0.232558" />
+        <Property name="TransY" value="-0.732558" />
         <Property name="TransZ" value="-0.00358" />
         <Property name="RotX" value="3.26725" />
         <Property name="RotY" value="-0.216174" />
@@ -174,7 +174,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1\BARK_MAT.MATERIAL.MBIN" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE50\BARK1.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />

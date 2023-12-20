@@ -13,7 +13,7 @@
         <Property name="DebugName" value="" />
         <Property name="Type" value="Single" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS\RGO\LARGEOAK4.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS\RGO\_SKULL.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />

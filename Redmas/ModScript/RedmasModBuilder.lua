@@ -1259,112 +1259,6 @@ function generateGiantBiomeFOREST
 								</Property>
 								<Property name="AltId" value="" />
 								<Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-									<Property name="Samplers">
-									<Property value="TkProceduralTextureChosenOptionSampler.xml">
-										<Property name="Options">
-										<Property value="TkProceduralTextureChosenOption.xml">
-											<Property name="Layer" value="OVERLAY" />
-											<Property name="Group" value="BARKO" />
-											<Property name="Palette" value="TkPaletteTexture.xml">
-											<Property name="Palette" value="Rock" />
-											<Property name="ColourAlt" value="Primary" />
-											</Property>
-											<Property name="OverrideColour" value="True" />
-											<Property name="Colour" value="Colour.xml">
-											<Property name="R" value="0.673" />
-											<Property name="G" value="0.641" />
-											<Property name="B" value="0.567" />
-											<Property name="A" value="1" />
-											</Property>
-											<Property name="OptionName" value="GRASS" />
-										</Property>
-										<Property value="TkProceduralTextureChosenOption.xml">
-											<Property name="Layer" value="BASE" />
-											<Property name="Group" value="BARK" />
-											<Property name="Palette" value="TkPaletteTexture.xml">
-											<Property name="Palette" value="Wood" />
-											<Property name="ColourAlt" value="Primary" />
-											</Property>
-											<Property name="OverrideColour" value="True" />
-											<Property name="Colour" value="Colour.xml">
-											<Property name="R" value="0.93" />
-											<Property name="G" value="0.891" />
-											<Property name="B" value="0.838" />
-											<Property name="A" value="1" />
-											</Property>
-											<Property name="OptionName" value="3" />
-										</Property>
-										<Property value="TkProceduralTextureChosenOption.xml">
-											<Property name="Layer" value="BASE" />
-											<Property name="Group" value="" />
-											<Property name="Palette" value="TkPaletteTexture.xml">
-											<Property name="Palette" value="Plant" />
-											<Property name="ColourAlt" value="Primary" />
-											</Property>
-											<Property name="OverrideColour" value="False" />
-											<Property name="Colour" value="Colour.xml">
-											<Property name="R" value="0.164" />
-											<Property name="G" value="0.509" />
-											<Property name="B" value="0.63" />
-											<Property name="A" value="1" />
-											</Property>
-											<Property name="OptionName" value="2" />
-										</Property>
-										<Property value="TkProceduralTextureChosenOption.xml">
-											<Property name="Layer" value="BASE" />
-											<Property name="Group" value="LEAF" />
-											<Property name="Palette" value="TkPaletteTexture.xml">
-											<Property name="Palette" value="Leaf" />
-											<Property name="ColourAlt" value="Primary" />
-											</Property>
-											<Property name="OverrideColour" value="True" />
-											<Property name="Colour" value="Colour.xml">
-											<Property name="R" value="0.923" />
-											<Property name="G" value="0.484" />
-											<Property name="B" value="0.046" />
-											<Property name="A" value="1" />
-											</Property>
-											<Property name="OptionName" value="1" />
-										</Property>
-										</Property>
-									</Property>
-									<Property value="TkProceduralTextureChosenOptionSampler.xml">
-										<Property name="Options">
-										<Property value="TkProceduralTextureChosenOption.xml">
-											<Property name="Layer" value="COLOUR" />
-											<Property name="Group" value="BARKC" />
-											<Property name="Palette" value="TkPaletteTexture.xml">
-											<Property name="Palette" value="Plant" />
-											<Property name="ColourAlt" value="Primary" />
-											</Property>
-											<Property name="OverrideColour" value="False" />
-											<Property name="Colour" value="Colour.xml">
-											<Property name="R" value="0.164" />
-											<Property name="G" value="0.509" />
-											<Property name="B" value="0.63" />
-											<Property name="A" value="1" />
-											</Property>
-											<Property name="OptionName" value="" />
-										</Property>
-										<Property value="TkProceduralTextureChosenOption.xml">
-											<Property name="Layer" value="BASE" />
-											<Property name="Group" value="BARKB" />
-											<Property name="Palette" value="TkPaletteTexture.xml">
-											<Property name="Palette" value="Grass" />
-											<Property name="ColourAlt" value="Primary" />
-											</Property>
-											<Property name="OverrideColour" value="False" />
-											<Property name="Colour" value="Colour.xml">
-											<Property name="R" value="0.542" />
-											<Property name="G" value="0.67" />
-											<Property name="B" value="0.333" />
-											<Property name="A" value="1" />
-											</Property>
-											<Property name="OptionName" value="1" />
-										</Property>
-										</Property>
-									</Property>
-									</Property>
 								</Property>
 								</Property>
 								<Property name="AltResources" />
@@ -1412,7 +1306,8 @@ function generateORIGINSTREES
 		GENERATED_BIOME_PATH,
 		MAIN_TREE_TYPE,
 		MAIN_TREE_PATH,		
-		MAIN_TREE_SIZEMAX
+		MAIN_TREE_SIZEMAX,
+		MAIN_TREE_ROTATION
 		
 	)
 
@@ -1447,14 +1342,16 @@ function generateORIGINSTREES
 					["ADD"] 	=------------------------------------------------------------------------------------------------------------
 					[[
 						<Property name="Landmarks"></Property>	
-							<Property name="Objects">	  
+							<Property name="Objects">	
 
-								
 								<Property value="GcObjectSpawnData.xml">
 									<Property name="DebugName" value="" />
-									<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
-									<Property name="Resource" value="GcResourceElement.xml">
-									<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+										<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
+										<Property name="Resource" value="GcResourceElement.xml">
+										<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+									<Property name="ResHandle" value="GcResource.xml">
+										<Property name="ResourceID" value="0" />
+									</Property>
 									<Property name="Seed" value="GcSeed.xml">
 										<Property name="Seed" value="0" />
 										<Property name="UseSeedValue" value="False" />
@@ -1586,25 +1483,26 @@ function generateORIGINSTREES
 									<Property name="MaxAngle" value="60" />
 									<Property name="MatchGroundColour" value="False" />
 									<Property name="GroundColourIndex" value="Auto" />
-									<Property name="SwapPrimaryForSecondaryColour" value="False" />
+									<Property name="SwapPrimaryForSecondaryColour" value="True" />
 									<Property name="SwapPrimaryForRandomColour" value="False" />
 									<Property name="AlignToNormal" value="False" />
-									<Property name="MinScale" value="0.93" />
+									<Property name="MinScale" value="0.9" />
 									<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
 									<Property name="MinScaleY" value="0.81" />
 									<Property name="MaxScaleY" value="1.02" />
 									<Property name="SlopeScaling" value="1" />
 									<Property name="PatchEdgeScaling" value="0" />
-									<Property name="MaxXZRotation" value="5" />
+									<Property name="MaxXZRotation" value="]]..MAIN_TREE_ROTATION..[[" />
 									<Property name="AutoCollision" value="False" />
 									<Property name="CollideWithPlayer" value="True" />
 									<Property name="CollideWithPlayerVehicle" value="True" />
 									<Property name="DestroyedByPlayerVehicle" value="True" />
 									<Property name="DestroyedByPlayerShip" value="True" />
 									<Property name="DestroyedByTerrainEdit" value="True" />
-									<Property name="InvisibleToCamera" value="False" />
+									<Property name="InvisibleToCamera" value="True" />
 									<Property name="CreaturesCanEat" value="False" />
 									<Property name="ShearWindStrength" value="0" />
+									<Property name="SupportsScanToReveal" value="False" />
 									<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
 									<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 									<Property name="ID" value="STANDARD" />
@@ -1612,21 +1510,39 @@ function generateORIGINSTREES
 									<Property name="FlatDensity" value="0.001" />
 									<Property name="SlopeDensity" value="0" />
 									<Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="9999" />
-            <Property name="MaxImposterRadius" value="0" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
-            <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="1120" />
-            <Property value="1610" />
-            <Property value="2150" />
-            <Property value="2500" />
+									<Property name="MaxRegionRadius" value="9999" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+									<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="60" />
+										<Property value="150" />
+										<Property value="500" />
 									</Property>
 									</Property>
 									<Property name="QualityVariants">
-									
+									<Property value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.6" />
+									<Property name="FlatDensity" value="0.001" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="9999" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+										<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="30" />
+										<Property value="40" />
+										<Property value="500" />
+										</Property>
+									</Property>
 									</Property>
 								</Property>
 
@@ -1639,13 +1555,14 @@ function generateORIGINSTREES
 	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
 end	------------------------------------------------------------------------------------------------------------
 
---generateORIGINSTREES------------------------------------------------------------------------------------------------------------
+--generateORIGINSTREESALT------------------------------------------------------------------------------------------------------------
 function generateORIGINSTREESAlt
 	(
 		GENERATED_BIOME_PATH,
 		MAIN_TREE_TYPE,
 		MAIN_TREE_PATH,		
-		MAIN_TREE_SIZEMAX
+		MAIN_TREE_SIZEMAX,
+		MAIN_TREE_ROTATION
 		
 	)
 
@@ -1682,12 +1599,16 @@ function generateORIGINSTREESAlt
 						<Property name="Landmarks"></Property>	
 							<Property name="Objects">	  
 
+
 								
 								<Property value="GcObjectSpawnData.xml">
 									<Property name="DebugName" value="" />
-									<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
-									<Property name="Resource" value="GcResourceElement.xml">
-									<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+										<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
+										<Property name="Resource" value="GcResourceElement.xml">
+										<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+									<Property name="ResHandle" value="GcResource.xml">
+										<Property name="ResourceID" value="0" />
+									</Property>
 									<Property name="Seed" value="GcSeed.xml">
 										<Property name="Seed" value="0" />
 										<Property name="UseSeedValue" value="False" />
@@ -1819,25 +1740,26 @@ function generateORIGINSTREESAlt
 									<Property name="MaxAngle" value="60" />
 									<Property name="MatchGroundColour" value="False" />
 									<Property name="GroundColourIndex" value="Auto" />
-									<Property name="SwapPrimaryForSecondaryColour" value="False" />
+									<Property name="SwapPrimaryForSecondaryColour" value="True" />
 									<Property name="SwapPrimaryForRandomColour" value="False" />
 									<Property name="AlignToNormal" value="False" />
-									<Property name="MinScale" value="1" />
-									<Property name="MaxScale" value="2" />
+									<Property name="MinScale" value="0.9" />
+									<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
 									<Property name="MinScaleY" value="0.81" />
 									<Property name="MaxScaleY" value="1.02" />
 									<Property name="SlopeScaling" value="1" />
 									<Property name="PatchEdgeScaling" value="0" />
-									<Property name="MaxXZRotation" value="5" />
+									<Property name="MaxXZRotation" value="]]..MAIN_TREE_ROTATION..[[" />
 									<Property name="AutoCollision" value="False" />
 									<Property name="CollideWithPlayer" value="True" />
 									<Property name="CollideWithPlayerVehicle" value="True" />
 									<Property name="DestroyedByPlayerVehicle" value="True" />
 									<Property name="DestroyedByPlayerShip" value="True" />
 									<Property name="DestroyedByTerrainEdit" value="True" />
-									<Property name="InvisibleToCamera" value="False" />
+									<Property name="InvisibleToCamera" value="True" />
 									<Property name="CreaturesCanEat" value="False" />
 									<Property name="ShearWindStrength" value="0" />
+									<Property name="SupportsScanToReveal" value="False" />
 									<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
 									<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 									<Property name="ID" value="STANDARD" />
@@ -1851,22 +1773,44 @@ function generateORIGINSTREESAlt
 									<Property name="FadeOutEndDistance" value="9999" />
 									<Property name="FadeOutOffsetDistance" value="0" />
 									<Property name="LodDistances">
-            <Property value="0" />
-            <Property value="120" />
-            <Property value="610" />
-            <Property value="1150" />
-            <Property value="1500" />
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="60" />
+										<Property value="150" />
+										<Property value="500" />
 									</Property>
 									</Property>
 									<Property name="QualityVariants">
-									
+									<Property value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.5" />
+									<Property name="FlatDensity" value="0.002" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="10" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+										<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="30" />
+										<Property value="40" />
+										<Property value="500" />
+										</Property>
+									</Property>
 									</Property>
 								</Property>
+
 																<Property value="GcObjectSpawnData.xml">
 									<Property name="DebugName" value="" />
-									<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
-									<Property name="Resource" value="GcResourceElement.xml">
-									<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+										<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
+										<Property name="Resource" value="GcResourceElement.xml">
+										<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+									<Property name="ResHandle" value="GcResource.xml">
+										<Property name="ResourceID" value="0" />
+									</Property>
 									<Property name="Seed" value="GcSeed.xml">
 										<Property name="Seed" value="0" />
 										<Property name="UseSeedValue" value="False" />
@@ -1998,25 +1942,26 @@ function generateORIGINSTREESAlt
 									<Property name="MaxAngle" value="60" />
 									<Property name="MatchGroundColour" value="False" />
 									<Property name="GroundColourIndex" value="Auto" />
-									<Property name="SwapPrimaryForSecondaryColour" value="False" />
+									<Property name="SwapPrimaryForSecondaryColour" value="True" />
 									<Property name="SwapPrimaryForRandomColour" value="False" />
 									<Property name="AlignToNormal" value="False" />
-									<Property name="MinScale" value="0.93" />
+									<Property name="MinScale" value="0.9" />
 									<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
 									<Property name="MinScaleY" value="0.81" />
 									<Property name="MaxScaleY" value="1.02" />
 									<Property name="SlopeScaling" value="1" />
 									<Property name="PatchEdgeScaling" value="0" />
-									<Property name="MaxXZRotation" value="5" />
+									<Property name="MaxXZRotation" value="]]..MAIN_TREE_ROTATION..[[" />
 									<Property name="AutoCollision" value="False" />
 									<Property name="CollideWithPlayer" value="True" />
 									<Property name="CollideWithPlayerVehicle" value="True" />
 									<Property name="DestroyedByPlayerVehicle" value="True" />
 									<Property name="DestroyedByPlayerShip" value="True" />
 									<Property name="DestroyedByTerrainEdit" value="True" />
-									<Property name="InvisibleToCamera" value="False" />
+									<Property name="InvisibleToCamera" value="True" />
 									<Property name="CreaturesCanEat" value="False" />
 									<Property name="ShearWindStrength" value="0" />
+									<Property name="SupportsScanToReveal" value="False" />
 									<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
 									<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 									<Property name="ID" value="STANDARD" />
@@ -2030,15 +1975,33 @@ function generateORIGINSTREESAlt
 									<Property name="FadeOutEndDistance" value="9999" />
 									<Property name="FadeOutOffsetDistance" value="0" />
 									<Property name="LodDistances">
-            <Property value="0" />
-            <Property value="120" />
-            <Property value="610" />
-            <Property value="1150" />
-            <Property value="1500" />
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="60" />
+										<Property value="150" />
+										<Property value="500" />
 									</Property>
 									</Property>
 									<Property name="QualityVariants">
-									
+									<Property value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.5" />
+									<Property name="FlatDensity" value="0.001" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="10" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+										<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="30" />
+										<Property value="40" />
+										<Property value="500" />
+										</Property>
+									</Property>
 									</Property>
 								</Property>
 
@@ -2050,6 +2013,723 @@ function generateORIGINSTREESAlt
 	}------------------------------------------------------------------------------------------------------------
 	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
 end	
+
+--generateORIGINSTREES------------------------------------------------------------------------------------------------------------
+function generateORIGINSTREESFROZEN
+	(
+		GENERATED_BIOME_PATH,
+		MAIN_TREE_TYPE,
+		MAIN_TREE_PATH,		
+		MAIN_TREE_SIZEMAX,
+		MAIN_TREE_ROTATION
+		
+	)
+
+	------------------------------------------------------------------------------------------------------------
+	GENERATED_BIOME = ------------------------------------------------------------------------------------------------------------
+	{	------------------------------------------------------------------------------------------------------------
+		{------------------------------------------------------------------------------------------------------------
+			["MBIN_FILE_SOURCE"] =------------------------------------------------------------------------------------------------------------
+			{------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\ALWAYSPRESENT.MBIN]],------------------------------------------------------------------------------------------------------------
+					GENERATED_BIOME_PATH..".MBIN"------------------------------------------------------------------------------------------------------------
+				}------------------------------------------------------------------------------------------------------------
+			}------------------------------------------------------------------------------------------------------------
+		},	------------------------------------------------------------------------------------------------------------
+		{------------------------------------------------------------------------------------------------------------
+			["MBIN_FILE_SOURCE"] = GENERATED_BIOME_PATH..".MBIN",------------------------------------------------------------------------------------------------------------
+			["EXML_CHANGE_TABLE"] = ------------------------------------------------------------------------------------------------------------
+			{------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},------------------------------------------------------------------------------------------------------------
+					["SECTION_ACTIVE"] = {1,2},------------------------------------------------------------------------------------------------------------
+					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
+				},------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},------------------------------------------------------------------------------------------------------------
+					["SECTION_ACTIVE"] = {1,2},------------------------------------------------------------------------------------------------------------
+					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
+				},------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------	
+					["ADD"] 	=------------------------------------------------------------------------------------------------------------
+					[[
+						<Property name="Landmarks"></Property>	
+							<Property name="Objects">	
+
+								<Property value="GcObjectSpawnData.xml">
+									<Property name="DebugName" value="" />
+										<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
+										<Property name="Resource" value="GcResourceElement.xml">
+										<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+									<Property name="ResHandle" value="GcResource.xml">
+										<Property name="ResourceID" value="0" />
+									</Property>
+									<Property name="Seed" value="GcSeed.xml">
+										<Property name="Seed" value="0" />
+										<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="AltId" value="" />
+									<Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+										<Property name="Samplers">
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="OVERLAY" />
+												<Property name="Group" value="BARKO" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Rock" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.673" />
+												<Property name="G" value="0.641" />
+												<Property name="B" value="0.567" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="GRASS" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARK" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Wood" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.93" />
+												<Property name="G" value="0.891" />
+												<Property name="B" value="0.838" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="3" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="2" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="LEAF" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Leaf" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.923" />
+												<Property name="G" value="0.484" />
+												<Property name="B" value="0.046" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="COLOUR" />
+												<Property name="Group" value="BARKC" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARKB" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Grass" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.542" />
+												<Property name="G" value="0.67" />
+												<Property name="B" value="0.333" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										</Property>
+									</Property>
+									</Property>
+									<Property name="AltResources" />
+									<Property name="ExtraTileTypes" />
+									<Property name="Placement" value="FLORACLUMP" />
+									<Property name="Seed" value="GcSeed.xml">
+									<Property name="Seed" value="0" />
+									<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="PlacementPriority" value="High" />
+									<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+									<Property name="OverlapStyle" value="SameSeed" />
+									<Property name="MinHeight" value="-1" />
+									<Property name="MaxHeight" value="128" />
+									<Property name="RelativeToSeaLevel" value="True" />
+									<Property name="MinAngle" value="0" />
+									<Property name="MaxAngle" value="60" />
+									<Property name="MatchGroundColour" value="True" />
+									<Property name="GroundColourIndex" value="Auto" />
+									<Property name="SwapPrimaryForSecondaryColour" value="True" />
+									<Property name="SwapPrimaryForRandomColour" value="False" />
+									<Property name="AlignToNormal" value="False" />
+									<Property name="MinScale" value="0.9" />
+									<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
+									<Property name="MinScaleY" value="0.81" />
+									<Property name="MaxScaleY" value="1.02" />
+									<Property name="SlopeScaling" value="1" />
+									<Property name="PatchEdgeScaling" value="0" />
+									<Property name="MaxXZRotation" value="]]..MAIN_TREE_ROTATION..[[" />
+									<Property name="AutoCollision" value="False" />
+									<Property name="CollideWithPlayer" value="True" />
+									<Property name="CollideWithPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerShip" value="True" />
+									<Property name="DestroyedByTerrainEdit" value="True" />
+									<Property name="InvisibleToCamera" value="True" />
+									<Property name="CreaturesCanEat" value="False" />
+									<Property name="ShearWindStrength" value="0" />
+									<Property name="SupportsScanToReveal" value="False" />
+									<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+									<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.6" />
+									<Property name="FlatDensity" value="0.001" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="9999" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+									<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="60" />
+										<Property value="150" />
+										<Property value="500" />
+									</Property>
+									</Property>
+									<Property name="QualityVariants">
+									<Property value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.6" />
+									<Property name="FlatDensity" value="0.001" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="9999" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+										<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="30" />
+										<Property value="40" />
+										<Property value="500" />
+										</Property>
+									</Property>
+									</Property>
+								</Property>
+
+							</Property>
+					]]
+				},------------------------------------------------------------------------------------------------------------
+			}------------------------------------------------------------------------------------------------------------
+		}------------------------------------------------------------------------------------------------------------
+	}------------------------------------------------------------------------------------------------------------
+	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
+end	------------------------------------------------------------------------------------------------------------
+
+
+--generateORIGINSTREESALT------------------------------------------------------------------------------------------------------------
+function generateORIGINSTREESAltFROZEN
+	(
+		GENERATED_BIOME_PATH,
+		MAIN_TREE_TYPE,
+		MAIN_TREE_PATH,		
+		MAIN_TREE_SIZEMAX,
+		MAIN_TREE_ROTATION
+		
+	)
+
+	------------------------------------------------------------------------------------------------------------
+	GENERATED_BIOME = ------------------------------------------------------------------------------------------------------------
+	{	------------------------------------------------------------------------------------------------------------
+		{------------------------------------------------------------------------------------------------------------
+			["MBIN_FILE_SOURCE"] =------------------------------------------------------------------------------------------------------------
+			{------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\ALWAYSPRESENT.MBIN]],------------------------------------------------------------------------------------------------------------
+					GENERATED_BIOME_PATH..".MBIN"------------------------------------------------------------------------------------------------------------
+				}------------------------------------------------------------------------------------------------------------
+			}------------------------------------------------------------------------------------------------------------
+		},	------------------------------------------------------------------------------------------------------------
+		{------------------------------------------------------------------------------------------------------------
+			["MBIN_FILE_SOURCE"] = GENERATED_BIOME_PATH..".MBIN",------------------------------------------------------------------------------------------------------------
+			["EXML_CHANGE_TABLE"] = ------------------------------------------------------------------------------------------------------------
+			{------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},------------------------------------------------------------------------------------------------------------
+					["SECTION_ACTIVE"] = {1,2},------------------------------------------------------------------------------------------------------------
+					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
+				},------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},------------------------------------------------------------------------------------------------------------
+					["SECTION_ACTIVE"] = {1,2},------------------------------------------------------------------------------------------------------------
+					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
+				},------------------------------------------------------------------------------------------------------------
+				{------------------------------------------------------------------------------------------------------------
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------	
+					["ADD"] 	=------------------------------------------------------------------------------------------------------------
+					[[
+						<Property name="Landmarks"></Property>	
+							<Property name="Objects">	  
+
+
+								
+								<Property value="GcObjectSpawnData.xml">
+									<Property name="DebugName" value="" />
+										<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
+										<Property name="Resource" value="GcResourceElement.xml">
+										<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+									<Property name="ResHandle" value="GcResource.xml">
+										<Property name="ResourceID" value="0" />
+									</Property>
+									<Property name="Seed" value="GcSeed.xml">
+										<Property name="Seed" value="0" />
+										<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="AltId" value="" />
+									<Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+										<Property name="Samplers">
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="OVERLAY" />
+												<Property name="Group" value="BARKO" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Rock" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.673" />
+												<Property name="G" value="0.641" />
+												<Property name="B" value="0.567" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="GRASS" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARK" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Wood" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.93" />
+												<Property name="G" value="0.891" />
+												<Property name="B" value="0.838" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="3" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="2" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="LEAF" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Leaf" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.923" />
+												<Property name="G" value="0.484" />
+												<Property name="B" value="0.046" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="COLOUR" />
+												<Property name="Group" value="BARKC" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARKB" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Grass" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.542" />
+												<Property name="G" value="0.67" />
+												<Property name="B" value="0.333" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										</Property>
+									</Property>
+									</Property>
+									<Property name="AltResources" />
+									<Property name="ExtraTileTypes" />
+									<Property name="Placement" value="FLORACLUMP" />
+									<Property name="Seed" value="GcSeed.xml">
+									<Property name="Seed" value="0" />
+									<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="PlacementPriority" value="High" />
+									<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+									<Property name="OverlapStyle" value="SameSeed" />
+									<Property name="MinHeight" value="-1" />
+									<Property name="MaxHeight" value="128" />
+									<Property name="RelativeToSeaLevel" value="True" />
+									<Property name="MinAngle" value="0" />
+									<Property name="MaxAngle" value="60" />
+									<Property name="MatchGroundColour" value="True" />
+									<Property name="GroundColourIndex" value="Auto" />
+									<Property name="SwapPrimaryForSecondaryColour" value="True" />
+									<Property name="SwapPrimaryForRandomColour" value="False" />
+									<Property name="AlignToNormal" value="False" />
+									<Property name="MinScale" value="0.9" />
+									<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
+									<Property name="MinScaleY" value="0.81" />
+									<Property name="MaxScaleY" value="1.02" />
+									<Property name="SlopeScaling" value="1" />
+									<Property name="PatchEdgeScaling" value="0" />
+									<Property name="MaxXZRotation" value="]]..MAIN_TREE_ROTATION..[[" />
+									<Property name="AutoCollision" value="False" />
+									<Property name="CollideWithPlayer" value="True" />
+									<Property name="CollideWithPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerShip" value="True" />
+									<Property name="DestroyedByTerrainEdit" value="True" />
+									<Property name="InvisibleToCamera" value="True" />
+									<Property name="CreaturesCanEat" value="False" />
+									<Property name="ShearWindStrength" value="0" />
+									<Property name="SupportsScanToReveal" value="False" />
+									<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+									<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.5" />
+									<Property name="FlatDensity" value="0.002" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="10" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+									<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="60" />
+										<Property value="150" />
+										<Property value="500" />
+									</Property>
+									</Property>
+									<Property name="QualityVariants">
+									<Property value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.5" />
+									<Property name="FlatDensity" value="0.002" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="10" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+										<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="30" />
+										<Property value="40" />
+										<Property value="500" />
+										</Property>
+									</Property>
+									</Property>
+								</Property>
+
+																<Property value="GcObjectSpawnData.xml">
+									<Property name="DebugName" value="" />
+										<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
+										<Property name="Resource" value="GcResourceElement.xml">
+										<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
+									<Property name="ResHandle" value="GcResource.xml">
+										<Property name="ResourceID" value="0" />
+									</Property>
+									<Property name="Seed" value="GcSeed.xml">
+										<Property name="Seed" value="0" />
+										<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="AltId" value="" />
+									<Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+										<Property name="Samplers">
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="OVERLAY" />
+												<Property name="Group" value="BARKO" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Rock" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.673" />
+												<Property name="G" value="0.641" />
+												<Property name="B" value="0.567" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="GRASS" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARK" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Wood" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.93" />
+												<Property name="G" value="0.891" />
+												<Property name="B" value="0.838" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="3" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="2" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="LEAF" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Leaf" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="True" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.923" />
+												<Property name="G" value="0.484" />
+												<Property name="B" value="0.046" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										<Property value="TkProceduralTextureChosenOptionSampler.xml">
+											<Property name="Options">
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="COLOUR" />
+												<Property name="Group" value="BARKC" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Plant" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.164" />
+												<Property name="G" value="0.509" />
+												<Property name="B" value="0.63" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="" />
+											</Property>
+											<Property value="TkProceduralTextureChosenOption.xml">
+												<Property name="Layer" value="BASE" />
+												<Property name="Group" value="BARKB" />
+												<Property name="Palette" value="TkPaletteTexture.xml">
+												<Property name="Palette" value="Grass" />
+												<Property name="ColourAlt" value="Primary" />
+												</Property>
+												<Property name="OverrideColour" value="False" />
+												<Property name="Colour" value="Colour.xml">
+												<Property name="R" value="0.542" />
+												<Property name="G" value="0.67" />
+												<Property name="B" value="0.333" />
+												<Property name="A" value="1" />
+												</Property>
+												<Property name="OptionName" value="1" />
+											</Property>
+											</Property>
+										</Property>
+										</Property>
+									</Property>
+									</Property>
+									<Property name="AltResources" />
+									<Property name="ExtraTileTypes" />
+									<Property name="Placement" value="FLORACLUMP" />
+									<Property name="Seed" value="GcSeed.xml">
+									<Property name="Seed" value="0" />
+									<Property name="UseSeedValue" value="False" />
+									</Property>
+									<Property name="PlacementPriority" value="High" />
+									<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+									<Property name="OverlapStyle" value="SameSeed" />
+									<Property name="MinHeight" value="-1" />
+									<Property name="MaxHeight" value="128" />
+									<Property name="RelativeToSeaLevel" value="True" />
+									<Property name="MinAngle" value="0" />
+									<Property name="MaxAngle" value="60" />
+									<Property name="MatchGroundColour" value="False" />
+									<Property name="GroundColourIndex" value="Auto" />
+									<Property name="SwapPrimaryForSecondaryColour" value="True" />
+									<Property name="SwapPrimaryForRandomColour" value="False" />
+									<Property name="AlignToNormal" value="False" />
+									<Property name="MinScale" value="0.9" />
+									<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
+									<Property name="MinScaleY" value="0.81" />
+									<Property name="MaxScaleY" value="1.02" />
+									<Property name="SlopeScaling" value="1" />
+									<Property name="PatchEdgeScaling" value="0" />
+									<Property name="MaxXZRotation" value="]]..MAIN_TREE_ROTATION..[[" />
+									<Property name="AutoCollision" value="False" />
+									<Property name="CollideWithPlayer" value="True" />
+									<Property name="CollideWithPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerVehicle" value="True" />
+									<Property name="DestroyedByPlayerShip" value="True" />
+									<Property name="DestroyedByTerrainEdit" value="True" />
+									<Property name="InvisibleToCamera" value="True" />
+									<Property name="CreaturesCanEat" value="False" />
+									<Property name="ShearWindStrength" value="0" />
+									<Property name="SupportsScanToReveal" value="False" />
+									<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+									<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.5" />
+									<Property name="FlatDensity" value="0.001" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="10" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+									<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="60" />
+										<Property value="150" />
+										<Property value="500" />
+									</Property>
+									</Property>
+									<Property name="QualityVariants">
+									<Property value="GcObjectSpawnDataVariant.xml">
+									<Property name="ID" value="STANDARD" />
+									<Property name="Coverage" value="0.5" />
+									<Property name="FlatDensity" value="0.001" />
+									<Property name="SlopeDensity" value="0" />
+									<Property name="SlopeMultiplier" value="1" />
+									<Property name="MaxRegionRadius" value="10" />
+									<Property name="MaxImposterRadius" value="10" />
+									<Property name="FadeOutStartDistance" value="9999" />
+									<Property name="FadeOutEndDistance" value="9999" />
+									<Property name="FadeOutOffsetDistance" value="0" />
+										<Property name="LodDistances">
+										<Property value="0" />
+										<Property value="20" />
+										<Property value="30" />
+										<Property value="40" />
+										<Property value="500" />
+										</Property>
+									</Property>
+									</Property>
+								</Property>
+
+							</Property>
+					]]
+				},------------------------------------------------------------------------------------------------------------
+			}------------------------------------------------------------------------------------------------------------
+		}------------------------------------------------------------------------------------------------------------
+	}------------------------------------------------------------------------------------------------------------
+	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
+end	
+
+
 --generate BROKEN TREES
 --[=[
 function generateBrokenTreeS
@@ -5617,6 +6297,7 @@ end-----------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 -----XML    -----------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+ALIENRING = readTemplate("ALIENRING")
 FREIGHTER_DESCRIPTOR = readTemplate("FREIGHTER_DESCRIPTOR")---------------------------------------------------------------------------------
 CONTENT_FREIGHTERS_SPAWNER = readTemplate("ADDITIONAL_FREIGHTERS")---------------------------------------------------------------------------------
 LARGE_FREIGHTERS = readTemplate("LARGE_FREIGHTERS")---------------------------------------------------------------------------------
@@ -8770,7 +9451,7 @@ end
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-
+			--[=[
 			NEW_CONTENT =
 			{
 
@@ -8779,6 +9460,7 @@ end
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--]=]
 			--
 			--
 			NEW_CONTENT =
@@ -8811,44 +9493,7 @@ end
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 			--
 			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTSCIENTIFIC.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTSCIENTIFIC.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTTRADER.DESCRIPTOR.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTTRADER.DESCRIPTOR.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTTRADER.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTTRADER.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTWARRIOR.SCENE.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\DEPOTS\DEPOTWARRIOR.SCENE.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 			--
 			--
 			NEW_CONTENT =
@@ -8861,6 +9506,51 @@ end
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 			--
 			--
+		addFeature
+		(
+			E3_FANTASY_DEPOTS_ASSETS_FEATURE,
+			{
+
+
+				{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTSCIENTIFIC.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["ADD"] 	= ALIENRING
+						},			
+
+					}
+				},
+					{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTWARRIOR.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["ADD"] 	= ALIENRING
+						},			
+
+					}
+				},
+					{
+					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEPOT\DEPOTTRADER.SCENE.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["ADD"] 	= ALIENRING
+						},			
+
+					}
+				}
+			}
+
+		)
 
 		end
 
@@ -21018,168 +21708,168 @@ then
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/BARREN/HQ/MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "3"
 			},
 									{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/BARREN/HQ/MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "3"
 			},
 									{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/BARREN/HQ/MEDIUMBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "3"
 			},
 									{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/BARREN/HQ/MEDIUMBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "3"
 			},
 				
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLBOULDER05.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/RADIOACTIVE/MEDIUM/CURVEDMEDIUM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMPROP01.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\RESOURCEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\MEDIUM\MEDIUMGLOWROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\MEDIUM\MEDIUMGLOWROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLBLOCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
@@ -21187,217 +21877,217 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\LARGEROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTCUBE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.14"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMPILLAR.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMPROP01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SMALLPILLARSTUMP.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SMALLTENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMSHARP01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\RESOURCEROCK.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMSHARP02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMSLATE01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
@@ -21408,104 +22098,104 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\VOLCANICPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.2"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/LUSHROOM/MEDIUMSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\TOXICEGGCLUSTER.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\MEDIUMPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\MEDIUMTOXICEGG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\SPORESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\SPORETUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},--
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			
 				{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGEBLOB.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGGSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},	
 
@@ -21516,26 +22206,26 @@ then
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.030"
 			},
 
@@ -21543,300 +22233,300 @@ then
 						{
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK01.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.44"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.044"
 			},
 			
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGEFULL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 				{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.03"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "10",
+				["ROT"] = "10",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "10",
+				["ROT"] = "10",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "10",
+				["ROT"] = "10",
 				["MAXSIZE"] = "0.20"
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.05"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.44"
 			},
 			
@@ -21844,73 +22534,73 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE4.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 					["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 						["PATH"] = [[MODELS\RGO\MEDIUMTREE7.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE8.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE9.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE10.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 		
@@ -21920,40 +22610,127 @@ then
 		FROZENPROPS =
 		{
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
+			},		
+			--[=[
+			{
+				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
+			},	
+			{
+				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
+			},	
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/TOXIC/MEDIUM/TOXICEGGCLUSTER.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "14"
+			},
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/TOXIC/LARGE/LARGETOXICEGGSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "14"
+			},	
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/TOXIC/LARGE/LARGETOXICEGG.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "10"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "1",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "60",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "30",
+				["MAXSIZE"] = "1"
+			},
+
+			-- old
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "1",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "1",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
@@ -21961,551 +22738,470 @@ then
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\ICEDECAL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\FOLIAGE\LARGETREEBARE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "360",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\FOLIAGE\STALKBRANCH.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\ICEDECAL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "360",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEICEROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCKSTACK_1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\MEDIUMPROPS\MEDIUMROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\HEROPINE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "360",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\SKINNYPINE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "360",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\TALLPINE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "360",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGEROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "360",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREEBARE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "360",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\SNOWCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "1",
 				["MAXSIZE"] = "2"
-			},
+			},--]=]
 
 		}
 		NORMALLUSHTREES =
 		{	
-						{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
 			},
+			
+			
+				-- update v7.2
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
+			},	
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},								{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-
-			{
-				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/TOXIC/MEDIUM/TOXICEGGCLUSTER.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
+				["ROT"] = "0",
+				["MAXSIZE"] = "14"
 			},
-
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/TOXIC/LARGE/LARGETOXICEGGSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "14"
 			},
-
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/TOXIC/LARGE/LARGETOXICEGG.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "4"
+			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "10"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "5",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "5",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "50",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "20",
 				["MAXSIZE"] = "2"
 			},
+			
+			-- Old version
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
+			
 						{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE2.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE3.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-					["PATH"] = [[MODELS\RGO\MEDIUMTREE4.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-					["PATH"] = [[MODELS\RGO\MEDIUMTREE7.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-					["PATH"] = [[MODELS\RGO\MEDIUMTREE8.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-					["PATH"] = [[MODELS\RGO\MEDIUMTREE9.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE10.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-							["PATH"] = [[MODELS\RGO\MEDIUMTREE11.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-							["PATH"] = [[MODELS\RGO\MEDIUMTREE12.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-					["PATH"] = [[MODELS\RGO\MEDIUMTREE13.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE14.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-							["PATH"] = [[MODELS\RGO\MEDIUMTREE15.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-									{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE16.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
-							["PATH"] = [[MODELS\RGO\MEDIUMTREE17.SCENE.MBIN]],
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMBUSH01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMBUSH02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
@@ -22515,1334 +23211,606 @@ then
 		max_rare_props = "55"
 		GIANTLUSHTREES =
 		{	
-		   {
-				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
 			{
-				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
+				["ROT"] = "0",
+				["MAXSIZE"] = "44"
+			},
+			
+			{
+				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/TOXIC/MEDIUM/TOXICEGGCLUSTER.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/TOXIC/LARGE/LARGETOXICEGGSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "34"
+			},
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/TOXIC/LARGE/LARGETOXICEGG.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "40"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "6",
+				["MAXSIZE"] = "42"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "6",
+				["MAXSIZE"] = "42"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "6",
+				["MAXSIZE"] = "42"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "6",
+				["MAXSIZE"] = "42"
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
+				["ROT"] = "6",
+				["MAXSIZE"] = "42"
+			},		
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "6",
+				["MAXSIZE"] = "42"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
+				["ROT"] = "6",
+				["MAXSIZE"] = "12"
 			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
+					
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
+				["ROT"] = "0",
+				["MAXSIZE"] = max_giant_props2
 			},
-						{
+			
+			{
 				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
+			
 			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props2
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_giant_props
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = max_giant_props
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "5"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "5"
 			},
 				{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE6.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE7.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE8.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE9.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
+			
 
 			{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.01"
 			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/DEADTREE02.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE10.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE11.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE12.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE13.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-
-			{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE14.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE15.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-
 
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "12"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["ROT"] = "0",
+				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["ROT"] = "0",
+				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
+				["ROT"] = "0",
+				["MAXSIZE"] = "11"
+			},		
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "5"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMBUSH01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMBUSH02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\VOLCANICPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/LUSHROOM/MEDIUMSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\TOXICEGGCLUSTER.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\MEDIUMPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\MEDIUMTOXICEGG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\SPORESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\SPORETUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 				{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGEBLOB.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGGSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.013"
 			},	
-
-
-		
-
-
-						{
+			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.04"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.030"
 			},
 									{
 				["PATH"] = [[MODELS/RGO/RACESTATUE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.014"
 			},
 			
 						{
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.44"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.044"
 			},
 			
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.20"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.20"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.20"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGEFULL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 
@@ -23850,67 +23818,67 @@ then
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "10",
+				["ROT"] = "10",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/BENDYTREE01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.44"
 			},
 			
@@ -23918,2205 +23886,95 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.44"
 			},
 
 			{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.01"
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "12"
 			},
 
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE7.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE8.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE9.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE10.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE11.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE12.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
 						{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.01"
 			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "27"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "26"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE13.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE14.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE15.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\MEDIUMTREE5.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "27"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "26"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE6.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE7.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE8.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE9.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE10.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE11.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE12.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE13.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "26"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE14.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE15.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE14.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "26"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE9.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE8.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE7.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE6.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE5.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.01"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "7"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "27"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "17"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "26"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "16"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-				{
-				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "12"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "22"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE17.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE16.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE15.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "13"
-			},
-							
-							
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGEBLOB.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGGSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 
@@ -26124,26 +23982,26 @@ then
 			{
 				["PATH"] = [[MODELS\RGO\HOLOEXPLORER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "63"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTCUBE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 
@@ -26151,322 +24009,247 @@ then
 			{
 				["PATH"] = [[MODELS\RGO\STEAMVENT.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 									{
 				["PATH"] = [[MODELS/RGO/RACESTATUE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			
 						{
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
-						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
+		
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGEFULL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 				{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "10",
+				["ROT"] = "10",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/BENDYTREE01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
+			
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			
 			
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
-			{
-	     	["PATH"] = [[MODELS\RGO\MEDIUMTREE6.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "20"
-			},
+			
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			
@@ -26474,984 +24257,608 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
-			--{
-			--	["PATH"] = [[MODELS\PLANETS\DESERT\TREES\TWISTEDTREE.SCENE.MBIN]],
-			--	["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-			--	["ROTATION"] = "0",
-			--	["MAXSIZE"] = "24"
-			--},
-
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGERING\HUGERINGTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"-- always 1 thats a big model ( can cause a crash if more than value 1 )
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 				{
 				["PATH"] = [[MODELS\RGO\LARGEROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTGLOWINGSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\PILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 		
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPILLAR.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			
 			{
 				["PATH"] = [[MODELS\RGO\LARGEROCKS2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGESTRANDS.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
-
-
 			{
 				["PATH"] = [[MODELS\RGO\MONOLITH.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2.94"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SMALLTENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2.24"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2.4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\UNDERWATERBOULDER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "1",
+				["ROT"] = "1",
 				["MAXSIZE"] = "2.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK01.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "1",
+				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK02.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEMOUNTAINROCKCLOSED.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEPLAINSBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLBOULDER05.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\LARGEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\LARGELUMP1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SCALLOPSHELL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SHELLSPIKES.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SPIKEYSHELL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOSSCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOUNTAINROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQLARGEROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESWIRLPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\MEDIUMPROPS\LAVACRYSTALS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\CURVEDROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANTSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\RADIOACTIVETREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCKSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\LARGETENTACLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\MEDIUMTENTACLEBLOB.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEROCK\HUGESPIKEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
+				["ROT"] = "2",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLBLOCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\IRRISHELLS\SHELLSHARD.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTCUBE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTMETALSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
-			},
-
-
-
+			},--]=]
 				
 		}
-		--[=[
-		GIANTROCKSLIST = -- current version doesnt use this table anymore, everything is now in giantrees table
-		{
-			{
-				["PATH"] = [[MODELS\RGO\LARGEROCK_1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\GIANTGLOWINGSPIKE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\GIANTSPIKE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\PILLAR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-		
-			{
-				["PATH"] = [[MODELS\RGO\LARGEPILLAR.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			
-			{
-				["PATH"] = [[MODELS\RGO\LARGEROCKS2.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\LARGESTRANDS.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-
-
-			{
-				["PATH"] = [[MODELS\RGO\MONOLITH.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.94"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\SMALLTENDRIL.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.24"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.4"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\UNDERWATERBOULDER.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "1",
-				["MAXSIZE"] = "0.4"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK01.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "1",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK02.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVESINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEMOUNTAINROCKCLOSED.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEPLAINSBOULDER02.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER02.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLBOULDER05.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\LARGEROCK.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\LARGELUMP1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SCALLOPSHELL.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SHELLSPIKES.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SPIKEYSHELL.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOSSCOVEREDWEIRDPROP.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOUNTAINROCK_1.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQLARGEROCKS.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQROCKS.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESWIRLPLANT.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\MEDIUMPROPS\LAVACRYSTALS.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\CURVEDROCK.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANT.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANTSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\RADIOACTIVETREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCK.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCKSINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\LARGETENTACLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\MEDIUMTENTACLEBLOB.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing -- on purpose, not a mistake ( model replacement done)
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEROCK\HUGESPIKEROCK.SCENE.MBIN]],
-				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
-			},
-
-		}--]=]	
---]=]
 		TABLERAREOBJECTS = 
 		{
-			
+			{
+				["PATH"] = [[MODELS\RGO\GEK_HEAD02.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "40"
+			},			
+
+			{
+				["PATH"] = [[MODELS\RGO\GEK_HEAD02.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "40"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\_SKULL.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "40"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
+				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "20"
+			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 				{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.5"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			
@@ -27459,257 +24866,257 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 									{
-				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "8"
 			},
 			{
-				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
-				["PATH"] = [[MODELS\RGO\MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MANGROVEFULL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/MANGROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "77"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "77"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "77"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "76"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "76"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "76"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "75"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "75"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "75"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.1"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.12"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.1"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.2"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.14"
 			},
 				{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "112"
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.12"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.2"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.1"
 			},
 		
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "111"
 			},
 		
@@ -27717,158 +25124,158 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.26"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "26"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.26"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.26"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.26"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20.6"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_rare_props
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.2"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.51"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.56"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.55"
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_rare_props
 			},
 						{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_rare_props
 			},
 			{
 				["PATH"] = [[MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.52"
 			},
 
@@ -27876,64 +25283,58 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\SPORETUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "22"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_rare_props
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_rare_props
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = max_rare_props
 			},
 			
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "21"
 			},	
-
-
-		
-
-
-		
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "30"
 			},
 		
 									{
 				["PATH"] = [[MODELS/RGO/RACESTATUE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.3"
 			},
 			
 						{
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK01.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			
@@ -27941,7 +25342,7 @@ then
 			{
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			
@@ -27949,62 +25350,62 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "4"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			
@@ -28012,152 +25413,152 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 
 			{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "7"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "27"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "17"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK3.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "16"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK4.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "26"
 			},
 						{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "16"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "15"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "15"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "15"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
+				["MAXSIZE"] = "15"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK2.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
-				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
+				["ROT"] = "0",
 				["MAXSIZE"] = "12"
 			},
 		
@@ -28166,222 +25567,221 @@ then
 			{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
-			},
-			
+			},			
 			{
 				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 												{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},{
 				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 												{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},{
 				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 												{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},{
 				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			
 								{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},			{
 				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},									{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 		
 						{
 				["PATH"] = [[MODELS\RGO\ANOMALYEXPLORER.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\STEAMVENT.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\DRONESHIP.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\DRONESHIP2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\ANOMALYEXPLORER.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 									{
 				["PATH"] = [[MODELS\RGO\HOLOSCEPTIC.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 						
 						{
 				["PATH"] = [[MODELS\RGO\HOLOEXPLORER.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "11"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\GEK_HEAD02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "13"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\NEXUSTOWER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\PLAQUE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
@@ -28389,86 +25789,86 @@ then
 			{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\META.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\TURRETA.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			
 							{
 				["PATH"] = [[MODELS\RGO\POLICESHIP.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\POLICESHIP02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTCUBE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTMETALSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
@@ -28476,13 +25876,13 @@ then
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
@@ -28491,7 +25891,7 @@ then
 			{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
@@ -28499,32 +25899,32 @@ then
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 
 						{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 
@@ -28532,176 +25932,168 @@ then
 			{
 				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\STEAMVENT.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\DRONESHIP.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\DRONESHIP2.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\GEK_HEAD02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\GEK_HEAD02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\NEXUSTOWER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\PLAQUE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\POLICESHIP.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\POLICESHIP02.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
 				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SKULL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\TURRETA.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\NEXUSTOWER.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\PLAQUE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SKULL.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTMETALSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTMETALSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "10"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\TURRETA.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 						{
 				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
 				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
-				["ROTATION"] = "0",
+				["ROT"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 		}
-		--[=[
-		GIANTBIOMES_TYPES_LIST=
-		{
-			"GIANT_FOREST",
-			"MEGALITH",
-			"CITY"
-		}
-		--]=]
 		SUBBIOMES_GR = ""
 		--
 		for count=1, tablelength(TABLE_FERRITE_DUST_RESSOURCES) do
@@ -28720,7 +26112,7 @@ then
 		--
 
 
-LUSHGRASSLIST =
+		LUSHGRASSLIST =
 				[[
 					<Property value="NMSString0x80.xml">
 						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\GRASS1.MBIN" />
@@ -32683,20 +30075,6 @@ LUSHGRASSLIST =
 
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE1.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMOAK1.DESCRIPTOR.EXML]] -- intentional
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE1.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMOAK1.SCENE.EXML]] -- intentional
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
---
 
 		--
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
@@ -33252,28 +30630,28 @@ LUSHGRASSLIST =
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEOAK1.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\LARGEOAK2.DESCRIPTOR.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEOAK1.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\LARGEOAK2.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEOAK2.DESCRIPTOR.EXML]],
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\LARGEOAK1.DESCRIPTOR.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEOAK2.SCENE.EXML]],
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEOAK1.SCENE.EXML]],
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\LARGEOAK1.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEOAK2.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\LARGEOAK2.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEOAK2.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\LARGEOAK2.SCENE.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
@@ -33306,7 +30684,256 @@ LUSHGRASSLIST =
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
+		
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE2.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE2.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE2.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE2.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE3.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE3.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE3.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE3.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE4.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE4.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE4.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE4.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE5.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE5.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE5.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE5.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE6.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE6.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE6.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE6.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE7.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE7.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE7.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE7.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE8.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE8.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE8.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE8.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE9.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE9.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE9.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE9.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		----
+		--
+		--
+		--
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE10.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE2.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE10.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE2.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE11.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE3.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE11.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE3.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE12.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE4.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE12.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE4.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE13.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE5.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE13.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE5.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE14.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE6.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE14.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE6.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE15.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE7.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE15.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE7.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE16.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE8.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE16.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE8.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE17.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE9.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE17.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\MEDIUMTREE9.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE18.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\LARGETREE1.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+		EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE18.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\OAK\LARGETREE1.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		--
+		--
+		--
+		--
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\LARGEPILLAR.SCENE.EXML]],
@@ -33477,15 +31104,15 @@ LUSHGRASSLIST =
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMOAK1.DESCRIPTOR.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMOAK1.DESCRIPTOR.EXML]]
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE1.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE1.DESCRIPTOR.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMOAK1.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMOAK1.SCENE.EXML]]
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\MEDIUMTREE1.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R3\TREES\MEDIUMTREE1.SCENE.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
@@ -36502,6 +34129,7 @@ end
 
 			SUBBIOMES_TF = ""
 
+			
 			NEW_CONTENT =
 			{
 
@@ -36568,14 +34196,14 @@ end
 						</Property>
 				]]
 			--
-
+			
 			for count=1, tablelength(FROZENPROPS) do
 				GENERATED_ORIGIN_BIOME_PATH = [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\TF\ORIGINS]]..count
 				if GIANTS_BIOMES_FEATURE == "ON" then
-				generateORIGINSTREES
+				generateORIGINSTREESFROZEN
 				(
 					GENERATED_ORIGIN_BIOME_PATH,
-					FROZENPROPS[count].TYPE,FROZENPROPS[count].PATH,FROZENPROPS[count].MAXSIZE
+					FROZENPROPS[count].TYPE,FROZENPROPS[count].PATH,FROZENPROPS[count].MAXSIZE,FROZENPROPS[count].ROT
 				)
 				SUBBIOMES_TF = SUBBIOMES_TF..
 				[[
@@ -36584,10 +34212,10 @@ end
 						</Property>
 				]]
 				else
-				generateORIGINSTREESAlt
+				generateORIGINSTREESAltFROZEN
 				(
 					GENERATED_ORIGIN_BIOME_PATH,
-					FROZENPROPS[count].TYPE,FROZENPROPS[count].PATH,FROZENPROPS[count].MAXSIZE
+					FROZENPROPS[count].TYPE,FROZENPROPS[count].PATH,FROZENPROPS[count].MAXSIZE,FROZENPROPS[count].ROT
 				)
 				SUBBIOMES_TF = SUBBIOMES_TF..
 				[[
@@ -36600,7 +34228,7 @@ end
 
 			SUBBIOMES_TM = ""
 
-				
+			
 			--
 			--
 			NEW_CONTENT =
@@ -36641,7 +34269,7 @@ end
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 
-NEW_CONTENT =
+			NEW_CONTENT =
 			{
 
 				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GRASS\CAVEBIOMEGRASSBUSHES.EXML]],
@@ -36881,6 +34509,9 @@ NEW_CONTENT =
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+
+
+			
 			--
 				SUBBIOMES_TF = SUBBIOMES_TF..
 				[[
@@ -36932,6 +34563,7 @@ NEW_CONTENT =
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			
 			--
 				SUBBIOMES_P = SUBBIOMES_P..
 				[[
@@ -38198,8 +35830,8 @@ NEW_CONTENT =
 			--
 			--
 
-			--[=[--]=]
-
+			
+			
 			NEW_CONTENT =
 			{
 
@@ -38595,6 +36227,7 @@ NEW_CONTENT =
 			--
 			--
 			--
+			
 			NEW_CONTENT =
 			{
 
@@ -38863,14 +36496,14 @@ NEW_CONTENT =
 						</Property>
 				]]
 			--
-			--
+			----]=]
 			for count=1, tablelength(NORMALLUSHTREES) do
 				GENERATED_ORIGIN_BIOME_PATH = [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\T\ORIGINS]]..count
 				if GIANTS_BIOMES_FEATURE == "ON" then
 				generateORIGINSTREES
 				(
 					GENERATED_ORIGIN_BIOME_PATH,
-					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE
+					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE,NORMALLUSHTREES[count].ROT
 				)
 				SUBBIOMES_T = SUBBIOMES_T..
 				[[
@@ -38882,7 +36515,7 @@ NEW_CONTENT =
 				generateORIGINSTREESAlt
 				(
 					GENERATED_ORIGIN_BIOME_PATH,
-					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE
+					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE,NORMALLUSHTREES[count].ROT
 				)
 				SUBBIOMES_T = SUBBIOMES_T..
 				[[
@@ -38894,6 +36527,7 @@ NEW_CONTENT =
 				end
 			end
 			--
+			
 			NEW_CONTENT =
 			{
 
@@ -38909,7 +36543,7 @@ NEW_CONTENT =
 						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\T\ORIGINSMATCH.MBIN" />
 						</Property>
 				]]
-			--
+			
 			--
 						for count=1, tablelength(NORMALLUSHTREES) do
 				GENERATED_ORIGIN_BIOME_PATH = [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\T\ORIGINS]]..count
@@ -38918,7 +36552,7 @@ NEW_CONTENT =
 				generateORIGINSTREES
 				(
 					GENERATED_ORIGIN_BIOME_PATH,
-					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE
+					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE,NORMALLUSHTREES[count].ROT
 				)
 				SUBBIOMES_TM = SUBBIOMES_TM..
 				[[
@@ -38930,7 +36564,7 @@ NEW_CONTENT =
 					generateORIGINSTREESAlt
 				(
 					GENERATED_ORIGIN_BIOME_PATH,
-					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE
+					NORMALLUSHTREES[count].TYPE,NORMALLUSHTREES[count].PATH,NORMALLUSHTREES[count].MAXSIZE,NORMALLUSHTREES[count].ROT
 				)
 				SUBBIOMES_TM = SUBBIOMES_TM..
 				[[
@@ -38940,6 +36574,8 @@ NEW_CONTENT =
 				]]
 				end
 			end
+
+			
 			--
 			NEW_CONTENT =
 			{
@@ -39299,12 +36935,12 @@ NEW_CONTENT =
 						</Property>
 				]]
 			--
-
+			--]=]
 			--SUBBIOMES_PRT = SUBBIOMES_T..SUBBIOMES_PR
 
 			SUBBIOMES_D = ""
 			
-
+			
 			--
 			NEW_CONTENT =
 			{
@@ -39391,6 +37027,7 @@ NEW_CONTENT =
 				]]
 			--
 			--
+			
 			NEW_CONTENT =
 			{
 
@@ -39399,6 +37036,7 @@ NEW_CONTENT =
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			
 			--
 				SUBBIOMES_TF = SUBBIOMES_TF..
 				[[
@@ -39407,6 +37045,7 @@ NEW_CONTENT =
 						</Property>
 				]]
 			--
+			
 			--
 			NEW_CONTENT =
 			{
@@ -39416,6 +37055,7 @@ NEW_CONTENT =
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			
 			--
 				SUBBIOMES_TF = SUBBIOMES_TF..
 				[[
@@ -39423,6 +37063,7 @@ NEW_CONTENT =
 						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\FROZENWILD.MBIN" />
 						</Property>
 				]]
+			
 			--
 			--
 			NEW_CONTENT =
@@ -39632,12 +37273,7 @@ NEW_CONTENT =
 						</Property>
 				]]
 			--
-			--[=[SUBBIOMES_TB = SUBBIOMES_T..
-			[[
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\T\NONE.MBIN" />
-						</Property>
-			]]--]=]
+
 			addFeature
 			(
 				FANTASY_BIOMES_FEATURE,
@@ -40167,7 +37803,7 @@ NEW_CONTENT =
 				generateRessourcesBiomeR
 				(
 					GENERATED_BIOME_PATH,
-					TABLE_FERRITE_DUST_RESSOURCES[count].TYPE,TABLE_FERRITE_DUST_RESSOURCES[count].PATH,TABLE_FERRITE_DUST_RESSOURCES[count].ROTATION
+					TABLE_FERRITE_DUST_RESSOURCES[count].TYPE,TABLE_FERRITE_DUST_RESSOURCES[count].PATH,TABLE_FERRITE_DUST_RESSOURCES[count].MAXSIZE
 				)
 				BACKUPFERRITELIST = BACKUPFERRITELIST..
 				[[
@@ -40182,7 +37818,7 @@ NEW_CONTENT =
 				generateRessourcesBiome
 				(
 					GENERATED_BIOME_PATH,
-					TABLE_CARBONE_RESSOURCES[count].TYPE,TABLE_CARBONE_RESSOURCES[count].PATH,TABLE_CARBONE_RESSOURCES[count].ROTATION
+					TABLE_CARBONE_RESSOURCES[count].TYPE,TABLE_CARBONE_RESSOURCES[count].PATH,TABLE_CARBONE_RESSOURCES[count].MAXSIZE
 				)
 				BACKUPCARBONELIST = BACKUPCARBONELIST..
 				[[
@@ -40336,7 +37972,7 @@ NEW_CONTENT =
 					generateGiantBiomeFOREST
 					(
 						GENERATED_GIANT_BIOME_PATH,
-						GIANTLUSHTREES[count1].TYPE,GIANTLUSHTREES[count1].PATH,GIANTLUSHTREES[count1].ROTATION,GIANTLUSHTREES[count1].MAXSIZE
+						GIANTLUSHTREES[count1].TYPE,GIANTLUSHTREES[count1].PATH,GIANTLUSHTREES[count1].ROT,GIANTLUSHTREES[count1].MAXSIZE
 
 					)
 					GIANTBIOMESLIST = GIANTBIOMESLIST..

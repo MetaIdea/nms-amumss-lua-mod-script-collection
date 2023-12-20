@@ -12,7 +12,7 @@
         <Property name="DebugName" value="" />
         <Property name="Type" value="Single" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/RGO/LARGEOAK1.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS/RGO/MEDIUMTREE1.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />

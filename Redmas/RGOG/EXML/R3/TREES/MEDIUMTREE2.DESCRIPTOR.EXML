@@ -16,13 +16,7 @@
                 <Property value="TkResourceDescriptorList.xml">
                   <Property name="TypeId" value="_BRANCH_" />
                   <Property name="Descriptors">
-                    <Property value="TkResourceDescriptorData.xml">
-                      <Property name="Id" value="_BRANCH_C" />
-                      <Property name="Name" value="_BRANCH_C" />
-                      <Property name="ReferencePaths" />
-                      <Property name="Chance" value="0" />
-                      <Property name="Children" />
-                    </Property>
+
                     <Property value="TkResourceDescriptorData.xml">
                       <Property name="Id" value="_BRANCH_B" />
                       <Property name="Name" value="_BRANCH_B" />
@@ -47,13 +41,7 @@
                         </Property>
                       </Property>
                     </Property>
-                    <Property value="TkResourceDescriptorData.xml">
-                      <Property name="Id" value="_BRANCH_A" />
-                      <Property name="Name" value="_BRANCH_A" />
-                      <Property name="ReferencePaths" />
-                      <Property name="Chance" value="0" />
-                      <Property name="Children" />
-                    </Property>
+
                   </Property>
                 </Property>
               </Property>

@@ -1,0 +1,2 @@
+Extract the lua script and GlobalMEFTI folder into AMUMSS\ModScript.  Run in Lean mode.
+Be aware, the additional ~11,000 additional custom files in the GlobalMEFTI folder will use ~650MB of disk space.
