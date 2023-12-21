@@ -179,7 +179,7 @@ local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1
 function Create_New_Recipe (Recipe_Id, Recipe_Type, Recipe_Name, Recipe_Time_To_Make, Result_Id, Result_Type, Result_Amount, Recipe_Ingredients)
     Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["SPECIAL_KEY_WORDS"] = {"Id", "REFINERECIPE_1"},
         ["SEC_SAVE_TO"] = Recipe_Id.."NEW_INGREDIENTS_MASER"
     }
     for j = 1, #Recipe_Ingredients do
@@ -197,12 +197,12 @@ function Create_New_Recipe (Recipe_Id, Recipe_Type, Recipe_Name, Recipe_Time_To_
     Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
         ["SEC_EDIT"] = Recipe_Id.."NEW_INGREDIENTS_MASER",
-        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["SPECIAL_KEY_WORDS"] = {"Id", "REFINERECIPE_1"},
         ["REMOVE"] = "SECTION"
     }
     Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["SPECIAL_KEY_WORDS"] = {"Id", "REFINERECIPE_1"},
         ["SEC_SAVE_TO"] = Recipe_Id.."_SEC"
     }
     Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
@@ -253,7 +253,7 @@ end
 function Create_New_Ingredient(Ingedient_ID, Ingredient_Type, Ingredient_Amount)
     Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["SPECIAL_KEY_WORDS"] = {"Id", "REFINERECIPE_1"},
         ["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
         ["SEC_SAVE_TO"] = Ingedient_ID.."_SEC"
     }
@@ -314,7 +314,7 @@ function Edit_Existing_Recipes()
 
         Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+            ["SPECIAL_KEY_WORDS"] = {"Id", "REFINERECIPE_1"},
             ["SEC_SAVE_TO"] = Recipe_Id.."EDIT_INGREDIENTS_MASER"
         }
         for j = 1, #Recipe_Ingredients do
@@ -333,7 +333,7 @@ function Edit_Existing_Recipes()
         Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
         {
             ["SEC_EDIT"] = Recipe_Id.."EDIT_INGREDIENTS_MASER",
-            ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+            ["SPECIAL_KEY_WORDS"] = {"Id", "REFINERECIPE_1"},
             ["REMOVE"] = "SECTION"
         }
 
@@ -373,7 +373,7 @@ end
 function Add_New_Recipes()
     Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["SPECIAL_KEY_WORDS"] = {"Id", "REFINERECIPE_1"},
         ["SEC_SAVE_TO"] = "NEW_RECIPES_MASER"
     }
     for i = 1, #New_Recipes, 1 do
@@ -392,7 +392,7 @@ function Add_New_Recipes()
     Changes_To_Recipe_Table[#Changes_To_Recipe_Table + 1] =
     {
         ["SEC_EDIT"] = "NEW_RECIPES_MASER",
-        ["SPECIAL_KEY_WORDS"] = {"Id", "RECIPE_1"},
+        ["SPECIAL_KEY_WORDS"] = {"Id", "REFINERECIPE_1"},
         ["REMOVE"] = "SECTION"
     }
 

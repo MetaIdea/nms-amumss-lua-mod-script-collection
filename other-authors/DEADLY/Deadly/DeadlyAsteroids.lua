@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]    = "_DeadlyAsteroids.pak",
     ["MOD_AUTHOR"]      = "gh0stwizard",
-    ["MOD_DESCRIPTION"] = "This mods reduces amount of Tritium, Silver, Gold gained by destroying asteroids.",
+    ["MOD_DESCRIPTION"] = "Removes substances gained by destroying asteroids.",
     ["NMS_VERSION"]     = "4.46",
     ["MODIFICATIONS"]   = {
         {

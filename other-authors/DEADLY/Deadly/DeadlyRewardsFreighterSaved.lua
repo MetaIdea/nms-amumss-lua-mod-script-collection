@@ -1,3 +1,10 @@
+-- pirate freighter battle
+REPUTATION_SM_MIN = 1
+REPUTATION_SM_MAX = 2
+REPUTATION_LG_MIN = 2
+REPUTATION_LG_MAX = 3
+
+-- small pirates attacking civil fleet
 REPUTATION_CHANCE = 50
 REPUTATION_MIN = 1
 REPUTATION_MAX = 2
@@ -120,6 +127,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
+                        -- R_CIV_SAVED__SM & R_CIV_SAVED_LG are given for battle vs pirate freighter
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_CIV_SAVED_SM", "AlienRace", "None" },
+                            ["SECTION_UP"]         = 1,
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", REPUTATION_SM_MIN }, -- 2
+                                { "AmountMax", REPUTATION_SM_MAX }, -- 3
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_CIV_SAVED_LG", "AlienRace", "None" },
+                            ["SECTION_UP"]         = 1,
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", REPUTATION_LG_MIN }, -- 5
+                                { "AmountMax", REPUTATION_LG_MAX }, -- 8
+                            }
+                        },
+                        -- ???
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "FREIGHTER_SAVED" },
                             ["VALUE_CHANGE_TABLE"] = {

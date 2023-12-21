@@ -18,10 +18,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "NoBoostCombatEventMinBattleTime",          60 },    -- 35
                                 { "NoBoostCombatEventMinFreighterBattleTime", 60 },    -- 55
                                 { "NoBoostCombatEventTime",                   60 },    -- 25
-                                -- freighter! stop slowing my speed!
-                                -- { "FreighterApproachSpeedDamper",             1 },   -- 0.5
-                                -- { "FreighterCombatSpeedMul",                  1 },   -- 1.45
-                                -- { "FreighterCombatBoostMul",                  1 },   -- 0.5
                             }
                         },
                     }

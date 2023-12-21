@@ -59,3 +59,4 @@ DeathlyCombat                   Improved space combat
 DeathlyCombatRadius             Improved space combat radiuses
 DeathlyMisc                     Very minor misc changes
 DeathlyTurrets                  Improved space turrets
+DeathlyWeaponRangePlayer        Adjusts player starship weapon range

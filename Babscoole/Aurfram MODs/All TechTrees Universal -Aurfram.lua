@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = {"METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"METADATA\\REALITY\\TABLES\\UNLOCKABLEITEMTREES.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -287,8 +287,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
-                        <Property name="Unlockable" value="UT_BUI_SCAN2" />
-                        <Property name="Children" />
+                        <Property name="Unlockable" value="UT_BUI_SCAN" />
+                        <Property name="Children">
+                         <Property value="GcUnlockableItemTreeNode.xml">
+                           <Property name="Unlockable" value="UT_BUI_SCAN2" />
+                           <Property name="Children" />
+                         </Property>
+                        </Property>
                       </Property>
 ]]
                         },
@@ -409,7 +414,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
