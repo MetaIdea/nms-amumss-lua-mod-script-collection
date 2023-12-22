@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]  = "BetterShipColors_Pastel_1.8.pak",
+    ["MOD_FILENAME"]  = "BetterShipColors_PastelBW_1.8.pak",
     ["MOD_AUTHOR"]    = "courtykat",
     ["LUA_AUTHOR"]    = "Jackty89, WinderTP, Babscoole, and courtykat",
     ["NMS_VERSION"]   = "",

@@ -4805,7 +4805,7 @@
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE75\LEAF.MATERIAL.MBIN" />
+                                       <Property name="Value" value="MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1\LEAF01.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -4929,7 +4929,7 @@
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE75\LEAF.MATERIAL.MBIN" />
+                                           <Property name="Value" value="MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1\LEAF01.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />
@@ -5053,7 +5053,7 @@
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
                       <Property name="AltID" value="" />
-                      <Property name="Value" value="MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE75\LEAF.MATERIAL.MBIN" />
+                                           <Property name="Value" value="MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\LARGEOAK1\LEAF01.MATERIAL.MBIN" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MESHLINK" />

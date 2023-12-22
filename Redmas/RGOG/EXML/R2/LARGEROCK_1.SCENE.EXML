@@ -39,9 +39,9 @@
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
         <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1" />
-        <Property name="ScaleY" value="1" />
-        <Property name="ScaleZ" value="1" />
+        <Property name="ScaleX" value="0.41" />
+        <Property name="ScaleY" value="0.41" />
+        <Property name="ScaleZ" value="0.41" />
       </Property>
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
