@@ -6070,8 +6070,6 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 
 
 
-
---
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ---------------------------------------------------------------- **FEATURES** -------------------------------------------------------
@@ -21833,7 +21831,7 @@ then
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
@@ -21851,7 +21849,7 @@ then
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
@@ -22065,7 +22063,7 @@ then
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
@@ -22268,26 +22266,26 @@ then
 			-- old
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
 			
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "1",
 				["MAXSIZE"] = "1"
 			},
@@ -23301,7 +23299,7 @@ then
 			
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
@@ -23319,7 +23317,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
@@ -23337,7 +23335,7 @@ then
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
@@ -23355,7 +23353,7 @@ then
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single", -- please dont change that value if you are not sure of what you are doing
+				["TYPE"] = "Instanced", -- please dont change that value if you are not sure of what you are doing
 				["ROT"] = "0",
 				["MAXSIZE"] = "0.20"
 			},
