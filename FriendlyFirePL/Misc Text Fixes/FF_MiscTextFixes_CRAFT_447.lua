@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "CRAFT"
-METADATA_NMS_VERSION    = "446"
+METADATA_NMS_VERSION    = "447"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 --[[
@@ -43,6 +43,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SKW"] = {"ID","HYPERFUEL2"},
                             ["VCT"] = {{"PinObjectiveTip","UI_PIN_HYPERFUEL2_OBJ_TIP"},},
+                        },
+
+                        {
+                            ["SKW"] = {"ID","ATLAS_SEED_10"},
+                            ["VCT"] = {{"PinObjectiveTip","UI_PIN_ATLASSEED_OBJ_TIP"},},
                         },
                     },
                 }

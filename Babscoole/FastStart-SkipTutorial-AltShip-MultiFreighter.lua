@@ -530,7 +530,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -545,7 +545,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                      ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\MISSIONS\TUTORIALMISSIONTABLE.MBIN",
+                      ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TUTORIALMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

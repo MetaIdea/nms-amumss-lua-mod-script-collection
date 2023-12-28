@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = { [[MODELS\COMMON\ROBOTS\WALKER_COMPANION.SCENE.MBIN]] },
+                    ["MBIN_FILE_SOURCE"] = { [[MODELS\COMMON\ROBOTS\WALKER_COMPANION.SCENE.MBIN]] },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = { [[MODELS\COMMON\ROBOTS\WALKER\ENTITIES\WALKER_COMPANION.ENTITY.MBIN]] },
+                    ["MBIN_FILE_SOURCE"] = { [[MODELS\COMMON\ROBOTS\WALKER\ENTITIES\WALKER_COMPANION.ENTITY.MBIN]] },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         -- {
@@ -219,7 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\OBJECTSPAWNER\ENTITIES\OBJECTSPAWNER.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\OBJECTSPAWNER\ENTITIES\OBJECTSPAWNER.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

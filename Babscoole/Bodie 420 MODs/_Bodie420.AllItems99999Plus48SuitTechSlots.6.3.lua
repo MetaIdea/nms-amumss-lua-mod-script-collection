@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCESURVIVAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCESURVIVAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

@@ -586,7 +586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  =
+                    ["MBIN_FILE_SOURCE"] =
                     {
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMACOLOURPALETTE.MBIN",
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBCOLOURPALETTE.MBIN",
@@ -603,7 +603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPCOLOURPALETTES.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPCOLOURPALETTES.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -631,7 +631,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "TEXTURES\PLANETS\BIOMES\LUSHROOM\MEDSHROOM.TEXTURE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\LUSHROOM\MEDSHROOM.TEXTURE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

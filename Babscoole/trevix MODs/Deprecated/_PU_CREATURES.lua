@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCCREATUREGLOBALS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1026,7 +1026,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\CREATURES\SANDWORMMINIEMERGEDUSTFALL\EMITTERS\DUSTRINGEMITTER.PARTICLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\CREATURES\SANDWORMMINIEMERGEDUSTFALL\EMITTERS\DUSTRINGEMITTER.PARTICLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1046,7 +1046,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\DUST\SANDWORMDUST\EMITTERS\DUSTEMITTER.PARTICLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\DUST\SANDWORMDUST\EMITTERS\DUSTEMITTER.PARTICLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

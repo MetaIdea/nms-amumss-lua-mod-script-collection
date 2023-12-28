@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCCREATUREGLOBALS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\ANTELOPERIG\ANTELOPEROBOT\ENTITIES\ANTELOPEROBOT.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\ANTELOPERIG\ANTELOPEROBOT\ENTITIES\ANTELOPEROBOT.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -194,7 +194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\CATRIG\BONECAT\ENTITIES\BONECATBODY.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\CATRIG\BONECAT\ENTITIES\BONECATBODY.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -252,7 +252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\FLYINGLIZARDRIG\FLYINGLIZARD\ENTITIES\BODY_LIZARD.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\FLYINGLIZARDRIG\FLYINGLIZARD\ENTITIES\BODY_LIZARD.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  =
+                    ["MBIN_FILE_SOURCE"] =
                     {
                         "MODELS\PLANETS\CREATURES\FLYINGSNAKE\FLYINGSNAKE\ENTITIES\_BODY_WORM.ENTITY.MBIN",
                         "MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN",
@@ -298,7 +298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\FLYINGSNAKE\FLYINGSNAKE.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\FLYINGSNAKE\FLYINGSNAKE.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -435,7 +435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\SHARKRIG\SHARK\ENTITIES\SHARK1.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\SHARKRIG\SHARK\ENTITIES\SHARK1.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -529,7 +529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\STRIDERRIG\STRIDER\ENTITIES\STRIDERMESH.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\STRIDERRIG\STRIDER\ENTITIES\STRIDERMESH.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -658,7 +658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\TREXRIG\TREX\ENTITIES\_BODY_TREX.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\TREXRIG\TREX\ENTITIES\_BODY_TREX.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -905,7 +905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\TRICERATOPSRIG\TRICERATOPS\ENTITIES\_BODY_TRI.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\TRICERATOPSRIG\TRICERATOPS\ENTITIES\_BODY_TRI.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

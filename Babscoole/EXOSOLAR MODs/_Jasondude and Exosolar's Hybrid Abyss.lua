@@ -1029,12 +1029,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\WATERCOLOURS.MBIN",
-                    ["EXML_CHANGE_TABLE"]  =
+                    ["EXML_CHANGE_TABLE"] =
                     {
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCWATERGLOBALS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCWATERGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

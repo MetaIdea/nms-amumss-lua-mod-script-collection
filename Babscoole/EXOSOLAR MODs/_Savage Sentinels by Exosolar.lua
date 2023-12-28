@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCROBOTGLOBALS.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCROBOTGLOBALS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -459,7 +459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

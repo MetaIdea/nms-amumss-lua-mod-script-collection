@@ -23,7 +23,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "COP_FREIGHTGUN" },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "DefaultSpeed", 2000 }, -- 1000
-                                --{ "DefaultDamage", 300 },  -- 300
                             }
                         },
                         -- freighter big laser (disabled, just for a case)
@@ -58,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "FREIGHTGUN" },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "DefaultSpeed",  4000 }, -- 1000
-                                { "DefaultDamage", 2000 },  -- 15
+                                { "DefaultDamage", 1250 }, -- 15
                             }
                         },
                         -- pirate freighter small turret
@@ -85,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "TurretProjectileRange",       10000 },          -- 3000
                                 { "TurretMissileRange",          100000 },         -- 6000
                                 { "TurretDispersionAngle",       0.5 },            -- 2
-                                { "TurretMaxDownAngle",          25 },             -- 10
+                                --{ "TurretMaxDownAngle",          25 },             -- 10
                                 { "Health",                      4100 },           -- 3000
                                 { "LevelledExtraHealth",         28000 },          -- 0
                                 { "UseSpaceLevelForExtraHealth", "True" },         -- False
@@ -110,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "TurretProjectileRange",    100000 },  -- 3000
                                 { "TurretMissileRange",       100000 },  -- 6000
                                 { "TurretDispersionAngle",    0 },       -- 2
-                                { "TurretMaxDownAngle",       25 },      -- 10
+                                --{ "TurretMaxDownAngle",       25 },      -- 10
                             }
                         },
                     }

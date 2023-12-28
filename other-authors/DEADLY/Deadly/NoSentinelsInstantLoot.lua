@@ -18,11 +18,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     },
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Specific", "ROBOT1" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 0 }, -- 16/64
-                                { "AmountMax", 0 }, -- 32/128
-                            },
+                            ["SPECIAL_KEY_WORDS"] = { "Specific", "ROBOT1" },
+                            -- by some reason on normal this doesn't working as expected (adds +1 Pugneum from the air)
+                            -- ["VALUE_CHANGE_TABLE"] = {
+                            --     { "AmountMin", 0 }, -- 16/64
+                            --     { "AmountMax", 0 }, -- 32/128
+                            -- },
+                            ["REMOVE"]            = "SECTION"
                         },
                     }
                 },
@@ -34,11 +36,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     },
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Specific", "ROBOT2" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 0 }, -- 32/12
-                                { "AmountMax", 0 }, -- 64/25
-                            },
+                            ["SPECIAL_KEY_WORDS"] = { "Specific", "ROBOT2" },
+                            -- ["VALUE_CHANGE_TABLE"] = {
+                            --     { "AmountMin", 0 }, -- 32/12
+                            --     { "AmountMax", 0 }, -- 64/25
+                            -- },
+                            ["REMOVE"]            = "SECTION"
                         },
                     }
                 },

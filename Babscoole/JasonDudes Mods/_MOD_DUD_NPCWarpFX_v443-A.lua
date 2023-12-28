@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPACE\WARPSTART\BLACK.PARTICLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACE\WARPSTART\BLACK.PARTICLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPACE\WARPSTART\BLACKHOLE.PARTICLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACE\WARPSTART\BLACKHOLE.PARTICLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\SPACE\WARPSTART\WARPBASE.PARTICLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACE\WARPSTART\WARPBASE.PARTICLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

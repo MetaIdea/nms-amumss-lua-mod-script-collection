@@ -193,7 +193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -227,7 +227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\ROBOTDATATABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\ROBOTDATATABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCCREATUREGLOBALS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -326,7 +326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVE\PET_EGG\ENTITIES\PET_EGG.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVE\PET_EGG\ENTITIES\PET_EGG.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

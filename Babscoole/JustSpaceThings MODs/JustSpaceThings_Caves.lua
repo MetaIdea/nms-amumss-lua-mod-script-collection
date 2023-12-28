@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEDEAD.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEDEAD.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -99,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEEMPTY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEEMPTY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -226,7 +226,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEFULL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEFULL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -451,7 +451,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEGRASSBUSHES.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEGRASSBUSHES.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -576,7 +576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEMID.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMEMID.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -697,7 +697,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMESPARSETOXIC.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\CAVE\CAVEBIOMESPARSETOXIC.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

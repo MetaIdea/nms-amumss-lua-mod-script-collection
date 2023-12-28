@@ -32,6 +32,7 @@ DeadlyRewardsPirate             Reduces loot given by destroying Pirates
 DeadlyRewardsPirateBonus        Bonus for Pirate Loot
 DeadlyRewardsSentinels          Reduces loot given by destroying Sentinels
 DeadlyRewardsTechDebris         Reduces quality of Tech Upgrades in debris
+DeadlyRewardsTrader             Reduces loot given by destroying Traders
 DeadlySpawnChances              Adjusts spawn chances of Traders, Pirates
 DeadlySpeedUp                   UI Speed Up
 DeadlyTrading                   Shop and Trader changes

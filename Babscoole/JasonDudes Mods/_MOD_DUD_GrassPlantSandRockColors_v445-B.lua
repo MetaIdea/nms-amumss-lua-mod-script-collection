@@ -795,7 +795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -827,7 +827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = 
+                    ["MBIN_FILE_SOURCE"] = 
                     {
                         "TEXTURES\PLANETS\BIOMES\BARREN\PLANTS\SCRUBGRASS.TEXTURE.MBIN",
                         "TEXTURES\PLANETS\BIOMES\BARREN\PLANTS\SCRUBGRASS2.TEXTURE.MBIN",
@@ -848,7 +848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = 
+                    ["MBIN_FILE_SOURCE"] = 
                     {
                         "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS1.TEXTURE.MBIN",
                         "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS4.TEXTURE.MBIN",
@@ -873,7 +873,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = 
+                    ["MBIN_FILE_SOURCE"] = 
                     {
                         "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS2.TEXTURE.MBIN",
                         "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS3.TEXTURE.MBIN",

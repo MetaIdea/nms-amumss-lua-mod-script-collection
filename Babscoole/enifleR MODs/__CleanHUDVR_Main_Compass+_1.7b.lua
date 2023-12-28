@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCBUILDINGGLOBALS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCBUILDINGGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCPLAYERGLOBALS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCPLAYERGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -170,7 +170,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MATERIALS\LINE3D.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MATERIALS\LINE3D.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -183,7 +183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\LINES\LINERENDERERGALAXY.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\LINES\LINERENDERERGALAXY.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "PIPELINES\PIPELINEDEFERREDVR.BIN",
+                    ["MBIN_FILE_SOURCE"] = "PIPELINES\PIPELINEDEFERREDVR.BIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -212,7 +212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  =
+                    ["MBIN_FILE_SOURCE"] =
                     {
                         "UI\HUD\HUDHAZARD.MBIN",
                         "UI\HUD\HUDHEALTH.MBIN",
@@ -234,7 +234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\HUDINDICATORS.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDINDICATORS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -315,7 +315,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\HUDINTERACTIONMARKER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDINTERACTIONMARKER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -540,7 +540,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\HUDNOTIFICATION.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDNOTIFICATION.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -562,7 +562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\HUDNOTIFICATIONPANEL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDNOTIFICATIONPANEL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -575,7 +575,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\HUDPLANETINFO.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDPLANETINFO.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -588,7 +588,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\BINOCULARS\HUDBINOCSLEFTPANELNEW.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCSLEFTPANELNEW.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -602,7 +602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\BINOCULARS\HUDBINOCSRIGHTPANEL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCSRIGHTPANEL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -642,7 +642,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\BINOCULARS\HUDBINOCSRIGHTPANELNEW.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCSRIGHTPANELNEW.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -712,7 +712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\BINOCULARS\HUDBINOCULARMARKER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCULARMARKER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -726,7 +726,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\HANDCONTROLS\QUICKMENULAUNCHER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HANDCONTROLS\QUICKMENULAUNCHER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -770,7 +770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "UI\HUD\HANDCONTROLS\WEAPONMENU.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HANDCONTROLS\WEAPONMENU.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

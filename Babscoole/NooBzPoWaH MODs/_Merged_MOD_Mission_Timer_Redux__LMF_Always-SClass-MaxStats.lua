@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {    -- This section is for the Settlement Timers
-                    ["MBIN_FILE_SOURCE"]  = "GCSETTLEMENTGLOBALS.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCSETTLEMENTGLOBALS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

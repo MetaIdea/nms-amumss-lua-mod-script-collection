@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\TERRAIN\WATER.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\TERRAIN\WATER.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

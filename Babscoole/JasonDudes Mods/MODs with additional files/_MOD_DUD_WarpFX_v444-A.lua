@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "TEXTURES\PLANETS\BIOMES\COMMON\INTERACTIVE\SPOREVENT.TEXTURE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\INTERACTIVE\SPOREVENT.TEXTURE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

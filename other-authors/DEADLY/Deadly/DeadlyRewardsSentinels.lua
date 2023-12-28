@@ -1,19 +1,41 @@
 AMMO_CHANCE = 0
 HEAL_CHANCE = 0
+CURIO_CHANCE = 0 -- 12
+CHART_CHANCE = 0 -- 3
 
 NANITES_MIN_MULTI = 1
 NANITES_MAX_MULTI = 3
 
 SALVAGED_GLASS_CHANCE = 3
 
-PUGNEUM_SENTINEL_CHANCE = 10
-PUGNEUM_SENTINEL_MIN = 20
-PUGNEUM_SENTINEL_MAX = 60
+-- spacecraft sentinel drop
+PUGNEUM_SENTINEL_CHANCE = 10 -- 100
+PUGNEUM_SENTINEL_MIN = 20    -- 20
+PUGNEUM_SENTINEL_MAX = 60    -- 69
 
-ATLANTIDEUM_SENTINEL_CHANCE = 10
-ATLANTIDEUM_SENTINEL_MIN = 24
-ATLANTIDEUM_SENTINEL_MAX = 64
+ATLANTIDEUM_SENTINEL_CHANCE = 25 -- 66
+ATLANTIDEUM_SENTINEL_MIN = 24    -- 24
+ATLANTIDEUM_SENTINEL_MAX = 64    -- 64
 
+NEW_PUGNEUM_LOOT = [[
+<Property value="GcRewardTableItem.xml">
+    <Property name="PercentageChance" value="25" />
+    <Property name="LabelID" value="" />
+    <Property name="Reward" value="GcRewardSpecificSubstance.xml">
+        <Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
+            <Property name="DefaultSubstanceType" value="None" />
+        </Property>
+        <Property name="ID" value="ROBOT1" />
+        <Property name="AmountMin" value="20" />
+        <Property name="AmountMax" value="120" />
+        <Property name="DisableMultiplier" value="False" />
+        <Property name="RewardAsBlobs" value="False" />
+        <Property name="UseFuelMultiplier" value="False" />
+        <Property name="Silent" value="False" />
+        <Property name="UseMissionBoardDifficultyScale" value="False" />
+    </Property>
+</Property>
+]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsSentinels.pak",
@@ -22,9 +44,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
-                --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
@@ -45,10 +64,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         --
-                        -- Pugneum
+                        -- Pugneum (spacecraft)
                         --
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "SENTINEL", "Small", "GcRewardTableItemList.xml", "RewardChoice", "GiveAll" },
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "SENTINEL", "Small", "GcRewardTableItemList.xml" },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "RewardChoice", "SelectSilent" }, -- GiveAll
                             }
@@ -110,6 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "SPIDER_LOOT",  "Currency", "Nanites" },
                                 { "Id", "CORRUPT_LOOT", "Currency", "Nanites" },
                                 { "Id", "POLICELOOT",   "Currency", "Nanites" },
+                                { "Id", "DE_SENT_LOOT", "Currency", "Nanites" },
                             },
                             ["SECTION_UP"]         = 1,
                             ["MATH_OPERATION"]     = "*",
@@ -144,6 +164,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", HEAL_CHANCE },
                             }
+                        },
+                        -- curio
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "DE_SENT_LOOT", "ID", "WAR_CURIO1" },
+                            ["SECTION_UP"]         = 1,
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "PercentageChance", CURIO_CHANCE }, -- 12
+                            }
+                        },
+                        -- hive map
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "DE_SENT_LOOT", "ID", "CHART_HIVE" },
+                            ["SECTION_UP"]         = 1,
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "PercentageChance", CHART_CHANCE }, -- 3
+                            }
+                        },
+                        -- to compensate NoSentinelsInstantLoot.pak
+                        {
+                            ["FOREACH_SKW_GROUP"]   = {
+                                { "Id", "DRONE_LOOT",   "List", "GcRewardTableItemList.xml" },
+                                { "Id", "QUAD_LOOT",    "List", "GcRewardTableItemList.xml" },
+                                { "Id", "MECH_LOOT",    "List", "GcRewardTableItemList.xml" },
+                                { "Id", "WALKER_LOOT",  "List", "GcRewardTableItemList.xml" },
+                                { "Id", "SPIDER_LOOT",  "List", "GcRewardTableItemList.xml" },
+                            },
+                            ["PRECEDING_KEY_WORDS"] = { "List" },
+                            ["ADD_OPTION"]          = "ADDafterLINE",
+                            ["ADD"]                 = NEW_PUGNEUM_LOOT
                         },
                     }
                 },

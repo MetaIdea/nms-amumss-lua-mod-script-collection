@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "PIPELINES\PIPELINEDEFERREDVR.BIN",
+                    ["MBIN_FILE_SOURCE"] = "PIPELINES\PIPELINEDEFERREDVR.BIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

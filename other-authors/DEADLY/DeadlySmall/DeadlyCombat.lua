@@ -145,7 +145,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
                                 { "BehaviourTable", "IGNORE", "Id", "SPACE" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
                             },
@@ -161,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
                                 { "BehaviourTable", "IGNORE", "Id", "SPACE" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
                             },
@@ -231,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "LaserHealthPoint",         0 },    -- disables laser usage
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "FleeBoost",       AI_PLANET_FLEE_BOOST },
@@ -256,7 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "EngineTable", "IGNORE", "Id", "PLANET_EASY" },
                                 { "EngineTable", "IGNORE", "Id", "PLANET_HARD" },
-                                { "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["MATH_OPERATION"]     = "*",
                             ["VALUE_CHANGE_TABLE"] = {

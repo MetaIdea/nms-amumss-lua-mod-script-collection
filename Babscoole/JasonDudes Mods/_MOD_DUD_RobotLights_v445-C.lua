@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\ROBOTS\CORRUPTEDDRONE.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\CORRUPTEDDRONE.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -117,7 +117,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = 
+                    ["MBIN_FILE_SOURCE"] = 
                     {
                         "MODELS\COMMON\ROBOTS\DRONE.SCENE.MBIN",
                         "MODELS\COMMON\ROBOTS\DRONEARMOURED.SCENE.MBIN",
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -282,7 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\ROBOTS\HOVERPET.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\HOVERPET.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -434,7 +434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = 
+                    ["MBIN_FILE_SOURCE"] = 
                     {
                         "MODELS\COMMON\ROBOTS\QUADRUPED.SCENE.MBIN",
                         "MODELS\COMMON\ROBOTS\QUADRUPEDPET.SCENE.MBIN",
@@ -564,7 +564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\ROBOTS\QUADRUPEDPET.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\QUADRUPEDPET.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -596,7 +596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = 
+                    ["MBIN_FILE_SOURCE"] = 
                     {
                         "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED.SCENE.MBIN",
                         "MODELS\COMMON\ROBOTS\SPIDER_SMALLQUAD.SCENE.MBIN",
@@ -662,7 +662,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\ROBOTS\WALKER.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\WALKER.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

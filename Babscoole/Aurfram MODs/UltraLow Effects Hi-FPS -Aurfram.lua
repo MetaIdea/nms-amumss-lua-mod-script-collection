@@ -339,7 +339,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "PIPELINES\PIPELINEDEFERRED.BIN",
+                    ["MBIN_FILE_SOURCE"] = "PIPELINES\PIPELINEDEFERRED.BIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

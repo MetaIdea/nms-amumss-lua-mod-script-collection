@@ -76,8 +76,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]   = "GCCAMERAGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"]  = 
+                    ["MBIN_FILE_SOURCE"] = "GCCAMERAGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] = 
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterUnarmedCam"},

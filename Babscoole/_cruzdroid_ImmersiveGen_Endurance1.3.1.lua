@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1329,7 +1329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ENVIRONMENT\SELECTABLEOBJECTTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ENVIRONMENT\SELECTABLEOBJECTTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1397,7 +1397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\PLACEMENTVALUES\SPAWNDENSITYLIST.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\PLACEMENTVALUES\SPAWNDENSITYLIST.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1487,7 +1487,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1511,7 +1511,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1561,7 +1561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULLSAFE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULLSAFE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1612,7 +1612,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  =
+                    ["MBIN_FILE_SOURCE"] =
                     {
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\BARREN.MBIN",
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FROZEN.MBIN",
@@ -1641,7 +1641,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROCSALVAGE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROCSALVAGE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1656,7 +1656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEBRIS\DEBRISWARRIOR\ENTITIES\DEBRIS_RARE.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEBRIS\DEBRISWARRIOR\ENTITIES\DEBRIS_RARE.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1668,7 +1668,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREBERRY.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREBERRY.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1681,7 +1681,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1694,7 +1694,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\IMPULSEBEANS.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\IMPULSEBEANS.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1707,7 +1707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\ALOEFLESH\FRUITGLOWMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\ALOEFLESH\FRUITGLOWMAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1719,7 +1719,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  =
+                    ["MBIN_FILE_SOURCE"] =
                     {
                         "MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREBERRY\FIREPLANTGLOWMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREBERRY\FIREPLANTMAT.MATERIAL.MBIN",
@@ -1735,7 +1735,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREFLIES\FIREFLIESMAT1.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREFLIES\FIREFLIESMAT1.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1747,7 +1747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\FROZENTUBERS\GLOWSCROLLMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\FROZENTUBERS\GLOWSCROLLMAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1759,7 +1759,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY\FRUITGLOWMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY\FRUITGLOWMAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1771,7 +1771,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  =
+                    ["MBIN_FILE_SOURCE"] =
                     {
                         "MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY\HEXABERRYFLOATMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY\HEXABERRYORBMAT.MATERIAL.MBIN",
@@ -1787,7 +1787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\IMPULSEBEANS\IMPULSEGLOWMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\IMPULSEBEANS\IMPULSEGLOWMAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1809,7 +1809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\IMPULSEBEANS\IMPULSESCROLLGLOWMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\IMPULSEBEANS\IMPULSESCROLLGLOWMAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1821,7 +1821,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\JADEPEAS\JADEPEASGLOWMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\JADEPEAS\JADEPEASGLOWMAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1833,7 +1833,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\JADEPEAS\JADEPEASMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\JADEPEAS\JADEPEASMAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1847,7 +1847,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\PULPYROOTS\COOKINGGLOWMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\PULPYROOTS\COOKINGGLOWMAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1859,7 +1859,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\COOKING\SWEETROOT\GLOWSCROLLMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\COOKING\SWEETROOT\GLOWSCROLLMAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1871,7 +1871,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  =
+                    ["MBIN_FILE_SOURCE"] =
                     {
                         "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\COMMODITYPLANT.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\COMMODITYPLANT1.SCENE.MBIN",
@@ -1888,7 +1888,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FUELPLANT1.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FUELPLANT1.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1901,7 +1901,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\TECHPLANT1.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\TECHPLANT1.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1914,7 +1914,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\BARRENPLANT\TOXICPLANT_PLANTUNLIT_MAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\BARRENPLANT\TOXICPLANT_PLANTUNLIT_MAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1936,7 +1936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 -- {
-                    -- ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\LUSHPLANT\STARBULB_MAT.MATERIAL.MBIN",
+                    -- ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\LUSHPLANT\STARBULB_MAT.MATERIAL.MBIN",
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
@@ -1949,7 +1949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- }
                 -- },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\SCORCHEDPLANT\FRUITYELLOW_MAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\SCORCHEDPLANT\FRUITYELLOW_MAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1962,7 +1962,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\SNOWPLANT\AIRCRYSTAL_MAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\SNOWPLANT\AIRCRYSTAL_MAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -1975,7 +1975,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\TOXICPLANT\PLANTUNLIT_MAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\BIOMESPECPLANTS\TOXICPLANT\PLANTUNLIT_MAT.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

@@ -48,19 +48,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "FrontendConfirmTimeMouseMultiplier", 1 },    -- 0.5
-                                { "FrontendConfirmTime",                0.36 }, -- 0.7
-                                { "FrontendConfirmTimeSlow",            0.36 }, -- 1.6
-                                { "RefinerPadStartTime",                0.36 }, -- 1
+                                { "FrontendConfirmTimeMouseMultiplier", 1 },   -- 0.5
+                                { "FrontendConfirmTime",                0.3 }, -- 0.7
+                                { "FrontendConfirmTimeSlow",            0.3 }, -- 1.6
+                                { "RefinerPadStartTime",                0.3 }, -- 1
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = { "DiscoveryHelperTimings" },
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  = {
-                                { "DiscoverPlanetMessageWait", 0.5 }, -- 1
-                                { "DiscoverPlanetMessageTime", 1.5 }, -- 7
-                                { "DiscoverPlanetTotalTime",   5 },   -- 10
+                                --{ "DiscoverPlanetMessageWait", 1 }, -- 1
+                                { "DiscoverPlanetMessageTime", 3 }, -- 7
+                                { "DiscoverPlanetTotalTime",   6 },   -- 10
                             }
                         },
                     }

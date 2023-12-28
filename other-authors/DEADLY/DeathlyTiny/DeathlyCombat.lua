@@ -30,7 +30,7 @@ SPACE_FLEE_URGENT_BOOST = 220
 PLANET_THRUST_FORCE = 125    -- 50
 PLANET_EASY_MAX_SPEED = 130  -- 80
 PLANET_HARD_MAX_SPEED = 155  -- 130
-RAID_BUILDING_MAX_SPEED = 80 -- 60
+--RAID_BUILDING_MAX_SPEED = 80 -- 60
 PLANET_FLEE_BOOST = 100
 PLANET_FLEE_URGENT_BOOST = 150
 
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
                                 { "BehaviourTable", "IGNORE", "Id", "SPACE" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
                             },
@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
                                 { "BehaviourTable", "IGNORE", "Id", "SPACE" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
                             },
@@ -202,7 +202,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "LaserHealthPoint",         0 },    -- disables laser usage
@@ -217,7 +217,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "FleeBoost",       PLANET_FLEE_BOOST },
@@ -228,7 +228,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "EngineTable", "IGNORE", "Id", "PLANET_EASY" },
                                 { "EngineTable", "IGNORE", "Id", "PLANET_HARD" },
-                                { "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "Force", PLANET_THRUST_FORCE }, -- 50
@@ -246,12 +246,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "MaxSpeed", PLANET_HARD_MAX_SPEED },
                             },
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "MaxSpeed", RAID_BUILDING_MAX_SPEED },
-                            },
-                        },
+                        -- {
+                        --     ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
+                        --     ["VALUE_CHANGE_TABLE"] = {
+                        --         { "MaxSpeed", RAID_BUILDING_MAX_SPEED },
+                        --     },
+                        -- },
                         -- squadron combat
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },

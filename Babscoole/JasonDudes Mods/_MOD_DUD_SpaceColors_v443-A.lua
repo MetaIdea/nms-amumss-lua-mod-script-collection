@@ -796,7 +796,7 @@ for i = 1, #DataTable do
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
-        ["MBIN_FILE_SOURCE"]  = FileSource,
+        ["MBIN_FILE_SOURCE"] = FileSource,
         ["EXML_CHANGE_TABLE"] =
         {
             {

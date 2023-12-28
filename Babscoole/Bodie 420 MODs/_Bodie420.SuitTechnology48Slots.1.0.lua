@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCESURVIVAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCESURVIVAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -199,7 +199,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -210,7 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\CONSUMABLEITEMTABLE.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"METADATA\REALITY\TABLES\CONSUMABLEITEMTABLE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -221,7 +221,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\DEFAULTREALITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"METADATA\REALITY\DEFAULTREALITY.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

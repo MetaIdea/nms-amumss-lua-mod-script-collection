@@ -95,7 +95,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -107,7 +107,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

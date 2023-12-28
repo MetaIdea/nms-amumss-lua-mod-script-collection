@@ -11,6 +11,7 @@ DeadlyFlying
 DeadlyPolice
 DeadlyRewardsAsteroid
 DeadlyRewardsPirate
+DeadlyRewardsTrader
 DeadlySpawnChances
 DeadlySpeedUp
 DeadlyTurrets
@@ -46,6 +47,7 @@ Changes
   * Improved Spawn Count
   * Improved Asteroids
   * Decreased Pirate Loot
+  * Decreased Trader Loot
   * No Planetary Raids
   * Speed Up UI
 
