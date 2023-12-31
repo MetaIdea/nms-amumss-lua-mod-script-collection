@@ -955,7 +955,7 @@ return [[
           <Property name="ActionStartFrame" value="0" />
           <Property name="ActionFrame" value="-1" />
           <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="AnimType" value="OneShot" />
+          <Property name="AnimType" value="OneShotBlendable" />
           <Property name="CreatureSize" value="AllSizes" />
           <Property name="Additive" value="False" />
           <Property name="Mirrored" value="False" />

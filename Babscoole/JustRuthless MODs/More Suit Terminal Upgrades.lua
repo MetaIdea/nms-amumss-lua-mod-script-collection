@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {-- makes it possible to interact with suit terminal more than once
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RepeatInteraction", "True"},
+                                {"RepeatInteraction",        "True"},
                                 {"ReseedAfterRewardSuccess", "True"},
                             },
                         },

@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "BACKPACK_TOGGLE"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShot"},
+                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {

@@ -65,7 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "RELIC_GATE_WARP"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShot"},
+                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {

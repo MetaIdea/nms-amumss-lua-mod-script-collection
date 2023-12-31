@@ -1479,7 +1479,7 @@ Products =
 		</Property>
 		<Property value="NMSString0x10.xml">
 			<Property name="Value" value="CHART_HIVE" />
-		</Property>		
+		</Property>
 ]]
 Substances = 
 [[
@@ -1902,7 +1902,7 @@ SuitTechSpecialist =
 		</Property>
 		<Property value="NMSString0x10.xml">
 			<Property name="Value" value="U_SENTSUIT" />
-		</Property>		
+		</Property>
 ]]
 ShipTechSpecialist = 
 [[

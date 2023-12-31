@@ -78,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "TRIGGERANIM"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShot"},
+                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {

@@ -14,7 +14,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "LOWALTITUDE"},
-                            ["VALUE_CHANGE_TABLE"] = {{"Filename", ""},}
+                            ["VALUE_CHANGE_TABLE"] = 
+                            {
+                                {"Filename", ""},
+                            }
                         },
                     }
                 },
@@ -23,15 +26,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_A"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_B"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Sails_C"},
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name", "_Sails_A"},
+                                {"Name", "_Sails_B"},
+                                {"Name", "_Sails_C"},
+                            },
                             ["REMOVE"] = "SECTION",
                         },
                     }

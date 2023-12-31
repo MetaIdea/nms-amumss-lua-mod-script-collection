@@ -1,4 +1,4 @@
-MINSCALE_MULTIPLIER = 1.1  --1.0
+-MINSCALE_MULTIPLIER = 1.1  --1.0
 MAXSCALE_MULTIPLIER = 1.5  --1.3
 DENSITY_MULTIPLIER = 0.67  --0.77
 LUSH_MINSCALE_MULTIPLIER = 1.0
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -35,9 +35,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -207,7 +207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -215,89 +215,89 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "0.8",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "0.8",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale",            "1.04"},
+                                -- {"MinScale", "1.04"},
                             -- }
                         -- },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "1",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "1",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",            "1.3"},
+                                -- {"MaxScale", "1.3"},
                             -- }
                         -- },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "0.7",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "0.7",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale",            "0.91"},
+                                -- {"MinScale", "0.91"},
                             -- }
                         -- },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "0.9",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "0.9",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",            "1.17"},
+                                -- {"MaxScale", "1.17"},
                             -- }
                         -- },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "1",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "1",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale",            "1.3"},
+                                -- {"MinScale", "1.3"},
                             -- }
                         -- },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "1.2",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "1.2",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",            "1.56"},
+                                -- {"MaxScale", "1.56"},
                             -- }
                         -- },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "0.6",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "0.6",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale",            "0.78"},
+                                -- {"MinScale", "0.78"},
                             -- }
                         -- },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "1.5",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "1.5",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",            "1.95"},
+                                -- {"MaxScale", "1.95"},
                             -- }
                         -- },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "1.9",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "1.9",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale",            "2.47"},
+                                -- {"MinScale", "2.47"},
                             -- }
                         -- },
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_MATCH"]        = "2.1",
+                            -- ["REPLACE_TYPE"] = "ALL",
+                            -- ["VALUE_MATCH"] = "2.1",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale",            "2.73"},
+                                -- {"MaxScale", "2.73"},
                             -- }
                         -- },
                     }
@@ -357,7 +357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["MATH_OPERATION"] = "*F:MaxScale",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale",MINSCALE_MULTIPLIER},
+                                -- {"MinScale", MINSCALE_MULTIPLIER},
                             -- }
                         -- },
                         -- {
@@ -365,16 +365,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["MATH_OPERATION"] = "*",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"FlatDensity",DENSITY_MULTIPLIER},
-                                -- {"SlopeDensity",DENSITY_MULTIPLIER},
-                                -- {"MaxScale",MAXSCALE_MULTIPLIER},
+                                -- {"FlatDensity",  DENSITY_MULTIPLIER},
+                                -- {"SlopeDensity", DENSITY_MULTIPLIER},
+                                -- {"MaxScale",     MAXSCALE_MULTIPLIER},
                             -- }
                         -- },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"Seed", "1"},
+                                -- {"Seed",         "1"},
                                 -- {"UseSeedValue", "True"},
                             -- }
                         -- },
@@ -506,7 +506,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["MATH_OPERATION"] = "*F:MaxScale",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale",MINSCALE_MULTIPLIER},
+                                -- {"MinScale", MINSCALE_MULTIPLIER},
                             -- }
                         -- },
                         -- {
@@ -514,16 +514,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["MATH_OPERATION"] = "*",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"FlatDensity",DENSITY_MULTIPLIER},
-                                -- {"SlopeDensity",DENSITY_MULTIPLIER},
-                                -- {"MaxScale",MAXSCALE_MULTIPLIER},
+                                -- {"FlatDensity",  DENSITY_MULTIPLIER},
+                                -- {"SlopeDensity", DENSITY_MULTIPLIER},
+                                -- {"MaxScale",     MAXSCALE_MULTIPLIER},
                             -- }
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "Seed"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"Seed", "1"},
+                                -- {"Seed",         "1"},
                                 -- {"UseSeedValue", "True"},
                             -- }
                         -- },
@@ -787,7 +787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -795,9 +795,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -813,7 +813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed", "1"},
+                                {"Seed",         "1"},
                                 {"UseSeedValue", "True"},
                             }
                         },
@@ -937,7 +937,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -945,9 +945,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1151,7 +1151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",LUSH_MINSCALE_MULTIPLIER},
+                                {"MinScale", LUSH_MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1159,9 +1159,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",LUSH_DENSITY_MULTIPLIER},
-                                {"SlopeDensity",LUSH_DENSITY_MULTIPLIER},
-                                {"MaxScale",LUSH_MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  LUSH_DENSITY_MULTIPLIER},
+                                {"SlopeDensity", LUSH_DENSITY_MULTIPLIER},
+                                {"MaxScale",     LUSH_MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1292,7 +1292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1300,9 +1300,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1433,7 +1433,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",LUSH_MINSCALE_MULTIPLIER},
+                                {"MinScale", LUSH_MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1441,9 +1441,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",LUSH_DENSITY_MULTIPLIER},
-                                {"SlopeDensity",LUSH_DENSITY_MULTIPLIER},
-                                {"MaxScale",LUSH_MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  LUSH_DENSITY_MULTIPLIER},
+                                {"SlopeDensity", LUSH_DENSITY_MULTIPLIER},
+                                {"MaxScale",     LUSH_MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1575,7 +1575,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1583,9 +1583,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1724,7 +1724,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1732,9 +1732,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1972,7 +1972,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1980,9 +1980,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -2111,7 +2111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -2119,9 +2119,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -2318,7 +2318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -2326,9 +2326,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -2525,7 +2525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -2533,9 +2533,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -2667,7 +2667,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",MINSCALE_MULTIPLIER},
+                                {"MinScale", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -2675,9 +2675,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FlatDensity",DENSITY_MULTIPLIER},
-                                {"SlopeDensity",DENSITY_MULTIPLIER},
-                                {"MaxScale",MAXSCALE_MULTIPLIER},
+                                {"FlatDensity",  DENSITY_MULTIPLIER},
+                                {"SlopeDensity", DENSITY_MULTIPLIER},
+                                {"MaxScale",     MAXSCALE_MULTIPLIER},
                             }
                         },
                         {

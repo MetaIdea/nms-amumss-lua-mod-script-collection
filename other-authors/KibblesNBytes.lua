@@ -584,14 +584,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_______KibblesNBytes.pak",
 ["MOD_AUTHOR"]    = "InstaKibs, WinderTP, Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.47",
 ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

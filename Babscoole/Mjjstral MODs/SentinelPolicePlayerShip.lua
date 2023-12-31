@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "POLICE"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShot"},
+                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {

@@ -138,7 +138,7 @@ local EmoteTable   = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHAN
 for i=#SEASON_TABLE, 1, -1 do
   local TITLE = "Unlock "..SEASON_TABLE[i][1].." Reward"
   local ANIM  = "Unlock"..SEASON_TABLE[i][3].."Reward"
-  local ICON  = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\"..SEASON_TABLE[i][2]
+  local ICON  = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/"..SEASON_TABLE[i][2]
 
   EmoteTable[#EmoteTable+1] =
     {
@@ -169,7 +169,7 @@ for i=#SEASON_TABLE, 1, -1 do
         {
             {"Anim",     ANIM},
             {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-            {"AnimType", "OneShot"},
+            {"AnimType", "OneShotBlendable"},
         }
     }
   AnimTable[#AnimTable+1] =
