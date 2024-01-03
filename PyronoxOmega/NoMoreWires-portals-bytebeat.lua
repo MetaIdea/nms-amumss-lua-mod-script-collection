@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "NoMoreWires-byte-teleport-"
-GameVersion = "4.30"
-ModVersion = "1.4"
+GameVersion = "4.47"
+ModVersion = "1.5"
 Description = "Makes short teleporter and byte-beat wires invisible"
 
 FileSource1 ={"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/CONDUIT_BYTEBEAT/BYTEWIRESCROLLEFFECTMAT.MATERIAL.MBIN"}

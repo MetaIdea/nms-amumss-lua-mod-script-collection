@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["REPLACE_TYPE"]       = "RAW",
+                            ["REPLACE_TYPE"] = "RAW",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {
@@ -55,19 +55,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
+                            -- ["REPLACE_TYPE"] = "ALL",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"IncreaseWanted",     "0"},
-                                -- {"RepairTime",         "0"},
-                                -- {"NameOverride",     "Walker Companion"},
+                                -- {"IncreaseWanted", "0"},
+                                -- {"RepairTime",     "0"},
+                                -- {"NameOverride",   "Walker Companion"},
                             -- }
                         -- },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureComponentData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Id",     "TREX"},
+                                {"Id", "TREX"},
                             }
                         },
                         {

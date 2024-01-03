@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "UniqueCompanion-Sandworm.pak",
+["MOD_FILENAME"]    = "UniqueCompanionRoboDog.pak",
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["NMS_VERSION"]     = "3.99",
@@ -14,23 +14,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] =
                     {
                         {
-                            [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM.SCENE.MBIN]],
-                            [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM_COMPANION.SCENE.MBIN]],
+                            [[MODELS/COMMON/ROBOTS/QUADRUPED.SCENE.MBIN]],
+                            [[MODELS/COMMON/ROBOTS/ROBOCOMPANION.SCENE.MBIN]],
                             "REMOVE"
                         },
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = { [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM_COMPANION.SCENE.MBIN]] },
+                    ["MBIN_FILE_SOURCE"] = { [[MODELS/COMMON/ROBOTS/ROBOCOMPANION.SCENE.MBIN]] },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["REPLACE_TYPE"]        = "RAW",
+                            ["REPLACE_TYPE"] = "RAW",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {
-                                    [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN]],
-                                    [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM_COMPANION.ENTITY.MBIN]],
+                                    [[MODELS\COMMON\ROBOTS\QUADRUPED\ENTITIES\QUADRUPED_MESH.ENTITY.MBIN]],
+                                    [[MODELS\COMMON\ROBOTS\QUADRUPED\ENTITIES\ROBOCOMPANION.ENTITY.MBIN]],
+                                },
+                                {
+                                    [[MODELS\COMMON\ROBOTS\QUADRUPED\ENTITIES\CRITICAL.ENTITY.MBIN]],
+                                    [[MODELS\COMMON\ROBOTS\QUADRUPED\ENTITIES\ROBOCOMPANION.ENTITY.MBIN]]
                                 },
                             }
                         }
@@ -40,25 +44,32 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] =
                     {
                         {
-                            [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN]],
-                            [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM_COMPANION.ENTITY.MBIN]],
+                            [[MODELS\COMMON\ROBOTS\QUADRUPED\ENTITIES\QUADRUPED_MESH.ENTITY.MBIN]],
+                            [[MODELS\COMMON\ROBOTS\QUADRUPED\ENTITIES\ROBOCOMPANION.ENTITY.MBIN]],
                             "REMOVE"
                         },
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = { [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM_COMPANION.ENTITY.MBIN]] },
+                    ["MBIN_FILE_SOURCE"] = { [[MODELS\COMMON\ROBOTS\QUADRUPED\ENTITIES\ROBOCOMPANION.ENTITY.MBIN]] },
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        -- {
-                            -- ["REPLACE_TYPE"]       = "ALL",
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- {"IncreaseWanted",     "0"},
-                                -- {"RepairTime",         "0"},
-                                -- {"NameOverride",     "Sandworm Companion"},
-                            -- }
-                        -- },
+                        {
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"IncreaseWanted", "0"},
+                                {"RepairTime",     "0"},
+                                {"NameOverride",   "Robo Dog Companion"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcCreatureComponentData.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "CAT"},
+                            }
+                        },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD"] =
@@ -214,7 +225,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Filename", [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM.SCENE.MBIN]]}
+                                {"Filename", [[MODELS/COMMON/ROBOTS/ROBOCOMPANION.SCENE.MBIN]]}
                             }
                         }
                     }

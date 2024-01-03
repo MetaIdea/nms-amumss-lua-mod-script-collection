@@ -30,21 +30,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="COMPUTER" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
         </Property>
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="FARMPROD6" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
         </Property>
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="EX_YELLOW" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Substance" />
           </Property>
           <Property name="Amount" value="50" />
