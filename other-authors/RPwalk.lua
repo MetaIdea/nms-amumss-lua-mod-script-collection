@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER	=
 {
   ["MOD_FILENAME"]	= "RPwalk.pak",
   ["MOD_DESCRIPTION"]	= "Realistic Walking for Immersion",
-  ["MOD_AUTHOR"]	= "earlyPlanet",
-  ["NMS_VERSION"]	= "4.47",
+  ["MOD_AUTHOR"]	= "INFPlanet",
+  ["NMS_VERSION"]	= "4.10",
   ["MODIFICATIONS"]	=	
 	{
 		{
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
 						{
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"BobAmount","0.13",},
+								{"BobAmount","0.11",},
 								{"BobFactor","0.35",}
 							}	
 						},

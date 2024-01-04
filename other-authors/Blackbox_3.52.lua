@@ -34,7 +34,9 @@ ICON =
       <Property name="TellPlayerIfFreighterObjectUsed" value="False" />
       <Property name="FreighterObjectAlreadyUsedLocID" value="" />
       <Property name="AllowedToMerge" value="False" />
+      <Property name="MarkerActiveWithNodeInactive" value="False" />
       <Property name="MissionSurveyId" value="" />
+      <Property name="MinDisplayDistanceOverride" value="-1" />
     </Property>
 ]]
 
