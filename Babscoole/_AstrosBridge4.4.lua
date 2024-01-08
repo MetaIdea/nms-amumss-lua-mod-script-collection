@@ -2,13 +2,13 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_AstrosBridge4.04.pak",
+["MOD_FILENAME"]    = "_AstrosBridge4.4.pak",
 ["MOD_AUTHOR"]      = "AstronautInOrbit",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.05",
+["NMS_VERSION"]     = "4.48",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   = {},
-["ADD_FILES"]       =
+["ADD_FILES"] =
     {
         {
             ["FILE_DESTINATION"] = "MODELS\BIOROOM_FRAME.SCENE.EXML",
@@ -11148,7 +11148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\MAPSHOP\MAPS_MAT.MATERIAL.MBIN.MATERIAL.MBIN" />
+          <Property name="Value" value="MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\MAPSHOP\MAPS_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -41403,6 +41403,30 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="cockpita" />
+      <Property name="NameHash" value="2443808107" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="-2" />
+        <Property name="TransZ" value="-9" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="180" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="ODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
