@@ -23,6 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Weird",                      "0.05"}, --original 0
                                 {"HalfWeird",                  "0.05"}, --original 0
                                 {"EnabledWhenPlanetHasNoNPCs", "True"}, --original False
+                                {"NumOverridesToGenerate",     "1"},    --original 0
                             }
                         },
                     }

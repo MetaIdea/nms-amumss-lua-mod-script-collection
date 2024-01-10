@@ -1,8 +1,8 @@
 Author = "PyronoxOmega"
 ModName = "Ultimate_Combat"
-GameVersion = "4.30"
-ModVersion = "1.5"
-Description = "Weapons overhaull"
+GameVersion = "4.47"
+ModVersion = "1.7"
+Description = "Weapons overhaul"
 Filesource = "METADATA/REALITY/DEFAULTREALITY.MBIN"
 Damage = "28360"
 NMS_MOD_DEFINITION_CONTAINER = {

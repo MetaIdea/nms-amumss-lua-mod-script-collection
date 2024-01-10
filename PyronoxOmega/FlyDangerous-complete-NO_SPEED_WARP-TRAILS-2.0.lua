@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "FlyDangerous_NOSPEED_WARP_TRAIL"
 GameVersion = "4.47"
-ModVersion = "1.7"
+ModVersion = "2.0"
 Description = "Flight Overhaul"
 
 FileSource1 = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 1500}, --500
 								{"BoostMaxSpeed", 3600}, --1200
 								{"BoostFalloff", 0.0}, --0.7
-								{"TurnStrength", 1.5}, --1 Determines how fast ship will turn
+								{"TurnStrength", 2.5}, --1 Determines how fast ship will turn (1.5)
 								{"ReverseBrake", 1}, --0.5
 								{"OverspeedBrake", 5}, --3
 								{"TurnBrakeMin", 0.8}, --1
@@ -214,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 300}, --100
 								{"BoostMaxSpeed", 465}, --155
 								{"BoostFalloff", 0.0}, --0.7
-								{"TurnStrength", 1.5}, --1 Determines how fast ship will turn
+								{"TurnStrength", 2.5}, --1 Determines how fast ship will turn
 								{"ReverseBrake", 2}, --1
 								{"OverspeedBrake", 5}, --3
 								{"TurnBrakeMin", 1.8}, --2
@@ -232,7 +232,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 1500}, --100
 								{"BoostMaxSpeed", 3600}, --155
 								{"BoostFalloff", 0.0}, --0.7
-								{"TurnStrength", 1.5}, --1 Determines how fast ship will turn
+								{"TurnStrength", 2.5}, --1 Determines how fast ship will turn
 								{"ReverseBrake", 1}, --0.5
 								{"OverspeedBrake", 5}, --3
 								{"TurnBrakeMin", 0.8}, --1
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 300}, --100
 								{"BoostMaxSpeed", 465}, --155
 								{"BoostFalloff", 0.0}, --0.7
-								{"TurnStrength", 1.5}, --1 Determines how fast ship will turn
+								{"TurnStrength", 2.5}, --1 Determines how fast ship will turn
 								{"ReverseBrake", 1}, --0.5
 								{"OverspeedBrake", 5}, --3
 								{"TurnBrakeMin", 0.8}, --1
@@ -266,6 +266,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"ShipPlanetBrakeMaxSpeed", 999999} --90
 							}
 						},
+						--control light --
 						{
 							["PRECEDING_KEY_WORDS"] = {"ControlLight", "SpaceEngine"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -277,7 +278,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 1500}, --500
 								{"BoostMaxSpeed", 3900}, --1300
 								{"BoostFalloff", 0.0}, --0.7
-								{"TurnStrength", 1.2}, --1.1 Determines how fast ship will turn
+								{"TurnStrength", 2.2}, --1.1 Determines how fast ship will turn
 								{"ReverseBrake", 2}, --0.5
 								{"OverspeedBrake", 5}, --3
 								{"TurnBrakeMin", 0.8}, --1
@@ -295,7 +296,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 60}, --20
 								{"BoostMaxSpeed", 450}, --185
 								{"BoostFalloff", 0}, --0.7
-								{"TurnStrength", 1.75}, --1.65 Determines how fast ship will turn
+								{"TurnStrength", 2.75}, --1.65 Determines how fast ship will turn
 								{"ReverseBrake", 2}, --1
 								{"OverspeedBrake", 5}, --3
 								{"TurnBrakeMin", 2.8}, --3
@@ -313,7 +314,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 1600}, --500
 								{"BoostMaxSpeed", 3640}, --1300
 								{"BoostFalloff", 0}, --0.7
-								{"TurnStrength", 1.65}, --1.5 Determines how fast ship will turn
+								{"TurnStrength", 2.65}, --1.5 Determines how fast ship will turn
 								{"ReverseBrake", 1}, --0.5
 								{"OverspeedBrake", 4.5}, --3
 								{"TurnBrakeMin", 0.8}, --1
@@ -331,13 +332,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 300}, --100
 								{"BoostMaxSpeed", 465}, --155
 								{"BoostFalloff", 0}, --0.7
-								{"TurnStrength", 1.65}, --1.5 Determines how fast ship will turn
+								{"TurnStrength", 2.65}, --1.5 Determines how fast ship will turn
 								{"ReverseBrake", 1}, --0.5
 								{"OverspeedBrake", 5}, --3
 								{"TurnBrakeMin", 0.8}, --1
 								{"TurnBrakeMax", 6} --4
 							}
 						},
+						
+						--control heavy --
+						
 						{
 							["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "SpaceEngine"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -367,7 +371,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 60}, --20
 								{"BoostMaxSpeed", 555}, --185
 								{"BoostFalloff", 0}, --0.7
-								{"TurnStrength", 1.4}, --0.7 Determines how fast ship will turn
+								{"TurnStrength", 2.4}, --0.7 Determines how fast ship will turn
 								{"ReverseBrake", 2}, --1
 								{"OverspeedBrake", 6}, --3
 								{"TurnBrakeMin", 0.8}, --1
@@ -385,7 +389,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 1500}, --500
 								{"BoostMaxSpeed", 4020}, --1100
 								{"BoostFalloff", 0}, --0.7
-								{"TurnStrength", 2}, --1 Determines how fast ship will turn
+								{"TurnStrength", 4}, --1 Determines how fast ship will turn
 								{"ReverseBrake", 1}, --0.5
 								{"OverspeedBrake", 6}, --3
 								{"TurnBrakeMin", 0.8}, --1
@@ -403,13 +407,89 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BoostThrustForce", 150}, --500
 								{"BoostMaxSpeed", 3}, --120
 								{"BoostFalloff", 0}, --0.7
-								{"TurnStrength", 2}, --1 Determines how fast ship will turn
+								{"TurnStrength", 4}, --1 Determines how fast ship will turn
 								{"ReverseBrake", 1}, --0.5
 								{"OverspeedBrake", 6}, --3
 								{"TurnBrakeMin", 0.8}, --1
 								{"TurnBrakeMax", 8} --4
 							}
 						},
+						
+						--control hover --
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlHover", "SpaceEngine"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"ThrustForce", 120}, --40
+								{"MaxSpeed", 540}, --180
+								{"MinSpeed", 0.01}, --1
+								{"Falloff", 0.05},							--0.7
+								{"BoostThrustForce", 1500}, --500
+								{"BoostMaxSpeed", 3300}, --1100
+								{"BoostFalloff", 0.0}, --0.7
+								{"TurnStrength", 10}, --0.6 Determines how fast ship will turn
+						     	{"ReverseBrake", 1}, --0.5
+								{"OverspeedBrake", 5}, --3
+								{"TurnBrakeMin", 0.8}, --1
+								{"TurnBrakeMax", 6} --3
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlHover", "PlanetEngine"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"ThrustForce", 60}, --20
+								{"MaxSpeed", 390}, --130
+								{"MinSpeed", 0.01}, --20
+								{"Falloff", 0.05},							--0.5
+								{"BoostThrustForce", 600}, --400
+								{"BoostMaxSpeed", 555}, --185
+								{"BoostFalloff", 0}, --0.7
+								{"TurnStrength", 10}, --0.7 Determines how fast ship will turn
+								{"ReverseBrake", 2}, --1
+								{"OverspeedBrake", 6}, --3
+								{"TurnBrakeMin", 0.8}, --1
+								{"TurnBrakeMax", 4} --2
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlHover", "CombatEngine"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"ThrustForce", 120}, --40
+								{"MaxSpeed", 190}, --130
+								{"MinSpeed", 0.01}, --50
+								--{"Falloff", 0.05},							--0.7
+								{"BoostThrustForce", 1500}, --500
+								{"BoostMaxSpeed", 4020}, --1100
+								{"BoostFalloff", 0}, --0.7
+								{"TurnStrength", 4}, --1 Determines how fast ship will turn
+								{"ReverseBrake", 1}, --0.5
+								{"OverspeedBrake", 6}, --3
+								{"TurnBrakeMin", 0.8}, --1
+								{"TurnBrakeMax", 8} --4
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlHover", "AtmosCombatEngine"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"ThrustForce", 120}, --40
+								{"MaxSpeed", 240}, --80
+								{"MinSpeed", 0.01}, --50
+								--{"Falloff", 0.05},							--0.7
+								{"BoostThrustForce", 150}, --500
+								{"BoostMaxSpeed", 3}, --120
+								{"BoostFalloff", 0}, --0.7
+								{"TurnStrength", 4}, --1 Determines how fast ship will turn
+								{"ReverseBrake", 1}, --0.5
+								{"OverspeedBrake", 6}, --3
+								{"TurnBrakeMin", 0.8}, --1
+								{"TurnBrakeMax", 8} --4
+							}
+						},
+						
+						--Class Bonuses--
 						{
 							["PRECEDING_KEY_WORDS"] = {"ControlBonusC"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
