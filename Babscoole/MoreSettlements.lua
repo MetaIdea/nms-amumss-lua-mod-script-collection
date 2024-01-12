@@ -16,12 +16,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Settlement_Hub", "GcBuildingDefinitionData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Dead",                       "0.05"}, --original 0
-                                {"Low",                        "0.15"}, --original 0.05
-                                {"Mid",                        "0.15"}, --original 0.05
-                                {"Full",                       "0.15"}, --original 0.05
-                                {"Weird",                      "0.05"}, --original 0
-                                {"HalfWeird",                  "0.05"}, --original 0
+                                {"Dead",                       "0.2"},  --original 0
+                                {"Low",                        "0.2"},  --original 0.05
+                                {"Mid",                        "0.2"},  --original 0.05
+                                {"Full",                       "0.2"},  --original 0.05
+                                {"Weird",                      "0.2"},  --original 0
+                                {"HalfWeird",                  "0.2"},  --original 0
                                 {"EnabledWhenPlanetHasNoNPCs", "True"}, --original False
                                 {"NumOverridesToGenerate",     "1"},    --original 0
                             }
