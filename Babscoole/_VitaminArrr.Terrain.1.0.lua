@@ -4569,7 +4569,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                -- {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -5484,7 +5483,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                -- {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0.95"},
                             }
                         },
@@ -5524,7 +5522,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                -- {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0.95"},
                             }
                         },
@@ -5899,13 +5896,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n3", "-100"},
                             }
                         },
-                        -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Large"},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- {"NoiseGridType", "SuperPrimitiveRandom"},
-                            -- }
-                        -- },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Large", "SuperFormula1"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -6178,7 +6168,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                -- {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0.95"},
                             }
                         },
@@ -6553,13 +6542,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n3", "-100"},
                             }
                         },
-                        -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Large"},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- {"NoiseGridType", "SuperPrimitiveRandom"},
-                            -- }
-                        -- },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Large", "SuperFormula1"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -6831,7 +6813,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                -- {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0.95"},
                             }
                         },
@@ -8501,11 +8482,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PerturbFeatures", "0"},
-                                -- {"RemapFromMax",    "1"},
                                 {"Height",          "400"},
                                 {"Width",           "2000"},
                                 {"RegionRatio",     "0.9"},
-                                -- {"RegionScale",     "1"},
                                 {"RegionGain",      "1"},
                             }
                         },
@@ -11812,7 +11791,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                -- {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -12734,7 +12712,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                -- {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0.95"},
                             }
                         },
@@ -12774,7 +12751,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                -- {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0.95"},
                             }
                         },
@@ -13157,13 +13133,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n3", "-100"},
                             }
                         },
-                        -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Large"},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- {"NoiseGridType", "SuperPrimitiveRandom"},
-                            -- }
-                        -- },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Large", "SuperFormula1"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -13435,7 +13404,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                -- {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0.95"},
                             }
                         },
