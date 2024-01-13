@@ -863,7 +863,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "TOGGLE_SHIELD"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {
@@ -976,7 +975,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AnimationName",       "TOGGLE_SHIELD"},
                                 {"Filename",            "TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SUIT.PROTECTION.DDS"},
                                 {"MoveToCancel",        "True"},
-                                {"AvailableUnderwater", "False"},
                                 {"RidingAnimationName", ""},
                             }
                         },

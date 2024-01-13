@@ -78,7 +78,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "TRIGGERANIM"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {
@@ -191,7 +190,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AnimationName",       "TRIGGERANIM"},
                                 {"Filename",            "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS"},
                                 {"MoveToCancel",        "True"},
-                                {"AvailableUnderwater", "False"},
                                 {"RidingAnimationName", "TRIGGERANIM"},
                             }
                         },

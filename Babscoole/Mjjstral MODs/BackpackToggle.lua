@@ -66,7 +66,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "BACKPACK_TOGGLE"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {
@@ -133,7 +132,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AnimationName",       "BACKPACK_TOGGLE"},
                                 {"Filename",            "TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS"},
                                 {"MoveToCancel",        "True"},
-                                {"AvailableUnderwater", "False"},
                                 {"RidingAnimationName", "BACKPACK_TOGGLE"},
                             }
                         },

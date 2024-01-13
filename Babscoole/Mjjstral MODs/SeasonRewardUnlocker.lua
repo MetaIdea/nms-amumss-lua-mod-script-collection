@@ -169,7 +169,6 @@ for i=#SEASON_TABLE, 1, -1 do
         {
             {"Anim",     ANIM},
             {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-            {"AnimType", "OneShotBlendable"},
         }
     }
   AnimTable[#AnimTable+1] =

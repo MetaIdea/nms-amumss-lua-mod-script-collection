@@ -65,7 +65,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "RELIC_GATE_WARP"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {
@@ -100,7 +99,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AnimationName",       "RELIC_GATE_WARP"},
                                 {"Filename",            "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS"},
                                 {"MoveToCancel",        "True"},
-                                {"AvailableUnderwater", "False"},
                                 {"RidingAnimationName", "RELIC_GATE_WARP"},
                             }
                         },

@@ -58,7 +58,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "POLICE"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {
@@ -142,7 +141,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AnimationName",       "POLICE"},
                                 {"Filename",            "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS"},
                                 {"MoveToCancel",        "True"},
-                                {"AvailableUnderwater", "False"},
                                 {"RidingAnimationName", "POLICE"},
                             }
                         },

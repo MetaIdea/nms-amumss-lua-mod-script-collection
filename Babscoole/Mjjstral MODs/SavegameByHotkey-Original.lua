@@ -24,7 +24,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Anim",     "SAVEGAME"},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                                {"AnimType", "OneShotBlendable"},
                             }
                         },
                         {
@@ -209,7 +208,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AnimationName",       "SAVEGAME"},
                                 {"Filename",            "TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS"},
                                 {"MoveToCancel",        "True"},
-                                {"AvailableUnderwater", "False"},
                                 {"RidingAnimationName", "SAVEGAME"},
                             }
                         },
@@ -249,4 +247,3 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
-
