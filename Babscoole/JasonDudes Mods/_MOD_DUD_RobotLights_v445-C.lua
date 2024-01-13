@@ -235,18 +235,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Value", "10000"}
                             },
                         },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "spotLight2", "Name", "VOLUMETRIC"},
-                                {"Name", "spotLight3", "Name", "VOLUMETRIC"},
-                                {"Name", "spotLight1", "Name", "VOLUMETRIC"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "0.500000"}
-                            },
-                        },
                     }
                 },
                 {
@@ -396,18 +384,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name", "spotLight4", "Name", "VOLUMETRIC"},
-                                {"Name", "spotLight5", "Name", "VOLUMETRIC"},
-                                {"Name", "spotLight6", "Name", "VOLUMETRIC"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "0.500000"}
-                            },
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
                                 {"Name", "Attack"},
                                 {"Name", "Investigate"},
                             },
@@ -516,18 +492,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {
-                                {"Name", "spotLight1", "Name", "FOV"},
-                                {"Name", "spotLight3", "Name", "FOV"},
-                                {"Name", "spotLight2", "Name", "FOV"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "50.000000"}
-                            },
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
                                 {"Name", "spotLight1", "Name", "FALLOFF_RATE"},
                                 {"Name", "spotLight3", "Name", "FALLOFF_RATE"},
                                 {"Name", "spotLight2", "Name", "FALLOFF_RATE"},
@@ -547,18 +511,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "10000"}
-                            },
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "spotLight1", "Name", "VOLUMETRIC"},
-                                {"Name", "spotLight3", "Name", "VOLUMETRIC"},
-                                {"Name", "spotLight2", "Name", "VOLUMETRIC"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "0.500000"}
                             },
                         },
                     }

@@ -305,15 +305,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AmountMax", "3"},
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_S2_S4M3"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml", "GcRewardTableItem.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"AmountMin", "5"},
-                                {"AmountMax", "5"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "RS_S2_S4M3"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml", "GcRewardTableItem.xml"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"AmountMin", "5"},
+                                -- {"AmountMax", "5"},
+                            -- }
+                        -- },
                         {
                             ["FOREACH_SKW_GROUP"] =
                             {

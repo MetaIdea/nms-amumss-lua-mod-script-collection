@@ -1566,7 +1566,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",              "5"},
                                 {"SharpToRoundFeatures", "0"},
                                 {"AmplifyFeatures",      "0"},
                                 {"PerturbFeatures",      "0"},
@@ -1581,13 +1580,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Octaves",         "8"},
-                                {"AmplifyFeatures", "0"},
                                 {"PerturbFeatures", "0"},
-                                {"RidgeErosion",    "0"},
                                 {"SlopeErosion",    "0"},
                                 {"NoiseVoxelType",  "RandomRock"},
                                 {"Width",           "350"},
-                                {"RegionScale",     "2"},
                             }
                         },
                         {
@@ -1628,7 +1624,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RidgeErosion",         "0"},
                                 {"Width",                "2500"},
                                 {"RegionRatio",          "0.2"},
-                                {"RegionScale",          "1"},
                             }
                         },
                         {
@@ -1915,22 +1910,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Blobs"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Active",                  "False"},
-                                {"FeatureType",             "Tube"},
-                                {"Width",                   "10"},
-                                {"Height",                  "2.5"},
-                                {"Octaves",                 "3"},
-                                {"RegionSize",              "100"},
-                                {"HeightVarianceAmplitude", "0"},
-                                {"HeightVarianceFrequency", "0"},
-                                {"HeightOffset",            "0"},
-                                {"OffsetType",              "Base"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Caves", "Mouth"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2046,7 +2025,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaximumLOD",      "3"},
-                                {"Hemisphere",      "False"},
                                 {"NoiseGridType",   "Puck"},
                                 {"MinWidth",        "10"},
                                 {"MaxWidth",        "30"},
@@ -2324,22 +2302,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Width",   "9"},
                                 {"Height",  "4"},
                                 {"Octaves", "1"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Blobs"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Active",                  "False"},
-                                {"FeatureType",             "Tube"},
-                                {"Width",                   "10"},
-                                {"Height",                  "2.5"},
-                                {"Octaves",                 "3"},
-                                {"RegionSize",              "100"},
-                                {"HeightVarianceAmplitude", "0"},
-                                {"HeightVarianceFrequency", "0"},
-                                {"HeightOffset",            "0"},
-                                {"OffsetType",              "Base"},
                             }
                         },
                         {
@@ -2796,7 +2758,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HeightVarianceAmplitude", "0"},
                                 {"HeightVarianceFrequency", "0"},
                                 {"HeightOffset",            "0"},
-                                {"OffsetType",              "Base"},
                                 {"SmoothRadius",            "0"},
                             }
                         },
@@ -3283,7 +3244,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SeaLevel",                "0"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -3302,9 +3262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Mountain"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",              "5"},
                                 {"SharpToRoundFeatures", "-1"},
-                                {"PerturbFeatures",      "0.1"},
                                 {"Active",               "True"},
                                 {"NoiseVoxelType",       "RandomRock"},
                             }
@@ -3704,7 +3662,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SeaLevel",                "0"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -3724,9 +3681,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Mountain"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",              "5"},
                                 {"SharpToRoundFeatures", "-1"},
-                                {"PerturbFeatures",      "0.1"},
                                 {"Active",               "True"},
                                 {"NoiseVoxelType",       "Base"},
                                 {"OffsetType",           "Base"},
@@ -3814,7 +3769,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NoiseVoxelType",  "Base"},
-                                {"NoiseGridType",   "SuperFormula_08"},
                                 {"MinHeightOffset", "-32"},
                                 {"HeightOffset",    "-128"},
                                 {"RegionRatio",     "0.3"},
@@ -4168,7 +4122,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Octaves",              "8"},
                                 {"SharpToRoundFeatures", "-1"},
-                                {"PerturbFeatures",      "-0.1"},
                                 {"Active",               "True"},
                                 {"NoiseVoxelType",       "RandomRock"},
                                 {"OffsetType",           "All"},
@@ -4288,19 +4241,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",          "False"},
-                                {"Subtract",        "False"},
-                                {"NoiseVoxelType",  "Base"},
-                                {"NoiseGridType",   "Torus"},
-                                {"MinWidth",        "200"},
-                                {"MaxWidth",        "200"},
-                                {"MinHeight",       "100"},
-                                {"MaxHeight",       "100"},
-                                {"HeightOffset",    "0"},
-                                {"RegionRatio",     "0.01"},
-                                {"RegionScale",     "5"},
-                                {"VaryYaw",         "90"},
-                                {"RandomPrimitive", "0"},
+                                {"Active",         "False"},
+                                {"Subtract",       "False"},
+                                {"NoiseVoxelType", "Base"},
+                                {"NoiseGridType",  "Torus"},
+                                {"MinWidth",       "200"},
+                                {"MaxWidth",       "200"},
+                                {"MinHeight",      "100"},
+                                {"MaxHeight",      "100"},
+                                {"HeightOffset",   "0"},
+                                {"RegionRatio",    "0.01"},
+                                {"RegionScale",    "5"},
+                                {"VaryYaw",        "90"},
                             }
                         },
                         {
@@ -4649,7 +4601,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Octaves",              "8"},
                                 {"SharpToRoundFeatures", "-1"},
-                                {"PerturbFeatures",      "-0.1"},
                                 {"Active",               "True"},
                                 {"NoiseVoxelType",       "Base"},
                                 {"OffsetType",           "All"},
@@ -4781,13 +4732,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RegionRatio",    "0.01"},
                                 {"RegionScale",    "5"},
                                 {"VaryYaw",        "90"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Large", "TurbulenceNoiseLayer"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Active", "False"},
                             }
                         },
                         {
@@ -5107,7 +5051,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Octaves",         "5"},
-                                {"PerturbFeatures", "0.201835"},
                                 {"Height",          "32"},
                                 {"Width",           "800"},
                             }
@@ -5925,7 +5868,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Hemisphere",      "False"},
-                                {"NoiseVoxelType",  "Base"},
                                 {"MinWidth",        "100"},
                                 {"MaxWidth",        "100"},
                                 {"MinHeight",       "10"},
@@ -5935,8 +5877,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HeightOffset",    "0"},
                                 {"OffsetType",      "Base"},
                                 {"RegionRatio",     "1"},
-                                {"VaryYaw",         "0"},
-                                {"RandomPrimitive", "0"},
                             }
                         },
                         {
@@ -7420,7 +7360,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxHeight",      "100"},
                                 {"HeightOffset",   "-15"},
                                 {"OffsetType",     "All"},
-                                {"RegionRatio",    "0.005"},
                             }
                         },
                         {
@@ -7882,7 +7821,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxHeight",      "100"},
                                 {"HeightOffset",   "-15"},
                                 {"OffsetType",     "All"},
-                                {"RegionRatio",    "0.005"},
                             }
                         },
                         {
@@ -9110,7 +9048,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -9127,7 +9064,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -9153,7 +9089,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -9260,7 +9195,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -9277,7 +9211,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -9303,7 +9236,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -9410,7 +9342,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -9427,7 +9358,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -9560,7 +9490,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -9577,7 +9506,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10010,7 +9938,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10027,7 +9954,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10054,7 +9980,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PerturbFeatures", "0.2"},
-                                {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
                         },
@@ -10160,7 +10085,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10177,7 +10101,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10204,7 +10127,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PerturbFeatures", "0.2"},
-                                {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
                         },
@@ -10310,7 +10232,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10327,7 +10248,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10460,7 +10380,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10477,7 +10396,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Rock"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10610,7 +10528,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10619,8 +10536,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Mountain"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AltitudeErosion", "0.25"},
-                                {"Lacunarity",      "3"},
+                                {"Lacunarity", "3"},
                             }
                         },
                         {
@@ -10654,7 +10570,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PerturbFeatures", "0.2"},
-                                {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
                         },
@@ -10760,7 +10675,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Hill"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PerturbFeatures", "0.2"},
                                 {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
@@ -10769,8 +10683,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Mountain"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AltitudeErosion", "0.25"},
-                                {"Lacunarity",      "3"},
+                                {"Lacunarity", "3"},
                             }
                         },
                         {
@@ -10804,7 +10717,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PerturbFeatures", "0.2"},
-                                {"AltitudeErosion", "0.25"},
                                 {"Lacunarity",      "3"},
                             }
                         },

@@ -19,9 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HoverPopScaleModification", "0.2"},
-                                {"HoverPopAnimDuration",      "0.2"},
-                                {"CreatureDistanceAlpha",     "0"},
+                                {"CreatureDistanceAlpha", "0"},
                             }
                         },
                     }

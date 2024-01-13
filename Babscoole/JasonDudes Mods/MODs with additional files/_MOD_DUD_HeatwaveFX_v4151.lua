@@ -40,14 +40,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection", "Vector3f.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"x", "0"},
-                                {"y", "0.04"},
-                            }
-                        },
-                        {
                             ["SPECIAL_KEY_WORDS"] = {"ScaleRange", "Vector3f.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {

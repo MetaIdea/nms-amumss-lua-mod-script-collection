@@ -100,7 +100,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"x", "0"}, -- Original "0.01"
                                 {"y", "0.3"}, -- Original "1"
-                                {"z", "0"}, -- Original "0"
                             }
                         },
                         {

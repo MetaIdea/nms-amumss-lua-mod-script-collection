@@ -18,7 +18,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinimumCircleTimeBeforeLanding",     "20"},
-                                {"FillUpOutposts",                     "False"},
                                 {"TradingPostTraderRequestTime",       "60"},
                                 {"TurretOriginOffset",                 "0"},
                                 {"SpaceStationTraderRequestTime",      "30"},
@@ -33,14 +32,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxDifficultySpaceCombatTurnExtra",  "0"},
                                 {"MaxDifficultySpaceCombatSpeedExtra", "0"},
                                 {"TurretOriginOffset",                 "15"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Colour.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"A", "0.02"},
                             },
                         },
                     }
@@ -295,7 +286,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FleeBoost",                    "40"},
                                 {"FleeRepositionAngleMin",       "45"},
                                 {"FleeRepositionAngleMax",       "90"},
-                                {"FleeUrgentBoost",              "1.5"},
                                 {"FleeRepositionUrgentAngleMin", "90"},
                             },
                         },
@@ -322,7 +312,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FleeBoost",                    "80"},
                                 {"FleeRepositionAngleMin",       "45"},
                                 {"FleeRepositionAngleMax",       "90"},
-                                {"FleeUrgentBoost",              "1.5"},
                                 {"FleeRepositionUrgentAngleMin", "90"},
                                 {"FleeMinTime",                  "1.5"},
                             },
@@ -522,18 +511,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "COP_FREIGHTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HitWidth",       "50"},
-                                {"PulseAmplitude", "0.1"},
-                                {"DefaultDamage",  "500"}
+                                {"HitWidth",      "50"},
+                                {"DefaultDamage", "500"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HitWidth",       "50"},
-                                {"PulseAmplitude", "0.1"},
-                                {"DefaultDamage",  "500"}
+                                {"HitWidth",      "50"},
+                                {"DefaultDamage", "500"}
                             }
                         },
                     }
@@ -677,19 +664,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TurretRange",                      "2000"},
-                                {"TurretLaserShootTime",             "3"},
-                                {"TurretLaserMoveSpeed",             "50"},
-                                {"TurretLaserActiveTime",            "2"},
                                 {"TurretShootPauseTime",             "2"},
                                 {"TurretBurstCount",                 "20"},
                                 {"TurretBurstTime",                  "0.2"},
-                                {"TurretMaxDownAngle",               "10"},
                                 {"TurretMaxYawTurnSpeedDegPerSec",   "180"},
                                 {"TurretMaxPitchTurnSpeedDegPerSec", "90"},
                                 {"TurretAngle",                      "360"},
                                 {"TurretDispersionAngle",            "0"},
-                                {"Health",                           "3000"},
                             },
                         },
                     }
@@ -701,19 +682,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TurretRange",                      "2000"},
-                                {"TurretLaserActiveTime",            "2"},
                                 {"TurretLaserChargeTime",            "0"},
                                 {"TurretLaserShootTime",             "2"},
                                 {"TurretLaserMoveSpeed",             "5"},
                                 {"TurretShootPauseTime",             "2"},
-                                {"TurretBurstTime",                  "0.15"},
-                                {"TurretMaxDownAngle",               "10"},
                                 {"TurretMaxYawTurnSpeedDegPerSec",   "180"},
                                 {"TurretMaxPitchTurnSpeedDegPerSec", "90"},
                                 {"TurretAngle",                      "360"},
                                 {"TurretDispersionAngle",            "0"},
-                                {"Health",                           "3000"},
                             },
                         },
                     }

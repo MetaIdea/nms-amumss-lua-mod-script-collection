@@ -5,6 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.45",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["AMUMSS_SUPPRESS_MSG"] = "DONOT_REPORT_NEW_EQUAL_OLD_VALUE",
 ["MODIFICATIONS"] =
     {
         {
@@ -53,16 +54,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"UseSeedValue", "False"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -335,17 +330,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Iridium"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaximumLOD",    "1"},
-                                {"NoiseGridType", "Sphere"},
-                                {"MinWidth",      "10"},
-                                {"MaxWidth",      "30"},
-                                {"MinHeight",     "10"},
-                                {"MaxHeight",     "10"},
                                 {"HeightOffset",  "-3"},
-                                {"RegionScale",   "4"},
-                                {"VaryYaw",       "0"},
-                                {"Depth",         "1"},
-                                {"Thickness",     "1"},
                             }
                         },
                         {
@@ -353,7 +338,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Octaves",         "3"},
-                                {"Active",          "False"},
                                 {"Width",           "30"},
                                 {"SmoothRadius",    "1"},
                                 {"WaterFade",       "Below"},
@@ -384,7 +368,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Octaves",         "7"},
                                 {"Width",           "150"},
-                                {"SmoothRadius",    "1"},
                                 {"WaterFade",       "Below"},
                                 {"SeedOffset",      "10"},
                                 {"TileBlendMeters", "8"},
@@ -681,6 +664,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -1106,7 +1090,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Octaves",         "7"},
                                 {"Width",           "15"},
-                                {"SmoothRadius",    "1"},
                                 {"WaterFade",       "Below"},
                                 {"SeedOffset",      "1"},
                                 {"TileBlendMeters", "8"},
@@ -1295,6 +1278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
                                 {"WaterFadeInDistance",     "200"},
@@ -1443,7 +1427,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Octaves",      "4"},
-                                {"SmoothRadius", "1"},
                                 {"WaterFade",    "Below"},
                             }
                         },
@@ -1468,7 +1451,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Octaves",      "4"},
-                                {"SmoothRadius", "1"},
                                 {"WaterFade",    "Below"},
                             }
                         },
@@ -1752,6 +1734,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
                             }
@@ -2627,6 +2610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
                                 {"BuildingSmoothingHeight", "50"},
@@ -3061,6 +3045,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
                                 {"WaterFadeInDistance",     "200"},
@@ -3550,6 +3535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
                             }
@@ -4043,6 +4029,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -4596,6 +4583,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -4797,7 +4785,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Octaves",         "7"},
                                 {"Width",           "150"},
-                                {"SmoothRadius",    "1"},
                                 {"WaterFade",       "Below"},
                                 {"SeedOffset",      "7"},
                                 {"TileBlendMeters", "8"},
@@ -5134,9 +5121,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
-                                {"BuildingSmoothingHeight", "200"},
                                 {"WaterFadeInDistance",     "200"},
                             }
                         },
@@ -5512,6 +5499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
                             }
@@ -5880,6 +5868,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -6396,6 +6385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -6914,18 +6904,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"SeaLevel",                "20"},
-                                {"BuildingTextureRadius",   "40"},
-                                {"BuildingSmoothingRadius", "450"},
-                                {"BuildingSmoothingHeight", "50"},
-                                {"WaterFadeInDistance",     "200"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"BeachHeight",             "8"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
                                 {"BuildingSmoothingHeight", "50"},
@@ -7159,7 +7139,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Octaves",      "3"},
-                                {"Height",       "0"},
                                 {"SmoothRadius", "1"},
                                 {"WaterFade",    "Below"},
                                 {"SeedOffset",   "9"},
@@ -7193,7 +7172,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Octaves",      "7"},
-                                {"Height",       "0"},
                                 {"SmoothRadius", "1"},
                                 {"WaterFade",    "Below"},
                                 {"SeedOffset",   "9"},
@@ -7480,6 +7458,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"SeaLevel",                "30"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -8027,6 +8006,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -8495,6 +8475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -8951,6 +8932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -9434,6 +9416,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -9910,6 +9893,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min" },
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
                                 {"WaterFadeInDistance",     "1"},
@@ -10214,7 +10198,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Height",       "5"},
                                 {"Width",        "10"},
                                 {"RegionGain",   "0"},
-                                {"SmoothRadius", "1"}, 
                             }
                         },
                         {
@@ -10484,6 +10467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -11063,6 +11047,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -11431,14 +11416,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Aluminium", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Depth",     "0.25"},
-                                {"Thickness", "0.25"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Gold"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -11616,6 +11593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -12173,6 +12151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -12772,6 +12751,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -13852,6 +13832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
                                 {"BuildingSmoothingHeight", "50"},
@@ -14332,6 +14313,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -14827,6 +14809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -15315,6 +15298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -15939,6 +15923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -16365,14 +16350,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Aluminium", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Depth",     "0.25"},
-                                {"Thickness", "0.25"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Gold"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -16569,6 +16546,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -17178,6 +17156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
                                 {"WaterFadeInDistance",     "1"},
@@ -17789,6 +17768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -18276,6 +18256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -18765,6 +18746,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -19301,6 +19283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
@@ -19839,6 +19822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -20387,6 +20371,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -20896,6 +20881,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "2"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},
@@ -21468,6 +21454,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"UseSeedValue",            "False"},
                                 {"BeachHeight",             "12"},
                                 {"BuildingTextureRadius",   "40"},
                                 {"BuildingSmoothingRadius", "450"},

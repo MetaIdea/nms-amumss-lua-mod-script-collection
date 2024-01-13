@@ -23,8 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NumberOfParticles", "800"},
-                                {"Radius",            "40"},
+                                {"Radius", "40"},
                             }
                         },
                         {
@@ -47,7 +46,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.2"},
-                                {"y", "0"},
                             }
                         },
                         {
@@ -97,7 +95,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.2"},
-                                {"y", "0"},
                             }
                         },
                         {
@@ -123,8 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NumberOfParticles", "800"},
-                                {"Radius",            "40"},
+                                {"Radius", "40"},
                             }
                         },
                         {
@@ -147,21 +143,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.2"},
-                                {"y", "0"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour1", "Colour.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"A", "0.8"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour2", "Colour.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"A", "0.6"},
                             }
                         },
                     }
@@ -173,8 +154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NumberOfParticles", "800"},
-                                {"Radius",            "40"},
+                                {"Radius", "40"},
                             }
                         },
                         {
@@ -197,21 +177,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.2"},
-                                {"y", "0"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour1", "Colour.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"A", "0.7"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Colour2", "Colour.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"A", "0.7"},
                             }
                         },
                     }

@@ -1,11 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_VitaminArrr.Terrain.1.0.pak",
-["MOD_AUTHOR"]    = "Vitamin Arrr",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.48",
+["MOD_FILENAME"]            = "_VitaminArrr.Terrain.1.0.pak",
+["MOD_AUTHOR"]              = "Vitamin Arrr",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.48",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
-["MODIFICATIONS"] =
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -913,11 +913,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RemapFromMax",     "0.8"},
                                 {"RemapToMax",       "0.95"},
                                 {"Height",           "1600"},
                                 {"Width",            "2000"},
-                                {"RegionRatio",      "1"},
                                 {"PlateauSharpness", "1"},
                             }
                         },
@@ -949,18 +947,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Small", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "1"},
-                                {"Height",         "1"},
-                                {"Depth",          "0.25"},
-                                {"Thickness",      "0.25"},
-                                {"CornerRadiusXY", "1"},
-                                {"CornerRadiusZ",  "0.25"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -985,18 +971,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n1", "100"},
                                 {"Form_n2", "100"},
                                 {"Form_n3", "100"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Large", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "1"},
-                                {"Height",         "1"},
-                                {"Depth",          "0.25"},
-                                {"Thickness",      "0.25"},
-                                {"CornerRadiusXY", "1"},
-                                {"CornerRadiusZ",  "0.25"},
                             }
                         },
                         {
@@ -1306,7 +1280,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
                                 {"UseSeedValue", "True"},
                             }
                         },
@@ -1314,7 +1287,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -1567,11 +1539,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PerturbFeatures", "0.2"},
-                                {"RemapFromMax",    "1"},
                                 {"Height",          "1600"},
                                 {"Width",           "6000"},
                                 {"RegionRatio",     "1"},
-                                {"RegionScale",     "1"},
                                 {"RegionGain",      "0"},
                             }
                         },
@@ -1962,15 +1932,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -1998,7 +1966,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0"},
                             }
                         },
@@ -2215,11 +2182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RemapFromMax", "1"},
-                                {"Height",       "1600"},
-                                {"Width",        "2500"},
-                                {"RegionRatio",  "1"},
-                                {"RegionScale",  "1"},
+                                {"Height", "1600"},
                             }
                         },
                         {
@@ -2266,7 +2229,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0.95"},
                             }
                         },
@@ -2597,15 +2559,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",          "True"},
                                 {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0"},
                             }
@@ -2858,12 +2818,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",      "6"},
-                                {"RemapFromMax", "1"},
-                                {"Height",       "1600"},
-                                {"Width",        "5000"},
-                                {"RegionRatio",  "1"},
-                                {"RegionScale",  "1"},
+                                {"Octaves", "6"},
+                                {"Height",  "1600"},
+                                {"Width",   "5000"},
                             }
                         },
                         {
@@ -3253,15 +3210,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -3515,8 +3470,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RemapFromMax",     "1"},
                                 {"Height",           "1600"},
                                 {"Width",            "1000"},
-                                {"RegionRatio",      "1"},
-                                {"RegionScale",      "1"},
                                 {"RegionGain",       "1"},
                                 {"PlateauSharpness", "1"},
                             }
@@ -3908,15 +3861,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -4171,7 +4122,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Height",       "1600"},
                                 {"Width",        "2000"},
                                 {"RegionRatio",  "1"},
-                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -4561,8 +4511,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
@@ -4819,11 +4768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RemapFromMax", "0.7"},
-                                {"Height",       "1600"},
-                                {"Width",        "2500"},
-                                {"RegionRatio",  "1"},
-                                {"RegionScale",  "2"},
+                                {"Height", "1600"},
                             }
                         },
                         {
@@ -5213,15 +5158,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -5472,11 +5415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RemapFromMax", "1"},
-                                {"Height",       "1600"},
-                                {"Width",        "3500"},
-                                {"RegionRatio",  "0.5"},
-                                {"RegionScale",  "1"},
+                                {"Height", "1600"},
                             }
                         },
                         {
@@ -5507,18 +5446,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Small", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "0"},
-                                {"Height",         "0"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "0"},
-                                {"CornerRadiusZ",  "0"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -5543,18 +5470,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n1", "100"},
                                 {"Form_n2", "100"},
                                 {"Form_n3", "100"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Large", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "0"},
-                                {"Height",         "0"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "0"},
-                                {"CornerRadiusZ",  "0"},
                             }
                         },
                         {
@@ -5864,15 +5779,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -6116,12 +6029,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Octaves",      "3"},
-                                {"RemapFromMax", "0.7"},
-                                {"Height",       "1600"},
-                                {"Width",        "8000"},
-                                {"RegionRatio",  "0.5"},
-                                {"RegionScale",  "1"},
+                                {"Octaves", "3"},
+                                {"Height",  "1600"},
                             }
                         },
                         {
@@ -6153,18 +6062,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Small", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "1"},
-                                {"Height",         "1"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "1"},
-                                {"CornerRadiusZ",  "0"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -6189,18 +6086,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n1", "100"},
                                 {"Form_n2", "100"},
                                 {"Form_n3", "100"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Large", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "0"},
-                                {"Height",         "0"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "0"},
-                                {"CornerRadiusZ",  "0"},
                             }
                         },
                         {
@@ -6510,15 +6395,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -6759,17 +6642,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RemapFromMax", "0.7"},
-                                {"Height",       "1600"},
-                                {"Width",        "8000"},
-                                {"RegionRatio",  "0.5"},
-                                {"RegionScale",  "1"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -6798,18 +6670,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Small", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "1"},
-                                {"Height",         "1"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "1"},
-                                {"CornerRadiusZ",  "0"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -6834,18 +6694,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n1", "100"},
                                 {"Form_n2", "100"},
                                 {"Form_n3", "100"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Large", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "0"},
-                                {"Height",         "0"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "0"},
-                                {"CornerRadiusZ",  "0"},
                             }
                         },
                         {
@@ -7413,17 +7261,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RemapFromMax", "1"},
-                                {"Height",       "1600"},
-                                {"Width",        "6000"},
-                                {"RegionRatio",  "0.7"},
-                                {"RegionScale",  "1"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -7817,7 +7654,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Elevation"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RemapFromMax",     "0.8"},
                                 {"RemapToMax",       "1"},
                                 {"Height",           "400"},
                                 {"Width",            "1600"},
@@ -8069,18 +7905,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RemapFromMax",     "0.8"},
-                                {"RemapToMax",       "0.95"},
-                                {"Height",           "1600"},
-                                {"Width",            "2000"},
-                                {"RegionRatio",      "1"},
-                                {"PlateauSharpness", "1"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -8108,18 +7932,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Small", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "1"},
-                                {"Height",         "1"},
-                                {"Depth",          "0.25"},
-                                {"Thickness",      "0.25"},
-                                {"CornerRadiusXY", "1"},
-                                {"CornerRadiusZ",  "0.25"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -8144,18 +7956,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n1", "100"},
                                 {"Form_n2", "100"},
                                 {"Form_n3", "100"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Large", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "1"},
-                                {"Height",         "1"},
-                                {"Depth",          "0.25"},
-                                {"Thickness",      "0.25"},
-                                {"CornerRadiusXY", "1"},
-                                {"CornerRadiusZ",  "0.25"},
                             }
                         },
                         {
@@ -8465,7 +8265,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
                                 {"UseSeedValue", "True"},
                             }
                         },
@@ -8492,7 +8291,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -8730,27 +8528,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n1", "-100"},
                                 {"Form_n2", "-100"},
                                 {"Form_n3", "-100"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Mountain"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RegionScale", "4"},
-                                {"RegionGain",  "1"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PerturbFeatures", "0.2"},
-                                {"RemapFromMax",    "1"},
-                                {"Height",          "1600"},
-                                {"Width",           "6000"},
-                                {"RegionRatio",     "1"},
-                                {"RegionScale",     "1"},
-                                {"RegionGain",      "0"},
                             }
                         },
                         {
@@ -9140,8 +8917,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
@@ -9155,7 +8931,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -9183,7 +8958,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0"},
                             }
                         },
@@ -9397,17 +9171,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RemapFromMax", "1"},
-                                {"Height",       "1600"},
-                                {"Width",        "2500"},
-                                {"RegionRatio",  "1"},
-                                {"RegionScale",  "1"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -9451,7 +9214,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0.95"},
                             }
                         },
@@ -9782,8 +9544,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
@@ -9799,7 +9560,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",          "True"},
                                 {"NoiseGridType",   "SuperPrimitiveRandom"},
                                 {"RandomPrimitive", "0"},
                             }
@@ -10046,18 +9806,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed", "4953848520566904599"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Octaves",      "6"},
-                                {"RemapFromMax", "1"},
-                                {"Height",       "1600"},
-                                {"Width",        "5000"},
-                                {"RegionRatio",  "1"},
-                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -10447,8 +10195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
@@ -10466,7 +10213,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -10711,19 +10457,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed", "4953848520566904599"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RemapFromMax",     "1"},
-                                {"Height",           "1600"},
-                                {"Width",            "1000"},
-                                {"RegionRatio",      "1"},
-                                {"RegionScale",      "1"},
-                                {"RegionGain",       "1"},
-                                {"PlateauSharpness", "1"},
                             }
                         },
                         {
@@ -11113,8 +10846,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
@@ -11131,7 +10863,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -11376,17 +11107,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed", "4953848520566904599"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RemapFromMax", "0.8"},
-                                {"Height",       "1600"},
-                                {"Width",        "2000"},
-                                {"RegionRatio",  "1"},
-                                {"RegionScale",  "1"},
                             }
                         },
                         {
@@ -11776,8 +11496,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
@@ -12035,17 +11754,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed", "4953848520566904599"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RemapFromMax", "0.7"},
-                                {"Height",       "1600"},
-                                {"Width",        "2500"},
-                                {"RegionRatio",  "1"},
-                                {"RegionScale",  "2"},
                             }
                         },
                         {
@@ -12435,8 +12143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
@@ -12450,7 +12157,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -12698,17 +12404,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RemapFromMax", "1"},
-                                {"Height",       "1600"},
-                                {"Width",        "3500"},
-                                {"RegionRatio",  "0.5"},
-                                {"RegionScale",  "1"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -12736,18 +12431,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Small", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "0"},
-                                {"Height",         "0"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "0"},
-                                {"CornerRadiusZ",  "0"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -12772,18 +12455,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n1", "100"},
                                 {"Form_n2", "100"},
                                 {"Form_n3", "100"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Large", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "0"},
-                                {"Height",         "0"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "0"},
-                                {"CornerRadiusZ",  "0"},
                             }
                         },
                         {
@@ -13093,8 +12764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "0"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "0"},
                             }
                         },
                         {
@@ -13109,7 +12779,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active",        "True"},
                                 {"NoiseGridType", "SuperPrimitiveRandom"},
                             }
                         },
@@ -13350,17 +13019,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Elevation"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RemapFromMax", "0.7"},
-                                {"Height",       "1600"},
-                                {"Width",        "8000"},
-                                {"RegionRatio",  "0.5"},
-                                {"RegionScale",  "1"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -13389,18 +13047,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Small", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "1"},
-                                {"Height",         "1"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "1"},
-                                {"CornerRadiusZ",  "0"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -13425,18 +13071,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n1", "100"},
                                 {"Form_n2", "100"},
                                 {"Form_n3", "100"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Large", "SuperPrimitive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Width",          "0"},
-                                {"Height",         "0"},
-                                {"Depth",          "1"},
-                                {"Thickness",      "1"},
-                                {"CornerRadiusXY", "0"},
-                                {"CornerRadiusZ",  "0"},
                             }
                         },
                         {
@@ -13741,7 +13375,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Form_n2", "100"},
                                 {"Form_n3", "100"},
                             }
-                        },                        
+                        },
                     }
                 },
             }

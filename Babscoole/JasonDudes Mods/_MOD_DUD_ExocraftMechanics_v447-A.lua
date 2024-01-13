@@ -182,10 +182,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SpecialVehicleMouseRecentreTime", "5"},
                                 {"UnderwaterCameraSurfaceOffset",   "5"},
                                 {"MechCameraArmShootOffsetY",       "2"},
-                                {"MechCamSpringStrengthMin",        "0.6"},
-                                {"MechCamSpringStrengthMax",        "0.6"},
-                                {"ShipCamSpringStrengthMin",        "0.6"},
-                                {"ShipCamSpringStrengthMax",        "0.5"},
                             }
                         },
                     }
@@ -198,8 +194,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MechFirstPersonTurretThrottleLookThreshold", "8"},
-                                {"UnderwaterFlattenMinDepth",                  "1"},
-                                {"VehicleAltControlScheme",                    "False"},
                                 {"VehicleFuelRate",                            "0.35"},
                             }
                         },

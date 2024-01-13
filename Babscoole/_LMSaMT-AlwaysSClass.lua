@@ -1,45 +1,45 @@
 NMS_VERSION = "4.45"
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "_LMSaMT_"..NMS_VERSION.."-AlwaysSClass.pak",
 ["MOD_DESCRIPTION"] = "Removes the RNG for ship, freighter, multitool and staff classes, slots and stats",
 ["MOD_AUTHOR"]      = "dvkkha",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = NMS_VERSION,
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
     {
         {
-            ["MBIN_CHANGE_TABLE"] = 
-            { 
+            ["MBIN_CHANGE_TABLE"] =
+            {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = "GcInventoryTableEntry.xml",              
-                            ["MATH_OPERATION"]      = "*F:MaxSize",             
-                            ["REPLACE_TYPE"]        = "ALL",               
-                            ["VALUE_CHANGE_TABLE"]  =   
+                            ["PRECEDING_KEY_WORDS"] = "GcInventoryTableEntry.xml",
+                            ["MATH_OPERATION"]      = "*F:MaxSize",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinSize", "1"}                
+                                {"MinSize", "1"}
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "GenerationDataPerSizeType",              
-                            ["MATH_OPERATION"]      = "*F:MaxSlots",            
-                            ["REPLACE_TYPE"]        = "ALL",               
-                            ["VALUE_CHANGE_TABLE"]  =   
+                            ["PRECEDING_KEY_WORDS"] = "GenerationDataPerSizeType",
+                            ["MATH_OPERATION"]      = "*F:MaxSlots",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinSlots", "1"}               
+                                {"MinSlots", "1"}
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "GenerationDataPerSizeType",              
-                            ["MATH_OPERATION"]      = "*F:MaxTechSlots",            
-                            ["REPLACE_TYPE"]        = "ALL",               
-                            ["VALUE_CHANGE_TABLE"]  =   
+                            ["PRECEDING_KEY_WORDS"] = "GenerationDataPerSizeType",
+                            ["MATH_OPERATION"]      = "*F:MaxTechSlots",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinTechSlots", "1"}               
+                                {"MinTechSlots", "1"}
                             }
                         },
                         {
@@ -88,12 +88,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "GcInventoryGenerationBaseStatClassData.xml"},
                                 {"S", "GcInventoryGenerationBaseStatClassData.xml"},
                             },
-                            ["PRECEDING_KEY_WORDS"] = "GcInventoryGenerationBaseStatDataEntry.xml",             
-                            ["MATH_OPERATION"]      = "*F:Max",             
-                            ["REPLACE_TYPE"]        = "ALL",               
-                            ["VALUE_CHANGE_TABLE"]  =   
+                            ["PRECEDING_KEY_WORDS"] = "GcInventoryGenerationBaseStatDataEntry.xml",
+                            ["MATH_OPERATION"]      = "*F:Max",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Min", "1"}                
+                                {"Min", "1"}
                             }
                         },
                         {
@@ -107,5 +107,5 @@ NMS_MOD_DEFINITION_CONTAINER =
                 }
             }
         }
-    }   
+    }
 }

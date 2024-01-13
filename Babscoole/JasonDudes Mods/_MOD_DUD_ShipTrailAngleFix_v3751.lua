@@ -18,7 +18,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RefEngineB4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX",  "21.100931"},
                                 {"Value", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB\PARTS\DUDENGINEBTHRUSTER.SCENE.MBIN"}
                             }
                         },
@@ -26,7 +25,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RefEngineB5"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX",  "21.100931"},
                                 {"Value", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB\PARTS\DUDENGINEBTHRUSTER.SCENE.MBIN"}
                             }
                         },
@@ -36,20 +34,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "pCube7"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotZ", "-20.321157"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "pCube8"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotZ", "20.132433"},
-                            }
-                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "C3"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -78,31 +62,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TransY", "2.325378"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "37.840652"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"TransX", "0.238925"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "27.772223"},
-                                {"RotY", "-47.318554"},
-                                {"RotZ", "-26.806637"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"TransX", "-0.238925"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "-27.772223"},
-                                {"RotY", "-132.68146"},
-                                {"RotZ", "-26.806637"}
-                            }
-                        },
-                        {
                             ["SPECIAL_KEY_WORDS"] = {"TransY", "1.927788"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -127,54 +86,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RotX",   "0"},
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "_SmallSign1_A"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotY", "104.30264"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "_SmallSign2_A"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotZ", "-31.363827"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "C2"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "-31.026487"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "C3"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "-31.026487"},
-                            }
-                        },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Number_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "38.172882"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "_Letter2_A"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotY", "-85.228546"},
-                            }
-                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Trail1"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -191,27 +108,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TransY", "1.869246"},
                                 {"TransZ", "-2.01901"},
                                 {"RotX",   "0"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"TransZ", "-2.884613"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "-48.134666"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"TransZ", "-1.508934"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "-31.475046"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"TransZ", "-0.664027"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "-61.512165"},
                             }
                         },
                     }

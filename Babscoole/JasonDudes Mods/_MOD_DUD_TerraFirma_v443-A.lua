@@ -1910,8 +1910,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RidgeErosion",      "0.99"},
                                 {"Height",            "200"},
                                 {"RegionRatio",       "0.2"},
-                                {"RegionScale",       "1"},
-                                {"RegionGain",        "1"},
                                 {"PlateauStratas",    "20"},
                                 {"PlateauRegionSize", "600"},
                             }
@@ -2392,13 +2390,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Thickness",      "1"},
                                 {"CornerRadiusXY", "0"},
                                 {"CornerRadiusZ",  "0"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "River"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Octaves", "5"},
                             }
                         },
                         {
@@ -3813,7 +3804,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Octaves",      "8"},
                                 {"SlopeErosion", "0"},
                                 {"Height",       "256"},
-                                {"RegionRatio",  "0.2"},
                                 {"RegionScale",  "6"},
                             }
                         },

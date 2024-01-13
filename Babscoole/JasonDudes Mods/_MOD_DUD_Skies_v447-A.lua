@@ -721,8 +721,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette",   "Snow"},
-                                {"ColourAlt", "Primary"},
+                                {"Palette", "Snow"},
                             }
                         },
                         {
@@ -811,14 +810,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Alpha1", "0"},
                                 {"Alpha2", "0"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "Colour2"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette",   "Sand"},
-                                {"ColourAlt", "Alternative3"},
                             }
                         },
                     }
@@ -1054,8 +1045,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FogStrength",              "0.15"},
                                 {"FogMax",                   "0.95"},
                                 {"FogColourStrength",        "7"},
-                                {"FogColourMax",             "1"},
-                                {"HeightFogStrength",        "0.04"},
                                 {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
                                 {"FogHeight",                "192"},
@@ -1260,13 +1249,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"OffsetSaturation", "0.2"},
                                 {"OffsetValue",      "-0.1"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers", "HeavyAirColour", "GcColourModifier.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"OffsetValue", "0"},
                             }
                         },
                     }
@@ -1478,8 +1460,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
@@ -1530,21 +1518,46 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Speed",  "0.2"},
-                                {"Alpha1", "0.2"},
-                                {"Alpha2", "0.2"},
+                                {"Palette", "Snow"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
                                 {"ColourAlt", "Primary"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "Colour1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "Colour2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "Colour1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "Colour2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Snow"},
                             }
                         },
                         {
@@ -1557,29 +1570,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Snow"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed",  "0.7"},
                                 {"Alpha1", "0.9"},
                                 {"Alpha2", "0.9"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette",   "Snow"},
-                                {"ColourAlt", "Primary"},
                             }
                         },
                         {
@@ -1592,12 +1588,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["PRECEDING_KEY_WORDS"] = {"Storms", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette",   "Snow"},
-                                {"ColourAlt", "Primary"},
+                                {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Snow"},
                             }
                         },
                         {
