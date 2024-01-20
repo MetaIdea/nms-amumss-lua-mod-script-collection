@@ -8,13 +8,6 @@ METADATA_MOD_MODULE     = "CHAT"
 METADATA_NMS_VERSION    = "446"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
---[[
-CREDITS:
-> bk201                                        pointing out typos, providing feedback on changes
-> Devilin Pixy, members of NMS Discord         pointing out typos
-> Gumsk, Lyravega, Alchemist                   optimizations of the LUA script
-]]
-
 
 
 ----------------------------------------------------------------------------------------------------

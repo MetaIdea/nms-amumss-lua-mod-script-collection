@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_MOD_MODULE     = "TITLES"
-METADATA_NMS_VERSION    = "446"
+METADATA_MOD_MODULE     = "CRAFT"
+METADATA_NMS_VERSION    = "448"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -14,7 +14,7 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 -- mod container
 ----------------------------------------------------------------------------------------------------
 
-FILE_METADATA_PLAYERTITLES = "METADATA\\GAMESTATE\\PLAYERDATA\\PLAYERTITLEDATA.MBIN"
+FILE_REALITY_PRODUCTTABLE = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPRODUCTTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -30,17 +30,31 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_PLAYERTITLES,
+                    ["MBIN_FILE_SOURCE"] = FILE_REALITY_PRODUCTTABLE,
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            ["SKW"] = {"ID","T_ABANDLORE3"},
-                            ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE3"},},
+                            -- Warp Hypercore - add new crafting tooltip
+                            ["SKW"] = {"ID","HYPERFUEL2"},
+                            ["VCT"] = {{"PinObjectiveTip","UI_PIN_HYPERFUEL2_OBJ_TIP"},},
                         },
 
                         {
-                            ["SKW"] = {"ID","T_ABANDLORE4"},
-                            ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE4"},},
+                            -- Heart of the Sun - add new crafting tooltip
+                            ["SKW"] = {"ID","ATLAS_SEED_10"},
+                            ["VCT"] = {{"PinObjectiveTip","UI_PIN_ATLASSEED_OBJ_TIP"},},
+                        },
+
+                        {
+                            -- Supply Pipe, Mineral Extractor, Gas Extractor
+                            -- change blueprint subtitle to one used by the depot
+                            ["FSKWG"] = 
+                            {
+                                {"ID","U_PIPELINE"},
+                                {"ID","U_GASEXTRACTOR"},
+                                {"ID","U_EXTRACTOR_S"},
+                            },
+                            ["VCT"] = {{"Value","BLD_SILO_SUB"},},
                         },
                     },
                 }

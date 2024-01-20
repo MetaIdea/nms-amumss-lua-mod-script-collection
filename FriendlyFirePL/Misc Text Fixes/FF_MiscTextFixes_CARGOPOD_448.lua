@@ -4,16 +4,9 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_MOD_MODULE     = "CRAFT"
-METADATA_NMS_VERSION    = "447"
+METADATA_MOD_MODULE     = "CARGOPOD"
+METADATA_NMS_VERSION    = "448"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
-
---[[
-CREDITS:
-> bk201                                        pointing out typos, providing feedback on changes
-> Devilin Pixy, members of NMS Discord         pointing out typos
-> Gumsk, Lyravega, Alchemist                   optimizations of the LUA script
-]]
 
 
 
@@ -21,7 +14,7 @@ CREDITS:
 -- mod container
 ----------------------------------------------------------------------------------------------------
 
-FILE_REALITY_PRODUCTTABLE = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPRODUCTTABLE.MBIN"
+FILE_MODELS_CARGOPOD_JUNK = "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\CRASHEDFREIGHTER\\PARTS\\CONTAINERTERMINAL\\ENTITIES\\TERMINALCHAR.ENTITY.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -37,17 +30,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FILE_REALITY_PRODUCTTABLE,
+                    ["MBIN_FILE_SOURCE"] = FILE_MODELS_CARGOPOD_JUNK,
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            ["SKW"] = {"ID","HYPERFUEL2"},
-                            ["VCT"] = {{"PinObjectiveTip","UI_PIN_HYPERFUEL2_OBJ_TIP"},},
-                        },
-
-                        {
-                            ["SKW"] = {"ID","ATLAS_SEED_10"},
-                            ["VCT"] = {{"PinObjectiveTip","UI_PIN_ATLASSEED_OBJ_TIP"},},
+                            ["VCT"] = {{"Description","UI_MAINTAIN_ABANDONED_SUB",},},
                         },
                     },
                 }

@@ -8,27 +8,14 @@ METADATA_MOD_MODULE     = "MISSION"
 METADATA_NMS_VERSION    = "448"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
---[[
-CREDITS:
-> bk201                                        pointing out typos, providing feedback on changes
-> Devilin Pixy, members of NMS Discord         pointing out typos
-> Gumsk, Lyravega, Alchemist                   optimizations of the LUA script
-]]
-
-
-
-----------------------------------------------------------------------------------------------------
--- script data
-----------------------------------------------------------------------------------------------------
-
-FILE_MISSIONS_FLEET =       "METADATA\\SIMULATION\\MISSIONS\\FLEETMISSIONTABLE.MBIN"
-FILE_MISSIONS_PIRATE =      "METADATA\\SIMULATION\\MISSIONS\\PIRATEMISSIONTABLE.MBIN"
-
 
 
 ----------------------------------------------------------------------------------------------------
 -- mod container
 ----------------------------------------------------------------------------------------------------
+
+FILE_MISSIONS_FLEET =       "METADATA\\SIMULATION\\MISSIONS\\FLEETMISSIONTABLE.MBIN"
+FILE_MISSIONS_PIRATE =      "METADATA\\SIMULATION\\MISSIONS\\PIRATEMISSIONTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -49,11 +36,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
+                            -- get the template of Detail Message box
                             ["SKW"] = {"Stage","GcMissionSequenceDetailMessage.xml"},
                             ["SEC_SAVE_TO"] = "SEC_DETAIL_BOX",
                         },
 
                         {
+                            -- change header text and image
                             ["SEC_EDIT"] = "SEC_DETAIL_BOX",
                             ["VCT"] = 
                             {
@@ -64,6 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         {
+                            -- change the 4 lines below the image
                             ["SEC_EDIT"] = "SEC_DETAIL_BOX",
                             ["SKW"] = {"Text","UI_FREIGHTER_DETAIL_LINE1",},
                             ["VCT"] = {{"Text","TEXT_TUTORIAL_PIRATES_1",},},
@@ -94,6 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
+                            -- remove the original tooltip
                             ["SKW"] = 
                             {
                                 "PrefixTitleText","UI_PIRATE_STATION_HINT_TITLE",
@@ -103,6 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         {
+                            -- navigate to the same section and add the Detail Message box
                             ["SKW"] = {"PrefixTitleText","UI_PIRATE_STATION_HINT_TITLE",},
                             ["PKW"] = "Versions",
                             ["SECTION_ACTIVE"] = 2,
