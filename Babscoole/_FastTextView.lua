@@ -1,4 +1,4 @@
-Version = "4.48"
+Version = "4.48b"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {

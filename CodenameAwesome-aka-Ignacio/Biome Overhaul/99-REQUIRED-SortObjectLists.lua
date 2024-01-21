@@ -38,7 +38,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] = "Must be combined.pak",
-  ["MOD_BATCHNAME"] = "IgnaciosBiomeOverhaul.pak",
+  ["MOD_BATCHNAME"] = "Spacefarer-Biomes.pak",
   ["MOD_AUTHOR"] = "CodenameAwesome",
   ["MOD_DESCRIPTION"] = "Alphabetizes object lists to avoid unnecessary reshuffling.",
   ["MODIFICATIONS"] =

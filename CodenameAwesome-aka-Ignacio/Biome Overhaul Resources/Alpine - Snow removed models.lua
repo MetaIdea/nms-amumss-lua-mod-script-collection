@@ -221,7 +221,7 @@ table.insert(MBIN_CHANGE_TABLE,{
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] = "AlpinModels.pak",
-  ["MOD_BATCHNAME"] = "IgnaciosBiomeOverhaul.Resources.pak",
+  ["MOD_BATCHNAME"] = "Spacefarer-Biomes-RequiredAssets.pak",
   ["MOD_AUTHOR"] = "CodenameAwesome",
   ["ADD_FILES"] = ADD_FILES,
   ["MODIFICATIONS"] =

@@ -7,6 +7,7 @@ SKY_RGB_MIN = 0.3
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] 			= "ReEnabledSkyColors.pak",
+  ["MOD_BATCHNAME"]		= "Spacefarer-SkyColors",
   ["MOD_DESCRIPTION"]		= "Restores sky color palettes from the days of Atlas Rises.",
   ["MOD_AUTHOR"]				= "CodenameAwesome",
   ["NMS_VERSION"]				= "4.04",

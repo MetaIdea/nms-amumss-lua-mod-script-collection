@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] = "LushRadioTreesModels.pak",
-  ["MOD_BATCHNAME"] = "IgnaciosBiomeOverhaul.Resources.pak",
+  ["MOD_BATCHNAME"] = "Spacefarer-Biomes-RequiredAssets.pak",
   ["MOD_AUTHOR"] = "CodenameAwesome",
   ["MODIFICATIONS"] =
 	{

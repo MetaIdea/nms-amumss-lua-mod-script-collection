@@ -5,6 +5,7 @@ ALPHA = 0.9
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] 			= "SlightlyVisibleStarsAtSunset.pak",
+  ["MOD_BATCHNAME"]		= "Spacefarer-SkyColors",
   ["MOD_DESCRIPTION"]		= "Makes the sky slightly transparent",
   ["MOD_AUTHOR"]				= "CodenameAwesome",
   ["NMS_VERSION"]				= "4.04",

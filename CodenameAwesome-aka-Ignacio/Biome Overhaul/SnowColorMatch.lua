@@ -1,6 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] 			= "SnowColorMatch.pak",
+  ["MOD_BATCHNAME"]		= "Spacefarer-Biomes.pak",
   ["MOD_DESCRIPTION"]		= "Changes the Frozen biome ground color to match the snowy rock textures.",
   ["MOD_AUTHOR"]				= "Ignacio",
   ["NMS_VERSION"]				= "",
