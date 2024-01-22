@@ -378,6 +378,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{
 									{"Cost", ""}
 								}
+						},
+						{
+							["SPECIAL_KEY_WORDS"]		= {"MissionID", "BIOSHIP_REPEAT"},
+							["PRECEDING_KEY_WORDS"]		= "StartingConditions",
+							["REMOVE"] = "SECTION",
 						}
 					}
 				},

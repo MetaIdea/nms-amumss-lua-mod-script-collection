@@ -3,11 +3,14 @@ Medium = 1							--0
 Rich = 1							--0.1
 Pirate = 1							--0.2
 
+Warps = 999999999					--5
+Hours = 999999999					--3
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= "AlwaysPirateFreighterBattles.pak",
 	["MOD_DESCRIPTION"]	= "Pirate Freighter Battles always appear after warp",
 	["MOD_AUTHOR"]		= "Lenni",
-	["NMS_VERSION"]		= "4.43",
+	["NMS_VERSION"]		= "4.48",
 	["MODIFICATIONS"]	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {
@@ -22,6 +25,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"Default", Medium},
 								{"High", Rich},
 								{"Pirate", Pirate},
+							}
+						},
+						{
+							["VALUE_CHANGE_TABLE"] = {
+								{"WarpsBetweenBattles", Warps},
+								{"HoursBetweenBattles", Hours},
 							}
 						},
 					}
