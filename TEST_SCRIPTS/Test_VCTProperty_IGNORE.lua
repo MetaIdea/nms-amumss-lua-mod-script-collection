@@ -76,6 +76,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 			}
-		}, --1416 global replacements
+		}, --1602 global replacements
 	},
 }

@@ -1,6 +1,6 @@
 
 function FUNC_TEST()
-  print("FUNC_TEST")
+  print(">>>>>>>>>>  This is FUNC_TEST  <<<<<<<<<<")
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {

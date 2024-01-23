@@ -79,6 +79,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
             },
           },
           
+          {
+            COMMENT = [[#6: EDIT does NOT find 'harvest_NOTFOUND'
+            KEEP saves 'harvest_NOTFOUND' to disk AFTER change
+            ]],
+            SEC_EDIT     = 'harvest_NOTFOUND',
+            SEC_KEEP       = "TRUE", --to save to disk the current section after changes to file
+            --SEC_SAVE_TO    = 'harvest_NOTFOUND_2', -- could also to save under a different name
+            SPECIAL_KEY_WORDS  = {'Name', 'ATTACHMENT'},
+            VALUE_CHANGE_TABLE   = {
+              {'Value', base_parts..'DECORATION/BAZAAR/WATERVALVE/INTERACTION.ENTITY.MBIN',"Value_Interaction"}, -- saving current value to variable 'Value_Interaction' for test only
+            },
+          },
+          
         },
       },
       
@@ -94,4 +107,4 @@ NMS_MOD_DEFINITION_CONTAINER = {
         },
       },
 
-}}}} -- 6 global replacements
+}}}} -- 7 global replacements

@@ -137,16 +137,34 @@ NMS_MOD_DEFINITION_CONTAINER =
           MBIN_FS = [[MODELS\COMMON\WEAPONS\LASER\LASERBEAM.SCENE.MBIN]],
           EXML_CT = 
           {
-            {  -- using an ADD sring
+            
+            {  -- using an ADD string
+              SKW = {[[Name]],[[Beam]],},
+-- Here PKW last entry is found and changed from a HOES (Head Of Empty Section) to a HOS (Head Of Section)
+              PKW = [[Children]],
+              CREATE_HOS = true,
+              ADD = TextToAdd,
+            },
+            
+            {  -- undoing the CREATE_HOS (for testing CREATE_HOES)
+              SKW = {[[Name]],[[Beam2]],},
+-- Here PKW last entry is found and changed from a HOS (Head Of Section) to a HOES (Head Of Empty Section)
+              SECTION_UP = 1,
+              PKW = [[Children]],
+              CREATE_HOES = true,
+            },
+            
+            {  -- using an ADD string, re-create the section
               SKW = {[[Name]],[[Beam]],},
 -- Here PKW last entry is found and changed from a HOES (Head Of Empty Section) to a HOS (Head Of Section)
               PKW = [[Children]],
               CREATE_HOS = "TRUE",
               ADD = TextToAdd,
-            },     
+            },
+            
           }, 
         }, 
       }, 
 		}, 
-	}, --1 global replacements
+	}, --3 global replacements
 }

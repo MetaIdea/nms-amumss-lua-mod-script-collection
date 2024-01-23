@@ -23,16 +23,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
         {
             ["MBIN_CHANGE_TABLE"] = 
 			{
-      {
+      { -- using capture/replacement
           ["MBIN_FILE_SOURCE"]     = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
           ["REGEXBEFORE"] =
               {
                   {[[(.*)(".*_CRA_OPT_A_.*")]],[[\1"SECTION_TO_CHANGE" oldvalue=\2]]},
                   {[[(.*)(".*_ABAN_OPT_A_.*")]],[[\1"SECTION_TO_CHANGE" oldvalue=\2]]},
-              },
-          ["REGEXAFTER"] =
-              {
-                  {[[(.*)("SECTION_TO_CHANGE").*(".*")]],[[\1\3]]},
               },
           ["EXML_CHANGE_TABLE"]     =
           {
@@ -42,9 +38,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   ["REPLACE_TYPE"] = "ALL",
                   ["ADD"] = QUICKSILV_S
               },
-          }
+          }, -- could also be before EXML_CT, it does not matter.  AMUMSS code dictates when it is executed
+          ["REGEXAFTER"] =
+              {
+                  {[[(.*)("SECTION_TO_CHANGE").*(".*")]],[[\1\3]]},
+              },
       },
-      {
+      { -- using capture/replacement
           ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\WEAPONS\MULTITOOL\MULTITOOL.DESCRIPTOR.MBIN",
           ["REGEXBEFORE"] =
           {

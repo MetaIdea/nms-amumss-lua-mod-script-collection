@@ -25,14 +25,14 @@ valuesAreAcceptable = false
 if DoConfig then
   -- GUIF will return the same type() as provided or the default value
   -- here a boolean was asked for
-  DoConfig = GUIF(GUI.DoConfig,5)
+  DoConfig = GUIF(GUI.DoConfig,1)
 
   if DoConfig then
     print("     *** DoConfig is true, we will ask the user! ***")
     print("")
-    version = GUIF(GUI.version,3)
-    MyOwnVariable = GUIF(GUI.MyOwnVariable,3)
-    Author = GUIF(GUI.Author,3)
+    version = GUIF(GUI.version,1)
+    MyOwnVariable = GUIF(GUI.MyOwnVariable,1)
+    Author = GUIF(GUI.Author,1)
 
     -- here would be code to check/assert if the values returned
     --   are acceptable for the script
@@ -83,7 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               
               {'SimpleInteractionType', DoConfig and [[GUIF( {"Interact",[=[SimpleInteractionType (default: Interact)
               Enter 'CallShip' or 'CallVehicle'
-              ]=]} , 5)]] or "Interact", }, -- asking for user input, a string
+              ]=]} , 1)]] or "Interact", }, -- asking for user input, a string
 
               -- using a long string prompt, requested input appears on the same line
               -- asking for user input, a string
@@ -92,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               -- This one, we 'always' want to ask the user regardless, so we do not use DoConfig
               
               {'InteractIsCrime', [[GUIF( {"False",[=[InteractIsCrime (default: False)
-              Enter 'Y' if you want Interaction as a crime or press ENTER for default value ]=]} ,5)]], },
+              Enter 'Y' if you want Interaction as a crime or press ENTER for default value ]=]} ,1)]], },
 
               -- using a long string prompt, requested input appears on the same line
               -- asking for user input, a boolean
@@ -103,14 +103,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
               -- This one, we want to ask the user, so we use DoConfig and NMS "False" as default if no DoConfig
               
               {'InteractIsCrime', DoConfig and [[GUIF( {false,[=[InteractIsCrime (default: false)
-              Enter 'Y' if you want Interaction as a crime or 'N' for default ]=]} ,5)]] or "False", },
+              Enter 'Y' if you want Interaction as a crime or 'N' for default ]=]} ,1)]] or "False", },
 
               -- using a long string prompt to 'push' the requested input to a new line
               
               -- This one, we 'always' want to ask the user regardless, so we do not use DoConfig
               
               {'Gravity', [[GUIF( {"33",[=[Gravity (default: 33)
-              ]=]} ,3)]], }, -- asking for user input, entered as a string but being a number, a number will be asked 
+              ]=]} ,1)]], }, -- asking for user input, entered as a string but being a number, a number will be asked 
 
               {'Gravity', 15,}, -- another normal change
             },

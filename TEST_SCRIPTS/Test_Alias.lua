@@ -228,7 +228,7 @@ shipBehaviorAdjustments = {
 -- See the if() blocks near the bottom for how to reference it
 NMS_MOD_DEFINITION_CONTAINER	= {
 	["MOD_FILENAME"]			= table.concat({"__", modName, "_v", modVer, gameVer, scriptVer, ".pak"}),
-	["MOD_DESCRIPTION"]			= modDesc,
+	["MOD_DESCRIPTION"]		= modDesc,
 	["MOD_AUTHOR"]				= modAuthor,
 	["LUA_AUTHOR"]				= modAuthor,
 	["NMS_VERSION"]				= gameVer,
