@@ -2,18 +2,18 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "ZZZsome.pak",      --the name of the pak created (if not combined) - REQUIRED - "ZZZ" to make it load ~last
+  ["MOD_FILENAME"] 			= "_ZZZsome.pak",      --the name of the pak created (if not combined) - REQUIRED - "_ZZZ" to make it load ~last
   ["MOD_AUTHOR"]				= "ItIsMe",           --optional, for reference only
   ["MOD_DESCRIPTION"]		= "anything goes",    --optional, for reference only
   ["NMS_VERSION"]				= "1.77",             --optional, for reference only
   ["MODIFICATIONS"] 		=                     --REQUIRED SECTION
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak", --only one pak file here -OPTIONAL
 			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= { "?\?.MBIN", }  --{ a_comma_separated_list_of.MBINs, } - REQUIRED, if this section is used
+        -- NOTE: all ".." can also be [[..]]
+					["MBIN_FILE_SOURCE"] 	= { [[?\?.MBIN]], }  --{ a_comma_separated_list_of.MBINs, } - REQUIRED, if this section is used
           ["REGEXBEFORE"]       =
 						{
 							{"",""},
@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-              ["SPECIAL_KEY_WORDS"]   = {"", ""},	--can be missing (if not used) or "" or {"",} or { a comma separated list of key_words }, see Script_Rules.txt
+              ["SPECIAL_KEY_WORDS"]   = {"", "",},	--can be missing (if not used) or "" or {"",} or { a comma separated list of key_words }, see Script_Rules.txt
 							["PRECEDING_KEY_WORDS"] = "",	      --can be missing (if not used) or "" or {"",} or { a comma separated list of key_words }, see Script_Rules.txt
 							["WHERE"] 	= 	--NOT YET IMPLEMENTED
 							{
@@ -38,8 +38,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},	
 							["ADD"] 				= [[NEW TEXT TO ADD HERE]]    --adds the text inserted between the double-brackets or a simple string inside double-quotes
 							
-              --PLEASE, note if you use both ADD and REMOVE inside the same EXML_CHANGE_TABLE
-              --the TEXT will be "added" AND "removed" (the LINE or the SECTION)
+              --PLEASE, note BETTER to NOT use ADD and REMOVE in the same EXML_CHANGE_TABLE sub-table
+              --the TEXT will be "ADDed" first AND then the "REMOVE" (the LINE or the SECTION) is done
               ["REMOVE"] 			= ""                --removes the section pointed to by the keywords
 						},
 					}
