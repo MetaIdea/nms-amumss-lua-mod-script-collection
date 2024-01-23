@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","",},
+							["SPECIAL_KEY_WORDS"] = {"Idle","TkAnimationData.xml",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FrameStart",	"29"}, 		-- Original "0"		
