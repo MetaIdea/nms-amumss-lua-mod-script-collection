@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.44.0)-->
+<Data template="TkMaterialData">
+  <Property name="Name" value="Glow_Mat12" />
+  <Property name="Metamaterial" value="Models/Common/Player/PlayerCharacter/PlayerCharacter/Materials/Glow_Mat.metamaterial.mXml" />
+  <Property name="Class" value="Glow" />
+  <Property name="TransparencyLayerID" value="0" />
+  <Property name="CastShadow" value="False" />
+  <Property name="DisableZTest" value="False" />
+  <Property name="CreateFur" value="False" />
+  <Property name="Link" value="" />
+  <Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
+  <Property name="Flags">
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F02_SKINNED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F07_UNLIT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F10_NORECEIVESHADOW" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F34_GLOW" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F63_DISSOLVE" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F29_VBCOLOUR" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F27_VBTANGENT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F27_VBTANGENT" />
+    </Property>
+  </Property>
+  <Property name="Uniforms">
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gMaterialColourVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0.705" />
+        <Property name="z" value="0.7254" />
+        <Property name="t" value="1" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gMaterialParamsVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="1" />
+        <Property name="y" value="0.5" />
+        <Property name="z" value="0" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gMaterialSFXVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gMaterialSFXColVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gCustomParams01Vec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="1" />
+        <Property name="y" value="5" />
+        <Property name="z" value="0" />
+        <Property name="t" value="0.04" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gDissolveDataVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+        <Property name="t" value="1" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+  </Property>
+  <Property name="Samplers" />
+  <Property name="ShaderMillDataHash" value="0" />
+</Data>
