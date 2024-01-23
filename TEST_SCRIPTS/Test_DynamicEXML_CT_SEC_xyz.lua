@@ -60,12 +60,12 @@ inputPrompts		= {
 }
 
 if GUIF(inputPrompts.tweakSettings, 1) then
-	reroll_G	= GUIF(inputPrompts.toggleG, 10)
-	reroll_X	= GUIF(inputPrompts.toggleX, 10)
-	reroll_S	= GUIF(inputPrompts.toggleS, 10)
-	reroll_A	= GUIF(inputPrompts.toggleA, 5)
-	reroll_B	= GUIF(inputPrompts.toggleB, 5)
-	reroll_C	= GUIF(inputPrompts.toggleC, 5)
+	reroll_G	= GUIF(inputPrompts.toggleG, 1)
+	reroll_X	= GUIF(inputPrompts.toggleX, 1)
+	reroll_S	= GUIF(inputPrompts.toggleS, 1)
+	reroll_A	= GUIF(inputPrompts.toggleA, 1)
+	reroll_B	= GUIF(inputPrompts.toggleB, 1)
+	reroll_C	= GUIF(inputPrompts.toggleC, 1)
 end
 
 assert(reroll_G or reroll_X or reroll_S or reroll_A or reroll_B or reroll_C,
@@ -157,16 +157,37 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 ------------------------------------------------
 
 -- We'll be referring to these often now to insert entries into them
--- Cache them into variables to make referencing easier
+-- Cache them into variables to make referencing easier and faster
 local upgradeTable	= NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].EXML_CHANGE_TABLE
+print("*** Script information ***")
+printf("  type(upgradeTable) = %s",type(upgradeTable))
 local moduleTable	= NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[2].EXML_CHANGE_TABLE
+printf("   type(moduleTable) = %s",type(moduleTable))
 local templateTable	= NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[3].EXML_CHANGE_TABLE
+printf(" type(templateTable) = %s",type(templateTable))
+print("")
+
+-- local gIsLimitedArguments = false -- normal behavior = true
+
+-- if not gIsLimitedArguments then
+  -- print("")
+  -- print("  =======>>>>>>>>>  TESTING the use of a table as My_func argument  <<<<<<<<<<=========")
+  -- print("")
+
+  MyTable = {}
+-- end
 
 -- This loop will be run when the script loads, before AMUMSS begins processing
 -- It will add the first set of instructions for AMUMSS to begin scanning
 for i = 1, #processClasses do
 	-- If the class is selected, add a block to the first EXML_CHANGE_TABLE
 	if processClasses[i].reroll then
+    -- if not gIsLimitedArguments then
+      MyTable[1] = i -- FOR TESTING, pass a table
+    -- else
+      -- MyTable = i -- pass an integer
+    -- end
+    
 		upgradeTable[#upgradeTable + 1] = {
 			-- For each eligible upgrade class, instruct AMUMSS to find
 			-- all eligible upgrade modules of that class
@@ -180,7 +201,7 @@ for i = 1, #processClasses do
 			-- of this loop access the loop counter, so use VCT's 4th argument
 			-- to pass it in 
 			VCT = {
-				{"ID", "saveTechID()", nil, i},
+				{"ID", "saveTechID()", "", MyTable}, -- passing a table
 				{"Template", "saveTempName()"},
 			}
 		}
@@ -209,13 +230,22 @@ been called yet, so we can define them here after the first loop instead
 -- This is the first function called from VCT after SKW finds a match
 -- All of these functions must be global, so that they can be called from AMUMSS
 function saveTechID(propName, savedValue, unusedVal, classIndex)
-	-- For each result, add/initialize a new subtable in the processUpgrades table
+	-- printf("        >>>>   propName = [%s]",tostring(propName))
+	-- printf("        >>>> savedValue = [%s]",tostring(savedValue))
+	-- printf("        >>>>  unusedVal = [%s]",tostring(unusedVal))
+	-- printf("        >>>> classIndex = [%s]",tostring(classIndex))
+  
+  -- For each result, add/initialize a new subtable in the processUpgrades table
 	processUpgrades[#processUpgrades + 1] = {uTech, uModule, uTemplate, uSuffix}
 
 	-- Then save the name of the upgrade, and fetch/store the suffix for its class
 	local newModule = processUpgrades[#processUpgrades]
 	newModule.uTech = savedValue
-	newModule.uSuffix = processClasses[tonumber(classIndex)].classSuffix
+	-- if type(classIndex) == "table" then
+    -- classIndex = classIndex[1]
+    -- printf("        >>>> classIndex = [%s]",tostring(classIndex))
+  -- end
+  newModule.uSuffix = processClasses[tonumber(classIndex[1])].classSuffix -- classIndex is a table
 
 	-- We don't actually need to change anything after storing the information
 	-- So tell AMUMSS to skip this line and move on

@@ -57,5 +57,5 @@ MOD_DESCRIPTION = "Testing of INTEGER_TO_FLOAT messages",
                 },
             },
         },
-    },
+    }, --14 global replacements
 }

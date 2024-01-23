@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 }
             }
         }
-    }
+    } --19 global replacements
 }
 
 
