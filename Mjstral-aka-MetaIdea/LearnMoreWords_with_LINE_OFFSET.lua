@@ -2,16 +2,38 @@
 --Beside all the basic language
 --All available standard functions in {string, math, table} plus {tonumber, tostring, type} can be used here 
 
--- NOTE:
--- This script does NOT use LINE_OFFSET, much better
--- Some other word types exist in the EXML file. YOU COULD ADD THEM ALSO...
---
+--xxxxxxxxxxxxxxx  WARNING  xxxxxxxxxxxxxxxxxxx
+--NOTE: this script uses LINE_OFFSET
+--      if NMS adds or removes lines leading to the end of the section
+--      we are looking for to ADD the text, the EXML may not compile
+--      or even work correctly
+
+--      SEE the script "LearnMoreWords.lua" for a much better way WITHOUT using LINE_OFFSET
+
+--xxxxxxxxxxxxxxx  WARNING  xxxxxxxxxxxxxxxxxxx
 
 WORDS_TO_LEARN = 5 --a user named variable with a value of 5
 
 TEXT_TO_ADD =
+
+--was used with 1.78
+-- [[
+          -- <Property value="GcRewardTableItem.xml">
+            -- <Property name="PercentageChance" value="100" />
+            -- <Property name="Reward" value="GcRewardTeachWord.xml">
+              -- <Property name="Race" value="GcAlienRace.xml">
+                -- <Property name="AlienRace" value="None" />
+              -- </Property>
+              -- <Property name="AmountMin" value="1" />
+              -- <Property name="AmountMax" value="1" />
+            -- </Property>
+            -- <Property name="LabelID" value="" />
+          -- </Property>
+-- ]] --a long text assigned to a user named variable
+
+--for BEYOND, some added lines
 [[
-          <Property value="GcRewardTableItem.xml">
+		  <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -28,7 +50,7 @@ TEXT_TO_ADD =
           </Property>
 ]] --a long text assigned to a user named variable
 
-TEXT_TO_ADD = string.rep(TEXT_TO_ADD, WORDS_TO_LEARN - 1) --creates a text made of 4 (here five minus one) copies of TEXT_TO_ADD above
+TEXT_TO_ADD = string.rep(TEXT_TO_ADD, WORDS_TO_LEARN - 1) --creates a text made of 4(five minus one) copies of TEXT_TO_ADD above
 
 --each time the variable name TEXT_TO_ADD is found inside NMS_MOD_DEFINITION_CONTAINER, it is replaced by its value
 
@@ -56,43 +78,35 @@ METADATA\REALITY\TABLES\REWARDTABLE.MBIN
 ["MODIFICATIONS"] 		= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",       
 			["MBIN_CHANGE_TABLE"] 	=                           
 			{                                                   --Using a SPECIAL_KEY_WORDS pair forces this tool
 				{                                                 --   to find a line matching BOTH the first (the Property) AND the second (the value)
                                                           
-					["MBIN_FILE_SOURCE"] 	=                         --EVERY SPECIAL_KEY_WORDS pairs will be searched for on the SAME line
-					{                                               --SPECIAL_KEY_WORDS pairs, as a group, will point to a section of the EXML file
+					["MBIN_FILE_SOURCE"] 	=                         --BOTH will be searched for on the SAME line
+					{                                               --The SpecialKeyWords pair can point to a single line or multiple lines
                                                           
 						"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"		--If you want to process multiple lines, you need to make ["REPLACE_TYPE"] = "ALL",
 					},                                              --and lines that match down the file will also be processed
 					["EXML_CHANGE_TABLE"] 	=                       --To limit the search to a region, use also some PRECEDING_KEY_WORDS
 					{                                               
-						{                                             
-							["SPECIAL_KEY_WORDS"] = {"Id","WORD","PercentageChance","IGNORE",},
-
-                    -- Here we are using a SpecialKeyWord pair "Id" with a value="WORD" to zoom in on a master section we seek
-                    -- WITH the addition of the second pair "PercentageChance","IGNORE" points to the right sub-section
-
-                    -- NOTE: the use of "IGNORE" (as a replacement for the real value="100") makes sure we still find the right section
-                    -- EVEN if the value "100" was ever changed by NMS
-                      
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						{                                             --Using only a value like "WORD" here could work but is much more prone to errors!!!
+							["SPECIAL_KEY_WORDS"] = {"Id","WORD",},     --here using a SpecialKeyWord "Id" with a value "WORD" to zoom in on the line we seek
+							["LINE_OFFSET"] 		= "+19",                --forces changes to start +19 lines below the line pointed by the SPECIAL_KEY_WORDS
+							["REPLACE_TYPE"] 		= "",			
+							-- ["VALUE_CHANGE_TABLE"] 	=
+              -- {
+                -- {"IGNORE",	"IGNORE",},                    --means don't change anything on the line
+              -- },
 							["ADD"] 				= TEXT_TO_ADD,              --insert the text define in the user named variable TEXT_TO_ADD above
 						},
-						{                                             --below, other changes to be done to the same MBIN_FILE_SOURCE file
-							["SPECIAL_KEY_WORDS"]   = {"Id","TRA_WORD","PercentageChance","IGNORE",},
-							-- ["PRECEDING_KEY_WORDS"]   = {"PercentageChance",},  
-              
-                    -- THIS can work also to specify the right section
-                    -- SPECIAL_KEY_WORDS pair to specify a section
-                    -- AND one PRECEDING_KEY_WORDS to narrow it down to the right section
-                    
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						{                                                   --below, other changes to be done to the same MBIN_FILE_SOURCE file
+							["SPECIAL_KEY_WORDS"]   = {"Id","TRA_WORD",},     --found on line 7509 (in the original EXML file v.1.78)
+							["LINE_OFFSET"] 		    = "+19",
+							-- ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"},}, --not required or used
 							["ADD"] 				= TEXT_TO_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TRA_WORD",},
+							["SPECIAL_KEY_WORDS"]   = {"Id","TRA_WORD",},     --found on line 7509 (in the original EXML file v.1.78)
 							["REPLACE_TYPE"]        = "ALL",
               ["VALUE_CHANGE_TABLE"] 	= 
               {
@@ -100,8 +114,9 @@ METADATA\REALITY\TABLES\REWARDTABLE.MBIN
               },
 						},
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","EXP_WORD","PercentageChance","IGNORE",},
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"]   = {"Id","EXP_WORD",},
+							["LINE_OFFSET"] 		    = "+19",
+							-- ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"},},
 							["ADD"] 				= TEXT_TO_ADD,
 						},
 						{
@@ -113,8 +128,9 @@ METADATA\REALITY\TABLES\REWARDTABLE.MBIN
               },
 						},
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","WAR_WORD","PercentageChance","IGNORE",},
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"]   = {"Id","WAR_WORD",},
+							["LINE_OFFSET"] 		    = "+19",
+							-- ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"},},
 							["ADD"] 				= TEXT_TO_ADD,
 						},
 						{
@@ -126,8 +142,9 @@ METADATA\REALITY\TABLES\REWARDTABLE.MBIN
               },
 						},
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_EXP","PercentageChance","IGNORE",},
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_EXP",},
+							["LINE_OFFSET"] 		    = "+19",
+							-- ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"},},
 							["ADD"] 				= TEXT_TO_ADD,
 						},
 						{
@@ -139,8 +156,9 @@ METADATA\REALITY\TABLES\REWARDTABLE.MBIN
               },
 						},
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_TRA","PercentageChance","IGNORE",},
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_TRA",},
+							["LINE_OFFSET"] 		    = "+19",
+							-- ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"},},
 							["ADD"] 				= TEXT_TO_ADD,
 						},
 						{
@@ -152,8 +170,9 @@ METADATA\REALITY\TABLES\REWARDTABLE.MBIN
               },
 						},
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_WAR","PercentageChance","IGNORE",},
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_WAR",},
+							["LINE_OFFSET"] 		    = "+19",
+							-- ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"},},
 							["ADD"] 				= TEXT_TO_ADD,
 						},
 						{
@@ -165,8 +184,9 @@ METADATA\REALITY\TABLES\REWARDTABLE.MBIN
               },
 						},
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_ATLAS","PercentageChance","IGNORE",},
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_ATLAS",},
+							["LINE_OFFSET"] 		    = "+19",
+							-- ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"},},
 							["ADD"] 				= TEXT_TO_ADD,
 						},
 						{
