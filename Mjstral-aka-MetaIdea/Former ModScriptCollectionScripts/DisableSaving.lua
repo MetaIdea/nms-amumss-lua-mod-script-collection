@@ -18,10 +18,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"DisableSaving",				"True"} 	-- Original "False"
 							}
 						}
-					} --1 global replacements
+					}
 				}
 			}
 		}
 	}	
 }
---NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED

@@ -6,7 +6,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -141,9 +140,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxRandAmount",	"0"} 		-- Original "100"								
 							}						
 						}
-					}
+					} --32 global replacements
 				}
 			}
 		}	
 	}	
 }
+--NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED

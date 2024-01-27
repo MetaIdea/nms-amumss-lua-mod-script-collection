@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "UnlimitedPhotoMode+NoClip+Speed3x.pak",
 ["MOD_AUTHOR"]				= "Mjjstral",
-["NMS_VERSION"]				= "1.77",
+["NMS_VERSION"]				= "2.2+",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -23,10 +23,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PhotoModeCollisionRadius",	"0.0"}, 			-- Original "0.5"
 							}
 						},
-					} --6 global replacements
+					}
 				},
 			}
 		},
 	}	
 }
---NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED

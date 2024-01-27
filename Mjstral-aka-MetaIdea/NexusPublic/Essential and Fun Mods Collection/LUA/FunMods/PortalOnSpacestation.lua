@@ -34,7 +34,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.4C482859.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -45,8 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-              ["SPECIAL_KEY_WORDS"]   = {"Name", "ExteriorTrigger"},	--can be missing (if not used) or "" or {"",} or { a comma separated list of key_words }, see Script_Rules.txt
-							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"]   = {"Name", "ExteriorTrigger"},	--can be missing (if not used) or "" or {"",} or { a comma separated list of key_words }, see Script_Rules.txt
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] 				= TEXT_TO_ADD,
 						},				
@@ -57,5 +55,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 	}	
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE

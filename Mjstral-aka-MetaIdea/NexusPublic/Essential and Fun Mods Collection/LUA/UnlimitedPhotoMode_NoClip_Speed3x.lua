@@ -6,7 +6,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
 			["MBIN_CHANGE_TABLE"] 	=
 			{ 
 				{
@@ -14,13 +13,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"PhotoModeMoveSpeed",			"30"}, 			-- Original "10"
-								{"PhotoModeMaxDistance",		"1000000"},		-- Original "100"
-								{"PhotoModeMaxDistanceSpace",	"1000000"},		-- Original "200"
-								{"PhotoModeCollisionRadius",	"0.0"}, 		-- Original "0.5"
+								{"PhotoModeMaxDistance",		"10000000"},	-- Original "100" --This will generate a WARNING
+								{"PhotoModeMaxDistanceSpace",	"10000000"},	-- Original "200" --This will generate a WARNING
+								{"PhotoModeMaxDistance",		"9000000"},	-- Original "100"
+								{"PhotoModeMaxDistanceSpace",	"9000000"},	-- Original "200"
+								{"PhotoModeCollisionRadius",	"0.0"}, 			-- Original "0.5"
 							}
 						},
 					}

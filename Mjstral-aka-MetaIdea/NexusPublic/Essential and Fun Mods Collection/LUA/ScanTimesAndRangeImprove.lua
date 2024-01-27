@@ -6,7 +6,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -14,7 +13,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								--{"BinocTimeBeforeScan",					"0.1"}, 	-- Original "0.5"
@@ -27,36 +25,40 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"TerrainResourceScanRange",			"1200"}, 	-- Original "1200"								
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "ToolScan",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PulseRange",					"400"},	-- Original "200"			
-								{"ChargeTime",					"2"} 	-- Original "30"		
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "ToolScanHardMode",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PulseRange",					"500"},	-- Original "150"			
-								{"ChargeTime",					"4"} 	-- Original "90"							
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "ShipScan",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PulseRange",					"20000"},	-- Original "10000"			
-								{"ChargeTime",					"2"} 		-- Original "10"							
-							}
-						}
 					} --9 global replacements
-				}
+				},
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCANNING\SCANDATATABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "TOOL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "400"}, -- Original "200"
+                                {"ChargeTime", "2"},   -- Original "30"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "TOOL_HARD"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "500"}, -- Original "150"
+                                {"ChargeTime", "4"},   -- Original "90"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIP"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PulseRange", "20000"}, -- Original "10000"
+                                {"ChargeTime", "2"},  -- Original "10"
+                            }
+                        },
+                    }
+                },
 			}
 		}
 	}	
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE

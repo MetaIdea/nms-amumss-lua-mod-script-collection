@@ -7,11 +7,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MODIFICATIONS"] 		=             --REQUIRED SECTION
 	{
 		{
-			-- ["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak", --example, only one pak file here -OPTIONAL
 			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= {"GCCREATUREGLOBALS.MBIN",},  --{ a_comma_separated_list_of.MBINs, } - REQUIRED, must be a file in PAK_FILE_SOURCE
+					["MBIN_FILE_SOURCE"] 	= {"GCCREATUREGLOBALS.MBIN",},  --{ a_comma_separated_list_of.MBINs, }
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
@@ -30,5 +29,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 	} --3 global replacements
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE

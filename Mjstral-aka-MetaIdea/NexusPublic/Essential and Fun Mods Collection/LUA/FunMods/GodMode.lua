@@ -6,7 +6,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -14,17 +13,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"GodMode",						"True"}, 	-- Original "False"
-								{"AlwaysHaveFocus",				"True"}, 	-- Original "False"
+								{"AlwaysHaveFocus",			"True"}, 	-- Original "False"
 								{"MapWarpCheckIgnoreFuel",		"True"}, 	-- Original "False"
 								{"MapWarpCheckIgnoreDrive",		"True"}, 	-- Original "False"
 								{"EverythingIsFree",			"True"}, 	-- Original "False"
 								{"EverythingIsKnown",			"True"}, 	-- Original "False"
 								{"EverythingIsStar",			"True"}, 	-- Original "False"
-								{"IgnoreMissionRank",			"True"} 	-- Original "False"
+								{"IgnoreMissionRank",			"True"}, 	-- Original "False"
 							}
 						}
 					} --8 global replacements
@@ -34,5 +32,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 	}	
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE

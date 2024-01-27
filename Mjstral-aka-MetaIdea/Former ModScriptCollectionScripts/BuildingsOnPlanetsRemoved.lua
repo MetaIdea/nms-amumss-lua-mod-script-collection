@@ -6,16 +6,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 		
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	=
 					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",				
-							["MATH_OPERATION"] 		= "",  			
+						{		
 							["REPLACE_TYPE"] 		= "ALL", -- BUT these actually need to be excluded "Harvester", "Base", "TerrainResource"
 							["VALUE_MATCH"] 		= "",    -- so this script is not good as written
 							["VALUE_MATCH_TYPE"] 	= "",  -- TODO: corrected script OR tool

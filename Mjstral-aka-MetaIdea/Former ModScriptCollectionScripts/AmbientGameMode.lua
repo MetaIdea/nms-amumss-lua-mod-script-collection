@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "NewSaveGameMode",
-                            ["VALUE_MATCH_TYPE"] = "string",
+							["VALUE_MATCH_TYPE"] = "string",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"PresetGameMode",  "6152"} --original is "Unspecified" a "string" 

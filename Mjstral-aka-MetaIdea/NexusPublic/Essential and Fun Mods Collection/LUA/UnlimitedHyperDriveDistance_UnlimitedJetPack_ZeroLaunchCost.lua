@@ -6,7 +6,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -16,24 +15,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE",},
 							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",	"1000000"}, 	-- Original "100"
-								{"Bonus",	"9000000"}, 	-- Original "100"
+								{"Bonus",	"10000000"}, 	-- Original "100" --This will generate a WARNING
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","JET1",},
 							["PRECEDING_KEY_WORDS"] = {"Suit_Jetpack_Tank",},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",	"1000000"},		-- Original "2.75"
-								{"Bonus",	"9000000"}, 	-- Original "2.75"
+								{"Bonus",	"10000000"},		-- Original "2.75" line 549 --This will generate a WARNING
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","LAUNCHER",},
+							["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER",},
 							["PRECEDING_KEY_WORDS"] = "Ship_Launcher_TakeOffCost",
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",		"0"},		-- Original "50"

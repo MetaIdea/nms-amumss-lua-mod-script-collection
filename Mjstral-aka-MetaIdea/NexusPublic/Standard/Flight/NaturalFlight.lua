@@ -2,12 +2,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "NaturalFlight_0.21.pak",
 ["MOD_AUTHOR"]		= "Buckaroo_Banzai68 and converted by Mjjstral",
-["MOD_PAGE_LINK"]	= "https://nomansskymods.com/mods/natural-flight/",
 ["NMS_VERSION"]		= "1.77",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] 	= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -172,45 +171,44 @@ NMS_MOD_DEFINITION_CONTAINER =
 						}
 					} --88 replacements
 				},				
-				{
-					["MBIN_FILE_SOURCE"] 	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "AsteroidScaleVariance",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "x", 									"0.05" } 	--Original "0.5"
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "AsteroidFadeTime", 					"5" }, 		--Original "2"
-								{ "AsteroidLotsOfRaresOdds", 			"0.5" }, 	--Original "0.9"
-								{ "AsteroidFadeRangeMin", 				"10000" }, 	--Original "1000"
-								{ "AsteroidFadeRangeMax", 				"10000" }, 	--Original "2000"
-								{ "AsteroidSpacing", 					"8000" }, 	--Original "1000"
-								{ "RareAsteroidMinResources", 			"20" }, 	--Original "5"
-								{ "RareAsteroidMaxResources", 			"100" }, 	--Original "10"
-								{ "RareAsteroidHealth", 				"600" }, 	--Original "1000"
-								{ "CommonAsteroidScale", 				"0.1" }, 	--Original "0.3"
-								{ "CommonAsteroidMinResources", 		"5" }, 		--Original "3"
-								{ "CommonAsteroidMaxResources", 		"20" }, 	--Original "5"
-								{ "CommonAsteroidHealth", 				"300" }, 	--Original "400"
-								{ "LargeAsteroidSpacing", 				"30000" }, 	--Original "3000"
-								{ "LargeAsteroidFadeTime", 				"0.5" }, 	--Original "0.1"
-								{ "LargeAsteroidFadeRangeMin", 			"100000" }, --Original "4000"
-								{ "LargeAsteroidFadeRangeMax", 			"100000" }  --Original "4000"
-							}
-						}
-					} --17 replacements
-				}
+				-- {
+					-- ["MBIN_FILE_SOURCE"] 	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
+					-- ["EXML_CHANGE_TABLE"] 	= 
+					-- {
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = "AsteroidScaleVariance",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "x", 									"0.05" } 	--Original "0.5"
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = "",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "AsteroidFadeTime", 					"5" }, 		--Original "2"
+								-- { "AsteroidLotsOfRaresOdds", 				"0.5" }, 	--Original "0.9"
+								-- { "AsteroidFadeRangeMin", 				"10000" }, 	--Original "1000"
+								-- { "AsteroidFadeRangeMax", 				"10000" }, 	--Original "2000"
+								-- { "AsteroidSpacing", 					"8000" }, 	--Original "1000"
+								-- { "RareAsteroidMinResources", 			"20" }, 	--Original "5"
+								-- { "RareAsteroidMaxResources", 			"100" }, 	--Original "10"
+								-- { "RareAsteroidHealth", 				"600" }, 	--Original "1000"
+								-- { "CommonAsteroidScale", 				"0.1" }, 	--Original "0.3"
+								-- { "CommonAsteroidMinResources", 		"5" }, 		--Original "3"
+								-- { "CommonAsteroidMaxResources", 		"20" }, 	--Original "5"
+								-- { "CommonAsteroidHealth", 				"300" }, 	--Original "400"
+								-- { "LargeAsteroidSpacing", 				"30000" }, 	--Original "3000"
+								-- { "LargeAsteroidFadeTime", 				"0.5" }, 	--Original "0.1"
+								-- { "LargeAsteroidFadeRangeMin", 			"100000" }, --Original "4000"
+								-- { "LargeAsteroidFadeRangeMax", 			"100000" }  --Original "4000"
+							-- }
+						-- }
+					-- } --17 replacements
+				-- }
 			}
 		},
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.86055253.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -237,7 +235,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{ "Scale", 								"20" }, 	--Original "60"
 								{ "Radius", 							"20" }, 	--Original "15"
-								{ "Speed", 								"10000" }, 	--Original "1500"
+								{ "DefaultSpeed", 								"10000" }, 	--Original "1500"
 								{ "BulletGlowWidthTime", 				"0.3" } 	--Original "0.15"
 							}
 						},
@@ -245,28 +243,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","SHIPSHOTGUN",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Speed", 								"10000" } 	--Original "2000"
+								{ "DefaultSpeed", 								"10000" } 	--Original "2000"
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SHIPMINIGUN",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Speed", 								"10000" } 	--Original "1800"
+								{ "DefaultSpeed", 								"10000" } 	--Original "1800"
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SHIPPLASMAGUN",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Speed", 								"10000" }, 	--Original "500"
+								{ "DefaultSpeed", 								"10000" }, 	--Original "500"
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","TRADERGUN",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Speed", 								"10000" } 	--Original "3000"
+								{ "DefaultSpeed", 								"10000" } 	--Original "3000"
 							}
 						},
 						-- {
@@ -281,7 +279,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -351,5 +348,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 	}	 --123 global replacements
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE

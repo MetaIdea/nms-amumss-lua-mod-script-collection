@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "AlwaysDay.pak",
-["MOD_AUTHOR"]				= "Mjjstral",
-["NMS_VERSION"]				= "1.77",  			--version on first mod release
+["MOD_AUTHOR"]				= "Mjstral",
+["NMS_VERSION"]				= "3.52",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -26,4 +26,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}, --for multiple pak sources: copy this chunk below and add a comma behind this line here
 	}	
 }
---NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED

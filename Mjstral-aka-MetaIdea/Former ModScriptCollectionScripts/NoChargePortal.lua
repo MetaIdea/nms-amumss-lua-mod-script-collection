@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "NoChargePortal.pak",
 ["MOD_AUTHOR"]				= "idea by Seekker, script by Mjjstral",
-["NMS_VERSION"]				= "1.77",
+["NMS_VERSION"]				= "2.2+",
 ["MODIFICATIONS"] 			= 
 	{
 		{

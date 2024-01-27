@@ -6,7 +6,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -15,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "NewSaveGameMode",
-              ["VALUE_MATCH_TYPE"] = "string",
+							["VALUE_MATCH_TYPE"] = "string",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"PresetGameMode",  "6152"} --original is "Unspecified" a "string" 
@@ -28,5 +27,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 	}	
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE
