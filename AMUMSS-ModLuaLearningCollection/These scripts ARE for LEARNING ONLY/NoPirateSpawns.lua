@@ -17,15 +17,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x", "0"}, 			-- Original "1"
-                {"y", "0"}, 			-- Original "1"
+                                {"y", "0"}, 			-- Original "1"
 							}
 						}, --for multiple EXML changes with PRECEDING_KEY_WORDS copy this chunk below and add a comma behind this line here
-            {
+                        {
 							["PRECEDING_KEY_WORDS"] = {"PirateSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count", },     -- use a single string or a list = {"PrecedingKeyWord1", "PrecedingKeyWord2"}, leave empty "" or {} if not necessary
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x", "0"}, 			-- Original "1"
-                {"y", "0"}, 			-- Original "1"
+                                {"y", "0"}, 			-- Original "1"
 							}
 						}, --for multiple EXML changes with PRECEDING_KEY_WORDS copy this chunk below and add a comma behind this line here
 					} --4 global replacements

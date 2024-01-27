@@ -44,7 +44,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",   --if we wanted to replace only in a group, we would put a key_word here
 							["MATH_OPERATION"] 		= "*",    --multiply the value at the offset by LOD_DISTANCE_MULTIPLIER
 							["REPLACE_TYPE"] 		= "ALL",    --ALL means all the file since we have no PRECEDING_KEY_WORDS
 							["LINE_OFFSET"] 		= "+1",     --one line down
@@ -54,7 +53,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["LINE_OFFSET"] 		= "+2",
@@ -64,7 +62,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["LINE_OFFSET"] 		= "+3",
@@ -74,7 +71,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["LINE_OFFSET"] 		= "+4",
@@ -84,7 +80,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["LINE_OFFSET"] 		= "+5",

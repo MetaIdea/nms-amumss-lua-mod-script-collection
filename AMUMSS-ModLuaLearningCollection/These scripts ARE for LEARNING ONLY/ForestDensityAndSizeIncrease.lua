@@ -45,10 +45,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxScale",	PLANT_SIZE}
@@ -63,8 +61,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","FOREST",},
 							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "",
-							["VALUE_MATCH"] 		= "", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"PatchSize",				FOREST_SIZE }, 		-- Original "64"
@@ -74,8 +70,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","GRASS",},
 							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "",
-							["VALUE_MATCH"] 		= "", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"PatchSize",				FOREST_SIZE }, 		-- Original "4"
@@ -85,8 +79,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","BIOMEPLANT",},
 							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "",
-							["VALUE_MATCH"] 		= "", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"PatchSize",				FOREST_SIZE }, 		-- Original "550"

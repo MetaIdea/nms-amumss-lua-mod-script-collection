@@ -15,7 +15,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "BIKE" },
-						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TopSpeedForward",				"41"}, 	-- Original "18"
@@ -25,7 +24,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "MED_BUGGY" },
-						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TopSpeedForward",				"41"}, 	-- Original "18"
@@ -35,7 +33,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "TRUCK" },
-						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TopSpeedForward",				"41"}, 	-- Original "18"
@@ -45,7 +42,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "WHEELEDBIKE" },
-						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TopSpeedForward",				"41"}, 	-- Original "18"
@@ -55,7 +51,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "HOVERCRAFT" },
-						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TopSpeedForward",				"41"}, 	-- Original "18"
@@ -65,7 +60,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "SUBMARINE" },
-						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TopSpeedForward",				"41"}, 	-- Original "18"

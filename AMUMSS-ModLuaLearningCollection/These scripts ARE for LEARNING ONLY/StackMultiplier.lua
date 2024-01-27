@@ -16,10 +16,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",				-- what key words must occur in lines prior your desired value you want to change
 							["MATH_OPERATION"] 		= "*", 				-- "*", "+", "-", "/" or leave empty for normal replacement
-							["REPLACE_TYPE"] 		= "ALL",			  -- "ALL" to change every matching values or leave empty for single replacement
-							["VALUE_MATCH"] 		= "", 				  -- only change value(s) that match this value
+							["REPLACE_TYPE"] 		= "ALL",			  -- "ALL" to change every matching values or leave empty for single replacement			  -- only change value(s) that match this value
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"StackMultiplier",	STACK_MULTIPLIER} 	-- Original 1 --one or many Property/Value combo
@@ -31,11 +29,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	=
 					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",				
+						{				
 							["MATH_OPERATION"] 		= "*",  			
-							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",        		
+							["REPLACE_TYPE"] 		= "ALL",			      		
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{"StackMultiplier",	STACK_MULTIPLIER} 	-- Original 1

@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"TerrainEditing","SubtractSizes",},
-							["LINE_OFFSET"] 		    = "+3",	      --can be missing (if not used) or +/- an integer number of lines, see Script_Rules.txt
+							["LINE_OFFSET"] 		= "+3",	      --can be missing (if not used) or +/- an integer number of lines, see Script_Rules.txt
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"IGNORE",			"4.0"	}, -- Original "3.2"
@@ -27,14 +27,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"TerrainEditing","UndoEditSizes",},
-							["LINE_OFFSET"] 		    = "+2",	      --can be missing (if not used) or +/- an integer number of lines, see Script_Rules.txt
+							["LINE_OFFSET"] 		= "+2",	      --can be missing (if not used) or +/- an integer number of lines, see Script_Rules.txt
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"IGNORE",			"4.0"		}, -- Original "1.2"
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = { },
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TerrainEditBeamMaxRange",			TerrainEditBeamMaxRange_Multiply	}, 		-- Original "40"

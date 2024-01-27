@@ -13,7 +13,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								--{"BinocTimeBeforeScan",					"0.1"}, 	-- Original "0.5"

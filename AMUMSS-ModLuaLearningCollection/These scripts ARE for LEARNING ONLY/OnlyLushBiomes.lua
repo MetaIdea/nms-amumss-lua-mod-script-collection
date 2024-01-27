@@ -12,12 +12,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN",
 					["EXML_CHANGE_TABLE"] 	=
 					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",				
-							["MATH_OPERATION"] 		= "",  			
+						{			
 							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",    
-							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{ "Lush", 		"1" },

@@ -34,7 +34,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= {{"Shader",	"SHADERS/LINE3D.SHADER.BIN"}} -- Original "SHADERS/LINE3D.SHADER.BIN" 
                     -- You need to create a "SHADERS/GALAXYLINE3D.SHADER.BIN" (or whatever you want as name) and change this value
 						}					
@@ -50,7 +49,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"PathUIWidth",									"4.5"}, 	-- Original "4.5"

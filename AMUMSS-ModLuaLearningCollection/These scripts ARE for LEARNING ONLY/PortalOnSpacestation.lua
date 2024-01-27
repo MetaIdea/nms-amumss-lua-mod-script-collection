@@ -44,8 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-              ["SPECIAL_KEY_WORDS"]   = {"Name", "ExteriorTrigger"},	--can be missing (if not used) or "" or {"",} or { a comma separated list of key_words }, see Script_Rules.txt
-							["PRECEDING_KEY_WORDS"] = "",
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "ExteriorTrigger"},	--can be missing (if not used) or "" or {"",} or { a comma separated list of key_words }, see Script_Rules.txt
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] 				= TEXT_TO_ADD,
 						},				

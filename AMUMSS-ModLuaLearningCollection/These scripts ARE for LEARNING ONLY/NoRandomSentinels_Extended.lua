@@ -13,7 +13,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"SpawnRobots",					"False"}	-- Original "True"
@@ -26,7 +25,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"DroneSpawnTime",				"2000000"}, 	-- Original "2" 
@@ -57,10 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "",
 							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinGroupSize", 				"0" },  -- Original "2"

@@ -13,23 +13,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",				
+						{			
 							["MATH_OPERATION"] 		= "*F:MaxSlots",  			
 							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",    
-							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 	
 							{
 								{"MinSlots",		"1"}				
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",				
+						{			
 							["MATH_OPERATION"] 		= "*F:MaxTechSlots",  			
 							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",    
-							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 	
 							{
 								{"MinTechSlots",	"1"}

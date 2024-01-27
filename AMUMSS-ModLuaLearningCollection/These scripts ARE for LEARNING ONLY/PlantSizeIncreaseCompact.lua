@@ -44,10 +44,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								--{ "MinScale",	SIZE_SCALE },							

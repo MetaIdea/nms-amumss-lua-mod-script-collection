@@ -16,10 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "Large",				
-							["MATH_OPERATION"] 		= "",  			
 							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",    
-							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{"NoiseGridType",	"SuperFormulaRandom" }   -- "SuperFormula_03"
@@ -27,10 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "Large",				
-							["MATH_OPERATION"] 		= "",  			
 							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",    
-							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{"NoiseGridType",	"SuperPrimitiveRandom" } --will overwrite the previous changes, see above
@@ -38,10 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "Large",				
-							["MATH_OPERATION"] 		= "",  			
 							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",    
-							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{"Active",			"True" }
@@ -49,10 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "Small",				
-							["MATH_OPERATION"] 		= "",  			
 							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",    
-							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{"NoiseGridType",	"SuperFormulaRandom" }
@@ -60,10 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "Small",				
-							["MATH_OPERATION"] 		= "",  			
 							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",    
-							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{"NoiseGridType",	"SuperPrimitiveRandom" } --will overwrite the previous changes, see section above
@@ -71,10 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "Small",				
-							["MATH_OPERATION"] 		= "",  			
 							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_MATCH"] 		= "",    
-							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{"Active",			"True" }

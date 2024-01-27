@@ -7,8 +7,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] 			= "", --EMPTY string, no pak is created because EXML_CHANGE_TABLE does not exist
   ["MOD_DESCRIPTION"]		= "Refresh MapFileTree files to latest version",
-  ["MOD_AUTHOR"]				= "Wbertro",
-  ["NMS_VERSION"]				= "ALL",
+  ["MOD_AUTHOR"]			= "Wbertro",
+  ["NMS_VERSION"]			= "ALL",
   ["MODIFICATIONS"] 		=
 	{
 		{

@@ -25,11 +25,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-              ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TimeToMake",				REFINER_TIME_FACTOR},
