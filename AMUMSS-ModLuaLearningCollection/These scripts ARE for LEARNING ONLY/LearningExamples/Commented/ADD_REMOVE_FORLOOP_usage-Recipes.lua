@@ -36,7 +36,7 @@ RECIPE_PYRITE_SYN =
     </Property>
 ]]
 
-RECIPE_AMMONIA_SYN = 
+RECIPE_AMMONIA_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_325" />
@@ -69,7 +69,7 @@ RECIPE_AMMONIA_SYN =
     </Property>
 ]]
 
-RECIPE_DRYICE_SYN = 
+RECIPE_DRYICE_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_326" />
@@ -101,8 +101,8 @@ RECIPE_DRYICE_SYN =
       </Property>
     </Property>
 ]]
-  
-RECIPE_MAGNETITE_SYN = 
+
+RECIPE_MAGNETITE_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_327" />
@@ -135,7 +135,7 @@ RECIPE_MAGNETITE_SYN =
     </Property>
 ]]
 
-RECIPE_SODIUM_NITRATE_SYN = 
+RECIPE_SODIUM_NITRATE_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_328" />
@@ -175,7 +175,7 @@ RECIPE_SODIUM_NITRATE_SYN =
     </Property>
 ]]
 
-RECIPE_SALT_SYN = 
+RECIPE_SALT_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_329" />
@@ -209,7 +209,7 @@ RECIPE_SALT_SYN =
 ]]
 
 ---DECOMPOSITION RECIPES---
-RECIPE_PYRITE_DECOMP = 
+RECIPE_PYRITE_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_330" />
@@ -235,7 +235,7 @@ RECIPE_PYRITE_DECOMP =
     </Property>
 ]]
 
-RECIPE_AMMONIA_DECOMP = 
+RECIPE_AMMONIA_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_331" />
@@ -261,7 +261,7 @@ RECIPE_AMMONIA_DECOMP =
     </Property>
 ]]
 
-RECIPE_MAGNETITE_DECOMP = 
+RECIPE_MAGNETITE_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_332" />
@@ -287,7 +287,7 @@ RECIPE_MAGNETITE_DECOMP =
     </Property>
 ]]
 
-RECIPE_SALT_DECOMP = 
+RECIPE_SALT_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_333" />
@@ -313,7 +313,7 @@ RECIPE_SALT_DECOMP =
     </Property>
 ]]
 
-RECIPE_DRYICE_DECOMP = 
+RECIPE_DRYICE_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_334" />
@@ -339,7 +339,7 @@ RECIPE_DRYICE_DECOMP =
     </Property>
 ]]
 
-RECIPE_SODIUM_NITRATE_DECOMP = 
+RECIPE_SODIUM_NITRATE_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_335" />
@@ -366,7 +366,7 @@ RECIPE_SODIUM_NITRATE_DECOMP =
 ]]
 
 ---EXTRACTION RECIPES---
-RECIPE_FROST_EXTRACT1 = 
+RECIPE_FROST_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_336" />
@@ -399,7 +399,7 @@ RECIPE_FROST_EXTRACT1 =
     </Property>
 ]]
 
-RECIPE_FROST_EXTRACT2 = 
+RECIPE_FROST_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_337" />
@@ -432,7 +432,7 @@ RECIPE_FROST_EXTRACT2 =
     </Property>
 ]]
 
-RECIPE_GAMMA_EXTRACT1 = 
+RECIPE_GAMMA_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_338" />
@@ -465,7 +465,7 @@ RECIPE_GAMMA_EXTRACT1 =
     </Property>
 ]]
 
-RECIPE_GAMMA_EXTRACT2 = 
+RECIPE_GAMMA_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_339" />
@@ -498,7 +498,7 @@ RECIPE_GAMMA_EXTRACT2 =
     </Property>
 ]]
 
-RECIPE_POOP_EXTRACT1 = 
+RECIPE_POOP_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_340" />
@@ -524,7 +524,7 @@ RECIPE_POOP_EXTRACT1 =
     </Property>
 ]]
 
-RECIPE_POOP_EXTRACT2 = 
+RECIPE_POOP_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_341" />
@@ -557,7 +557,7 @@ RECIPE_POOP_EXTRACT2 =
     </Property>
 ]]
 
-RECIPE_POOP_EXTRACT3 = 
+RECIPE_POOP_EXTRACT3 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_342" />
@@ -590,7 +590,7 @@ RECIPE_POOP_EXTRACT3 =
     </Property>
 ]]
 
-RECIPE_DUST_EXTRACT1 = 
+RECIPE_DUST_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_343" />
@@ -623,7 +623,7 @@ RECIPE_DUST_EXTRACT1 =
     </Property>
 ]]
 
-RECIPE_DUST_EXTRACT2 = 
+RECIPE_DUST_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_344" />
@@ -656,7 +656,7 @@ RECIPE_DUST_EXTRACT2 =
     </Property>
 ]]
 
-RECIPE_HOT_EXTRACT1 = 
+RECIPE_HOT_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_345" />
@@ -689,7 +689,7 @@ RECIPE_HOT_EXTRACT1 =
     </Property>
 ]]
 
-RECIPE_HOT_EXTRACT2 = 
+RECIPE_HOT_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_346" />
@@ -722,7 +722,7 @@ RECIPE_HOT_EXTRACT2 =
     </Property>
 ]]
 
-RECIPE_TOXIC_EXTRACT1 = 
+RECIPE_TOXIC_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_347" />
@@ -755,7 +755,7 @@ RECIPE_TOXIC_EXTRACT1 =
     </Property>
 ]]
 
-RECIPE_TOXIC_EXTRACT2 = 
+RECIPE_TOXIC_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_348" />
@@ -788,7 +788,7 @@ RECIPE_TOXIC_EXTRACT2 =
     </Property>
 ]]
 
-RECIPE_LUSH_EXTRACT1 = 
+RECIPE_LUSH_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_349" />
@@ -821,7 +821,7 @@ RECIPE_LUSH_EXTRACT1 =
     </Property>
 ]]
 
-RECIPE_LUSH_EXTRACT2 = 
+RECIPE_LUSH_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_350" />
@@ -863,7 +863,7 @@ ExtractRecipes = RECIPE_DUST_EXTRACT1..RECIPE_DUST_EXTRACT2..RECIPE_FROST_EXTRAC
                   RECIPE_GAMMA_EXTRACT1..RECIPE_GAMMA_EXTRACT2..RECIPE_HOT_EXTRACT1..RECIPE_HOT_EXTRACT2..
                   RECIPE_LUSH_EXTRACT1..RECIPE_LUSH_EXTRACT2..RECIPE_POOP_EXTRACT1..RECIPE_POOP_EXTRACT2..
                   RECIPE_POOP_EXTRACT3..RECIPE_TOXIC_EXTRACT1..RECIPE_TOXIC_EXTRACT2
-                  
+
 --TABLES FOR REMOVE LOOPS (will create REMOVE section inside EXML_CHANGE_TABLE)
 DelRecipe1 = {"RECIPE_ASTEROID2","RECIPE_CATALYST1","RECIPE_CATALYST2","RECIPE_COLD1","RECIPE_CREATURE1","RECIPE_DUSTY1",
               "RECIPE_GAS1","RECIPE_GAS2","RECIPE_GAS3","RECIPE_HOT1","RECIPE_LAND2","RECIPE_LAND3","RECIPE_LUSH1","RECIPE_OXYGEN",
@@ -894,18 +894,18 @@ DelRecipe2 = {"RECIPE_ASTEROID_MIX","RECIPE_ASTEROID1_OXYGEN","RECIPE_ASTEROID2_
               "RECIPE_PLANT_WATER_CATALYST2","RECIPE_PLANT_WATER_FUEL1","RECIPE_PLANT_WATER_FUEL2","RECIPE_PLANT_WATER_OXYGEN",
               "RECIPE_PLANT_WATER_ROBOT1","RECIPE_PLANT_WATER_WATER1","RECIPE_PLANT_WATER_WATER2","RECIPE_POOP_ALCHEMY",
               "RECIPE_POOP_ALCHEMY","RECIPE_POOP_ALCHEMY",
-              "RECIPE_RADIO1_LAND1","RECIPE_RADIO1_LAND1","RECIPE_REINFORCE_METAL","RECIPE_REINFORCE_METAL", 
+              "RECIPE_RADIO1_LAND1","RECIPE_RADIO1_LAND1","RECIPE_REINFORCE_METAL","RECIPE_REINFORCE_METAL",
               "RECIPE_REINFORCE_METAL","RECIPE_REINFORCE_METAL","RECIPE_TOXIC1_LAND1","RECIPE_TOXIC1_LAND1",
               "RECIPE_WATER1_OXYGEN","RECIPE_WATER2_OXYGEN"}
 
-DelRecipe3 = {"RECIPE_3INPUT_ASTEROID1","RECIPE_3INPUT_ASTEROID3","RECIPE_3INPUT_LAND3","RECIPE_3INPUT_LAND3", 
+DelRecipe3 = {"RECIPE_3INPUT_ASTEROID1","RECIPE_3INPUT_ASTEROID3","RECIPE_3INPUT_LAND3","RECIPE_3INPUT_LAND3",
               "RECIPE_3INPUT_LAND3","RECIPE_3INPUT_OXYGEN_1","RECIPE_3INPUT_OXYGEN_2","RECIPE_3INPUT_OXYGEN_3",
               "RECIPE_3INPUT_OXYGEN_4","RECIPE_3INPUT_OXYGEN_5","RECIPE_3INPUT_OXYGEN_6"}
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"] 			= "NoMansScience.pak",
-  ["MOD_AUTHOR"]				= "PetrikM",
+  ["MOD_FILENAME"]          = "NoMansScience.pak",
+  ["MOD_AUTHOR"]                = "PetrikM",
   ["MOD_DESCRIPTION"]   =
     [[
     Date Created: 5/17/19
@@ -917,33 +917,33 @@ NMS_MOD_DEFINITION_CONTAINER =
     ********  THIS IS AN EXAMPLE SCRIPT ONLY  ********
             PLEASE SEE THE REAL MOD FROM AUTHOR
     ]],
-  ["NMS_VERSION"]				= "1.77",
-  ["MODIFICATIONS"] 		= 
+  ["NMS_VERSION"]               = "1.77",
+  ["MODIFICATIONS"]         =
   {
     {
-      ["MBIN_CHANGE_TABLE"] 	=                           
+      ["MBIN_CHANGE_TABLE"]     =
       {
         {
-          ["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN",},
-          ["EXML_CHANGE_TABLE"] 	=
-          {                                               
+          ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN",},
+          ["EXML_CHANGE_TABLE"]     =
+          {
             {
                 ["PRECEDING_KEY_WORDS"] = {"Table"},
-                ["ADD"] 				= DecompRecipes,
+                ["ADD"]                 = DecompRecipes,
             },
             {
                 ["PRECEDING_KEY_WORDS"] = {"Table"},
-                ["ADD"] 				= ExtractRecipes,
+                ["ADD"]                 = ExtractRecipes,
             },
             {
                 ["PRECEDING_KEY_WORDS"] = {"Table"},
-                ["ADD"] 				= SynthRecipes,
+                ["ADD"]                 = SynthRecipes,
             },
           }
-				},
-			}
-		}, --149 global replacements
-	}	
+                },
+            }
+        }, --149 global replacements
+    }
 }
 
 --Let us create a shortcut to the EXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER
@@ -952,12 +952,12 @@ local Change_Table_Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_
 for i=1,#DelRecipe1 do
   local value = DelRecipe1[i]
   -- local word = "Table"
-  local temp_table = 
+  local temp_table =
             {
               ["SPECIAL_KEY_WORDS"] = {"Name",value},
               -- ["PRECEDING_KEY_WORDS"] = {word},
-              ["REPLACE_TYPE"] 	= "ALL",
-              ["REMOVE"] 				= "SECTION",
+              ["REPLACE_TYPE"]  = "ALL",
+              ["REMOVE"]                = "SECTION",
             }
   Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
 end
@@ -965,12 +965,12 @@ end
 for i=1,#DelRecipe2 do
   local value = DelRecipe2[i]
   -- local word = "Table"
-  local temp_table = 
+  local temp_table =
             {
               ["SPECIAL_KEY_WORDS"] = {"Name",value},
               -- ["PRECEDING_KEY_WORDS"] = {word},
-              ["REPLACE_TYPE"] 	= "ALL",
-              ["REMOVE"] 				= "SECTION",
+              ["REPLACE_TYPE"]  = "ALL",
+              ["REMOVE"]                = "SECTION",
             }
   Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
 end
@@ -978,12 +978,12 @@ end
 for i=1,#DelRecipe3 do
   local value = DelRecipe3[i]
   -- local word = "Table"
-  local temp_table = 
+  local temp_table =
             {
               ["SPECIAL_KEY_WORDS"] = {"Name",value},
               -- ["PRECEDING_KEY_WORDS"] = {word},
-              --["REPLACE_TYPE"] 	= "ALL",
-              ["REMOVE"] 				= "SECTION",
+              --["REPLACE_TYPE"]    = "ALL",
+              ["REMOVE"]                = "SECTION",
             }
   Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
 end

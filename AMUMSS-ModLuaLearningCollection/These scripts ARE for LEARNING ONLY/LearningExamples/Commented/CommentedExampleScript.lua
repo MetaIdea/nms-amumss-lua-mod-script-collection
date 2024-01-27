@@ -1,27 +1,27 @@
-SunLightIntensity = 2.1 --change to suit your taste, normal is 3.0. Higher is brighter, lower is darker
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "SunLightIntensityChange.pak",  --Sets the end result .pak name
-["MOD_AUTHOR"]              = "Wbertro",
-["NMS_VERSION"]             = "1.78",           --version on first mod release
+["MOD_FILENAME"]            = "AlwaysDay.pak",
+["MOD_AUTHOR"]              = "Mjjstral",
+["NMS_VERSION"]             = "1.77",           --version on first mod release
+["MOD_DESCRIPTION"]         = "",         --optional, not used
 ["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"]    = "GCSKYGLOBALS.GLOBALS.MBIN",
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["PRECEDING_KEY_WORDS"] = "",     -- use a single string or a list = {"PrecedingKeyWord1", "PrecedingKeyWord2"}, leave empty "" or {} if not necessary
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"SunLightIntensity",               SunLightIntensity}, -- Original "3"  always leave the orig. value as a reference
+                                {"MinNightFade",                "1.0"}, -- Original "0.62"  always leave the orig. value as a reference
+                                {"MaxNightFade",                "1.0"}, -- Original "0.68"
                             }
                         }, --for multiple EXML changes with PRECEDING_KEY_WORDS copy this chunk below and add a comma behind this line here
-                    } --1 global replacements
+                    }
                 }, --for multiple MBIN sources: copy this chunk below and add a comma behind this line here
             }
         }, --for multiple pak sources: copy this chunk below and add a comma behind this line here

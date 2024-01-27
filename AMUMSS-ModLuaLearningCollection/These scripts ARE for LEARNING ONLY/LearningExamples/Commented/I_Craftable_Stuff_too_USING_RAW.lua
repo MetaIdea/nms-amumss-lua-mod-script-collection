@@ -1,4 +1,4 @@
-CraftyAdd1 = 
+CraftyAdd1 =
 [[
       <Property name="Requirements">
         <Property value="GcTechnologyRequirement.xml">
@@ -8,18 +8,18 @@ CraftyAdd1 =
           </Property>
           <Property name="Amount" value="50" />
         </Property>
-      </Property>		
+      </Property>
 ]]
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]	= "Craftable_Stuff.pak",
-    ["MOD_AUTHOR"]		= "Copper Boltwire",
-    ["NMS_VERSION"]		= "3.21",
-    ["MODIFICATIONS"]	= 
+    ["MOD_FILENAME"]    = "Craftable_Stuff.pak",
+    ["MOD_AUTHOR"]      = "Copper Boltwire",
+    ["NMS_VERSION"]     = "3.21",
+    ["MODIFICATIONS"]   =
     {
         {
-            ["MBIN_CHANGE_TABLE"] = 
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
@@ -27,12 +27,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE"},
-							["REPLACE_TYPE"] 	= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[<Property name="Requirements" />]],	CraftyAdd1 }
-							}
-						}
+                            ["REPLACE_TYPE"]    = "RAW",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                { [[<Property name="Requirements" />]], CraftyAdd1 }
+                            }
+                        }
 
                     }
                 }

@@ -6,11 +6,11 @@ GameVersion = "3.67"
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]    = ModName.." for NMS "..GameVersion..".pak",
-    ["MOD_DESCRIPTION"]    = BaseDescription,
-    ["MOD_AUTHOR"]        = Author,
-    ["LUA_AUTHOR"] 	= LUAAuthor,
-    ["NMS_VERSION"]        = GameVersion,
-    ["MODIFICATIONS"]    = {
+    ["MOD_DESCRIPTION"] = BaseDescription,
+    ["MOD_AUTHOR"]      = Author,
+    ["LUA_AUTHOR"] 	    = LUAAuthor,
+    ["NMS_VERSION"]     = GameVersion,
+    ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {

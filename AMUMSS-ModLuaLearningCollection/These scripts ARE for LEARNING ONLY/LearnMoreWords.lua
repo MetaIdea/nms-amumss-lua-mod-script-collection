@@ -1,6 +1,6 @@
 --NOTE: using LUA 5.3
 --Beside all the basic language
---All available standard functions in {string, math, table} plus {tonumber, tostring, type} can be used here 
+--All available standard functions in {string, math, table} plus {tonumber, tostring, type} can be used here
 
 -- NOTE:
 -- This script does NOT use LINE_OFFSET, much better
@@ -11,7 +11,7 @@ WORDS_TO_LEARN = 5 --a user named variable with a value of 5
 
 TEXT_TO_ADD =
 [[
-		  <Property value="GcRewardTableItem.xml">
+          <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
@@ -32,10 +32,10 @@ TEXT_TO_ADD = string.rep(TEXT_TO_ADD, WORDS_TO_LEARN - 1) --creates a text made 
 
 --each time the variable name TEXT_TO_ADD is found inside NMS_MOD_DEFINITION_CONTAINER, it is replaced by its value
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "LearnMoreWords.pak",
-["MOD_AUTHOR"]				= "ChoseSauvage converted by Mjjstral",
+["MOD_FILENAME"]            = "LearnMoreWords.pak",
+["MOD_AUTHOR"]              = "ChoseSauvage converted by Mjjstral",
 ["MOD_DESCRIPTION"]       =
 [[
 From https://www.nexusmods.com/nomanssky/mods/733
@@ -52,134 +52,134 @@ The "You have learned the word X" events will queue up and will appear on screen
 Modify
 METADATA\REALITY\TABLES\REWARDTABLE.MBIN
 ]],
-["NMS_VERSION"]				= "2.0",
-["MODIFICATIONS"] 		= 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] 	=                           
-			{                                                   --Using a SPECIAL_KEY_WORDS pair forces this tool
-				{                                                 --   to find a line matching BOTH the first (the Property) AND the second (the value)
-                                                          
-					["MBIN_FILE_SOURCE"] 	=                         --EVERY SPECIAL_KEY_WORDS pairs will be searched for on the SAME line
-					{                                               --SPECIAL_KEY_WORDS pairs, as a group, will point to a section of the EXML file
-                                                          
-						"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"		--If you want to process multiple lines, you need to make ["REPLACE_TYPE"] = "ALL",
-					},                                              --and lines that match down the file will also be processed
-					["EXML_CHANGE_TABLE"] 	=                       --To limit the search to a region, use also some PRECEDING_KEY_WORDS
-					{                                               
-						{                                             
-							["SPECIAL_KEY_WORDS"] = {"Id","WORD","PercentageChance","IGNORE",},
+["NMS_VERSION"]             = "2.0",
+["MODIFICATIONS"]       =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"]   =
+            {                                                   --Using a SPECIAL_KEY_WORDS pair forces this tool
+                {                                                 --   to find a line matching BOTH the first (the Property) AND the second (the value)
+
+                    ["MBIN_FILE_SOURCE"]    =                         --EVERY SPECIAL_KEY_WORDS pairs will be searched for on the SAME line
+                    {                                               --SPECIAL_KEY_WORDS pairs, as a group, will point to a section of the EXML file
+
+                        "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"      --If you want to process multiple lines, you need to make ["REPLACE_TYPE"] = "ALL",
+                    },                                              --and lines that match down the file will also be processed
+                    ["EXML_CHANGE_TABLE"]   =                       --To limit the search to a region, use also some PRECEDING_KEY_WORDS
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","WORD","PercentageChance","IGNORE",},
 
                     -- Here we are using a SpecialKeyWord pair "Id" with a value="WORD" to zoom in on a master section we seek
                     -- WITH the addition of the second pair "PercentageChance","IGNORE" points to the right sub-section
 
                     -- NOTE: the use of "IGNORE" (as a replacement for the real value="100") makes sure we still find the right section
                     -- EVEN if the value "100" was ever changed by NMS
-                      
+
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] 				= TEXT_TO_ADD,              --insert the text define in the user named variable TEXT_TO_ADD above
-						},
-						{                                             --below, other changes to be done to the same MBIN_FILE_SOURCE file
-							["SPECIAL_KEY_WORDS"]   = {"Id","TRA_WORD","PercentageChance","IGNORE",},
-							-- ["PRECEDING_KEY_WORDS"]   = {"PercentageChance",},  
-              
+                            ["ADD"]                 = TEXT_TO_ADD,              --insert the text define in the user named variable TEXT_TO_ADD above
+                        },
+                        {                                             --below, other changes to be done to the same MBIN_FILE_SOURCE file
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TRA_WORD","PercentageChance","IGNORE",},
+                            -- ["PRECEDING_KEY_WORDS"]   = {"PercentageChance",},
+
                     -- THIS can work also to specify the right section
                     -- SPECIAL_KEY_WORDS pair to specify a section
                     -- AND one PRECEDING_KEY_WORDS to narrow it down to the right section
-                    
+
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] 				= TEXT_TO_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TRA_WORD",},
-							["REPLACE_TYPE"]        = "ALL",
-              ["VALUE_CHANGE_TABLE"] 	= 
+                            ["ADD"]                 = TEXT_TO_ADD,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TRA_WORD",},
+                            ["REPLACE_TYPE"]        = "ALL",
+              ["VALUE_CHANGE_TABLE"]    =
               {
-                {"AlienRace",	"Traders"}, --to correct value="None" in the added sections
+                {"AlienRace",   "Traders"}, --to correct value="None" in the added sections
               },
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","EXP_WORD","PercentageChance","IGNORE",},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","EXP_WORD","PercentageChance","IGNORE",},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] 				= TEXT_TO_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","EXP_WORD",},
-							["REPLACE_TYPE"]        = "ALL",
-              ["VALUE_CHANGE_TABLE"] 	= 
+                            ["ADD"]                 = TEXT_TO_ADD,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","EXP_WORD",},
+                            ["REPLACE_TYPE"]        = "ALL",
+              ["VALUE_CHANGE_TABLE"]    =
               {
-                {"AlienRace",	"Explorers"}, --to correct value="None" in the added sections
+                {"AlienRace",   "Explorers"}, --to correct value="None" in the added sections
               },
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","WAR_WORD","PercentageChance","IGNORE",},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","WAR_WORD","PercentageChance","IGNORE",},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] 				= TEXT_TO_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","WAR_WORD",},
-							["REPLACE_TYPE"]        = "ALL",
-              ["VALUE_CHANGE_TABLE"] 	= 
+                            ["ADD"]                 = TEXT_TO_ADD,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","WAR_WORD",},
+                            ["REPLACE_TYPE"]        = "ALL",
+              ["VALUE_CHANGE_TABLE"]    =
               {
-                {"AlienRace",	"Warriors"}, --to correct value="None" in the added sections
+                {"AlienRace",   "Warriors"}, --to correct value="None" in the added sections
               },
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_EXP","PercentageChance","IGNORE",},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_EXP","PercentageChance","IGNORE",},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] 				= TEXT_TO_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_EXP",},
-							["REPLACE_TYPE"]        = "ALL",
-              ["VALUE_CHANGE_TABLE"] 	= 
+                            ["ADD"]                 = TEXT_TO_ADD,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_EXP",},
+                            ["REPLACE_TYPE"]        = "ALL",
+              ["VALUE_CHANGE_TABLE"]    =
               {
-                {"AlienRace",	"Explorers"}, --to correct value="None" in the added sections
+                {"AlienRace",   "Explorers"}, --to correct value="None" in the added sections
               },
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_TRA","PercentageChance","IGNORE",},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_TRA","PercentageChance","IGNORE",},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] 				= TEXT_TO_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_TRA",},
-							["REPLACE_TYPE"]        = "ALL",
-              ["VALUE_CHANGE_TABLE"] 	= 
+                            ["ADD"]                 = TEXT_TO_ADD,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_TRA",},
+                            ["REPLACE_TYPE"]        = "ALL",
+              ["VALUE_CHANGE_TABLE"]    =
               {
-                {"AlienRace",	"Traders"}, --to correct value="None" in the added sections
+                {"AlienRace",   "Traders"}, --to correct value="None" in the added sections
               },
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_WAR","PercentageChance","IGNORE",},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_WAR","PercentageChance","IGNORE",},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] 				= TEXT_TO_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_WAR",},
-							["REPLACE_TYPE"]        = "ALL",
-              ["VALUE_CHANGE_TABLE"] 	= 
+                            ["ADD"]                 = TEXT_TO_ADD,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_WAR",},
+                            ["REPLACE_TYPE"]        = "ALL",
+              ["VALUE_CHANGE_TABLE"]    =
               {
-                {"AlienRace",	"Warriors"}, --to correct value="None" in the added sections
+                {"AlienRace",   "Warriors"}, --to correct value="None" in the added sections
               },
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_ATLAS","PercentageChance","IGNORE",},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_ATLAS","PercentageChance","IGNORE",},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] 				= TEXT_TO_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_ATLAS",},
-							["REPLACE_TYPE"]        = "ALL",
-              ["VALUE_CHANGE_TABLE"] 	= 
+                            ["ADD"]                 = TEXT_TO_ADD,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","TEACHWORD_ATLAS",},
+                            ["REPLACE_TYPE"]        = "ALL",
+              ["VALUE_CHANGE_TABLE"]    =
               {
-                {"AlienRace",	"Atlas"}, --to correct value="None" in the added sections
+                {"AlienRace",   "Atlas"}, --to correct value="None" in the added sections
               },
-						},
-					} --8 ADD + 7*5 value replacements
-				}, --43 global replacements
-			}
-		},
-	}	
+                        },
+                    } --8 ADD + 7*5 value replacements
+                }, --43 global replacements
+            }
+        },
+    }
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
