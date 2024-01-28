@@ -52,4 +52,4 @@ NMS_MOD_DEFINITION_CONTAINER =
         }, --for multiple pak sources: copy this chunk below and add a comma behind this line here
     }
 }
---NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
+--NOTE: ANYTHING NOT referenced in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
