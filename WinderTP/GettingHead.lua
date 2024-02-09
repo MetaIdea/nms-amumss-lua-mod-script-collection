@@ -10,7 +10,7 @@ AUTORUN = true
 ---------------------------
 
 -- Edition of Getting Head to use
-DEFAULT_EDITION = "FOURTH_B" -- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
+DEFAULT_EDITION = "CLASSICS" -- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
 
 -- Suit parts minus backpack
 -- VYK = Armoured Suit
@@ -18,7 +18,7 @@ DEFAULT_EDITION = "FOURTH_B" -- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
 GET_SUIT = "BUILDERS"
 
 -- Default value to remove armour piece and allow subsequent torso piece selection
-REMOVE_ARMOUR = false
+REMOVE_ARMOUR = true
 
 DEFAULT_TORSO = "TORSO_GEK"
 -- Choose the torso without armour
@@ -50,7 +50,7 @@ CAPE_JELLY
 CAPE_SEED
 ]]
 
-DEFAULT_BACKPACK = "BACKPACK_ROYAL"
+DEFAULT_BACKPACK = "BACKPACK_ATLAS"
 -- Choose the backpack
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you want the default backpack
@@ -59,6 +59,7 @@ BACKPACK_RETRO
 BACKPACK_EXPD1
 BACKPACK_ROYAL
 BACKPACK_SENT
+BACKPACK_ATLAS
 BACKPACK_CAPE
 ]]
 
@@ -256,6 +257,7 @@ HEADS =
 										"HEAD_BUCKET",
 										"HEAD_ASTBOT1",
 										"HEAD_ASTBOT2",
+										"HEAD_ATLAS",
 									  },
 					  },
 							
@@ -386,7 +388,7 @@ end
 
 
 -- asking for backpack
-BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_SENT", "BACKPACK_CAPE"}
+BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_SENT", "BACKPACK_ATLAS", "BACKPACK_CAPE"}
 
 LIST_DISPLAY = ""
 for i,j in pairs(BACKPACK_LIST) do

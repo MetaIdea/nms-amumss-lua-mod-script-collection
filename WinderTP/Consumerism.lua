@@ -1,6 +1,35 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "88",
+		["Table"] =  
+		{
+			{ ["ID"] = "EXPD_SHIP12",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_ATLASHELM",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_ATLASSTAFF",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_ATLASPACK",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER12A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER12B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER12C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE12",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL12",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER12",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP36",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP37",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP38",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP39",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP40",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET18",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET19",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN16",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN18",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FIREWORK07",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FIREWORK08",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FIREWORK09",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "79",
 		["Table"] =  
 		{
