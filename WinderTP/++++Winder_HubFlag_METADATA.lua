@@ -34,7 +34,7 @@ SNAPPING_DISTANCE = "0.05"	-- OBJECT SNAPPING DISTANCE MULTIPLIER
 
 MORE_VANILLA_FLOOR = false 	-- REVERTS THE ADVANCED BASIC FLOOR SNAPPING TO VANILLA
 
-MORE_BUILDING_DISTANCE = true	
+MORE_BUILDING_DISTANCE = false	
 							-- INCREASE DISTANCE AT WHICH OBJECTS CAN BE PLACED
 							-- ALSO ALLOWS ALL OBJECTS TO BE SCALED TO A SMALLER MINIMUM AND BIGGER MAXIMUM
 
@@ -20728,6 +20728,54 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"W_SEASONTERM",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/TECH_SNAPPOINT.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\NEXUS\NEXUSSEASONTERMINAL.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WINTERACT" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Expedition Terminus",
+						["Subtitle"] = 					"Nexus Terminal",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A terminal from which you can access your expeditions.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ALLOY5",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"2"
+											},
+											{ ["ID"] = 				"POWERCELL",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"1"
+											},
+										}
+					}
+	},
 	
 }
 
@@ -28800,7 +28848,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
 						["NameLower"] = 				"Gingbou-Dang",
 						["Subtitle"] = 					"Alarm Light",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"An togglable alarm light.",
+						["Description"] = 				"A togglable alarm light.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
 						["Icon"] = 						"",
 						["Requirements"] ={ 
@@ -47546,6 +47594,55 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											  ["Amount"] = 			"4"
 											},
 											{ ["ID"] = 				"ILLEGAL_PROD6",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"1"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_DROPENGINE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\WRECK_ENGINE.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "WDECOR_V" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Syun-janking",
+						["Subtitle"] = 					"Dropship Engine",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A decommissioned dropship engine.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"30"
+											},
+											{ ["ID"] = 				"ALLOY7",
 											  ["InventoryType"] = 	"Product",
 											  ["Amount"] = 			"1"
 											},
@@ -69135,6 +69232,11 @@ return [[
       <Property name="EconomyInfluenceMultiplier" value="0" />
       <Property name="PinObjective" value="" />
       <Property name="PinObjectiveTip" value="" />
+      <Property name="PinObjectiveMessage" value="" />
+      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes.xml">
+        <Property name="ScanIconType" value="None" />
+      </Property>
+      <Property name="PinObjectiveEasyToRefine" value="False" />
       <Property name="CookingIngredient" value="False" />
       <Property name="CookingValue" value="0" />
       <Property name="GoodForSelling" value="False" />

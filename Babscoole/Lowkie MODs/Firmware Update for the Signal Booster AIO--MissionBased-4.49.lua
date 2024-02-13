@@ -683,10 +683,11 @@ for i=1, #MissionDataTable, 1 do
         ["SEC_EDIT"] = "GetReward",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Id",           ID},
-            {"RewardChoice", "SelectAlwaysSilent"},
-            {"LabelID",      ""},
-            {"Event",        EVENT},
+            {"Id",                 ID},
+            {"RewardChoice",       "SelectAlwaysSilent"},
+            {"LabelID",            ""},
+            {"Event",              EVENT},
+            {"ForceSilentFailure", "True"},
         }
     }
 
