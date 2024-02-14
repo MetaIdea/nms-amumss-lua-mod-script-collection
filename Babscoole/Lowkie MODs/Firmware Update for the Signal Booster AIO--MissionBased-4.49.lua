@@ -46,7 +46,7 @@ print("AERIAL_SCAN = "..tostring(AERIAL_SCAN))
 --SCANEVENTTABLE file.  For DialogDataTable, each "page" can have three entries only (P1 has another special scan added later in the script, which is not in the table).  After three, will need to make a new page table section(Eg "D_FUSBS_SCAN_P7).
 --For entries in MissionDataTable and Rewards in DialogDataTable, just follow the naming convention used by the existing entries.
 ScanDataTable = --Additions to SCANEVENTTABLEPLANET
-{--  NAME,             INTERACTIONTYPE, BUILDINGLOCATION, BUILDINGTYPE,        BUILDINGCLASS,            FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, OSDMESSAGE,                    TOOLTIP,                         MARKERLABEL
+{--  NAME,         INTERACTIONTYPE, BUILDINGLOCATION, BUILDINGTYPE,        BUILDINGCLASS,            FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, OSDMESSAGE,                    TOOLTIP,                         MARKERLABEL
     {"SE_GL_SHLT", "None",          "Nearest",        "AnyShelter",        "None",                   "False",         "False",                  "SIGNAL_SHELTER",              "TIP_SHELTER",                   ""                         },
     {"SE_GL_PORT", "Portal",        "Nearest",        "BuildingClass",     "Portal",                 "False",         "True" ,                  "SIGNAL_PORTAL",               "TIP_PORTAL",                    ""                         },
     {"SE_GL_DIST", "None",          "Nearest",        "BuildingClass",     "DistressSignal",         "False",         "False",                  "SIGNAL_DISTRESSSIGNAL",       "TIP_DISTRESSSIGNAL",            "BUILDING_DISTRESSSIGNAL_L"},
