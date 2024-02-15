@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Sandworms"
 ModNameSub = "More"
 BaseDescription = "More Sandworms"
-GameVersion = "4462"
+GameVersion = "450"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
 FileSource2 = "GCCREATUREGLOBALS.MBIN"
@@ -94,26 +94,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["SPECIAL_KEY_WORDS"] = {"Event","SANDWORM"},
 					["PRECEDING_KEY_WORDS"] = {"MinNum"},
 					["VALUE_CHANGE_TABLE"] = {
-						{"Unspecified",MinWorms},
+						{"Off",MinWorms},
+						{"Slow",MinWorms},
 						{"Normal",MinWorms},
-						{"Creative",MinWorms},
-						{"Survival",MinWorms},
-						{"Ambient",MinWorms},
-						{"Permadeath",MinWorms},
-						{"Seasonal",MinWorms},
+						{"Fast",MinWorms},
 					},
 				},
 				{
 					["SPECIAL_KEY_WORDS"] = {"Event","SANDWORM"},
 					["PRECEDING_KEY_WORDS"] = {"MaxNum"},
 					["VALUE_CHANGE_TABLE"] = {
-						{"Unspecified",MaxWorms},
+						{"Off",MaxWorms},
+						{"Slow",MaxWorms},
 						{"Normal",MaxWorms},
-						{"Creative",MaxWorms},
-						{"Survival",MaxWorms},
-						{"Ambient",MaxWorms},
-						{"Permadeath",MaxWorms},
-						{"Seasonal",MaxWorms},
+						{"Fast",MaxWorms},
 					},
 				},
 			}

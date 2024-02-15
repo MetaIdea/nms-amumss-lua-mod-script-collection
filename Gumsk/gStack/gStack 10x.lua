@@ -4,9 +4,9 @@ Author = "Gumsk"
 ModName = "gStack"
 ModNameSub = Multiplier.."x"
 BaseDescription = "Multiplies stack sizes"
-GameVersion = "4462"
+GameVersion = "450"
 ModVersion = "a"
-FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
+FileSource1 = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -21,6 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["EXML_CHANGE_TABLE"] = {
 						{
 							["SPECIAL_KEY_WORDS"] = {"InventoryStackLimits","GcDifficultySettingCommonData.xml"},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = {
 								{"DifficultySettingEditability","FullyEditable"},
 							}
@@ -38,18 +39,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"High","GcDifficultyInventoryStackSizeOptionData.xml"},
+							["REPLACE_TYPE"] = "ALL",
 							["MATH_OPERATION"] = "*",
 							["VALUE_CHANGE_TABLE"] = {
 								{"SubstanceStackLimit",Multiplier},
 								{"ProductStackLimit",Multiplier},
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"High","GcDifficultyInventoryStackSizeOptionData.xml"},
-							["REPLACE_TYPE"] = "ALL",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] = {
 								{"Default",Multiplier},
 								{"Personal",Multiplier},
 								{"PersonalCargo",Multiplier},

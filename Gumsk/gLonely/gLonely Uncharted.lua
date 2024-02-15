@@ -2,7 +2,7 @@ Author			= "Gumsk"
 ModName			= "gLonely"
 ModNameSub		= "Uncharted Galaxy"
 BaseDescription	= "Generates a lonely galaxy"
-GameVersion		= "430"
+GameVersion	= "4462"
 ModVersion		= "a"
 
 FileSource1	= "GCGRAPHICSGLOBALS.GLOBAL.MBIN"

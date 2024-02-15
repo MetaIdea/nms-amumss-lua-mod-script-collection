@@ -3,14 +3,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Increased Stack Size.pak",
 ["MOD_AUTHOR"]    = "JamesDude420",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.14",
+["NMS_VERSION"]   = "4.50",
 ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
