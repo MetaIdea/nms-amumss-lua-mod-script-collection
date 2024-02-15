@@ -1,11 +1,11 @@
 --------------------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Replace freighter after-warp-battle reward with better a selection
   with something different from each race
   * (the lists are non-random because a bug causes them to misbehave)
 ]]------------------------------------------------------------------------
 
-Mod_Version = '1.44'
+local mod_version = '1.45'
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -187,9 +187,10 @@ local function AddNewRewardsToChangeTable()
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Freighter Defense Rewards.'..Mod_Version..'.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.Freighter Defense Rewards.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.45',
+	NMS_VERSION			= '4.50',
+	AMUMSS_SUPPRESS_MSG	= 'MIXED_TABLE',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

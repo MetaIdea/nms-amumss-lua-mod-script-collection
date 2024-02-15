@@ -4,14 +4,18 @@
 METADATA_MOD_NAME       = "GlowingExpeditionDecals"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "445"
-METADATA_MOD_DESC       = "This mod adds a light source to decals from Expeditions 01-11."
+METADATA_NMS_VERSION    = "450"
+METADATA_MOD_DESC       = "This mod adds a light source to decals from Expeditions 01-12."
 
 
 
 ----------------------------------------------------------------------------------------------------
 -- script data
 ----------------------------------------------------------------------------------------------------
+
+--------------------------------------------------
+-- files affected by this mod
+--------------------------------------------------
 
 -- wall light scene (not edited, used as template for light source)
 FILE_WALLLIGHT =    "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\DECORATION\\BAZAAR\\WALLLIGHT01.SCENE.MBIN"
@@ -30,12 +34,17 @@ FILE_DECAL_08 =     "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABL
 FILE_DECAL_09 =     "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\DECORATION\\DECALDECORATION\\EXPEDITION_09.SCENE.MBIN"
 FILE_DECAL_10 =     "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\DECORATION\\DECALDECORATION\\EXPEDITION_10.SCENE.MBIN"
 FILE_DECAL_11 =     "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\DECORATION\\DECALDECORATION\\EXPEDITION_11.SCENE.MBIN"
+FILE_DECAL_12 =     "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\DECORATION\\DECALDECORATION\\EXPEDITION_12.SCENE.MBIN"
+
+--------------------------------------------------
+-- list of expedition decals
+--------------------------------------------------
 
 LIST_DECALS =
 {
     FILE_DECAL_01, FILE_DECAL_02, FILE_DECAL_03, FILE_DECAL_04,
     FILE_DECAL_05, FILE_DECAL_06, FILE_DECAL_07, FILE_DECAL_08,
-    FILE_DECAL_09, FILE_DECAL_10, FILE_DECAL_11,
+    FILE_DECAL_09, FILE_DECAL_10, FILE_DECAL_11, FILE_DECAL_12,
 }
 
 
@@ -59,11 +68,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = FILE_WALLLIGHT,
+                    ["MBIN_FS_DISCARD"] = "TRUE",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SKW"] = {"Type","LIGHT",},
-                            ["SEC_SAVE_TO"] = "LIGHT",  
+                            ["SEC_SAVE_TO"] = "SEC_LIGHT",  
                         },
                     }
                 },
@@ -74,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PKW"] = "Children",
-                            ["SEC_ADD_NAMED"] = "LIGHT",   
+                            ["SEC_ADD_NAMED"] = "SEC_LIGHT",   
                         },
                     }
                 }
@@ -82,8 +92,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
-
-
 
 ----------------------------------------------------------------------------------------------------
 -- end of file

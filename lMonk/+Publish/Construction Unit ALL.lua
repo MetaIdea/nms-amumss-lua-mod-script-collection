@@ -1,10 +1,10 @@
 ------------------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Adds all base parts and tech recipes to the Construction Research Unit
   * Does not include expedition rewards and quicksilver shop items.
 ]]----------------------------------------------------------------------
 
-local version = 1.31
+local version = 1.32
 
 local base_tree = {
 	{
@@ -86,60 +86,57 @@ local tech_tree = {
 	}
 }
 
-local function DuplicateTrees()
-	local T = {}
-	T[#T+1] = {
-		REPLACE_TYPE 		= 'All',
-		SPECIAL_KEY_WORDS	= {
-			{'Title', 'UI_PURCHASABLE_BASICPARTS_TREE'},
-			{'Title', 'UI_PURCHASABLE_BASICTECH_TREE'}
-		},
-		PRECEDING_KEY_WORDS = 'GcUnlockableItemTree.xml',
-		REMOVE				= 'Section'
-	}
+local ECT = {}
+ECT[#ECT+1] = {
+	REPLACE_TYPE 		= 'All',
+	SPECIAL_KEY_WORDS	= {
+		{'Title', 'UI_PURCHASABLE_BASICPARTS_TREE'},
+		{'Title', 'UI_PURCHASABLE_BASICTECH_TREE'}
+	},
+	PRECEDING_KEY_WORDS = 'GcUnlockableItemTree.xml',
+	REMOVE				= 'Section'
+}
 
-	for _,node in ipairs(base_tree) do
-		for _,s in ipairs(node.subs) do
-			local subt, act = s[1] or s, s[2] or 1
-			for i=act, 1, -1 do
-				T[#T+1] = {
-					SPECIAL_KEY_WORDS	= {'Title', node.title, 'Title', subt},
-					SECTION_ACTIVE		= -i,
-					SECTION_SAVE_TO		= 'unlockable_item_tree',
-				}
-				T[#T+1] = {
-					SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICPARTS_TREE'},
-					PRECEDING_KEY_WORDS	= 'Trees',
-					SECTION_ADD_NAMED	= 'unlockable_item_tree',
-				}
-			end
-		end
-	end
-	for _,node in ipairs(tech_tree) do
-		for _,subt in ipairs(node.subs) do
-			T[#T+1] = {
+for _,node in ipairs(base_tree) do
+	for _,s in ipairs(node.subs) do
+		local subt, act = s[1] or s, s[2] or 1
+		for i=act, 1, -1 do
+			ECT[#ECT+1] = {
 				SPECIAL_KEY_WORDS	= {'Title', node.title, 'Title', subt},
+				SECTION_ACTIVE		= -i,
 				SECTION_SAVE_TO		= 'unlockable_item_tree',
 			}
-			T[#T+1] = {
-				SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICTECH_TREE'},
+			ECT[#ECT+1] = {
+				SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICPARTS_TREE'},
 				PRECEDING_KEY_WORDS	= 'Trees',
 				SECTION_ADD_NAMED	= 'unlockable_item_tree',
 			}
 		end
 	end
-	return T
+end
+for _,node in ipairs(tech_tree) do
+	for _,subt in ipairs(node.subs) do
+		ECT[#ECT+1] = {
+			SPECIAL_KEY_WORDS	= {'Title', node.title, 'Title', subt},
+			SECTION_SAVE_TO		= 'unlockable_item_tree',
+		}
+		ECT[#ECT+1] = {
+			SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICTECH_TREE'},
+			PRECEDING_KEY_WORDS	= 'Trees',
+			SECTION_ADD_NAMED	= 'unlockable_item_tree',
+		}
+	end
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit ALL.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.38',
+	NMS_VERSION			= '4.50',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN',
-		EXML_CHANGE_TABLE	= DuplicateTrees()
+		EXML_CHANGE_TABLE	= ECT
 	}
 }}}}

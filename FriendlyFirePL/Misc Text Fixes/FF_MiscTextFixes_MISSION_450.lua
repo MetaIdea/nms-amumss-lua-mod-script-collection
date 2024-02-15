@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "MISSION"
-METADATA_NMS_VERSION    = "448"
+METADATA_NMS_VERSION    = "450"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -84,22 +84,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            -- remove the original tooltip
-                            ["SKW"] = 
-                            {
-                                "PrefixTitleText","UI_PIRATE_STATION_HINT_TITLE",
-                                "Stage","GcMissionSequenceShowMessage.xml",
-                            },
-                            ["REMOVE"] = "SECTION",
+                            ["SKW"] = {"MissionID","PIRATE_STATION","Stat","PIRATE_SYSTEMS",},
+                            ["VCT"] = {{"Level",1,},},
                         },
 
                         {
-                            -- navigate to the same section and add the Detail Message box
-                            ["SKW"] = {"PrefixTitleText","UI_PIRATE_STATION_HINT_TITLE",},
-                            ["PKW"] = "Versions",
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SKW"] = {"Message","UI_PIRATE_STATION_HINT",},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "SEC_DETAIL_BOX",
+                        },
+
+                        {
+                            ["SKW"] = {"Message","UI_PIRATE_STATION_HINT",},
+                            ["REMOVE"] = "SECTION",
                         },
                     },
                 },

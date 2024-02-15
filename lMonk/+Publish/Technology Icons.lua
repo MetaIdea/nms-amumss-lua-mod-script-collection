@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   edit/replace/update/improve technology icons
-  
+
   * The ADD_FILES section can be safely disabled/ignored if you prefer
    to add the texture files in a different method.
 ]]--------------------------------------------------------------------
-mod_version = '1.24'
+local mod_version = '1.25'
 
 local tech_icons = {
 	---	ship
@@ -83,7 +83,7 @@ local tech_icons = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Technology Icons.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.4',
+	NMS_VERSION			= '4.50',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -99,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					})
 				end
 				return T
-			end		
+			end
 		)()
 	}
 }}},

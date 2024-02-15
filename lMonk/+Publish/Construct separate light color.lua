@@ -1,12 +1,12 @@
 ---------------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Separates the construct head lights color to its own color chooser
 ]]-------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Construct separate light color.2.0.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.Construct separate light color.2.01.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.41',
+	NMS_VERSION			= '4.50',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "LANG"
-METADATA_NMS_VERSION    = "4481"
+METADATA_NMS_VERSION    = "450"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -43,13 +43,6 @@ TEXT_TRAVELLER_DIALOGUE = "Have the travellers come? Are they here?"
 
 -- UI - new verbiage for Solar Panel Power stat
 TEXT_LIFESUPPORT_SOLAR = "Daytime Efficiency"
-
--- ITEM - fixed typo in word "guarenteed"
-TEXT_WARPCELL_TYPO = 
-[[
-This &lt;FUEL&gt;antimatter-based fuel&lt;&gt; is one of the few power sources capable of meeting the incredible energy requirements of a &lt;TECHNOLOGY&gt;starship hyperdrive&lt;&gt;.&#xA;&#xA;
-Secured within a robust housing, the cell is guaranteed paradox-free during FTL travel.
-]]
 
 -- OBJECT - fixed wrong growing time info for Albumen Pearl plant
 TEXT_ALBUMEN_GROWTIME = 
@@ -709,12 +702,6 @@ TEXT_TUTORIAL_PIRATES_3 = "Acquire &lt;SPECIAL&gt;Forged Passports&lt;&gt; to re
 -- UI - outlaw systems tutorial - added a whole new tutorial message box
 TEXT_TUTORIAL_PIRATES_4 = "Highly advanced &lt;STELLAR&gt;solar starships&lt;&gt; can be found commonly in outlaw systems"
 
--- QUEST - fixed capitalization for the 2nd line for freighter raid mission
-TEXT_PIRATE_FREIGHTER_1 = "Intercept and destroy the &lt;STELLAR&gt;%FREIGHTER%&lt;&gt;&#xA;Activate the &lt;TECHNOLOGY&gt;Pulse Drive&lt;&gt; to scan for its &lt;TECHNOLOGY&gt;expedition path&lt;&gt;"
-
--- QUEST - fixed capitalization for the 2nd line for freighter raid mission
-TEXT_PIRATE_FREIGHTER_2 = "Intercept and destroy the &lt;STELLAR&gt;%FREIGHTER%&lt;&gt;&#xA;Activate the &lt;TECHNOLOGY&gt;Pulse Drive&lt;&gt; to search a different region"
-
 -- QUEST - changed objective label for size rare item mission to prevent text overflow
 TEXT_PIRATE_SEIZE_OBJ = "Seize %PRIMARYITEM% from trader convoy"
 
@@ -807,7 +794,6 @@ LIST_FIXES =
     INTRCT_SAVE_NO_POS_NEXUS        = TEXT_SAVE_NEXUSMISSION,
     EXP_1_PORT_LANG_1               = TEXT_TRAVELLER_DIALOGUE,
     SUIT_ENERGY_REGEN               = TEXT_LIFESUPPORT_SOLAR,
-    HYPERFUEL1_DESCRIPTION          = TEXT_WARPCELL_TYPO,
     PLANT_PEARL_DESC                = TEXT_ALBUMEN_GROWTIME,
     HOT1_DESCRIPTION                = TEXT_HAZARDPROT_HOT,
     COLD1_DESCRIPTION               = TEXT_HAZARDPROT_COLD,
@@ -1009,8 +995,6 @@ LIST_FIXES =
     TEXT_TUTORIAL_PIRATES_2         = TEXT_TUTORIAL_PIRATES_2,
     TEXT_TUTORIAL_PIRATES_3         = TEXT_TUTORIAL_PIRATES_3,
     TEXT_TUTORIAL_PIRATES_4         = TEXT_TUTORIAL_PIRATES_4,
-    UI_FREIGHTER_ATTACK_MSG3A       = TEXT_PIRATE_FREIGHTER_1,
-    UI_FREIGHTER_ATTACK_MSG3B       = TEXT_PIRATE_FREIGHTER_2,
     UI_TRADER_ATTACK_OBJ1           = TEXT_PIRATE_SEIZE_OBJ,
     UI_SUIT_ROCKET_DESC             = TEXT_TRADEROCKET_QUICKMENU,
 
