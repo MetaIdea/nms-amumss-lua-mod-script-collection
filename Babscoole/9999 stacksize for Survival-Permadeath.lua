@@ -30,6 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"BaseCapsule",       "9999"},
                                 {"MaintenanceObject", "9999"},
                                 {"UIPopup",           "9999"},
+                                {"SeasonTransfer",    "9999"},
                             }
                         },
                         {
@@ -57,6 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"BaseCapsule",       "9999"},
                                 {"MaintenanceObject", "9999"},
                                 {"UIPopup",           "9999"},
+                                {"SeasonTransfer",    "9999"},
                             }
                         },
                         {

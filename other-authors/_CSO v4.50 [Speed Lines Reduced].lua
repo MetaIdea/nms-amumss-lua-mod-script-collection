@@ -3,7 +3,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]			= "_CSO v4.44 [Speed Lines Reduced].pak",
+	["MOD_FILENAME"]			= "_CSO v4.50 [Speed Lines Reduced].pak",
 	["MOD_DESCRIPTION"]			= "Speed lines numbers/length/width/transparency reduced by ~70%",
 	["MOD_AUTHOR"]				= "NeptuneX3",
 	["NMS_VERSION"]				= "2.61.1",		-- NMS version when first scripted
