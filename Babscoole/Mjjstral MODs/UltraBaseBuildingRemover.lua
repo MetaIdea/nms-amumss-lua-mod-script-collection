@@ -616,6 +616,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SUITSHOP",       ["P_NAME"]="SUITSHOP",                 ["PATH"]="MODELS/SPACE/NEXUS/PARTS/SHOPS/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="VEHICLESHOP",    ["P_NAME"]="VEHICLESHOP",              ["PATH"]="MODELS/SPACE/NEXUS/PARTS/SHOPS/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="NEXUSBLUPRNTANA",["P_NAME"]="NEXUSBLUEPRINTANALYSER",   ["PATH"]="MODELS/SPACE/NEXUS/PARTS/TERMINALS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="NEXUSSEASONTERM",["P_NAME"]="NEXUSSEASONTERMINAL",      ["PATH"]="MODELS/SPACE/NEXUS/PARTS/TERMINALS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="NEXUSTOWER",     ["P_NAME"]="NEXUSTOWER",               ["PATH"]="MODELS/SPACE/NEXUS/PARTS/TOWER/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="TERMINAL",       ["P_NAME"]="TERMINAL",                 ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TERMINAL/",                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="TERM_TADINGPOST",["P_NAME"]="TERMINAL_TADINGPOST",      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TERMINAL/",                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
@@ -911,6 +912,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
+      <Property name="SinglePartID" value="" />
       <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
         <Property name="BaseBuildingDecorationType" value="Normal" />
       </Property>
@@ -1111,6 +1113,11 @@ PRODUCT_ADDING =
       <Property name="EconomyInfluenceMultiplier" value="0" />
       <Property name="PinObjective" value="" />
       <Property name="PinObjectiveTip" value="" />
+      <Property name="PinObjectiveMessage" value="" />
+      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes.xml">
+        <Property name="ScanIconType" value="None" />
+      </Property>
+      <Property name="PinObjectiveEasyToRefine" value="False" />
       <Property name="CookingIngredient" value="False" />
       <Property name="CookingValue" value="0" />
       <Property name="GoodForSelling" value="False" />
@@ -1584,7 +1591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "zzz-UltraBaseBuildingRemover.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
-["NMS_VERSION"]   = "4.47",
+["NMS_VERSION"]   = "4.50",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
     {

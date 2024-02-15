@@ -10,11 +10,19 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Normal", "GcDifficultySettingsData.xml"},
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Invalid",    "GcDifficultySettingsData.xml"},
+                                {"Custom",     "GcDifficultySettingsData.xml"},
+                                {"Normal",     "GcDifficultySettingsData.xml"},
+                                {"Relaxed",    "GcDifficultySettingsData.xml"},
+                                {"Survival",   "GcDifficultySettingsData.xml"},
+                                {"Permadeath", "GcDifficultySettingsData.xml"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TutorialEnabled", "False"},
@@ -23,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

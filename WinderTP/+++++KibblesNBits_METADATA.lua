@@ -206,6 +206,7 @@ KIBBLES_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
 
 -- BASEBUILDINGTABLE OBJECTS & PRODCUTTABLE PRODUCTS & BASEBUILDINGCOSTSTABLE COST & DEFAULTSAVEDATA KnownProducts & PURCHASEABLESPECIALS FOR WDSPEC OBJECTS
 -- "ID" IS USED UNIVERSALLY AS TABLE IDs (REQUIRED) AND OBJECT ICON NAME IF "Icon" FIELD IS LEFT EMPTY
+-- "ID" MUST BE 15 CHARACTERS MAX
 KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 {
     {
@@ -2659,6 +2660,47 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             ["Subtitle"] = "Nexus Recipe Terminal",
             ["Description"] = "Nexus Recipe Terminal",
             ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNEXRTERM_ICON.DDS",
+            ["Requirements"] = {
+                {
+                    ["ID"] = "FUEL1",
+                    ["InventoryType"] = "Substance",
+                    ["Amount"] = "5"
+                }
+            }
+        }
+    },
+    {
+        ["OBJECT"] = {
+            ["ID"] = "KNXNEXSTERM",
+            ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNEXSTERM_PLACEMENT.SCENE.MBIN",
+            ["Style"] = "None",
+            ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/TERMINALS/NEXUSSEASONTERMINAL.SCENE.MBIN",
+            ["DecorationType"] = "Normal",
+            ["IsPlaceable"] = "True",
+            ["IsDecoration"] = "False",
+            ["Biome"] = "Lush",
+            ["BuildableOnFreighter"] = "True",
+            ["BuildableOnPlanet"] = "False",
+            ["CheckPlaceholderCollision"] = "False",
+            ["EnableCollision"] = "True",
+            ["CanScale"] = "False",
+            --["Group"] = "KIBBLESNBITS",
+            ["SubGroupName"] = {"KNXDECOR2"},
+            ["StorageContainerIndex"] = "-1",
+            ["CanChangeColour"] = "False",
+            ["CanChangeMaterial"] = "False",
+            ["RemovesAttachedDecoration"] = "True",
+            ["EditsTerrain"] = "False",
+            ["BaseTerrainEditShape"] = "Cube",
+            ["IsSealed"] = "False",
+            ["Connection"] = "DECOR",
+        },
+         ["PRODUCT"] = {
+            ["Name"] = "Nexus Season Terminal",
+            ["NameLower"] = "Nexus Season Terminal",
+            ["Subtitle"] = "Nexus Season Terminal",
+            ["Description"] = "Nexus Season Terminal",
+            ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNEXSTERM_ICON.DDS",
             ["Requirements"] = {
                 {
                     ["ID"] = "FUEL1",
@@ -9716,47 +9758,48 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     },
 }
 
+math.randomseed(os.time())
 function GetBaseBuildingCost(ID, POPIN)
 BUILDING_COST =
 {
-[[      <Property name="Active0AverageFrameTimeCost" value="0.001" />
-      <Property name="Active1AverageFrameTimeCost" value="1" />
+[[      <Property name="Active0AverageFrameTimeCost" value="0.001]] .. math.random(100000,999999) .. [[" />
+      <Property name="Active1AverageFrameTimeCost" value="1.00]] .. math.random(100000,999999) .. [[" />
       <Property name="ActiveTotalNodes" value="2" />
       <Property name="ActivePhysicsComponents" value="0" />
-      <Property name="Inactive0AverageFrameTimeCost" value="1" />
-      <Property name="Inactive1AverageFrameTimeCost" value="1" />
+      <Property name="Inactive0AverageFrameTimeCost" value="1.00]] .. math.random(100000,999999) .. [[" />
+      <Property name="Inactive1AverageFrameTimeCost" value="1.00]] .. math.random(100000,999999) .. [[" />
       <Property name="InactiveTotalNodes" value="1000" />
       <Property name="InactivePhysicsComponents" value="100" />]],
-[[      <Property name="Active0AverageFrameTimeCost" value="0.082" />
-      <Property name="Active1AverageFrameTimeCost" value="0.08175" />
+[[      <Property name="Active0AverageFrameTimeCost" value="0.082]] .. math.random(100000,999999) .. [[" />
+      <Property name="Active1AverageFrameTimeCost" value="0.08175]] .. math.random(10000,99999) .. [[" />
       <Property name="ActiveTotalNodes" value="36" />
       <Property name="ActivePhysicsComponents" value="12" />
-      <Property name="Inactive0AverageFrameTimeCost" value="0.004045" />
-      <Property name="Inactive1AverageFrameTimeCost" value="0.004005" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.004045]] .. math.random(1000,9999) .. [[" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0.004005]] .. math.random(1000,9999) .. [[" />
       <Property name="InactiveTotalNodes" value="25" />
       <Property name="InactivePhysicsComponents" value="15" />]],
-[[      <Property name="Active0AverageFrameTimeCost" value="0.0705" />
-      <Property name="Active1AverageFrameTimeCost" value="0.0715" />
+[[      <Property name="Active0AverageFrameTimeCost" value="0.0705]] .. math.random(10000,99999) .. [[" />
+      <Property name="Active1AverageFrameTimeCost" value="0.0715]] .. math.random(10000,99999) .. [[" />
       <Property name="ActiveTotalNodes" value="64" />
       <Property name="ActivePhysicsComponents" value="12" />
-      <Property name="Inactive0AverageFrameTimeCost" value="0.03525" />
-      <Property name="Inactive1AverageFrameTimeCost" value="0.03575" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.03525]] .. math.random(1000,9999) .. [[" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0.03575]] .. math.random(1000,9999) .. [[" />
       <Property name="InactiveTotalNodes" value="60" />
       <Property name="InactivePhysicsComponents" value="15" />]],
-[[      <Property name="Active0AverageFrameTimeCost" value="0.0555" />
-      <Property name="Active1AverageFrameTimeCost" value="0.0575" />
+[[      <Property name="Active0AverageFrameTimeCost" value="0.0555]] .. math.random(10000,99999) .. [[" />
+      <Property name="Active1AverageFrameTimeCost" value="0.0575]] .. math.random(10000,99999) .. [[" />
       <Property name="ActiveTotalNodes" value="128" />
       <Property name="ActivePhysicsComponents" value="12" />
-      <Property name="Inactive0AverageFrameTimeCost" value="0.2775" />
-      <Property name="Inactive1AverageFrameTimeCost" value="0.2875" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.2775]] .. math.random(10000,99999) .. [[" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0.2875]] .. math.random(10000,99999) .. [[" />
       <Property name="InactiveTotalNodes" value="64" />
       <Property name="InactivePhysicsComponents" value="15" />]],
-[[      <Property name="Active0AverageFrameTimeCost" value="0.04068683" />
-      <Property name="Active1AverageFrameTimeCost" value="0.04068683" />
+[[      <Property name="Active0AverageFrameTimeCost" value="0.04068]] .. math.random(1000,9999) .. [[" />
+      <Property name="Active1AverageFrameTimeCost" value="0.04069]] .. math.random(1000,9999) .. [[" />
       <Property name="ActiveTotalNodes" value="256" />
       <Property name="ActivePhysicsComponents" value="17" />
-      <Property name="Inactive0AverageFrameTimeCost" value="0.024261653" />
-      <Property name="Inactive1AverageFrameTimeCost" value="0" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.02426]] .. math.random(1000,9999) .. [[" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0.000]] .. math.random(100000,999999) .. [[" />
       <Property name="InactiveTotalNodes" value="120" />
       <Property name="InactivePhysicsComponents" value="15" />]],
 }
@@ -9850,6 +9893,7 @@ return [[
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
+      <Property name="SinglePartID" value="" />
       <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
         <Property name="BaseBuildingDecorationType" value="]] .. DTYPE .. [[" />
       </Property>
@@ -10019,13 +10063,18 @@ return [[
       <Property name="EconomyInfluenceMultiplier" value="0" />
       <Property name="PinObjective" value="" />
       <Property name="PinObjectiveTip" value="" />
+      <Property name="PinObjectiveMessage" value="" />
+      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes.xml">
+        <Property name="ScanIconType" value="None" />
+      </Property>
+      <Property name="PinObjectiveEasyToRefine" value="False" />
       <Property name="CookingIngredient" value="False" />
       <Property name="CookingValue" value="0" />
       <Property name="GoodForSelling" value="False" />
       <Property name="GiveRewardOnSpecialPurchase" value="" />
       <Property name="EggModifierIngredient" value="False" />
       <Property name="IsTechbox" value="False" />
-      <Property name="CanSendToOtherPlayers" value="True" />
+      <Property name="CanSendToOtherPlayers" value="False" />
     </Property>
 ]]
 end
@@ -10569,7 +10618,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_BATCHNAME"]   = "~~~KibblesNBits_COMPATIBILITY.pak",
 ["MOD_DESCRIPTION"] = "Generates Metadata files and patch other mods with this script",
 ["MOD_AUTHOR"]      = "Kibbles, WinderTP, Babscoole",
-["NMS_VERSION"]     = "4.47",
+["NMS_VERSION"]     = "4.50",
 ["MODIFICATIONS"]   =
     {
         {

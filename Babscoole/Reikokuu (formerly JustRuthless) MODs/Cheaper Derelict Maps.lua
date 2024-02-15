@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Cheaper Derelict Maps.pak",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Changes the unit prices for each derelict map at scrap dealer shops",
-["NMS_VERSION"]     = "4.48",
+["NMS_VERSION"]     = "4.50",
 ["MODIFICATIONS"]   =
     {
         {

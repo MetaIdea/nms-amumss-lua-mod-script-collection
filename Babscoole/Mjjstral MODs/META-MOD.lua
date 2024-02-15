@@ -466,6 +466,7 @@ QUICK_ACTION_MENU =
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -499,6 +500,7 @@ QUICK_ACTION_MENU =
       <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
         <Property name="AlienRace" value="None" />
       </Property>
+      <Property name="MustMatchStoryUtilityPuzzle" value="" />
       <Property name="ForceBroken" value="False" />
       <Property name="ForceFixed" value="False" />
       <Property name="ForceOverridesAll" value="True" />
@@ -674,6 +676,7 @@ QUICK_ACTION_MENU =
       <Property name="TooltipRepeats" value="False" />
       <Property name="ShowEndTooltip" value="True" />
       <Property name="TooltipMessage" value="" />
+      <Property name="MissionMessageOnInteract" value="" />
       <Property name="ResourceOverride" value="GcResourceElement.xml">
         <Property name="Filename" value="" />
         <Property name="ResHandle" value="GcResource.xml">
@@ -702,6 +705,7 @@ QUICK_ACTION_MENU =
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -730,6 +734,7 @@ QUICK_ACTION_MENU =
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -753,6 +758,7 @@ QUICK_ACTION_MENU =
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -793,6 +799,7 @@ QUICK_ACTION_MENU =
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -879,6 +886,7 @@ QUICK_ACTION_MENU =
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1060,6 +1068,7 @@ return [[
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1209,6 +1218,7 @@ return [[
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1401,7 +1411,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "4.47",
+["NMS_VERSION"]     = "4.50",
 ["MODIFICATIONS"]   =
     {
         {

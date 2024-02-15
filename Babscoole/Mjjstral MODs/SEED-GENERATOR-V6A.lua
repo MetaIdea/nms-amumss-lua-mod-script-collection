@@ -3,7 +3,7 @@ DEFAULT_SEED_NUMBER = 2000
 SELECTED_SEED_TYPES =
 {
     "Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail", "Robot",
-    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL", "STAFFMULTITOOL",
+    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL", "STAFFMULTITOOL", "STAFFMTATLAS",
     "FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
     "SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGAT", "COMBATFRIGATE", "DIPLOMATICFRIGAT", "LIVINGFRIGATE",
     "NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
@@ -30,6 +30,7 @@ SEED_TYPE_PATH =
     ["ROBOTMULTITOOLB"]="MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOLB.SCENE.MBIN",
     ["ATLASMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMULTITOOL.SCENE.MBIN",
     ["STAFFMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOL.SCENE.MBIN",
+    ["STAFFMTATLAS"]="MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOLATLAS.SCENE.MBIN",
 
     ["FREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN",
     ["CAPITALFREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
@@ -266,6 +267,7 @@ local GENERIC_REWARD_MAIN_ENTRY =
         <Property name="RewardChoice" value="SelectAlways" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
 ]] .. SUB_ENTRY .. [[
         </Property>
@@ -400,6 +402,8 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN05.DDS"
                 elseif ANIM_ID == "STAFFMULTITOOL" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\ROBOTPARTS\ROBOTPARTS.STAFFPOLE.5.DDS"
+                elseif ANIM_ID == "STAFFMTATLAS" then
+                    ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO1.EXPEDITION.ATLASSTAFF.DDS"
                 else ICON = "TEXTURES\UI\FRONTEND\COMPONENTS\STAR.DDS"
                 end
 
@@ -569,7 +573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.47",
+["NMS_VERSION"]     = "4.50",
 ["MODIFICATIONS"]   =
     {
         {
@@ -581,14 +585,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"]    = {2},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
-                            ["ADD"]               = ANIM_TEMPLATE_ALL
+                            ["SECTION_ACTIVE"] = {2},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = ANIM_TEMPLATE_ALL
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
-                            ["ADD"]                 = ACTION_TRIGGER_COMPONENT
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = ACTION_TRIGGER_COMPONENT
                         }
                     }
                 },
@@ -598,7 +602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD"]                 = QUICK_ACTION_BUTTON_ALL
+                            ["ADD"] = QUICK_ACTION_BUTTON_ALL
                         }
                     }
                 },
@@ -608,7 +612,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
-                            ["ADD"]                 = CUSTOM_GENERICREWARD_ALL
+                            ["ADD"] = CUSTOM_GENERICREWARD_ALL
                         }
                     }
                 },

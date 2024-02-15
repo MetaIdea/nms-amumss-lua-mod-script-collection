@@ -5,8 +5,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-48"
-ModVersion = "1-3-1"
+GameVersion = "4-50"
+ModVersion = "1-3-2"
 
 --
 
@@ -138,6 +138,13 @@ MODIFICATIONS = {{
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="SeasonalLogTextOverrides" value="GcSeasonalLogOverrides.xml">
+        <Property name="ApplicableSeasonNumbers" />
+        <Property name="MissionTitle" value="" />
+        <Property name="MissionSubtitle" value="" />
+        <Property name="MissionDescription" value="" />
+      </Property>
+      <Property name="MissionDescSwitchOverride" value="" />
       <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
@@ -195,6 +202,9 @@ MODIFICATIONS = {{
         <Property name="SecondarySubstances" />
         <Property name="PrimaryProducts" />
         <Property name="SecondaryProducts" />
+        <Property name="AmountMin" value="0" />
+        <Property name="AmountMax" value="0" />
+        <Property name="AmountShouldBeRoundNumber" value="False" />
       </Property>
       <Property name="PrefixTitle" value="False" />
       <Property name="NextMissionHint" value="" />
@@ -753,6 +763,7 @@ MODIFICATIONS = {{
           <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -928,6 +939,7 @@ MODIFICATIONS = {{
           <Property name="TooltipRepeats" value="False" />
           <Property name="ShowEndTooltip" value="True" />
           <Property name="TooltipMessage" value="" />
+          <Property name="MissionMessageOnInteract" value="" />
           <Property name="ResourceOverride" value="GcResourceElement.xml">
             <Property name="Filename" value="" />
             <Property name="ResHandle" value="GcResource.xml">
@@ -951,6 +963,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -979,6 +992,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardMission.xml">
                   <Property name="Mission" value="ALCH_CHEF_TDONE" />
                   <Property name="SetAsSelected" value="False" />
+                  <Property name="Restart" value="False" />
                   <Property name="FailRewardIfMissionActive" value="False" />
                 </Property>
               </Property>
@@ -991,6 +1005,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -1014,6 +1029,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -1050,6 +1066,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -1179,6 +1196,7 @@ MODIFICATIONS = {{
             <Property name="PageDataLocID" value="" />
             <Property name="BuildMenuHint" value="" />
             <Property name="InventoryHint" value="" />
+            <Property name="TerrainTarget" value="" />
             <Property name="DebugText" value="" />
             <Property name="ObjectiveID" value="" />
             <Property name="ObjectiveTipID" value="" />
@@ -1196,12 +1214,15 @@ MODIFICATIONS = {{
             <Property name="PrefixTitle" value="False" />
             <Property name="PrefixTitleText" value="" />
             <Property name="BlockPinning" value="False" />
+            <Property name="AutoPinRepairs" value="False" />
+            <Property name="BlockSpaceBattles" value="False" />
             <Property name="ConditionTest" value="GcMissionConditionTest.xml">
               <Property name="ConditionTest" value="AnyTrue" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
+            <Property name="GalMapPathOverride" value="None" />
             <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
               <Property name="InputButton" value="None" />
             </Property>
@@ -1210,18 +1231,23 @@ MODIFICATIONS = {{
               <Property name="FormattableObjective" value="" />
               <Property name="FormattableObjectiveTip" value="" />
             </Property>
+            <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+              <Property name="ApplicableSeasonNumbers" />
+              <Property name="OverrideObjective" value="" />
+              <Property name="OverrideObjectiveTip" value="" />
+            </Property>
             <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
               <Property name="TargetMissionSurveyId" value="" />
               <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+              <Property name="SurveyInactiveHint" value="" />
+              <Property name="SurveySwapHint" value="" />
+              <Property name="SurveyHint" value="" />
+              <Property name="SurveyVehicleHint" value="" />
             </Property>
             <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
               <Property name="HasCustomNotifyTimer" value="False" />
-              <Property name="NotifyDisplayTime" value="32" />
-              <Property name="NotifyPauseTime" value="30" />
+              <Property name="NotifyDisplayTime" value="0" />
+              <Property name="NotifyPauseTime" value="0" />
             </Property>
             <Property name="Conditions">
               <Property value="GcMissionConditionMissionMessage.xml">
@@ -1263,6 +1289,7 @@ MODIFICATIONS = {{
                   <Property name="PageDataLocID" value="" />
                   <Property name="BuildMenuHint" value="" />
                   <Property name="InventoryHint" value="" />
+                  <Property name="TerrainTarget" value="" />
                   <Property name="DebugText" value="" />
                   <Property name="ObjectiveID" value="" />
                   <Property name="ObjectiveTipID" value="" />
@@ -1280,12 +1307,15 @@ MODIFICATIONS = {{
                   <Property name="PrefixTitle" value="True" />
                   <Property name="PrefixTitleText" value="ALCH_CHEF_JOB_UI_TITLE_PREFIX" />
                   <Property name="BlockPinning" value="False" />
+                  <Property name="AutoPinRepairs" value="False" />
+                  <Property name="BlockSpaceBattles" value="False" />
                   <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                     <Property name="ConditionTest" value="AnyFalse" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
                   <Property name="RepeatLogic" value="Loop" />
                   <Property name="IconStyle" value="Default" />
+                  <Property name="GalMapPathOverride" value="None" />
                   <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                     <Property name="InputButton" value="None" />
                   </Property>
@@ -1294,18 +1324,23 @@ MODIFICATIONS = {{
                     <Property name="FormattableObjective" value="" />
                     <Property name="FormattableObjectiveTip" value="" />
                   </Property>
+                  <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                    <Property name="ApplicableSeasonNumbers" />
+                    <Property name="OverrideObjective" value="" />
+                    <Property name="OverrideObjectiveTip" value="" />
+                  </Property>
                   <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                     <Property name="TargetMissionSurveyId" value="" />
                     <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                    <Property name="SurveyInactiveHint" value="" />
+                    <Property name="SurveySwapHint" value="" />
+                    <Property name="SurveyHint" value="" />
+                    <Property name="SurveyVehicleHint" value="" />
                   </Property>
                   <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                     <Property name="HasCustomNotifyTimer" value="False" />
-                    <Property name="NotifyDisplayTime" value="32" />
-                    <Property name="NotifyPauseTime" value="30" />
+                    <Property name="NotifyDisplayTime" value="0" />
+                    <Property name="NotifyPauseTime" value="0" />
                   </Property>
                   <Property name="Conditions" />
                   <Property name="Consequences" />
@@ -1376,8 +1411,10 @@ MODIFICATIONS = {{
       <Property name="IsProceduralAllowed" value="False" />
       <Property name="IsRecurring" value="False" />
       <Property name="IsLegacy" value="False" />
-      <Property name="CanRenounce" value="False" />
       <Property name="BlocksPinning" value="False" />
+      <Property name="CanRenounce" value="False" />
+      <Property name="UseCommunityMissionForLog" value="" />
+      <Property name="TakeCommunityMissionIDFromSeasonData" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>
@@ -1398,6 +1435,13 @@ MODIFICATIONS = {{
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="SeasonalLogTextOverrides" value="GcSeasonalLogOverrides.xml">
+        <Property name="ApplicableSeasonNumbers" />
+        <Property name="MissionTitle" value="" />
+        <Property name="MissionSubtitle" value="" />
+        <Property name="MissionDescription" value="" />
+      </Property>
+      <Property name="MissionDescSwitchOverride" value="" />
       <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
@@ -1455,6 +1499,9 @@ MODIFICATIONS = {{
         <Property name="SecondarySubstances" />
         <Property name="PrimaryProducts" />
         <Property name="SecondaryProducts" />
+        <Property name="AmountMin" value="0" />
+        <Property name="AmountMax" value="0" />
+        <Property name="AmountShouldBeRoundNumber" value="False" />
       </Property>
       <Property name="PrefixTitle" value="False" />
       <Property name="NextMissionHint" value="" />
@@ -1495,6 +1542,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -1596,7 +1644,7 @@ MODIFICATIONS = {{
       <Property name="CancelingConditions" />
       <Property name="FinalStageVersions">
         <Property value="GcGenericMissionVersionProgress.xml">
-          <Property name="Version" value="25" />
+          <Property name="Version" value="26" />
           <Property name="Progress" value="3" />
         </Property>
       </Property>
@@ -1617,6 +1665,7 @@ MODIFICATIONS = {{
             <Property name="PageDataLocID" value="" />
             <Property name="BuildMenuHint" value="" />
             <Property name="InventoryHint" value="" />
+            <Property name="TerrainTarget" value="" />
             <Property name="DebugText" value="" />
             <Property name="ObjectiveID" value="" />
             <Property name="ObjectiveTipID" value="" />
@@ -1634,12 +1683,15 @@ MODIFICATIONS = {{
             <Property name="PrefixTitle" value="False" />
             <Property name="PrefixTitleText" value="" />
             <Property name="BlockPinning" value="False" />
+            <Property name="AutoPinRepairs" value="False" />
+            <Property name="BlockSpaceBattles" value="False" />
             <Property name="ConditionTest" value="GcMissionConditionTest.xml">
               <Property name="ConditionTest" value="AnyFalse" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
+            <Property name="GalMapPathOverride" value="None" />
             <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
               <Property name="InputButton" value="None" />
             </Property>
@@ -1648,18 +1700,23 @@ MODIFICATIONS = {{
               <Property name="FormattableObjective" value="" />
               <Property name="FormattableObjectiveTip" value="" />
             </Property>
+            <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+              <Property name="ApplicableSeasonNumbers" />
+              <Property name="OverrideObjective" value="" />
+              <Property name="OverrideObjectiveTip" value="" />
+            </Property>
             <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
               <Property name="TargetMissionSurveyId" value="" />
               <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+              <Property name="SurveyInactiveHint" value="" />
+              <Property name="SurveySwapHint" value="" />
+              <Property name="SurveyHint" value="" />
+              <Property name="SurveyVehicleHint" value="" />
             </Property>
             <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
               <Property name="HasCustomNotifyTimer" value="False" />
-              <Property name="NotifyDisplayTime" value="32" />
-              <Property name="NotifyPauseTime" value="30" />
+              <Property name="NotifyDisplayTime" value="0" />
+              <Property name="NotifyPauseTime" value="0" />
             </Property>
             <Property name="Conditions">
               <Property value="GcMissionConditionStatLevel.xml">
@@ -1681,7 +1738,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="0" />
                   </Property>
                 </Property>
@@ -1697,7 +1754,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="1" />
                   </Property>
                 </Property>
@@ -1714,7 +1771,7 @@ MODIFICATIONS = {{
         <Property value="GcGenericMissionStage.xml">
           <Property name="Versions">
             <Property value="GcGenericMissionVersionProgress.xml">
-              <Property name="Version" value="25" />
+              <Property name="Version" value="26" />
               <Property name="Progress" value="2" />
             </Property>
           </Property>
@@ -1722,6 +1779,7 @@ MODIFICATIONS = {{
             <Property name="Title" value="UI_TIP_VYK_HEAD_FROG" />
             <Property name="Description" value="ALCH_CHEF_TDONE_INTRO_DESC" />
             <Property name="Image" value="NEXUS_DETAIL" />
+            <Property name="TakeImageFromItemIcon" value="" />
             <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
               <Property name="AkEvent" value="INVALID_EVENT" />
             </Property>
@@ -1742,6 +1800,7 @@ MODIFICATIONS = {{
                 <Property name="InsertItemName" value="" />
               </Property>
             </Property>
+            <Property name="TakeDataFromSeason" value="False" />
             <Property name="DebugText" value="" />
           </Property>
         </Property>
@@ -1751,8 +1810,10 @@ MODIFICATIONS = {{
       <Property name="IsProceduralAllowed" value="False" />
       <Property name="IsRecurring" value="False" />
       <Property name="IsLegacy" value="False" />
-      <Property name="CanRenounce" value="False" />
       <Property name="BlocksPinning" value="False" />
+      <Property name="CanRenounce" value="False" />
+      <Property name="UseCommunityMissionForLog" value="" />
+      <Property name="TakeCommunityMissionIDFromSeasonData" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>
@@ -1773,6 +1834,13 @@ MODIFICATIONS = {{
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="SeasonalLogTextOverrides" value="GcSeasonalLogOverrides.xml">
+        <Property name="ApplicableSeasonNumbers" />
+        <Property name="MissionTitle" value="" />
+        <Property name="MissionSubtitle" value="" />
+        <Property name="MissionDescription" value="" />
+      </Property>
+      <Property name="MissionDescSwitchOverride" value="" />
       <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
@@ -1830,6 +1898,9 @@ MODIFICATIONS = {{
         <Property name="SecondarySubstances" />
         <Property name="PrimaryProducts" />
         <Property name="SecondaryProducts" />
+        <Property name="AmountMin" value="0" />
+        <Property name="AmountMax" value="0" />
+        <Property name="AmountShouldBeRoundNumber" value="False" />
       </Property>
       <Property name="PrefixTitle" value="False" />
       <Property name="NextMissionHint" value="" />
@@ -1875,6 +1946,7 @@ MODIFICATIONS = {{
           <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -2050,6 +2122,7 @@ MODIFICATIONS = {{
           <Property name="TooltipRepeats" value="False" />
           <Property name="ShowEndTooltip" value="True" />
           <Property name="TooltipMessage" value="" />
+          <Property name="MissionMessageOnInteract" value="" />
           <Property name="ResourceOverride" value="GcResourceElement.xml">
             <Property name="Filename" value="" />
             <Property name="ResHandle" value="GcResource.xml">
@@ -2073,6 +2146,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -2091,6 +2165,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -2214,6 +2289,7 @@ MODIFICATIONS = {{
             <Property name="PageDataLocID" value="" />
             <Property name="BuildMenuHint" value="" />
             <Property name="InventoryHint" value="" />
+            <Property name="TerrainTarget" value="" />
             <Property name="DebugText" value="" />
             <Property name="ObjectiveID" value="" />
             <Property name="ObjectiveTipID" value="" />
@@ -2231,12 +2307,15 @@ MODIFICATIONS = {{
             <Property name="PrefixTitle" value="False" />
             <Property name="PrefixTitleText" value="" />
             <Property name="BlockPinning" value="False" />
+            <Property name="AutoPinRepairs" value="False" />
+            <Property name="BlockSpaceBattles" value="False" />
             <Property name="ConditionTest" value="GcMissionConditionTest.xml">
               <Property name="ConditionTest" value="AnyTrue" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
+            <Property name="GalMapPathOverride" value="None" />
             <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
               <Property name="InputButton" value="None" />
             </Property>
@@ -2245,18 +2324,23 @@ MODIFICATIONS = {{
               <Property name="FormattableObjective" value="" />
               <Property name="FormattableObjectiveTip" value="" />
             </Property>
+            <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+              <Property name="ApplicableSeasonNumbers" />
+              <Property name="OverrideObjective" value="" />
+              <Property name="OverrideObjectiveTip" value="" />
+            </Property>
             <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
               <Property name="TargetMissionSurveyId" value="" />
               <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+              <Property name="SurveyInactiveHint" value="" />
+              <Property name="SurveySwapHint" value="" />
+              <Property name="SurveyHint" value="" />
+              <Property name="SurveyVehicleHint" value="" />
             </Property>
             <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
               <Property name="HasCustomNotifyTimer" value="False" />
-              <Property name="NotifyDisplayTime" value="32" />
-              <Property name="NotifyPauseTime" value="30" />
+              <Property name="NotifyDisplayTime" value="0" />
+              <Property name="NotifyPauseTime" value="0" />
             </Property>
             <Property name="Conditions">
               <Property value="GcMissionConditionStatLevel.xml">
@@ -2308,6 +2392,7 @@ MODIFICATIONS = {{
                       <Property name="Distance" value="25" />
                       <Property name="AllowInShip" value="False" />
                       <Property name="RequiresFullFireteam" value="False" />
+                      <Property name="MustMatchThisMissionIDSeed" value="False" />
                       <Property name="ReturnTrueIfMarkerGone" value="True" />
                     </Property>
                   </Property>
@@ -2358,8 +2443,10 @@ MODIFICATIONS = {{
       <Property name="IsProceduralAllowed" value="False" />
       <Property name="IsRecurring" value="False" />
       <Property name="IsLegacy" value="False" />
-      <Property name="CanRenounce" value="False" />
       <Property name="BlocksPinning" value="False" />
+      <Property name="CanRenounce" value="False" />
+      <Property name="UseCommunityMissionForLog" value="" />
+      <Property name="TakeCommunityMissionIDFromSeasonData" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>
@@ -2380,6 +2467,13 @@ MODIFICATIONS = {{
         <Property name="Format" value="ALCH_CHEF_OFFER_DESC_%d" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="SeasonalLogTextOverrides" value="GcSeasonalLogOverrides.xml">
+        <Property name="ApplicableSeasonNumbers" />
+        <Property name="MissionTitle" value="" />
+        <Property name="MissionSubtitle" value="" />
+        <Property name="MissionDescription" value="" />
+      </Property>
+      <Property name="MissionDescSwitchOverride" value="" />
       <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
@@ -2437,6 +2531,9 @@ MODIFICATIONS = {{
         <Property name="SecondarySubstances" />
         <Property name="PrimaryProducts" />
         <Property name="SecondaryProducts" />
+        <Property name="AmountMin" value="0" />
+        <Property name="AmountMax" value="0" />
+        <Property name="AmountShouldBeRoundNumber" value="False" />
       </Property>
       <Property name="PrefixTitle" value="False" />
       <Property name="NextMissionHint" value="" />
@@ -2882,6 +2979,7 @@ MODIFICATIONS = {{
           <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -3057,6 +3155,7 @@ MODIFICATIONS = {{
           <Property name="TooltipRepeats" value="False" />
           <Property name="ShowEndTooltip" value="True" />
           <Property name="TooltipMessage" value="" />
+          <Property name="MissionMessageOnInteract" value="" />
           <Property name="ResourceOverride" value="GcResourceElement.xml">
             <Property name="Filename" value="" />
             <Property name="ResHandle" value="GcResource.xml">
@@ -3080,6 +3179,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -3108,6 +3208,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -3224,7 +3325,7 @@ MODIFICATIONS = {{
       <Property name="CancelingConditions" />
       <Property name="FinalStageVersions">
         <Property value="GcGenericMissionVersionProgress.xml">
-          <Property name="Version" value="25" />
+          <Property name="Version" value="26" />
           <Property name="Progress" value="12" />
         </Property>
       </Property>
@@ -3245,6 +3346,7 @@ MODIFICATIONS = {{
             <Property name="PageDataLocID" value="" />
             <Property name="BuildMenuHint" value="" />
             <Property name="InventoryHint" value="" />
+            <Property name="TerrainTarget" value="" />
             <Property name="DebugText" value="" />
             <Property name="ObjectiveID" value="ALCH_CHEF_OFFER_SONG_OBJ" />
             <Property name="ObjectiveTipID" value="ALCH_CHEF_OFFER_SONG_OBJ_TIP" />
@@ -3262,12 +3364,15 @@ MODIFICATIONS = {{
             <Property name="PrefixTitle" value="False" />
             <Property name="PrefixTitleText" value="" />
             <Property name="BlockPinning" value="False" />
+            <Property name="AutoPinRepairs" value="False" />
+            <Property name="BlockSpaceBattles" value="False" />
             <Property name="ConditionTest" value="GcMissionConditionTest.xml">
               <Property name="ConditionTest" value="AnyTrue" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
+            <Property name="GalMapPathOverride" value="None" />
             <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
               <Property name="InputButton" value="None" />
             </Property>
@@ -3276,18 +3381,23 @@ MODIFICATIONS = {{
               <Property name="FormattableObjective" value="" />
               <Property name="FormattableObjectiveTip" value="" />
             </Property>
+            <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+              <Property name="ApplicableSeasonNumbers" />
+              <Property name="OverrideObjective" value="" />
+              <Property name="OverrideObjectiveTip" value="" />
+            </Property>
             <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
               <Property name="TargetMissionSurveyId" value="" />
               <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+              <Property name="SurveyInactiveHint" value="" />
+              <Property name="SurveySwapHint" value="" />
+              <Property name="SurveyHint" value="" />
+              <Property name="SurveyVehicleHint" value="" />
             </Property>
             <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
               <Property name="HasCustomNotifyTimer" value="False" />
-              <Property name="NotifyDisplayTime" value="32" />
-              <Property name="NotifyPauseTime" value="30" />
+              <Property name="NotifyDisplayTime" value="0" />
+              <Property name="NotifyPauseTime" value="0" />
             </Property>
             <Property name="Conditions">
               <Property value="GcMissionConditionMissionMessage.xml">
@@ -3299,7 +3409,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="0" />
                   </Property>
                 </Property>
@@ -3315,7 +3425,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="1" />
                   </Property>
                 </Property>
@@ -3346,6 +3456,7 @@ MODIFICATIONS = {{
                   <Property name="PageDataLocID" value="" />
                   <Property name="BuildMenuHint" value="" />
                   <Property name="InventoryHint" value="" />
+                  <Property name="TerrainTarget" value="" />
                   <Property name="DebugText" value="" />
                   <Property name="ObjectiveID" value="" />
                   <Property name="ObjectiveTipID" value="" />
@@ -3363,12 +3474,15 @@ MODIFICATIONS = {{
                   <Property name="PrefixTitle" value="False" />
                   <Property name="PrefixTitleText" value="" />
                   <Property name="BlockPinning" value="False" />
+                  <Property name="AutoPinRepairs" value="False" />
+                  <Property name="BlockSpaceBattles" value="False" />
                   <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                     <Property name="ConditionTest" value="AnyFalse" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
                   <Property name="RepeatLogic" value="Loop" />
                   <Property name="IconStyle" value="Default" />
+                  <Property name="GalMapPathOverride" value="None" />
                   <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                     <Property name="InputButton" value="None" />
                   </Property>
@@ -3377,18 +3491,23 @@ MODIFICATIONS = {{
                     <Property name="FormattableObjective" value="" />
                     <Property name="FormattableObjectiveTip" value="" />
                   </Property>
+                  <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                    <Property name="ApplicableSeasonNumbers" />
+                    <Property name="OverrideObjective" value="" />
+                    <Property name="OverrideObjectiveTip" value="" />
+                  </Property>
                   <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                     <Property name="TargetMissionSurveyId" value="" />
                     <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                    <Property name="SurveyInactiveHint" value="" />
+                    <Property name="SurveySwapHint" value="" />
+                    <Property name="SurveyHint" value="" />
+                    <Property name="SurveyVehicleHint" value="" />
                   </Property>
                   <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                     <Property name="HasCustomNotifyTimer" value="False" />
-                    <Property name="NotifyDisplayTime" value="32" />
-                    <Property name="NotifyPauseTime" value="30" />
+                    <Property name="NotifyDisplayTime" value="0" />
+                    <Property name="NotifyPauseTime" value="0" />
                   </Property>
                   <Property name="Conditions" />
                   <Property name="Consequences" />
@@ -3396,7 +3515,7 @@ MODIFICATIONS = {{
                     <Property value="GcGenericMissionStage.xml">
                       <Property name="Versions">
                         <Property value="GcGenericMissionVersionProgress.xml">
-                          <Property name="Version" value="25" />
+                          <Property name="Version" value="26" />
                           <Property name="Progress" value="2" />
                         </Property>
                       </Property>
@@ -3436,6 +3555,7 @@ MODIFICATIONS = {{
                         <Property name="PageDataLocID" value="" />
                         <Property name="BuildMenuHint" value="" />
                         <Property name="InventoryHint" value="" />
+                        <Property name="TerrainTarget" value="" />
                         <Property name="DebugText" value="" />
                         <Property name="ObjectiveID" value="ALCH_CHEF_OFFER_WHALE_OBJ" />
                         <Property name="ObjectiveTipID" value="ALCH_CHEF_OFFER_WHALE_OBJ_TIP" />
@@ -3453,12 +3573,15 @@ MODIFICATIONS = {{
                         <Property name="PrefixTitle" value="False" />
                         <Property name="PrefixTitleText" value="" />
                         <Property name="BlockPinning" value="False" />
+                        <Property name="AutoPinRepairs" value="False" />
+                        <Property name="BlockSpaceBattles" value="False" />
                         <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                           <Property name="ConditionTest" value="AnyFalse" />
                         </Property>
                         <Property name="HideFromLogIfConditionsMet" value="False" />
                         <Property name="RepeatLogic" value="None" />
                         <Property name="IconStyle" value="Default" />
+                        <Property name="GalMapPathOverride" value="None" />
                         <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                           <Property name="InputButton" value="None" />
                         </Property>
@@ -3467,18 +3590,23 @@ MODIFICATIONS = {{
                           <Property name="FormattableObjective" value="" />
                           <Property name="FormattableObjectiveTip" value="" />
                         </Property>
+                        <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                          <Property name="ApplicableSeasonNumbers" />
+                          <Property name="OverrideObjective" value="" />
+                          <Property name="OverrideObjectiveTip" value="" />
+                        </Property>
                         <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                           <Property name="TargetMissionSurveyId" value="" />
                           <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                          <Property name="SurveyInactiveHint" value="" />
+                          <Property name="SurveySwapHint" value="" />
+                          <Property name="SurveyHint" value="" />
+                          <Property name="SurveyVehicleHint" value="" />
                         </Property>
                         <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                           <Property name="HasCustomNotifyTimer" value="False" />
-                          <Property name="NotifyDisplayTime" value="32" />
-                          <Property name="NotifyPauseTime" value="30" />
+                          <Property name="NotifyDisplayTime" value="0" />
+                          <Property name="NotifyPauseTime" value="0" />
                         </Property>
                         <Property name="Conditions" />
                         <Property name="Consequences" />
@@ -3486,7 +3614,7 @@ MODIFICATIONS = {{
                           <Property value="GcGenericMissionStage.xml">
                             <Property name="Versions">
                               <Property value="GcGenericMissionVersionProgress.xml">
-                                <Property name="Version" value="25" />
+                                <Property name="Version" value="26" />
                                 <Property name="Progress" value="3" />
                               </Property>
                             </Property>
@@ -3513,7 +3641,7 @@ MODIFICATIONS = {{
                           <Property value="GcGenericMissionStage.xml">
                             <Property name="Versions">
                               <Property value="GcGenericMissionVersionProgress.xml">
-                                <Property name="Version" value="25" />
+                                <Property name="Version" value="26" />
                                 <Property name="Progress" value="4" />
                               </Property>
                             </Property>
@@ -3549,6 +3677,7 @@ MODIFICATIONS = {{
             <Property name="PageDataLocID" value="" />
             <Property name="BuildMenuHint" value="" />
             <Property name="InventoryHint" value="" />
+            <Property name="TerrainTarget" value="" />
             <Property name="DebugText" value="" />
             <Property name="ObjectiveID" value="ALCH_CHEF_OFFER_CRON_OBJ" />
             <Property name="ObjectiveTipID" value="ALCH_CHEF_OFFER_CRON_OBJ_TIP" />
@@ -3566,12 +3695,15 @@ MODIFICATIONS = {{
             <Property name="PrefixTitle" value="False" />
             <Property name="PrefixTitleText" value="" />
             <Property name="BlockPinning" value="False" />
+            <Property name="AutoPinRepairs" value="False" />
+            <Property name="BlockSpaceBattles" value="False" />
             <Property name="ConditionTest" value="GcMissionConditionTest.xml">
               <Property name="ConditionTest" value="AnyFalse" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
+            <Property name="GalMapPathOverride" value="None" />
             <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
               <Property name="InputButton" value="None" />
             </Property>
@@ -3580,18 +3712,23 @@ MODIFICATIONS = {{
               <Property name="FormattableObjective" value="" />
               <Property name="FormattableObjectiveTip" value="" />
             </Property>
+            <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+              <Property name="ApplicableSeasonNumbers" />
+              <Property name="OverrideObjective" value="" />
+              <Property name="OverrideObjectiveTip" value="" />
+            </Property>
             <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
               <Property name="TargetMissionSurveyId" value="" />
               <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+              <Property name="SurveyInactiveHint" value="" />
+              <Property name="SurveySwapHint" value="" />
+              <Property name="SurveyHint" value="" />
+              <Property name="SurveyVehicleHint" value="" />
             </Property>
             <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
               <Property name="HasCustomNotifyTimer" value="False" />
-              <Property name="NotifyDisplayTime" value="32" />
-              <Property name="NotifyPauseTime" value="30" />
+              <Property name="NotifyDisplayTime" value="0" />
+              <Property name="NotifyPauseTime" value="0" />
             </Property>
             <Property name="Conditions" />
             <Property name="Consequences" />
@@ -3599,7 +3736,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="5" />
                   </Property>
                 </Property>
@@ -3614,7 +3751,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="6" />
                   </Property>
                 </Property>
@@ -3629,7 +3766,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="7" />
                   </Property>
                 </Property>
@@ -3651,7 +3788,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="8" />
                   </Property>
                 </Property>
@@ -3669,7 +3806,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="9" />
                   </Property>
                 </Property>
@@ -3695,13 +3832,14 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="25" />
+                    <Property name="Version" value="26" />
                     <Property name="Progress" value="10" />
                   </Property>
                 </Property>
                 <Property name="Stage" value="GcMissionSequenceWaitForScanEvent.xml">
                   <Property name="Message" value="ALCH_CHEF_OFFER_CRON_OBJ_WAIT_B" />
                   <Property name="GalaxyMapMessage" value="UI_SCANEVENT_GOTO_MAP" />
+                  <Property name="GalaxyMapMessageNotSpace" value="" />
                   <Property name="NexusMessage" value="" />
                   <Property name="Event" value="SE_CHEFOF_CRON" />
                   <Property name="Timeout" value="0" />
@@ -3723,7 +3861,7 @@ MODIFICATIONS = {{
         <Property value="GcGenericMissionStage.xml">
           <Property name="Versions">
             <Property value="GcGenericMissionVersionProgress.xml">
-              <Property name="Version" value="25" />
+              <Property name="Version" value="26" />
               <Property name="Progress" value="11" />
             </Property>
           </Property>
@@ -3744,8 +3882,10 @@ MODIFICATIONS = {{
       <Property name="IsProceduralAllowed" value="False" />
       <Property name="IsRecurring" value="False" />
       <Property name="IsLegacy" value="False" />
-      <Property name="CanRenounce" value="False" />
       <Property name="BlocksPinning" value="False" />
+      <Property name="CanRenounce" value="False" />
+      <Property name="UseCommunityMissionForLog" value="" />
+      <Property name="TakeCommunityMissionIDFromSeasonData" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>
@@ -3779,6 +3919,13 @@ MODIFICATIONS = {{
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="SeasonalLogTextOverrides" value="GcSeasonalLogOverrides.xml">
+        <Property name="ApplicableSeasonNumbers" />
+        <Property name="MissionTitle" value="" />
+        <Property name="MissionSubtitle" value="" />
+        <Property name="MissionDescription" value="" />
+      </Property>
+      <Property name="MissionDescSwitchOverride" value="" />
       <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
@@ -3836,6 +3983,9 @@ MODIFICATIONS = {{
         <Property name="SecondarySubstances" />
         <Property name="PrimaryProducts" />
         <Property name="SecondaryProducts" />
+        <Property name="AmountMin" value="0" />
+        <Property name="AmountMax" value="0" />
+        <Property name="AmountShouldBeRoundNumber" value="False" />
       </Property>
       <Property name="PrefixTitle" value="False" />
       <Property name="NextMissionHint" value="" />
@@ -3876,6 +4026,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -3907,6 +4058,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="SelectAlways" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -4229,6 +4381,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="SelectAlways" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -4551,6 +4704,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="SelectAlways" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -4873,6 +5027,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="SelectAlways" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -5195,6 +5350,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="SelectAlways" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -5517,6 +5673,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="SelectAlways" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -5839,6 +5996,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="SelectAlways" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -6161,6 +6319,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="SelectAlways" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -6483,6 +6642,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="SelectAlways" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -6805,6 +6965,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -7044,8 +7205,10 @@ MODIFICATIONS = {{
       <Property name="IsProceduralAllowed" value="False" />
       <Property name="IsRecurring" value="False" />
       <Property name="IsLegacy" value="False" />
-      <Property name="CanRenounce" value="False" />
       <Property name="BlocksPinning" value="False" />
+      <Property name="CanRenounce" value="False" />
+      <Property name="UseCommunityMissionForLog" value="" />
+      <Property name="TakeCommunityMissionIDFromSeasonData" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>
@@ -7079,6 +7242,13 @@ MODIFICATIONS = {{
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="SeasonalLogTextOverrides" value="GcSeasonalLogOverrides.xml">
+        <Property name="ApplicableSeasonNumbers" />
+        <Property name="MissionTitle" value="" />
+        <Property name="MissionSubtitle" value="" />
+        <Property name="MissionDescription" value="" />
+      </Property>
+      <Property name="MissionDescSwitchOverride" value="" />
       <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
@@ -7136,6 +7306,9 @@ MODIFICATIONS = {{
         <Property name="SecondarySubstances" />
         <Property name="PrimaryProducts" />
         <Property name="SecondaryProducts" />
+        <Property name="AmountMin" value="0" />
+        <Property name="AmountMax" value="0" />
+        <Property name="AmountShouldBeRoundNumber" value="False" />
       </Property>
       <Property name="PrefixTitle" value="False" />
       <Property name="NextMissionHint" value="" />
@@ -7193,7 +7366,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="D_ALCF_HOME_OPT_A" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
-                <Property name="Cost" value="" />
+                <Property name="Cost" value="C_ALCF_DV_0" />
                 <Property name="Rewards" />
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral" />
@@ -7240,7 +7413,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="D_ALCF_HOME_OPT_B" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
-                <Property name="Cost" value="" />
+                <Property name="Cost" value="C_ALCF_DV_1" />
                 <Property name="Rewards" />
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral" />
@@ -7287,7 +7460,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="D_ALCF_HOME_OPT_C" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
-                <Property name="Cost" value="" />
+                <Property name="Cost" value="C_ALCF_DV_2" />
                 <Property name="Rewards" />
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral" />
@@ -7334,7 +7507,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="D_ALCF_HOME_OPT_D" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
-                <Property name="Cost" value="" />
+                <Property name="Cost" value="C_ALCF_DV_3" />
                 <Property name="Rewards" />
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral" />
@@ -7381,7 +7554,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="D_ALCF_HOME_OPT_E" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
-                <Property name="Cost" value="" />
+                <Property name="Cost" value="C_ALCF_DV_4" />
                 <Property name="Rewards" />
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral" />
@@ -7428,7 +7601,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="D_ALCF_HOME_OPT_F" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
-                <Property name="Cost" value="" />
+                <Property name="Cost" value="C_ALCF_DV_5" />
                 <Property name="Rewards" />
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral" />
@@ -7687,6 +7860,7 @@ MODIFICATIONS = {{
                     <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
+                    <Property name="CalculateSeasonalSeedFromStageIndexOffset" value="999" />
                   </Property>
                   <Property value="GcMissionConditionStatLevel.xml">
                     <Property name="Stat" value="CHEF_WS_TUT" />
@@ -7740,6 +7914,7 @@ MODIFICATIONS = {{
                     <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
+                    <Property name="CalculateSeasonalSeedFromStageIndexOffset" value="999" />
                   </Property>
                   <Property value="GcMissionConditionStatLevel.xml">
                     <Property name="Stat" value="CHEF_WS_TUT" />
@@ -7827,6 +8002,7 @@ MODIFICATIONS = {{
                         <Property name="Amount" value="1" />
                         <Property name="UseDefaultAmount" value="False" />
                         <Property name="SyncWithMissionFireteam" value="False" />
+                        <Property name="MustBeImmediatelyAccessible" value="False" />
                         <Property name="ForceSearchFreighterAndChests" value="True" />
                         <Property name="SearchEveryShip" value="True" />
                         <Property name="SearchGrave" value="False" />
@@ -7840,6 +8016,7 @@ MODIFICATIONS = {{
                         <Property name="Purpose" value="GcItemNeedPurpose.xml">
                           <Property name="ItemPurpose" value="None" />
                         </Property>
+                        <Property name="AllowedToSetInventoryHint" value="False" />
                         <Property name="ForceInventoryHintAtAllTimes" value="False" />
                         <Property name="UseProductIconAsMissionIcon" value="False" />
                         <Property name="DoNotFormatText" value="False" />
@@ -7852,6 +8029,7 @@ MODIFICATIONS = {{
                         <Property name="Amount" value="1" />
                         <Property name="UseDefaultAmount" value="False" />
                         <Property name="SyncWithMissionFireteam" value="False" />
+                        <Property name="MustBeImmediatelyAccessible" value="False" />
                         <Property name="ForceSearchFreighterAndChests" value="True" />
                         <Property name="SearchEveryShip" value="True" />
                         <Property name="SearchGrave" value="False" />
@@ -7865,6 +8043,7 @@ MODIFICATIONS = {{
                         <Property name="Purpose" value="GcItemNeedPurpose.xml">
                           <Property name="ItemPurpose" value="None" />
                         </Property>
+                        <Property name="AllowedToSetInventoryHint" value="False" />
                         <Property name="ForceInventoryHintAtAllTimes" value="False" />
                         <Property name="UseProductIconAsMissionIcon" value="False" />
                         <Property name="DoNotFormatText" value="False" />
@@ -8090,6 +8269,7 @@ MODIFICATIONS = {{
                     <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
+                    <Property name="CalculateSeasonalSeedFromStageIndexOffset" value="999" />
                   </Property>
                 </Property>
                 <Property name="EnablingConditionId" value="" />
@@ -26957,6 +27137,7 @@ MODIFICATIONS = {{
           <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -27132,6 +27313,7 @@ MODIFICATIONS = {{
           <Property name="TooltipRepeats" value="False" />
           <Property name="ShowEndTooltip" value="True" />
           <Property name="TooltipMessage" value="" />
+          <Property name="MissionMessageOnInteract" value="" />
           <Property name="ResourceOverride" value="GcResourceElement.xml">
             <Property name="Filename" value="" />
             <Property name="ResHandle" value="GcResource.xml">
@@ -27159,6 +27341,7 @@ MODIFICATIONS = {{
           <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
             <Property name="AlienRace" value="None" />
           </Property>
+          <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -27334,6 +27517,7 @@ MODIFICATIONS = {{
           <Property name="TooltipRepeats" value="False" />
           <Property name="ShowEndTooltip" value="True" />
           <Property name="TooltipMessage" value="" />
+          <Property name="MissionMessageOnInteract" value="" />
           <Property name="ResourceOverride" value="GcResourceElement.xml">
             <Property name="Filename" value="" />
             <Property name="ResHandle" value="GcResource.xml">
@@ -27357,6 +27541,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27385,6 +27570,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27407,6 +27593,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27429,6 +27616,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27451,6 +27639,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27473,6 +27662,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27495,6 +27685,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27517,6 +27708,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27539,6 +27731,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27561,6 +27754,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27583,6 +27777,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27605,6 +27800,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27627,6 +27823,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27649,6 +27846,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27671,6 +27869,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27693,6 +27892,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27715,6 +27915,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27737,6 +27938,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27759,6 +27961,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27781,6 +27984,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27804,6 +28008,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27827,6 +28032,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27850,6 +28056,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27873,6 +28080,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27896,6 +28104,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27919,6 +28128,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27942,6 +28152,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27965,6 +28176,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -27988,6 +28200,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28011,6 +28224,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28034,6 +28248,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28057,6 +28272,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28080,6 +28296,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28103,6 +28320,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28126,6 +28344,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28149,6 +28368,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28172,6 +28392,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28195,6 +28416,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28218,6 +28440,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28241,6 +28464,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28264,6 +28488,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28287,6 +28512,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28310,6 +28536,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28333,6 +28560,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28356,6 +28584,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28379,6 +28608,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28402,6 +28632,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28425,6 +28656,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28448,6 +28680,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28471,6 +28704,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28494,6 +28728,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28517,6 +28752,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28540,6 +28776,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28563,6 +28800,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28586,6 +28824,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28609,6 +28848,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28632,6 +28872,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28655,6 +28896,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28678,6 +28920,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28701,6 +28944,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28723,6 +28967,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28745,6 +28990,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28767,6 +29013,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28789,6 +29036,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28811,6 +29059,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28833,6 +29082,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28874,6 +29124,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28915,6 +29166,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28956,6 +29208,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -28997,6 +29250,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29038,6 +29292,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29079,6 +29334,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29120,6 +29376,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29161,6 +29418,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29202,6 +29460,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29243,6 +29502,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29284,6 +29544,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29325,6 +29586,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29366,6 +29628,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29407,6 +29670,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29448,6 +29712,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29489,6 +29754,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29530,6 +29796,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29571,6 +29838,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29612,6 +29880,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29653,6 +29922,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29694,6 +29964,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29735,6 +30006,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29776,6 +30048,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29817,6 +30090,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29858,6 +30132,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29899,6 +30174,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29940,6 +30216,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -29981,6 +30258,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30022,6 +30300,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30063,6 +30342,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30104,6 +30384,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30145,6 +30426,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30186,6 +30468,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30227,6 +30510,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30268,6 +30552,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30309,6 +30594,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30350,6 +30636,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30391,6 +30678,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30432,6 +30720,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30460,6 +30749,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30480,6 +30770,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -30513,6 +30804,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardMission.xml">
                   <Property name="Mission" value="ALCH_CHEF_OFFER" />
                   <Property name="SetAsSelected" value="False" />
+                  <Property name="Restart" value="False" />
                   <Property name="FailRewardIfMissionActive" value="False" />
                 </Property>
               </Property>
@@ -30521,6 +30813,144 @@ MODIFICATIONS = {{
         </Property>
       </Property>
       <Property name="Costs">
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_0" />
+          <Property name="DisplayCost" value="False" />
+          <Property name="DontCharge" value="True" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="True" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_DNUT_SCUST" />
+            <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_1" />
+          <Property name="DisplayCost" value="False" />
+          <Property name="DontCharge" value="True" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="True" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_EGGPIE_MU" />
+            <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_2" />
+          <Property name="DisplayCost" value="False" />
+          <Property name="DontCharge" value="True" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="True" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_CG_CHOC" />
+            <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_3" />
+          <Property name="DisplayCost" value="False" />
+          <Property name="DontCharge" value="True" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="True" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_PIE_MCUST" />
+            <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_4" />
+          <Property name="DisplayCost" value="False" />
+          <Property name="DontCharge" value="True" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="True" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_CM_JHOT" />
+            <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_5" />
+          <Property name="DisplayCost" value="False" />
+          <Property name="DontCharge" value="True" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="True" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_W_SWEETM" />
+            <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
         <Property value="GcCostTableEntry.xml">
           <Property name="Id" value="C_ALCF_DV_0A" />
           <Property name="DisplayCost" value="True" />
@@ -33018,6 +33448,7 @@ MODIFICATIONS = {{
             <Property name="PageDataLocID" value="" />
             <Property name="BuildMenuHint" value="" />
             <Property name="InventoryHint" value="" />
+            <Property name="TerrainTarget" value="" />
             <Property name="DebugText" value="" />
             <Property name="ObjectiveID" value="" />
             <Property name="ObjectiveTipID" value="" />
@@ -33035,12 +33466,15 @@ MODIFICATIONS = {{
             <Property name="PrefixTitle" value="False" />
             <Property name="PrefixTitleText" value="" />
             <Property name="BlockPinning" value="False" />
+            <Property name="AutoPinRepairs" value="False" />
+            <Property name="BlockSpaceBattles" value="False" />
             <Property name="ConditionTest" value="GcMissionConditionTest.xml">
               <Property name="ConditionTest" value="AnyFalse" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
             <Property name="RepeatLogic" value="Loop" />
             <Property name="IconStyle" value="Default" />
+            <Property name="GalMapPathOverride" value="None" />
             <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
               <Property name="InputButton" value="None" />
             </Property>
@@ -33049,18 +33483,23 @@ MODIFICATIONS = {{
               <Property name="FormattableObjective" value="" />
               <Property name="FormattableObjectiveTip" value="" />
             </Property>
+            <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+              <Property name="ApplicableSeasonNumbers" />
+              <Property name="OverrideObjective" value="" />
+              <Property name="OverrideObjectiveTip" value="" />
+            </Property>
             <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
               <Property name="TargetMissionSurveyId" value="" />
               <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+              <Property name="SurveyInactiveHint" value="" />
+              <Property name="SurveySwapHint" value="" />
+              <Property name="SurveyHint" value="" />
+              <Property name="SurveyVehicleHint" value="" />
             </Property>
             <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
               <Property name="HasCustomNotifyTimer" value="False" />
-              <Property name="NotifyDisplayTime" value="32" />
-              <Property name="NotifyPauseTime" value="30" />
+              <Property name="NotifyDisplayTime" value="0" />
+              <Property name="NotifyPauseTime" value="0" />
             </Property>
             <Property name="Conditions" />
             <Property name="Consequences" />
@@ -33081,6 +33520,7 @@ MODIFICATIONS = {{
                   <Property name="PageDataLocID" value="" />
                   <Property name="BuildMenuHint" value="" />
                   <Property name="InventoryHint" value="" />
+                  <Property name="TerrainTarget" value="" />
                   <Property name="DebugText" value="" />
                   <Property name="ObjectiveID" value="" />
                   <Property name="ObjectiveTipID" value="" />
@@ -33098,12 +33538,15 @@ MODIFICATIONS = {{
                   <Property name="PrefixTitle" value="False" />
                   <Property name="PrefixTitleText" value="" />
                   <Property name="BlockPinning" value="False" />
+                  <Property name="AutoPinRepairs" value="False" />
+                  <Property name="BlockSpaceBattles" value="False" />
                   <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                     <Property name="ConditionTest" value="AnyTrue" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
                   <Property name="RepeatLogic" value="Loop" />
                   <Property name="IconStyle" value="Default" />
+                  <Property name="GalMapPathOverride" value="None" />
                   <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                     <Property name="InputButton" value="None" />
                   </Property>
@@ -33112,18 +33555,23 @@ MODIFICATIONS = {{
                     <Property name="FormattableObjective" value="" />
                     <Property name="FormattableObjectiveTip" value="" />
                   </Property>
+                  <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                    <Property name="ApplicableSeasonNumbers" />
+                    <Property name="OverrideObjective" value="" />
+                    <Property name="OverrideObjectiveTip" value="" />
+                  </Property>
                   <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                     <Property name="TargetMissionSurveyId" value="" />
                     <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                    <Property name="SurveyInactiveHint" value="" />
+                    <Property name="SurveySwapHint" value="" />
+                    <Property name="SurveyHint" value="" />
+                    <Property name="SurveyVehicleHint" value="" />
                   </Property>
                   <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                     <Property name="HasCustomNotifyTimer" value="False" />
-                    <Property name="NotifyDisplayTime" value="32" />
-                    <Property name="NotifyPauseTime" value="30" />
+                    <Property name="NotifyDisplayTime" value="0" />
+                    <Property name="NotifyPauseTime" value="0" />
                   </Property>
                   <Property name="Conditions">
                     <Property value="GcMissionConditionStatLevel.xml">
@@ -33175,6 +33623,7 @@ MODIFICATIONS = {{
                         <Property name="PageDataLocID" value="" />
                         <Property name="BuildMenuHint" value="" />
                         <Property name="InventoryHint" value="" />
+                        <Property name="TerrainTarget" value="" />
                         <Property name="DebugText" value="" />
                         <Property name="ObjectiveID" value="" />
                         <Property name="ObjectiveTipID" value="" />
@@ -33192,12 +33641,15 @@ MODIFICATIONS = {{
                         <Property name="PrefixTitle" value="True" />
                         <Property name="PrefixTitleText" value="ALCH_CHEF_JOB_UI_TITLE_PREFIX" />
                         <Property name="BlockPinning" value="False" />
+                        <Property name="AutoPinRepairs" value="False" />
+                        <Property name="BlockSpaceBattles" value="False" />
                         <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                           <Property name="ConditionTest" value="AnyFalse" />
                         </Property>
                         <Property name="HideFromLogIfConditionsMet" value="False" />
                         <Property name="RepeatLogic" value="Loop" />
                         <Property name="IconStyle" value="Default" />
+                        <Property name="GalMapPathOverride" value="None" />
                         <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                           <Property name="InputButton" value="None" />
                         </Property>
@@ -33206,18 +33658,23 @@ MODIFICATIONS = {{
                           <Property name="FormattableObjective" value="" />
                           <Property name="FormattableObjectiveTip" value="" />
                         </Property>
+                        <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                          <Property name="ApplicableSeasonNumbers" />
+                          <Property name="OverrideObjective" value="" />
+                          <Property name="OverrideObjectiveTip" value="" />
+                        </Property>
                         <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                           <Property name="TargetMissionSurveyId" value="" />
                           <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                          <Property name="SurveyInactiveHint" value="" />
+                          <Property name="SurveySwapHint" value="" />
+                          <Property name="SurveyHint" value="" />
+                          <Property name="SurveyVehicleHint" value="" />
                         </Property>
                         <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                           <Property name="HasCustomNotifyTimer" value="False" />
-                          <Property name="NotifyDisplayTime" value="32" />
-                          <Property name="NotifyPauseTime" value="30" />
+                          <Property name="NotifyDisplayTime" value="0" />
+                          <Property name="NotifyPauseTime" value="0" />
                         </Property>
                         <Property name="Conditions" />
                         <Property name="Consequences" />
@@ -33288,6 +33745,7 @@ MODIFICATIONS = {{
                   <Property name="PageDataLocID" value="" />
                   <Property name="BuildMenuHint" value="" />
                   <Property name="InventoryHint" value="" />
+                  <Property name="TerrainTarget" value="" />
                   <Property name="DebugText" value="" />
                   <Property name="ObjectiveID" value="" />
                   <Property name="ObjectiveTipID" value="" />
@@ -33305,12 +33763,15 @@ MODIFICATIONS = {{
                   <Property name="PrefixTitle" value="False" />
                   <Property name="PrefixTitleText" value="" />
                   <Property name="BlockPinning" value="False" />
+                  <Property name="AutoPinRepairs" value="False" />
+                  <Property name="BlockSpaceBattles" value="False" />
                   <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                     <Property name="ConditionTest" value="AnyTrue" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
                   <Property name="RepeatLogic" value="Loop" />
                   <Property name="IconStyle" value="Default" />
+                  <Property name="GalMapPathOverride" value="None" />
                   <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                     <Property name="InputButton" value="None" />
                   </Property>
@@ -33319,18 +33780,23 @@ MODIFICATIONS = {{
                     <Property name="FormattableObjective" value="" />
                     <Property name="FormattableObjectiveTip" value="" />
                   </Property>
+                  <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                    <Property name="ApplicableSeasonNumbers" />
+                    <Property name="OverrideObjective" value="" />
+                    <Property name="OverrideObjectiveTip" value="" />
+                  </Property>
                   <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                     <Property name="TargetMissionSurveyId" value="" />
                     <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                    <Property name="SurveyInactiveHint" value="" />
+                    <Property name="SurveySwapHint" value="" />
+                    <Property name="SurveyHint" value="" />
+                    <Property name="SurveyVehicleHint" value="" />
                   </Property>
                   <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                     <Property name="HasCustomNotifyTimer" value="False" />
-                    <Property name="NotifyDisplayTime" value="32" />
-                    <Property name="NotifyPauseTime" value="30" />
+                    <Property name="NotifyDisplayTime" value="0" />
+                    <Property name="NotifyPauseTime" value="0" />
                   </Property>
                   <Property name="Conditions">
                     <Property value="GcMissionConditionStatLevel.xml">
@@ -33385,8 +33851,10 @@ MODIFICATIONS = {{
       <Property name="IsProceduralAllowed" value="False" />
       <Property name="IsRecurring" value="False" />
       <Property name="IsLegacy" value="False" />
-      <Property name="CanRenounce" value="False" />
       <Property name="BlocksPinning" value="False" />
+      <Property name="CanRenounce" value="False" />
+      <Property name="UseCommunityMissionForLog" value="" />
+      <Property name="TakeCommunityMissionIDFromSeasonData" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>
@@ -33420,6 +33888,13 @@ MODIFICATIONS = {{
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="SeasonalLogTextOverrides" value="GcSeasonalLogOverrides.xml">
+        <Property name="ApplicableSeasonNumbers" />
+        <Property name="MissionTitle" value="" />
+        <Property name="MissionSubtitle" value="" />
+        <Property name="MissionDescription" value="" />
+      </Property>
+      <Property name="MissionDescSwitchOverride" value="" />
       <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
@@ -33477,6 +33952,9 @@ MODIFICATIONS = {{
         <Property name="SecondarySubstances" />
         <Property name="PrimaryProducts" />
         <Property name="SecondaryProducts" />
+        <Property name="AmountMin" value="0" />
+        <Property name="AmountMax" value="0" />
+        <Property name="AmountShouldBeRoundNumber" value="False" />
       </Property>
       <Property name="PrefixTitle" value="True" />
       <Property name="NextMissionHint" value="" />
@@ -34674,6 +35152,7 @@ MODIFICATIONS = {{
                     <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
+                    <Property name="CalculateSeasonalSeedFromStageIndexOffset" value="999" />
                   </Property>
                 </Property>
                 <Property name="EnablingConditionId" value="" />
@@ -34721,6 +35200,7 @@ MODIFICATIONS = {{
                     <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
+                    <Property name="CalculateSeasonalSeedFromStageIndexOffset" value="999" />
                   </Property>
                   <Property value="GcMissionConditionGroup.xml">
                     <Property name="OnlyUsedForTextFormatting" value="False" />
@@ -34781,6 +35261,7 @@ MODIFICATIONS = {{
                     <Property name="SeasonalMissionSeed" value="0" />
                     <Property name="TakeIDFromSeasonData" value="False" />
                     <Property name="CalculateTextMissionTargetFromStageIndex" value="False" />
+                    <Property name="CalculateSeasonalSeedFromStageIndexOffset" value="999" />
                   </Property>
                 </Property>
                 <Property name="EnablingConditionId" value="" />
@@ -34884,6 +35365,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -34915,6 +35397,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -34938,6 +35421,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -34966,6 +35450,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -35119,6 +35604,7 @@ MODIFICATIONS = {{
             <Property name="PageDataLocID" value="" />
             <Property name="BuildMenuHint" value="" />
             <Property name="InventoryHint" value="" />
+            <Property name="TerrainTarget" value="" />
             <Property name="DebugText" value="" />
             <Property name="ObjectiveID" value="" />
             <Property name="ObjectiveTipID" value="" />
@@ -35136,12 +35622,15 @@ MODIFICATIONS = {{
             <Property name="PrefixTitle" value="False" />
             <Property name="PrefixTitleText" value="" />
             <Property name="BlockPinning" value="False" />
+            <Property name="AutoPinRepairs" value="False" />
+            <Property name="BlockSpaceBattles" value="False" />
             <Property name="ConditionTest" value="GcMissionConditionTest.xml">
               <Property name="ConditionTest" value="AnyTrue" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
+            <Property name="GalMapPathOverride" value="None" />
             <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
               <Property name="InputButton" value="None" />
             </Property>
@@ -35150,18 +35639,23 @@ MODIFICATIONS = {{
               <Property name="FormattableObjective" value="" />
               <Property name="FormattableObjectiveTip" value="" />
             </Property>
+            <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+              <Property name="ApplicableSeasonNumbers" />
+              <Property name="OverrideObjective" value="" />
+              <Property name="OverrideObjectiveTip" value="" />
+            </Property>
             <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
               <Property name="TargetMissionSurveyId" value="" />
               <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+              <Property name="SurveyInactiveHint" value="" />
+              <Property name="SurveySwapHint" value="" />
+              <Property name="SurveyHint" value="" />
+              <Property name="SurveyVehicleHint" value="" />
             </Property>
             <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
               <Property name="HasCustomNotifyTimer" value="False" />
-              <Property name="NotifyDisplayTime" value="32" />
-              <Property name="NotifyPauseTime" value="30" />
+              <Property name="NotifyDisplayTime" value="0" />
+              <Property name="NotifyPauseTime" value="0" />
             </Property>
             <Property name="Conditions">
               <Property value="GcMissionConditionMissionMessageWarp.xml" />
@@ -35185,6 +35679,7 @@ MODIFICATIONS = {{
                   <Property name="PageDataLocID" value="" />
                   <Property name="BuildMenuHint" value="" />
                   <Property name="InventoryHint" value="" />
+                  <Property name="TerrainTarget" value="" />
                   <Property name="DebugText" value="" />
                   <Property name="ObjectiveID" value="" />
                   <Property name="ObjectiveTipID" value="" />
@@ -35202,12 +35697,15 @@ MODIFICATIONS = {{
                   <Property name="PrefixTitle" value="False" />
                   <Property name="PrefixTitleText" value="" />
                   <Property name="BlockPinning" value="False" />
+                  <Property name="AutoPinRepairs" value="False" />
+                  <Property name="BlockSpaceBattles" value="False" />
                   <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                     <Property name="ConditionTest" value="AnyTrue" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
                   <Property name="RepeatLogic" value="None" />
                   <Property name="IconStyle" value="Default" />
+                  <Property name="GalMapPathOverride" value="None" />
                   <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                     <Property name="InputButton" value="None" />
                   </Property>
@@ -35216,18 +35714,23 @@ MODIFICATIONS = {{
                     <Property name="FormattableObjective" value="" />
                     <Property name="FormattableObjectiveTip" value="" />
                   </Property>
+                  <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                    <Property name="ApplicableSeasonNumbers" />
+                    <Property name="OverrideObjective" value="" />
+                    <Property name="OverrideObjectiveTip" value="" />
+                  </Property>
                   <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                     <Property name="TargetMissionSurveyId" value="" />
                     <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                    <Property name="SurveyInactiveHint" value="" />
+                    <Property name="SurveySwapHint" value="" />
+                    <Property name="SurveyHint" value="" />
+                    <Property name="SurveyVehicleHint" value="" />
                   </Property>
                   <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                     <Property name="HasCustomNotifyTimer" value="False" />
-                    <Property name="NotifyDisplayTime" value="32" />
-                    <Property name="NotifyPauseTime" value="30" />
+                    <Property name="NotifyDisplayTime" value="0" />
+                    <Property name="NotifyPauseTime" value="0" />
                   </Property>
                   <Property name="Conditions">
                     <Property value="GcMissionConditionMissionMessage.xml">
@@ -35252,6 +35755,7 @@ MODIFICATIONS = {{
                         <Property name="PageDataLocID" value="" />
                         <Property name="BuildMenuHint" value="" />
                         <Property name="InventoryHint" value="" />
+                        <Property name="TerrainTarget" value="" />
                         <Property name="DebugText" value="" />
                         <Property name="ObjectiveID" value="" />
                         <Property name="ObjectiveTipID" value="" />
@@ -35269,12 +35773,15 @@ MODIFICATIONS = {{
                         <Property name="PrefixTitle" value="False" />
                         <Property name="PrefixTitleText" value="" />
                         <Property name="BlockPinning" value="False" />
+                        <Property name="AutoPinRepairs" value="False" />
+                        <Property name="BlockSpaceBattles" value="False" />
                         <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                           <Property name="ConditionTest" value="AnyTrue" />
                         </Property>
                         <Property name="HideFromLogIfConditionsMet" value="False" />
                         <Property name="RepeatLogic" value="None" />
                         <Property name="IconStyle" value="Default" />
+                        <Property name="GalMapPathOverride" value="None" />
                         <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                           <Property name="InputButton" value="None" />
                         </Property>
@@ -35283,18 +35790,23 @@ MODIFICATIONS = {{
                           <Property name="FormattableObjective" value="" />
                           <Property name="FormattableObjectiveTip" value="" />
                         </Property>
+                        <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                          <Property name="ApplicableSeasonNumbers" />
+                          <Property name="OverrideObjective" value="" />
+                          <Property name="OverrideObjectiveTip" value="" />
+                        </Property>
                         <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                           <Property name="TargetMissionSurveyId" value="" />
                           <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                          <Property name="SurveyInactiveHint" value="" />
+                          <Property name="SurveySwapHint" value="" />
+                          <Property name="SurveyHint" value="" />
+                          <Property name="SurveyVehicleHint" value="" />
                         </Property>
                         <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                           <Property name="HasCustomNotifyTimer" value="False" />
-                          <Property name="NotifyDisplayTime" value="32" />
-                          <Property name="NotifyPauseTime" value="30" />
+                          <Property name="NotifyDisplayTime" value="0" />
+                          <Property name="NotifyPauseTime" value="0" />
                         </Property>
                         <Property name="Conditions">
                           <Property value="GcMissionConditionOnMultiplayerMission.xml" />
@@ -35317,6 +35829,7 @@ MODIFICATIONS = {{
                               <Property name="PageDataLocID" value="" />
                               <Property name="BuildMenuHint" value="" />
                               <Property name="InventoryHint" value="" />
+                              <Property name="TerrainTarget" value="" />
                               <Property name="DebugText" value="" />
                               <Property name="ObjectiveID" value="" />
                               <Property name="ObjectiveTipID" value="" />
@@ -35334,12 +35847,15 @@ MODIFICATIONS = {{
                               <Property name="PrefixTitle" value="True" />
                               <Property name="PrefixTitleText" value="ALCH_CHEF_WHALE_TITLE" />
                               <Property name="BlockPinning" value="False" />
+                              <Property name="AutoPinRepairs" value="False" />
+                              <Property name="BlockSpaceBattles" value="False" />
                               <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                                 <Property name="ConditionTest" value="AnyFalse" />
                               </Property>
                               <Property name="HideFromLogIfConditionsMet" value="False" />
                               <Property name="RepeatLogic" value="None" />
                               <Property name="IconStyle" value="Default" />
+                              <Property name="GalMapPathOverride" value="None" />
                               <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                                 <Property name="InputButton" value="None" />
                               </Property>
@@ -35348,18 +35864,23 @@ MODIFICATIONS = {{
                                 <Property name="FormattableObjective" value="" />
                                 <Property name="FormattableObjectiveTip" value="" />
                               </Property>
+                              <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                                <Property name="ApplicableSeasonNumbers" />
+                                <Property name="OverrideObjective" value="" />
+                                <Property name="OverrideObjectiveTip" value="" />
+                              </Property>
                               <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                                 <Property name="TargetMissionSurveyId" value="" />
                                 <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                                <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                                <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                                <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                                <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                                <Property name="SurveyInactiveHint" value="" />
+                                <Property name="SurveySwapHint" value="" />
+                                <Property name="SurveyHint" value="" />
+                                <Property name="SurveyVehicleHint" value="" />
                               </Property>
                               <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                                 <Property name="HasCustomNotifyTimer" value="False" />
-                                <Property name="NotifyDisplayTime" value="32" />
-                                <Property name="NotifyPauseTime" value="30" />
+                                <Property name="NotifyDisplayTime" value="0" />
+                                <Property name="NotifyPauseTime" value="0" />
                               </Property>
                               <Property name="Conditions">
                                 <Property value="GcMissionConditionHasProduct.xml">
@@ -35370,6 +35891,7 @@ MODIFICATIONS = {{
                                   <Property name="Amount" value="1" />
                                   <Property name="UseDefaultAmount" value="False" />
                                   <Property name="SyncWithMissionFireteam" value="False" />
+                                  <Property name="MustBeImmediatelyAccessible" value="False" />
                                   <Property name="ForceSearchFreighterAndChests" value="True" />
                                   <Property name="SearchEveryShip" value="True" />
                                   <Property name="SearchGrave" value="False" />
@@ -35383,6 +35905,7 @@ MODIFICATIONS = {{
                                   <Property name="Purpose" value="GcItemNeedPurpose.xml">
                                     <Property name="ItemPurpose" value="None" />
                                   </Property>
+                                  <Property name="AllowedToSetInventoryHint" value="False" />
                                   <Property name="ForceInventoryHintAtAllTimes" value="False" />
                                   <Property name="UseProductIconAsMissionIcon" value="False" />
                                   <Property name="DoNotFormatText" value="False" />
@@ -35427,6 +35950,7 @@ MODIFICATIONS = {{
                                     <Property name="MessageSignalBlocked" value="ALCH_CHEF_WHALE_NEARBY_MSG4" />
                                     <Property name="MinTimeInPulse" value="5.5" />
                                     <Property name="PulseEncounterID" value="PE_CHEF_SONG" />
+                                    <Property name="TakeEncounterIDFromSeasonData" value="False" />
                                     <Property name="AllowAnyEncounter" value="False" />
                                     <Property name="Silent" value="False" />
                                     <Property name="AllowOutsideShip" value="False" />
@@ -35549,6 +36073,7 @@ MODIFICATIONS = {{
                   <Property name="PageDataLocID" value="" />
                   <Property name="BuildMenuHint" value="" />
                   <Property name="InventoryHint" value="" />
+                  <Property name="TerrainTarget" value="" />
                   <Property name="DebugText" value="" />
                   <Property name="ObjectiveID" value="" />
                   <Property name="ObjectiveTipID" value="" />
@@ -35566,12 +36091,15 @@ MODIFICATIONS = {{
                   <Property name="PrefixTitle" value="False" />
                   <Property name="PrefixTitleText" value="" />
                   <Property name="BlockPinning" value="False" />
+                  <Property name="AutoPinRepairs" value="False" />
+                  <Property name="BlockSpaceBattles" value="False" />
                   <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                     <Property name="ConditionTest" value="AnyTrue" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
                   <Property name="RepeatLogic" value="None" />
                   <Property name="IconStyle" value="Default" />
+                  <Property name="GalMapPathOverride" value="None" />
                   <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                     <Property name="InputButton" value="None" />
                   </Property>
@@ -35580,18 +36108,23 @@ MODIFICATIONS = {{
                     <Property name="FormattableObjective" value="" />
                     <Property name="FormattableObjectiveTip" value="" />
                   </Property>
+                  <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                    <Property name="ApplicableSeasonNumbers" />
+                    <Property name="OverrideObjective" value="" />
+                    <Property name="OverrideObjectiveTip" value="" />
+                  </Property>
                   <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                     <Property name="TargetMissionSurveyId" value="" />
                     <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                    <Property name="SurveyInactiveHint" value="" />
+                    <Property name="SurveySwapHint" value="" />
+                    <Property name="SurveyHint" value="" />
+                    <Property name="SurveyVehicleHint" value="" />
                   </Property>
                   <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                     <Property name="HasCustomNotifyTimer" value="False" />
-                    <Property name="NotifyDisplayTime" value="32" />
-                    <Property name="NotifyPauseTime" value="30" />
+                    <Property name="NotifyDisplayTime" value="0" />
+                    <Property name="NotifyPauseTime" value="0" />
                   </Property>
                   <Property name="Conditions">
                     <Property value="GcMissionConditionShipEngineStatus.xml">
@@ -35619,6 +36152,7 @@ MODIFICATIONS = {{
                         <Property name="PageDataLocID" value="" />
                         <Property name="BuildMenuHint" value="" />
                         <Property name="InventoryHint" value="" />
+                        <Property name="TerrainTarget" value="" />
                         <Property name="DebugText" value="" />
                         <Property name="ObjectiveID" value="" />
                         <Property name="ObjectiveTipID" value="" />
@@ -35636,12 +36170,15 @@ MODIFICATIONS = {{
                         <Property name="PrefixTitle" value="False" />
                         <Property name="PrefixTitleText" value="" />
                         <Property name="BlockPinning" value="False" />
+                        <Property name="AutoPinRepairs" value="False" />
+                        <Property name="BlockSpaceBattles" value="False" />
                         <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                           <Property name="ConditionTest" value="AnyFalse" />
                         </Property>
                         <Property name="HideFromLogIfConditionsMet" value="False" />
                         <Property name="RepeatLogic" value="None" />
                         <Property name="IconStyle" value="Default" />
+                        <Property name="GalMapPathOverride" value="None" />
                         <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
                           <Property name="InputButton" value="None" />
                         </Property>
@@ -35650,18 +36187,23 @@ MODIFICATIONS = {{
                           <Property name="FormattableObjective" value="" />
                           <Property name="FormattableObjectiveTip" value="" />
                         </Property>
+                        <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+                          <Property name="ApplicableSeasonNumbers" />
+                          <Property name="OverrideObjective" value="" />
+                          <Property name="OverrideObjectiveTip" value="" />
+                        </Property>
                         <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
                           <Property name="TargetMissionSurveyId" value="" />
                           <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
-                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE" />
-                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP" />
-                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY" />
-                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY" />
+                          <Property name="SurveyInactiveHint" value="" />
+                          <Property name="SurveySwapHint" value="" />
+                          <Property name="SurveyHint" value="" />
+                          <Property name="SurveyVehicleHint" value="" />
                         </Property>
                         <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
                           <Property name="HasCustomNotifyTimer" value="False" />
-                          <Property name="NotifyDisplayTime" value="32" />
-                          <Property name="NotifyPauseTime" value="30" />
+                          <Property name="NotifyDisplayTime" value="0" />
+                          <Property name="NotifyPauseTime" value="0" />
                         </Property>
                         <Property name="Conditions">
                           <Property value="GcMissionConditionHasFreighter.xml">
@@ -35689,7 +36231,7 @@ MODIFICATIONS = {{
                             <Property name="Versions" />
                             <Property name="Stage" value="GcMissionSequenceCommunicator.xml">
                               <Property name="Message" value="" />
-                              <Property name="VRMessage" value="UI_CORE_COMMS_MSG2_VR1" />
+                              <Property name="VRMessage" value="" />
                               <Property name="OptionalWaitMessage" value="" />
                               <Property name="OSDMessage" value="UI_HAIL_BIOFRIG_OSD" />
                               <Property name="Comms" value="GcPlayerCommunicatorMessage.xml">
@@ -35707,6 +36249,7 @@ MODIFICATIONS = {{
                               <Property name="AutoOpen" value="False" />
                               <Property name="UsePulseEncounterObjectAsAttachment" value="False" />
                               <Property name="MinTimeInSpaceBeforeCall" value="0" />
+                              <Property name="FormatDialogIDWithSeasonData" value="" />
                               <Property name="DebugText" value="" />
                             </Property>
                           </Property>
@@ -35758,8 +36301,10 @@ MODIFICATIONS = {{
       <Property name="IsProceduralAllowed" value="False" />
       <Property name="IsRecurring" value="False" />
       <Property name="IsLegacy" value="False" />
-      <Property name="CanRenounce" value="False" />
       <Property name="BlocksPinning" value="False" />
+      <Property name="CanRenounce" value="False" />
+      <Property name="UseCommunityMissionForLog" value="" />
+      <Property name="TakeCommunityMissionIDFromSeasonData" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>
@@ -35780,6 +36325,13 @@ MODIFICATIONS = {{
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
       </Property>
+      <Property name="SeasonalLogTextOverrides" value="GcSeasonalLogOverrides.xml">
+        <Property name="ApplicableSeasonNumbers" />
+        <Property name="MissionTitle" value="" />
+        <Property name="MissionSubtitle" value="" />
+        <Property name="MissionDescription" value="" />
+      </Property>
+      <Property name="MissionDescSwitchOverride" value="" />
       <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
         <Property name="Format" value="" />
         <Property name="Count" value="1" />
@@ -35837,6 +36389,9 @@ MODIFICATIONS = {{
         <Property name="SecondarySubstances" />
         <Property name="PrimaryProducts" />
         <Property name="SecondaryProducts" />
+        <Property name="AmountMin" value="0" />
+        <Property name="AmountMax" value="0" />
+        <Property name="AmountShouldBeRoundNumber" value="False" />
       </Property>
       <Property name="PrefixTitle" value="False" />
       <Property name="NextMissionHint" value="" />
@@ -35877,6 +36432,7 @@ MODIFICATIONS = {{
             <Property name="RewardChoice" value="GiveAllSilent" />
             <Property name="OverrideZeroSeed" value="False" />
             <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -35975,6 +36531,7 @@ MODIFICATIONS = {{
               <Property name="Amount" value="1" />
               <Property name="UseDefaultAmount" value="False" />
               <Property name="SyncWithMissionFireteam" value="False" />
+              <Property name="MustBeImmediatelyAccessible" value="False" />
               <Property name="ForceSearchFreighterAndChests" value="False" />
               <Property name="SearchEveryShip" value="False" />
               <Property name="SearchGrave" value="False" />
@@ -35988,6 +36545,7 @@ MODIFICATIONS = {{
               <Property name="Purpose" value="GcItemNeedPurpose.xml">
                 <Property name="ItemPurpose" value="None" />
               </Property>
+              <Property name="AllowedToSetInventoryHint" value="False" />
               <Property name="ForceInventoryHintAtAllTimes" value="False" />
               <Property name="UseProductIconAsMissionIcon" value="False" />
               <Property name="DoNotFormatText" value="False" />
@@ -36037,8 +36595,10 @@ MODIFICATIONS = {{
       <Property name="IsProceduralAllowed" value="False" />
       <Property name="IsRecurring" value="False" />
       <Property name="IsLegacy" value="False" />
-      <Property name="CanRenounce" value="False" />
       <Property name="BlocksPinning" value="False" />
+      <Property name="CanRenounce" value="False" />
+      <Property name="UseCommunityMissionForLog" value="" />
+      <Property name="TakeCommunityMissionIDFromSeasonData" value="False" />
       <Property name="TelemetryUpload" value="False" />
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>
@@ -36786,6 +37346,11 @@ MODIFICATIONS = {{
       <Property name="EconomyInfluenceMultiplier" value="0" />
       <Property name="PinObjective" value="" />
       <Property name="PinObjectiveTip" value="" />
+      <Property name="PinObjectiveMessage" value="" />
+      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes.xml">
+        <Property name="ScanIconType" value="None" />
+      </Property>
+      <Property name="PinObjectiveEasyToRefine" value="False" />
       <Property name="CookingIngredient" value="True" />
       <Property name="CookingValue" value="1" />
       <Property name="GoodForSelling" value="False" />
@@ -36872,6 +37437,11 @@ MODIFICATIONS = {{
       <Property name="EconomyInfluenceMultiplier" value="0" />
       <Property name="PinObjective" value="" />
       <Property name="PinObjectiveTip" value="" />
+      <Property name="PinObjectiveMessage" value="" />
+      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes.xml">
+        <Property name="ScanIconType" value="None" />
+      </Property>
+      <Property name="PinObjectiveEasyToRefine" value="False" />
       <Property name="CookingIngredient" value="False" />
       <Property name="CookingValue" value="0" />
       <Property name="GoodForSelling" value="False" />
@@ -36929,6 +37499,7 @@ MODIFICATIONS = {{
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -36951,6 +37522,7 @@ MODIFICATIONS = {{
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -36974,6 +37546,7 @@ MODIFICATIONS = {{
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -36994,6 +37567,7 @@ MODIFICATIONS = {{
             <Property name="Reward" value="GcRewardMission.xml">
               <Property name="Mission" value="ALCH_CHEF_JUDGE" />
               <Property name="SetAsSelected" value="False" />
+              <Property name="Restart" value="False" />
               <Property name="FailRewardIfMissionActive" value="False" />
             </Property>
           </Property>
@@ -37006,6 +37580,7 @@ MODIFICATIONS = {{
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -37029,6 +37604,7 @@ MODIFICATIONS = {{
         <Property name="RewardChoice" value="GiveAllSilent" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -37049,6 +37625,7 @@ MODIFICATIONS = {{
             <Property name="Reward" value="GcRewardMission.xml">
               <Property name="Mission" value="ALCH_CHEF_WHALE" />
               <Property name="SetAsSelected" value="False" />
+              <Property name="Restart" value="False" />
               <Property name="FailRewardIfMissionActive" value="True" />
             </Property>
           </Property>

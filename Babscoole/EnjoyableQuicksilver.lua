@@ -103,6 +103,7 @@ REWARD_ENTRIES = [[
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -125,6 +126,7 @@ REWARD_ENTRIES = [[
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -147,6 +149,7 @@ REWARD_ENTRIES = [[
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -169,6 +172,7 @@ REWARD_ENTRIES = [[
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -191,6 +195,7 @@ REWARD_ENTRIES = [[
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -247,7 +252,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_DESCRIPTION"] = "Allows the player to grind Quicksilver through a wide variety of different ways",
     ["MOD_AUTHOR"] = "ArtisticMisfit",
     ["LUA_AUTHOR"] = "Leonard, TheLich, Babscoole, ArtisticMisfit",
-    ["NMS_VERSION"] = "4.47",
+    ["NMS_VERSION"] = "4.50",
     ["MODIFICATIONS"] = {{
         ["MBIN_CHANGE_TABLE"] = {{
             ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",

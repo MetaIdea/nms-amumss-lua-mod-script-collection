@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Anomaly Stranded in Space"
-GameVersion = "4.47"
+GameVersion = "4.50"
 --ModVersion = "v1"
 Description = "Essentialy a No Starter Ship mod, except you still have your ship, tecnically."
 
@@ -663,7 +663,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["MBIN_CHANGE_TABLE"] 	= 
       { 
         {
-          ["MBIN_FILE_SOURCE"] 	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+          ["MBIN_FILE_SOURCE"] 	= "METADATA/GAMESTATE/DIFFICULTYCONFIG.MBIN",
           ["EXML_CHANGE_TABLE"] 	= 
           -- REMOVE LAUNCH THRUSTER AND HYPERDRIVE FROM THE STARTER SHIP AND BOTH LAUNCH THRUSTER AND HYPERDRIVE BLUEPRINT FROM THE KNOWN TECHS
           {
@@ -713,15 +713,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ALL",
               ["ADD_OPTION"]  = "ADDafterSECTION",
               ["ADD"] = STARTERMULTITOOLTECH
-            },
-            -- TECH ONLY BREAKS IF YOU TAKE DAMAGE WHILE YOUR SHIELD IS DOWN
-            {
-              ["VALUE_CHANGE_TABLE"]  =
-              {
-                {"TechDamageChanceShieldLevelMin",0},		-- Original "0.01"
-                {"TechDamageChanceShieldLevelMax",0},		-- Original "0.75"
-                {"TechDamageChanceToSelectPrimary",1},		-- Original "0.1"
-              }
             },
             -- TURN OFF TUTORIAL FOR EVERY DIFFICULTY BY DEFAULT
             {
@@ -930,31 +921,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Bonus",0.75},
               }
             },
-            -- CHANGE CHARGED SHOT OF NEUTRON CANNON TO 1 ORB
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"ID","CANNON","StatsType","Weapon_Projectile_MaximumCharge"},
-            --   ["SECTION_UP"]    = 1,
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"Bonus",1},
-            --   }
-            -- },	
           }
         },
-        -- CHANGE NEUTRON CANNON ORB SIZE
-        -- {
-        --   ["MBIN_FILE_SOURCE"] 	= "METADATA/PROJECTILES/PROJECTILETABLE.MBIN",
-        --   ["EXML_CHANGE_TABLE"] 	= 
-        --   {
-        --     {
-        --       ["SPECIAL_KEY_WORDS"]  = {"Id","CANNON",},
-        --       ["VALUE_CHANGE_TABLE"]  =
-        --       {
-        --         {"Scale",10},
-        --       }
-        --     },	
-        --   }
-        -- },
+        -- TECH ONLY BREAKS IF YOU TAKE DAMAGE WHILE YOUR SHIELD IS DOWN
+        {
+          ["MBIN_FILE_SOURCE"] 	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+          ["EXML_CHANGE_TABLE"] 	= 
+          {
+            {
+              ["VALUE_CHANGE_TABLE"]  =
+              {
+                {"TechDamageChanceShieldLevelMin",0},		-- Original "0.01"
+                {"TechDamageChanceShieldLevelMax",0},		-- Original "0.75"
+                {"TechDamageChanceToSelectPrimary",1},		-- Original "0.1"
+              }
+            },	
+          }
+        },
         -- COMPANION EGG REWARD TABLE
         {
           ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
@@ -1007,26 +990,26 @@ NMS_MOD_DEFINITION_CONTAINER =
           }
         },
         -- CHANGING EGG NAME IN THE LANGUAGE FILE
-        {
-          ["MBIN_FILE_SOURCE"] 	= "LANGUAGE/NMS_LOC6_ENGLISH.MBIN",
-          ["EXML_CHANGE_TABLE"] 	= 
-          {
-            {
-              ["SPECIAL_KEY_WORDS"]  = {"Id","UI_PET_EGG_NAME"},
-              ["VALUE_CHANGE_TABLE"]  =
-              {
-                {"Value","CREATURE EGG"},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"]  = {"Id","UI_PET_EGG_NAME_L"},
-              ["VALUE_CHANGE_TABLE"]  =
-              {
-                {"Value","Creature Egg"},
-              }
-            },
-          }
-        },
+        -- {
+        --   ["MBIN_FILE_SOURCE"] 	= "LANGUAGE/NMS_LOC6_ENGLISH.MBIN",
+        --   ["EXML_CHANGE_TABLE"] 	= 
+        --   {
+        --     {
+        --       ["SPECIAL_KEY_WORDS"]  = {"Id","UI_PET_EGG_NAME"},
+        --       ["VALUE_CHANGE_TABLE"]  =
+        --       {
+        --         {"Value","CREATURE EGG"},
+        --       }
+        --     },
+        --     {
+        --       ["SPECIAL_KEY_WORDS"]  = {"Id","UI_PET_EGG_NAME_L"},
+        --       ["VALUE_CHANGE_TABLE"]  =
+        --       {
+        --         {"Value","Creature Egg"},
+        --       }
+        --     },
+        --   }
+        -- },
         -- ADD LAUNCH THRUSTER TO THE SHOP
         {
           ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/DEFAULTREALITY.MBIN",

@@ -6,8 +6,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-48"
-ModVersion = "1-3-1"
+GameVersion = "4-50"
+ModVersion = "1-3-2"
 
 -- =========
 -- CONSTANTS

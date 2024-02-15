@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_BoltcasterNoRecoil&Cooldown.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.46",
+    ["NMS_VERSION"] = "4.50",
     ["MOD_DESCRIPTION"] = "Boltcaster no recoil and cooldown.",
     ["MODIFICATIONS"] = {
         {
