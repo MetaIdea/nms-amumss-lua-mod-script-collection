@@ -1,8 +1,8 @@
 ModName                                  = "InventoryRebalance"
 
-GCGAMEPLAYGLOBALS                        = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
+DIFFICULTYCONFIG                         = "METADATA/GAMESTATE/DIFFICULTYCONFIG.MBIN"
 
-SubstanceAndProductSizeLimit            = 9999999
+SubstanceAndProductSizeLimit             = 9999999
 
 -- Standard == NORMAL
 SubstanceInventorySizeStandard           = 50000
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = GCGAMEPLAYGLOBALS,
+                    ["MBIN_FILE_SOURCE"]    = DIFFICULTYCONFIG,
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {

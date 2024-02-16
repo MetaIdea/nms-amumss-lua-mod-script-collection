@@ -11,8 +11,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "MaxPurchaseDistance",      300 },             -- 1000
-                                { "DistanceForPurchaseReset", 600 },             -- 2000
+                                { "MaxPurchaseDistance",      350 },             -- 1000
+                                { "DistanceForPurchaseReset", 700 },             -- 2000
                                 -- ???
                                 --{ "DistanceForSingleShipFlybyCommsReset", 850 }, -- 850
                             }

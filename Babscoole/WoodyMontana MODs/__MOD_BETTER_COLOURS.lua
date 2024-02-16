@@ -8154,7 +8154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "More colour variety",
 ["MOD_AUTHOR"]      = "WoodyMontana",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.44",
+["NMS_VERSION"]     = "4.50",
 ["MODIFICATIONS"]   =
     {
         {

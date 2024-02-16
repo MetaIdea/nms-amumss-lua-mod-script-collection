@@ -12,6 +12,7 @@ DeadlyFlying                    Improved flying
 DeadlyPolice                    Improved Police
 DeadlyTurrets                   Improved space turrets
 
+
                               CUSTOM
     File                                Description
 -----------------------------------------------------------------------
@@ -35,15 +36,16 @@ DeadlyRewardsTechDebris         Reduces quality of Tech Upgrades in debris
 DeadlyRewardsTrader             Reduces loot given by destroying Traders
 DeadlySpawnChances              Adjusts spawn chances of Traders, Pirates
 DeadlySpeedUp                   UI Speed Up
+DeadlyStarChartCost             Increases exchange cost of planetary maps
 DeadlyTrading                   Shop and Trader changes
 HideDockingCircles              Hides docking circles
 HidePulseDriveVerticalLines     Hides Pulse Drive Vertical Lines
 HideTradeRouteLines             Hides Trade Route Lines
 ImprovedCargoScanDeflector      Deflector Strength is up to 95%
 LessFreighters                  Reduces chances to spawn Freighters
-MoreEarlyPirates                Increases chances of early pirates
 MorePirates                     Increases amount of pirates in spawns
 MorePiratesCivilFleet           Increases amount of pirates vs civil fleet
+MoreWordsAncientPlaque          More learning words given by Ancient Plaque
 NoNavDataInShops                Removes all Navigation Data from shops
 NoPlanetaryPirateRaids          Disables planetary raids on most buildings
 NoRobots                        Disables regular robot spawn

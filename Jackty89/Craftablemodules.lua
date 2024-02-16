@@ -9,7 +9,12 @@ UNLOCK =
                 <Property name="Children">
                     <Property value="GcUnlockableItemTreeNode.xml">
                         <Property name="Unlockable" value="BP_SALVAGE" />
-                        <Property name="Children" />
+                        <Property name="Children">
+                            <Property value="GcUnlockableItemTreeNode.xml">
+                                <Property name="Unlockable" value="FACT_TOKEN" />
+                                <Property name="Children" />
+                            </Property>
+                        </Property>
                     </Property>
                 </Property>
             </Property>
@@ -119,6 +124,15 @@ NewRequirementsArray =
             {["REQUIREMENTID"] = "FARMPROD9" , ["REQUIREDAMOUNT"] = "1", ["REQUIREDTYPE"] = Types["PRODUCT"]},
             {["REQUIREMENTID"] = "ROBOT1" , ["REQUIREDAMOUNT"] = "150", ["REQUIREDTYPE"] = Types["SUBSTANCE"]},
             {["REQUIREMENTID"] = "CAVE2" , ["REQUIREDAMOUNT"] = "250", ["REQUIREDTYPE"] = Types["SUBSTANCE"]}
+        }
+    },
+    {
+        ["PRODUCTID"] = "FACT_TOKEN",
+        ["REQUIREMENTS"] =
+        {
+            {["REQUIREMENTID"] = "COMPUTER" , ["REQUIREDAMOUNT"] = "15", ["REQUIREDTYPE"] = Types["PRODUCT"]},
+            {["REQUIREMENTID"] = "AF_METAL" , ["REQUIREDAMOUNT"] = "150", ["REQUIREDTYPE"] = Types["SUBSTANCE"]},
+            {["REQUIREMENTID"] = "SPIDER_PROD" , ["REQUIREDAMOUNT"] = "5", ["REQUIREDTYPE"] = Types["PRODUCT"]}
         }
     }
 }

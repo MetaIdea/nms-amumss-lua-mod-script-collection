@@ -12,9 +12,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
-                --
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
@@ -58,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_LOW", "ID", "NAV_DATA" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 10 },  -- 2
+                                { "AmountMin", 10 }, -- 2
                                 { "AmountMax", 10 }, -- 2
                             }
                         },
@@ -94,9 +91,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         -- SPACE STATION ITEMS: remove navdata given by placed items at space stations
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "NAVDATA", "ID", "NAV_DATA" },
-                            ["SECTION_UP"]         = 1,
-                            ["REMOVE"]             = "SECTION",
+                            ["SPECIAL_KEY_WORDS"] = { "Id", "NAVDATA", "ID", "NAV_DATA" },
+                            ["SECTION_UP"]        = 1,
+                            ["REMOVE"]            = "SECTION",
                         },
                         -- SPACE STATION ITEMS: nanites given by placed items at space stations
                         {

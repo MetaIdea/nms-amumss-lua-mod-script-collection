@@ -1,3 +1,6 @@
+CARGO_BULKHEAD_CHANCE = 30 -- 5
+
+
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]    = "_DeadlyRewardsCrashContainers.pak",
     ["MOD_AUTHOR"]      = "gh0stwizard",
@@ -40,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "FRIG_TOKEN" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 2 }, -- 1
+                                { "AmountMin", 1 }, -- 1
                                 { "AmountMax", 3 }, -- 1
                             }
                         },
@@ -55,16 +58,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "WEAP_INV_TOKEN" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 3 }, -- 1
+                                { "AmountMin", 1 }, -- 1
                                 { "AmountMax", 5 }, -- 1
                             }
                         },
                         -- Cargo Bulkhead
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "FREI_INV_TOKEN" },
+                            ["SECTION_UP"]         = 1,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 }, -- 1
-                                { "AmountMax", 5 }, -- 1
+                                { "PercentageChance", CARGO_BULKHEAD_CHANCE }, -- 5
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "FREI_INV_TOKEN" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "AmountMin", 1 },  -- 1
+                                { "AmountMax", 10 }, -- 1
                             }
                         },
                         -- All illegal products
@@ -73,15 +83,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 50 }, -- 1
+                                { "AmountMax", 10 }, -- 1
                             }
                         },
                         -- Warp Hypercore
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "HYPERFUEL2" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 20 }, -- 1
+                                { "AmountMin", 1 }, -- 1
+                                { "AmountMax", 3 }, -- 1
                             }
                         },
                         -- Warp Cell
@@ -89,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_S", "ID", "HYPERFUEL1" },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 20 }, -- 1
+                                { "AmountMax", 10 }, -- 1
                             }
                         },
                         -- Starship Launch Fuel
@@ -97,7 +107,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_S", "ID", "LAUNCHFUEL" },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 40 }, -- 1
+                                { "AmountMax", 10 }, -- 1
                             }
                         },
                         -- All Trade Products Tier 5
@@ -105,24 +115,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "Value", "TRA_TECH5" },
                             ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 5 },  -- 5
-                                { "AmountMax", 50 }, -- 5
+                                { "AmountMin", 1 },  -- 5
+                                { "AmountMax", 10 }, -- 5
                             }
                         },
                         -- Antimatter
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_S", "ID", "ANTIMATTER" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 20 }, -- 1
+                                { "AmountMin", 1 }, -- 1
+                                { "AmountMax", 3 }, -- 1
                             }
                         },
                         -- Antimatter Housing
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_S", "ID", "AM_HOUSING" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 20 }, -- 1
+                                { "AmountMin", 1 }, -- 1
+                                { "AmountMax", 5 }, -- 1
                             }
                         },
                         -- COMPOUND3: Hot Ice
@@ -137,18 +147,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "CRASHCONT_M", "ID", "COMPOUND6" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 10 }, -- 1
+                                { "AmountMin", 1 }, -- 1
+                                { "AmountMax", 3 }, -- 1
                             }
                         },
                         --  Salvaged Data
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "BP_SALVAGE" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 30 }, -- 3
-                            }
-                        },
+                        -- {
+                        --     ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "BP_SALVAGE" },
+                        --     ["VALUE_CHANGE_TABLE"] = {
+                        --         { "AmountMin", 1 }, -- 1
+                        --         { "AmountMax", 3 }, -- 3
+                        --     }
+                        -- },
                         -- FARMPROD1: Acid
                         -- FARMPROD4: Heat Capacitor
                         -- FARMPROD5: Poly Fibre
@@ -163,8 +173,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "CRASHCONT_M", "ID", "FARMPROD7" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 10 }, -- 1
+                                { "AmountMin", 1 }, -- 1
+                                { "AmountMax", 3 }, -- 1
                             }
                         },
                     }

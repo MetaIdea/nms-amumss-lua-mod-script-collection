@@ -74,7 +74,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "ADD_TRIGGER",
-                            ["SEC_KEEP"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"GcCameraShakeAction.xml"},
                             ["REMOVE"] = "SECTION"
                         },

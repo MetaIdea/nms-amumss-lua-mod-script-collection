@@ -1,7 +1,7 @@
 AMMO_CHANCE = 0
 HEAL_CHANCE = 0
 CURIO_CHANCE = 0 -- 12
-CHART_CHANCE = 0 -- 3
+CHART_CHANCE = 0 -- 3/5
 
 NANITES_MIN_MULTI = 1
 NANITES_MAX_MULTI = 3
@@ -175,10 +175,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         -- hive map
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "DE_SENT_LOOT", "ID", "CHART_HIVE" },
+                            ["FOREACH_SKW_GROUP"]   = {
+                                { "Id", "QUAD_LOOT",    "ID", "CHART_HIVE" },
+                                { "Id", "MECH_LOOT",    "ID", "CHART_HIVE" },
+                                { "Id", "WALKER_LOOT",  "ID", "CHART_HIVE" },
+                                { "Id", "DE_SENT_LOOT", "ID", "CHART_HIVE" },
+                            },
                             ["SECTION_UP"]         = 1,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PercentageChance", CHART_CHANCE }, -- 3
+                                { "PercentageChance", CHART_CHANCE }, -- 3/3/5/3
                             }
                         },
                         -- to compensate NoSentinelsInstantLoot.pak

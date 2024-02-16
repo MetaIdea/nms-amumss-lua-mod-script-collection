@@ -28,8 +28,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SECTION_UP"]         = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "AmountMin", "100" },
-                                { "AmountMax", "1000" },
+                                { "AmountMin", 1000 },
+                                { "AmountMax", 10000 },
                             }
                         },
                         {

@@ -1,10 +1,10 @@
-DELAY_SECONDS = 1800
+DELAY_SECONDS = 7200
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]    = "DelayTutorialMessages.pak",
     ["MOD_AUTHOR"]      = "gh0stwizard",
     ["MOD_DESCRIPTION"] = "Delays Planetary Chart, Exosuit Upgrade Chart and others notifications.",
-    ["NMS_VERSION"]     = "4.47",
+    ["NMS_VERSION"]     = "4.50",
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -15,30 +15,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "INV_HINT_MAP", "Stage", "GcMissionSequenceWait.xml" },
-                            ["VALUE_MATCH"]        = "90",
-                            ["REPLACE_TYPE"]       = "ALL",
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "INV_HINT_MAP", "Stage", "GcMissionSequenceShowHintMessage.xml" },
                             ["MATH_OPERATION"]     = "+",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "Time", DELAY_SECONDS }, -- 90
+                                { "SecondaryWaitTime", DELAY_SECONDS }, -- 90
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "ROBOCHART_HINT", "Stage", "GcMissionSequenceWait.xml" },
-                            ["VALUE_MATCH"]        = "210",
-                            ["REPLACE_TYPE"]       = "ALL",
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "ROBOCHART_HINT", "Stage", "GcMissionSequenceShowHintMessage.xml" },
                             ["MATH_OPERATION"]     = "+",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "Time", DELAY_SECONDS }, -- 210
+                                { "SecondaryWaitTime", DELAY_SECONDS }, -- 175
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "CHART_T_HINT", "Stage", "GcMissionSequenceWait.xml" },
-                            ["VALUE_MATCH"]        = "60",
-                            ["REPLACE_TYPE"]       = "ALL",
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "CHART_T_HINT", "Stage", "GcMissionSequenceShowHintMessage.xml" },
                             ["MATH_OPERATION"]     = "+",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "Time", DELAY_SECONDS }, -- 60
+                                { "SecondaryWaitTime", DELAY_SECONDS }, -- 60
                             },
                         },
                     }
@@ -76,22 +70,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/SPACEPOIMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "ABAND_FIND_HINT", "Stage", "GcMissionSequenceWait.xml" },
-                            ["VALUE_MATCH"]        = "60",
-                            ["REPLACE_TYPE"]       = "ALL",
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "ABAND_FIND_HINT", "Stage", "GcMissionSequenceShowHintMessage.xml" },
                             ["MATH_OPERATION"]     = "+",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "Time", DELAY_SECONDS }, -- 60
+                                { "SecondaryWaitTime", DELAY_SECONDS }, -- 60
                             },
                         },
                         -- this is the very first quest, no need to raise up to high delay
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "ABAND_FIRSTHINT", "Stage", "GcMissionSequenceWait.xml" },
-                            ["VALUE_MATCH"]        = "80",
-                            ["REPLACE_TYPE"]       = "ALL",
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "ABAND_FIRSTHINT", "Stage", "GcMissionSequenceShowHintMessage.xml" },
                             ["MATH_OPERATION"]     = "+",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "Time", 600 }, -- 80
+                                { "SecondaryWaitTime", 600 }, -- 80
                             },
                         },
                     }

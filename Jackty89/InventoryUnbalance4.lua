@@ -1,6 +1,6 @@
 ModName                                  = "InventoryUnbalance"
 
-GCGAMEPLAYGLOBALS                        = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
+DIFFICULTYCONFIG                         = "METADATA/GAMESTATE/DIFFICULTYCONFIG.MBIN"
 
 SubstanceAndProductSizeLimit             = 9999999
 
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = GCGAMEPLAYGLOBALS,
+                    ["MBIN_FILE_SOURCE"]    = DIFFICULTYCONFIG,
                     ["EXML_CHANGE_TABLE"]   =
                     {
                     }
@@ -32,10 +32,10 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-GamePlayGlobalsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+DifficultyConfigTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 function EditStackSizes(currentType)
 
-    GamePlayGlobalsTable[#GamePlayGlobalsTable + 1] =
+    DifficultyConfigTable[#DifficultyConfigTable + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {currentType, "GcDifficultyInventoryStackSizeOptionData.xml"},
         ["VALUE_CHANGE_TABLE"]  =
@@ -44,7 +44,7 @@ function EditStackSizes(currentType)
             {"ProductStackLimit",   SubstanceAndProductSizeLimit},
         }
     }
-    GamePlayGlobalsTable[#GamePlayGlobalsTable + 1] =
+    DifficultyConfigTable[#DifficultyConfigTable + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {currentType, "GcDifficultyInventoryStackSizeOptionData.xml"},
         ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
@@ -64,7 +64,7 @@ function EditStackSizes(currentType)
             {"UIPopup",             SubstanceInventorySizeAll},
         }
     }
-    GamePlayGlobalsTable[#GamePlayGlobalsTable + 1] =
+    DifficultyConfigTable[#DifficultyConfigTable + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {currentType, "GcDifficultyInventoryStackSizeOptionData.xml"},
         ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},

@@ -1,5 +1,5 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]  = "_DeadlyRewardsMBInvTokens.pak",
+    ["MOD_FILENAME"]  = "CheatMBInvTokens.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
     ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {

@@ -20,7 +20,6 @@ HidePulseDriveVerticalLines
 HideTradeRouteLines
 ImprovedCargoScanDeflector
 LessFreighters
-MoreEarlyPirates
 MorePirates
 MorePiratesCivilFleet
 NoPlanetaryPirateRaids

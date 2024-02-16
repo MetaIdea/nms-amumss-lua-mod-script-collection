@@ -13,13 +13,13 @@ NANITES_CHANCE = 50
 NANITES_MIN = 200
 NANITES_MAX = 2000
 
-FREI_INV_TOKEN_CHANCE = 50
+FREI_INV_TOKEN_CHANCE = 90
 FREI_INV_TOKEN_MIN = 1
-FREI_INV_TOKEN_MAX = 3
+FREI_INV_TOKEN_MAX = 5
 
 BONUS_LIST = [[
 <Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
+    <Property name="PercentageChance" value="50" />
     <Property name="LabelID" value="" />
     <Property name="Reward" value="GcRewardSystemSpecificProductFromList.xml">
         <Property name="ProductList">
@@ -45,7 +45,7 @@ BONUS_LIST = [[
                 <Property name="Value" value="TRA_TECH4" />
             </Property>
         </Property>
-        <Property name="AmountMin" value="10" />
+        <Property name="AmountMin" value="30" />
         <Property name="AmountMax" value="10" />
         <Property name="ForceSpecialMessage" value="False" />
     </Property>
@@ -77,13 +77,13 @@ BONUS_LIST = [[
                 <Property name="Value" value="TRA_TECH5" />
             </Property>
         </Property>
-        <Property name="AmountMin" value="5" />
+        <Property name="AmountMin" value="15" />
         <Property name="AmountMax" value="5" />
         <Property name="ForceSpecialMessage" value="False" />
     </Property>
 </Property>
 <Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="25" />
+    <Property name="PercentageChance" value="50" />
     <Property name="LabelID" value="" />
     <Property name="Reward" value="GcRewardSystemSpecificProductFromList.xml">
         <Property name="ProductList">
@@ -107,7 +107,7 @@ BONUS_LIST = [[
             </Property>
         </Property>
         <Property name="AmountMin" value="25" />
-        <Property name="AmountMax" value="25" />
+        <Property name="AmountMax" value="50" />
         <Property name="ForceSpecialMessage" value="False" />
     </Property>
 </Property>

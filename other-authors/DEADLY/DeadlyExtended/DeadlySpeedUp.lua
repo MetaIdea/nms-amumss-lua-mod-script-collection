@@ -33,8 +33,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "BinocScanTime",          0.01 }, -- 2.2
                                 { "BinocCreatureScanTime",  0.01 }, -- 1.9
                                 { "MissionSurveyScanSpeed", 0.5 },  -- 0.2
-                                { "SurveyScanMinSpeed",     1 },    -- 0.75
-                                { "SurveyScanMaxSpeed",     1 },    -- 0.75
+                                { "SurveyScanMinSpeed",     1.25 }, -- 0.75
+                                { "SurveyScanMaxSpeed",     1.25 }, -- 0.75
                             }
                         },
                     }
@@ -58,9 +58,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["PRECEDING_KEY_WORDS"] = { "DiscoveryHelperTimings" },
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  = {
-                                --{ "DiscoverPlanetMessageWait", 1 }, -- 1
                                 { "DiscoverPlanetMessageTime", 3 }, -- 7
-                                { "DiscoverPlanetTotalTime",   6 },   -- 10
+                                { "DiscoverPlanetTotalTime",   6 }, -- 10
                             }
                         },
                     }

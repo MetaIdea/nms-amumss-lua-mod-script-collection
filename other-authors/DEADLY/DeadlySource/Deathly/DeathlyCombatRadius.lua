@@ -10,10 +10,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "SpaceBattleRadius",                50000 }, -- 13500
-                                { "SpaceCombatRadius",                50000 }, -- 5000
-                                { "FreighterBattleRadius",            50000 }, -- 5000
-                                { "SpaceBattleAnyHostileShipsRadius", 50000 }, -- 10000
+                                { "SpaceBattleRadius",                30000 }, -- 13500
+                                { "SpaceCombatRadius",                30000 }, -- 5000
+                                { "FreighterBattleRadius",            30000 }, -- 5000
+                                { "SpaceBattleAnyHostileShipsRadius", 30000 }, -- 10000
                             }
                         },
                     }

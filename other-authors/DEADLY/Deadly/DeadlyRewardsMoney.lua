@@ -73,24 +73,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_HIGH", "Currency", "Nanites" },
                             ["SECTION_UP"]         = 1,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1300 }, -- 250
-                                { "AmountMax", 1700 }, -- 350
+                                { "AmountMin", 1500 }, -- 250
+                                { "AmountMax", 3500 }, -- 350
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_MEGA", "Currency", "Nanites" },
                             ["SECTION_UP"]         = 1,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1900 }, -- 250
-                                { "AmountMax", 2500 }, -- 400
+                                { "AmountMin", 4000 }, -- 250
+                                { "AmountMax", 9999 }, -- 400
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "R_PIRATEBOARD_B", "Currency", "Nanites" },
                             ["SECTION_UP"]         = 1,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 2000 }, -- 250
-                                { "AmountMax", 3000 }, -- 450
+                                { "AmountMin", 2500 }, -- 250
+                                { "AmountMax", 5000 }, -- 450
                             }
                         },
                         -- Repair Trader's Ship: Nanites

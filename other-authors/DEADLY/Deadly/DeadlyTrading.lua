@@ -143,9 +143,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA/REALITY/DEFAULTREALITY.MBIN
-                --
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/DEFAULTREALITY.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
@@ -155,20 +152,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "PirateTech", "GcTradeData.xml" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "MinItemsForSale", 1 }, -- 12
+                                { "MinItemsForSale", 3 }, -- 12
                                 { "MaxItemsForSale", 6 }, -- 12
                             },
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = { "PirateTech", "GcTradeData.xml" },
-                            ["PRECEDING_KEY_WORDS"] = { "MaxAmountOfProductAvailable" },
-                            ["VALUE_CHANGE_TABLE"]  = {
-                                { "Poor",    1 }, -- 3
-                                { "Average", 1 }, -- 3
-                                { "Wealthy", 1 }, -- 3
-                                { "Pirate",  1 }, -- 3
-                            },
-                        },
+                        -- {
+                        --     ["SPECIAL_KEY_WORDS"]   = { "PirateTech", "GcTradeData.xml" },
+                        --     ["PRECEDING_KEY_WORDS"] = { "MaxAmountOfProductAvailable" },
+                        --     ["VALUE_CHANGE_TABLE"]  = {
+                        --         { "Poor",    1 }, -- 3
+                        --         { "Average", 1 }, -- 3
+                        --         { "Wealthy", 1 }, -- 3
+                        --         { "Pirate",  1 }, -- 3
+                        --     },
+                        -- },
                         --
                         -- ShipTechSpecialist
                         --
@@ -398,44 +395,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Average", 30 }, -- 99
                                 { "Wealthy", 50 }, -- 99
                                 { "Pirate",  99 }, -- 99
-                            },
-                        },
-                    }
-                },
-                --
-                -- METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN
-                --
-                {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        -- STARCHART_A:   secure site of interest
-                        -- STARCHART_B:   distress signal
-                        -- STARCHART_C:   inhabited outpost
-                        -- STARCHART_D:   ancient artifact site
-                        -- CHART_SETTLE:  planetary settlement
-                        -- NAV_DATA_DROP: Exosuit Upgrade Chart
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "ID", "STARCHART_A" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "RecipeCost", 10 }, -- 1
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "ID", "STARCHART_B" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "RecipeCost", 10 }, -- 1
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "ID", "STARCHART_D" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "RecipeCost", 5 }, -- 1
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "ID", "NAV_DATA_DROP" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "RecipeCost", 10 }, -- 3
                             },
                         },
                     }

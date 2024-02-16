@@ -39,8 +39,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "WantedLevelPlayerRangeSpace",                      50000 }, -- 10000
-                                { "WantedMinSpaceTime",                               40 },    -- 20
+                                { "WantedLevelPlayerRangeSpace",                      30000 }, -- 10000
+                                { "WantedMinSpaceTime",                               60 },    -- 20
                             }
                         },
                     }
