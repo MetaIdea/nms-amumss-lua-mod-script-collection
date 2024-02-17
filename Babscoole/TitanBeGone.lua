@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "NoTitanWorms.pak",
+["MOD_FILENAME"]  = "TitanBeGone.pak",
 ["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.48",
+["NMS_VERSION"]   = "4.50",
 ["MODIFICATIONS"] =
     {
         {
@@ -13,19 +13,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariantData"},
+                            ["SPECIAL_KEY_WORDS"] = {"DebugName", "WORMSPAWNER"},
+                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0"},
-                               
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Coverage", "0"},
-                               
                             }
                         },
                     }

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Auto Saves 1.8.pak", 
+["MOD_FILENAME"] 			= "No Auto Saves 1.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.45",
+["NMS_VERSION"]				= "4.50",
 ["MOD_DESCRIPTION"]			= "This mods restores the old save system",
 ["MODIFICATIONS"] 			= 
 	{

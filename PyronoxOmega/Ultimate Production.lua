@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "Ultimate_Production"
-GameVersion = "4.30"
-ModVersion = "1.5"
+GameVersion = "4.5"
+ModVersion = "1.8"
 Description = "Freighter Production Enhancement"
 Filesource = {
 "MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/FARMALBUMEN/ENTITIES/PLANTINTERACTION.ENTITY.MBIN", 
@@ -29,7 +29,7 @@ Time_4 = 120
 
 --Cooking variables
 C_Time = 0.1  --Cooking Time
-Batch = 200 -- Stack Size
+Batch = 999 -- Stack Size
 
 --refiner speed
 
@@ -153,11 +153,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 				--Hasrvest all freighter farm in 1 go-- 
 				{
-					["MBIN_FILE_SOURCE"]  = FileSource3,							
+					["MBIN_FILE_SOURCE"]  = FileSource3,
 					["EXML_CHANGE_TABLE"] = 
 					{ 
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcHarvestPlantAction.xml"},
+							["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] =
 							{		

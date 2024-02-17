@@ -84,16 +84,28 @@ TEXT_TO_ADD =
             <Property name="FrigateClass" value="Combat" />
           </Property>
         </Property>
+        <Property value="GcAISpaceshipModelData.xml">
+          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WRACER.SCENE.MBIN" />
+          <Property name="Class" value="GcSpaceshipClasses.xml">
+            <Property name="ShipClass" value="Sail" />
+          </Property>
+          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
+            <Property name="AIShipRole" value="Standard" />
+          </Property>
+          <Property name="FrigateClass" value="GcFrigateClass.xml">
+            <Property name="FrigateClass" value="Combat" />
+          </Property>
+        </Property>
 ]]
 
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_JJs.Better.Ships.V.3.7.pak",
+["MOD_FILENAME"]    = "_JJs.Better.Ships.V.3.8.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "JJHookah",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.43",
+["NMS_VERSION"]     = "4.50",
 ["MODIFICATIONS"]   =
     {
         {

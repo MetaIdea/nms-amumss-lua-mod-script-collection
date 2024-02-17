@@ -255,68 +255,89 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-function CreateRequirement(Requirement)
-
+local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+function Create_Requirement(Requirement)
     local RequirementID = Requirement["REQUIREMENTID"]
     local RequirementAmount = Requirement["REQUIREDAMOUNT"]
     local RequirementInventoryType = Requirement["REQUIREDTYPE"]
 
-    return
-    [[
-        <Property value="GcTechnologyRequirement.xml">
-            <Property name="ID" value="]]..RequirementID..[[" />
-            <Property name="Type" value="GcInventoryType.xml">
-                <Property name="InventoryType" value="]]..RequirementInventoryType..[[" />
-            </Property>
-            <Property name="Amount" value="]]..RequirementAmount..[[" />
-        </Property>
-    ]]
-end
-
-function CreateRequirementsString(Requirements)
-    local RequirementsString = ""
-
-    for i = 1, #Requirements do
-        RequirementsString = RequirementsString..CreateRequirement(Requirements[i])
-    end
-
-    return
-    [[
-        <Property name="Requirements">
-        ]]..RequirementsString..[[
-        </Property>
-    ]]
-end
-
-
-local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
-for i = 1, #NewRequirementsArray do
-    local ProductId = NewRequirementsArray[i]["PRODUCTID"]
-    local Requirements = NewRequirementsArray[i]["REQUIREMENTS"]
-
-    local RequirementsString = CreateRequirementsString(Requirements)
-
-    ChangesToProductTable[#ChangesToProductTable + 1] = {
-        ["SPECIAL_KEY_WORDS"]  = {"ID", ProductId},
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "CASING"},
+        ["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+        ["SEC_SAVE_TO"] = "SINGLE_REQ"
+    }
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SEC_EDIT"] = "SINGLE_REQ",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"CraftAmountMultiplier", "1"},
-            {"IsCraftable", "True"}
+            {"ID", RequirementID},
+            {"InventoryType", RequirementInventoryType},
+            {"Amount", RequirementAmount}
         }
     }
-
-    ChangesToProductTable[#ChangesToProductTable + 1] = {
-        ["SPECIAL_KEY_WORDS"] = {"ID", ProductId,"CraftAmountMultiplier","1"},
-        ["LINE_OFFSET"] = "+1",
-        ["REMOVE"] = "LINE"
-    }
-
-    ChangesToProductTable[#ChangesToProductTable + 1] = {
-        ["SPECIAL_KEY_WORDS"] = {"ID", ProductId,"CraftAmountMultiplier","1"},
-        ["ADD"]               = RequirementsString,
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SEC_EDIT"] = "PRODUCT_REQ_MASTER",
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] = "SINGLE_REQ"
     }
 end
 
+function Create_Requirement_Sections(Requirements)
+    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    {
+        ["SEC_EMPTY"] = "PRODUCT_REQ_MASTER"
+    }
+
+    for i = 1, #Requirements do
+        Create_Requirement(Requirements[i])
+    end
+end
+
+function Change_Product_Requirement_And_Set_Craftable()
+    for i = 1, #NewRequirementsArray do
+        local ProductId = NewRequirementsArray[i]["PRODUCTID"]
+        local Requirements = NewRequirementsArray[i]["REQUIREMENTS"]
+        Create_Requirement_Sections(Requirements)
+        Changes_To_Product_Table[#Changes_To_Product_Table + 1] = {
+            ["SPECIAL_KEY_WORDS"]  = {"ID", ProductId},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"CraftAmountMultiplier", "1"},
+                {"IsCraftable", "True"}
+            }
+        }
+
+        Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", ProductId, "CraftAmountMultiplier","1"},
+            ["PRECEDING_KEY_WORDS"] = {"Requirements"},
+            ["CREATE_HOS"] = "TRUE",
+            ["SEC_ADD_NAMED"] = "PRODUCT_REQ_MASTER"
+        }
+    end
+end
+
+function ChangeProductDescriptionID()
+    for i = 1, #CraftableModulesLanguageString do
+        local NewDescriptionID = CraftableModulesLanguageString[i]["NewDescriptionID"]
+        if not(NewDescriptionID == "")
+        then
+            local ProductID = CraftableModulesLanguageString[i]["ID"]
+            Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+            {
+                ["SPECIAL_KEY_WORDS"] = {"ID", ProductID },
+                ["PRECEDING_KEY_WORDS"] = {"Subtitle", "Description"},
+                ["VALUE_CHANGE_TABLE"] =
+                {
+                    {"Value", NewDescriptionID}
+                }
+            }
+        end
+    end
+end
 ----------------------------------------------------------------------------------------------
 -------------------------------     Language file creation     -------------------------------
 ----------------------------------------------------------------------------------------------
@@ -372,30 +393,17 @@ function FillCustomlangFile()
     return NewLanguagueFile(table.concat(DescriptionEntries))
 end
 
-local AddCustomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
-for _Key , Language in pairs(Languages) do
-    AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
-    {
-        ["FILE_DESTINATION"] = "LANGUAGE/NMS_"..CustomLanguageTag.."_"..Language..".EXML",
-        ["FILE_CONTENT"] = FillCustomlangFile()
-    }
-end
-
---PROCTTABLE EDIT (We will change existing product description ID with customDescriptionID)
-for i = 1, #CraftableModulesLanguageString do
-    local NewDescriptionID = CraftableModulesLanguageString[i]["NewDescriptionID"]
-
-    if not(NewDescriptionID == "")
-    then
-        local ProductID = CraftableModulesLanguageString[i]["ID"]
-        ChangesToProductTable[#ChangesToProductTable + 1] =
+function AddCustomLanguageString()
+    local AddCustomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
+    for _Key , Language in pairs(Languages) do
+        AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"ID", ProductID },
-            ["PRECEDING_KEY_WORDS"] = {"Subtitle", "Description"},
-            ["VALUE_CHANGE_TABLE"] =
-            {
-                {"Value", NewDescriptionID}
-            }
+            ["FILE_DESTINATION"] = "LANGUAGE/NMS_"..CustomLanguageTag.."_"..Language..".EXML",
+            ["FILE_CONTENT"] = FillCustomlangFile()
         }
     end
 end
+
+Change_Product_Requirement_And_Set_Craftable()
+AddCustomLanguageString()
+ChangeProductDescriptionID()
