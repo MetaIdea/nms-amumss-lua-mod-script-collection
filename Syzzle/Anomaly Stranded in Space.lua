@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Anomaly Stranded in Space"
-GameVersion = "4.50"
+GameVersion = "4.51"
 --ModVersion = "v1"
 Description = "Essentialy a No Starter Ship mod, except you still have your ship, tecnically."
 
