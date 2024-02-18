@@ -23,14 +23,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_ACTIVE"]		=	1,
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"RestartOnCompletion", "True"}
+								{"RestartOnCompletion", "True"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG", "Stage", "GcMissionSequenceCreateSpecificPulseEncounter.xml"},
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"PulseEncounterID", "BIO_FRIG"}
+								{"PulseEncounterID", "BIO_FRIG"},
+							}
+						},
+						{
+							["FOREACH_SKW_GROUP"]	=  
+							{  
+								{"MissionID", "BIO_FRIG", "MissionTitles", "GcNumberedTextList.xml"},
+								{"MissionID", "BIO_FRIG", "MissionSubtitles", "GcNumberedTextList.xml"},
+								{"MissionID", "BIO_FRIG", "MissionDescriptions", "GcNumberedTextList.xml"},
+							},
+							["VALUE_CHANGE_TABLE"]	=
+							{
+								{"Format", ""},
 							}
 						},
 					},
