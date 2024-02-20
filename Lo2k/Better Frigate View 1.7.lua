@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Frigate View 1.6.pak", 
+["MOD_FILENAME"] 			= "Better Frigate View 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.46",
+["NMS_VERSION"]				= "4.51",
 ["MOD_DESCRIPTION"]			= "This mod improves Frigate View",
 ["MODIFICATIONS"] 			= 
 	{

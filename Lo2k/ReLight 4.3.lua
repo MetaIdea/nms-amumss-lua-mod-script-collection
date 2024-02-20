@@ -105,10 +105,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 4.2.pak", 
+["MOD_FILENAME"] 			= "ReLight 4.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.40",
+["NMS_VERSION"]				= "4.45",
 ["MOD_DESCRIPTION"]			= "This mod tunes most of the lights",
 ["MODIFICATIONS"] 			= 
 	{
@@ -291,19 +291,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight70"},  -- left stairs light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = -- left stairs light
-									  InsertNewLight({name='pointLight125z',tx=-16.66565, ty=14.0848, tz=-30,8617})
-									..InsertNewLight({name='pointLight125b',tx=-22.66565, ty=11.0848, tz=-25,8617, rx=-135, fov=180, g=0.851, b=0.745})
-									..InsertNewLight({name='pointLight125c',tx=-22.66565, ty=8.0848, tz=-20,8617, g=0.851, b=0.745})
-									..InsertNewLight({name='pointLight125d',tx=-22.66565, ty=5.3848, tz=-15,8617, g=0.851, b=0.745})
-									..InsertNewLight({name='pointLight125e',tx=-22.66565, ty=2.6848, tz=-10,3617, g=0.851, b=0.745})
-									..InsertNewLight({name='pointLight125f',tx=-22.66565, ty=0.0, tz=-4,36167, g=0.851, b=0.745})
+									  InsertNewLight({name='pointLight125z',tx=-16.66565, ty=14.0848, tz=-30.8617})
+									..InsertNewLight({name='pointLight125b',tx=-22.66565, ty=11.0848, tz=-25.8617, rx=-135, fov=180, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight125c',tx=-22.66565, ty=8.0848, tz=-20.8617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight125d',tx=-22.66565, ty=5.3848, tz=-15.8617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight125e',tx=-22.66565, ty=2.6848, tz=-10.3617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight125f',tx=-22.66565, ty=0.0, tz=-4.36167, g=0.851, b=0.745})
 									 -- right stairs light
-									..InsertNewLight({name='pointLight70z',tx=16.66565, ty=14.0848, tz=-30,8617})
-									..InsertNewLight({name='pointLight70b',tx=22.66565, ty=11.0848, tz=-25,8617, rx=-135, fov=180, g=0.851, b=0.745})
-									..InsertNewLight({name='pointLight70c',tx=22.66565, ty=8.0848, tz=-20,8617, g=0.851, b=0.745})
-									..InsertNewLight({name='pointLight70d',tx=22.66565, ty=5.3848, tz=-15,8617, g=0.851, b=0.745})
-									..InsertNewLight({name='pointLight70e',tx=22.66565, ty=2.6848, tz=-10,3617, g=0.851, b=0.745})
-									..InsertNewLight({name='pointLight70f',tx=22.66565, ty=0.0, tz=-4,36167, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight70z',tx=16.66565, ty=14.0848, tz=-30.8617})
+									..InsertNewLight({name='pointLight70b',tx=22.66565, ty=11.0848, tz=-25.8617, rx=-135, fov=180, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight70c',tx=22.66565, ty=8.0848, tz=-20.8617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight70d',tx=22.66565, ty=5.3848, tz=-15.8617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight70e',tx=22.66565, ty=2.6848, tz=-10.3617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight70f',tx=22.66565, ty=0.0, tz=-4.36167, g=0.851, b=0.745})
 									
 									..InsertNewLight({name='pointLight8b',tx=8.0, ty=12.128, tz=48.882, i=27000, r=0.947, g=0.59, b=0.306})
 									..InsertNewLight({name='pointLight8b',tx=0.0, ty=12.128, tz=48.882, i=27000, r=0.947, g=0.59, b=0.306}),
@@ -640,6 +640,33 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight8",},
 							["REMOVE"] 	= "SECTION",
 						},						
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\FACTORY\FACTORYEFFECT.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "COL_R"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.2"},  --original : 0.078
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.8"},  --original : 1.0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.0"},  --original : 0.95
+							},
+						},					
 					},
 				},
 				
