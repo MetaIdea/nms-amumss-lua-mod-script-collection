@@ -1,18 +1,18 @@
---MUST obtain the TEXTURES folder from within the original mod .pak and place into the AMUMSS\ModScript\GlobalMEFTI folder when running this script.
+--MUST obtain the TEXTURES folder from within the original mod .pak and place into the AMUMSS\\ModScript\\GlobalMEFTI folder when running this script.
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Spaceship Nuclear Rocket -Aurfram.pak",
 ["MOD_AUTHOR"]    = "Aurfram",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.51",
 ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

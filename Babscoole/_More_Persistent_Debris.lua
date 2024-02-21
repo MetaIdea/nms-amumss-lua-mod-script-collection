@@ -1,9 +1,9 @@
-ModName         =   "_MPDebris"
+ModName         =   "_MPDv1.4"
 ModAuthor       =   "Knightmare077"
 LuaAuthor       =   "Babscoole & Hypn0tick"
 BaseDescription =   "Spawns more debris and keeps it around longer."
-GameVersion     =   "4.41"
-ModVersion      =   "1.3"
+GameVersion     =   "4.51"
+ModVersion      =   "1.4"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -330,8 +330,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Life",                      "120"},
                                 {"ShakeStrengthModifier",     "20"},
                                 {"MaxSpawnDistance",          "100000"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                                {"AddLight",                  "False"},
+                                {"CamShakeCustomMaxDistance", "10000"},
+                                -- {"AddLight",                  "False"},
                             }
                         },
                         {
@@ -494,8 +494,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Life",                      "120"},
                                 {"MaxSpawnDistance",          "100000"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                                {"AddLight",                  "False"},
+                                {"CamShakeCustomMaxDistance", "10000"},
+                                -- {"AddLight",                  "False"},
                             }
                         },
                         {
@@ -528,10 +528,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "60"},
-                                {"ShakeStrengthModifier",     "5"},
+                                {"ShakeStrengthModifier",     "30"},
                                 {"MaxSpawnDistance",          "100000"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                                {"AddLight",                  "False"},
+                                {"CamShakeCustomMaxDistance", "100000"},
+                                -- {"AddLight",                  "False"},
                             }
                         },
                         {
@@ -615,10 +615,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "120"},
-                                {"ShakeStrengthModifier",     "20"},
+                                {"ShakeStrengthModifier",     "70"},
                                 {"MaxSpawnDistance",          "100000"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                                {"AddLight",                  "False"},
+                                {"CamShakeCustomMaxDistance", "10000"},
+                                -- {"AddLight",                  "False"},
                             }
                         },
                         {
@@ -651,9 +651,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "120"},
-                                {"ShakeStrengthModifier",     "30"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                                {"AddLight",                  "False"},
+                                {"ShakeStrengthModifier",     "100"},
+                                {"CamShakeCustomMaxDistance", "100000"},
+                                -- {"AddLight",                  "False"},
                                 {"G",                         "0.7"},
                             }
                         },
@@ -765,9 +765,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "120"},
-                                {"ShakeStrengthModifier",     "10"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                                {"AddLight",                  "False"},
+                                {"ShakeStrengthModifier",     "20"},
+                                {"CamShakeCustomMaxDistance", "10000"},
+                                -- {"AddLight",                  "False"},
                             }
                         },
                         {
@@ -800,9 +800,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "160"},
-                                {"ShakeStrengthModifier",     "20"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                                {"AddLight",                  "False"},
+                                {"ShakeStrengthModifier",     "30"},
+                                {"CamShakeCustomMaxDistance", "100000"},
+                                -- {"AddLight",                  "False"},
                             }
                         },
                         {
@@ -835,10 +835,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "60"},
-                                {"ShakeStrengthModifier",     "5"},
+                                {"ShakeStrengthModifier",     "20"},
                                 {"MaxSpawnDistance",          "100000"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                                {"AddLight",                  "False"},
+                                {"CamShakeCustomMaxDistance", "100000"},
+                                -- {"AddLight",                  "False"},
                             }
                         },
                         {
@@ -888,9 +888,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "160"},
-                                {"ShakeStrengthModifier",     "10"},
-                                {"CamShakeCustomMaxDistance", "0"},
-                                {"AddLight",                  "False"},
+                                {"ShakeStrengthModifier",     "20"},
+                                {"CamShakeCustomMaxDistance", "10000"},
+                                -- {"AddLight",                  "False"},
                             }
                         },
                         {
@@ -1449,13 +1449,13 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 ]]
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "NEWSPACEPOIEXPL"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"AddLight", "False"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "NEWSPACEPOIEXPL"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"AddLight", "False"},
+                            -- }
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "NEWSPBLDPOIEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
@@ -1503,7 +1503,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",     "120"},
-                                {"AddLight", "False"},
+                                -- {"AddLight", "False"},
                             }
                         },
                         {
@@ -1538,8 +1538,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Number",                    "10"},
                                 {"Scale",                     "20"},
                                 {"Life",                      "120"},
-                                {"ShakeStrengthModifier",     "5"},
-                                {"CamShakeCustomMaxDistance", "0"},
+                                {"ShakeStrengthModifier",     "20"},
+                                {"CamShakeCustomMaxDistance", "10000"},
                             }
                         },
                         {
@@ -1572,9 +1572,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "120"},
-                                {"ShakeStrengthModifier",     "1"},
-                                {"ShakeId",                   "EXPLOSIONPAINSH"},
-                                {"CamShakeCustomMaxDistance", "0"},
+                                {"ShakeStrengthModifier",     "30"},
+                                {"ShakeId",                   "FREIGHTERDESTRU"},
+                                {"CamShakeCustomMaxDistance", "100000"},
                             }
                         },
                         {
@@ -1624,10 +1624,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "120"},
-                                {"ShakeStrengthModifier",     "1"},
-                                {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"ShakeStrengthModifier",     "40"},
+                                {"ShakeId",                   "FREIGHTERDESTRU"},
                                 {"MaxSpawnDistance",          "100000"},
-                                {"CamShakeCustomMaxDistance", "0"},
+                                {"CamShakeCustomMaxDistance", "50000"},
                             }
                         },
                         {
@@ -1677,10 +1677,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "120"},
-                                {"ShakeStrengthModifier",     "1"},
-                                {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"ShakeStrengthModifier",     "100"},
+                                {"ShakeId",                   "FREIGHTERDESTRU"},
                                 {"MaxSpawnDistance",          "100000"},
-                                {"CamShakeCustomMaxDistance", "0"},
+                                {"CamShakeCustomMaxDistance", "100000"},
                             }
                         },
                         {
@@ -1730,10 +1730,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",                      "120"},
-                                {"ShakeStrengthModifier",     "1"},
-                                {"ShakeId",                   "EXPLOSIONPAINSH"},
+                                {"ShakeStrengthModifier",     "50"},
+                                {"ShakeId",                   "FREIGHTERDESTRU"},
                                 {"MaxSpawnDistance",          "100000"},
-                                {"CamShakeCustomMaxDistance", "0"},
+                                {"CamShakeCustomMaxDistance", "100000"},
                             }
                         },
                         {
@@ -1771,21 +1771,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDOSHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ShakeStrengthModifier",     "5"},
-                                {"CamShakeCustomMaxDistance", "0"},
+                                {"ShakeStrengthModifier",     "30"},
+                                {"CamShakeCustomMaxDistance", "10000"},
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Id", "PIRATESHIELGEXP"},
-                                {"Id", "PIRATEFUELEXP"},
-                            },
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATESHIELGEXP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ShakeStrengthModifier",     "1"},
-                                {"ShakeId",                   "EXPLOSIONPAINSH"},
-                                {"CamShakeCustomMaxDistance", "0"},
+                                {"ShakeStrengthModifier",     "40"},
+                                {"ShakeId",                   "FREIGHTERDESTRU"},
+                                {"CamShakeCustomMaxDistance", "100000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATEFUELEXP"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShakeStrengthModifier",     "40"},
+                                {"ShakeId",                   "FREIGHTERDESTRU"},
+                                {"CamShakeCustomMaxDistance", "50000"},
                             }
                         },
                     }
@@ -2962,22 +2967,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPEXPLODE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ShakeStrengthModifier",     "1"},
-                                {"CamShakeCustomMaxDistance", "0"},
+                                {"ShakeStrengthModifier",     "3"},
+                                {"CamShakeCustomMaxDistance", "1000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TURRETGUN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life", "3"},
+                                {"Life", "0.1"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FRDEBRISDAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ShakeStrengthModifier", "1"},
+                                {"ShakeStrengthModifier", "5"},
                             }
                         },
                         {

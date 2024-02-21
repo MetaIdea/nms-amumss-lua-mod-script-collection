@@ -3,7 +3,6 @@
 
 MaterialStackSizeMax = 9999 --Maximum Stack size, set to highest value you use below - Default values: 9999/9999/9999
 ProductStackSizeMax = 9999 --Maximum Stack size, set to highest value you use below - Default values: 9999/9999/9999
-AffectedDifficulty = "High" -- Sets which Inventory Stack Limit is affected High = Standard, Normal = Restricted, Low = Harsh
 
 -- Main inventories
 MaterialStackSizeExosuit = 9999 --Maximum Stack size for materials in the Exosuit - Default values: 9999/500/300
@@ -65,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
                                 {"Low",    "GcDifficultyInventoryStackSizeOptionData.xml"},
                             },
-                            ["SPECIAL_KEY_WORDS"] = {"High","GcDifficultyInventoryStackSizeOptionData.xml",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"High","GcDifficultyInventoryStackSizeOptionData.xml",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SubstanceStackLimit", MaterialStackSizeMax},
@@ -79,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
                                 {"Low",    "GcDifficultyInventoryStackSizeOptionData.xml"},
                             },
-                            ["SPECIAL_KEY_WORDS"] = {AffectedDifficulty,"GcDifficultyInventoryStackSizeOptionData.xml",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"GcDifficultyInventoryStackSizeOptionData.xml",},
                             ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -101,7 +100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
                                 {"Low",    "GcDifficultyInventoryStackSizeOptionData.xml"},
                             },
-                            ["SPECIAL_KEY_WORDS"] = {AffectedDifficulty,"GcDifficultyInventoryStackSizeOptionData.xml",},
+                            -- ["SPECIAL_KEY_WORDS"] = {"GcDifficultyInventoryStackSizeOptionData.xml",},
                             ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
