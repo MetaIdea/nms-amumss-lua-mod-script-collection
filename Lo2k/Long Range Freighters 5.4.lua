@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Long Range Freighters 5.3.pak", 
+["MOD_FILENAME"] 			= "Long Range Freighters 5.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.41",
+["NMS_VERSION"]				= "4.51",
 ["MOD_DESCRIPTION"]			= "This mod multiply by 10 all freighter warp drive ranges",
 ["MODIFICATIONS"] 			= 
 	{
