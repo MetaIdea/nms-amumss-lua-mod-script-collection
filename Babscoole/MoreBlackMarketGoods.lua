@@ -14,7 +14,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation", "GcTradeData.xml"},
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"SmugglerStation", "GcTradeData.xml"},
+                                {"PirateVisitor",   "GcTradeData.xml"},
+                            },
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -22,7 +26,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SmugglerStation", "GcTradeData.xml"},
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"SmugglerStation", "GcTradeData.xml"},
+                                {"PirateVisitor",   "GcTradeData.xml"},
+                            },
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -30,79 +38,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateTech", "GcTradeData.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["FOREACH_SKW_GROUP"] =
                             {
-                                {"MinItemsForSale", "22"},
-                                {"MaxItemsForSale", "22"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor", "GcTradeData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Poor",    "20"},
-                                {"Average", "40"},
-                                {"Wealthy", "80"},
-                                {"Pirate",  "20"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor", "GcTradeData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Poor",    "40"},
-                                {"Average", "80"},
-                                {"Wealthy", "180"},
-                                {"Pirate",  "250"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor", "GcTradeData.xml", "Value", "GRAVBALL"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "POLICE_TOKEN"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "SACVENOM"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "CAVECUBE"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "ALBUMENPEARL"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "TRA_COMMODITY1"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "TRA_COMPONENT1"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "TRA_ENERGY1"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "TRA_EXOTICS1"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "TRA_MINERALS1"},
+                                {"PirateVisitor", "GcTradeData.xml", "Value", "TRA_TECH1"},
+                            },
                             ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateVisitor", "GcTradeData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"OptionalProducts"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
-[[
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="POLICE_TOKEN" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SACVENOM" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="GRAVBALL" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="CAVECUBE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ALBUMENPEARL" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="TRA_COMMODITY1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="TRA_COMPONENT1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="TRA_ENERGY1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="TRA_EXOTICS1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="TRA_MINERALS1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="TRA_TECH1" />
-        </Property>
-]]
                         },
                     }
                 },
