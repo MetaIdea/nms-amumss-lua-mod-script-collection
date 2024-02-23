@@ -1,26 +1,16 @@
 -------------------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   Disable restrictions on collision, scaling, rotating & freighter
+  Add globe to planet tech
   Increase power generation and storage
   Portable exocraft summon garage
 ]]-----------------------------------------------------------------
 
-local function AddToGroup(group, subgroup)
-	return [[
-		<Property value="GcBaseBuildingEntryGroup.xml">
-			<Property name="Group" value="]]..group..[["/>
-			<Property name="SubGroupName" value="]]..subgroup..[["/>
-			<Property name="SubGroup" value="0"/>
-		</Property>
-	]]
-end
-
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '__TABLE BASEBUILDING.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
-	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -33,23 +23,59 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'CanChangeMaterial',			true},
 					{'CanRotate3D',					true},
 					{'CanScale',					true},
-					{'CheckPlaceholderCollision',	false}
+					{'CheckPlaceholderCollision',	false},
+					{'FreighterBaseLimit',			0},
+					{'PlanetBaseLimit',				0},
+					{'RegionLimit',					0},
+					{'PlanetLimit',					0}
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'BUILD_REFINER3'},
+				SPECIAL_KEY_WORDS	= {'ID', 'HOLO_DISCO_0', 'Group', 'FURNITURE'},
 				VALUE_CHANGE_TABLE 	= {
-					{'RegionLimit',	0}
+					{'Group',		'BASE_TECH'},
+					{'SubGroupName','TECHTECH'}
 				}
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
-					{'ID', 'PLANTER'},
-					{'ID', 'PLANTERMEGA'}
+				SPECIAL_KEY_WORDS	= {'ID', 'BASE_TOYCORE'},
+				VALUE_CHANGE_TABLE 	= {
+					{'BuildableOnPlanet',	true}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'BASE_TOYCORE'},
+				PRECEDING_KEY_WORDS = 'Groups',
+				ADD					= [[
+					<Property value="GcBaseBuildingEntryGroup.xml">
+						<Property name="Group" value="PLANET_TECH"/>
+						<Property name="SubGroupName" value="PLANETPORTABLE"/>
+					</Property>]]
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'S9_WEAPONTREE'},
+				VALUE_CHANGE_TABLE 	= {
+					{'CloseMenuAfterBuild',		true},
+					{'BuildableOnFreighter',	true},
+					{'BuildableOnPlanet',		true}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {
+					{'ID', 'S9_WEAPONTREE'},
+					{'ID', 'NPCBUILDERTERM'},
+					{'ID', 'NPCFARMTERM'},
+					{'ID', 'NPCSCIENCETERM'},
+					{'ID', 'NPCVEHICLETERM'},
+					{'ID', 'NPCWEAPONTERM'},
+					{'ID', 'HOLO_DISCO_0'}
 				},
-				VALUE_CHANGE_TABLE 	= {
-					{'IsPlaceable',	true}
-				}
+				PRECEDING_KEY_WORDS = 'Groups',
+				ADD					= [[
+					<Property value="GcBaseBuildingEntryGroup.xml">
+						<Property name="Group" value="FREIGHTER_TECH"/>
+						<Property name="SubGroupName" value="FRE_TECH_OTHER"/>
+					</Property>]]
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'COOKER'},
@@ -58,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'SUMMON_GARAGE'},
+				SPECIAL_KEY_WORDS	= {'ID', 'SUMMON_GARAGE'}, -- ANTENNA0
 				VALUE_CHANGE_TABLE 	= {
 					{'EditsTerrain',		false},
 					{'CloseMenuAfterBuild',	true}
@@ -68,28 +94,30 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'ID', 'SUMMON_GARAGE'},
 				PRECEDING_KEY_WORDS = 'PlacementScene',
 				VALUE_CHANGE_TABLE 	= {
-					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SIGNALSCANNER_PLACEMENT.SCENE.MBIN'}
+					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/ANTENNA0_PLACEMENT.SCENE.MBIN'}
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'TELEPORTER'},
-				PRECEDING_KEY_WORDS = 'Groups',
-				ADD 				= AddToGroup('FREIGHTER_TECH', 'FRE_TECH_OTHER')
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'U_SOLAR_S'},
+				MATH_OPERATION 		= '*',
+				SPECIAL_KEY_WORDS 	= {
+					{'ID', 'U_EXTRACTOR_S'},
+					{'ID', 'U_GASEXTRACTOR'},
+					{'ID', 'U_SOLAR_S'},
+					{'ID', 'U_SILO_S'},
+				},
 				VALUE_CHANGE_TABLE 	= {
-					{'Rate',		80},	-- 50
+					{'Rate',		1.2},
+					{'Storage',		2}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'U_BIOGENERATOR'},
 				VALUE_CHANGE_TABLE 	= {
-					{'DependentRate', 80},	-- 50
+					{'DependentRate', 80}	-- 50
 				}
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {
 					{'ID', 'BUILDLIGHT'},
 					{'ID', 'BUILDLIGHT2'},
 					{'ID', 'BUILDLIGHT3'},
@@ -100,17 +128,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'ID', 'BASE_TOYJELLY'},
 					{'ID', 'BASE_TOYCORE'},
 					{'ID', 'S_WATERVALVE0'},
-					{'ID', 'S_SIGN_BAR0'},
+					{'ID', 'S_SIGN_BAR0'}
 				},
 				VALUE_CHANGE_TABLE 	= {
 					{'BaseBuildingDecorationType', 'BuildingSurfaceNormal'}
 				}
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {
 					{'SubGroupName', 'PLANETPORTABLE'},
 					{'SubGroupName', 'DECOFOLIAGE'},
-					{'SubGroupName', 'DECOGLITCHES'},
+					{'SubGroupName', 'DECOGLITCHES'}
 				},
 				REPLACE_TYPE 		= 'All',
 				SECTION_UP			= 2,
@@ -119,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {
 					{'ID', 'BUILDSAVE'},
 					{'ID', 'COOKER'},
 					{'ID', 'PLANTERMEGA'},
@@ -145,14 +173,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'ID', 'WEDGESMALLSHAPE'},
 					{'ID', 'BASE_NEXUS1'},
 					{'ID', 'BASE_NEXUS2'},
-					{'ID', 'BASE_NEXUS3'}
+					{'ID', 'BASE_NEXUS3'},
+					{'ID', 'BLD_BUI_HAND'},
+					{'ID', 'BLD_BUI_HEAD'}
 				},
 				VALUE_CHANGE_TABLE 	= {
 					{'BuildableOnFreighter', true}
 				}
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {
 					{'ID', 'MAINROOM_WATER'},
 					{'ID', 'MAINROOMCUBE_W'},
 					{'ID', 'MOONPOOL'},
@@ -178,14 +208,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'ID', '_SUMMON_GARAGE'},
 				PRECEDING_KEY_WORDS = 'Model',
 				VALUE_CHANGE_TABLE 	= {
-					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SIGNALSCANNER.SCENE.MBIN'}
+					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/ANTENNA0.SCENE.MBIN'}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ID', '_SUMMON_GARAGE'},
 				PRECEDING_KEY_WORDS = 'Inactive',
 				VALUE_CHANGE_TABLE 	= {
-					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SIGNALSCANNER/SIGNALSCANNER_LOD.SCENE.MBIN'}
+					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/ANTENNA0_LOD.SCENE.MBIN'}
 				}
 			}
 		}

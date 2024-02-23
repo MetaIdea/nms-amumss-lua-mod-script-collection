@@ -1,13 +1,13 @@
 ---------------------------------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   Hide elements of the lower-right notification panel and fade the text contents
 ]]-------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__UI fade notifications.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.08',
-	MOD_DESCRIPTION			= desc,
+	NMS_VERSION				= '4.52',
+	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -15,9 +15,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'UI/HUD/HUDNOTIFICATIONPANEL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {
 					{'ID', 'TITLEBACKGROUND'},
-					{'ID', 'BACKGROUND'},
+					{'ID', 'BACKGROUND'}
 				},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {
 					{'ID', 'TITLE'},
 					{'ID', 'BODY'}
 				},
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {
 					{'ID', 'HEADERLINE'},
 					{'ID', 'BASELINE'}
 				},

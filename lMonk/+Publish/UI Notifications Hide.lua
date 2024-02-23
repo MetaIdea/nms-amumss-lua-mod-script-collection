@@ -1,12 +1,12 @@
 ---------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Hide lower-right HUD notification popups
 ]]-------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Hide notifications.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.10',
+	NMS_VERSION			= '4.52',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE 	= {

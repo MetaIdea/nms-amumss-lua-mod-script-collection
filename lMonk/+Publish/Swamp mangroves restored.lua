@@ -1,13 +1,13 @@
 ----------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   Re-insert the missing full mangrove tree in swamp biome
 ]]--------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Swamp Mnagroves Restored.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				PRECEDING_KEY_WORDS	= 'TkResourceDescriptorData.xml',
-				SECTION_ACTIVE		= 1,
+				SECTION_ACTIVE		= -1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Id',			'_MFULL_01LOD0'},
 					{'Name',		'_MFull_01LOD0'}
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				PRECEDING_KEY_WORDS	= 'TkResourceDescriptorData.xml',
-				SECTION_ACTIVE		= 2,
+				SECTION_ACTIVE		= -2,
 				VALUE_CHANGE_TABLE 	= {
 					{'Id',			'_MFULL_02LOD0'},
 					{'Name',		'_MFull_02LOD0'}

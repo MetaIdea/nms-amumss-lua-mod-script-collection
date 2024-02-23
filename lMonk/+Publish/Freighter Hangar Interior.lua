@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Freighter hangar interior changes and additions.
   - Gantry cranes moved to the back to make them less obtrusive.
   - Restored missing floor sections at the back (with some strategically-placed
@@ -158,7 +158,7 @@ function ScChildren(T)
 	return T
 end
 
-function HangarChanges()
+local function HangarChanges()
 	local T = {}
 	for _,node in ipairs({
 		{k='NPC_01',			tx=-9.507,	ty=-3.355,	tz=-28.34},
@@ -356,7 +356,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Freighter Hangar Changes.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.45',
+	NMS_VERSION				= '4.52',
 	MOD_DESCRIPTION			= mod_desc,
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
@@ -443,7 +443,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS 	= {'Name', 'ATTACHMENT'},
+				SPECIAL_KEY_WORDS 	= {'Name', 'CuboidSmallLOD0', 'Name', 'ATTACHMENT'},
 				VALUE_CHANGE_TABLE	= {
 					{'value', 'MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1FLOAT/ENTITIES/SHAPE1FLOAT.ENTITY.MBIN'}
 				}

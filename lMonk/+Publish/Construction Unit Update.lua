@@ -12,8 +12,7 @@ local mod_desc = [[
 local version = 1.32
 
 local unlockable_items = {
-	{
----	construction unit: alloy base parts
+	{--	construction unit: alloy base parts
 		parent	= {'UI_PURCHASABLE_BASICTECH_TREE', 'UI_BASIC_FIBREGLASS_SUB'},
 		title   = 'UI_BASIC_FIBREGLASS_SUB',
 		cost	= 'SALVAGE',
@@ -112,8 +111,8 @@ local unlockable_items = {
 				}
 			}
 		}
-	},{
----	construction unit: stone base parts
+	},
+	{--	construction unit: stone base parts
 		parent	= {'UI_PURCHASABLE_BASICTECH_TREE', 'UI_BASIC_STONE_SUB'},
 		title   = 'UI_BASIC_STONE_SUB',
 		cost	= 'SALVAGE',
@@ -212,8 +211,8 @@ local unlockable_items = {
 				}
 			}
 		}
-	},{
----	construction unit: timber base parts
+	},
+	{--	construction unit: timber base parts
 		parent	= {'UI_PURCHASABLE_BASICTECH_TREE', 'UI_BASIC_TIMBER_SUB'},
 		title   = 'UI_BASIC_TIMBER_SUB',
 		cost	= 'SALVAGE',
@@ -312,8 +311,8 @@ local unlockable_items = {
 				}
 			}
 		}
-	},{
----	construction unit: tech
+	},
+	{--	construction unit: tech
 		parent	= {'UI_PURCHASABLE_BASICTECH_TREE', 'UI_BASIC_TECH_SUB'},
 		title   = 'UI_BASIC_TECH_SUB',
 		cost	= 'SALVAGE',
@@ -441,25 +440,12 @@ local function AddTreeToChangeTable(node)
 				ADD					= tree_root
 			})
 		end
-	elseif not node.haschild then
-	--- childless node ---
-		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
-			PRECEDING_KEY_WORDS	= 'Children',
-			REMOVE				= 'Line'
-		})
-		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
-			ADD					= [[
-				<Property name="Children">
-					]]..BuildExmlNodes(node.tree, false)..[[
-				</Property>]]
-		})
 	else
 	--- regular node ---
 		table.insert(T, {
 			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
 			PRECEDING_KEY_WORDS = 'Children',
+			CREATE_HOS			= true,
 			SECTION_ACTIVE		= -1,
 			ADD					= BuildExmlNodes(node.tree, false)
 		})
@@ -485,7 +471,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit Update.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.50',
+	NMS_VERSION			= '4.52',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

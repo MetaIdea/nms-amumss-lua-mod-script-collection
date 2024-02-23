@@ -1,11 +1,11 @@
 ---------------------------------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   Generate TkProceduralTextureList files for the procedural decals
   diff/normal/masks	= true >> include dds in the layer
 
   * source is used for importing the dds files (needs path to the files' folder)
   * The script STILL WORKS if the source path is incorrect or no dds
-   files are found - except no textures will be packed with the mbin files.  
+   files are found - except no textures will be packed with the mbin files.
 ]]-------------------------------------------------------------------------------
 
 local proc_texture_files = {
@@ -13,7 +13,7 @@ local proc_texture_files = {
 	---	ship decals : logo
 		label	= 'LOGO',
 		group	= 'DECALLOGO',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/logo/',
+		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/logo/',
 		nmspath	= 'TEXTURES/COMMON/DECALS/LOGO/',
 		{
 			ly_name	= 'OVERLAY',
@@ -31,7 +31,7 @@ local proc_texture_files = {
 	---	ship decals : rectangle
 		label	= 'RECTANGLE',
 		group	= 'DECALRECTANGLE',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/rectangle/',
+		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/rectangle/',
 		nmspath	= 'TEXTURES/COMMON/DECALS/RECTANGLE/',
 		{
 			ly_name	= 'OVERLAY',
@@ -49,7 +49,7 @@ local proc_texture_files = {
 	---	ship decals : smallsign
 		label	= 'SMALLSIGN',
 		group	= 'DECALSMALLSIGN',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/smallsign/',
+		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/smallsign/',
 		nmspath	= 'TEXTURES/COMMON/DECALS/SMALLSIGN/',
 		{
 			ly_name	= 'OVERLAY',
@@ -67,7 +67,7 @@ local proc_texture_files = {
 	---	ship decals : number
 		label	= 'NUMBER',
 		group	= 'DECALNUMBER',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/number/',
+		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/number/',
 		nmspath	= 'TEXTURES/COMMON/DECALS/NUMBER/',
 		{
 			ly_name	= 'OVERLAY',
@@ -85,7 +85,7 @@ local proc_texture_files = {
 	---	ship decals : lettering
 		label	= 'LETTERING',
 		group	= 'DECALLET',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/lettering/',
+		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/ship/lettering/',
 		nmspath	= 'TEXTURES/COMMON/DECALS/LETTERING/',
 		{
 			ly_name	= 'OVERLAY',
@@ -103,7 +103,7 @@ local proc_texture_files = {
 	---	space station front lettering
 		label	= 'LETTERING',
 		group	= 'DECALLETTER',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/station/',
+		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/station/',
 		nmspath	= 'TEXTURES/SPACE/SPACESTATION/DECALS/',
 		{
 			ly_name	= 'OVERLAY',
@@ -119,7 +119,7 @@ local proc_texture_files = {
 	---	space station front number
 		label	= 'NUMBER',
 		group	= 'DECALNUMBER',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/station/',
+		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/station/',
 		nmspath	= 'TEXTURES/SPACE/SPACESTATION/DECALS/',
 		{
 			ly_name	= 'OVERLAY',
@@ -141,7 +141,7 @@ local function GetProcTextures(path, layer)
 		end
 		local con = ''
 		for _,ar in ipairs(arg) do
-			if ar and ar:len() > 0 then
+			if ar and #ar > 0 then
 				con = con..ar..'.'
 			end
 		end
@@ -221,7 +221,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Alt Ship Decals.2.5.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 4.0,
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.0+',
+	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= AddProcTexFiles()
 }

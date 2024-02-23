@@ -1,260 +1,337 @@
 ----------------------------------------
-local desc = [[
+dofile('LIB/lua_2_exml.lua')
+dofile('LIB/table_entry.lua')
+----------------------------------------
+local mod_desc = [[
   Increase stack sizes
-  custom icons & icon background color
-  add craftables
+  Custom icons & icon background color
+  Add and edit crafting requirements
+  Add new products
 ]]--------------------------------------
 
 local stack_mult = {
-	{'CRAFTPROD_SUB', 				4},
-	{'FOOD_INGREDIENT_SUB', 		4},
-	{'FOOD_COOKED_SUB',				4},
-	{'LAUNCHFUEL_SUB',				5},
-	{'BP_SALVAGE_SUB',				2},
-	{'UI_SALVAGE_TECH_SUB',			8},
-	{'UI_SENTINEL_LOOT_SUB',		8},
-	{'UI_REPAIR_KIT_SUB',			2},
-	{'UI_STORMCRYSTAL_SUB',			2},
-	{'UI_ALLOY_COMPLEX_SUBTITLE',	2},
-	{'UI_REACTION_SUBTITLE',		2},
-	{'UI_MEGAPROD_SUBTITLE',		2},
-	{'UI_ULTRAPROD_SUBTITLE',		8},
-	{'BLD_GLITCHPROP_SUBTITLE',		2}
+	{'CRAFTPROD_SUB', 				'* 4'},
+	{'FOOD_INGREDIENT_SUB', 		'* 4'},
+	{'FOOD_COOKED_SUB',				'* 4'},
+	{'LAUNCHFUEL_SUB',				'* 5'},
+	{'BP_SALVAGE_SUB',				'* 6'},
+	{'UI_SALVAGE_TECH_SUB',			'* 8'},
+	{'SUB_DEADDRONE_SUBTITLE',		'+ 2'},
+	{'UI_SHIP_BRAIN_CLEAN_SUB',		'+ 2'},
+	{'UI_SENTINEL_LOOT_SUB',		'* 8'},
+	{'UI_REPAIR_KIT_SUB',			'* 2'},
+	{'UI_STORMCRYSTAL_SUB',			'* 2'},
+	{'UI_ALLOY_COMPLEX_SUBTITLE',	'* 2'},
+	{'UI_REACTION_SUBTITLE',		'* 2'},
+	{'UI_MEGAPROD_SUBTITLE',		'* 2'},
+	{'UI_ULTRAPROD_SUBTITLE',		'* 8'},
+	{'BLD_GLITCHPROP_SUBTITLE',		'* 2'},
+	{'UI_DRONE_SHARD_SUB',			'* 12'},
+	{'UI_STAFF_PART_SUB',			'+ 1'}
 }
-function stack_mult:Get(x)
-	return {
-		REPLACE_TYPE 		= 'All',
-		MATH_OPERATION 		= '*',
-		SPECIAL_KEY_WORDS	= {'Value', x[1]},
-		SECTION_UP			= 1,
-		VALUE_CHANGE_TABLE 	= { {'StackMultiplier',	x[2]} }
-	}
-end
-
-local replace_icons = {
-	{'ACCESS1',			'PRODUCTS/KETAROS/PRODUCT.ATLASPASS3.DDS'},
-	{'ACCESS2',			'PRODUCTS/KETAROS/PRODUCT.ATLASPASS2.DDS'},
-	{'CARBON_SEAL',		'PRODUCTS/KETAROS/PRODUCT.HERMETICS.DDS'},
-	{'MEGAPROD2',		'PRODUCTS/KETAROS/PRODUCT.QUANTUMP.DDS'},
-	{'FOOD_M_CAT',		'PRODUCTS/KETAROS/PRODUCT.MEAT.LIVER.DDS'},
-	{'FOOD_M_STRIDER',	'PRODUCTS/KETAROS/PRODUCT.MEAT.SAUSAGE.DDS'},
-	{'FOOD_M_COW',		'PRODUCTS/KETAROS/PRODUCT.MEATSTAKE.DDS'},
-	{'FOOD_M_CRAB',		'PRODUCTS/KETAROS/PRODUCT.MEATLEG.DDS'},
-	{'FOOD_M_CRAB',		'PRODUCTS/KETAROS/PRODUCT.MEATCHUNKY.DDS'},
-	{'SUMMON_GARAGE',	'BUILDABLE/BUILDABLE.SIGNAL.DDS'},
-	{'GEODE_CAVE',		'U4PRODUCTS/PRODUCT.GEODECAVE.DDS'},
-	{'PRODFUEL2',		'U4PRODUCTS/PRODUCT.OXYGENGEL2.DDS'},
-	{'SHIPCHARGE',		'U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS'},
-	{'SALVAGE_TECH10',	'U4PRODUCTS/PRODUCT.CAPTUREDNANODE.DDS'},
-	{'STATION_KEY',		'PRODUCTS/PRODUCT.PIRATEINVITE.DDS'},
-	{'FOOD_V_ROBOT',	'PRODUCTS/PRODUCT.GLOWPELLET.DDS'},
-}
-function replace_icons:Get(x)
-	return {
-		SPECIAL_KEY_WORDS	= {'ID', x[1]},
-		PRECEDING_KEY_WORDS = 'Icon',
-		VALUE_CHANGE_TABLE 	= { {'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..x[2]} }
-	}
-end
-
---- if subtitle, will apply color to entire group
-local icon_bg_color = {
-	{'UI_FUELPROD3_NAME',			'8A4242'},
-	{'UI_LANDPROD3_NAME',			'8A4242'},
-	{'UI_CAVEPROD3_NAME',			'8A4242'},
-	{'UI_CATAPROD3_NAME',			'8A4242'},
-	{'UI_WATERPROD3_NAME',			'8A4242'},
-	{'UI_OXYPROD3_NAME',			'8A4242'},
-	{'NEWPROD11_NAME',				'4D2957'}, -- cave geode
-	{'FOOD_ROBOT_VEG_NAME',			'1A273D'},
-	{'EXO_SUMMON_POD_NAME',			'0A2E42'},
-	{'UI_VENTGEM_NAME',				'CCCCCC'},
-	{'UI_STORMCRYSTAL_NAME',		'4D2957'},
-	{'UI_TECHMOD_NAME',				'1A2733'},
-	{'FRIG_BOOST_SUB',				'6B7882'},
-	{'UI_ALLOY_SIMPLE_SUBTITLE',	'2E409E'},
-	{'UI_ALLOY_COMPLEX_SUBTITLE',	'2E409E'},
-	{'UI_REACTION_SUBTITLE',		'DBA82E'},
-	{'UI_COMPOUND_SUBTITLE',		'DBA82E'},
-}
-function icon_bg_color:Get(x)
-	local function Hex2Rgb(hex)
-		local rgb = {{'R', 1}, {'G', 1}, {'B', 1}, {'A', 1}}
-		for i=1, (hex:len()/2) do
-			rgb[i][2] = tonumber(hex:sub(i*2-1, i*2), 16) * 0.00392
-		end
-		return rgb
-	end
-	local function IsSingle(a, b)
-		return x[1]:find('NAME') and a or b
-	end
-	return {
-		REPLACE_TYPE 		= IsSingle(nil, 'All'),
-		INTEGER_TO_FLOAT	= 'Force',
-		SPECIAL_KEY_WORDS	= {IsSingle('Name', 'Value'), x[1]},
-		SECTION_UP			= IsSingle(0, 1),
-		VALUE_CHANGE_TABLE 	= Hex2Rgb(x[2])
-	}
-end
-
-local prod_requirements = {
-	{
-	---	cargo_bulkhead
-		id	 = 'FREI_INV_TOKEN',
-		cost = 8,
-		{'CASING', 		40,		'P'},	-- plating
-		{'COMPOUND6',	3,		'P'},	-- cryo pump
-		{'FARMPROD5',	5,		'P'}	-- poly fibre
-	},{
-	---	wiring loom
-		id   = 'TECH_COMP',
-		{'MICROCHIP', 	3,		'P'},	-- microprocessor
-		{'YELLOW2', 	80,		'S'},	-- copper
-		{'ASTEROID1', 	40,		'S'}	-- silver
-	},{
-	---	anomaly detector
-		id   = 'POI_LOCATOR',
-		{'GEODE_SPACE', 1,		'P'},	-- tritium hypercluster
-		{'ASTEROID1', 	20,		'S'},	-- silver
-		{'ASTEROID2', 	20,		'S'},	-- gold
-	},{
-	---	dream aerial
-		id   = 'WHALE_BEACON',
-		subs = true,
-		{'GEODE_SPACE', 1,		'P'},	-- tritium hypercluster
-		{'POI_LOCATOR',	1,		'P'},	-- anomaly detector
-		{'FARMPROD8', 	1,		'P'},	-- living glass
-	},{
-	---	desk chair
-		id   = 'BUILDCHAIR',
-		subs = true,
-		{'CASING', 		1,		'P'},	-- metal plating
-		{'FUEL2', 		20,		'S'},	-- c carbon
-	},{
-	---	armchair
-		id   = 'BUILDCHAIR2',
-		subs = true,
-		{'CASING', 		1,		'P'},
-		{'FUEL2', 		20,		'S'},
-	},{
-	---	adjustable chair
-		id   = 'BUILDCHAIR3',
-		subs = true,
-		{'CASING', 		1,		'P'},
-		{'FUEL2', 		20,		'S'},
-	},{
-	---	classic chair
-		id   = 'BUILDCHAIR4',
-		subs = true,
-		{'CASING', 		1,		'P'},
-		{'FUEL2', 		20,		'S'},
-	},{
-	---	ship ai valves
-		id   = 'SALVAGE_TECH10',
-		{'ULTRAPROD1', 	20,		'P'},
-		{'ULTRAPROD2', 	20,		'P'},
-	},
-	multi = true
-}
-function prod_requirements:Get(x)
-	local function BuildReqs()
-		local exml = ''
-		local requirement = [[
-			<Property value="GcTechnologyRequirement.xml">
-				<Property name="ID" value="%s"/>
-				<Property name="Amount" value="%s"/>
-				<Property name="Type" value="GcInventoryType.xml">
-					<Property name="InventoryType" value="%s"/>
-				</Property>
-			</Property>
-		]]
-		for _,p in ipairs(x) do
-			exml = exml..string.format(requirement, p[1], p[2],
-				(p[3] == 'S' and 'Substance' or 'Product')
-			)
-		end
-		return '<Property name="Requirements">'..exml..'</Property>'
-	end
-	return {
-		{
-			SPECIAL_KEY_WORDS	= {'ID', x.id},
-			VALUE_CHANGE_TABLE 	= {
-				{'RecipeCost',	x.cost or 1},
-				{'IsCraftable',	true}
-			}
-		},{
-			SPECIAL_KEY_WORDS	= {'ID', x.id},
-			PRECEDING_KEY_WORDS	= 'Requirements',
-			REMOVE				= x.subs and 'Section' or 'Line'
-		},{
-			SPECIAL_KEY_WORDS	= {'ID', x.id},
-			ADD					= BuildReqs()
-		}
-	}
-end
-
-local function BuildExmlChangeTable(tbl)
+function stack_mult:GetExmlCT()
 	local T = {}
-	if tbl.multi or false then
-		for _,v in ipairs(tbl) do
-			for _,w in ipairs( tbl:Get(v) ) do table.insert(T, w) end
-		end
-	else
-		for _,v in ipairs(tbl) do table.insert(T, tbl:Get(v)) end
+	for _,prd in ipairs(self) do
+		T[#T+1] = {
+			REPLACE_TYPE 		= 'All',
+			SPECIAL_KEY_WORDS	= {'Value', prd[1]},
+			SECTION_UP			= 1,
+			VALUE_CHANGE_TABLE 	= { {'StackMultiplier', '@ '..prd[2]} }
+		}
 	end
 	return T
 end
 
-local source_table_product = 'METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN'
+local replace_icons = {
+	{'ACCESS1',			'PRODUCTS/PRODUCT.ATLASPASS1.DDS'},
+	{'ACCESS2',			'PRODUCTS/PRODUCT.ATLASPASS2.DDS'},
+	{'CARBON_SEAL',		'PRODUCTS/PRODUCT.MSEAL.DDS'},
+	{'MEGAPROD2',		'PRODUCTS/PRODUCT.QUANTUMP.DDS'},
+	{'FOOD_M_MEAT',		'COOKINGPRODUCTS/PRODUCT.MEATCHUNKY.DDS'},
+	{'FOOD_M_DIPLO',	'COOKINGPRODUCTS/PRODUCT.MEATCHUNKY.DDS'},
+	{'FOOD_M_CAT',		'COOKINGPRODUCTS/PRODUCT.MEAT.LIVER.DDS'},
+	{'FOOD_M_STRIDER',	'COOKINGPRODUCTS/PRODUCT.MEAT.SAUSAGE.DDS'},
+	{'FOOD_M_COW',		'COOKINGPRODUCTS/PRODUCT.MEATSTAKE.DDS'},
+	{'FOOD_M_CRAB',		'COOKINGPRODUCTS/PRODUCT.MEATLEG.DDS'},
+	{'SUMMON_GARAGE',	'BUILDABLE/BAZAAR.ANTENNA0.DDS'},
+	{'GEODE_CAVE',		'U4PRODUCTS/PRODUCT.GEODECAVE.DDS'},
+	{'PRODFUEL2',		'U4PRODUCTS/PRODUCT.OXYGENGEL2.DDS'},
+	{'SHIPCHARGE',		'U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS'},
+	{'STATION_KEY',		'PRODUCTS/PRODUCT.STATION.OVERRIDE.DDS'},
+}
+function replace_icons:GetExmlCT()
+	local T = {}
+	for _,prd in ipairs(self) do
+		T[#T+1] = {
+			SPECIAL_KEY_WORDS	= {'ID', prd[1]},
+			PRECEDING_KEY_WORDS = 'Icon',
+			VALUE_CHANGE_TABLE 	= { {'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..prd[2]} }
+		}
+	end
+	return T
+end
+
+--- if NAME then apply color to single item, else apply to SUBTITLE group
+local icon_bg_color = {
+	{'COMMODITY6_NAME',				'FFF3A923'}, -- Antimatter
+	{'FUEL_JELLY_NAME',				'FFF3A923'}, -- dihydrogen jelly
+	{'UI_TECHMOD_NAME',				'FFF3A923'}, -- Wiring Loom
+	{'NEWPROD11_NAME',				'FF4D2957'}, -- Vortex Cube
+	{'EXO_SUMMON_POD_NAME',			'FF0A2E42'}, -- Exocraft Summoning Station
+	{'UI_VENTGEM_NAME',				'FFCCCCCC'}, -- Crystal Sulphide
+	{'UI_STORMCRYSTAL_NAME',		'FF4D2957'}, -- Storm Crystal
+	{'FUELGEL3_NAME',				'FFC61230'}, -- life support gel
+	{'GRENFUEL1_NAME',				'FFC61230'}, -- gernade fuel
+	{'HYPERFUEL1_NAME',				'FFC61230'}, -- warp fuel1
+	{'HYPERFUEL2_NAME',				'FFC61230'}, -- warp fuel2
+	{'UI_SUBFUEL_NAME',				'FFC61230'}, -- sub fuel
+	{'LAUNCHFUEL_SUB',				'FFC61230'}, -- ship+frigate fuel
+	{'POWERPROD_SUB',				'FFC01746'}, -- ion+ship battery
+	{'FRIG_BOOST_SUB',				'FF6B7882'}, -- Consumable Frigate Upgrade
+	{'UI_ALLOY_SIMPLE_SUBTITLE',	'FF2E409E'}, -- Alloy Metal
+	{'UI_ALLOY_COMPLEX_SUBTITLE',	'FF2E409E'}, -- Enriched Alloy Metal
+	{'UI_REACTION_SUBTITLE',		'FFDBA82E'}, -- Enhanced Gas Product
+	{'UI_COMPOUND_SUBTITLE',		'FFDBA82E'}, -- Manufactured Gas Product
+	{'UI_NAV_DATA_NAME',			'FF1A2733'}, -- navigation data
+}
+function icon_bg_color:GetExmlCT()
+	local function IsSingle(x, a, b)
+		return x:find('NAME') and a or b
+	end
+	local T = {}
+	for _,prd in ipairs(self) do
+		T[#T+1] = {
+			REPLACE_TYPE 		= IsSingle(prd[1], nil, 'All'),
+			INTEGER_TO_FLOAT	= 'Force',
+			SPECIAL_KEY_WORDS	= {IsSingle(prd[1], 'Name', 'Value'), prd[1]},
+			SECTION_UP			= IsSingle(prd[1], 0, 1),
+			VALUE_CHANGE_TABLE 	= ColorFromHex(prd[2])
+		}
+	end
+	return T
+end
+
+local prod_requirements = {
+	{--	pocket reality generator
+		id	 = 'BASE_TOYCORE',
+		subs = true,
+		req	 = {
+			{id='ANTIMATTER', 	n=1,	tp=IT_.PRD},	-- antimatter
+			{id='LAND1',	 	n=50,	tp=IT_.SBT},	-- ferrite
+		}
+	},
+	{--	cargo_bulkhead
+		id	 = 'FREI_INV_TOKEN',
+		cost = 8,
+		req	 = {
+			{id='CASING', 		n=20,	tp=IT_.PRD},	-- plating
+			{id='HYDRALIC',		n=10,	tp=IT_.PRD},	-- poly fibre
+			{id='COMPOUND6',	n=1,	tp=IT_.PRD}		-- cryo pump
+		}
+	},
+	{--	wiring loom
+		id   = 'TECH_COMP',
+		req	 = {
+			{id='MICROCHIP',	n=3,	tp=IT_.PRD},	-- microprocessor
+			{id='YELLOW2', 		n=80,	tp=IT_.SBT},	-- copper
+			{id='ASTEROID1',	n=40,	tp=IT_.SBT}		-- silver
+		}		
+	},
+	{--	anomaly detector
+		id   = 'POI_LOCATOR',
+		req	 = {
+			{id='GEODE_SPACE',	n=1,	tp=IT_.PRD},	-- tritium hypercluster
+			{id='ASTEROID1', 	n=20,	tp=IT_.SBT},	-- silver
+			{id='ASTEROID2', 	n=20,	tp=IT_.SBT}		-- gold
+		}		
+	},
+	{--	dream aerial
+		id   = 'WHALE_BEACON',
+		subs = true,
+		req	 = {
+			{id='GEODE_SPACE',	n=1,	tp=IT_.PRD},	-- tritium hypercluster
+			{id='POI_LOCATOR',	n=1,	tp=IT_.PRD},	-- anomaly detector
+			{id='FARMPROD8', 	n=1,	tp=IT_.PRD}		-- living glass
+		}		
+	},
+	{--	desk chair
+		id   = 'BUILDCHAIR',
+		subs = true,
+		req	 = {
+			{id='CASING', 		n=1,	tp=IT_.PRD},	-- metal plating
+			{id='FUEL2', 		n=20,	tp=IT_.SBT}		-- c carbon
+		}		
+	},
+	{--	armchair
+		id   = 'BUILDCHAIR2',
+		subs = true,
+		req	 = {
+			{id='CASING', 		n=1,	tp=IT_.PRD},
+			{id='FUEL2', 		n=20,	tp=IT_.SBT}
+		}		
+	},
+	{--	adjustable chair
+		id   = 'BUILDCHAIR3',
+		subs = true,
+		req	 = {
+			{id='CASING', 		n=1,	tp=IT_.PRD},
+			{id='FUEL2', 		n=20,	tp=IT_.SBT}
+		}		
+	},
+	{--	classic chair
+		id   = 'BUILDCHAIR4',
+		subs = true,
+		req	 = {
+			{id='CASING', 		n=1,	tp=IT_.PRD},
+			{id='FUEL2', 		n=20,	tp=IT_.SBT}
+		}		
+	},
+	{--	Echo Locator (builder site)
+		id   = 'CHART_BUILDER',
+		req	 = {
+			{id='CHART_SETTLE',	n=1,	tp=IT_.PRD},
+			{id='ROBOT2', 		n=20,	tp=IT_.SBT}
+		}		
+	}
+}
+function prod_requirements:GetExmlCT()
+	local T = {}
+	for _,prd in ipairs(self) do
+		T[#T+1] = {
+			SPECIAL_KEY_WORDS	= {'ID', prd.id},
+			VALUE_CHANGE_TABLE 	= {
+				{'RecipeCost',	prd.cost or 1},
+				{'IsCraftable',	true}
+			}
+		}
+		T[#T+1] = {
+			SPECIAL_KEY_WORDS	= {'ID', prd.id},
+			PRECEDING_KEY_WORDS	= 'Requirements',
+			REMOVE				= prd.subs and 'Section' or 'Line'
+		}
+		T[#T+1] = {
+			SPECIAL_KEY_WORDS	= {'ID', prd.id},
+			ADD					= ToExml(GetRequirements(prd.req))
+		}
+	end
+	return T
+end
+
+local ECT = {}
+for _,tm in ipairs({
+	stack_mult,
+	replace_icons,
+	icon_bg_color,
+	prod_requirements
+}) do
+	for _,tv in ipairs(tm:GetExmlCT()) do
+		ECT[#ECT+1] = tv
+	end
+end
+
+ECT[#ECT+1] = {
+	SPECIAL_KEY_WORDS	= {'ID', 'DRONE_SHARD'},
+	VALUE_CHANGE_TABLE 	= {
+		{'ChargeValue',	40}
+	}
+}
+ECT[#ECT+1] = {
+	SPECIAL_KEY_WORDS	= {'ID', 'JELLY'},
+	PRECEDING_KEY_WORDS = 'Subtitle',
+	VALUE_CHANGE_TABLE 	= {
+		{'Value',		'CRAFTPROD_SUB'}
+	}
+}
+ECT[#ECT+1] = {
+	SPECIAL_KEY_WORDS	= {'ID', 'TECH_COMP'},
+	VALUE_CHANGE_TABLE 	= {
+		{'ProductCategory', 'Component'}
+	}
+}
+ECT[#ECT+1] = {
+--	text added in custom lang file
+	SPECIAL_KEY_WORDS	= {'ID', 'GEODE_CAVE'},
+	VALUE_CHANGE_TABLE 	= {
+		{'Name',		'UI_GEODE_NAME_CAVE'},
+		{'NameLower',	'UI_GEODE_NAME_CAVE_L'}
+	}
+}
+ECT[#ECT+1] = {
+	PRECEDING_KEY_WORDS	= 'Table',
+	ADD					= ToExml({
+		ProductEntry({
+			id				= 'RAMMOULD5',
+			name			= 'RAMMOULD_NAME',
+			namelower		= 'RAMMOULD_NAME_L',
+			subtitle		= 'UI_MEGAPROD_SUBTITLE',
+			description		= 'RAMMOULD_DESC',
+			basevalue		= 8000,
+			color			= 'FFCCCCCC',
+			category		= 'Special',
+			type			= 'Tradeable',
+			rarity			= 'Rare',
+			legality		= 'Legal',
+			iscraftable		= true,
+			requirements	= {
+				{id='SPACEGUNK2', 		n=10000,	tp=IT_.SBT},
+				{id='SPACEGUNK2', 		n=10000,	tp=IT_.SBT}
+			},
+			stackmultiplier	= 12,
+			icon			= 'TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.RAMMOLD.DDS'
+		}),
+		ProductEntry({
+			id				= 'ULTRAPRODX40',
+			name			= 'PRODX40_NAME',
+			namelower		= 'PRODX40_NAME_L',
+			subtitle		= 'CURIO4_SUBTITLE',
+			description		= 'PRODX40_DESC',
+			basevalue		= 624000000,
+			color			= 'FFCCCCCC',
+			category		= 'Special',
+			type			= 'Tradeable',
+			rarity			= 'Rare',
+			legality		= 'Legal',
+			iscraftable		= true,
+			requirements	= {
+				{id='ULTRAPROD1', 		n=20,	tp=IT_.PRD},
+				{id='ULTRAPROD2', 		n=20,	tp=IT_.PRD}
+			},
+			stackmultiplier	= 16,
+			icon			= 'TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.CAPTUREDNANODE.DDS'
+		}),
+		ProductEntry({
+			id				= 'SUPERFOOD',
+			name			= 'SUPERFOOD_NAME',
+			namelower		= 'SUPERFOOD_NAME_L',
+			subtitle		= 'PROD_NIP_SUBTITLE',
+			description		= 'SUPERFOOD_DESC',
+			basevalue		= 2,
+			color			= 'FF1A273D',
+			category		= 'Exotic',
+			type			= 'Consumable',
+			rarity			= 'Rare',
+			legality		= 'Legal',
+			consumable		= true,
+			requirements	= {
+				{id='SENTINEL_LOOT',	n=2,	pt=IT_.PRD},
+				{id='FOOD_V_ROBOT',		n=2,	pt=IT_.PRD},
+				{id='STELLAR2',			n=50,	pt=IT_.SBT}
+			},
+			stackmultiplier	= 20,
+			icon			= 'TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.GLOWPELLET.DDS'
+		})
+	})
+}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE PRODUCT.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
-	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= source_table_product,
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'SALVAGE_TECH10'},
-				VALUE_CHANGE_TABLE 	= {
-					{'BaseValue',	624000000},
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'JELLY'},
-				PRECEDING_KEY_WORDS = 'Subtitle',
-				VALUE_CHANGE_TABLE 	= {
-					{'Value',		'CRAFTPROD_SUB'},
-				}
-			},
-			{
-			--	text added in custom lang file
-				SPECIAL_KEY_WORDS	= {'ID', 'GEODE_CAVE'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Name',		'UI_GEODE_NAME_CAVE'},
-					{'NameLower',	'UI_GEODE_NAME_CAVE_L'}
-				}
-			}
-		}
-	},
-	{
-		MBIN_FILE_SOURCE	= source_table_product,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(stack_mult)
-	},
-	{
-		MBIN_FILE_SOURCE	= source_table_product,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(replace_icons)
-	},
-	{
-		MBIN_FILE_SOURCE	= source_table_product,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(icon_bg_color)
-	},
-	{
-		MBIN_FILE_SOURCE	= source_table_product,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(prod_requirements)
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN',
+		EXML_CHANGE_TABLE	= ECT
 	}
 }}}}

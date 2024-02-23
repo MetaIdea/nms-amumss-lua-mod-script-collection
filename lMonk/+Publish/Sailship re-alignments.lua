@@ -1,5 +1,5 @@
 -----------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Sailship re-alignments:
    Engine trails for body_A, _wings_D & wings_E
    Re-align guns so they're pointing forward
@@ -76,7 +76,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.sailship re-alignments.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.45',
+	NMS_VERSION			= '4.52',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

@@ -7,15 +7,13 @@ local mod_desc = [[
 local version = 1.32
 
 local base_tree = {
-	{
-	--	FreighterBase
+	{--	FreighterBase
 		title	= 'UI_FREIGHTER_TREE',
 		subs	= {
 			'UI_FRE_BASE_TREE'
 		}
 	},
-	{
-	--	BaseParts
+	{--	BaseParts
 		title	= 'UI_PURCHASABLE_BASEPARTS_TREE',
 		subs	= {
 			'UI_POSTERS_TREE',
@@ -41,44 +39,38 @@ local base_tree = {
 	}
 }
 local tech_tree = {
-	{
-	--	FreighterTech
+	{--	FreighterTech
 		title	= 'UI_FREIGHTER_TREE',
 		subs	= {
 			'UI_TECH_TREE_SUB'
 		}
 	},
-	{
-	--	CraftProducts
+	{--	CraftProducts
 		title	= 'UI_PRODUCT_TREE',
 		subs	= {
 			'UI_PRODUCT_TREE_FARM',
 			'UI_PRODUCT_TREE_CRAFT'
 		}
 	},
-	{
-	--	ExocraftTech
+	{--	ExocraftTech
 		title	= 'UI_EXOCRAFT_TECH_TREE',
 		subs	= {
 			'UI_TECH_TREE_SUB'
 		}
 	},
-	{
-	--	WeapTech
+	{--	WeapTech
 		title	= 'UI_WEAP_TECH_TREE',
 		subs	= {
 			'UI_TECH_TREE_SUB'
 		}
 	},
-	{
-	--	ShipTech
+	{--	ShipTech
 		title	= 'UI_SHIP_TECH_TREE',
 		subs	= {
 			'UI_TECH_TREE_SUB'
 		}
 	},
-	{
-	--	SuitTech
+	{--	SuitTech
 		title	= 'UI_SUIT_TECH_TREE',
 		subs	= {
 			'UI_TECH_TREE_SUB'
@@ -131,7 +123,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit ALL.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.50',
+	NMS_VERSION			= '4.52',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

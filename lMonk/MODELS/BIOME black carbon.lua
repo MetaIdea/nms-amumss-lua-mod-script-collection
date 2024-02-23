@@ -1,5 +1,5 @@
 --------------------------------------------
-local desc = [[
+local mod_desc = [[
   Change carbon crystals to black, by Lo2k
 ]]------------------------------------------
 
@@ -7,8 +7,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL black carbon.pak',
 	MOD_AUTHOR			= 'Lo2k',
 	LUA_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

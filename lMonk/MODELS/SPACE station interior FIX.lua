@@ -1,5 +1,8 @@
 ----------------------------------------------------
-local desc = [[
+dofile('LIB/lua_2_exml.lua')
+dofile('LIB/scene_tools.lua')
+----------------------------------------------------
+local mod_desc = [[
   space station interior LOD increase; mod by Lo2k
   station landing pad lights changed to near-white
 ]]--------------------------------------------------
@@ -7,13 +10,13 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL station interior FIX.pak',
 	MOD_AUTHOR			= 'Lo2k, lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= {
-			'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/GUILDSHOP.SCENE.MBIN',
+			-- 'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/GUILDSHOP.SCENE.MBIN',
 			'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/MISSIONSHOP.SCENE.MBIN',
 			'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/SCRAPDEALERSHOP.SCENE.MBIN',
 			'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/SHIPSHOP.SCENE.MBIN',
@@ -70,38 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'RequirePlayerAction', 'None'},
 				SECTION_UP_SPECIAL	= 1,
 				REMOVE				= 'Section'
-			},
-			-- {
-				-- SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF', 'Name', 'LeftSectionModule'},
-				-- VALUE_CHANGE_TABLE	= {
-					-- {'NodeActiveState', 'Activate'}
-				-- }
-			-- },
-			-- {
-				-- FOREACH_SKW_GROUP	= {
-					-- {'StateID', 'LEFTOFF', 'Name', 'LeftModuleInactive'},
-					-- {'StateID', 'LEFTOFF', 'Name', 'TunnelLights'},
-					-- {'StateID', 'LEFTON', 'Name', 'LeftSectionModule'}
-				-- },
-				-- VALUE_CHANGE_TABLE	= {
-					-- {'NodeActiveState', 'Deactivate'}
-				-- }
-			-- },
-			-- {
-				-- SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF', 'BroadcastLevel', 'Scene'},
-				-- VALUE_CHANGE_TABLE	= {
-					-- {'State',			'LEFTOFF'}
-				-- }
-			-- },
-			-- {
-				-- FOREACH_SKW_GROUP	= {
-					-- {'StateID', 'LEFTOFF', 'RequirePlayerAction', 'None'},
-					-- {'StateID', 'LEFTON', 'RequirePlayerAction', 'None'}
-				-- },
-				-- VALUE_CHANGE_TABLE	= {
-					-- {'Distance',	200}
-				-- }
-			-- }
+			}
 		}
 	},
 	{
@@ -115,38 +87,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'RequirePlayerAction', 'None'},
 				SECTION_UP_SPECIAL	= 1,
 				REMOVE				= 'Section'
-			},
-			-- {
-				-- SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF', 'Name', 'RightSectionModule'},
-				-- VALUE_CHANGE_TABLE	= {
-					-- {'NodeActiveState', 'Activate'}
-				-- }
-			-- },
-			-- {
-				-- FOREACH_SKW_GROUP	= {
-					-- {'StateID', 'RIGHTOFF', 'Name', 'RightModuleInactive'},
-					-- {'StateID', 'RIGHTOFF', 'Name', 'TunnelLights'},
-					-- {'StateID', 'RIGHTON', 'Name', 'RightSectionModule'}
-				-- },
-				-- VALUE_CHANGE_TABLE	= {
-					-- {'NodeActiveState', 'Deactivate'}
-				-- }
-			-- },
-			-- {
-				-- SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF', 'BroadcastLevel', 'Scene'},
-				-- VALUE_CHANGE_TABLE	= {
-					-- {'State',		'RIGHTOFF'}
-				-- }
-			-- },
-			-- {
-				-- FOREACH_SKW_GROUP	= {
-					-- {'StateID', 'RIGHTOFF', 'RequirePlayerAction', 'None'},
-					-- {'StateID', 'RIGHTON', 'RequirePlayerAction', 'None'}
-				-- },
-				-- VALUE_CHANGE_TABLE	= {
-					-- {'Distance',	200}
-				-- }
-			-- }
+			}
 		}
 	},
 	{
@@ -160,63 +101,44 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{
-	---	|station landing pad lights|
+	{--	|station landing pad lights|
 		MBIN_FILE_SOURCE 	= 'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/LANDINGPAD.SCENE.MBIN',
 		EXML_CHANGE_TABLE 	= {
 			{
-				REPLACE_TYPE		= 'All',
-				SPECIAL_KEY_WORDS	= {'Type', 'LIGHT'},
-				VALUE_CHANGE_TABLE	= {
-					{'TransY',		25},	--original : 10.46178
-					{'TransZ',		2.3},	--original : 0.266191
-				}
+				SPECIAL_KEY_WORDS	= {
+					{'Name', 'LightLOD0'},
+					{'Name', 'LightLOD1'},
+					{'Name', 'LightLOD2'},
+				},
+				PRECEDING_KEY_WORDS = 'Children',
+				REMOVE				= 'Section'
 			},
 			{
-				REPLACE_TYPE		= 'All',
-				SPECIAL_KEY_WORDS	= {'Name', 'FOV'},
-				VALUE_CHANGE_TABLE	= {
-					{'Value',		70},
-				}
+				SPECIAL_KEY_WORDS	= {'Name', 'LightLOD0'},
+				ADD					= ToExml(
+					ScChildren({ ScLight({
+						name='Light0',	fov=70,	i=70000, f='l',	fr=1,	c='FFF3F3D9',
+						tx=0.1,	ty=25,	tz=2.3,	rz=-90,	sx=20,	sy=20,	sz=20
+					}) })
+				)
 			},
 			{
-				REPLACE_TYPE		= 'All',
-				SPECIAL_KEY_WORDS	= {'Name', 'COL_R'},
-				VALUE_CHANGE_TABLE	= {
-					{'Value',		0.95}
-				}
+				SPECIAL_KEY_WORDS	= {'Name', 'LightLOD1'},
+				ADD					= ToExml(
+					ScChildren({ ScLight({
+						name='Light1',	fov=70, i=60000, f='l',	fr=1,	c='FFF3F3D9',
+						tx=0.1,	ty=25,	tz=2.3,	rz=-90,	sx=20,	sy=20,	sz=20
+					}) })
+				)
 			},
 			{
-				REPLACE_TYPE		= 'All',
-				SPECIAL_KEY_WORDS	= {'Name', 'COL_G'},
-				VALUE_CHANGE_TABLE	= {
-					{'Value',		0.95}
-				}
-			},
-			{
-				REPLACE_TYPE		= 'All',
-				SPECIAL_KEY_WORDS	= {'Name', 'COL_B'},
-				VALUE_CHANGE_TABLE	= {
-					{'Value',		0.85}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'spotLight7', 'Name', 'INTENSITY'},
-				VALUE_CHANGE_TABLE	= {
-					{'Value',		70000}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'spotLight8', 'Name', 'INTENSITY'},
-				VALUE_CHANGE_TABLE	= {
-					{'Value',		60000}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'spotLight9', 'Name', 'INTENSITY'},
-				VALUE_CHANGE_TABLE	= {
-					{'Value',		50000}
-				}
+				SPECIAL_KEY_WORDS	= {'Name', 'LightLOD2'},
+				ADD					= ToExml(
+					ScChildren({ ScLight({
+						name='Light2',	fov=70,	i=50000, f='l',	fr=1, c='FFF3F3D9',
+						tx=0.1,	ty=25,	tz=2.3,	rz=-90,	sx=20,	sy=20,	sz=20
+					}) })
+				)
 			}
 		}
 	}

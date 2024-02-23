@@ -1,157 +1,146 @@
 ----------------------------------------------------
-local desc = [[
+dofile('LIB/lua_2_exml.lua')
+----------------------------------------------------
+local mod_desc = [[
   Add more water color choices
-  math.floor(X / 255 * 1000) / 1000 == X * 0.00392
+  * hex color is in ARGB format
 ]]--------------------------------------------------
 
 local water_colors = {
----	earth blue
-	'3C5777',
-	'51749E',
-	'141D28',
-	'5C6BF2',
-	'DAE4EA33',
----	burnt orange
-	'8C6439',
-	'C99063',
-	'45230E',
-	'C27547',
-	'C7E19C',
----	young red ?
-	'985151',
-	'B87E7E',
-	'4C1C1C',
-	'A83838',
-	'7AD5EE',
----	green jade
-	'2B695F',
-	'499585',
-	'093634',
-	'6BE69E',
-	'B9E7D6',
----	royal blue
-	'1A3E58',
-	'1D5C79',
-	'03295D',
-	'2E526B',
-	'C0CBEA4D',
----	orange-yellow
-	'AA9C6F',
-	'B7AB7E',
-	'302503',
-	'6D5A1D',
-	'E8E2D0',
----	orange-yellow (-)
-	'9E885F',
-	'AB936D',
-	'232006',
-	'69632E',
-	'D6DDB7',
----	pale blue-green
-	'5A94A8',
-	'6BAABF',
-	'0E304A',
-	'1E546D',
-	'BDEDFC',
----	turquose green
-	'1F8475',
-	'257584',
-	'183323',
-	'294729',
-	'C3FFC7',
----	mid blue
-	'385A68',
-	'446C7C',
-	'1B2A30',
-	'3B8E49',
-	'87AFBF',
----	swamp green
-	'3D4C3D',
-	'3E563F',
-	'202D53',
-	'7B5119',
-	'DBC6AD',
----	swamp mid green
-	'336660',
-	'3B776A',
-	'03355D',
-	'1F613C',
-	'DAE4EA66',
----	brown-red
-	'5A4633',
-	'775D44',
-	'093634',
-	'3B8A6B',
-	'B9E7D6',
+	{--	earth blue
+		'FF3C5777',
+		'FF51749E',
+		'FF141D28',
+		'FF5C6BF2',
+		'33DAE4EA'
+	},
+	{--	burnt orange
+		'FF8C6439',
+		'FFC99063',
+		'FF45230E',
+		'FFC27547',
+		'FFC7E19C'
+	},
+	{--	young red ?
+		'FF985151',
+		'FFB87E7E',
+		'FF4C1C1C',
+		'FFA83838',
+		'FF7AD5EE'
+	},
+	{--	green jade
+		'FF2B695F',
+		'FF499585',
+		'FF093634',
+		'FF6BE69E',
+		'FFB9E7D6'
+	},
+	{--	royal blue
+		'FF1A3E58',
+		'FF1D5C79',
+		'FF03295D',
+		'FF2E526B',
+		'4DC0CBEA'
+	},
+	{--	orange-yellow
+		'FFAA9C6F',
+		'FFB7AB7E',
+		'FF302503',
+		'FF6D5A1D',
+		'FFE8E2D0'
+	},
+	{--	orange-yellow (-)
+		'FF9E885F',
+		'FFAB936D',
+		'FF232006',
+		'FF69632E',
+		'FFD6DDB7'
+	},
+	{--	pale blue-green
+		'FF5A94A8',
+		'FF6BAABF',
+		'FF0E304A',
+		'FF1E546D',
+		'FFBDEDFC'
+	},
+	{--	turquose green
+		'FF1F8475',
+		'FF257584',
+		'FF183323',
+		'FF294729',
+		'FFC3FFC7'
+	},
+	{--	mid blue
+		'FF385A68',
+		'FF446C7C',
+		'FF1B2A30',
+		'FF3B8E49',
+		'FF87AFBF'
+	},
+	{--	swamp green
+		'FF3D4C3D',
+		'FF3E563F',
+		'FF202D53',
+		'FF7B5119',
+		'FFDBC6AD'
+	},
+	{--	swamp mid green
+		'FF336660',
+		'FF3B776A',
+		'FF03355D',
+		'FF1F613C',
+		'66DAE4EA'
+	},
+	{--	brown-red
+		'FF5A4633',
+		'FF775D44',
+		'FF093634',
+		'FF3B8A6B',
+		'FFB9E7D6'
+	}
 }
 
-local function GcWaterColourSetting(colors_list)
-	local function hex2rgb(hex)
-		local n = {}
-		for i=1, (hex:len()/2) do
-			table.insert(n, tonumber(hex:sub(i*2-1, i*2), 16) * 0.00392)
+local function Convert2Rgb(color)
+	local function asc2prc(asc)
+		for i=1, #asc do
+			asc[i] = math.floor(asc[i] / 255 * 1000) / 1000
 		end
-		return n
+		return asc
 	end
-	local function asc2prc(as)
-		for i=1, #as do as[i] = as[i] * 0.00392 end
-		return as
+	if type(color) == 'table' and (color[1] > 1 or color[2] > 1 or color[3] > 1) then
+		return asc2prc(color)
 	end
-	local function Convert2Rgba(c)
-		if type(c) == 'string' then
-			return hex2rgb(c)
-		elseif c[1] > 1 or c[2] > 1 or c[3] > 1 then
-			return asc2prc(c)
-		end
-		return c
+	return color
+end
+local props = {
+	'WaterFogColourNear',
+	'WaterFogColourFar',
+	'WaterColourBase',
+	'WaterColourAdd',
+	'FoamColour'
+}
+-- Assign the exml table with its designated meta
+local ECT = { META = {'name', 'Settings'} }
+for _,pwc in ipairs(water_colors) do
+	local argb = { META = {'value', 'GcPlanetWaterColourData.xml'} }
+	for i, col in ipairs(pwc) do
+		argb[#argb+1] = ColorData(Convert2Rgb(col), props[i])
 	end
-	local rgba = [[
-		<Property name="%s" value="Colour.xml">
-			<Property name="R" value="%s"/>
-			<Property name="G" value="%s"/>
-			<Property name="B" value="%s"/>
-			<Property name="A" value="%s"/>
-		</Property>]]
-	local planet_water = '<Property value="GcPlanetWaterColourData.xml">%s</Property>'
-	local props = {
-		'WaterFogColourNear',
-		'WaterFogColourFar',
-		'WaterColourBase',
-		'WaterColourAdd',
-		'FoamColour'
-	}
-	local T = {}
-	local exml = {}
-	for i=0, (#colors_list - 1) do
-		local b5 = i % 5 + 1
-		local c = Convert2Rgba(colors_list[i + 1])
-		table.insert(exml, string.format(rgba, props[b5], c[1], c[2], c[3], c[4] or 1))
-		if b5 == 5 then
-			table.insert(T, string.format(planet_water, table.concat(exml)))
-			exml = {}
-		end
-	end
-	-- new_mbin_wrapper
-	return [[<?xml version="1.0" encoding="utf-8"?>
-		<Data template="GcWaterColourSettingList">
-		<Property name="Settings">
-		]]..table.concat(T)..[[
-		</Property></Data>
-	]]
+	ECT[#ECT+1] = argb
 end
 
--- assert(io.open('e:/_dump/WATERCOLOURS.EXML', 'w')):write(GcWaterColourSetting(water_colors))
+-- dofile('D:/MODZ_stuff/NoMansSky/AMUMss_Scripts/LIB/lua_2_exml.lua')
+-- io.open('e:/_dump/WATERCOLOURS.EXML', 'w'):write(FileWrapping(ECT, 'GcWaterColourSettingList'))
 -- print('saved to _dump')
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '__META water colors.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
-	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
-	ADD_FILES			= {
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
+	ADD_FILES 			= {
 		{
-			FILE_CONTENT		= GcWaterColourSetting(water_colors),
+			FILE_CONTENT		= FileWrapping(ECT, 'GcWaterColourSettingList'),
 			FILE_DESTINATION	= 'METADATA/SIMULATION/SOLARSYSTEM/COLOURS/WATERCOLOURS.EXML'
 		}
 	}

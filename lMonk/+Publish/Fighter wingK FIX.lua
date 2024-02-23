@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Fixes fighter's wingsK missing LOD sections and increases it to to 5 LOD stages
   Fixes the "unusual" decals descriptor choices so all decals show together
 ]]--------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ local function WingK_LodFixes()
 		for _,v in ipairs(vals) do
 			if v[i] then
 				table.insert(T, {
-					SECTION_ACTIVE		= 1,
+					SECTION_ACTIVE		= -1,
 					SPECIAL_KEY_WORDS	= {'Name', (lod..'0'), 'Name', v.atr},
 					VALUE_CHANGE_TABLE 	= { {'Value', v[i]} }
 				})
@@ -48,7 +48,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.fighter wingK FIX.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.10',
+	NMS_VERSION				= '4.52',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -74,7 +74,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'Name', 'WingsK_BLOD0'}
 				},
 				PRECEDING_KEY_WORDS	= 'Attributes',
-				SECTION_ACTIVE		= 1,
+				SECTION_ACTIVE		= -1,
 				ADD 				= [[
 					<Property value="TkSceneNodeAttributeData.xml">
 						<Property name="Name" value="ATTACHMENT"/>
@@ -110,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				PRECEDING_KEY_WORDS = {'TkModelDescriptorList.xml', 'List'},
 				ADD				 	= (
 					function()
-						desclist = [[
+						local desclist = [[
 							<Property value="TkResourceDescriptorList.xml">
 								<Property name="TypeId" value="%s"/>
 								<Property name="Descriptors">
@@ -125,7 +125,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								string.format(desclist, '_LOGOLEFT_', '_LOGORIGHT_ALOD1', '_logoRight_ALOD1')
 								..
 								string.format(desclist, '_LETTERLEFT_', '_LETTERRIGHT_ALOD1', '_LetterRight_ALOD1')
-					end				
+					end
 				)()
 			}
 		}

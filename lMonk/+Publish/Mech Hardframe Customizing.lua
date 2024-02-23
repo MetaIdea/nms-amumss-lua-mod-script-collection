@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   Adds in-game customizing for the hardframe mech body!
   (Customizing is done through the mech's geobay menu)
 
@@ -12,7 +12,7 @@ local proc_texture_files = {
 	{
 	---	mech hardframe
 		label	= 'SENTINELTRIM',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/',
+		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/',
 		nmspath	= 'TEXTURES/COMMON/ROBOTS/',
 		{
 			ly_name	= 'OVERLAY',
@@ -49,7 +49,7 @@ local function GetProcTextures(path, layer)
 		end
 		local con = ''
 		for _,ar in ipairs(arg) do
-			if ar and ar:len() > 0 then
+			if ar and #ar > 0 then
 				con = con..ar..'.'
 			end
 		end
@@ -131,7 +131,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Mech Hardframe Customizing.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= AddProcTexFiles()
 }

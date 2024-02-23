@@ -1,10 +1,10 @@
 --------------------------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Access the upgrade menus at your base/freighter.
   The multitool upgrade and salvage menus from the weapons specialist terminal.
   The ship salavage and upgrade menu from the old monitor station.
 ]]------------------------------------------------------------------------------
-mod_version = '1.8'
+local mod_version = '2.0'
 
 --	replace a boolean with its text equivalent (ignore otherwise)
 --	@param b: any value
@@ -160,7 +160,7 @@ local build_parts = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.ship and multitool upgrade terminals.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.43',
+	NMS_VERSION			= '4.52',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{

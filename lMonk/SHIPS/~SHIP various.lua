@@ -1,176 +1,26 @@
------------------------------------------------------------------
-local desc = [[
-  - dropship: subwing_F dim lights; left subwing_F decal fix;
-   subwing_E delete big decal; hull decals re-aligned
-  - Scientific cockpitA re-center trails.
-   decals placement fixeds on cockpitA, back fins, subwingE
-  - No foggy headlights cone on cockpits
-  - bioship delete slime
-]]---------------------------------------------------------------
+---------------------------------------------------------
+local mod_desc = [[
+  - Infraknife blue projectile
+  - Dark blue instead of purple stealth trail
+  - Replace gold trail with time swirl (for squadrons)
+  - Remove all ships contrails
+  - Remove shuttle fake headlights
+  - Remove orange fake light cones
+  - Remove bioship slime
+  - Remove cockpit eject handle glow
+  - Remove grainy shader from ship's system map
+]]-------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__SHIP various.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.08',
-	MOD_DESCRIPTION			= desc,
+	NMS_VERSION				= '4.52',
+	MOD_BATCHNAME			= '_SHIPS ~@~collection.pak',
+	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {
-	{
-	---	dropship |subwing_F dim lights|
-		MBIN_FILE_SOURCE	= {
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSF/SUBWINGSF_LEFT.SCENE.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSF/SUBWINGSF_RIGHT.SCENE.MBIN',
-		},
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'Glow'},
-				VALUE_CHANGE_TABLE 	= {
-					{'TransY',		0},		-- -0.05168
-					{'ScaleY',		0.42}
-				}
-			},
-			{
-				FOREACH_SKW_GROUP 	= {
-					{'Name', 'pointLight1', 'Name', 'INTENSITY'},
-					{'Name', 'pointLight2', 'Name', 'INTENSITY'}
-				},
-				VALUE_CHANGE_TABLE 	= {
-					{'Value',		26000}
-				}
-			}
-		}
-	},
-	{
-	---	|dropship left subwing_F decal fix|
-		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSF/SUBWINGSF_LEFT.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Rectangle_A'},
-				VALUE_CHANGE_TABLE 	= {
-					{'RotX',		-59.0957},
-					{'RotY',		90}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
-				VALUE_CHANGE_TABLE 	= {
-					{'RotX',		-60.32834},
-					{'RotY',		90}
-				}
-			}
-		}
-	},
-	{
-	---	|Scientific cockpitD re-align trails|
-		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITD/COCKPITD.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				FOREACH_SKW_GROUP 	= {
-					{'Name', 'Trail'},
-					{'Name', 'Trail1'}
-				},
-				VALUE_CHANGE_TABLE 	= {
-					{'TransY',		1.8692},	-- 2.069246
-					{'TransZ',		-2.019},	-- -2.51901
-					{'RotX',		0}			-- 30.782648
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Number_A1'},
-				VALUE_CHANGE_TABLE 	= {
-					{'RotX',		-38.173},
-					{'RotY',		0}
-				}
-			}
-		}
-	},
-	{
-	---	|Scientific cockpitA re-center trails|
-		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITA/COCKPITA.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'Trail'},
-				VALUE_CHANGE_TABLE 	= {
-					{'TransX',		1.055}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'Trail1'},
-				VALUE_CHANGE_TABLE 	= {
-					{'TransX',		-1.055}
-				}
-			}
-		}
-	},
-	{
-	---	|Scientific cockpitA back decals| fix
-		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITA/BACK/COCKPITABACKB.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				FOREACH_SKW_GROUP 	= {
-					{'Name', '_logo1_A'},
-					{'Name', '_logo2_A'}
-				},
-				VALUE_CHANGE_TABLE 	= {
-					{'TransY',		3.26},	-- 2.65596
-					{'TransZ',		-4.72},	-- -3.72796
-				}
-			}
-		}
-	},
-	{
-	---	|Scientific subwing_E logo| fix
-		MBIN_FILE_SOURCE	= {
-			'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSE/SUBWINGE_L.SCENE.MBIN',
-			'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSE/SUBWINGE_R.SCENE.MBIN',
-		},
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_logo_A1'},
-				VALUE_CHANGE_TABLE 	= {
-					{'ScaleZ', 		0.6}
-				}
-			}
-		}
-	},
-	{
-	---	|Scientific tail wings decals| fix
-		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGILEFT.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				FOREACH_SKW_GROUP 	= {
-					{'Name', '_logo1_A1'},
-					{'Name', '_logo2_A2'}
-				},
-				VALUE_CHANGE_TABLE 	= {
-					{'RotX',		-90},	-- 90
-					{'RotY',		-90},	-- 0
-					{'TransX',		1.1},	-- 0.9721
-					{'ScaleX', 		0.56},
-					{'ScaleY', 		0.56}
-				}
-			}
-		}
-	},
-	{
-		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGIRIGHT.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				FOREACH_SKW_GROUP 	= {
-					{'Name', '_logo1_A1'},
-					{'Name', '_logo2_A2'}
-				},
-				VALUE_CHANGE_TABLE 	= {
-					{'RotY',		-90},
-					{'ScaleX', 		0.56},
-					{'ScaleY', 		0.56}
-				}
-			}
-		}
-	},
-	{
-	---	|infraknife blue shot|
+	{--	|infraknife blue shot|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/PROJECTILES/SHIP_MINIGUN/SHIPMINIGUNPROJECTILEGRADIENT.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -180,8 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{
-	---	replace purple with |dark blue trail|
+	{--	replace purple with |dark blue trail|
 		MBIN_FILE_SOURCE	= 'MODELS/EFFECTS/TRAILS/SPACECRAFT/HOT/HOTDARKTRAIL.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -191,36 +40,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{
-	---	|delete contrails|
-		MBIN_FILE_SOURCE	= 'MODELS/EFFECTS/TRAILS/SPACECRAFT/CONTRAIL/CONTRAILTRAIL.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				PRECEDING_KEY_WORDS	= 'Children',
-				REMOVE				= 'Section'
-			}
-		}
-	},
-	{
-		MBIN_FILE_SOURCE	= 'MODELS/EFFECTS/TRAILS/SPACECRAFT/CONTRAIL/CONTRAILTRAIL.TRAIL.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				VALUE_CHANGE_TABLE 	= {
-					{'Width',				0},
-					{'Points',				0},
-					{'MaxPointsPerFrame',	0},
-					{'DistanceThreshold',	0},
-					{'PointLife',			0}
-				}
-			}
-		}
-	},
-	{
-	---	|no foggy headlights| cone from cockpits
+	{--	|swirl instead of gold| trail
 		MBIN_FILE_SOURCE	= {
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA.SCENE.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITB.SCENE.MBIN',
-			'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/ACCESSORIES/LAMP.SCENE.MBIN',
+			{
+				'MODELS/EFFECTS/TRAILS/SPACECRAFT/HOT/TIMELOOPTRAIL.SCENE.MBIN',
+				'MODELS/EFFECTS/TRAILS/SPACECRAFT/HOT/HOTGOLDTRAIL.SCENE.MBIN',
+				'REMOVE'
+			}
+		}
+	},
+	{--	|no foggy headlights| cone from cockpits
+		MBIN_FILE_SOURCE	= {
 			'MODELS/COMMON/SPACECRAFT/SHUTTLE/CANOPY/CANOPYA.SCENE.MBIN',
 			'MODELS/COMMON/SPACECRAFT/SHUTTLE/CANOPY/CANOPYB.SCENE.MBIN',
 		},
@@ -232,15 +62,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{
-	---	|ship texture removal|
+	{--	|ship texture removal|
 		MBIN_FILE_SOURCE	= {
 		--- cockpits: orange fake-light cone
-			'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_E/COCKPIT_E/HQWHITELIGHT_MAT1.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_B/COCKPITB/HQWHITELIGHT_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_D/COCKPITD/HQWHITELIGHT_MAT1.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSEC/COCKPITANOSEC/HQWHITELIGHT_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSEE/COCKPITANOSEE/HQWHITELIGHT_MAT1.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/SHUTTLE/ACCESSORIES/LANDINGGEAR_BASE/HQWHITELIGHT_MAT3.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/SHUTTLE/CANOPY/CANOPYA/HQWHITELIGHT_MAT3.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/SHUTTLE/CANOPY/CANOPYB/HQWHITELIGHT_MAT2.MATERIAL.MBIN',
@@ -251,6 +75,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		--- bioship: slime
 			'MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC/MEMBRANE_MAT.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/INTERIOR/NOSTRILBURSTS/MEMBRANE_MAT1.MATERIAL.MBIN',
+		---	cockpit eject handle no glow
+			'MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/INTERIOR/CANOPYA_INTERIOR/EJECTVFX3MAT.MATERIAL.MBIN',
+			'MODELS/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/EJECTHANDLEL/EJECTVFX3MAT.MATERIAL.MBIN'
 		},
 		EXML_CHANGE_TABLE	= {
 			{
@@ -259,107 +86,54 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{
-	---	|dropship parts bluewhite| glow
-		MBIN_FILE_SOURCE	= {
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSC/SUBWINGSC_LEFT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSC/SUBWINGSC_RIGHT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSD/SUBWINGSD_LEFT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSD/SUBWINGSD_RIGHT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSE/SUBWINGSE_LEFT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSE/SUBWINGSE_LEFT/GLOW_MAT1.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSE/SUBWINGSE_RIGHT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSE/SUBWINGSE_RIGHT/GLOW_MAT1.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSF/SUBWINGSF_LEFT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSF/SUBWINGSF_LEFT/GLOW_MAT1.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSF/SUBWINGSF_RIGHT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSF/SUBWINGSF_RIGHT/GLOW_MAT1.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSG/SUBWINGSG_LEFT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSG/SUBWINGSG_RIGHT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSH/SUBWINGSH_LEFT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSH/SUBWINGSH_RIGHT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSI/SUBWINGSI_LEFT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSI/SUBWINGSI_RIGHT/GLOW_MAT.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGILEFT/SUBMARINEPRES_LIGHTS_TEST3.MATERIAL.MBIN',
-			'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGIRIGHT/SUBMARINEPRES2_LIGHTS_TEST3.MATERIAL.MBIN',
-
-		},
+	{--	|clean system map|
+		MBIN_FILE_SOURCE	= 'MODELS/HUD/SPACEMAPHORIZON/HORZ_MAT.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', 'gMaterialColourVec4'},
 				VALUE_CHANGE_TABLE 	= {
-					{'x',			0.46},
-					{'y',			0.62},
-					{'z',			0.76}
-				}
-			}
-		}
-	},
-	{
-	---	dropship |subwing_E_L letter| decal
-		MBIN_FILE_SOURCE	= {
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSE/SUBWINGSE_LEFT.SCENE.MBIN',
-		},
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
-				VALUE_CHANGE_TABLE 	= {
-					{'RotX',		-42.487},	-- 42.486935
-					{'RotY',		90},		-- -90
-				}
-			}
-		}
-	},
-	{
-	---	dropship |subwing_E_R letter| decal
-		MBIN_FILE_SOURCE	= {
-			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSE/SUBWINGSE_RIGHT.SCENE.MBIN',
-		},
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
-				VALUE_CHANGE_TABLE 	= {
-					{'RotX',		42.487},	-- -42.486935
-					{'RotY',		-90},		-- 90
-				}
-			}
-		}
-	},
-	{
-		---	|dropship hull decals| fix
-		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/DROPSHIPS/HULL/HULLA.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_SideL_A1'}, -- R horiz
-				VALUE_CHANGE_TABLE 	= {
-					{'TransX',		0},		-- 1.5 (+ to left)
-					{'TransZ',		0.35},	-- 0.219
-					{'RotX',		180},	-- 0
-					{'RotY',		270},	-- -77.34
-					{'ScaleX',		1.9},	-- 2.107
-					{'ScaleY',		1.0},	-- 1.054
-					{'ScaleZ',		3.79},	-- 0.638
+					{'CastShadow',	false}
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'Name', '_SideL_A'}, -- L diagonal
+				SPECIAL_KEY_WORDS	= {'MaterialFlag', '_F48_WARPED_DIFFUSE_LIGHTING'},
 				VALUE_CHANGE_TABLE 	= {
-					{'TransX', 		0},		-- 1.36
-					{'RotY',		90},	-- -90
-					{'RotZ',		0},		-- -28.073
-					{'ScaleX',		2.84},	-- 3.766
-					{'ScaleY',		1.4},	-- 1.883
-					{'ScaleZ',		3.79},	-- 1.14
+					{'MaterialFlag', '_F10_NORECEIVESHADOW'}
 				}
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
-					{'Name', '_SideL_A3'},	-- L horiz
-					{'Name', '_SideR_A'},	-- R diagonal
+				SPECIAL_KEY_WORDS 	= {
+					{'MaterialFlag', '_F49_DISABLE_AMBIENT'},
+					{'MaterialFlag', '_F50_DISABLE_POSTPROCESS'},
+					{'MaterialFlag', '_F60_ACUTE_ANGLE_FADE'},
+					{'MaterialFlag', '_F29_VBCOLOUR'},
 				},
-				REMOVE				= 'Section'
+				REMOVE 				= 'Section'
+			},
+			{
+				PRECEDING_KEY_WORDS = {'Uniforms'},
+				ADD					= [[
+					<Property value="TkMaterialUniform.xml">
+						<Property name="Name" value="gCustomParams01Vec4"/>
+						<Property name="Values" value="Vector4f.xml">
+							<Property name="x" value="1"/>
+						</Property>
+					</Property>
+				]]
 			}
 		}
-	}
+	},
+	-- {--	|bioship interior| remove canopy top; canopy membrane
+		-- MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/INTERIOR/CANOPYA_INTERIOR.SCENE.MBIN',
+		-- EXML_CHANGE_TABLE	= {
+			-- {
+				-- SPECIAL_KEY_WORDS 	= {
+					-- {'Name', 'LeftCeilingFront'},
+					-- {'Name', 'RightCeilingFront'},
+					-- {'Name', 'Shadowmesh'},
+					-- {'Name', 'Membrane'}
+				-- },
+				-- REMOVE 				= 'Section'
+			-- }
+		-- }
+	-- },
 }}}}

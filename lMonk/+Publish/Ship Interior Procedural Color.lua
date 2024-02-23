@@ -1,136 +1,67 @@
 ---------------------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   Restores procedural colors for the cockpit interior plastic parts
   This affects all ship types except the living ship
 ]]-------------------------------------------------------------------
 
-local proc_texture_files = {
-	{
-	--- ship interior: plastic
-		label	= 'PLASTICGRAIN',
-		nmspath	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/',
-		{
-			ly_name	= 'BASE',
-			palette = 'Paint',
-			color	= 'Alternative3',
-			diff	= true
-		}
-	},
-	{
-	--- ship interior: plastic alt1
-		label	= 'PLASTICGRAINALT1',
-		nmspath	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/',
-		{
-			ly_name	= 'BASE',
-			palette = 'Paint',
-			color	= 'Primary',
-			diff	= true
-		}
-	},
-	{
-	--- ship interior: plastic alt2
-		label	= 'PLASTICGRAINALT2',
-		nmspath	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/',
-		{
-			ly_name	= 'BASE',
-			palette = 'Paint',
-			color	= 'Primary',
-			diff	= true
-		}
-	},
-}
-
-local function GetProcTextures(path, layer)
-	-- concat table with [.] separator
-	local function TexPath(arg)
-		if not arg.b then
-			return ''
-		end
-		local con = ''
-		for _,ar in ipairs(arg) do
-			if ar and ar:len() > 0 then
-				con = con..ar..'.'
-			end
-		end
-		return con..'DDS'
-	end
-	local tk_proc_tex = [[
-		<Property value="TkProceduralTexture.xml">
-			<Property name="Name" value="%s"/>
-			<Property name="Palette" value="TkPaletteTexture.xml">
-				<Property name="Palette" value="%s"/>
-				<Property name="ColourAlt" value="%s"/>
-			</Property>
-			<Property name="Probability" value="%s"/>
-			<Property name="Diffuse" value="%s"/>
-			<Property name="Normal" value="%s"/>
-			<Property name="Mask" value="%s"/>
-		</Property>]]
-	local exml = ''
-	-- handles 3 options: names list, {name, probability} list, or nothing
-	-- if no list found, name='' & probability=1
-	for _,name_prob in ipairs(layer.tx_name and layer.tx_name or {{'', 1}}) do
-		if type(name_prob) == 'string' then
-			name_prob = {name_prob, 1}
-		end
-		exml = exml..string.format(
-			tk_proc_tex,
-			name_prob[1],
-			layer.palette or 'Rock',
-			layer.color or 'None',
-			name_prob[2],
-			TexPath({b=layer.diff, path, layer.ly_name, name_prob[1]}),
-			TexPath({b=layer.normal, path, layer.ly_name, 'NORMAL'}),
-			TexPath({b=layer.masks, path, layer.ly_name, 'MASKS'})
-		)
-	end
-	return exml
-end
-
-local function BuildProcTexListMbin(tex_layer)
-	local T = {}
-	-- build proc-tex layers
-	for _,ly in ipairs(tex_layer) do
-		table.insert( T, [[
-			<Property value="TkProceduralTextureLayer.xml">
-				<Property name="Name" value="]]..(ly.ly_name or '')..[["/>
-				<Property name="Probability" value="]]..(tex_layer.ly_prob or 1)..[["/>
-				<Property name="Group" value="]]..(tex_layer.group or '')..[["/>
-				<Property name="Textures">]]..
-				GetProcTextures(tex_layer.nmspath..tex_layer.label, ly)..
-			[[</Property></Property>]]
-		)
-	end
-	-- silly fixed length array
-	for _=1, (8 - #tex_layer) do
-		table.insert(T, '<Property value="TkProceduralTextureLayer.xml"/>')
-	end
+local function SingleLayerTextureMbin(diffuse, palette, altcolor)
 	return [[<?xml version="1.0" encoding="utf-8"?>
-		<Data template="TkProceduralTextureList">
-		<Property name="Layers">]]..table.concat(T)..[[</Property></Data>]]
-end
-
-local function AddProcTexFiles()
-	local T = {}
-	for _,ptf in ipairs(proc_texture_files) do
-		table.insert(T, {
-			FILE_CONTENT		= BuildProcTexListMbin(ptf),
-			FILE_DESTINATION	= ptf.nmspath..ptf.label..'.TEXTURE.EXML'
-		})
-		if ptf.source then
-			table.insert(T, {
-				EXTERNAL_FILE_SOURCE= ptf.source..ptf.label..'*.DDS',
-				FILE_DESTINATION	= ptf.nmspath..'*.DDS'
-			})
-		end
-	end
-	return T
+	<Data template="TkProceduralTextureList">
+		<Property name="Layers">
+			<Property value="TkProceduralTextureLayer.xml">
+				<Property name="Name" value="BASE"/>
+				<Property name="Probability" value="1"/>
+				<Property name="Textures">
+					<Property value="TkProceduralTexture.xml">
+						<Property name="Palette" value="TkPaletteTexture.xml">
+							<Property name="Palette" value="]]..palette..[["/>
+							<Property name="ColourAlt" value="]]..altcolor..[["/>
+						</Property>
+						<Property name="Probability" value="1"/>
+						<Property name="Diffuse" value="]]..diffuse..[["/>
+					</Property>
+				</Property>
+			</Property>
+			<Property value="TkProceduralTextureLayer.xml"/>
+			<Property value="TkProceduralTextureLayer.xml"/>
+			<Property value="TkProceduralTextureLayer.xml"/>
+			<Property value="TkProceduralTextureLayer.xml"/>
+			<Property value="TkProceduralTextureLayer.xml"/>
+			<Property value="TkProceduralTextureLayer.xml"/>
+			<Property value="TkProceduralTextureLayer.xml"/>
+		</Property>
+	</Data>]]
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Ship Interior Procedural Color.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
-	ADD_FILES			= AddProcTexFiles()
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
+	ADD_FILES	= {
+		{
+			FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAIN.TEXTURE.EXML',
+			FILE_CONTENT	 = SingleLayerTextureMbin(
+				'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAIN.BASE.DDS',
+				'Paint',
+				'Alternative3'
+			)
+		},
+		{
+			FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT1.TEXTURE.EXML',
+			FILE_CONTENT	 = SingleLayerTextureMbin(
+				'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT1.BASE.DDS',
+				'Paint',
+				'Primary'
+			)
+		},
+		{
+			FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT2.TEXTURE.EXML',
+			FILE_CONTENT	 = SingleLayerTextureMbin(
+				'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT2.BASE.DDS',
+				'Paint',
+				'Primary'
+			)
+		}
+	}
 }

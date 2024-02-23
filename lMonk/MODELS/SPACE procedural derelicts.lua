@@ -1,178 +1,176 @@
----------------------------------------------------------------------
-local desc = [[
-  Adds procedural parts, more wrecks and a few space-encounter items
-  to the derelict freighter encouter mission.
-  * original idea by Redmas
-]]-------------------------------------------------------------------
+---------------------------------------------------------------------------
+dofile('LIB/lua_2_exml.lua')
+dofile('LIB/scene_tools.lua')
+---------------------------------------------------------------------------
+local mod_desc = [[
+  Adds procedural parts, more wrecks and a few wreck -and space-encounter
+  items to the derelict freighter encounter mission.
+  Adds a slow tumble to floating items to make the scene more dynamic
+  * original mod by Redmas
+]]-------------------------------------------------------------------------
 
 local assets = {
 	{
-		name	= '_Acc_A',
-		form	= {-100, 770, 20, 165, 130, -10, 4, 4, 4},
-		path	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER.SCENE.MBIN'
-	},{
-		name	= '_Acc_B',
-		form	= {-700, 1200, 220, 170, 40, 60, 4, 4, 4},
-		path	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI.SCENE.MBIN'
-	},{
-		name	= '_Acc_C',
-		form	= {900, -780, 132, 180, 0, 90, 4, 4, 4},
-		path	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI2.SCENE.MBIN'
-	},{
-		name	= '_Acc_D',
-		form	= {700, -840, 132, 90, 90, 0, 4, 4, 4},
-		path	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI3.SCENE.MBIN'
-	},{
-		name	= '_Acc_E',
-		form	= {-700, 1100, 220, 100, 40, 10, 4, 4, 4},
-		path	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI.SCENE.MBIN'
-	},{
-		name	= '_Acc_F',
-		form	= {-100, 770, 20, 165, 130, -10, 4, 4, 4},
-		path	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI3.SCENE.MBIN',
-		isnew	= true
-	},{
-		name	= '_Acc_G',
-		form	= {-1100, 660, 140, 10, 30, 210, 4, 4, 4},
-		path	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI2.SCENE.MBIN',
-		isnew	= true
-	},{
-		name	= '_Front_A',
-		form	= {410, 475, 532, -20, 80, 60, 2.4, 2.4, 2.4},
-		path	= 'MODELS/SPACE/POI/WARRIORSILOS.SCENE.MBIN',
-		hasloc	= true
-	},{
-		name	= '_Front_B',
-		form	= {-113, 191, -83, 0, 0, 0, 1, 1, 1},
-		path	= 'MODELS/SPACE/POI/WEIRDOBJECT2.SCENE.MBIN',
-		hasloc	= true
-	},{
-		name	= '_Front_C',
-		form	= {-110, 185, -87, 0, 0, 0, 1.4, 1.4, 1.4},
-		path	= 'MODELS/SPACE/POI/SPACECLOCK.SCENE.MBIN',
-		hasloc	= true
-	},{
-		name	= '_Front_D',
-		form	= {-110, 185, -87, 0, 0, 0, 1.4, 1.4, 1.4},
-		path	= 'MODELS/SPACE/POI/SPACEGYROSCOPE.SCENE.MBIN',
-		hasloc	= true
-	},{
-		name	= '_Front_E',
-		form	= {810, 845, 832, -20, 80, 60, 1.2, 1.2, 1.2},
-		path	= 'MODELS/SPACE/POI/ASTEROID_BEACON.SCENE.MBIN',
-		hasloc	= true
-	},{
-		name	= '_Front_F',
-		form	= {-510, 555, 500, 330, -25, -55, 1.6, 1.6, 1.6},
-		path	= 'MODELS/SPACE/POI/GATE_POI.SCENE.MBIN',
-		hasloc	= true
-	},{
-		name	= '_AccSide_A',
-		form	= {410, 375, -800, 120, 210, 190, 0.6, 0.6, 0.6},
-		path	= 'MODELS/SPACE/POI/PILLARPOI.SCENE.MBIN',
-		hasloc	= true
+		name = '_Derelict_',
+		node = true,
+		{
+			form	= {-1000, 900, 200, 30, 20, 100, 4, 4, 4},
+			model	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER.SCENE.MBIN'
+		},
+		{
+			form	= {-1200, 1300, 400, 10, -140, 240, 4, 4, 4},
+			model	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI.SCENE.MBIN'
+		},
+		{
+			form	= {1200, -1000, 300, 130, 90, 100, 4, 4, 4},
+			model	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI2.SCENE.MBIN'
+		},
+		{
+			form	= {1000, 1000, 1200, 20, -150, 180, 4, 4, 4},
+			model	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI3.SCENE.MBIN'
+		},
+		{
+			form	= {-1100, 1300, 400, 210, 110, 170, 4, 4, 4},
+			model	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI.SCENE.MBIN'
+		},
+		{
+			form	= {-1200, 800, -1100, -20, 30, -150, 4, 4, 4},
+			model	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI2.SCENE.MBIN'
+		},
+		{
+			form	= {-1100, 1400, -100, 15, 310, 165, 4, 4, 4},
+			model	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI3.SCENE.MBIN'
+		}
+	},
+	{
+		name = '_Anomal_F_',
+		node = true,
+		{
+			form	= {410, 475, 532, -20, 80, 60, 2.4, 2.4, 2.4},
+			model	= 'MODELS/SPACE/POI/WARRIORSILOS.SCENE.MBIN'
+		},
+		{
+			form	= {-114.5, 195, -80, 16, 16, 16, 1, 1, 1},
+			model	= 'MODELS/SPACE/POI/WEIRDOBJECT2.SCENE.MBIN'
+		},
+		{
+			form	= {-114.5, 185, -80, 16, 16, 16, 1.4, 1.4, 1.4},
+			model	= 'MODELS/SPACE/POI/SPACEGYROSCOPE.SCENE.MBIN'
+		},
+		{
+			form	= {810, 745, 832, -20, 80, 60, 1, 1, 1},
+			model	= 'MODELS/SPACE/POI/ASTEROID_BEACON.SCENE.MBIN'
+		},
+		{
+			form	= {510, 585, 500, 330, 25, 55, 1, 1, 1},
+			model	= 'MODELS/SPACE/POI/GATE_POI.SCENE.MBIN'
+		},
+		{
+			form	= {32, 120, -380, 16, 16, 16, 1.4, 1.4, 1.4},
+			model	= 'MODELS/SPACE/POI/MEMORYLIFEBOAT.SCENE.MBIN'
+		}
+	},
+	{
+		name = '_Anomal_A_',
+		node = true,
+		{
+			form	= {410, 370, -800, 120, 210, 190, 0.6, 0.6, 0.6},
+			model	= 'MODELS/SPACE/POI/PILLARPOI.SCENE.MBIN'
+		},
+		{
+			form	= {420, 385, -720, 120, 210, 190, 2, 2, 2},
+			model	= 'MODELS/SPACE/POI/SPACECLOCK.SCENE.MBIN'
+		},
+		{
+			form	= {360, 375, -740, 120, 210, 190, 1, 1, 1},
+			model	= 'MODELS/SPACE/POI/8PRONGEDSPINNER.SCENE.MBIN'
+		},
+		{
+			form	= {-320, 246, -700, 120, 210, 190, 2, 2, 2},
+			model	= 'MODELS/SPACE/POI/ATLASBEACON.SCENE.MBIN'
+		}
+	},
+	{
+		-- add descriptor for existing nodes (relies on array length)
+		name = '_Front_', 0, 1, 0, 0, 1, 1
+	},
+	{
+		-- add descriptor for existing nodes
+		name = '_AccSide_', 1, 0
 	}
 }
 
-local function AddDescriptors()
-	local descriptor = [[
-		<Property value="TkResourceDescriptorData.xml">
-			<Property name="Id" value="%s"/>
-			<Property name="Name" value="%s"/>
-		</Property>]]
+local function AddSceneNodes()
 	local T = {}
-	for _,scene in pairs(assets) do
-		if scene.isnew then
-			table.insert(T, {
-				SPECIAL_KEY_WORDS	= {'TypeId', scene.name:sub(1, scene.name:len()-1):upper()},
-				PRECEDING_KEY_WORDS = 'Descriptors',
-				ADD 				= string.format(
-					descriptor,
-					scene.name:upper(),
-					scene.name
+	for _, asset in ipairs(assets) do
+		if asset.node then
+			for i, scn in ipairs(asset) do
+				T[#T+1] = ScNode(
+					asset.name..string.char(64 + i), 'REFERENCE', {
+						ScTransform(scn.form),
+						ScAttributes({
+							{'SCENEGRAPH', scn.model},
+						--	add a spin entity to drifting wrecks
+							{'ATTACHMENT', 'MODELS/COMMON/SHARED/ENTITIES/SPIN.ENTITY.MBIN'}
+						})
+					}
 				)
-			})
+			end
 		end
+	end
+	return ToExml(T)
+end
+
+local function GenerateDescriptor()
+	local T = {
+		META = {'template', 'TkModelDescriptorList'},
+		List = {META = {'name', 'List'}}
+	}
+	for _,asset in ipairs(assets) do
+		local tmp = {
+			META		= {'value', 'TkResourceDescriptorList.xml'},
+			TypeId		= asset.name:upper(),
+			Descriptors	= {META = {'name', 'Descriptors'}}
+		}
+		for i,_ in ipairs(asset) do
+			tmp.Descriptors[#tmp.Descriptors+1] = {
+				META	= {'value', 'TkResourceDescriptorData.xml'},
+				Id		= (asset.name..string.char(64 + i)):upper(),
+				Name	= asset.name..string.char(64 + i),
+			}
+		end
+		T.List[#T.List+1] = tmp
 	end
 	return T
 end
 
-local function AddSceneNodes()
-	local scene_node = [[
-		<Property value="TkSceneNodeData.xml">
-			<Property name="Name" value="%s"/>
-			<Property name="Type" value="%s"/>
-			%s
-		</Property>]]
-	local transform = [[
-		<Property name="Transform" value="TkTransformData.xml">
-			<Property name="TransX" value="%s"/>
-			<Property name="TransY" value="%s"/>
-			<Property name="TransZ" value="%s"/>
-			<Property name="RotX" value="%s"/>
-			<Property name="RotY" value="%s"/>
-			<Property name="RotZ" value="%s"/>
-			<Property name="ScaleX" value="%s"/>
-			<Property name="ScaleY" value="%s"/>
-			<Property name="ScaleZ" value="%s"/>
-		</Property>]]
-	local attributes = [[
-		<Property name="Attributes">
-			<Property value="TkSceneNodeAttributeData.xml">
-				<Property name="Name" value="SCENEGRAPH"/>
-				<Property name="Value" value="%s"/>
-			</Property>
-		</Property>]]
-	local exml = {}
-	for _,scene in pairs(assets) do
-		if not scene.hasloc then
-			table.insert(exml,
-				string.format(scene_node, scene.name, 'LOCATOR', '')
-			)
-		end
-		table.insert(exml,
-			string.format(scene_node,
-				scene.name,
-				'REFERENCE',
-				string.format(transform,
-					scene.form[1],
-					scene.form[2],
-					scene.form[3],
-					scene.form[4],
-					scene.form[5],
-					scene.form[6],
-					scene.form[7],
-					scene.form[8],
-					scene.form[9]
-				)
-				..
-				string.format(attributes, scene.path)
-		))
-	end
-	return table.concat(exml)
-end
+local spin_entity = {
+	META = {'template', 'TkAttachmentData'},
+	Components = {
+		META = {'name', 'Components'},
+		{
+			META  = {'value', 'TkRotationComponentData.xml'},
+			Speed = 0.001,
+			Axis  = {
+				META = {'Axis', 'Vector3f.xml'},
+				x = 1,
+				y = -1,
+				z = 1
+			},
+			AlwaysUpdate = true,
+			SyncGroup    = -1
+		}
+	}
+}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL procedural derelicts.pak',
 	LUA_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
-	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
+	NMS_VERSION			= '4.52',
+	AMUMSS_SUPPRESS_MSG	= 'MIXED_TABLE',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
-	{
-		MBIN_FILE_SOURCE	= {
-			{
-				'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_SPACEPOI.DESCRIPTOR.MBIN',
-				'MODELS/SPACE/POI/DUNGEON.DESCRIPTOR.MBIN',
-				'REMOVE'
-			}
-		}
-	},
-	{
-		MBIN_FILE_SOURCE	= 'MODELS/SPACE/POI/DUNGEON.DESCRIPTOR.MBIN',
-		EXML_CHANGE_TABLE	= AddDescriptors()
-	},
 	{
 		MBIN_FILE_SOURCE	= 'MODELS/SPACE/POI/DUNGEON.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
@@ -182,25 +180,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				ADD 				= AddSceneNodes()
 			}
 		}
-	},
-	{
-	---	|space clock| dimmer light
-		MBIN_FILE_SOURCE	= 'MODELS/SPACE/POI/SPACECLOCK.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				REPLACE_TYPE 		= 'All',
-				SPECIAL_KEY_WORDS	= {'Name', 'FALLOFF'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Value',		'quadrtic'}
-				}
-			},
-			{
-				REPLACE_TYPE 		= 'All',
-				SPECIAL_KEY_WORDS	= {'Name', 'FALLOFF_RATE'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Value',		1.5}
-				}
-			},
+	}
+}}},
+	ADD_FILES	= {
+		{
+			FILE_DESTINATION = 'MODELS/SPACE/POI/DUNGEON.DESCRIPTOR.EXML',
+			FILE_CONTENT	 = FileWrapping(GenerateDescriptor())
+		},
+		{
+			FILE_DESTINATION = 'MODELS/COMMON/SHARED/ENTITIES/SPIN001.ENTITY.EXML',
+			FILE_CONTENT	 = FileWrapping(spin_entity)
 		}
 	}
-}}}}
+}

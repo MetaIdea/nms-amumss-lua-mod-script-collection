@@ -1,5 +1,5 @@
 ------------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   Add space in the menu's Units display for larger numbers
   Remove cinematic black bars
   smaller item slot amount font
@@ -10,17 +10,41 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__UI fonts units & no bars.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 4.07,
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.52',
+	MOD_BATCHNAME		= '_UI ~@~collection.pak',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
-	{
-	---	|smaller item slot font|
+	{--	|ship discovery screen| fix
+		MBIN_FILE_SOURCE  	= 'UI/HUD/SHIP/SIDESCREENSOLARSYSTEM.MBIN',
+		EXML_CHANGE_TABLE 	=
+		{
+			{
+				SPECIAL_KEY_WORDS	= {'ID','PLANET'},
+				VALUE_CHANGE_TABLE	= {
+					{'PositionX',	40}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID','DISCOVER'},
+				VALUE_CHANGE_TABLE	= {
+					{'PositionY',	131}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID','DISTANCE'},
+				VALUE_CHANGE_TABLE	= {
+					{'PositionY',	80}
+				}
+			}
+		}
+	},
+	{--	|smaller item slot font|
 		MBIN_FILE_SOURCE	= 'UI/COMPONENTS/INVENTORY/SQU_SLOT_ITEM.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				REPLACE_TYPE 		= 'All',
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {
 					{'ID',	'TEXT'},
 					{'ID',	'TEXT_LONG'},
 					{'ID',	'TEXTLOW'},
@@ -31,20 +55,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'PositionY',			84},	-- 82
 					{'Height',				24},	-- 32
 					{'DropShadowOffset',	2}, 	-- 3
-					{'OutlineSize',			2}, 	-- 4
+					{'OutlineSize',			2} 		-- 4
 				}
 			}
 		}
 	},
-	{
-	---	|smaller dialog font|
+	{--	|smaller dialog font|
 		MBIN_FILE_SOURCE	= 'UI/INTERACTIONDIALOGPAGE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				REPLACE_TYPE 		= 'All',
 				VALUE_MATCH			= 35,
 				VALUE_CHANGE_TABLE 	= {
-					{'FontHeight',	30}
+					{'FontHeight',	28} -- 30
 				}
 			},
 			{
@@ -56,20 +79,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{
-	---	|smaller dialog options font|
+	{--	|smaller dialog options font|
 		MBIN_FILE_SOURCE	= 'UI/COMPONENTS/RESPONDBUTTONSCROLL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				REPLACE_TYPE 		= 'All',
 				VALUE_CHANGE_TABLE 	= {
-					{'FontHeight',	30} -- 36
+					{'FontHeight',	26} -- 36 >> 30
 				}
 			}
 		}
 	},
-	{
-	---	|more space for units|
+	{--	|more space for units|
 		MBIN_FILE_SOURCE	= 'UI/COMPONENTS/USERBAR.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -100,8 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{
-	---	|no black bars|
+	{--	|no black bars|
 		MBIN_FILE_SOURCE	= {
 			'UI/HUD/HUDBARS.MBIN',
 			'UI/COMPONENTS/INTERACTION/CINEMATICBARS.MBIN'
@@ -118,11 +138,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
 	ADD_FILES	= {
 		{
-			EXTERNAL_FILE_SOURCE= 'E:/MODZ_stuff/NoMansSky/Sources/+Fonts/Ubuntu-Regular.ttf',
+			EXTERNAL_FILE_SOURCE= 'D:/MODZ_stuff/NoMansSky/Sources/+Fonts/Ubuntu-Regular.ttf',
 			FILE_DESTINATION	= 'UI/GAMEFONT.TTF'
 		},
 		-- {
-			-- EXTERNAL_FILE_SOURCE= 'E:/MODZ_stuff/NoMansSky/Sources/+Fonts/OpenSans_SemiCondensed-Regular.ttf',
+			-- EXTERNAL_FILE_SOURCE= 'D:/MODZ_stuff/NoMansSky/Sources/+Fonts/OpenSans_SemiCondensed-Regular.ttf',
 			-- FILE_DESTINATION	= 'UI/GAMEFONT2.TTF'
 		-- }
 	}

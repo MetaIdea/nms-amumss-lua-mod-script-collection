@@ -1,5 +1,5 @@
 ------------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   Faster clicks and keys presses; Reduces cursor size
   Minor tweaks to menu vehicle/tool/freighter model angles
 ]]----------------------------------------------------------
@@ -7,8 +7,8 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__GC UI.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.08',
-	MOD_DESCRIPTION			= desc,
+	NMS_VERSION				= '4.52',
+	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {
@@ -16,49 +16,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'GCUIGLOBALS.GLOBAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				MATH_OPERATION 		= '+',
 				VALUE_CHANGE_TABLE 	= {
-					{'StackSizeRateChangeRate',					0.75},-- 1.25
-					{'StackSizeChangeMinRate',					-1},	-- 2
-					{'StackSizeChangeMaxRate',					140},	-- 60
-					{'MilestoneStingDisplayTime',				-4.5},	-- 6
-					{'StageStingDisplayTime',					-4.5},	-- 6
-					{'WantedDetectMinTimeout',					-2},	-- 5
-					{'TakeoffFuelMessageTime',					-3.5},	-- 5
-					{'RefinerPadStartTime',						-0.75},	-- 1
-					{'HUDMarkerDistanceOrTimeDistance',			31000},	-- 1250
-					{'FreighterLeaderIconDistance',				-3000},	-- 10000
-					{'HUDDisplayTime',							-2},	-- 6
-					{'NotificationsResourceExtractHintCount',	-1000},	-- 1500
-					{'NotificationStaminaHintDistanceWalked',	-8000},	-- 10000
-					{'NotificationScanTime',					-300},	-- 600
-					{'NotificationScanTimeCutoff',				-14000},-- 20000
-					{'NotificationUrgentMessageTime',			-10},	-- 22
-					{'NotificationMissionHintTime',				-10},	-- 21
-					{'NotificationMissionHintTimeCritical',		-24},	-- 60
-					{'NotificationMissionHintTimeSecondary',	-8},	-- 15
-					{'NotificationMinVisibleTime',				-2.5},	-- 3
-					{'MessageNotificationTime',					-10}, 	-- 12	??
-					{'FrontendConfirmTimeMouseMultiplier',		5.5},	-- 0.5
-					{'FrontendConfirmTimeFast',					-0.3},	-- 0.35
-					{'FrontendConfirmTime',						-0.6},	-- 0.7
-					{'FrontendConfirmTimeSlow',					-0.4},	-- 1.6
-					{'FrontendCursorSize',						-14},	-- 24
-					{'FrontendCursorWidth',						-5}, 	-- 9
-					{'DiscoverPlanetTotalTime',					-6}, 	-- 10
-					{'DiscoverPlanetMessageWait',				-1}, 	-- 1
-					{'DiscoverPlanetMessageTime',				-5}, 	-- 7
-					{'TextChatMaxDisplayTime',					-45},	-- 60
-					{'TextChatStayBigAfterTextInput',			-10}, 	-- 15
-				}
-			},
-			{
-				VALUE_CHANGE_TABLE 	= {
-					{'HideExtremePlanetNotifications',			true},
-					{'ShipOverheatSwitchMessageWait',			-1},	-- 0.9
-					{'ShipOverheatSwitchMessageTime',			-1},	-- 1.6
-					{'TargetParallaxMouseMultiplier',			0}, 	-- 0.36
-					{'TargetParallaxMaintenancePageMultiplier',	0}, 	-- 0.1
+					{'MilestoneStingDisplayTime',				1.5},	-- 6
+					{'StageStingDisplayTime',					1.5},	-- 6
+					{'StackSizeRateChangeRate',					2},		-- 1.25			800
+					{'StackSizeChangeMinRate',					1},		-- 2
+					{'StackSizeChangeMaxRate',					180},	-- 60
+					{'WantedDetectMinTimeout',					3},		-- 5			1400
+					{'MaxNumMessageBeaconIcons',				0}, 	-- 10
+					{'TakeoffFuelMessageTime',					1.5},	-- 5
+					{'HUDMarkerDistanceOrTimeDistance',			32000},	-- 1250
+					{'RefinerPadStartTime',						0.25},	-- 1			2318
+					{'FreighterLeaderIconDistance',				7000},	-- 10000
+					{'ShipOverheatSwitchMessageTime',			0},		-- 1.6
+					{'HUDDisplayTime',							4},		-- 6
+					{'HideExtremePlanetNotifications',			true},	--				3383
+					{'NotificationsResourceExtractHintCount',	500},	-- 1500
+					{'NotificationStaminaHintDistanceWalked',	2000},	-- 10000
 					{'NotificationInteractHintStartTime',		99999},	-- 1800
 					{'NotificationBuildHintStartTime',			99999},	-- 31
 					{'NotificationJetpackTime',					99999},	-- 1.3
@@ -68,13 +42,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'NotificationShipBoostTimeVR',				99999},	-- 30
 					{'NotificationShipJumpMinTime',				-1},	-- 2
 					{'NotificationShipJumpReminderTime',		99999},	-- 300
+					{'NotificationMinVisibleTime',				0.5},	-- 3
+					{'NotificationScanTime',					300},	-- 600
+					{'NotificationScanTimeCutoff',				6000},	-- 20000
 					{'NotificationShipJumpReminderTutorial',	99999},	-- 10
 					{'NotificationShipBoostReminderTime',		99999},	-- 300
 					{'NotificationShipBoostReminderTimeTutorial',99999},-- 10
+					{'NotificationUrgentMessageTime',			12},	-- 22
+					{'NotificationMissionHintTime',				11},	-- 21
+					{'NotificationMissionHintTimeCritical',		35},	-- 60
+					{'NotificationMissionHintTimeSecondary',	7},		-- 15
+					{'MessageNotificationTime',					6}, 	-- 12	??
+					{'FrontendConfirmTimeMouseMultiplier',		2},		-- 0.5			5527
+					{'FrontendConfirmTimeFast',					0.25},	-- 0.35
+					{'FrontendTouchConfirmTimeFastMultiplier',	1.2},	-- 0
+					{'FrontendConfirmTime',						0.2},	-- 0.7
+					{'FrontendConfirmTimeSlow',					1.2},	-- 1.6
+					{'FrontendCursorSize',						10},	-- 24
+					{'FrontendCursorWidth',						4}, 	-- 9
+					{'TargetParallaxMouseMultiplier',			0}, 	-- 0.36			6266
+					{'TargetParallaxMaintenancePageMultiplier',	0}, 	-- 0.1
+					{'DiscoverPlanetTotalTime',					4}, 	-- 10			6274
+					{'DiscoverPlanetMessageWait',				0}, 	-- 1
+					{'DiscoverPlanetMessageTime',				2}, 	-- 7
+					{'TextChatMaxDisplayTime',					18},	-- 60
+					{'TextChatStayBigAfterTextInput',			7}, 	-- 15
 				}
 			},
 			{
-				FOREACH_SKW_GROUP	 = {
+				SPECIAL_KEY_WORDS	 = {
 					{'RefinerParallax',			'Vector2f.xml'},
 					{'ModelViewWorldParallax',	'Vector2f.xml'},
 					{'NGuiModelParallax',		'Vector2f.xml'},

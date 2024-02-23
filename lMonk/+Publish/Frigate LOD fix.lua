@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Replace frigates 5th level lod with the 4th.
   Avoids using the 5th lod model when the freighter in in orbit above a planet.
 ]]------------------------------------------------------------------------------
@@ -7,7 +7,7 @@ mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Frigate LOD Fix.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.44',
+	NMS_VERSION			= '4.52',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				'MODELS/COMMON/SPACECRAFT/FRIGATES/SUPPORTFRIGATELOD3.SCENE.MBIN',
 				'MODELS/COMMON/SPACECRAFT/FRIGATES/SUPPORTFRIGATELOD4.SCENE.MBIN',
 				'REMOVE'
-			}
+			},
 		}
-	}
+	},
 }}}}

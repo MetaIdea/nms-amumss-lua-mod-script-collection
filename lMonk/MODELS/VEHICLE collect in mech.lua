@@ -1,14 +1,14 @@
-------------------------------------------------------------------------------------
-local desc = [[
+-------------------------------------------------------------------------------------------------
+local mod_desc = [[
   collect stuff while in the mech
-  resource crates, pearl, fiend egg, eye, hadal, larval, crystal sulphite, glitches
-]]----------------------------------------------------------------------------------
+  resource crates, pearl, fiend egg, eye, hadal, larval, crystal sulphite, glitches and others..
+]]-----------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL collect in mech.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -59,8 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{
-	---	|gunkless crate| (remove rusted metal)
+	{--	|gunkless crate| (remove rusted metal)
 		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_LARGE_RARE/ENTITIES/CRATE_LARGE_RARE.ENTITY.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{

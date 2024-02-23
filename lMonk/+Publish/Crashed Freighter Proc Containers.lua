@@ -1,129 +1,11 @@
 ------------------------------------------------------------------------------------------
-mod_desc = [[
+dofile('LIB/lua_2_exml.lua')
+dofile('LIB/scene_tools.lua')
+------------------------------------------------------------------------------------------
+local mod_desc = [[
   procedurally placed containers in the crashed -and underwater-crashed freigther
   replaces the underwater one with the land model
 ]]----------------------------------------------------------------------------------------
-
---	replace a boolean with its text equivalent (ignore otherwise)
---	@param b: any value
-function bool(b)
-	return (type(b) == 'boolean') and ((b == true) and 'True' or 'False') or b
-end
-
---	get the count of ALL objects in a table (non-recursive)
---	@param t: any table
-function len2(t)
-	i=0; for _ in pairs(t) do i=i+1 end; return i
-end
-
---	Generate an EXML-tagged text from a lua table representation of exml class
---	@param class: a lua2exml formatted table
-function ToExml(class)
-	local function exml_r(tlua)
-		local exml = {}
-		function exml:add(t)
-			for _,v in ipairs(t) do self[#self+1] = v end
-		end
-		for key, cls in pairs(tlua) do
-			if key ~= 'META' then
-				exml[#exml+1] = '<Property '
-				if type(cls) == 'table' and cls.META then
-					local att, val = cls['META'][1], cls['META'][2]
-					-- add and recurs for an inner table
-					if att == 'name' or att == 'value' then
-						exml:add({att, '="', val, '">'})
-					else
-						exml:add({'name="', att, '" value="', val, '">'})
-					end
-					exml:add({exml_r(cls), '</Property>'})
-				else
-					-- add normal property
-					if type(cls) == 'table' then
-						-- because you can't read an unknown key directly
-						for k,v in pairs(cls) do key = k; cls = v end
-					end
-					if key == 'name' or key == 'value' then
-						exml:add({key, '="', bool(cls), '"/>'})
-					else
-						exml:add({'name="', key, '" value="', bool(cls), '"/>'})
-					end
-				end
-			end
-		end
-		return table.concat(exml)
-	end
-
-	-- check the table level structure and meta placement
-	-- add the needed layer for the recursion and handle multiple tables
-	local klen = len2(class)
-	if klen == 1 and class[1].META then
-		return exml_r(class)
-	elseif class.META and klen > 1 then
-		return exml_r( {class} )
-	-- concatenate unrelated exml sections, instead of nested inside each other
-	elseif type(class[1]) == 'table' and klen > 1 then
-		local T = {}
-		for _, tb in pairs(class) do
-			T[#T+1] = exml_r((tb.META and klen > 1) and {tb} or tb)
-		end
-		return table.concat(T)
-	end
-end
-
---	T (optional) is a table for scene class properties >> attributes, transform and children
-function ScNode(name, stype, T)
-	--	returns a jenkins hash from a string (by lyravega)
-	function JenkinsHash(input)
-		local hash = 0
-		local t_chars = {string.byte(input:upper(), 1, #input)}
-
-		for i = 1, #input do
-			hash = (hash + t_chars[i]) & 0xffffffff
-			hash = (hash + (hash << 10)) & 0xffffffff
-			hash = (hash ~ (hash >> 6)) & 0xffffffff
-		end
-		hash = (hash + (hash << 3)) & 0xffffffff
-		hash = (hash ~ (hash >> 11)) & 0xffffffff
-		hash = (hash + (hash << 15)) & 0xffffffff
-		return tostring(hash)
-	end
-	T = T or {}
-	T.META 		= {'value', 'TkSceneNodeData.xml'}
-	T.Name 		= name
-	T.NameHash	= JenkinsHash(name)
-	T.Type 		= stype
-	return T
-end
-
---	accepts either a list of 9 values or keyed values (but NOT a combination of the two)
-function ScTransform(t)
-	t = t or {}
-	return {
-		META	= {'Transform', 'TkTransformData.xml'},
-		TransX	= (t.tx or t[1]) or 0,
-		TransY	= (t.ty or t[2]) or 0,
-		TransZ	= (t.tz or t[3]) or 0,
-		RotX	= (t.rx or t[4]) or 0,
-		RotY	= (t.ry or t[5]) or 0,
-		RotZ	= (t.rz or t[6]) or 0,
-		ScaleX	= (t.sx or t[7]) or 1,
-		ScaleY	= (t.sy or t[8]) or 1,
-		ScaleZ	= (t.sz or t[9]) or 1
-	}
-end
-
---	accepts a list of {name, value} pairs
-function ScAttributes(t)
-	local T = {META = {'name', 'Attributes'}}
-	for _,at in ipairs(t) do
-		T[#T+1] = {
-			META	= {'value', 'TkSceneNodeAttributeData.xml'},
-			Name	= at[1],
-			Value	= at[2]
-		}
-	end
-	return T
-end
 
 local loot_containers = {
 	{
@@ -224,9 +106,8 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Crashed Freighter Procedural Containers.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.45',
+	NMS_VERSION			= '4.52',
 	MOD_DESCRIPTION		= mod_desc,
-	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

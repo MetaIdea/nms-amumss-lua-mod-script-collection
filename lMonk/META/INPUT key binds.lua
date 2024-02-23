@@ -1,79 +1,86 @@
 -----------------------------------------------------------------
-local desc = [[
+dofile('LIB/lua_2_exml.lua')
+-----------------------------------------------------------------
+local mod_desc = [[
   use the mouse wheel for switching multitool tech & zoom stages
   scan with mouse3 button
 ]]---------------------------------------------------------------
 
 local function AddBindings(action, button, axis)
-	return [[
-		<Property value="GcInputBinding.xml">
-			<Property name="Action" value="GcInputActions.xml">
-				<Property name="InputAction" value="]]..action..[["/>
-			</Property>
-			<Property name="Button" value="TkInputEnum.xml">
-				<Property name="InputButton" value="]]..button..[["/>
-			</Property>
-			<Property name="Axis" value="TkInputAxisEnum.xml">
-				<Property name="InputAxis" value="]]..(axis or 'Invalid')..[["/>
-			</Property>
-		</Property>
-	]]
+	return {
+		META	= {'value', 'GcInputBinding.xml'},
+		Action	= {
+			META		= {'Action', 'GcInputActions.xml'},
+			InputAction	= action
+		},
+		Button	= {
+			META		= {'Button', 'TkInputEnum.xml'},
+			InputButton	= button
+		},
+		Axis	= {
+			META		= {'Axis', 'TkInputAxisEnum.xml'},
+			InputAxis	= axis or 'Invalid'
+		}
+	}
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META key binds.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.52',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
-	{
-	---	|mouse input binds|
+	{--	|mouse input binds|
 		MBIN_FILE_SOURCE	= 'METADATA/INPUT/BINDINGS/GCINPUTBINDINGS_WIN_MOUSE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'InputAction', 'Player_Zoom'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
-					{'InputButton',	'None'},
-					{'InputAxis',	'MouseWheel'}
+					{'InputButton',	'MouseWheelDown'}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ActionSetType', 'OnFootControls'},
 				SECTION_UP_SPECIAL	= 1,
 				PRECEDING_KEY_WORDS = 'InputBindings',
-				ADD 				=
-					AddBindings('Player_ChangeWeapon', 'None', 'MouseWheel')
-					..
-					AddBindings('Player_Scan', 'Mouse3')
-					..
-					AddBindings('Player_Binoculars', 'Mouse5')
-					..
-					AddBindings('Player_Torch', 'Mouse6')
+				ADD 				= ToExml({
+					AddBindings('Player_ChangeWeapon',	'MouseWheelDown'),
+					AddBindings('Player_Scan',			'Mouse3'),
+					AddBindings('Player_Binoculars',	'Mouse5'),
+					AddBindings('Player_Torch',			'Mouse6')
+				})
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ActionSetType', 'VehicleMode'},
 				SECTION_UP_SPECIAL	= 1,
 				PRECEDING_KEY_WORDS = 'InputBindings',
-				ADD 				=
-					AddBindings('Vehicle_ChangeWeapon', 'None', 'MouseWheel')
-					..
-					AddBindings('Vehicle_Scan', 'Mouse3')
+				ADD 				= ToExml({
+					AddBindings('Vehicle_ChangeWeapon',	'MouseWheelDown'),
+					AddBindings('Vehicle_Scan',			'Mouse3')
+				})
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ActionSetType', 'ShipControls'},
 				SECTION_UP_SPECIAL	= 1,
 				PRECEDING_KEY_WORDS = 'InputBindings',
-				ADD 				=
-					AddBindings('Ship_ChangeWeapon', 'None', 'MouseWheel')
-					..
-					AddBindings('Ship_Scan', 'Mouse3')
+				ADD 				= ToExml({
+					AddBindings('Ship_ChangeWeapon',	'MouseWheelDown'),
+					AddBindings('Ship_Scan',			'Mouse3')
+				})
+			},
+			{
+				SPECIAL_KEY_WORDS	= {
+					{'InputAction', 'Quick_Left'},
+					{'InputAction', 'Quick_Right'}
+				},
+				SECTION_UP_SPECIAL	= 1,
+				REMOVE				= 'Section'
 			}
 		}
 	},
-	{
-	---	|keyboard input binds|
+	{--	|keyboard input binds|
 		MBIN_FILE_SOURCE	= 'METADATA/INPUT/BINDINGS/GCINPUTBINDINGS_WIN_KEYBOARD.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -84,20 +91,50 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'InputButton',	'KeyR'}
 				}
 			},
-			{
-			--	replace inventory KeyE with space : install tech & craft +1
+			{--	replace inventory KeyE with space : install tech & craft +1
 				SPECIAL_KEY_WORDS	= {'InputAction', 'Fe_Alt1'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'InputButton',	'Space'}
 				}
 			},
+			{--	terrain edit sphere size down
+				SPECIAL_KEY_WORDS	= {'InputAction', 'Terrain_SizeDown'},
+				SECTION_UP			= 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'InputButton',	'F2'}
+				}
+			},
+			{--	terrain edit sphere size up
+				SPECIAL_KEY_WORDS	= {'InputAction', 'Terrain_SizeUp'},
+				SECTION_UP			= 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'InputButton',	'F1'}
+				}
+			},
 			{
-				SPECIAL_KEY_WORDS	= {'ActionSetType', 'OnFootControls'},
-				SECTION_UP_SPECIAL	= 1,
-				PRECEDING_KEY_WORDS = 'InputBindings',
-				ADD 				= AddBindings('Player_Zoom', 'Key2')
-			}
+				SPECIAL_KEY_WORDS	= {
+					{'InputAction', 'Player_ChangeWeapon'},
+					{'InputAction', 'Ship_ChangeWeapon'},
+					{'InputAction', 'Vehicle_ChangeWeapon'},
+				},
+				SECTION_UP			= 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'InputButton',	'Key2'}
+				}
+			},
+			{
+				REPLACE_TYPE 		= 'All',
+				SPECIAL_KEY_WORDS	= {'InputAction', 'Unbound'},
+				SECTION_UP			= 1,
+				REMOVE				= 'Section'
+			},
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'ActionSetType', 'OnFootControls'},
+				-- SECTION_UP_SPECIAL	= 1,
+				-- PRECEDING_KEY_WORDS = 'InputBindings',
+				-- ADD 				= ToExml(AddBindings('Ship_GalacticMap', 'KeyM'))
+			-- }
 		}
 	}
 }}}}

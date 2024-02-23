@@ -1,394 +1,993 @@
 --------------------------------------------------------------------------------------
-local desc = [[
+dofile('LIB/lua_2_exml.lua')
+--------------------------------------------------------------------------------------
+local mod_desc = [[
   Rebuild and add to unlockable items tree
-  Each consecutive full tree addition is placed BEFORE the last one!
-  - The items tree is a classic Tree data structure. The node is a table
-   containing an item's id string and a table which contains one or more nodes.
   - A replacement for a full tree needs the ItemTrees title & the tree's own title
    as 1st & 2nd parents.
-  - A new tree is inserted as 1st in its ItemTrees by default. Inesrting [after] work
+  - A new tree is inserted as 1st in its ItemTrees by default. Inserting [after] work
    only on existing trees, not newly-added, and needs the 'after' Title.
 ]]------------------------------------------------------------------------------------
 
+---	meta data for GcUnlockableItemTreeNode classes
+local mt_ulitn = {'value', 'GcUnlockableItemTreeNode.xml'}
+local mt_child = {'name', 'Children'}
+
 local unlockable_items = {
-	{
----	ship tech: special hyperdrive
-		parent	 = {'UT_QUICKWARP'},
-		haschild = false,
-		tree	 = {'HYPERDRIVE_SPEC'}
-	},{
----	ship tech: special launcher
-		parent	 = {'UT_LAUNCHCHARGE'},
-		haschild = false,
-		tree	 = {'LAUNCHER_SPEC'}
-	},{
----	ship tech: pulse engine tech
-		parent	 = {'UT_PULSEFUEL'},
-		haschild = true,
-		tree	 = {
-			'SOLAR_SAIL', {
-				'PHOTONIX_CORE',
-					{'SHIPJUMP_SPEC'}
+	{--	ship tech: special hyperdrive
+		parent	= {'UT_QUICKWARP'},
+		tree	= { META = mt_ulitn,	Unlockable = 'HYPERDRIVE_SPEC' }
+	},
+	{--	ship tech: special launcher
+		parent	= {'UT_LAUNCHCHARGE'},
+		tree	= { META = mt_ulitn, 	Unlockable = 'LAUNCHER_SPEC' }
+	},
+	{--	ship tech: pulse engine tech
+		parent	= {'UT_PULSEFUEL'},
+		tree	= {
+			META	= mt_ulitn,
+			Unlockable	= 'SOLAR_SAIL',
+			{
+				META = mt_child,
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'PHOTONIX_CORE',
+					{
+						META	= mt_child,
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'SHIPJUMP_SPEC'
+						}
+					}
+				}
 			}
 		}
-	},{
----	factory products: wiring loom
-		parent	 = {'NANOTUBES'},
-		haschild = true,
-		tree	 = {'TECH_COMP'}
-	},{
----	ship tech: living ship
+	},
+	{--	vehicle tech: stun gun (custom tech)
+		parent	= {'VEHICLE_GUN'},
+		tree	= { META = mt_ulitn,	Unlockable = 'VEHICLESTUN' }
+	},
+	{--	factory products: wiring loom
+		parent	= {'NANOTUBES'},
+		tree	= { META = mt_ulitn,	Unlockable = 'TECH_COMP' }
+	},
+	{--	ship tech: living ship
 		parent	= {'UI_SHIP_TECH_TREE'},
 		after	= 'UI_TECH_TREE_SUB',
 		title   = 'UI_TECH_ALIEN_SUB',
 		cost	= 'NANITES',
-		isroot  = true,
 		tree	= {
-			'SHIPJUMP_ALIEN', {
+			META	= {'Root', 'GcUnlockableItemTreeNode.xml'},
+			Unlockable	= 'SHIP_LIFESUP',
+			{
+				META	= mt_child,
 				{
-					'WARP_ALIEN'
-				},{
-					'SHIPGUN_ALIEN', {
-						{'SHIPLAS_ALIEN'},
-						{'SHIELD_ALIEN'}
+					META	= mt_ulitn,
+					Unlockable	= 'WARP_ALIEN',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'SHIPJUMP_ALIEN',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'JUMP_U_ALIEN'
+								}
+							}
+						}
 					}
-				},{
-					'LAUNCHER_ALIEN', {
-						{'CHARGER_ALIEN'}
+
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'SHIPGUN_ALIEN',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'SHIPLAS_ALIEN'
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'SHIELD_ALIEN',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'SHIELD_U_ALIEN'
+								}
+							}
+						}
 					}
-				},{
-					'SHIPSCAN_ALIEN', {
-						{'CARGO_S_ALIEN'}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'LAUNCHER_ALIEN',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'CHARGER_ALIEN'
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'SHIPSCAN_ALIEN',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'CARGO_S_ALIEN'
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'SHIPJUMP_ROBO',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'LAUNCHER_ROBO',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'HYPERDRIVE_ROBO'
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'LIFESUP_ROBO',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'SHIPGUN_ROBO',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'SHIPSHIELD_ROBO'
+								}
+							}
+						}
 					}
 				}
 			}
 		}
-	},{
----	freighter: bulkhead
-		parent	 = {'FRIGATE_FUEL_1'},
-		haschild = true,
-		tree	 = {'FREI_INV_TOKEN'}
-	},{
----	freighter: singularity engine
-		parent	 = {'F_HDRIVEBOOST3'},
-		haschild = false,
-		tree	 = {'F_MEGAWARP'}
-	},{
----	base parts: tech
+	},
+	{--	freighter: bulkhead
+		parent	= {'FRIGATE_FUEL_1'},
+		tree	= { META = mt_ulitn,	Unlockable = 'FREI_INV_TOKEN' }
+	},
+	{--	freighter: singularity engine
+		parent	= {'F_HDRIVEBOOST3'},
+		tree	= { META = mt_ulitn,	Unlockable = 'F_MEGAWARP' }
+	},
+	{--	base parts: tech
 		parent	= {'UI_PURCHASABLE_BASEPARTS_TREE', 'UI_BASETECH_TREE'},
 		title   = 'UI_BASETECH_TREE',
 		after	= 'UI_CUBEROOM_TREE',
 		cost	= 'SALVAGE',
-		isroot  = true,
 		issubs	= true,
 		tree	= {
-			'BUILDSAVE', {
+			META	= {'Root', 'GcUnlockableItemTreeNode.xml'},
+			Unlockable	= 'BUILDSAVE',
+			{
+				META	= mt_child,
 				{
-					'BASE_FLAG', {
+					META	= mt_ulitn,
+					Unlockable	= 'BASE_FLAG',
+					{
+						META	= mt_child,
 						{
-							'HEALTHSTATION', {
+							META	= mt_ulitn,
+							Unlockable	= 'HEALTHSTATION',
+							{
+								META	= mt_child,
 								{
-									'SHIELDSTATION',
-										{'MESSAGEMODULE'}
+									META	= mt_ulitn,
+									Unlockable	= 'SHIELDSTATION',
+									{
+										META	= mt_child,
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'MESSAGEMODULE'
+										}
+									}
 								}
 							}
-						},{
-							'BUILD_REFINER2',{
-								{'BUILD_REFINER3'},
-								{'BUILDANTIMATTER'},
+						},
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'BUILD_REFINER2',
+							{
+								META	= mt_child,
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'BUILD_REFINER3'
+								},
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'BUILDANTIMATTER'
+								},
 							}
-						},{
-							'TELEPORTER', {
-								'BUILDTERMINAL',
-									{'DRESSING_TABLE'}
+						},
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'TELEPORTER',
+							{
+								META	= mt_child,
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'BUILDTERMINAL',
+									{
+										META	= mt_child,
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'DRESSING_TABLE'
+										},
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'HOLO_DISCO_0'
+										}
+									}
+								}
 							}
-						},{
-							'BUILDLANDINGPAD', {
-								'S_LANDINGZONE', {
-									{'U_MINIPORTAL'},
-									{'U_PORTALLINE'}
+						},
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'BUILDLANDINGPAD',
+							{
+								META	= mt_child,
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'S_LANDINGZONE',
+									{
+										META	= mt_child,
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'U_MINIPORTAL'
+										},
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'U_PORTALLINE'
+										}
+									}
 								}
 							}
 						}
 					}
-				},{
-					'BUILDBEACON', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'BUILDBEACON',
+					{
+						META	= mt_child,
 						{
-							'BP_ANALYSER', {
-								'BUILDSIGNAL',
-									{'MESSAGE'}
-							}
-						},{
-							'BUILD_REFINER1', {
+							META = mt_ulitn,
+							Unlockable	= 'BUILDSIGNAL',
+							{
+								META	= mt_child,
 								{
-									'O2_HARVESTER',{
-										{'BUILDHARVESTER'},
-										{'BUILDGASHARVEST'}
+									META = mt_ulitn,
+									Unlockable	= 'BP_ANALYSER',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'MESSAGE'
+										}
 									}
-								},{
-									'COOKER',{
-										{'CREATURE_FARM'},
-										{'CREATURE_FEED'}
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'BUILD_REFINER1',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'O2_HARVESTER',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'BUILDHARVESTER'
+										},
+										{
+											META = mt_ulitn,
+											Unlockable	= 'BUILDGASHARVEST'
+										}
+									}
+								},
+								{
+									META = mt_ulitn,
+									Unlockable	= 'COOKER',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'CREATURE_FARM'
+										},
+										{
+											META = mt_ulitn,
+											Unlockable	= 'CREATURE_FEED'
+										}
 									}
 								}
 							}
 						}
 					}
-				},{
-					'LIGHTBOX', {
-						'L_FLOOR_Q',
-							{'SPAWNER_BALL'}
-					}
-				},{
-					'NOISEBOX', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'LIGHTBOX',
+					{
+						META	= mt_child,
 						{
-							'BYTEBEAT',{
-								{'BYTEBEATSWITCH'},
-								{'U_BYTEBEATLINE'}
+							META	= mt_ulitn,
+							Unlockable	= 'L_FLOOR_Q',
+							{
+								META	= mt_child,
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'SPAWNER_BALL'
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'NOISEBOX',
+					{
+						META	= mt_child,
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'BYTEBEAT',
+							{
+								META	= mt_child,
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'BYTEBEATSWITCH'
+								},
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'U_BYTEBEATLINE'
+								}
 							}
 						}
 					}
 				}
 			}
 		}
-	},{
----	multitool: exploratory
+	},
+	{--	multitool: exploratory
 		parent	= {'UI_WEAP_TECH_TREE', 'UI_TECH_TREE_SUB'},
 		title   = 'UI_TECH_EXPLORE_SUB',
 		cost	= 'NANITES',
-		isroot  = true,
 		issubs	= true,
 		tree	= {
-			'LASER', {
+			META	= {'Root', 'GcUnlockableItemTreeNode.xml'},
+			Unlockable	= 'LASER',
+			{
+				META	= mt_child,
 				{
-					'TERRAINEDITOR', {
-						{'TERRAIN_GREN'}
-					}
-				},{
-					'GROUND_SHIELD', {
-						{'SCOPE'},
-						{'STEALTH'}
-					}
-				},{
-					'SCAN1', {
+					META	= mt_ulitn,
+					Unlockable	= 'TERRAINEDITOR',
+					{
+						META	= mt_child,
 						{
-							'UT_SCAN'
-						},{
-							'SCANBINOC1',
-								{'UT_SURVEY'}
+							META = mt_ulitn,
+							Unlockable	= 'TERRAIN_GREN'
 						}
 					}
-				},{
-					'LASER_XO', {
-						'STRONGLASER',
-							{'UT_MINER'}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'GROUND_SHIELD',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'SCOPE'
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'STEALTH'
+						}
 					}
-				},{
-					'SUN_LASER',
-						{'SOUL_LASER'}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'SCAN1',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'UT_SCAN',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'UT_BUI_SCAN'
+								},
+								{
+									META = mt_ulitn,
+									Unlockable	= 'UT_S10_SCAN'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'SCANBINOC1',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'UT_SURVEY'
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'LASER_XO',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'STRONGLASER',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'UT_MINER',
+									-- {
+										-- META	= mt_child,
+										-- {
+											-- META = mt_ulitn,
+											-- Unlockable	= 'SENT_LASER'
+										-- }
+									-- }
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'SENT_LASER',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'ATLAS_LASER'
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'SUN_LASER',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'SOUL_LASER'
+						}
+					}
 				}
 			}
 		}
-	},{
----	multitool: offensive
+	},
+	{--	multitool: offensive
 		parent	= {'UI_WEAP_TECH_TREE'},
 		title   = 'UI_TECH_OFFENSE_SUB',
 		cost	= 'NANITES',
-		isroot  = true,
 		tree	= {
-			'BOLT', {
+			META	= {'Root', 'GcUnlockableItemTreeNode.xml'},
+			Unlockable	= 'BOLT',
+			{
+				META	= mt_child,
 				{
-					'UT_BOLT', {
+					META	= mt_ulitn,
+					Unlockable	= 'UT_BOLT',
+					{
+						META	= mt_child,
 						{
-							'BOLT_SM',
-								{'UT_BOLTBOUNCE'}
+							META = mt_ulitn,
+							Unlockable	= 'BOLT_SM',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'UT_BOLTBOUNCE'
+								}
+							}
 						}
 					}
-				},{
-					'FLAME'
-				},{
-					'GRENADE', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'FLAME'
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'GRENADE',
+					{
+						META	= mt_child,
 						{
-							'STUN_GREN',
-								{'UT_STUNDMG'}
+							META = mt_ulitn,
+							Unlockable	= 'STUN_GREN',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'UT_STUNDMG'
+								}
+							}
 						}
 					}
-				},{
-					'RAILGUN', {
-						{'UT_RAIL_STUN'},
-						{'UT_RAIL'}
-					}
-				},{
-					'SHOTGUN',
-						{'UT_SHOT'}
-				},{
-					'SMG', {
-						'UT_SMG', {
-							{'UT_SMGBOUNCE'},
-							{'UT_SMG_DOT'}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'RAILGUN',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'UT_RAIL_STUN'
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'UT_RAIL'
 						}
 					}
-				},{
-					'CANNON',
-						{'UT_CANNON'}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'SHOTGUN',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'UT_SHOT'
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'SMG',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'UT_SMG',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'UT_SMGBOUNCE'
+								},
+								{
+									META = mt_ulitn,
+									Unlockable	= 'UT_SMG_DOT'
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'CANNON',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'UT_CANNON'
+						}
+					}
 				}
 			}
 		}
-	},{
----	construction unit: factory products
+	},
+	{--	construction unit: factory products
 		parent	= {'UI_PURCHASABLE_BASICTECH_TREE'},
 		title   = 'UI_PRODUCT_TREE_CRAFT',
 		cost	= 'FACTORY',
-		isroot  = true,
 		tree	= {
-			'AM_HOUSING', {
+			META	= {'Root', 'GcUnlockableItemTreeNode.xml'},
+			Unlockable	= 'AM_HOUSING',
+			{
+				META	= mt_child,
 				{
-					'ANTIMATTER', {
+					META	= mt_ulitn,
+					Unlockable	= 'ANTIMATTER',
+					{
+						META	= mt_child,
 						{
-							'HYPERFUEL1',
-								{'HYPERFUEL2'}
-						}
-					}
-				},{
-					'CASING', {
-						{
-							'NANOTUBES', {
-								{'HYDRALIC'}
+							META = mt_ulitn,
+							Unlockable	= 'HYPERFUEL1',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'HYPERFUEL2'
+								}
 							}
-						},{
-							'MICROCHIP',
-								{'COMPUTER'}
-						},{
-							'CARBON_SEAL',
-								{'BIO'}
-						},{
-							'MIRROR',
-								{'MAGNET'}
 						}
 					}
-				},{
-					'PRODFUEL2', {
-						{'JELLY'}
-					}
-				},{
-					'POWERCELL', {
-						{'GRENFUEL1'},
-						{'SHIPCHARGE'}
-					}
-				},{
-					'LAUNCHFUEL', {
-						{'SUBFUEL'}
-					}
-				},{
-					'ACCESS1', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'CASING',
+					{
+						META	= mt_child,
 						{
-							'ACCESS2',
-								{'ACCESS3'}
+							META = mt_ulitn,
+							Unlockable	= 'NANOTUBES',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'HYDRALIC'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'MICROCHIP',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'COMPUTER'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'CARBON_SEAL',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'BIO'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'MIRROR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'MAGNET'
+								}
+							}
+						},
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'PRODFUEL2',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'JELLY'
 						}
 					}
-				},{
-					'TECH_COMP', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'POWERCELL',
+					{
+						META	= mt_child,
 						{
-							'POI_LOCATOR',
-								{'SALVAGE_TECH10'}
+							META = mt_ulitn,
+							Unlockable	= 'GRENFUEL1'
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'SHIPCHARGE'
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'LAUNCHFUEL',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'SUBFUEL'
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'ACCESS1',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'ACCESS2',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'ACCESS3'
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'TECH_COMP',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'POI_LOCATOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'RAMMOULD5'
+								},
+								{
+									META = mt_ulitn,
+									Unlockable	= 'ULTRAPRODX40'
+								}
+							}
 						}
 					}
 				}
 			}
 		}
-	},{
----	construction unit: alloy base parts
+	},
+	{--	construction unit: alloy base parts
 		parent	= {'UI_PURCHASABLE_BASICTECH_TREE', 'UI_BASIC_FIBREGLASS_SUB'},
 		title   = 'UI_BASIC_FIBREGLASS_SUB',
 		cost	= 'SALVAGE',
-		isroot  = true,
 		issubs	= true,
 		tree	= {
-			'F_WALL', {
+			META	= {'Root', 'GcUnlockableItemTreeNode.xml'},
+			Unlockable	= 'F_WALL',
+			{
+				META	= mt_child,
 				{
-					'F_FLOOR', {
+					META	= mt_ulitn,
+					Unlockable	= 'F_FLOOR',
+					{
+						META	= mt_child,
 						{
-							'F_GFLOOR',
-								{'F_FLOOR_Q'}
-						},{
-							'F_RAMP', {
+							META = mt_ulitn,
+							Unlockable	= 'F_GFLOOR',
+							{
+								META	= mt_child,
 								{
-									'F_RAMP_H',
-										{'F_RAMP_Q_TOP'}
+									META = mt_ulitn,
+									Unlockable	= 'F_FLOOR_Q'
 								}
 							}
-						},{
-							'F_TRIFLOOR', {
-								{
-									'F_TRIFLOOR_Q',
-										{'F_WALLDIAGONAL'}
-								}
-							}
-						}
-					}
-				},{
-					'F_WALL_H', {
+						},
 						{
-							'F_WALL_Q',
-								{'F_WALL_Q1'}
-						},{
-							'F_WALL_Q_H',
-								{'F_WALL_Q_H1'}
-						}
-					}
-				},{
-					'F_CHEV_WALL', {
-						{
-							'F_CHEV_DOOR',
-								{'F_CHEV_WALL_H_C'}
-						},{
-							'F_CHEV_WIN0', {
+							META = mt_ulitn,
+							Unlockable	= 'F_RAMP',
+							{
+								META	= mt_child,
 								{
-									'F_CHEV_WIN1',
-										{'F_CHEV_WIN2'}
-								}
-							}
-						}
-					}
-				},{
-					'F_DOOR_H', {
-						{
-							'F_DOORWINDOW', {
-								{
-									'F_WALL_WIN1', {
-										{'F_WALL_WIN2'},
-										{'F_WALL_WIN3'}
+									META = mt_ulitn,
+									Unlockable	= 'F_RAMP_H',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'F_RAMP_Q_TOP'
+										}
 									}
-								},{
-									'F_WALL_WINDOW'
-								}
-							},
-						},{
-							'F_DOOR', {
-								{
-									'F_DOOR1',
-										{'F_GDOOR'}
 								}
 							}
-						},{
-							'F_ARCH',
-								{'F_ARCH_H'}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'F_TRIFLOOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'F_TRIFLOOR_Q',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'F_WALLDIAGONAL'
+										}
+									}
+								}
+							}
 						}
 					}
-				},{
-					'F_ROOF7', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'F_WALL_H',
+					{
+						META	= mt_child,
 						{
-							'F_ROOF_M', {
+							META = mt_ulitn,
+							Unlockable	= 'F_WALL_Q',
+							{
+								META	= mt_child,
 								{
-									'F_ROOF_M_Q',
-										{'F_ROOF_E_Q'}
+									META = mt_ulitn,
+									Unlockable	= 'F_WALL_Q1'
 								}
 							}
-						},{
-							'F_ROOF5', {
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'F_WALL_Q_H',
+							{
+								META	= mt_child,
 								{
-									'F_ROOF3',
-										{'F_ROOF_M_CAP'}
+									META = mt_ulitn,
+									Unlockable	= 'F_WALL_Q_H1'
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'F_CHEV_WALL',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'F_CHEV_DOOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'F_CHEV_WALL_H_C'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'F_CHEV_WIN0',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'F_CHEV_WIN1',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'F_CHEV_WIN2'
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'F_DOOR_H',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'F_DOORWINDOW',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'F_WALL_WIN1',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'F_WALL_WIN2'
+										},
+										{
+											META = mt_ulitn,
+											Unlockable	= 'F_WALL_WIN3'
+										}
+									}
+								},
+								{
+									META = mt_ulitn,
+									Unlockable	= 'F_WALL_WINDOW'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'F_DOOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'F_DOOR1',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'F_GDOOR'
+										}
+									}
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'F_ARCH',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'F_ARCH_H'
+								}
+							}
+						}
+					}
+				},
+				{
+					META = mt_ulitn,
+					Unlockable	= 'F_ROOF7',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'F_ROOF_M',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'F_ROOF_M_Q',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'F_ROOF_E_Q'
+										}
+									}
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'F_ROOF5',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'F_ROOF3',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'F_ROOF_M_CAP'
+										}
+									}
 								}
 							}
 						}
@@ -396,99 +995,236 @@ local unlockable_items = {
 				}
 			}
 		}
-	},{
----	construction unit: stone base parts
+	},
+	{--	construction unit: stone base parts
 		parent	= {'UI_PURCHASABLE_BASICTECH_TREE', 'UI_BASIC_STONE_SUB'},
 		title   = 'UI_BASIC_STONE_SUB',
 		cost	= 'SALVAGE',
-		isroot  = true,
 		issubs	= true,
 		tree	= {
-			'S_WALL', {
+			META	= {'Root', 'GcUnlockableItemTreeNode.xml'},
+			Unlockable	= 'S_WALL',
+			{
+				META	= mt_child,
 				{
-					'S_FLOOR', {
+					META	= mt_ulitn,
+					Unlockable	= 'S_FLOOR',
+					{
+						META	= mt_child,
 						{
-							'S_GFLOOR',
-								{'S_FLOOR_Q'}
-						},{
-							'S_RAMP', {
+							META = mt_ulitn,
+							Unlockable	= 'S_GFLOOR',
+							{
+								META	= mt_child,
 								{
-									'S_RAMP_H',
-										{'S_RAMP_Q_TOP'}
+									META = mt_ulitn,
+									Unlockable	= 'S_FLOOR_Q'
 								}
 							}
-						},{
-							'S_TRIFLOOR', {
-								{
-									'S_TRIFLOOR_Q',
-										{'S_WALLDIAGONAL'}
-								}
-							}
-						}
-					}
-				},{
-					'S_WALL_H', {
+						},
 						{
-							'S_WALL_Q',
-								{'S_WALL_Q1'}
-						},{
-							'S_WALL_Q_H',
-								{'S_WALL_Q_H1'}
-						}
-					}
-				},{
-					'S_CHEV_WALL', {
-						{
-							'S_CHEV_DOOR',
-								{'S_CHEV_WALL_H_C'}
-						},{
-							'S_CHEV_WIN0', {
+							META = mt_ulitn,
+							Unlockable	= 'S_RAMP',
+							{
+								META	= mt_child,
 								{
-									'S_CHEV_WIN1',
-										{'S_CHEV_WIN2'}
-								}
-							}
-						}
-					}
-				},{
-					'S_DOOR_H', {
-						{
-							'S_DOORWINDOW', {
-								{
-									'S_WALL_WIN1', {
-										{'S_WALL_WIN2'},
-										{'S_WALL_WIN3'}
+									META = mt_ulitn,
+									Unlockable	= 'S_RAMP_H',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'S_RAMP_Q_TOP'
+										}
 									}
-								},{
-									'S_WALL_WINDOW'
-								}
-							},
-						},{
-							'S_DOOR', {
-								{
-									'S_DOOR1',
-										{'S_GDOOR'}
 								}
 							}
-						},{
-							'S_ARCH',
-								{'S_ARCH_H'}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'S_TRIFLOOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'S_TRIFLOOR_Q',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'S_WALLDIAGONAL'
+										}
+									}
+								}
+							}
 						}
 					}
-				},{
-					'S_ROOF3', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'S_WALL_H',
+					{
+						META	= mt_child,
 						{
-							'S_ROOF_M', {
+							META = mt_ulitn,
+							Unlockable	= 'S_WALL_Q',
+							{
+								META	= mt_child,
 								{
-									'S_ROOF_M_Q',
-										{'S_ROOF_E_Q'}
+									META = mt_ulitn,
+									Unlockable	= 'S_WALL_Q1'
 								}
 							}
-						},{
-							'S_ROOF2', {
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'S_WALL_Q_H',
+							{
+								META	= mt_child,
 								{
-									'S_ROOF0',
-										{'S_ROOF_M_CAP'}
+									META = mt_ulitn,
+									Unlockable	= 'S_WALL_Q_H1'
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'S_CHEV_WALL',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'S_CHEV_DOOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'S_CHEV_WALL_H_C'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'S_CHEV_WIN0',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'S_CHEV_WIN1',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'S_CHEV_WIN2'
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'S_DOOR_H',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'S_DOORWINDOW',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'S_WALL_WIN1',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'S_WALL_WIN2'
+										},
+										{
+											META = mt_ulitn,
+											Unlockable	= 'S_WALL_WIN3'
+										}
+									}
+								},
+								{
+									META = mt_ulitn,
+									Unlockable	= 'S_WALL_WINDOW'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'S_DOOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'S_DOOR1',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'S_GDOOR'
+										}
+									}
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'S_ARCH',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'S_ARCH_H'
+								}
+							}
+						}
+					}
+				},
+				{
+					META = mt_ulitn,
+					Unlockable	= 'S_ROOF3',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'S_ROOF_M',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'S_ROOF_M_Q',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'S_ROOF_E_Q'
+										}
+									}
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'S_ROOF2',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'S_ROOF0',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'S_ROOF_M_CAP'
+										}
+									}
 								}
 							}
 						}
@@ -496,99 +1232,236 @@ local unlockable_items = {
 				}
 			}
 		}
-	},{
----	construction unit: timber base parts
+	},
+	{--	construction unit: timber base parts
 		parent	= {'UI_PURCHASABLE_BASICTECH_TREE', 'UI_BASIC_TIMBER_SUB'},
 		title   = 'UI_BASIC_TIMBER_SUB',
 		cost	= 'SALVAGE',
-		isroot  = true,
 		issubs	= true,
 		tree	= {
-			'T_WALL', {
+			META	= {'Root', 'GcUnlockableItemTreeNode.xml'},
+			Unlockable	= 'T_WALL',
+			{
+				META	= mt_child,
 				{
-					'T_FLOOR', {
+					META	= mt_ulitn,
+					Unlockable	= 'T_FLOOR',
+					{
+						META	= mt_child,
 						{
-							'T_GFLOOR',
-								{'T_FLOOR_Q'}
-						},{
-							'T_RAMP', {
+							META = mt_ulitn,
+							Unlockable	= 'T_GFLOOR',
+							{
+								META	= mt_child,
 								{
-									'T_RAMP_H',
-										{'T_RAMP_Q_TOP'}
+									META = mt_ulitn,
+									Unlockable	= 'T_FLOOR_Q'
 								}
 							}
-						},{
-							'T_TRIFLOOR', {
-								{
-									'T_TRIFLOOR_Q',
-										{'T_WALLDIAGONAL'}
-								}
-							}
-						}
-					}
-				},{
-					'T_WALL_H', {
+						},
 						{
-							'T_WALL_Q',
-								{'T_WALL_Q1'}
-						},{
-							'T_WALL_Q_H',
-								{'T_WALL_Q_H1'}
-						}
-					}
-				},{
-					'T_CHEV_WALL', {
-						{
-							'T_CHEV_DOOR',
-								{'T_CHEV_WALL_H_C'}
-						},{
-							'T_CHEV_WIN0', {
+							META = mt_ulitn,
+							Unlockable	= 'T_RAMP',
+							{
+								META	= mt_child,
 								{
-									'T_CHEV_WIN1',
-										{'T_CHEV_WIN2'}
-								}
-							}
-						}
-					}
-				},{
-					'T_DOOR_H', {
-						{
-							'T_DOORWINDOW', {
-								{
-									'T_WALL_WIN1', {
-										{'T_WALL_WIN2'},
-										{'T_WALL_WIN3'}
+									META = mt_ulitn,
+									Unlockable	= 'T_RAMP_H',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'T_RAMP_Q_TOP'
+										}
 									}
-								},{
-									'T_WALL_WINDOW'
-								}
-							},
-						},{
-							'T_DOOR', {
-								{
-									'T_DOOR1',
-										{'T_GDOOR'}
 								}
 							}
-						},{
-							'T_ARCH',
-								{'T_ARCH_H'}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'T_TRIFLOOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'T_TRIFLOOR_Q',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'T_WALLDIAGONAL'
+										}
+									}
+								}
+							}
 						}
 					}
-				},{
-					'T_ROOF6', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'T_WALL_H',
+					{
+						META	= mt_child,
 						{
-							'T_ROOF_M', {
+							META = mt_ulitn,
+							Unlockable	= 'T_WALL_Q',
+							{
+								META	= mt_child,
 								{
-									'T_ROOF_M_Q',
-										{'T_ROOF_E_Q'}
+									META = mt_ulitn,
+									Unlockable	= 'T_WALL_Q1'
 								}
 							}
-						},{
-							'T_ROOF0', {
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'T_WALL_Q_H',
+							{
+								META	= mt_child,
 								{
-									'T_ROOF7',
-										{'T_ROOF_M_CAP'}
+									META = mt_ulitn,
+									Unlockable	= 'T_WALL_Q_H1'
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'T_CHEV_WALL',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'T_CHEV_DOOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'T_CHEV_WALL_H_C'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'T_CHEV_WIN0',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'T_CHEV_WIN1',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'T_CHEV_WIN2'
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'T_DOOR_H',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'T_DOORWINDOW',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'T_WALL_WIN1',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'T_WALL_WIN2'
+										},
+										{
+											META = mt_ulitn,
+											Unlockable	= 'T_WALL_WIN3'
+										}
+									}
+								},
+								{
+									META = mt_ulitn,
+									Unlockable	= 'T_WALL_WINDOW'
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'T_DOOR',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'T_DOOR1',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'T_GDOOR'
+										}
+									}
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'T_ARCH',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'T_ARCH_H'
+								}
+							}
+						}
+					}
+				},
+				{
+					META = mt_ulitn,
+					Unlockable	= 'T_ROOF6',
+					{
+						META	= mt_child,
+						{
+							META = mt_ulitn,
+							Unlockable	= 'T_ROOF_M',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'T_ROOF_M_Q',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'T_ROOF_E_Q'
+										}
+									}
+								}
+							}
+						},
+						{
+							META = mt_ulitn,
+							Unlockable	= 'T_ROOF0',
+							{
+								META	= mt_child,
+								{
+									META = mt_ulitn,
+									Unlockable	= 'T_ROOF7',
+									{
+										META	= mt_child,
+										{
+											META = mt_ulitn,
+											Unlockable	= 'T_ROOF_M_CAP'
+										}
+									}
 								}
 							}
 						}
@@ -596,75 +1469,181 @@ local unlockable_items = {
 				}
 			}
 		}
-	},{
----	construction unit: tech
+	},
+	{--	construction unit: tech
 		parent	= {'UI_PURCHASABLE_BASICTECH_TREE', 'UI_BASIC_TECH_SUB'},
 		title   = 'UI_BASIC_TECH_SUB',
 		cost	= 'SALVAGE',
-		isroot  = true,
 		issubs	= true,
 		tree	= {
-			'BUILDSAVE', {
+			META	= {'Root', 'GcUnlockableItemTreeNode.xml'},
+			Unlockable	= 'BUILDSAVE',
+			{
+				META	= mt_child,
 				{
-					'BASE_FLAG', {
+					META	= mt_ulitn,
+					Unlockable	= 'BASE_FLAG',
+					{
+						META	= mt_child,
 						{
-							'NPCBUILDERTERM', {
+							META	= mt_ulitn,
+							Unlockable	= 'NPCBUILDERTERM',
+							{
+								META	= mt_child,
 								{
-									'NPCSCIENCETERM',
-										{'NPCFARMTERM'}
-								},{
-									'NPCWEAPONTERM',
-										{'NPCVEHICLETERM'}
+									META	= mt_ulitn,
+									Unlockable	= 'NPCSCIENCETERM',
+									{
+										META	= mt_child,
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'NPCFARMTERM'
+										}
+									}
+								},
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'NPCWEAPONTERM',
+									{
+										META	= mt_child,
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'NPCVEHICLETERM'
+										}
+									}
 								}
 							}
-						},{
-							'U_POWERLINE', {
+						},
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'U_POWERLINE',
+							{
+								META	= mt_child,
 								{
-									'U_SOLAR_S',
-										{'U_BATTERY_S'}
-								},{
-									'U_BIOGENERATOR'
+									META	= mt_ulitn,
+									Unlockable	= 'U_SOLAR_S',
+									{
+										META	= mt_child,
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'U_BATTERY_S'
+										}
+									}
+								},
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'U_BIOGENERATOR'
 								}
 							}
-						},{
-							'TELEPORTER', {
+						},
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'TELEPORTER',
+							{
+								META	= mt_child,
 								{
-									'BUILDLANDINGPAD',
-										{'BUILDTERMINAL'}
+									META	= mt_ulitn,
+									Unlockable	= 'BUILDLANDINGPAD',
+									{
+										META	= mt_child,
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'BUILDTERMINAL'
+										}
+									}
 								}
 							}
-						},{
-							'U_PIPELINE', {
+						},
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'U_PIPELINE',
+							{
+								META	= mt_child,
 								{
-									'U_SILO_S', {
-										{'U_EXTRACTOR_S'},
-										{'U_GASEXTRACTOR'}
+									META	= mt_ulitn,
+									Unlockable	= 'U_SILO_S',
+									{
+										META	= mt_child,
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'U_EXTRACTOR_S'
+										},
+										{
+											META	= mt_ulitn,
+											Unlockable	= 'U_GASEXTRACTOR'
+										}
 									}
 								}
 							}
 						}
 					}
-				},{
-					'BUILDBEACON', {
-						{'BUILDSIGNAL'}
-					}
-				},{
-					'BUILD_REFINER1', {
-						{'COOKER'},
-						{'BUILD_REFINER2'}
-					}
-				},{
-					'SMALLLIGHT', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'BUILDBEACON',
+					{
+						META	= mt_child,
 						{
-							'BUILDLIGHT3',
-								{'S_HANGLAMP3'}
+							META	= mt_ulitn,
+							Unlockable	= 'BUILDSIGNAL',
+							{
+								META	= mt_child,
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'S9_WEAPONTREE'
+								}
+							}
 						}
 					}
-				},{
-					'BUILDHARVESTER', {
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'BUILD_REFINER1',
+					{
+						META	= mt_child,
 						{
-							'BUILDGASHARVEST',
-								{'O2_HARVESTER'}
+							META	= mt_ulitn,
+							Unlockable	= 'COOKER'
+						},
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'BUILD_REFINER2'
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'SMALLLIGHT',
+					{
+						META	= mt_child,
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'BUILDLIGHT3',
+							{
+								META	= mt_child,
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'S_HANGLAMP3'
+								}
+							}
+						}
+					}
+				},
+				{
+					META	= mt_ulitn,
+					Unlockable	= 'BUILDHARVESTER',
+					{
+						META	= mt_child,
+						{
+							META	= mt_ulitn,
+							Unlockable	= 'BUILDGASHARVEST',
+							{
+								META	= mt_child,
+								{
+									META	= mt_ulitn,
+									Unlockable	= 'O2_HARVESTER'
+								}
+							}
 						}
 					}
 				}
@@ -673,94 +1652,52 @@ local unlockable_items = {
 	}
 }
 
---- root=true if tree is the first node of GcUnlockableItemTree
-local function BuildExmlNodes(tree, root)
-	local treenode = [[
-		<Property %s value="GcUnlockableItemTreeNode.xml">
-			<Property name="Unlockable" value="%s"/>%s
-		</Property>]]
-	local exml = ''
-	for i=1, #tree do
-		if type(tree[i]) == 'string' then
-			if i < #tree then
-				return string.format(
-					treenode,
-					(root and 'name="Root"' or ''),
-					tree[i],
-					string.format(
-						'<Property name="Children">%s</Property>',
-						BuildExmlNodes(tree[i+1], false)
-					)
-				)
-			else
-				return string.format(treenode, '', tree[i], '')
-			end
-		else
-			exml = exml..BuildExmlNodes(tree[i], false)
-		end
-	end
-	return exml
-end
-
 local function AddTreeToChangeTable(node)
 	local T = {}
-	if node.isroot then
+	if node.tree.META[1] == 'Root' then
 	--- full tree addition ---
-		local tree_root = [[
-			<Property value="GcUnlockableItemTree.xml">
-				<Property name="Title" value="]]..node.title..[["/>
-				<Property name="CostTypeID" value="]]..node.cost..[["/>
-				]]..BuildExmlNodes(node.tree, node.isroot)..[[
-			</Property>]]
+		local tree_root = {
+			META	= {'value', 'GcUnlockableItemTree.xml'},
+			Title		= node.title,
+			CostTypeID	= node.cost,
+			[1]			= node.tree
+		}
 		if node.after then
-			table.insert(T, {
+			T[#T+1] = {
 				SPECIAL_KEY_WORDS	= {'Title', node.parent[1], 'Title', node.after},
 				ADD_OPTION			= 'AddAfterSection',
-				ADD					= tree_root
-			})
+				ADD					= ToExml(tree_root)
+			}
 		else
-			table.insert(T, {
+			T[#T+1] = {
 				SPECIAL_KEY_WORDS	= {'Title', node.parent[1]},
 				PRECEDING_KEY_WORDS	= 'Trees',
-				ADD					= tree_root
-			})
+				ADD					= ToExml(tree_root)
+			}
 		end
-	elseif not node.haschild then
-	--- childless node ---
-		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
-			PRECEDING_KEY_WORDS	= 'Children',
-			REMOVE				= 'Line'
-		})
-		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
-			ADD					= [[
-				<Property name="Children">
-					]]..BuildExmlNodes(node.tree, false)..[[
-				</Property>]]
-		})
 	else
 	--- regular node ---
-		table.insert(T, {
+		T[#T+1] = {
 			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
 			PRECEDING_KEY_WORDS = 'Children',
-			SECTION_ACTIVE		= 1,
-			ADD					= BuildExmlNodes(node.tree, false)
-		})
+			CREATE_HOS			= true,
+			SECTION_ACTIVE		= -1,
+			ADD					= ToExml(node.tree)
+		}
 	end
 	return T
 end
 
 local function AddAllTrees()
 	local T = {}
-	T[1] = { FSKWG={}, REMOVE='Section' }
+	T[1] = { SKW={}, REMOVE='Section' }
 	for _,tree in ipairs(unlockable_items) do
 		-- do all REMOVEs before adding
 		if tree.issubs then
-			table.insert(T[1].FSKWG, {'Title', tree.parent[1], 'Title', tree.parent[2]})
+			T[1].SKW[#T[1].SKW + 1] = {'Title', tree.parent[1], 'Title', tree.parent[2]}
 		end
 		for _,n in ipairs(AddTreeToChangeTable(tree)) do
-			table.insert(T, n)
+			T[#T+1] = n
 		end
 	end
 	return T
@@ -769,9 +1706,9 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE UNLOCKABLES.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
-	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
+	NMS_VERSION			= '4.52',
+	AMUMSS_SUPPRESS_MSG	= 'MIXED_TABLE',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
