@@ -9,28 +9,32 @@ REWARDS_8 = {"EXPD_EGG_08","EXPD_BANNER08","EXPD_DECAL08","EXPD_TITLE08","EXPD_C
 REWARDS_9 = {"EXPD_BANNER09","EXPD_DECAL09","EXPD_TITLE09","EXPD_EGG_09","SPEC_BUCKETHELM","BLD_HOLOGEK","EXPD_POSTER09C","EXPD_POSTER09B","EXPD_POSTER09A","RS_S9_COMPLETE","RS_S9_EGG","RS_S9_PHASE1","RS_S9_PHASE2","RS_S9_PHASE3","RS_S9_PHASE4","RS_S9_PHASE5","RS_S9_PARTY1","RS_S9_PARTY2","RS_S9_PARTY3","RS_S9_PARTY4","RS_S9_PARTY5"}
 REWARDS_10 = {"S10_PART1A","S10_PART1B","S10_PART2","S10_PART3","S10_PART4","S10_PART5","EXPD_BANNER10","EXPD_DECAL10","EXPD_TITLE10","SPEC_ROCKETHAT","BLD_CRYS_SENT0","BLD_CRYS_SENT1","BLD_CRYS_DRONE","JETS_CORRUPT","FREI_TRAIL_RED","EXPD_POSTER10C","EXPD_POSTER10B","EXPD_POSTER10A","RS_S10_COMPLETE","RS_S10_PHASE1","RS_S10_PHASE2","RS_S10_PHASE3","RS_S10_PHASE4","RS_S10_PHASE5","RS_S10_PARTY","RS_S10_S5M6","RS_S10_S5M7"}
 REWARDS_11 = {"RS_S11_EGG","RS_S11_COMPLETE","RS_S11_PHASE1","RS_S11_PHASE2","RS_S11_PHASE3","RS_S11_PHASE4","RS_S11_PHASE5","RS_S11_PARTY","EXPD_EGG_11","EXPD_BANNER11","EXPD_TITLE11","EXPD_DECAL11","BLD_BUI_HEAD","BLD_BUI_HAND","BLD_BUI_TENT","EXPD_PETCUST11","EXPD_POSTER11C","EXPD_POSTER11B","EXPD_POSTER11A","JETS_ELECTRIC"}
-REWARDS_12 = {"RS_S12_PHASE1","RS_S12_PHASE2","RS_S12_PHASE3","RS_S12_PHASE4","RS_S12_PHASE5","RS_S12_PARTY1","RS_S12_PARTY2","RS_S12_PARTY3","RS_S12_COMPLETE","RS_S12_S1M1","RS_S12_S1M2","RS_S12_S1M3","RS_S12_S1M4","RS_S12_S1M5","RS_S12_S1M6","RS_S12_S1M7","RS_S12_S2M1","RS_S12_S2M2","RS_S12_S2M3","RS_S12_S2M4","RS_S12_S2M5","RS_S12_S2M6","RS_S12_S2M7","RS_S12_S3M1","RS_S12_S3M2","RS_S12_S3M3","RS_S12_S3M4","RS_S12_S3M5","RS_S12_S3M6","RS_S12_S3M7","RS_S12_S4M1","RS_S12_S4M2","RS_S12_S4M3","RS_S12_S4M4","RS_S12_S4M5","RS_S12_S4M6","RS_S12_S4M7","RS_S12_S5M1","RS_S12_S5M2","RS_S12_S5M3","RS_S12_S5M4","RS_S12_S5M5","RS_S12_S5M6","RS_S12_S5M7","EXPD_BANNER12","EXPD_DECAL12","EXPD_ATLASPACK","EXPD_ATLASHELM","EXPD_POSTER12C","EXPD_POSTER12B","EXPD_POSTER12A","RS_S12_STAFF","RS_S12_SHIP"}
+REWARDS_12 = {"RS_S12_PHASE1","RS_S12_PHASE2","RS_S12_PHASE3","RS_S12_PHASE4","RS_S12_PHASE5","RS_S12_PARTY1","RS_S12_PARTY2","RS_S12_PARTY3","RS_S12_S1M1","RS_S12_S1M2","RS_S12_S1M3","RS_S12_S1M4","RS_S12_S1M5","RS_S12_S1M6","RS_S12_S1M7","RS_S12_S2M1","RS_S12_S2M2","RS_S12_S2M3","RS_S12_S2M4","RS_S12_S2M5","RS_S12_S2M6","RS_S12_S2M7","RS_S12_S3M1","RS_S12_S3M2","RS_S12_S3M3","RS_S12_S3M4","RS_S12_S3M5","RS_S12_S3M6","RS_S12_S3M7","RS_S12_S4M1","RS_S12_S4M2","RS_S12_S4M3","RS_S12_S4M4","RS_S12_S4M5","RS_S12_S4M6","RS_S12_S4M7","RS_S12_S5M1","RS_S12_S5M2","RS_S12_S5M3","RS_S12_S5M4","RS_S12_S5M5","RS_S12_S5M6","RS_S12_S5M7"}
+REWARDS_WRACER = {"RS_S12_COMPLETE"}
+REWARDS_ATLASSTAFF = {"RS_S12_STAFF"}
 REWARDS_GVECTOR = {"RS_S1_SHIP"}
 REWARDS_NORMANDY = {"RS_S2_SPEC"}
 REWARDS_VRSPEEDER = {"RS_S9_SHIP"}
 
 SEASON_TABLE =
 {--  TITLE             ICON                       ANIM   REWARD
-    {"Season 1",       "PATCH.EXPEDITION.1.DDS",  "S1",  REWARDS_1},
-    {"Season 2",       "PATCH.EXPEDITION.2.DDS",  "S2",  REWARDS_2},
-    {"Season 3",       "PATCH.EXPEDITION.3.DDS",  "S3",  REWARDS_3},
-    {"Season 4",       "PATCH.EXPEDITION.4.DDS",  "S4",  REWARDS_4},
-    {"Season 5",       "PATCH.EXPEDITION.5.DDS",  "S5",  REWARDS_5},
-    {"Season 6",       "PATCH.EXPEDITION.6.DDS",  "S6",  REWARDS_6},
-    {"Season 7",       "PATCH.EXPEDITION.7.DDS",  "S7",  REWARDS_7},
-    {"Season 8",       "PATCH.EXPEDITION.8.DDS",  "S8",  REWARDS_8},
-    {"Season 9",       "PATCH.EXPEDITION.9.DDS",  "S9",  REWARDS_9},
-    {"Season 10",      "PATCH.EXPEDITION.10.DDS", "S10", REWARDS_10},
-    {"Season 11",      "PATCH.EXPEDITION.11.DDS", "S11", REWARDS_11},
-    {"Season 12",      "PATCH.EXPEDITION.12.DDS", "S12", REWARDS_12},
-    {"Golden Vector",  "PATCH.EXPEDITION.1.DDS",  "GV",  REWARDS_GVECTOR},
-    {"Normandy",       "PATCH.EXPEDITION.2A.DDS", "Nor", REWARDS_NORMANDY},
-    {"Utopia Speeder", "PATCH.EXPEDITION.9.DDS",  "VR",  REWARDS_VRSPEEDER},
+    {"Season 1",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.1.DDS",           "S1",  REWARDS_1},
+    {"Season 2",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.2.DDS",           "S2",  REWARDS_2},
+    {"Season 3",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.3.DDS",           "S3",  REWARDS_3},
+    {"Season 4",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.4.DDS",           "S4",  REWARDS_4},
+    {"Season 5",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.5.DDS",           "S5",  REWARDS_5},
+    {"Season 6",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.6.DDS",           "S6",  REWARDS_6},
+    {"Season 7",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.7.DDS",           "S7",  REWARDS_7},
+    {"Season 8",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.8.DDS",           "S8",  REWARDS_8},
+    {"Season 9",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.9.DDS",           "S9",  REWARDS_9},
+    {"Season 10",      "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.10.DDS",          "S10", REWARDS_10},
+    {"Season 11",      "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.11.DDS",          "S11", REWARDS_11},
+    {"Season 12",      "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.12.DDS",          "S12", REWARDS_12},
+    {"Starborn Racer", "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL1.EXPEDITION.SHIP12.DDS",  "WR",  REWARDS_WRACER},
+    {"Atlas MT",       "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/HERO1.EXPEDITION.ATLASSTAFF.DDS", "AMT", REWARDS_ATLASSTAFF},
+    {"Golden Vector",  "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.1.DDS",           "GV",  REWARDS_GVECTOR},
+    {"Normandy",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.2A.DDS",          "Nor", REWARDS_NORMANDY},
+    {"Utopia Speeder", "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.9.DDS",           "VR",  REWARDS_VRSPEEDER},
 }
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -38,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "4.50",
+["NMS_VERSION"]     = "4.52",
 ["MODIFICATIONS"]   =
     {
         {
@@ -61,22 +65,59 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Event", "GcAnimFrameEvent.xml"},
+                            ["SEC_SAVE_TO"] = "ADD_ANIMFRAMEEVENT",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_ANIMFRAMEEVENT",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FrameStart", "0"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\POI\SKULL\ENTITIES\SKULL.ENTITY.MBIN",
+                    ["MBIN_FS_DISCARD"] = "TRUE",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"GcTriggerActionComponentData.xml"},
                             ["SEC_SAVE_TO"] = "ADD_TRIGGER",
                         },
                         {
                             ["SEC_EDIT"] = "ADD_TRIGGER",
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Event" , "GcPlayerNearbyEvent.xml"},
+                                {"StateID", "WAIT"},
+                                {"Reward", "DE_POI_BONES"},
+                                {"BroadcastLevel", "GcBroadcastLevel.xml"},
+                            },
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_TRIGGER",
+                            ["PRECEDING_KEY_WORDS"] = {"GcActionTrigger.xml"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["SEC_ADD_NAMED"] = "ADD_ANIMFRAMEEVENT",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_TRIGGER",
+                            ["SPECIAL_KEY_WORDS"] = {"State", "WAIT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"StateID",    "BOOT"},
-                                {"FrameStart", "0"},
+                                {"State", "BOOT"},
                             }
                         },
                         {
                             ["SEC_EDIT"] = "ADD_TRIGGER",
+                            ["SPECIAL_KEY_WORDS"] = {"Broadcast", "False"},
+                            ["REPLACE_TYPE"] = "ALL",
                             ["SEC_KEEP"] = "TRUE", --DO NOT REMOVE.  NECESSARY FOR SCRIPT FUNCTION
-                            ["PRECEDING_KEY_WORDS"] = {"GcCameraShakeAction.xml"},
-                            ["REMOVE"] = "SECTION"
+                            ["REMOVE"] = "LINE"
                         },
                     }
                 },
@@ -85,7 +126,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_TURN_L"},
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
                             ["SEC_SAVE_TO"] = "ADD_ANIM",
                         },
                     }
@@ -95,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Title","EMOTE_WAVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
                             ["SEC_SAVE_TO"] = "ADD_EMOTE",
                         },
                     }
@@ -105,14 +146,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","RS_S1_PHASE2"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_S1_PHASE2"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MultiItemRewardType","InventorySlot"},
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_S7_COMPLETE"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MarkAsClaimedInShop", "False"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_S12_PHASE3"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_S12_PHASE3"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MarkAsClaimedInShop", "False"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_S12_COMPLETE"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MarkAsClaimedInShop", "False"},
+                            }
                         },
                     }
                 },
@@ -133,14 +198,14 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
-local AnimTable    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local AnimTable    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
 local TriggerTable = AnimTable -- to show they point to the same table
-local EmoteTable   = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+local EmoteTable   = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
 
 for i=#SEASON_TABLE, 1, -1 do
   local TITLE = "Unlock "..SEASON_TABLE[i][1].." Reward"
   local ANIM  = "Unlock"..SEASON_TABLE[i][3].."Reward"
-  local ICON  = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/"..SEASON_TABLE[i][2]
+  local ICON  = SEASON_TABLE[i][2]
 
   EmoteTable[#EmoteTable+1] =
     {
@@ -175,7 +240,7 @@ for i=#SEASON_TABLE, 1, -1 do
     }
   AnimTable[#AnimTable+1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
+        ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
         ["SECTION_ACTIVE"] = {2},
         ["ADD_OPTION"] = "ADDafterSECTION",
         ["SEC_ADD_NAMED"] = "ADD_ANIM",
@@ -204,6 +269,7 @@ for i=#SEASON_TABLE, 1, -1 do
       {
           ["SEC_EDIT"] = "ADD_TRIGGER",
           ["PRECEDING_KEY_WORDS"] = {"Action"},
+          ["SECTION_ACTIVE"] = {2},
           ["ADD_OPTION"] = "ADDafterLINE",
           ["SEC_ADD_NAMED"] = "ADD_REWARDACTION",
       }

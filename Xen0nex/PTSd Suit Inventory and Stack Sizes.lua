@@ -1,5 +1,5 @@
 ModName = "PTSd Suit Inventory and Stack Sizes"
-GameVersion = "4_41"
+GameVersion = "4_51"
 Description = "Rebalance of inventory Slot stack sizes, as well as initial & max exosuit inventory size"
 
 --NOTE: certain specific items may have their stack size further adjusted in the "PTSd Resource + Product + Construction Rebalance" section
@@ -228,6 +228,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							--Intentionally left blank to be filled in by function below
+						}
+					}
 				}
             }
 		}
@@ -235,7 +244,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 }	
 
 
-local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 
 for i = 1, #Difficulties do
 	local Difficulty = Difficulties[i]
@@ -255,7 +264,7 @@ for i = 1, #Difficulties do
 		local UIPopup = Inventories[9][i+1]
 	
 
-			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+			ChangesToDifficulty[#ChangesToDifficulty+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {Difficulty,"GcDifficultyInventoryStackSizeOptionData.xml"},
 				["PRECEDING_KEY_WORDS"] = ItemType,

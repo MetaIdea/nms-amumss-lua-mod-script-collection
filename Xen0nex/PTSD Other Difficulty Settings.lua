@@ -1,5 +1,5 @@
 ModName = "PTSD Other Difficulty Settings"
-GameVersion = "441"
+GameVersion = "451"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
 --Controls whether you can both increase and decrease the Stack Size limit from the options menu after starting a game
@@ -78,6 +78,7 @@ LFHighShipSummon =				3										--4
 --Multipliers for the "Currency Cost" difficulty settings
 --Unclear what "Specials" is, is not salvaged data / salvaged frigate modules.
 --The Units/Nanites/Specials settings below don't apply to generic substances/products in shop/vendor lists, but to prices when selecting an option from a menu/dialogue tree, such as purchasing an inventory upgrade on a Space Station, etc.
+	--The Units multipliers appear to also apply to the purchase, trade-in, & scan value of starships, but not the salvage value.
 --The "BuyPriceMarkup" settings below apply a multiplier to the existing "BuyBaseMarkup" attribute for most items in shop/vendor lists. "BuyBaseMarkup" controls how much higher an item's purchase price is compared to its base value/selling price.
 	--However, some items are not affected by the "BuyPriceMarkup" settings below. So far I have noticed that "Trade" items (things intended to be bought and sold in different systems to make a profit) are exempted, likely because increasing their purchase/sell ratio could make it impossible to make a profit from trading them.
 CCFreeUnits =					1										--0.33	(Has separate settings to make it free)
@@ -575,6 +576,39 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"TechDamageChanceShieldLevelMin", TechDamageChanceShieldLevelMin},
 					{"TechDamageChanceShieldLevelMax", TechDamageChanceShieldLevelMax},
 					{"TechDamageChanceToSelectPrimary", TechDamageChanceToSelectPrimary},
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA/SIMULATION/SCANNING/SCANDATATABLE.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID","TOOL"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PulseRange", ScannerRange},
+					{"ChargeTime", ScannerRecharge},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID","SHIP"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeTime", ShipScanRecharge},
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
 					{"AllSlotsUnlockedStartingSuitSlots", AllSlotsUnlockedStartingSuitSlots},
 					{"AllSlotsUnlockedStartingSuitTechSlots", AllSlotsUnlockedStartingSuitTechSlots},
 					{"AllSlotsUnlockedStartingWeaponSlots", AllSlotsUnlockedStartingWeaponSlots},
@@ -873,75 +907,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				ADD = LowNeverSoldItems
 			},
 		}
-	},
-	{
-		["MBIN_FILE_SOURCE"] 	= {"METADATA/SIMULATION/SCANNING/SCANDATATABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
-		{
-			{
-				["SPECIAL_KEY_WORDS"] = {"ID","TOOL"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"PulseRange", ScannerRange},
-					{"ChargeTime", ScannerRecharge},
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"ID","SHIP"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"ChargeTime", ShipScanRecharge},
-				}
-			},
-		}
 	}
 }}}}
 
 
 local ChangesToGameplayGlobals = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-
-for i = 1, #Presets do
-	local PresetName = Presets[i][1][1]
-	local Values = Presets[i][2]
-	local CombatValues = Presets[i][3]
-	
-	for j=1, #Values do
-		ValueName = Values[j][1]
-		Value = Values[j][2]
-	
-			ChangesToGameplayGlobals[#ChangesToGameplayGlobals+1] = 
-			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData.xml"},
-				--["PRECEDING_KEY_WORDS"] = {ItemType},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{ValueName, Value}
-				}
-			}
-	end
-			ChangesToGameplayGlobals[#ChangesToGameplayGlobals+1] = 
-			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData.xml",	"SpaceCombatTimers", "GcCombatTimerDifficultyOption.xml"},
-				--["PRECEDING_KEY_WORDS"] = {ItemType},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{CombatValues[1][1], CombatValues[1][2]}
-				}
-			}
-			
-			ChangesToGameplayGlobals[#ChangesToGameplayGlobals+1] = 
-			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData.xml",	"GroundCombatTimers", "GcCombatTimerDifficultyOption.xml"},
-				--["PRECEDING_KEY_WORDS"] = {ItemType},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{CombatValues[2][1], CombatValues[2][2]}
-				}
-			}
-end
 
 for i = 1, #InterestLevelChanges do
 	local InterestType = InterestLevelChanges[i][1][1]
@@ -1012,4 +982,49 @@ for i = 1, #PirateTimersChanges do
 				}
 			}
 	end
+end
+
+local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+
+for i = 1, #Presets do
+	local PresetName = Presets[i][1][1]
+	local Values = Presets[i][2]
+	local CombatValues = Presets[i][3]
+	
+	for j=1, #Values do
+		ValueName = Values[j][1]
+		Value = Values[j][2]
+	
+			ChangesToDifficulty[#ChangesToDifficulty+1] = 
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData.xml"},
+				--["PRECEDING_KEY_WORDS"] = {ItemType},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{ValueName, Value}
+				}
+			}
+	end
+			ChangesToDifficulty[#ChangesToDifficulty+1] = 
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData.xml",	"SpaceCombatTimers", "GcCombatTimerDifficultyOption.xml"},
+				--["PRECEDING_KEY_WORDS"] = {ItemType},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{CombatValues[1][1], CombatValues[1][2]}
+				}
+			}
+			
+			ChangesToDifficulty[#ChangesToDifficulty+1] = 
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData.xml",	"GroundCombatTimers", "GcCombatTimerDifficultyOption.xml"},
+				--["PRECEDING_KEY_WORDS"] = {ItemType},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{CombatValues[2][1], CombatValues[2][2]}
+				}
+			}
 end

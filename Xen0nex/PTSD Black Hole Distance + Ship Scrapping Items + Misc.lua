@@ -1,5 +1,5 @@
 ModName = "PTSD Black Hole Distance + Ship Scrapping Items + Misc"
-GameVersion = "441"
+GameVersion = "451"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -188,6 +188,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				--Intentionally left blank to be filled in by function below
 			}
 		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				--Intentionally left blank to be filled in by function below
+			}
+		}
 	}
 }}}}
 
@@ -217,15 +226,6 @@ for i = 1, #ShipScrappingItemChanges do
 			}
 	end
 end
-for i = 1, #UnknownRecipes do
-	local ContainerID = UnknownRecipes[i]
-		
-			ChangesToGamePlayGlobals[#ChangesToGamePlayGlobals+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "GcDifficultyStartWithAllItemsKnownOptionData.xml",	"Value",	ContainerID},
-				["REMOVE"] = "SECTION"
-			}
-end
 
 local ChangesToDefaultSaveData = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
@@ -237,6 +237,18 @@ for i = 1, #UnknownRecipes do
 				--["PRECEDING_FIRST"] = "TRUE",
 				--["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
 				["SPECIAL_KEY_WORDS"] = {"Value",	ContainerID},
+				["REMOVE"] = "SECTION"
+			}
+end
+
+local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+
+for i = 1, #UnknownRecipes do
+	local ContainerID = UnknownRecipes[i]
+		
+			ChangesToDifficulty[#ChangesToDifficulty+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "GcDifficultyStartWithAllItemsKnownOptionData.xml",	"Value",	ContainerID},
 				["REMOVE"] = "SECTION"
 			}
 end

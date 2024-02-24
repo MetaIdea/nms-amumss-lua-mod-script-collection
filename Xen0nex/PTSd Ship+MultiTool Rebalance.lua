@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_46"
+GameVersion = "4_51"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -572,8 +572,8 @@ CostClassModifierChanges =	--Replaces vanilla cost bonus at different Classes
 
 --Extra multiplier for Pistol's WEAPON_MINING Min value at S Class to make it equivalent to being +25-35% instead of +20-35%
 PistolMiningSMinMult =			1.25					--1
---Extra multiplier for Sentinel & Staff Multi-Tool's WEAPON_DAMAGE Min value at S Class to make it equivalent to being +35-50% instead of +25-50%
-SentinelDamageSMinMult =		1.4						--1
+--Extra multiplier for Sentinel & Staff Multi-Tool's WEAPON_DAMAGE Min value at S Class to make it equivalent to being +35-50% instead of +32-50%
+SentinelDamageSMinMult =		1.09375						--1
 --Extra multipliers for the "Min" Scanning value of S Class Experimental & Royal Multi-tools, so they have an effective "base" range of bonuses of 90-100 instead of always exactly 100 at S Class, before apply the modifiers in ToolStatChanges below
 ExperimentalScanSMinMult =		0.9						--1		(Base is 100)
 RoyalScanSMinMult =				0.9						--1		(Base is 100)
@@ -636,9 +636,9 @@ ToolStatChanges	=
 			"Robot"			--"Sentinel"
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			0.57,	0.76,	0.9,	0.8},		--			+		10-20,		15-25,		20-30,		25-50[35-50]%
+			{"WEAPON_DAMAGE",			0.57,	0.76,	0.9,	0.8},		--			+		10-20,		15-25,		20-30,		32-50[35-50]%
 			{"WEAPON_MINING",			1,		1,		2,		2},			--			+		0-5,		5-10,		5-10,		10-15	%
-			{"WEAPON_SCAN",				1.1,	1.1,	1.1,	1.1}		--			+		20-25,		30-35,		35-45,		40-50	%
+			{"WEAPON_SCAN",				1.1,	1.1,	1.1,	1}			--			+		20-25,		30-35,		35-45,		45-55	%
 		}
 	},
 	{

@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer test"
-GameVersion = "4_45"
+GameVersion = "4_51"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
@@ -269,7 +269,7 @@ FreighterRescueFrigModMin = 		1			--Salvaged Frigate Module
 FreighterRescueFrigModMax = 		1
 FreighterRescueFrigModChance = 		100
 
---Presumably rewards for rescuing Civilian Freighters from Pirate Freighters (added in NMS v4.4)
+--Presumably rewards for rescuing Civilian Freighters from Pirate Freighters (added in NMS v4.4) and for making a pirate freighter surrender (added in NMS v4.5)
 CivilianFreighterRewardChanges =
 {
 	{
@@ -283,6 +283,12 @@ CivilianFreighterRewardChanges =
 		{	--Currency	Min			Max			%Chance (relative weight, roughly but not necessarily out of 100)
 			{"Units",	1200000,	1800000,	100},		--600000,		900000,		100
 			{"Nanites",	800,		1000,		100}		--400,			500,		100		
+		}
+	},
+	{
+		{"R_PIR_TRIBUTE"},		--Presumably the "reward" / tribute for defeating a pirate freighter / dreadnought and forcing it to surrender
+		{	--Currency	Min			Max			%Chance (relative weight, roughly but not necessarily out of 100)
+			{"Units",	4000000,	8000000,	100}		--5000000,		10000000,	100
 		}
 	}
 }
@@ -1084,7 +1090,8 @@ NewNaniteReward = [[<Property value="GcGenericRewardTableEntry.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="List">
+        <Property name="IncrementStat" value="" />
+		<Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
 			<Property name="LabelID" value="" />
@@ -1272,7 +1279,8 @@ PIRATLTEASYRewards =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlways" />
         <Property name="OverrideZeroSeed" value="True" />
-        <Property name="List">
+        <Property name="IncrementStat" value="" />
+		<Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
 			<Property name="LabelID" value="" />
@@ -1421,7 +1429,8 @@ PIRATLTHARDRewards =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlways" />
         <Property name="OverrideZeroSeed" value="True" />
-        <Property name="List">
+        <Property name="IncrementStat" value="" />
+		<Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
 			<Property name="LabelID" value="" />
@@ -1516,7 +1525,8 @@ ESCORTLOOTRewards =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlways" />
         <Property name="OverrideZeroSeed" value="True" />
-        <Property name="List">
+        <Property name="IncrementStat" value="" />
+		<Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
 			<Property name="LabelID" value="" />
@@ -1694,7 +1704,8 @@ AddedExocraftNPCMoney =
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="List">
+        <Property name="IncrementStat" value="" />
+		<Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
 			<Property name="LabelID" value="" />
@@ -1735,7 +1746,8 @@ NewTravReward =
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="List">
+        <Property name="IncrementStat" value="" />
+		<Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="" />

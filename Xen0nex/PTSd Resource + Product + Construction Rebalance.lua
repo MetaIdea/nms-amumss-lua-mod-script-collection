@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_45"
+GameVersion = "4_47"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -329,7 +329,7 @@ NipNipPlatinumNeeded			=	100				--0
 --Gravitino Host plant construction recipe
 GravHostSilverNeeded			=	60				--120	Silver
 GravHostCadmiumNeeded			=	60				--0		(replaces 25 Chromatic Metal)
-GravHostGravitinoBallsNeeded	=	1				--0		(replaces 25 Magnetised Ferrite)
+GravHostGravitinoBallsNeeded	=	2				--0		(replaces 25 Magnetised Ferrite)
 
 --Biofuel Reactor construction recipe
 BioGenPlatesNeeded				=	4				--1		Metal Plates
@@ -389,7 +389,7 @@ DoubleCultivationChamberFaecium = 360				--25 Faecium
 --New recipe for installing Stellar Extractor in freighter
 StellarExtractorSilver = 120						--60 Silver
 StellarExtractorGold = 90							--45 Gold
-StellarExtractorGravBall = 6						--how many Gravitino Balls required	(replaces 40 Mag. Ferrite in vanilla)
+StellarExtractorGravBall = 12						--how many Gravitino Balls required	(replaces 40 Mag. Ferrite in vanilla)
 --New recipe for installing Scanner Room in freighter
 ScannerRoomSilver = 60								--60 Silver
 --ScannerRoomEmeril = 30								--how much Emeril is required		(replaces 30 Gold in vanilla)
