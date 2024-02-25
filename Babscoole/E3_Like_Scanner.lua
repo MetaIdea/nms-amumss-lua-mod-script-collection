@@ -18,9 +18,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R", "1"},      -- Original "0.3"
-                                {"G", "0.8869"}, -- Original "0.9"
-                                {"B", "0"},      -- Original "1"
+                                {"R", "1"},   -- Original "0.3"
+                                {"G", "0.3"}, -- Original "0.9"
+                                {"B", "0"},   -- Original "1"
                             }
                         },
                         {
@@ -43,15 +43,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "500"}, -- Original "200"
-                                {"PulseTime",  "7"},   -- Original "1"
+                                {"PulseTime",  "50"},   -- Original "1"
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "TOOL_HARD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PulseRange", "500"}, -- Original "150"
-                                {"PulseTime",  "7"},   -- Original "1"
+                                {"PulseRange", "600"}, -- Original "150"
+                                {"PulseTime",  "50"},   -- Original "1"
                             }
                         },
                     }
