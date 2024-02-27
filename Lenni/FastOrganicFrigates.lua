@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "FastOrganicFrigates.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "3.98",
+["NMS_VERSION"]				= "4.51",
 ["MOD_DESCRIPTION"]			= "Makes the Dream Aerial not useless",
 ["MODIFICATIONS"] 			= 
 	{

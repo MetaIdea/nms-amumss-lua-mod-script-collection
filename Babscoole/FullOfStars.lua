@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "FullOfStars.pak",
 ["MOD_AUTHOR"]    = "darkmessenger84",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.34",
+["NMS_VERSION"]   = "4.51",
 ["MODIFICATIONS"] =
     {
         {

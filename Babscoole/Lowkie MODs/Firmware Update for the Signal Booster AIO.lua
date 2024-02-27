@@ -147,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie",
   ["MOD_MAINTENANCE"] = "Babscoole",
-  ["NMS_VERSION"]     = "4.50",
+  ["NMS_VERSION"]     = "4.52",
   ["MODIFICATIONS"]   =
     {
         {

@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "FasterScanning.pak",
+["MOD_FILENAME"] 			= "FasterScanningInstant+NoDelay.pak",
 ["MOD_AUTHOR"]				= "Flugelwulff",
-["NMS_VERSION"]				= "4.51",
+["NMS_VERSION"]				= "4.47",
 ["MODIFICATIONS"] 			= 
 	{
 		{

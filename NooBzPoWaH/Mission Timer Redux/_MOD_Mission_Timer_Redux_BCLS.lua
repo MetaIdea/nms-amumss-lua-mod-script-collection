@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_MOD_Mission_Timer_Redux_APBCLS.pak",
-["MOD_DESCRIPTION"] 			= "Reduce Mission Timer, Atlas, Base Computer and Living Ship",
+["MOD_FILENAME"] 			= "_MOD_Mission_Timer_Redux_BCLS.pak",
+["MOD_DESCRIPTION"] 		= "Reduce Mission Timer for Base Computer and Living Ship",
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
 ["LUA_AUTHOR"] 				= "Babscoole",
 ["NMS_VERSION"]				= "4.+",
@@ -10,20 +10,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\\SIMULATION\\MISSIONS\\ATLASPATHTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Message","UI_POLO_LONGWAIT_MSG"},
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Time",				"0"}, 
-							}
-						},
-					}
-				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\\SIMULATION\\MISSIONS\\BASECOMPUTERMISSIONTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 

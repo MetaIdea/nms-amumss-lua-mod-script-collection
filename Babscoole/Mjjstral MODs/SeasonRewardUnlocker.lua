@@ -17,7 +17,7 @@ REWARDS_NORMANDY = {"RS_S2_SPEC"}
 REWARDS_VRSPEEDER = {"RS_S9_SHIP"}
 
 SEASON_TABLE =
-{--  TITLE             ICON                       ANIM   REWARD
+{--  TITLE             ICON                                                                      ANIM   REWARD
     {"Season 1",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.1.DDS",           "S1",  REWARDS_1},
     {"Season 2",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.2.DDS",           "S2",  REWARDS_2},
     {"Season 3",       "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.3.DDS",           "S3",  REWARDS_3},
@@ -65,59 +65,32 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Event", "GcAnimFrameEvent.xml"},
-                            ["SEC_SAVE_TO"] = "ADD_ANIMFRAMEEVENT",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_ANIMFRAMEEVENT",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FrameStart", "0"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\POI\SKULL\ENTITIES\SKULL.ENTITY.MBIN",
-                    ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"GcTriggerActionComponentData.xml"},
                             ["SEC_SAVE_TO"] = "ADD_TRIGGER",
                         },
                         {
                             ["SEC_EDIT"] = "ADD_TRIGGER",
-                            ["FOREACH_SKW_GROUP"] =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Event" , "GcPlayerNearbyEvent.xml"},
-                                {"StateID", "WAIT"},
-                                {"Reward", "DE_POI_BONES"},
-                                {"BroadcastLevel", "GcBroadcastLevel.xml"},
-                            },
-                            ["REPLACE_TYPE"] = "ALL",
+                                {"StateID",    "BOOT"},
+                                {"FrameStart", "0"},
+                            }
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_TRIGGER",
+                            ["PRECEDING_KEY_WORDS"] = {"GcCameraShakeAction.xml"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
                             ["SEC_EDIT"] = "ADD_TRIGGER",
                             ["PRECEDING_KEY_WORDS"] = {"GcActionTrigger.xml"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_ANIMFRAMEEVENT",
+                            ["SEC_KEEP"] = "TRUE",  --DO NOT REMOVE
+                            ["SEC_SAVE_TO"] = "ADD_ACTIONTRIGGER",
                         },
                         {
                             ["SEC_EDIT"] = "ADD_TRIGGER",
-                            ["SPECIAL_KEY_WORDS"] = {"State", "WAIT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"State", "BOOT"},
-                            }
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_TRIGGER",
-                            ["SPECIAL_KEY_WORDS"] = {"Broadcast", "False"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["SEC_KEEP"] = "TRUE", --DO NOT REMOVE.  NECESSARY FOR SCRIPT FUNCTION
-                            ["REMOVE"] = "LINE"
+                            ["PRECEDING_KEY_WORDS"] = {"GcActionTrigger.xml"},
+                            ["REMOVE"] = "SECTION"
                         },
                     }
                 },
@@ -198,9 +171,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
-local AnimTable    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+local AnimTable    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 local TriggerTable = AnimTable -- to show they point to the same table
-local EmoteTable   = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+local EmoteTable   = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
 
 for i=#SEASON_TABLE, 1, -1 do
   local TITLE = "Unlock "..SEASON_TABLE[i][1].." Reward"
@@ -247,7 +220,7 @@ for i=#SEASON_TABLE, 1, -1 do
     }
   TriggerTable[#TriggerTable+1] =
     {
-        ["SEC_EDIT"] = {"ADD_TRIGGER"},
+        ["SEC_EDIT"] = {"ADD_ACTIONTRIGGER"},
         ["VALUE_CHANGE_TABLE"] =
         {
             {"Anim", ANIM},
@@ -267,17 +240,23 @@ for i=#SEASON_TABLE, 1, -1 do
       }
     TriggerTable[#TriggerTable+1] =
       {
-          ["SEC_EDIT"] = "ADD_TRIGGER",
+          ["SEC_EDIT"] = "ADD_ACTIONTRIGGER",
           ["PRECEDING_KEY_WORDS"] = {"Action"},
-          ["SECTION_ACTIVE"] = {2},
           ["ADD_OPTION"] = "ADDafterLINE",
           ["SEC_ADD_NAMED"] = "ADD_REWARDACTION",
       }
   end
+    TriggerTable[#TriggerTable+1] =
+      {
+          ["SEC_EDIT"] = "ADD_TRIGGER",
+          ["PRECEDING_KEY_WORDS"] = {"Triggers"},
+          ["ADD_OPTION"] = "ADDafterLINE",
+          ["SEC_ADD_NAMED"] = "ADD_ACTIONTRIGGER",
+      }
+end
   TriggerTable[#TriggerTable+1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
         ["ADD_OPTION"] = "ADDafterSECTION",
         ["SEC_ADD_NAMED"] = "ADD_TRIGGER",
     }
-end

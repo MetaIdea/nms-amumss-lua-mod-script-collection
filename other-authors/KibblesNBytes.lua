@@ -584,7 +584,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_______KibblesNBytes.pak",
 ["MOD_AUTHOR"]    = "InstaKibs, WinderTP, Babscoole",
-["NMS_VERSION"]   = "4.50",
+["NMS_VERSION"]   = "4.52",
 ["MODIFICATIONS"] =
     {
         {
@@ -632,7 +632,7 @@ for i=1,#SURFACENORMAL do
     local temp_table =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", value},
-        ["VALUE_CHANGE_TABLE"]     =
+        ["VALUE_CHANGE_TABLE"] =
         {
             {"BaseBuildingDecorationType", "SurfaceNormal"}
         }
@@ -645,10 +645,10 @@ for i=1,#OVERRIDE do
     local temp_table =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", value},
-        ["VALUE_CHANGE_TABLE"]     =
+        ["VALUE_CHANGE_TABLE"] =
         {
-            {"CanRotate3D", "False"},
-            {"CanScale", "False"},
+            {"CanRotate3D",     "False"},
+            {"CanScale",        "False"},
             {"CanChangeColour", "False"}
         }
     }
@@ -660,11 +660,11 @@ for i=1,#OVERRIDE2 do
     local temp_table =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", value},
-        ["VALUE_CHANGE_TABLE"]     =
+        ["VALUE_CHANGE_TABLE"] =
         {
             {"BuildableOnPlanetBase", "False"},
-            {"BuildableOnSpaceBase", "False"},
-            {"BuildableOnFreighter", "False"}
+            {"BuildableOnSpaceBase",  "False"},
+            {"BuildableOnFreighter",  "False"}
         }
     }
     Change_Table_Ref[#Change_Table_Ref + 1] = temp_table

@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "All Blue - Vanilla Water Color"
-GameVersion = "4.51"
+GameVersion = "4.52"
 --ModVersion = "v1"
 Description = "Makes all Water Blue and changes its color slightly to look more natural"
 
