@@ -730,6 +730,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["MATH_OPERATION"] = "*",
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Coverage", "0"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["PRECEDING_KEY_WORDS"] = {"Samplers"},
                             ["CREATE_HOES"] = "TRUE",

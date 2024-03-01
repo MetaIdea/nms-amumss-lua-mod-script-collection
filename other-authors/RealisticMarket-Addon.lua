@@ -175,6 +175,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {[["U_LAUNCH1"]],[["U_LAUNCH4"]],},
                 {[["U_LAUNCH2"]],[["U_LAUNCH4"]],},
                 {[["U_LAUNCH3"]],[["U_LAUNCH4"]],},
+				{[["U_CANNON1"]],[["U_CANNON4"]],},
+				{[["U_CANNON1"]],[["U_CANNON4"]],},
+				{[["U_CANNON1"]],[["U_CANNON4"]],}
                 -- {[["HYPERFUEL1"]],[["NULL"]],},
                 -- {[["TECHFRAG"]],[["NULL"]],},
                 -- {[["BP_SALVAGE"]],[["NULL"]],},

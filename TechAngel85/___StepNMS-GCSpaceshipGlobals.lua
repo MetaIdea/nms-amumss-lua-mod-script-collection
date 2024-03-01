@@ -24,8 +24,9 @@ FreighterApproachSpeedDamper = 1		-- The amount of speed dampener applied when a
 MiniWarpShakeStrength = 1				-- The strength of the shake during warp | 2 | 1357
 MiniWarpSpeed = 50000					-- Speed at which ship travels during warp | 30000 | 1363
 MiniWarpExitTime = 0.3	 				-- Time it take to exit warp | 0.5 | 1374
-MiniWarpHUDArrowAttractAngle = 5		-- The sensitivity the mouse will auto-hover over marker icons | 10  | 1375
-MiniWarpHUDArrowAttractAngleDense = 3	-- The sensitivity the mouse will auto-hover over marker icons when the icons are considered densely packed | 4 | 1379
+MiniWarpHUDArrowAttractAngle = 3		-- The sensitivity the mouse will auto-snap over marker icons | 10  | 1375
+MiniWarpHUDArrowAttractAngleDense = 3	-- The sensitivity the mouse will auto-snap over marker icons when the icons are considered densely packed | 4 | 1379
+MiniWarpHUDArrowAttractAngleStation = 4	-- The sensitivity the mouse will auto-snap over station markers | 5 | 
 MiniWarpHUDArrowNumMarkersToBeDense = 4	-- The number of icons that are close together to be considered densely packed, at which time the sensitivity will change to "MiniWarpHUDArrowAttractAngleDense" | 6 | 1380
 AnomalyStationMaxApproachSpeed = 180	-- The max speed allow during docking approach to the Anomaly | 60 | 1408
 
@@ -156,6 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"MiniWarpExitTime", MiniWarpExitTime}, 
 						{"MiniWarpHUDArrowAttractAngle", MiniWarpHUDArrowAttractAngle}, 
 						{"MiniWarpHUDArrowAttractAngleDense", MiniWarpHUDArrowAttractAngleDense}, 
+						{"MiniWarpHUDArrowAttractAngleStation", MiniWarpHUDArrowAttractAngleStation}, 
 						{"MiniWarpHUDArrowNumMarkersToBeDense", MiniWarpHUDArrowNumMarkersToBeDense}, 
 						{"AnomalyStationMaxApproachSpeed", AnomalyStationMaxApproachSpeed}, 
 						{"LaunchThrustersMinimumSummonPercentage", LaunchThrustersMinimumSummonPercentage}, 

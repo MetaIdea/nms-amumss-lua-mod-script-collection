@@ -1,6 +1,6 @@
 Author = "Step Modifications"
 ModName = "___StepNoMansSky"
-ModDescription = "This takes the changes that CSO Darker Space makes and makes space even darker while brightening the nebulas."
+ModDescription = "This takes the changes that CSO Darker Space makes and makes space even darker while brightening the nebulae."
 FileSource01 = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN"
 FileSource02 = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN"
 -- Credits: Clean Space Origins [Darker Space] --
