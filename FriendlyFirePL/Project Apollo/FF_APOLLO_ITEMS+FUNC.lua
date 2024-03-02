@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "ITEMS+FUNC"
-METADATA_NMS_VERSION    = "448"
+METADATA_NMS_VERSION    = "452_SEC"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for gameplay items and other functionality. Modifies files in METADATA\\REALITY."
 
 
@@ -89,6 +89,11 @@ function BuildItemProperty(name,color,legality,stack,crafting,craftable) return
   <Property name="EconomyInfluenceMultiplier" value="0" />
   <Property name="PinObjective" value="" />
   <Property name="PinObjectiveTip" value="" />
+  <Property name="PinObjectiveMessage" value="" />
+  <Property name="PinObjectiveScannableType" value="GcScannerIconTypes.xml">
+    <Property name="ScanIconType" value="None" />
+  </Property>
+  <Property name="PinObjectiveEasyToRefine" value="False" />
   <Property name="CookingIngredient" value="False" />
   <Property name="CookingValue" value="0" />
   <Property name="GoodForSelling" value="False" />
@@ -124,18 +129,22 @@ function BuildCraftingSection(item,type,amount) return
 end
 
 function BuildCraftingProperty(...)
+
   local arg = {...}
+
   if #arg == 3 then return
   [[<Property name="Requirements">]]..
   BuildCraftingSection(arg[1],arg[2],arg[3])..
   [[</Property>]]
   end
+
   if #arg == 6 then return
   [[<Property name="Requirements">]]..
   BuildCraftingSection(arg[1],arg[2],arg[3])..
   BuildCraftingSection(arg[4],arg[5],arg[6])..
   [[</Property>]]
   end
+
   if #arg == 9 then return
   [[<Property name="Requirements">]]..
   BuildCraftingSection(arg[1],arg[2],arg[3])..
@@ -143,111 +152,10 @@ function BuildCraftingProperty(...)
   BuildCraftingSection(arg[7],arg[8],arg[9])..
   [[</Property>]]
   end
+  
 end
 
-function BuildConsumableProperty(type,name,audio,fail) return
-[[
-<Property value="GcConsumableItem.xml">
-  <Property name="ID" value="]]..type..[[_]]..name..[[" />
-  <Property name="RewardID" value="R_]]..name..[[" />
-  <Property name="TutorialRewardID" value="" />
-  <Property name="ButtonLocID" value="TEXT_]]..name..[[_B" />
-  <Property name="ButtonSubLocID" value="TEXT_]]..name..[[_U" />
-  <Property name="CloseInventoryWhenUsed" value="True" />
-  <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
-    <Property name="AkEvent" value="]]..audio..[[" />
-  </Property>
-  <Property name="RewardFailedLocID" value="]]..fail..[[" />
-  <Property name="DestroyItemWhenConsumed" value="True" />
-  <Property name="AddCommunityTierClassIcon" value="False" />
-  <Property name="SuppressResourceMessage" value="False" />
-  <Property name="CustomOSD" value="" />
-  <Property name="RequiresMissionActive" value="" />
-</Property>
-]]
-end
 
-function BuildBoxConsProperty(name) return
-[[
-<Property value="GcConsumableItem.xml">
-  <Property name="ID" value="ITEM_]]..name..[[" />
-  <Property name="RewardID" value="R_]]..name..[[" />
-  <Property name="TutorialRewardID" value="" />
-  <Property name="ButtonLocID" value="TEXT_BOX_B" />
-  <Property name="ButtonSubLocID" value="TEXT_BOX_U" />
-  <Property name="CloseInventoryWhenUsed" value="True" />
-  <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
-    <Property name="AkEvent" value="ATLAS_CORE_ACTIVATE" />
-  </Property>
-  <Property name="RewardFailedLocID" value="" />
-  <Property name="DestroyItemWhenConsumed" value="False" />
-  <Property name="AddCommunityTierClassIcon" value="False" />
-  <Property name="SuppressResourceMessage" value="False" />
-  <Property name="CustomOSD" value="" />
-  <Property name="RequiresMissionActive" value="" />
-</Property>
-]]
-end
-
-function BuildBoxRewardProperty(name) return
-[[
-<Property value="GcGenericRewardTableEntry.xml">
-  <Property name="Id" value="R_]]..name..[[" />
-  <Property name="List" value="GcRewardTableItemList.xml">
-    <Property name="RewardChoice" value="GiveAll" />
-    <Property name="OverrideZeroSeed" value="False" />
-    <Property name="UseInventoryChoiceOverride" value="False" />
-    <Property name="List">
-      <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="100" />
-        <Property name="LabelID" value="StartMission" />
-        <Property name="Reward" value="GcRewardMissionSeeded.xml">
-          <Property name="Mission" value="M_]]..name..[[" />
-          <Property name="MissionNoGroundCombat" value="" />
-          <Property name="MissionNoSpaceCombat" value="" />
-          <Property name="InheritActiveMultiplayerMissionSeed" value="False" />
-          <Property name="SelectMissionAsLocalMissionBoard" value="False" />
-          <Property name="ForceUseConversationSeed" value="False" />
-        </Property>
-      </Property>
-    </Property>
-  </Property>
-</Property>
-]]
-end
-
-function BuildRewardProductProperty(Name,Item,Min,Max,Special) return
-[[
-<Property value="GcGenericRewardTableEntry.xml">
-  <Property name="Id" value="]]..Name..[[" />
-  <Property name="List" value="GcRewardTableItemList.xml">
-    <Property name="RewardChoice" value="GiveAll" />
-    <Property name="OverrideZeroSeed" value="False" />
-    <Property name="UseInventoryChoiceOverride" value="False" />
-    <Property name="List">
-      <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="100" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardSpecificProduct.xml">
-          <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-          </Property>
-          <Property name="ID" value="]]..Item..[[" />
-          <Property name="AmountMin" value="]]..Min..[[" />
-          <Property name="AmountMax" value="]]..Max..[[" />
-          <Property name="HideAmountInMessage" value="False" />
-          <Property name="ForceSpecialMessage" value="]]..Special..[[" />
-          <Property name="HideInSeasonRewards" value="False" />
-          <Property name="Silent" value="False" />
-          <Property name="SeasonRewardListFormat" value="" />
-          <Property name="RequiresTech" value="" />
-        </Property>
-      </Property>
-    </Property>
-  </Property>
-</Property>
-]]
-end
 
 ----------------------------------------------------------------------------------------------------
 -- items
@@ -304,9 +212,6 @@ PROPTERY_ITEM_BOXA = BuildItemProperty(
   "BOXA",COLOR_WHITE,"Legal",
   0,CRAFTING_NONE,"False")
 
-PROPERTY_CONS_BOXA = BuildBoxConsProperty("BOXA")
-PROPERTY_REWARD_BOXA = BuildBoxRewardProperty("BOXA")
-
 --------------------------------------------------
 -- blueprint B
 --------------------------------------------------
@@ -322,9 +227,6 @@ PROPERTY_ITEM_CRYSTAL = BuildItemProperty(
 PROPERTY_ITEM_BOXB = BuildItemProperty(
   "BOXB",COLOR_WHITE,"Legal",
   0,CRAFTING_NONE,"False")
-
-PROPERTY_CONS_BOXB = BuildBoxConsProperty("BOXB")
-PROPERTY_REWARD_BOXB = BuildBoxRewardProperty("BOXB")
 
 --------------------------------------------------
 -- blueprint C
@@ -342,301 +244,10 @@ PROPERTY_ITEM_BOXC = BuildItemProperty(
   "BOXC",COLOR_WHITE,"Legal",
   0,CRAFTING_NONE,"False")
 
-PROPERTY_CONS_BOXC = BuildBoxConsProperty("BOXC")
-PROPERTY_REWARD_BOXC = BuildBoxRewardProperty("BOXC")
-
 
 
 ----------------------------------------------------------------------------------------------------
--- functional modules
-----------------------------------------------------------------------------------------------------
-
---------------------------------------------------
--- scanner interaction
---------------------------------------------------
-
-PROPERTY_CONS_SCANNER = BuildConsumableProperty(
-  "TECH","SCANNER","ATLAS_CORE_ACTIVATE","TEXT_SCANNER_F")
-
-PROPERTY_REWARD_SCANNER = 
-[[
-<Property value="GcGenericRewardTableEntry.xml">
-  <Property name="Id" value="R_SCANNER" />
-  <Property name="List" value="GcRewardTableItemList.xml">
-    <Property name="RewardChoice" value="GiveAll" />
-    <Property name="OverrideZeroSeed" value="False" />
-    <Property name="UseInventoryChoiceOverride" value="False" />
-    <Property name="List">
-      <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="100" />
-        <Property name="LabelID" value="StartMission" />
-        <Property name="Reward" value="GcRewardMissionSeeded.xml">
-          <Property name="Mission" value="M_SCANNER" />
-          <Property name="MissionNoGroundCombat" value="" />
-          <Property name="MissionNoSpaceCombat" value="" />
-          <Property name="InheritActiveMultiplayerMissionSeed" value="False" />
-          <Property name="SelectMissionAsLocalMissionBoard" value="False" />
-          <Property name="ForceUseConversationSeed" value="False" />
-        </Property>
-      </Property>
-    </Property>
-  </Property>
-</Property>
-]]
-
---------------------------------------------------
--- computer module interaction
---------------------------------------------------
-
-PROPERTY_CONS_COMPUTER = BuildConsumableProperty(
-  "TECH","COMPUTER","INVALID_EVENT","")
-
-PROPERTY_REWARD_COMPUTER =
-[[
-<Property value="GcGenericRewardTableEntry.xml">
-  <Property name="Id" value="R_COMPUTER" />
-  <Property name="List" value="GcRewardTableItemList.xml">
-    <Property name="RewardChoice" value="GiveAllSilent" />
-    <Property name="OverrideZeroSeed" value="False" />
-    <Property name="UseInventoryChoiceOverride" value="False" />
-    <Property name="List">
-      <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="100" />
-        <Property name="LabelID" value="Outpost" />
-        <Property name="Reward" value="GcRewardScanEvent.xml">
-          <Property name="Event" value="OUTPOST" />
-          <Property name="ScanEventTable" value="Planet" />
-          <Property name="DoAerialScan" value="False" />
-          <Property name="UseMissionSeedForEvent" value="False" />
-          <Property name="StartDelay" value="6" />
-          <Property name="UseStartDelayWhenNoAerialScan" value="False" />
-          <Property name="ForceSilentFailure" value="False" />
-          <Property name="FailureOSD" value="TEXT_COMPUTER_F" />
-        </Property>
-      </Property>
-    </Property>
-  </Property>
-</Property>
-]]
-
---------------------------------------------------
--- locator module interaction
---------------------------------------------------
-
-PROPERTY_CONS_LOCATOR = BuildConsumableProperty(
-  "TECH","LOCATOR","INVALID_EVENT","")
-
-PROPERTY_REWARD_LOCATOR =
-[[
-<Property value="GcGenericRewardTableEntry.xml">
-  <Property name="Id" value="R_LOCATOR" />
-  <Property name="List" value="GcRewardTableItemList.xml">
-    <Property name="RewardChoice" value="SelectAlways" />
-    <Property name="OverrideZeroSeed" value="False" />
-    <Property name="UseInventoryChoiceOverride" value="False" />
-    <Property name="List">
-      <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="50" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardScanEvent.xml">
-          <Property name="Event" value="LIBRARY" />
-          <Property name="ScanEventTable" value="Planet" />
-          <Property name="DoAerialScan" value="False" />
-          <Property name="UseMissionSeedForEvent" value="False" />
-          <Property name="StartDelay" value="6" />
-          <Property name="UseStartDelayWhenNoAerialScan" value="False" />
-          <Property name="ForceSilentFailure" value="False" />
-          <Property name="FailureOSD" value="TEXT_LOCATOR_F" />
-        </Property>
-      </Property>
-      <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="50" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardScanEvent.xml">
-          <Property name="Event" value="SE_PORTAL" />
-          <Property name="ScanEventTable" value="Tutorial" />
-          <Property name="DoAerialScan" value="False" />
-          <Property name="UseMissionSeedForEvent" value="False" />
-          <Property name="StartDelay" value="6" />
-          <Property name="UseStartDelayWhenNoAerialScan" value="False" />
-          <Property name="ForceSilentFailure" value="False" />
-          <Property name="FailureOSD" value="TEXT_LOCATOR_F" />
-        </Property>
-      </Property>
-    </Property>
-  </Property>
-</Property>
-]]
-
---------------------------------------------------
--- dissonant module interaction
---------------------------------------------------
-
-PROPERTY_CONS_DISSONANT = BuildConsumableProperty(
-  "TECH","DISSONANT","INVALID_EVENT","")
-
-PROPERTY_REWARD_DISSONANT =
-[[
-<Property value="GcGenericRewardTableEntry.xml">
-  <Property name="Id" value="R_DISSONANT" />
-  <Property name="List" value="GcRewardTableItemList.xml">
-    <Property name="RewardChoice" value="TryFirst_ThenSelectAlways" />
-    <Property name="OverrideZeroSeed" value="False" />
-    <Property name="UseInventoryChoiceOverride" value="False" />
-    <Property name="List">
-      <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="0" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardScanEvent.xml">
-          <Property name="Event" value="SE_DISSONANT" />
-          <Property name="ScanEventTable" value="Planet" />
-          <Property name="DoAerialScan" value="True" />
-          <Property name="UseMissionSeedForEvent" value="False" />
-          <Property name="StartDelay" value="6" />
-          <Property name="UseStartDelayWhenNoAerialScan" value="False" />
-          <Property name="ForceSilentFailure" value="True" />
-          <Property name="FailureOSD" value="" />
-        </Property>
-      </Property>
-      <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="100" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardMissionSeeded.xml">
-          <Property name="Mission" value="M_DISSONANT" />
-          <Property name="MissionNoGroundCombat" value="" />
-          <Property name="MissionNoSpaceCombat" value="" />
-          <Property name="InheritActiveMultiplayerMissionSeed" value="False" />
-          <Property name="SelectMissionAsLocalMissionBoard" value="False" />
-          <Property name="ForceUseConversationSeed" value="False" />
-        </Property>
-      </Property>
-    </Property>
-  </Property>
-</Property>
-]]
-
-
-
-----------------------------------------------------------------------------------------------------
--- new tech tree interaction
-----------------------------------------------------------------------------------------------------
-
-PROPERTY_REWARD_NEWTREE = 
-[[
-<Property value="GcGenericRewardTableEntry.xml">
-  <Property name="Id" value="R_SHIPTREE" />
-  <Property name="List" value="GcRewardTableItemList.xml">
-    <Property name="RewardChoice" value="GiveAll" />
-    <Property name="OverrideZeroSeed" value="False" />
-    <Property name="UseInventoryChoiceOverride" value="False" />
-    <Property name="List">
-      <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="100" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardOpenUnlockTree.xml">
-          <Property name="TreeToOpen" value="GcUnlockableItemTreeGroups.xml">
-            <Property name="UnlockableItemTree" value="Test" />
-          </Property>
-          <Property name="PageIndexOverride" value="0" />
-        </Property>
-      </Property>
-    </Property>
-  </Property>
-</Property>
-]]
-
-PROPERTY_DIALOGUE_TREE =
-[[
-<Property value="GcAlienPuzzleOption.xml">
-  <Property name="Name" value="TEXT_DIALOGUE_RESEARCH" />
-  <Property name="Text" value="" />
-  <Property name="IsAlien" value="False" />
-  <Property name="Cost" value="" />
-  <Property name="Rewards">
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="R_SHIPTREE" />
-    </Property>
-  </Property>
-  <Property name="Mood" value="GcAlienMood.xml">
-    <Property name="Mood" value="Neutral" />
-  </Property>
-  <Property name="Prop" value="GcNPCPropType.xml">
-    <Property name="NPCProp" value="DontCare" />
-  </Property>
-  <Property name="OverrideWithAlienWord" value="False" />
-  <Property name="ReseedInteractionOnUse" value="False" />
-  <Property name="KeepOpen" value="False" />
-  <Property name="DisplayCost" value="True" />
-  <Property name="TruncateCost" value="False" />
-  <Property name="MarkInteractionComplete" value="True" />
-  <Property name="NextInteraction" value="" />
-  <Property name="SelectedOnBackOut" value="False" />
-  <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-    <Property name="AkEvent" value="INVALID_EVENT" />
-  </Property>
-  <Property name="TitleOverride" value="" />
-  <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-    <Property name="ConditionTest" value="AnyFalse" />
-  </Property>
-  <Property name="EnablingConditions" />
-  <Property name="EnablingConditionId" value="" />
-  <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-    <Property name="wordcategorytableEnum" value="MISC" />
-  </Property>
-</Property>
-]]
-
-
-
-----------------------------------------------------------------------------------------------------
--- exchanging memories interaction
-----------------------------------------------------------------------------------------------------
-
-PROPERTY_DIALOGUE_MEMORY =
-[[
-<Property value="GcAlienPuzzleOption.xml">
-  <Property name="Name" value="TEXT_DIALOGUE_MEMORY" />
-  <Property name="Text" value="TEXT_REACTION_MEMORY" />
-  <Property name="IsAlien" value="True" />
-  <Property name="Cost" value="C_MEMORY" />
-  <Property name="Rewards">
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="R_MEMORY" />
-    </Property>
-  </Property>
-  <Property name="Mood" value="GcAlienMood.xml">
-    <Property name="Mood" value="Positive" />
-  </Property>
-  <Property name="Prop" value="GcNPCPropType.xml">
-    <Property name="NPCProp" value="DontCare" />
-  </Property>
-  <Property name="OverrideWithAlienWord" value="False" />
-  <Property name="ReseedInteractionOnUse" value="True" />
-  <Property name="KeepOpen" value="False" />
-  <Property name="DisplayCost" value="True" />
-  <Property name="TruncateCost" value="False" />
-  <Property name="MarkInteractionComplete" value="True" />
-  <Property name="NextInteraction" value="" />
-  <Property name="SelectedOnBackOut" value="False" />
-  <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-    <Property name="AkEvent" value="INVALID_EVENT" />
-  </Property>
-  <Property name="TitleOverride" value="" />
-  <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-    <Property name="ConditionTest" value="AnyFalse" />
-  </Property>
-  <Property name="EnablingConditions" />
-  <Property name="EnablingConditionId" value="" />
-  <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-    <Property name="wordcategorytableEnum" value="MISC" />
-  </Property>
-</Property>
-]]
-
-
-
-----------------------------------------------------------------------------------------------------
--- other objects / functions
+-- other objects
 ----------------------------------------------------------------------------------------------------
 
 --------------------------------------------------
@@ -709,37 +320,6 @@ PROPERTY_COST_UPGRADE =
 ]]
 
 --------------------------------------------------
--- cost: lexicon
---------------------------------------------------
-
-PROPERTY_COST_DICTIONARY =
-[[
-<Property value="GcCostTableEntry.xml">
-  <Property name="Id" value="C_DICT" />
-  <Property name="DisplayCost" value="True" />
-  <Property name="DontCharge" value="False" />
-  <Property name="HideOptionAndDisplayCostOnly" value="False" />
-  <Property name="DisplayOnlyCostIfCantAfford" value="False" />
-  <Property name="HideCostStringIfCanAfford" value="False" />
-  <Property name="RemoveOptionIfCantAfford" value="False" />
-  <Property name="InvertCanAffordOutcome" value="False" />
-  <Property name="MustAffordInCreative" value="False" />
-  <Property name="CommunityContributionValue" value="0" />
-  <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
-  <Property name="CannotAffordOSDMsg" value="" />
-  <Property name="MissionMessageWhenCharged" value="" />
-  <Property name="Cost" value="GcCostProduct.xml">
-    <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-      <Property name="DefaultProductType" value="None" />
-    </Property>
-    <Property name="Id" value="ITEM_DICTIONARY" />
-    <Property name="Amount" value="1" />
-    <Property name="UseDefaultAmount" value="False" />
-  </Property>
-</Property>
-]]
-
---------------------------------------------------
 -- cost: exchanging memories with Hesperus
 --------------------------------------------------
 
@@ -796,27 +376,6 @@ PROPERTY_COST_MEMORY =
 </Property>
 ]]
 
-
-
---------------------------------------------------
--- image: fancy quest notification
---------------------------------------------------
-
-PROPERTY_BANNER_TECH = 
-[[
-<Property value="GcRealityIcon.xml">
-  <Property name="ID" value="BANNER_TECH" />
-  <Property name="Texture" value="TkTextureResource.xml">
-    <Property name="Filename" value="TEXTURES/BANNER_TECH.DDS" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-  </Property>
-</Property>
-]]
-
-
-
 --------------------------------------------------
 -- reward: lexicon
 --------------------------------------------------
@@ -829,8 +388,8 @@ PROPERTY_REWARD_DICTIONARY =
     <Property name="RewardChoice" value="GiveAll" />
     <Property name="OverrideZeroSeed" value="False" />
     <Property name="UseInventoryChoiceOverride" value="False" />
+    <Property name="IncrementStat" value="" />
     <Property name="List">
-
       <Property value="GcRewardTableItem.xml">
         <Property name="PercentageChance" value="100" />
         <Property name="LabelID" value="" />
@@ -846,7 +405,6 @@ PROPERTY_REWARD_DICTIONARY =
           <Property name="AmountMax" value="12" />
         </Property>
       </Property>
-
       <Property value="GcRewardTableItem.xml">
         <Property name="PercentageChance" value="100" />
         <Property name="LabelID" value="" />
@@ -871,7 +429,6 @@ PROPERTY_REWARD_DICTIONARY =
           <Property name="UseTimedMessage" value="False" />
         </Property>
       </Property>
-
     </Property>
   </Property>
 </Property>
@@ -889,6 +446,7 @@ PROPERTY_REWARD_MEMORY =
     <Property name="RewardChoice" value="SelectAlways" />
     <Property name="OverrideZeroSeed" value="True" />
     <Property name="UseInventoryChoiceOverride" value="False" />
+    <Property name="IncrementStat" value="" />
     <Property name="List">
 
       <Property value="GcRewardTableItem.xml">
@@ -1024,68 +582,6 @@ PROPERTY_REWARD_MEMORY =
 
 
 
---------------------------------------------------
--- reward: debug emotes
---------------------------------------------------
-
-PROPERTY_REWARD_DEBUG_PLATING = BuildRewardProductProperty(
-  "RD_PLATING","ITEM_PLATING",4,4,"False")
-
-PROPERTY_REWARD_DEBUG_FRAGMENT = BuildRewardProductProperty(
-  "RD_FRAGMENT","ITEM_FRAGMENT",1,1,"False")
-
-PROPERTY_REWARD_DEBUG_CIRCUIT = BuildRewardProductProperty(
-  "RD_CIRCUIT","ITEM_CIRCUIT",1,1,"False")
-
-
-
---------------------------------------------------
--- dialogue option for plaques
---------------------------------------------------
-
-PROPERTY_DIALOGUE_DICTIONARY =
-[[
-<Property value="GcAlienPuzzleOption.xml">
-  <Property name="Name" value="ALL_REQUEST_STD_LOW" />
-  <Property name="Text" value="" />
-  <Property name="IsAlien" value="False" />
-  <Property name="Cost" value="C_DICT" />
-  <Property name="Rewards">
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="R_DICT" />
-    </Property>
-  </Property>
-  <Property name="Mood" value="GcAlienMood.xml">
-    <Property name="Mood" value="Neutral" />
-  </Property>
-  <Property name="Prop" value="GcNPCPropType.xml">
-    <Property name="NPCProp" value="DontCare" />
-  </Property>
-  <Property name="OverrideWithAlienWord" value="False" />
-  <Property name="ReseedInteractionOnUse" value="False" />
-  <Property name="KeepOpen" value="False" />
-  <Property name="DisplayCost" value="True" />
-  <Property name="TruncateCost" value="False" />
-  <Property name="MarkInteractionComplete" value="True" />
-  <Property name="NextInteraction" value="" />
-  <Property name="SelectedOnBackOut" value="False" />
-  <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-    <Property name="AkEvent" value="INVALID_EVENT" />
-  </Property>
-  <Property name="TitleOverride" value="" />
-  <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-    <Property name="ConditionTest" value="AnyFalse" />
-  </Property>
-  <Property name="EnablingConditions" />
-  <Property name="EnablingConditionId" value="" />
-  <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-    <Property name="wordcategorytableEnum" value="MISC" />
-  </Property>
-</Property>
-]]
-
-
-
 ----------------------------------------------------------------------------------------------------
 -- mod definition
 ----------------------------------------------------------------------------------------------------
@@ -1116,17 +612,8 @@ LIST_ITEMS =
 
 LIST_REWARDS =
 {
-    PROPERTY_REWARD_NEWTREE,PROPERTY_REWARD_DICTIONARY,PROPERTY_REWARD_MEMORY,
-    PROPERTY_REWARD_BOXA,PROPERTY_REWARD_BOXB,PROPERTY_REWARD_BOXC,
-    PROPERTY_REWARD_SCANNER,PROPERTY_REWARD_COMPUTER,PROPERTY_REWARD_LOCATOR,PROPERTY_REWARD_DISSONANT,
-    PROPERTY_REWARD_DEBUG_PLATING,PROPERTY_REWARD_DEBUG_FRAGMENT,PROPERTY_REWARD_DEBUG_CIRCUIT,
-}
-
-LIST_CONSUMABLES =
-{
-    PROPERTY_CONS_SCANNER,
-    PROPERTY_CONS_COMPUTER,PROPERTY_CONS_LOCATOR,PROPERTY_CONS_DISSONANT,
-    PROPERTY_CONS_BOXA,PROPERTY_CONS_BOXB,PROPERTY_CONS_BOXC,
+    PROPERTY_REWARD_DICTIONARY,
+    PROPERTY_REWARD_MEMORY,
 }
 
 
@@ -1149,110 +636,201 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
+                    --------------------------------------------------
+                    -- product table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_PRODUCTTABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SKW"] = {"Name","UI_STORMCRYSTAL_NAME",},
-                            ["VCT"] = {{"ChargeValue","1",},},
-                        },
-
-                        {
-                            ["PKW"] = "Table",
-                            ["ADD"] = LIST_ITEMS,
-                        },
+                        -- add charge value to Storm Crystals for multitool scanner
+                        {   ["SKW"] = {"Name","UI_STORMCRYSTAL_NAME",},   ["VCT"] = {{"ChargeValue","1",},},    },
+                        
+                        -- add all the custom items
+                        {   ["PKW"] = "Table",    ["ADD"] = LIST_ITEMS,   },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- reward table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_REWARDTABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["PKW"] = "GenericTable",
-                            ["ADD"] = LIST_REWARDS,
-                        },
+                        -- reward: open new research tree
+                        {   ["SKW"] = {"Id","TREE_BASICS",},        ["SEC_SAVE_TO"] = "SEC_REWARD_TREE",                                },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_TREE",       ["VCT"] = {{"Id","R_SHIPTREE",},{"UnlockableItemTree","Test",},},   },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_REWARD_TREE",                              },
+
+                        -- reward: start mission from scanner interaction
+                        {   ["SKW"] = {"Id","BEGIN_SALVAGE",},      ["SEC_SAVE_TO"] = "SEC_REWARD_SCANNER",                       },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_SCANNER",    ["VCT"] = {{"Id","R_SCANNER",},{"Mission","M_SCANNER",},},    },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_REWARD_SCANNER",                     },
+                            
+                        -- reward: computer tech interaction (single scan event)
+                        {   ["SKW"] = {"Id","R_CHART_ROBOT",},      ["SEC_SAVE_TO"] = "SEC_REWARD_COMPUTER",                                                                              },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_COMPUTER",   ["VCT"] = {{"Id","R_COMPUTER",},{"Event","OUTPOST",},{"DoAerialScan","False",},{"FailureOSD","TEXT_COMPUTER_F",},},   },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_REWARD_COMPUTER",                                                                            },
+                            
+                        -- reward: locator tech interaction (double scan event)
+                        {   ["SKW"] = {"Id","SEC_CRASHEDSHIP",},    ["SEC_SAVE_TO"] = "SEC_REWARD_LOCATOR",                                                                                                   },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_LOCATOR",    ["VCT"] = {{"Id","R_LOCATOR",},},                                                                                                         },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_LOCATOR",    ["PKW"] = "GcRewardTableItem.xml",    ["SECTION_ACTIVE"] = 1,   ["VCT"] = {{"Event","SE_LIBRARY",},{"FailureOSD","TEXT_LOCATOR_F",},},    },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_LOCATOR",    ["PKW"] = "GcRewardTableItem.xml",    ["SECTION_ACTIVE"] = 2,   ["VCT"] = {{"Event","SE_PORTAL",},{"FailureOSD","TEXT_LOCATOR_F",},},     },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_REWARD_LOCATOR",                                                                                                 },
+                            
+                        -- reward: dissonant tech interaction (scan event or mission)
+                        {   ["SKW"] = {"Id","R_SCANSENTCRASH",},    ["SEC_SAVE_TO"] = "SEC_REWARD_DISSONANT",                                                 },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_DISSONANT",  ["VCT"] = {{"Id","R_DISSONANT",},{"Event","SE_DISSONANT",},{"Mission","M_DISSONANT",},},  },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_REWARD_DISSONANT",                                               },
+
+                        -- reward: start mission from memory A
+                        {   ["SKW"] = {"Id","BEGIN_SALVAGE",},      ["SEC_SAVE_TO"] = "SEC_REWARD_BOXA",                    },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_BOXA",       ["VCT"] = {{"Id","R_BOXA",},{"Mission","M_BOXA",},},    },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_REWARD_BOXA",                  },
+
+                        -- reward: start mission from memory B
+                        {   ["SKW"] = {"Id","BEGIN_SALVAGE",},      ["SEC_SAVE_TO"] = "SEC_REWARD_BOXB",                    },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_BOXB",       ["VCT"] = {{"Id","R_BOXB",},{"Mission","M_BOXB",},},    },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_REWARD_BOXB",                  },
+
+                        -- reward: start mission from memory C
+                        {   ["SKW"] = {"Id","BEGIN_SALVAGE",},      ["SEC_SAVE_TO"] = "SEC_REWARD_BOXC",                    },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_BOXC",       ["VCT"] = {{"Id","R_BOXC",},{"Mission","M_BOXC",},},    },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_REWARD_BOXC",                  },
+                        
+                        -- reward: debug emote fpr plating
+                        {   ["SKW"] = {"Id","WEAP_TOKEN",},         ["SEC_SAVE_TO"] = "SEC_DEBUG_PLATING",                                                                          },
+                        {   ["SEC_EDIT"] = "SEC_DEBUG_PLATING",     ["VCT"] = {{"Id","RD_PLATING",},},                                                                              },
+                        {   ["SEC_EDIT"] = "SEC_DEBUG_PLATING",     ["PKW"] = "GcRewardTableItem.xml",    ["VCT"] = {{"ID","ITEM_PLATING",},{"AmountMin",4,},{"AmountMax",4,},},    },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_DEBUG_PLATING",                                                                        },
+
+                        -- reward: debug emote for fragment
+                        {   ["SKW"] = {"Id","WEAP_TOKEN",},         ["SEC_SAVE_TO"] = "SEC_DEBUG_FRAGMENT",                                                                          },
+                        {   ["SEC_EDIT"] = "SEC_DEBUG_FRAGMENT",    ["VCT"] = {{"Id","RD_FRAGMENT",},},                                                                              },
+                        {   ["SEC_EDIT"] = "SEC_DEBUG_FRAGMENT",    ["PKW"] = "GcRewardTableItem.xml",    ["VCT"] = {{"ID","ITEM_FRAGMENT",},{"AmountMin",1,},{"AmountMax",1,},},    },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_DEBUG_FRAGMENT",                                                                        },
+
+                        -- reward: debug emote for circuit
+                        {   ["SKW"] = {"Id","WEAP_TOKEN",},         ["SEC_SAVE_TO"] = "SEC_DEBUG_CIRCUIT",                                                                          },
+                        {   ["SEC_EDIT"] = "SEC_DEBUG_CIRCUIT",     ["VCT"] = {{"Id","RD_CIRCUIT",},},                                                                              },
+                        {   ["SEC_EDIT"] = "SEC_DEBUG_CIRCUIT",     ["PKW"] = "GcRewardTableItem.xml",    ["VCT"] = {{"ID","ITEM_CIRCUIT",},{"AmountMin",1,},{"AmountMax",1,},},    },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_DEBUG_CIRCUIT",                                                                        },                        
+
+                        -- add remaining rewards
+                        {   ["PKW"] = "GenericTable",   ["ADD"] = LIST_REWARDS,   },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- cost table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_COSTTABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SKW"] = {"Id","C_CLASS_UPGRADE","Cost","GcCostMoneyList.xml",},
-                            ["REMOVE"] = "SECTION",
-                        },
+                        -- cost object: dictionary
+                        {   ["SKW"] = {"Id","C_REP_TOKEN",},    ["SEC_SAVE_TO"] = "SEC_COST_ITEM",                                                    },
+                        {   ["SEC_EDIT"] = "SEC_COST_ITEM",     ["VCT"] = {{"Id","C_DICT",},},                                                        },
+                        {   ["SEC_EDIT"] = "SEC_COST_ITEM",     ["SKW"] = {"Cost","GcCostProduct.xml",},    ["VCT"] = {{"Id","ITEM_DICTIONARY",},},   },
+                        {   ["PKW"] = "ItemCostsTable",         ["SEC_ADD_NAMED"] = "SEC_COST_ITEM",                                                  },
 
-                        {
-                            ["SKW"] = {"Id","C_CLASS_UPGRADE",},
-                            ["ADD"] = PROPERTY_COST_UPGRADE,
-                        },
+                        -- cost object: ship class upgrade - remove only nanites, add combination nanites OR bypass item
+                        {   ["SKW"] = {"Id","C_CLASS_UPGRADE","Cost","GcCostMoneyList.xml",},   ["REMOVE"] = "SECTION",   },
+                        {   ["SKW"] = {"Id","C_CLASS_UPGRADE",},    ["ADD"] = PROPERTY_COST_UPGRADE,                      },
+                            
+                        -- cost object: sentinel support - remove only token, add combination token OR antenna tech installed
+                        {   ["SKW"] = {"Id","POLICE_SUMMON","Cost","GcCostProduct.xml",},   ["REMOVE"] = "SECTION",   },
+                        {   ["SKW"] = {"Id","POLICE_SUMMON",},    ["ADD"] = PROPERTY_COST_POLICE,   },
 
-                        {
-                            ["SKW"] = {"Id","POLICE_SUMMON","Cost","GcCostProduct.xml",},
-                            ["REMOVE"] = "SECTION",
-                        },
-
-                        {
-                            ["SKW"] = {"Id","POLICE_SUMMON",},
-                            ["ADD"] = PROPERTY_COST_POLICE,
-                        },
-
-                        {
-                            ["PKW"] = "ItemCostsTable",
-                            ["ADD"] = PROPERTY_COST_DICTIONARY,
-                        },
-
-                        {
-                            ["PKW"] = "InteractionTable",
-                            ["ADD"] = PROPERTY_COST_MEMORY,
-                        },
+                        -- cost object: exchanging memories with Hesperus
+                        {   ["PKW"] = "InteractionTable",   ["ADD"] = PROPERTY_COST_MEMORY,   },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- alien puzzle table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_PUZZLETABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SKW"] = {"Id","EXOTIC5_WAIT",},
-                            ["PKW"] = "Options",
-                            ["ADD"] = 
-                            {
-                                PROPERTY_DIALOGUE_TREE,
-                                PROPERTY_DIALOGUE_MEMORY,
-                            },
-                        },
+                        -- Hesperus dialogue: exchanging temporal memory
+                        {   ["SKW"] = {"Id","?EXOTIC5C","Name","ALL_REQUEST_LEAVE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_MEMORY",                                                      },
+                        {   ["SEC_EDIT"] = "SEC_PUZZLE_MEMORY",   ["VCT"] = {{"Name","TEXT_DIALOGUE_MEMORY",},{"Text","TEXT_REACTION_MEMORY",},{"IsAlien","True",},
+                                                                  {"Cost","C_MEMORY",},{"Value","R_MEMORY",},{"ReseedInteractionOnUse","True",},{"SelectedOnBackOut","False",},},   },
+                        {   ["SEC_EDIT"] = "SEC_PUZZLE_MEMORY",   ["SKW"] = {"Mood","GcAlienMood.xml",},     ["LINE_OFFSET"] = 1,    ["VCT"] = {{"Mood","Positive",},},             },
+                        {   ["SKW"] = {"Id","EXOTIC5_WAIT",},     ["PKW"] = "Options",    ["SEC_ADD_NAMED"] = "SEC_PUZZLE_MEMORY",                                                  },
+                          
+                        -- Hesperus dialogue: open research tree
+                        {   ["SKW"] = {"Id","?EXOTIC5C","Name","ALL_REQUEST_LEAVE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_TREE",                                                }, 
+                        {   ["SEC_EDIT"] = "SEC_PUZZLE_TREE",   ["VCT"] = { {"Name","TEXT_DIALOGUE_RESEARCH",},{"Value","R_SHIPTREE",},{"SelectedOnBackOut","False",},},    },    
+                        {   ["SKW"] = {"Id","EXOTIC5_WAIT",},   ["PKW"] = "Options",    ["SEC_ADD_NAMED"] = "SEC_PUZZLE_TREE",                                              },
 
-                        {
-                            ["SKW"] = {"Name","UI_RUINS_SEEK_TREASURE",},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] = PROPERTY_DIALOGUE_DICTIONARY,
-                        },
+                        -- plaque: dialogue for dictionary item
+                        {   ["SKW"] = {"Name","UI_RUINS_SEEK_TREASURE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_PLAQUE",                                                                        },
+                        {   ["SEC_EDIT"] = "SEC_PUZZLE_PLAQUE",   ["VCT"] = {{"Name","ALL_REQUEST_STD_LOW",},{"Cost","C_DICT",},{"Value","R_DICT",},},                                    },
+                        {   ["SEC_EDIT"] = "SEC_PUZZLE_PLAQUE",   ["SKW"] = {"Mood","GcAlienMood.xml",},    ["LINE_OFFSET"] = 1,    ["VCT"] = {{"Mood","Positive",},},                    },
+                        {   ["SKW"] = {"Name","UI_RUINS_SEEK_TREASURE",},   ["REPLACE_TYPE"] = "ALL",   ["ADD_OPTION"] = "ADDafterSECTION",   ["SEC_ADD_NAMED"] = "SEC_PUZZLE_PLAQUE",    },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- consumable items table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_CONSUMABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["PKW"] = "Table",
-                            ["ADD"] = LIST_CONSUMABLES,
-                        },
+                        -- interaction: computer tech
+                        {   ["SKW"] = {"ID","PIRATE_MAPWHOLE",},    ["SEC_SAVE_TO"] = "SEC_CONS_COMPUTER",                                                                                                      },
+                        {   ["SEC_EDIT"] = "SEC_CONS_COMPUTER",     ["VCT"] = {{"ID","TECH_COMPUTER",},{"RewardID","R_COMPUTER",},{"ButtonLocID","TEXT_COMPUTER_B",},{"ButtonSubLocID","TEXT_COMPUTER_U",},},   },
+                        {   ["PKW"] = "Table",                      ["SEC_ADD_NAMED"] = "SEC_CONS_COMPUTER",                                                                                                    },
+
+                        -- interaction: locator tech
+                        {   ["SKW"] = {"ID","PIRATE_MAPWHOLE",},    ["SEC_SAVE_TO"] = "SEC_CONS_LOCATOR",                                                                                                   },
+                        {   ["SEC_EDIT"] = "SEC_CONS_LOCATOR",      ["VCT"] = {{"ID","TECH_LOCATOR",},{"RewardID","R_LOCATOR",},{"ButtonLocID","TEXT_LOCATOR_B",},{"ButtonSubLocID","TEXT_LOCATOR_U",},},   },
+                        {   ["PKW"] = "Table",                      ["SEC_ADD_NAMED"] = "SEC_CONS_LOCATOR",                                                                                                 },
+
+                        -- interaction: dissonant tech
+                        {   ["SKW"] = {"ID","PIRATE_MAPWHOLE",},    ["SEC_SAVE_TO"] = "SEC_CONS_DISSONANT",                                                                                                         },
+                        {   ["SEC_EDIT"] = "SEC_CONS_DISSONANT",    ["VCT"] = {{"ID","TECH_DISSONANT",},{"RewardID","R_DISSONANT",},{"ButtonLocID","TEXT_DISSONANT_B",},{"ButtonSubLocID","TEXT_DISSONANT_U",},},   },
+                        {   ["PKW"] = "Table",                      ["SEC_ADD_NAMED"] = "SEC_CONS_DISSONANT",                                                                                                       },
+
+                        -- interaction: multitool scanner
+                        {   ["SKW"] = {"ID","PIRATE_MAPWHOLE",},    ["SEC_SAVE_TO"] = "SEC_CONS_SCANNER",                                                                                 },
+                        {   ["SEC_EDIT"] = "SEC_CONS_SCANNER",      ["VCT"] = {{"ID","TECH_SCANNER",},{"RewardID","R_SCANNER",},{"ButtonLocID","TEXT_SCANNER_B",},
+                                                                    {"ButtonSubLocID","TEXT_SCANNER_U",},{"AkEvent","ATLAS_CORE_ACTIVATE",},{"RewardFailedLocID","TEXT_SCANNER_F",},},    },
+                        {   ["PKW"] = "Table",                      ["SEC_ADD_NAMED"] = "SEC_CONS_SCANNER",                                                                               },
+
+                        -- interaction: memory A
+                        {   ["SKW"] = {"ID","DRONE_FRIEND_X",},     ["SEC_SAVE_TO"] = "SEC_CONS_MEMORY_A",                                                                                                                        },
+                        {   ["SEC_EDIT"] = "SEC_CONS_MEMORY_A",     ["VCT"] = {{"ID","ITEM_BOXA",},{"RewardID","R_BOXA",},{"ButtonLocID","TEXT_BOX_B",},{"ButtonSubLocID","TEXT_BOX_U",},{"AkEvent","ATLAS_CORE_ACTIVATE",},},    },
+                        {   ["PKW"] = "Table",                      ["SEC_ADD_NAMED"] = "SEC_CONS_MEMORY_A",                                                                                                                      },
+
+                        -- interaction: memory B
+                        {   ["SKW"] = {"ID","DRONE_FRIEND_X",},     ["SEC_SAVE_TO"] = "SEC_CONS_MEMORY_B",                                                                                                                        },
+                        {   ["SEC_EDIT"] = "SEC_CONS_MEMORY_B",     ["VCT"] = {{"ID","ITEM_BOXB",},{"RewardID","R_BOXB",},{"ButtonLocID","TEXT_BOX_B",},{"ButtonSubLocID","TEXT_BOX_U",},{"AkEvent","ATLAS_CORE_ACTIVATE",},},    },
+                        {   ["PKW"] = "Table",                      ["SEC_ADD_NAMED"] = "SEC_CONS_MEMORY_B",                                                                                                                      },
+
+                        -- interaction: memory C
+                        {   ["SKW"] = {"ID","DRONE_FRIEND_X",},     ["SEC_SAVE_TO"] = "SEC_CONS_MEMORY_C",                                                                                                                        },
+                        {   ["SEC_EDIT"] = "SEC_CONS_MEMORY_C",     ["VCT"] = {{"ID","ITEM_BOXC",},{"RewardID","R_BOXC",},{"ButtonLocID","TEXT_BOX_B",},{"ButtonSubLocID","TEXT_BOX_U",},{"AkEvent","ATLAS_CORE_ACTIVATE",},},    },
+                        {   ["PKW"] = "Table",                      ["SEC_ADD_NAMED"] = "SEC_CONS_MEMORY_C",                                                                                                                      },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- default reality table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_DEFAULTREALITY,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["PKW"] = "MissionDetailIcons",
-                            ["ADD"] = PROPERTY_BANNER_TECH,
-                        },
+                        -- adding new banner image
+                        {   ["SKW"] = {"ID","STATION_DETAIL",},   ["SEC_SAVE_TO"] = "SEC_BANNER",                                                 },
+                        {   ["SEC_EDIT"] = "SEC_BANNER",          ["VCT"] = {{"ID","BANNER_TECH",},{"Filename","TEXTURES/BANNER_TECH.DDS",},},    },
+                        {   ["PKW"] = "MissionDetailIcons",       ["SEC_ADD_NAMED"] = "SEC_BANNER",                                               },
                     },
                 },
             }

@@ -5,46 +5,8 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "MISC"
-METADATA_NMS_VERSION    = "448"
+METADATA_NMS_VERSION    = "452_SEC"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for miscellaneous objects. Modifies various files in METADATA and MODELS directories."
-
-
-
---------------------------------------------------
--- player titles
---------------------------------------------------
-
-function BuildTitleProperty(number,score) return
-[[
-<Property value="GcPlayerTitle.xml">
-  <Property name="ID" value="T_TIME]]..number..[[" />
-  <Property name="Title" value="TEXT_TITLE_FORMAT_]]..number..[[" />
-  <Property name="UnlockDescription" value="TEXT_TITLE_UNLOCK" />
-  <Property name="AlreadyUnlockedDescription" value="TEXT_TITLE_OWNED_]]..number..[[" />
-  <Property name="RevealedBy" value="" />
-  <Property name="UnlockedByProductRecipe" value="" />
-  <Property name="UnlockedByMission" value="" />
-  <Property name="UnlockedByTrophy" value="" />
-  <Property name="UnlockedByStat" value="STAT_TOKENS" />
-  <Property name="UnlockedByStatValue" value="]]..score..[[" />
-  <Property name="UnlockedByLeveledStatRank" value="0" />
-  <Property name="UnlockedByInteraction" value="GcInteractionType.xml">
-    <Property name="InteractionType" value="None" />
-  </Property>
-  <Property name="UnlockedByInteractionIndex" value="0" />
-  <Property name="UnlockedByInteractionRace" value="GcAlienRace.xml">
-    <Property name="AlienRace" value="None" />
-  </Property>
-  <Property name="UnlockedByInteractionOnlyTestMainRaces" value="False" />
-</Property>
-]]
-end
-
-PROPERTY_TITLE_1 = BuildTitleProperty(1,5)
-PROPERTY_TITLE_2 = BuildTitleProperty(2,10)
-PROPERTY_TITLE_3 = BuildTitleProperty(3,15)
-PROPERTY_TITLE_4 = BuildTitleProperty(4,20)
-PROPERTY_TITLE_5 = BuildTitleProperty(5,30)
 
 
 
@@ -183,567 +145,23 @@ function BuildEmoteTriggerProperty(name) return
 ]]
 end
 
+
+
 --------------------------------------------------
--- debug emotes - plating
+-- debug emotes
 --------------------------------------------------
 
-PROPERTY_EMOTE_PLATING = BuildEmoteIconProperty(
-  "PLATING","TEXTURES/ITEMS/PLATING.DDS")
-
+PROPERTY_EMOTE_PLATING = BuildEmoteIconProperty("PLATING","TEXTURES/ITEMS/PLATING.DDS")
 PROPERTY_ANIM_PLATING = BuildEmoteAnimProperty("PLATING")
-
 PROPERTY_TRIGGER_PLATING = BuildEmoteTriggerProperty("PLATING")
 
---------------------------------------------------
--- debug emotes - fragment
---------------------------------------------------
-    
-PROPERTY_EMOTE_FRAGMENT = BuildEmoteIconProperty(
-  "FRAGMENT","TEXTURES/ITEMS/FRAGMENT.DDS")
-
+PROPERTY_EMOTE_FRAGMENT = BuildEmoteIconProperty("FRAGMENT","TEXTURES/ITEMS/FRAGMENT.DDS")
 PROPERTY_ANIM_FRAGMENT = BuildEmoteAnimProperty("FRAGMENT")
-
 PROPERTY_TRIGGER_FRAGMENT = BuildEmoteTriggerProperty("FRAGMENT")
 
---------------------------------------------------
--- debug emotes - circuit
---------------------------------------------------
-
-PROPERTY_EMOTE_CIRCUIT = BuildEmoteIconProperty(
-  "CIRCUIT","TEXTURES/ITEMS/CIRCUIT.DDS")
-
+PROPERTY_EMOTE_CIRCUIT = BuildEmoteIconProperty("CIRCUIT","TEXTURES/ITEMS/CIRCUIT.DDS")
 PROPERTY_ANIM_CIRCUIT = BuildEmoteAnimProperty("CIRCUIT")
-
 PROPERTY_TRIGGER_CIRCUIT = BuildEmoteTriggerProperty("CIRCUIT")
-
-
-
---------------------------------------------------
--- stat tracking property
---------------------------------------------------
-
-PROPERTY_STAT_TOKENS =
-[[
-<Property value="GcStatDefinition.xml">
-  <Property name="Type" value="GcStatType.xml">
-    <Property name="StatType" value="Int" />
-  </Property>
-  <Property name="TrackType" value="GcStatTrackType.xml">
-    <Property name="StatTrackType" value="Add" />
-  </Property>
-  <Property name="DisplayType" value="GcStatDisplayType.xml">
-    <Property name="StatDisplayType" value="None" />
-  </Property>
-  <Property name="DefaultValue" value="GcStatValueData.xml">
-    <Property name="IntValue" value="0" />
-    <Property name="FloatValue" value="0" />
-    <Property name="Denominator" value="0" />
-  </Property>
-  <Property name="Id" value="STAT_TOKENS" />
-  <Property name="TelemetryUpload" value="False" />
-  <Property name="IsProgression" value="False" />
-  <Property name="MissionMessageDecimals" value="2" />
-</Property>
-]]
-
---------------------------------------------------
--- portal scan event
---------------------------------------------------
-
-PROPERTY_SCAN_PORTAL =
-[[
-<Property value="GcScanEventData.xml">
-  <Property name="Name" value="SE_PORTAL" />
-  <Property name="ForceInteraction" value="" />
-  <Property name="ForceInteractionType" value="GcInteractionType.xml">
-    <Property name="InteractionType" value="Portal" />
-  </Property>
-  <Property name="RequireInteractionRace" value="GcAlienRace.xml">
-    <Property name="AlienRace" value="None" />
-  </Property>
-  <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
-    <Property name="AlienRace" value="None" />
-  </Property>
-  <Property name="ForceBroken" value="False" />
-  <Property name="ForceFixed" value="False" />
-  <Property name="ForceOverridesAll" value="True" />
-  <Property name="ForceOverrideEncounter" value="" />
-  <Property name="IsCommunityPortalOverride" value="False" />
-  <Property name="ClearForcedInteractionOnCompletion" value="False" />
-  <Property name="BuildingPreventionRadius" value="0" />
-  <Property name="UseMissionTradingDataOverride" value="False" />
-  <Property name="AlwaysShow" value="False" />
-  <Property name="NeverShow" value="False" />
-  <Property name="ShowOnlyIfSequenceTarget" value="False" />
-  <Property name="PlanetLabelText" value="" />
-  <Property name="SurveyDistance" value="0" />
-  <Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD" />
-  <Property name="EventStartType" value="Special" />
-  <Property name="EventEndType" value="Proximity" />
-  <Property name="EventPriority" value="Regular" />
-  <Property name="CanEndFromOutsideMission" value="False" />
-  <Property name="DisableMultiplayerSync" value="False" />
-  <Property name="BlockStartedOnUseEvents" value="False" />
-  <Property name="ReplaceEventIfAlreadyActive" value="False" />
-  <Property name="BuildingLocation" value="AllNearest" />
-  <Property name="BuildingType" value="BuildingClass" />
-  <Property name="BuildingClass" value="GcBuildingClassification.xml">
-    <Property name="BuildingClass" value="Portal" />
-  </Property>
-  <Property name="AllowFriendsBases" value="False" />
-  <Property name="ForceWideRandom" value="False" />
-  <Property name="MustFindSystem" value="False" />
-  <Property name="AllowOverriddenBuildings" value="True" />
-  <Property name="TargetMustMatchMissionSeed" value="False" />
-  <Property name="SolarSystemLocation" value="LocalOrNear" />
-  <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
-    <Property name="UseStarType" value="False" />
-    <Property name="UseWealth" value="False" />
-    <Property name="UseTrading" value="False" />
-    <Property name="UseRace" value="GcAlienRace.xml">
-      <Property name="AlienRace" value="None" />
-    </Property>
-    <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
-      <Property name="GalaxyStarAnomaly" value="None" />
-    </Property>
-    <Property name="UseConflict" value="GcPlayerConflictData.xml">
-      <Property name="ConflictLevel" value="Default" />
-    </Property>
-    <Property name="StarType" value="GcGalaxyStarTypes.xml">
-      <Property name="GalaxyStarType" value="Yellow" />
-    </Property>
-    <Property name="TradingData" value="GcPlanetTradingData.xml">
-      <Property name="WealthClass" value="GcWealthClass.xml">
-        <Property name="WealthClass" value="Average" />
-      </Property>
-      <Property name="TradingClass" value="GcTradingClass.xml">
-        <Property name="TradingClass" value="Mining" />
-      </Property>
-    </Property>
-    <Property name="AllowUnsafeMatches" value="False" />
-    <Property name="NeverAllowEmpty" value="False" />
-    <Property name="NeverAllowAbandoned" value="False" />
-    <Property name="RequireUndiscovered" value="False" />
-    <Property name="NeedsWaterPlanet" value="False" />
-    <Property name="NeedsPrimePlanet" value="False" />
-    <Property name="NeedsSentinels" value="False" />
-    <Property name="NeedsCorruptSentinelPlanet" value="False" />
-    <Property name="NeedsExtremeSentinelPlanet" value="False" />
-    <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
-    <Property name="NeedsExtremeWeatherPlanet" value="False" />
-    <Property name="NeedsExtremeHazardPlanet" value="False" />
-    <Property name="AnyBiomeNotWeirdOrDead" value="False" />
-    <Property name="AnyRGBBiome" value="False" />
-    <Property name="AnyInfestedBiome" value="False" />
-    <Property name="NeedsBiome" value="False" />
-    <Property name="NeedsBiomeType" value="GcBiomeType.xml">
-      <Property name="Biome" value="Lush" />
-    </Property>
-    <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-      <Property name="BiomeSubType" value="None" />
-    </Property>
-    <Property name="NeedsEmptySystem" value="False" />
-    <Property name="NeedsAbandonedSystem" value="False" />
-    <Property name="NeedsResourceHint" value="ROBOT2" />
-    <Property name="SuitableForCreatureDiscovery" value="False" />
-    <Property name="SuitableForCreatureTaming" value="False" />
-    <Property name="SamePlanetAsEvent" value="" />
-    <Property name="SamePlanetAsSeasonParty" value="0" />
-  </Property>
-  <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
-    <Property name="UseStarType" value="False" />
-    <Property name="UseWealth" value="False" />
-    <Property name="UseTrading" value="False" />
-    <Property name="UseRace" value="GcAlienRace.xml">
-      <Property name="AlienRace" value="None" />
-    </Property>
-    <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
-      <Property name="GalaxyStarAnomaly" value="None" />
-    </Property>
-    <Property name="UseConflict" value="GcPlayerConflictData.xml">
-      <Property name="ConflictLevel" value="Default" />
-    </Property>
-    <Property name="StarType" value="GcGalaxyStarTypes.xml">
-      <Property name="GalaxyStarType" value="Yellow" />
-    </Property>
-    <Property name="TradingData" value="GcPlanetTradingData.xml">
-      <Property name="WealthClass" value="GcWealthClass.xml">
-        <Property name="WealthClass" value="Average" />
-      </Property>
-      <Property name="TradingClass" value="GcTradingClass.xml">
-        <Property name="TradingClass" value="Mining" />
-      </Property>
-    </Property>
-    <Property name="AllowUnsafeMatches" value="False" />
-    <Property name="NeverAllowEmpty" value="False" />
-    <Property name="NeverAllowAbandoned" value="False" />
-    <Property name="RequireUndiscovered" value="False" />
-    <Property name="NeedsWaterPlanet" value="False" />
-    <Property name="NeedsPrimePlanet" value="False" />
-    <Property name="NeedsSentinels" value="False" />
-    <Property name="NeedsCorruptSentinelPlanet" value="False" />
-    <Property name="NeedsExtremeSentinelPlanet" value="False" />
-    <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
-    <Property name="NeedsExtremeWeatherPlanet" value="False" />
-    <Property name="NeedsExtremeHazardPlanet" value="False" />
-    <Property name="AnyBiomeNotWeirdOrDead" value="False" />
-    <Property name="AnyRGBBiome" value="False" />
-    <Property name="AnyInfestedBiome" value="False" />
-    <Property name="NeedsBiome" value="False" />
-    <Property name="NeedsBiomeType" value="GcBiomeType.xml">
-      <Property name="Biome" value="Lush" />
-    </Property>
-    <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-      <Property name="BiomeSubType" value="None" />
-    </Property>
-    <Property name="NeedsEmptySystem" value="False" />
-    <Property name="NeedsAbandonedSystem" value="False" />
-    <Property name="NeedsResourceHint" value="" />
-    <Property name="SuitableForCreatureDiscovery" value="False" />
-    <Property name="SuitableForCreatureTaming" value="False" />
-    <Property name="SamePlanetAsEvent" value="" />
-    <Property name="SamePlanetAsSeasonParty" value="0" />
-  </Property>
-  <Property name="ForceRestartInteraction" value="True" />
-  <Property name="HasReward" value="" />
-  <Property name="NextOption" value="" />
-  <Property name="TriggerActions" value="GcScanEventTriggers.xml">
-    <Property name="Range" value="100" />
-    <Property name="Triggers" />
-    <Property name="AllowRetrigger" value="False" />
-  </Property>
-  <Property name="UAsList" />
-  <Property name="TechShopType" value="GcTechnologyCategory.xml">
-    <Property name="TechnologyCategory" value="All" />
-  </Property>
-  <Property name="OSDMessage" value="SIGNAL_PORTAL" />
-  <Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM" />
-  <Property name="MarkerLabel" value="" />
-  <Property name="MarkerIcon" value="TkTextureResource.xml">
-    <Property name="Filename" value="" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-  </Property>
-  <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
-    <Property name="ScannerIconHighlightType" value="Diamond" />
-  </Property>
-  <Property name="StartTime" value="0" />
-  <Property name="MessageTime" value="0" />
-  <Property name="MessageDisplayTime" value="4" />
-  <Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
-    <Property name="AkEvent" value="INVALID_EVENT" />
-  </Property>
-  <Property name="IconTime" value="4" />
-  <Property name="TooltipTime" value="10" />
-  <Property name="TooltipRepeats" value="False" />
-  <Property name="ShowEndTooltip" value="True" />
-  <Property name="TooltipMessage" value="TIP_PORTAL" />
-  <Property name="ResourceOverride" value="GcResourceElement.xml">
-    <Property name="Filename" value="" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-    <Property name="Seed" value="GcSeed.xml">
-      <Property name="Seed" value="0" />
-      <Property name="UseSeedValue" value="False" />
-    </Property>
-    <Property name="AltId" value="" />
-    <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-      <Property name="Samplers" />
-    </Property>
-  </Property>
-</Property>
-]]
-
---------------------------------------------------
--- dissonant scan event
---------------------------------------------------
-
-PROPERTY_SCAN_DISSONANT = 
-[[
-<Property value="GcScanEventData.xml">
-  <Property name="Name" value="SE_DISSONANT" />
-  <Property name="ForceInteraction" value="" />
-  <Property name="ForceInteractionType" value="GcInteractionType.xml">
-    <Property name="InteractionType" value="None" />
-  </Property>
-  <Property name="RequireInteractionRace" value="GcAlienRace.xml">
-    <Property name="AlienRace" value="None" />
-  </Property>
-  <Property name="OverrideInteractionRace" value="GcAlienRace.xml">
-    <Property name="AlienRace" value="None" />
-  </Property>
-  <Property name="ForceBroken" value="False" />
-  <Property name="ForceFixed" value="False" />
-  <Property name="ForceOverridesAll" value="True" />
-  <Property name="ForceOverrideEncounter" value="" />
-  <Property name="IsCommunityPortalOverride" value="False" />
-  <Property name="ClearForcedInteractionOnCompletion" value="False" />
-  <Property name="BuildingPreventionRadius" value="0" />
-  <Property name="UseMissionTradingDataOverride" value="False" />
-  <Property name="AlwaysShow" value="False" />
-  <Property name="NeverShow" value="False" />
-  <Property name="ShowOnlyIfSequenceTarget" value="False" />
-  <Property name="PlanetLabelText" value="" />
-  <Property name="SurveyDistance" value="0" />
-  <Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD" />
-  <Property name="EventStartType" value="ObjectScan" />
-  <Property name="EventEndType" value="Proximity" />
-  <Property name="EventPriority" value="Regular" />
-  <Property name="CanEndFromOutsideMission" value="False" />
-  <Property name="DisableMultiplayerSync" value="True" />
-  <Property name="BlockStartedOnUseEvents" value="False" />
-  <Property name="ReplaceEventIfAlreadyActive" value="True" />
-  <Property name="BuildingLocation" value="Nearest" />
-  <Property name="BuildingType" value="BuildingClass" />
-  <Property name="BuildingClass" value="GcBuildingClassification.xml">
-    <Property name="BuildingClass" value="AbandonedRobotCamp" />
-  </Property>
-  <Property name="AllowFriendsBases" value="False" />
-  <Property name="ForceWideRandom" value="True" />
-  <Property name="MustFindSystem" value="False" />
-  <Property name="AllowOverriddenBuildings" value="True" />
-  <Property name="TargetMustMatchMissionSeed" value="False" />
-  <Property name="SolarSystemLocation" value="Local" />
-  <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
-    <Property name="UseStarType" value="False" />
-    <Property name="UseWealth" value="False" />
-    <Property name="UseTrading" value="False" />
-    <Property name="UseRace" value="GcAlienRace.xml">
-      <Property name="AlienRace" value="None" />
-    </Property>
-    <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
-      <Property name="GalaxyStarAnomaly" value="None" />
-    </Property>
-    <Property name="UseConflict" value="GcPlayerConflictData.xml">
-      <Property name="ConflictLevel" value="Default" />
-    </Property>
-    <Property name="StarType" value="GcGalaxyStarTypes.xml">
-      <Property name="GalaxyStarType" value="Yellow" />
-    </Property>
-    <Property name="TradingData" value="GcPlanetTradingData.xml">
-      <Property name="WealthClass" value="GcWealthClass.xml">
-        <Property name="WealthClass" value="Average" />
-      </Property>
-      <Property name="TradingClass" value="GcTradingClass.xml">
-        <Property name="TradingClass" value="Mining" />
-      </Property>
-    </Property>
-    <Property name="AllowUnsafeMatches" value="False" />
-    <Property name="NeverAllowEmpty" value="False" />
-    <Property name="NeverAllowAbandoned" value="False" />
-    <Property name="RequireUndiscovered" value="False" />
-    <Property name="NeedsWaterPlanet" value="False" />
-    <Property name="NeedsPrimePlanet" value="False" />
-    <Property name="NeedsSentinels" value="False" />
-    <Property name="NeedsCorruptSentinelPlanet" value="False" />
-    <Property name="NeedsExtremeSentinelPlanet" value="False" />
-    <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
-    <Property name="NeedsExtremeWeatherPlanet" value="False" />
-    <Property name="NeedsExtremeHazardPlanet" value="False" />
-    <Property name="AnyBiomeNotWeirdOrDead" value="False" />
-    <Property name="AnyRGBBiome" value="False" />
-    <Property name="AnyInfestedBiome" value="False" />
-    <Property name="NeedsBiome" value="False" />
-    <Property name="NeedsBiomeType" value="GcBiomeType.xml">
-      <Property name="Biome" value="Lush" />
-    </Property>
-    <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-      <Property name="BiomeSubType" value="None" />
-    </Property>
-    <Property name="NeedsEmptySystem" value="False" />
-    <Property name="NeedsAbandonedSystem" value="False" />
-    <Property name="NeedsResourceHint" value="" />
-    <Property name="SuitableForCreatureDiscovery" value="False" />
-    <Property name="SuitableForCreatureTaming" value="False" />
-    <Property name="SamePlanetAsEvent" value="" />
-    <Property name="SamePlanetAsSeasonParty" value="0" />
-  </Property>
-  <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
-    <Property name="UseStarType" value="False" />
-    <Property name="UseWealth" value="False" />
-    <Property name="UseTrading" value="False" />
-    <Property name="UseRace" value="GcAlienRace.xml">
-      <Property name="AlienRace" value="None" />
-    </Property>
-    <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
-      <Property name="GalaxyStarAnomaly" value="None" />
-    </Property>
-    <Property name="UseConflict" value="GcPlayerConflictData.xml">
-      <Property name="ConflictLevel" value="Default" />
-    </Property>
-    <Property name="StarType" value="GcGalaxyStarTypes.xml">
-      <Property name="GalaxyStarType" value="Yellow" />
-    </Property>
-    <Property name="TradingData" value="GcPlanetTradingData.xml">
-      <Property name="WealthClass" value="GcWealthClass.xml">
-        <Property name="WealthClass" value="Average" />
-      </Property>
-      <Property name="TradingClass" value="GcTradingClass.xml">
-        <Property name="TradingClass" value="Mining" />
-      </Property>
-    </Property>
-    <Property name="AllowUnsafeMatches" value="False" />
-    <Property name="NeverAllowEmpty" value="False" />
-    <Property name="NeverAllowAbandoned" value="False" />
-    <Property name="RequireUndiscovered" value="False" />
-    <Property name="NeedsWaterPlanet" value="False" />
-    <Property name="NeedsPrimePlanet" value="False" />
-    <Property name="NeedsSentinels" value="False" />
-    <Property name="NeedsCorruptSentinelPlanet" value="False" />
-    <Property name="NeedsExtremeSentinelPlanet" value="False" />
-    <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
-    <Property name="NeedsExtremeWeatherPlanet" value="False" />
-    <Property name="NeedsExtremeHazardPlanet" value="False" />
-    <Property name="AnyBiomeNotWeirdOrDead" value="False" />
-    <Property name="AnyRGBBiome" value="False" />
-    <Property name="AnyInfestedBiome" value="False" />
-    <Property name="NeedsBiome" value="False" />
-    <Property name="NeedsBiomeType" value="GcBiomeType.xml">
-      <Property name="Biome" value="Lush" />
-    </Property>
-    <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-      <Property name="BiomeSubType" value="None" />
-    </Property>
-    <Property name="NeedsEmptySystem" value="False" />
-    <Property name="NeedsAbandonedSystem" value="False" />
-    <Property name="NeedsResourceHint" value="" />
-    <Property name="SuitableForCreatureDiscovery" value="False" />
-    <Property name="SuitableForCreatureTaming" value="False" />
-    <Property name="SamePlanetAsEvent" value="" />
-    <Property name="SamePlanetAsSeasonParty" value="0" />
-  </Property>
-  <Property name="ForceRestartInteraction" value="True" />
-  <Property name="HasReward" value="" />
-  <Property name="NextOption" value="" />
-  <Property name="TriggerActions" value="GcScanEventTriggers.xml">
-    <Property name="Range" value="100" />
-    <Property name="Triggers" />
-    <Property name="AllowRetrigger" value="False" />
-  </Property>
-  <Property name="UAsList" />
-  <Property name="TechShopType" value="GcTechnologyCategory.xml">
-    <Property name="TechnologyCategory" value="All" />
-  </Property>
-  <Property name="OSDMessage" value="" />
-  <Property name="InterstellarOSDMessage" value="" />
-  <Property name="MarkerLabel" value="UI_MP_CORRUPT_PLANET_MARKER" />
-  <Property name="MarkerIcon" value="TkTextureResource.xml">
-    <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-  </Property>
-  <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
-    <Property name="ScannerIconHighlightType" value="Diamond" />
-  </Property>
-  <Property name="StartTime" value="0" />
-  <Property name="MessageTime" value="0" />
-  <Property name="MessageDisplayTime" value="4" />
-  <Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
-    <Property name="AkEvent" value="INVALID_EVENT" />
-  </Property>
-  <Property name="IconTime" value="4" />
-  <Property name="TooltipTime" value="10" />
-  <Property name="TooltipRepeats" value="False" />
-  <Property name="ShowEndTooltip" value="True" />
-  <Property name="TooltipMessage" value="" />
-  <Property name="ResourceOverride" value="GcResourceElement.xml">
-    <Property name="Filename" value="" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-    <Property name="Seed" value="GcSeed.xml">
-      <Property name="Seed" value="0" />
-      <Property name="UseSeedValue" value="False" />
-    </Property>
-    <Property name="AltId" value="" />
-    <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-      <Property name="Samplers" />
-    </Property>
-  </Property>
-</Property>
-]]
-
-
-
---------------------------------------------------
--- temporal fracture spawn
---------------------------------------------------
-
-PROPERTY_SPAWN_FRACTURE =
-[[
-<Property value="GcPulseEncounterInfo.xml">
-  <Property name="Id" value="OBJ_FRACTURE" />
-  <Property name="MarkerLabel" value="TEXT_FRACTURE_MARKER" />
-  <Property name="ChatMessageName" value="" />
-  <Property name="MarkerIcon" value="TkTextureResource.xml">
-    <Property name="Filename" value="TEXTURES/MISSION/MAIN.DDS" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-  </Property>
-  <Property name="CustomNotify" value="TEXT_FRACTURE_TIP" />
-  <Property name="CustomNotifyTitle" value="TEXT_FRACTURE_LABEL" />
-  <Property name="CustomNotifyOSD" value="TEXT_FRACTURE_OSD" />
-  <Property name="UseMarkerIconInOSD" value="True" />
-  <Property name="SpawnConditions" value="GcPulseEncounterSpawnConditions.xml">
-    <Property name="AllowedInCreative" value="True" />
-    <Property name="AllowedInEmptySystem" value="True" />
-    <Property name="AllowedDuringTutorial" value="False" />
-    <Property name="AllowedBeyondPortals" value="True" />
-    <Property name="AllowedWhileOnMPMission" value="False" />
-    <Property name="RequiresProduct" value="" />
-    <Property name="RequiresMissionComplete" value="" />
-    <Property name="RequiresMissionActive" value="M_STARTER" />
-    <Property name="RequiresMissionNotComplete" value="" />
-    <Property name="RequiresMissionNotActive" value="" />
-    <Property name="RequiresAlienShip" value="False" />
-    <Property name="RequiresNearbyCorruptWorld" value="False" />
-    <Property name="StandardEncounter" value="False" />
-    <Property name="MissionEncounter" value="False" />
-  </Property>
-  <Property name="SpawnChance" value="1" />
-  <Property name="SpawnDistance" value="3000" />
-  <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-    <Property name="AkEvent" value="MUS_STORYMODE_MUSICCUE_06_LP" />
-  </Property>
-  <Property name="Silent" value="False" />
-  <Property name="Encounter" value="GcPulseEncounterSpawnObject.xml">
-    <Property name="Object" value="TkModelResource.xml">
-      <Property name="Filename" value="MODELS/OBJECTS/FRACTURE.SCENE.MBIN" />
-      <Property name="ResHandle" value="GcResource.xml">
-        <Property name="ResourceID" value="0" />
-      </Property>
-    </Property>
-    <Property name="SpawnScale" value="100" />
-    <Property name="Pitch" value="0" />
-    <Property name="Yaw" value="0" />
-    <Property name="Roll" value="0" />
-  </Property>
-</Property>
-]]
-
-
-
---------------------------------------------------
--- derelict dialogue overwrite
---------------------------------------------------
-
-PROPERTY_DIALOGUE_DERELICT =
-[[
-<Property value="GcAlienPuzzleMissionOverride.xml">
-  <Property name="Mission" value="M_BOXB" />
-  <Property name="OptionalMissionSeed" value="GcSeed.xml">
-    <Property name="Seed" value="0" />
-    <Property name="UseSeedValue" value="False" />
-  </Property>
-  <Property name="Puzzle" value="I_DERELICT_1" />
-  <Property name="ForceMissionSeed" value="False" />
-  <Property name="AltPriorityMissionForSelection" value="" />
-</Property>
-]]
 
 
 
@@ -759,28 +177,17 @@ FILE_GAMESTATE_STATSTABLE =             "METADATA\\GAMESTATE\\STATS\\STATDEFINIT
 FILE_GAMESTATE_PLAYERRTITLE =           "METADATA\\GAMESTATE\\PLAYERDATA\\PLAYERTITLEDATA.MBIN"
 
 FILE_SCANNING_PLANET =                  "METADATA\\SIMULATION\\SCANNING\\SCANEVENTTABLEPLANET.MBIN"
-FILE_SCANNING_TUTORIAL =                "METADATA\\SIMULATION\\SCANNING\\SCANEVENTTABLETUTORIAL.MBIN"
-
 FILE_SIMULATION_SPAWNTABLE =            "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN"
+
 FILE_MODELS_DERELICT_TERMINAL =         "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\NPCROOMS\\NPC_ABANDFRIGATECAPTAIN\\ENTITIES\\ABANFRIGATETERMINALFINAL.ENTITY.MBIN"
 
 FILE_METADATA_EMOTEMENU =               "METADATA\\UI\\EMOTEMENU.MBIN"
 FILE_MODELS_PLAYERENTITY =              "MODELS\\COMMON\\PLAYER\\PLAYERCHARACTER\\PLAYERCHARACTER\\ENTITIES\\PLAYERCHARACTER.ENTITY.MBIN"
 
 
-
 --------------------------------------------------
 -- lists of data to be added
 --------------------------------------------------
-
-LIST_PLAYER_TITLES = 
-{
-    PROPERTY_TITLE_1,
-    PROPERTY_TITLE_2,
-    PROPERTY_TITLE_3,
-    PROPERTY_TITLE_4,
-    PROPERTY_TITLE_5,
-}
 
 LIST_EMOTE_ICONS =
 {
@@ -805,9 +212,9 @@ LIST_EMOTE_TRIGGERS =
 
 
 
---------------------------------------------------
+----------------------------------------------------------------------------------------------------
 -- mod container
---------------------------------------------------
+----------------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -815,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_AUTHOR"]		    = METADATA_MOD_AUTHOR,
     ["LUA_AUTHOR"]		    = METADATA_LUA_AUTHOR,
     ["NMS_VERSION"]		    = METADATA_NMS_VERSION,
-    ["MOD_DESCRIPTION"]   = METADATA_MOD_DESC,
+    ["MOD_DESCRIPTION"]     = METADATA_MOD_DESC,
     
     ["MODIFICATIONS"]   =
     {
@@ -823,87 +230,117 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FILE_SCANNING_TUTORIAL,
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PKW"] = "Events",
-                            ["ADD"] = PROPERTY_SCAN_PORTAL,
-
-                        },
-                    },
-                },
-
-                {
+                    --------------------------------------------------
+                    -- scan event table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_SCANNING_PLANET,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["PKW"] = "Events",
-                            ["ADD"] = PROPERTY_SCAN_DISSONANT,
+                        -- scan event: archive (no approximate location)
+                        {   ["SKW"] = {"Name","LIBRARY",},          ["SEC_SAVE_TO"] = "SEC_SE_LIBRARY",                                     },
+                        {   ["SEC_EDIT"] = "SEC_SE_LIBRARY",        ["VCT"] = {{"Name","SE_LIBRARY",},{"EventStartType","Special",},},      },
+                        {   ["PKW"] = "Events",                     ["SEC_ADD_NAMED"] = "SEC_SE_LIBRARY",                                   },
 
-                        },
+                        -- scan event: portal
+                        {   ["SKW"] = {"Name","LIBRARY",},          ["SEC_SAVE_TO"] = "SEC_SE_PORTAL",                                                                                                      },
+                        {   ["SEC_EDIT"] = "SEC_SE_PORTAL",         ["VCT"] = {{"Name","SE_PORTAL",},{"EventStartType","Special",},{"OSDMessage","SIGNAL_PORTAL",}, {"TooltipMessage","TIP_PORTAL",},},     },
+                        {   ["SEC_EDIT"] = "SEC_SE_PORTAL",         ["SKW"] = {"BuildingClass","GcBuildingClassification.xml",},    ["LINE_OFFSET"] = 1,    ["VCT"] = {{"BuildingClass","Portal",},},       },
+                        {   ["PKW"] = "Events",                     ["SEC_ADD_NAMED"] = "SEC_SE_PORTAL",                                                                                                    },
+                            
+                        -- scan event: dissonant planet
+                        {   ["SKW"] = {"Name","LIBRARY",},          ["SEC_SAVE_TO"] = "SEC_SE_DISSONANT",                                                                                                           },
+                        {   ["SEC_EDIT"] = "SEC_SE_DISSONANT",      ["VCT"] = {{"Name","SE_DISSONANT",},{"EventStartType","Special",},{"OSDMessage","UI_MP_CORRUPT_PLANET_OSD",},{"InterstellarOSDMessage","",},
+                                                                    {"MarkerLabel","UI_MP_CORRUPT_PLANET_MARKER",},{"Filename","TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS",},{"TooltipMessage","",},},      },
+                        {   ["SEC_EDIT"] = "SEC_SE_DISSONANT",      ["SKW"] = {"BuildingClass","GcBuildingClassification.xml",},    ["LINE_OFFSET"] = 1,    ["VCT"] = {{"BuildingClass","AbandonedRobotCamp",},},   },
+                        {   ["PKW"] = "Events",                     ["SEC_ADD_NAMED"] = "SEC_SE_DISSONANT",                                                                                                            },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- player stats table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_GAMESTATE_STATSTABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["PKW"] = "StatDefinitionTable",
-                            ["ADD"] = PROPERTY_STAT_TOKENS,
-                        },
+                        -- add new stat to track: number of starships interacted with from scanner mission
+                        {   ["SKW"] = {"Id","POLO_PROGRESS",},      ["SEC_SAVE_TO"] = "SEC_STAT_TOKEN",         },
+                        {   ["SEC_EDIT"] = "SEC_STAT_TOKEN",        ["VCT"] = {{"Id","APOLLO_TOKENS",},},       },
+                        {   ["PKW"] = "StatDefinitionTable",        ["SEC_ADD_NAMED"] = "SEC_STAT_TOKEN",       },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- encounter spawn table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_SIMULATION_SPAWNTABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["PKW"] = "PulseEncounters",
-                            ["ADD"] = PROPERTY_SPAWN_FRACTURE,
-                        },
+                        -- new space encounter - temporal fracture
+                        {   ["SKW"] = {"Id","JELLYFISH",},      ["SEC_SAVE_TO"] = "SEC_ENCOUNTER",                                                                                              },
+                        {   ["SEC_EDIT"] = "SEC_ENCOUNTER",     ["VCT"] = {{"Id","OBJ_FRACTURE",},{"MarkerLabel","TEXT_FRACTURE_MARKER",},{"ChatMessageName","",},
+                                                                {"CustomNotify","TEXT_FRACTURE_TIP",},{"CustomNotifyTitle","TEXT_FRACTURE_LABEL",},{"CustomNotifyOSD","TEXT_FRACTURE_OSD",},
+                                                                {"UseMarkerIconInOSD","True",},{"RequiresMissionActive","M_STARTER",},{"AkEvent","MUS_STORYMODE_MUSICCUE_06_LP",},},            },
+                        {   ["SEC_EDIT"] = "SEC_ENCOUNTER",     ["SKW"] = {"MarkerIcon","TkTextureResource.xml",},      ["VCT"] = {{"Filename","TEXTURES/MISSION/MAIN.DDS",},},                 },
+                        {   ["SEC_EDIT"] = "SEC_ENCOUNTER",     ["SKW"] = {"Object","TkModelResource.xml",},            ["VCT"] = {{"Filename","MODELS/OBJECTS/FRACTURE.SCENE.MBIN",},},        },
+                        {   ["PKW"] = "PulseEncounters",        ["SEC_ADD_NAMED"] = "SEC_ENCOUNTER",                                                                                            },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- derelict freighter engineering terminal
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_DERELICT_TERMINAL,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["PKW"] = "PuzzleMissionOverrideTable",
-                            ["ADD"] = PROPERTY_DIALOGUE_DERELICT,
-                        },
+                        -- add new dialogue override
+                        {   ["PKW"] = "GcAlienPuzzleMissionOverride.xml",       ["SEC_SAVE_TO"] = "SEC_DIALOGUE",                   },
+                        {   ["SEC_EDIT"] = "SEC_DIALOGUE",      ["VCT"] = {{"Mission","M_BOXB",},{"Puzzle","I_DERELICT_1",},},      },
+                        {   ["PKW"] = "PuzzleMissionOverrideTable",     ["SEC_ADD_NAMED"] = "SEC_DIALOGUE",                         },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- player titles table
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_GAMESTATE_PLAYERRTITLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SKW"] = {"ID","T_ABANDLORE3"},
-                            ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE3"},},
-                        },
+                        -- fix 2 abandoned lore titles (part of Misc Text Fixes mod)
+                        {   ["SKW"] = {"ID","T_ABANDLORE3"},        ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE3"},},    },
+                        {   ["SKW"] = {"ID","T_ABANDLORE4"},        ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE4"},},    },
+    
+                        -- add the new player titles
+                        {   ["SKW"] = {"ID","T_DEFAULT"},   ["SEC_SAVE_TO"] = "SEC_TITLE",                                                                                            },
+                        {   ["SEC_EDIT"] = "SEC_TITLE",     ["VCT"] = {{"ID","T_TIME5",},{"Title","TEXT_TITLE_FORMAT_5",},{"UnlockDescription","TEXT_TITLE_UNLOCK",},
+                                                            {"AlreadyUnlockedDescription","TEXT_TITLE_OWNED_5",},{"UnlockedByStat","APOLLO_TOKENS",},{"UnlockedByStatValue",30,},},    },
+                        {   ["PKW"] = "Titles",             ["SEC_ADD_NAMED"] = "SEC_TITLE",                                                                                          },
+                                                                                                
+                        {   ["SEC_EDIT"] = "SEC_TITLE",     ["VCT"] = {{"ID","T_TIME4",},{"Title","TEXT_TITLE_FORMAT_4",},{"AlreadyUnlockedDescription","TEXT_TITLE_OWNED_4",},{"UnlockedByStatValue",20,},},   },
+                        {   ["PKW"] = "Titles",             ["SEC_ADD_NAMED"] = "SEC_TITLE",                                                                                                                    },
 
-                        {
-                            ["SKW"] = {"ID","T_ABANDLORE4"},
-                            ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE4"},},
-                        },
+                        {   ["SEC_EDIT"] = "SEC_TITLE",     ["VCT"] = {{"ID","T_TIME3",},{"Title","TEXT_TITLE_FORMAT_3",},{"AlreadyUnlockedDescription","TEXT_TITLE_OWNED_3",},{"UnlockedByStatValue",15,},},   },
+                        {   ["PKW"] = "Titles",             ["SEC_ADD_NAMED"] = "SEC_TITLE",                                                                                                                    },
 
-                        {
-                            ["PKW"] = "Titles",
-                            ["ADD"] = LIST_PLAYER_TITLES,
-                        },
+                        {   ["SEC_EDIT"] = "SEC_TITLE",     ["VCT"] = {{"ID","T_TIME2",},{"Title","TEXT_TITLE_FORMAT_2",},{"AlreadyUnlockedDescription","TEXT_TITLE_OWNED_2",},{"UnlockedByStatValue",10,},},   },
+                        {   ["PKW"] = "Titles",             ["SEC_ADD_NAMED"] = "SEC_TITLE",                                                                                                                    },
+
+                        {   ["SEC_EDIT"] = "SEC_TITLE",     ["VCT"] = {{"ID","T_TIME1",},{"Title","TEXT_TITLE_FORMAT_1",},{"AlreadyUnlockedDescription","TEXT_TITLE_OWNED_1",},{"UnlockedByStatValue",5,},},    },
+                        {   ["PKW"] = "Titles",             ["SEC_ADD_NAMED"] = "SEC_TITLE",                                                                                                                    },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- Quick Menu emote list
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_EMOTEMENU,
                     ["EXML_CHANGE_TABLE"] =
                     {
+                        -- add the debug emotes
                         {
                             ["PKW"] = "Emotes",
                             ["ADD_OPTION"] = "ADDafterSECTION",
@@ -914,9 +351,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 {
+                    --------------------------------------------------
+                    -- player model (required for emotes)
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_PLAYERENTITY,
                     ["EXML_CHANGE_TABLE"] =
                     {
+                        -- add the animations and triggers to player entity file
                         {
                             ["SKW"] = {"Anim","0H_GREET_MOB_04",},
                             ["SECTION_ACTIVE"] = 2,
@@ -931,9 +372,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     },
                 },
-
-
-
             }
         }
     }

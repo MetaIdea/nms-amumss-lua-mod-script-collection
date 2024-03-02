@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "TECHNOLOGY"
-METADATA_NMS_VERSION    = "448"
+METADATA_NMS_VERSION    = "451"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for technology objects. Modifies files in METADATA\\REALITY and METADATA\\GAMESTATE\\PLAYERDATA."
 
 
@@ -392,8 +392,8 @@ STATS_NONE =              BuildStatsProperty("Ship_Scan")
 STATS_TRAIL =             BuildStatsProperty("Ship_Scan","Ship_Boost",1.01,1)
 
 COLOR0_BLUE =             BuildColorProperty("Colour",0.12941177,0.46666667,0.78431374)
-COLOR0_DARK =             BuildColorProperty("Colour",0.101960786,0.15294118,0.2)
 COLOR0_GREEN =            BuildColorProperty("Colour",0.03529412,0.36078432,0.46666667)
+COLOR0_GREY =             BuildColorProperty("Colour",0.101960786,0.15294118,0.2)
 
 COLOR1_SHARED =           BuildColorProperty("UpgradeColour",1,1,1)
 COLOR1_PHOTON =           BuildColorProperty("UpgradeColour",0.015686275,0.34901962,1)
@@ -579,7 +579,7 @@ PROPERTY_TECH_SENTINEL = BuildTechProperty(
   "SENTINEL","TECH",COST_WEAPON,
   "False","True","RobotShip","SHIPGUN1",
   CHARGING_NONE,CRAFTING_SENTINEL,STATS_SENTINEL,
-  COLOR0_DARK,COLOR1_PHOTON,COLOR2_PHOTON)
+  COLOR0_GREY,COLOR1_PHOTON,COLOR2_PHOTON)
 
 
 
@@ -716,7 +716,7 @@ PROPERTY_TRAIL_CYAN = BuildTechProperty(
   "CYAN","TRAIL",COST_TRAIL_MOD,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_CYAN,STATS_TRAIL,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_TRAIL)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_TRAIL)
 
 --------------------------------------------------
 -- orange
@@ -732,7 +732,7 @@ PROPERTY_TRAIL_ORANGE = BuildTechProperty(
   "ORANGE","TRAIL",COST_TRAIL_MOD,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_ORANGE,STATS_TRAIL,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_TRAIL)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_TRAIL)
 
 --------------------------------------------------
 -- pink
@@ -748,7 +748,7 @@ PROPERTY_TRAIL_PINK = BuildTechProperty(
   "PINK","TRAIL",COST_TRAIL_MOD,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_PINK,STATS_TRAIL,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_TRAIL)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_TRAIL)
 
 --------------------------------------------------
 -- white
@@ -764,7 +764,7 @@ PROPERTY_TRAIL_WHITE = BuildTechProperty(
   "WHITE","TRAIL",COST_TRAIL_MOD,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_WHITE,STATS_TRAIL,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_TRAIL)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_TRAIL)
 
 --------------------------------------------------
 -- orange + effects
@@ -780,7 +780,7 @@ PROPERTY_TRAIL_GLITCH = BuildTechProperty(
   "GLITCH","TRAIL",COST_TRAIL_MOD,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_GLITCH,STATS_TRAIL,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_TRAIL)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_TRAIL)
 
 --------------------------------------------------
 -- cyan + effects
@@ -796,7 +796,7 @@ PROPERTY_TRAIL_ELECTRIC = BuildTechProperty(
   "ELECTRIC","TRAIL",COST_TRAIL_MOD,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_ELECTRIC,STATS_TRAIL,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_TRAIL)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_TRAIL)
 
 --------------------------------------------------
 -- purple + effects
@@ -812,7 +812,7 @@ PROPERTY_TRAIL_PSYCHIC = BuildTechProperty(
   "PSYCHIC","TRAIL",COST_TRAIL_MOD,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_PSYCHIC,STATS_TRAIL,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_TRAIL)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_TRAIL)
 
 
 
@@ -834,7 +834,7 @@ PROPERTY_TECH_BOOSTLAUNCH = BuildTechProperty(
   "BOOSTL","TECH",COST_BOBBLE_TOP,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_BOOSTLAUNCH,STATS_BOOSTLAUNCH,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- damage
@@ -850,7 +850,7 @@ PROPERTY_TECH_BOOSTDAMAGE = BuildTechProperty(
   "BOOSTD","TECH",COST_BOBBLE_TOP,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_BOOSTDAMAGE,STATS_BOOSTDAMAGE,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- boost
@@ -866,7 +866,7 @@ PROPERTY_TECH_BOOSTPULSE = BuildTechProperty(
   "BOOSTP","TECH",COST_BOBBLE_TOP,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_BOOSTPULSE,STATS_BOOSTPULSE,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- warp range
@@ -882,7 +882,7 @@ PROPERTY_TECH_BOOSTWARP = BuildTechProperty(
   "BOOSTW","TECH",COST_BOBBLE_TOP,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_BOOSTWARP,STATS_BOOSTWARP,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- shield
@@ -898,7 +898,7 @@ PROPERTY_TECH_BOOSTSHIELD = BuildTechProperty(
   "BOOSTS","TECH",COST_BOBBLE_TOP,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_BOOSTSHIELD,STATS_BOOSTSHIELD,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- manueverability
@@ -914,7 +914,7 @@ PROPERTY_TECH_BOOSTMANUEV = BuildTechProperty(
   "BOOSTM","TECH",COST_BOBBLE_TOP,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_BOOSTMANUEV,STATS_BOOSTMANUEV,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 
 
@@ -937,7 +937,7 @@ PROPERTY_BOBBLE_BLOB = BuildTechProperty(
 "BLOB","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_BLOB,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- holo collection - solar system
@@ -954,7 +954,7 @@ PROPERTY_BOBBLE_SOLAR = BuildTechProperty(
 "SOLAR","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_SOLAR,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- holo collection - frigate
@@ -971,7 +971,7 @@ PROPERTY_BOBBLE_FRIGATE = BuildTechProperty(
 "FRIGATE","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_FRIGATE,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 
 
@@ -989,7 +989,7 @@ PROPERTY_BOBBLE_LAYLAPS = BuildTechProperty(
 "LAYLAPS","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_LAYLAPS,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- sentinel collection - walker
@@ -1005,7 +1005,7 @@ PROPERTY_BOBBLE_WALKER = BuildTechProperty(
 "WALKER","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_WALKER,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- sentinel collection - crystalized drone
@@ -1021,7 +1021,7 @@ PROPERTY_BOBBLE_CRYSDRONE = BuildTechProperty(
 "CRYSDRONE","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_CRYSDRONE,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 
 
@@ -1039,7 +1039,7 @@ PROPERTY_BOBBLE_JELLY = BuildTechProperty(
 "JELLYFISH","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_JELLYFISH,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- monster collection - worm
@@ -1055,7 +1055,7 @@ PROPERTY_BOBBLE_WORM = BuildTechProperty(
 "WORM","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_WORM,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- monster collection - void egg
@@ -1071,7 +1071,7 @@ PROPERTY_BOBBLE_EGG = BuildTechProperty(
 "EGG","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_EGG,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 
 
@@ -1089,7 +1089,7 @@ PROPERTY_BOBBLE_STONE = BuildTechProperty(
 "STONE","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_STONE,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- planet collection - underwater crystal
@@ -1105,7 +1105,7 @@ PROPERTY_BOBBLE_AQUATIC = BuildTechProperty(
 "AQUATIC","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_AQUATIC,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- planet collection - grave model
@@ -1121,7 +1121,7 @@ PROPERTY_BOBBLE_GRAVE = BuildTechProperty(
 "GRAVE","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_GRAVE,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 
 
@@ -1139,7 +1139,7 @@ PROPERTY_BOBBLE_SHROOM = BuildTechProperty(
 "SHROOM","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_SHROOM,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- glitch collection - ossified star
@@ -1155,7 +1155,7 @@ PROPERTY_BOBBLE_STAR = BuildTechProperty(
 "STAR","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_STAR,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- glitch collection - separator
@@ -1171,7 +1171,9 @@ PROPERTY_BOBBLE_SHARD = BuildTechProperty(
 "SHARD","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_SHARD,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
+
+
 
 --------------------------------------------------
 -- misc collection - globe statue
@@ -1187,7 +1189,7 @@ PROPERTY_BOBBLE_GLOBE = BuildTechProperty(
 "GLOBE","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_GLOBE,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- misc collection - shield generator 
@@ -1203,7 +1205,7 @@ PROPERTY_BOBBLE_SHIELDGEN = BuildTechProperty(
 "SHIELDGEN","BOBBLE",COST_BOBBLE_BOTTOM,
 "False","False","AllShips","",
 CHARGING_NONE,CRAFTING_SHIELDGEN,STATS_NONE,
-COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 --------------------------------------------------
 -- misc collection - Nexus synthesis core
@@ -1219,7 +1221,7 @@ PROPERTY_BOBBLE_NEXUSORB = BuildTechProperty(
   "NEXUSORB","BOBBLE",COST_BOBBLE_BOTTOM,
   "False","False","AllShips","",
   CHARGING_NONE,CRAFTING_NEXUSORB,STATS_NONE,
-  COLOR0_DARK,COLOR1_SHARED,COLOR2_SHARED)
+  COLOR0_GREY,COLOR1_SHARED,COLOR2_SHARED)
 
 
 

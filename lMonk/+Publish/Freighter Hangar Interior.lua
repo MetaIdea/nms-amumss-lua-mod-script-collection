@@ -174,11 +174,13 @@ for _,node in ipairs({
 	{k='RefHangarCrane2',	tx=41.88,				tz=61.2},
 	{k='RefHangarCrane',	tx=-3.43,				tz=59.5},
 	{k='RefHangarCrane1',	tx=-41.96,				tz=60.9},
-	{k='RefPallet54',		tx=-52.35,	ty=-7.48,	tz=66.7,				sx=2.6,	sy=1,		sz=2.6},
+	{k='RefPallet54',		tx=-52.35,	ty=-7.48,	tz=66.7,				sx=2.6,	sy=1,	sz=2.6},
 	{k='MonitorDesk',		tx=-55.5,	ty=-7.35,	tz=63.2,	ry=305},
 	{k='RefFuelTank2',		tx=35.53,	ty=-7.34,	tz=72.55,	ry=180},
-	{k='RefPallet30',		tx=7.79,	ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,		sz=2.8},
-	{k='MidCeiling201',								tz=33.2,									sz=1.25},
+	{k='RefPallet30',		tx=7.79,	ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,	sz=2.8},
+	{k='MidCeiling201',								tz=33.2,								sz=1.25},
+	{k='RefLargeCrate118',	tx=-22.6,	ty=-4.31,	tz=17.2,	rx=180,		sx=1,	sy=5,	sz=5.5},
+	{k='RefLargeCrate13',	tx=22.6,	ty=-4.32,	tz=17.2,	rx=180,		sx=5.5,	sy=5,	sz=1},
 }) do
 	ECT[#ECT+1] = {
 		SPECIAL_KEY_WORDS	= {'Name', node.k},

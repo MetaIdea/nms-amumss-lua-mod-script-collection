@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Aurfram's Living and Robot ship.pak",
+["MOD_FILENAME"]  = "Aur's LS and Int more Exotic.pak",
 ["MOD_AUTHOR"]    = "Aurfram",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.45",
@@ -20,6 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Alien", "100"},
                                 {"Robot", "100"},
+                                {"Royal", "100"},
                             }
                         },
                     }
@@ -29,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/PIRATECRUISER.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/INDUSTRIAL/PIRATECRUISER.SCENE.MBIN",},
                             ["SECTION_ACTIVE"] = {2,3},
                             ["ADD_OPTION"]  = "ADDafterSECTION", 
                             ["ADD"] =

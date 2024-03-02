@@ -5,27 +5,14 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "TREE+WIKI"
-METADATA_NMS_VERSION    = "448"
+METADATA_NMS_VERSION    = "452_SEC"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for research tree and Catalogue and Guide section. Modifies files in METADATA\\REALITY."
 
 
 
 --------------------------------------------------
--- tech tree + token cost property
+-- tech tree data
 --------------------------------------------------
-
-PROPERTY_COST_TOKEN = 
-[[
-<Property value="GcUnlockableTreeCostType.xml">
-  <Property name="CostTypeID" value="COST_TOKEN" />
-  <Property name="TypeOfCost" value="Product" />
-  <Property name="CurrencyType" value="GcCurrency.xml">
-    <Property name="Currency" value="Units" />
-  </Property>
-  <Property name="TypeID" value="ITEM_TOKEN" />
-  <Property name="CantAffordString" value="TEXT_TREE_WARNING" />
-</Property>
-]]
 
 PROPERTY_TECHTREE = 
 [[
@@ -303,186 +290,6 @@ PROPERTY_TECHTREE =
 
 
 --------------------------------------------------
--- catalogue and guide - technologies and items
---------------------------------------------------
-
-PROPERTY_WIKI_TECH =
-[[
-<Property value="GcWikiCategory.xml">
-  <Property name="CategoryID" value="TEXT_WIKI_BUTTON_MAIN" />
-  <Property name="CategoryIDUpper" value="TEXT_WIKI_LABEL_MAIN" />
-  <Property name="IconOn" value="TkTextureResource.xml">
-    <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.BUILD.POWER.ON.DDS" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-  </Property>
-  <Property name="IconOff" value="TkTextureResource.xml">
-    <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.BUILD.POWER.OFF.DDS" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-  </Property>
-  <Property name="Topics" />
-  <Property name="Type" value="GcWikiTopicType.xml">
-    <Property name="WikiTopicType" value="CustomTechnologyList" />
-  </Property>
-  <Property name="Items">
-  
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_SCANNER" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_SHIELD" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_PHOTON" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_SENTINEL" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_SHOTGUN" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_ROCKET" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_PHASE" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_CYCLO" />
-    </Property>
-
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_COMPUTER" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_TRANSFER" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_POLICE" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_LOCATOR" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_DISSONANT" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_HYPERDRIVE" />
-    </Property>
-
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_BOOSTL" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_BOOSTD" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_BOOSTS" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_BOOSTW" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_BOOSTP" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_BOOSTM" />
-    </Property>
-
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_WHITE" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_CYAN" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_ORANGE" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_PINK" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_ELECTRIC" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_GLITCH" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TECH_PSYCHIC" />
-    </Property>
-
-  </Property>
-  <Property name="UnseenCount" value="0" />
-  <Property name="UnlockedCount" value="0" />
-</Property>
-]]
-
-PROPERTY_WIKI_ITEMS =
-[[
-<Property value="GcWikiCategory.xml">
-  <Property name="CategoryID" value="TEXT_WIKI_BUTTON_MAIN" />
-  <Property name="CategoryIDUpper" value="TEXT_WIKI_LABEL_MAIN" />
-  <Property name="IconOn" value="TkTextureResource.xml">
-    <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.BUILD.POWER.ON.DDS" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-  </Property>
-  <Property name="IconOff" value="TkTextureResource.xml">
-    <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.BUILD.POWER.OFF.DDS" />
-    <Property name="ResHandle" value="GcResource.xml">
-      <Property name="ResourceID" value="0" />
-    </Property>
-  </Property>
-  <Property name="Topics" />
-  <Property name="Type" value="GcWikiTopicType.xml">
-    <Property name="WikiTopicType" value="CustomItemList" />
-  </Property>
-  <Property name="Items">
-
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_TOKEN" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_PLATING" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_FRAGMENT" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_CIRCUIT" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_BOXA" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_DICTIONARY" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_BOXB" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_CRYSTAL" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_BOXC" />
-    </Property>
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="ITEM_BYPASS" />
-    </Property>
-
-  </Property>
-  <Property name="UnseenCount" value="0" />
-  <Property name="UnlockedCount" value="0" />
-</Property>
-]]
-
-
-
---------------------------------------------------
 -- catalogue and guide - stories
 --------------------------------------------------
 
@@ -754,6 +561,46 @@ PROPERTY_WIKI_STORY =
 
 
 
+--------------------------------------------------
+-- catalogue and guide - technologies and items
+--------------------------------------------------
+
+LIST_CUSTOM_TECH_IDS =
+{
+    "TECH_SCANNER",
+    "TECH_SHIELD","TECH_PHOTON","TECH_SENTINEL","TECH_SHOTGUN","TECH_ROCKET","TECH_PHASE","TECH_CYCLO",
+    "TECH_COMPUTER","TECH_TRANSFER","TECH_POLICE","TECH_LOCATOR","TECH_DISSONANT","TECH_HYPERDRIVE",
+    "TECH_BOOSTL","TECH_BOOSTD","TECH_BOOSTS","TECH_BOOSTW","TECH_BOOSTP","TECH_BOOSTM",
+    "TECH_WHITE","TECH_CYAN","TECH_ORANGE","TECH_PINK","TECH_ELECTRIC","TECH_GLITCH","TECH_PSYCHIC",
+}
+
+LIST_CUSTOM_ITEM_IDS =
+{
+    "ITEM_TOKEN",
+    "ITEM_PLATING","ITEM_FRAGMENT","ITEM_CIRCUIT",
+    "ITEM_BOXA","ITEM_DICTIONARY",
+    "ITEM_BOXB","ITEM_CRYSTAL",
+    "ITEM_BOXC","ITEM_BYPASS",
+}
+
+function BuildWikiListProperty(list)
+
+  local ListStart = [[<Property name="Items">]]
+  local ListEnd = [[</Property>]]
+  local EntryStart = [[<Property value="NMSString0x10.xml"><Property name="Value" value="]]
+  local EntryEnd = [[" /></Property>]]
+  local ListEntries = {}
+
+  for i=1,#list do
+    ListEntries[#ListEntries+1] = EntryStart .. list[i] .. EntryEnd
+  end
+
+  return ListStart .. table.concat(ListEntries) .. ListEnd
+
+end
+
+
+
 ----------------------------------------------------------------------------------------------------
 -- mod definition
 ----------------------------------------------------------------------------------------------------
@@ -784,111 +631,78 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
+                    --------------------------------------------------
+                    -- research trees file
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_RESEARCHTREE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            -- remove the default Test tech tree
-                            ["SKW"] = {"Test","GcUnlockableItemTrees.xml",},
-                            ["REMOVE"] = "SECTION",
-                        },
+                        -- remove the default Test tech tree, put new Test tree in it's place (must be first!)
+                        {   ["SKW"] = {"Test","GcUnlockableItemTrees.xml",},    ["REMOVE"] = "SECTION",   },
+                        {   ["PKW"] = "Trees",    ["ADD"] = PROPERTY_TECHTREE,    },
 
-                        {
-                            -- put new Test tree in it's place (must be first!)
-                            ["PKW"] = "Trees",
-                            ["ADD"] = PROPERTY_TECHTREE,
-                        },
-
-                        {
-                            -- add new cost type based on the token item
-                            ["PKW"] = "CostTypes",
-                            ["ADD"] = PROPERTY_COST_TOKEN,
-                        },
+                        -- research cost object
+                        {   ["PKW"] = "CostTypes",            ["PKW_1"] = "TRUE",     ["SKW"] = {"CostTypeID","SALVAGE",},    ["SEC_SAVE_TO"] = "SEC_TREE_COST",              },
+                        {   ["SEC_EDIT"] = "SEC_TREE_COST",   ["VCT"] = {{"CostTypeID","COST_TOKEN",},{"TypeID","ITEM_TOKEN",},{"CantAffordString","TEXT_TREE_WARNING",},},   },
+                        {   ["PKW"] = "CostTypes",            ["SEC_ADD_NAMED"] = "SEC_TREE_COST",                                                                            },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- catalogue and guide - technology
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_CATALOGUE_TECH,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            -- add new section with custom tech
-                            ["SKW"] = {"CategoryID","UI_PORTAL_CAT_TECH_WEIRD",},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] = PROPERTY_WIKI_TECH,
-                        },
+                        -- add section for Apollo tech
+                        {   ["SKW"] = {"CategoryID","UI_PORTAL_CAT_TECH_WEIRD",},   ["SEC_SAVE_TO"] = "SEC_WIKI_TECH",                                                                                                },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_TECH",   ["VCT"] ={{"CategoryID","TEXT_WIKI_BUTTON_MAIN",},{"CategoryIDUpper","TEXT_WIKI_LABEL_MAIN",},},                                                        },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_TECH",   ["SKW"] = {"IconOn","TkTextureResource.xml",},    ["VCT"] ={{"Filename","TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.BUILD.POWER.ON.DDS",},},                  },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_TECH",   ["SKW"] = {"IconOff","TkTextureResource.xml",},   ["VCT"] ={{"Filename","TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.BUILD.POWER.OFF.DDS",},},                 },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_TECH",   ["PKW"] = "Items",    ["REMOVE"] = "SECTION",                                                                                                           },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_TECH",   ["SKW"] = {"WikiTopicType","CustomTechnologyList",},    ["ADD_OPTION"] = "ADDafterSECTION",   ["ADD"] = BuildWikiListProperty(LIST_CUSTOM_TECH_IDS),    },
+                        {   ["SKW"] = {"CategoryID","UI_PORTAL_CAT_TECH_WEIRD",},   ["ADD_OPTION"] = "ADDafterSECTION",   ["SEC_ADD_NAMED"] = "SEC_WIKI_TECH",                                                        },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- catalogue and guide - items
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_CATALOGUE_ITEMS,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            -- add new section with custom items
-                            ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_COOK",},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] = PROPERTY_WIKI_ITEMS,
-                        },
+                        -- add section for Apollo items
+                        {   ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_COOK",},   ["SEC_SAVE_TO"] = "SEC_WIKI_ITEMS",   },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_ITEMS",   ["VCT"] ={{"CategoryID","TEXT_WIKI_BUTTON_MAIN",},{"CategoryIDUpper","TEXT_WIKI_LABEL_MAIN",},},                                                 },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_ITEMS",   ["SKW"] = {"IconOn","TkTextureResource.xml",},    ["VCT"] ={{"Filename","TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.BUILD.POWER.ON.DDS",},},           },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_ITEMS",   ["SKW"] = {"IconOff","TkTextureResource.xml",},   ["VCT"] ={{"Filename","TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.BUILD.POWER.OFF.DDS",},},          },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_ITEMS",   ["PKW"] = "Items",    ["REMOVE"] = "SECTION",                                                                                                    },
+                        {   ["SEC_EDIT"] = "SEC_WIKI_ITEMS",   ["SKW"] = {"WikiTopicType","CustomItemList",},    ["ADD_OPTION"] = "ADDafterSECTION",   ["ADD"] = BuildWikiListProperty(LIST_CUSTOM_ITEM_IDS),   },
+                        {   ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_COOK",},   ["ADD_OPTION"] = "ADDafterSECTION",   ["SEC_ADD_NAMED"] = "SEC_WIKI_ITEMS",                                                   },
 
-                        {
-                            -- save the list of items from 2nd "raw materials" section
-                            ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_RAW2",},
-                            ["PKW"] = "Items",
-                            ["SEC_SAVE_TO"] = "SEC_RESOURCES",
-                        },
-
-                        {
-                            -- remove the head of the section
-                            ["SEC_EDIT"] = "SEC_RESOURCES",
-                            ["REMOVE"] = "HBOS", 
-                        },
-
-                        {
-                            -- add the list of items into the 1st "raw materials" section
-                            ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_RAW1",},
-                            ["PKW"] = "Items",
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["LINE_OFFSET"] = -1,
-                            ["SEC_ADD_NAMED"] = "SEC_RESOURCES",
-                        },
-
-                        {
-                            -- change button text and page title to "raw materials" without any addendum
-                            ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_RAW1",},
-                            ["VCT"] =
-                            {
-                                {"CategoryID","UI_GUIDE_HEADING_SUB_CATA",},
-                                {"CategoryIDUpper","UI_GUIDE_HEADING_SUB_CATA_U",},
-                            },
-                        },
-
-                        {
-                            -- remove the 2nd "raw materials" section
-                            ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_RAW2",},
-                            ["REMOVE"] = "SECTION",
-                        },
+                        -- merge 2 "raw materials" sections into one to make place for Apollo section
+                        {   ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_RAW2",},   ["PKW"] = "Items",    ["SEC_SAVE_TO"] = "SEC_RESOURCES",                                                                    },
+                        {   ["SEC_EDIT"] = "SEC_RESOURCES",    ["REMOVE"] = "HBOS",                                                                                                                           },
+                        {   ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_RAW1",},   ["PKW"] = "Items",    ["ADD_OPTION"] = "ADDafterSECTION",   ["LINE_OFFSET"] = -1,   ["SEC_ADD_NAMED"] = "SEC_RESOURCES",    },
+                        {   ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_RAW1",},   ["VCT"] ={{"CategoryID","UI_GUIDE_HEADING_SUB_CATA",},{"CategoryIDUpper","UI_GUIDE_HEADING_SUB_CATA_U",},},                 },     
+                        {   ["SKW"] = {"CategoryID","UI_PORTAL_CAT_MAT_RAW2",},   ["REMOVE"] = "SECTION",                                                                                                     },
                     },
                 },
 
                 {
+                    --------------------------------------------------
+                    -- catalogue and guide - knowledge
+                    --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_STORIESTABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            -- remove the unused story section
-                            ["SKW"] = {"Exotics","GcStoryCategory.xml",},
-                            ["REMOVE"] = "SECTION",
-                        },
-
-                        {
-                            -- push a new story section in its place
-                            ["SKW"] = {"Diplomats","GcStoryCategory.xml",},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] = PROPERTY_WIKI_STORY,
-                        },
+                        -- remove unused story section, add Apollo story section in its place
+                        {   ["SKW"] = {"Exotics","GcStoryCategory.xml",},     ["REMOVE"] = "SECTION",   },
+                        {   ["SKW"] = {"Diplomats","GcStoryCategory.xml",},   ["ADD_OPTION"] = "ADDafterSECTION",    ["ADD"] = PROPERTY_WIKI_STORY,   },
                     },
-                }
+                },
             }
         }
     }
