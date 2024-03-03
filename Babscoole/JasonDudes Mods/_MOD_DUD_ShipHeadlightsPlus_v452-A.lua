@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v445-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v452-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.45",
+["NMS_VERSION"]             = "4.52",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -265,6 +265,43 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\VRSPEEDERHEADLIGHTS.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+]]
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WRACER.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Contrail4"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
+[[
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_Headlights" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\WRACERHEADLIGHTS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3138,12 +3175,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -3164,6 +3206,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -3348,12 +3400,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -3374,6 +3431,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -3435,12 +3502,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -3461,6 +3533,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -3522,12 +3604,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -3548,6 +3635,118 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="MATERIAL" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\WRACERHEADLIGHTS.SCENE.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkSceneNodeData">
+  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\WRACERHEADLIGHTS" />
+  <Property name="NameHash" value="0" />
+  <Property name="Type" value="LOCATOR" />
+  <Property name="Transform" value="TkTransformData.xml">
+    <Property name="TransX" value="0" />
+    <Property name="TransY" value="0" />
+    <Property name="TransZ" value="0" />
+    <Property name="RotX" value="0" />
+    <Property name="RotY" value="0" />
+    <Property name="RotZ" value="0" />
+    <Property name="ScaleX" value="1" />
+    <Property name="ScaleY" value="1" />
+    <Property name="ScaleZ" value="1" />
+  </Property>
+  <Property name="Attributes">
+    <Property value="TkSceneNodeAttributeData.xml">
+      <Property name="Name" value="ATTACHMENT" />
+      <Property name="AltID" value="" />
+      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\WRACERHEADLIGHTS.ENTITY.MBIN" />
+    </Property>
+  </Property>
+  <Property name="Children">
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="WracerSpotlight1" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="LIGHT" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="1" />
+        <Property name="TransZ" value="8" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="180" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="10" />
+        <Property name="ScaleY" value="10" />
+        <Property name="ScaleZ" value="10" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FOV" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="45" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="INTENSITY" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="900000" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COL_R" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COL_G" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COL_B" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -3931,6 +4130,129 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]],
         },
         {
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\HEADLIGHTS\ENTITIES\WRACERHEADLIGHTS.ENTITY.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkAttachmentData">
+  <Property name="Components">
+    <Property value="GcTriggerActionComponentData.xml">
+      <Property name="HideModel" value="False" />
+      <Property name="StartInactive" value="True" />
+      <Property name="States">
+        <Property value="GcActionTriggerState.xml">
+          <Property name="StateID" value="TAKEOFF" />
+          <Property name="Triggers">
+            <Property value="GcActionTrigger.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
+                <Property name="Seconds" value="1" />
+                <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />
+              </Property>
+              <Property name="Action">
+                <Property value="GcGoToStateAction.xml">
+                  <Property name="State" value="ENABLE_LIGHT" />
+                  <Property name="Broadcast" value="False" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcActionTriggerState.xml">
+          <Property name="StateID" value="LANDING" />
+          <Property name="Triggers">
+            <Property value="GcActionTrigger.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
+                <Property name="Seconds" value="0" />
+                <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />
+              </Property>
+              <Property name="Action">
+                <Property value="GcGoToStateAction.xml">
+                  <Property name="State" value="DISABLE_LIGHT" />
+                  <Property name="Broadcast" value="False" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcActionTriggerState.xml">
+          <Property name="StateID" value="DISABLE_LIGHT" />
+          <Property name="Triggers">
+            <Property value="GcActionTrigger.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
+                <Property name="Seconds" value="0" />
+                <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />
+              </Property>
+              <Property name="Action">
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Deactivate" />
+                  <Property name="Name" value="WracerSpotlight1" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="False" />
+                  <Property name="IncludeChildPhysics" value="False" />
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcActionTriggerState.xml">
+          <Property name="StateID" value="ENABLE_LIGHT" />
+          <Property name="Triggers">
+            <Property value="GcActionTrigger.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
+                <Property name="Seconds" value="0" />
+                <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />
+              </Property>
+              <Property name="Action">
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Activate" />
+                  <Property name="Name" value="WracerSpotlight1" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="False" />
+                  <Property name="IncludeChildPhysics" value="False" />
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Persistent" value="False" />
+      <Property name="PersistentState" value="" />
+      <Property name="ResetShotTimeOnStateChange" value="False" />
+      <Property name="LinkStateToBaseGrid" value="False" />
+    </Property>
+  </Property>
+  <Property name="LodDistances">
+    <Property value="0" />
+    <Property value="50" />
+    <Property value="80" />
+    <Property value="150" />
+    <Property value="500" />
+  </Property>
+</Data>
+]],
+        },
+        {
             ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SAILSHIP\HEADLIGHTS\SAILHEADLIGHTS.SCENE.EXML",
             ["FILE_CONTENT"] =
 [[
@@ -3978,12 +4300,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -4004,6 +4331,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -4188,12 +4525,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -4214,6 +4556,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -4398,12 +4750,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -4424,6 +4781,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -4608,12 +4975,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -4634,6 +5006,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -4818,12 +5200,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -4844,6 +5231,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -5028,12 +5425,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -5054,6 +5456,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -5115,12 +5527,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="40" />
+          <Property name="Value" value="45" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
           <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.250000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
@@ -5141,6 +5558,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="COL_B" />
           <Property name="AltID" value="" />
           <Property name="Value" value="0.3" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />

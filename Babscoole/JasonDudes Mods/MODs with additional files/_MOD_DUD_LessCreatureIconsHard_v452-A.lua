@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_LessCreatureIconsHard_v447-A.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_LessCreatureIconsHard_v452-A.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.47",
+["NMS_VERSION"]   = "4.52",
 ["MODIFICATIONS"] =
     {
         {

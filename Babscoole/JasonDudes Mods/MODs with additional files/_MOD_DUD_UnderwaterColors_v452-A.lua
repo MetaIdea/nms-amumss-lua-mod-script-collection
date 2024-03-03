@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_UnderwaterColors_v443-A.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_UnderwaterColors_v452-A.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.43",
+["NMS_VERSION"]   = "4.52",
 ["MODIFICATIONS"] =
     {
         {
@@ -116,11 +116,301 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GASBAGS\MONOLITHMAT.MATERIAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuse2Map"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDSMOOTHERGRADIENTMASK.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.NORMAL.DDS"},
+                            }
+                        },
+                    }
+                },
             }
         }
     },
 ["ADD_FILES"] =
     {
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\DUDGASBAGSTEXTURES.TEXTURE.EXML",
+             ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="BioShip_Cockpit" />
+            <Property name="ColourAlt" value="Alternative2" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Rock" />
+            <Property name="ColourAlt" value="Alternative2" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Dirt" />
+            <Property name="ColourAlt" value="Alternative2" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
+        {
+            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\DUDSMOOTHERGRADIENTMASK.TEXTURE.EXML",
+             ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkProceduralTextureList">
+  <Property name="Layers">
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="BioShip_Cockpit" />
+            <Property name="ColourAlt" value="Alternative2" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Rock" />
+            <Property name="ColourAlt" value="Alternative2" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures">
+        <Property value="TkProceduralTexture.xml">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture.xml">
+            <Property name="Palette" value="Dirt" />
+            <Property name="ColourAlt" value="Alternative2" />
+          </Property>
+          <Property name="Probability" value="1" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="OverrideAverageColour" value="False" />
+          <Property name="AverageColour" value="Colour.xml">
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
+            <Property name="A" value="0" />
+          </Property>
+          <Property name="Diffuse" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.DDS" />
+          <Property name="Normal" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.NORMAL.DDS" />
+          <Property name="Mask" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.MASKS.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+    <Property value="TkProceduralTextureLayer.xml">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="False" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]],
+        },
         {
             ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GLOWTEXTURE.TEXTURE.EXML",
              ["FILE_CONTENT"] =

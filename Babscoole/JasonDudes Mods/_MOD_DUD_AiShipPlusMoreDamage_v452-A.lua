@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v447-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v452-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.47",
+["NMS_VERSION"]             = "4.52",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -32,7 +32,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxDifficultySpaceCombatTurnExtra",  "0"},
                                 {"MaxDifficultySpaceCombatSpeedExtra", "0"},
                                 {"TurretOriginOffset",                 "15"},
+                                {"AsteroidMiningMinDistFromPlayer",    "300"},
                             },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"CombatFormationOffset", "Vector3f.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"y", "10"},
+                                {"z", "140"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"CombatFormationOffsetThirdPerson", "Vector3f.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"y", "10"},
+                                {"z", "110"}
+                            }
                         },
                     }
                 },
@@ -270,7 +287,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_WEAK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GunDispersionAngle",           "4"},
+                                {"GunDispersionAngle",           "2"},
                                 {"GunFireRate",                  "0.2"},
                                 {"AttackWeaponRange",            "2000"},
                                 {"AttackShootWaitTime",          "1"},
@@ -295,7 +312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GunDispersionAngle",           "3"},
+                                {"GunDispersionAngle",           "1"},
                                 {"GunFireRate",                  "0.15"},
                                 {"AttackWeaponRange",            "2000"},
                                 {"AttackAngle",                  "40"},
@@ -682,10 +699,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TurretLaserChargeTime",            "0"},
-                                {"TurretLaserShootTime",             "2"},
-                                {"TurretLaserMoveSpeed",             "5"},
+                                {"GunType",                          "Projectile"},
+                                {"LaserEffectId",                    "AI_FREIGHTER"},
+                                {"LaserMuzzleFlashId",               "AITURRETLASER"},
+                                {"ProjectileId",                     "FREIGHTGUN"},
+                                {"ProjectileMuzzleFlashId",          "TURRETGUN"},
+                                {"TurretLaserShootTime",             "3"},
+                                {"TurretLaserMoveSpeed",             "50"},
+                                {"TurretLaserChargeTime",            "0.5"},
                                 {"TurretShootPauseTime",             "2"},
+                                {"TurretBurstCount",                 "20"},
+                                {"TurretBurstTime",                  "0.2"},
                                 {"TurretMaxYawTurnSpeedDegPerSec",   "180"},
                                 {"TurretMaxPitchTurnSpeedDegPerSec", "90"},
                                 {"TurretAngle",                      "360"},

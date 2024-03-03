@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v447-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v452-A.pak",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole and Wbertro",
-["NMS_VERSION"]             = "4.47",
+["NMS_VERSION"]             = "4.52",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -42,48 +42,52 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"CharacterRideCam", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY",            "2"},
-                                {"BackMinDistance",    "15"},
-                                {"BackMaxDistance",    "20"},
-                                {"VertRotationMin",    "-30"},
-                                {"VertRotationMax",    "35"},
-                                {"VertRotationOffset", "-1"},
+                                {"OffsetY",                    "1.5"},
+                                {"BackMinDistance",            "12"},
+                                {"BackMaxDistance",            "17"},
+                                {"VertRotationMin",            "-30"},
+                                {"VertRotationMax",            "40"},
+                                {"VertRotationOffset",         "0"},
+                                {"VertRotationOffsetMinAngle", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamMedium", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY",            "2"},
-                                {"BackMinDistance",    "15"},
-                                {"BackMaxDistance",    "20"},
-                                {"VertRotationMin",    "-30"},
-                                {"VertRotationMax",    "35"},
-                                {"VertRotationOffset", "-1.5"},
+                                {"OffsetY",                    "1.75"},
+                                {"BackMinDistance",            "15"},
+                                {"BackMaxDistance",            "20"},
+                                {"VertRotationMin",            "-30"},
+                                {"VertRotationMax",            "40"},
+                                {"VertRotationOffset",         "0"},
+                                {"VertRotationOffsetMinAngle", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamLarge", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY",            "2"},
-                                {"BackMinDistance",    "25"},
-                                {"BackMaxDistance",    "30"},
-                                {"VertRotationMin",    "-30"},
-                                {"VertRotationMax",    "35"},
-                                {"VertRotationOffset", "-1.5"},
+                                {"OffsetY",                    "2"},
+                                {"BackMinDistance",            "20"},
+                                {"BackMaxDistance",            "25"},
+                                {"VertRotationMin",            "-30"},
+                                {"VertRotationMax",            "40"},
+                                {"VertRotationOffset",         "0"},
+                                {"VertRotationOffsetMinAngle", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamHuge", "GcCameraFollowSettings.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY",            "2"},
-                                {"BackMinDistance",    "30"},
-                                {"BackMaxDistance",    "35"},
-                                {"VertRotationMin",    "-30"},
-                                {"VertRotationMax",    "35"},
-                                {"VertRotationOffset", "-2"},
+                                {"OffsetY",                    "2.25"},
+                                {"BackMinDistance",            "30"},
+                                {"BackMaxDistance",            "35"},
+                                {"VertRotationMin",            "-30"},
+                                {"VertRotationMax",            "40"},
+                                {"VertRotationOffset",         "0"},
+                                {"VertRotationOffsetMinAngle", "0"},
                             }
                         },
                         {
@@ -1140,15 +1144,15 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="NameHash" value="1548811781" />
           <Property name="Type" value="LIGHT" />
           <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="-0.15" />
+            <Property name="TransX" value="-0.18" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="0" />
             <Property name="RotZ" value="0" />
-            <Property name="ScaleX" value="8.547716" />
-            <Property name="ScaleY" value="8.547716" />
-            <Property name="ScaleZ" value="8.547716" />
+            <Property name="ScaleX" value="23.547716" />
+            <Property name="ScaleY" value="23.547716" />
+            <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
@@ -1169,22 +1173,22 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="INTENSITY" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="10.000000" />
+              <Property name="Value" value="100.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_R" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="0.800000" />
+              <Property name="Value" value="0.400000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_G" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="0.800000" />
+              <Property name="Value" value="0.400000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_B" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="0.800000" />
+              <Property name="Value" value="0.400000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COOKIE_IDX" />
@@ -1279,15 +1283,15 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="NameHash" value="57263980" />
           <Property name="Type" value="LIGHT" />
           <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0.15" />
+            <Property name="TransX" value="0.18" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="0" />
             <Property name="RotZ" value="0" />
-            <Property name="ScaleX" value="8.547716" />
-            <Property name="ScaleY" value="8.547716" />
-            <Property name="ScaleZ" value="8.547716" />
+            <Property name="ScaleX" value="23.547716" />
+            <Property name="ScaleY" value="23.547716" />
+            <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
@@ -1308,22 +1312,22 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="INTENSITY" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="10.000000" />
+              <Property name="Value" value="100.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_R" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="0.800000" />
+              <Property name="Value" value="0.400000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_G" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="0.800000" />
+              <Property name="Value" value="0.400000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_B" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="0.800000" />
+              <Property name="Value" value="0.400000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COOKIE_IDX" />
@@ -1677,8 +1681,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
-                            ["PRECEDING_KEY_WORDS"] = {"Attributes"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            ["CREATE_HOS"] = "TRUE", 
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -1750,8 +1754,13 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Children" />
         </Property>
-      </Property>
-    </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
+                            ["ADD_OPTION"] = "ADDafterSECTION", 
+                            ["ADD"] =
+[[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="spotLight3" />
       <Property name="NameHash" value="282392410" />
@@ -1891,31 +1900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-  </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight4"},
-                            ["LINE_OFFSET"] = "-2",
-                            ["ADD"] =
-[[
-      <Property name="Children">
-]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight5", "Value", "MATERIALS/LIGHT.MATERIAL.MBIN"},
-                            ["LINE_OFFSET"] = "+10",
-                            ["REMOVE"] = "LINE",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight5", "Value", "MATERIALS/LIGHT.MATERIAL.MBIN"},
-                            ["LINE_OFFSET"] = "+9",
-                            ["REMOVE"] = "LINE",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight5", "Value", "MATERIALS/LIGHT.MATERIAL.MBIN"},
-                            ["LINE_OFFSET"] = "+8",
-                            ["REMOVE"] = "LINE",
                         },
                     },
                 },
