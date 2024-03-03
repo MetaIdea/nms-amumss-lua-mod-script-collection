@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_47"
+GameVersion = "4_52"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -79,9 +79,17 @@ ProductSaleChanges =
 	{"FOOD_R_EYEBALLS_NAME",	1.796},				--90,000		Horrifying Mush
 	{"FOOD_R_EYESTEW_NAME",	2},						--90,000		Abyssal Stew
 	{"FOOD_R_EYEICE_NAME",	2},						--90,000		Iced Screams
-	{"FOOD_W_CASE_NAME",	8},						--8,000			New worm food made from Flesh Rope stage 1
-	{"FOOD_W_MEAT_NAME",	10},					--16,000		New worm food made from Flesh Rope stage 2
-	{"FOOD_W_SWEETM_NAME",	11.875},				--32,000		New worm food made from Flesh Rope stage 3
+	{"FOOD_W_CASE_NAME",	8},						--8,000			Gelatinous Membrane (stage 1)
+	{"FOOD_W_MEAT_NAME",	10},					--16,000		Nightmare Sausage (stage 2)
+	{"FOOD_W_SWEETM_NAME",	11.875},				--32,000		Syrupy Viscera (stage 3)
+	{"FOOD_B_WORM_NAME",	1.964},					--55,000		Wriggling Tack
+	{"FOOD_B_BURN_NAME",	0.915},					--35,000		Well-Smoked Biscuit
+	{"FOOD_B_CHEESE_NAME",	1.25},					--60,000		Curdy Cracker
+	{"FOOD_B_CREAM_NAME",	0.734},					--105,000		Cream Fingers
+	{"FOOD_B_MILK_NAME",	1.304},					--56,000		Enriched Biscuit
+	{"FOOD_B_FISH_NAME",	0.667},					--60,000		Fish Biscuit
+	{"FOOD_B_HERB_NAME",	1.157},					--60,000		Herbal Crunchie
+	{"FOOD_B_PLAIN_NAME",	0.893},					--28,000		Simple Biscuit
 	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
 	{"NEWPROD2_NAME",	10.0},						--11,688		VYKEENDAGGER
@@ -403,6 +411,7 @@ OrbitalExoPortReact = 1								--how many Portable Reactors required	(replaces 3
 
 --Changes the price of Star Charts, paid in Navigation Data at Space Stations
 RegChartCost =						2				--1		For "Secure Site of Interest", "Distress Signal", "Inhabited Outpost", and "Ancient Artifact Site" charts
+TreasureChartCost =					5				--3		For "Artifact Chart" charts
 SettlementChartCost =				8				--5		For "Planetary Settlement" charts
 ExosuitUpgradeChartCost =			42				--3		For "Exosuit Upgrade Chart" charts
 
@@ -682,6 +691,7 @@ ChartCostChanges =
 	{"STARCHART_B",			RegChartCost},
 	{"STARCHART_C",			RegChartCost},
 	{"STARCHART_D",			RegChartCost},
+	{"CHART_TREASURE",		TreasureChartCost},
 	{"CHART_SETTLE",		SettlementChartCost},
 	{"NAV_DATA_DROP",		ExosuitUpgradeChartCost}
 }

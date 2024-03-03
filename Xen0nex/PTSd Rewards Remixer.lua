@@ -1,15 +1,15 @@
 ModName = "PTSd Rewards Remixer test"
-GameVersion = "4_51"
+GameVersion = "4_52"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
 
---Changes the Class & inventory size when redeeming the two unique expedition reward ships: Golden Vector and Utopia Speeder
+--Changes the Class & inventory size when redeeming the three unique expedition reward ships: Golden Vector, Utopia Speeder, and Starborn Runner
 ExpShipClass = 							"C"						--"S"
 ExpShipCargoSlots = 					8						--36				The game adds 1 to whatever value is entered here
 ExpShipSize = 							"FgtSmall"				--"FgtLarge"		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
 
---If set to "true", makes all starships & multitools rewarded from Expeditions & Twitch streams come as C Class
+--If set to "true", makes all starships & multitools rewarded from Expeditions & Twitch streams come as C Class and with the inventory sizes defined below
 AllTwitchExpRewardsC =					false					--false
 AllTwitchExpRewardsCargo =				8						--Varies	Only used if AllTwitchExpRewardsC = true		The game adds 1 to whatever value is entered here
 AllTwitchExpRewardsShipSize =			"FgtSmall"				--Varies	Only used if AllTwitchExpRewardsC = true		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range, or sometimes uses the Max value?)
@@ -832,6 +832,10 @@ SentBrain				=	2			--???-10? Walker Brain		From interacting with damaged sentine
 SentMirror				=	2			--??? Inverted Mirror		From interacting with damaged sentinel machinery on Corrupt planets. Normally gives a random amount, up to ???
 SentQuad				=	2			--??? Quad Servo			From interacting with damaged sentinel machinery on Corrupt planets. Normally gives a random amount, up to ???
 ]]
+
+--Changes the relative chances of rewards from Ancient Data Structures
+ADSNavDataChance		=	100			--100
+ADSExosuitChartChance	=	5			--10
 
 --Multipliers to apply to rewards from some rare resource nodes
 MutantPlantSulphurine	=	0.75		--250 - 400
@@ -1880,6 +1884,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_SHIP"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipSize}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_COMPLETE"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipSize}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","FTH_USEFUL_PROD",	"ID","TECHBOX"},
 				["MATH_OPERATION"] 		= "", 
 				["SECTION_UP"] = 1,
@@ -2236,6 +2262,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = ProductReward("FRIG_TOKEN", FreighterRescueFrigModMin, FreighterRescueFrigModMax, FreighterRescueFrigModChance),
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","NAVDATA_RARE",	"ID","NAV_DATA_DROP"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	ADSExosuitChartChance}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","NAVDATA_RARE",	"ID","NAV_DATA"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	ADSNavDataChance}
+				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_COLD"},

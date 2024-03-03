@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "4_51"
+GameVersion = "4_52"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -509,6 +509,19 @@ CorruptRecipeChanges =
 	},
 }
 
+--Changes recipes, including changing which ingredients are required
+RecipeIngredientChanges =
+{
+	--Switches an ingredient to keep the recipe profitable due to how PTSd revalues the ingredients 
+	{												--Amount per batch	--Time per batch
+		{"RECIPE_911",								1,					5},		--Makes Wriggling Tack				x1		in	5 time
+		{--Vanilla ingredient	PTSd ingredient
+			{"FOOD_B_DOUGH",	"FOOD_B_DOUGH",		1},							--Requires Sugar Dough	(Sugar Dough in PTSd)		x1
+			{"FOOD_W_MEAT",		"FOOD_W_CASE",		1}							--Requires Nightmare Sausage	(Gelatinous Membrane in PTSd)	x1
+		}
+	},
+}
+
 --Multiplies how many Creature Pellets are created from all cooking recipes (Since the crafting recipe now creates multiple pellets after a game update)
 PelletsPerRecipe =				3										--1
 
@@ -524,7 +537,7 @@ CropPelletChanges =
 	"RECIPE_573",														--Cactus Flesh
 }
 
---Increases the required amount of certain ingredients used as "additives / seasoning"
+--Increases the required amount of certain ingredients used as "additives / seasoning", or in Biscuits
 SaltRequired =					5										--1		For Crunchy Caramel, Salty Custard, Salty Juice
 CarbonRequired =				5										--1		For Smoked Meat
 CondCarbonRequired =			2										--1		For Smoked Meat
@@ -1272,7 +1285,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD"] = NewSalvagedDataRecipes
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_893"},			--Removes the Worm Food alternative recipe that uses Hypnotic Eye, as in PTSd Hypnotic Eye is too valuable to be worthwhile as a cooking ingredient here
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_893"},			--Removes the Nightmare Sausage alternative recipe that uses Hypnotic Eye, as in PTSd Hypnotic Eye is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_918"},			--Removes the Haunted Wafer alternative recipe that uses Hypnotic Eye, as in PTSd Hypnotic Eye is too valuable to be worthwhile as a cooking ingredient here
 				["REPLACE_TYPE"] 		= "",
 				--["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
@@ -1355,6 +1374,43 @@ for i = 1, #CorruptRecipeChanges do
 			{
 				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"RecipeType", RecipeType},
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"TimeToMake", Time},
+					{"Amount", AmountResult}
+				}
+			}
+end
+for i = 1, #RecipeIngredientChanges do
+	local RecipeId = RecipeIngredientChanges[i][1][1]
+	local Time = RecipeIngredientChanges[i][1][3]
+	local AmountResult = RecipeIngredientChanges[i][1][2]
+	local Ingredients = RecipeIngredientChanges[i][2]
+	
+		for j = 1, #Ingredients do
+			OldINGId = Ingredients[j][1]
+			NewINGId = Ingredients[j][2]
+			AmountING = Ingredients[j][3]
+			
+			ChangesToRecipes[#ChangesToRecipes+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Id", RecipeId, "Id", OldINGId},
+				--["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Id", NewINGId},
+					{"Amount", AmountING}
+				}
+			}
+		end
+		
+		ChangesToRecipes[#ChangesToRecipes+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Id", RecipeId},
 				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
