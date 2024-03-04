@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_MultiColor_Grass_v7.0a.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_MultiColor_Grass_v7.1.pak",       
 ["MOD_AUTHOR"]				= "FjordFish",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             

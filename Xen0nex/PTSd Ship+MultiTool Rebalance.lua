@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_51"
+GameVersion = "4_52"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -116,9 +116,9 @@ ShipStatChanges	=
 			"Royal"			--Exotic		Maneuverability: High (390-445)				Speed: High
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				1,		1,		1,		0.7},		--			+		35-50,		35-50,		35-50,		50-75	%
-			{"SHIP_SHIELD",				2.5,	2.5,	2.5,	2},			--			+		55-60,		55-60,		55-60,		70-90	%
-			{"SHIP_HYPERDRIVE",			2.5,	2.5,	2.5,	1.7},		--			+		50-65,		50-65,		50-65,		75-95	%
+			{"SHIP_DAMAGE",				0.2,	0.4,	0.7,	0.7},		--			+		35-50,		35-50,		35-50,		50-75	%
+			{"SHIP_SHIELD",				0.6,	1.2,	2.0,	2},			--			+		55-60,		55-60,		55-60,		70-90	%
+			{"SHIP_HYPERDRIVE",			0.5,	1.0,	1.7,	1.7},		--			+		50-65,		50-65,		50-65,		75-95	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		N/A[40-50],	N/A[40-50],	N/A[40-50],	40-50,	%
 		}
 	},
@@ -173,7 +173,7 @@ LivingShipStatChanges =
 --Starship "Agility" changes. These are applied to the base engine attributes for the ship's weight class set in GCSPACESHIPGLOBALS.GLOBAL.MBIN  IE a value of "-25" means the maneuverability will be 25% lower than usual for that ship weight
 	--Replaces the "SHIP_AGILE" stats for starships. (PTSd makes this only affect Regular & Boosting Maneuverability, not Boosting Speed)
 	--The function below will automatically make each Class Min & Max value be 0.95x and 1.05x of these values
-	--Note that the game already gives ships some random variation in speed & maneuverability, and gives some extra bonuses depedning on Class level. 
+	--Note that the game already gives ships some random variation in speed & maneuverability, and gives some extra bonuses depending on Class level. 
 ShipAgileChanges	=
 {
 	{

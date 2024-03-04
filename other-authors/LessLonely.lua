@@ -4,9 +4,9 @@ p_WARPS = "4"		--original 5
 p_HOURS = "0"		--original 3
 
 --Spawn Settings
-Trader_Spawnchance = "100"	--original 12
-RELIC_Spawnchance = "20" --original 2
-REPAIR_Spawnchance = "15" --original 4
+Trader_Spawnchance = "48"	--original 12
+RELIC_Spawnchance = "10" --original 2
+REPAIR_Spawnchance = "16" --original 4
 ABAND_FREIGHTER_Spawnchance = "10" --original 0.25
 
 NMS_MOD_DEFINITION_CONTAINER = {

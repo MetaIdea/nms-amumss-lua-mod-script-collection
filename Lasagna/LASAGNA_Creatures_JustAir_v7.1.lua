@@ -27,7 +27,7 @@ local SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**Thi
 -------------------------------
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Creatures_JustAir_v7.0a.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Creatures_JustAir_v7.1.pak",
 ["MOD_AUTHOR"]				= "FjordFish - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
