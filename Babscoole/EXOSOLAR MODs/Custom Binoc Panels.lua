@@ -58,6 +58,10 @@ COLORNAME = ""
       COLORNAME = "ORANGE"
   end
 
+E_NOTICE = false
+
+E_NOTICE = GUIF({false, [[Do you want to remove "Press E to place Custom Marker" notification?  Default = N.  Press ENTER for default value.]]},5)
+print("E_NOTICE = "..tostring(E_NOTICE))
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -83,12 +87,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_EDIT"] = "ADD_PANEL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PositionX",       "50"},
-                                {"PositionY",       "54"},
-                                {"Width",           "450"},
-                                {"Height",          "700"},
-                                {"Vertical",        "Middle"},
-                                {"Horizontal",      "Center"},
+                                {"PositionX",       "22"},
+                                {"PositionY",       "21.3"},
+                                {"Width",           "433"},
+                                {"Height",          "520"},
                                 {"WidthPercentage", "False"},
                                 {"AnchorPercent",   "True"},
                             }
@@ -130,6 +132,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "ADD_PANEL",
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","HAZARD_VIEW"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PositionX", "154"},
+                            }
+                        },
                     }
                 },
                 {
@@ -146,12 +155,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IsHidden",         "False"},
-                                {"PositionX",        "50"},
-                                {"PositionY",        "20"},
-                                {"Width",            "400"},
-                                {"Height",           "300"},
-                                {"Vertical",         "Middle"},
-                                {"Horizontal",       "Center"},
+                                {"PositionX",        "0"},
+                                {"PositionY",        "0"},
+                                {"Width",            "396"},
+                                {"Height",           "226"},
                                 {"WidthPercentage",  "False"},
                                 {"HeightPercentage", "False"},
                             }
@@ -190,3 +197,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
     }
 }
+
+local LEFTTABLE = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+if E_NOTICE then
+
+    LEFTTABLE[#LEFTTABLE +1] =
+    {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
+        ["FOREACH_SKW_GROUP"] =
+        {
+            {"Text",  "UI_CUSTOM_MARKER_TIP"},
+            {"Image", "/TEXTURES/UI/HUD/ICONS/SCANNING/DECSLASH.DDS"},
+        },
+        ["REMOVE"] = "SECTION"
+    }
+end

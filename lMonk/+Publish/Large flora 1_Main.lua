@@ -28,19 +28,25 @@ local mod_desc = [[
 
 --- Properties of [GcObjectSpawnData.xml] being modified
 local spawn_data = {
-	props = {
+	calcs = {
 		n	= 'MinScale',				-- [*]
 		x	= 'MaxScale',				-- [*]
 		w	= 'ShearWindStrength',		-- [*]
 		c	= 'Coverage',				-- [*]
 		l	= 'LodDistances',			-- [*]
-		d	= 'FlatDensity',			-- [*] same applies to SlopeDensity
-		f	= 'FadeOutStartDistance',	-- [*] same applies to FadeOutEndDistance
+		d	= 'FlatDensity',			-- [*] affects SlopeDensity
+		f	= 'FadeOutStartDistance',	-- [*] affects FadeOutEndDistance
 		r	= 'MaxRegionRadius',		-- [+]
+	},
+	flags = {
+        cp	= 'CollideWithPlayer',
+        cv	= 'CollideWithPlayerVehicle',
+        dv	= 'DestroyedByPlayerVehicle',
+		ds	= 'DestroyedByPlayerShip'
 	}
 }
 
-local scale_tags = {
+local solar_modifiers = {
 	biomes = {
 		{
 			biotg = 'LUSH',
@@ -102,13 +108,26 @@ local scale_tags = {
 		{
 			biotg = 'TOXICBIGPROPS',
 			flora = {
-				HUGEPROPS	= {n=0.7,	x=1.05,	c=0.84}
+				HUGETOXIC	= {n=0.7,	x=1.05,	c=0.84}
+			}
+		},
+		{
+			biotg = 'HUGESCORCHED',
+			flora = {
+				HUGESPIRE	= {n=0.9,	x=0.95,	c=0.8}
+			},
+			flags = {
+				-- HUGESPIRE	= {ds=true},
+				MEDIUMSPIRE	= {dv=true}
 			}
 		},
 		{
 			biotg = 'SCORCHBIGPROPS',
 			flora = {
-				HUGEPROPS	= {n=0.9,	x=0.95,	c=0.78}
+				HUGESPIRE	= {n=0.9,	x=0.95,	c=0.8}
+			},
+			flags = {
+				MEDIUMSPIRE	= {dv=true}
 			}
 		},
 		{
@@ -168,7 +187,7 @@ local scale_tags = {
 			}
 		}
 	},
-	globals = {
+	global_flora = {
 		SHARD		= {n=1.05,	x=1.4},
 		SPIRE		= {n=1.15,	x=1.3},
 		ROCK		= {n=1.2,	x=1.75},
@@ -191,6 +210,7 @@ local scale_tags = {
 		LARGE		= {n=1.2,	x=1.6,	c=0.92},
 		MEDIUM		= {n=1.05,	x=0.95},
 		SMALL		= {n=0.95,	x=0.8},
+		FIENDEGG	= {c=0.4},
 
 	--- global lod multiplier
 		SCENE		= {l=1.25},
@@ -201,113 +221,8 @@ local scale_tags = {
 		GRAVEL		= {i=true},
 		HUGEPROPS	= {i=true},
 		FARM		= {i=true}
-	}
-}
-
-
-local solar_biomes = {
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/WIRECELLS/WIRECELLSOBJECTSDEAD.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/IRRISHELLS/IRRISHELLSOBJECTSDEAD.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/HYDROGARDEN/HYDROGARDENOBJECTSDEAD.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/HOUDINIPROPS/HOUDINIPROPSOBJECTS.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/CONTOUR/CONTOUROBJECTSDEAD.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/BONESPIRE/BONESPIREOBJECTSDEAD.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICTENTACLESOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICSPORESOBJECTS.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSMID.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICINFESTEDOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICEGGSOBJECTS.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICEGGSMOONOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICBIGPROPSOBJECTSFULL.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPOBJECTSFULL.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDSHIELDTREEOBJECTS.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDALIENOBJECTS.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHCORALOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHBIGPROPSOBJECTSFULL.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOSPIKEPOTATOOBJECTS.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOSPIKECRYSTALSOBJECTS.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOBIGPROPSOBJECTS.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVEGLOWOBJECTS.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVEALIENOBJECTS.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/TOXICINFESTED.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/TOXIC.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SCORCHEDINFESTED.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SCORCHED.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/RADIOACTIVEINFESTED.MBIN',			
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/RADIOACTIVE.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/LUSHINFESTED.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/LUSH.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FROZENINFESTED.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FROZEN.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/BARRENINFESTED.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/BARREN.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/ULTRAEXTERNALOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHULTRAOBJECTS.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBOBJECTS.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMAOBJECTS.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROCKYWEIRDOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROCKYOBJECTS.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSMID.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSLOW.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSFULL.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHINFESTEDOBJECTS.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQTENTACLEOBJECTSFULL.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBUBBLEOBJECTS.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBIGPROPSOBJECTSFULL.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LAVA/LAVAOBJECTSFULL.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/HUGEPROPS/HUGEUWPLANT/HUGEUWPLANTOBJECTS.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/HUGEPROPS/HUGETOXIC/HUGETOXICOBJECTSFULL.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/HUGEPROPS/HUGESCORCHED/HUGESCORCHOBJECTSFULL.MBIN',
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/HUGEPROPS/HUGEROCK/HUGEROCKOBJECTSFULL.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/HUGEPROPS/HUGERING/HUGERINGOBJECTSFULL.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/HUGEPROPS/HUGELUSH/HUGELUSHOBJECTSFULL.MBIN',		
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENROCKYWEIRDOBJECTS.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENROCKYOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENPILLAROBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENOBJECTSMID.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENBIGPROPSOBJECTSFULL.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENALIENOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/FROZENDEADWEIRDOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/FROZENDEADOBJECTS.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADOBJECTSDEAD.MBIN',							
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADBIGPROPSOBJECTSVAR3.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADBIGPROPSOBJECTSVAR2.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADBIGPROPSOBJECTSVAR1.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADBIGPROPSOBJECTSFULL.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENROCKYWEIRDOBJECTS.MBIN',				
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENROCKYOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENOBJECTSMID.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENOBJECTSLOW.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENOBJECTSFULL.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN',						
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENINFESTEDOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENHIVESOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENCORALOBJECTS.MBIN',					
-	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENBIGPROPSOBJECTSFULL.MBIN',				
+	},
+	global_flags = {}
 }
 
 ---------------------------------------------------------------------------
@@ -493,6 +408,10 @@ end
 ---------------------------------------------------------------------------
 ---- MODDING
 
+--	pull the source mbins list from the pre-loader script
+dofile('Large flora 0_pre-loader.lua')
+local source_mbins = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].MBIN_FILE_SOURCE
+
 -- A deep merge of an array of tables by keys. Last value wins
 local function MergeTables(tables)
 	local merged = {}
@@ -521,7 +440,7 @@ end
 --	calculate scale averages into results
 function spawn_data:averages()
 	for k, d in pairs(self.mods) do
-		self.res[k] = d.i > 0 and (d.v / d.i) or 1
+		if d.i > 0 then self.res[k] = d.v / d.i end
 	end
 end
 --	copy scales to results in order to bypass averaging
@@ -539,7 +458,7 @@ function spawn_data:averageScales(spawn, worktags)
 	-- Generate the modifiers and counters tables for each spawn
 	self.mods = {}
 	self.res  = {}
-	for k,_ in pairs(self.props) do
+	for k,_ in pairs(self.calcs) do
 		self.mods[k] = {v=0, i=0}
 		self.res[k]  = -1 -- (-1 == empty)
 	end
@@ -558,15 +477,30 @@ function spawn_data:averageScales(spawn, worktags)
 	self:averages()
 end
 
--- return biome-specific prop scales
-local function GetBiomeScales(mbin)
-	local tbl = {}
-	for _,biome in ipairs(scale_tags.biomes) do
-		if mbin:find(biome.biotg) then
-			tbl = MergeTables({tbl, biome.flora})
+-- update flag modifiers for a specific biome
+function spawn_data:getFlags(spawn, workflags)
+	self.modflags = {}
+	for tag, flags in pairs(workflags) do
+		if spawn:find(tag) then
+			for k, f in pairs(flags) do
+				self.modflags[k] = f
+			end
 		end
 	end
-	return tbl
+end
+
+-- return biome-specific flora and flags modifiers
+function solar_modifiers:getModifiers(mbin)
+	local scales, flags = {}, {}
+	for _,biome in ipairs(self.biomes) do
+		if mbin:find(biome.biotg) then
+			scales = MergeTables({scales, biome.flora})
+			if biome.flags then
+				flags = MergeTables({flags, biome.flags})
+			end
+		end
+	end
+	return scales, flags
 end
 
 --	return if result is present for a given property key
@@ -577,37 +511,39 @@ end
 -- main work.
 -- get a merged tags list for a biome and apply modifiers for every spawn
 local ADF = {}
-for _,mbin in pairs(solar_biomes) do
+for _,mbin in pairs(source_mbins) do
 	local solar_biome	= LoadRuntimeMbin(mbin)
 	local gc_objs		= solar_biome.template.Objects
 
-	local worktags = MergeTables({scale_tags.globals, GetBiomeScales(mbin)})
+	local biomeflora, biomeflags = solar_modifiers:getModifiers(mbin)
+	local workflora	= MergeTables({solar_modifiers.global_flora, biomeflora})
+	local workflags	= MergeTables({solar_modifiers.global_flags, biomeflags})
 	for key, objs in pairs(gc_objs) do
 		if key ~= 'SelectableObjects' and key ~= 'META' then
 			for _, spn in ipairs(objs) do
-				spawn_data:averageScales(spn.Resource.Filename, worktags)
-				if HasRes('n') then spn.MinScale			= spn.MinScale * spawn_data.res.n end
-				if HasRes('x') then spn.MaxScale			= spn.MaxScale * spawn_data.res.x end
-				if HasRes('w') then spn.ShearWindStrength	= spn.ShearWindStrength * spawn_data.res.w end
+				spawn_data:averageScales(spn.Resource.Filename, workflora)
+				if HasRes('n') then spn.MinScale		  = spn.MinScale * spawn_data.res.n end
+				if HasRes('x') then spn.MaxScale		  = spn.MaxScale * spawn_data.res.x end
+				if HasRes('w') then spn.ShearWindStrength = spn.ShearWindStrength * spawn_data.res.w end
 
 				if spn.QualityVariants then
 				--	loop thourgh GcObjectSpawnDataVariant objects
 					for _,var in ipairs(spn.QualityVariants) do
 						if HasRes('d') then
-							var.FlatDensity		= var.FlatDensity	* spawn_data.res.d
-							var.SlopeDensity	= var.SlopeDensity	* (spawn_data.res.d + 0.1)
+							var.FlatDensity  = var.FlatDensity	* spawn_data.res.d
+							var.SlopeDensity = var.SlopeDensity	+ (spawn_data.res.d * 0.2)
 						end
 						if HasRes('f') then
 							var.FadeOutStartDistance = var.FadeOutStartDistance * spawn_data.res.f
 							var.FadeOutEndDistance	 = var.FadeOutStartDistance + 20
 						end
-						lod = HasRes('l') and spawn_data.res.l or 1.25
-						var.LodDistances[2].value	= var.LodDistances[2].value * lod
-						var.LodDistances[3].value	= var.LodDistances[3].value * lod
-						var.LodDistances[4].value	= var.LodDistances[4].value * lod
-						var.LodDistances[5].value	= var.LodDistances[5].value * lod
-
 						if HasRes('c') then var.Coverage = var.Coverage * spawn_data.res.c end
+
+						lod = HasRes('l') and spawn_data.res.l or 1.2
+						var.LodDistances[2].value = var.LodDistances[2].value * lod
+						var.LodDistances[3].value = var.LodDistances[3].value * lod
+						var.LodDistances[4].value = var.LodDistances[4].value * lod
+						var.LodDistances[5].value = var.LodDistances[5].value * lod
 
 						if HasRes('r') then
 							var.MaxRegionRadius = var.MaxRegionRadius + spawn_data.res.r
@@ -616,6 +552,11 @@ for _,mbin in pairs(solar_biomes) do
 							var.MaxRegionRadius = var.MaxRegionRadius + ((mr < 15 and mr > 6) and 1 or 4)
 						end
 					end
+				end
+				--	loop through boolean flags
+				spawn_data:getFlags(spn.Resource.Filename, workflags)
+				for k, prp in pairs(spawn_data.flags) do
+					if spawn_data.modflags[k] ~= nil then spn[prp] = spawn_data.modflags[k] end
 				end
 			end
 		end
