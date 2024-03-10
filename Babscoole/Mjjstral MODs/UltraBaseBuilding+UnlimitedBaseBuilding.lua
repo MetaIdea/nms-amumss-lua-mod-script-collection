@@ -621,6 +621,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="TERMINAL",       ["P_NAME"]="TERMINAL",                 ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TERMINAL/",                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="TERM_TADINGPOST",["P_NAME"]="TERMINAL_TADINGPOST",      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TERMINAL/",                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="SHIPSALVAGETERM",["P_NAME"]="SHIPSALVAGETERMINAL",      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/",          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="MULTITOOLSALVAG",["P_NAME"]="MULTITOOLSALVAGETERMINAL", ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/",          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="GUILDSHOP",      ["P_NAME"]="GUILDSHOP",                ["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/",                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="MAPSHOP",        ["P_NAME"]="MAPSHOP",                  ["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/",                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="MISSIONSHOP",    ["P_NAME"]="MISSIONSHOP",              ["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/",                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
@@ -1409,137 +1410,52 @@ ADD_PLACEMENTSCENE_FILE =
 return ADD_PLACEMENTSCENE_FILE
 end
 
-GROUP =
-[[
-<!-- UBB GROUPS -->
-    <Property value="GcBaseBuildingGroup.xml">
-      <Property name="ID" value="UBB-NATURE-I" />
-      <Property name="Name" value="UBB-NATURE-I" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.TWITCH.PET04.DDS" />
-      </Property>
-      <Property name="DefaultColourIdx" value="0" />
-      <Property name="SubGroups">
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="CREATURES" />
-          <Property name="Name" value="CREATURES" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="NPC" />
-          <Property name="Name" value="NPC" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="SEASTUFF" />
-          <Property name="Name" value="SEASTUFF" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="VEGETATION" />
-          <Property name="Name" value="VEGETATION" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcBaseBuildingGroup.xml">
-      <Property name="ID" value="UBB-NATURE-II" />
-      <Property name="Name" value="UBB-NATURE-II" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE1/PRODUCT.NIPBUD.DDS" />
-      </Property>
-      <Property name="DefaultColourIdx" value="0" />
-      <Property name="SubGroups">
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="PLANTS-I" />
-          <Property name="Name" value="PLANTS-I" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="PLANTS-II" />
-          <Property name="Name" value="PLANTS-II" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="PLANTS-III" />
-          <Property name="Name" value="PLANTS-III" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcBaseBuildingGroup.xml">
-      <Property name="ID" value="UBB-NATURE-III" />
-      <Property name="Name" value="UBB-NATURE-III" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE1/PRODUCT.TOXICPLANT.DDS" />
-      </Property>
-      <Property name="DefaultColourIdx" value="0" />
-      <Property name="SubGroups">
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="MINERALS-I" />
-          <Property name="Name" value="MINERALS-I" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="MINERALS-II" />
-          <Property name="Name" value="MINERALS-II" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="TREES-I" />
-          <Property name="Name" value="TREES-I" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="TREES-II" />
-          <Property name="Name" value="TREES-II" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcBaseBuildingGroup.xml">
-      <Property name="ID" value="UBB-OTHER-I" />
-      <Property name="Name" value="UBB-OTHER-I" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.BANNER.CHEF.DDS" />
-      </Property>
-      <Property name="DefaultColourIdx" value="0" />
-      <Property name="SubGroups">
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="BUILDINGS" />
-          <Property name="Name" value="BUILDINGS" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="COOKING" />
-          <Property name="Name" value="COOKING" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="EXTRAS" />
-          <Property name="Name" value="EXTRAS" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="SPACE" />
-          <Property name="Name" value="SPACE" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="VEHICLES" />
-          <Property name="Name" value="VEHICLES" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="WEIRD" />
-          <Property name="Name" value="WEIRD" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcBaseBuildingGroup.xml">
-      <Property name="ID" value="UBB-OTHER-II" />
-      <Property name="Name" value="UBB-OTHER-II" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.HOUDINIPLANT01.DDS" />
-      </Property>
-      <Property name="DefaultColourIdx" value="0" />
-      <Property name="SubGroups">
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="WEIRD-I" />
-          <Property name="Name" value="WEIRD-I" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="WEIRD-II" />
-          <Property name="Name" value="WEIRD-II" />
-        </Property>
-      </Property>
-    </Property>
-<!-- UBB GROUPS END-->
-]]
+GroupTable =
+{
+    {
+        {"UBB-NATURE-I", "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.TWITCH.PET04.DDS"},
+        {
+            {"CREATURES"},
+            {"NPC"},
+            {"SEASTUFF"},
+            {"VEGETATION"},
+        },
+    },
+    {
+        {"UBB-NATURE-II", "TEXTURES/UI/FRONTEND/ICONS/UPDATE1/PRODUCT.NIPBUD.DDS"},
+        {
+            {"PLANTS-I"},
+            {"PLANTS-II"},
+            {"PLANTS-III"},
+        }
+    },
+    {
+        {"UBB-NATURE-III", "TEXTURES/UI/FRONTEND/ICONS/UPDATE1/PRODUCT.TOXICPLANT.DDS"},
+        {
+            {"MINERALS-I"},
+            {"MINERALS-II"},
+            {"TREES-I"},
+            {"TREES-II"},
+        }
+    },
+    {
+        {"UBB-OTHER-I", "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.BANNER.CHEF.DDS"},
+        {
+            {"BUILDINGS"},
+            {"COOKING"},
+            {"EXTRAS"},
+            {"SPACE"},
+            {"VEHICLES"},
+        }
+    },
+    {
+        {"UBB-OTHER-II", "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.HOUDINIPLANT01.DDS"},
+        {
+            {"WEIRD-I"},
+            {"WEIRD-II"},
+        }
+    },
+}
 
 BASEBUILDINGOBJECTSTABLE_ADDING_ALL = {}
 BASEBUILDINGPARTSTABLE_ADDING_ALL = {}
@@ -1575,21 +1491,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                --{"DisableLimits",                "True"},
-                                {"DisableBaseBuildingLimits",    "True"},
-                                {"DisableBasePowerRequirements", "True"},
-                                {"BaseDownloadTimeout",          "120"}, --ORIGINAL 40
-                            }
-                        }
-                    }
-                },
-                {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -1617,12 +1518,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Objects"},
-                            ["ADD"]                 = table.concat(BASEBUILDINGOBJECTSTABLE_ADDING_ALL)
+                            ["ADD"] = table.concat(BASEBUILDINGOBJECTSTABLE_ADDING_ALL)
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "PLANET_TECH"},
-                            ["LINE_OFFSET"]       = "-2",
-                            ["ADD"]               = GROUP
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "FREIGHTER_IND"},
+                            ["SEC_SAVE_TO"] = "GetGroup",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FRE_IND_SUB"},
+                            ["SEC_SAVE_TO"] = "GetSubGroup",
+                        },
+                        {
+                            ["SEC_EDIT"] = "GetGroup",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FRE_IND_SUB"},
+                            ["SEC_KEEP"] = "TRUE",
+                            ["REMOVE"] = "SECTION"
                         },
                     }
                 },
@@ -1632,8 +1542,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "_O2_HARVESTER"},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
-                            ["ADD"]               = table.concat(BASEBUILDINGPARTSTABLE_ADDING_ALL)
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = table.concat(BASEBUILDINGPARTSTABLE_ADDING_ALL)
                         },
                     }
                 },
@@ -1643,7 +1553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Table"},
-                            ["ADD"]                 = table.concat(PRODUCT_ADDING_ALL)
+                            ["ADD"] = table.concat(PRODUCT_ADDING_ALL)
                         }
                     }
                 },
@@ -1653,7 +1563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PartsData"},
-                            ["ADD"]                 = table.concat(AUTOPARTDATA_ADDING_ALL)
+                            ["ADD"] = table.concat(AUTOPARTDATA_ADDING_ALL)
                         }
                     }
                 },
@@ -1663,7 +1573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
-                            ["ADD"]                 = table.concat(BASEBUILDINGCOST_ADDING_ALL)
+                            ["ADD"] = table.concat(BASEBUILDINGCOST_ADDING_ALL)
                         }
                     },
                 },
@@ -1673,7 +1583,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-                            ["ADD"]                 = table.concat(DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING_ALL)
+                            ["ADD"] = table.concat(DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING_ALL)
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                --{"DisableLimits",                "True"},
+                                {"DisableBaseBuildingLimits",    "True"},
+                                {"DisableBasePowerRequirements", "True"},
+                                {"BaseDownloadTimeout",          "120"}, --ORIGINAL 40
+                            }
                         }
                     }
                 },
@@ -1689,7 +1614,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "TERRAINEDITBOX"},
-                            ["REMOVE"]            = "SECTION"
+                            ["REMOVE"] = "SECTION"
                         },
                     }
                 },
@@ -1699,7 +1624,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "THERA_VOL_BB"},
-                            ["REMOVE"]            = "SECTION"
+                            ["REMOVE"] = "SECTION"
                         },
                     }
                 },
@@ -1871,3 +1796,52 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
     },
 }
+
+local BaseBuildingObjectsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+
+for i = 1, #GroupTable do
+  local GroupID   = GroupTable[i][1][1]
+  local GroupIcon = GroupTable[i][1][2]
+  local Change    = GroupTable[i][2]
+
+
+    BaseBuildingObjectsTable[#BaseBuildingObjectsTable+1] =
+    {
+        ["SEC_EDIT"] = {"GetGroup"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"ID",       GroupID},
+            {"Name",     GroupID},
+            {"Filename", GroupIcon},
+        }
+    }
+
+  for j = 1, #Change do
+    local SubId   = Change[j][1]
+
+    BaseBuildingObjectsTable[#BaseBuildingObjectsTable+1] =
+    {
+        ["SEC_EDIT"] = "GetSubGroup",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Id",   SubId},
+            {"Name", SubId},
+        }
+    }
+    BaseBuildingObjectsTable[#BaseBuildingObjectsTable+1] =
+    {
+        ["SEC_EDIT"] = "GetGroup",
+        ["PRECEDING_KEY_WORDS"] = {"SubGroups"},
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["LINE_OFFSET"] = "-1",
+        ["SEC_ADD_NAMED"] = "GetSubGroup",
+    }
+  end
+      BaseBuildingObjectsTable[#BaseBuildingObjectsTable+1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "PLANET_TECH"},
+        ["ADD_OPTION"] = "ADDafterLINE",
+        ["LINE_OFFSET"] = "-2",
+        ["SEC_ADD_NAMED"] = "GetGroup",
+    }
+end

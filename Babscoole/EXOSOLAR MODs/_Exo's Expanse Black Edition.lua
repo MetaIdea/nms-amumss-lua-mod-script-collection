@@ -572,7 +572,7 @@ for i = 1, #DataTable do
             {
                 ["PRECEDING_KEY_WORDS"] = {"GcSolarSystemSkyColourData.xml"},
                 ["REPLACE_TYPE"] = "ALL",
-                ["REMOVE"] = "SECTION",
+                ["REMOVE"] = "SECTION"
             },
             {
                 ["PRECEDING_KEY_WORDS"] = {"Settings"},

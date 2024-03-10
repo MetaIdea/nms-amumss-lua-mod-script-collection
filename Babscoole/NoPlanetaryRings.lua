@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "DisablePlanetaryRings.pak",
+["MOD_FILENAME"]  = "NoPlanetaryRings.pak",
 ["MOD_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.52",
 ["MODIFICATIONS"] =

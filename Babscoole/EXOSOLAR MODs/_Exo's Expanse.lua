@@ -1135,7 +1135,7 @@ end
 local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local PaletteColours = DataTable[i]["COLOURS"]
-    
+
     BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
         ["MBIN_FILE_SOURCE"] =
