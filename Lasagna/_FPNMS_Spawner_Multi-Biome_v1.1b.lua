@@ -97,7 +97,7 @@ local addEachBiomeHeader =
 NMS_MOD_DEFINITION_CONTAINER =  --## 2_bfn_start
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "_FPNMS_Spawner_Multi-Biome_v1.1.pak",
+["MOD_FILENAME"] 			= "_FPNMS_Spawner_Multi-Biome_v1.1b.pak",
 ["MOD_AUTHOR"]				= "FjordFish",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

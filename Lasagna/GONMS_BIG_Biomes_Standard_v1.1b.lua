@@ -2061,7 +2061,7 @@ local AddSmallTree3Collisions =
 NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "GONMS_BIG_Biomes_Standard_v1.1.pak",
+["MOD_FILENAME"] 			= "GONMS_BIG_Biomes_Standard_v1.1b.pak",
 ["MOD_AUTHOR"]				= "FjordFish",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

@@ -97,7 +97,7 @@ local addEachBiomeHeader =
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "_GONMS_Spawner_Vanilla_v1.1.pak",
+["MOD_FILENAME"] 			= "_GONMS_Spawner_Vanilla_v1.1b.pak",
 ["MOD_AUTHOR"]				= "FjordFish",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -958,37 +958,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1041,37 +1041,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1124,37 +1124,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1207,37 +1207,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1290,37 +1290,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1373,37 +1373,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1456,37 +1456,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1539,37 +1539,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1622,37 +1622,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1705,37 +1705,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1788,37 +1788,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1871,37 +1871,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -1990,73 +1990,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -2145,73 +2145,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -2300,73 +2300,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -2467,73 +2467,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -2622,73 +2622,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -2777,73 +2777,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -2986,73 +2986,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -3153,79 +3153,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -3326,73 +3326,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -3481,73 +3481,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -3636,73 +3636,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -3791,73 +3791,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -3958,73 +3958,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -4113,73 +4113,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -4280,73 +4280,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -4435,73 +4435,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -4590,73 +4590,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -4745,73 +4745,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -4900,73 +4900,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -5067,79 +5067,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -5240,79 +5240,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -5413,79 +5413,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -5586,79 +5586,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -5759,79 +5759,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -5944,79 +5944,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -6117,79 +6117,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -6290,79 +6290,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -6463,79 +6463,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -6636,79 +6636,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -6797,79 +6797,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -6958,229 +6958,229 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -7323,73 +7323,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD_RADIOACTIVE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/RADIOACTIVE/RADIOACTIVEOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -7532,73 +7532,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD_TOXIC.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -7741,73 +7741,73 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -7950,151 +7950,151 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD_SCORCHED.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/SCORCHED/SCORCHEDOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -8237,79 +8237,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -8452,79 +8452,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL_LUSH.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/LUSH/LUSHHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -8613,79 +8613,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN"),
 						},
 					}
 				},
@@ -8774,79 +8774,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN"),
 						},
 					}
 				},
@@ -8947,79 +8947,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN"),
 						},
 					}
 				},
@@ -9120,79 +9120,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN"),
 						},
 					}
 				},
@@ -9281,79 +9281,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN"),
 						},
 					}
 				},
@@ -9442,79 +9442,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN"),
 						},
 					}
 				},
@@ -9603,79 +9603,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN"),
 						},
 					}
 				},
@@ -9740,7 +9740,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -9805,121 +9805,121 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/SHARDS/SHARDSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/MSTRUCTURES/MSTRUCTOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/HEXAGON/HEXAGONOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/FRACTALCUBE/FRACTCUBEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD_WEIRD.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/ELBUBBLE/ELBUBBLEOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD_WEIRD_HUGE.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN"),
 						},
 					}
 				},
@@ -9984,85 +9984,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID_FROZEN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/FROZEN/FROZENHQOBJECTSMID.MBIN"),
 						},
 					}
 				},
@@ -10127,7 +10127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -10228,7 +10228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 					}
 				},
@@ -10329,85 +10329,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -10508,85 +10508,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -10687,85 +10687,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -10854,85 +10854,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -11021,85 +11021,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -11188,85 +11188,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -11355,85 +11355,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},
@@ -11522,85 +11522,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/PATHFINDER_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/FOUNDATION_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/DEAD/DEADOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW_BARREN_INDUSTRIAL.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSLOW.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSFULL.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL_BARREN.MBIN"),
+							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/ATLAS_RISES_BIOMES/BARREN/BARRENHQOBJECTSFULL.MBIN"),
 						},
 					}
 				},

@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = " _Early.Character.Creator.pak",
+["MOD_FILENAME"]  = "_Early.Character.Creator.V.1.1.pak",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.52",
@@ -52,6 +52,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "ATTACHMENT"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\CHARCUSTOMISER.ENTITY.MBIN"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CHARCUSTOMISER\CHARCUSTOMISER\ENTITIES\CHARCUSTOMISER.ENTITY.MBIN", "MODELS\CHARCUSTOMISER.ENTITY.MBIN", "REMOVE"},
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\CHARCUSTOMISER.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ARMSUP"},
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Filename", "ODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/ANIMATION/CUSTOMISEEND.ANIM.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLEARMS"},
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Filename", "ODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/ANIMATION/CUSTOMISEIDLE.ANIM.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ARMSDOWN"},
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Filename", "ODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/ANIMATION/CUSTOMISEACTIVATE.ANIM.MBIN"},
                             }
                         },
                     }
@@ -183,6 +226,19 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Children" />
     </Property>
 ]]
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\PARTS\ATLASORB\ATLASORB\ENTITIES\ATLASORB.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TkAudioComponentData.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MaxDistance", "3"},
+                            }
                         },
                     }
                 },
