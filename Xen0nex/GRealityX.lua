@@ -2,7 +2,7 @@ Author = "Gumsk"			-- Edited by Xen0nex
 --ModName = "gExos Challenge"
 ModNameSub = "GRealityX"
 BaseDescription = "Increases suit upgrade prices, changes initial suit & ship slots"
-GameVersion = "441"
+GameVersion = "452"
 ModVersion = "a"
 
 --Planning to go from 24 slots to 40 slots
@@ -113,7 +113,7 @@ SuitCargoPrices = [[ <Property name="SuitCargoUpgradePrices">
   --SuitGenUseSeed = "True"											--"True"		Whether the Exosuit General tab slots should use a seed to determine layout???
 
   --Initial unlocked slots for different starting ship tabs on a new game			Added by Xen0nex
-  ShipStartingLayout = 11											--24	(11)
+  ShipStartingLayout = 7											--24	(7)			The game seems to add 1 to whatever value is entered here
   ShipTechOnlyStartingLayout = 11									--13	(11)
   --ShipCargoOnlyStartingLayout = 3									--0		(0)			Deprecated as of NMS v4.0
 

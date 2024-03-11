@@ -481,7 +481,7 @@ BiomeDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_Skies_v452-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_Skies_v452-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.52",
@@ -1924,8 +1924,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxSunsetAtmosphereFade",        "0.75"},
                                 {"MinSunsetColourFade",            "0.7"},
                                 {"MaxSunsetColourFade",            "0.75"},
-                                {"MinSaturation",                  "0.3"},
+                                {"MinSaturation",                  "0.2"},
                                 {"MaxSaturation",                  "0.3"},
+                                {"MaxFogSaturation",               "0.25"},
                                 {"NoAtmosphereFogStrength",        "0.09"},
                                 {"NoAtmosphereFogMax",             "0.95"},
                                 {"BinaryStarChance",               "0.05"},

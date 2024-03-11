@@ -4,7 +4,7 @@ Description = "Rebalances rewards for many actions & activities, such as defeati
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
 
---Changes the Class & inventory size when redeeming the three unique expedition reward ships: Golden Vector, Utopia Speeder, and Starborn Runner
+--Changes the Class & inventory size when redeeming the three unique expedition reward starships or one unique Multi-Tool: Golden Vector, Utopia Speeder, and Starborn Runner starships and Atlas Sceptre Multi-Tool
 ExpShipClass = 							"C"						--"S"
 ExpShipCargoSlots = 					8						--36				The game adds 1 to whatever value is entered here
 ExpShipSize = 							"FgtSmall"				--"FgtLarge"		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
@@ -13,7 +13,8 @@ ExpShipSize = 							"FgtSmall"				--"FgtLarge"		Affects how many Tech slots it 
 AllTwitchExpRewardsC =					false					--false
 AllTwitchExpRewardsCargo =				8						--Varies	Only used if AllTwitchExpRewardsC = true		The game adds 1 to whatever value is entered here
 AllTwitchExpRewardsShipSize =			"FgtSmall"				--Varies	Only used if AllTwitchExpRewardsC = true		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range, or sometimes uses the Max value?)
-AllTwitchExpRewardsToolSize =			8						--Varies	Only used if AllTwitchExpRewardsC = true
+AllTwitchExpRewardsToolSlots =			8						--Varies	Only used if AllTwitchExpRewardsC = true
+--AllTwitchExpRewardsToolSize =			"WeaponLarge"			--Varies	Only used if AllTwitchExpRewardsC = true
 
 --This controls what the COST (not reward) is certain dialogue choices with Travellers, such as asking directions to a grave
 TravellerNaniteCost =					"TECHFRAG_TRAV"			--"TECHFRAG_MD" 100 Nanites		"PTSd Expensive Pilots + Broadcast Receivers.lua" changes the value of TECHFRAG_MD and adds TECHFRAG_TRAV as a new entry costing 800 Nanites
@@ -1906,6 +1907,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_PHASE3"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					--{"SizeType",	ExpShipSize}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_STAFF"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					--{"SizeType",	ExpShipSize}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","FTH_USEFUL_PROD",	"ID","TECHBOX"},
 				["MATH_OPERATION"] 		= "", 
 				["SECTION_UP"] = 1,
@@ -3133,10 +3154,31 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"InventoryClass", "C"},
-					{"SizeType", AllTwitchExpRewardsShipSize},
 				}
 			}
 			
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				["SPECIAL_KEY_WORDS"] = {"ShipType", "GcSpaceshipClasses.xml"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"SizeType", AllTwitchExpRewardsShipSize},
+				}
+			}
+
+--[[ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				["SPECIAL_KEY_WORDS"] = {"WeaponType", "GcWeaponClasses.xml"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"SizeType", AllTwitchExpRewardsToolSize},
+				}
+			}
+]]
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["REPLACE_TYPE"] 		= "ALL",
@@ -3153,7 +3195,7 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 				["SPECIAL_KEY_WORDS"] = {"WeaponLayout", "GcInventoryLayout.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Slots", AllTwitchExpRewardsToolSize}
+					{"Slots", AllTwitchExpRewardsToolSlots}
 				}
 			}
 end

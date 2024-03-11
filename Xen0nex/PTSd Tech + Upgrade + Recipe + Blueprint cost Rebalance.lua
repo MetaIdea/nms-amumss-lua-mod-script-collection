@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_44"
+GameVersion = "4_52"
 --Currently balancing around Survival Mode
 
 --Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
@@ -306,6 +306,67 @@ AddItems =
 	{	--Precision Minotaur Laser 
 		"MECH_LASER1",			"RED2",				50,		"Substance",
 	},
+	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
+	{	--Hull Fracture			
+		"SHIPSLOT_DMG1",		"TECH_COMP",		4,		"Product",		--Wiring Loom
+	},
+	{	--Hull Fracture			
+		"SHIPSLOT_DMG1",		"RED2",				160,	"Substance",	--Cadmium
+	},
+	{	--Rusted Circuits			
+		"SHIPSLOT_DMG2",		"TECH_COMP",		2,		"Product",		--Wiring Loom
+	},
+	{	--Shattered Bulwark			
+		"SHIPSLOT_DMG3",		"TECH_COMP",		2,		"Product",		--Wiring Loom
+	},
+	{	--Shattered Bulwark			
+		"SHIPSLOT_DMG2",		"RED2",				160,	"Substance",	--Cadmium
+	},
+	{	--Radiation Leak			
+		"SHIPSLOT_DMG4",		"TECH_COMP",		2,		"Product",		--Wiring Loom
+	},
+	{	--Damaged Gears			
+		"SHIPSLOT_DMG6",		"GREEN2",			120,	"Substance",	--Emeril
+	},
+	{	--Hydraulics Damage			
+		"SHIPSLOT_DMG7",		"GREEN2",			120,	"Substance",	--Emeril
+	},
+	{	--Exploded Panel			
+		"SHIPSLOT_DMG8",		"TECH_COMP",		4,		"Product",		--Wiring Loom
+	},
+	{	--Corroded Tanks			
+		"SHIPSLOT_DMG9",		"TECH_COMP",		2,		"Product",		--Wiring Loom
+	},
+	{	--Corroded Tanks			
+		"SHIPSLOT_DMG9",		"BLUE2",			80,		"Substance",	--Indium
+	},
+	{	--Burnt-Out Compressor			
+		"SHIPSLOT_DMG10",		"BLUE2",			80,		"Substance",	--Indium
+	},
+	{	--Short Circuit			
+		"WEAPSLOT_DMG1",		"TECH_COMP",		2,		"Product",		--Wiring Loom
+	},
+	{	--Short Circuit			
+		"WEAPSLOT_DMG1",		"RED2",				160,	"Substance",	--Cadmium
+	},
+	{	--Blown Transistor			
+		"WEAPSLOT_DMG2",		"RED2",				160,	"Substance",	--Cadmium
+	},
+	{	--Rusted Power Core			
+		"WEAPSLOT_DMG1",		"TECH_COMP",		4,		"Product",		--Wiring Loom
+	},
+	{	--Rusted Power Core			
+		"WEAPSLOT_DMG4",		"GREEN2",			120,	"Substance",	--Emeril
+	},
+	{	--Corroded Actuator			
+		"WEAPSLOT_DMG7",		"GREEN2",			120,	"Substance",	--Emeril
+	},
+	{	--Melted Servos			
+		"WEAPSLOT_DMG9",		"BLUE2",			80,		"Substance",	--Indium
+	},
+	{	--Shattered Lens			
+		"WEAPSLOT_DMG10",		"BLUE2",			80,		"Substance",	--Indium
+	},
 }
 --Replaces an existing component for certain techs with various items instead
 ReplaceItems =
@@ -378,6 +439,22 @@ ReplaceItems =
 	},
 	{	--Polyphonic Core
 		"UT_BUI_SCAN2",			"RED2",				160,	"Substance",	"COMPUTER",
+	},
+	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
+	{	--Damaged Gears
+		"SHIPSLOT_DMG6",		"TECH_COMP",		8,		"Product",		"TECH_COMP",		--Was 6 Wiring Loom in Vanilla
+	},
+	{	--Burnt-Out Compressor
+		"SHIPSLOT_DMG10",		"TECH_COMP",		6,		"Product",		"TECH_COMP",		--Was 4 Wiring Loom in Vanilla
+	},
+	{	--Blown Transistor
+		"WEAPSLOT_DMG2",		"TECH_COMP",		6,		"Product",		"TECH_COMP",		--Was 2 Wiring Loom in Vanilla
+	},
+	{	--Corroded Actuator
+		"WEAPSLOT_DMG7",		"TECH_COMP",		8,		"Product",		"TECH_COMP",		--Was 3 Wiring Loom in Vanilla
+	},
+	{	--Burnt-Out Terminal
+		"WEAPSLOT_DMG8",		"TECH_COMP",		6,		"Product",		"TECH_COMP",		--Was 1 Wiring Loom in Vanilla
 	},
 }
 

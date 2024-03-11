@@ -283,10 +283,10 @@ ShipUpgradeSizeChanges	=
 		{
 		--Replacers for max UPGRADEABLE size at	C,		B,		A,		S	class		Vanilla is	C,		B,		A,		S	class
 			{"Shuttle",							20,		25,		30,		35},		--				50,		80,		90,		110,
-			{"Fighter",							10,		15,		20,		30},		--				50,		70,		80,		100,
+			{"Fighter",							15,		20,		25,		30},		--				50,		70,		80,		100,
 			{"Dropship",						31,		39,		47,		55},		--				60,		80,		100,	120,
 			{"Scientific",						15,		20,		25,		30},		--				60,		80,		90,		110,
-			{"Royal",							25,		25,		25,		25},		--				105,	105,	105,	105,
+			{"Royal",							10,		15,		20,		25},		--				105,	105,	105,	105,
 			--{"Alien",							0,		0,		0,		30},		--				120,	120,	120,	120,		--Handled in LivingShipUpgradeSizeChanges section below
 			{"Sail",							17,		23,		29,		35},		--				50,		70,		90,		110,
 			{"Robot",							15,		20,		25,		30},		--				60,		80,		100,	120,
@@ -302,7 +302,7 @@ ShipUpgradeSizeChanges	=
 			{"Fighter",							20,		26,		32,		44},		--				30,		40,		50,		60,
 			{"Dropship",						17,		22,		27,		36},		--				30,		40,		50,		60,
 			{"Scientific",						24,		32,		40,		50},		--				30,		40,		50,		60,
-			{"Royal",							36,		36,		36,		40},		--				60,		60,		60,		60,
+			{"Royal",							18,		24,		30,		40},		--				60,		60,		60,		60,
 			--{"Alien",							0,		0,		0,		48},		--				60,		60,		60,		60,		--Handled in LivingShipUpgradeSizeChanges section below
 			{"Sail",							18,		24,		30,		40},		--				30,		40,		50,		60,
 			{"Robot",							18,		24,		30,		40},		--				30,		40,		50,		60,
