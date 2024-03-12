@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Nexus"
 BaseDescription = ""
-GameVersion = "4462"
+GameVersion = "452"
 ModVersion = "a"
 
 --[[ Files Modified:

@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Base"
 BaseDescription = ""
-GameVersion = "423"
+GameVersion = "452"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -10,7 +10,7 @@ MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGPAD.SCEN
 
 AddLight = [[    <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="pointLight1" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("pointLight1")..[[" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />

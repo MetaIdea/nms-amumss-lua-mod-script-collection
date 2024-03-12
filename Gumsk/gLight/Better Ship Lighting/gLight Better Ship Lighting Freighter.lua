@@ -1,8 +1,8 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Freighter"
 BaseDescription = ""
-GameVersion = "423"
-ModVersion = "c"
+GameVersion = "452"
+ModVersion = "a"
 
 --[[ Files Modified:
 MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN

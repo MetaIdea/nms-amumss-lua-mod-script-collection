@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Station"
 BaseDescription = ""
-GameVersion = "423"
+GameVersion = "452"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",60000},
+								{"Value",60000.0},
 							}
 						},
 						{
@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","FOV"
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",120},
+								{"Value",120.0},
 							}
 						},
 						{
@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",60000},
+								{"Value",60000.0},
 							}
 						},
 						{
@@ -80,7 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","FOV"
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",120},
+								{"Value",120.0},
 							}
 						},
 						{
@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",60000},
+								{"Value",60000.0},
 							}
 						},
 						{
@@ -98,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","FOV"
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value",120},
+								{"Value",120.0},
 							}
 						},
 					}
