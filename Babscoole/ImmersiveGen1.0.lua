@@ -378,7 +378,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -390,7 +390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -402,7 +402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.02"},
@@ -414,7 +414,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.01"},

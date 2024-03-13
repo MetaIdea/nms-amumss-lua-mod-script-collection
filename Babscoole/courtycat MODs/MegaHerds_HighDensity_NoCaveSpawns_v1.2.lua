@@ -207,7 +207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -217,7 +217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinGroupSize", "24" },
@@ -256,7 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ProbabilityOfBeingEnabled", "0" },

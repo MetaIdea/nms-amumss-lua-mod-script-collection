@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TECH_COMP"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IsCraftable", "True"}
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TECH_COMP"},
                             ["PRECEDING_KEY_WORDS"] = {"Requirements"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["ADD"] =
 [[
         <Property value="GcTechnologyRequirement.xml">
@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TECH_COMP"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["REPLACE_TYPE"] = "RAW",
                             ["VALUE_CHANGE_TABLE"] =
                             {

@@ -193,7 +193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "100"},
@@ -202,7 +202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "80"},
@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -381,7 +381,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "7"},
@@ -390,7 +390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "7"},
@@ -432,7 +432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
                             -- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            -- ["SECTION_ACTIVE"] = {4,},
+                            -- ["SECTION_ACTIVE"] = {4},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"PercentageChance", "10"},
@@ -441,7 +441,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml", },
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -576,7 +576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml", },
                             -- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            -- ["SECTION_ACTIVE"] = {11,},
+                            -- ["SECTION_ACTIVE"] = {11},
                             -- ["ADD_OPTION"] = "ADDafterSECTION",
                             -- ["ADD"] =
 -- [[
@@ -586,7 +586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "10"},
@@ -597,7 +597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "10"},
@@ -608,7 +608,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {13,},
+                            ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "2"},
@@ -884,7 +884,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ID", "SALVAGE_TECH1"},
@@ -894,7 +894,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ID", "TRA_ENERGY2"},
@@ -904,7 +904,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ID", "TRA_MINERALS1"},
@@ -914,7 +914,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Rare", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"List"},
-                            --["SECTION_ACTIVE"] = {1,},
+                            --["SECTION_ACTIVE"] = {1},
                             ["REMOVE"] = "SECTION"
                         },
                         {
@@ -1055,7 +1055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Common", "GcRewardTableCategory.xml", "Large", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"List"},
-                            --["SECTION_ACTIVE"] = {1,},
+                            --["SECTION_ACTIVE"] = {1},
                             ["REMOVE"] = "SECTION"
                         },
                         {
@@ -1232,7 +1232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Rare", "GcRewardTableCategory.xml", "Medium", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"List"},
-                            --["SECTION_ACTIVE"] = {1,},
+                            --["SECTION_ACTIVE"] = {1},
                             ["REMOVE"] = "SECTION"
                         },
                         {
@@ -1350,7 +1350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_SMALLA.SCENE.MBIN", },
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["REMOVE"] = "SECTION",
                         },
                         {
@@ -1493,7 +1493,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "CRYSTAL"},
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
-                            ["SECTION_ACTIVE"] = {3, 4,},
+                            ["SECTION_ACTIVE"] = {3, 4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "10"},
@@ -1502,7 +1502,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "FUELCRYSTAL"},
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "20"},
@@ -1566,7 +1566,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -1578,7 +1578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0"},
@@ -1590,7 +1590,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.02"},
@@ -1602,7 +1602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "GRASSCLUMP"},
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.01"},
@@ -1792,7 +1792,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/IMPULSEGLOW2.DDS"},
@@ -1800,7 +1800,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/IMPULSEGLOW2.MASKS.DDS"},
@@ -1838,7 +1838,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/JADEPEAS2.DDS"},

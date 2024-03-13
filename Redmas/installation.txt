@@ -1,9 +1,0 @@
-- Install AMUMSS ( you can download AMUMSS manual there https://www.nexusmods.com/nomanssky/mods/2626?tab=files&file_id=25339 )
-
-- place the 2 given folders ( RGOG & Mod script ) at the root of AMUMSS installed folder.
-
-- then, use AMUMSS as usual.
-
-Note : RGOG folder is required, otherwise the lua script will not work.
-
-If you need assistance, you can contact me : https://discord.gg/UPumAssAph

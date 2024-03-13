@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ProbabilityOfBeingEnabled", "0" },

@@ -322,7 +322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_01"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "1"},
@@ -330,7 +330,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_02"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "5"},
@@ -338,7 +338,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_04"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "25"},
@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_05"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "35"},
@@ -354,7 +354,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_06"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "45"},
@@ -362,7 +362,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_07"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "55"},
@@ -370,7 +370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_08"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "70"},
@@ -378,7 +378,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_09"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "85"},
@@ -386,7 +386,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_10"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "100"},

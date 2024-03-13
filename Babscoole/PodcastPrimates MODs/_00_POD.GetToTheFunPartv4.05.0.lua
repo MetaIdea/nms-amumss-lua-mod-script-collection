@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory", "GcInventoryContainer.xml", "Id", "SHIPGUN1"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            ["SECTION_ACTIVE"] = {1,2},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Id", "SHIPMINIGUN"},
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory", "GcInventoryContainer.xml", "Id", "SCAN1"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            ["SECTION_ACTIVE"] = {1,2},
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DamageFactor", "0"},

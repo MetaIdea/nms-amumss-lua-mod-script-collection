@@ -111,7 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DEFAULT", "DensityModifier", "GcCreatureGenerationDensity.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Density", "Sparse"},
@@ -222,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PARADISE", "DensityModifier", "GcCreatureGenerationDensity.xml"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            ["SECTION_ACTIVE"] = {1,2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Density", "Sparse"},
@@ -230,7 +230,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PARADISE", "DensityModifier", "GcCreatureGenerationDensity.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Density", "Dense"},
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "GIANT", "DensityModifier", "GcCreatureGenerationDensity.xml"},
-                            ["SECTION_ACTIVE"] = {1,3,4,},
+                            ["SECTION_ACTIVE"] = {1,3,4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Density", "Sparse"},
@@ -262,7 +262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GroundArchetypes"},
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BUSY", "DensityModifier", "GcCreatureGenerationDensity.xml"},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["SECTION_ACTIVE"] = {1,4,5,},
+                            ["SECTION_ACTIVE"] = {1,4,5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Density", "Sparse"},
@@ -272,7 +272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GroundArchetypes"},
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BUSY", "DensityModifier", "GcCreatureGenerationDensity.xml"},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["SECTION_ACTIVE"] = {2,3,},
+                            ["SECTION_ACTIVE"] = {2,3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Density", "Normal"},

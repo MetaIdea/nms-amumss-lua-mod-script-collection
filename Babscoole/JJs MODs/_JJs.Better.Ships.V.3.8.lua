@@ -223,7 +223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcAIShipSpawnData.xml", "Role"},
-                            ["SECTION_ACTIVE"] = {17,},
+                            ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AIShipRole", "CapitalFreighter"}, -- Original "Freighter"
@@ -231,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ChildSpawns", "Role"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AIShipRole", "Freighter"}, -- Original "Frigate"
@@ -239,7 +239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"MinRange", "200"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinRange", "5000"}, -- Original "200"
@@ -247,7 +247,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ChildSpawns", "Spread"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "3000"}, -- Original "1000"
@@ -256,7 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ChildSpawns", "Count"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "3"}, -- Original "0"
@@ -265,7 +265,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ChildSpawns", "StartTime"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "4"}, -- Original "0"
@@ -274,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"AttackFreighter", "False", "Count", "Vector2f.xml"},
-                            ["SECTION_ACTIVE"] = {1, 21,},
+                            ["SECTION_ACTIVE"] = {1, 21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "1"}, -- Original "0"
@@ -283,7 +283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"AttackFreighter", "False", "StartTime", "Vector2f.xml"},
-                            ["SECTION_ACTIVE"] = {19,},
+                            ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0"
@@ -292,7 +292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"AttackFreighter", "False", "Count", "Vector2f.xml"},
-                            ["SECTION_ACTIVE"] = {22,},
+                            ["SECTION_ACTIVE"] = {22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "3"}, -- Original "0"
@@ -301,7 +301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"AttackFreighter", "False", "StartTime", "Vector2f.xml"},
-                            ["SECTION_ACTIVE"] = {22,},
+                            ["SECTION_ACTIVE"] = {22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "4"}, -- Original "0.5"
@@ -310,7 +310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"AttackFreighter", "False", "Count", "Vector2f.xml"},
-                            ["SECTION_ACTIVE"] = {23,},
+                            ["SECTION_ACTIVE"] = {23},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "4"}, -- Original "0"
@@ -319,7 +319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"AttackFreighter", "False", "StartTime", "Vector2f.xml"},
-                            ["SECTION_ACTIVE"] = {23,},
+                            ["SECTION_ACTIVE"] = {23},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "2"
@@ -328,7 +328,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ChildSpawns", "Count"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "4"
@@ -343,7 +343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = TEXT_TO_ADD
                         },

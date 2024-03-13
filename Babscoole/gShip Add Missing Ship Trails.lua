@@ -195,7 +195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            ["SECTION_ACTIVE"] = {1,2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "90"},
@@ -205,7 +205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            ["SECTION_ACTIVE"] = {1,2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.802999"},
@@ -264,7 +264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            ["SECTION_ACTIVE"] = {1,2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "90"},
@@ -274,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            ["SECTION_ACTIVE"] = {1,2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.802999"},
@@ -413,7 +413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "90"},
@@ -423,7 +423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.257733"},
@@ -433,7 +433,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotY", "-90"},
@@ -444,7 +444,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.991504"},
@@ -515,7 +515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "90"},
@@ -525,7 +525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.257733"},
@@ -535,7 +535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotY", "-90"},
@@ -546,7 +546,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.991504"},
@@ -1850,7 +1850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "-90"},
@@ -1858,7 +1858,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "-48.134678"},
@@ -1866,7 +1866,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "-31.475044"},
@@ -1874,7 +1874,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotZ", "-90"},
@@ -1882,7 +1882,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.835520"},
@@ -2103,7 +2103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "90"},
@@ -2111,7 +2111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.162085"},
@@ -2183,7 +2183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT", "Name", "RADIUS"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.324169"},
@@ -2191,7 +2191,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "2.345738"},
@@ -2593,7 +2593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSC\WINGCLEFT", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "39.953564"},
@@ -3311,7 +3311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "30"},
@@ -3319,7 +3319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.769422"},
@@ -3372,7 +3372,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotZ", "-90"},
@@ -3380,7 +3380,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.715366"},
@@ -5016,7 +5016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA", "Name", "RADIUS"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.592939"},
@@ -5024,7 +5024,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.689445"},
@@ -5039,7 +5039,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA", "Name", "RADIUS"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.874898"},
@@ -5047,7 +5047,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.927902"},
@@ -5055,7 +5055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.833797"},
@@ -5250,7 +5250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYI", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {3,4,},
+                            ["SECTION_ACTIVE"] = {3,4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "40.854893"},
@@ -5329,7 +5329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSE\WINGSEEND_RIGHT", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotY", "-180"},
@@ -5376,7 +5376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_LEFT", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotY", "-180"},
@@ -5423,7 +5423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_RIGHT", "Type", "COLLISION"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotY", "-180"},

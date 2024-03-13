@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "VEHICLE"}, --2061,2126,2191
-                            ["SECTION_ACTIVE"] = {2,3,4,},
+                            ["SECTION_ACTIVE"] = {2,3,4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CenterStartTime", "600"},

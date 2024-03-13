@@ -129,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["REMOVE"] = "SECTION",
                         },
                         {
@@ -173,7 +173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TkSceneNodeData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[

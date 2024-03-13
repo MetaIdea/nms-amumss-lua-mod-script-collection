@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" ,},
+						    ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" },
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxCapacity",           EXTRACTOR_STORAGE},
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},											
 						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
+						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS1"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxCapacity",           EXTRACTOR_STORAGE},
@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
+						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS2"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxCapacity",           EXTRACTOR_STORAGE},
@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
+						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS3"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxCapacity",           EXTRACTOR_STORAGE},

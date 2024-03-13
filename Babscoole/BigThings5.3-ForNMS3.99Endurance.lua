@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "16",}
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "30",}
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.8",}
@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.7",}
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.8",}
@@ -56,7 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.4",}
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.2",}
@@ -72,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.5",}
@@ -80,7 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8, 10, 11,},
+                            ["SECTION_ACTIVE"] = {8, 10, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3",}
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5",}
@@ -96,7 +96,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {15,},
+                            ["SECTION_ACTIVE"] = {15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1",}
@@ -104,7 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.2"},
@@ -113,7 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14, 18,},
+                            ["SECTION_ACTIVE"] = {14, 18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.3",}
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13, 19,},
+                            ["SECTION_ACTIVE"] = {13, 19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.9",}
@@ -129,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {20,},
+                            ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1"},
@@ -144,7 +144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- {
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {1,},
+                            -- ["SECTION_ACTIVE"] = {1},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "16",}
@@ -152,7 +152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {2,},
+                            -- ["SECTION_ACTIVE"] = {2},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "30",}
@@ -160,7 +160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {3,},
+                            -- ["SECTION_ACTIVE"] = {3},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5.8",}
@@ -168,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {4,},
+                            -- ["SECTION_ACTIVE"] = {4},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.7",}
@@ -176,7 +176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {5,},
+                            -- ["SECTION_ACTIVE"] = {5},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.8",}
@@ -184,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {6,},
+                            -- ["SECTION_ACTIVE"] = {6},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.4"},
@@ -193,7 +193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {7,},
+                            -- ["SECTION_ACTIVE"] = {7},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.2",}
@@ -201,7 +201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {9,},
+                            -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5.5",}
@@ -209,7 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {8, 10, 11,},
+                            -- ["SECTION_ACTIVE"] = {8, 10, 11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3",}
@@ -217,7 +217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {11,},
+                            -- ["SECTION_ACTIVE"] = {11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage", "0.24"},
@@ -225,7 +225,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {12,},
+                            -- ["SECTION_ACTIVE"] = {12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5",}
@@ -239,7 +239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5",}
@@ -247,7 +247,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.5",}
@@ -255,7 +255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -263,7 +263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {28,},
+                            ["SECTION_ACTIVE"] = {28},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8",}
@@ -271,7 +271,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {35,},
+                            ["SECTION_ACTIVE"] = {35},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.5",}
@@ -279,7 +279,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {36,},
+                            ["SECTION_ACTIVE"] = {36},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4"},
@@ -287,7 +287,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {45,},
+                            ["SECTION_ACTIVE"] = {45},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",         "1"},
@@ -304,7 +304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.9",}
@@ -318,7 +318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -326,7 +326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,5,},
+                            ["SECTION_ACTIVE"] = {2,5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.4",}
@@ -334,7 +334,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.6",}
@@ -342,7 +342,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.5",}
@@ -358,7 +358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {26,},
+                            ["SECTION_ACTIVE"] = {26},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.6"},
@@ -372,7 +372,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.6",}
@@ -380,7 +380,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.4",}
@@ -388,7 +388,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8",}
@@ -396,7 +396,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5",}
@@ -404,7 +404,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {24,},
+                            ["SECTION_ACTIVE"] = {24},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -418,7 +418,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.7",}
@@ -426,7 +426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2, 4,},
+                            ["SECTION_ACTIVE"] = {2, 4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5",}
@@ -434,7 +434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.4",}
@@ -442,7 +442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5, 7,},
+                            ["SECTION_ACTIVE"] = {5, 7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -450,7 +450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.1",}
@@ -464,7 +464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "16",}
@@ -472,7 +472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "30",}
@@ -480,7 +480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.8",}
@@ -488,7 +488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.7",}
@@ -496,7 +496,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.8",}
@@ -504,7 +504,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.4",}
@@ -512,7 +512,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.2",}
@@ -520,7 +520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8, 10, 11, 12,},
+                            ["SECTION_ACTIVE"] = {8, 10, 11, 12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4",}
@@ -528,7 +528,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.5",}
@@ -542,7 +542,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- {
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {1,},
+                            -- ["SECTION_ACTIVE"] = {1},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "16",}
@@ -550,7 +550,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {2,},
+                            -- ["SECTION_ACTIVE"] = {2},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "30",}
@@ -558,7 +558,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {3,},
+                            -- ["SECTION_ACTIVE"] = {3},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5.8",}
@@ -566,7 +566,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {4,},
+                            -- ["SECTION_ACTIVE"] = {4},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.7",}
@@ -574,7 +574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {5,},
+                            -- ["SECTION_ACTIVE"] = {5},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.8",}
@@ -582,7 +582,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {6,},
+                            -- ["SECTION_ACTIVE"] = {6},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.4"},
@@ -591,7 +591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {7,},
+                            -- ["SECTION_ACTIVE"] = {7},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.2",}
@@ -599,7 +599,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {8, 10, 11, 12,},
+                            -- ["SECTION_ACTIVE"] = {8, 10, 11, 12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4",}
@@ -607,7 +607,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {9,},
+                            -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5.5",}
@@ -615,7 +615,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {11,},
+                            -- ["SECTION_ACTIVE"] = {11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage", "0.24",}
@@ -629,7 +629,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.5"},
@@ -638,7 +638,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.5"},
@@ -647,7 +647,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -655,7 +655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -664,7 +664,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.08625"},
@@ -672,7 +672,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -681,7 +681,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.13125"},
@@ -689,7 +689,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8.2"},
@@ -698,7 +698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.135"},
@@ -706,7 +706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -714,7 +714,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -723,7 +723,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1875"},
@@ -731,7 +731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.4"},
@@ -739,7 +739,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2",}
@@ -747,7 +747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.1"},
@@ -756,7 +756,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.35"},
@@ -764,7 +764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.35"},
@@ -772,7 +772,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {15,},
+                            ["SECTION_ACTIVE"] = {15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.6"},
@@ -781,7 +781,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {19,},
+                            ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8",}
@@ -795,7 +795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.5",}
@@ -803,7 +803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3",}
@@ -811,7 +811,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.4",}
@@ -819,7 +819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4, 5,},
+                            ["SECTION_ACTIVE"] = {4, 5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2",}
@@ -827,7 +827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8",}
@@ -835,7 +835,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.8",}
@@ -843,7 +843,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.9",}
@@ -857,7 +857,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -866,7 +866,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.37875"},
@@ -874,7 +874,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.37875"},
@@ -882,7 +882,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -891,7 +891,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.39"},
@@ -899,7 +899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.39"},
@@ -907,7 +907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.4"},
@@ -917,7 +917,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.39"},
@@ -925,7 +925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.39"},
@@ -933,7 +933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2",}
@@ -941,7 +941,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.5",}
@@ -957,7 +957,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.7",}
@@ -965,7 +965,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13, 14,},
+                            ["SECTION_ACTIVE"] = {13, 14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.8",}
@@ -973,7 +973,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {19, 27,},
+                            ["SECTION_ACTIVE"] = {19, 27},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8",}
@@ -981,7 +981,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {20,},
+                            ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -989,7 +989,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {22,},
+                            ["SECTION_ACTIVE"] = {22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.9",}
@@ -997,7 +997,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {26,},
+                            ["SECTION_ACTIVE"] = {26},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.7",}
@@ -1005,7 +1005,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {28,},
+                            ["SECTION_ACTIVE"] = {28},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -1019,7 +1019,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3"},
@@ -1027,7 +1027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -1036,7 +1036,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.0825"},
@@ -1044,7 +1044,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -1053,7 +1053,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.0975"},
@@ -1061,7 +1061,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11, 17,},
+                            ["SECTION_ACTIVE"] = {11, 17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8",}
@@ -1069,7 +1069,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8"},
@@ -1078,7 +1078,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {18,},
+                            ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -1086,7 +1086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {21,},
+                            ["SECTION_ACTIVE"] = {21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.9",}
@@ -1094,7 +1094,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {25,},
+                            ["SECTION_ACTIVE"] = {25},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.7",}
@@ -1102,7 +1102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {26,},
+                            ["SECTION_ACTIVE"] = {26},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8",}
@@ -1110,7 +1110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {27,},
+                            ["SECTION_ACTIVE"] = {27},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -1124,7 +1124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4"},
@@ -1132,7 +1132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3"},
@@ -1140,7 +1140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -1149,7 +1149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.08625"},
@@ -1157,7 +1157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -1166,7 +1166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.13125"},
@@ -1174,7 +1174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -1183,7 +1183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.135"},
@@ -1191,7 +1191,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -1200,7 +1200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.09"},
@@ -1208,7 +1208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -1217,7 +1217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1875"},
@@ -1225,7 +1225,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8, 9,},
+                            ["SECTION_ACTIVE"] = {8, 9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2",}
@@ -1233,7 +1233,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13, 14, 18,},
+                            ["SECTION_ACTIVE"] = {13, 14, 18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8"},
@@ -1241,7 +1241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {19,},
+                            ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -1249,7 +1249,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {21,},
+                            ["SECTION_ACTIVE"] = {21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.6",}
@@ -1257,7 +1257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {22,},
+                            ["SECTION_ACTIVE"] = {22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.9",}
@@ -1265,7 +1265,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {26,},
+                            ["SECTION_ACTIVE"] = {26},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.7",}
@@ -1273,7 +1273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {27,},
+                            ["SECTION_ACTIVE"] = {27},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8",}
@@ -1281,7 +1281,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {28,},
+                            ["SECTION_ACTIVE"] = {28},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -1295,7 +1295,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "16"},
@@ -1304,7 +1304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2, 3, 5,},
+                            ["SECTION_ACTIVE"] = {2, 3, 5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "18",}
@@ -1312,7 +1312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "20",}
@@ -1320,7 +1320,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.7",}
@@ -1328,7 +1328,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8",}
@@ -1336,7 +1336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.1"},
@@ -1345,7 +1345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.1"},
@@ -1354,7 +1354,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -1362,7 +1362,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.2",}
@@ -1370,7 +1370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.1"},
@@ -1379,7 +1379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13, 14,},
+                            ["SECTION_ACTIVE"] = {13, 14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.6",}
@@ -1387,7 +1387,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {18, 22,},
+                            ["SECTION_ACTIVE"] = {18, 22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -1401,7 +1401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "7.2"},
@@ -1409,7 +1409,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1"},
@@ -1418,7 +1418,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.6"},
@@ -1427,7 +1427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "2.5",}
@@ -1435,7 +1435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.8",}
@@ -1443,7 +1443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.6",}
@@ -1451,7 +1451,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.7",}
@@ -1459,7 +1459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16, 17,},
+                            ["SECTION_ACTIVE"] = {16, 17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.8"},
@@ -1467,7 +1467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {18,},
+                            ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2",}
@@ -1475,7 +1475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {20, 22,},
+                            ["SECTION_ACTIVE"] = {20, 22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.1",}
@@ -1489,7 +1489,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10, 14,},
+                            ["SECTION_ACTIVE"] = {10, 14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8"},
@@ -1497,7 +1497,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4",}
@@ -1505,7 +1505,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.9",}
@@ -1519,7 +1519,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1, 2,},
+                            ["SECTION_ACTIVE"] = {1, 2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8.2"},
@@ -1527,7 +1527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8.4",}
@@ -1535,7 +1535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8.8",}
@@ -1543,7 +1543,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.7"},
@@ -1551,7 +1551,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.4",}
@@ -1559,7 +1559,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.2",}
@@ -1575,7 +1575,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.5",}
@@ -1583,7 +1583,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -1591,7 +1591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {17, 21,},
+                            ["SECTION_ACTIVE"] = {17, 21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.2",}
@@ -1599,7 +1599,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {20,},
+                            ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -1613,7 +1613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8.3"},
@@ -1621,7 +1621,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.7",}
@@ -1629,7 +1629,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.6",}
@@ -1637,7 +1637,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.4"},
@@ -1645,7 +1645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -1653,7 +1653,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.6",}
@@ -1661,7 +1661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.5",}
@@ -1669,7 +1669,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13,},
+                            ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8",}
@@ -1677,7 +1677,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.8",}
@@ -1685,7 +1685,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {17,},
+                            ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -1693,7 +1693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {18,},
+                            ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.2",}
@@ -1707,7 +1707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8.7"},
@@ -1715,7 +1715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8.2",}
@@ -1723,7 +1723,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.7",}
@@ -1731,7 +1731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.4"},
@@ -1739,7 +1739,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.2",}
@@ -1747,7 +1747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.6",}
@@ -1755,7 +1755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13, 15, 19,},
+                            ["SECTION_ACTIVE"] = {13, 15, 19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.6",}
@@ -1763,7 +1763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16, 20,},
+                            ["SECTION_ACTIVE"] = {16, 20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.6",}
@@ -1777,7 +1777,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1, 3, 4, 5,},
+                            ["SECTION_ACTIVE"] = {1, 3, 4, 5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8"},
@@ -1785,7 +1785,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.5",}
@@ -1793,7 +1793,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.6",}
@@ -1801,7 +1801,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3"},
@@ -1809,7 +1809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.6",}
@@ -1817,7 +1817,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.5",}
@@ -1825,7 +1825,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4",}
@@ -1833,7 +1833,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13,},
+                            ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2",}
@@ -1841,7 +1841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.5",}
@@ -1849,7 +1849,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {15,},
+                            ["SECTION_ACTIVE"] = {15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -1857,7 +1857,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {17,},
+                            ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5",}
@@ -1871,7 +1871,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- {
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {1,},
+                            -- ["SECTION_ACTIVE"] = {1},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "8"},
@@ -1879,16 +1879,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {3,},
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- {"MaxScale", "8"},
-                                -- {"Coverage", "0.3"},
-                            -- },
-                        -- },
-                        -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {4,},
+                            -- ["SECTION_ACTIVE"] = {3},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "8"},
@@ -1897,7 +1888,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {5,},
+                            -- ["SECTION_ACTIVE"] = {4},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"MaxScale", "8"},
+                                -- {"Coverage", "0.3"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
+                            -- ["SECTION_ACTIVE"] = {5},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "8",}
@@ -1905,7 +1905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {6,},
+                            -- ["SECTION_ACTIVE"] = {6},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.5",}
@@ -1913,7 +1913,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {8,},
+                            -- ["SECTION_ACTIVE"] = {8},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.6"},
@@ -1922,7 +1922,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {9,},
+                            -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3",}
@@ -1930,7 +1930,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {10,},
+                            -- ["SECTION_ACTIVE"] = {10},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.6",}
@@ -1938,7 +1938,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {11,},
+                            -- ["SECTION_ACTIVE"] = {11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.5",}
@@ -1946,7 +1946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {12,},
+                            -- ["SECTION_ACTIVE"] = {12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4",}
@@ -1954,7 +1954,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {13,},
+                            -- ["SECTION_ACTIVE"] = {13},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "2.2",}
@@ -1962,7 +1962,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {14,},
+                            -- ["SECTION_ACTIVE"] = {14},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "2.5",}
@@ -1970,7 +1970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {15,},
+                            -- ["SECTION_ACTIVE"] = {15},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.2",}
@@ -1978,7 +1978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {17,},
+                            -- ["SECTION_ACTIVE"] = {17},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5",}
@@ -1992,7 +1992,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.2"},
@@ -2001,7 +2001,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.09"},
@@ -2009,7 +2009,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.1"},
@@ -2018,7 +2018,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -2027,7 +2027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.135"},
@@ -2035,7 +2035,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -2044,7 +2044,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1425"},
@@ -2052,7 +2052,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -2060,7 +2060,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.3",}
@@ -2068,7 +2068,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7, 13,},
+                            ["SECTION_ACTIVE"] = {7, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2"},
@@ -2076,7 +2076,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8, 12,},
+                            ["SECTION_ACTIVE"] = {8, 12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.8",}
@@ -2084,7 +2084,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.6",}
@@ -2092,7 +2092,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10, 15,},
+                            ["SECTION_ACTIVE"] = {10, 15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2",}
@@ -2100,7 +2100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.5",}
@@ -2108,7 +2108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.4",}
@@ -2116,7 +2116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {19,},
+                            ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.5",}
@@ -2124,7 +2124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {23,},
+                            ["SECTION_ACTIVE"] = {23},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -2133,7 +2133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {23,},
+                            ["SECTION_ACTIVE"] = {23},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.075"},
@@ -2147,7 +2147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -2156,7 +2156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.135"},
@@ -2164,7 +2164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.135"},
@@ -2172,7 +2172,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -2181,7 +2181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1425"},
@@ -2189,7 +2189,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1425"},
@@ -2197,7 +2197,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.3",}
@@ -2205,7 +2205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2"},
@@ -2213,7 +2213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.8",}
@@ -2221,7 +2221,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.6",}
@@ -2229,7 +2229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2",}
@@ -2237,7 +2237,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {21,},
+                            ["SECTION_ACTIVE"] = {21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.1"},
@@ -2246,7 +2246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {21,},
+                            ["SECTION_ACTIVE"] = {21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.075"},
@@ -2260,7 +2260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -2269,7 +2269,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.0675"},
@@ -2277,7 +2277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.1",}
@@ -2285,7 +2285,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7, 16,},
+                            ["SECTION_ACTIVE"] = {7, 16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.8"},
@@ -2293,7 +2293,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8, 20, 21,},
+                            ["SECTION_ACTIVE"] = {8, 20, 21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2",}
@@ -2301,7 +2301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.6",}
@@ -2309,7 +2309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.3",}
@@ -2317,7 +2317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11, 19,},
+                            ["SECTION_ACTIVE"] = {11, 19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.5"},
@@ -2325,7 +2325,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.6"},
@@ -2333,7 +2333,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13,},
+                            ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.6"},
@@ -2341,7 +2341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {15,},
+                            ["SECTION_ACTIVE"] = {15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.4"},
@@ -2349,7 +2349,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {17, 18,},
+                            ["SECTION_ACTIVE"] = {17, 18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2"},
@@ -2363,7 +2363,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8",}
@@ -2371,7 +2371,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.7"},
@@ -2380,7 +2380,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.13125"},
@@ -2388,7 +2388,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.6",}
@@ -2396,7 +2396,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2"},
@@ -2404,7 +2404,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -2413,7 +2413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1875"},
@@ -2421,7 +2421,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.8",}
@@ -2429,7 +2429,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9, 13,},
+                            ["SECTION_ACTIVE"] = {9, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.6",}
@@ -2437,7 +2437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8",}
@@ -2445,7 +2445,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {15,},
+                            ["SECTION_ACTIVE"] = {15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2"},
@@ -2459,7 +2459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "16",}
@@ -2467,7 +2467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3, 5,},
+                            ["SECTION_ACTIVE"] = {3, 5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8",}
@@ -2475,7 +2475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.3"},
@@ -2484,7 +2484,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.11"},
@@ -2492,7 +2492,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.11"},
@@ -2500,7 +2500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -2508,7 +2508,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.2"},
@@ -2516,7 +2516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.6"},
@@ -2525,7 +2525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.14"},
@@ -2533,7 +2533,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.14"},
@@ -2541,7 +2541,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.5"},
@@ -2549,7 +2549,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10, 11,},
+                            ["SECTION_ACTIVE"] = {10, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3",}
@@ -2557,7 +2557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4",}
@@ -2565,7 +2565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14, 18,},
+                            ["SECTION_ACTIVE"] = {14, 18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.3",}
@@ -2573,7 +2573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.2",}
@@ -2581,7 +2581,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {20,},
+                            ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1",}
@@ -2595,7 +2595,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- {
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {1,},
+                            -- ["SECTION_ACTIVE"] = {1},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "16",}
@@ -2603,7 +2603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {3,},
+                            -- ["SECTION_ACTIVE"] = {3},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.8"},
@@ -2612,7 +2612,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {4,},
+                            -- ["SECTION_ACTIVE"] = {4},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.7"},
@@ -2621,7 +2621,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {5,},
+                            -- ["SECTION_ACTIVE"] = {5},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.8"},
@@ -2630,7 +2630,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {6,},
+                            -- ["SECTION_ACTIVE"] = {6},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.4"},
@@ -2639,7 +2639,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {7,},
+                            -- ["SECTION_ACTIVE"] = {7},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.2"},
@@ -2648,7 +2648,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {8,},
+                            -- ["SECTION_ACTIVE"] = {8},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4"},
@@ -2657,7 +2657,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {9,},
+                            -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5.5",}
@@ -2665,7 +2665,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {10, 11,},
+                            -- ["SECTION_ACTIVE"] = {10, 11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3"},
@@ -2673,7 +2673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {12,},
+                            -- ["SECTION_ACTIVE"] = {12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4"},
@@ -2688,7 +2688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "20",}
@@ -2696,7 +2696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "30",}
@@ -2704,7 +2704,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3, 13,},
+                            ["SECTION_ACTIVE"] = {3, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5",}
@@ -2712,7 +2712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4, 6,},
+                            ["SECTION_ACTIVE"] = {4, 6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8",}
@@ -2720,7 +2720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.7",}
@@ -2728,7 +2728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -2736,7 +2736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.2",}
@@ -2744,7 +2744,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4"},
@@ -2752,7 +2752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.5",}
@@ -2760,7 +2760,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11, 12,},
+                            ["SECTION_ACTIVE"] = {11, 12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3"},
@@ -2768,7 +2768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.9",}
@@ -2776,7 +2776,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {15,},
+                            ["SECTION_ACTIVE"] = {15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.2",}
@@ -2784,7 +2784,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1",}
@@ -2792,7 +2792,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {17,},
+                            ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.2"},
@@ -2801,7 +2801,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {19,},
+                            ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.2",}
@@ -2809,7 +2809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {21,},
+                            ["SECTION_ACTIVE"] = {21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1"},
@@ -2824,7 +2824,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- {
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {1,},
+                            -- ["SECTION_ACTIVE"] = {1},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "20",}
@@ -2832,7 +2832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {2,},
+                            -- ["SECTION_ACTIVE"] = {2},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "30"},
@@ -2841,7 +2841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {3,},
+                            -- ["SECTION_ACTIVE"] = {3},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5"},
@@ -2850,7 +2850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {4, 6,},
+                            -- ["SECTION_ACTIVE"] = {4, 6},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.8",}
@@ -2858,7 +2858,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {5,},
+                            -- ["SECTION_ACTIVE"] = {5},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.7"},
@@ -2867,7 +2867,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {7,},
+                            -- ["SECTION_ACTIVE"] = {7},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.4",}
@@ -2875,7 +2875,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {8,},
+                            -- ["SECTION_ACTIVE"] = {8},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.2",}
@@ -2883,7 +2883,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {9,},
+                            -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4"},
@@ -2891,7 +2891,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {10,},
+                            -- ["SECTION_ACTIVE"] = {10},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.5",}
@@ -2899,7 +2899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {11, 12,},
+                            -- ["SECTION_ACTIVE"] = {11, 12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3"},
@@ -2907,7 +2907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {13,},
+                            -- ["SECTION_ACTIVE"] = {13},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5",}
@@ -2915,7 +2915,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {17, 21,},
+                            -- ["SECTION_ACTIVE"] = {17, 21},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.6",}
@@ -2929,7 +2929,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.5"},
@@ -2938,7 +2938,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.05625"},
@@ -2946,7 +2946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2"},
@@ -2955,7 +2955,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.6",}
@@ -2963,7 +2963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4, 13,},
+                            ["SECTION_ACTIVE"] = {4, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.8",}
@@ -2977,7 +2977,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.7"},
@@ -2987,7 +2987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.0375"},
@@ -2995,7 +2995,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.0375"},
@@ -3003,7 +3003,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.7"},
@@ -3012,7 +3012,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.12"},
@@ -3020,7 +3020,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.12"},
@@ -3028,7 +3028,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5"},
@@ -3037,7 +3037,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.165"},
@@ -3045,7 +3045,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.165"},
@@ -3053,7 +3053,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.9"},
@@ -3063,7 +3063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.15"},
@@ -3071,7 +3071,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.15"},
@@ -3079,7 +3079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.5",}
@@ -3087,7 +3087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2",}
@@ -3095,7 +3095,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.6",}
@@ -3103,7 +3103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9, 10,},
+                            ["SECTION_ACTIVE"] = {9, 10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -3111,7 +3111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.3",}
@@ -3119,7 +3119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12, 17, 23,},
+                            ["SECTION_ACTIVE"] = {12, 17, 23},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace",}
@@ -3133,7 +3133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.5"},
@@ -3142,7 +3142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.06"},
@@ -3150,7 +3150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.7"},
@@ -3160,7 +3160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.0975"},
@@ -3168,7 +3168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.3"},
@@ -3176,7 +3176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.06"},
@@ -3184,7 +3184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4, 6,},
+                            ["SECTION_ACTIVE"] = {4, 6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2",}
@@ -3192,7 +3192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.9",}
@@ -3200,7 +3200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.6",}
@@ -3208,7 +3208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.5",}
@@ -3216,7 +3216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -3224,7 +3224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3",}
@@ -3232,7 +3232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.3",}
@@ -3246,7 +3246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.8"},
@@ -3255,7 +3255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.08625"},
@@ -3263,7 +3263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.5"},
@@ -3273,7 +3273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.13125"},
@@ -3281,7 +3281,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.2"},
@@ -3290,7 +3290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.135"},
@@ -3298,7 +3298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.5"},
@@ -3308,7 +3308,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.09"},
@@ -3316,7 +3316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.8"},
@@ -3324,7 +3324,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.4"},
@@ -3332,7 +3332,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.18"},
@@ -3340,7 +3340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.6",}
@@ -3348,7 +3348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -3356,7 +3356,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3",}
@@ -3364,7 +3364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8",}
@@ -3372,7 +3372,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13,},
+                            ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -3386,7 +3386,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8"},
@@ -3394,7 +3394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.3"},
@@ -3403,7 +3403,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8"},
@@ -3411,7 +3411,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.4",}
@@ -3419,7 +3419,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.5"},
@@ -3428,7 +3428,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.6"},
@@ -3437,7 +3437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.5",}
@@ -3445,7 +3445,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10, 11,},
+                            ["SECTION_ACTIVE"] = {10, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3",}
@@ -3453,7 +3453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4",}
@@ -3461,7 +3461,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.2"},
@@ -3470,7 +3470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {20,},
+                            ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1"},
@@ -3485,7 +3485,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- {
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {3,},
+                            -- ["SECTION_ACTIVE"] = {3},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.8"},
@@ -3494,7 +3494,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {4,},
+                            -- ["SECTION_ACTIVE"] = {4},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.7"},
@@ -3503,7 +3503,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {5,},
+                            -- ["SECTION_ACTIVE"] = {5},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.8"},
@@ -3512,7 +3512,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {6,},
+                            -- ["SECTION_ACTIVE"] = {6},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3.4"},
@@ -3521,7 +3521,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {7,},
+                            -- ["SECTION_ACTIVE"] = {7},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.2"},
@@ -3530,7 +3530,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {8,},
+                            -- ["SECTION_ACTIVE"] = {8},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4"},
@@ -3539,7 +3539,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {9,},
+                            -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "5.5",}
@@ -3547,7 +3547,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {10, 11,},
+                            -- ["SECTION_ACTIVE"] = {10, 11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "3",}
@@ -3555,7 +3555,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            -- ["SECTION_ACTIVE"] = {12,},
+                            -- ["SECTION_ACTIVE"] = {12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4",}
@@ -3569,7 +3569,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1, 4,},
+                            ["SECTION_ACTIVE"] = {1, 4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3",}
@@ -3577,7 +3577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.1",}
@@ -3585,7 +3585,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.8",}
@@ -3593,7 +3593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5, 6,},
+                            ["SECTION_ACTIVE"] = {5, 6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -3607,7 +3607,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "15.6"},
@@ -3616,7 +3616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1275"},
@@ -3624,7 +3624,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1275"},
@@ -3632,7 +3632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.1"},
@@ -3641,7 +3641,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.075"},
@@ -3649,7 +3649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.075"},
@@ -3657,7 +3657,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10"},
@@ -3666,7 +3666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1575"},
@@ -3674,7 +3674,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1575"},
@@ -3682,7 +3682,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.43",}
@@ -3690,7 +3690,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.7"},
@@ -3699,7 +3699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1725"},
@@ -3707,7 +3707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml",  "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1725"},
@@ -3715,7 +3715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6,},
+                            ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.2",}
@@ -3723,7 +3723,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.9",}
@@ -3731,7 +3731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.1",}
@@ -3739,7 +3739,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9, 11,},
+                            ["SECTION_ACTIVE"] = {9, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.8",}
@@ -3747,7 +3747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.1",}
@@ -3755,7 +3755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {12,},
+                            ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.5",}
@@ -3763,7 +3763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13,},
+                            ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4",}
@@ -3771,7 +3771,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14, 15,},
+                            ["SECTION_ACTIVE"] = {14, 15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.2",}
@@ -3779,7 +3779,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {16,},
+                            ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.4",}
@@ -3787,7 +3787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {17,},
+                            ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3",}
@@ -3795,7 +3795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {18,},
+                            ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.6",}
@@ -3803,7 +3803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {19,},
+                            ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.6",}
@@ -3811,7 +3811,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {20,},
+                            ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "7.6",}
@@ -3819,7 +3819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {37,},
+                            ["SECTION_ACTIVE"] = {37},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.4",}
@@ -3833,7 +3833,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.1"},
@@ -3842,7 +3842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.0825"},
@@ -3850,7 +3850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -3859,7 +3859,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.075"},
@@ -3867,7 +3867,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.4"},
@@ -3876,7 +3876,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.105"},
@@ -3884,7 +3884,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.4"},
@@ -3893,7 +3893,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.0975"},
@@ -3901,7 +3901,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5, 6,},
+                            ["SECTION_ACTIVE"] = {5, 6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.4",}
@@ -3909,7 +3909,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7, 11,},
+                            ["SECTION_ACTIVE"] = {7, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2",}
@@ -3917,7 +3917,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.9",}
@@ -3925,7 +3925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {10,},
+                            ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2",}
@@ -3941,7 +3941,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13, 15,},
+                            ["SECTION_ACTIVE"] = {13, 15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8",}
@@ -3949,7 +3949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {17,},
+                            ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.8"},
@@ -3958,7 +3958,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {17,},
+                            ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.105"},
@@ -3966,7 +3966,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {18,},
+                            ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.7",}
@@ -3980,7 +3980,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -3989,7 +3989,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.14625"},
@@ -3997,7 +3997,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -4006,7 +4006,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.09"},
@@ -4014,7 +4014,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "10.5"},
@@ -4023,7 +4023,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0.1875"},
@@ -4031,7 +4031,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6, 12,},
+                            ["SECTION_ACTIVE"] = {6, 12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.6",}
@@ -4039,7 +4039,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.8",}
@@ -4047,7 +4047,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9, 10, 13,},
+                            ["SECTION_ACTIVE"] = {9, 10, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "1.8",}
@@ -4055,7 +4055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.2",}
@@ -4063,7 +4063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {14,},
+                            ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "2.4",}
@@ -4077,7 +4077,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1, 2,},
+                            ["SECTION_ACTIVE"] = {1, 2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "8.5",}
@@ -4085,7 +4085,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {3,},
+                            ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "6",}
@@ -4093,7 +4093,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "6.5",}
@@ -4101,7 +4101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {5,},
+                            ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5.4",}
@@ -4109,7 +4109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6, 8,},
+                            ["SECTION_ACTIVE"] = {6, 8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5",}
@@ -4117,7 +4117,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7,},
+                            ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3.3",}
@@ -4135,7 +4135,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {1, 2,},
+                            ["SECTION_ACTIVE"] = {1, 2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "15"},
@@ -4144,7 +4144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {4,},
+                            ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "7.3",}
@@ -4152,7 +4152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {6, 10,},
+                            ["SECTION_ACTIVE"] = {6, 10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4",}
@@ -4160,7 +4160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {7, 12,},
+                            ["SECTION_ACTIVE"] = {7, 12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "5",}
@@ -4168,7 +4168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {8,},
+                            ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "6",}
@@ -4176,7 +4176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {9,},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "7",}
@@ -4184,7 +4184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {11,},
+                            ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "3",}
@@ -4192,7 +4192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["SECTION_ACTIVE"] = {13,},
+                            ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxScale", "4.5",}
