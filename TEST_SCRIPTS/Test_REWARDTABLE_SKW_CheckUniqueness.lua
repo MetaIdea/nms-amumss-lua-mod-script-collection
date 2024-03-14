@@ -41,6 +41,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
         -- },
       -- },
     },
-  }, --21 global replacements
+  }, --22 global replacements
 }}},
 }--NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
