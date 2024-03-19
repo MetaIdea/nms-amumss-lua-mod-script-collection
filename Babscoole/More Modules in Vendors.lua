@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Shop",               "GcTradeData.xml"},
                                 {"TechShop",           "GcTradeData.xml"},
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SpaceStation", "GcTradeData.xml"},
                                 {"Scrap",        "GcTradeData.xml"},
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Ship",          "GcTradeData.xml"},
                                 {"ExpShip",       "GcTradeData.xml"},

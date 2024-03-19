@@ -149,7 +149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_REFINE"},
                                 {"RoomID", "FRE_ROOM_EXTR"},
@@ -163,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_STORE0"},
                                 {"RoomID", "FRE_ROOM_STORE1"},

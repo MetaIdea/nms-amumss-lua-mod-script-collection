@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Traders",   "NMSString0x80.xml"},
                                 {"Warriors",  "NMSString0x80.xml"},

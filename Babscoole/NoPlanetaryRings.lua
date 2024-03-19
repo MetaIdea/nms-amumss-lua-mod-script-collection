@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"PlanetRingsMin", "GcPlanetRingData.xml"},
                                 {"PlanetRingsMax", "GcPlanetRingData.xml"},

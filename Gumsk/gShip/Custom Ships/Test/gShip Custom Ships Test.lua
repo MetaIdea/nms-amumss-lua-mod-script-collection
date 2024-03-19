@@ -1,13 +1,13 @@
 Author = "WinderTP,Kibbles,Gumsk"
-ModName = "gShip"
-ModNameSub = "Custom Ships Test"
+ModName = "gShip Custom Ships"
+ModNameSub = "Serenity Gold"
 BaseDescription = "Adds new ship models"
-GameVersion = "393"
-ModVersion = "a"
+GameVersion = "4462"
+ModVersion = "b"
 
 ShipInfo = 	{
-				{["NAME"] = "GOLDENVECTOR",		["ORDER"] = "22",	["COCKPITX"] = "0",	["COCKPITY"] = "0",		["COCKPITZ"] = "0",		["SCENE"] = "GOLDENVECTOR"},
-				{["NAME"] = "SERENITY",			["ORDER"] = "4",	["COCKPITX"] = "0",	["COCKPITY"] = "2.3",	["COCKPITZ"] = "0.788",	["SCENE"] = "SERENITY"},
+				{["NAME"] = "GOLDENVECTOR",		["ORDER"] = "1",	["COCKPITX"] = "0",	["COCKPITY"] = "0",		["COCKPITZ"] = "0",		["SCENE"] = "GOLDENVECTOR"},
+				{["NAME"] = "SERENITYGOLD",		["ORDER"] = "2",	["COCKPITX"] = "0",	["COCKPITY"] = "2.23",	["COCKPITZ"] = "3.9",	["SCENE"] = "SERENITYGOLD"},
 			}
 NewScenes = [[<Data template="TkSceneNodeData">
   <Property name="Name" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD" />
@@ -104,7 +104,7 @@ for i = 1,#ShipInfo do
 
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="_Ship_Goldenvector" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="]]..GNH("_Ship_Goldenvector")..[[" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -132,7 +132,7 @@ for i = 1,#ShipInfo do
 
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="_Ship_]]..ShipInfo[j]["NAME"]:sub(1,1):upper()..ShipInfo[j]["NAME"]:sub(2):lower()..[[" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="]]..GNH(ShipInfo[j]["NAME"]:sub(1,1):upper()..ShipInfo[j]["NAME"]:sub(2):lower())..[[" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />

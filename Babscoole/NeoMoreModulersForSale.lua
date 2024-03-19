@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"ShipTechSpecialist",  "GcTradeData.xml"},
                                 {"SuitTechSpecialist",  "GcTradeData.xml"},

@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SquadronPilot",  "GcFreighterNPCSpawnPriority.xml"},
                                 {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SquadronPilot",  "GcFreighterNPCSpawnPriority.xml"},
                                 {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
@@ -65,7 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SquadronPilot",  "GcFreighterNPCSpawnPriority.xml"},
                                 {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
@@ -90,7 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_BIO"},
                                 {"RoomID", "FRE_ROOM_PLANT0"},
@@ -107,7 +107,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_BIO"},
                                 {"RoomID", "FRE_ROOM_PLANT0"},
@@ -124,7 +124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_TECH"},
                                 {"RoomID", "FRE_ROOM_NPCSCI"},
@@ -140,7 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_TECH"},
                                 {"RoomID", "FRE_ROOM_NPCSCI"},
@@ -156,7 +156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_SCAN"},
                                 {"RoomID", "FRE_ROOM_TELEPO"},
@@ -168,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_SCAN"},
                                 {"RoomID", "FRE_ROOM_TELEPO"},
@@ -218,7 +218,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_IND"},
                                 {"RoomID", "FRE_ROOM_REFINE"},
@@ -236,7 +236,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_IND"},
                                 {"RoomID", "FRE_ROOM_REFINE"},
@@ -254,7 +254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_STORE0"},
                                 {"RoomID", "FRE_ROOM_STORE1"},
@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"RoomID", "FRE_ROOM_STORE0"},
                                 {"RoomID", "FRE_ROOM_STORE1"},

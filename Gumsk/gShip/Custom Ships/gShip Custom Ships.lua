@@ -1,8 +1,8 @@
 Author = "WinderTP,Kibbles,Gumsk"
-ModName = "gShip"
-ModNameSub = "Custom Ships"
+ModName = "gShip Custom Ships"
+ModNameSub = ""
 BaseDescription = "Adds new ship models"
-GameVersion = "405"
+GameVersion = "452"
 ModVersion = "a"
 
 ShipInfo = 	{
@@ -172,7 +172,7 @@ for i = 1,#ShipInfo do
 
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="_Ship_Goldenvector" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="]]..GNH("_Ship_Goldenvector")..[[" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -200,7 +200,7 @@ for i = 1,#ShipInfo do
 
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="_Ship_]]..ShipInfo[j]["NAME"]:sub(1,1):upper()..ShipInfo[j]["NAME"]:sub(2):lower()..[[" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="]]..GNH(ShipInfo[j]["NAME"]:sub(1,1):upper()..ShipInfo[j]["NAME"]:sub(2):lower())..[[" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />

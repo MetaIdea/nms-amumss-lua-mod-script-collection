@@ -1737,7 +1737,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "FIREWORKEND"},
                                 {"Id", "GASEXPLODE"},
@@ -2611,7 +2611,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "BLUEEXPLODE"},
                                 {"Id", "DOOREXPLODE"},
@@ -2724,7 +2724,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "FASTLAND"},
                                 {"Id", "SUBSTANCEPOP"},
@@ -2986,7 +2986,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "ASTEROId_R_EXP"},
                                 {"Id", "ASTEROId_M_EXP"},

@@ -843,7 +843,7 @@ MutantPlantSulphurine	=	0.75		--250 - 400
 CuriousDepositMould		=	0.6			--300 - 500
 	--Note: in practice, The following seem to only yield around half of these values
 OrganicRockChlorine		=	4			--25 - 60	
-OrganicRockMordite		=	0.4			--250 - 500			Unlike all the other rare resource nodes, this is unaffected by your Multi-Tool's Mining yield bonus
+OrganicRockMordite		=	0.27		--250 - 500			Unlike the other rare resource nodes here, this is unaffected by your Multi-Tool's Mining yield bonus
 MetalFingerGold			=	0.6			--                                                                                        100 - 200
 MetalFingerUranium		=	0.4			--200 - 250
 MetalFingerUraniumChance=	0.5			--100	(Relative % Chance a Metal Finger will yield Uranium instead of Gold)
@@ -935,8 +935,8 @@ NewAlluringSpecRewards =
                 <Property name="DefaultProductType" value="None" />
               </Property>
               <Property name="ID" value="VENTGEM" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
+              <Property name="AmountMin" value="2" />
+              <Property name="AmountMax" value="2" />
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />

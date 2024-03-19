@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Biome", "Scorched"},
                                 {"Biome", "Radioactive"},

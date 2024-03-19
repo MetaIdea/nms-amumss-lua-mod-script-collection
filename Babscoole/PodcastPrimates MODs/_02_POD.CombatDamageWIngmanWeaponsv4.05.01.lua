@@ -698,7 +698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "BLACK_HOLE"},
                                 {"Id", "ATLAS_BEACON1"},
@@ -715,7 +715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "NEURON"},
                                 {"Id", "GAS_BRAIN"},
@@ -776,7 +776,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "DRONE_SET_LRG_A", "SentinelType", "MedicDrone"},
                                 {"Id", "QUAD_SET",        "SentinelType", "MedicDrone"},
@@ -792,7 +792,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "QUAD_SET",        "SentinelType", "SummonerDrone"},
                                 {"Id", "QUAD_SET_HARD",   "SentinelType", "SummonerDrone"},

@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight3"},
                                 {"Name", "spotLight4"},
@@ -67,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight3", "Name", "FOV"},
                                 {"Name", "spotLight4", "Name", "FOV"},
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight3", "Name", "FALLOFF_RATE"},
                                 {"Name", "spotLight4", "Name", "FALLOFF_RATE"},
@@ -91,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight3", "Name", "INTENSITY"},
                                 {"Name", "spotLight4", "Name", "INTENSITY"},
@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight3", "Name", "VOLUMETRIC"},
                                 {"Name", "spotLight4", "Name", "VOLUMETRIC"},
@@ -128,7 +128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight"},
                                 {"Name", "AttackSpotLight"},
@@ -140,7 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "FOV"},
                                 {"Name", "AttackSpotLight", "Name", "FOV"},
@@ -152,7 +152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "FALLOFF"},
                                 {"Name", "AttackSpotLight", "Name", "FALLOFF"},
@@ -164,7 +164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "FALLOFF_RATE"},
                                 {"Name", "AttackSpotLight", "Name", "FALLOFF_RATE"},
@@ -176,7 +176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "INTENSITY"},
                                 {"Name", "AttackSpotLight", "Name", "INTENSITY"},
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight2"},
                                 {"Name", "spotLight3"},
@@ -200,7 +200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight2", "Name", "FOV"},
                                 {"Name", "spotLight3", "Name", "FOV"},
@@ -212,7 +212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight2", "Name", "FALLOFF_RATE"},
                                 {"Name", "spotLight3", "Name", "FALLOFF_RATE"},
@@ -224,7 +224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight2", "Name", "INTENSITY"},
                                 {"Name", "spotLight3", "Name", "INTENSITY"},
@@ -242,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ["EXML_CHANGE_TABLE"] =
                     -- {
                         -- {
-                            -- ["FOREACH_SKW_GROUP"] =
+                            -- ["SPECIAL_KEY_WORDS"] =
                             -- {
                                 -- {"Name", "Attack"},
                                 -- {"Name", "Investigate"},
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["REMOVE"] = "SECTION"
                         -- },
                         -- {
-                            -- ["FOREACH_SKW_GROUP"] =
+                            -- ["SPECIAL_KEY_WORDS"] =
                             -- {
                                 -- {"Name", "PatrolSpotLight",  "Name", "COL_R"},
                                 -- {"Name", "PatrolSpotLight",  "Name", "COL_B"},
@@ -274,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight"},
                                 {"Name", "AttackSpotLight"},
@@ -286,7 +286,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "FOV"},
                                 {"Name", "AttackSpotLight", "Name", "FOV"},
@@ -298,7 +298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "FALLOFF"},
                                 {"Name", "AttackSpotLight", "Name", "FALLOFF"},
@@ -310,7 +310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "FALLOFF_RATE"},
                                 {"Name", "AttackSpotLight", "Name", "FALLOFF_RATE"},
@@ -322,7 +322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "INTENSITY"},
                                 {"Name", "AttackSpotLight", "Name", "INTENSITY"},
@@ -334,7 +334,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight4"},
                                 {"Name", "spotLight5"},
@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight4", "Name", "FOV"},
                                 {"Name", "spotLight5", "Name", "FOV"},
@@ -358,7 +358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight4", "Name", "FALLOFF_RATE"},
                                 {"Name", "spotLight5", "Name", "FALLOFF_RATE"},
@@ -370,7 +370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight4", "Name", "INTENSITY"},
                                 {"Name", "spotLight5", "Name", "INTENSITY"},
@@ -382,7 +382,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         -- {
-                            -- ["FOREACH_SKW_GROUP"] =
+                            -- ["SPECIAL_KEY_WORDS"] =
                             -- {
                                 -- {"Name", "Attack"},
                                 -- {"Name", "Investigate"},
@@ -390,7 +390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["REMOVE"] = "SECTION"
                         -- },
                         -- {
-                            -- ["FOREACH_SKW_GROUP"] =
+                            -- ["SPECIAL_KEY_WORDS"] =
                             -- {
                                 -- {"Name", "PatrolSpotLight",  "Name", "COL_R"},
                                 -- {"Name", "PatrolSpotLight",  "Name", "COL_B"},
@@ -418,7 +418,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight"},
                                 {"Name", "AttackSpotLight"},
@@ -430,7 +430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "FOV"},
                                 {"Name", "AttackSpotLight", "Name", "FOV"},
@@ -442,7 +442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "FALLOFF"},
                                 {"Name", "AttackSpotLight", "Name", "FALLOFF"},
@@ -454,7 +454,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "FALLOFF_RATE"},
                                 {"Name", "AttackSpotLight", "Name", "FALLOFF_RATE"},
@@ -466,7 +466,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight", "Name", "INTENSITY"},
                                 {"Name", "AttackSpotLight", "Name", "INTENSITY"},
@@ -478,7 +478,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight1"},
                                 {"Name", "spotLight3"},
@@ -490,7 +490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight1", "Name", "FALLOFF_RATE"},
                                 {"Name", "spotLight3", "Name", "FALLOFF_RATE"},
@@ -502,7 +502,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight1", "Name", "INTENSITY"},
                                 {"Name", "spotLight3", "Name", "INTENSITY"},
@@ -520,7 +520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         -- {
-                            -- ["FOREACH_SKW_GROUP"] =
+                            -- ["SPECIAL_KEY_WORDS"] =
                             -- {
                                 -- {"Name", "Attack"},
                                 -- {"Name", "Investigate"},
@@ -528,7 +528,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["REMOVE"] = "SECTION"
                         -- },
                         -- {
-                            -- ["FOREACH_SKW_GROUP"] =
+                            -- ["SPECIAL_KEY_WORDS"] =
                             -- {
                                 -- {"Name", "PatrolSpotLight",  "Name", "COL_R"},
                                 -- {"Name", "PatrolSpotLight",  "Name", "COL_B"},
@@ -625,7 +625,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight2"},
                                 {"Name", "AttackSpotLight"},
@@ -637,7 +637,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight2", "Name", "FOV"},
                                 {"Name", "AttackSpotLight", "Name", "FOV"},
@@ -649,7 +649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight2", "Name", "FALLOFF"},
                                 {"Name", "AttackSpotLight", "Name", "FALLOFF"},
@@ -661,7 +661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight2", "Name", "FALLOFF_RATE"},
                                 {"Name", "AttackSpotLight", "Name", "FALLOFF_RATE"},
@@ -673,7 +673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight2", "Name", "INTENSITY"},
                                 {"Name", "AttackSpotLight", "Name", "INTENSITY"},
@@ -685,7 +685,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight1"},
                                 {"Name", "spotLight3"},
@@ -697,7 +697,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight1", "Name", "FALLOFF_RATE"},
                                 {"Name", "spotLight3", "Name", "FALLOFF_RATE"},
@@ -709,7 +709,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight1", "Name", "INTENSITY"},
                                 {"Name", "spotLight3", "Name", "INTENSITY"},
@@ -721,7 +721,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight1", "Name", "VOLUMETRIC"},
                                 {"Name", "spotLight3", "Name", "VOLUMETRIC"},

@@ -47,6 +47,7 @@ StorageContainers345Mult	=		2			--Multiplier applied to default cost of 5 Salvag
 StorageContainers678Mult	=		3			--Multiplier applied to default cost of 5 Salvaged Data for Containers 6, 7, & 8
 StorageContainer9Mult	=			4			--Multiplier applied to default cost of 5 Salvaged Data for Container 9
 FabricatorsMult	=					10			--Multiplier applied to default cost of 1 Salvaged Data (These are the Barrel/Crate Fabricators that spawn items)
+WonderProjectorMult	=				0.5			--Multiplier applied to default cost of 12 Salvaged Data
 
 FreighterDoubleCultivationRoomMult	=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
 FreighterScannerRoomMult			=	3		--Multiplier applied to default cost of 1 Salvaged Frigate Data
@@ -310,53 +311,71 @@ AddItems =
 	{	--Hull Fracture			
 		"SHIPSLOT_DMG1",		"TECH_COMP",		4,		"Product",		--Wiring Loom
 	},
-	{	--Hull Fracture			
-		"SHIPSLOT_DMG1",		"RED2",				160,	"Substance",	--Cadmium
-	},
 	{	--Rusted Circuits			
-		"SHIPSLOT_DMG2",		"TECH_COMP",		2,		"Product",		--Wiring Loom
+		"SHIPSLOT_DMG2",		"RED2",				320,	"Substance",	--Cadmium
 	},
 	{	--Shattered Bulwark			
 		"SHIPSLOT_DMG3",		"TECH_COMP",		2,		"Product",		--Wiring Loom
 	},
 	{	--Shattered Bulwark			
-		"SHIPSLOT_DMG2",		"RED2",				160,	"Substance",	--Cadmium
+		"SHIPSLOT_DMG3",		"BLUE2",			160,	"Substance",	--Indium
 	},
 	{	--Radiation Leak			
 		"SHIPSLOT_DMG4",		"TECH_COMP",		2,		"Product",		--Wiring Loom
 	},
 	{	--Damaged Gears			
-		"SHIPSLOT_DMG6",		"GREEN2",			120,	"Substance",	--Emeril
+		"SHIPSLOT_DMG6",		"SALVAGE_TECH7",	1,		"Product",		--Recycled Circuitry
+	},
+	{	--Damaged Gears			
+		"SHIPSLOT_DMG6",		"BLUE2",			160,	"Substance",	--Indium
 	},
 	{	--Hydraulics Damage			
-		"SHIPSLOT_DMG7",		"GREEN2",			120,	"Substance",	--Emeril
+		"SHIPSLOT_DMG7",		"SALVAGE_TECH7",	1,		"Product",		--Recycled Circuitry
+	},
+	{	--Hydraulics Damage			
+		"SHIPSLOT_DMG7",		"SALVAGE_TECH7",	1,		"Product",		--Recycled Circuitry
+	},
+	{	--Hydraulics Damage			
+		"SHIPSLOT_DMG7",		"BLUE2",			160,	"Substance",	--Indium
 	},
 	{	--Exploded Panel			
-		"SHIPSLOT_DMG8",		"TECH_COMP",		4,		"Product",		--Wiring Loom
+		"SHIPSLOT_DMG8",		"GREEN2",			240,	"Substance",	--Emeril
 	},
 	{	--Corroded Tanks			
 		"SHIPSLOT_DMG9",		"TECH_COMP",		2,		"Product",		--Wiring Loom
 	},
 	{	--Corroded Tanks			
-		"SHIPSLOT_DMG9",		"BLUE2",			80,		"Substance",	--Indium
+		"SHIPSLOT_DMG9",		"RED2",				320,	"Substance",	--Cadmium
 	},
 	{	--Burnt-Out Compressor			
-		"SHIPSLOT_DMG10",		"BLUE2",			80,		"Substance",	--Indium
+		"SHIPSLOT_DMG10",		"RED2",				320,	"Substance",	--Cadmium
 	},
 	{	--Short Circuit			
 		"WEAPSLOT_DMG1",		"TECH_COMP",		2,		"Product",		--Wiring Loom
 	},
 	{	--Short Circuit			
-		"WEAPSLOT_DMG1",		"RED2",				160,	"Substance",	--Cadmium
+		"WEAPSLOT_DMG1",		"COLD1",			50,		"Substance",	--Dioxite
 	},
 	{	--Blown Transistor			
-		"WEAPSLOT_DMG2",		"RED2",				160,	"Substance",	--Cadmium
+		"WEAPSLOT_DMG2",		"GREEN2",			120,	"Substance",	--Emeril
+	},
+	{	--Blown Transistor			
+		"WEAPSLOT_DMG2",		"LUSH1",			50,		"Substance",	--Paraffinium
 	},
 	{	--Rusted Power Core			
-		"WEAPSLOT_DMG1",		"TECH_COMP",		4,		"Product",		--Wiring Loom
+		"WEAPSLOT_DMG4",		"RADIO1",			50,		"Substance",	--Uranium
 	},
 	{	--Rusted Power Core			
-		"WEAPSLOT_DMG4",		"GREEN2",			120,	"Substance",	--Emeril
+		"WEAPSLOT_DMG4",		"RED2",				160,	"Substance",	--Cadmium
+	},
+	{	--Corrupt Module			
+		"WEAPSLOT_DMG5",		"BLUE2",			80,		"Substance",	--Indium
+	},
+	{	--Loom Damage			
+		"WEAPSLOT_DMG6",		"SALVAGE_TECH7",	1,		"Product",		--Recycled Circuitry
+	},
+	{	--Loom Damage			
+		"WEAPSLOT_DMG6",		"BLUE2",			80,		"Substance",	--Indium
 	},
 	{	--Corroded Actuator			
 		"WEAPSLOT_DMG7",		"GREEN2",			120,	"Substance",	--Emeril
@@ -365,7 +384,7 @@ AddItems =
 		"WEAPSLOT_DMG9",		"BLUE2",			80,		"Substance",	--Indium
 	},
 	{	--Shattered Lens			
-		"WEAPSLOT_DMG10",		"BLUE2",			80,		"Substance",	--Indium
+		"WEAPSLOT_DMG10",		"GREEN2",			120,	"Substance",	--Emeril
 	},
 }
 --Replaces an existing component for certain techs with various items instead
@@ -441,14 +460,35 @@ ReplaceItems =
 		"UT_BUI_SCAN2",			"RED2",				160,	"Substance",	"COMPUTER",
 	},
 	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
+	{	--Containment Failure
+		"SHIPSLOT_DMG5",		"GREEN2",			240,	"Substance",	"STELLAR2",			--Was 120 Chromatic Metal in Vanilla
+	},
 	{	--Damaged Gears
-		"SHIPSLOT_DMG6",		"TECH_COMP",		8,		"Product",		"TECH_COMP",		--Was 6 Wiring Loom in Vanilla
+		"SHIPSLOT_DMG6",		"SALVAGE_TECH7",	1,		"Product",		"TECH_COMP",		--Was 6 Wiring Loom in Vanilla
+	},
+	{	--Hydraulics Damage
+		"SHIPSLOT_DMG7",		"SALVAGE_TECH7",	1,		"Product",		"COLD1",			--Was 80 Dioxite in Vanilla
+	},
+	{	--Hydraulics Damage
+		"SHIPSLOT_DMG7",		"COLD1",			80,		"Substance",	"OXYGEN",			--Was 100 Oxygen in Vanilla
 	},
 	{	--Burnt-Out Compressor
 		"SHIPSLOT_DMG10",		"TECH_COMP",		6,		"Product",		"TECH_COMP",		--Was 4 Wiring Loom in Vanilla
 	},
 	{	--Blown Transistor
 		"WEAPSLOT_DMG2",		"TECH_COMP",		6,		"Product",		"TECH_COMP",		--Was 2 Wiring Loom in Vanilla
+	},
+	{	--Corrupt Module
+		"WEAPSLOT_DMG5",		"SALVAGE_TECH7",	1,		"Product",		"TOXIC1",			--Was 50 Ammonia in Vanilla
+	},
+	{	--Corrupt Module
+		"WEAPSLOT_DMG5",		"SALVAGE_TECH7",	1,		"Product",		"RADIO1",			--Was 50 Uranium in Vanilla
+	},
+	{	--Loom Damage
+		"WEAPSLOT_DMG6",		"SALVAGE_TECH7",	1,		"Product",		"COLD1",			--Was 50 Dioxite in Vanilla
+	},
+	{	--Loom Damage
+		"WEAPSLOT_DMG6",		"SALVAGE_TECH7",	1,		"Product",		"LUSH1",			--Was 50 Paraffinium in Vanilla
 	},
 	{	--Corroded Actuator
 		"WEAPSLOT_DMG7",		"TECH_COMP",		8,		"Product",		"TECH_COMP",		--Was 3 Wiring Loom in Vanilla
@@ -482,8 +522,8 @@ InterceptAIValves = 4					--0 Starship AI Valves		(Technically added as a new cu
 
 --Added item costs for repairing all broken slots on Sentinel Multi-Tools
 SemiconductorAmount = 1								--0		Semiconductor
-RecycledCircuitAmount = 1							--0		Recycled Circuitry ( x3 )
-	--Note, there are 3 "slots" which each require the "RecycledCircuitAmount" amount of Recycled Circuitry
+RecycledCircuitAmount = 1							--0		Recycled Circuitry ( x2 )
+	--Note, there are 2 "slots" which each require the "RecycledCircuitAmount" amount of Recycled Circuitry
 
 --New recipe for installing Minotaur AI Pilot in Exomech
 AIPilotComputer = 8						--1 Quantum Computer
@@ -763,6 +803,14 @@ RecipeChanges	=
 	{
 		"CRATELCYLINDER",				--1		Barrel Fabricator
 		"CRATELRARE"					--1		Crate Fabricator
+	}
+},
+{
+	{
+		WonderProjectorMult
+	},
+	{
+		"HOLO_DISCO_0"					--12	Wonder Projector
 	}
 },
 {
@@ -1118,13 +1166,6 @@ AddedSentToolRepairCost =
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="]]..SemiconductorAmount..[[" />
-        </Property>
-		<Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="SALVAGE_TECH7" />
-          <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="]]..RecycledCircuitAmount..[[" />
         </Property>
 		<Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="SALVAGE_TECH7" />

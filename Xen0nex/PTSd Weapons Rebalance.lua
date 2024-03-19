@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "4_41"
+GameVersion = "4_52"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 --Un-SuperCharger Mult - Enter the current Supercharged tech slot bonus value used in GCGAMEPLAYGLOBALS.GLOBAL.MBIN here to divide most affected base weapon tech values by this amount, so they start underpowered, and placing them on a supercharged slot brings that back to "normal" strength
@@ -21,7 +21,7 @@ ExplosionObjectMult = 0									--1
 LaserCritMult = 2										--4		How much the damage of the mining laser is multiplied on a critical hit (typically on the head / eye)
 LaserCreatureMult = 1									--1		Lowering this value appears to disable the critical weak points on creatures with the mining laser
 VehicleLaserCreatureMult = 0.2							--1
-LaserSentinelMult = 0.6									--0.6
+LaserSentinelMult = 0.75									--0.6
 VehicleLaserSentinelMult = 0.2							--0.2
 
 --Damage multipliers against DOORs and DEPOTs
@@ -29,6 +29,7 @@ ShipWeaponDoorMult = 0.02								--1
 VehicleGunDoorMult = 0.05								--1
 VehicleLaserDoorMult = 0								--1		To match regular Laser damage = 0
 DefaultDoorMult = 	0.33								--1		Multiplier for most other damage against DOORs
+LaserDoorMult = 0										--0
 
 ShipWeaponDepotMult = 0.02								--1
 VehicleGunDepotMult = 0.05								--1
@@ -40,7 +41,7 @@ ShipWeaponsCargoMult = 0.2								--1		(0.2)
 
 --How many shots you get before needing to recharge with Unstable Plasma
 PlasmaLauncherCharge =						16					--20
-GeologyCannonCharge =						12					--20
+GeologyCannonCharge =						10					--20
 ParalysisMortarCharge =						8					--20
 MechStunWeaponCharge =						30					--400			(Amount of charge for the recharge bar of the Mech Sentinel Right Arm which stuns)
 MechStunWeaponChargeMultiplier =			0.1					--1				How effective substances are at recharging the charge bar
@@ -80,7 +81,7 @@ CyclotronUpgradesDMGMult =					1.1*10				--				Multiplier to apply to the bonus 
 MTUAddMult =								0.5					--				Multiplier to apply to the strength of all additive bonuses (like damage) from all procedural Multi-Tool weapon upgrades. (This is to compensate for going from 3x upgrades to 5x upgrades)
 MTUMultMult =								0.5					--				Multiplier to apply to the strength of all multiplicative bonuses (like fire rate) from all procedural Multi-Tool weapon upgrades. (This is to compensate for going from 3x upgrades to 5x upgrades)
 
-SentWpnDMGMult =							0.5					--1~4			Multiplier to apply to Sentinel Weapon Upgrade Module damage bonus (Only applies to Boltcaster?)
+SentWpnDMGMult =							14.72					--1~4			Multiplier to apply to Sentinel Weapon Upgrade Module damage bonus (Only applies to Boltcaster?)
 BoltcasterUpgradesDMGMult =					4.0					--				Multiplier to apply to the bonus damage for Boltcaster upgrades
 PulseUpgradesDMGMult =						0.7					--				Multiplier to apply to the bonus damage for Pulse Spitter upgrades
 ScatterUpgradesDMGMult =					2.4					--				Multiplier to apply to the bonus damage for Scatter Blaster upgrades
@@ -90,6 +91,7 @@ PlasmaUpgradesDMGMult =						0.7					--				Multiplier to apply to the bonus dama
 GeologyUpgradesDMGMult =					1.0					--				Multiplier to apply to the bonus damage for Geology Cannon upgrades
 
 SentWpnRateMult =							0.45				--1.01~1.2		Multiplier to apply to Sentinel Weapon Upgrade Module firerate bonus (Only applies to Boltcaster?)
+RemoveSentWpnRate =							true				--false			If set to true, Sentinel Weapon Upgrade modules no longer offer bonuses to Fire Rate
 SentWpnReloadMult =							1.0					--				Multiplier to apply to the bonus reload speed for Sentinel Weapon Upgrade Module (Only applies to Boltcaster?)
 BoltUpgradeReloadMult =						1.0					--				Multiplier to apply to the bonus reload speed for Boltcaster upgrades
 BoltUpgradeFireRateMult =					0.9					--				Multiplier to apply to the bonus firerate for Boltcaster upgrades
@@ -117,13 +119,13 @@ PulseUpgradeClipMult =						1.0					--				Multiplier to apply to the bonus clips
 NeutronUpgradeSpeedMult =					1.0					--				Multiplier to apply to the bonus projectile speed for Neutron Cannon upgrades
 
 --Multipliers to apply to the base damage for various player weapons (Also will be applied to upgrade modules for that weapon)  Stacks multiplicatively with the Global Damage Multipliers above
-BoltcasterDMG =								1.08				--180			(1,350 theoretical burst DPS)
-PulseSpitterDMG =							0.9					--96 x 2		(1,536 theoretical burst DPS)
-ScatterBlasterDMG =							1.6					--150 x 8		(2,640 theoretical burst DPS)
-NeutronCannonDMG =							2.96				--120			(Uncharged)
-BlazeJavelinDMG =							2.4					--1500			(500 theoretical sustained DPS)					(large DMG multiplier but also longer charge time below to make it possible with enough upgrades on a good enough Multii-Tool to one-shot both unarmored Drones and Repair Drones with the edited "Savage Sentinels" mod)
+BoltcasterDMG =								1.458				--180			(1,350 theoretical burst DPS)
+PulseSpitterDMG =							1.106				--96 x 2		(1,536 theoretical burst DPS)
+ScatterBlasterDMG =							2.0					--150 x 8		(2,640 theoretical burst DPS)
+NeutronCannonDMG =							1.554				--120			(Uncharged)
+BlazeJavelinDMG =							2.071				--1500			(500 theoretical sustained DPS)					(large DMG multiplier but also longer charge time below to make it possible with enough upgrades on a good enough Multii-Tool to one-shot both unarmored Drones and Repair Drones with the edited "Savage Sentinels" mod)
 PlasmaLauncherDMG =							1.45				--500
-GeologyCannonDMG =							1.1					--1000
+GeologyCannonDMG =							1.21				--1000
 
 ExocraftCannonDMG =							1.0					--320			(160 theoretical sustained DPS, plus explosions with AOE???)
 NautilonCannonDMG =							1.0					--220			(110 theoretical sustained DPS, plus explosions with AOE???)
@@ -229,7 +231,7 @@ WeaponStatChanges =
 				"Weapon_Laser_Damage",	BlazeJavelinDMG*GMD,	"FORCE"	--1500
 			},
 			{
-				"Weapon_Laser_ChargeTime",	1.34,	"FORCE"			--3
+				"Weapon_Laser_ChargeTime",	1,	"FORCE"			--3
 			},
 			{
 				"Weapon_Laser_HeatTime",	1,	"FORCE"				--0.2
@@ -269,7 +271,7 @@ WeaponStatChanges =
 				"Weapon_Projectile_Recoil",	1/USCMult,	"PRESERVE"				--200
 			},
 			{
-				"Weapon_Projectile_ReloadTime",	1/USCMult,	"FORCE"				--0.8
+				"Weapon_Projectile_ReloadTime",	1*USCMult,	"FORCE"				--0.8
 			},
 			{
 				"Weapon_Projectile_BurstCap",	1/USCMult,	"PRESERVE"				--6
@@ -300,7 +302,7 @@ WeaponStatChanges =
 				"Weapon_Projectile_Dispersion",	2/USCMult,	"FORCE"				--10
 			},
 			{
-				"Weapon_Projectile_Recoil",	1/USCMult,	"PRESERVE"					--1000
+				"Weapon_Projectile_Recoil",	0.75/USCMult,	"PRESERVE"					--1000
 			},
 			{
 				"Weapon_Projectile_ReloadTime",	1.2/USCMult,	"FORCE"				--1.5
@@ -346,7 +348,7 @@ WeaponStatChanges =
 				"Weapon_Projectile_Recoil",	1/USCMult,	"PRESERVE"				--80
 			},
 			{
-				"Weapon_Projectile_ReloadTime",	1/USCMult,	"FORCE"				--1
+				"Weapon_Projectile_ReloadTime",	1.2/USCMult,	"FORCE"				--1
 			},
 			{
 				"Weapon_Projectile_BulletsPerShot",	1/USCMult,	"PRESERVE"				--2
@@ -365,40 +367,40 @@ WeaponStatChanges =
 	{
 		{
 			"CANNON"			--Neutron Cannon
-		},						--Since for charged shots it's optimal to supercharge the upgrade modules, notthe core tech, this is "un-supercharged" differently from other weapons
+		},						--this is "un-supercharged" differently from other weapons
 		{
 			{
-				"Weapon_Projectile_Damage",	NeutronCannonDMG*GMD,	"FORCE"	--120	(Uncharged)
+				"Weapon_Projectile_Damage",	NeutronCannonDMG*GMD/USCMult,	"FORCE"	--120	(Uncharged)
 			},
 			{
-				"Weapon_Projectile_MinimumCharge",	1.475,	"FORCE"			--1
+				"Weapon_Projectile_MinimumCharge",	4.2406/USCMult,	"FORCE"			--1
 			},
 			{
-				"Weapon_Projectile_MaximumCharge",	1,	"FORCE"			--6
+				"Weapon_Projectile_MaximumCharge",	1/USCMult,	"FORCE"			--6
 			},
 			{
-				"Weapon_Projectile_Range",	1,	"PRESERVE"					--800
+				"Weapon_Projectile_Range",	1/USCMult,	"PRESERVE"					--800
 			},
 			{
-				"Weapon_Projectile_Dispersion",	1.4,	"FORCE"				--2.5
+				"Weapon_Projectile_Dispersion",	1.4/USCMult,	"FORCE"				--2.5
 			},
 			{
-				"Weapon_Projectile_Recoil",	1,	"FORCE"					--1600
+				"Weapon_Projectile_Recoil",	1/USCMult,	"FORCE"					--1600
 			},
 			{
-				"Weapon_ChargedProjectile_ChargeTime",	1*USCMult,	"FORCE"		--1
+				"Weapon_ChargedProjectile_ChargeTime",	0.99,	"FORCE"		--1
 			},
 			{
 				"Weapon_ChargedProjectile_CooldownDuration",	1,	"FORCE"		--0
 			},
 			{
-				"Weapon_ChargedProjectile_ExtraSpeed",	1,	"PRESERVE"		--180
+				"Weapon_ChargedProjectile_ExtraSpeed",	1/USCMult,	"PRESERVE"		--180
 			},
 			{
-				"Weapon_Grenade_Radius",	1,	"FORCE"		--2
+				"Weapon_Grenade_Radius",	1/USCMult,	"FORCE"		--2
 			},
 			{
-				"Weapon_Projectile_BurstCooldown",	1,	"FORCE"		--0.5
+				"Weapon_Projectile_BurstCooldown",	1/USCMult,	"FORCE"		--0.5
 			}
 		}
 	},
@@ -860,6 +862,19 @@ WeaponSecondaryTechChanges =
 		{
 			{
 				"Weapon_Stun_Duration",		0.2,	"FORCE"				--5 seconds
+			}
+		}
+	},
+	{
+		{
+			"UT_SMG_DOT"		--Impact Igniter upgrade for Pulse Spitter
+		},
+		{
+			{
+				"Weapon_FireDOT_Duration",		1.43,	"FORCE"			--3.5 seconds
+			},
+			{
+				"Weapon_FireDOT_DPS",			3,	"PRESERVE"			--80
 			}
 		}
 	},
@@ -2041,6 +2056,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "DOOR",	"DamageType", "Laser"},
+				["SECTION_UP"] = 1,
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Multiplier",	LaserDoorMult}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "DEPOT"},
 				["MATH_OPERATION"] 		= "",
 				["REPLACE_TYPE"] = "",
@@ -2428,6 +2453,14 @@ for i = 1, #UpgradeOtherChangesInt do
 				}
 			}
 	end
+end
+if RemoveSentWpnRate then
+ChangesToUpgradeStats[#ChangesToUpgradeStats+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "UP_SENGUN",		"StatsType", "Weapon_Projectile_Rate"},
+				["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			}
 end
 
 

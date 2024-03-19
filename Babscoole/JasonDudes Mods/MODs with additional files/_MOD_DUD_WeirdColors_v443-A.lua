@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "_podEgg_GrowthLOD0", "Name", "MATERIAL"},
                                 {"Name", "_podEgg_GrowthLOD1", "Name", "MATERIAL"},
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB2_podEgg_GrowthLOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB2_podEgg_GrowthLOD1", "Name", "MATERIAL"},
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB3_podEgg_GrowthLOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB3_podEgg_GrowthLOD1", "Name", "MATERIAL"},
@@ -142,7 +142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "Body_LOD0", "Name", "MATERIAL"},
                                 {"Name", "Body_LOD1", "Name", "MATERIAL"},
@@ -155,7 +155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB2_detail_hatchLOD0", "Name", "MATERIAL"},
                                 {"Name", "_detail_PipesLOD0",     "Name", "MATERIAL"},
@@ -172,7 +172,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB1_detail_hatchLOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB1_detail_hatchLOD1", "Name", "MATERIAL"},
@@ -191,7 +191,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "Pod_LOD0", "Name", "MATERIAL"},
                                 {"Name", "Pod_LOD1", "Name", "MATERIAL"},
@@ -203,7 +203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB1Pod_LOD0",     "Name", "MATERIAL"},
                                 {"Name", "Mesh_LOD0",        "Name", "MATERIAL"},
@@ -218,7 +218,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB2Pod_LOD0",  "Name", "MATERIAL"},
                                 {"Name", "SUB1Mesh_LOD0", "Name", "MATERIAL"},
@@ -239,7 +239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "ContourTower_LOD0", "Name", "MATERIAL"},
                                 {"Name", "ContourTower_LOD1", "Name", "MATERIAL"},
@@ -252,7 +252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB1ContourTower_LOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB1ContourTower_LOD1", "Name", "MATERIAL"},
@@ -265,7 +265,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB2ContourTower_LOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB2ContourTower_LOD1", "Name", "MATERIAL"},
@@ -278,7 +278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB4ContourTower_LOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB4ContourTower_LOD1", "Name", "MATERIAL"},
@@ -291,7 +291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB5ContourTower_LOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB5ContourTower_LOD1", "Name", "MATERIAL"},
@@ -304,7 +304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB6ContourTower_LOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB6ContourTower_LOD1", "Name", "MATERIAL"},
@@ -317,7 +317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB7ContourTower_LOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB7ContourTower_LOD1", "Name", "MATERIAL"},
@@ -336,7 +336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB2Shape1FloatLOD0", "Name", "MATERIAL"},
                                 {"Name", "SUB2Shape1FloatLOD1", "Name", "MATERIAL"},
@@ -355,7 +355,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "BaseLOD0", "Name", "MATERIAL"},
                                 {"Name", "BaseLOD1", "Name", "MATERIAL"},
@@ -367,7 +367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SmallVinesLOD0", "Name", "MATERIAL"},
                                 {"Name", "SmallVinesLOD1", "Name", "MATERIAL"},
@@ -385,7 +385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "Vines_mat",   "Name", "MATERIAL"},
                                 {"Name", "Vines_mat2",  "Name", "MATERIAL"},
@@ -419,7 +419,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "MedGeometricLOD0", "Name", "MATERIAL"},
                                 {"Name", "MedGeometricLOD1", "Name", "MATERIAL"},
@@ -437,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "FloatJointLOD0", "Name", "MATERIAL"},
                                 {"Name", "FloatJointLOD1", "Name", "MATERIAL"},
@@ -477,7 +477,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "MStructureLOD0", "Name", "MATERIAL"},
                                 {"Name", "MStructureLOD1", "Name", "MATERIAL"},
@@ -496,7 +496,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SingleJointLOD0", "Name", "MATERIAL"},
                                 {"Name", "SingleJointLOD1", "Name", "MATERIAL"},
@@ -515,7 +515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SmallJointLOD0", "Name", "MATERIAL"},
                                 {"Name", "SmallJointLOD1", "Name", "MATERIAL"},
@@ -534,7 +534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "LargeLOD0", "Name", "MATERIAL"},
                                 {"Name", "LargeLOD1", "Name", "MATERIAL"},
@@ -579,7 +579,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "TallShard2LOD0", "Name", "MATERIAL"},
                                 {"Name", "TallShard2LOD1", "Name", "MATERIAL"},

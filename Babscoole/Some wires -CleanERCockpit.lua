@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CT"] =
                     {
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB1Cards5"},
                                 {"Name", "MonFrontCables"},

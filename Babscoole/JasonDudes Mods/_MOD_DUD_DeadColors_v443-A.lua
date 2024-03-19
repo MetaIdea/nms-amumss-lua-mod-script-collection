@@ -373,7 +373,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Sand",          "GcPaletteData.xml"},
                                 {"Dirt",          "GcPaletteData.xml"},
@@ -386,7 +386,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Plant", "GcPaletteData.xml"},
                                 {"Leaf",  "GcPaletteData.xml"},

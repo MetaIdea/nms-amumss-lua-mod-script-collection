@@ -335,7 +335,7 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_5",		75	,				90},				--Makes Sodium Nitrate			x50		in	60 time
+		{"REFINERECIPE_5",		35	,				90},				--Makes Sodium Nitrate			x50		in	60 time
 		{
 			{"VENTGEM",			1}										--Requires Crystal Sulphide		x1
 		}
@@ -519,6 +519,15 @@ RecipeIngredientChanges =
 			{"FOOD_B_DOUGH",	"FOOD_B_DOUGH",		1},							--Requires Sugar Dough	(Sugar Dough in PTSd)		x1
 			{"FOOD_W_MEAT",		"FOOD_W_CASE",		1}							--Requires Nightmare Sausage	(Gelatinous Membrane in PTSd)	x1
 		}
+	},
+}
+
+--Adds additional ingredients to recipes
+RecipeAddedIngredients =
+{
+	--	Recipe				New Ingredients		Amount	Type of Item
+	{
+		"RECIPE_941",		"FOOD_R_SUGAR",		1,		"Product",				--Adds 1 Processed Sugar to recipe for Herbal Crunchie
 	},
 }
 
@@ -1241,6 +1250,17 @@ SeasoningChanges =
 	},
 }
 
+function AddIngredient (IngredientID, IngredientAmount, ItemType)
+    return
+[[<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="]]..IngredientID..[[" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="]]..ItemType..[[" />
+          </Property>
+          <Property name="Amount" value="]]..IngredientAmount..[[" />
+        </Property>]]
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
@@ -1292,6 +1312,54 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_918"},			--Removes the Haunted Wafer alternative recipe that uses Hypnotic Eye, as in PTSd Hypnotic Eye is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_451"},			--Removes the Abyssal Stew alternative recipe that uses 2x Hypnotic Eye, as in PTSd Hypnotic Eye is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_452"},			--Removes the Abyssal Stew alternative recipe that uses 2x Hypnotic Eye, as in PTSd Hypnotic Eye is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_453"},			--Removes the Abyssal Stew alternative recipe that uses 2x Hypnotic Eye, as in PTSd Hypnotic Eye is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_940"},			--Removes the Herbal Crunchie alternative recipe that uses Geknip, as in PTSd Geknip is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_32"},				--Removes the Baked Eggs alternative recipe that uses Larval Core, as Larval Core is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_37"},				--Removes the Delicate Meringue alternative recipe that uses Larval Core, as Larval Core is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_430"},			--Removes the Soft Custard Fancy alternative recipe that uses Larval Core, as Larval Core is too valuable to be worthwhile as a cooking ingredient here
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_448"},			--Removes the Cake of the Lost alternative recipe that uses Larval Core (through Monstrous Custard), as Larval Core is too valuable to be worthwhile as a cooking ingredient here
 				["REPLACE_TYPE"] 		= "",
 				--["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
@@ -1417,6 +1485,20 @@ for i = 1, #RecipeIngredientChanges do
 					{"TimeToMake", Time},
 					{"Amount", AmountResult}
 				}
+			}
+end
+for i = 1, #RecipeAddedIngredients do
+	local RecipeId = RecipeAddedIngredients[i][1]
+	local IngredientID = RecipeAddedIngredients[i][2]
+	local IngredientAmount = RecipeAddedIngredients[i][3]
+	local ItemType = RecipeAddedIngredients[i][4]
+		
+			ChangesToRecipes[#ChangesToRecipes+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id",RecipeId},
+				["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
+				["ADD"] = AddIngredient (IngredientID, IngredientAmount, ItemType),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			}
 end
 for i = 1, #CropPelletChanges do

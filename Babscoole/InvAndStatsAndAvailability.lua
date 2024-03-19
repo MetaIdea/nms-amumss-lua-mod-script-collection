@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"StatsType", "Suit_Protection_Heat"},
                                 {"StatsType", "Suit_Protection_Toxic"},
@@ -112,7 +112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"StatsType", "Ship_Weapons_Shotgun"},
                                 {"StatsType", "Ship_Weapons_MiniGun"},
@@ -857,7 +857,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SciMedium",       "GcInventoryLayoutGenerationDataEntry.xml"},
                                 {"SciLarge",        "GcInventoryLayoutGenerationDataEntry.xml"},
@@ -899,7 +899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"WeaponSmall",  "GcInventoryLayoutGenerationDataEntry.xml"},
                                 {"WeaponMedium", "GcInventoryLayoutGenerationDataEntry.xml"},
@@ -912,7 +912,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"ChestSmall",   "GcInventoryLayoutGenerationDataEntry.xml"},
                                 {"ChestMedium",  "GcInventoryLayoutGenerationDataEntry.xml"},
@@ -2472,7 +2472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Freighter",  "GcShipInventoryMaxUpgradeCapacity.xml"},
                                 {"Dropship",   "GcShipInventoryMaxUpgradeCapacity.xml"},
@@ -2494,7 +2494,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Freighter",  "GcShipInventoryMaxUpgradeCapacity.xml"},
                                 {"Dropship",   "GcShipInventoryMaxUpgradeCapacity.xml"},

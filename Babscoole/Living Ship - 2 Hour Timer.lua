@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CT"] =
                     {
                         {
-                            ["FSKWG"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Message", "UI_BIO_SHIP_MISSION1_MSG3"},
                                 {"Message", "UI_BIO_SHIP_MISSION2_MSG3"},

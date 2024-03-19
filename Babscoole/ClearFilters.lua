@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Toxic",       "GcScreenFilterData.xml"},
                                 {"Radioactive", "GcScreenFilterData.xml"},

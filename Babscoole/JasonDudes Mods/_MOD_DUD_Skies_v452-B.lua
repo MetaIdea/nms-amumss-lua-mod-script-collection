@@ -1048,7 +1048,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"ExtremeColourModifiers", "GcWeatherColourModifiers.xml", "SkyColour",       "GcColourModifier.xml"},
                                 {"ExtremeColourModifiers", "GcWeatherColourModifiers.xml", "HorizonColour",   "GcColourModifier.xml"},

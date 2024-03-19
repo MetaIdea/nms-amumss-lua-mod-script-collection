@@ -257,7 +257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "SEC_STDHIGH_WAR"},
                                 {"Id", "SEC_STDHIGH_TRA"},
@@ -292,7 +292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "RS_S1_S2M6"},
                                 {"Id", "RS_S2_S4M5"},
@@ -315,7 +315,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "RS_S6_PARTY1"},
                                 {"Id", "RS_S6_PARTY5"},
@@ -329,7 +329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "RS_S2_S4M1"},
                                 {"Id", "RS_S5_S1M3"},

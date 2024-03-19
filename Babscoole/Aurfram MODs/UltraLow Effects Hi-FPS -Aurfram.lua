@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "WIND"},
                                 {"Name", "STRONGWIND"},
@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "WIND", "Octave0", "TkShearWindOctaveData.xml"},
                                 {"Name", "STRONGWIND", "Octave0", "TkShearWindOctaveData.xml"},
@@ -124,7 +124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "WIND", "Octave1", "TkShearWindOctaveData.xml"},
                                 {"Name", "STRONGWIND", "Octave1", "TkShearWindOctaveData.xml"},
@@ -140,7 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "WIND", "Octave2", "TkShearWindOctaveData.xml"},
                                 {"Name", "STRONGWIND", "Octave2", "TkShearWindOctaveData.xml"},
@@ -155,7 +155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "WIND", "Octave3", "TkShearWindOctaveData.xml"},
                                 {"Name", "STRONGWIND", "Octave3", "TkShearWindOctaveData.xml"},
@@ -184,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             { 
                                 {"LightShaftProperties",      "GcLightShaftProperties.xml"},
                                 {"StormLightShaftProperties", "GcLightShaftProperties.xml"},
@@ -267,7 +267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             { 
                                 {"SpaceSkyMin", "GcSpaceSkyProperties.xml"},
                                 {"SpaceSkyMax", "GcSpaceSkyProperties.xml"},

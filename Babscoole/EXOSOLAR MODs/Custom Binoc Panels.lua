@@ -203,7 +203,7 @@ if E_NOTICE then
 
     LEFTTABLE[#LEFTTABLE +1] =
     {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
-        ["FOREACH_SKW_GROUP"] =
+        ["SPECIAL_KEY_WORDS"] =
         {
             {"Text",  "UI_CUSTOM_MARKER_TIP"},
             {"Image", "/TEXTURES/UI/HUD/ICONS/SCANNING/DECSLASH.DDS"},

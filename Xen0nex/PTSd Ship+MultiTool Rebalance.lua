@@ -184,7 +184,7 @@ ShipAgileChanges	=
 	},
 	{
 		{
-			"Fighter",				20,		26.7,	33.3,	40,			--			+		5-15,		15-20,		20-30,		35-45,	%
+			"Fighter",				25,		33.3,	41.7,	50,			--			+		5-15,		15-20,		20-30,		35-45,	%
 		},
 		{"C", "B", "A", "S"}	
 	},
@@ -520,7 +520,7 @@ CostChanges	=
 	},
 }
 
---Replacers for the TradeInMultiplier (vanilla value of 70), which sets the % of the value of your ship/tool that you get when trading it for another ship/tool or for scrapping it. Setting this to 1 will retain the vanilla trade in/scrap value of 70%
+--Replacers for the TradeInMultiplier (vanilla value of 70), which sets the % of the value of your ship/tool that you get when trading it for another ship/tool or for scrapping it. Setting this to 70 will retain the vanilla trade in/scrap value of 70%
 	--Lower this to offset the increased value for scrapping crashed A or S class ships		(not necessary in NMS v3.82 as now only Shuttles or Exotics will spawn as crashed ships with A or S class?)
 		--Supposedly NMS v3.85+ has re-enabled all shiptypes to spawn as S-Class at crashsites?
 ShipTradeInMultiplier = 40												--70				Applies to both trading in to buy a differnt ship or scrapping it at a space station ship salvage terminal
@@ -616,9 +616,9 @@ ToolStatChanges	=
 			"Royal"			--"Exotic"	(15% chance to be offered from defeated Sentinel Pillars. Always found at C Class?)
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			1.7,	1.5,	1.3,	1.3},		--			+		0-5,		5-10,		10-15,		15-25	%
-			{"WEAPON_MINING",			1.8,	1.4,	1.3,	1.3},		--			+		5-10,		10-20,		20-25,		25-30	%
-			{"WEAPON_SCAN",				1.2,	1.0,	0.9,	0.9}		--			+		40-50,		60-70,		80-90,		100[90-100]	%
+			{"WEAPON_DAMAGE",			1.3,	1.3,	1.3,	1.3},		--			+		0-5,		5-10,		10-15,		15-25	%
+			{"WEAPON_MINING",			1.3,	1.3,	1.3,	1.3},		--			+		5-10,		10-20,		20-25,		25-30	%
+			{"WEAPON_SCAN",				0.9,	0.9,	0.9,	0.9}		--			+		40-50,		60-70,		80-90,		100[90-100]	%
 		}
 	},
 	{

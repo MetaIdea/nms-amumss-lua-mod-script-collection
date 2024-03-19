@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"ShipTechSpecialist",    "GcTradeData.xml"},
                                 {"SuitTechSpecialist",    "GcTradeData.xml"},
@@ -105,7 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"ShipTechSpecialist",    "GcTradeData.xml"},
                                 {"SuitTechSpecialist",    "GcTradeData.xml"},

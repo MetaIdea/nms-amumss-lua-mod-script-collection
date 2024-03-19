@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQBIOME.MXML"},
                                 {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENHQBIOME.MXML"},
@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMABIOME.MXML"},
                                 {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBBIOME.MXML"},
@@ -90,7 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBIGPROPSBIOME.MXML"},
                                 {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICBIGPROPSBIOME.MXML"},
@@ -105,7 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADFROZENBIOME.MXML"},
                                 {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADFROZENWEIRDBIOME.MXML"},
@@ -559,7 +559,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Biome", "Scorched"},
                                 {"Biome", "Radioactive"},
@@ -1513,7 +1513,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         -- {
-                            -- ["FOREACH_SKW_GROUP"] =
+                            -- ["SPECIAL_KEY_WORDS"] =
                             -- {
                                 -- {"Id", "VALUABLE_STUFF"},
                                 -- {"Id", "STORMCRYSTALS"},
@@ -1524,7 +1524,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["FOREACH_SKW_GROUP"] =
+                            -- ["SPECIAL_KEY_WORDS"] =
                             -- {
                                 -- {"Name", "PROC_SALVAGE"},
                                 -- {"Name", "PROC_BONES"},

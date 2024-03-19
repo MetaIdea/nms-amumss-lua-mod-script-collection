@@ -8165,7 +8165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8212,7 +8212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8257,7 +8257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8305,7 +8305,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8356,7 +8356,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8396,7 +8396,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SkySunset",  "GcPaletteData.xml"},
                                 {"Warrior",    "GcPaletteData.xml"},
@@ -8415,7 +8415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8454,7 +8454,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SkySunset",  "GcPaletteData.xml"},
                                 {"Warrior",    "GcPaletteData.xml"},
@@ -8476,7 +8476,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8516,7 +8516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SkySunset",  "GcPaletteData.xml"},
                                 {"Warrior",    "GcPaletteData.xml"},
@@ -8535,7 +8535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8578,7 +8578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SkySunset",    "GcPaletteData.xml"},
                                 {"WaterNear",    "GcPaletteData.xml"},
@@ -8598,7 +8598,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SkyHorizon",    "GcPaletteData.xml"},
                                 {"SkyFog",        "GcPaletteData.xml"},
@@ -8620,7 +8620,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",      "GcPaletteData.xml"},
                                 {"Plant",      "GcPaletteData.xml"},
@@ -8659,7 +8659,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SkyHorizon",    "GcPaletteData.xml"},
                                 {"SkyFog",        "GcPaletteData.xml"},
@@ -8684,7 +8684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",      "GcPaletteData.xml"},
                                 {"Plant",      "GcPaletteData.xml"},
@@ -8724,7 +8724,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"WaterNear",           "GcPaletteData.xml"},
                                 {"SpaceCloud",          "GcPaletteData.xml"},
@@ -8774,7 +8774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8827,7 +8827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8876,7 +8876,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},
@@ -8925,7 +8925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Grass",         "GcPaletteData.xml"},
                                 {"Plant",         "GcPaletteData.xml"},

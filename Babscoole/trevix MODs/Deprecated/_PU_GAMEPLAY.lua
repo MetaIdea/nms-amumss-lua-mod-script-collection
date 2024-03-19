@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Invalid",               "GcDifficultySettingsData.xml"},
                                 {"Custom",                "GcDifficultySettingsData.xml"},
@@ -900,7 +900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "BASICDAMAGE"},
                                 {"Id", "FIENDSPIT_DMG"},
@@ -919,7 +919,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "ENERGY"},
                                 {"Id", "EXTREMEHEATDMG"},
@@ -935,7 +935,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "IMPACTDAMAGE"},
                                 {"Id", "IMPACTSHIP"},
@@ -949,7 +949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "STANDING_STONE"},
                                 {"Id", "FREIGHTERLASER"},
@@ -962,7 +962,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "SPIDER_EXPLODE"},
                                 {"Id", "FLOATER_DMG"},
@@ -974,7 +974,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "SMLCREATUREDMG"},
                                 {"Id", "SPIDERDMG"},
@@ -987,7 +987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "LRGCREATUREDMG"},
                                 {"Id", "HUGECREATUREDMG"},
@@ -1001,7 +1001,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "WEIRDCRTDMG"},
                                 {"Id", "WORM_DMG"},
@@ -1014,7 +1014,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "FIEND_DMG"},
                             },
@@ -1024,7 +1024,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "WALKERLASER"},
                             },
@@ -1034,7 +1034,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "VENT_HEAT"},
                                 {"Id", "FISHFIEND_PROP"},
@@ -1045,7 +1045,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "SPORE_VENT"},
                             },
@@ -1055,7 +1055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Id", "FISHFIEND_DMG"},
                                 {"Id", "METEOR"},
@@ -1092,7 +1092,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"ID", "F_HDRIVEBOOST1"},
                                 {"ID", "F_HDRIVEBOOST2"},
