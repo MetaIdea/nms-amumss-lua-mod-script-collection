@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-  MOD_FILENAME      = '___TEST 04 and more tests.pak',
-  MOD_AUTHOR        = 'lMonk',
-  NMS_VERSION       = '4.52',
+  MOD_FILENAME      = 'Test_Case-insensitive_2_SKW_pairs.pak',
+  MOD_AUTHOR        = 'lMonk-Wbertro',
+  NMS_VERSION       = 'all',
   MODIFICATIONS     = {{
   MBIN_CHANGE_TABLE = {
   {
@@ -18,6 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       }
     }
   },
+  
   {
     MBIN_FILE_SOURCE  = 'GCVEHICLEGLOBALS.GLOBAL.MBIN',
     EXML_CHANGE_TABLE = {
@@ -29,4 +30,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
       }
     }
   }
-}}}}
+}}} --3 global replacements
+}
