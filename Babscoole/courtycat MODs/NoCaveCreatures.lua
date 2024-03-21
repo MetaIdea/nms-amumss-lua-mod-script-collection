@@ -19,8 +19,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ProbabilityOfBeingEnabled", "0" },
-                                {"IncreasedSpawnDistance",    "2" },
+                                {"ProbabilityOfBeingEnabled", "0"},
+                                {"IncreasedSpawnDistance",    "2"},
                             }
                         },
                     }
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ProbabilityOfBeingEnabled", "0" },
+                                {"ProbabilityOfBeingEnabled", "0"},
                             }
                         },
                     }

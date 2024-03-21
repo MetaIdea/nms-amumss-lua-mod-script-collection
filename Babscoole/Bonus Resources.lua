@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","UT_MINER"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "UT_MINER"},
 							["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","STRONGLASER"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "STRONGLASER"},
 							["PRECEDING_KEY_WORDS"] = {"StatBonuses"},							
 							["VALUE_CHANGE_TABLE"] = 
 							{

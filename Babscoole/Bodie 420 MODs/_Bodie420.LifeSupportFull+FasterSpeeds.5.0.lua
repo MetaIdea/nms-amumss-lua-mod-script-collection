@@ -93,9 +93,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"] = "1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "IGNORE", "999999" }, --Original "4"
-                                { "IGNORE", "999999" }, --Original "6"
-                                { "IGNORE", "999999" }, --Original "8"
+                                {"IGNORE", "999999"}, --Original "4"
+                                {"IGNORE", "999999"}, --Original "6"
+                                {"IGNORE", "999999"}, --Original "8"
                             }
                         },
                     }

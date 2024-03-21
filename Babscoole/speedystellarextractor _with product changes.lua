@@ -12,7 +12,6 @@ PRODUCT_BLUESTAR = "TECHFRAG" -- Nanite Cluster/ Default = GAS2 = Radon
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"]    = "_speedystellarextractor.pak",
-["MOD_BATCHNAME"]       = "AMUMSS MOD.pak",
 ["MOD_DESCRIPTION"] = "Improve max storage and cycle time of stellar extractor, and changes extractor products", 
 ["MOD_AUTHOR"]      = "Roflnomish",
 ["LUA_AUTHOR"]      = "Babscoole",  
@@ -36,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},											
 						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS3"},
+						    ["SPECIAL_KEY_WORDS"] = {"Id", "GAS3"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxCapacity",           EXTRACTOR_STORAGE},
@@ -45,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS1"},
+						    ["SPECIAL_KEY_WORDS"] = {"Id", "GAS1"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxCapacity",           EXTRACTOR_STORAGE},
@@ -54,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS2"},
+						    ["SPECIAL_KEY_WORDS"] = {"Id", "GAS2"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxCapacity",           EXTRACTOR_STORAGE},

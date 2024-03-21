@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"EmptySystemSpecific", "GcCreatureGenerationOptionalWeightedList.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Probability", "0.2" },
+                                {"Probability", "0.2"},
                             }
                         },
                         {
@@ -25,30 +25,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Sparse",    "2.5" },
-                                {"Normal",    "5" },
-                                {"Dense",     "10" },
-                                {"VeryDense", "20" },
+                                {"Sparse",    "2.5"},
+                                {"Normal",    "5"},
+                                {"Dense",     "10"},
+                                {"VeryDense", "20"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterGroupsGroupsPerKm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Sparse",    "3" },
-                                {"Normal",    "6" },
-                                {"Dense",     "8" },
-                                {"VeryDense", "10" },
+                                {"Sparse",    "3"},
+                                {"Normal",    "6"},
+                                {"Dense",     "8"},
+                                {"VeryDense", "10"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AirGroupsGroupsPerKm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Sparse",    "1" },
-                                {"Normal",    "2" },
-                                {"Dense",     "3" },
-                                {"VeryDense", "4" },
+                                {"Sparse",    "1"},
+                                {"Normal",    "2"},
+                                {"Dense",     "3"},
+                                {"VeryDense", "4"},
                             }
                         },
                     }

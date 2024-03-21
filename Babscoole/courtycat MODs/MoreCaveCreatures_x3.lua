@@ -17,10 +17,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"CaveGroupsPerKm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Sparse",    "150" },
-                                {"Normal",    "300" },
-                                {"Dense",     "600" },
-                                {"VeryDense", "900" },
+                                {"Sparse",    "150"},
+                                {"Normal",    "300"},
+                                {"Dense",     "600"},
+                                {"VeryDense", "900"},
                             }
                         },
                     }

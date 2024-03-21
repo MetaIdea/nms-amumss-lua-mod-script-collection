@@ -18,10 +18,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Poor",    "100" },
-                                { "Average", "400" },
-                                { "Wealthy", "800" },
-                                { "Pirate",  "400" },
+                                {"Poor",    "100"},
+                                {"Average", "400"},
+                                {"Wealthy", "800"},
+                                {"Pirate",  "400"},
                             }
                         },
                         {
@@ -29,10 +29,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Poor",    "400" },
-                                { "Average", "800" },
-                                { "Wealthy", "1800" },
-                                { "Pirate",  "800" },
+                                {"Poor",    "400"},
+                                {"Average", "800"},
+                                {"Wealthy", "1800"},
+                                {"Pirate",  "800"},
                             }
                         },
                         {
@@ -40,10 +40,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Poor",    "1500" },
-                                { "Average", "3500" },
-                                { "Wealthy", "6000" },
-                                { "Pirate",  "2500" },
+                                {"Poor",    "1500"},
+                                {"Average", "3500"},
+                                {"Wealthy", "6000"},
+                                {"Pirate",  "2500"},
                             }
                         },
                         {
@@ -51,10 +51,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Poor",    "3000" },
-                                { "Average", "7500" },
-                                { "Wealthy", "9000" },
-                                { "Pirate",  "5000" },
+                                {"Poor",    "3000"},
+                                {"Average", "7500"},
+                                {"Wealthy", "9000"},
+                                {"Pirate",  "5000"},
                             }
                         },
                     }

@@ -28,35 +28,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Control", "PlanetEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"Control", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Control", "AtmosCombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"Control", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlLight", "PlanetEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlLight", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "PlanetEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "AtmosCombatEngine" },
+                            ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},

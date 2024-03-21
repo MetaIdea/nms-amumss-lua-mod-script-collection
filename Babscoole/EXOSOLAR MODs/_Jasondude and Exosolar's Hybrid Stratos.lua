@@ -4624,7 +4624,7 @@ for i = 1, #DataTable do
         ["EXML_CHANGE_TABLE"] =
         {
             {
-                ["PRECEDING_KEY_WORDS"] = { "Settings" },
+                ["PRECEDING_KEY_WORDS"] = {"Settings"},
                 ["SECTION_ACTIVE"] = {1},
                 ["ADD"] = CreateColoursProperty(PaletteColours)
             }

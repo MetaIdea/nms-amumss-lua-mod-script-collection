@@ -9890,7 +9890,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min" },
+                            ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"UseSeedValue",            "False"},

@@ -31,28 +31,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Time", "899"},
+                                {"Time", "899"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Time", "900"},
+                                {"Time", "900"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2_ENTER"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Time", "1799"},
+                                {"Time", "1799"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                { "Time", "1800"},
+                                {"Time", "1800"},
                             }
                         },
                     }

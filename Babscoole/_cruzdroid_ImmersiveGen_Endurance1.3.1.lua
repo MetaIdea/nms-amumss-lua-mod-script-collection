@@ -439,7 +439,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml", },
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SECTION_ACTIVE"] = {3},
                             ["ADD_OPTION"] = "ADDafterSECTION",
@@ -574,7 +574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml", },
+                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare", "GcRewardTableCategory.xml", "Small", "GcRewardTableItemList.xml"},
                             -- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             -- ["SECTION_ACTIVE"] = {11},
                             -- ["ADD_OPTION"] = "ADDafterSECTION",
@@ -1333,7 +1333,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_SMALLB_RARE.SCENE.MBIN", },
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_SMALLB_RARE.SCENE.MBIN"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1349,12 +1349,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_SMALLA.SCENE.MBIN", },
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_SMALLA.SCENE.MBIN"},
                             ["SECTION_ACTIVE"] = {2},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/BARREL/BARREL_MEDIUM.SCENE.MBIN", },
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/BARREL/BARREL_MEDIUM.SCENE.MBIN"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1367,7 +1367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_LARGE_RARE.SCENE.MBIN", },
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_LARGE_RARE.SCENE.MBIN"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1377,7 +1377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "CAVEEGG", },
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "CAVEEGG"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1979,7 +1979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F34_GLOW", },
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F34_GLOW"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["REMOVE"] = "SECTION",
                         },

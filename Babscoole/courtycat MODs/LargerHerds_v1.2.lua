@@ -94,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CreatureType", "Weird" },
+                                {"CreatureType", "Weird"},
                             }
                         },
                     }
@@ -132,7 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CreatureType", "MiniDrone" },
+                                {"CreatureType", "MiniDrone"},
                             }
                         },
                     }
@@ -158,7 +158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CreatureType", "SpaceFloater" },
+                                {"CreatureType", "SpaceFloater"},
                             }
                         },
                     }
@@ -185,8 +185,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinGroupSize", "12" },
-                                {"MaxGroupSize", "24" },
+                                {"MinGroupSize", "12"},
+                                {"MaxGroupSize", "24"},
                             }
                         },
                     }

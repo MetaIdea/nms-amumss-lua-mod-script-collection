@@ -168,7 +168,7 @@ for i = 1, #DataTable do
     BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
-        ["PRECEDING_KEY_WORDS"] = {"Colours" },
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
